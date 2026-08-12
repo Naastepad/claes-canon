@@ -2,55 +2,37 @@
 
 ## Core rule
 
-No AI-generated assertion becomes canon automatically.
+Evidence, story truth, narrative placement and executable constraints are maintained as separate layers.
 
-Every proposed change must preserve a visible distinction between evidence, interpretation and narrative choice.
+## Workflow
 
-## Required workflow
+1. Read the current storybible authority and relevant sources.
+2. Record external assertions as `SC.*` Source Claims.
+3. Record novel truth or candidate truth as `STC.*` Story Claims.
+4. Use separate `evidence_status` and `canon_status` fields.
+5. Record significant human choices as `DEC.*` decisions.
+6. Link claims to `ENT.*` entities and relevant Narrative Instances.
+7. Preserve the precision of dates and uncertainty ranges.
+8. Convert only deterministic accepted Story Claims into Lemma constraints.
+9. Run continuity and Lemma validation.
+10. Review changes before merge and LemmaBase publication.
 
-1. Read the relevant source material and current canon.
-2. Extract only claims relevant to canon constraints.
-3. Classify every new claim as `FACT`, `CANON`, `HYPOTHESIS`, `DISPUTED` or `UNKNOWN`.
-4. Record provenance for every `FACT` and every canon decision that depends on historical evidence.
-5. Produce a proposal before modifying accepted Lemma rules.
-6. Validate syntax and run relevant consistency checks.
-7. Review the diff.
-8. Human approval is required before merge and before publication to LemmaBase.
+## Status vocabularies
 
-## AI permissions
+Evidence: `VERIFIED`, `SUPPORTED`, `PLAUSIBLE`, `DISPUTED`, `UNKNOWN`.
 
-AI may:
+Canon: `PROPOSED`, `CANON`, `OPEN`, `DEPRECATED`, `REJECTED`.
 
-- read sources and storybible material;
-- compare new material with accepted canon;
-- draft proposals;
-- draft or modify Lemma files on an authoring branch;
-- identify contradictions and missing dependencies;
-- run or suggest validation tests;
-- explain the consequences of a proposed change.
+These are independent dimensions. A historical fact can be verified without being used in the novel; a fictional event can be plausible and canon.
 
-AI must not:
+## Precision rule
 
-- silently promote a hypothesis to fact or canon;
-- erase conflicting evidence;
-- invent dates, locations, relationships or source references;
-- publish to LemmaBase without explicit human approval;
-- treat absence of evidence as evidence of absence.
+A month, season, year or interval remains a month, season, year or interval until an explicit story decision establishes greater precision.
 
-## Canon promotion
+## Narrative theory boundary
 
-`HYPOTHESIS -> CANON` requires an explicit narrative decision.
+Universal `KO.*` narrative theory remains in the external Narrative Knowledge Base. This repository stores Claes-specific Narrative Instances and may reference Knowledge Objects as analysis targets.
 
-`DISPUTED -> FACT` requires evidence strong enough to resolve the dispute.
+## Review questions
 
-`UNKNOWN` may remain unknown indefinitely.
-
-## Review standard
-
-A proposal is acceptable only when a reviewer can answer:
-
-- What changed?
-- Why did it change?
-- What source or canon decision supports it?
-- Which rules or scenes are affected?
-- Is the change reversible and traceable?
+A change should make clear what evidence changed, what story truth changed, what decision supports it, where it is dramatized, which continuity domains are affected, and whether a Lemma rule changes.
