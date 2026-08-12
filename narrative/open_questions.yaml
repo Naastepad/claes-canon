@@ -1,0 +1,125 @@
+schema_version: 1.0.0
+kind: OpenQuestionRegistry
+questions:
+  - id: OQ.CODE.P1_P3_P4.001
+    domain: code
+    priority: high
+    status: OPEN
+    question: "Final engine/source-technical control of P1, P3 and P4."
+    guardrail: "Do not alter the 24×24 architecture unless source loci actually fail."
+  - id: OQ.MATERIAL.WET_TEST.001
+    domain: material
+    priority: high
+    status: OPEN
+    question: "Wet material test for red markers + tannin/galnut layer + diluted green vitriol + suitable paper."
+    guardrail: "No untested recipe becomes hard historical prose."
+  - id: OQ.MEMORIAAL.FACSIMILE.001
+    domain: object
+    priority: medium
+    status: OPEN
+    question: "Final facsimile hand/ductus and visual production of the 24 memoriaal diagrams."
+  - id: OQ.MEMORIAAL.BINDING.001
+    domain: object
+    priority: high
+    status: OPEN
+    question: "Exact binding intervention by which prepared secret quires enter Claes' already-used memoriaal after 4 October 1564."
+  - id: OQ.SECURITY.LOW_LINK.1564.001
+    domain: plot
+    priority: high
+    status: OPEN
+    question: "Exact low-level incident or identifiable network link that makes Cornelis operationally unsafe after 4 October 1564."
+    exclusions: ["Cornelis need not be a stone thrower", "Cornelis need not be arrested in 1564"]
+  - id: OQ.SECURITY.DECLASSIFICATION.001
+    domain: plot
+    priority: medium
+    status: OPEN
+    question: "Who formally decides that Cornelis loses direct-key access: Silvius alone or Silvius with Dee/another keeper?"
+  - id: OQ.DODOENS.PROVENANCE.001
+    domain: object
+    priority: high
+    status: OPEN
+    question: "Exact edition/copy status, owner, date and legal/social mechanism by which the special Dodoens reaches the Goes apothecary environment."
+  - id: OQ.BELOVED.IDENTITY.001
+    domain: character
+    priority: high
+    status: OPEN
+    question: "Name, age, family, household and relationship development of the beloved/apothecary daughter."
+  - id: OQ.MOTHER.ADULT_FUNCTION.001
+    domain: character
+    priority: medium
+    status: OPEN
+    question: "Adult plot function of Claes' mother after Cornelis' arrest."
+  - id: OQ.TRANSLATOR.SPANISH_DUTCH.001
+    domain: historical_reconstruction
+    priority: high
+    status: OPEN
+    question: "Identity of the first Spanish→Diets source translator."
+    current_preference: "anonymous/fictional source-competent translator unless evidence closes a historical candidate"
+  - id: OQ.GILLIS.ROLE.001
+    domain: character
+    priority: medium
+    status: OPEN
+    question: "Whether Marcus Antonius Gillis appears directly as limited Diets redactor/model."
+  - id: OQ.MIGGRODE.ROLE.001
+    domain: character
+    priority: low
+    status: OPEN
+    question: "Whether Miggrode receives any fictional pre-1578 contact line."
+  - id: OQ.DEE.SPANISH.001
+    domain: historical_reconstruction
+    priority: low
+    status: OPEN
+    question: "Dee's Spanish reading competence, unless new evidence closes it."
+  - id: OQ.CIPHER.PHYSICAL_PRODUCTION.001
+    domain: object
+    priority: medium
+    status: OPEN
+    question: "Final setting/facsimile proof, exact set count within 3–6 work canon, binding/camouflage and fate of possible 24 composite sorts."
+  - id: OQ.ZOVITIUS.DELIVERY.1570.001
+    domain: plot
+    priority: high
+    status: OPEN
+    question: "Exact route by which the special 1570 Zovitius copy reaches Claes in Goes."
+  - id: OQ.CORNELIS.DEATH_DETAILS.001
+    domain: character
+    priority: high
+    status: OPEN
+    question: "Exact arrest date, detention place, charge and death mode within second-half-1568 through 1569 work window."
+  - id: OQ.ANTWERP.1564.NAMES.001
+    domain: historical_research
+    priority: low
+    status: OPEN
+    question: "Primary verification of names, if used, for the Vrouwenbroeder of 4 October and the Walloon executed 19 December 1564."
+  - id: OQ.PUBLICATION.TRANSMISSION.1570_1578.001
+    domain: plot
+    priority: high
+    status: OPEN
+    question: "Exact production/transmission route of the reconstructed clear text between 1570 and the fictionally linked anonymous 1578 publication."
+  - id: OQ.CHAPTER.CALENDAR.1564.001
+    domain: chronology
+    priority: high
+    status: OPEN
+    question: "Calendar audit of 1564_1 through 1564_5 against wrong chest → code production → decisive transfer journey → 4 October security break."
+  - id: OQ.CLAES.DEATH.001
+    domain: ending
+    priority: high
+    status: OPEN
+    question: "Exact date, place and physical cause/circumstances of Claes' death."
+    fixed_function: "Projectio: transmission without control of the outcome."
+  - id: OQ.FINAL_MERELS.001
+    domain: ending
+    priority: medium
+    status: OPEN
+    question: "Exact opponent, stakes and action of the final merels scene."
+    fixed_function: "Mastery expressed as balance, space and release rather than maximum domination."
+  - id: OQ.YOUTH.BAKERY_SCENE.001
+    domain: scene
+    priority: low
+    status: OPEN
+    question: "Whether and where the proposed youth bakery scene 'De Gest' enters the chronology."
+  - id: OQ.RADERMACHER.LATE_SCENE.001
+    domain: scene
+    priority: low
+    status: OPEN
+    question: "Whether a late Middelburg/Radermacher encounter is used as Rubedo social mirror."
+    guardrail: "Never convert this into unsupported formal Familist membership."
