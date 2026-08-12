@@ -1,104 +1,201 @@
-schema_version: 1.0.0
+schema_version: 1.2.0
 kind: ObjectRegistry
 objects:
 - id: OBJ.MEMORIAAL
   label: Claes’ memoriaalboek
   type: BookObject
   canon_status: CANON
+  historical_status: FICTIONAL_OBJECT
   phases:
   - phase: pedagogical
-    window:
-      earliest: '1564-01-01'
-      latest_exclusive: '1564-04-01'
-      precision: interval
-    function: workbook given by Dee before Boom
+    window: {earliest: '1564-01-01', latest_exclusive: '1564-04-01', precision: interval}
+    function: ordinary-looking workbook given by Dee before Boom
   - phase: recovery-carrier
     earliest: '1564-10-04'
     function: blind carrier containing 24 problem rectos + 2 key rectos
+    hidden_structure:
+      problem_rectos: 24
+      key_rectos: 2
+      hidden_layer: tannin/galnut layer on rectos only
+      visible_before_activation: red corner marks and limited registration puncta
+  - phase: activated
+    window: {earliest: '1570-01-01', latest_exclusive: '1571-01-01', precision: year}
+    function: green-vitriol development makes hidden diagrams/text readable
   constraints:
   - secret load occurs after 1564-10-04
   - Claes genuinely does not know hidden function at insertion
+  - vitriol reveals the memoriaal, not Las Casas directly
+  - memoriaal supplies merels/theorem/Monas bridge, not Dodoens content values
+  deterministic_domains: [possession, knowledge, decode]
+
 - id: OBJ.MONAS_CLAES
   label: Claes’ exemplaar van Monas Hieroglyphica
   type: BookObject
   canon_status: CANON
+  historical_status: HISTORICAL_WORK_FICTIONAL_MARGINALIA
   year: 1564
+  phases:
+  - phase: formation-object
+    earliest: '1564-01-01'
+  - phase: recovery-ordering-key
+    earliest: '1570-01-01'
   features:
   - 24 fictional marginal notes
   - one permutation of L/S/C/A per theorem
+  constraints:
+  - all 24 permutations are used exactly once
+  - Monas supplies ordering, not plaintext
+  - fictional cipher use is not claimed as Dee's historical published intent
+
 - id: OBJ.ZOVITIUS_SCHOOLBOOK
   label: Watergetekend Zovitius-schoolboek
   type: BookObject
   canon_status: CANON
-  functions:
-  - education
-  - marginalia
-  - bond with Silvius
+  historical_status: HISTORICAL_WORK_FICTIONAL_COPY_HISTORY
+  phases:
+  - phase: Reimerswaal-study
+    window: {earliest: '1554-05-19', latest_exclusive: '1561-09-01', precision: bounded}
+    function: education and marginal practice
+  - phase: water-damaged
+    window: {earliest: '1555-01-01', latest_exclusive: '1556-01-01', precision: year}
+    condition: band/edges distorted; text remains complete
+  - phase: annotated
+    function: teacher corrections plus Claes' observations on language, usability and merels
+  - phase: Silvius-recognition
+    function: evidence of lived pedagogy, not discovery of an unknown text
   constraints:
-  - not same object as 1570 trigger copy
+  - not same object as OBJ.ZOVITIUS_1570_TRIGGER
+  - Zovitius himself cannot meet Claes; his historical trace ends before Claes' birth
+
 - id: OBJ.ZOVITIUS_1570_TRIGGER
   label: Bijzonder Zovitius-exemplaar 1570
   type: BookObject
   canon_status: CANON
+  historical_status: HISTORICAL_EDITION_FICTIONAL_MARKINGS
   functions:
   - activates recovery via GALLA LEO VIRIDIS
+  - reactivates Claes' personal Dee-memory
   constraints:
   - distinct from schoolbook
+  - trigger only, never the complete key
+
 - id: OBJ.DODOENS_CARRIER
   label: Bijzonder Dodoens-exemplaar / carrier
   type: BookObject
   canon_status: CANON
+  historical_status: HISTORICAL_WORK_FICTIONAL_CARRIER_PROVENANCE
+  version: Dodoens-carrier v2.9
   functions:
   - nomenclator values
+  - nine botanical table identities
   - Castanea wayfinding
-  version: Dodoens-carrier v2.9
+  tables: [C, N, H, F, P, L, D, O, S]
+  metrics:
+    nomenclator_values: 5184
+    remapped_content_values: 5165
+    carrier_references: 10506
+    unique_loci: 1909
+    printed_pages_used: 412
+    direct_carrier_values: 1823
+    compound_carrier_values: 3342
+    round_trip_verified: true
+  phases:
+  - phase: network-object
+    status: OPEN_PROVENANCE
+  - phase: Goes-apothecary-environment
+    window: {earliest: '1566-08-01', latest_exclusive: '1570-01-01', precision: bounded}
+    status: STRONG_WORK_CANON
+  - phase: active-decode-carrier
+    window: {earliest: '1570-01-01', latest_exclusive: '1571-01-01', precision: year}
+  constraints:
+  - no leaf/vein/fruit/branch counting cipher
+  - without this carrier full content-value recovery is impossible
+
 - id: OBJ.LASCASAS_PLAINTEXT
   label: Voltooide Dietse/Brabantse Las-Casas-vertaling
   type: TextObject
   canon_status: CANON
-  functions:
-  - plaintext arrives in Antwerp via wrong chest
+  historical_status: FICTIONAL_EARLY_PROVENANCE
+  phases:
+  - phase: completed-translation-before-Antwerp-encryption
+  - phase: arrives-in-Antwerp-via-wrong-chest
+  - phase: reconstructed-by-Claes-and-beloved-in-1570
+  - phase: prepared-for-safe-onward-transmission
+  - phase: led-toward-anonymous-1578-publication-in-novel-canon
+  constraints:
+  - historical 1578 publication is real; Claes provenance is fictional
+
 - id: OBJ.LASCASAS_CIPHERTEXT
   label: FINAL CIPHER-1564
   type: CipherText
   canon_status: CANON
+  historical_status: FICTIONAL_CIPHERTEXT_BASED_ON_HISTORICAL_WORK
   version: v2.7
   metrics:
     words: 30930
+    distinct_word_forms: 5172
     groups: 35584
+    groups_per_word_average: 1.150
     nomenclator_values: 5184
+    used_code_values: 4181
+    spelling_subword_segments: 1671
+    phrase_segments: 3371
+    round_trip_verified: true
+  physical_model:
+    pages_estimate: 66-75
+    sheets_estimate: 34-38
+    identical_sets_workcanon: 3-6
+  constraints:
+  - completed Diets/Brabant plaintext exists before encryption
+  - merels recovery does not recipher this stream
+
 - id: OBJ.DIRECT_KEY
   label: Oorspronkelijke directe sleutel
   type: KeyObject
   canon_status: CANON
   form_status: OPEN
-  components:
-  - 24-order
-  - orientation
-  - Castanea-anchor
+  components: [24-order, orientation, Castanea-anchor]
   constraints:
   - withheld or destroyed after safety breach
+  - not handed to Cornelis once he becomes operationally too visible
+
 - id: OBJ.MERELS_24
   label: 24 merelsproblemen
   type: PuzzleSet
   canon_status: CANON
+  historical_status: HISTORICAL_PROBLEM_TRADITION_FICTIONAL_RECOVERY_USE
   count: 24
   internal_concordance: P1–P14 + P16–P25
   reader_rule: no P numbers in-world; 24 complete sheets
+  output: permutation of theorem I–XXIV exactly once
+  notation_grammar:
+    shape: which locally distinguished stone
+    letter: which problem-local relevant locus
+    prose: when/how/under-which-response
+  constraints:
+  - P15 is research metadata, not an in-world missing puzzle
+  - no fixed modern coordinate system in-world
+  - local letters and local stone forms have problem-local meaning
+  - pigment, party and shape remain independent information layers
+
 - id: OBJ.CASTANEA
   label: Castanea-anker
   type: KeyAnchor
   canon_status: CANON
-  functions:
-  - wayfinding
-  - authentication
+  historical_status: FICTIONAL_MARKING_ON_HISTORICAL_WORK
+  functions: [wayfinding, authentication, personal-memory-bridge]
+  memory_anchor: "Castanea. Niet onze bloem — de boom."
   constraints:
   - not fruit/leaf counting
+  - no extra numeric layer
+
 - id: OBJ.PRIMUS_INDEX
   label: Primus Index
   type: IndexObject
   canon_status: CANON
-  functions:
-  - rapid identity reveal
+  historical_status: FICTIONAL
+  functions: [rapid-identity-reveal]
+  identification_time_minutes: {min: 30, max: 60}
   constraints:
   - not full plaintext
+  - marks the dramatic turn from personal mystery to moral burden
