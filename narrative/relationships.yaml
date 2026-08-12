@@ -1,0 +1,18 @@
+schema_version: "1.0.0"
+kind: NarrativeRelationshipRegistry
+relationships:
+  - id: REL.CLAES.DEE.001
+    type: Relationship
+    label: "Claes and John Dee"
+    participants: [ENT.PERSON.CLAES, ENT.PERSON.JOHN_DEE]
+    status: CANON
+    arc: ARC.CLAES.DEE
+    phases:
+      - label: "recognition"
+        story_time: {earliest: 1563-02-01, latest_exclusive: 1563-03-01, precision: month}
+        narrative_instances: [NI.SCENE.DEE_FIRST_ENCOUNTER.1563.001]
+        value_state: "distant intellectual possibility -> personally encountered figure"
+      - label: "formation"
+        story_time: {earliest: 1564-01-01, latest_exclusive: 1564-04-01, precision: interval}
+        value_state: "recognition -> formative master relationship"
+    knowledge_object_targets: [KO.VALUE, KO.CONFLICT, KO.EVENT]
