@@ -40,4 +40,5 @@ jobs:
           lemma show encounter_constraint
           lemma show possession_constraint
           lemma show clue_dependency
+          lemma show recovery_decode
           lemma show canon_consistency
