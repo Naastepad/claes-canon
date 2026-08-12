@@ -78,10 +78,12 @@ entities:
   type: Person
   label: Jan I Moretus
   fictionality: historical
-  canon_status: REJECTED_FOR_1564_TRANSLATION
+  canon_status: CANON
   roles:
   - printer
   - historical-network
+  constraints:
+  - not available as 1564 translator
 - id: ENT.PERSON.MIGGRODE
   type: Person
   label: Johannes/Jacques van Miggrode
@@ -93,57 +95,65 @@ entities:
   type: Person
   label: Juan Martín Cordero
   fictionality: historical
-  canon_status: REJECTED_FOR_1564
+  canon_status: CANON
   roles:
   - spanish-translator-context
+  constraints:
+  - not available in Antwerp in 1564
 - id: ENT.PERSON.HENDRIK_NICLAES
   type: Person
   label: Hendrik Niclaes
   fictionality: historical
-  canon_status: CONTEXT
+  canon_status: CANON
   roles:
   - founder-family-of-love
+  usage: historical context; direct story use remains conditional
 - id: ENT.PERSON.RADERMACHER
   type: Person
   label: Johan Radermacher de Oude
   fictionality: historical
-  canon_status: POSSIBLE_LATE_MIRROR
+  canon_status: OPEN
   roles:
   - merchant
   - humanist
   - network-node
+  usage: possible late social mirror
 - id: ENT.PERSON.GILLIS_HOOFTMAN
   type: Person
   label: Gillis Hooftman
   fictionality: historical
-  canon_status: CONTEXT
+  canon_status: CANON
   roles:
   - merchant
   - network-node
+  usage: historical context; direct story use remains conditional
 - id: ENT.PERSON.ORTELIUS
   type: Person
   label: Abraham Ortelius
   fictionality: historical
-  canon_status: CONTEXT
+  canon_status: CANON
   roles:
   - cartographer
   - humanist
+  usage: historical context; direct story use remains conditional
 - id: ENT.PERSON.GLAUDE_LUYTHON
   type: Person
   label: Glaude Luython
   fictionality: historical
-  canon_status: CONTEXT
+  canon_status: CANON
   roles:
   - schoolmaster
+  usage: historical context; direct story use remains conditional
 - id: ENT.PERSON.BELOVED
   type: Person
   label: Geliefde / apothekersdochter
   fictionality: fictional
-  canon_status: CANON_ROLE_OPEN_IDENTITY
+  canon_status: CANON
   roles:
   - partner
   - material-expert
   - error-checker
+  identity_status: OPEN
 - id: ENT.LOC.GOES
   type: Location
   label: Goes
@@ -173,21 +183,25 @@ entities:
   type: Location
   label: Middelburg
   fictionality: historical
-  canon_status: POSSIBLE_LATE
+  canon_status: CANON
+  story_use: OPEN
 - id: ENT.LOC.ENKHUIZEN
   type: Location
   label: Enkhuizen
   fictionality: historical
-  canon_status: CANON_CONTEXT
+  canon_status: CANON
+  usage: contextual
 - id: ENT.LOC.SILVIUS_GULDEN_ENGEL
   type: Location
   label: Silvius’ Gulden Engel
   fictionality: historical
-  canon_status: CANON_CONTEXT
+  canon_status: CANON
   parent: ENT.LOC.ANTWERP
+  usage: contextual
 - id: ENT.LOC.NISSEPAD
   type: Location
   label: Het Nissepad
   fictionality: historical_reconstructed
-  canon_status: CANON_CONTEXT
+  canon_status: CANON
   parent: ENT.LOC.GOES
+  usage: contextual
