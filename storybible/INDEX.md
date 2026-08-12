@@ -1,25 +1,46 @@
 # Storybible Index
 
-This index is intentionally structural until the full external master is mechanically imported into GitHub.
+Operational navigation for Revision 11 after structured conversion.
 
-## Authority
+## Authority and conversion
 
-- `SB.CLAES.MASTER` → `storybible/MASTER.md`
-- authoritative external edition recorded there with filename, byte size and SHA-256
+- `MASTER.md` — operating authority and precedence rules.
+- `../mapping/CONVERSION_LEDGER.yaml` — all 31 top-level source sections with line ranges and hashes.
+- `../mapping/CONVERSION_REPORT.yaml` — conversion completeness and remaining passes.
 
-## Machine-readable companion layers
+## Canon truth
 
-- Source Claims → `claims/SOURCE_CLAIMS.yaml`
-- Story Claims → `claims/STORY_CLAIMS.yaml`
-- Decisions → `claims/DECISIONS.yaml`
-- Entities → `entities/ENTITIES.yaml`
-- Narrative hierarchy → `narrative/structure.yaml`
-- Scenes → `narrative/scenes.yaml`
-- Arcs → `narrative/arcs.yaml`
-- Motifs → `narrative/motifs.yaml`
-- Relationships → `narrative/relationships.yaml`
-- Deterministic constraints → `lemma/`
+- `../claims/SOURCE_CLAIMS.yaml` — historical/research claims.
+- `../claims/STORY_CLAIMS.yaml` — atomic novel truths.
+- `../claims/DECISIONS.yaml` — explicit canon decisions.
+- `../canon/OPEN_DECISIONS.yaml` — unresolved decisions.
 
-## Generated-index target
+## World state
 
-When the full master is imported, a future index generator should extract headings and annotate each section with linked `STC.*`, `ENT.*`, `NI.*`, `ARC.*` and `MOTIF.*` identifiers. The generated index must never alter narrative canon.
+- `../entities/ENTITIES.yaml` — people and places.
+- `../objects/OBJECTS.yaml` — canonical object identities.
+- `../narrative/object_biographies.yaml` — object state changes through story time.
+- `../narrative/knowledge_states.yaml` — who knows what when.
+
+## Narrative realization
+
+- `../narrative/instances.yaml` — chapters, scenes, sequences and events.
+- `../narrative/scenes.yaml` — richer scene analyses linked by `instance_id`.
+- `../narrative/arcs.yaml` — character, relationship and macro arcs.
+- `../narrative/relationships.yaml` — relationship states.
+- `../narrative/motifs.yaml` — recurring motifs.
+- `../narrative/CRAFT_GUARDRAILS.yaml` — writing and continuity guardrails.
+
+## Deterministic engine
+
+- `../lemma/core.lemma`
+- `../lemma/knowledge.lemma`
+- `../lemma/events.lemma`
+- `../lemma/encounters.lemma`
+- `../lemma/objects.lemma`
+- `../lemma/clues.lemma`
+- `../lemma/consistency.lemma`
+
+## Diagnostics interface
+
+External Narrative Knowledge Objects (`KO.*`) are not copied into Claes canon. `NI.*` records may point to them as analysis targets, preserving the NOS distinction between universal narrative knowledge and project-specific Narrative Instances.
