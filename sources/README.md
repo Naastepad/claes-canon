@@ -1,21 +1,29 @@
 # Sources
 
-This directory is the provenance registry for historical and research material that supports canon decisions.
+This directory stores full provenance records. Atomic assertions extracted from sources belong in `claims/SOURCE_CLAIMS.yaml`; source records themselves should not be used as substitutes for Story Claims.
 
-Use stable source IDs in Lemma and keep the full citation here.
+## Required source-record fields
 
-Recommended fields per source:
+Each `SRC-*` record should, where known, include:
 
 - source ID
+- source type
+- primary / secondary / tertiary
 - author / creator
 - title
 - date
 - edition / repository / URL
-- page, folio or item reference
-- access date where relevant
-- reliability notes
-- extracted claims
-- epistemic status of each claim
-- links to affected canon proposals
+- exact locator (page, folio, item, archive reference)
+- bibliographic status (`complete`, `partial`, `needs_verification`)
+- reliability / limitations
+- verification date
+- verified by
+- linked `SC.*` claim IDs
 
-Never fabricate a source identifier or bibliographic detail. If a citation is incomplete, record the gap explicitly.
+Missing metadata must be marked explicitly rather than invented.
+
+## Direction of authority
+
+`SRC-* -> SC.* -> STC.* -> Narrative Instance / Lemma`
+
+A historical source may support plausibility without proving a fictional event. A verified Source Claim never becomes story canon automatically.
