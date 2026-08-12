@@ -1,0 +1,23 @@
+schema_version: 1.0.0
+kind: ConversionReport
+source: Claes_Storybible_MASTER_COMPLEET_2026-08-10_REVISIE11_MACROSTRUCTUUR_PROJECTIO(1).md
+source_sha256: e38430f0165e7c0779a8ae6bba6a208773c677682f55295a940e91fdb2ed9edd
+source_lines: 3803
+source_headings: 296
+outputs:
+  sections_indexed: 31
+  entities: 24
+  objects: 11
+  story_claims_curated: 34
+  narrative_instances: 22
+  arcs: 4
+  motifs: 10
+  open_decisions: 9
+  craft_guardrails: 10
+method: Full master parsed mechanically for section coverage; high-value canon was normalized into first-class registries. The source master remains the semantic authority until every lower-level paragraph has been atomically normalized.
+non_loss_rule: No unnormalized source content is considered deleted or superseded merely because it has not yet become an atomic claim.
+next_normalization_passes:
+- historical source claims
+- all person/location/object occurrences
+- chapter/scene extraction from manuscript files when imported
+- atomic normalization of remaining explicit CANON/GESLOTEN/BESLIST statements
