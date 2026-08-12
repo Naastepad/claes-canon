@@ -1,0 +1,17 @@
+spec event_window
+
+data event_earliest: date
+data event_certain_by: date
+data query_date: date
+
+rule window_valid:
+  event_certain_by >= event_earliest
+
+rule possibly_occurred:
+  window_valid and query_date >= event_earliest
+
+rule certainly_occurred:
+  window_valid and query_date >= event_certain_by
+
+rule in_uncertainty_window:
+  window_valid and query_date >= event_earliest and query_date < event_certain_by
