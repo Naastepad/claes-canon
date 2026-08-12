@@ -1,0 +1,35 @@
+schema_version: "1.0.0"
+kind: CanonDecisionRegistry
+decisions:
+  - id: DEC.MODEL.STATUS_AXES.001
+    type: ArchitectureDecision
+    status: ACTIVE
+    decision: "Evidence status and canon status are independent axes."
+    rationale: "Historical support and fictional truth answer different questions and must not be represented by one enum."
+    effects:
+      - claims/SOURCE_CLAIMS.yaml
+      - claims/STORY_CLAIMS.yaml
+      - lemma/knowledge.lemma
+
+  - id: DEC.MODEL.TIME_PRECISION.001
+    type: ArchitectureDecision
+    status: ACTIVE
+    decision: "Never manufacture an exact story date from month-, season-, year- or interval-level evidence/canon."
+    rationale: "The system must preserve historical and narrative uncertainty rather than create false precision."
+    effects:
+      - SCHEMA.md
+      - lemma/knowledge.lemma
+      - scripts/validate_canon.py
+
+  - id: DEC.CLAES.DEE_ENCOUNTER.001
+    type: StoryDecision
+    status: ACTIVE
+    decision: "Claes' first brief encounter with John Dee occurs in February 1563 in or around Silvius' Gulden Engel in Antwerp."
+    evidence_status: PLAUSIBLE
+    canon_status: CANON
+    supported_by:
+      - SC.HIST.DEE_SILVIUS.1563.001
+    storybible_ref:
+      master_id: SB.CLAES.MASTER
+      section_hint: "Chronology / first encounter with John Dee"
+    note: "The exact day remains deliberately unspecified."
