@@ -1,7 +1,7 @@
 # PROP-0001 — First encounter with John Dee, February 1563
 
 ## Status
-PROPOSED — not hard canon in Lemma yet
+PROPOSED — schema issue resolved; not hard canon in Lemma yet
 
 ## Purpose
 Introduce the first real, source-linked canon proposal and test the authoring workflow without silently converting month-level story chronology into a fabricated exact date.
@@ -36,9 +36,15 @@ Acquisition trigger:
 
 `first_encounter_claes_dee_1563`
 
+Range-aware acquisition boundaries:
+
+- `acquisition_earliest = 1563-02-01`
+- `acquisition_certain_by = 1563-03-01`
+
 Availability:
-- before the encounter: not established;
-- after the encounter: Claes can recognize Dee as someone he has personally met;
+- before 1563-02-01: not established;
+- during February 1563: possibly acquired, exact day unresolved;
+- on/after 1563-03-01: certainly acquired according to this canon claim;
 - this relation does not imply possession of later specialist knowledge.
 
 Explicit exclusions at this point:
@@ -50,36 +56,32 @@ Explicit exclusions at this point:
 Those require later, separately sourced acquisition events.
 
 ## Interaction with `lemma/knowledge.lemma`
-The current `knowledge_claim` spec accepts one exact `acquisition_date`. This proposal deliberately does **not** instantiate it yet, because the storybible provides only month precision. Using `1563-02-01` or `1563-02-16` as if either were the actual meeting date would introduce false precision.
+The range-awareness schema decision has been implemented. `knowledge_claim` now distinguishes:
 
-### Schema consequence
-Before this proposal becomes executable hard canon, the knowledge model should support either:
-1. an acquisition date range / uncertainty window; or
-2. a separate event model whose exact date can remain unresolved while downstream rules distinguish `certainly_known_by` from `possibly_known_by`.
+- `possibly_acquired_by_query_date`
+- `certainly_acquired_by_query_date`
+- `in_acquisition_uncertainty_window`
+- `can_possibly_know`
+- `can_know`
 
-This is the first schema issue discovered by applying the model to real storybible material and should be solved before merge-to-canon.
+This prevents month-level story chronology from being converted into a fabricated exact day.
 
-## Expected future tests
-Once range-aware acquisition is implemented:
+## Expected tests
 
-- query before 1563-02-01 -> `can_know_personally_dee = false`
-- query within February 1563 -> result should preserve uncertainty unless the exact encounter date is fixed
-- query on/after 1563-03-01 -> `can_know_personally_dee = true`
+- query before 1563-02-01 -> `can_know = false`, `can_possibly_know = false`
+- query during February 1563 -> `can_know = false`, `can_possibly_know = true`, uncertainty window = true
+- query on/after 1563-03-01 -> `can_know = true`, `can_possibly_know = true`
 
-A separate rule may expose `can_possibly_know_personally_dee = true` during the February window.
+## Human decision still required
+The schema decision (preserve month-level uncertainty) is approved and implemented.
 
-## Human decision required
-Approve one of the following:
+What remains for review is the canon proposal itself: whether the February 1563 first encounter should be promoted from storybible proposal material into executable Lemma canon.
 
-A. Preserve month-level uncertainty permanently and make Lemma range-aware. **Recommended.**
-
-B. Canonize an exact fictional meeting date in February 1563. If chosen, the date must be an explicit author decision, not inferred from the historical letter date.
-
-## Downstream effects if approved
+## Downstream effects if canon claim is approved
 - `events.lemma`: first Dee encounter event.
-- `knowledge.lemma`: personal-recognition acquisition boundary.
+- `knowledge.lemma`: instantiate personal-recognition acquisition boundaries.
 - later Dee knowledge must depend on separate 1564 acquisition events.
 - encounter/location checks can later verify Antwerp + Silvius environment compatibility.
 
 ## Publication gate
-Do not publish this proposal to LemmaBase as executable canon until the date-precision issue above is resolved and explicitly approved.
+Do not publish this specific encounter as executable LemmaBase canon until the canon claim itself is explicitly approved. The range-aware schema may be merged independently.
