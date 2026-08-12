@@ -1,9 +1,11 @@
 # Storybible
 
-`storybible/MASTER.md` is the stable authority anchor for the human-readable Claes storybible.
+This directory anchors the human-readable authority of the Claes project. Revision 11 has now been converted into a structured operating storybible rather than being represented by one monolithic prose file alone.
 
-At present the complete 353589-byte Revision 11 master remains externally stored and is identified in `MASTER.md` by exact filename and SHA-256. This is an explicit transitional state, not a claim that the short manifest already contains the full master prose.
+`MASTER.md` defines precedence and points to the exact lossless source edition by SHA-256. `INDEX.md` navigates the structured projection.
 
-The long-form storybible preserves meaning, continuity, interpretation, research context and open questions. Machine-readable atomic truth belongs in `claims/`; concrete dramatization belongs in `narrative/`; deterministic constraints belong in `lemma/`.
+The full 3803-line source edition is preserved as the semantic source for anything not yet atomized. Its 31 top-level sections are all accounted for in `../mapping/CONVERSION_LEDGER.yaml`, including source line ranges and section hashes.
 
-When the full master is mechanically imported, update `MASTER.md` to `IN_REPOSITORY` and regenerate `INDEX.md` without changing claim IDs.
+Structured canon is distributed across `claims/`, `entities/`, `objects/`, `narrative/`, `canon/` and `lemma/` according to responsibility. This is intentional: the storybible is now a system, not a single oversized file.
+
+If the structured projection and the source prose appear to differ, do not silently pick one. Create a proposal, inspect provenance and resolve the discrepancy by explicit human decision.
