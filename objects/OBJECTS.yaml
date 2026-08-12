@@ -70,7 +70,8 @@ objects:
 - id: OBJ.DIRECT_KEY
   label: Oorspronkelijke directe sleutel
   type: KeyObject
-  canon_status: CANON_FUNCTION_OPEN_FORM
+  canon_status: CANON
+  form_status: OPEN
   components:
   - 24-order
   - orientation
