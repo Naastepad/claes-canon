@@ -9,7 +9,8 @@ Only validated executable constraints belong in this directory. Lemma is the det
 - `events.lemma` — range-aware event occurrence and uncertainty.
 - `encounters.lemma` — life/time/location requirements for encounters.
 - `objects.lemma` — existence, possession, time and location compatibility.
-- `clues.lemma` — clue/prerequisite dependency gate for recovery and decoding.
+- `clues.lemma` — generic clue/prerequisite dependency gate.
+- `decode.lemma` — staged deterministic prerequisite chain for the Claes recovery architecture: trigger → memoriaal → merels → Monas → Dodoens → Primus Index → decode.
 - `consistency.lemma` — generic final canon consistency gate.
 
 ## Planned only when demanded by real claims
