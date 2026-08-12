@@ -31,10 +31,13 @@ jobs:
         working-directory: lemma
         run: lemma list
 
-      - name: Validate core spec
+      - name: Validate active specs
         working-directory: lemma
-        run: lemma show claes_canon_core
-
-      - name: Validate knowledge spec
-        working-directory: lemma
-        run: lemma show knowledge_claim
+        run: |
+          lemma show claes_canon_core
+          lemma show knowledge_claim
+          lemma show event_window
+          lemma show encounter_constraint
+          lemma show possession_constraint
+          lemma show clue_dependency
+          lemma show canon_consistency
