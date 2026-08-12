@@ -1,41 +1,406 @@
-schema_version: "1.0.0"
+schema_version: 1.2.0
 kind: StoryClaimRegistry
+claim_count: 34
 claims:
-  - id: STC.CLAES.DEE_ENCOUNTER.1563.001
-    type: StoryClaim
-    statement: "Claes meets John Dee for the first time in February 1563 in or around Willem Silvius' Gulden Engel in Antwerp."
-    subject: ENT.PERSON.CLAES
-    predicate: first_meets
-    object: ENT.PERSON.JOHN_DEE
-    story_time:
-      earliest: 1563-02-01
-      latest_exclusive: 1563-03-01
-      precision: month
-    locations:
-      - ENT.LOCATION.ANTWERP
-      - ENT.LOCATION.GULDEN_ENGEL
-    evidence_status: PLAUSIBLE
-    canon_status: CANON
-    supported_by:
-      - SC.HIST.DEE_SILVIUS.1563.001
-    decision_ids:
-      - DEC.CLAES.DEE_ENCOUNTER.001
-    storybible_ref:
-      master_id: SB.CLAES.MASTER
-      section_hint: "Chronology / adolescent phase / first Dee encounter"
-    narrative_instances:
-      - NI.SCENE.DEE_FIRST_ENCOUNTER.1563.001
-    affects:
-      - ARC.CLAES.DEE
-      - ARC.CLAES.LIFE
-    deterministic:
-      lemma_candidate: true
-      domains: [encounter, knowledge]
-      note: "This claim establishes personal recognition only; specialist Dee knowledge requires later claims."
-    exclusions:
-      - "Does not imply knowledge of Monas Hieroglyphica."
-      - "Does not imply knowledge of the recovery architecture."
-      - "Does not imply knowledge of vitriol activation."
-      - "Does not imply knowledge of the Las Casas operation."
-    retrieval:
-      tags: [claes, dee, encounter, antwerp, 1563]
+- id: STC.CLAES.BIRTH.001
+  type: StoryClaim
+  statement: Claes Cornelisz Nissepat is born in Goes on 8 December 1545.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  subjects:
+  - ENT.PERSON.CLAES
+  story_time:
+    date: '1545-12-08'
+    precision: day
+  tags:
+  - biography
+- id: STC.CLAES.SCHOOL.GOES.001
+  type: StoryClaim
+  statement: Claes receives elementary education in Goes before May 1554; no full official Latin school is claimed.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  subjects:
+  - ENT.PERSON.CLAES
+  objects:
+  - ENT.LOC.GOES
+  story_time:
+    earliest: '1550-01-01'
+    latest_exclusive: '1554-05-19'
+    precision: approximate
+  tags:
+  - education
+- id: STC.CLAES.REIMERSWAAL.001
+  type: StoryClaim
+  statement: After the Goes fire Claes is sent as a cost pupil to the Latin school of Reimerswaal and remains there until summer 1561.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  subjects:
+  - ENT.PERSON.CLAES
+  objects:
+  - ENT.LOC.REIMERSWAAL
+  story_time:
+    earliest: '1554-05-19'
+    latest_exclusive: '1561-09-01'
+    precision: bounded
+  tags:
+  - education
+  - location
+- id: STC.CLAES.ZIERIKZEE.PLAN.001
+  type: StoryClaim
+  statement: Zierikzee was Cornelis’ intended school destination for Claes before the 1554 fire, but it is not the actual destination.
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  subjects:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.CORNELIS
+  tags:
+  - education
+  - counterfactual-plan
+- id: STC.CLAES.LANDJUWEEL.1561.001
+  type: StoryClaim
+  statement: Claes travels from Reimerswaal to Antwerp with Cornelis for the Landjuweel in August 1561 and does not return to Reimerswaal.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  subjects:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.CORNELIS
+  objects:
+  - ENT.LOC.ANTWERP
+  story_time:
+    earliest: '1561-08-01'
+    latest_exclusive: '1561-09-01'
+    precision: month
+- id: STC.CLAES.ANTWERP_STUDY.001
+  type: StoryClaim
+  statement: From autumn 1561 Claes continues advanced practical-humanist education in Antwerp through free-school, private teaching, copy work and commerce; Leuven is not part of his route.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  subjects:
+  - ENT.PERSON.CLAES
+  objects:
+  - ENT.LOC.ANTWERP
+  story_time:
+    earliest: '1561-09-01'
+    latest_exclusive: '1564-10-04'
+    precision: interval
+  tags:
+  - education
+- id: STC.CLAES.DEE_ENCOUNTER.1563.001
+  type: StoryClaim
+  statement: Claes first meets John Dee briefly in or around Silvius’ Gulden Engel in February 1563.
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  subjects:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.JOHN_DEE
+  objects:
+  - ENT.LOC.SILVIUS_GULDEN_ENGEL
+  story_time:
+    earliest: '1563-02-01'
+    latest_exclusive: '1563-03-01'
+    precision: month
+  source_refs:
+  - SC.HIST.DEE_SILVIUS.1563.001
+- id: STC.CLAES.DEE_FORMATION.1564.001
+  type: StoryClaim
+  statement: Claes undergoes intensive practical formation with Dee and Silvius in Antwerp in January–March 1564.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  subjects:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.JOHN_DEE
+  - ENT.PERSON.WILLEM_SILVIUS
+  story_time:
+    earliest: '1564-01-01'
+    latest_exclusive: '1564-04-01'
+    precision: interval
+- id: STC.MACRO.NIGREDO_START.1564.001
+  type: StoryClaim
+  statement: 4 October 1564 is the canonical start of the adult macro-Nigredo / Gebondenheid phase.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  subjects:
+  - ENT.PERSON.CLAES
+  story_time:
+    date: '1564-10-04'
+    precision: day
+  tags:
+  - macrostructure
+- id: STC.MEMORIAAL.GIFT.001
+  type: StoryClaim
+  statement: Dee gives Claes the ordinary-looking memoriaal before Boom in early 1564 as a pedagogical workbook.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  subjects:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.JOHN_DEE
+  objects:
+  - OBJ.MEMORIAAL
+  story_time:
+    earliest: '1564-01-01'
+    latest_exclusive: '1564-04-01'
+    precision: interval
+- id: STC.MEMORIAAL.SECRET_PHASE.001
+  type: StoryClaim
+  statement: Only after the safety breach of 4 October 1564 does Claes’ existing memoriaal become a blind recovery carrier.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  subjects:
+  - ENT.PERSON.CLAES
+  objects:
+  - OBJ.MEMORIAAL
+  story_time:
+    earliest: '1564-10-04'
+    precision: lower-bound
+- id: STC.CORNELIS.FALLBACK_KNOWLEDGE.001
+  type: StoryClaim
+  statement: Cornelis knows that Claes is being used unknowingly as a fallback but does not know the recovery key itself.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  subjects:
+  - ENT.PERSON.CORNELIS
+  - ENT.PERSON.CLAES
+  story_time:
+    earliest: '1564-10-04'
+    precision: lower-bound
+- id: STC.CLAES.RETURN_GOES.1566.001
+  type: StoryClaim
+  statement: Claes returns canonically to Goes after the Beeldenstorm of 1566.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  subjects:
+  - ENT.PERSON.CLAES
+  objects:
+  - ENT.LOC.GOES
+  story_time:
+    earliest: '1566-08-01'
+    latest_exclusive: '1567-01-01'
+    precision: bounded
+- id: STC.CORNELIS.DEATH.WORK.001
+  type: StoryClaim
+  statement: Working canon places Cornelis’ arrest in the second half of 1568 and his death by or during royal persecution in late 1568 or 1569; exact details remain open.
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  subjects:
+  - ENT.PERSON.CORNELIS
+  story_time:
+    earliest: '1568-07-01'
+    latest_exclusive: '1570-01-01'
+    precision: work-window
+- id: STC.ZOVITIUS.TRIGGER.1570.001
+  type: StoryClaim
+  statement: A special 1570 Zovitius copy activates the recovery route through GALLA LEO VIRIDIS.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  subjects:
+  - ENT.PERSON.CLAES
+  objects:
+  - OBJ.ZOVITIUS_1570_TRIGGER
+  story_time:
+    earliest: '1570-01-01'
+    latest_exclusive: '1571-01-01'
+    precision: year
+- id: STC.CODE.RECOVERY_SEQUENCE.001
+  type: StoryClaim
+  statement: The canonical recovery chain is Zovitius 1570 → GALLA LEO VIRIDIS → green vitriol → memoriaal → 24 merels problems → theorem I–XXIV → personal Monas marginalia → 24×24 matrix → Castanea → nine Dodoens tables → Primus Index → nomenclator → Las Casas.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  objects:
+  - OBJ.ZOVITIUS_1570_TRIGGER
+  - OBJ.MEMORIAAL
+  - OBJ.MERELS_24
+  - OBJ.MONAS_CLAES
+  - OBJ.CASTANEA
+  - OBJ.DODOENS_CARRIER
+  - OBJ.PRIMUS_INDEX
+  - OBJ.LASCASAS_CIPHERTEXT
+  tags:
+  - code-chain
+- id: STC.CODE.MERELS.RECOVERY_NOT_CIPHER.001
+  type: StoryClaim
+  statement: Merels is an ad-hoc recovery layer and not the original cipher; the 35,584-group stream is not re-encoded after October 1564.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  objects:
+  - OBJ.MERELS_24
+  - OBJ.LASCASAS_CIPHERTEXT
+  tags:
+  - code-guardrail
+- id: STC.CODE.MERELS.P15.001
+  type: StoryClaim
+  statement: The reader and Claes encounter 24 complete unnumbered problem sheets; the scholarly P15 lacuna is author metadata and not an in-world puzzle.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  objects:
+  - OBJ.MERELS_24
+  tags:
+  - reader-layer
+  - guardrail
+- id: STC.CODE.MONAS.FUNCTION.001
+  type: StoryClaim
+  statement: Monas provides ordering, not plaintext.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  objects:
+  - OBJ.MONAS_CLAES
+  tags:
+  - code-guardrail
+- id: STC.CODE.CASTANEA.FUNCTION.001
+  type: StoryClaim
+  statement: Castanea is wayfinding/authentication, not leaf or fruit counting.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  objects:
+  - OBJ.CASTANEA
+  tags:
+  - code-guardrail
+- id: STC.CODE.DODOENS.REQUIRED.001
+  type: StoryClaim
+  statement: The Dodoens carrier is necessary for nomenclator values; without it full decoding is impossible.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  objects:
+  - OBJ.DODOENS_CARRIER
+  tags:
+  - code-guardrail
+- id: STC.CODE.PRIMUS_INDEX.FUNCTION.001
+  type: StoryClaim
+  statement: Primus Index reveals identity quickly but does not reconstruct the full text.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  objects:
+  - OBJ.PRIMUS_INDEX
+  tags:
+  - code-guardrail
+- id: STC.CODE.DURATION.001
+  type: StoryClaim
+  statement: Full 1570 reconstruction takes weeks, not one night; the working model is approximately five to eight weeks of regular work.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  subjects:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.BELOVED
+  story_time:
+    duration_days_min: 35
+    duration_days_max: 56
+    precision: working-model
+  tags:
+  - realism
+- id: STC.LASCASAS.PUBLICATION.1578.001
+  type: StoryClaim
+  statement: In novel canon, Claes’ reconstructed text is led toward anonymous publication/distribution in 1578; the historical print is real, this provenance is fictional.
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  subjects:
+  - ENT.PERSON.CLAES
+  objects:
+  - OBJ.LASCASAS_PLAINTEXT
+  story_time:
+    earliest: '1578-01-01'
+    latest_exclusive: '1579-01-01'
+    precision: year
+- id: STC.CLAES.DELFT.1584.001
+  type: StoryClaim
+  statement: Delft 1584 functions as the moral bottom of Claes’ adult Nigredo and transition toward Albedo.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  subjects:
+  - ENT.PERSON.CLAES
+  objects:
+  - ENT.LOC.DELFT
+  story_time:
+    earliest: '1584-01-01'
+    latest_exclusive: '1585-01-01'
+    precision: year
+  tags:
+  - macrostructure
+- id: STC.CLAES.PROJECTIO.001
+  type: StoryClaim
+  statement: 'The final movement is Projectio: Claes must pass something on without retaining control over what the recipient does with it.'
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  subjects:
+  - ENT.PERSON.CLAES
+  story_time:
+    earliest: '1602-01-01'
+    precision: late-phase
+  tags:
+  - macrostructure
+  - ending
+- id: STC.CLAES.SINNE.001
+  type: StoryClaim
+  statement: Claes’ core cognitive movement begins in sensation and develops from perception through recognition, comparison and pattern toward understanding and choice.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  subjects:
+  - ENT.PERSON.CLAES
+  tags:
+  - character
+  - sinne
+- id: STC.CLAES.PARADOX.001
+  type: StoryClaim
+  statement: Claes’ greatest gift is prolonged accurate observation; his weakness is continuing to observe when action is required.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  subjects:
+  - ENT.PERSON.CLAES
+  tags:
+  - character
+  - paradox
+- id: STC.CLAES.NEED.001
+  type: StoryClaim
+  statement: Claes must learn that knowledge does not remove responsibility and that action cannot wait for complete certainty.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  subjects:
+  - ENT.PERSON.CLAES
+  tags:
+  - character
+  - need
+- id: STC.CLAES.MORAL_QUESTION.001
+  type: StoryClaim
+  statement: Claes’ life question shifts from “What is true?” to “What does this truth ask of me toward the other?”
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  subjects:
+  - ENT.PERSON.CLAES
+  tags:
+  - theme
+- id: STC.MACRO.STRUCTURE.001
+  type: StoryClaim
+  statement: The authorial macrostructure is Drager → Gebondenheid/Nigredo → Onderscheiding/Albedo → Verbinding/Rubedo → Projectio/Overdracht.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  subjects:
+  - ENT.PERSON.CLAES
+  tags:
+  - macrostructure
+- id: STC.MUSIC.TRANSMUTATION.001
+  type: StoryClaim
+  statement: Contrafact and auditory memory prepare Claes to understand that a carrier can remain while words, function or meaning change; the alchemical link is thematic, not a historical claim about the songs.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  subjects:
+  - ENT.PERSON.CLAES
+  tags:
+  - motif
+  - music
+- id: STC.BREAD.TRANSMUTATION.001
+  type: StoryClaim
+  statement: Bread and baking function as a sensory material lesson in transformation across Goes, Antwerp and Enkhuizen, without imposing unsupported local baking practices.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  subjects:
+  - ENT.PERSON.CLAES
+  tags:
+  - motif
+  - bread
+- id: STC.NISSEPAD.RECONSTRUCTION.001
+  type: StoryClaim
+  statement: The Nissepad is used through a source-weighted reconstruction; exact micro-topography remains subordinate to future archival evidence.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  objects:
+  - ENT.LOC.NISSEPAD
+  tags:
+  - world
