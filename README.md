@@ -2,6 +2,18 @@
 
 Lemma-focused, McKee/NOS-inspired operating storybible for the Claes project.
 
+## AI / agent start here
+
+For ChatGPT, Claude, Gemini, Copilot and other AI systems:
+
+1. **`AI_ONBOARDING.md`** — canonical model-agnostic instructions for reading and interpreting this Storybible.
+2. **`storybible/LEMMA_MCKEE_MASTER.md`** — human-readable operating Storybible.
+3. **`WRITING_PROTOCOL.md`** — mandatory protocol for drafting, rewriting or critiquing novel prose.
+4. **`AUTHORING_POLICY.md` / `AGENTS.md`** — required for changes to canon, structured records or Lemma.
+5. **`prompts/SESSION_BOOTSTRAP.md`** — copy-paste prompt for AI sessions that do not automatically discover repository instructions.
+
+Model-specific entrypoints (`CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`) deliberately defer to `AI_ONBOARDING.md` to prevent instruction drift.
+
 ## Purpose
 
 This repository separates four responsibilities that must never be conflated:
@@ -76,4 +88,4 @@ Lemma separately validates deterministic constraints. The current layer covers t
 
 AI may read, extract, compare, propose, structure and validate. AI does **not** silently promote a hypothesis to canon and does not publish to LemmaBase without explicit human approval.
 
-See `AUTHORING_POLICY.md`, `SCHEMA.md`, `ARCHITECTURE.md`, `AGENTS.md` and `storybible/LEMMA_MCKEE_MASTER.md`.
+See `AI_ONBOARDING.md`, `WRITING_PROTOCOL.md`, `AUTHORING_POLICY.md`, `SCHEMA.md`, `ARCHITECTURE.md`, `AGENTS.md` and `storybible/LEMMA_MCKEE_MASTER.md`.
