@@ -1,0 +1,28 @@
+schema_version: "1.0.0"
+kind: NarrativeMotifRegistry
+motifs:
+  - id: MOTIF.SINNE
+    label: "Sinne"
+    status: CANON
+    description: "Claes receives the world first through sensation; perception precedes interpretation."
+    progression: "sensation -> bodily response -> recognition -> interpretation -> choice"
+    applies_to: [ENT.PERSON.CLAES, ARC.CLAES.LIFE]
+    knowledge_object_targets: [KO.VALUE, KO.EVENT]
+
+  - id: MOTIF.TEXT_MATERIAL_MEANING
+    label: "Drager / bewerking / betekenis"
+    status: CANON
+    description: "The carrier need not change; its meaning or readability changes through treatment, prior knowledge and context."
+    examples: ["contrafact", "memoriaal", "hidden writing", "Zovitius", "merels", "Monas"]
+    knowledge_object_targets: [KO.STORY, KO.VALUE]
+
+  - id: MOTIF.TIK_TIK_TIK
+    label: "tik-tik-tik"
+    status: CANON
+    description: "Recurring sound motif linking typesetting, paternal patience, violence, memory and loss."
+
+  - id: MOTIF.TRANSMUTATION
+    label: "Transmutation"
+    status: CANON
+    description: "Material and psychological transformation across Nigredo, Albedo, Rubedo and Projectio without requiring Claes to name the authorial schema."
+    applies_to: [ARC.CLAES.LIFE]
