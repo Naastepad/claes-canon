@@ -1,50 +1,67 @@
-# Claes Canon
+# Claes Canon / Storybible
 
-Private authoring repository for the formal canon of the Claes project.
+Private, Lemma-focused, McKee/NOS-inspired storybible infrastructure for the historical novel *Claes*.
 
-## Purpose
+## What this repository is
 
-This repository is the editable work layer between historical/source material, AI-assisted canon authoring, and the published LemmaBase repository `@naastepad/claes`.
+This repository is the **project-specific truth and continuity subsystem** for Claes. It combines:
 
-The workflow is deliberately asymmetric:
+- a human-readable master storybible;
+- historical provenance;
+- atomic source claims and story claims;
+- stable entities;
+- narrative instances (scene/chapter/arc/motif);
+- explicit canon decisions;
+- AI proposals and human review;
+- deterministic Lemma constraints;
+- automated continuity validation.
 
-1. Sources and the master storybible provide evidence and narrative context.
-2. AI may analyse them and propose structured canon changes.
-3. Proposed changes are written and reviewed in GitHub.
-4. Lemma files are validated before acceptance.
-5. A human approves the change.
-6. Only approved rules are published to LemmaBase.
-7. LemmaBase MCP remains the read-only execution layer for AI.
+Universal narrative theory (McKee, Truby, Coyne, etc.) belongs in a separate Narrative Knowledge Base. This repository stores the concrete Claes instances to which those Knowledge Objects may later be applied.
 
-AI-generated material must never become canon merely because it is plausible.
+## Core flow
 
-## Epistemic states
+```text
+Historical sources
+      ↓
+Source Claims (SC.*)
+      ↓
+Story Claims (STC.*) ← Canon Decisions (DEC.*)
+      ↓                         ↓
+MASTER storybible ↔ Narrative Instances (NI.*, ARC.*, MOTIF.*)
+      ↓
+Deterministic subset
+      ↓
+Lemma
+      ↓
+Consistency engine
+```
 
-- `FACT` — externally supported historical fact.
-- `CANON` — explicitly established truth inside the novel.
-- `HYPOTHESIS` — plausible reconstruction that has not been promoted to canon.
-- `DISPUTED` — conflicting evidence or interpretation.
-- `UNKNOWN` — deliberately unresolved.
+## Two status axes
 
-## Canon v1 scope
+Historical evidence and story truth are deliberately separate.
 
-The first version models only constraints that are useful for deterministic consistency checks:
+**Evidence:** `VERIFIED / SUPPORTED / PLAUSIBLE / DISPUTED / UNKNOWN`
 
-- time
-- place
-- knowledge
-- possession
-- encounters
-- clue dependencies
+**Canon:** `PROPOSED / CANON / OPEN / DEPRECATED / REJECTED`
 
-Long prose, biographies, quotations, source scans and narrative notes belong in the storybible or source registry, not in Lemma.
+A fictional encounter can therefore be `PLAUSIBLE + CANON`. A verified historical fact is not automatically story canon.
 
 ## Repository layout
 
-- `lemma/` — executable Lemma specs.
-- `storybible/` — canonical narrative source material or pointers to it.
-- `sources/` — provenance and source registry.
-- `proposals/` — AI-authored change proposals awaiting review.
-- `.github/` — review and contribution controls.
+- `storybible/MASTER.md` — logical single narrative authority; currently contains the controlled import manifest for the latest complete external master.
+- `claims/SOURCE_CLAIMS.yaml` — atomic claims extracted from historical/research sources.
+- `claims/STORY_CLAIMS.yaml` — atomic truths/candidates inside Claes.
+- `claims/DECISIONS.yaml` — explicit canon and architecture decisions.
+- `entities/ENTITIES.yaml` — stable identities for people, locations, objects, texts and organizations.
+- `narrative/` — concrete Narrative Instances, arcs and motifs.
+- `sources/` — detailed provenance records.
+- `proposals/` — reviewable AI/human change proposals.
+- `lemma/` — executable deterministic constraints only.
+- `scripts/validate_canon.py` — repository-level continuity compiler.
+- `.github/workflows/` — Lemma validation and structured-canon validation.
 
-See `AUTHORING_POLICY.md` for the acceptance workflow and `SCHEMA.md` for the data model.
+## AI authoring rule
+
+AI may extract, compare, propose, structure and test. AI may not silently promote a claim to canon or publish to LemmaBase. Every change must remain traceable from source/evidence through story claim and decision to any resulting Lemma rule.
+
+See `ARCHITECTURE.md`, `AUTHORING_POLICY.md` and `SCHEMA.md`.
