@@ -1,0 +1,75 @@
+schema_version: "1.0.0"
+kind: EntityRegistry
+entities:
+  - id: ENT.PERSON.CLAES
+    type: Person
+    label: "Claes Cornelisz Nissepat"
+    aliases: ["Claes", "Claes Nissepat"]
+    historical_status: FICTIONAL
+    canon_status: CANON
+    life:
+      birth: 1545-12-08
+      death:
+        earliest: 1602-01-01
+        latest_exclusive: 1603-01-01
+        precision: year
+    retrieval:
+      tags: [protagonist, claes, nissepat]
+
+  - id: ENT.PERSON.JOHN_DEE
+    type: Person
+    label: "John Dee"
+    historical_status: HISTORICAL
+    canon_status: CANON
+    retrieval:
+      tags: [dee, alchemy, monas, antwerp]
+
+  - id: ENT.PERSON.WILLEM_SILVIUS
+    type: Person
+    label: "Willem Silvius"
+    historical_status: HISTORICAL
+    canon_status: CANON
+    retrieval:
+      tags: [silvius, printer, antwerp]
+
+  - id: ENT.LOCATION.ANTWERP
+    type: Location
+    label: "Antwerp"
+    historical_status: HISTORICAL
+    canon_status: CANON
+    parent: null
+
+  - id: ENT.LOCATION.GULDEN_ENGEL
+    type: Location
+    label: "Willem Silvius' Gulden Engel"
+    historical_status: HISTORICAL
+    canon_status: CANON
+    parent: ENT.LOCATION.ANTWERP
+
+  - id: ENT.LOCATION.GOES
+    type: Location
+    label: "Goes"
+    historical_status: HISTORICAL
+    canon_status: CANON
+
+  - id: ENT.LOCATION.REIMERSWAAL
+    type: Location
+    label: "Reimerswaal"
+    historical_status: HISTORICAL
+    canon_status: CANON
+
+  - id: ENT.OBJECT.MEMORIAAL
+    type: Object
+    label: "Claes' memoriaalboek"
+    historical_status: FICTIONAL_OBJECT
+    canon_status: CANON
+    retrieval:
+      tags: [memoriaal, recovery, hidden-writing]
+
+  - id: ENT.TEXT.MONAS_1564
+    type: TextObject
+    label: "Monas Hieroglyphica — Claes' personal 1564 copy"
+    historical_status: HISTORICAL_WORK_FICTIONAL_COPY_PROVENANCE
+    canon_status: CANON
+    retrieval:
+      tags: [monas, dee, key-object]
