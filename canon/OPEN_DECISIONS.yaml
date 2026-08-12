@@ -1,19 +1,27 @@
-schema_version: 1.0.0
+schema_version: 1.2.0
 kind: OpenDecisionRegistry
 decisions:
 - id: OPEN.CLAES.DEATH.001
+  domain: ending
+  priority: high
   question: Exact circumstances, place and cause of Claes’ death
   status: OPEN
   fixed_function: Projectio / transfer without control
 - id: OPEN.CORNELIS.DEATH.001
+  domain: character
+  priority: high
   question: Exact date, place, formal charge and manner of Cornelis’ death
   status: OPEN
   bounded_by: second half 1568 through 1569 working canon
 - id: OPEN.MEMORIAAL.BINDING.001
+  domain: object
+  priority: high
   question: Exact bookbinding/material mechanism by which prepared rectos/quires enter the used memoriaal
   status: OPEN
   fixed: secret load follows safety breach; content and 24+2 architecture closed
 - id: OPEN.TRANSLATOR.1564.001
+  domain: historical_reconstruction
+  priority: high
   question: Identity of initial Spanish-to-Diets/intermediate source translator
   status: OPEN
   guardrails:
@@ -22,21 +30,115 @@ decisions:
   - Cordero no longer in Antwerp
   - Miggrode in Veere
 - id: OPEN.CLAES.BELOVED.IDENTITY.001
+  domain: character
+  priority: high
   question: Exact identity/name/background details of beloved/apothecary daughter
   status: OPEN
   fixed_function: material/Dodoens/error-check counterpart; Claes remains personal merels key-holder
 - id: OPEN.CHAPTER.NUMBERING.YOUTH.001
+  domain: structure
+  priority: low
   question: Whether youth chapters use parallel numbering or join the chronological numbering of 1564 sequence
   status: OPEN
 - id: OPEN.BAKERY.SCENE.001
+  domain: scene
+  priority: low
   question: Whether and where to use proposed “De Gest” bakery scene
   status: OPEN
   canon_status: OPEN
 - id: OPEN.LATE_RADERMACHER.001
+  domain: scene
+  priority: low
   question: Whether Claes directly meets Radermacher in late Middelburg line
   status: OPEN
   guardrail: network plausibility does not prove meeting or formal Familist affiliation
 - id: OPEN.MERELS.CLOSEUPS.001
+  domain: scene
+  priority: medium
   question: Which four to six merels problems receive close-up narrative treatment
   status: OPEN
   fixed: all 24 remain one recovery sequence; first/interesting double diagram/text operator/error-check/final checksum are candidates
+- id: OPEN.CODE.P1_P3_P4.001
+  domain: code
+  priority: high
+  question: Final engine/source-technical control of P1, P3 and P4
+  status: OPEN
+  guardrail: Do not alter the 24×24 architecture unless source loci actually fail
+- id: OPEN.MATERIAL.WET_TEST.001
+  domain: material
+  priority: high
+  question: Wet material test for red markers + tannin/galnut layer + diluted green vitriol + suitable paper
+  status: OPEN
+  guardrail: No untested recipe becomes hard historical prose
+- id: OPEN.MEMORIAAL.FACSIMILE.001
+  domain: object
+  priority: medium
+  question: Final facsimile hand/ductus and visual production of the 24 memoriaal diagrams
+  status: OPEN
+- id: OPEN.SECURITY.LOW_LINK.1564.001
+  domain: plot
+  priority: high
+  question: Exact low-level incident or identifiable network link that makes Cornelis operationally unsafe after 4 October 1564
+  status: OPEN
+  exclusions: [Cornelis need not be a stone thrower, Cornelis need not be arrested in 1564]
+- id: OPEN.SECURITY.DECLASSIFICATION.001
+  domain: plot
+  priority: medium
+  question: Who formally decides that Cornelis loses direct-key access — Silvius alone or Silvius with Dee/another keeper?
+  status: OPEN
+- id: OPEN.DODOENS.PROVENANCE.001
+  domain: object
+  priority: high
+  question: Exact edition/copy status, owner, date and legal/social mechanism by which the special Dodoens reaches the Goes apothecary environment
+  status: OPEN
+- id: OPEN.MOTHER.ADULT_FUNCTION.001
+  domain: character
+  priority: medium
+  question: Adult plot function of Claes' mother after Cornelis' arrest
+  status: OPEN
+- id: OPEN.GILLIS.ROLE.001
+  domain: character
+  priority: medium
+  question: Whether Marcus Antonius Gillis appears directly as limited Diets redactor/model
+  status: OPEN
+- id: OPEN.MIGGRODE.ROLE.001
+  domain: character
+  priority: low
+  question: Whether Miggrode receives any fictional pre-1578 contact line
+  status: OPEN
+- id: OPEN.DEE.SPANISH.001
+  domain: historical_reconstruction
+  priority: low
+  question: Dee's Spanish reading competence, unless new evidence closes it
+  status: OPEN
+- id: OPEN.CIPHER.PHYSICAL_PRODUCTION.001
+  domain: object
+  priority: medium
+  question: Final setting/facsimile proof, exact set count within 3–6 work canon, binding/camouflage and fate of possible 24 composite sorts
+  status: OPEN
+- id: OPEN.ZOVITIUS.DELIVERY.1570.001
+  domain: plot
+  priority: high
+  question: Exact route by which the special 1570 Zovitius copy reaches Claes in Goes
+  status: OPEN
+- id: OPEN.ANTWERP.1564.NAMES.001
+  domain: historical_research
+  priority: low
+  question: Primary verification of names, if used, for the Vrouwenbroeder of 4 October and the Walloon executed 19 December 1564
+  status: OPEN
+- id: OPEN.PUBLICATION.TRANSMISSION.1570_1578.001
+  domain: plot
+  priority: high
+  question: Exact production/transmission route of the reconstructed clear text between 1570 and the fictionally linked anonymous 1578 publication
+  status: OPEN
+- id: OPEN.CHAPTER.CALENDAR.1564.001
+  domain: chronology
+  priority: high
+  question: Calendar audit of 1564_1 through 1564_5 against wrong chest → code production → decisive transfer journey → 4 October security break
+  status: OPEN
+- id: OPEN.FINAL_MERELS.001
+  domain: ending
+  priority: medium
+  question: Exact opponent, stakes and action of the final merels scene
+  status: OPEN
+  fixed_function: Mastery expressed as balance, space and release rather than maximum domination
