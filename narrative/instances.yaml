@@ -14,7 +14,7 @@ instances:
 - id: NI.SCENE.DREMPEL.1547.001
   type: SceneInstance
   label: De Drempel
-  canon_status: DEVELOPMENT
+  canon_status: PROPOSED
   story_time:
     earliest: '1547-01-01'
     latest_exclusive: '1548-01-01'
@@ -234,7 +234,8 @@ instances:
 - id: NI.EVENT.CORNELIS_FALL.1568.001
   type: EventInstance
   label: Arrestatie en dood Cornelis
-  canon_status: CANON_WITH_OPEN_DETAILS
+  canon_status: CANON
+  details_status: OPEN
   story_time:
     earliest: '1568-07-01'
     latest_exclusive: '1570-01-01'
@@ -314,7 +315,8 @@ instances:
 - id: NI.SCENE.FINAL_MERELS.1602.001
   type: SceneInstance
   label: Laatste molenspel
-  canon_status: OPEN_FORM_CANON_FUNCTION
+  canon_status: OPEN
+  fixed_function: CANON
   story_time:
     earliest: '1602-01-01'
     precision: open-ended
