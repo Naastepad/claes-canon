@@ -1,21 +1,29 @@
 # Lemma modules
 
-Only validated executable specs belong in this directory.
+Only validated executable constraints belong in this directory. Lemma is the deterministic layer of the storybible, not the storage layer for prose, sources or narrative analysis.
 
 ## Current
 
-- `core.lemma` — minimal proven smoke-test spec. The vitriol date is test data only and is not yet canon.
+- `core.lemma` — neutral temporal boundary primitive.
+- `knowledge.lemma` — range-aware knowledge acquisition with independent `evidence_status` and `canon_status` axes.
 
-## Planned modules
+## Planned
 
-These files should be created only when their syntax and data model have been validated against the current Lemma release:
+Create only when a real story claim requires deterministic evaluation and current Lemma syntax has been validated:
 
 - `people.lemma`
 - `events.lemma`
-- `knowledge.lemma`
 - `objects.lemma`
 - `encounters.lemma`
 - `clues.lemma`
 - `consistency.lemma`
 
-Do not fill these modules with guessed syntax. Each new module should enter through a reviewed proposal and include at least one executable test case.
+## Promotion rule
+
+The preferred path is:
+
+`SRC-* -> SC.* -> STC.* -> review/decision -> Lemma constraint`
+
+A Lemma rule must point conceptually back to an accepted Story Claim; historical evidence never becomes executable story truth merely because it is verified.
+
+Do not duplicate long biographies, source quotations, arc descriptions or scene analysis in Lemma.
