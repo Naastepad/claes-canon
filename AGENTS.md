@@ -1,51 +1,63 @@
 # AI Canon Authoring Instructions
 
-This repository is the controlled, project-specific truth and continuity layer for Claes.
+This repository is the controlled operating storybible and canon layer for Claes.
 
 ## Primary objective
 
-Transform historical research and story decisions into traceable Source Claims, Story Claims, Narrative Instances and—only where appropriate—deterministic Lemma constraints.
+Preserve narrative meaning, historical provenance and deterministic continuity without conflating evidence, interpretation, story choice or narrative theory.
+
+## Read order
+
+Before proposing a change:
+
+1. `storybible/MASTER.md` and `mapping/CONVERSION_LEDGER.yaml` for authority/coverage.
+2. relevant `STC.*`, `ENT.*`, `OBJ.*`, `NI.*`, `ARC.*`, `MOTIF.*` records.
+3. relevant `SC.*` and source records.
+4. relevant Lemma constraints only when the question is deterministic.
+5. external `KO.*` knowledge objects only for narrative diagnosis, never as Claes canon.
 
 ## Mandatory behaviour
 
-1. Read the current master authority, relevant source records and existing claims before proposing changes.
-2. Create/update `SC.*` Source Claims for what evidence supports.
-3. Create/update `STC.*` Story Claims for what is true or proposed inside the novel.
-4. Keep `evidence_status` (`VERIFIED/SUPPORTED/PLAUSIBLE/DISPUTED/UNKNOWN`) separate from `canon_status` (`PROPOSED/CANON/OPEN/DEPRECATED/REJECTED`).
-5. Preserve stable IDs; do not mint a new ID merely because a label or wording changes.
-6. Link claims to stable `ENT.*` entities and relevant `NI.*`, `ARC.*` or `MOTIF.*` records.
-7. Never invent missing dates, places, relationships, quotations, bibliographic locators or source metadata.
-8. Preserve time precision. Never convert a month/year/interval into a fabricated exact date.
-9. Prefer a proposal and `DEC.*` decision record whenever a narrative choice or uncertainty requires human authority.
-10. Promote only accepted deterministic Story Claims into Lemma.
-11. Run repository continuity validation and Lemma validation when affected.
-12. Explain downstream effects of every canon-changing proposal.
-13. Never publish to LemmaBase without explicit human approval.
+1. Preserve provenance and source precision.
+2. Keep evidence status and canon status independent.
+3. Never invent missing dates, locations, relationships, quotations or bibliographic metadata.
+4. Never turn month/year precision into a fabricated exact day.
+5. Prefer a proposal over a direct canon change when genuine uncertainty exists.
+6. Treat the conversion ledger as a loss-prevention map: unatomized prose is still active source material.
+7. Keep Lemma focused on executable constraints, not prose storage or literary interpretation.
+8. Use stable IDs and references; one canonical identity record owns each `ENT.*`/`OBJ.*`/`NI.*` ID.
+9. Add/update validation when a schema or constraint changes.
+10. Explain downstream effects of every canon-changing proposal.
+11. Never publish to LemmaBase without explicit human approval.
 
-## McKee/NOS boundary
+## State vocabularies
 
-`KO.*` Knowledge Objects are external universal theory. Do not copy McKee/Truby/Coyne theory into this repository. Concrete Claes scenes, beats, arcs and motifs are Narrative Instances and may name external `KO.*` objects only as analysis targets.
+Evidence:
+`VERIFIED / SUPPORTED / PLAUSIBLE / DISPUTED / UNKNOWN`
 
-## Default reasoning questions
+Canon:
+`PROPOSED / CANON / OPEN / DEPRECATED / REJECTED`
 
-Before changing the repository, determine:
+## Reasoning boundary
 
-- What does the historical/research evidence actually say?
-- Which atomic Source Claim expresses that evidence?
-- Which separate Story Claim is being asserted or changed?
-- Is this a factual adoption, a fictional decision, an open question or a deprecated path?
-- Which entities and Narrative Instances are affected?
-- Does the change alter chronology, location, possession, encounter feasibility, knowledge acquisition or clue dependency?
-- Is a Lemma constraint genuinely required?
-- What must remain uncertain?
+Ask separately:
 
-## Preferred authoring output
+- What does the historical evidence support? (`SC.*`)
+- What has the author decided is true in the novel? (`STC.*` / `DEC.*`)
+- Where is it dramatized? (`NI.*` / arcs / motifs / relationships)
+- Is the combination logically possible? (Lemma)
+- Does the scene work narratively? (external `KO.*` diagnostics)
 
-1. Source Claims added/changed.
-2. Story Claims added/changed.
-3. Decisions required or recorded.
-4. Narrative Instances affected.
-5. Lemma rules affected, if any.
-6. Validation results.
-7. Remaining uncertainties.
-8. Downstream continuity impact.
+Do not let an answer to one question silently answer another.
+
+## Preferred authoring pass
+
+1. New evidence or story change.
+2. Source Claims affected.
+3. Story Claims affected.
+4. Entities/objects/knowledge states affected.
+5. Narrative Instances/arcs/motifs affected.
+6. Lemma constraints affected, if any.
+7. Tests and expected outcomes.
+8. Remaining open decisions.
+9. Human review before promotion/publication.
