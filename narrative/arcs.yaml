@@ -1,0 +1,56 @@
+schema_version: "1.0.0"
+kind: NarrativeArcRegistry
+arcs:
+  - id: ARC.CLAES.LIFE
+    type: CharacterArc
+    label: "Claes — cradle to grave"
+    subject: ENT.PERSON.CLAES
+    status: CANON
+    stages:
+      - id: ARC.CLAES.LIFE.01
+        label: "Ontvankelijkheid"
+        time: {earliest: 1545-12-08, latest_exclusive: 1547-01-01, precision: interval}
+        movement: "Ontvangen vóór begrijpen; zintuig en lichaam gaan betekenis vooraf."
+      - id: ARC.CLAES.LIFE.02
+        label: "Sinne / orde ontdekken"
+        time: {earliest: 1547-01-01, latest_exclusive: 1554-01-01, precision: interval}
+        movement: "Waarneming wordt patroonherkenning en eerste vertrouwen in orde."
+      - id: ARC.CLAES.LIFE.03
+        label: "Hoop onder druk"
+        time: {earliest: 1554-01-01, latest_exclusive: 1560-01-01, precision: interval}
+        movement: "Brand, ontworteling en Reimerswaal leren dat orde kwetsbaar is."
+      - id: ARC.CLAES.LIFE.04
+        label: "Interpretatie"
+        time: {earliest: 1560-01-01, latest_exclusive: 1564-01-01, precision: interval}
+        movement: "Van herkennen naar meervoudige betekenis, oordeel en hypothese."
+      - id: ARC.CLAES.LIFE.05
+        label: "Kracht / Geloof"
+        time: {earliest: 1564-01-01, latest_exclusive: 1565-01-01, precision: year}
+        movement: "Dee leert Claes handelen op waarneming en verantwoordelijkheid voor processen."
+      - id: ARC.CLAES.LIFE.06
+        label: "Zelfstandig handelen"
+        time: {earliest: 1565-01-01, latest_exclusive: 1579-01-01, precision: interval}
+        movement: "Kennis wordt keuze, risico, getuigenis en overdracht."
+      - id: ARC.CLAES.LIFE.07
+        label: "Nigredo / gevolgen dragen"
+        time: {earliest: 1579-01-01, latest_exclusive: 1585-01-01, precision: interval}
+        movement: "Macht over processen blijkt geen macht over gevolgen."
+      - id: ARC.CLAES.LIFE.08
+        label: "Schoonheid / Liefde"
+        time: {earliest: 1585-01-01, latest_exclusive: 1603-01-01, precision: interval}
+        movement: "Helder zien zonder zekerheid, kennis ten dienste van de ander en uiteindelijk loslaten."
+    higher_order_values:
+      - "Wijsheid / Hoop"
+      - "Kracht / Geloof"
+      - "Schoonheid / Liefde"
+    storybible_ref: SB.CLAES.MASTER
+
+  - id: ARC.CLAES.DEE
+    type: RelationshipArc
+    label: "Claes ↔ John Dee"
+    participants: [ENT.PERSON.CLAES, ENT.PERSON.JOHN_DEE]
+    status: CANON
+    stages:
+      - {label: "recognition", from: 1563-02-01, note: "brief first encounter"}
+      - {label: "formation", from: 1564-01-01, note: "intensive practice formation with Dee/Silvius"}
+      - {label: "internalized legacy", from: 1564-10-04, note: "Dee's methods outlive direct access and become part of the recovery architecture"}
