@@ -1,0 +1,29 @@
+spec knowledge_claim
+
+data epistemic_status: text
+  -> option "FACT"
+  -> option "CANON"
+  -> option "HYPOTHESIS"
+  -> option "DISPUTED"
+  -> option "UNKNOWN"
+
+data acquisition_date: date
+data query_date: date
+
+rule accepted_as_canon: false
+  unless epistemic_status is "FACT" then true
+  unless epistemic_status is "CANON" then true
+
+rule allowed_as_hypothesis: false
+  unless epistemic_status is "FACT" then true
+  unless epistemic_status is "CANON" then true
+  unless epistemic_status is "HYPOTHESIS" then true
+
+rule acquired_by_query_date:
+  query_date >= acquisition_date
+
+rule can_know:
+  accepted_as_canon and acquired_by_query_date
+
+rule can_possibly_know:
+  allowed_as_hypothesis and acquired_by_query_date
