@@ -1,26 +1,35 @@
-## Canon change
+## Source Claims
 
-Summarise what this PR changes.
+- [ ] Every new external assertion has an `SC.*` record.
+- [ ] Every `SC.*` references an existing `SRC-*` provenance record.
+- [ ] Evidence status is justified and no missing locator is invented.
 
-## Evidence and status
+## Story Claims
 
-- [ ] Every new factual claim has provenance.
-- [ ] FACT / CANON / HYPOTHESIS / DISPUTED / UNKNOWN are kept distinct.
-- [ ] No missing information has been invented.
+- [ ] Every changed story truth has an `STC.*` record.
+- [ ] Evidence status and canon status are independent.
+- [ ] Significant narrative choices have a `DEC.*` record where appropriate.
+- [ ] Date precision is preserved.
 
-## Lemma validation
+## Narrative Instances
 
-- [ ] Lemma syntax has been validated.
-- [ ] Relevant rules have been executed with representative test cases.
-- [ ] Expected and actual outcomes match.
+- [ ] Affected scenes/chapters/arcs/motifs/relationships are linked.
+- [ ] `KO.*` references are analysis targets only; universal theory is not duplicated here.
 
-## Human review
+## Lemma
 
-- [ ] I reviewed the diff.
-- [ ] I understand the downstream canon impact.
-- [ ] This change is approved for merge.
+- [ ] Only deterministic implications of Story Claims are modeled.
+- [ ] Lemma syntax/planning validation passes.
+- [ ] Representative possible/certain boundary cases have been considered.
 
-## LemmaBase
+## Continuity compiler
 
-- [ ] Not yet published.
-- [ ] Publish only after merge and explicit human approval.
+- [ ] `Validate Claes canon repository` passes.
+- [ ] IDs and references are stable and non-orphaned.
+- [ ] Deprecated/rejected canon is not reactivated accidentally.
+
+## Human review / publication
+
+- [ ] I reviewed the diff and downstream canon impact.
+- [ ] The change is approved for merge.
+- [ ] LemmaBase publication, if any, is a separate explicit step.
