@@ -1,0 +1,41 @@
+schema_version: "1.0.0"
+kind: StoryClaimRegistry
+claims:
+  - id: STC.CLAES.DEE_ENCOUNTER.1563.001
+    type: StoryClaim
+    statement: "Claes meets John Dee for the first time in February 1563 in or around Willem Silvius' Gulden Engel in Antwerp."
+    subject: ENT.PERSON.CLAES
+    predicate: first_meets
+    object: ENT.PERSON.JOHN_DEE
+    story_time:
+      earliest: 1563-02-01
+      latest_exclusive: 1563-03-01
+      precision: month
+    locations:
+      - ENT.LOCATION.ANTWERP
+      - ENT.LOCATION.GULDEN_ENGEL
+    evidence_status: PLAUSIBLE
+    canon_status: CANON
+    supported_by:
+      - SC.HIST.DEE_SILVIUS.1563.001
+    decision_ids:
+      - DEC.CLAES.DEE_ENCOUNTER.001
+    storybible_ref:
+      master_id: SB.CLAES.MASTER
+      section_hint: "Chronology / adolescent phase / first Dee encounter"
+    narrative_instances:
+      - NI.SCENE.DEE_FIRST_ENCOUNTER.1563.001
+    affects:
+      - ARC.CLAES.DEE
+      - ARC.CLAES.LIFE
+    deterministic:
+      lemma_candidate: true
+      domains: [encounter, knowledge]
+      note: "This claim establishes personal recognition only; specialist Dee knowledge requires later claims."
+    exclusions:
+      - "Does not imply knowledge of Monas Hieroglyphica."
+      - "Does not imply knowledge of the recovery architecture."
+      - "Does not imply knowledge of vitriol activation."
+      - "Does not imply knowledge of the Las Casas operation."
+    retrieval:
+      tags: [claes, dee, encounter, antwerp, 1563]
