@@ -1,67 +1,65 @@
 # Claes Canon / Storybible
 
-Private, Lemma-focused, McKee/NOS-inspired storybible infrastructure for the historical novel *Claes*.
+Lemma-focused, McKee/NOS-inspired operating storybible for the Claes project.
 
-## What this repository is
+## Purpose
 
-This repository is the **project-specific truth and continuity subsystem** for Claes. It combines:
+This repository separates four responsibilities that must never be conflated:
 
-- a human-readable master storybible;
-- historical provenance;
-- atomic source claims and story claims;
-- stable entities;
-- narrative instances (scene/chapter/arc/motif);
-- explicit canon decisions;
-- AI proposals and human review;
-- deterministic Lemma constraints;
-- automated continuity validation.
+1. **Evidence** — what historical/research sources support (`SC.*`).
+2. **Story truth** — what is true in the novel (`STC.*` + `DEC.*`).
+3. **Narrative meaning** — where and how that truth is dramatized (`NI.*`, `ARC.*`, `MOTIF.*`, `REL.*`).
+4. **Deterministic consistency** — only the subset that benefits from executable rules (`lemma/*.lemma`).
 
-Universal narrative theory (McKee, Truby, Coyne, etc.) belongs in a separate Narrative Knowledge Base. This repository stores the concrete Claes instances to which those Knowledge Objects may later be applied.
+Universal McKee/Truby/etc. narrative theory stays outside this repository as the Narrative Knowledge Base (`KO.*`). Concrete Claes Narrative Instances may point to those Knowledge Objects for diagnostics.
 
-## Core flow
+## Revision 11 conversion
 
-```text
-Historical sources
-      ↓
-Source Claims (SC.*)
-      ↓
-Story Claims (STC.*) ← Canon Decisions (DEC.*)
-      ↓                         ↓
-MASTER storybible ↔ Narrative Instances (NI.*, ARC.*, MOTIF.*)
-      ↓
-Deterministic subset
-      ↓
-Lemma
-      ↓
-Consistency engine
-```
+The complete Revision 11 prose master has been parsed as a source edition of 3803 lines and 296 headings, SHA-256:
 
-## Two status axes
+`e38430f0165e7c0779a8ae6bba6a208773c677682f55295a940e91fdb2ed9edd`
 
-Historical evidence and story truth are deliberately separate.
+All 31 top-level sections are accounted for in `mapping/CONVERSION_LEDGER.yaml`. The first full semantic conversion pass has normalized the continuity-critical core into claims, entities, objects, Narrative Instances, arcs, motifs, open decisions and craft guardrails. The raw long-form prose is still retained as the lossless source authority for material not yet atomized.
 
-**Evidence:** `VERIFIED / SUPPORTED / PLAUSIBLE / DISPUTED / UNKNOWN`
-
-**Canon:** `PROPOSED / CANON / OPEN / DEPRECATED / REJECTED`
-
-A fictional encounter can therefore be `PLAUSIBLE + CANON`. A verified historical fact is not automatically story canon.
+See `mapping/CONVERSION_REPORT.yaml` for explicit completeness status. No unnormalized paragraph is treated as deleted merely because it has not yet become an atomic record.
 
 ## Repository layout
 
-- `storybible/MASTER.md` — logical single narrative authority; currently contains the controlled import manifest for the latest complete external master.
-- `claims/SOURCE_CLAIMS.yaml` — atomic claims extracted from historical/research sources.
-- `claims/STORY_CLAIMS.yaml` — atomic truths/candidates inside Claes.
-- `claims/DECISIONS.yaml` — explicit canon and architecture decisions.
-- `entities/ENTITIES.yaml` — stable identities for people, locations, objects, texts and organizations.
-- `narrative/` — concrete Narrative Instances, arcs and motifs.
-- `sources/` — detailed provenance records.
+- `storybible/` — operating master authority and navigation.
+- `mapping/` — source-to-structured conversion ledger and report.
+- `claims/` — Source Claims, Story Claims and decisions.
+- `entities/` — stable persons and locations.
+- `objects/` — continuity-sensitive objects and carriers.
+- `narrative/` — Narrative Instances, arcs, motifs, relationships, knowledge states and object biographies.
+- `canon/` — unresolved author decisions.
+- `sources/` — provenance registry.
 - `proposals/` — reviewable AI/human change proposals.
 - `lemma/` — executable deterministic constraints only.
-- `scripts/validate_canon.py` — repository-level continuity compiler.
-- `.github/workflows/` — Lemma validation and structured-canon validation.
+- `scripts/validate_canon.py` — repository continuity compiler.
+- `.github/` — Lemma and continuity CI.
 
-## AI authoring rule
+## Truth flow
 
-AI may extract, compare, propose, structure and test. AI may not silently promote a claim to canon or publish to LemmaBase. Every change must remain traceable from source/evidence through story claim and decision to any resulting Lemma rule.
+`historical source -> SC.* -> STC.* -> DEC./review -> NI.* / storybible -> Lemma when deterministic`
 
-See `ARCHITECTURE.md`, `AUTHORING_POLICY.md` and `SCHEMA.md`.
+The reverse diagnostic flow is also supported:
+
+`KO.* narrative theory + NI.* Claes instance -> narrative analysis / diagnostic`
+
+## Status axes
+
+Evidence status:
+
+`VERIFIED / SUPPORTED / PLAUSIBLE / DISPUTED / UNKNOWN`
+
+Canon status:
+
+`PROPOSED / CANON / OPEN / DEPRECATED / REJECTED`
+
+These axes are independent. A fictional event may be historically plausible yet canonically fixed; a verified historical fact does not automatically become part of the novel.
+
+## Non-negotiable authoring rule
+
+AI may read, extract, compare, propose, structure and validate. AI does **not** silently promote a hypothesis to canon and does not publish to LemmaBase without explicit human approval.
+
+See `AUTHORING_POLICY.md`, `SCHEMA.md`, `ARCHITECTURE.md`, `AGENTS.md` and `storybible/MASTER.md`.
