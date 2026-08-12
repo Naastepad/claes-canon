@@ -1,0 +1,6 @@
+spec claes_canon_core 2026-08-12
+
+data event_date: date
+
+rule knows_vitriol_method: false
+  unless event_date >= 1563-05-01 then true
