@@ -68,3 +68,27 @@ Two kinds of time must never be conflated:
 2. Rule effective time: dates from which a version of a Lemma spec applies.
 
 Story dates should normally be explicit input or canon data. Lemma spec effective dates are reserved for versioning rule regimes.
+
+## Date precision and uncertainty
+
+Never invent an exact story date when the source or storybible provides only a month, season, year, or bounded interval.
+
+Knowledge acquisition uses two boundaries:
+
+- `acquisition_earliest`: earliest date on which the knowledge may already have been acquired;
+- `acquisition_certain_by`: date by which the knowledge is certainly acquired according to the accepted claim.
+
+For an exact known acquisition date, set both boundaries to the same date.
+
+For a month-level claim such as “February 1563”, represent the window as:
+
+- `acquisition_earliest = 1563-02-01`
+- `acquisition_certain_by = 1563-03-01`
+
+Semantics:
+
+- before `acquisition_earliest`: knowledge is not yet available;
+- from `acquisition_earliest` until before `acquisition_certain_by`: knowledge may already be available, but is not certain;
+- on or after `acquisition_certain_by`: accepted FACT/CANON knowledge is certainly available.
+
+This convention deliberately treats the upper boundary as exclusive for uncertainty and as the first guaranteed date. It preserves source precision rather than manufacturing a fictional day.
