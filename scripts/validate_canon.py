@@ -24,7 +24,7 @@ STRUCTURED = [
 
 EVIDENCE = {"VERIFIED", "SUPPORTED", "PLAUSIBLE", "DISPUTED", "UNKNOWN"}
 CANON = {"PROPOSED", "CANON", "OPEN", "DEPRECATED", "REJECTED"}
-ID_RE = re.compile(r"^(SC|STC|DEC|ENT|OBJ|NI|ARC|MOTIF|REL|OPEN|GRD|SB)\.[A-Z0-9_.-]+$")
+ID_RE = re.compile(r"^(SC|STC|DEC|ENT|OBJ|NI|ARC|MOTIF|REL|OPEN|GRD|SB|THEME|VALUE|WORLD|CODE)\.[A-Z0-9_.-]+$")
 SOURCE_RE = re.compile(r"^SRC-[A-Z0-9_.-]+$")
 
 errors: list[str] = []
@@ -78,7 +78,7 @@ REF_KEYS = {
     "supports_story_claims", "decision_ids", "narrative_instances",
     "story_claims", "affects", "arcs_advanced", "motifs", "claims_active",
     "claims_introduced", "applies_to", "contradicts", "qualifies",
-    "knowledge_object_targets",
+    "knowledge_object_targets", "ko_targets", "story_instance", "motif",
 }
 
 
