@@ -1,10 +1,11 @@
-schema_version: 1.1.0
+schema_version: 1.2.0
 kind: ConversionReport
 source: Claes_Storybible_MASTER_COMPLEET_2026-08-10_REVISIE11_MACROSTRUCTUUR_PROJECTIO(1).md
 source_sha256: e38430f0165e7c0779a8ae6bba6a208773c677682f55295a940e91fdb2ed9edd
 source_lines: 3803
 source_headings: 296
-conversion_scope: first_full_semantic_pass
+conversion_scope: expanded_full_semantic_pass
+operating_master: storybible/LEMMA_MCKEE_MASTER.md
 outputs:
   top_level_sections_accounted_for: 31
   entities: 24
@@ -13,19 +14,39 @@ outputs:
   narrative_instances: 22
   arcs: 4
   motifs: 10
-  open_decisions: 9
+  themes: 8
+  value_axes: 5
+  relationship_records: 5
+  world_modules: 9
+  code_architecture_records: 1
+  open_decisions: 25
   craft_guardrails: 10
-  lemma_specs_active: 7
-method: Full Revision 11 master parsed mechanically for top-level coverage; the continuity-critical canon was normalized into stable claims, entities, objects, narrative instances, arcs, motifs, open decisions and executable Lemma constraints.
-non_loss_rule: No unnormalized source content is deleted, superseded or treated as absent merely because it has not yet become an atomic record. The conversion ledger preserves source location and section hashes.
+  lemma_specs_active: 8
+method: >-
+  Revision 11 was parsed mechanically for complete top-level coverage, then
+  transmuted into a Lemma-focused, McKee/NOS-inspired operating storybible.
+  Continuity-critical canon is represented as stable claims, entities, objects,
+  Narrative Instances, arcs, motifs, relationships, thematic/value architecture,
+  actor knowledge states, world modules, explicit open decisions and executable
+  Lemma constraints. The transformed human-readable master preserves narrative
+  meaning while the structured registries expose machine-checkable state.
+non_loss_rule: >-
+  No unnormalized source content is deleted, superseded or treated as absent
+  merely because it has not yet become an atomic record. The exact source edition
+  remains authoritative context and the conversion ledger preserves source
+  location and section hashes.
 completeness:
   semantic_top_level_coverage: complete
-  continuity_critical_normalization: first_pass_complete
+  continuity_critical_normalization: expanded_first_pass_complete
+  transformed_operating_master: complete_first_edition
+  deterministic_lemma_projection: active_for_time_knowledge_event_encounter_possession_clue_decode_consistency
   paragraph_level_atomic_normalization: incomplete
+  source_bibliography_atomic_migration: incomplete
   raw_prose_physically_copied_into_repository: false
 next_normalization_passes:
-- atomize remaining explicit CANON/GESLOTEN/BESLIST statements
-- expand historical Source Claims from the source bibliography
-- expand all person/location/object occurrence relations
+- atomize remaining explicit CANON/GESLOTEN/BESLIST statements where they improve retrieval or validation
+- expand historical Source Claims from the Revision 11 bibliography and add exact locators where verified
+- expand person/location/object occurrence relations only where they add continuity value
 - map manuscript chapter and scene files when imported
-- connect additional deterministic Story Claims to Lemma test fixtures
+- add Lemma fixtures for deterministic Story Claims as concrete canon decisions are approved
+- compare every future Storybible revision against this source hash and update affected records rather than rebuilding from session memory
