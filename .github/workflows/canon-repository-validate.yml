@@ -5,7 +5,10 @@ on:
     paths:
       - "claims/**"
       - "entities/**"
+      - "objects/**"
       - "narrative/**"
+      - "canon/**"
+      - "mapping/**"
       - "sources/**"
       - "storybible/**"
       - "scripts/validate_canon.py"
@@ -15,7 +18,10 @@ on:
     paths:
       - "claims/**"
       - "entities/**"
+      - "objects/**"
       - "narrative/**"
+      - "canon/**"
+      - "mapping/**"
       - "sources/**"
       - "storybible/**"
       - "scripts/validate_canon.py"
