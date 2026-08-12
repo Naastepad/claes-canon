@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Repository-level continuity compiler for Claes.
 
-This validates the structured storybible layer. Lemma syntax is validated separately.
-The validator is deliberately conservative: it rejects broken references and status
-vocabulary, but does not infer missing historical facts or story decisions.
+Validates the McKee/NOS-inspired structured storybible layer. Lemma syntax is
+validated separately. The compiler is conservative: it checks declared state,
+references, vocabularies and temporal windows, but never invents missing facts.
 """
 from __future__ import annotations
 
@@ -13,11 +13,18 @@ import sys
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
-STRUCTURED = [ROOT / "claims", ROOT / "entities", ROOT / "narrative"]
+STRUCTURED = [
+    ROOT / "claims",
+    ROOT / "entities",
+    ROOT / "objects",
+    ROOT / "narrative",
+    ROOT / "canon",
+    ROOT / "mapping",
+]
 
 EVIDENCE = {"VERIFIED", "SUPPORTED", "PLAUSIBLE", "DISPUTED", "UNKNOWN"}
 CANON = {"PROPOSED", "CANON", "OPEN", "DEPRECATED", "REJECTED"}
-ID_RE = re.compile(r"^(SC|STC|DEC|ENT|NI|ARC|MOTIF|REL)\.[A-Z0-9_.-]+$")
+ID_RE = re.compile(r"^(SC|STC|DEC|ENT|OBJ|NI|ARC|MOTIF|REL|OPEN|GRD|SB)\.[A-Z0-9_.-]+$")
 SOURCE_RE = re.compile(r"^SRC-[A-Z0-9_.-]+$")
 
 errors: list[str] = []
@@ -28,8 +35,8 @@ source_ids = {p.stem for p in (ROOT / "sources").glob("SRC-*.md")}
 
 def walk(obj, path: Path):
     if isinstance(obj, dict):
-        if isinstance(obj.get("id"), str) and ID_RE.match(obj["id"]):
-            ident = obj["id"]
+        ident = obj.get("id")
+        if isinstance(ident, str) and ID_RE.match(ident):
             if ident in all_ids:
                 errors.append(f"duplicate id {ident}: {all_ids[ident]} and {path}")
             else:
@@ -66,10 +73,12 @@ def check_ref(value: str, where: str):
 
 
 REF_KEYS = {
-    "subject", "object", "parent", "participants", "entities", "locations", "pov",
-    "supported_by", "supports_story_claims", "decision_ids", "narrative_instances",
-    "affects", "arcs_advanced", "motifs", "claims_active", "claims_introduced",
-    "applies_to", "contradicts", "qualifies"
+    "subject", "subjects", "object", "objects", "parent", "participants",
+    "entities", "locations", "pov", "supported_by", "source_refs",
+    "supports_story_claims", "decision_ids", "narrative_instances",
+    "story_claims", "affects", "arcs_advanced", "motifs", "claims_active",
+    "claims_introduced", "applies_to", "contradicts", "qualifies",
+    "knowledge_object_targets",
 }
 
 
@@ -79,7 +88,7 @@ def validate_node(node, where: str):
             errors.append(f"invalid evidence_status {node['evidence_status']} in {where}")
         if "canon_status" in node and node["canon_status"] not in CANON:
             errors.append(f"invalid canon_status {node['canon_status']} in {where}")
-        st = node.get("story_time") or node.get("time")
+        st = node.get("story_time") or node.get("time") or node.get("window")
         if isinstance(st, dict):
             lo, hi = st.get("earliest"), st.get("latest_exclusive")
             if lo and hi and str(lo) >= str(hi):
@@ -109,12 +118,32 @@ def validate_node(node, where: str):
 for path, record in records:
     validate_node(record, f"{path}:{record.get('id', '?')}")
 
-# Active deterministic claims must not depend on deprecated/rejected story claims.
-status_by_id = {rec.get("id"): rec.get("canon_status") for _, rec in records if rec.get("canon_status")}
+# Deterministic Lemma candidates must be active canon.
 for path, record in records:
     if record.get("deterministic", {}).get("lemma_candidate"):
-        if record.get("canon_status") in {"DEPRECATED", "REJECTED"}:
-            errors.append(f"inactive claim marked lemma_candidate: {record['id']}")
+        if record.get("canon_status") != "CANON":
+            errors.append(f"non-CANON claim marked lemma_candidate: {record['id']}")
+
+# The section ledger must cover the source continuously at top-level boundaries.
+ledger = ROOT / "mapping" / "CONVERSION_LEDGER.yaml"
+if ledger.exists():
+    data = yaml.safe_load(ledger.read_text(encoding="utf-8")) or {}
+    sections = data.get("sections", [])
+    if not sections:
+        errors.append("conversion ledger contains no sections")
+    else:
+        expected = 15  # first top-level section begins after the revision header
+        for section in sections:
+            lines = section.get("source_lines", {})
+            start, end = lines.get("start"), lines.get("end")
+            if start != expected:
+                errors.append(f"conversion ledger gap/overlap before {section.get('id')}: expected {expected}, got {start}")
+            if not isinstance(end, int) or end < start:
+                errors.append(f"invalid source line interval in {section.get('id')}")
+                continue
+            expected = end + 1
+        if expected != 3804:
+            errors.append(f"conversion ledger does not end at source line 3803; next expected is {expected}")
 
 if errors:
     print("CLAES CANON VALIDATION: FAILED")
