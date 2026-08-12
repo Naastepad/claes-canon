@@ -1,46 +1,64 @@
-# Claes Canon Schema v1
+# Claes Canon Schema v2
 
 ## Design principle
 
-Lemma is used as a deterministic constraint engine, not as a general-purpose knowledge database.
+The repository separates **evidence**, **story truth**, **narrative meaning**, and **deterministic evaluation**. Lemma is the executable constraint engine, not a general-purpose knowledge database.
 
-The human-readable storybible remains the place for narrative context, quotations, biography, interpretation and long-form research notes. Lemma contains only information needed to evaluate consistency.
+The McKee/NOS influence is structural: stable IDs, explicit claims, explicit relations, provenance, normalization/uncertainty, retrieval metadata and concrete Narrative Instances. Universal Knowledge Objects remain outside this project repository.
 
-## Core domains
+## Core record families
 
-### Person
-Relevant fields may include birth/death boundaries, known locations, roles and identifiers.
+### Source Claim — `SC.*`
+An atomic assertion extracted from historical/research material. It answers: **what does the evidence support?**
 
-### Event
-A dated or bounded occurrence that can change knowledge, possession, location or relationships.
+Required concepts: statement, subject/predicate/object where useful, time precision, evidence status, source IDs, qualifications/contradictions.
 
-### Location
-A place relevant to presence, travel or encounter constraints.
+### Story Claim — `STC.*`
+An atomic proposition that is true, proposed, open, deprecated or rejected inside Claes. It answers: **what is true in the novel?**
 
-### Object
-A book, manuscript, letter, tool or other item whose existence, availability or possession can affect the story.
+A Story Claim may be supported by Source Claims and/or an explicit canon decision. Story Claims are the only claims eligible to become project-specific Lemma constraints.
 
-### Knowledge
-A capability, fact, technique or interpretation that a character may acquire.
+### Canon Decision — `DEC.*`
+A stable audit record for a human narrative or architecture choice. It explains why a claim was promoted, rejected, deprecated or modeled in a particular way.
 
-### Encounter
-A possible or canonical meeting requiring compatible time and place constraints.
+### Entity — `ENT.*`
+Stable identities for people, locations, objects, texts, organizations and other persistent referents.
 
-### Clue
-A discoverable element with prerequisites and downstream dependencies.
+### Narrative Instance — `NI.*`
+Concrete book/act/sequence/chapter/scene/beat records. These are the bridge to the external Narrative Knowledge Base. A concrete scene may identify `KO.SCENE` as an analysis target without copying McKee theory into the Claes canon.
 
-### Source
-A compact provenance identifier that points to the detailed source registry.
+### Arc — `ARC.*`
+Character, relationship or thematic change over multiple Narrative Instances.
 
-## Epistemic status
+### Motif — `MOTIF.*`
+A recurring sensory, symbolic, material or thematic pattern.
 
-- FACT
-- CANON
-- HYPOTHESIS
-- DISPUTED
-- UNKNOWN
+### Source record — `SRC-*`
+Full provenance record. Source Claims refer to source IDs rather than duplicating bibliography.
 
-## Initial rule families
+## Independent status axes
+
+### Evidence status
+
+- `VERIFIED` — directly verified against adequate evidence.
+- `SUPPORTED` — strongly supported but not fully direct/complete.
+- `PLAUSIBLE` — compatible with evidence, but the specific event/claim is not established.
+- `DISPUTED` — credible evidence conflicts.
+- `UNKNOWN` — not established.
+
+### Canon status
+
+- `PROPOSED` — candidate story truth awaiting approval.
+- `CANON` — active story truth.
+- `OPEN` — deliberately unresolved.
+- `DEPRECATED` — superseded but retained for audit.
+- `REJECTED` — explicitly not active canon.
+
+These axes are orthogonal. `VERIFIED` does not automatically imply `CANON`; a deliberate fictional event may be `PLAUSIBLE + CANON`.
+
+## Lemma boundary
+
+Lemma receives only deterministic implications of accepted Story Claims. Initial rule families remain:
 
 - `can_know`
 - `can_meet`
@@ -50,45 +68,53 @@ A compact provenance identifier that points to the detailed source registry.
 - `can_decode`
 - `canon_consistent`
 
-## Provenance
+A typical flow is:
 
-Lemma should use compact source identifiers rather than full citations. Full bibliographic data belongs in `sources/`.
-
-Suggested identifier pattern:
-
-`SRC-<YEAR>-<AUTHOR_OR_COLLECTION>-<NNN>`
-
-Example: `SRC-1566-ORTELIUS-001`.
+`SRC-* -> SC.* -> STC.* -> DEC/review -> Lemma`
 
 ## Temporal distinction
 
-Two kinds of time must never be conflated:
+Never conflate:
 
-1. Story time: dates on which events happen to characters.
-2. Rule effective time: dates from which a version of a Lemma spec applies.
-
-Story dates should normally be explicit input or canon data. Lemma spec effective dates are reserved for versioning rule regimes.
+1. **story time** — when something happens in Claes;
+2. **rule effective time** — which temporal version of a Lemma spec applies.
 
 ## Date precision and uncertainty
 
-Never invent an exact story date when the source or storybible provides only a month, season, year, or bounded interval.
+Never invent an exact story date when the source or storybible provides only a month, season, year or bounded interval.
 
-Knowledge acquisition uses two boundaries:
+Use half-open windows where practical:
 
-- `acquisition_earliest`: earliest date on which the knowledge may already have been acquired;
-- `acquisition_certain_by`: date by which the knowledge is certainly acquired according to the accepted claim.
+`earliest <= time < latest_exclusive`
 
-For an exact known acquisition date, set both boundaries to the same date.
+For a month-level claim such as February 1563:
 
-For a month-level claim such as “February 1563”, represent the window as:
+- `earliest = 1563-02-01`
+- `latest_exclusive = 1563-03-01`
+- `precision = month`
 
-- `acquisition_earliest = 1563-02-01`
-- `acquisition_certain_by = 1563-03-01`
+For knowledge acquisition, Lemma uses:
 
-Semantics:
+- `acquisition_earliest` — earliest possible acquisition;
+- `acquisition_certain_by` — first date by which acquisition is certain.
 
-- before `acquisition_earliest`: knowledge is not yet available;
-- from `acquisition_earliest` until before `acquisition_certain_by`: knowledge may already be available, but is not certain;
-- on or after `acquisition_certain_by`: accepted FACT/CANON knowledge is certainly available.
+Thus the interval between those values preserves uncertainty without manufacturing a day.
 
-This convention deliberately treats the upper boundary as exclusive for uncertainty and as the first guaranteed date. It preserves source precision rather than manufacturing a fictional day.
+## Provenance and retrieval
+
+Structured records may include compact retrieval tags and analysis targets. Full quotations, long biographies, research notes and interpretive prose remain in the master storybible or source registry.
+
+## Validation invariants
+
+The repository continuity compiler should reject, at minimum:
+
+- duplicate IDs;
+- unresolved entity/claim/decision references;
+- missing `SRC-*` records;
+- invalid status vocabulary;
+- impossible or reversed date windows;
+- precision that contradicts encoded dates;
+- deprecated/rejected deterministic claims being treated as active;
+- future dangling Narrative Instance references.
+
+Lemmas are validated separately by the pinned Lemma CLI.
