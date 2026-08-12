@@ -1,90 +1,100 @@
 # Claes Storybible Architecture
 
-## Principle
+## Core distinction
 
-This repository is a project-specific Narrative Operating System for *Claes*. It separates four concerns that must never be collapsed:
+`claes-canon` is the project-specific truth, continuity and narrative-instance layer for the novel. It is inspired by the McKee/NOS Knowledge Object architecture but does not absorb universal narrative theory.
 
-1. **Historical evidence** — what external sources support.
-2. **Story truth** — what is true inside the novel.
-3. **Narrative meaning** — how scenes, arcs, motifs and relationships carry the story.
-4. **Deterministic constraints** — what Lemma can evaluate exactly.
+Three systems remain distinct:
 
-The design is inspired by the NOS McKee Knowledge Object model: stable IDs, explicit provenance, explicit relations, normalization status, diagnostics and retrieval metadata. McKee/Truby/Coyne knowledge itself remains outside this repository; this repository stores the concrete Claes instances to which such knowledge can later be applied.
+### 1. Narrative Knowledge Base — external
+Universal craft knowledge from McKee, Truby, Coyne, Weiland and other sources.
 
-## Data flow
+Typical objects:
+- `KO.SCENE`
+- `KO.EVENT`
+- `KO.VALUE`
+- `KO.CONFLICT`
+- `KO.STRUCTURE`
 
-```text
-HISTORICAL SOURCES
-        |
-        v
-SOURCE CLAIMS (SC.*)
-        |
-        v
-STORY CLAIMS (STC.*) <---- CANON DECISIONS (DEC.*)
-        |                         |
-        +-----------+-------------+
-                    |
-          +---------+---------+
-          |                   |
-          v                   v
- MASTER STORYBIBLE      NARRATIVE INSTANCES
-                         chapter/scene/arc/motif
-          |                   |
-          +---------+---------+
-                    |
-                    v
-          DETERMINISTIC CLAIMS
-                    |
-                    v
-                  LEMMA
-                    |
-                    v
-            CONSISTENCY ENGINE
-```
+This layer answers: **what narrative principles exist and how can a story instance be diagnosed?**
 
-## Namespaces
+### 2. Claes Storybible / Canon — this repository
+Project truth, provenance and dramatic realization.
 
-- `SC.*` — source claims.
-- `STC.*` — story claims.
-- `DEC.*` — explicit canon/architecture decisions.
-- `ENT.*` — stable entities: people, places, objects, organizations, texts.
-- `NI.*` — narrative instances: books, acts, sequences, chapters, scenes, beats.
-- `ARC.*` — character, relationship and thematic arcs.
-- `MOTIF.*` — recurring motifs.
-- `REL.*` — explicit cross-object relations when needed.
-- `SRC-*` — source records.
-- `PROP-*` — proposed changes awaiting review.
+Flow:
 
-IDs are permanent. Renaming a label never changes the ID.
+`Historical sources -> SC.* Source Claims -> STC.* Story Claims -> DEC.* human decisions -> ENT./OBJ. -> NI./ARC./MOTIF./REL.`
 
-## Two independent status axes
+This layer answers: **what is true in Claes, why is it true, and where/how is it dramatized?**
 
-### Evidence status
+### 3. Lemma — deterministic projection
+Only constraints that can be meaningfully evaluated as rules:
+- temporal windows;
+- knowledge acquisition;
+- encounters;
+- possession/object availability;
+- clue dependencies;
+- final consistency gates.
 
-- `VERIFIED` — directly verified against adequate evidence.
-- `SUPPORTED` — strongly supported but not fully direct/complete.
-- `PLAUSIBLE` — historically compatible but not evidenced as the specific event/claim.
-- `DISPUTED` — credible evidence conflicts.
-- `UNKNOWN` — not established.
+This layer answers: **can these accepted story truths coexist under the declared constraints?**
 
-### Canon status
+## McKee/NOS bridge
 
-- `PROPOSED` — candidate story truth awaiting approval.
-- `CANON` — active story truth.
-- `OPEN` — deliberately unresolved story question.
-- `DEPRECATED` — superseded; retained for audit/history.
-- `REJECTED` — explicitly not part of active canon.
+Narrative Instances are the interface:
 
-Evidence and canon are orthogonal. A fictional event can be `PLAUSIBLE + CANON`; an external historical fact can be `VERIFIED + CANON` when the novel adopts it.
+`KO.* + NI.* -> diagnostic`
 
-## Narrative Knowledge Base boundary
+Example: a concrete Claes scene may point to `KO.VALUE`, `KO.CONFLICT` and `KO.SCENE`, allowing an external reasoning engine to ask whether the scene turns a value, applies pressure and produces a meaningful event.
 
-Universal narrative theory is not duplicated here. A McKee object such as `KO.SCENE` belongs in the Narrative Knowledge Base. A concrete Claes scene belongs here as an `NI.SCENE.*` record. The reasoning layer may later combine both:
+The theoretical KO remains universal; the NI remains specific to Claes.
 
-`KO.SCENE + NI.SCENE.* -> diagnostic`.
+## Conversion of Revision 11
 
-## Lemma boundary
+The source master is preserved by SHA-256 and line identity. `mapping/CONVERSION_LEDGER.yaml` accounts for all 31 top-level sections and maps each to structured targets. `mapping/CONVERSION_REPORT.yaml` states what is and is not yet atomized.
 
-Lemma is the executable constraint layer, not the story database. Only story claims whose truth can be evaluated deterministically should become Lemma inputs/rules: chronology, presence, possession, knowledge acquisition, encounter feasibility, clue dependencies and similar constraints.
+The structured operating storybible currently comprises:
+- story claims;
+- source claims;
+- decisions;
+- entities;
+- object registry + object biographies;
+- narrative instances;
+- character/relationship/macro arcs;
+- motifs;
+- knowledge states;
+- craft guardrails;
+- open decisions;
+- executable Lemma constraints.
 
-Long-form interpretation stays in `storybible/`; atomic truth stays in `claims/`; narrative placement stays in `narrative/`.
+Unatomized prose remains active source material. Conversion is therefore loss-preserving rather than destructive.
+
+## Status model
+
+Evidence and canon are separate dimensions.
+
+Evidence:
+`VERIFIED / SUPPORTED / PLAUSIBLE / DISPUTED / UNKNOWN`
+
+Canon:
+`PROPOSED / CANON / OPEN / DEPRECATED / REJECTED`
+
+A historically verified statement is not automatically story canon. A fictional but plausible event can be `PLAUSIBLE + CANON` by explicit author decision.
+
+## Precedence
+
+1. Explicit current human decisions (`DEC.*`).
+2. Active Story Claims (`STC.*`).
+3. Lossless Revision 11 prose for material not yet atomized.
+4. Structured Narrative Instances for realization in the book.
+5. Lemma for consistency, never invention.
+
+Any conflict enters `proposals/`; no layer silently overwrites another.
+
+## Validation
+
+Two independent CI layers run on pull requests:
+
+- **Validate Claes canon repository** — IDs, references, vocabularies, source records, time windows and conversion-ledger coverage.
+- **Validate Lemma canon** — parses/discovers every active Lemma spec under the pinned Lemma release.
+
+This makes GitHub both the review history and the continuity compiler for the novel.
