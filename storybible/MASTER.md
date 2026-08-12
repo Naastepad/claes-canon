@@ -1,42 +1,61 @@
-# Claes Storybible — MASTER
+# Claes Storybible — MASTER / operating authority
 
 **Logical master ID:** `SB.CLAES.MASTER`
 
-This file is the repository anchor for the single human-readable narrative truth of the Claes project.
+This repository now contains the **structured operating projection** of Revision 11. The original long-form edition remains the lossless prose source from which this projection was transmuted.
 
-## Current imported authority
-
-The current authoritative working edition is:
+## Source edition
 
 `Claes_Storybible_MASTER_COMPLEET_2026-08-10_REVISIE11_MACROSTRUCTUUR_PROJECTIO(1).md`
 
-- size: `353589` bytes
+- source lines: `3803`
+- parsed headings: `296`
 - SHA-256: `e38430f0165e7c0779a8ae6bba6a208773c677682f55295a940e91fdb2ed9edd`
-- status: `AUTHORITATIVE_EXTERNAL_MASTER_PENDING_MECHANICAL_GITHUB_IMPORT`
+- source role: `LOSSLESS_PROSE_AUTHORITY`
+- structured role: `IN_REPOSITORY_OPERATING_PROJECTION`
 
-The full source file is retained outside GitHub in the project file library. This manifest exists so that claims, decisions and narrative instances can already refer to one stable master identity without pretending that a partial copy is complete.
+The raw 3803-line prose source is not silently replaced by a summary. Every top-level section is registered in `mapping/CONVERSION_LEDGER.yaml` with source line boundaries and a section hash. Material not yet atomized remains active source material rather than disappearing.
 
-## Canon rule
+## Structured operating master
 
-Until the full 353589-byte master is mechanically imported into this repository, **do not replace or paraphrase it as if this manifest were the complete storybible**. For narrative continuity, the external file identified above remains authoritative.
+The storybible is now distributed by responsibility:
 
-Once imported, this path itself (`storybible/MASTER.md`) becomes the only narrative master and the import status above must change to `IN_REPOSITORY`.
+- `mapping/CONVERSION_LEDGER.yaml` — loss-prevention map from all 31 top-level source sections into the structured model;
+- `mapping/CONVERSION_REPORT.yaml` — conversion scope and next normalization passes;
+- `claims/SOURCE_CLAIMS.yaml` — atomic claims about historical/research reality;
+- `claims/STORY_CLAIMS.yaml` — atomic truths of the novel;
+- `claims/DECISIONS.yaml` — human canon/architecture decisions;
+- `entities/ENTITIES.yaml` — stable persons and locations;
+- `objects/OBJECTS.yaml` — books, carriers, keys and other continuity-sensitive objects;
+- `narrative/instances.yaml` — concrete chapters, scenes, sequences and events;
+- `narrative/arcs.yaml` — character, relationship and macro-transformation arcs;
+- `narrative/motifs.yaml` — recurring sensory/symbolic structures;
+- `narrative/CRAFT_GUARDRAILS.yaml` — writing and continuity constraints;
+- `canon/OPEN_DECISIONS.yaml` — genuinely unresolved author decisions;
+- `lemma/` — only the deterministic subset that benefits from executable consistency rules.
 
-## Architectural role
+## McKee/NOS interface
 
-The master explains meaning and continuity in prose. It does not replace the atomic registries:
+The Claes repository does **not** contain universal McKee/Truby/etc. theory as canon. Concrete Narrative Instances may point to external `KO.*` Knowledge Objects for analysis. Thus:
 
-- `claims/SOURCE_CLAIMS.yaml` — what evidence says;
-- `claims/STORY_CLAIMS.yaml` — what is true in the novel;
-- `claims/DECISIONS.yaml` — why canon/architecture choices were made;
-- `entities/ENTITIES.yaml` — stable identities;
-- `narrative/` — where truth is dramatized;
-- `lemma/` — deterministic constraints only.
+`Narrative Knowledge Base (KO.*) + Claes Narrative Instances (NI.*) -> diagnostics`
 
-## Loss-prevention rule
+while:
 
-A future master may be called complete only when:
+`Source Claims (SC.*) -> Story Claims (STC.*) -> Lemma -> deterministic consistency`
 
-1. every previously active major section is retained or explicitly marked deprecated;
-2. every new canon decision is propagated to all affected chronology, entity, knowledge, object and narrative records;
-3. resolved open points are removed from active `OPEN` status and retained in the audit trail rather than silently resurrected.
+## Precedence
+
+1. An explicit current human canon decision (`DEC.*`) governs structured canon state.
+2. Active `STC.*` records are the machine-readable story truth.
+3. The lossless Revision 11 prose source governs meaning not yet atomized.
+4. Lemma may reject an impossible combination, but Lemma never invents story truth.
+5. AI proposals never become canon merely by being plausible.
+
+If structured data and the source prose appear to conflict, create a proposal and resolve it explicitly. Never silently overwrite either layer.
+
+## Conversion state
+
+Revision 11 has completed a **first full semantic conversion pass**: all 31 top-level sections are accounted for, and the core chronology, character arc, macrostructure, code architecture, objects, motifs, open decisions and key Narrative Instances have been normalized.
+
+This does **not** mean every paragraph has already become its own atomic record. The conversion ledger makes that remaining normalization measurable and loss-safe.
