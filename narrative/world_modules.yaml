@@ -1,9 +1,10 @@
-schema_version: 1.0.1
+schema_version: 1.0.2
 kind: WorldModuleRegistry
 modules:
   - id: WORLD.GOES
     label: "Goes — topography, trade and catastrophe"
-    canon_status: CANON_FRAMEWORK
+    canon_status: CANON
+    record_role: FRAMEWORK
     historical_method: SOURCE_WEIGHTED_RECONSTRUCTION
     anchors:
       - {date: 1554-05-18, event: "major city fire", story_instance: NI.EVENT.GOES_FIRE.1554.001}
@@ -16,7 +17,8 @@ modules:
 
   - id: WORLD.REIMERSWAAL
     label: "Reimerswaal — cost pupil and Latin school years"
-    canon_status: CANON_FRAMEWORK
+    canon_status: CANON
+    record_role: FRAMEWORK
     historical_method: SOURCE_WEIGHTED_RECONSTRUCTION
     claes_presence: {earliest: 1554-05-19, latest_exclusive: 1561-09-01, precision: bounded}
     narrative_functions: ["displacement", "Latin formation", "water/earth half of elemental symmetry", "adaptation to strange households", "water-marked Zovitius object biography"]
@@ -27,7 +29,8 @@ modules:
 
   - id: WORLD.ANTWERP
     label: "Antwerp — free schools, trade, printing and clandestine knowledge"
-    canon_status: CANON_FRAMEWORK
+    canon_status: CANON
+    record_role: FRAMEWORK
     narrative_functions: ["Landjuweel and multiple representation", "advanced practical-humanist formation", "Silvius/Dee network", "print-production reality", "security break and compartmentalisation"]
     educational_model:
       includes: ["free-school environment", "private instruction", "Latin", "limited Greek", "French", "bookkeeping", "copying", "trade correspondence"]
@@ -38,7 +41,8 @@ modules:
 
   - id: WORLD.NISSEPAD
     label: "Nissepad — source-weighted family landscape"
-    canon_status: CANON_FRAMEWORK
+    canon_status: CANON
+    record_role: FRAMEWORK
     historical_method: SOURCE_WEIGHTED_RECONSTRUCTION
     story_claims: [STC.NISSEPAD.RECONSTRUCTION.001]
     functions: ["family geography", "route and movement realism", "late memory landscape"]
@@ -49,7 +53,8 @@ modules:
 
   - id: WORLD.BREAD_GRAIN
     label: "Bread, grain and baking"
-    canon_status: CANON_FRAMEWORK
+    canon_status: CANON
+    record_role: FRAMEWORK
     historical_method: REGIONAL_SOURCE_WEIGHTING
     regions:
       Goes_Zeeland: "bread as matter and origin"
@@ -64,7 +69,8 @@ modules:
 
   - id: WORLD.SALT
     label: "Salt as economic and elemental material"
-    canon_status: CANON_FRAMEWORK
+    canon_status: CANON
+    record_role: FRAMEWORK
     narrative_functions: ["family capital and Goes fire loss", "material bridge between Goes and Reimerswaal", "trade and landscape"]
     elemental_symmetry: {Goes: [fire, air], Reimerswaal: [water, earth]}
     guardrails:
@@ -73,7 +79,8 @@ modules:
 
   - id: WORLD.MUSIC_PRAYER_TRANSFORMATION
     label: "Music, prayer and confessional transition"
-    canon_status: CANON_FRAMEWORK
+    canon_status: CANON
+    record_role: FRAMEWORK
     historical_method: HISTORICAL_CULTURE_PLUS_AUTHORIAL_RESONANCE
     progression: ["Catholic and vernacular musical world", "contrafact: known melody carries changed words", "increasing confessional differentiation and group identity"]
     narrative_functions: ["auditory memory", "carrier/content distinction", "preparation for later hidden-reading architecture"]
@@ -84,7 +91,8 @@ modules:
 
   - id: WORLD.HOUSE_OF_LOVE_NETWORK
     label: "Huis der Liefde / Radermacher — network mirror"
-    canon_status: CANON_FRAMEWORK
+    canon_status: CANON
+    record_role: FRAMEWORK
     historical_method: PLAUSIBLE_NETWORK_LAYER
     functions: ["Antwerp-Middelburg-book-culture outer ring", "late social mirror for Rubedo", "model of discreet cross-border recognition/help"]
     guardrails:
@@ -94,7 +102,8 @@ modules:
 
   - id: WORLD.PRINT_BOOK_NETWORK
     label: "Print world and object circulation"
-    canon_status: CANON_FRAMEWORK
+    canon_status: CANON
+    record_role: FRAMEWORK
     actors: [ENT.PERSON.WILLEM_SILVIUS, ENT.PERSON.JOHN_DEE]
     peripheral_actors: [ENT.PERSON.PLANTIN, ENT.PERSON.MARCUS_GILLIS]
     functions: ["texts acquire second bodies in print", "editorial correction and production are distinct from translation and cipher knowledge", "compartmentalised roles prevent one person from knowing source, key and destination"]
