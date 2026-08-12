@@ -1,0 +1,42 @@
+schema_version: 1.0.0
+kind: OpenDecisionRegistry
+decisions:
+- id: OPEN.CLAES.DEATH.001
+  question: Exact circumstances, place and cause of Claes’ death
+  status: OPEN
+  fixed_function: Projectio / transfer without control
+- id: OPEN.CORNELIS.DEATH.001
+  question: Exact date, place, formal charge and manner of Cornelis’ death
+  status: OPEN
+  bounded_by: second half 1568 through 1569 working canon
+- id: OPEN.MEMORIAAL.BINDING.001
+  question: Exact bookbinding/material mechanism by which prepared rectos/quires enter the used memoriaal
+  status: OPEN
+  fixed: secret load follows safety breach; content and 24+2 architecture closed
+- id: OPEN.TRANSLATOR.1564.001
+  question: Identity of initial Spanish-to-Diets/intermediate source translator
+  status: OPEN
+  guardrails:
+  - Gillis may be Dutch stylist/editor; Spanish competence unproven
+  - Moretus unavailable for 1564
+  - Cordero no longer in Antwerp
+  - Miggrode in Veere
+- id: OPEN.CLAES.BELOVED.IDENTITY.001
+  question: Exact identity/name/background details of beloved/apothecary daughter
+  status: OPEN
+  fixed_function: material/Dodoens/error-check counterpart; Claes remains personal merels key-holder
+- id: OPEN.CHAPTER.NUMBERING.YOUTH.001
+  question: Whether youth chapters use parallel numbering or join the chronological numbering of 1564 sequence
+  status: OPEN
+- id: OPEN.BAKERY.SCENE.001
+  question: Whether and where to use proposed “De Gest” bakery scene
+  status: OPEN
+  canon_status: not yet canon
+- id: OPEN.LATE_RADERMACHER.001
+  question: Whether Claes directly meets Radermacher in late Middelburg line
+  status: OPEN
+  guardrail: network plausibility does not prove meeting or formal Familist affiliation
+- id: OPEN.MERELS.CLOSEUPS.001
+  question: Which four to six merels problems receive close-up narrative treatment
+  status: OPEN
+  fixed: all 24 remain one recovery sequence; first/interesting double diagram/text operator/error-check/final checksum are candidates
