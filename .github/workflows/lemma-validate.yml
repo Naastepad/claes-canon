@@ -1,0 +1,40 @@
+name: Validate Lemma canon
+
+on:
+  pull_request:
+    paths:
+      - "lemma/**/*.lemma"
+      - ".github/workflows/lemma-validate.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "lemma/**/*.lemma"
+      - ".github/workflows/lemma-validate.yml"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install pinned Lemma CLI
+        run: npm install -g lemma@0.9.4
+
+      - name: Discover specs
+        working-directory: lemma
+        run: lemma list
+
+      - name: Validate core spec
+        working-directory: lemma
+        run: lemma show claes_canon_core
+
+      - name: Validate knowledge spec
+        working-directory: lemma
+        run: lemma show knowledge_claim
