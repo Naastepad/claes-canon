@@ -1,0 +1,22 @@
+spec encounter_constraint
+
+data canon_status: text
+  -> option "PROPOSED"
+  -> option "CANON"
+  -> option "OPEN"
+  -> option "DEPRECATED"
+  -> option "REJECTED"
+
+data person_a_alive: boolean
+data person_b_alive: boolean
+data temporal_overlap: boolean
+data location_overlap: boolean
+
+rule active_canon: false
+  unless canon_status is "CANON" then true
+
+rule encounter_possible:
+  person_a_alive and person_b_alive and temporal_overlap and location_overlap
+
+rule canonical_encounter_valid:
+  active_canon and encounter_possible
