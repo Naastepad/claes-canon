@@ -1,0 +1,156 @@
+schema_version: 1.0.0
+kind: CodeArchitectureRegistry
+id: CODE.RECOVERY.CLAES.1570
+canon_status: CANON
+source_storybible_section: "4B COMPLETE CODEARCHITECTUUR"
+purpose: "Formal human-readable representation of the closed recovery architecture; Lemma consumes only deterministic subsets."
+chain:
+  - step: 1
+    id: CODE.STEP.ZOVITIUS_TRIGGER
+    input: OBJ.ZOVITIUS_1570_TRIGGER
+    output: "GALLA LEO VIRIDIS"
+    meaning: "personal activation signal"
+  - step: 2
+    id: CODE.STEP.VITRIOL
+    input: "GALLA LEO VIRIDIS"
+    output: "controlled use of green vitriol"
+    prerequisite: "Dee-memory + suitable material handling"
+  - step: 3
+    id: CODE.STEP.MEMORIAAL_REVEAL
+    input: OBJ.MEMORIAAL
+    output: OBJ.MERELS_24
+    effect: "hidden recto layer becomes readable"
+  - step: 4
+    id: CODE.STEP.MERELS
+    input: OBJ.MERELS_24
+    output: "theorem permutation I-XXIV"
+    checksum: "I through XXIV exactly once"
+  - step: 5
+    id: CODE.STEP.MONAS
+    input: OBJ.MONAS_CLAES
+    output: "row and column permutations"
+    function: "ordering"
+  - step: 6
+    id: CODE.STEP.MATRIX
+    input: "24 problem-order notae + 24 theorem-order notae"
+    output: "24 x 24 matrix"
+    combinations: 576
+  - step: 7
+    id: CODE.STEP.CASTANEA
+    input: OBJ.CASTANEA
+    output: "entry into special Dodoens carrier"
+    function: "wayfinding/authentication"
+  - step: 8
+    id: CODE.STEP.DODOENS
+    input: OBJ.DODOENS_CARRIER
+    output: "nine-table third dimension"
+    tables: [C, N, H, F, P, L, D, O, S]
+    nomenclator_values: 5184
+  - step: 9
+    id: CODE.STEP.PRIMUS_INDEX
+    input: OBJ.PRIMUS_INDEX
+    output: "identity: Bartolome de Las Casas / destruction of the Indies / Diets-Brabant translation"
+    narrative_time_to_identity_minutes: {min: 30, max: 60}
+  - step: 10
+    id: CODE.STEP.FULL_DECODE
+    input: [OBJ.LASCASAS_CIPHERTEXT, OBJ.DODOENS_CARRIER]
+    output: OBJ.LASCASAS_PLAINTEXT
+    work_duration_days: {min: 35, max: 56}
+    work_hours_estimate: {min: 172, max: 256}
+
+merels:
+  count: 24
+  historical_basis: "Bonus Socius merels tradition; Paris and Florence principal witnesses in author research"
+  author_concordance: [P01, P02, P03, P04, P05, P06, P07, P08, P09, P10, P11, P12, P13, P14, P16, P17, P18, P19, P20, P21, P22, P23, P24, P25]
+  reader_layer_numbering: false
+  p15_rule: "not an in-world lacuna, checksum or hidden clue"
+  theorem_sequence_by_problem: [I, II, III, IV, V, XXIV, XIV, VII, VIII, IX, X, XI, XII, XV, XVI, XVII, XVIII, XIX, XX, XXI, XIII, XXIII, XXII, VI]
+  local_notation_grammar:
+    shape: "which locally distinguished stone"
+    letter: "which problem-local relevant locus"
+    prose: "when, how and under which response/condition"
+  forbidden_in_world:
+    - "fixed modern a1-g7 coordinates"
+    - "engine IDs"
+    - "historical arrows invented from modern trail visualisation"
+    - "universal meaning assigned to stone shape"
+    - "pigment treated automatically as party identity"
+
+monas:
+  note_alphabet:
+    Luna: L
+    Sol: S
+    Crux_Elementorum: C
+    Aries: A
+  permutation_count: 24
+  all_permutations_used_once: true
+  first: LSCA
+  last: ACSL
+  function: "ordering only"
+
+dodoens:
+  table_count: 9
+  matrix_dimensions: "9 x 24 x 24"
+  value_count: 5184
+  botanical_tables:
+    C: Castanea
+    N: Noteboom
+    H: Haselnoten
+    F: Fisticen
+    P: Pimpernoten
+    L: Lombaertsche Linsen
+    D: Dadelboom
+    O: Olijfboom
+    S: Sint Jans broot
+  carrier_metrics_v2_9:
+    remapped_content_values: 5165
+    carrier_references: 10506
+    unique_loci: 1909
+    printed_pages_used: 412
+    direct_carrier_values: 1823
+    compound_carrier_values: 3342
+    round_trip_verified: true
+
+cipher:
+  version: "FINAL CIPHER-1564 v2.7"
+  plaintext_words: 30930
+  distinct_word_forms: 5172
+  cipher_groups: 35584
+  groups_per_word_average: 1.150
+  used_code_values: 4181
+  spelling_subword_segments: 1671
+  phrase_segments: 3371
+  round_trip_verified: true
+
+role_split:
+  claes:
+    indispensable_for: ["merels skill", "Dee memory", "personal Monas", "Castanea memory", "pattern recognition", "clear-text reconstruction choices"]
+  beloved:
+    indispensable_for: ["materials", "botanical recognition", "Dodoens loci", "weighing and notation", "error checking", "challenging unsupported elegance"]
+  principle: "collaboration demonstrates that secrecy is not the same as isolation"
+
+hard_guardrails:
+  - "The completed Diets/Brabant plaintext exists before Antwerp encryption."
+  - "Cornelis is original intended practical recipient."
+  - "October 1564 changes access, not plaintext, nomenclator or ciphertext."
+  - "Merels is ad-hoc key recovery, not original cipher and not reciphering."
+  - "Cornelis knows Claes is fallback but never knows the recovery key."
+  - "Zovitius is trigger only."
+  - "Vitriool reveals memoriaal, not Las Casas directly."
+  - "Memoriaal yields merels/theorem/Monas bridge, not Dodoens values."
+  - "Monas yields order, not plaintext."
+  - "Castanea yields wayfinding/authentication, not numeric counting."
+  - "Dodoens is required for content values."
+  - "Primus Index yields identity, not full text."
+  - "Full reconstruction takes weeks."
+  - "1578 publication is novel canon; actual historical provenance is not claimed."
+
+lemma_candidates:
+  - rule_family: can_decode
+    prerequisites: ["trigger_known", "memoriaal_available", "vitriool_available", "merels_skill", "monas_copy_available", "dodoens_carrier_available"]
+  - rule_family: recovery_stage_available
+    dependency: "strict ordered chain"
+  - rule_family: actor_can_possess_required_object
+  - rule_family: actor_can_know_required_knowledge
+  - rule_family: checksum_valid
+    invariant: "theorem I-XXIV exactly once"
