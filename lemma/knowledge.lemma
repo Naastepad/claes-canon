@@ -7,7 +7,8 @@ data epistemic_status: text
   -> option "DISPUTED"
   -> option "UNKNOWN"
 
-data acquisition_date: date
+data acquisition_earliest: date
+data acquisition_certain_by: date
 data query_date: date
 
 rule accepted_as_canon: false
@@ -19,11 +20,20 @@ rule allowed_as_hypothesis: false
   unless epistemic_status is "CANON" then true
   unless epistemic_status is "HYPOTHESIS" then true
 
-rule acquired_by_query_date:
-  query_date >= acquisition_date
+rule acquisition_window_valid:
+  acquisition_certain_by >= acquisition_earliest
+
+rule possibly_acquired_by_query_date:
+  query_date >= acquisition_earliest
+
+rule certainly_acquired_by_query_date:
+  query_date >= acquisition_certain_by
+
+rule in_acquisition_uncertainty_window:
+  acquisition_window_valid and query_date >= acquisition_earliest and query_date < acquisition_certain_by
 
 rule can_know:
-  accepted_as_canon and acquired_by_query_date
+  accepted_as_canon and acquisition_window_valid and certainly_acquired_by_query_date
 
 rule can_possibly_know:
-  allowed_as_hypothesis and acquired_by_query_date
+  allowed_as_hypothesis and acquisition_window_valid and possibly_acquired_by_query_date
