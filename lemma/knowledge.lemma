@@ -1,24 +1,39 @@
 spec knowledge_claim
 
-data epistemic_status: text
-  -> option "FACT"
-  -> option "CANON"
-  -> option "HYPOTHESIS"
+data evidence_status: text
+  -> option "VERIFIED"
+  -> option "SUPPORTED"
+  -> option "PLAUSIBLE"
   -> option "DISPUTED"
   -> option "UNKNOWN"
+
+data canon_status: text
+  -> option "PROPOSED"
+  -> option "CANON"
+  -> option "OPEN"
+  -> option "DEPRECATED"
+  -> option "REJECTED"
 
 data acquisition_earliest: date
 data acquisition_certain_by: date
 data query_date: date
 
-rule accepted_as_canon: false
-  unless epistemic_status is "FACT" then true
-  unless epistemic_status is "CANON" then true
+rule evidence_strong: false
+  unless evidence_status is "VERIFIED" then true
+  unless evidence_status is "SUPPORTED" then true
 
-rule allowed_as_hypothesis: false
-  unless epistemic_status is "FACT" then true
-  unless epistemic_status is "CANON" then true
-  unless epistemic_status is "HYPOTHESIS" then true
+rule historically_plausible: false
+  unless evidence_status is "VERIFIED" then true
+  unless evidence_status is "SUPPORTED" then true
+  unless evidence_status is "PLAUSIBLE" then true
+
+rule active_canon: false
+  unless canon_status is "CANON" then true
+
+rule canon_candidate: false
+  unless canon_status is "CANON" then true
+  unless canon_status is "PROPOSED" then true
+  unless canon_status is "OPEN" then true
 
 rule acquisition_window_valid:
   acquisition_certain_by >= acquisition_earliest
@@ -33,7 +48,7 @@ rule in_acquisition_uncertainty_window:
   acquisition_window_valid and query_date >= acquisition_earliest and query_date < acquisition_certain_by
 
 rule can_know:
-  accepted_as_canon and acquisition_window_valid and certainly_acquired_by_query_date
+  active_canon and acquisition_window_valid and certainly_acquired_by_query_date
 
 rule can_possibly_know:
-  allowed_as_hypothesis and acquisition_window_valid and possibly_acquired_by_query_date
+  canon_candidate and acquisition_window_valid and possibly_acquired_by_query_date
