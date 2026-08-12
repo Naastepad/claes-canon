@@ -1,4 +1,4 @@
-schema_version: 1.0.0
+schema_version: 1.0.1
 kind: WorldModuleRegistry
 modules:
   - id: WORLD.GOES
@@ -8,11 +8,7 @@ modules:
     anchors:
       - {date: 1554-05-18, event: "major city fire", story_instance: NI.EVENT.GOES_FIRE.1554.001}
       - {date: 1566-08-01, precision: lower-bound, event: "Claes returns after Beeldenstorm", story_instance: NI.EVENT.CLAES_RETURN_GOES.1566.001}
-    narrative_functions:
-      - "childhood material world"
-      - "fire/air half of elemental symmetry"
-      - "family trade and later return"
-      - "1570 recovery work environment"
+    narrative_functions: ["childhood material world", "fire/air half of elemental symmetry", "family trade and later return", "1570 recovery work environment"]
     guardrails:
       - "Do not claim a full official Goes Latin school before 1554 without evidence."
       - "Do not assume modern street names or later urban forms in earlier scenes."
@@ -22,16 +18,8 @@ modules:
     label: "Reimerswaal — cost pupil and Latin school years"
     canon_status: CANON_FRAMEWORK
     historical_method: SOURCE_WEIGHTED_RECONSTRUCTION
-    claes_presence:
-      earliest: 1554-05-19
-      latest_exclusive: 1561-09-01
-      precision: bounded
-    narrative_functions:
-      - "displacement"
-      - "Latin formation"
-      - "water/earth half of elemental symmetry"
-      - "adaptation to strange households"
-      - "water-marked Zovitius object biography"
+    claes_presence: {earliest: 1554-05-19, latest_exclusive: 1561-09-01, precision: bounded}
+    narrative_functions: ["displacement", "Latin formation", "water/earth half of elemental symmetry", "adaptation to strange households", "water-marked Zovitius object biography"]
     guardrails:
       - "The city still functions during Claes' stay."
       - "Claes experiences water threat, not the later final fall of the city."
@@ -40,12 +28,7 @@ modules:
   - id: WORLD.ANTWERP
     label: "Antwerp — free schools, trade, printing and clandestine knowledge"
     canon_status: CANON_FRAMEWORK
-    narrative_functions:
-      - "Landjuweel and multiple representation"
-      - "advanced practical-humanist formation"
-      - "Silvius/Dee network"
-      - "print-production reality"
-      - "security break and compartmentalisation"
+    narrative_functions: ["Landjuweel and multiple representation", "advanced practical-humanist formation", "Silvius/Dee network", "print-production reality", "security break and compartmentalisation"]
     educational_model:
       includes: ["free-school environment", "private instruction", "Latin", "limited Greek", "French", "bookkeeping", "copying", "trade correspondence"]
       excludes: ["modern university model", "Leuven as part of Claes' canon route"]
@@ -58,10 +41,7 @@ modules:
     canon_status: CANON_FRAMEWORK
     historical_method: SOURCE_WEIGHTED_RECONSTRUCTION
     story_claims: [STC.NISSEPAD.RECONSTRUCTION.001]
-    functions:
-      - "family geography"
-      - "route and movement realism"
-      - "late memory landscape"
+    functions: ["family geography", "route and movement realism", "late memory landscape"]
     guardrails:
       - "Exact micro-topography remains revisable when archival evidence improves."
       - "A trade/transport chain does not automatically prove a precise parcel location."
@@ -75,12 +55,8 @@ modules:
       Goes_Zeeland: "bread as matter and origin"
       Antwerp: "bread as measure, price and power"
       Enkhuizen_North_Holland: "bread as distance, stock and sea"
-    narrative_functions:
-      - "sensory transformation"
-      - "material culture"
-      - "social hierarchy"
-      - "trade geography"
-    motif: MOTIF.BREAD_TRANSFORMATION
+    narrative_functions: ["sensory transformation", "material culture", "social hierarchy", "trade geography"]
+    motif: MOTIF.BREAD
     guardrails:
       - "Do not install an unsupported private household oven when an urban professional bakery is more defensible."
       - "Keep grain type, flour refinement, ferment and oven practice historically/regionally specific."
@@ -89,30 +65,19 @@ modules:
   - id: WORLD.SALT
     label: "Salt as economic and elemental material"
     canon_status: CANON_FRAMEWORK
-    narrative_functions:
-      - "family capital and Goes fire loss"
-      - "material bridge between Goes and Reimerswaal"
-      - "trade and landscape"
-    elemental_symmetry:
-      Goes: [fire, air]
-      Reimerswaal: [water, earth]
+    narrative_functions: ["family capital and Goes fire loss", "material bridge between Goes and Reimerswaal", "trade and landscape"]
+    elemental_symmetry: {Goes: [fire, air], Reimerswaal: [water, earth]}
     guardrails:
       - "Do not claim salt extraction as the proven cause of the Goes fire."
-      - "Do distinguish the documented/structural role of salt extraction in weakening Reimerswaal's environment from the Goes fire context."
+      - "Do distinguish the structural role of salt extraction in weakening Reimerswaal's environment from the Goes fire context."
 
   - id: WORLD.MUSIC_PRAYER_TRANSFORMATION
     label: "Music, prayer and confessional transition"
     canon_status: CANON_FRAMEWORK
     historical_method: HISTORICAL_CULTURE_PLUS_AUTHORIAL_RESONANCE
-    progression:
-      - "Catholic and vernacular musical world"
-      - "contrafact: known melody carries changed words"
-      - "increasing confessional differentiation and group identity"
-    narrative_functions:
-      - "auditory memory"
-      - "carrier/content distinction"
-      - "preparation for later hidden-reading architecture"
-    motifs: [MOTIF.OLD_MELODY, MOTIF.CARRIER_MEANING]
+    progression: ["Catholic and vernacular musical world", "contrafact: known melody carries changed words", "increasing confessional differentiation and group identity"]
+    narrative_functions: ["auditory memory", "carrier/content distinction", "preparation for later hidden-reading architecture"]
+    motifs: [MOTIF.MUSIC_OLD_TUNE, MOTIF.CARRIER_MEANING]
     guardrails:
       - "The alchemical link is thematic, not a historical claim that the songs encode alchemy."
       - "Do not reduce pre-Reformation Catholic culture to Latin-only musical experience."
@@ -121,10 +86,7 @@ modules:
     label: "Huis der Liefde / Radermacher — network mirror"
     canon_status: CANON_FRAMEWORK
     historical_method: PLAUSIBLE_NETWORK_LAYER
-    functions:
-      - "Antwerp-Middelburg-book-culture outer ring"
-      - "late social mirror for Rubedo"
-      - "model of discreet cross-border recognition/help"
+    functions: ["Antwerp-Middelburg-book-culture outer ring", "late social mirror for Rubedo", "model of discreet cross-border recognition/help"]
     guardrails:
       - "No proven Goes cell."
       - "No institutional Freemasonry avant la lettre as historical claim."
@@ -134,11 +96,8 @@ modules:
     label: "Print world and object circulation"
     canon_status: CANON_FRAMEWORK
     actors: [ENT.PERSON.WILLEM_SILVIUS, ENT.PERSON.JOHN_DEE]
-    peripheral_actors: [ENT.PERSON.PLANTIN, ENT.PERSON.GILLIS]
-    functions:
-      - "texts acquire second bodies in print"
-      - "editorial correction and production are distinct from translation and cipher knowledge"
-      - "compartmentalised roles prevent one person from knowing source, key and destination"
+    peripheral_actors: [ENT.PERSON.PLANTIN, ENT.PERSON.MARCUS_GILLIS]
+    functions: ["texts acquire second bodies in print", "editorial correction and production are distinct from translation and cipher knowledge", "compartmentalised roles prevent one person from knowing source, key and destination"]
     guardrails:
       - "Source competence, Diets style, print correction and cipher knowledge may belong to different people."
       - "Do not infer historical conspiracy membership merely from network proximity."
