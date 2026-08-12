@@ -31,7 +31,7 @@ decisions:
 - id: OPEN.BAKERY.SCENE.001
   question: Whether and where to use proposed “De Gest” bakery scene
   status: OPEN
-  canon_status: not yet canon
+  canon_status: OPEN
 - id: OPEN.LATE_RADERMACHER.001
   question: Whether Claes directly meets Radermacher in late Middelburg line
   status: OPEN
