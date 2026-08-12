@@ -1,7 +1,9 @@
 # Storybible
 
-This directory contains or points to the human-readable master storybible used as narrative context for canon authoring.
+`storybible/MASTER.md` is the stable authority anchor for the human-readable Claes storybible.
 
-The storybible is broader than Lemma. It may contain prose, interpretation, scene ideas, historical background and unresolved research questions.
+At present the complete 353589-byte Revision 11 master remains externally stored and is identified in `MASTER.md` by exact filename and SHA-256. This is an explicit transitional state, not a claim that the short manifest already contains the full master prose.
 
-When a claim from the storybible is formalised in Lemma, the proposal must state whether the claim is `FACT`, `CANON`, `HYPOTHESIS`, `DISPUTED` or `UNKNOWN` and identify the supporting source or explicit canon decision.
+The long-form storybible preserves meaning, continuity, interpretation, research context and open questions. Machine-readable atomic truth belongs in `claims/`; concrete dramatization belongs in `narrative/`; deterministic constraints belong in `lemma/`.
+
+When the full master is mechanically imported, update `MASTER.md` to `IN_REPOSITORY` and regenerate `INDEX.md` without changing claim IDs.
