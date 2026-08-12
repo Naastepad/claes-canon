@@ -1,11 +1,12 @@
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: ConversionReport
 source: Claes_Storybible_MASTER_COMPLEET_2026-08-10_REVISIE11_MACROSTRUCTUUR_PROJECTIO(1).md
 source_sha256: e38430f0165e7c0779a8ae6bba6a208773c677682f55295a940e91fdb2ed9edd
 source_lines: 3803
 source_headings: 296
+conversion_scope: first_full_semantic_pass
 outputs:
-  sections_indexed: 31
+  top_level_sections_accounted_for: 31
   entities: 24
   objects: 11
   story_claims_curated: 34
@@ -14,10 +15,17 @@ outputs:
   motifs: 10
   open_decisions: 9
   craft_guardrails: 10
-method: Full master parsed mechanically for section coverage; high-value canon was normalized into first-class registries. The source master remains the semantic authority until every lower-level paragraph has been atomically normalized.
-non_loss_rule: No unnormalized source content is considered deleted or superseded merely because it has not yet become an atomic claim.
+  lemma_specs_active: 7
+method: Full Revision 11 master parsed mechanically for top-level coverage; the continuity-critical canon was normalized into stable claims, entities, objects, narrative instances, arcs, motifs, open decisions and executable Lemma constraints.
+non_loss_rule: No unnormalized source content is deleted, superseded or treated as absent merely because it has not yet become an atomic record. The conversion ledger preserves source location and section hashes.
+completeness:
+  semantic_top_level_coverage: complete
+  continuity_critical_normalization: first_pass_complete
+  paragraph_level_atomic_normalization: incomplete
+  raw_prose_physically_copied_into_repository: false
 next_normalization_passes:
-- historical source claims
-- all person/location/object occurrences
-- chapter/scene extraction from manuscript files when imported
-- atomic normalization of remaining explicit CANON/GESLOTEN/BESLIST statements
+- atomize remaining explicit CANON/GESLOTEN/BESLIST statements
+- expand historical Source Claims from the source bibliography
+- expand all person/location/object occurrence relations
+- map manuscript chapter and scene files when imported
+- connect additional deterministic Story Claims to Lemma test fixtures
