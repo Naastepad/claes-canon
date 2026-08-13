@@ -7,6 +7,10 @@ guardrails:
   rule: Never invent an exact day when canon/source precision is month, season, year or interval.
 - id: GRD.HIST.FICTION.SEPARATION
   rule: Keep historical support distinct from fictional story decisions.
+- id: GRD.CLAES.AGE
+  rule: Derive every age-sensitive description from Claes' canonical birth date 8 December 1542; never reuse the superseded 1545 chronology.
+- id: GRD.REIMERSWAAL.EDUCATION
+  rule: Reimerswaal begins later in 1554 after elementary schooling in Goes and develops into advanced older-pupil formation before August 1561; do not portray the whole stay as beginner-level Latin schooling or invent a formal local office to explain its duration.
 - id: GRD.MERELS.INWORLD
   rule: No modern a1–g7 coordinates, engine IDs, P labels or pulsing trails in-world.
 - id: GRD.MERELS.LOCAL
