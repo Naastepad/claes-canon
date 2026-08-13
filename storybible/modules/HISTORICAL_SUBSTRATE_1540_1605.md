@@ -8,6 +8,9 @@
 - `history/LOW_COUNTRIES_TRANSFORMATION_1540_1605.md` — human-readable synthesis and scene extraction guidance.
 - `history/ZEELAND_REVOLT_TIMELINE.yaml` — regional Zeeland layer; currently less complete than the macro file and therefore never overrides a better-supported macro/local source record.
 - `storybible/modules/GOES_RELIGIOUS_TRANSITION_1577_1578.md` — locally focused Goes confessional transition.
+- `storybible/modules/WORLD_GOES_CHURCH_LOCAL.md` — local Goes church architecture, Zeven Getijden, music and guild materiality.
+- `storybible/modules/WORLD_GOES_CHURCH_LITURGICAL_GUARDRAILS.md` — comparative liturgical and sensory guardrails for Goese church scenes.
+- `storybible/modules/HISTORICAL_SUBSTRATE_GOES_CHURCH_LINK.md` — explicit integration and precedence rules for the Goese church modules.
 - `storybible/modules/PUBLIC_OPINION_IDENTITY_REVOLT.md` — information ecology, rumour verification, public opinion, rederijker discourse and layered/shifting identity during the Revolt.
 
 ## Dependency rule
@@ -29,6 +32,8 @@ For every scene between 1540 and 1605, test at minimum:
 10. layered identity: town/province/corporation/confession/dynastic allegiance/fatherland language must not be collapsed into one modern national label;
 11. later memory: distinguish event, personal perception, retelling and public commemoration.
 
+For scenes in the Goese Maria Magdalenakerk, apply the local and liturgical Goes church modules together with `WORLD.RELIGIOUS_SPACE.SENSORY_CHURCH`. Local Goes evidence outranks comparative Antwerp/Low Countries reconstruction; comparative evidence remains marked where local implementation is unknown.
+
 ## Information ecology guardrail
 For the 1560s–1570s, oral circulation is normally the first carrier of current news. Pamphlets and prints can be important but may follow oral reports by days or weeks. False rumours may still have real historical consequences. Scene narration must therefore distinguish a character's information state from historical fact.
 
@@ -39,7 +44,8 @@ Remaining research is explicitly microhistorical, especially:
 - Goes 1572 civilian/guild/church/provisioning experience;
 - exact Goese implementation of the 1578 religious shift;
 - Reimerswaal's interaction of war, flood/erosion, demography, trade and church life;
-- annual/seasonal Zeeland data on taxation, billeting, provisioning, disease, prices and shipping.
+- annual/seasonal Zeeland data on taxation, billeting, provisioning, disease, prices and shipping;
+- exact Goese church seating distribution, pre-1550 blockwerk position, chalice-elevation practice, altar-bell protocol, exterior consecration signal and detailed altar/guild map.
 
 ## Source discipline
 Use `VERIFIED`, `SUPPORTED` and open/research statuses exactly as declared in the history files. General Low Countries evidence may explain mechanisms, but exact local implementation in Goes or Reimerswaal requires local support.
