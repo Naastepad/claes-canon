@@ -53,3 +53,36 @@ decisions:
       master_id: SB.CLAES.MASTER
       section_hint: "Claes — cradle to grave / Goes / Reimerswaal"
     note: "Post-Revision-11 decision. It supersedes Revision 11 references that place Claes' birth on 8 December 1545."
+
+  - id: DEC.CLAES.REIMERSWAAL_FORMATION.001
+    type: StoryDecision
+    status: ACTIVE
+    decision: "Reimerswaal is not merely Claes' school location but a progressive formative sequence. The 1555 dike failure receives explicit narrative attention as his first major water disaster there; the 1557 storm and 1558 fire intensify the sequence, and renewed inundation in 1561 closes the Reimerswaal phase before Antwerp."
+    rationale: "The 1554 Goes fire is the reason Claes is redirected from the intended Zierikzee route to Reimerswaal. The 1555 water event therefore functions both as counterpoint and reinforcement: the place of refuge proves vulnerable to a different destructive element. Repeated rebuilding, damage and survival teach Claes that a place can continue to exist while its form is already dissolving."
+    evidence_status: SUPPORTED
+    canon_status: CANON
+    supported_by:
+      - SC.HIST.REIMERSWAAL.1555.001
+      - SC.HIST.REIMERSWAAL.1557.001
+      - SC.HIST.REIMERSWAAL.1558.001
+      - SC.HIST.REIMERSWAAL.1561_1563.001
+    effects:
+      - narrative/arcs.yaml
+      - narrative/instances.yaml
+      - storybible/LEMMA_MCKEE_MASTER.md
+    guardrail: "This sequence prefigures Nigredo materially but does not move the canonical adult macro-Nigredo hinge from 4 October 1564."
+
+  - id: DEC.CLAES.REIMERSWAAL_WAR_CALLBACK.001
+    type: StoryDecision
+    status: ACTIVE
+    decision: "The 1573-1574 destruction around Reimerswaal, including the rebel burning and the Battle of Reimerswaal on 29 January 1574, returns later in Claes' story as an adult callback to the city of his schooling."
+    rationale: "The callback completes the progression from natural erosion to human destruction: water, fire and war act upon the same remembered city. It deepens the adult Nigredo without requiring Claes to be physically present at the battle."
+    evidence_status: SUPPORTED
+    canon_status: CANON
+    supported_by:
+      - SC.HIST.REIMERSWAAL.1573_1574.001
+    effects:
+      - narrative/arcs.yaml
+      - narrative/instances.yaml
+      - storybible/LEMMA_MCKEE_MASTER.md
+    guardrail: "1573/1574 is narratively a point of no return, not the literal final abandonment of Reimerswaal. Historical rebuilding and civic government continued; the last inhabitants left in 1631. Claes' exact physical presence during the war sequence remains OPEN."
