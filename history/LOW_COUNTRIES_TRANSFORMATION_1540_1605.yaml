@@ -1,0 +1,288 @@
+schema_version: "1.0.0"
+kind: HistoricalTimeline
+id: HIST.TIMELINE.LOW_COUNTRIES.1540_1605
+title: "Low Countries transformation, 1540–1605"
+scope:
+  start: 1540-01-01
+  end: 1605-12-31
+  regions: [LOW_COUNTRIES, ZEELAND, HOLLAND, BRABANT, FLANDERS]
+principles:
+  - "History layer contains no fictional Claes causation."
+  - "Political allegiance, public worship and personal confession are separate variables."
+  - "Event, perception, retelling and cultural memory must not be conflated."
+  - "Regional implementation must not be inferred from a general Netherlandish pattern where local evidence is available or required."
+source_ids:
+  - SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008
+  - SRC-POLLMANN-MEMORY-EARLY-MODERN-EUROPE-2017
+  - SRC-VAN-BRUAENE-OM-BETERS-WILLE-2008
+  - SRC-WAUTERS-RELIGIOUS-SPACE-2021
+  - SRC-HIST-CATHOLIC-BIBLE-LOWCOUNTRIES-1548-001
+
+events:
+  - id: HIST.BIBLE.LEUVEN.1548
+    date: 1548-09
+    precision: month
+    geography: [LEUVEN, LOW_COUNTRIES]
+    type: book_religion
+    summary: "The Leuven Bible appears as an approved complete Dutch Catholic Bible grounded in the Vulgate tradition."
+    evidence_status: VERIFIED
+    source_ids: [SRC-HIST-CATHOLIC-BIBLE-LOWCOUNTRIES-1548-001]
+    consequences:
+      - "Catholic vernacular Scripture becomes available without replacing Latin liturgical Scripture."
+    claes_relevance:
+      level: medium
+      uses: [schooling, devotional_reading, confessional_book_culture]
+    do_not_infer:
+      - "Dutch Bible reading replaced Latin Mass readings."
+      - "The Nissepat household owned a copy."
+
+  - id: HIST.GOES.FIRE.1554
+    date: 1554-05-18
+    precision: day
+    geography: [GOES, ZEELAND]
+    type: urban_disaster
+    summary: "Major city fire at Goes, an established historical anchor in the Claes project."
+    evidence_status: VERIFIED
+    source_ids: []
+    consequences:
+      - "Urban material loss and disruption."
+      - "Potentially changes routes, housing, work and memory landscape."
+    claes_relevance:
+      level: direct_story_anchor
+      linked_story_units: ["first blackening", "move toward Reimerswaal"]
+    do_not_infer:
+      - "Every later family loss was caused by the fire."
+
+  - id: HIST.RELIGION.EPISCOPAL_REORGANISATION.1559
+    date: 1559
+    precision: year
+    geography: [LOW_COUNTRIES, ZEELAND]
+    type: church_institution
+    summary: "The Catholic episcopal reorganisation includes the bishopric of Middelburg within the new northern ecclesiastical structure."
+    evidence_status: SUPPORTED
+    source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008]
+    consequences:
+      - "Institutional Catholic reform is part of the pre-Revolt religious landscape."
+    claes_relevance:
+      level: contextual
+
+  - id: HIST.ANTWERP.LANDJUWEEL.1561
+    date: 1561
+    precision: year
+    geography: [ANTWERP, BRABANT]
+    type: civic_culture_rederijkers
+    summary: "Antwerp hosts the culminating Brabant landjuweel and related rhetorician spectacle in a dense interurban chamber network."
+    evidence_status: VERIFIED
+    source_ids: [SRC-VAN-BRUAENE-OM-BETERS-WILLE-2008]
+    consequences:
+      - "Rhetoric, civic prestige, procession, competition, devotion and confessional argument occupy the same urban public sphere."
+    claes_relevance:
+      level: direct_story_anchor
+      uses: [public_signs, performance, rhetoric, networks, confessional_ambiguity]
+    do_not_infer:
+      - "Rederijkers were a cipher school."
+      - "Every chamber shared one confessional position."
+
+  - id: HIST.REFORMATION.ICONOCLASM.1566
+    date: 1566
+    precision: year
+    geography: [LOW_COUNTRIES]
+    type: religion_political_crisis
+    summary: "Open Calvinist preaching and iconoclasm accelerate the political-confessional crisis."
+    evidence_status: SUPPORTED
+    source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008, SRC-POLLMANN-MEMORY-EARLY-MODERN-EUROPE-2017]
+    consequences:
+      - "Religious images, church space, civic order and political loyalty become openly contested."
+      - "Later memories of 1566 are themselves partisan and must not be treated as transparent event records."
+    memory_afterlife:
+      status: contested
+      note: "Later Catholic and Reformed narratives moralise and redistribute blame."
+    claes_relevance:
+      level: high
+      uses: [church_memory, sensory_rupture, public_conflict]
+
+  - id: HIST.REVOLT.HOLLAND_ZEELAND_BREAK.1572
+    date: 1572
+    precision: year
+    geography: [HOLLAND, ZEELAND]
+    type: revolt_political_control
+    summary: "The Revolt gains durable territorial ground in Holland and Zeeland."
+    evidence_status: SUPPORTED
+    source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008, SRC-POLLMANN-MEMORY-EARLY-MODERN-EUROPE-2017]
+    consequences:
+      - "War, taxation, garrisons, maritime control and confessional pressure become structural conditions rather than distant news."
+    claes_relevance:
+      level: high
+
+  - id: HIST.GOES.SIEGE_RELIEF.1572_1573
+    date_start: 1572
+    date_end: 1573
+    precision: interval
+    geography: [GOES, ZEELAND]
+    type: military_urban
+    summary: "Goes remains a major royalist military-political node during the Zeeland struggle; detailed event decomposition remains tied to the existing Goes research layer."
+    evidence_status: NEEDS_LOCATOR
+    source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008]
+    claes_relevance:
+      level: direct_story_world
+    research_needed:
+      - "Exact sequence of siege, relief and local civilian consequences."
+      - "Church and guild behaviour during the military crisis."
+
+  - id: HIST.REIMERSWAAL.NAVAL_BATTLE.1574
+    date: 1574-01
+    precision: month
+    geography: [REIMERSWAAL_AREA, ZEELAND_DELTA]
+    type: naval_military
+    summary: "A rebel fleet defeats a Habsburg/Spanish fleet near Reimerswaal, cutting maritime relief toward Middelburg."
+    evidence_status: VERIFIED
+    source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008]
+    consequences:
+      - "Middelburg loses a major relief route and surrenders the following month."
+      - "The Delta is experienced as military infrastructure as well as landscape and trade route."
+    claes_relevance:
+      level: high
+      uses: [waterway_war, maritime_soundscape, supply_disruption, Reimerswaal_memory]
+    do_not_infer:
+      - "The battle occurred in Reimerswaal streets."
+
+  - id: HIST.PACIFICATION.GHENT.1576
+    date: 1576
+    precision: year
+    geography: [LOW_COUNTRIES]
+    type: political_settlement
+    summary: "The Pacification of Ghent seeks common action against mutinous troops and formally deploys political forgetting of conflict since 1566."
+    evidence_status: VERIFIED
+    source_ids: [SRC-POLLMANN-MEMORY-EARLY-MODERN-EUROPE-2017, SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008]
+    memory_afterlife:
+      status: key
+      note: "Political oblivion is a settlement mechanism, not evidence that private or embodied memories disappeared."
+    claes_relevance:
+      level: high
+      uses: [public_forgetting_vs_private_memory, political_language]
+
+  - id: HIST.GOES.SATISFACTION.1577
+    date: 1577-03
+    precision: month
+    geography: [GOES, ZEELAND]
+    type: political_confessional_settlement
+    summary: "Goes, the last royalist town in Zeeland, reaches a satisfactie with William of Orange; Catholicism remains the only permitted public religion under the settlement."
+    evidence_status: VERIFIED
+    source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008]
+    consequences:
+      - "Political realignment does not yet equal confessional realignment."
+      - "Catholic public worship can continue under a new political settlement."
+    claes_relevance:
+      level: direct_story_world
+      uses: [church_scene, political_confessional_paradox, civic_uncertainty]
+    do_not_infer:
+      - "Goes became Reformed in March 1577."
+      - "The population changed confession collectively."
+
+  - id: HIST.GOES.REFORMED_PREACHING.1578
+    date: 1578
+    precision: year
+    geography: [GOES, ZEELAND]
+    type: confessional_public_space
+    summary: "During the radicalisation of 1578, Reformed preaching is introduced under pressure in the Holland and Zeeland towns that had made satisfacties; Goes belongs to that class."
+    evidence_status: VERIFIED
+    source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008]
+    consequences:
+      - "The Catholic-only public arrangement of March 1577 becomes unstable."
+      - "Church buildings, preaching rights and magistracy become sites of direct contest."
+    claes_relevance:
+      level: direct_story_world
+      uses: [same_church_changed_meaning, soundscape_change, ritual_loss, public_pressure]
+    research_needed:
+      - "Exact Goese date in 1578."
+      - "First church building used for Reformed preaching."
+      - "Named preachers and activists."
+      - "Local sequence of altar/image removal and Catholic adaptation."
+
+  - id: HIST.ORANGE.RELIGIOUS_PEACE_PROPOSAL.1578
+    date: 1578-07
+    precision: month
+    geography: [LOW_COUNTRIES]
+    type: confessional_policy
+    summary: "William of Orange advances a religious-peace proposal based on reciprocal worship rights amid escalating confessional conflict."
+    evidence_status: VERIFIED
+    source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008]
+    consequences:
+      - "Confessional monopoly and coexistence remain politically contested options."
+    claes_relevance:
+      level: contextual
+
+  - id: HIST.UNION.UTRECHT.1579
+    date: 1579
+    precision: year
+    geography: [NORTHERN_LOW_COUNTRIES]
+    type: political_alliance
+    summary: "Union of Utrecht milestone."
+    evidence_status: NEEDS_LOCATOR
+    source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008]
+    claes_relevance:
+      level: contextual
+
+  - id: HIST.ACT_ABJURATION.1581
+    date: 1581
+    precision: year
+    geography: [REBELLIOUS_LOW_COUNTRIES]
+    type: sovereignty
+    summary: "Plakkaat van Verlatinghe / Act of Abjuration milestone."
+    evidence_status: NEEDS_LOCATOR
+    source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008]
+    claes_relevance:
+      level: thematic_high
+      uses: [sovereignty, legitimacy, oath, responsibility]
+
+  - id: HIST.DELFT.ORANGE_DEATH.1584
+    date: 1584
+    precision: year
+    geography: [DELFT, HOLLAND]
+    type: political_violence
+    summary: "Death of William of Orange at Delft; exact event detail belongs to the dedicated Delft research layer."
+    evidence_status: NEEDS_LOCATOR
+    source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008]
+    claes_relevance:
+      level: direct_story_anchor
+      linked_story_units: ["Delft 1584 moral bottom"]
+
+  - id: HIST.ANTWERP.FALL.1585
+    date: 1585
+    precision: year
+    geography: [ANTWERP, BRABANT]
+    type: military_confessional_urban
+    summary: "Fall/reconciliation of Antwerp under Farnese becomes a major political, confessional and migratory hinge."
+    evidence_status: SUPPORTED
+    source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008, SRC-POLLMANN-MEMORY-EARLY-MODERN-EUROPE-2017]
+    consequences:
+      - "North-South political and confessional separation hardens."
+      - "Migration and memory reshape urban networks."
+    claes_relevance:
+      level: high
+      uses: [Antwerp_memory, migration, lost_city_network]
+
+  - id: HIST.REPUBLIC.CONSOLIDATION.1588
+    date: 1588
+    precision: year
+    geography: [DUTCH_REPUBLIC]
+    type: state_formation
+    summary: "Republican consolidation milestone."
+    evidence_status: NEEDS_LOCATOR
+    source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008]
+    claes_relevance:
+      level: contextual
+
+research_backlog:
+  - id: OPEN.HIST.POLLMANN.CATHOLIC_IDENTITY
+    question: "Add and provenance Judith Pollmann, Catholic Identity and the Revolt of the Netherlands, 1520–1635; use it especially for lived Catholic adaptation, continuity and post-Revolt identity."
+    priority: critical
+  - id: OPEN.HIST.GOES.1566_1580.LOCAL
+    question: "Resolve exact Goese church-use, clergy, preaching, image/altar and private Catholic chronology between 1566 and 1580."
+    priority: critical
+  - id: OPEN.HIST.ZEELAND.DAILY_WAR
+    question: "Add food, taxation, billeting, shipping, market, disease, migration and material daily-life consequences for Zeeland by year/interval."
+    priority: high
+  - id: OPEN.HIST.1580_1605.EXPANSION
+    question: "Expand the 1580–1605 spine with source-located political, military, religious, economic and cultural events relevant to Delft, Haarlem, Hoorn, Enkhuizen and Antwerp networks."
+    priority: high
