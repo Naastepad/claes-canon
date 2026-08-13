@@ -51,8 +51,8 @@ Canonical claim anchors: `STC.CLAES.SINNE.001`, `STC.CLAES.PARADOX.001`, `STC.CL
 
 | Phase | Story time | McKee function | Claes' movement | Canon anchors |
 |---|---|---|---|---|
-| **DRAGER** | 8 Dec 1542–4 Oct 1564 | setup + progressive education of perception | receive → recognize → interpret | childhood, school, Landjuweel, Silvius, Dee, Monas, memoriaal |
-| **GEBONDENHEID / NIGREDO** | 4 Oct 1564–1584 | pressure, complication, consequence, loss of control | understand → control → act → fail → assume responsibility | security breach, compartmentalisation, recovery architecture, 1570 decode, 1578 publication, Delft 1584 |
+| **DRAGER** | 8 Dec 1542–4 Oct 1564 | setup + progressive education of perception | receive → recognize → interpret | childhood, school, Reimerswaal, Landjuweel, Silvius, Dee, Monas, memoriaal |
+| **GEBONDENHEID / NIGREDO** | 4 Oct 1564–1584 | pressure, complication, consequence, loss of control | understand → control → act → fail → assume responsibility | security breach, compartmentalisation, recovery architecture, 1570 decode, Reimerswaal war callback 1573–74, 1578 publication, Delft 1584 |
 | **ONDERSCHEIDING / ALBEDO** | 1584–ca. 1599 | self-revelation and separation of confused values | observe → distinguish → choose | truth ≠ certainty; knowledge ≠ control; protection ≠ possession |
 | **VERBINDING / RUBEDO** | ca. 1599–1602+ | reintegration | choose → connect → serve | wisdom + love; strength + responsibility; belief + uncertainty |
 | **PROJECTIO / OVERDRACHT** | final movement | final value test | carry → transmit → release | last transfer, last merels game, freedom of the recipient |
@@ -60,8 +60,10 @@ Canonical claim anchors: `STC.CLAES.SINNE.001`, `STC.CLAES.PARADOX.001`, `STC.CL
 Hard guardrails:
 
 - 1554 is **micro-Nigredo / first blackening**, not the adult main Nigredo.
+- Reimerswaal 1555–1561 is a **material prefiguration of Nigredo**: the city teaches dissolution through repeated water, rebuilding and fire, but does not relocate the macro hinge.
 - 4 October 1564 is the canonical adult macro-Nigredo hinge.
 - 1570 is the epistemic climax.
+- 1573–1574 brings Reimerswaal back as an adult historical callback: natural erosion becomes war damage and deliberate burning.
 - 1578 is the public consequence.
 - 1584 is the moral bottom and Albedo threshold.
 - Projectio is authorial architecture, not an extra historical cipher stage.
@@ -84,11 +86,15 @@ Claes is born on **8 December 1542**. All age-sensitive prose must derive from t
 | Birth / Brevísima date resonance | 8 Dec 1542 | 0 |
 | Goes fire | 18 May 1554 | 11 years, 5 months |
 | Move to Reimerswaal | later 1554, before 8 Dec | 11, nearly 12 |
+| First major Reimerswaal dike failure personally experienced | Nov 1555 | 12, nearly 13 |
+| Reimerswaal storm and structural collapse | 12–13 Jan 1557 | 14 |
+| Reimerswaal fire | 1558 | 15–16 |
 | Landjuweel Antwerp | Aug 1561 | 18 |
 | First Dee encounter | Feb 1563 | 20 |
 | Intensive Dee/Silvius formation | Jan–Mar 1564 | 21 |
 | Beeldenstorm / return phase | Aug 1566 onward | 23 |
 | Recovery year | 1570 | 27–28, depending on the still-unspecified date |
+| Reimerswaal war callback / Battle of Reimerswaal | 1573–29 Jan 1574 | 31 |
 | Delft moral bottom | 1584 | 41–42, depending on date |
 | Projectio threshold | 1602 | 59–60, depending on date |
 
@@ -116,21 +122,37 @@ Canonical motif: `MOTIF.MERELS_WAYS`.
 
 ### III — 1554–1561: displacement and Reimerswaal formation
 
-**Value state:** security → disrupted order → vigilant hope.
+**Value state:** security → disrupted order → provisional refuge → repeated vulnerability → vigilant hope.
 
 The Goes fire on **18 May 1554**, when Claes is eleven, damages Cornelis' salt/trade capital but not the Nissepad brewery. The fire does not create Cornelis' educational ambition; it changes the route by which that ambition can still be pursued. The intended Zierikzee arrangement becomes financially unrealistic. Later in 1554, while still eleven and approaching twelve, Claes goes instead as a cost pupil to the Latin school of **Reimerswaal**.
 
 This age is not to be treated in the novel as an anomalous late start requiring special explanation. Claes arrives after prior elementary schooling in Goes. The Reimerswaal period lasts until summer 1561, but it must **not** be written as seven years of beginner curriculum. It develops from Latin-school formation into a more advanced older-pupil phase. No exact Reimerswaal class sequence, formal repetitor title, named rector or fixed surviving school building is canon without separate evidence.
 
-Water threat in 1555 and the decaying environment teach that a place may still exist yet cease to be the same place.
+Reimerswaal is during these years still a functioning city, not a picturesque ruin. Its school, market, crafts, shipping, salt industry, church life and civic institutions must remain visible precisely so that their repeated damage has narrative weight. Claes' formative sequence is therefore not a single generic experience of a 'decaying environment' but a progression:
+
+- **1554 — fire as displacement.** Goes burns and sends Claes away. Fire is abrupt: one event changes the planned Zierikzee route and removes the security of home.
+- **1555 — water enters the refuge.** In November the repaired Reimerswaal dike fails again. This receives explicit narrative attention because it is the first major water disaster Claes experiences after arriving. The event is both **counterpoint and reinforcement** of the Goes fire: he came here because one city burned, only to discover that the city of refuge is threatened by another element. The opening value is provisional safety; the closing value is recognition that refuge itself is contingent.
+- **1557 — protection itself fails.** The storm of 12–13 January causes exceptional damage. Walls and gates — structures whose purpose is to separate safety from danger — themselves become destructible matter. Damage to civic, religious, domestic and salt-working structures gives Claes a concrete lesson that institutions and boundaries are no more permanent than wood, brick and earth.
+- **1558 — fire returns inside a water-weakened city.** The Reimerswaal fire deliberately echoes Goes 1554 without repeating it. Goes taught sudden loss; Reimerswaal teaches cumulative fragility. Fire and water are no longer opposites but successive agents acting on the same form.
+- **1561 — another inundation before departure.** The repeated pattern is established before Claes leaves for Antwerp. Reimerswaal has not disappeared. That is the point: it still has a name, inhabitants and functions while becoming materially less itself.
+
+The controlling Reimerswaal insight is therefore:
+
+> **A place can continue to exist while it is already disappearing.**
+
+This must remain a bodily and narrative lesson before it becomes an intellectual or alchemical one. Dee later gives Claes concepts with which to think about transformation and dissolution; Dee does not originate the experience. Reimerswaal has already taught Claes the rhythm **form → damage → repair → renewed damage → altered form**.
+
+That rhythm is a prefiguration of Nigredo, not the adult Nigredo itself. The hard structural decision remains: **4 October 1564 is the adult macro-Nigredo hinge.** Reimerswaal prepares Claes to recognise dissolution; it does not yet force the adult moral crisis of knowledge, control and responsibility.
 
 Core wound:
 
 > I did not see early enough what was happening.
 
-The water-damaged but complete Zovitius schoolbook becomes an object-biographical counterpoint to Cornelis' papers lost by fire: fire destroys text; water deforms but leaves it readable.
+The water-damaged but complete Zovitius schoolbook becomes an object-biographical counterpoint to Cornelis' papers lost by fire: fire destroys text; water deforms but leaves it readable. The distinction is not moralised — water is not 'better' than fire — but it establishes that different destructive processes leave different kinds of remainder.
 
-Claims: `STC.CLAES.REIMERSWAAL.001`, `STC.CLAES.ZIERIKZEE.PLAN.001`, `STC.CLAES.SCHOOL.GOES.001`.
+Claims and decisions: `STC.CLAES.REIMERSWAAL.001`, `STC.CLAES.ZIERIKZEE.PLAN.001`, `STC.CLAES.SCHOOL.GOES.001`, `DEC.CLAES.REIMERSWAAL_FORMATION.001`.
+Narrative sequence: `NI.SEQUENCE.REIMERSWAAL_DISSOLUTION.1554_1561.001`.
+Historical anchors: `SC.HIST.REIMERSWAAL.1555.001`, `SC.HIST.REIMERSWAAL.1557.001`, `SC.HIST.REIMERSWAAL.1558.001`, `SC.HIST.REIMERSWAAL.1561_1563.001`.
 
 ### IV — 1560–1563: older pupil to young man; interpreting roles and intentions
 
@@ -169,7 +191,19 @@ After the Beeldenstorm Claes returns to Goes as a man in his early twenties, not
 
 In 1570 the dormant architecture activates. Claes initially decodes for personal reasons — to understand Cornelis, Dee and Silvius. The Primus Index changes the story value: private mystery becomes moral burden. The full reconstruction takes weeks and requires cooperation with the beloved/apothecary daughter.
 
+**Reimerswaal returns during the adult Nigredo.** In 1573–1574 the city of Claes' school years becomes a war zone. Rebel forces take and burn the city during the struggle against the Spanish position; on **29 January 1574** the Sea Beggars defeat a Spanish relief fleet in the naval battle near Reimerswaal and the Yerseke Dam, helping determine the fate of besieged Middelburg. The narrative function is not to add another disaster catalogue but to complete a progression Claes has known since childhood:
+
+> **water damaged the city; fire weakened it; war makes human choice an agent of destruction.**
+
+This callback is canonically relevant even if Claes is not physically present. His exact presence during the 1573–1574 sequence remains open. He may learn of it through travellers, letters, shipping, return travel or later sight; do not force eyewitness status without a separate decision.
+
+Historically, 1573/1574 is **not** the literal final abandonment of Reimerswaal. The city was partly rebuilt and had enough population for renewed civic government in 1578; the final inhabitants left only in 1631. For the novel, however, the war sequence may function as a **point of no return in Claes' remembered city**: the place he knew as a functioning school city can no longer be restored to what it was.
+
 In 1578 the reconstructed testimony reaches anonymous publication/distribution in novel canon. The historical 1578 edition is real; Claes' provenance is fiction.
+
+Decision: `DEC.CLAES.REIMERSWAAL_WAR_CALLBACK.001`.
+Narrative instance: `NI.SEQUENCE.REIMERSWAAL_WAR.1573_1574.001`.
+Historical anchor: `SC.HIST.REIMERSWAAL.1573_1574.001`.
 
 ### VII — 1578–1584: collapse of epistemic certainty
 
@@ -316,12 +350,17 @@ Narrative Instances are concrete story units, never universal theory. They can b
 
 Current key instances include:
 
-- `NI.PROLOGUE.1542.001` — De Bladzijde; now also the intentional exact-date resonance with Claes' 8 December 1542 birth.
+- `NI.PROLOGUE.1542.001` — De Bladzijde; intentional exact-date resonance with Claes' 8 December 1542 birth.
 - `NI.SCENE.DREMPEL.1547.001` — early embodied perception before explicit conceptual understanding.
 - `NI.SCENE.FIRST_MERELS.1553.001` — stones vs routes.
 - `NI.SCENE.SOWER.1554.001` — seed, craft, transformation.
 - `NI.EVENT.GOES_FIRE.1554.001` — first blackening; Claes is eleven.
 - `NI.EVENT.REIMERSWAAL_MOVE.1554.001` — displacement into the actual Latin-school route.
+- `NI.SEQUENCE.REIMERSWAAL_DISSOLUTION.1554_1561.001` — functioning city under progressive material dissolution.
+- `NI.EVENT.REIMERSWAAL_WATER.1555.001` — first major Reimerswaal water event for Claes; refuge becomes vulnerable.
+- `NI.EVENT.REIMERSWAAL_STORM.1557.001` — walls, gates and civic structures fail.
+- `NI.EVENT.REIMERSWAAL_FIRE.1558.001` — fire echoes Goes inside a city already weakened by water.
+- `NI.EVENT.REIMERSWAAL_INUNDATION.1561.001` — final pressure before departure.
 - `NI.EVENT.LANDJUWEEL.1561.001` — multiple representation; Claes is eighteen.
 - `NI.SCENE.DEE_FIRST_ENCOUNTER.1563.001` — recognition; Claes is twenty.
 - `NI.CHAPTER.1564.01`–`.05` — early Antwerp/Monas sequence; Claes is twenty-one.
@@ -330,6 +369,7 @@ Current key instances include:
 - `NI.EVENT.CLAES_RETURN_GOES.1566.001`.
 - `NI.EVENT.CORNELIS_FALL.1568.001`.
 - `NI.SEQUENCE.RECOVERY.1570.001`.
+- `NI.SEQUENCE.REIMERSWAAL_WAR.1573_1574.001` — rebel burning + Battle of Reimerswaal; exact Claes eyewitness status remains open.
 - `NI.EVENT.PUBLICATION.1578.001`.
 - `NI.CHAPTER.1584.01` — De markt van Delft.
 - `NI.SEQUENCE.LATE_RUBEDO.1599.001` — open-form late social mirror.
@@ -372,7 +412,7 @@ A carrier can remain recognisable while words, readability, function or meaning 
 In the vitriol scene the page must darken before what was hidden becomes readable. The alchemical resonance is thematic; the chemistry remains concrete.
 
 ### `MOTIF.FIRE_WATER`
-Goes: fire/air. Reimerswaal: water/earth. Salt is materially central in both environments but not asserted as the same causal mechanism.
+Goes teaches sudden destruction by fire; Reimerswaal teaches repeated erosion, repair and altered form by water, followed by fire in 1558 and human war-destruction in 1573–1574. The elements are not moral allegories. Their narrative function is to give Claes different embodied models of loss: **sudden rupture**, **slow removal**, **cumulative fragility**, and finally **destruction chosen by people**. Salt is materially central in both Goes and Reimerswaal but is not asserted as one universal causal mechanism.
 
 ### `MOTIF.BREAD_TRANSFORMATION`
 Material lesson in transformation: flour → dough → fermentation → stored oven heat → bread. Local practice must remain source-weighted.
@@ -390,7 +430,27 @@ Use source-weighted topography. Distinguish historical anchor, reconstruction an
 
 ### Reimerswaal
 
-Actual school destination after the 1554 fire and intended replacement for Zierikzee; Claes remains in the Reimerswaal educational environment until August 1561. The city remains functioning during his years. The water threat is experienced, not the later final destruction. His years there progress from Latin formation into advanced/older-pupil work; do not force a seven-year beginner curriculum, a formal repetitor office, a locally unverified class structure, an invented rector or a fixed surviving medieval school building.
+Reimerswaal is the actual school destination after the 1554 Goes fire and the replacement for Cornelis' intended Zierikzee route. Claes remains in the Reimerswaal educational environment until August 1561.
+
+**Do not write Reimerswaal as a ruin during Claes' school years.** It remains a functioning city whose very functioning makes its repeated damage meaningful. School, market, shipping, salt-working, crafts, church and civic structures can all contribute to lived texture, subject to source precision.
+
+Historical pressure sequence relevant to Claes:
+
+- pre-arrival memory: the great 1530/1532 losses remain part of local memory and landscape;
+- **November 1555:** repaired dike breached again — first major Reimerswaal water disaster receiving direct attention in Claes' story;
+- **12–13 January 1557:** severe storm damage; substantial failure of walls/gates and damage/collapse of civic, religious, domestic and salt-working structures;
+- **1558:** major fire in the already damaged city;
+- **1561:** renewed inundation before Claes leaves for Antwerp;
+- **1563:** another inundation after his departure, available as later news/memory rather than a school-year eyewitness event;
+- **1573–1574:** rebel capture/burning and the **Battle of Reimerswaal on 29 January 1574** return the place during Claes' adult Nigredo as a war landscape.
+
+The city functions narratively as **a place that remains while disappearing**. It is the material schooling in dissolution that precedes Claes' later alchemical language. The sequence must not be overexplained in alchemical terms from the child's viewpoint.
+
+The 1555 event is specifically paired with the 1554 Goes fire: the fire is why Claes comes to Reimerswaal instead of following the intended Zierikzee route; within roughly his first full year there, water demonstrates that the alternative refuge has its own mode of destruction. Thus fire and water are both counterpoints and mutual amplifiers.
+
+The 1573–1574 war sequence is a later callback, not proof that Claes was present. Natural destructive processes are joined by human agency. **Guardrail:** do not say the city was literally and finally abandoned in 1573 or 1574. It was partly rebuilt, had civic government again in 1578, and the last inhabitants left in **1631**. For Claes, however, 1573–1574 may be the narrative point at which the city of his youth becomes irrecoverable as that remembered form.
+
+His school years there progress from Latin formation into advanced/older-pupil work; do not force a seven-year beginner curriculum, a formal repetitor office, a locally unverified class structure, an invented rector or a fixed surviving medieval school building.
 
 ### Antwerp
 
@@ -428,11 +488,14 @@ High-priority unresolved matters include:
 - exact delivery route of the 1570 Zovitius trigger to Goes;
 - physical facsimile/setting decisions for the clandestine supplement;
 - exact transmission route from reconstructed text 1570 to anonymous publication 1578;
+- **whether Claes is physically present in or near Reimerswaal during the 1573–1574 war sequence, or receives it through news/letters/travel;**
 - exact death scene/location/cause for Claes;
 - final placement and wording of the last merels scene;
 - chapter calendar audit for the 1564 sequence.
 
 The **birth date and education route are no longer open**: `DEC.CLAES.BIRTH_EDUCATION.001` is ACTIVE/CANON.
+The **formative narrative function of the 1555/1557/1558/1561 Reimerswaal sequence is no longer open**: `DEC.CLAES.REIMERSWAAL_FORMATION.001` is ACTIVE/CANON.
+The **later narrative callback of the 1573–1574 Reimerswaal war sequence is CANON**, but Claes' exact eyewitness status remains open: `DEC.CLAES.REIMERSWAAL_WAR_CALLBACK.001`.
 
 ---
 
@@ -498,5 +561,3 @@ When records conflict, use this order:
 5. `SC.*` source claims for historical support;
 6. hypotheses/proposals/open questions;
 7. session memory — never authoritative.
-
-A conflict between a Story Claim and historical evidence is not automatically resolved. The claim may be deliberate fiction; the discrepancy must remain visible through independent `evidence_status` and `canon_status` fields.
