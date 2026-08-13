@@ -168,7 +168,7 @@ Narrative Instances are concrete Claes story units. External `KO.*` objects diag
 
 Key instances include the 1542 prologue, early sensory scenes, first merels lesson, 1554 fire and move to Reimerswaal, 1561 Landjuweel, 1563 Dee encounter, 1564 Antwerp sequence, 4 October security break, 1566 return to Goes, Cornelis' fall, 1570 recovery sequence, 1578 publication, Delft 1584, late Rubedo/Enkhuizen material and the final Projectio test.
 
-Every developed scene should expose, where relevant: objective, pressure/conflict, opening value, turning point, closing value, claims introduced/paid off, arc movement, knowledge delta, object-state delta, motif activation and `KO.*` diagnostic targets.
+Every developed scene should expose, where relevant: objective, pressure/conflict, opening value, turning point, closing_value, claims introduced/paid off, arc movement, knowledge delta, object-state delta, motif activation and `KO.*` diagnostic targets.
 
 ---
 
@@ -212,9 +212,21 @@ For Claes' formative world, keep **liturgical Scripture** and **vernacular Bible
 - The **Leuven Bible of 1548**, Nicolaas van Winghe's approved Catholic Dutch translation based on the Vulgate, is historically appropriate as a Catholic vernacular reading, devotional, educational or clerical aid (`SC.HIST.LEUVEN_BIBLE.1548.001`). The digital edition confirms a 1553 revision and a Plantin Antwerp reprint with verse division in 1565–1566. Its presence in a household or study is plausible but must not be assumed for a specific character without narrative or evidentiary support.
 - The **Liesvelt Bible** is materially and confessionally different: its New Testament follows Luther and the last Liesvelt edition appeared in 1542 (`SC.HIST.LIESVELT_BIBLE.1526_1542.001`). If a Liesvelt Bible reaches Goes later in the novel, treat that object as potentially charged by reformational provenance, risk, memory or identity rather than as the ordinary Catholic Bible.
 - **Lucas 8:4–15, the parable of the sower**, belongs to all these textual traditions. For an early Catholic memory in Claes, the strongest historically grounded anchor is the Vulgate formulation and its liturgical/preaching reception; a vernacular wording should be tied to an actual Dutch reading context rather than silently substituted for the Mass.
-- The Revolt transforms Catholic identity and practice over time rather than producing an instantaneous uniform switch (`SC.HIST.CATHOLIC_IDENTITY.REVOLT.1520_1635.001`). For Zeeland and especially Goes, exact dates for changes in public worship, church use, clergy, preaching, prohibition or tolerated private Catholic practice must remain source-dependent. Do **not** generalize a Holland/England model onto Goes without local evidence.
+- The Revolt transforms Catholic identity and practice over time rather than producing an instantaneous uniform switch (`SC.HIST.CATHOLIC_IDENTITY.REVOLT.1520_1635.001`). Exact local implementation remains source-dependent; do **not** generalize a Holland/England model onto Goes without local evidence.
 
 Narrative use: Catholic ritual can function as an embodied *sinne* environment — sound, incense, wax, gesture, kneeling, elevation, silence, sung Latin, architecture and calendrical repetition — but this must remain concrete historical experience first. Any alchemical resonance (matter, transformation, patience, hidden/manifest meaning) is secondary narrative interpretation, not a claim that Catholic liturgy was historically understood as alchemy.
+
+### Goes religious transition — 1577–1578
+The local chronology is now partly source-anchored through Groenveld, Leeuwenberg, Mout and Zappey, *De Tachtigjarige Oorlog* (`sources/SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008.md`; detailed module `storybible/modules/GOES_RELIGIOUS_TRANSITION_1577_1578.md`; claims `claims/SOURCE_CLAIMS_GOES_RELIGION_1577_1578.yaml`).
+
+- **March 1577:** Goes, the last royalist town in Zeeland, reaches a satisfactie with William of Orange. Under that settlement Catholicism remains the only permitted religion.
+- **1578:** in the subsequent radicalisation, Calvinist/Reformed preaching is introduced under pressure in the Holland and Zeeland towns that had concluded satisfacties. Goes belongs to this class; therefore the Catholic-only March 1577 settlement must not be projected unchanged through 1578.
+- **July 1578:** Orange's proposal for a religious peace shows that coexistence, confessional monopoly and public worship remain actively contested rather than resolved by a single clean transition.
+
+Scene rule: distinguish **public worship arrangements** from **personal confession**. The shift is best dramatized through changing speakers, permitted rituals, access, crowd behaviour, magistracy and control of church space, not through an implausible instant conversion of the population. Exact 1578 date, first Goese church used for Reformed preaching, named local activists/preachers and altar/image-removal sequence remain open pending local evidence.
+
+### Reimerswaal 1574 — Delta war anchor
+The same source places a rebel naval victory over a Habsburg/Spanish fleet **near Reimerswaal in January 1574**; the defeat cut maritime relief to Middelburg, which surrendered the following month. Use this as a strong waterway-war backdrop for the Reimerswaal/Delta world. Do not turn 'near Reimerswaal' into unsupported street fighting inside the town.
 
 ### Revolt, violence and public memory
 Pollmann's memory synthesis provides a guardrail for the later political world. The Revolt generates not one stable shared account but competing memories carried by stories, sermons, songs, prints, objects, rituals and places. Public memory can shape personal recollection, while individual stakeholders can also reshape public memory.
@@ -231,9 +243,9 @@ Huis der Liefde/Radermacher material may function as network or late spiritual/s
 
 Open matters remain open until explicit author decision, including the exact identity/biography of the beloved and her apothecary family, exact Cornelis arrest/death details, some 1564 operational details, exact Dodoens copy history, exact translator roles, delivery route of the 1570 trigger, exact 1570→1578 transmission route, late Enkhuizen/Middelburg sequencing and final Projectio scene details.
 
-For the religious world module, the **exact Goes/Zeeland chronology of public Catholic worship and local confessional transition between 1566 and 1580** remains an evidence question until supported by local archival or specialist sources. Do not canonize a specific prohibition year, transfer of a specific church, or household practice from general Dutch history alone.
+For the religious world module, the earlier broad Goes/Zeeland chronology question is now **partly resolved**: March 1577 supports Catholic-only public religion under the satisfactie, and 1578 supports the introduction of Reformed preaching under pressure in the satisfactie towns. What remains open is the local implementation: exact date in 1578, exact church building(s), named preachers/activists, clergy response, altar/image-removal sequence and the pattern of private or tolerated Catholic practice.
 
-The uploaded Pollmann and Van Bruaene syntheses strengthen the general Low Countries model but do not close this local-evidence question.
+A dedicated provenance record for Pollmann's *Catholic Identity and the Revolt of the Netherlands, 1520–1635* remains to be supplied or independently verified; the separate Pollmann 2017 memory source does not substitute for that title.
 
 An AI may propose; it may not silently close these questions.
 
