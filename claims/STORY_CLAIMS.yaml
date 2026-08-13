@@ -4,19 +4,20 @@ claim_count: 34
 claims:
 - id: STC.CLAES.BIRTH.001
   type: StoryClaim
-  statement: Claes Cornelisz Nissepat is born in Goes on 8 December 1545.
+  statement: Claes Cornelisz Nissepat is born in Goes on 8 December 1542.
   canon_status: CANON
-  evidence_status: SUPPORTED
+  evidence_status: PLAUSIBLE
   subjects:
   - ENT.PERSON.CLAES
   story_time:
-    date: '1545-12-08'
+    date: '1542-12-08'
     precision: day
   tags:
   - biography
+  - brevisima-date-resonance
 - id: STC.CLAES.SCHOOL.GOES.001
   type: StoryClaim
-  statement: Claes receives elementary education in Goes before May 1554; no full official Latin school is claimed.
+  statement: Claes receives elementary education in Goes before May 1554; no uninterrupted full official Goes Latin school in this period is claimed.
   canon_status: CANON
   evidence_status: SUPPORTED
   subjects:
@@ -24,14 +25,14 @@ claims:
   objects:
   - ENT.LOC.GOES
   story_time:
-    earliest: '1550-01-01'
+    earliest: '1548-01-01'
     latest_exclusive: '1554-05-19'
     precision: approximate
   tags:
   - education
 - id: STC.CLAES.REIMERSWAAL.001
   type: StoryClaim
-  statement: After the Goes fire Claes is sent as a cost pupil to the Latin school of Reimerswaal and remains there until summer 1561.
+  statement: After the Goes fire Claes is sent later in 1554 as a cost pupil to the Latin school of Reimerswaal and remains in the Reimerswaal educational environment until summer 1561; the later years are advanced/older-pupil formation rather than seven years of beginner curriculum.
   canon_status: CANON
   evidence_status: SUPPORTED
   subjects:
@@ -47,7 +48,7 @@ claims:
   - location
 - id: STC.CLAES.ZIERIKZEE.PLAN.001
   type: StoryClaim
-  statement: Zierikzee was Cornelis’ intended school destination for Claes before the 1554 fire, but it is not the actual destination.
+  statement: Before the 1554 fire Cornelis intends Claes to move from his elementary schooling in Goes into the Latin-school route at Zierikzee; after the fire Zierikzee is abandoned as the intended destination and Reimerswaal becomes the actual route.
   canon_status: CANON
   evidence_status: PLAUSIBLE
   subjects:
