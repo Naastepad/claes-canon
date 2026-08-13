@@ -1,0 +1,121 @@
+schema_version: "1.0.0"
+kind: RegionalHistoricalTimeline
+id: HIST.TIMELINE.ZEELAND.REVOLT
+region: ZEELAND
+parent_timeline: HIST.TIMELINE.LOW_COUNTRIES.1540_1605
+places_priority:
+  - GOES
+  - REIMERSWAAL
+  - MIDDELBURG
+  - VLISSINGEN
+  - VEERE
+  - WALCHEREN
+  - ZEELAND_DELTA
+principles:
+  - "Water is geography, economy and military infrastructure at once."
+  - "Public confession, political allegiance and household belief are separate fields."
+  - "Antwerp or general Low Countries evidence may provide mechanisms but not unverified Zeeland local detail."
+
+events:
+  - id: HIST.ZEELAND.MIDDELBURG_BISHOPRIC.1559
+    date: 1559
+    place: MIDDELBURG
+    type: church_institution
+    summary: "Middelburg becomes the seat of a bishopric in the Catholic episcopal reorganisation."
+    evidence_status: SUPPORTED
+    source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008]
+    scene_domains: [church, clergy, urban_status, institutional_reform]
+
+  - id: HIST.ZEELAND.REVOLT_GROUND.1572
+    date: 1572
+    place: ZEELAND
+    type: revolt_control
+    summary: "The Revolt gains durable ground in Zeeland, while control remains uneven and contested."
+    evidence_status: SUPPORTED
+    source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008]
+    scene_domains: [garrisons, shipping, rumours, taxation, confessional_pressure]
+
+  - id: HIST.ZEELAND.GOES_ROYALIST_CRISIS.1572_1573
+    date_start: 1572
+    date_end: 1573
+    place: GOES
+    type: military_political
+    summary: "Goes remains a royalist centre during the Zeeland struggle; exact siege/relief sequence should be drawn from the dedicated Goes evidence layer."
+    evidence_status: NEEDS_LOCATOR
+    source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008]
+    scene_domains: [siege, provisioning, fear, civic_loyalty, church]
+    research_needed:
+      - civilian routines during siege/relief
+      - guild and church institutional roles
+      - food and fuel supply
+
+  - id: HIST.ZEELAND.REIMERSWAAL_NAVAL.1574
+    date: 1574-01
+    place: REIMERSWAAL_AREA
+    type: naval_battle
+    summary: "Rebel forces defeat a Habsburg/Spanish fleet near Reimerswaal, undermining relief of Middelburg."
+    evidence_status: VERIFIED
+    source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008]
+    scene_domains: [water, fleet, cannon_sound, disrupted_shipping, rumours, shortages]
+    do_not_infer:
+      - "Urban street battle in Reimerswaal."
+
+  - id: HIST.ZEELAND.MIDDELBURG_SURRENDER.1574
+    date: 1574-02
+    place: MIDDELBURG
+    type: military_political
+    summary: "Middelburg surrenders after its maritime relief position has been broken."
+    evidence_status: SUPPORTED
+    source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008]
+    scene_domains: [shipping, political_control, migration, markets]
+
+  - id: HIST.ZEELAND.GOES_SATISFACTION.1577
+    date: 1577-03
+    place: GOES
+    type: political_confessional_settlement
+    summary: "Goes reaches a satisfactie with William of Orange while Catholicism remains the sole permitted public religion."
+    evidence_status: VERIFIED
+    source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008]
+    scene_domains: [magistracy, church, oath, public_ritual, political_ambiguity]
+    do_not_infer:
+      - "Political transfer equals immediate Reformed church control."
+
+  - id: HIST.ZEELAND.GOES_REFORMED_PREACHING.1578
+    date: 1578
+    place: GOES
+    type: confessional_public_space
+    summary: "Reformed preaching is introduced under pressure during the radicalisation affecting the Zeeland satisfactie towns."
+    evidence_status: VERIFIED
+    source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008]
+    scene_domains: [church_soundscape, preaching, crowd, magistracy, ritual_change, Catholic_adaptation]
+    research_needed:
+      - exact date
+      - exact church
+      - named preacher/activists
+      - local Catholic clergy response
+      - altar and image sequence
+      - private/tolerated Catholic practices
+
+scene_query_dimensions:
+  - date
+  - place
+  - political_control
+  - public_worship
+  - military_pressure
+  - waterways_shipping
+  - food_provisioning
+  - guilds_corporations
+  - church_building_state
+  - sounds
+  - smells
+  - crowd_movement
+  - books_print_censorship
+  - migration
+  - memory_afterlife
+
+research_backlog:
+  - "Build annual/seasonal water and shipping pressure map for 1572–1578."
+  - "Add exact Goes 1572–1573 siege and relief chronology with civilian consequences."
+  - "Add local church buildings, altars, guild associations and clergy for Goes before and after 1578."
+  - "Add Reimerswaal demographic, ecclesiastical and material decline alongside flood history and war."
+  - "Add Veere, Vlissingen and Middelburg transitions as comparison cases rather than silently projecting them onto Goes."
