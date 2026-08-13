@@ -47,3 +47,99 @@ claims:
       note: "Critical digital edition identifies the primitive 1542 version; final publication bibliography should add the exact printed-edition locator for the closing date."
     retrieval:
       tags: [las-casas, brevisima, 1542, valencia, birth-resonance]
+
+  - id: SC.HIST.REIMERSWAAL.1555.001
+    type: SourceClaim
+    statement: "In November 1555 the repaired dike protecting Reimerswaal was again breached, during the period in which Claes is canonically resident there."
+    claim_type: historical_event
+    subject: ENT.LOC.REIMERSWAAL
+    predicate: suffered_dike_breach
+    story_time:
+      earliest: 1555-11-01
+      latest_exclusive: 1555-12-01
+      precision: month
+    evidence_status: SUPPORTED
+    source_ids:
+      - SRC-HIST-SLUIMEREND-IN-SLIK-REIMERSWAAL-001
+    supports_story_claims:
+      - STC.CLAES.REIMERSWAAL.WATER_1555.001
+    qualifies:
+      - "The event is historical; Claes' personal witnessing is fictional canon."
+    retrieval:
+      tags: [reimerswaal, flood, dike, 1555, childhood]
+
+  - id: SC.HIST.REIMERSWAAL.1557.001
+    type: SourceClaim
+    statement: "The storm of 12-13 January 1557 caused exceptional damage at Reimerswaal: much of the walls and gates failed and the town hall, churches, houses and saltworks were damaged or collapsed."
+    claim_type: historical_event
+    subject: ENT.LOC.REIMERSWAAL
+    predicate: suffered_major_storm_damage
+    story_time:
+      earliest: 1557-01-12
+      latest_exclusive: 1557-01-14
+      precision: day-range
+    evidence_status: SUPPORTED
+    source_ids:
+      - SRC-HIST-SLUIMEREND-IN-SLIK-REIMERSWAAL-001
+    supports_story_claims:
+      - STC.CLAES.REIMERSWAAL.STORM_1557.001
+    retrieval:
+      tags: [reimerswaal, storm, walls, gates, saltworks, 1557]
+
+  - id: SC.HIST.REIMERSWAAL.1558.001
+    type: SourceClaim
+    statement: "A major fire struck the already damaged city of Reimerswaal in 1558."
+    claim_type: historical_event
+    subject: ENT.LOC.REIMERSWAAL
+    predicate: suffered_city_fire
+    story_time:
+      earliest: 1558-01-01
+      latest_exclusive: 1559-01-01
+      precision: year
+    evidence_status: SUPPORTED
+    source_ids:
+      - SRC-HIST-SLUIMEREND-IN-SLIK-REIMERSWAAL-001
+    supports_story_claims:
+      - STC.CLAES.REIMERSWAAL.FIRE_1558.001
+    retrieval:
+      tags: [reimerswaal, fire, 1558, fire-water]
+
+  - id: SC.HIST.REIMERSWAAL.1561_1563.001
+    type: SourceClaim
+    statement: "Reimerswaal suffered further inundations in 1561 and again in 1563."
+    claim_type: historical_event_series
+    subject: ENT.LOC.REIMERSWAAL
+    predicate: suffered_repeated_inundation
+    story_time:
+      earliest: 1561-01-01
+      latest_exclusive: 1564-01-01
+      precision: years
+    evidence_status: SUPPORTED
+    source_ids:
+      - SRC-HIST-SLUIMEREND-IN-SLIK-REIMERSWAAL-001
+    supports_story_claims:
+      - STC.CLAES.REIMERSWAAL.DISSOLUTION.001
+    retrieval:
+      tags: [reimerswaal, flood, 1561, 1563, repeated-loss]
+
+  - id: SC.HIST.REIMERSWAAL.1573_1574.001
+    type: SourceClaim
+    statement: "During the revolt, rebel forces took Reimerswaal from a Spanish position and burned the city in 1573/1574; on 29 January 1574 the Sea Beggars defeated a Spanish relief fleet in the naval battle near Reimerswaal and the Yerseke Dam, helping decide the fate of besieged Middelburg."
+    claim_type: historical_war_sequence
+    subject: ENT.LOC.REIMERSWAAL
+    predicate: became_war_zone_and_battle_landmark
+    story_time:
+      earliest: 1573-01-01
+      latest_exclusive: 1574-01-30
+      precision: bounded
+    evidence_status: SUPPORTED
+    source_ids:
+      - SRC-HIST-SLUIMEREND-IN-SLIK-REIMERSWAAL-001
+      - SRC-HIST-ENCYCLOPEDIE-ZEELAND-REIMERSWAAL-001
+      - SRC-HIST-DBNL-MEERTENS-1574-REIMERSWAAL-001
+    supports_story_claims:
+      - STC.CLAES.REIMERSWAAL.WAR_MEMORY.001
+    qualifies:
+      - "The war damage is a point of no return in the city's decline, but it is not the literal date of final abandonment: the town was partly rebuilt and had magistrates again in 1578; the last inhabitants left in 1631."
+    retrieval:
+      tags: [reimerswaal, geuzen, 1573, naval-battle, 1574, middelburg]
