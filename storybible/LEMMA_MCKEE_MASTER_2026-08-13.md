@@ -183,6 +183,11 @@ Every developed scene should expose, where relevant: objective, pressure/conflic
 
 Goes, Reimerswaal, Antwerp, Delft, Middelburg and Enkhuizen remain source-weighted historical environments. Distinguish historical anchor, reconstruction and fiction. Do not manufacture exact topography, school personnel, institutional structures, trade practices or religious affiliations where sources do not support them.
 
+### Sensory religious space — `WORLD.RELIGIOUS_SPACE.SENSORY_CHURCH`
+The active scene/world module `narrative/religious_space_sensory_church.yaml`, grounded primarily in Wendy Wauters (`sources/SRC-WAUTERS-RELIGIOUS-SPACE-2021.md`), governs reconstruction of pre-Tridentine church experience where relevant. It treats the church simultaneously as liturgical institution, sensory field, social map, corporate stage and memory repository. The documented Antwerp model may be used directly for Antwerp; broader Low Countries sensory and corporative mechanisms may inform Goes and Reimerswaal only with scale correction and explicit local verification for numbers, dedications, ownership, topography, feast customs, processional routes and post-1566 chronology.
+
+For Claes, this module provides historical scaffolding for the *sinne* sequence: **body → sinne → spatial/social orientation → comparison/pattern → understanding → moral discernment**. It also defines scene guardrails for guilds, crafts, confraternities, rhetoricians, bells, processions, light, smell, crowd movement, graves and the church as memory palace. Use it as historical scene infrastructure, not as proof that every local feature documented in Antwerp existed identically in Goes or Reimerswaal.
+
 ### Catholic Scripture, liturgy and confessional change, ca. 1550–1580
 For Claes' formative world, keep **liturgical Scripture** and **vernacular Bible ownership/reading** separate.
 
