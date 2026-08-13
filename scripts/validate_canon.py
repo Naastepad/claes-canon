@@ -3,7 +3,8 @@
 
 Validates the McKee/NOS-inspired structured storybible layer. Lemma syntax is
 validated separately. The compiler is conservative: it checks declared state,
-references, vocabularies and temporal windows, but never invents missing facts.
+references, vocabularies, temporal windows and migration-review coverage, but
+never invents missing facts or silently resolves canon conflicts.
 """
 from __future__ import annotations
 
@@ -24,6 +25,8 @@ STRUCTURED = [
 
 EVIDENCE = {"VERIFIED", "SUPPORTED", "PLAUSIBLE", "DISPUTED", "UNKNOWN"}
 CANON = {"PROPOSED", "CANON", "OPEN", "DEPRECATED", "REJECTED"}
+MIGRATION_ORIGIN = {"MIGRATED", "DERIVED", "NEW"}
+MIGRATION_REVIEW_STATE = {"MIGRATION_CHECK", "HUMAN_REVIEW", "HUMAN_DECISION", "CONFLICT"}
 ID_RE = re.compile(r"^(SC|STC|DEC|ENT|OBJ|NI|ARC|MOTIF|REL|OPEN|GRD|SB|THEME|VALUE|WORLD|CODE)\.[A-Z0-9_.-]+$")
 SOURCE_RE = re.compile(r"^SRC-[A-Z0-9_.-]+$")
 
@@ -145,6 +148,74 @@ if ledger.exists():
         if expected != 3804:
             errors.append(f"conversion ledger does not end at source line 3803; next expected is {expected}")
 
+# Migration-review gate: every current Story Claim must be classified exactly once.
+review_path = ROOT / "review" / "MIGRATION_REVIEW.yaml"
+story_claim_ids = {ident for ident in all_ids if ident.startswith("STC.")}
+if not review_path.exists():
+    errors.append("missing review/MIGRATION_REVIEW.yaml")
+else:
+    try:
+        review_data = yaml.safe_load(review_path.read_text(encoding="utf-8")) or {}
+    except Exception as exc:
+        errors.append(f"YAML parse error review/MIGRATION_REVIEW.yaml: {exc}")
+        review_data = {}
+
+    review_records = review_data.get("records", [])
+    seen_review: set[str] = set()
+    origin_counts = {key: 0 for key in MIGRATION_ORIGIN}
+    state_counts = {key: 0 for key in MIGRATION_REVIEW_STATE}
+
+    for item in review_records:
+        claim_id = item.get("claim_id")
+        origin = item.get("origin")
+        review_state = item.get("review_state")
+        if not isinstance(claim_id, str):
+            errors.append("migration review record missing claim_id")
+            continue
+        if claim_id in seen_review:
+            errors.append(f"duplicate migration review record for {claim_id}")
+        seen_review.add(claim_id)
+        if claim_id not in story_claim_ids:
+            errors.append(f"migration review references non-existent Story Claim {claim_id}")
+        if origin not in MIGRATION_ORIGIN:
+            errors.append(f"invalid migration origin {origin} for {claim_id}")
+        else:
+            origin_counts[origin] += 1
+        if review_state not in MIGRATION_REVIEW_STATE:
+            errors.append(f"invalid migration review_state {review_state} for {claim_id}")
+        else:
+            state_counts[review_state] += 1
+        if origin == "NEW" and review_state not in {"HUMAN_DECISION", "CONFLICT"}:
+            errors.append(f"NEW claim must require HUMAN_DECISION or CONFLICT: {claim_id}")
+        if review_state == "CONFLICT" and not item.get("conflict"):
+            errors.append(f"CONFLICT record must explain conflict: {claim_id}")
+
+    missing_review = sorted(story_claim_ids - seen_review)
+    extra_review = sorted(seen_review - story_claim_ids)
+    for claim_id in missing_review:
+        errors.append(f"Story Claim lacks migration review classification: {claim_id}")
+    for claim_id in extra_review:
+        errors.append(f"migration review has orphan classification: {claim_id}")
+
+    declared = review_data.get("summary", {})
+    if declared.get("story_claims_total") != len(story_claim_ids):
+        errors.append(
+            f"migration review story_claims_total is {declared.get('story_claims_total')}, expected {len(story_claim_ids)}"
+        )
+    for key, actual in origin_counts.items():
+        expected_count = (declared.get("by_origin") or {}).get(key)
+        if expected_count != actual:
+            errors.append(f"migration review origin count {key} is {expected_count}, actual {actual}")
+    for key, actual in state_counts.items():
+        expected_count = (declared.get("by_review_state") or {}).get(key)
+        if expected_count != actual:
+            errors.append(f"migration review state count {key} is {expected_count}, actual {actual}")
+
+    # Conflicts are deliberate merge blockers, not warnings.
+    unresolved_conflicts = [item.get("claim_id") for item in review_records if item.get("review_state") == "CONFLICT"]
+    for claim_id in unresolved_conflicts:
+        errors.append(f"UNRESOLVED CANON CONFLICT blocks merge: {claim_id}")
+
 if errors:
     print("CLAES CANON VALIDATION: FAILED")
     for error in errors:
@@ -154,3 +225,4 @@ if errors:
 print("CLAES CANON VALIDATION: PASSED")
 print(f"Structured IDs: {len(all_ids)}")
 print(f"Source records: {len(source_ids)}")
+print(f"Migration-reviewed Story Claims: {len(story_claim_ids)}")
