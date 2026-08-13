@@ -2,9 +2,10 @@
 """Repository-level continuity compiler for Claes.
 
 Validates the McKee/NOS-inspired structured storybible layer. Lemma syntax is
-validated separately. The compiler is conservative: it checks declared state,
-references, vocabularies, temporal windows and migration-review coverage, but
-never invents missing facts or silently resolves canon conflicts.
+validated separately. This compiler checks declared state, references,
+vocabularies, temporal windows, migration-review coverage, multi-agent
+integrity files, and a small set of explicit cross-layer author decisions.
+It never invents missing facts or silently resolves canon conflicts.
 """
 from __future__ import annotations
 
@@ -33,6 +34,7 @@ SOURCE_RE = re.compile(r"^SRC-[A-Z0-9_.-]+$")
 errors: list[str] = []
 records: list[tuple[Path, dict]] = []
 all_ids: dict[str, Path] = {}
+record_by_id: dict[str, dict] = {}
 source_ids = {p.stem for p in (ROOT / "sources").glob("SRC-*.md")}
 
 
@@ -44,6 +46,7 @@ def walk(obj, path: Path):
                 errors.append(f"duplicate id {ident}: {all_ids[ident]} and {path}")
             else:
                 all_ids[ident] = path
+                record_by_id[ident] = obj
             records.append((path, obj))
         for value in obj.values():
             walk(value, path)
@@ -82,6 +85,7 @@ REF_KEYS = {
     "story_claims", "affects", "arcs_advanced", "motifs", "claims_active",
     "claims_introduced", "applies_to", "contradicts", "qualifies",
     "knowledge_object_targets", "ko_targets", "story_instance", "motif",
+    "relationship", "destination", "arc", "location_anchor",
 }
 
 
@@ -127,7 +131,7 @@ for path, record in records:
         if record.get("canon_status") != "CANON":
             errors.append(f"non-CANON claim marked lemma_candidate: {record['id']}")
 
-# The section ledger must cover the source continuously at top-level boundaries.
+# The section ledger must cover the Revision 11 source continuously at top-level boundaries.
 ledger = ROOT / "mapping" / "CONVERSION_LEDGER.yaml"
 if ledger.exists():
     data = yaml.safe_load(ledger.read_text(encoding="utf-8")) or {}
@@ -135,7 +139,7 @@ if ledger.exists():
     if not sections:
         errors.append("conversion ledger contains no sections")
     else:
-        expected = 15  # first top-level section begins after the revision header
+        expected = 15
         for section in sections:
             lines = section.get("source_lines", {})
             start, end = lines.get("start"), lines.get("end")
@@ -187,21 +191,17 @@ else:
             state_counts[review_state] += 1
         if origin == "NEW" and review_state not in {"HUMAN_DECISION", "CONFLICT"}:
             errors.append(f"NEW claim must require HUMAN_DECISION or CONFLICT: {claim_id}")
-        if review_state == "CONFLICT" and not item.get("conflict"):
+        if review_state == "CONFLICT" and not (item.get("conflict") or item.get("resolution")):
             errors.append(f"CONFLICT record must explain conflict: {claim_id}")
 
-    missing_review = sorted(story_claim_ids - seen_review)
-    extra_review = sorted(seen_review - story_claim_ids)
-    for claim_id in missing_review:
+    for claim_id in sorted(story_claim_ids - seen_review):
         errors.append(f"Story Claim lacks migration review classification: {claim_id}")
-    for claim_id in extra_review:
+    for claim_id in sorted(seen_review - story_claim_ids):
         errors.append(f"migration review has orphan classification: {claim_id}")
 
     declared = review_data.get("summary", {})
     if declared.get("story_claims_total") != len(story_claim_ids):
-        errors.append(
-            f"migration review story_claims_total is {declared.get('story_claims_total')}, expected {len(story_claim_ids)}"
-        )
+        errors.append(f"migration review story_claims_total is {declared.get('story_claims_total')}, expected {len(story_claim_ids)}")
     for key, actual in origin_counts.items():
         expected_count = (declared.get("by_origin") or {}).get(key)
         if expected_count != actual:
@@ -211,10 +211,73 @@ else:
         if expected_count != actual:
             errors.append(f"migration review state count {key} is {expected_count}, actual {actual}")
 
-    # Conflicts are deliberate merge blockers, not warnings.
-    unresolved_conflicts = [item.get("claim_id") for item in review_records if item.get("review_state") == "CONFLICT"]
-    for claim_id in unresolved_conflicts:
-        errors.append(f"UNRESOLVED CANON CONFLICT blocks merge: {claim_id}")
+    for item in review_records:
+        if item.get("review_state") == "CONFLICT":
+            errors.append(f"UNRESOLVED CANON CONFLICT blocks merge: {item.get('claim_id')}")
+
+# Multi-agent integrity files must exist.
+required_files = [
+    ROOT / "REPOSITORY_INTEGRITY.md",
+    ROOT / "AGENTS.md",
+    ROOT / "AUTHORING_POLICY.md",
+    ROOT / "AI_ONBOARDING.md",
+    ROOT / "review" / "SYNC_STATUS.md",
+    ROOT / "storybible" / "LEMMA_MCKEE_MASTER_2026-08-13.md",
+    ROOT / "canon" / "DECISIONS_2026-08-13.md",
+    ROOT / "canon" / "DECISIONS.yaml",
+]
+for path in required_files:
+    if not path.exists():
+        errors.append(f"missing required integrity/authority file: {path.relative_to(ROOT)}")
+
+# Explicit 13-Aug-2026 author-decision synchronization checks.
+birth_claim = record_by_id.get("STC.CLAES.BIRTH.001") or {}
+if (birth_claim.get("story_time") or {}).get("date") != "1542-12-08":
+    errors.append("STC.CLAES.BIRTH.001 must be synchronized to 1542-12-08")
+
+claes_entity = record_by_id.get("ENT.PERSON.CLAES") or {}
+if (claes_entity.get("birth") or {}).get("date") != "1542-12-08":
+    errors.append("ENT.PERSON.CLAES birth must be synchronized to 1542-12-08")
+
+life_arc = record_by_id.get("ARC.CLAES.LIFE") or {}
+life_phases = life_arc.get("phases") or []
+if not life_phases or ((life_phases[0].get("story_time") or {}).get("earliest") != "1542-12-08"):
+    errors.append("ARC.CLAES.LIFE must begin at 1542-12-08")
+
+macro_arc = record_by_id.get("ARC.CLAES.MACRO_TRANSMUTATION") or {}
+macro_phases = macro_arc.get("phases") or []
+if not macro_phases or ((macro_phases[0].get("story_time") or {}).get("earliest") != "1542-12-08"):
+    errors.append("ARC.CLAES.MACRO_TRANSMUTATION Drager phase must begin at 1542-12-08")
+
+for required_id in [
+    "DEC.CLAES.BIRTH.2026-08-13",
+    "DEC.CLAES.SINNE.2026-08-13",
+    "DEC.CLAES.PARADOX.2026-08-13",
+    "DEC.CLAES.NEED.2026-08-13",
+    "DEC.CLAES.SPIRITUAL_JOURNEY.2026-08-13",
+    "THEME.CLAES.SPIRITUAL_JOURNEY",
+    "VALUE.CLAES.SINNE",
+    "ARC.CLAES.SINNE_RECOVERY",
+    "MOTIF.SINNE.RECOVERY",
+    "REL.CLAES.BELOVED.RECOVERY",
+]:
+    if required_id not in all_ids:
+        errors.append(f"missing synchronized decision/narrative record: {required_id}")
+
+master_path = ROOT / "storybible" / "LEMMA_MCKEE_MASTER_2026-08-13.md"
+if master_path.exists():
+    master_text = master_path.read_text(encoding="utf-8")
+    if "8 December 1542" not in master_text:
+        errors.append("current operating master must state 8 December 1542")
+    if "8 December 1545" in master_text:
+        errors.append("current operating master must not retain 8 December 1545")
+    for phrase in ["road toward Enkhuizen", "matter toward spirituality", "knowledge-as-control"]:
+        if phrase not in master_text:
+            errors.append(f"current operating master missing synchronized character architecture phrase: {phrase}")
+
+sync_path = ROOT / "review" / "SYNC_STATUS.md"
+if sync_path.exists() and "SYNC_COMPLETE" not in sync_path.read_text(encoding="utf-8"):
+    errors.append("review/SYNC_STATUS.md must be SYNC_COMPLETE before validation can pass")
 
 if errors:
     print("CLAES CANON VALIDATION: FAILED")
@@ -226,3 +289,4 @@ print("CLAES CANON VALIDATION: PASSED")
 print(f"Structured IDs: {len(all_ids)}")
 print(f"Source records: {len(source_ids)}")
 print(f"Migration-reviewed Story Claims: {len(story_claim_ids)}")
+print("Author decisions synchronized: 2026-08-13")
