@@ -1,0 +1,48 @@
+schema_version: 1.0.0
+kind: NarrativeArcExtension
+records:
+- id: ARC.CLAES.SINNE_RECOVERY
+  type: CharacterArc
+  label: Sinne — openness, constriction, recovery and sovereignty
+  status: CANON
+  protagonist: ENT.PERSON.CLAES
+  decision_ids:
+  - DEC.CLAES.SINNE.2026-08-13
+  - DEC.CLAES.PARADOX.2026-08-13
+  - DEC.CLAES.NEED.2026-08-13
+  - DEC.CLAES.SPIRITUAL_JOURNEY.2026-08-13
+  progression:
+  - phase: childhood_openness
+    movement: embodied sensation develops through recognition, comparison and pattern toward understanding
+  - phase: vigilance
+    movement: fire, water threat, displacement and loss make perception defensive and hyper-attentive
+  - phase: constriction
+    movement: accumulated trauma, secrecy and consequence blunt sensory openness even while analytical skill remains strong
+  - phase: recovery
+    movement: on the road toward Enkhuizen, with the beloved/apothecary daughter beside him, Claes rediscovers embodied perception
+  - phase: resonance
+    movement: sensation is no longer only registered outside him but echoes inwardly and reconnects body, memory, relation and meaning
+  - phase: sovereignty
+    movement: mature sinne becomes perceive → distinguish → choose → carry → release
+  culmination: the Great Work is lived as the transmutation of knowledge-as-control into wisdom-in-relation and inner sovereignty
+  guardrail: recovery is not a return to untouched childhood innocence and the beloved does not perform Claes' transformation for him
+  ko_targets:
+  - KO.CHARACTER
+  - KO.VALUE
+  - KO.ARC
+- id: MOTIF.SINNE.RECOVERY
+  type: MotifExtension
+  label: Sinne as recovery motif
+  status: CANON
+  parent: MOTIF.SINNE
+  sequence:
+  - sensory openness
+  - vigilance
+  - blunting/constriction
+  - rediscovery
+  - inward resonance
+  - embodied discernment
+  - wisdom
+  - release
+  relationship: REL.CLAES.BELOVED
+  destination: ENT.LOC.ENKHUIZEN
