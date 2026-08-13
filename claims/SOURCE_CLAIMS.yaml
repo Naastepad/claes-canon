@@ -61,10 +61,8 @@ claims:
     evidence_status: SUPPORTED
     source_ids:
       - SRC-HIST-SLUIMEREND-IN-SLIK-REIMERSWAAL-001
-    supports_story_claims:
-      - STC.CLAES.REIMERSWAAL.WATER_1555.001
     qualifies:
-      - "The event is historical; Claes' personal witnessing is fictional canon."
+      - "The event is historical; Claes' personal witnessing is fictional canon by DEC.CLAES.REIMERSWAAL_FORMATION.001."
     retrieval:
       tags: [reimerswaal, flood, dike, 1555, childhood]
 
@@ -81,8 +79,6 @@ claims:
     evidence_status: SUPPORTED
     source_ids:
       - SRC-HIST-SLUIMEREND-IN-SLIK-REIMERSWAAL-001
-    supports_story_claims:
-      - STC.CLAES.REIMERSWAAL.STORM_1557.001
     retrieval:
       tags: [reimerswaal, storm, walls, gates, saltworks, 1557]
 
@@ -99,8 +95,6 @@ claims:
     evidence_status: SUPPORTED
     source_ids:
       - SRC-HIST-SLUIMEREND-IN-SLIK-REIMERSWAAL-001
-    supports_story_claims:
-      - STC.CLAES.REIMERSWAAL.FIRE_1558.001
     retrieval:
       tags: [reimerswaal, fire, 1558, fire-water]
 
@@ -117,8 +111,6 @@ claims:
     evidence_status: SUPPORTED
     source_ids:
       - SRC-HIST-SLUIMEREND-IN-SLIK-REIMERSWAAL-001
-    supports_story_claims:
-      - STC.CLAES.REIMERSWAAL.DISSOLUTION.001
     retrieval:
       tags: [reimerswaal, flood, 1561, 1563, repeated-loss]
 
@@ -137,8 +129,6 @@ claims:
       - SRC-HIST-SLUIMEREND-IN-SLIK-REIMERSWAAL-001
       - SRC-HIST-ENCYCLOPEDIE-ZEELAND-REIMERSWAAL-001
       - SRC-HIST-DBNL-MEERTENS-1574-REIMERSWAAL-001
-    supports_story_claims:
-      - STC.CLAES.REIMERSWAAL.WAR_MEMORY.001
     qualifies:
       - "The war damage is a point of no return in the city's decline, but it is not the literal date of final abandonment: the town was partly rebuilt and had magistrates again in 1578; the last inhabitants left in 1631."
     retrieval:
