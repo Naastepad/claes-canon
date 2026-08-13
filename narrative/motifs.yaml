@@ -1,0 +1,60 @@
+schema_version: 1.1.0
+kind: MotifRegistry
+motifs:
+- id: MOTIF.SINNE
+  label: sinne
+  status: CANON
+  function: sensory cognition; reader enters world through Claes
+  progression:
+  - sensation
+  - recognition
+  - comparison
+  - pattern
+  - understanding
+  - choice
+  - 'adult: perceive→distinguish→choose→carry'
+- id: MOTIF.TIK_TIK_TIK
+  label: tik-tik-tik
+  status: CANON
+  function: sound motif moving from work/patience to violence/loss and later integration
+- id: MOTIF.INCENSE_WAX
+  label: wierook en kaarslicht
+  status: CANON
+  function: sensory memory anchor from early mass onward
+- id: MOTIF.CARRIER_MEANING
+  label: drager / bewerking / betekenis
+  status: CANON
+  function: same carrier can change readability, function or meaning
+  instances:
+  - music contrafact
+  - printed play
+  - book
+  - material process
+  - game position
+  - memoriaal
+- id: MOTIF.MERELS_WAYS
+  label: stenen en wegen
+  status: CANON
+  function: relations and pathways matter more than counted possessions
+  anchor: Gij hebt mijn stenen geteld. Ik heb uw wegen geteld.
+- id: MOTIF.FIRE_WATER
+  label: vuur/lucht ↔ water/aarde
+  status: CANON
+  function: youth elemental symmetry Goes/Reimerswaal
+  guardrail: historical disasters first; not didactic allegory
+- id: MOTIF.MUSIC_OLD_TUNE
+  label: de oude wijs
+  status: CANON
+  function: auditory continuity across confessional change and preparation for hidden readability
+- id: MOTIF.BLACKENING_REVEAL
+  label: zwarting als onthulling
+  status: CANON
+  function: vitriol darkens hidden tannin layer and makes text readable; Nigredo resonance without didactic naming
+- id: MOTIF.BREAD
+  label: brood / gest / oven
+  status: CANON_CONTEXT
+  function: material transformation, measure, labour, food and social order
+- id: MOTIF.CASTANEA
+  label: Castanea
+  status: CANON
+  function: memory anchor and wayfinding/authentication in recovery chain

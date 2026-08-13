@@ -1,0 +1,19 @@
+schema_version: "1.0.0"
+kind: NarrativeStructureRegistry
+hierarchy:
+  - NarrativeInstance.Book
+  - NarrativeInstance.Act
+  - NarrativeInstance.Sequence
+  - NarrativeInstance.Chapter
+  - NarrativeInstance.Scene
+  - NarrativeInstance.Beat
+instances:
+  books: []
+  acts: []
+  sequences: []
+  chapters: []
+  beats: []
+notes:
+  - "Do not populate hierarchy from inference alone. Create NI.* records only when the master storybible or manuscript provides the unit."
+  - "Scenes live in narrative/scenes.yaml; arcs and motifs are separate cross-cutting registries."
+  - "The hierarchy mirrors McKee/NOS object granularity without importing McKee theory into project canon."

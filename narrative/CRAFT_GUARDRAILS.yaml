@@ -1,0 +1,23 @@
+schema_version: 1.0.0
+kind: CraftGuardrailRegistry
+guardrails:
+- id: GRD.SINNE.ORDER
+  rule: For Claes POV, prefer sensory input → bodily reaction → recognition → interpretation → choice.
+- id: GRD.NO.FALSE_PRECISION
+  rule: Never invent an exact day when canon/source precision is month, season, year or interval.
+- id: GRD.HIST.FICTION.SEPARATION
+  rule: Keep historical support distinct from fictional story decisions.
+- id: GRD.MERELS.INWORLD
+  rule: No modern a1–g7 coordinates, engine IDs, P labels or pulsing trails in-world.
+- id: GRD.MERELS.LOCAL
+  rule: Local letters and stone shapes are problem-local identifiers; pigment is not party proof.
+- id: GRD.CODE.FUNCTIONS
+  rule: Zovitius opens door; vitriol reveals memoriaal; memoriaal yields merels/theorem/Monas and points to Castanea; Monas orders; Dodoens yields values; Primus Index identifies; full reconstruction takes weeks.
+- id: GRD.ALCHEMY.AUTHORIAL
+  rule: Nigredo/Albedo/Rubedo/Projectio are authorial architecture, not a mandatory in-world doctrine.
+- id: GRD.LOVE.COUNTERFORCE
+  rule: The beloved is moral/material counterforce and error-checker, not a replacement merels expert.
+- id: GRD.NO_ONE_NIGHT_DECODE
+  rule: No miraculous one-night full decode.
+- id: GRD.MASTER.AUTHORITY
+  rule: Structured registries are projections of the storybible; conflict requires proposal and human decision, never silent overwrite.

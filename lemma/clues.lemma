@@ -1,0 +1,22 @@
+spec clue_dependency
+
+data canon_status: text
+  -> option "PROPOSED"
+  -> option "CANON"
+  -> option "OPEN"
+  -> option "DEPRECATED"
+  -> option "REJECTED"
+
+data clue_available: boolean
+data prerequisite_knowledge: boolean
+data prerequisite_object: boolean
+data correct_location: boolean
+
+rule active_canon: false
+  unless canon_status is "CANON" then true
+
+rule can_use_clue:
+  clue_available and prerequisite_knowledge and prerequisite_object and correct_location
+
+rule canonical_clue_path_valid:
+  active_canon and can_use_clue

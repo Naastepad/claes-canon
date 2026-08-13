@@ -1,0 +1,7 @@
+spec claes_canon_core
+
+data query_date: date
+data boundary_date: date
+
+rule on_or_after_boundary:
+  query_date >= boundary_date

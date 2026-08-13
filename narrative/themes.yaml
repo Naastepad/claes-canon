@@ -1,0 +1,100 @@
+schema_version: 1.1.0
+kind: ThemeRegistry
+themes:
+  - id: THEME.CLAES.CONTROLLING_IDEA
+    type: ControllingIdea
+    statement: "A man who seeks hidden order becomes whole only when knowledge ceases to be a means of control and becomes responsibility toward other people."
+    canon_status: CANON
+    applies_to: [ARC.CLAES.LIFE, ARC.CLAES.MACRO_TRANSMUTATION]
+    ko_targets: [KO.STORY, KO.VALUE, KO.CHARACTER]
+
+  - id: THEME.CLAES.DRAMATIC_QUESTION
+    type: DramaticQuestion
+    statement: "What does truth ask of Claes toward the other when certainty, safety and control are impossible?"
+    canon_status: CANON
+    applies_to: [ENT.PERSON.CLAES]
+
+  - id: THEME.CLAES.DESIRE
+    type: CharacterDesire
+    statement: "Claes wants to understand the hidden order behind visible reality."
+    canon_status: CANON
+    subject: ENT.PERSON.CLAES
+    ko_targets: [KO.CHARACTER.WANT]
+
+  - id: THEME.CLAES.PSYCHOLOGICAL_NEED
+    type: CharacterNeed
+    statement: "Claes must recover trust in embodied perception — the sinne — and learn to act without first acquiring complete certainty."
+    canon_status: CANON
+    subject: ENT.PERSON.CLAES
+    story_claims: [STC.CLAES.NEED.001, STC.CLAES.SINNE.001]
+    ko_targets: [KO.CHARACTER.NEED]
+
+  - id: THEME.CLAES.MORAL_NEED
+    type: MoralNeed
+    statement: "Claes must learn that knowledge and perception increase responsibility toward other people; discernment must become choice and choice must accept consequence without total control."
+    canon_status: CANON
+    subject: ENT.PERSON.CLAES
+
+  - id: THEME.CLAES.SPIRITUAL_JOURNEY
+    type: SpiritualJourney
+    statement: "Claes moves from 'What is true?' toward 'What does this truth ask of me toward the other?' and from matter toward spirituality through, not away from, embodied matter."
+    canon_status: CANON
+    subject: ENT.PERSON.CLAES
+    material_vessel: [senses, bodies, craft, books, plants, fire, water, alchemical_operations]
+    culmination: "knowledge-as-control → wisdom-in-relation → transmission-and-release"
+
+  - id: THEME.CLAES.LIE.CHILD
+    type: CharacterLie
+    statement: "If I look carefully enough, I can prevent being surprised or losing what matters."
+    canon_status: CANON
+    subject: ENT.PERSON.CLAES
+    active_phase: ARC.CLAES.LIFE.P02
+
+  - id: THEME.CLAES.LIE.ADULT
+    type: CharacterLie
+    statement: "If I understand the process, I can control the consequences."
+    canon_status: CANON
+    subject: ENT.PERSON.CLAES
+    active_phase: ARC.CLAES.LIFE.P05
+
+  - id: THEME.CLAES.FINAL_TRUTH
+    type: SelfRevelation
+    statement: "The value of a right action is not determined by certainty that it will succeed; mature mastery can transmit and release rather than possess."
+    canon_status: CANON
+    subject: ENT.PERSON.CLAES
+    threshold_instance: NI.CHAPTER.1584.01
+    ko_targets: [KO.CHARACTER.REVELATION, KO.VALUE]
+
+value_axes:
+  - id: VALUE.CLAES.TRUTH
+    spectrum: [ignorance, recognition, knowledge, certainty, wisdom]
+    warning: "Knowledge and certainty are not synonyms."
+  - id: VALUE.CLAES.AGENCY
+    spectrum: [passivity, observation, choice, action, control]
+    warning: "Action and control are not synonyms."
+  - id: VALUE.CLAES.RELATION
+    spectrum: [isolation, secrecy, protection, trust, love]
+    warning: "Protection and possession are not synonyms."
+  - id: VALUE.CLAES.FAITH
+    spectrum: [fear, certainty-seeking, obedience, trust-under-uncertainty, responsible-faith]
+  - id: VALUE.CLAES.MASTERY
+    spectrum: [counting-pieces, seeing-routes, blocking-routes, balancing-routes, leaving-space]
+    motif: MOTIF.MERELS_WAYS
+  - id: VALUE.CLAES.SINNE
+    spectrum: [sensory-openness, vigilance, blunting, recovery, resonance, embodied-discernment]
+    warning: "Trauma may constrict perception; recovery is not a return to innocence but a deeper embodied sovereignty."
+
+scene_diagnostic_contract:
+  required_fields_when_scene_is_developed:
+    - opening_value
+    - character_objective
+    - conflict_or_pressure
+    - turning_point
+    - closing_value
+    - value_charge_change
+    - story_claims_introduced_or_paid_off
+    - arcs_advanced
+    - knowledge_delta
+    - object_state_delta
+    - motif_payoff_or_plant
+    - ko_targets

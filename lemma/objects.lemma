@@ -1,0 +1,22 @@
+spec possession_constraint
+
+data canon_status: text
+  -> option "PROPOSED"
+  -> option "CANON"
+  -> option "OPEN"
+  -> option "DEPRECATED"
+  -> option "REJECTED"
+
+data object_exists: boolean
+data holder_alive: boolean
+data temporal_available: boolean
+data location_compatible: boolean
+
+rule active_canon: false
+  unless canon_status is "CANON" then true
+
+rule can_possess:
+  object_exists and holder_alive and temporal_available and location_compatible
+
+rule canonical_possession_valid:
+  active_canon and can_possess

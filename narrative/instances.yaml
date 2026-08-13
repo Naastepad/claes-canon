@@ -1,0 +1,331 @@
+schema_version: 1.1.0
+kind: NarrativeInstanceRegistry
+instances:
+- id: NI.PROLOGUE.1542.001
+  type: ChapterInstance
+  label: De Bladzijde
+  canon_status: CANON
+  story_time:
+    earliest: '1542-12-01'
+    latest_exclusive: '1543-01-01'
+    precision: month
+  story_file: prologue_de_bladzijde
+  notes: Valencia; thematic/technical bridge to later testimony, not shared birth-year resonance
+- id: NI.SCENE.DREMPEL.1547.001
+  type: SceneInstance
+  label: De Drempel
+  canon_status: PROPOSED
+  story_time:
+    earliest: '1547-01-01'
+    latest_exclusive: '1548-01-01'
+    precision: approximate
+  locations:
+  - ENT.LOC.GOES
+  entities:
+  - ENT.PERSON.CLAES
+  motifs:
+  - MOTIF.SINNE
+  - MOTIF.INCENSE_WAX
+- id: NI.SCENE.FIRST_MERELS.1553.001
+  type: SceneInstance
+  label: Eerste molenspel
+  canon_status: CANON
+  story_time:
+    earliest: '1553-12-01'
+    latest_exclusive: '1554-03-01'
+    precision: winter
+  locations:
+  - ENT.LOC.GOES
+  entities:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.CORNELIS
+  motifs:
+  - MOTIF.MERELS_WAYS
+  - MOTIF.TIK_TIK_TIK
+- id: NI.SCENE.SOWER.1554.001
+  type: SceneInstance
+  label: De Zaaierscène
+  canon_status: CANON
+  story_time:
+    earliest: '1554-02-01'
+    latest_exclusive: '1554-04-01'
+    precision: Lent
+  locations:
+  - ENT.LOC.GOES
+  entities:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.CORNELIS
+  arcs_advanced:
+  - ARC.CLAES.LIFE
+  motifs:
+  - MOTIF.INCENSE_WAX
+  - MOTIF.CARRIER_MEANING
+- id: NI.EVENT.GOES_FIRE.1554.001
+  type: EventInstance
+  label: Stadsbrand Goes
+  canon_status: CANON
+  story_time:
+    date: '1554-05-18'
+    precision: day
+  locations:
+  - ENT.LOC.GOES
+  entities:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.CORNELIS
+  motifs:
+  - MOTIF.FIRE_WATER
+- id: NI.EVENT.REIMERSWAAL_MOVE.1554.001
+  type: EventInstance
+  label: Vertrek als kostjongen naar Reimerswaal
+  canon_status: CANON
+  story_time:
+    earliest: '1554-05-19'
+    latest_exclusive: '1554-12-08'
+    precision: bounded
+  locations:
+  - ENT.LOC.REIMERSWAAL
+  entities:
+  - ENT.PERSON.CLAES
+  story_claims:
+  - STC.CLAES.REIMERSWAAL.001
+- id: NI.EVENT.LANDJUWEEL.1561.001
+  type: EventInstance
+  label: Landjuweel Antwerpen
+  canon_status: CANON
+  story_time:
+    earliest: '1561-08-01'
+    latest_exclusive: '1561-09-01'
+    precision: month
+  locations:
+  - ENT.LOC.ANTWERP
+  entities:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.CORNELIS
+  story_claims:
+  - STC.CLAES.LANDJUWEEL.1561.001
+- id: NI.SCENE.DEE_FIRST_ENCOUNTER.1563.001
+  type: SceneInstance
+  label: Eerste ontmoeting Claes–Dee
+  canon_status: CANON
+  story_time:
+    earliest: '1563-02-01'
+    latest_exclusive: '1563-03-01'
+    precision: month
+  locations:
+  - ENT.LOC.SILVIUS_GULDEN_ENGEL
+  entities:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.JOHN_DEE
+  - ENT.PERSON.WILLEM_SILVIUS
+  story_claims:
+  - STC.CLAES.DEE_ENCOUNTER.1563.001
+  arcs_advanced:
+  - ARC.CLAES.DEE
+- id: NI.CHAPTER.1564.01
+  type: ChapterInstance
+  label: De Ladingen Van Antwerpen
+  canon_status: CANON
+  story_time:
+    earliest: '1564-01-01'
+    latest_exclusive: '1564-10-04'
+    precision: bounded
+  locations:
+  - ENT.LOC.ANTWERP
+  entities:
+  - ENT.PERSON.CLAES
+  story_file: 1564_1_de_ladingen_van_antwerpen.md
+- id: NI.CHAPTER.1564.02
+  type: ChapterInstance
+  label: De Verkeerde Kist
+  canon_status: CANON
+  story_time:
+    earliest: '1564-01-01'
+    latest_exclusive: '1564-10-04'
+    precision: bounded
+  locations:
+  - ENT.LOC.ANTWERP
+  entities:
+  - ENT.PERSON.CLAES
+  story_file: 1564_2_de_verkeerde_kist.md
+- id: NI.CHAPTER.1564.03
+  type: ChapterInstance
+  label: De Kies Van Boom
+  canon_status: CANON
+  story_time:
+    earliest: '1564-01-01'
+    latest_exclusive: '1564-10-04'
+    precision: bounded
+  locations:
+  - ENT.LOC.BOOM
+  entities:
+  - ENT.PERSON.CLAES
+  story_file: 1564_3_de_kies_van_boom.md
+- id: NI.CHAPTER.1564.04
+  type: ChapterInstance
+  label: De Loog Van Antwerpen
+  canon_status: CANON
+  story_time:
+    earliest: '1564-01-01'
+    latest_exclusive: '1564-10-04'
+    precision: bounded
+  locations:
+  - ENT.LOC.ANTWERP
+  entities:
+  - ENT.PERSON.CLAES
+  story_file: 1564_4_de_loog_van_antwerpen.md
+- id: NI.CHAPTER.1564.05
+  type: ChapterInstance
+  label: De Dood Van Sol
+  canon_status: CANON
+  story_time:
+    earliest: '1564-01-01'
+    latest_exclusive: '1564-10-04'
+    precision: bounded
+  locations:
+  - ENT.LOC.ANTWERP
+  entities:
+  - ENT.PERSON.CLAES
+  story_file: 1564_5_de_dood_van_sol.md
+- id: NI.EVENT.SECURITY_BREAK.1564.001
+  type: EventInstance
+  label: Veiligheidsbreuk na stenenoproer
+  canon_status: CANON
+  story_time:
+    date: '1564-10-04'
+    precision: day
+  locations:
+  - ENT.LOC.ANTWERP
+  entities:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.CORNELIS
+  story_claims:
+  - STC.MACRO.NIGREDO_START.1564.001
+  - STC.MEMORIAAL.SECRET_PHASE.001
+  arcs_advanced:
+  - ARC.CLAES.MACRO_TRANSMUTATION
+- id: NI.CHAPTER.1564.06
+  type: ChapterInstance
+  label: De honderd gulden
+  canon_status: PROPOSED
+  story_time:
+    earliest: '1564-10-04'
+    latest_exclusive: '1564-12-31'
+    precision: bounded
+  locations:
+  - ENT.LOC.ANTWERP
+  entities:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.CORNELIS
+  story_file: 1564_6_de_honderd_gulden.md
+- id: NI.EVENT.CLAES_RETURN_GOES.1566.001
+  type: EventInstance
+  label: Terugkeer Claes naar Goes
+  canon_status: CANON
+  story_time:
+    earliest: '1566-08-01'
+    latest_exclusive: '1567-01-01'
+    precision: bounded
+  locations:
+  - ENT.LOC.GOES
+  entities:
+  - ENT.PERSON.CLAES
+  story_claims:
+  - STC.CLAES.RETURN_GOES.1566.001
+- id: NI.EVENT.CORNELIS_FALL.1568.001
+  type: EventInstance
+  label: Arrestatie en dood Cornelis
+  canon_status: CANON
+  details_status: OPEN
+  story_time:
+    earliest: '1568-07-01'
+    latest_exclusive: '1570-01-01'
+    precision: work-window
+  entities:
+  - ENT.PERSON.CORNELIS
+  story_claims:
+  - STC.CORNELIS.DEATH.WORK.001
+- id: NI.SEQUENCE.RECOVERY.1570.001
+  type: SequenceInstance
+  label: Recovery en reconstructie 1570
+  canon_status: CANON
+  story_time:
+    earliest: '1570-01-01'
+    latest_exclusive: '1571-01-01'
+    precision: year
+  locations:
+  - ENT.LOC.GOES
+  entities:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.BELOVED
+  story_claims:
+  - STC.CODE.RECOVERY_SEQUENCE.001
+  - STC.CODE.DURATION.001
+  arcs_advanced:
+  - ARC.CLAES.LIFE
+  - ARC.CLAES.MACRO_TRANSMUTATION
+  motifs:
+  - MOTIF.BLACKENING_REVEAL
+  - MOTIF.MERELS_WAYS
+  - MOTIF.CASTANEA
+- id: NI.EVENT.PUBLICATION.1578.001
+  type: EventInstance
+  label: Anonieme verspreiding/druk Las Casas
+  canon_status: CANON
+  story_time:
+    earliest: '1578-01-01'
+    latest_exclusive: '1579-01-01'
+    precision: year
+  entities:
+  - ENT.PERSON.CLAES
+  story_claims:
+  - STC.LASCASAS.PUBLICATION.1578.001
+- id: NI.CHAPTER.1584.01
+  type: ChapterInstance
+  label: De markt van Delft
+  canon_status: CANON
+  story_time:
+    earliest: '1584-01-01'
+    latest_exclusive: '1585-01-01'
+    precision: year
+  locations:
+  - ENT.LOC.DELFT
+  entities:
+  - ENT.PERSON.CLAES
+  story_file: 1584_1_de_markt_van_delft.md
+  story_claims:
+  - STC.CLAES.DELFT.1584.001
+  arcs_advanced:
+  - ARC.CLAES.LIFE
+  - ARC.CLAES.MACRO_TRANSMUTATION
+- id: NI.SEQUENCE.LATE_RUBEDO.1599.001
+  type: SequenceInstance
+  label: Late Rubedo / mogelijke Middelburg-spiegel
+  canon_status: OPEN
+  story_time:
+    earliest: '1599-01-01'
+    latest_exclusive: '1603-01-01'
+    precision: approximate
+  locations:
+  - ENT.LOC.MIDDELBURG
+  entities:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.RADERMACHER
+  arcs_advanced:
+  - ARC.CLAES.MACRO_TRANSMUTATION
+- id: NI.SCENE.FINAL_MERELS.1602.001
+  type: SceneInstance
+  label: Laatste molenspel
+  canon_status: OPEN
+  fixed_function: CANON
+  story_time:
+    earliest: '1602-01-01'
+    precision: open-ended
+  entities:
+  - ENT.PERSON.CLAES
+  story_claims:
+  - STC.CLAES.PROJECTIO.001
+  arcs_advanced:
+  - ARC.CLAES.LIFE
+  - ARC.CLAES.MACRO_TRANSMUTATION
+  motifs:
+  - MOTIF.MERELS_WAYS

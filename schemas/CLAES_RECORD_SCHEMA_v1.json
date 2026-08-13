@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://claes.local/schema/claes-record-v1.json",
+  "title": "Claes Canon Structured Record",
+  "description": "McKee/NOS-inspired project-specific record schema. Universal narrative Knowledge Objects are intentionally out of scope.",
+  "oneOf": [
+    {"$ref": "#/$defs/sourceClaim"},
+    {"$ref": "#/$defs/storyClaim"},
+    {"$ref": "#/$defs/entity"},
+    {"$ref": "#/$defs/narrativeInstance"}
+  ],
+  "$defs": {
+    "evidenceStatus": {"enum": ["VERIFIED", "SUPPORTED", "PLAUSIBLE", "DISPUTED", "UNKNOWN"]},
+    "canonStatus": {"enum": ["PROPOSED", "CANON", "OPEN", "DEPRECATED", "REJECTED"]},
+    "storyTime": {
+      "type": "object",
+      "properties": {
+        "earliest": {"type": "string", "format": "date"},
+        "latest_exclusive": {"type": "string", "format": "date"},
+        "precision": {"enum": ["day", "month", "season", "year", "interval", "unknown"]}
+      },
+      "required": ["precision"],
+      "additionalProperties": false
+    },
+    "retrieval": {
+      "type": "object",
+      "properties": {
+        "tags": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "embedding_text": {"type": "string"},
+        "applies_to": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+      },
+      "additionalProperties": true
+    },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "created_at": {"type": "string", "format": "date-time"},
+        "updated_at": {"type": "string", "format": "date-time"},
+        "created_by": {"type": "string"},
+        "reviewed_by": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": true
+    },
+    "sourceClaim": {
+      "type": "object",
+      "required": ["id", "type", "statement", "evidence_status", "source_ids"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^SC\\.[A-Z0-9_.-]+$"},
+        "type": {"const": "SourceClaim"},
+        "statement": {"type": "string", "minLength": 1},
+        "claim_type": {"type": "string"},
+        "subject": {"type": "string"},
+        "predicate": {"type": "string"},
+        "object": {"type": "string"},
+        "story_time": {"$ref": "#/$defs/storyTime"},
+        "evidence_status": {"$ref": "#/$defs/evidenceStatus"},
+        "source_ids": {"type": "array", "items": {"type": "string", "pattern": "^SRC-"}, "minItems": 1},
+        "supports_story_claims": {"type": "array", "items": {"type": "string"}},
+        "contradicts": {"type": "array", "items": {"type": "string"}},
+        "qualifies": {"type": "array", "items": {"type": "string"}},
+        "retrieval": {"$ref": "#/$defs/retrieval"},
+        "provenance": {"$ref": "#/$defs/provenance"}
+      },
+      "additionalProperties": true
+    },
+    "storyClaim": {
+      "type": "object",
+      "required": ["id", "type", "statement", "canon_status", "evidence_status"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^STC\\.[A-Z0-9_.-]+$"},
+        "type": {"const": "StoryClaim"},
+        "statement": {"type": "string", "minLength": 1},
+        "subject": {"type": "string"},
+        "predicate": {"type": "string"},
+        "object": {"type": "string"},
+        "story_time": {"$ref": "#/$defs/storyTime"},
+        "evidence_status": {"$ref": "#/$defs/evidenceStatus"},
+        "canon_status": {"$ref": "#/$defs/canonStatus"},
+        "supported_by": {"type": "array", "items": {"type": "string"}},
+        "decision_ids": {"type": "array", "items": {"type": "string"}},
+        "narrative_instances": {"type": "array", "items": {"type": "string"}},
+        "affects": {"type": "array", "items": {"type": "string"}},
+        "deterministic": {"type": "object"},
+        "retrieval": {"$ref": "#/$defs/retrieval"},
+        "provenance": {"$ref": "#/$defs/provenance"}
+      },
+      "additionalProperties": true
+    },
+    "entity": {
+      "type": "object",
+      "required": ["id", "type", "label"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^ENT\\.[A-Z0-9_.-]+$"},
+        "type": {"type": "string"},
+        "label": {"type": "string"},
+        "aliases": {"type": "array", "items": {"type": "string"}},
+        "canon_status": {"$ref": "#/$defs/canonStatus"},
+        "retrieval": {"$ref": "#/$defs/retrieval"},
+        "provenance": {"$ref": "#/$defs/provenance"}
+      },
+      "additionalProperties": true
+    },
+    "narrativeInstance": {
+      "type": "object",
+      "required": ["id", "type", "label"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^NI\\.[A-Z0-9_.-]+$"},
+        "type": {"type": "string", "pattern": "^NarrativeInstance\\."},
+        "label": {"type": "string"},
+        "story_time": {"$ref": "#/$defs/storyTime"},
+        "entities": {"type": "array", "items": {"type": "string"}},
+        "claims_active": {"type": "array", "items": {"type": "string"}},
+        "claims_introduced": {"type": "array", "items": {"type": "string"}},
+        "arcs_advanced": {"type": "array", "items": {"type": "string"}},
+        "motifs": {"type": "array", "items": {"type": "string"}},
+        "knowledge_object_targets": {"type": "array", "items": {"type": "string", "pattern": "^KO\\."}},
+        "retrieval": {"$ref": "#/$defs/retrieval"},
+        "provenance": {"$ref": "#/$defs/provenance"}
+      },
+      "additionalProperties": true
+    }
+  }
+}

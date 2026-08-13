@@ -1,0 +1,110 @@
+schema_version: 1.0.0
+kind: StorybibleTransformationLedger
+source:
+  id: SB.CLAES.MASTER
+  title: "Claes Nissepat — Projectprompt & Storybible"
+  revision: 11
+  date: 2026-08-10
+  sha256: e38430f0165e7c0779a8ae6bba6a208773c677682f55295a940e91fdb2ed9edd
+  line_count: 3803
+  size_bytes: 353589
+target:
+  id: SB.CLAES.LEMMA_MCKEE
+  master: storybible/LEMMA_MCKEE_MASTER.md
+  architecture: ARCHITECTURE.md
+coverage:
+  - source_section: "1. Wat dit is"
+    source_lines: "25-38"
+    status: NORMALIZED
+    targets: [storybible/LEMMA_MCKEE_MASTER.md, narrative/themes.yaml, narrative/motifs.yaml]
+  - source_section: "1A. Dramaturgische macrostructuur"
+    source_lines: "39-268"
+    status: NORMALIZED
+    targets: [narrative/arcs.yaml, narrative/themes.yaml, narrative/motifs.yaml, claims/STORY_CLAIMS.yaml]
+  - source_section: "2. Rolverdeling"
+    source_lines: "270-277"
+    status: POLICY_NORMALIZED
+    targets: [AGENTS.md, AUTHORING_POLICY.md]
+  - source_section: "3. Personages — Claes and life phases"
+    source_lines: "278-1086"
+    status: NORMALIZED
+    targets: [entities/ENTITIES.yaml, narrative/arcs.yaml, narrative/themes.yaml, narrative/instances.yaml, claims/STORY_CLAIMS.yaml]
+  - source_section: "3. Personages — Cornelis and historical network"
+    source_lines: "1087-1278"
+    status: NORMALIZED_CORE
+    targets: [entities/ENTITIES.yaml, narrative/relationships.yaml, narrative/open_questions.yaml, claims/STORY_CLAIMS.yaml]
+  - source_section: "4. Lopende canon — geheimen en plotmechanismen"
+    source_lines: "1279-1371"
+    status: NORMALIZED
+    targets: [claims/STORY_CLAIMS.yaml, narrative/object_biographies.yaml, narrative/knowledge_states.yaml]
+  - source_section: "4A. Boekwereld, druknetwerken en symbolische leerlijn"
+    source_lines: "1372-1486"
+    status: NORMALIZED_CORE
+    targets: [narrative/object_biographies.yaml, narrative/motifs.yaml, narrative/world_modules.yaml]
+  - source_section: "4B. Complete codearchitectuur"
+    source_lines: "1487-2202"
+    status: NORMALIZED
+    targets: [claims/STORY_CLAIMS.yaml, narrative/object_biographies.yaml, narrative/knowledge_states.yaml, narrative/open_questions.yaml, narrative/code_architecture.yaml, lemma/]
+  - source_section: "5. Bestaande hoofdstukken en tijdlijn"
+    source_lines: "2203-2278"
+    status: NORMALIZED
+    targets: [narrative/instances.yaml, narrative/structure.yaml, narrative/open_questions.yaml]
+  - source_section: "6. Goes: topografie en tijdlijn"
+    source_lines: "2279-2436"
+    status: NORMALIZED_CORE
+    targets: [narrative/world_modules.yaml, claims/STORY_CLAIMS.yaml, entities/ENTITIES.yaml]
+  - source_section: "7. Het Nissepad"
+    source_lines: "2437-2718"
+    status: NORMALIZED_CORE
+    targets: [narrative/world_modules.yaml, claims/STORY_CLAIMS.yaml, entities/ENTITIES.yaml]
+  - source_section: "8. Brood, graanhandel en bakpraktijk"
+    source_lines: "2719-3170"
+    status: NORMALIZED_CORE
+    targets: [narrative/world_modules.yaml, narrative/motifs.yaml, claims/STORY_CLAIMS.yaml]
+  - source_section: "9. Historische familie Nissepat/Nissepadt"
+    source_lines: "3171-3201"
+    status: PRESERVED_AS_RESEARCH_CONTEXT
+    targets: [narrative/world_modules.yaml, entities/ENTITIES.yaml]
+  - source_section: "10. Craft-principes"
+    source_lines: "3202-3221"
+    status: NORMALIZED
+    targets: [narrative/CRAFT_GUARDRAILS.yaml, AGENTS.md]
+  - source_section: "11. Openstaande beslissingen"
+    source_lines: "3222-3255"
+    status: NORMALIZED
+    targets: [narrative/open_questions.yaml]
+  - source_section: "12. Bronnen geraadpleegd"
+    source_lines: "3256-3346"
+    status: SOURCE_REGISTRY_MIGRATION_PENDING
+    targets: [sources/, claims/SOURCE_CLAIMS.yaml]
+    note: "Bibliographic items must be migrated as source records without inventing missing locators."
+  - source_section: "13. Integratie- en verliescontrole"
+    source_lines: "3347-3482"
+    status: PROCESS_NORMALIZED
+    targets: [AUTHORING_POLICY.md, scripts/validate_canon.py]
+  - source_section: "Zuid-Bevelandse netwerken en realistische ontmoetingen"
+    source_lines: "3483-3542"
+    status: NORMALIZED_CORE
+    targets: [narrative/world_modules.yaml, entities/ENTITIES.yaml, narrative/open_questions.yaml]
+  - source_section: "Muziek, gebed en transmutatie"
+    source_lines: "3543-3803"
+    status: NORMALIZED
+    targets: [narrative/motifs.yaml, narrative/world_modules.yaml, claims/STORY_CLAIMS.yaml]
+
+status_definitions:
+  NORMALIZED: "Core meaning is represented by stable structured records and/or the transformed master."
+  NORMALIZED_CORE: "Core canon and constraints are structured; long research detail remains available in source Revision 11 and may be atomised further on demand."
+  POLICY_NORMALIZED: "Operational instruction was migrated into repository policy."
+  PROCESS_NORMALIZED: "Revision-control logic was migrated into repository workflow/validation."
+  PRESERVED_AS_RESEARCH_CONTEXT: "Material remains context, not yet atomised into individual claims."
+  SOURCE_REGISTRY_MIGRATION_PENDING: "The material is not lost, but individual bibliographic records still require structured source migration."
+
+loss_prevention:
+  rule: "No source section may disappear from the ledger when a new source master revision is adopted."
+  change_process:
+    - "Register new master hash and line count."
+    - "Diff old and new source master."
+    - "Update claims/instances/entities/arcs/motifs/open questions affected by the diff."
+    - "Update this ledger's coverage status."
+    - "Run repository validator and Lemma validation."
+    - "Require human approval before canonical merge/publish."

@@ -1,0 +1,150 @@
+schema_version: 1.1.1
+kind: NarrativeArcRegistry
+arcs:
+- id: ARC.CLAES.LIFE
+  type: CharacterArc
+  label: Claes cradle-to-grave
+  status: CANON
+  protagonist: ENT.PERSON.CLAES
+  phases:
+  - id: ARC.CLAES.LIFE.P01
+    label: Wieg en lichaam
+    story_time:
+      earliest: '1542-12-08'
+      latest_exclusive: '1547-12-31'
+      precision: approximate
+    dominant_movement: ontvankelijkheid zonder duiding
+    value_shift: body before understanding
+  - id: ARC.CLAES.LIFE.P02
+    label: Kind dat orde ontdekt
+    story_time:
+      earliest: '1547-01-01'
+      latest_exclusive: '1554-05-18'
+      precision: approximate
+    dominant_movement: Wijsheid en Hoop
+    value_shift: order can be learned through attention
+  - id: ARC.CLAES.LIFE.P03
+    label: Verdreven kind
+    story_time:
+      earliest: '1554-05-18'
+      latest_exclusive: '1561-09-01'
+      precision: bounded
+    dominant_movement: Hoop under pressure
+    value_shift: observation cannot prevent loss
+  - id: ARC.CLAES.LIFE.P04
+    label: Adolescent die leert interpreteren
+    story_time:
+      earliest: '1560-01-01'
+      latest_exclusive: '1563-12-31'
+      precision: overlap
+    dominant_movement: from observation to judgement
+    value_shift: roles and meanings diverge
+  - id: ARC.CLAES.LIFE.P05
+    label: Jonge zoeker
+    story_time:
+      earliest: '1564-01-01'
+      latest_exclusive: '1565-01-01'
+      precision: year
+    dominant_movement: Kracht/Geloof begins
+    value_shift: from observer to causal actor
+  - id: ARC.CLAES.LIFE.P06
+    label: Handelende volwassene
+    story_time:
+      earliest: '1565-01-01'
+      latest_exclusive: '1578-01-01'
+      precision: approximate
+    dominant_movement: Kracht/Geloof under pressure
+    value_shift: act without complete certainty
+  - id: ARC.CLAES.LIFE.P07
+    label: Man in Nigredo
+    story_time:
+      earliest: '1578-01-01'
+      latest_exclusive: '1585-01-01'
+      precision: bounded
+    dominant_movement: certainty dissolves
+    value_shift: seeing is not enough
+  - id: ARC.CLAES.LIFE.P08
+    label: Rijpe man en bewaarder
+    story_time:
+      earliest: '1584-01-01'
+      latest_exclusive: '1603-01-01'
+      precision: approximate
+    dominant_movement: Albedo to Rubedo
+    value_shift: distinguish then reconnect
+  - id: ARC.CLAES.LIFE.P09
+    label: Laatste beweging en graf
+    story_time:
+      earliest: '1602-01-01'
+      precision: open-ended
+    dominant_movement: Projectio
+    value_shift: transfer without possession
+  knowledge_object_targets:
+  - KO.STORY
+  - KO.STRUCTURE
+  - KO.VALUE
+  - KO.CONFLICT
+  - KO.EVENT
+- id: ARC.CLAES.MACRO_TRANSMUTATION
+  type: MacroArc
+  label: Drager → Nigredo → Albedo → Rubedo → Projectio
+  status: CANON
+  phases:
+  - label: Drager
+    story_time:
+      earliest: '1542-12-08'
+      latest_exclusive: '1564-10-04'
+      precision: bounded
+  - label: Gebondenheid / macro-Nigredo
+    story_time:
+      earliest: '1564-10-04'
+      latest_exclusive: '1585-01-01'
+      precision: bounded
+  - label: Albedo / Onderscheiding
+    story_time:
+      earliest: '1584-01-01'
+      latest_exclusive: '1599-01-01'
+      precision: approximate
+  - label: Rubedo / Verbinding
+    story_time:
+      earliest: '1599-01-01'
+      latest_exclusive: '1603-01-01'
+      precision: approximate
+  - label: Projectio / Overdracht
+    story_time:
+      earliest: '1602-01-01'
+      precision: open-ended
+  guardrail: authorial architecture, not an in-world universal alchemical doctrine
+- id: ARC.CLAES.DEE
+  type: RelationshipArc
+  label: Claes ↔ Dee
+  status: CANON
+  participants:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.JOHN_DEE
+  phases:
+  - label: recognition
+    story_time:
+      earliest: '1563-02-01'
+      latest_exclusive: '1563-03-01'
+      precision: month
+  - label: formation
+    story_time:
+      earliest: '1564-01-01'
+      latest_exclusive: '1564-04-01'
+      precision: interval
+  - label: independent judgement
+    story_time:
+      earliest: '1564-01-01'
+      precision: developmental
+  knowledge_object_targets:
+  - KO.CONFLICT
+  - KO.VALUE
+  - KO.EVENT
+- id: ARC.CLAES.CORNELIS
+  type: RelationshipArc
+  label: Claes ↔ Cornelis
+  status: CANON
+  participants:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.CORNELIS
+  movement: admiration/need for recognition → interpretive distance → inherited responsibility → adult moral separation

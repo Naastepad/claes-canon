@@ -1,0 +1,43 @@
+schema_version: 1.0.0
+kind: CanonDecisionRegistry
+decisions:
+- id: DEC.CLAES.BIRTH.2026-08-13
+  type: CanonDecision
+  status: CANON
+  decision: Claes Cornelisz Nissepat is born in Goes on 8 December 1542.
+  affects:
+  - STC.CLAES.BIRTH.001
+  - ENT.PERSON.CLAES
+  rationale: author decision retaining the chronology aligned with the Brevísima frame; 1545 is migration drift
+- id: DEC.CLAES.SINNE.2026-08-13
+  type: CanonDecision
+  status: CANON
+  decision: Claes discovers the world through embodied sinne; trauma constricts this openness and it is later rediscovered on the road toward Enkhuizen with the beloved beside him, becoming a catalyst for recovery, wisdom and sovereignty.
+  affects:
+  - STC.CLAES.SINNE.001
+  - ARC.CLAES.SINNE_RECOVERY
+  - MOTIF.SINNE.RECOVERY
+  - REL.CLAES.BELOVED.RECOVERY
+- id: DEC.CLAES.PARADOX.2026-08-13
+  type: CanonDecision
+  status: CANON
+  decision: Claes' gift is prolonged exact observation; his shadow is remaining in observation after action is required, and trauma can blunt the sensory openness on which the gift depends.
+  affects:
+  - STC.CLAES.PARADOX.001
+  - ARC.CLAES.SINNE_RECOVERY
+- id: DEC.CLAES.NEED.2026-08-13
+  type: CanonDecision
+  status: CANON
+  decision: Claes must recover trust in embodied perception and act without complete certainty; knowledge and perception increase responsibility toward the other.
+  affects:
+  - STC.CLAES.NEED.001
+  - THEME.CLAES.PSYCHOLOGICAL_NEED
+  - THEME.CLAES.MORAL_NEED
+- id: DEC.CLAES.SPIRITUAL_JOURNEY.2026-08-13
+  type: CanonDecision
+  status: CANON
+  decision: Claes moves from matter toward spirituality through matter as vessel; the Great Work transmutates knowledge-as-control into wisdom-in-relation and the capacity to transmit and release.
+  affects:
+  - STC.CLAES.MORAL_QUESTION.001
+  - THEME.CLAES.SPIRITUAL_JOURNEY
+  - ARC.CLAES.MACRO_TRANSMUTATION

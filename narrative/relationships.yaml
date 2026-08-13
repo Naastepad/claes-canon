@@ -1,0 +1,101 @@
+schema_version: 1.1.0
+kind: NarrativeRelationshipRegistry
+relationships:
+  - id: REL.CLAES.CORNELIS
+    type: Relationship
+    label: "Claes and Cornelis"
+    participants: [ENT.PERSON.CLAES, ENT.PERSON.CORNELIS]
+    status: CANON
+    phases:
+      - label: "formation"
+        story_time: {earliest: 1547-01-01, latest_exclusive: 1554-05-18, precision: approximate}
+        value_state: "dependence -> admiration"
+        function: "Cornelis teaches attention, craft, patience and the difference between pieces and routes."
+      - label: "distance through secrecy"
+        story_time: {earliest: 1560-01-01, latest_exclusive: 1564-10-04, precision: interval}
+        value_state: "admiration -> suspicion/exclusion"
+        function: "Claes sees that Cornelis hides not only from authorities but also from him."
+      - label: "fallback asymmetry"
+        story_time: {earliest: 1564-10-04, latest_exclusive: 1568-07-01, precision: bounded}
+        value_state: "father protects son through ignorance while using him as fallback"
+        knowledge_boundary: "Cornelis knows Claes is fallback; Claes does not."
+      - label: "loss and inheritance"
+        story_time: {earliest: 1568-07-01, latest_exclusive: 1570-01-01, precision: work-window}
+        value_state: "living authority -> absent moral inheritance"
+        transfer: "Castanea. Niet onze bloem — de boom."
+      - label: "differentiation"
+        story_time: {earliest: 1570-01-01, precision: lower-bound}
+        value_state: "inheritance -> independent moral judgement"
+    ko_targets: [KO.CHARACTER, KO.VALUE, KO.CONFLICT, KO.RELATIONSHIP]
+
+  - id: REL.CLAES.DEE.001
+    type: Relationship
+    label: "Claes and John Dee"
+    participants: [ENT.PERSON.CLAES, ENT.PERSON.JOHN_DEE]
+    status: CANON
+    arc: ARC.CLAES.DEE
+    phases:
+      - label: "recognition"
+        story_time: {earliest: 1563-02-01, latest_exclusive: 1563-03-01, precision: month}
+        narrative_instances: [NI.SCENE.DEE_FIRST_ENCOUNTER.1563.001]
+        value_state: "distant intellectual possibility -> personally encountered figure"
+      - label: "formation"
+        story_time: {earliest: 1564-01-01, latest_exclusive: 1564-04-01, precision: interval}
+        value_state: "recognition -> formative master relationship"
+      - label: "critical independence"
+        story_time: {earliest: 1564-01-01, precision: lower-bound}
+        value_state: "admiration -> recognition of Dee's fallibility"
+      - label: "internalised legacy"
+        story_time: {earliest: 1564-10-04, precision: lower-bound}
+        value_state: "direct teacher -> methods and memories embedded in Claes' later reasoning"
+    knowledge_object_targets: [KO.VALUE, KO.CONFLICT, KO.EVENT, KO.RELATIONSHIP]
+
+  - id: REL.CLAES.SILVIUS
+    type: Relationship
+    label: "Claes and Willem Silvius"
+    participants: [ENT.PERSON.CLAES, ENT.PERSON.WILLEM_SILVIUS]
+    status: CANON
+    phases:
+      - label: "editorial recognition"
+        story_time: {earliest: 1561-08-01, latest_exclusive: 1564-01-01, precision: bounded}
+        value_state: "young learner -> useful observer/editorial source"
+        object: OBJ.ZOVITIUS_SCHOOLBOOK
+      - label: "practical trust"
+        story_time: {earliest: 1564-01-01, latest_exclusive: 1564-10-04, precision: bounded}
+        value_state: "recognition -> operational trust"
+      - label: "mediated transmission"
+        story_time: {earliest: 1570-01-01, latest_exclusive: 1571-01-01, precision: year}
+        value_state: "direct access absent -> special publication becomes external activation channel"
+        object: OBJ.ZOVITIUS_1570_TRIGGER
+    ko_targets: [KO.RELATIONSHIP, KO.EVENT, KO.VALUE]
+
+  - id: REL.CLAES.BELOVED
+    type: Relationship
+    label: "Claes and beloved/apothecary daughter"
+    participants: [ENT.PERSON.CLAES, ENT.PERSON.BELOVED]
+    status: CANON_FUNCTION_OPEN_IDENTITY
+    phases:
+      - label: "material proximity"
+        story_time: {earliest: 1566-08-01, latest_exclusive: 1570-01-01, precision: bounded}
+        value_state: "separate expertise -> potential complementarity"
+        object: OBJ.DODOENS_CARRIER
+      - label: "recovery collaboration"
+        story_time: {earliest: 1570-01-01, latest_exclusive: 1571-01-01, precision: year}
+        value_state: "solitary pattern-seeking -> collaborative verification"
+        narrative_instances: [NI.SEQUENCE.RECOVERY.1570.001]
+      - label: "relational maturation"
+        story_time: {earliest: 1570-01-01, precision: lower-bound}
+        value_state: "secrecy as isolation -> trust without surrender of responsibility"
+    role_split:
+      claes: ["merels", "Dee-memory", "Monas", "Castanea-memory", "clear-text decisions"]
+      beloved: ["materials", "botany", "Dodoens loci", "lists", "error control", "contradiction"]
+    ko_targets: [KO.RELATIONSHIP, KO.CONFLICT, KO.VALUE, KO.CHARACTER]
+
+  - id: REL.CLAES.RADERMACHER
+    type: RelationshipPotential
+    label: "Claes and Johan Radermacher"
+    participants: [ENT.PERSON.CLAES, ENT.PERSON.RADERMACHER]
+    status: OPEN
+    possible_story_time: {earliest: 1599-01-01, latest_exclusive: 1603-01-01, precision: approximate}
+    function_if_used: "late Rubedo social mirror: trade, books, religious caution and cross-border help in one network"
+    guardrail: "No unsupported formal Familist membership."

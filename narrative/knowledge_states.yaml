@@ -1,0 +1,160 @@
+schema_version: 1.1.0
+kind: KnowledgeStateRegistry
+purpose: Narrative knowledge boundaries extracted from Revision 11; deterministic candidates feed Lemma but remain human-readable here.
+actors:
+- entity_id: ENT.PERSON.CLAES
+  states:
+  - phase: A
+    label: end 1563 / early 1564
+    earliest: '1563-12-01'
+    latest_exclusive: '1564-04-01'
+    knows:
+    - Dee personally
+    - ordinary educational use of his memoriaal and Monas
+    does_not_know:
+    - Las Casas project
+    - recovery architecture
+    - future vitriol trigger
+  - phase: C
+    label: after 4 October 1564 security break
+    earliest: '1564-10-04'
+    latest_exclusive: '1566-08-01'
+    knows:
+    - his own pedagogical objects
+    does_not_know:
+    - that he is fallback keyholder
+    - hidden 24+2 memoriaal layer
+    - merels→Monas recovery
+    - Las Casas content
+  - phase: E
+    label: after return to Goes
+    earliest: '1566-08-01'
+    latest_exclusive: '1568-07-01'
+    knows:
+    - father shows unusual interest in certain objects
+    does_not_know:
+    - complete purpose of that interest
+  - phase: F
+    label: Cornelis fall 1568/69
+    earliest: '1568-07-01'
+    latest_exclusive: '1570-01-01'
+    knows:
+    - Castanea hint after Cornelis communicates it
+    does_not_know:
+    - why Castanea matters
+    - full recovery route
+  - phase: G
+    label: 1570 activation
+    earliest: '1570-01-01'
+    latest_exclusive: '1571-01-01'
+    learns_in_order:
+    - GALLA LEO VIRIDIS is a personal Dee-derived trigger
+    - green vitriol can reveal the memoriaal's hidden layer
+    - the hidden layer is a 24-problem merels recovery sequence
+    - each solved problem yields one theorem value
+    - theorem values map into personal Monas marginalia
+    - row and column orderings form a 24×24 matrix
+    - Castanea points to the special Dodoens carrier
+    - Primus Index identifies Las Casas and the Diets testimony
+    - full nomenclator allows reconstruction of the text
+    dramatic_turn:
+      at: Primus Index
+      from: understand father/Dee/Silvius
+      to: decide what the testimony asks of Claes
+- entity_id: ENT.PERSON.CORNELIS
+  states:
+  - phase: A
+    earliest: '1563-12-01'
+    latest_exclusive: '1564-04-01'
+    knows:
+    - dangerous Diets Las Casas text is intended for him as carrier/keeper
+    - Dodoens/Castanea belongs to direct-key context
+    does_not_know:
+    - future ad-hoc recovery architecture
+  - phase: C
+    earliest: '1564-10-04'
+    latest_exclusive: '1568-07-01'
+    knows:
+    - Claes becomes the unwitting fallback
+    - Castanea remains relevant
+    does_not_know:
+    - 24 correct merels outputs
+    - Monas ordering
+    - vitriool trigger
+    - complete recovery key
+    behavior_constraint: May search memoriaal and Dodoens and fail; may never act as if he knows the recovery solution.
+  - phase: F
+    earliest: '1568-07-01'
+    latest_exclusive: '1570-01-01'
+    final_minimal_transfer: Castanea. Niet onze bloem — de boom.
+- entity_id: ENT.PERSON.JOHN_DEE
+  states:
+  - phase: B
+    earliest: '1564-01-01'
+    latest_exclusive: '1564-10-04'
+    knows:
+    - security architecture
+    - 24-value structure
+    - pedagogical identity of Claes' objects
+  - phase: C
+    earliest: '1564-10-04'
+    knows:
+    - full merels→Monas recovery design
+    note: Direct presence after this point is not required for the system to function.
+- entity_id: ENT.PERSON.WILLEM_SILVIUS
+  states:
+  - phase: A
+    earliest: '1563-12-01'
+    latest_exclusive: '1564-04-01'
+    knows:
+    - project
+    - translation/production route
+    - Dodoens function
+    - Cornelis as intended external recipient
+  - phase: B
+    earliest: '1564-01-01'
+    latest_exclusive: '1564-10-04'
+    knows:
+    - coding, set-ability, correction and distribution
+  - phase: C
+    earliest: '1564-10-04'
+    knows:
+    - direct key must not be handed to Cornelis
+    - external activation must remain possible
+  - phase: G
+    earliest: '1570-01-01'
+    latest_exclusive: '1571-01-01'
+    role: special Zovitius channel can activate Claes
+- entity_id: ENT.PERSON.BELOVED
+  states:
+  - phase: E
+    earliest: '1566-08-01'
+    latest_exclusive: '1570-01-01'
+    may_know:
+    - special Dodoens exists in household/work environment
+    - Castanea is visually unusual
+    does_not_know:
+    - cipher purpose
+    - merels key
+  - phase: G
+    earliest: '1570-01-01'
+    latest_exclusive: '1571-01-01'
+    learns:
+    - controlled material development procedure
+    - Dodoens carrier use
+    - checksum/error-control role
+    does_not_replace_claes_in:
+    - personal Dee recognition
+    - merels skill
+    - Monas personal marginalia interpretation
+lemma_projection:
+  candidate_rules:
+  - can_know
+  - can_possibly_know
+  - knowledge_prerequisite_satisfied
+  - knowledge_sequence_valid
+  hard_guardrails:
+  - No actor may use knowledge before acquisition.
+  - Cornelis never knows the full recovery key.
+  - Claes knows no Las Casas purpose before the 1570 reveal chain reaches it.
+  - The beloved may notice Castanea before 1570 without understanding its function.

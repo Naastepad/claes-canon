@@ -1,0 +1,26 @@
+schema_version: "1.0.0"
+kind: SourceClaimRegistry
+claims:
+  - id: SC.HIST.DEE_SILVIUS.1563.001
+    type: SourceClaim
+    statement: "John Dee was demonstrably in Willem Silvius' Antwerp environment in February 1563."
+    claim_type: historical_presence
+    subject: ENT.PERSON.JOHN_DEE
+    predicate: present_in_environment_of
+    object: ENT.PERSON.WILLEM_SILVIUS
+    story_time:
+      earliest: 1563-02-01
+      latest_exclusive: 1563-03-01
+      precision: month
+    evidence_status: SUPPORTED
+    source_ids:
+      - SRC-HIST-1563-DEE-SILVIUS-001
+    supports_story_claims:
+      - STC.CLAES.DEE_ENCOUNTER.1563.001
+    contradicts: []
+    qualifies: []
+    verification:
+      status: needs_exact_bibliographic_locator
+      note: "Historical presence supports plausibility only; it does not prove the fictional encounter."
+    retrieval:
+      tags: [dee, silvius, antwerp, 1563, encounter-plausibility]

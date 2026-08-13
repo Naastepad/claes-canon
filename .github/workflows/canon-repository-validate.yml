@@ -1,0 +1,41 @@
+name: Validate Claes canon repository
+
+on:
+  pull_request:
+    paths:
+      - "claims/**"
+      - "entities/**"
+      - "objects/**"
+      - "narrative/**"
+      - "canon/**"
+      - "mapping/**"
+      - "sources/**"
+      - "storybible/**"
+      - "scripts/validate_canon.py"
+      - ".github/workflows/canon-repository-validate.yml"
+  push:
+    branches: [main]
+    paths:
+      - "claims/**"
+      - "entities/**"
+      - "objects/**"
+      - "narrative/**"
+      - "canon/**"
+      - "mapping/**"
+      - "sources/**"
+      - "storybible/**"
+      - "scripts/validate_canon.py"
+      - ".github/workflows/canon-repository-validate.yml"
+
+jobs:
+  continuity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install validator dependency
+        run: python -m pip install --disable-pip-version-check PyYAML==6.0.2
+      - name: Compile continuity model
+        run: python scripts/validate_canon.py

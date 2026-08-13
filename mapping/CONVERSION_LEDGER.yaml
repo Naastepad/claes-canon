@@ -1,0 +1,191 @@
+schema_version: 1.0.0
+kind: StorybibleConversionLedger
+source: Claes_Storybible_MASTER_COMPLEET_2026-08-10_REVISIE11_MACROSTRUCTUUR_PROJECTIO(1).md
+source_sha256: e38430f0165e7c0779a8ae6bba6a208773c677682f55295a940e91fdb2ed9edd
+sections:
+- id: SB.SEC.001
+  title: 1. Wat dit is
+  source_lines: {start: 15, end: 28}
+  source_sha256: 29068944ce1fe1de1fac3b51b0b63d18427fba4117e94a59061d866b7f4cf860
+  conversion_status: normalized_core
+  targets: []
+- id: SB.SEC.002
+  title: '1A. MODULE – Dramaturgische macrostructuur: Drager → Nigredo → Albedo → Rubedo → Projectio'
+  source_lines: {start: 29, end: 259}
+  source_sha256: cc33645b3b266b76ad40fce1b3905778bf8a02c08b85db45b4bb77ef2e61584d
+  conversion_status: normalized_core
+  targets: [narrative/arcs.yaml, claims/STORY_CLAIMS.yaml]
+- id: SB.SEC.003
+  title: 2. Rolverdeling
+  source_lines: {start: 260, end: 267}
+  source_sha256: 9cf1e6c9ca36dc4116ff76ffcd68de3f548e954a91fb478df13ad7f87d8194ba
+  conversion_status: indexed
+  targets: []
+- id: SB.SEC.004
+  title: 3. Personages
+  source_lines: {start: 268, end: 415}
+  source_sha256: 96401b0ffe401c4c013544453cbfdd3b9724248fab763d797290161e30ed8860
+  conversion_status: normalized_core
+  targets: [entities/ENTITIES.yaml, narrative/relationships.yaml]
+- id: SB.SEC.005
+  title: 'Levensfase I: de wieg en het lichaam'
+  source_lines: {start: 416, end: 437}
+  source_sha256: f87a1d8fea3dc60d2880592417e5ec015dab965f0f66692cb02066dfb7fa70b6
+  conversion_status: normalized_core
+  targets: [narrative/arcs.yaml, claims/STORY_CLAIMS.yaml]
+- id: SB.SEC.006
+  title: 'Levensfase II: het kind dat orde ontdekt'
+  source_lines: {start: 438, end: 489}
+  source_sha256: 605f176d8ba8cf2c638717e0de8790472c2c175bb5009f2d9611217712cee776
+  conversion_status: normalized_core
+  targets: [narrative/arcs.yaml, claims/STORY_CLAIMS.yaml]
+- id: SB.SEC.007
+  title: 'Levensfase III: het verdreven kind'
+  source_lines: {start: 490, end: 592}
+  source_sha256: 70c78ffb5f9497aaf97f329b02aff53284bb23069c544088329ccd2d99004631
+  conversion_status: normalized_core
+  targets: [narrative/arcs.yaml, claims/STORY_CLAIMS.yaml]
+- id: SB.SEC.008
+  title: 'Levensfase IV: de adolescent die leert interpreteren'
+  source_lines: {start: 593, end: 653}
+  source_sha256: acd736a35359714ed417a583df92f19653f002a10a89261e88a72d7616b37c2d
+  conversion_status: normalized_core
+  targets: [narrative/arcs.yaml, claims/STORY_CLAIMS.yaml]
+- id: SB.SEC.009
+  title: 'Levensfase V: de jonge zoeker'
+  source_lines: {start: 654, end: 717}
+  source_sha256: 3bc1a528341cbfa67e41115ff00fc14d0aaf8df14170d1455af7819051f9ecb0
+  conversion_status: normalized_core
+  targets: [narrative/arcs.yaml, claims/STORY_CLAIMS.yaml]
+- id: SB.SEC.010
+  title: 'Levensfase VI: de handelende volwassene'
+  source_lines: {start: 718, end: 783}
+  source_sha256: 09d204b09af4d82a32dea525e4246bd37cbaa6190eed95546ac1452ec8c72a4d
+  conversion_status: normalized_core
+  targets: [narrative/arcs.yaml, claims/STORY_CLAIMS.yaml]
+- id: SB.SEC.011
+  title: 'Levensfase VII: de man in de Nigredo'
+  source_lines: {start: 784, end: 843}
+  source_sha256: 50785fbce13102b62f12a832c48698837ca93cf8565ef167e47fea6b21484b07
+  conversion_status: normalized_core
+  targets: [narrative/arcs.yaml, claims/STORY_CLAIMS.yaml]
+- id: SB.SEC.012
+  title: 'Levensfase VIII: de rijpe man en de bewaarder'
+  source_lines: {start: 844, end: 923}
+  source_sha256: de56752e1fee12fe6596aa5cb0575b66d3bbd6daf37c02697da4afd711687dba
+  conversion_status: normalized_core
+  targets: [narrative/arcs.yaml, claims/STORY_CLAIMS.yaml]
+- id: SB.SEC.013
+  title: 'Levensfase IX: de laatste beweging en het graf'
+  source_lines: {start: 924, end: 1278}
+  source_sha256: 5c2c381bedd502c99932e8a229245e7879b40d313ce0ece66895d31bfdab3938
+  conversion_status: normalized_core
+  targets: [narrative/arcs.yaml, claims/STORY_CLAIMS.yaml]
+- id: SB.SEC.014
+  title: '4. Lopende canon: geheimen en plotmechanismen'
+  source_lines: {start: 1279, end: 1371}
+  source_sha256: 369353eb7acf8d2525b76436a2102ea4df0eb1d71371bbe86f63dd391f91049e
+  conversion_status: normalized_core
+  targets: [objects/OBJECTS.yaml, claims/STORY_CLAIMS.yaml, lemma/]
+- id: SB.SEC.015
+  title: 4A. Boekwereld, druknetwerken en symbolische leerlijn
+  source_lines: {start: 1372, end: 1486}
+  source_sha256: 334d3be71e24aae63a15fcb0c3fcb0c94e38eba996ab9411c6ade5175c281d80
+  conversion_status: indexed
+  targets: []
+- id: SB.SEC.016
+  title: 4B. COMPLETE CODEARCHITECTUUR — MERELS · MONAS · ZOVITIUS · DODOENS · LAS CASAS
+  source_lines: {start: 1487, end: 2202}
+  source_sha256: 51abc6a812ed0030f67b88591413a6b057851c48591bb0bfe23131ff55d822ef
+  conversion_status: normalized_core
+  targets: [objects/OBJECTS.yaml, claims/STORY_CLAIMS.yaml, lemma/]
+- id: SB.SEC.017
+  title: 5. Bestaande hoofdstukken en tijdlijn
+  source_lines: {start: 2203, end: 2278}
+  source_sha256: f1d8173c28235df926ff5009b6a80e6c3f9735ffcf9549707437152acc92e720
+  conversion_status: normalized_core
+  targets: [narrative/instances.yaml, narrative/structure.yaml]
+- id: SB.SEC.018
+  title: '6. Goes: topografie en tijdlijn'
+  source_lines: {start: 2279, end: 2436}
+  source_sha256: a8da640cec3ee9e72929172354b8e253a286825ddd14bf60b7fff03646795b82
+  conversion_status: indexed
+  targets: [narrative/instances.yaml, narrative/structure.yaml]
+- id: SB.SEC.019
+  title: 7. Het Nissepad — definitieve, brongewogen reconstructie
+  source_lines: {start: 2437, end: 2718}
+  source_sha256: 938dfd7c4d82e3f5dc931cff186420b339f7ffe9afc57551eaeb8c70c5b9a450
+  conversion_status: indexed
+  targets: [sources/, claims/SOURCE_CLAIMS.yaml]
+- id: SB.SEC.020
+  title: 8. Brood, graanhandel en bakpraktijk — brongewogen canon voor Goes, Antwerpen en Enkhuizen
+  source_lines: {start: 2719, end: 3170}
+  source_sha256: 5bb02b903fa49a1a95ff741d4db2b4ac7c58a1c2f5f34ac0990fd6fb7370cb3e
+  conversion_status: indexed
+  targets: [sources/, claims/SOURCE_CLAIMS.yaml]
+- id: SB.SEC.021
+  title: 9. De historische familie Nissepat/Nissepadt — overzicht
+  source_lines: {start: 3171, end: 3201}
+  source_sha256: 7236b7d7c12a3021b1a4a971859f160cabb5dd97eab4a32ab848c5faf7e1803f
+  conversion_status: indexed
+  targets: []
+- id: SB.SEC.022
+  title: 10. Craft-principes (blijvend van kracht)
+  source_lines: {start: 3202, end: 3221}
+  source_sha256: ae952923d51cb4502c366bec760604791046e309b9f4a405e8d4a15b272ece8a
+  conversion_status: normalized_core
+  targets: [narrative/CRAFT_GUARDRAILS.yaml]
+- id: SB.SEC.023
+  title: 11. Openstaande beslissingen na revisie 11 — 10 augustus 2026
+  source_lines: {start: 3222, end: 3255}
+  source_sha256: e8fa9b654d7c13766eaa874b8682c71c188b7de30409bd2b03f0984bfca67618
+  conversion_status: normalized_core
+  targets: [canon/OPEN_DECISIONS.yaml]
+- id: SB.SEC.024
+  title: 12. Bronnen geraadpleegd
+  source_lines: {start: 3256, end: 3346}
+  source_sha256: fdeca87d5d630fe68ba7cb0a221c89c0ba6301069af5be5baff43f177e6ccce2
+  conversion_status: indexed
+  targets: [sources/, claims/SOURCE_CLAIMS.yaml]
+- id: SB.SEC.025
+  title: 13. Integratie- en verliescontrole Revisie 8–9
+  source_lines: {start: 3347, end: 3478}
+  source_sha256: b29ef20f9016f1a6af4618ecf9e849d76609bf1732d894a3ae22a15782d3ccd5
+  conversion_status: indexed
+  targets: []
+- id: SB.SEC.026
+  title: MODULE – Zuid-Bevelandse Netwerken en Realistische Ontmoetingen
+  source_lines: {start: 3479, end: 3482}
+  source_sha256: b66743ff2c2c9ce4ff1bdb72081b3d14b93801f548e8487936b903cf52009631
+  conversion_status: indexed
+  targets: []
+- id: SB.SEC.027
+  title: Waarom deze module?
+  source_lines: {start: 3483, end: 3489}
+  source_sha256: dad934f99f2b1dfd2e468aeae73afb6f89e9ef51f4551f0b6a2683326f574dc1
+  conversion_status: indexed
+  targets: []
+- id: SB.SEC.028
+  title: Historische personages en verhaalverbindingen (selectie)
+  source_lines: {start: 3490, end: 3506}
+  source_sha256: 952c3639d3033869d281a0af6da1ee5a7a7d782ce4b955ad8471d182da22146f
+  conversion_status: normalized_core
+  targets: [entities/ENTITIES.yaml, narrative/relationships.yaml]
+- id: SB.SEC.029
+  title: Scène-aanzetten (per tijdlaag)
+  source_lines: {start: 3507, end: 3532}
+  source_sha256: 1025f8d2ff01c96c95f9c7d300031d3fe2380d0c4eee2c245abe9bb867b97e50
+  conversion_status: indexed
+  targets: []
+- id: SB.SEC.030
+  title: Gebruik en canonstatus
+  source_lines: {start: 3533, end: 3542}
+  source_sha256: a3a14151487021dd903b666c7209bd0618836a07084422c9f92ab86a882dfea6
+  conversion_status: indexed
+  targets: []
+- id: SB.SEC.031
+  title: 'MODULE – Muziek, gebed en transmutatie: de hoorbare overgang van katholieke traditie naar Reformatie'
+  source_lines: {start: 3543, end: 3803}
+  source_sha256: 29f052e5c38e2f673394cf077cb4b11d8a3e6b264491def051359a391aed3135
+  conversion_status: indexed
+  targets: [narrative/motifs.yaml]

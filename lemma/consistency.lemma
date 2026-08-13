@@ -1,0 +1,18 @@
+spec canon_consistency
+
+data canon_status: text
+  -> option "PROPOSED"
+  -> option "CANON"
+  -> option "OPEN"
+  -> option "DEPRECATED"
+  -> option "REJECTED"
+
+data references_resolved: boolean
+data temporal_valid: boolean
+data dependencies_satisfied: boolean
+
+rule active_canon: false
+  unless canon_status is "CANON" then true
+
+rule canon_consistent:
+  active_canon and references_resolved and temporal_valid and dependencies_satisfied

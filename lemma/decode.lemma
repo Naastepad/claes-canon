@@ -1,0 +1,37 @@
+spec recovery_decode
+
+data canon_status: text
+  -> option "PROPOSED"
+  -> option "CANON"
+  -> option "OPEN"
+  -> option "DEPRECATED"
+  -> option "REJECTED"
+
+data trigger_known: boolean
+data memoriaal_available: boolean
+data vitriol_available: boolean
+data merels_skill: boolean
+data monas_available: boolean
+data dodoens_available: boolean
+data primus_index_available: boolean
+
+rule active_canon: false
+  unless canon_status is "CANON" then true
+
+rule can_activate_memoriaal:
+  active_canon and trigger_known and memoriaal_available and vitriol_available
+
+rule can_recover_theorem_sequence:
+  can_activate_memoriaal and merels_skill
+
+rule can_build_monas_matrix:
+  can_recover_theorem_sequence and monas_available
+
+rule can_open_dodoens_gate:
+  can_build_monas_matrix and dodoens_available
+
+rule can_identify_plaintext:
+  can_open_dodoens_gate and primus_index_available
+
+rule can_decode:
+  can_identify_plaintext and dodoens_available

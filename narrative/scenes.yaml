@@ -1,0 +1,35 @@
+schema_version: 1.1.0
+kind: NarrativeSceneAnalysisRegistry
+analyses:
+- instance_id: NI.SCENE.DEE_FIRST_ENCOUNTER.1563.001
+  label: First brief encounter with John Dee
+  status: CANON_ANALYSIS
+  pov:
+  - ENT.PERSON.CLAES
+  locations:
+  - ENT.LOC.ANTWERP
+  - ENT.LOC.SILVIUS_GULDEN_ENGEL
+  entities:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.JOHN_DEE
+  - ENT.PERSON.WILLEM_SILVIUS
+  claims_active:
+  - STC.CLAES.DEE_ENCOUNTER.1563.001
+  claims_introduced:
+  - STC.CLAES.DEE_ENCOUNTER.1563.001
+  arcs_advanced:
+  - ARC.CLAES.DEE
+  - ARC.CLAES.LIFE
+  motifs:
+  - MOTIF.SINNE
+  - MOTIF.CARRIER_MEANING
+  narrative_function:
+    setup: Plant recognition before the intensive 1564 Dee formation.
+    value_shift: Dee changes from distant name/network figure to personally encountered possibility.
+    conflict_note: The scene should not prematurely grant Claes specialist knowledge.
+  knowledge_object_targets:
+  - KO.SCENE
+  - KO.CONFLICT
+  - KO.VALUE
+  retrieval:
+    tags: [scene, dee, claes, first-encounter, antwerp]

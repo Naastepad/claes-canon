@@ -1,0 +1,24 @@
+schema_version: 1.0.0
+kind: NarrativeRelationshipExtension
+records:
+- id: REL.CLAES.BELOVED.RECOVERY
+  type: RelationshipExtension
+  label: Claes and beloved — recovery companionship
+  status: CANON_FUNCTION_OPEN_IDENTITY
+  participants:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.BELOVED
+  parent: REL.CLAES.BELOVED
+  decision_ids:
+  - DEC.CLAES.SINNE.2026-08-13
+  story_function: on the road toward Enkhuizen their companionship catalyses Claes' rediscovery of the sinne and its inward resonance
+  boundaries:
+  - beloved accompanies and catalyses; she does not solve or perform Claes' inner transformation for him
+  - her identity and detailed apothecary-family biography remain open
+  - love matures toward relation without possession
+  arc: ARC.CLAES.SINNE_RECOVERY
+  location_anchor: ENT.LOC.ENKHUIZEN
+  ko_targets:
+  - KO.RELATIONSHIP
+  - KO.CHARACTER
+  - KO.VALUE
