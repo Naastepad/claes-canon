@@ -24,3 +24,26 @@ claims:
       note: "Historical presence supports plausibility only; it does not prove the fictional encounter."
     retrieval:
       tags: [dee, silvius, antwerp, 1563, encounter-plausibility]
+
+  - id: SC.HIST.LASCASAS.BREVISIMA.1542.001
+    type: SourceClaim
+    statement: "The primitive 1542 textual state of Las Casas' Brevísima records completion in Valencia on 8 December 1542; the printed princeps followed in 1552."
+    claim_type: historical_text_date
+    subject: OBJ.LASCASAS_CIPHERTEXT
+    predicate: historical_source_text_completed_on
+    story_time:
+      date: 1542-12-08
+      precision: day
+    evidence_status: SUPPORTED
+    source_ids:
+      - SRC-HIST-1542-LASCASAS-BREVISIMA-001
+    supports_story_claims:
+      - STC.CLAES.BIRTH.001
+    contradicts: []
+    qualifies:
+      - "The historical date supports the intentional story resonance only; it does not support Claes' fictional existence."
+    verification:
+      status: source_registered_locator_pending
+      note: "Critical digital edition identifies the primitive 1542 version; final publication bibliography should add the exact printed-edition locator for the closing date."
+    retrieval:
+      tags: [las-casas, brevisima, 1542, valencia, birth-resonance]
