@@ -1,202 +1,142 @@
 # AI Onboarding — Claes Storybible
 
-**Canonical cross-model instruction file.** This document is written for ChatGPT, Claude, Gemini, Copilot, local agents and other language models. Model-specific files such as `AGENTS.md`, `CLAUDE.md` and `.github/copilot-instructions.md` must defer to this file rather than inventing a parallel interpretation of the project.
+**Canonical cross-model instruction file.** This document applies to ChatGPT, Claude, Gemini, Copilot, local agents and other language models. Model-specific files must defer to this file rather than inventing a parallel interpretation.
 
 ## 1. What this repository is
 
-This repository is the operating Storybible and canon-control system for the historical novel **Claes Nissepat**. It is not merely a folder of notes and it is not merely a Lemma rules repository.
-
-It contains four distinct layers:
+This repository is the operating Storybible and canon-control system for the historical novel **Claes Nissepat**. It contains four distinct layers:
 
 1. **Evidence** — historical/research support (`SRC-*`, `SC.*`).
-2. **Story truth** — what the author has decided is true inside the novel (`STC.*`, `DEC.*`).
-3. **Narrative meaning** — how story truth becomes character, scene, sequence, arc, motif, relationship and value movement (`NI.*`, `ARC.*`, `REL.*`, `MOTIF.*`, `THEME.*`, `VALUE.*`, `WORLD.*`).
+2. **Story truth** — explicit novel truth (`STC.*`, `DEC.*`, `canon/`).
+3. **Narrative meaning** — character, scene, sequence, arc, motif, relationship and value movement (`NI.*`, `ARC.*`, `REL.*`, `MOTIF.*`, `THEME.*`, `VALUE.*`, `WORLD.*`, `CODE.*`).
 4. **Deterministic continuity** — only the subset that can usefully be evaluated as executable logic (`lemma/*.lemma`).
 
-External McKee/NOS knowledge objects (`KO.*`) are **narrative theory**, not Claes canon. They may be used to diagnose scenes and arcs but may never override story truth.
+External McKee/NOS knowledge objects (`KO.*`) are narrative theory, not Claes canon.
 
-## 2. Authority hierarchy
+## 2. Current operating master
 
-When two records appear to conflict, resolve them in this order:
+The current synchronized human-readable operating master is:
 
-1. Explicit current human author decision.
-2. Active `STC.*` Story Claim with `canon_status: CANON` and its `DEC.*` decision record.
-3. Structured operating Storybible records (`ENT.*`, `OBJ.*`, `NI.*`, `ARC.*`, `REL.*`, `MOTIF.*`, `THEME.*`, `VALUE.*`, `WORLD.*`, `CODE.*`).
-4. `storybible/LEMMA_MCKEE_MASTER.md` as the coherent human-readable operating synthesis.
-5. The exact Revision 11 source edition for detail not yet atomized, as tracked through `mapping/CONVERSION_LEDGER.yaml`.
-6. `PROPOSED` and `OPEN` records — informative but not settled canon.
-7. Historical inference or model-generated suggestion — never canon unless explicitly promoted.
+`storybible/LEMMA_MCKEE_MASTER_2026-08-13.md`
 
-A Lemma result can prove that a declared combination is or is not logically compatible with the encoded constraints. Lemma does **not** decide literary truth by itself and does not turn historical evidence into canon.
+The earlier `storybible/LEMMA_MCKEE_MASTER.md` remains in the repository as an audit/work edition and may contain stale migrated representations. When they differ, use the authority hierarchy below and consult `review/SYNC_STATUS.md`.
 
-## 3. Required read order
+## 3. Authority hierarchy
 
-For a general project question, read:
+When records appear to conflict, use this order:
+
+1. explicit current human author decisions in `canon/` / `DEC.*`;
+2. synchronized active `STC.*` Story Claims;
+3. synchronized entity/object/narrative registers;
+4. `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md`;
+5. Revision 11 through `mapping/CONVERSION_LEDGER.yaml` for detail not yet atomized;
+6. Source Claims/provenance;
+7. `PROPOSED` and `OPEN` records;
+8. model inference or session memory — never authoritative.
+
+A Lemma result can test declared constraints. Lemma does not decide literary truth and does not turn historical evidence into canon.
+
+## 4. Required read order
+
+For canon-sensitive work:
 
 1. `README.md`
-2. `storybible/LEMMA_MCKEE_MASTER.md`
-3. `AI_ONBOARDING.md`
-4. the relevant structured registers
-5. relevant source claims/provenance
-6. relevant Lemma specs when the question is deterministic
+2. `REPOSITORY_INTEGRITY.md` if you can write
+3. `canon/` current decisions
+4. `review/SYNC_STATUS.md`
+5. `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md`
+6. relevant structured registers
+7. relevant source claims/provenance
+8. relevant Lemma specs only when deterministic reasoning is needed
+9. `WRITING_PROTOCOL.md` before drafting or revising prose
 
-For a focused task, do not load the whole repository blindly. Retrieve the records that bear on the question, but always inspect the operating master and any linked canonical claims before making a canon-sensitive assertion.
+For a focused task, retrieve only the records that bear on the question, but never skip the current decisions/sync status when they may affect the answer.
 
-## 4. How to interpret IDs
+## 5. ID semantics
 
 - `SRC-*` — source/provenance record
-- `SC.*` — Source Claim: what evidence supports
-- `STC.*` — Story Claim: what is true in the novel
-- `DEC.*` — explicit canon decision/audit record
+- `SC.*` — Source Claim
+- `STC.*` — Story Claim
+- `DEC.*` — explicit author/canon decision
 - `ENT.*` — person/location/entity
 - `OBJ.*` — continuity-sensitive object
-- `NI.*` — Narrative Instance: event, sequence, chapter, scene or beat
-- `ARC.*` — character or relationship arc
+- `NI.*` — Narrative Instance
+- `ARC.*` — character/relationship arc
 - `REL.*` — relationship
-- `MOTIF.*` — recurring image, sensory pattern or structural motif
-- `THEME.*` — controlling idea, dramatic question, desire/need/lie/revelation
-- `VALUE.*` — McKee-facing value axis or value state
+- `MOTIF.*` — recurring sensory/structural motif
+- `THEME.*` — controlling idea, question, desire/need/lie/revelation
+- `VALUE.*` — McKee-facing value axis/state
 - `WORLD.*` — historical/worldbuilding module
-- `CODE.*` — cryptographic/recovery architecture
+- `CODE.*` — recovery/cryptographic architecture
 - `OPEN.*` — unresolved author decision
 - `KO.*` — external narrative-theory knowledge object; never Claes canon
 
-## 5. Status semantics
+## 6. Status semantics
 
-Evidence status and canon status answer different questions and must never be collapsed.
+Evidence: `VERIFIED / SUPPORTED / PLAUSIBLE / DISPUTED / UNKNOWN`
 
-Evidence:
+Canon: `PROPOSED / CANON / OPEN / DEPRECATED / REJECTED`
 
-`VERIFIED / SUPPORTED / PLAUSIBLE / DISPUTED / UNKNOWN`
+Migration origin/review is separate from both. Never collapse these axes and never silently promote `PROPOSED` or `OPEN` material to `CANON`.
 
-Canon:
+## 7. Time and uncertainty
 
-`PROPOSED / CANON / OPEN / DEPRECATED / REJECTED`
+Preserve source/story precision exactly. February remains a month unless a separate author decision establishes a day. A bounded 1568–1569 event remains bounded. Lack of exact precision is information, not a defect to repair by guessing.
 
-Examples:
+Use the repository's half-open ranges consistently: `earliest` inclusive, `latest_exclusive` exclusive.
 
-- A historical event can be `VERIFIED` but absent from the novel.
-- A fictional meeting can be `PLAUSIBLE + CANON`.
-- A model suggestion can be `SUPPORTED + PROPOSED` but is not yet story truth.
+## 8. Historical-fiction boundary
 
-Never silently promote `PROPOSED` or `OPEN` to `CANON`.
+Always distinguish:
 
-## 6. Time and uncertainty
+- historically documented;
+- evidence-based reconstruction;
+- authorial fiction;
+- unresolved/open material.
 
-Preserve the source precision exactly.
+Network proximity does not prove a meeting. A historical print does not prove Claes' fictional provenance. A plausible route does not establish exact topography.
 
-If a record says February 1563, do not invent 16 February 1563. If a life event is bounded to 1568–1569, do not write an exact arrest or death date unless another canonical record closes it.
+## 9. Narrative interpretation
 
-Use half-open time ranges where the repository does so: `earliest` is inclusive; `latest_exclusive` is exclusive.
+When interpreting a scene/chapter/sequence, consider POV and knowledge state, objective, psychological/moral need, opening and closing value, conflict/pressure, turning point, claim/relationship/object/knowledge changes, arc movement and motif transformation.
 
-A lack of exact date is information, not a defect to repair by guessing.
+The governing Claes movement is not merely puzzle-solving. The active master defines a longer movement in which embodied *sinne* develops, is constricted by trauma, and later reopens into discernment, responsibility, wisdom and release.
 
-## 7. Historical-fiction boundary
+## 10. If you only read or answer questions
 
-Always separate:
+You may summarize canon, trace provenance, distinguish evidence from fiction, identify open decisions, explain chronology/knowledge/object states/arcs/motifs, use Lemma for deterministic checks and McKee/NOS for diagnosis. State uncertainty where the repository states uncertainty.
 
-- what is historically documented;
-- what is reconstructed from evidence;
-- what is authorial fiction;
-- what is still open.
+## 11. If you write prose
 
-Network proximity does not prove a meeting. A real printed book does not prove Claes' fictional provenance. A plausible trade route does not prove a precise parcel location. The repository intentionally preserves these distinctions.
+Read and obey `WRITING_PROTOCOL.md`. Before drafting, identify the relevant `NI.*`, active `STC.*`, participant knowledge states, object states, arc/value movement, current *sinne* state and historical guardrails.
 
-## 8. Reading the Storybible as narrative, not just data
+Prose may dramatize within open space but may not accidentally settle an `OPEN.*` matter. If a creative choice would close an open question, leave it open or present it separately as a proposal.
 
-When interpreting a scene, chapter or sequence, consider at least:
+## 12. If you can modify the repository
 
-- point of view and knowledge state;
-- conscious desire;
-- psychological and moral need;
-- value at entry and value at exit;
-- conflict/pressure;
-- turning point or revelation;
-- what claim, relationship, object state or knowledge state changes;
-- which arc advances;
-- which motif is planted, transformed or paid off;
-- whether the scene changes the story or merely transports information.
+Read `REPOSITORY_INTEGRITY.md`, `AGENTS.md`, `AUTHORING_POLICY.md` and `review/SYNC_STATUS.md` first.
 
-The governing Claes movement is not “solve the puzzle.” It is the lifelong movement from **perception → understanding → control → responsibility → release**. The controlling idea and dramatic question in `storybible/LEMMA_MCKEE_MASTER.md` govern interpretation.
+Mandatory rules include:
 
-## 9. If you are only reading or answering questions
-
-You may:
-
-- summarize active canon;
-- trace why something is canon;
-- distinguish evidence from fiction;
-- identify open decisions;
-- explain chronology, knowledge, object provenance, arcs and motifs;
-- use Lemma for deterministic consistency when available;
-- use McKee/NOS theory for diagnosis when relevant.
-
-You must state uncertainty when the repository states uncertainty. Do not fill gaps with plausible-sounding invention.
-
-## 10. If you are allowed to write prose
-
-Before drafting a scene or chapter, follow `WRITING_PROTOCOL.md`.
-
-Minimum requirement: identify the relevant `NI.*`, active `STC.*` claims, participant knowledge states, object states, arc/value movement and historical guardrails **before** writing prose.
-
-New prose must obey active canon. Prose may dramatize within open space, but it may not close an `OPEN.*` decision by accident.
-
-If a creative choice would decide an open matter, either:
-
-1. leave it deliberately unresolved in the prose; or
-2. present the choice as a proposal for human approval before treating it as canon.
-
-## 11. If you are allowed to modify the Storybible/repository
-
-Follow `AUTHORING_POLICY.md` and `AGENTS.md`.
+- fresh-fetch target branch and every target file immediately before mutation;
+- never write from remembered/stale content;
+- stop and re-fetch after SHA/409/conflict or unexpected drift;
+- never silently overwrite another agent's newer work;
+- preserve stable IDs and provenance;
+- propagate explicit human decisions downstream;
+- if complete propagation is technically impossible, update sync status rather than pretending completion;
+- no force push, destructive history rewrite, merge, publication or LemmaBase promotion without explicit human authority.
 
 Required flow:
 
-`source/evidence -> SC.* -> STC.* -> DEC./review -> narrative records -> Lemma if deterministic -> validation -> human approval`
+`source/evidence -> SC.* -> human proposal/decision -> STC.* -> entities/objects/knowledge -> narrative registers -> operating master -> Lemma if deterministic -> validation -> review -> merge/publication`
 
-Do not rewrite the Storybible merely to make the schema look cleaner. Preserve meaning and provenance. Never delete an older active truth without either deprecating/superseding it explicitly or recording the human decision that replaced it.
+## 13. If you modify Lemma
 
-## 12. If you are allowed to modify Lemma
+Lemma stores constraints, not literary interpretation. Suitable questions include whether people can meet, whether Claes can know/possess/use something at a time, whether prerequisite stages are satisfied, and whether declared temporal/object constraints are compatible.
 
-Lemma stores constraints, not literary interpretation.
-
-A suitable Lemma question is:
-
-- Can these two people meet on this date in this place?
-- Can Claes possess this object yet?
-- Can he know this information by this point?
-- Are the prerequisite stages of the recovery chain satisfied?
-
-Unsuitable Lemma questions include:
-
-- Is this scene moving?
-- Is Claes acting out of love?
-- Is this motif elegant?
-- Is the chapter thematically satisfying?
-
-Those belong to narrative diagnosis, not deterministic rules.
-
-## 13. Required response discipline for canon-sensitive work
-
-When practical, make clear which kind of statement you are making:
-
-- **Canon:** active novel truth.
-- **Evidence:** historical/research support.
-- **Open:** unresolved author decision.
-- **Proposal:** suggested new story choice.
-- **Inference:** model reasoning not yet represented as canon.
-
-Do not present an inference in the grammatical voice of settled fact.
+Emotional power, love, elegance and thematic satisfaction belong to narrative diagnosis, not deterministic Lemma rules.
 
 ## 14. Cross-model handoff
 
-At the end of substantial canon-sensitive work, leave enough information for another model to continue without reconstructing your private reasoning. Record:
-
-- records read;
-- records changed;
-- assumptions made;
-- decisions still open;
-- validation status;
-- whether anything requires human approval.
-
-Do not rely on chat memory as canonical storage. If a decision matters beyond the session, it belongs in the repository through the controlled authoring flow.
+At the end of substantial work, record enough repository-visible state for another model to continue: files/records read, files/records changed, current sync status, unresolved matters, validation status and whether human approval remains required. Do not rely on private reasoning or chat memory as canonical storage.
