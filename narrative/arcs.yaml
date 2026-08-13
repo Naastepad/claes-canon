@@ -8,13 +8,13 @@ arcs:
   protagonist: ENT.PERSON.CLAES
   phases:
   - id: ARC.CLAES.LIFE.P01
-    label: Wieg en lichaam
+    label: Vroege vorming
     story_time:
-      earliest: '1545-12-08'
+      earliest: '1542-12-08'
       latest_exclusive: '1547-12-31'
       precision: approximate
     dominant_movement: ontvankelijkheid zonder duiding
-    value_shift: body before understanding
+    value_shift: sensory experience before explicit understanding
   - id: ARC.CLAES.LIFE.P02
     label: Kind dat orde ontdekt
     story_time:
@@ -24,7 +24,7 @@ arcs:
     dominant_movement: Wijsheid en Hoop
     value_shift: order can be learned through attention
   - id: ARC.CLAES.LIFE.P03
-    label: Verdreven kind
+    label: Reimerswaalse vormingsfase
     story_time:
       earliest: '1554-05-18'
       latest_exclusive: '1561-09-01'
@@ -32,7 +32,7 @@ arcs:
     dominant_movement: Hoop under pressure
     value_shift: observation cannot prevent loss
   - id: ARC.CLAES.LIFE.P04
-    label: Adolescent die leert interpreteren
+    label: Jonge man die leert interpreteren
     story_time:
       earliest: '1560-01-01'
       latest_exclusive: '1563-12-31'
@@ -91,7 +91,7 @@ arcs:
   phases:
   - label: Drager
     story_time:
-      earliest: '1545-12-08'
+      earliest: '1542-12-08'
       latest_exclusive: '1564-10-04'
       precision: bounded
   - label: Gebondenheid / macro-Nigredo
