@@ -9,9 +9,11 @@ modules:
     anchors:
       - {date: 1554-05-18, event: "major city fire", story_instance: NI.EVENT.GOES_FIRE.1554.001}
       - {date: 1566-08-01, precision: lower-bound, event: "Claes returns after Beeldenstorm", story_instance: NI.EVENT.CLAES_RETURN_GOES.1566.001}
-    narrative_functions: ["childhood material world", "fire/air half of elemental symmetry", "family trade and later return", "1570 recovery work environment"]
+    narrative_functions: ["childhood material world", "elementary schooling", "fire/air half of elemental symmetry", "family trade and later return", "1570 recovery work environment"]
+    educational_route: "Claes receives elementary schooling in Goes; Cornelis intends Zierikzee as the next Latin-school destination before the 1554 fire."
     guardrails:
-      - "Do not claim a full official Goes Latin school before 1554 without evidence."
+      - "Do not claim a continuously operating full official Goes Latin school through 1554 without evidence."
+      - "Do not make Claes' Reimerswaal route begin from educational zero; his earlier elementary schooling in Goes is canon."
       - "Do not assume modern street names or later urban forms in earlier scenes."
       - "Atlas certainty must distinguish historical anchor, reconstruction and fiction."
 
@@ -21,11 +23,13 @@ modules:
     record_role: FRAMEWORK
     historical_method: SOURCE_WEIGHTED_RECONSTRUCTION
     claes_presence: {earliest: 1554-05-19, latest_exclusive: 1561-09-01, precision: bounded}
-    narrative_functions: ["displacement", "Latin formation", "water/earth half of elemental symmetry", "adaptation to strange households", "water-marked Zovitius object biography"]
+    narrative_functions: ["displacement", "Latin formation", "advanced older-pupil formation", "water/earth half of elemental symmetry", "adaptation to strange households", "water-marked Zovitius object biography"]
+    educational_route: "After the Goes fire, Reimerswaal replaces the intended Zierikzee destination. Claes enters after elementary schooling in Goes; the 1554–1561 span progresses into advanced/older-pupil formation and is not seven years of beginner curriculum."
     guardrails:
       - "The city still functions during Claes' stay."
       - "Claes experiences water threat, not the later final fall of the city."
       - "No invented named rector or fixed surviving medieval school building."
+      - "Do not impose a modern fixed-age cohort or a locally unverified class structure on the Reimerswaal school."
 
   - id: WORLD.ANTWERP
     label: "Antwerp — free schools, trade, printing and clandestine knowledge"
