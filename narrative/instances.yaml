@@ -89,6 +89,104 @@ instances:
   story_claims:
   - STC.CLAES.REIMERSWAAL.001
   - STC.CLAES.ZIERIKZEE.PLAN.001
+  arcs_advanced:
+  - ARC.CLAES.LIFE
+- id: NI.SEQUENCE.REIMERSWAAL_DISSOLUTION.1554_1561.001
+  type: SequenceInstance
+  label: Reimerswaal — stad die blijft terwijl zij verdwijnt
+  canon_status: CANON
+  story_time:
+    earliest: '1554-05-19'
+    latest_exclusive: '1561-09-01'
+    precision: bounded
+  locations:
+  - ENT.LOC.REIMERSWAAL
+  entities:
+  - ENT.PERSON.CLAES
+  arcs_advanced:
+  - ARC.CLAES.LIFE
+  - ARC.CLAES.MACRO_TRANSMUTATION
+  motifs:
+  - MOTIF.FIRE_WATER
+  narrative_function: Material prefiguration of Nigredo; does not move the adult macro-Nigredo hinge from 4 October 1564.
+  value_movement: recoverable displacement → repeated damage and repair → recognition that continuity of name and habitation does not guarantee continuity of form
+- id: NI.EVENT.REIMERSWAAL_WATER.1555.001
+  type: EventInstance
+  label: Eerste Reimerswaalse dijkbreuk voor Claes
+  canon_status: CANON
+  story_time:
+    earliest: '1555-11-01'
+    latest_exclusive: '1555-12-01'
+    precision: month
+  locations:
+  - ENT.LOC.REIMERSWAAL
+  entities:
+  - ENT.PERSON.CLAES
+  source_claims:
+  - SC.HIST.REIMERSWAAL.1555.001
+  arcs_advanced:
+  - ARC.CLAES.LIFE
+  motifs:
+  - MOTIF.FIRE_WATER
+  narrative_function: First major water event after the Goes fire; counterpoint and amplifier to the fire that displaced Claes.
+  value_movement: provisional safety → recognition that the refuge itself is vulnerable
+- id: NI.EVENT.REIMERSWAAL_STORM.1557.001
+  type: EventInstance
+  label: Storm en instorting Reimerswaal
+  canon_status: CANON
+  story_time:
+    earliest: '1557-01-12'
+    latest_exclusive: '1557-01-14'
+    precision: day-range
+  locations:
+  - ENT.LOC.REIMERSWAAL
+  entities:
+  - ENT.PERSON.CLAES
+  source_claims:
+  - SC.HIST.REIMERSWAAL.1557.001
+  arcs_advanced:
+  - ARC.CLAES.LIFE
+  motifs:
+  - MOTIF.FIRE_WATER
+  narrative_function: Protection itself fails; walls, gates and civic structures can become matter rather than guarantees.
+  value_movement: enclosure/protection → exposure
+- id: NI.EVENT.REIMERSWAAL_FIRE.1558.001
+  type: EventInstance
+  label: Brand in Reimerswaal
+  canon_status: CANON
+  story_time:
+    earliest: '1558-01-01'
+    latest_exclusive: '1559-01-01'
+    precision: year
+  locations:
+  - ENT.LOC.REIMERSWAAL
+  entities:
+  - ENT.PERSON.CLAES
+  source_claims:
+  - SC.HIST.REIMERSWAAL.1558.001
+  arcs_advanced:
+  - ARC.CLAES.LIFE
+  motifs:
+  - MOTIF.FIRE_WATER
+  narrative_function: Echo of Goes 1554, but now fire attacks a city already weakened by water; sudden destruction and slow erosion become one learned pattern.
+  value_movement: repairability → cumulative fragility
+- id: NI.EVENT.REIMERSWAAL_INUNDATION.1561.001
+  type: EventInstance
+  label: Nieuwe inundatie vóór vertrek naar Antwerpen
+  canon_status: CANON
+  story_time:
+    earliest: '1561-01-01'
+    latest_exclusive: '1561-09-01'
+    precision: bounded
+  locations:
+  - ENT.LOC.REIMERSWAAL
+  entities:
+  - ENT.PERSON.CLAES
+  source_claims:
+  - SC.HIST.REIMERSWAAL.1561_1563.001
+  arcs_advanced:
+  - ARC.CLAES.LIFE
+  narrative_function: Final Reimerswaal pressure within Claes' school phase before Antwerp.
 - id: NI.EVENT.LANDJUWEEL.1561.001
   type: EventInstance
   label: Landjuweel Antwerpen
@@ -268,6 +366,28 @@ instances:
   - MOTIF.BLACKENING_REVEAL
   - MOTIF.MERELS_WAYS
   - MOTIF.CASTANEA
+- id: NI.SEQUENCE.REIMERSWAAL_WAR.1573_1574.001
+  type: SequenceInstance
+  label: Geuzenbrand en Slag bij Reimerswaal
+  canon_status: CANON
+  presence_status: OPEN
+  story_time:
+    earliest: '1573-01-01'
+    latest_exclusive: '1574-01-30'
+    precision: bounded
+  locations:
+  - ENT.LOC.REIMERSWAAL
+  entities:
+  - ENT.PERSON.CLAES
+  source_claims:
+  - SC.HIST.REIMERSWAAL.1573_1574.001
+  arcs_advanced:
+  - ARC.CLAES.LIFE
+  - ARC.CLAES.MACRO_TRANSMUTATION
+  motifs:
+  - MOTIF.FIRE_WATER
+  narrative_function: Adult callback to the school-city: natural erosion has become human warfare. The city is narratively past its point of return, while historical literal final abandonment remains 1631.
+  guardrail: Claes' knowledge of these events is canonically relevant; whether he witnesses them in person remains open.
 - id: NI.EVENT.PUBLICATION.1578.001
   type: EventInstance
   label: Anonieme verspreiding/druk Las Casas
