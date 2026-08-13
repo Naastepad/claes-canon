@@ -24,3 +24,148 @@ claims:
       note: "Historical presence supports plausibility only; it does not prove the fictional encounter."
     retrieval:
       tags: [dee, silvius, antwerp, 1563, encounter-plausibility]
+
+  - id: SC.HIST.GOES_GROTE_KERK.BUILD.001
+    type: SourceClaim
+    statement: "The Goes Maria Magdalenakerk received its large surviving choir from the 1455 campaign (StoryMap: 1455–1475) and its north and south transepts around 1500 (StoryMap: 1500–1508), so these elements predate Claes' birth."
+    claim_type: architectural_chronology
+    subject: ENT.LOC.GOES_GROTE_KERK
+    predicate: had_pre_claes_building_phases
+    object: "choir and transepts"
+    story_time:
+      earliest: 1455-01-01
+      latest_exclusive: 1509-01-01
+      precision: interval
+    evidence_status: SUPPORTED
+    source_ids:
+      - SRC-HIST-GOES-GROTEKERK-001
+    supports_story_claims: []
+    contradicts: []
+    qualifies:
+      - "The post-1618 rebuilt nave must not be back-projected unchanged into Claes' sixteenth-century church."
+    verification:
+      status: source_text_and_storymap_checked
+      note: "Official heritage synthesis and associated StoryMap agree on the late-medieval choir/transept sequence."
+    retrieval:
+      tags: [goes, grote-kerk, maria-magdalena, choir, transepts, architecture]
+
+  - id: SC.HIST.GOES_GROTE_KERK.INTERIOR.001
+    type: SourceClaim
+    statement: "Before the Reformation of 1578 the church was a densely furnished Catholic interior with roughly thirty large and small altars, a central high altar, sacrament tower and altar, Gospel and Epistle lecterns, a pastor's seat, guild chapels/altars, paintings and the daily Seven Hours tradition."
+    claim_type: liturgical_interior
+    subject: ENT.LOC.GOES_GROTE_KERK
+    predicate: had_pre_reformation_catholic_interior
+    object: "altars, guild chapels, liturgical furniture, paintings and Seven Hours practice"
+    story_time:
+      earliest: 1542-12-08
+      latest_exclusive: 1578-01-01
+      precision: bounded
+    evidence_status: SUPPORTED
+    source_ids:
+      - SRC-HIST-GOES-GROTEKERK-001
+    supports_story_claims: []
+    contradicts: []
+    qualifies:
+      - "The precise positions of many nave altars and most guild chapels are explicitly unknown and must not be invented from StoryMap pins."
+    verification:
+      status: source_text_and_storymap_checked
+      note: "The source distinguishes the richly furnished Catholic state from the later Protestant/modern interior."
+    retrieval:
+      tags: [goes, grote-kerk, catholic, altars, guilds, seven-hours, interior]
+
+  - id: SC.HIST.GOES_GROTE_KERK.MAGDALENA.001
+    type: SourceClaim
+    statement: "The southern choir closure probably contained a shrine or chapel for Maria Magdalena, patroness of Goes, who is explicitly described as also being venerated by the Goes rhetoricians; the StoryMap places the 1552 triptych for Matthijs van der Straten in the St Maria Magdalena chapel."
+    claim_type: devotional_rhetorician_context
+    subject: ENT.LOC.GOES_GROTE_KERK
+    predicate: linked_maria_magdalena_devotion_to_rhetoricians
+    object: "probable southern Maria Magdalena shrine/chapel"
+    story_time:
+      earliest: 1455-01-01
+      latest_exclusive: 1578-01-01
+      precision: bounded
+    evidence_status: SUPPORTED
+    source_ids:
+      - SRC-HIST-GOES-GROTEKERK-001
+    supports_story_claims: []
+    contradicts: []
+    qualifies:
+      - "The shrine/chapel identification is explicitly probable, not certain."
+      - "No supplied evidence proves ownership, exclusive use or formal chapel rights for a specific rhetoricians' chamber such as the Edele Castanienbloem."
+    verification:
+      status: source_text_and_storymap_checked
+      note: "The rhetorician connection is explicit; institutional rights are not established."
+    retrieval:
+      tags: [goes, maria-magdalena, rhetoricians, rederijkers, chapel, 1552]
+
+  - id: SC.HIST.GOES_GROTE_KERK.ORGAN.001
+    type: SourceClaim
+    statement: "Father and son Niehoff built a new organ in the Goes church in 1550, positioned in the corner of the choir and north transept; the StoryMap popup depicts this position as the location in 1555."
+    claim_type: organ_chronology_and_location
+    subject: ENT.LOC.GOES_GROTE_KERK
+    predicate: contained_niehoff_organ
+    object: "Niehoff organ at choir/north-transept corner"
+    story_time:
+      earliest: 1550-01-01
+      latest_exclusive: 1551-01-01
+      precision: year
+    evidence_status: SUPPORTED
+    source_ids:
+      - SRC-HIST-GOES-GROTEKERK-001
+    supports_story_claims: []
+    contradicts: []
+    qualifies:
+      - "The StoryMap's 1555 popup is a location-state label and does not replace the 1550 construction year given by Erfgoed van Goes."
+    verification:
+      status: source_text_and_storymap_checked
+      note: "The older blockwerk organ is also described as having stood in the choir before 1550."
+    retrieval:
+      tags: [goes, organ, niehoff, 1550, choir, north-transept]
+
+  - id: SC.HIST.GOES_GROTE_KERK.SYMBOLIC.001
+    type: SourceClaim
+    statement: "The StoryMap reconstructs the four crossing pillars as Gregorius (NW), Ambrosius (SW), Augustinus (SE) and Hieronymus (NE), and reconstructs twelve choir pillars with apostolic identities; the accompanying wording says the choir pillars probably carried apostle names."
+    claim_type: spatial_symbolic_reconstruction
+    subject: ENT.LOC.GOES_GROTE_KERK
+    predicate: had_reconstructed_symbolic_pillar_program
+    object: "four Church Fathers and twelve Apostles"
+    story_time:
+      earliest: 1500-01-01
+      latest_exclusive: 1578-01-01
+      precision: bounded
+    evidence_status: SUPPORTED
+    source_ids:
+      - SRC-HIST-GOES-GROTEKERK-001
+    supports_story_claims: []
+    contradicts: []
+    qualifies:
+      - "The exact individual mapping is a StoryMap reconstruction; the apostolic attribution is described as probable."
+    verification:
+      status: storymap_screenshots_checked
+      note: "Useful for scene blocking when explicitly tagged as reconstruction rather than archival certainty."
+    retrieval:
+      tags: [goes, church-fathers, apostles, pillars, storymap, spatial-reconstruction]
+
+  - id: SC.HIST.GOES_GROTE_KERK.TRANSITION.001
+    type: SourceClaim
+    statement: "The church's Catholic visual and liturgical order was transformed at the Reformation in 1578: saint paintings were whitewashed or removed from view, Catholic altars and the Seven Hours ceased to function, and a new pulpit was placed on a choir pillar in 1594."
+    claim_type: confessional_transition
+    subject: ENT.LOC.GOES_GROTE_KERK
+    predicate: underwent_reformation_transition
+    object: "Catholic interior to Protestant preaching church"
+    story_time:
+      earliest: 1578-01-01
+      latest_exclusive: 1595-01-01
+      precision: bounded
+    evidence_status: SUPPORTED
+    source_ids:
+      - SRC-HIST-GOES-GROTEKERK-001
+    supports_story_claims: []
+    contradicts: []
+    qualifies:
+      - "Surviving/hidden Catholic traces such as the St Gregory Mass relief complicate any simple total-destruction model."
+    verification:
+      status: source_text_and_storymap_checked
+      note: "The source supports a time-sensitive church state across Claes' adulthood."
+    retrieval:
+      tags: [goes, reformation, 1578, pulpit, 1594, whitewash, confessional-transition]

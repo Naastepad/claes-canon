@@ -1,0 +1,10 @@
+schema_version: 1.0.0
+kind: EntityRegistry
+entities:
+- id: ENT.LOC.GOES_GROTE_KERK
+  type: Location
+  label: Grote of Maria Magdalenakerk, Goes
+  fictionality: historical
+  canon_status: PROPOSED
+  parent: ENT.LOC.GOES
+  usage: source-weighted, time-sensitive church environment for Goes scenes; exact scene use remains conditional

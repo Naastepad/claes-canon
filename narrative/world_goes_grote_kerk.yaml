@@ -1,0 +1,75 @@
+schema_version: 1.0.0
+kind: WorldModuleRegistry
+modules:
+- id: WORLD.GOES_GREAT_CHURCH
+  label: "Grote of Maria Magdalenakerk — Catholic memory and confessional transformation"
+  canon_status: PROPOSED
+  record_role: RESEARCH_FRAMEWORK
+  historical_method: SOURCE_WEIGHTED_RECONSTRUCTION
+  location_anchor: ENT.LOC.GOES_GROTE_KERK
+  supported_by:
+  - SC.HIST.GOES_GROTE_KERK.BUILD.001
+  - SC.HIST.GOES_GROTE_KERK.INTERIOR.001
+  - SC.HIST.GOES_GROTE_KERK.MAGDALENA.001
+  - SC.HIST.GOES_GROTE_KERK.ORGAN.001
+  - SC.HIST.GOES_GROTE_KERK.SYMBOLIC.001
+  - SC.HIST.GOES_GROTE_KERK.TRANSITION.001
+  relevance_to_claes:
+    childhood_1542_1554: "Source-backed sensory and civic church environment available to Goes youth scenes: incense, wax, bells, psalm singing, images, altars, guild presence, stone, paint and organ sound. This does not by itself canonise a specific attendance scene."
+    return_1566_1578: "Keep the Catholic interior historically active until the 1578 transition rather than projecting the later Protestant church backward."
+    adult_after_1578: "The same building can become a visible measure of changed meaning: former altars and images lose function or visibility while the building and some concealed traces remain; the 1594 pulpit belongs to Claes' later lifetime."
+  architecture_during_claes:
+    choir: "Late-medieval choir from the 1455 campaign; StoryMap dates the surviving phase 1455–1475."
+    transepts: "North and south transepts built around 1500; StoryMap dates them 1500–1508."
+    nave: "Claes' period uses the pre-1618 nave, not the higher and longer nave rebuilt in 1619–1621."
+    north_choir_closure: "Renewed Onze Lieve Vrouwekapel."
+    south_choir_closure: "Probable Maria Magdalena shrine or chapel; StoryMap places the 1552 Matthijs van der Straten triptych here."
+    organ: "Niehoff organ built in 1550 in the corner of choir and north transept; StoryMap popup shows the displayed position as the location in 1555."
+  catholic_interior_before_1578:
+    scale: "Approximately thirty large and small altars."
+    central_choir: ["high altar", "sacrament tower", "sacrament altar", "Gospel lectern", "Epistle lectern", "pastor's seat"]
+    guild_chapels: "At least twelve late-medieval guild chapels or altars in the present choir; exact places are often unknown and must remain uncertainty-tagged."
+    named_nave_altars:
+    - "St Christopher — beer carriers' guild"
+    - "St Apollonia — sack carriers' guild"
+    - "Three Kings"
+    - "St Barbara"
+    - "St Anthony"
+    - "Sweet Name of Jesus"
+    - "St Peter"
+    - "St Andrew"
+    - "St Agnes"
+    - "Holy Trinity"
+    liturgical_sound: "Institute of the Seven Hours founded in 1440; daily psalm singing at seven fixed times; new Niehoff organ from 1550."
+    visual_world: "Saint paintings on pillars and guild-related wall paintings; the St Gregory Mass relief in the north transept survives later only damaged and hidden."
+  storymap_spatial_reconstruction:
+    church_fathers:
+      northwest_crossing_pillar: Gregorius
+      southwest_crossing_pillar: Ambrosius
+      southeast_crossing_pillar: Augustinus
+      northeast_crossing_pillar: Hieronymus
+    apostles_note: "The StoryMap assigns apostolic identities to twelve choir pillars; source wording says the pillars probably bore apostle names, so the individual sequence is reconstruction rather than archival certainty."
+    apostle_sequence:
+      north_outer_west_to_east: [Petrus, Andreas, "Jakobus de Oudere", Filippus]
+      south_inner_west_to_east: [Bartholomeus, Thomas, "Jakobus de Jongere", Thadeus]
+      south_outer_west_to_east: [Simon, "Judas (opgevolgd door Mattias)", Mattheus, Johannes]
+  additional_source_backed_details:
+  - "Pest grooves in the north-transept facade: church stone scrapings were used medicinally."
+  - "A punishment bench made public penance visible during Mass."
+  - "Anchorite cells or kluizen are part of the building memory; fifteenth-century occupants are documented, but a living anchorite in Claes' youth is not established."
+  - "A baptismal chapel with font and a c. 1525 ancillary room labelled Consistorie in the StoryMap belong to the reconstructed pre-Reformation complex."
+  - "An unknown image is reconstructed above the south-transept entrance; its identity must not be invented as historical fact."
+  rhetoricians_link:
+    evidence: "Maria Magdalena is explicitly described as city patroness who was also venerated by the Goes rhetoricians."
+    narrative_use: "Cornelis' rhetorician identity can make the southern Maria Magdalena space culturally and devotionally meaningful without inventing institutional ownership."
+    prohibition: "Do not state that the Edele Castanienbloem owned, exclusively used, met in, or held formal rights to the chapel without additional evidence."
+  reformation_transition:
+    1578: "Catholic liturgical order and Seven Hours cease; saint imagery is whitewashed or removed from view and altars lose their Catholic function."
+    1594: "A new pulpit is placed on a pillar in the choir."
+    continuity: "Do not write the transition as total material erasure: some objects were stored, concealed or survived in altered visibility."
+  guardrails:
+  - "Use the historical state appropriate to the scene year; the church is not a timeless static interior."
+  - "Do not back-project the post-1618 nave, later walking-church arrangement or modern interior into Claes' lifetime."
+  - "StoryMap pins are spatial reconstruction; when source text says probable or location unknown, retain that uncertainty."
+  - "The beer carriers' guild is not the brewers' guild; Cornelis' beer-trade role does not automatically create guild membership or altar rights."
+  - "Do not place a living anchorite in the sixteenth-century story without further evidence."
