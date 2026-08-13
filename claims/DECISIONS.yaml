@@ -33,3 +33,23 @@ decisions:
       master_id: SB.CLAES.MASTER
       section_hint: "Chronology / first encounter with John Dee"
     note: "The exact day remains deliberately unspecified."
+
+  - id: DEC.CLAES.BIRTH_EDUCATION.001
+    type: StoryDecision
+    status: ACTIVE
+    decision: "Claes is born in Goes on 8 December 1542. He receives elementary schooling in Goes. Cornelis intends Zierikzee as the next Latin-school destination, but after the Goes fire of 18 May 1554 Claes goes instead as a cost pupil to the Latin school of Reimerswaal and remains in that educational environment until the Landjuweel journey of August 1561."
+    rationale: "The birth date intentionally coincides with the completion date recorded for the primitive 1542 Brevísima. The fire changes the intended school destination rather than interrupting Claes' education. The Reimerswaal period develops from Latin-school formation into an older-pupil phase before Antwerp."
+    evidence_status: SUPPORTED
+    canon_status: CANON
+    effects:
+      - claims/STORY_CLAIMS.yaml
+      - entities/ENTITIES.yaml
+      - narrative/arcs.yaml
+      - narrative/instances.yaml
+      - narrative/world_modules.yaml
+      - storybible/LEMMA_MCKEE_MASTER.md
+      - storybible/MASTER.md
+    storybible_ref:
+      master_id: SB.CLAES.MASTER
+      section_hint: "Claes — cradle to grave / Goes / Reimerswaal"
+    note: "Post-Revision-11 decision. It supersedes Revision 11 references that place Claes' birth on 8 December 1545."
