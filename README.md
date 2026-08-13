@@ -20,11 +20,15 @@ Do **not** infer the project from this README alone. Read the canonical onboardi
    - GitHub: https://github.com/Naastepad/claes-canon/blob/authoring/v1/storybible/LEMMA_MCKEE_MASTER.md
    - raw: https://raw.githubusercontent.com/Naastepad/claes-canon/authoring/v1/storybible/LEMMA_MCKEE_MASTER.md
 
-4. Full authoring instructions (`authoring/v1`):
+4. Migration review — distinguishes migrated canon from derived formulations, genuinely new proposals and conflicts:
+   - GitHub: https://github.com/Naastepad/claes-canon/blob/authoring/v1/MIGRATION_REVIEW.md
+   - raw: https://raw.githubusercontent.com/Naastepad/claes-canon/authoring/v1/MIGRATION_REVIEW.md
+
+5. Full authoring instructions (`authoring/v1`):
    - GitHub: https://github.com/Naastepad/claes-canon/blob/authoring/v1/AGENTS.md
    - raw: https://raw.githubusercontent.com/Naastepad/claes-canon/authoring/v1/AGENTS.md
 
-5. Draft PR describing the conversion:
+6. Draft PR describing the conversion:
    - https://github.com/Naastepad/claes-canon/pull/1
 
 ## Claude Chat / restricted web-fetch environments
@@ -43,6 +47,15 @@ The repository separates four responsibilities:
 4. **Deterministic continuity** — only what usefully belongs in executable Lemma rules (`lemma/*.lemma`).
 
 External McKee/NOS knowledge objects (`KO.*`) are narrative theory, not Claes canon.
+
+## Review model
+
+Migration origin is separate from canon status:
+
+- `MIGRATED` — existing canon represented in the new architecture; check fidelity, do not re-decide it.
+- `DERIVED` — interpretation/condensation derived from existing canon; human review required.
+- `NEW` — genuinely new story choice; explicit author decision required.
+- `CONFLICT` — canon drift or incompatible authorities; must be resolved before merge/publication.
 
 ## Canon rule
 
