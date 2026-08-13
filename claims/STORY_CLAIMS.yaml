@@ -1,19 +1,22 @@
-schema_version: 1.2.0
+schema_version: 1.3.0
 kind: StoryClaimRegistry
 claim_count: 34
 claims:
 - id: STC.CLAES.BIRTH.001
   type: StoryClaim
-  statement: Claes Cornelisz Nissepat is born in Goes on 8 December 1545.
+  statement: Claes Cornelisz Nissepat is born in Goes on 8 December 1542.
   canon_status: CANON
   evidence_status: SUPPORTED
+  decision_ids:
+  - DEC.CLAES.BIRTH.2026-08-13
   subjects:
   - ENT.PERSON.CLAES
   story_time:
-    date: '1545-12-08'
+    date: '1542-12-08'
     precision: day
   tags:
   - biography
+  - author-decision
 - id: STC.CLAES.SCHOOL.GOES.001
   type: StoryClaim
   statement: Claes receives elementary education in Goes before May 1554; no full official Latin school is claimed.
@@ -329,43 +332,59 @@ claims:
   - ending
 - id: STC.CLAES.SINNE.001
   type: StoryClaim
-  statement: Claes’ core cognitive movement begins in sensation and develops from perception through recognition, comparison and pattern toward understanding and choice.
+  statement: Claes discovers the world through embodied sinne; trauma progressively blunts that sensory openness, and on the road toward Enkhuizen with his beloved beside him he rediscovers it as a catalyst for recovery, deeper understanding, wisdom and inner sovereignty in the Great Work.
   canon_status: CANON
   evidence_status: SUPPORTED
+  decision_ids:
+  - DEC.CLAES.SINNE.2026-08-13
   subjects:
   - ENT.PERSON.CLAES
+  - ENT.PERSON.BELOVED
   tags:
   - character
   - sinne
+  - trauma
+  - recovery
+  - great-work
 - id: STC.CLAES.PARADOX.001
   type: StoryClaim
-  statement: Claes’ greatest gift is prolonged accurate observation; his weakness is continuing to observe when action is required.
+  statement: Claes’ gift is prolonged exact observation through the sinne; his shadow is remaining in observation after action is required, while trauma can blunt the sensory openness on which that gift depends.
   canon_status: CANON
   evidence_status: SUPPORTED
+  decision_ids:
+  - DEC.CLAES.PARADOX.2026-08-13
   subjects:
   - ENT.PERSON.CLAES
   tags:
   - character
   - paradox
+  - trauma
 - id: STC.CLAES.NEED.001
   type: StoryClaim
-  statement: Claes must learn that knowledge does not remove responsibility and that action cannot wait for complete certainty.
+  statement: Claes must recover trust in embodied perception and act without complete certainty; morally he must learn that knowledge and perception increase responsibility toward the other, turning perception into discernment, choice and acceptance of consequence without total control.
   canon_status: CANON
   evidence_status: SUPPORTED
+  decision_ids:
+  - DEC.CLAES.NEED.2026-08-13
   subjects:
   - ENT.PERSON.CLAES
   tags:
   - character
   - need
+  - responsibility
 - id: STC.CLAES.MORAL_QUESTION.001
   type: StoryClaim
-  statement: Claes’ life question shifts from “What is true?” to “What does this truth ask of me toward the other?”
+  statement: Claes’ life question shifts from “What is true?” to “What does this truth ask of me toward the other?”; this is his spiritual movement from matter toward spirituality, with matter and the senses remaining the vessel of transformation rather than something to be rejected.
   canon_status: CANON
   evidence_status: SUPPORTED
+  decision_ids:
+  - DEC.CLAES.SPIRITUAL_JOURNEY.2026-08-13
   subjects:
   - ENT.PERSON.CLAES
   tags:
   - theme
+  - spirituality
+  - great-work
 - id: STC.MACRO.STRUCTURE.001
   type: StoryClaim
   statement: The authorial macrostructure is Drager → Gebondenheid/Nigredo → Onderscheiding/Albedo → Verbinding/Rubedo → Projectio/Overdracht.
