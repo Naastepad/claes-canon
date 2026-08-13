@@ -1,91 +1,104 @@
-# Claes Canon / Storybible
+# Claes Canon / Storybible — AI Gateway
 
-Lemma-focused, McKee/NOS-inspired operating storybible for the Claes project.
+Lemma-focused, McKee/NOS-inspired operating Storybible and canon-control system for the Claes project.
+
+The active transformed Storybible is currently on branch **`authoring/v1`** in draft PR #1. `main` is the stable public gateway for humans and AI systems.
 
 ## AI / agent start here
 
-For ChatGPT, Claude, Gemini, Copilot and other AI systems:
+Before canon-sensitive work, read:
 
-1. **`AI_ONBOARDING.md`** — canonical model-agnostic instructions for reading and interpreting this Storybible.
-2. **`storybible/LEMMA_MCKEE_MASTER.md`** — human-readable operating Storybible.
-3. **`WRITING_PROTOCOL.md`** — mandatory protocol for drafting, rewriting or critiquing novel prose.
-4. **`AUTHORING_POLICY.md` / `AGENTS.md`** — required for changes to canon, structured records or Lemma.
-5. **`prompts/SESSION_BOOTSTRAP.md`** — copy-paste prompt for AI sessions that do not automatically discover repository instructions.
+1. `AI_ONBOARDING.md` — canonical model-agnostic instructions.
+2. `storybible/LEMMA_MCKEE_MASTER.md` — human-readable operating Storybible.
+3. `MIGRATION_REVIEW.md` — distinguishes migrated canon, derived formulations, new proposals and conflicts.
+4. `WRITING_PROTOCOL.md` — mandatory when drafting, rewriting or critiquing novel prose.
+5. `AUTHORING_POLICY.md` and `AGENTS.md` — required for repository/canon/Lemma changes.
+6. `prompts/SESSION_BOOTSTRAP.md` — bootstrap prompt for sessions that do not discover repository instructions automatically.
 
-Model-specific entrypoints (`CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`) deliberately defer to `AI_ONBOARDING.md` to prevent instruction drift.
+Direct public URLs for restricted chat environments:
 
-## Purpose
+- Onboarding: https://raw.githubusercontent.com/Naastepad/claes-canon/main/AI_ONBOARDING.md
+- Writing protocol: https://raw.githubusercontent.com/Naastepad/claes-canon/main/WRITING_PROTOCOL.md
+- Operating Storybible: https://raw.githubusercontent.com/Naastepad/claes-canon/authoring/v1/storybible/LEMMA_MCKEE_MASTER.md
+- Migration review: https://raw.githubusercontent.com/Naastepad/claes-canon/authoring/v1/MIGRATION_REVIEW.md
+- Draft PR: https://github.com/Naastepad/claes-canon/pull/1
 
-This repository separates four responsibilities that must never be conflated:
+Model-specific entrypoints (`CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`) defer to the same onboarding rules to prevent instruction drift.
 
-1. **Evidence** — what historical/research sources support (`SC.*`).
-2. **Story truth** — what is true in the novel (`STC.*` + `DEC.*`).
-3. **Narrative meaning** — where and how that truth is dramatized (`NI.*`, `ARC.*`, `MOTIF.*`, `REL.*`, `THEME.*`, `VALUE.*`).
+## Four responsibility layers
+
+1. **Evidence** — historical/research support (`SRC-*`, `SC.*`).
+2. **Story truth** — what is true in the novel (`STC.*`, `DEC.*`).
+3. **Narrative meaning** — where/how truth becomes scene, sequence, arc, motif, relationship and value movement (`NI.*`, `ARC.*`, `REL.*`, `MOTIF.*`, `THEME.*`, `VALUE.*`, `WORLD.*`, `CODE.*`).
 4. **Deterministic consistency** — only the subset that benefits from executable rules (`lemma/*.lemma`).
 
-Universal McKee/Truby/etc. narrative theory stays outside this repository as the Narrative Knowledge Base (`KO.*`). Concrete Claes Narrative Instances may point to those Knowledge Objects for diagnostics.
+External McKee/NOS knowledge objects (`KO.*`) are narrative theory, not Claes canon.
+
+## Migration review model
+
+Migration origin is independent from evidence status and canon status:
+
+- `MIGRATED` — existing canon represented in the new architecture; check fidelity, do not re-decide it.
+- `DERIVED` — interpretation/condensation derived from existing canon; human review required.
+- `NEW` — genuinely new story choice; explicit author decision required.
+- `CONFLICT` — canon drift or incompatible authorities; must be resolved before merge/publication.
+
+The machine-readable registry is `review/MIGRATION_REVIEW.yaml`; the human review sheet is `MIGRATION_REVIEW.md`.
 
 ## Revision 11 transmutation
 
-The complete Revision 11 prose master has been parsed as a source edition of 3803 lines and 296 headings, SHA-256:
+Revision 11 was parsed as a source edition of 3803 lines and 296 headings, SHA-256:
 
 `e38430f0165e7c0779a8ae6bba6a208773c677682f55295a940e91fdb2ed9edd`
 
-All 31 top-level sections are accounted for in `mapping/CONVERSION_LEDGER.yaml`.
-
-The human-readable **transformed operating edition** is:
-
-`storybible/LEMMA_MCKEE_MASTER.md`
-
-It does not merely summarize the old storybible. It reorganizes its continuity-critical meaning around character desire/need/lie/revelation, value change, macrostructure, relationships, object biographies, Narrative Instances, motifs, world modules, knowledge boundaries, code dependencies and explicit open decisions.
-
-The structured form underneath it provides the machine-readable control layer. Material not yet atomized remains active in the exact Revision 11 source edition and is never treated as absent or superseded simply because no separate atomic record exists yet.
-
-See `mapping/CONVERSION_REPORT.yaml` for explicit completeness status and `storybible/TRANSFORMATION_LEDGER.yaml` for the thematic source-to-target map.
+All 31 top-level sections are accounted for in `mapping/CONVERSION_LEDGER.yaml`. Material not yet atomized remains active source authority and is never treated as absent merely because no separate structured record exists yet.
 
 ## Repository layout
 
-- `storybible/` — operating transformed master, source-authority manifest and transformation ledger.
+- `storybible/` — transformed operating master and transformation ledger.
+- `review/` — migration-origin/review-state registry.
 - `mapping/` — exact source-to-structured conversion ledger and completeness report.
 - `claims/` — Source Claims, Story Claims and decisions.
 - `entities/` — stable persons and locations.
-- `objects/` — continuity-sensitive objects, their biographies, state changes and carrier constraints.
-- `narrative/` — Narrative Instances, arcs, motifs, relationships, themes/value axes, actor knowledge states, world modules and code architecture.
+- `objects/` — continuity-sensitive objects and biographies.
+- `narrative/` — Narrative Instances, arcs, motifs, relationships, themes/value axes, knowledge states, world modules and code architecture.
 - `canon/` — unresolved author decisions (`OPEN.*`).
 - `sources/` — provenance registry.
 - `proposals/` — reviewable AI/human change proposals.
 - `lemma/` — executable deterministic constraints only.
-- `scripts/validate_canon.py` — repository continuity compiler.
+- `scripts/validate_canon.py` — continuity compiler.
 - `.github/` — Lemma and continuity CI.
 
 ## Truth flow
 
 `historical source -> SC.* -> STC.* -> DEC./review -> NI.* / storybible -> Lemma when deterministic`
 
-The reverse diagnostic flow is also supported:
+Narrative diagnosis runs in the other direction:
 
-`KO.* narrative theory + NI.* Claes instance -> narrative analysis / diagnostic`
+`KO.* narrative theory + NI.* Claes instance -> analysis / diagnostic`
 
 ## Status axes
 
-Evidence status:
-
+Evidence:
 `VERIFIED / SUPPORTED / PLAUSIBLE / DISPUTED / UNKNOWN`
 
-Canon status:
-
+Canon:
 `PROPOSED / CANON / OPEN / DEPRECATED / REJECTED`
 
-These axes are independent. A fictional event may be historically plausible yet canonically fixed; a verified historical fact does not automatically become part of the novel.
+Migration origin:
+`MIGRATED / DERIVED / NEW`
 
-## Continuity compiler
+Migration review:
+`MIGRATION_CHECK / HUMAN_REVIEW / HUMAN_DECISION / CONFLICT`
 
-The repository validator treats stable Storybible IDs — including `THEME.*`, `VALUE.*`, `WORLD.*` and `CODE.*` — as first-class records and checks referential integrity, status vocabularies, temporal windows and the loss-preserving source conversion ledger.
+These axes answer different questions and must not be collapsed.
 
-Lemma separately validates deterministic constraints. The current layer covers temporal boundaries, knowledge, events, encounters, possession, clue prerequisites, the staged recovery/decode route and final consistency gates.
+## Claude Chat / restricted web-fetch environments
+
+If a chat environment cannot freely follow GitHub links discovered inside pages, provide the exact `raw.githubusercontent.com` URL from the list above. Do not infer that repository content is unavailable until the direct file URL has been tried.
+
+For arbitrary repository traversal or commits, use an environment with repository access such as Claude Code, ChatGPT with GitHub connector, GitHub Copilot/Coding Agent or a local git checkout.
 
 ## Non-negotiable authoring rule
 
-AI may read, extract, compare, propose, structure and validate. AI does **not** silently promote a hypothesis to canon and does not publish to LemmaBase without explicit human approval.
-
-See `AI_ONBOARDING.md`, `WRITING_PROTOCOL.md`, `AUTHORING_POLICY.md`, `SCHEMA.md`, `ARCHITECTURE.md`, `AGENTS.md` and `storybible/LEMMA_MCKEE_MASTER.md`.
+AI may read, extract, compare, propose, structure, validate and draft. AI does **not** silently promote hypotheses, close open decisions, resolve conflicts, or publish to LemmaBase without explicit human approval.
