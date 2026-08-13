@@ -2,7 +2,7 @@
 
 **ID:** `SB.CLAES.LEMMA_MCKEE`
 **Status:** AUTHORING MASTER
-**Source authority:** `SB.CLAES.MASTER` — Revision 11, 10 August 2026
+**Source authority:** `SB.CLAES.MASTER` — Revision 11, 10 August 2026, plus explicit post-R11 decisions
 **Purpose:** human-readable bridge between the full prose Storybible, atomic canon registers, Narrative Instances and executable Lemma constraints.
 
 This document does **not** replace the detailed historical prose of Revision 11. It transposes that material into a form in which every important statement can be traced to one of four layers:
@@ -51,7 +51,7 @@ Canonical claim anchors: `STC.CLAES.SINNE.001`, `STC.CLAES.PARADOX.001`, `STC.CL
 
 | Phase | Story time | McKee function | Claes' movement | Canon anchors |
 |---|---|---|---|---|
-| **DRAGER** | 1545–4 Oct 1564 | setup + progressive education of perception | receive → recognize → interpret | childhood, school, Landjuweel, Silvius, Dee, Monas, memoriaal |
+| **DRAGER** | 8 Dec 1542–4 Oct 1564 | setup + progressive education of perception | receive → recognize → interpret | childhood, school, Landjuweel, Silvius, Dee, Monas, memoriaal |
 | **GEBONDENHEID / NIGREDO** | 4 Oct 1564–1584 | pressure, complication, consequence, loss of control | understand → control → act → fail → assume responsibility | security breach, compartmentalisation, recovery architecture, 1570 decode, 1578 publication, Delft 1584 |
 | **ONDERSCHEIDING / ALBEDO** | 1584–ca. 1599 | self-revelation and separation of confused values | observe → distinguish → choose | truth ≠ certainty; knowledge ≠ control; protection ≠ possession |
 | **VERBINDING / RUBEDO** | ca. 1599–1602+ | reintegration | choose → connect → serve | wisdom + love; strength + responsibility; belief + uncertainty |
@@ -73,28 +73,56 @@ Hard guardrails:
 
 Primary subject: `ENT.PERSON.CLAES`
 Primary arc: `ARC.CLAES.LIFE`
+Primary chronology decision: `DEC.CLAES.BIRTH_EDUCATION.001`
 
-### I — 1545–ca. 1547: body before meaning
+### Canonical age anchors
+
+Claes is born on **8 December 1542**. All age-sensitive prose must derive from that date rather than from older Revision 11 references to 1545.
+
+| Event | Story date / window | Claes' age |
+|---|---|---|
+| Birth / Brevísima date resonance | 8 Dec 1542 | 0 |
+| Goes fire | 18 May 1554 | 11 years, 5 months |
+| Move to Reimerswaal | later 1554, before 8 Dec | 11, nearly 12 |
+| Landjuweel Antwerp | Aug 1561 | 18 |
+| First Dee encounter | Feb 1563 | 20 |
+| Intensive Dee/Silvius formation | Jan–Mar 1564 | 21 |
+| Beeldenstorm / return phase | Aug 1566 onward | 23 |
+| Recovery year | 1570 | 27–28, depending on the still-unspecified date |
+| Delft moral bottom | 1584 | 41–42, depending on date |
+| Projectio threshold | 1602 | 59–60, depending on date |
+
+### I — 8 December 1542–ca. 1547: early formation, body before explicit meaning
 
 **Value state:** unformed perception → bodily trust.
 
-Claes is born in Goes on **8 December 1545**. The early world is registered through warmth, cold, smell, light, sound, silence and rhythm before language. Wierook, wax, bells and collective liturgical silence establish the principle that the body knows before the mind explains.
+Claes is born in Goes on **8 December 1542**. This is an explicit authorial choice: his birth shares the exact date recorded for completion in Valencia of the primitive 1542 *Brevísima* textual state. The historical text date is evidence; Claes' birth and the resonance are story canon, not historical causation.
 
+The early world is registered through warmth, cold, smell, light, sound, silence and rhythm before Claes can give those experiences explicit conceptual explanation. Wierook, wax, bells and collective liturgical silence establish the principle that the body can register before the mind explains.
+
+Historical anchor: `SC.HIST.LASCASAS.BREVISIMA.1542.001`.
 Narrative target: `NI.SCENE.DREMPEL.1547.001`.
 
 ### II — ca. 1547–spring 1554: discovering order
 
 **Value state:** wonder → confidence in knowable order.
 
-Home, trade, church, school, brewing and merels teach Claes that visible things are governed by relation and process. Cornelis trains attention through waiting, counting, smelling and looking again. The first merels lesson establishes the lifelong distinction between counting pieces and seeing routes.
+Home, trade, church, ordinary schooling, brewing and merels teach Claes that visible things are governed by relation and process. Cornelis trains attention through waiting, counting, smelling and looking again. The first merels lesson establishes the lifelong distinction between counting pieces and seeing routes.
 
+Before the fire Claes receives **elementary schooling in Goes**. Current canon does not require or assert an uninterrupted full official Goese Latin school in these years. Cornelis sees enough ability to intend a next educational step outside Goes: **Zierikzee** as the planned Latin-school destination.
+
+Canonical claims: `STC.CLAES.SCHOOL.GOES.001`, `STC.CLAES.ZIERIKZEE.PLAN.001`.
 Canonical motif: `MOTIF.MERELS_WAYS`.
 
-### III — 1554–1561: displaced child / hope under pressure
+### III — 1554–1561: displacement and Reimerswaal formation
 
 **Value state:** security → disrupted order → vigilant hope.
 
-The Goes fire on **18 May 1554** damages Cornelis' salt/trade capital but not the Nissepad brewery. The originally intended school route to Zierikzee becomes financially unrealistic. Claes goes instead as a cost pupil to the Latin school of Reimerswaal and remains until summer 1561. Water threat in 1555 and the decaying environment teach that a place may still exist yet cease to be the same place.
+The Goes fire on **18 May 1554**, when Claes is eleven, damages Cornelis' salt/trade capital but not the Nissepad brewery. The fire does not create Cornelis' educational ambition; it changes the route by which that ambition can still be pursued. The intended Zierikzee arrangement becomes financially unrealistic. Later in 1554, while still eleven and approaching twelve, Claes goes instead as a cost pupil to the Latin school of **Reimerswaal**.
+
+This age is not to be treated in the novel as an anomalous late start requiring special explanation. Claes arrives after prior elementary schooling in Goes. The Reimerswaal period lasts until summer 1561, but it must **not** be written as seven years of beginner curriculum. It develops from Latin-school formation into a more advanced older-pupil phase. No exact Reimerswaal class sequence, formal repetitor title, named rector or fixed surviving school building is canon without separate evidence.
+
+Water threat in 1555 and the decaying environment teach that a place may still exist yet cease to be the same place.
 
 Core wound:
 
@@ -102,13 +130,15 @@ Core wound:
 
 The water-damaged but complete Zovitius schoolbook becomes an object-biographical counterpoint to Cornelis' papers lost by fire: fire destroys text; water deforms but leaves it readable.
 
-Claims: `STC.CLAES.REIMERSWAAL.001`, `STC.CLAES.ZIERIKZEE.PLAN.001`.
+Claims: `STC.CLAES.REIMERSWAAL.001`, `STC.CLAES.ZIERIKZEE.PLAN.001`, `STC.CLAES.SCHOOL.GOES.001`.
 
-### IV — 1560–1563: interpreting roles and intentions
+### IV — 1560–1563: older pupil to young man; interpreting roles and intentions
 
 **Value state:** recognition → interpretation.
 
-As older pupil/repetitor Claes learns that understanding is not repetition. His marginal correction to Zovitius is a fictional pedagogical intervention grounded in use: a text works when the pupil can answer. In August 1561 he leaves Reimerswaal for Antwerp with Cornelis for the Landjuweel and does not return. Antwerp becomes a practical-humanist learning ecology: Latin, limited Greek, French, correspondence, bookkeeping, copying and print culture.
+In the final Reimerswaal phase Claes is an older, advanced pupil rather than a beginning schoolboy. He learns that understanding is not repetition. His marginal correction to Zovitius is a fictional pedagogical intervention grounded in use: a text works when the pupil can answer. The story may show him helping less advanced pupils, copying or taking on other age-appropriate tasks, but it must not invent a formal local office merely to justify his age.
+
+In August 1561, aged eighteen, he leaves Reimerswaal for Antwerp with Cornelis for the Landjuweel and does not return. Antwerp becomes a practical-humanist learning ecology: Latin, limited Greek, French, correspondence, bookkeeping, copying and print culture.
 
 The Landjuweel teaches that performance can simultaneously be art, competition, religious caution, political communication and printed afterlife. Form, carrier, intention and effect do not automatically coincide.
 
@@ -116,7 +146,7 @@ The Landjuweel teaches that performance can simultaneously be art, competition, 
 
 **Value state:** interpretation → experimental agency.
 
-Claes first meets Dee briefly in February 1563 in or around Silvius' Gulden Engel. Intensive formation follows in January–March 1564. Dee makes Claes formulate observations, risk hypotheses, act on matter and endure correction. Claes experiences that his own action can actualise a hidden possibility.
+Claes first meets Dee briefly in February 1563 in or around Silvius' Gulden Engel; he is twenty. Intensive formation follows in January–March 1564, when he is twenty-one. Dee makes Claes formulate observations, risk hypotheses, act on matter and endure correction. Claes experiences that his own action can actualise a hidden possibility.
 
 This produces the dangerous adult form of his lie:
 
@@ -135,7 +165,7 @@ The memoriaal has two biographies:
 1. pedagogical workbook received before Boom;
 2. blind recovery carrier after the October security break.
 
-After the Beeldenstorm Claes returns to Goes. Cornelis' persecution line culminates under working canon in arrest during the second half of 1568 and death in late 1568 or 1569, with exact details still open.
+After the Beeldenstorm Claes returns to Goes as a man in his early twenties, not as a boy crossing into adulthood. Cornelis' persecution line culminates under working canon in arrest during the second half of 1568 and death in late 1568 or 1569, with exact details still open.
 
 In 1570 the dormant architecture activates. Claes initially decodes for personal reasons — to understand Cornelis, Dee and Silvius. The Primus Index changes the story value: private mystery becomes moral burden. The full reconstruction takes weeks and requires cooperation with the beloved/apothecary daughter.
 
@@ -286,15 +316,15 @@ Narrative Instances are concrete story units, never universal theory. They can b
 
 Current key instances include:
 
-- `NI.PROLOGUE.1542.001` — De Bladzijde.
-- `NI.SCENE.DREMPEL.1547.001` — body before meaning.
+- `NI.PROLOGUE.1542.001` — De Bladzijde; now also the intentional exact-date resonance with Claes' 8 December 1542 birth.
+- `NI.SCENE.DREMPEL.1547.001` — early embodied perception before explicit conceptual understanding.
 - `NI.SCENE.FIRST_MERELS.1553.001` — stones vs routes.
 - `NI.SCENE.SOWER.1554.001` — seed, craft, transformation.
-- `NI.EVENT.GOES_FIRE.1554.001` — first blackening.
-- `NI.EVENT.REIMERSWAAL_MOVE.1554.001` — displacement.
-- `NI.EVENT.LANDJUWEEL.1561.001` — multiple representation.
-- `NI.SCENE.DEE_FIRST_ENCOUNTER.1563.001` — recognition.
-- `NI.CHAPTER.1564.01`–`.05` — early Antwerp/Monas sequence.
+- `NI.EVENT.GOES_FIRE.1554.001` — first blackening; Claes is eleven.
+- `NI.EVENT.REIMERSWAAL_MOVE.1554.001` — displacement into the actual Latin-school route.
+- `NI.EVENT.LANDJUWEEL.1561.001` — multiple representation; Claes is eighteen.
+- `NI.SCENE.DEE_FIRST_ENCOUNTER.1563.001` — recognition; Claes is twenty.
+- `NI.CHAPTER.1564.01`–`.05` — early Antwerp/Monas sequence; Claes is twenty-one.
 - `NI.EVENT.SECURITY_BREAK.1564.001` — macro-Nigredo hinge.
 - `NI.CHAPTER.1564.06` — proposed “De honderd gulden”.
 - `NI.EVENT.CLAES_RETURN_GOES.1566.001`.
@@ -356,11 +386,11 @@ A familiar melody can carry changed words. Contrafact becomes an auditory prepar
 
 ### Goes
 
-Use source-weighted topography. Distinguish historical anchor, reconstruction and fiction. The 1554 fire is fixed on 18 May. The Nissepad reconstruction remains revisable at micro-topographic level when archival evidence improves.
+Use source-weighted topography. Distinguish historical anchor, reconstruction and fiction. The 1554 fire is fixed on 18 May. The Nissepad reconstruction remains revisable at micro-topographic level when archival evidence improves. Claes' elementary schooling before the fire is canon; an uninterrupted full official Goes Latin school through 1554 is not asserted.
 
 ### Reimerswaal
 
-School destination 1554–1561; city remains functioning during Claes' years. The 1555 water threat is experienced, not the later final destruction. No invented rector or fixed surviving medieval school building.
+Actual school destination after the 1554 fire and intended replacement for Zierikzee; Claes remains in the Reimerswaal educational environment until August 1561. The city remains functioning during his years. The water threat is experienced, not the later final destruction. His years there progress from Latin formation into advanced/older-pupil work; do not force a seven-year beginner curriculum, a formal repetitor office, a locally unverified class structure, an invented rector or a fixed surviving medieval school building.
 
 ### Antwerp
 
@@ -382,7 +412,7 @@ Use as historically plausible network/social mirror around Antwerp–Middelburg�
 
 ## 10. Open questions — canon must preserve uncertainty
 
-Open records belong in `narrative/open_questions.yaml`; they are not invitations for an AI to silently decide.
+Open records belong in `canon/OPEN_DECISIONS.yaml`; they are not invitations for an AI to silently decide.
 
 High-priority unresolved matters include:
 
@@ -401,6 +431,8 @@ High-priority unresolved matters include:
 - exact death scene/location/cause for Claes;
 - final placement and wording of the last merels scene;
 - chapter calendar audit for the 1564 sequence.
+
+The **birth date and education route are no longer open**: `DEC.CLAES.BIRTH_EDUCATION.001` is ACTIVE/CANON.
 
 ---
 
