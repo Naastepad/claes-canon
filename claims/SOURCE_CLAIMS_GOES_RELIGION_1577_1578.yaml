@@ -1,0 +1,32 @@
+schema_version: "1.0.0"
+kind: SourceClaimRegistryExtension
+claims:
+  - id: SC.HIST.GOES.SATISFACTIE.CATHOLIC_ONLY.1577.001
+    type: SourceClaim
+    statement: "Goes, the last royalist town in Zeeland, reached a satisfactie with William of Orange in March 1577 under which Catholicism remained the only permitted religion."
+    evidence_status: SUPPORTED
+    source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008]
+    story_time: {earliest: 1577-03-01, latest_exclusive: 1577-04-01, precision: month}
+    verification:
+      status: scholarly_synthesis_local_anchor
+      note: "Does not establish exact church-by-church implementation inside Goes."
+
+  - id: SC.HIST.GOES.REFORMED_PREACHING.1578.001
+    type: SourceClaim
+    statement: "During the radicalisation of 1578, Calvinist preaching was introduced under local pressure in the Holland and Zeeland towns that had concluded satisfacties with Orange; Goes belongs to this class and its March 1577 Catholic-only settlement therefore became unstable in 1578."
+    evidence_status: SUPPORTED
+    source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008]
+    story_time: {earliest: 1578-01-01, latest_exclusive: 1579-01-01, precision: year}
+    verification:
+      status: scholarly_synthesis_class_inference
+      note: "Exact date, church building and local activists remain unverified."
+
+  - id: SC.HIST.REIMERSWAAL.NAVAL_BATTLE.1574.001
+    type: SourceClaim
+    statement: "In January 1574 rebel forces defeated a Habsburg/Spanish fleet near Reimerswaal; the defeat cut off maritime relief for Middelburg, which surrendered the following month."
+    evidence_status: SUPPORTED
+    source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008]
+    story_time: {earliest: 1574-01-01, latest_exclusive: 1574-02-01, precision: month}
+    verification:
+      status: scholarly_synthesis
+      note: "Use as Delta/waterway-war context; do not infer street fighting inside Reimerswaal."
