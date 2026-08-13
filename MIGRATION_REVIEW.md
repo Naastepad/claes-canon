@@ -1,82 +1,73 @@
 # Migration Review — PR #1
 
-This document tells the author what actually requires review before the Lemma/McKee Storybible transmutation can be merged.
+This document tracks what still requires author review before the Lemma/McKee Storybible transmutation can be merged.
 
-## Meaning of the categories
+## Review categories
 
-**MIGRATED** means the content already existed as canon in the source Storybible and has been normalized into the new schema. It does **not** require a fresh story decision. Review only whether the migration preserved the meaning.
-
-**DERIVED** means the structured statement was formulated by the conversion process from existing canon. It may be a useful McKee/NOS condensation, but the wording or scope itself still requires human review.
-
-**NEW** means a genuinely new story choice introduced during conversion. It requires explicit author approval before becoming canon.
-
-**CONFLICT** means the conversion found incompatible canon authorities or canon drift. A conflict blocks merge until resolved explicitly.
+- **MIGRATED** — existing canon normalized into the new schema; check fidelity only.
+- **DERIVED** — formulation distilled from existing canon; human review required until approved.
+- **NEW** — genuinely new story choice; explicit human decision required.
+- **CONFLICT** — canon drift or incompatible authorities; merge blocker until resolved.
 
 These categories are independent from `evidence_status` and `canon_status`.
 
-## Current review summary
+## Current review summary — after author decisions 13 August 2026
 
-| Review bucket | Count | What you need to do |
+| Review bucket | Count | Status |
 |---|---:|---|
-| MIGRATED / migration check | 29 | Bulk-check that meaning was preserved; no need to re-decide the story. |
-| DERIVED / human review | 4 | Approve, edit or reject the structured formulation. |
-| NEW / human decision | 0 | No new Story Claims currently require a fresh decision. |
-| CONFLICT | 1 | Must be resolved before merge. |
+| MIGRATED / migration check | 30 | No creative re-decision required; fidelity audit only. |
+| DERIVED / reviewed | 4 | Approved with author refinements. |
+| NEW / human decision | 0 | None. |
+| CONFLICT | 0 | Birth conflict explicitly resolved. |
 
-The machine-readable source for this report is `review/MIGRATION_REVIEW.yaml`.
+Machine-readable source: `review/MIGRATION_REVIEW.yaml`.
+Author decision record: `canon/DECISIONS_2026-08-13.md`.
 
-## Merge blocker
+## Resolved birth conflict
 
-### STC.CLAES.BIRTH.001 — birth date/year
+`STC.CLAES.BIRTH.001` is resolved by explicit author decision:
 
-**Current transformed record:** Claes is born in Goes on **8 December 1545**.
+**Claes Cornelisz Nissepat is born in Goes on 8 December 1542.**
 
-**Conflict detected:** the previously established project canon available to the authoring process gives **1542 as the birth year**, while no explicit author decision has been identified that replaces it with 1545 or establishes 8 December as a fixed birth date.
+The transformed `8 December 1545` representation is migration drift and must be synchronized out of downstream records. The decision retains the intended chronology in relation to the Brevísima framing.
 
-**Status:** `CONFLICT`.
+## Approved derived character architecture
 
-**Required action:** human decision. Do not let an AI resolve this from plausibility, chronology or the latest prose version alone. Once the author resolves it, update at least:
+### `STC.CLAES.SINNE.001`
+Approved with refinement. Claes discovers the world through embodied **sinne**. Fire, flood, death and loss progressively blunt/constrict this sensory openness. On the road toward Enkhuizen, with his beloved — the still-to-be-developed apothecary's daughter — beside him, Claes rediscovers the sinne. Their renewed resonance within him becomes a catalyst for recovery, deeper understanding, wisdom and inner sovereignty as an alchemist undertaking the Great Work.
+
+### `STC.CLAES.PARADOX.001`
+Approved with refinement. His gift is prolonged exact observation; his shadow is remaining in observation after action is required. The paradox is deepened by trauma: maturity means recovering sensation, distinguishing what it asks of him, and converting perception into responsible choice.
+
+### `STC.CLAES.NEED.001`
+Approved with refinement. Psychological need: recover trust in embodied perception and act without complete certainty. Moral need: understand that knowledge and perception increase responsibility toward the other. Recovered sinne joins perception, discernment, choice and acceptance of consequence without total control.
+
+### `STC.CLAES.MORAL_QUESTION.001`
+Approved with refinement. The movement from **“What is true?”** to **“What does this truth ask of me toward the other?”** is Claes' spiritual journey from matter toward spirituality. Matter remains the vessel: senses, bodies, craft, books, plants, fire, water and alchemical operations lead toward discernment, responsibility, wisdom and sovereignty. The Great Work transmutates knowledge-as-control into wisdom-in-relation and culminates in transmission/release rather than possession.
+
+## Remaining migration work
+
+The review decisions themselves are complete. Before merge, the structured downstream representations must be synchronized with them, especially:
 
 - `claims/STORY_CLAIMS.yaml`
 - `entities/ENTITIES.yaml`
 - `storybible/LEMMA_MCKEE_MASTER.md`
-- any age-dependent `NI.*` records and chronology
-- relevant source/transformation records if the change represents correction rather than new canon
+- `narrative/arcs.yaml`
+- `narrative/themes.yaml`
+- age-dependent Narrative Instances and chronology
 
-The repository should then remove the `CONFLICT` state only after validation.
-
-## Four derived claims requiring wording review
-
-These are not necessarily wrong; they are explicit condensations created by the McKee/NOS conversion and therefore deserve author review as formulations.
-
-1. `STC.CLAES.SINNE.001` — Claes' cognitive movement from sensation/perception toward choice.
-2. `STC.CLAES.PARADOX.001` — his gift of prolonged observation versus the danger of observing after action is required.
-3. `STC.CLAES.NEED.001` — knowledge does not remove responsibility; action cannot wait for complete certainty.
-4. `STC.CLAES.MORAL_QUESTION.001` — movement from “What is true?” toward “What does this truth ask of me toward the other?”
-
-For these four, review the **formulation and emphasis**. Their source material is already present in the Storybible; they are not four invitations to redesign Claes from scratch.
-
-## Migrated Story Claims
-
-The other 29 current `STC.*` records are classified as meaning-preserving migration. They cover the established education route, Reimerswaal, Zierikzee plan, Landjuweel/Antwerp route, Dee/Silvius formation, macro-Nigredo hinge, memoriaal phases, return to Goes, Cornelis work-canon, recovery chain and its guardrails, 1570 reconstruction duration, 1578 publication line, Delft 1584, Projectio, macrostructure, music/bread transformation and Nissepad reconstruction.
-
-Review these as a **migration audit**, not as 29 new creative proposals. If a migrated statement does not faithfully reflect the previous canon, reclassify it as `CONFLICT` rather than silently rewriting history.
+The other migrated Story Claims remain a fidelity audit rather than fresh creative decisions.
 
 ## Rule for future conversions
 
-Every new structured Story Claim added during migration must receive:
+Every new structured Story Claim added during migration must carry an origin and review state:
 
-- `origin: MIGRATED | DERIVED | NEW`
-- `review_state: MIGRATION_CHECK | HUMAN_REVIEW | HUMAN_DECISION | CONFLICT`
+`MIGRATED → fidelity check`
 
-The intended decision logic is:
-
-`MIGRATED → check fidelity`
-
-`DERIVED → review interpretation`
+`DERIVED → human review`
 
 `NEW → explicit author decision`
 
 `CONFLICT → stop and resolve`
 
-A pull request containing an unresolved `CONFLICT` must remain draft and must not be published to LemmaBase.
+An unresolved `CONFLICT` blocks merge and LemmaBase publication.
