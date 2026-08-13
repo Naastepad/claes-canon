@@ -8,20 +8,27 @@ The active transformed Storybible is currently on branch **`authoring/v1`** in d
 
 Before canon-sensitive work, read:
 
-1. `AI_ONBOARDING.md` — canonical model-agnostic instructions.
-2. `storybible/LEMMA_MCKEE_MASTER.md` — human-readable operating Storybible.
-3. `MIGRATION_REVIEW.md` — distinguishes migrated canon, derived formulations, new proposals and conflicts.
-4. `WRITING_PROTOCOL.md` — mandatory when drafting, rewriting or critiquing novel prose.
-5. `AUTHORING_POLICY.md` and `AGENTS.md` — required for repository/canon/Lemma changes.
-6. `prompts/SESSION_BOOTSTRAP.md` — bootstrap prompt for sessions that do not discover repository instructions automatically.
+1. `REPOSITORY_INTEGRITY.md` — mandatory for every AI/automation with write access.
+2. `AI_ONBOARDING.md` — canonical model-agnostic instructions.
+3. `canon/` — explicit human decisions; these outrank conflicting transformed representations.
+4. `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` — current synchronized human-readable operating Storybible.
+5. `review/SYNC_STATUS.md` — current cross-layer synchronization state.
+6. `MIGRATION_REVIEW.md` — migration audit/review state.
+7. `WRITING_PROTOCOL.md` — mandatory when drafting, rewriting or critiquing novel prose.
+8. `AUTHORING_POLICY.md` and `AGENTS.md` — required for repository/canon/Lemma changes.
+9. `prompts/SESSION_BOOTSTRAP.md` — bootstrap prompt for sessions that do not discover repository instructions automatically.
 
 Direct public URLs for restricted chat environments:
 
 - Onboarding: https://raw.githubusercontent.com/Naastepad/claes-canon/main/AI_ONBOARDING.md
 - Writing protocol: https://raw.githubusercontent.com/Naastepad/claes-canon/main/WRITING_PROTOCOL.md
-- Operating Storybible: https://raw.githubusercontent.com/Naastepad/claes-canon/authoring/v1/storybible/LEMMA_MCKEE_MASTER.md
+- Current synchronized operating Storybible: https://raw.githubusercontent.com/Naastepad/claes-canon/authoring/v1/storybible/LEMMA_MCKEE_MASTER_2026-08-13.md
+- Repository integrity contract: https://raw.githubusercontent.com/Naastepad/claes-canon/authoring/v1/REPOSITORY_INTEGRITY.md
+- Sync status: https://raw.githubusercontent.com/Naastepad/claes-canon/authoring/v1/review/SYNC_STATUS.md
 - Migration review: https://raw.githubusercontent.com/Naastepad/claes-canon/authoring/v1/MIGRATION_REVIEW.md
 - Draft PR: https://github.com/Naastepad/claes-canon/pull/1
+
+`storybible/LEMMA_MCKEE_MASTER.md` is retained as the earlier transformed work edition for audit/history; while the two differ, the dated synchronized master above is the active operating master.
 
 Model-specific entrypoints (`CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`) defer to the same onboarding rules to prevent instruction drift.
 
@@ -39,7 +46,7 @@ External McKee/NOS knowledge objects (`KO.*`) are narrative theory, not Claes ca
 Migration origin is independent from evidence status and canon status:
 
 - `MIGRATED` — existing canon represented in the new architecture; check fidelity, do not re-decide it.
-- `DERIVED` — interpretation/condensation derived from existing canon; human review required.
+- `DERIVED` — interpretation/condensation derived from existing canon; human review required until explicitly accepted.
 - `NEW` — genuinely new story choice; explicit author decision required.
 - `CONFLICT` — canon drift or incompatible authorities; must be resolved before merge/publication.
 
@@ -55,14 +62,14 @@ All 31 top-level sections are accounted for in `mapping/CONVERSION_LEDGER.yaml`.
 
 ## Repository layout
 
-- `storybible/` — transformed operating master and transformation ledger.
-- `review/` — migration-origin/review-state registry.
+- `storybible/` — transformed operating masters and transformation ledger.
+- `review/` — migration review and cross-session synchronization status.
 - `mapping/` — exact source-to-structured conversion ledger and completeness report.
 - `claims/` — Source Claims, Story Claims and decisions.
 - `entities/` — stable persons and locations.
 - `objects/` — continuity-sensitive objects and biographies.
 - `narrative/` — Narrative Instances, arcs, motifs, relationships, themes/value axes, knowledge states, world modules and code architecture.
-- `canon/` — unresolved author decisions (`OPEN.*`).
+- `canon/` — explicit human decisions and unresolved author decisions.
 - `sources/` — provenance registry.
 - `proposals/` — reviewable AI/human change proposals.
 - `lemma/` — executable deterministic constraints only.
@@ -71,7 +78,7 @@ All 31 top-level sections are accounted for in `mapping/CONVERSION_LEDGER.yaml`.
 
 ## Truth flow
 
-`historical source -> SC.* -> STC.* -> DEC./review -> NI.* / storybible -> Lemma when deterministic`
+`historical source -> SC.* -> human proposal/decision -> STC.* -> entities/narrative/storybible -> Lemma when deterministic`
 
 Narrative diagnosis runs in the other direction:
 
@@ -101,4 +108,4 @@ For arbitrary repository traversal or commits, use an environment with repositor
 
 ## Non-negotiable authoring rule
 
-AI may read, extract, compare, propose, structure, validate and draft. AI does **not** silently promote hypotheses, close open decisions, resolve conflicts, or publish to LemmaBase without explicit human approval.
+AI may read, extract, compare, propose, structure, synchronize approved decisions, validate and draft. AI does **not** silently promote hypotheses, close open decisions, resolve conflicts, overwrite concurrent work, merge, rewrite history, or publish to LemmaBase without explicit human approval.
