@@ -3,77 +3,80 @@
 This repository is the controlled operating Storybible and canon layer for **Claes Nissepat**.
 
 ## Canonical AI instructions
+Before canon-sensitive work, read in this order:
+1. `AI_ONBOARDING.md`
+2. `canon/` — all explicit human decisions; these outrank conflicting migrated or derived representations
+3. `storybible/LEMMA_MCKEE_MASTER.md`
+4. `WRITING_PROTOCOL.md` if drafting/revising/criticising prose
+5. `AUTHORING_POLICY.md` and `REPOSITORY_INTEGRITY.md` before any repository write
+6. `MIGRATION_REVIEW.md` while the migration PR remains open
 
-Before doing canon-sensitive work, read:
-
-1. `AI_ONBOARDING.md` — model-agnostic instructions for reading and interpreting this repository.
-2. `storybible/LEMMA_MCKEE_MASTER.md` — coherent human-readable operating Storybible.
-3. `WRITING_PROTOCOL.md` — mandatory if you will draft, rewrite, extend or critique literary prose.
-4. `AUTHORING_POLICY.md` — mandatory if you will modify canon/registers/Lemma.
-
-These files apply to ChatGPT, Claude, Gemini, Copilot, local agents and other models. Do not create a competing interpretation of the repository in session memory.
+These rules apply to ChatGPT, Claude, Gemini, Copilot, local agents and other models. Never create a competing canon in session memory.
 
 ## Primary objective
+Preserve narrative meaning, historical provenance, author decisions and deterministic continuity without conflating evidence, interpretation, story choice or narrative theory.
 
-Preserve narrative meaning, historical provenance and deterministic continuity without conflating evidence, interpretation, story choice or narrative theory.
+## Mandatory pre-write integrity protocol
+A write-capable agent MUST:
+1. Re-fetch the target branch and every file it intends to modify immediately before writing. Never write from remembered or previously cached content when another session may have changed the repository.
+2. Verify that the intended branch is an authoring/work branch. Do not write canon-development changes directly to `main` unless the human explicitly orders that exact action.
+3. Read all applicable `canon/DECISIONS*.md` records before modifying downstream representations.
+4. Preserve stable IDs. Never silently rename, recycle or duplicate an existing `SC.*`, `STC.*`, `DEC.*`, `ENT.*`, `OBJ.*`, `NI.*`, `ARC.*`, `REL.*`, `MOTIF.*`, `THEME.*`, `VALUE.*`, `WORLD.*`, `CODE.*` or `OPEN.*` identity.
+5. Make the smallest coherent change set. If a canon decision affects multiple layers, update all affected layers in the same synchronization pass or record an explicit `SYNC_PENDING` item; never leave silent drift.
+6. Re-fetch a file after writing when subsequent writes depend on its new SHA/content.
+7. Never force-update a branch, overwrite another agent's unreviewed work, merge a PR, close a PR, publish to LemmaBase, or delete canon/history unless the human explicitly requests that operation.
+8. If the repository changed unexpectedly during the task, stop destructive writes, compare the new state, preserve both lines of work, and report the conflict.
+9. Run or inspect repository and Lemma validation after structural/canon changes. A green syntax check does not override a human canon conflict.
+10. Leave a repository-visible handoff for substantial work: what was read, what changed, what remains open, and which records still require synchronization.
+
+## Authority order on conflict
+1. explicit human decisions in `canon/`
+2. accepted `DEC.*` decision registry records
+3. active `STC.*` Story Claims
+4. entity/object/narrative registers derived from those claims
+5. `storybible/LEMMA_MCKEE_MASTER.md` as coherent human-readable synthesis
+6. migrated source Storybible prose via the conversion ledger
+7. proposals, OPEN records and AI interpretations
+8. chat/session memory
+
+Historical evidence (`SC.*`) does not become story canon merely because it is verified. External `KO.*` narrative theory never overrides Claes canon.
 
 ## Read order for authoring changes
-
-1. `AI_ONBOARDING.md` and `storybible/LEMMA_MCKEE_MASTER.md`.
-2. `mapping/CONVERSION_LEDGER.yaml` when Revision 11 source coverage matters.
-3. relevant `STC.*`, `ENT.*`, `OBJ.*`, `NI.*`, `ARC.*`, `REL.*`, `MOTIF.*`, `THEME.*`, `VALUE.*`, `WORLD.*`, `CODE.*` records.
-4. relevant `SC.*` and source records.
-5. relevant `OPEN.*` decisions.
-6. relevant Lemma constraints only when the question is deterministic.
-7. external `KO.*` knowledge objects only for narrative diagnosis, never as Claes canon.
+1. onboarding, `canon/`, and operating master
+2. `mapping/CONVERSION_LEDGER.yaml` when source coverage matters
+3. relevant `STC.*`, `ENT.*`, `OBJ.*`, `NI.*`, `ARC.*`, `REL.*`, `MOTIF.*`, `THEME.*`, `VALUE.*`, `WORLD.*`, `CODE.*`
+4. relevant `SC.*` and source records
+5. relevant `OPEN.*`
+6. Lemma only for deterministic questions
+7. external `KO.*` only for narrative diagnosis
 
 ## Mandatory behaviour
-
-1. Preserve provenance and source precision.
-2. Keep evidence status and canon status independent.
-3. Never invent missing dates, locations, relationships, quotations or bibliographic metadata.
-4. Never turn month/year precision into a fabricated exact day.
-5. Prefer a proposal over a direct canon change when genuine uncertainty exists.
-6. Treat the conversion ledger as a loss-prevention map: unatomized prose is still active source material.
-7. Keep Lemma focused on executable constraints, not prose storage or literary interpretation.
-8. Use stable IDs and references; one canonical identity record owns each stable ID.
-9. Add/update validation when a schema or constraint changes.
-10. Explain downstream effects of every canon-changing proposal.
-11. Never publish to LemmaBase without explicit human approval.
-12. If writing prose, obey `WRITING_PROTOCOL.md` and do not silently close `OPEN.*` decisions.
+- Preserve provenance and source precision.
+- Keep evidence status and canon status independent.
+- Never invent missing dates, locations, relationships, quotations or bibliographic metadata.
+- Never turn month/year precision into a fabricated exact day.
+- Prefer a proposal over direct canon change when genuine uncertainty exists.
+- Unatomized prose remains active source material through the conversion ledger.
+- Keep Lemma focused on executable constraints, not prose storage or literary interpretation.
+- Add/update validation when a schema or constraint changes.
+- Explain downstream effects of canon changes.
+- Never silently close `OPEN.*` decisions.
 
 ## State vocabularies
-
-Evidence:
-`VERIFIED / SUPPORTED / PLAUSIBLE / DISPUTED / UNKNOWN`
-
-Canon:
-`PROPOSED / CANON / OPEN / DEPRECATED / REJECTED`
+Evidence: `VERIFIED / SUPPORTED / PLAUSIBLE / DISPUTED / UNKNOWN`
+Canon: `PROPOSED / CANON / OPEN / DEPRECATED / REJECTED`
+Migration origin: `MIGRATED / DERIVED / NEW`
 
 ## Reasoning boundary
-
 Ask separately:
+- What does historical evidence support? (`SC.*`)
+- What has the author decided is true? (`canon/`, `DEC.*`, `STC.*`)
+- Where is it dramatized? (`NI.*`, arcs, motifs, relationships)
+- Is it logically possible? (Lemma)
+- Does it work narratively? (external `KO.*` diagnostics)
 
-- What does the historical evidence support? (`SC.*`)
-- What has the author decided is true in the novel? (`STC.*` / `DEC.*`)
-- Where is it dramatized? (`NI.*` / arcs / motifs / relationships)
-- Is the combination logically possible? (Lemma)
-- Does the scene work narratively? (external `KO.*` diagnostics)
-
-Do not let an answer to one question silently answer another.
-
-## Preferred authoring pass
-
-1. New evidence or story change.
-2. Source Claims affected.
-3. Story Claims affected.
-4. Entities/objects/knowledge states affected.
-5. Narrative Instances/arcs/relationships/motifs/themes/values affected.
-6. Lemma constraints affected, if any.
-7. Tests and expected outcomes.
-8. Remaining open decisions.
-9. Human review before promotion/publication.
+## Preferred synchronization pass
+Human decision → affected Story Claims → entities/objects/knowledge states → Narrative Instances/arcs/relationships/motifs/themes/values → operating master → Lemma constraints if deterministic → validators/tests → migration/sync review → handoff.
 
 ## Handoff rule
-
-Do not rely on private chain-of-thought or chat memory for continuity. After substantial work, leave repository-visible or user-visible notes stating what was read, what changed, what remains open and what requires approval.
+Do not rely on private chain-of-thought or chat memory for continuity. Repository state, explicit human decisions and validated records are the handoff between sessions.
