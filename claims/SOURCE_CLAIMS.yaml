@@ -13,10 +13,8 @@ claims:
       latest_exclusive: 1563-03-01
       precision: month
     evidence_status: SUPPORTED
-    source_ids:
-      - SRC-HIST-1563-DEE-SILVIUS-001
-    supports_story_claims:
-      - STC.CLAES.DEE_ENCOUNTER.1563.001
+    source_ids: [SRC-HIST-1563-DEE-SILVIUS-001]
+    supports_story_claims: [STC.CLAES.DEE_ENCOUNTER.1563.001]
     contradicts: []
     qualifies: []
     verification:
@@ -32,21 +30,17 @@ claims:
     subject: WORLD.RELIGION.CATHOLIC_LOW_COUNTRIES
     predicate: normative_scriptural_language
     object: LATIN_VULGATE
-    story_time:
-      earliest: 1550-01-01
-      latest_exclusive: 1581-01-01
-      precision: interval
+    story_time: {earliest: 1550-01-01, latest_exclusive: 1581-01-01, precision: interval}
     evidence_status: VERIFIED
-    source_ids:
-      - SRC-HIST-CATHOLIC-BIBLE-LOWCOUNTRIES-1548-001
+    source_ids: [SRC-HIST-CATHOLIC-BIBLE-LOWCOUNTRIES-1548-001]
     supports_story_claims: []
     contradicts: []
     qualifies: []
     verification:
       status: verified_primary_digital_edition_context
-      note: "Use as a worldbuilding guardrail: a Catholic character may know Scripture through Latin liturgy, preaching, schooling and vernacular aids, but a Dutch household Bible should not be treated as the normative liturgical text."
+      note: "A Catholic character may know Scripture through Latin liturgy, preaching, schooling and vernacular aids; a Dutch household Bible is not the normative liturgical text."
     retrieval:
-      tags: [catholic, vulgate, latin, liturgy, low-countries, scripture, 1550s, 1560s, 1570s]
+      tags: [catholic, vulgate, latin, liturgy, low-countries, scripture]
 
   - id: SC.HIST.LEUVEN_BIBLE.1548.001
     type: SourceClaim
@@ -55,20 +49,15 @@ claims:
     subject: OBJ.HIST.LEUVEN_BIBLE_1548
     predicate: catholic_vernacular_bible
     object: DUTCH_LANGUAGE
-    story_time:
-      earliest: 1548-09-01
-      latest_exclusive: 1599-01-01
-      precision: interval
+    story_time: {earliest: 1548-09-01, latest_exclusive: 1599-01-01, precision: interval}
     evidence_status: VERIFIED
-    source_ids:
-      - SRC-HIST-CATHOLIC-BIBLE-LOWCOUNTRIES-1548-001
+    source_ids: [SRC-HIST-CATHOLIC-BIBLE-LOWCOUNTRIES-1548-001]
     supports_story_claims: []
     contradicts: []
-    qualifies:
-      - SC.HIST.CATHOLIC_BIBLE.LATIN_VULGATE.1550.001
+    qualifies: [SC.HIST.CATHOLIC_BIBLE.LATIN_VULGATE.1550.001]
     verification:
       status: verified_primary_digital_edition_context
-      note: "The Leuven Bible is appropriate as a Catholic vernacular aid or owned/read object, not as a replacement for the Latin liturgy. DBNL records reprints including a 1553 revision and Plantin's 1565–1566 edition."
+      note: "Appropriate as Catholic vernacular aid or owned/read object, not a replacement for Latin liturgy. DBNL records a 1553 revision and Plantin's 1565–1566 edition."
     retrieval:
       tags: [leuven-bible, van-winghe, catholic, vernacular, vulgate, plantin, 1548]
 
@@ -79,19 +68,15 @@ claims:
     subject: OBJ.HIST.LIESVELT_BIBLE
     predicate: confessional_profile
     object: REFORMATION_INFLUENCED_DUTCH_BIBLE
-    story_time:
-      earliest: 1526-01-01
-      latest_exclusive: 1543-01-01
-      precision: interval
+    story_time: {earliest: 1526-01-01, latest_exclusive: 1543-01-01, precision: interval}
     evidence_status: VERIFIED
-    source_ids:
-      - SRC-HIST-CATHOLIC-BIBLE-LOWCOUNTRIES-1548-001
+    source_ids: [SRC-HIST-CATHOLIC-BIBLE-LOWCOUNTRIES-1548-001]
     supports_story_claims: []
     contradicts: []
     qualifies: []
     verification:
       status: verified_primary_digital_edition_context
-      note: "Its later fictional arrival or possession in Goes can be narratively significant precisely because it differs from normative Catholic scriptural practice."
+      note: "Later fictional arrival/possession in Goes can be narratively charged rather than ordinary Catholic Bible use."
     retrieval:
       tags: [liesvelt, bible, dutch, luther, reformation, 1526, 1542]
 
@@ -102,18 +87,71 @@ claims:
     subject: WORLD.RELIGION.CATHOLIC_LOW_COUNTRIES
     predicate: transformed_during_revolt
     object: DUTCH_REVOLT
-    story_time:
-      earliest: 1520-01-01
-      latest_exclusive: 1636-01-01
-      precision: interval
+    story_time: {earliest: 1520-01-01, latest_exclusive: 1636-01-01, precision: interval}
     evidence_status: SUPPORTED
-    source_ids:
-      - SRC-HIST-POLLMANN-CATHOLIC-IDENTITY-2011-001
+    source_ids: [SRC-POLLMANN-CATHOLIC-IDENTITY-2011]
+    supports_story_claims: []
+    contradicts: []
+    qualifies: []
+    verification:
+      status: partial_official_metadata_abstract_verification
+      note: "The full monograph has not been read in this project. Current provenance supports framework-level use only; detailed chapter claims require full-text access."
+    retrieval:
+      tags: [catholic-identity, revolt, low-countries, religious-change, pollmann]
+
+  - id: SC.HIST.GOES.SATISFACTIE.CATHOLIC_ONLY.1577.001
+    type: SourceClaim
+    statement: "Goes, the last royalist town in Zeeland, reached a satisfactie with William of Orange in March 1577 under which Catholicism remained the only permitted religion."
+    claim_type: historical_local_confessional_settlement
+    subject: GOES
+    predicate: public_religion_under_satisfactie
+    object: CATHOLIC_ONLY
+    story_time: {earliest: 1577-03-01, latest_exclusive: 1577-04-01, precision: month}
+    evidence_status: SUPPORTED
+    source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008]
+    supports_story_claims: []
+    contradicts: []
+    qualifies: []
+    verification:
+      status: scholarly_synthesis_local_anchor
+      note: "Does not establish exact church-by-church implementation inside Goes."
+    retrieval:
+      tags: [goes, satisfactie, 1577, catholic, public-worship]
+
+  - id: SC.HIST.GOES.REFORMED_PREACHING.1578.001
+    type: SourceClaim
+    statement: "During the radicalisation of 1578, Calvinist preaching was introduced under local pressure in the Holland and Zeeland towns that had concluded satisfacties with Orange; Goes belongs to this class and its March 1577 Catholic-only settlement therefore became unstable in 1578."
+    claim_type: historical_local_confessional_change
+    subject: GOES
+    predicate: reformed_preaching_introduced
+    object: PUBLIC_RELIGIOUS_SPACE
+    story_time: {earliest: 1578-01-01, latest_exclusive: 1579-01-01, precision: year}
+    evidence_status: SUPPORTED
+    source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008]
+    supports_story_claims: []
+    contradicts: []
+    qualifies: [SC.HIST.GOES.SATISFACTIE.CATHOLIC_ONLY.1577.001]
+    verification:
+      status: scholarly_synthesis_class_inference
+      note: "Exact date, church building and local activists remain unverified."
+    retrieval:
+      tags: [goes, 1578, reformed-preaching, satisfactie, church-space]
+
+  - id: SC.HIST.REIMERSWAAL.NAVAL_BATTLE.1574.001
+    type: SourceClaim
+    statement: "In January 1574 rebel forces defeated a Habsburg/Spanish fleet near Reimerswaal; the defeat cut off maritime relief for Middelburg, which surrendered the following month."
+    claim_type: historical_military_local_context
+    subject: REIMERSWAAL_AREA
+    predicate: naval_battle_near
+    object: ZEELAND_DELTA
+    story_time: {earliest: 1574-01-01, latest_exclusive: 1574-02-01, precision: month}
+    evidence_status: SUPPORTED
+    source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008]
     supports_story_claims: []
     contradicts: []
     qualifies: []
     verification:
       status: scholarly_synthesis
-      note: "Useful for modelling gradual, uneven religious change. It does not by itself establish exact dates or local institutional changes in Goes; those require Zeeland/Goes-specific evidence."
+      note: "Use as Delta/waterway-war context; do not infer street fighting inside Reimerswaal."
     retrieval:
-      tags: [catholic-identity, revolt, low-countries, religious-change, pollmann]
+      tags: [reimerswaal, 1574, naval, middellburg, delta]
