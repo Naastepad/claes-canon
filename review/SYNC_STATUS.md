@@ -2,7 +2,7 @@
 
 Status: `SYNC_PENDING`
 
-The explicit author decisions of 13 August 2026 remain propagated through the active operating model. The Catholic Scripture/liturgy layer, Wendy Wauters sensory-religious-space module, Pollmann memory layer, Van Bruaene rederijker layer and the new Goes 1577–1578 local religious-transition module are now present on `authoring/v1`.
+The explicit author decisions of 13 August 2026 remain propagated through the active operating model. The Catholic Scripture/liturgy layer, Wendy Wauters sensory-religious-space module, Pollmann memory layer, Van Bruaene rederijker layer, Goes 1577–1578 local religious-transition module and the new historical timeline substrate are present on `authoring/v1`.
 
 Synchronized authority chain for the 13-Aug-2026 canon decisions:
 - `canon/DECISIONS_2026-08-13.md`
@@ -15,6 +15,17 @@ Synchronized authority chain for the 13-Aug-2026 canon decisions:
 - `narrative/beloved_recovery.yaml`
 - `narrative/religious_space_sensory_church.yaml`
 - `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md`
+
+## Historical substrate
+A new non-fiction historical layer now exists under `history/`:
+- `history/README.md` — authority rules and evidence statuses.
+- `history/LOW_COUNTRIES_TRANSFORMATION_1540_1605.yaml` — machine-readable event spine broader than a narrowly military Eighty Years' War chronology.
+- `history/LOW_COUNTRIES_TRANSFORMATION_1540_1605.md` — human-readable chronological synthesis and scene-use guardrails.
+- `history/ZEELAND_REVOLT_TIMELINE.yaml` — regional layer for Goes, Reimerswaal, Middelburg and the Delta.
+
+Dependency rule: **source → HIST.EVENT → possible world consequence → Story Claim / Narrative Instance**. Historical relevance never creates fictional Claes participation by itself.
+
+The current timeline is deliberately source-weighted rather than falsely exhaustive. Events already checked in the consulted sources are `VERIFIED` or `SUPPORTED`; important milestones not yet re-located in the current source pass are explicitly `NEEDS_LOCATOR`. Future research should extend this layer rather than creating disconnected chronology notes in individual chats.
 
 ## Religious and sensory research now integrated
 - `sources/SRC-WAUTERS-RELIGIOUS-SPACE-2021.md` — sensory church, period *sinne*, church as social/corporate/memory space, Antwerp → Goes/Reimerswaal transferability guardrails.
@@ -34,10 +45,11 @@ Local anchors now supported:
 4. **January 1574:** rebel forces defeat a Habsburg/Spanish fleet near Reimerswaal, contributing to Middelburg's surrender the following month. Use as Delta/waterway-war context, not as proof of street fighting inside Reimerswaal.
 
 ## Remaining pending items
-1. A dedicated provenance file for Judith Pollmann's *Catholic Identity and the Revolt of the Netherlands, 1520–1635* is still absent. The existing Source Claim that cites that title therefore remains formally incomplete until the work itself or a stable bibliographic source is supplied/verified.
-2. The Goes 1577–1578 chronology is now substantially narrowed, but exact local implementation remains open: exact day of first Reformed preaching, first church building used, named local activists/preachers, altar/image-removal sequence, clergy responses and household/private Catholic practice require Goes-specific archival or specialist evidence.
-3. `claims/SOURCE_CLAIMS.yaml` still holds the older general registry; the new local claims are currently stored in the explicit extension file because a full-registry rewrite was blocked during this pass. This is loss-preserving and visible, but a later normalization pass should merge the extension into the primary registry.
-4. Branch reconciliation with current `main` and CI verification remain release/PR tasks.
+1. A dedicated provenance file for Judith Pollmann's *Catholic Identity and the Revolt of the Netherlands, 1520–1635* is still absent. This is now a **critical research priority** for the history layer because it should supply the lived Catholic/adaptation dimension alongside the general political chronology.
+2. The Goes 1577–1578 chronology is substantially narrowed, but exact local implementation remains open: exact day of first Reformed preaching, first church building used, named local activists/preachers, altar/image-removal sequence, clergy responses and household/private Catholic practice require Goes-specific archival or specialist evidence.
+3. `claims/SOURCE_CLAIMS.yaml` still holds the older general registry; the new local claims are currently stored in the explicit extension file because a full-registry rewrite was blocked during this pass. A later normalization pass should merge the extension into the primary registry.
+4. The historical timeline still needs systematic expansion of 1580–1605 and annual/seasonal daily-life pressures: taxation, billeting, provisioning, shipping, food prices, disease, migration, print/censorship and local civic-religious change.
+5. Branch reconciliation with current `main` and CI verification remain release/PR tasks.
 
 Legacy/audit note:
 - `storybible/LEMMA_MCKEE_MASTER.md` remains the earlier transformed work edition and is not the active operating master.
