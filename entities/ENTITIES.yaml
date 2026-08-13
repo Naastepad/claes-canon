@@ -1,4 +1,4 @@
-schema_version: 1.1.0
+schema_version: 1.2.0
 kind: EntityRegistry
 entities:
 - id: ENT.PERSON.CLAES
@@ -7,8 +7,9 @@ entities:
   fictionality: fictional
   canon_status: CANON
   birth:
-    date: '1545-12-08'
+    date: '1542-12-08'
     place: ENT.LOC.GOES
+    decision_id: DEC.CLAES.BIRTH.2026-08-13
   death:
     status: OPEN
     not_before: '1602-01-01'
@@ -153,6 +154,7 @@ entities:
   - partner
   - material-expert
   - error-checker
+  - recovery-catalyst
   identity_status: OPEN
 - id: ENT.LOC.GOES
   type: Location
@@ -190,7 +192,7 @@ entities:
   label: Enkhuizen
   fictionality: historical
   canon_status: CANON
-  usage: contextual
+  usage: contextual; destination associated with late sensory/spiritual recovery line
 - id: ENT.LOC.SILVIUS_GULDEN_ENGEL
   type: Location
   label: Silvius’ Gulden Engel
