@@ -1,0 +1,143 @@
+schema_version: 1.0.0
+kind: MigrationReviewRegistry
+source_edition: Claes_Storybible_MASTER_COMPLEET_2026-08-10_REVISIE11_MACROSTRUCTUUR_PROJECTIO(1).md
+purpose: Distinguish meaning-preserving migration from AI-derived interpretation, genuinely new proposals, and detected conflicts before PR #1 can be merged.
+origin_vocabulary:
+  - MIGRATED
+  - DERIVED
+  - NEW
+review_state_vocabulary:
+  - MIGRATION_CHECK
+  - HUMAN_REVIEW
+  - HUMAN_DECISION
+  - CONFLICT
+summary:
+  story_claims_total: 34
+  by_origin:
+    MIGRATED: 30
+    DERIVED: 4
+    NEW: 0
+  by_review_state:
+    MIGRATION_CHECK: 29
+    HUMAN_REVIEW: 4
+    HUMAN_DECISION: 0
+    CONFLICT: 1
+  merge_blockers: 1
+records:
+  - claim_id: STC.CLAES.BIRTH.001
+    origin: MIGRATED
+    review_state: CONFLICT
+    required_action: HUMAN_DECISION
+    conflict: "Revision 11/transformed master says 8 December 1545, while the previously established author canon available to the project says birth year 1542 and does not establish 8 December as a confirmed date. Do not resolve automatically."
+
+  - claim_id: STC.CLAES.SCHOOL.GOES.001
+    origin: MIGRATED
+    review_state: MIGRATION_CHECK
+  - claim_id: STC.CLAES.REIMERSWAAL.001
+    origin: MIGRATED
+    review_state: MIGRATION_CHECK
+  - claim_id: STC.CLAES.ZIERIKZEE.PLAN.001
+    origin: MIGRATED
+    review_state: MIGRATION_CHECK
+  - claim_id: STC.CLAES.LANDJUWEEL.1561.001
+    origin: MIGRATED
+    review_state: MIGRATION_CHECK
+  - claim_id: STC.CLAES.ANTWERP_STUDY.001
+    origin: MIGRATED
+    review_state: MIGRATION_CHECK
+  - claim_id: STC.CLAES.DEE_ENCOUNTER.1563.001
+    origin: MIGRATED
+    review_state: MIGRATION_CHECK
+  - claim_id: STC.CLAES.DEE_FORMATION.1564.001
+    origin: MIGRATED
+    review_state: MIGRATION_CHECK
+  - claim_id: STC.MACRO.NIGREDO_START.1564.001
+    origin: MIGRATED
+    review_state: MIGRATION_CHECK
+  - claim_id: STC.MEMORIAAL.GIFT.001
+    origin: MIGRATED
+    review_state: MIGRATION_CHECK
+  - claim_id: STC.MEMORIAAL.SECRET_PHASE.001
+    origin: MIGRATED
+    review_state: MIGRATION_CHECK
+  - claim_id: STC.CORNELIS.FALLBACK_KNOWLEDGE.001
+    origin: MIGRATED
+    review_state: MIGRATION_CHECK
+  - claim_id: STC.CLAES.RETURN_GOES.1566.001
+    origin: MIGRATED
+    review_state: MIGRATION_CHECK
+  - claim_id: STC.CORNELIS.DEATH.WORK.001
+    origin: MIGRATED
+    review_state: MIGRATION_CHECK
+  - claim_id: STC.ZOVITIUS.TRIGGER.1570.001
+    origin: MIGRATED
+    review_state: MIGRATION_CHECK
+  - claim_id: STC.CODE.RECOVERY_SEQUENCE.001
+    origin: MIGRATED
+    review_state: MIGRATION_CHECK
+  - claim_id: STC.CODE.MERELS.RECOVERY_NOT_CIPHER.001
+    origin: MIGRATED
+    review_state: MIGRATION_CHECK
+  - claim_id: STC.CODE.MERELS.P15.001
+    origin: MIGRATED
+    review_state: MIGRATION_CHECK
+  - claim_id: STC.CODE.MONAS.FUNCTION.001
+    origin: MIGRATED
+    review_state: MIGRATION_CHECK
+  - claim_id: STC.CODE.CASTANEA.FUNCTION.001
+    origin: MIGRATED
+    review_state: MIGRATION_CHECK
+  - claim_id: STC.CODE.DODOENS.REQUIRED.001
+    origin: MIGRATED
+    review_state: MIGRATION_CHECK
+  - claim_id: STC.CODE.PRIMUS_INDEX.FUNCTION.001
+    origin: MIGRATED
+    review_state: MIGRATION_CHECK
+  - claim_id: STC.CODE.DURATION.001
+    origin: MIGRATED
+    review_state: MIGRATION_CHECK
+  - claim_id: STC.LASCASAS.PUBLICATION.1578.001
+    origin: MIGRATED
+    review_state: MIGRATION_CHECK
+  - claim_id: STC.CLAES.DELFT.1584.001
+    origin: MIGRATED
+    review_state: MIGRATION_CHECK
+  - claim_id: STC.CLAES.PROJECTIO.001
+    origin: MIGRATED
+    review_state: MIGRATION_CHECK
+
+  - claim_id: STC.CLAES.SINNE.001
+    origin: DERIVED
+    review_state: HUMAN_REVIEW
+    derivation_note: "Structured character formulation distilled from the prose Storybible; review wording and scope, not the underlying narrative material."
+  - claim_id: STC.CLAES.PARADOX.001
+    origin: DERIVED
+    review_state: HUMAN_REVIEW
+    derivation_note: "McKee/NOS-facing formulation of Claes' observed strength/shadow dynamic."
+  - claim_id: STC.CLAES.NEED.001
+    origin: DERIVED
+    review_state: HUMAN_REVIEW
+    derivation_note: "Narrative-need formulation derived from the existing life arc and moral architecture."
+  - claim_id: STC.CLAES.MORAL_QUESTION.001
+    origin: DERIVED
+    review_state: HUMAN_REVIEW
+    derivation_note: "Condensed governing moral question inferred from the existing arc architecture."
+
+  - claim_id: STC.MACRO.STRUCTURE.001
+    origin: MIGRATED
+    review_state: MIGRATION_CHECK
+  - claim_id: STC.MUSIC.TRANSMUTATION.001
+    origin: MIGRATED
+    review_state: MIGRATION_CHECK
+  - claim_id: STC.BREAD.TRANSMUTATION.001
+    origin: MIGRATED
+    review_state: MIGRATION_CHECK
+  - claim_id: STC.NISSEPAD.RECONSTRUCTION.001
+    origin: MIGRATED
+    review_state: MIGRATION_CHECK
+
+rules:
+  MIGRATION_CHECK: "Existing canon represented in a new structure. Review only for faithful transcription/normalization; do not re-litigate the underlying canon unless a conflict is detected."
+  HUMAN_REVIEW: "AI-derived condensation or interpretation. Human should approve, edit, or reject the formulation before treating it as settled structured canon."
+  HUMAN_DECISION: "Genuinely new story choice requiring explicit author decision."
+  CONFLICT: "Contradictory authorities or canon drift detected. Merge is blocked until explicitly resolved and downstream records are corrected."
