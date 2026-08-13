@@ -12,6 +12,28 @@ target:
   id: SB.CLAES.LEMMA_MCKEE
   master: storybible/LEMMA_MCKEE_MASTER.md
   architecture: ARCHITECTURE.md
+post_source_overrides:
+  - decision_id: DEC.CLAES.BIRTH_EDUCATION.001
+    adopted: 2026-08-13
+    status: ACTIVE
+    rule: "This explicit author decision outranks conflicting Revision 11 prose without altering the preserved Revision 11 source hash."
+    supersedes:
+      - "Claes birth date 8 December 1545"
+      - "age-derived labels or interpretations that depend on the 1545 birth year"
+    current:
+      - "Claes birth date 8 December 1542"
+      - "elementary schooling in Goes before the 1554 fire"
+      - "Zierikzee intended as next Latin-school destination"
+      - "Reimerswaal actual post-fire cost-pupil/Latin-school route through August 1561, developing into advanced older-pupil formation"
+    targets:
+      - claims/STORY_CLAIMS.yaml
+      - claims/DECISIONS.yaml
+      - entities/ENTITIES.yaml
+      - narrative/arcs.yaml
+      - narrative/instances.yaml
+      - narrative/world_modules.yaml
+      - storybible/MASTER.md
+      - storybible/LEMMA_MCKEE_MASTER.md
 coverage:
   - source_section: "1. Wat dit is"
     source_lines: "25-38"
