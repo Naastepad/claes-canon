@@ -24,3 +24,96 @@ claims:
       note: "Historical presence supports plausibility only; it does not prove the fictional encounter."
     retrieval:
       tags: [dee, silvius, antwerp, 1563, encounter-plausibility]
+
+  - id: SC.HIST.CATHOLIC_BIBLE.LATIN_VULGATE.1550.001
+    type: SourceClaim
+    statement: "For Catholics in the mid-sixteenth-century Low Countries, Latin was the official language of the Church and the Vulgate was the authoritative Latin biblical text; vernacular Catholic translations did not replace Latin liturgical Scripture."
+    claim_type: historical_religious_practice
+    subject: WORLD.RELIGION.CATHOLIC_LOW_COUNTRIES
+    predicate: normative_scriptural_language
+    object: LATIN_VULGATE
+    story_time:
+      earliest: 1550-01-01
+      latest_exclusive: 1581-01-01
+      precision: interval
+    evidence_status: VERIFIED
+    source_ids:
+      - SRC-HIST-CATHOLIC-BIBLE-LOWCOUNTRIES-1548-001
+    supports_story_claims: []
+    contradicts: []
+    qualifies: []
+    verification:
+      status: verified_primary_digital_edition_context
+      note: "Use as a worldbuilding guardrail: a Catholic character may know Scripture through Latin liturgy, preaching, schooling and vernacular aids, but a Dutch household Bible should not be treated as the normative liturgical text."
+    retrieval:
+      tags: [catholic, vulgate, latin, liturgy, low-countries, scripture, 1550s, 1560s, 1570s]
+
+  - id: SC.HIST.LEUVEN_BIBLE.1548.001
+    type: SourceClaim
+    statement: "The Leuven Bible of 1548, translated by Nicolaas van Winghe from the Catholic Vulgate tradition and approved by Catholic censors, was the first official complete Dutch Catholic Bible and was reprinted during Claes' lifetime."
+    claim_type: historical_book_history
+    subject: OBJ.HIST.LEUVEN_BIBLE_1548
+    predicate: catholic_vernacular_bible
+    object: DUTCH_LANGUAGE
+    story_time:
+      earliest: 1548-09-01
+      latest_exclusive: 1599-01-01
+      precision: interval
+    evidence_status: VERIFIED
+    source_ids:
+      - SRC-HIST-CATHOLIC-BIBLE-LOWCOUNTRIES-1548-001
+    supports_story_claims: []
+    contradicts: []
+    qualifies:
+      - SC.HIST.CATHOLIC_BIBLE.LATIN_VULGATE.1550.001
+    verification:
+      status: verified_primary_digital_edition_context
+      note: "The Leuven Bible is appropriate as a Catholic vernacular aid or owned/read object, not as a replacement for the Latin liturgy. DBNL records reprints including a 1553 revision and Plantin's 1565–1566 edition."
+    retrieval:
+      tags: [leuven-bible, van-winghe, catholic, vernacular, vulgate, plantin, 1548]
+
+  - id: SC.HIST.LIESVELT_BIBLE.1526_1542.001
+    type: SourceClaim
+    statement: "The Liesvelt Bible was the first complete Dutch Bible (1526); its New Testament followed Luther and its sixth and last edition appeared in 1542, making it confessionally unsuitable as the default Catholic Bible for mid-sixteenth-century Goes."
+    claim_type: historical_book_history
+    subject: OBJ.HIST.LIESVELT_BIBLE
+    predicate: confessional_profile
+    object: REFORMATION_INFLUENCED_DUTCH_BIBLE
+    story_time:
+      earliest: 1526-01-01
+      latest_exclusive: 1543-01-01
+      precision: interval
+    evidence_status: VERIFIED
+    source_ids:
+      - SRC-HIST-CATHOLIC-BIBLE-LOWCOUNTRIES-1548-001
+    supports_story_claims: []
+    contradicts: []
+    qualifies: []
+    verification:
+      status: verified_primary_digital_edition_context
+      note: "Its later fictional arrival or possession in Goes can be narratively significant precisely because it differs from normative Catholic scriptural practice."
+    retrieval:
+      tags: [liesvelt, bible, dutch, luther, reformation, 1526, 1542]
+
+  - id: SC.HIST.CATHOLIC_IDENTITY.REVOLT.1520_1635.001
+    type: SourceClaim
+    statement: "The Dutch Revolt transformed Catholic religious life in the Low Countries over several generations; Catholic identity and practice adapted under political and confessional pressure rather than disappearing instantaneously."
+    claim_type: historical_religious_change
+    subject: WORLD.RELIGION.CATHOLIC_LOW_COUNTRIES
+    predicate: transformed_during_revolt
+    object: DUTCH_REVOLT
+    story_time:
+      earliest: 1520-01-01
+      latest_exclusive: 1636-01-01
+      precision: interval
+    evidence_status: SUPPORTED
+    source_ids:
+      - SRC-HIST-POLLMANN-CATHOLIC-IDENTITY-2011-001
+    supports_story_claims: []
+    contradicts: []
+    qualifies: []
+    verification:
+      status: scholarly_synthesis
+      note: "Useful for modelling gradual, uneven religious change. It does not by itself establish exact dates or local institutional changes in Goes; those require Zeeland/Goes-specific evidence."
+    retrieval:
+      tags: [catholic-identity, revolt, low-countries, religious-change, pollmann]
