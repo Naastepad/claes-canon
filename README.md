@@ -1,66 +1,104 @@
 # Claes Canon / Storybible — AI Gateway
 
-This `main` branch is the stable public entry point for humans and AI systems. The active Lemma-focused, McKee/NOS-inspired Storybible is currently being reviewed on branch **`authoring/v1`** in draft PR #1.
+Lemma-focused, McKee/NOS-inspired operating Storybible and canon-control system for the Claes project.
 
-## If you are an AI assistant
+The active transformed Storybible is currently on branch **`authoring/v1`** in draft PR #1. `main` is the stable public gateway for humans and AI systems.
 
-Do **not** infer the project from this README alone. Read the canonical onboarding instructions and the operating Storybible before making canon-sensitive statements or drafting prose.
+## AI / agent start here
 
-### Essential files
+Before canon-sensitive work, read:
 
-1. AI onboarding — how to interpret evidence, canon, Narrative Instances and Lemma:
-   - GitHub: https://github.com/Naastepad/claes-canon/blob/main/AI_ONBOARDING.md
-   - raw: https://raw.githubusercontent.com/Naastepad/claes-canon/main/AI_ONBOARDING.md
+1. `AI_ONBOARDING.md` — canonical model-agnostic instructions.
+2. `storybible/LEMMA_MCKEE_MASTER.md` — human-readable operating Storybible.
+3. `MIGRATION_REVIEW.md` — distinguishes migrated canon, derived formulations, new proposals and conflicts.
+4. `WRITING_PROTOCOL.md` — mandatory when drafting, rewriting or critiquing novel prose.
+5. `AUTHORING_POLICY.md` and `AGENTS.md` — required for repository/canon/Lemma changes.
+6. `prompts/SESSION_BOOTSTRAP.md` — bootstrap prompt for sessions that do not discover repository instructions automatically.
 
-2. Writing protocol — mandatory if you draft, rewrite or critique Claes prose:
-   - GitHub: https://github.com/Naastepad/claes-canon/blob/main/WRITING_PROTOCOL.md
-   - raw: https://raw.githubusercontent.com/Naastepad/claes-canon/main/WRITING_PROTOCOL.md
+Direct public URLs for restricted chat environments:
 
-3. Current transformed operating Storybible (`authoring/v1`):
-   - GitHub: https://github.com/Naastepad/claes-canon/blob/authoring/v1/storybible/LEMMA_MCKEE_MASTER.md
-   - raw: https://raw.githubusercontent.com/Naastepad/claes-canon/authoring/v1/storybible/LEMMA_MCKEE_MASTER.md
+- Onboarding: https://raw.githubusercontent.com/Naastepad/claes-canon/main/AI_ONBOARDING.md
+- Writing protocol: https://raw.githubusercontent.com/Naastepad/claes-canon/main/WRITING_PROTOCOL.md
+- Operating Storybible: https://raw.githubusercontent.com/Naastepad/claes-canon/authoring/v1/storybible/LEMMA_MCKEE_MASTER.md
+- Migration review: https://raw.githubusercontent.com/Naastepad/claes-canon/authoring/v1/MIGRATION_REVIEW.md
+- Draft PR: https://github.com/Naastepad/claes-canon/pull/1
 
-4. Migration review — distinguishes migrated canon from derived formulations, genuinely new proposals and conflicts:
-   - GitHub: https://github.com/Naastepad/claes-canon/blob/authoring/v1/MIGRATION_REVIEW.md
-   - raw: https://raw.githubusercontent.com/Naastepad/claes-canon/authoring/v1/MIGRATION_REVIEW.md
+Model-specific entrypoints (`CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`) defer to the same onboarding rules to prevent instruction drift.
 
-5. Full authoring instructions (`authoring/v1`):
-   - GitHub: https://github.com/Naastepad/claes-canon/blob/authoring/v1/AGENTS.md
-   - raw: https://raw.githubusercontent.com/Naastepad/claes-canon/authoring/v1/AGENTS.md
-
-6. Draft PR describing the conversion:
-   - https://github.com/Naastepad/claes-canon/pull/1
-
-## Claude Chat / restricted web-fetch environments
-
-Some chat environments cannot freely follow links discovered inside a fetched GitHub page. If that applies to you, ask the user to paste one of the **exact URLs above** into the conversation, preferably the `raw.githubusercontent.com` URL. Do not claim repository content is unavailable until that direct URL has been tried.
-
-For deep repository work requiring arbitrary file traversal, clone/search or commits, use an environment with repository access such as Claude Code, ChatGPT with the GitHub connector, GitHub Copilot/Coding Agent, or a local git checkout.
-
-## Project model
-
-The repository separates four responsibilities:
+## Four responsibility layers
 
 1. **Evidence** — historical/research support (`SRC-*`, `SC.*`).
-2. **Story truth** — what is true inside the novel (`STC.*`, `DEC.*`).
-3. **Narrative meaning** — how truth becomes scene, sequence, arc, motif, relationship and value movement (`NI.*`, `ARC.*`, `REL.*`, `MOTIF.*`, `THEME.*`, `VALUE.*`, `WORLD.*`, `CODE.*`).
-4. **Deterministic continuity** — only what usefully belongs in executable Lemma rules (`lemma/*.lemma`).
+2. **Story truth** — what is true in the novel (`STC.*`, `DEC.*`).
+3. **Narrative meaning** — where/how truth becomes scene, sequence, arc, motif, relationship and value movement (`NI.*`, `ARC.*`, `REL.*`, `MOTIF.*`, `THEME.*`, `VALUE.*`, `WORLD.*`, `CODE.*`).
+4. **Deterministic consistency** — only the subset that benefits from executable rules (`lemma/*.lemma`).
 
 External McKee/NOS knowledge objects (`KO.*`) are narrative theory, not Claes canon.
 
-## Review model
+## Migration review model
 
-Migration origin is separate from canon status:
+Migration origin is independent from evidence status and canon status:
 
 - `MIGRATED` — existing canon represented in the new architecture; check fidelity, do not re-decide it.
 - `DERIVED` — interpretation/condensation derived from existing canon; human review required.
 - `NEW` — genuinely new story choice; explicit author decision required.
 - `CONFLICT` — canon drift or incompatible authorities; must be resolved before merge/publication.
 
-## Canon rule
+The machine-readable registry is `review/MIGRATION_REVIEW.yaml`; the human review sheet is `MIGRATION_REVIEW.md`.
 
-Evidence status and canon status are independent. `PROPOSED` or `OPEN` material must never silently become `CANON`. AI may read, analyse, propose, structure, test and draft; canon-changing choices require explicit human approval.
+## Revision 11 transmutation
 
-## Current development status
+Revision 11 was parsed as a source edition of 3803 lines and 296 headings, SHA-256:
 
-The transformed Storybible is still on `authoring/v1`. `main` intentionally exposes these gateway instructions without prematurely merging the draft canon architecture.
+`e38430f0165e7c0779a8ae6bba6a208773c677682f55295a940e91fdb2ed9edd`
+
+All 31 top-level sections are accounted for in `mapping/CONVERSION_LEDGER.yaml`. Material not yet atomized remains active source authority and is never treated as absent merely because no separate structured record exists yet.
+
+## Repository layout
+
+- `storybible/` — transformed operating master and transformation ledger.
+- `review/` — migration-origin/review-state registry.
+- `mapping/` — exact source-to-structured conversion ledger and completeness report.
+- `claims/` — Source Claims, Story Claims and decisions.
+- `entities/` — stable persons and locations.
+- `objects/` — continuity-sensitive objects and biographies.
+- `narrative/` — Narrative Instances, arcs, motifs, relationships, themes/value axes, knowledge states, world modules and code architecture.
+- `canon/` — unresolved author decisions (`OPEN.*`).
+- `sources/` — provenance registry.
+- `proposals/` — reviewable AI/human change proposals.
+- `lemma/` — executable deterministic constraints only.
+- `scripts/validate_canon.py` — continuity compiler.
+- `.github/` — Lemma and continuity CI.
+
+## Truth flow
+
+`historical source -> SC.* -> STC.* -> DEC./review -> NI.* / storybible -> Lemma when deterministic`
+
+Narrative diagnosis runs in the other direction:
+
+`KO.* narrative theory + NI.* Claes instance -> analysis / diagnostic`
+
+## Status axes
+
+Evidence:
+`VERIFIED / SUPPORTED / PLAUSIBLE / DISPUTED / UNKNOWN`
+
+Canon:
+`PROPOSED / CANON / OPEN / DEPRECATED / REJECTED`
+
+Migration origin:
+`MIGRATED / DERIVED / NEW`
+
+Migration review:
+`MIGRATION_CHECK / HUMAN_REVIEW / HUMAN_DECISION / CONFLICT`
+
+These axes answer different questions and must not be collapsed.
+
+## Claude Chat / restricted web-fetch environments
+
+If a chat environment cannot freely follow GitHub links discovered inside pages, provide the exact `raw.githubusercontent.com` URL from the list above. Do not infer that repository content is unavailable until the direct file URL has been tried.
+
+For arbitrary repository traversal or commits, use an environment with repository access such as Claude Code, ChatGPT with GitHub connector, GitHub Copilot/Coding Agent or a local git checkout.
+
+## Non-negotiable authoring rule
+
+AI may read, extract, compare, propose, structure, validate and draft. AI does **not** silently promote hypotheses, close open decisions, resolve conflicts, or publish to LemmaBase without explicit human approval.
