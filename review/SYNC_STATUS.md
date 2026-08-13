@@ -2,42 +2,43 @@
 
 Status: `SYNC_PENDING`
 
-The explicit author decisions of 13 August 2026 remain propagated through the active operating model. The historically grounded Catholic Scripture/liturgy world module and the Wendy Wauters sensory-religious-space module are now both linked into the active authoring model on `authoring/v1`; source/provenance and local Zeeland verification remain partly pending.
+The explicit author decisions of 13 August 2026 remain propagated through the active operating model. The Catholic Scripture/liturgy layer, Wendy Wauters sensory-religious-space module, Pollmann memory layer, Van Bruaene rederijker layer and the new Goes 1577–1578 local religious-transition module are now present on `authoring/v1`.
 
 Synchronized authority chain for the 13-Aug-2026 canon decisions:
-- `canon/DECISIONS_2026-08-13.md` — human-readable decisions
-- `canon/DECISIONS.yaml` — machine-readable decision IDs
-- `claims/STORY_CLAIMS.yaml` — birth and approved character claims
-- `entities/ENTITIES.yaml` — Claes birth and beloved recovery role
-- `narrative/arcs.yaml` — birth anchors corrected to 1542
-- `narrative/themes.yaml` — psychological need, moral need, spiritual journey and `VALUE.CLAES.SINNE`; `VALUE.CLAES.SINNE` now explicitly links to `WORLD.RELIGIOUS_SPACE.SENSORY_CHURCH`
-- `narrative/sinne_recovery.yaml` — canonical trauma/constriction/recovery/sovereignty extension
-- `narrative/beloved_recovery.yaml` — beloved/apothecary-daughter role in the Enkhuizen recovery line
-- `narrative/religious_space_sensory_church.yaml` — active Wauters-grounded sensory church/world module
-- `sources/SRC-WAUTERS-RELIGIOUS-SPACE-2021.md` — Wauters source/provenance and transferability record
-- `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` — current synchronized operating master; now explicitly references the sensory church module and Wauters source record
-- `review/MIGRATION_REVIEW.yaml` and `MIGRATION_REVIEW.md` — review decisions resolved
-- `scripts/validate_canon.py` — cross-layer assertions for the 13-Aug-2026 decisions
+- `canon/DECISIONS_2026-08-13.md`
+- `canon/DECISIONS.yaml`
+- `claims/STORY_CLAIMS.yaml`
+- `entities/ENTITIES.yaml`
+- `narrative/arcs.yaml`
+- `narrative/themes.yaml`
+- `narrative/sinne_recovery.yaml`
+- `narrative/beloved_recovery.yaml`
+- `narrative/religious_space_sensory_church.yaml`
+- `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md`
 
-## 13-Aug-2026 Catholic Bible/liturgy research addition
-Updated on `authoring/v1`:
-- `claims/SOURCE_CLAIMS.yaml` — added Source Claims for Latin/Vulgate Catholic norm, Leuven Bible 1548, Liesvelt Bible confessional profile, and gradual Catholic identity change during the Revolt.
-- `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` — added worldbuilding section **Catholic Scripture, liturgy and confessional change, ca. 1550–1580**, including the Lucas 8 / sower guardrail and an explicit warning not to generalize non-Zeeland models onto Goes.
+## Religious and sensory research now integrated
+- `sources/SRC-WAUTERS-RELIGIOUS-SPACE-2021.md` — sensory church, period *sinne*, church as social/corporate/memory space, Antwerp → Goes/Reimerswaal transferability guardrails.
+- `sources/SRC-HIST-CATHOLIC-BIBLE-LOWCOUNTRIES-1548-001.md` — Leuven Bible 1548, Latin/Vulgate norm, Liesvelt comparison and reprint history.
+- `sources/SRC-POLLMANN-MEMORY-EARLY-MODERN-EUROPE-2017.md` — material/social memory, violence, silence, changing public memory.
+- `sources/SRC-VAN-BRUAENE-OM-BETERS-WILLE-2008.md` — rederijkers as civic-religious communication networks, lay devotion, competition and confessional debate.
+- `sources/SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008.md` — local and regional Revolt chronology. The uploaded EPUB filename misattributed this work to Judith Pollmann; the EPUB metadata identifies S. Groenveld, H.L.Ph. Leeuwenberg, M.E.H.N. Mout and W.M. Zappey.
 
-## 13-Aug-2026 Wendy Wauters sensory religious-space addition
-Updated on `authoring/v1`:
-- `sources/SRC-WAUTERS-RELIGIOUS-SPACE-2021.md` — records the evidentiary basis from *De beroering van de religieuze ruimte* and companion/public-facing *De geuren van de kathedraal*, including the three-level transferability guardrail: Antwerp source-direct, Low Countries transferable with scaling, and local verification required.
-- `narrative/religious_space_sensory_church.yaml` — models period *sinne*, sensus communis, the church as institution/building/sensory field/social map/memory palace, guilds and confraternities, rhetoricians, processions, bells, annual variability and seven church-scene templates.
-- `narrative/themes.yaml` — `VALUE.CLAES.SINNE` now explicitly links to `WORLD.RELIGIOUS_SPACE.SENSORY_CHURCH`.
-- `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` — §11 now explicitly invokes the sensory church module as the governing reconstruction layer for relevant church scenes and preserves the Antwerp → Goes/Reimerswaal transferability limits.
+## Goes / Reimerswaal chronology added
+- `claims/SOURCE_CLAIMS_GOES_RELIGION_1577_1578.yaml` — local source-claim extension.
+- `storybible/modules/GOES_RELIGIOUS_TRANSITION_1577_1578.md` — active historical worldbuilding module.
 
-Pending before the wider religious research layer can be called fully synchronized:
-1. Add stable provenance records under `sources/` for the DBNL Leuven Bible editorial introduction and Judith Pollmann's *Catholic Identity and the Revolt of the Netherlands, 1520–1635`. The corresponding Source Claims already exist, but their dedicated provenance files are not yet present.
-2. Obtain Goes/Zeeland-specific evidence for the exact chronology of public Catholic worship, church-use change, preaching and private/tolerated Catholic practice between 1566 and 1580. Until then, exact local dates remain deliberately open and are not canonized.
-3. Validate the branch after provenance completion and reconcile it with current `main` before release/PR.
+Local anchors now supported:
+1. **March 1577:** Goes, the last royalist town in Zeeland, concludes a satisfactie with William of Orange; Catholicism remains the only permitted religion under the settlement.
+2. **1578:** during radicalisation, Reformed/Calvinist preaching is introduced under pressure in Holland and Zeeland satisfactie towns. Goes belongs to this class; the March 1577 Catholic-only settlement must therefore not be projected unchanged through 1578.
+3. **July 1578:** Orange's proposal for religious peace demonstrates that coexistence, monopoly and public worship remained actively contested.
+4. **January 1574:** rebel forces defeat a Habsburg/Spanish fleet near Reimerswaal, contributing to Middelburg's surrender the following month. Use as Delta/waterway-war context, not as proof of street fighting inside Reimerswaal.
+
+## Remaining pending items
+1. A dedicated provenance file for Judith Pollmann's *Catholic Identity and the Revolt of the Netherlands, 1520–1635* is still absent. The existing Source Claim that cites that title therefore remains formally incomplete until the work itself or a stable bibliographic source is supplied/verified.
+2. The Goes 1577–1578 chronology is now substantially narrowed, but exact local implementation remains open: exact day of first Reformed preaching, first church building used, named local activists/preachers, altar/image-removal sequence, clergy responses and household/private Catholic practice require Goes-specific archival or specialist evidence.
+3. `claims/SOURCE_CLAIMS.yaml` still holds the older general registry; the new local claims are currently stored in the explicit extension file because a full-registry rewrite was blocked during this pass. This is loss-preserving and visible, but a later normalization pass should merge the extension into the primary registry.
+4. Branch reconciliation with current `main` and CI verification remain release/PR tasks.
 
 Legacy/audit note:
-- `storybible/LEMMA_MCKEE_MASTER.md` is retained as the earlier transformed work edition and is no longer the active operating master while it contains migration-era wording.
-- `MOTIF.SINNE` and `REL.CLAES.BELOVED` retain their original base records; their approved 13-Aug-2026 development is represented by the canonical extension records `MOTIF.SINNE.RECOVERY`, `ARC.CLAES.SINNE_RECOVERY` and `REL.CLAES.BELOVED.RECOVERY`. This is intentional additive normalization rather than silent rewriting.
-
-Release status: branch reconciliation with current `main` and CI verification remain release/PR tasks; they do not change the synchronized canon content above.
+- `storybible/LEMMA_MCKEE_MASTER.md` remains the earlier transformed work edition and is not the active operating master.
+- Additive extension records are preferred over silent rewriting when connector safety or concurrent-edit risk prevents a clean atomic normalization.
