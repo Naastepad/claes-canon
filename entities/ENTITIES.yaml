@@ -7,7 +7,7 @@ entities:
   fictionality: fictional
   canon_status: CANON
   birth:
-    date: '1545-12-08'
+    date: '1542-12-08'
     place: ENT.LOC.GOES
   death:
     status: OPEN
