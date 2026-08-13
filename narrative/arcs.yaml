@@ -29,8 +29,15 @@ arcs:
       earliest: '1554-05-18'
       latest_exclusive: '1561-09-01'
       precision: bounded
-    dominant_movement: Hoop under pressure
-    value_shift: observation cannot prevent loss
+    dominant_movement: Hoop under repeated material pressure
+    value_shift: sudden fire displaces him; repeated water, rebuilding, collapse and fire teach that a place can remain inhabited while its form is already dissolving
+    progression:
+    - '1554: Goes fire breaks continuity and redirects the intended Zierikzee school route to Reimerswaal.'
+    - '1555: first Reimerswaal dike failure personally experienced; water becomes the counterforce and amplifier of the Goes fire.'
+    - '1557: walls, gates and civic/religious/economic structures fail under storm pressure; protection itself proves perishable.'
+    - '1558: fire strikes the already water-damaged city, echoing Goes but in a body already weakened by repeated inundation.'
+    - '1561: renewed inundation closes the Reimerswaal school phase as Claes leaves for Antwerp.'
+    narrative_function: material prefiguration of Nigredo without moving the canonical adult macro-Nigredo start from 4 October 1564
   - id: ARC.CLAES.LIFE.P04
     label: Jonge man die leert interpreteren
     story_time:
@@ -55,6 +62,7 @@ arcs:
       precision: approximate
     dominant_movement: Kracht/Geloof under pressure
     value_shift: act without complete certainty
+    reimerswaal_callback: the 1573-1574 war destruction and Battle of Reimerswaal transform the school-city of memory into a point-of-no-return image of human as well as natural destruction; Claes' exact physical presence is not fixed
   - id: ARC.CLAES.LIFE.P07
     label: Man in Nigredo
     story_time:
@@ -113,7 +121,7 @@ arcs:
     story_time:
       earliest: '1602-01-01'
       precision: open-ended
-  guardrail: authorial architecture, not an in-world universal alchemical doctrine
+  guardrail: authorial architecture, not an in-world universal alchemical doctrine; Reimerswaal 1554-1561 is a material prefiguration, not a relocation of the macro-Nigredo hinge
 - id: ARC.CLAES.DEE
   type: RelationshipArc
   label: Claes ↔ Dee
