@@ -183,6 +183,17 @@ Every developed scene should expose, where relevant: objective, pressure/conflic
 
 Goes, Reimerswaal, Antwerp, Delft, Middelburg and Enkhuizen remain source-weighted historical environments. Distinguish historical anchor, reconstruction and fiction. Do not manufacture exact topography, school personnel, institutional structures, trade practices or religious affiliations where sources do not support them.
 
+### Catholic Scripture, liturgy and confessional change, ca. 1550–1580
+For Claes' formative world, keep **liturgical Scripture** and **vernacular Bible ownership/reading** separate.
+
+- In Catholic practice in the mid-sixteenth-century Low Countries, **Latin is the official language of the Church** and the **Vulgate** is the authoritative Latin biblical text (`SC.HIST.CATHOLIC_BIBLE.LATIN_VULGATE.1550.001`). A scene in which Claes hears Scripture in Mass should therefore default to Latin proclamation/chant and vernacular explanation or preaching rather than a Dutch Bible being read as the normative liturgical text.
+- The **Leuven Bible of 1548**, Nicolaas van Winghe's approved Catholic Dutch translation based on the Vulgate, is historically appropriate as a Catholic vernacular reading, devotional, educational or clerical aid (`SC.HIST.LEUVEN_BIBLE.1548.001`). It was reprinted during Claes' lifetime. Its presence in a household or study is plausible but must not be assumed for a specific character without narrative or evidentiary support.
+- The **Liesvelt Bible** is materially and confessionally different: its New Testament follows Luther and the last Liesvelt edition appeared in 1542 (`SC.HIST.LIESVELT_BIBLE.1526_1542.001`). If a Liesvelt Bible reaches Goes later in the novel, treat that object as potentially charged by reformational provenance, risk, memory or identity rather than as the ordinary Catholic Bible.
+- **Lucas 8:4–15, the parable of the sower**, belongs to all these textual traditions. For an early Catholic memory in Claes, the strongest historically grounded anchor is the Vulgate formulation and its liturgical/preaching reception; a vernacular wording should be tied to an actual Dutch reading context rather than silently substituted for the Mass.
+- The Revolt transforms Catholic identity and practice over time rather than producing an instantaneous uniform switch (`SC.HIST.CATHOLIC_IDENTITY.REVOLT.1520_1635.001`). For Zeeland and especially Goes, exact dates for changes in public worship, church use, clergy, preaching, prohibition or tolerated private Catholic practice must remain source-dependent. Do **not** generalize a Holland/England model onto Goes without local evidence.
+
+Narrative use: Catholic ritual can function as an embodied *sinne* environment — sound, incense, wax, gesture, kneeling, elevation, silence, sung Latin, architecture and calendrical repetition — but this must remain concrete historical experience first. Any alchemical resonance (matter, transformation, patience, hidden/manifest meaning) is secondary narrative interpretation, not a claim that Catholic liturgy was historically understood as alchemy.
+
 Huis der Liefde/Radermacher material may function as network or late spiritual/social mirror but never as unsupported proof of formal Familist membership or proto-Masonic institutional continuity.
 
 ---
@@ -190,6 +201,8 @@ Huis der Liefde/Radermacher material may function as network or late spiritual/s
 ## 12. Open questions
 
 Open matters remain open until explicit author decision, including the exact identity/biography of the beloved and her apothecary family, exact Cornelis arrest/death details, some 1564 operational details, exact Dodoens copy history, exact translator roles, delivery route of the 1570 trigger, exact 1570→1578 transmission route, late Enkhuizen/Middelburg sequencing and final Projectio scene details.
+
+For the religious world module, the **exact Goes/Zeeland chronology of public Catholic worship and local confessional transition between 1566 and 1580** remains an evidence question until supported by local archival or specialist sources. Do not canonize a specific prohibition year, transfer of a specific church, or household practice from general Dutch history alone.
 
 An AI may propose; it may not silently close these questions.
 
