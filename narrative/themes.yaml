@@ -83,6 +83,7 @@ value_axes:
   - id: VALUE.CLAES.SINNE
     spectrum: [sensory-openness, vigilance, blunting, recovery, resonance, embodied-discernment]
     warning: "Trauma may constrict perception; recovery is not a return to innocence but a deeper embodied sovereignty."
+    world_modules: [WORLD.RELIGIOUS_SPACE.SENSORY_CHURCH]
 
 scene_diagnostic_contract:
   required_fields_when_scene_is_developed:
