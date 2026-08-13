@@ -10,7 +10,7 @@ instances:
     latest_exclusive: '1543-01-01'
     precision: month
   story_file: prologue_de_bladzijde
-  notes: Valencia; thematic/technical bridge to later testimony, not shared birth-year resonance
+  notes: Valencia; thematic/technical bridge to later testimony and intentional exact-date resonance with Claes' canonical birth on 8 December 1542
 - id: NI.SCENE.DREMPEL.1547.001
   type: SceneInstance
   label: De Drempel
@@ -88,6 +88,7 @@ instances:
   - ENT.PERSON.CLAES
   story_claims:
   - STC.CLAES.REIMERSWAAL.001
+  - STC.CLAES.ZIERIKZEE.PLAN.001
 - id: NI.EVENT.LANDJUWEEL.1561.001
   type: EventInstance
   label: Landjuweel Antwerpen
