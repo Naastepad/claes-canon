@@ -1,0 +1,79 @@
+schema_version: 1.0.0
+kind: StoryClaimRegistry
+claim_count: 4
+claims:
+- id: STC.CLAES.HOUSEHOLD_PRE_FIRE.1554.001
+  type: StoryClaim
+  statement: "Immediately before the 18 May 1554 fire, the fictional household consists of Cornelis, Claes' mother, Claes, a younger brother about eighteen months younger than Claes, and an unborn child; the mother is about six months pregnant."
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids:
+  - DEC.CLAES.FAMILY_FIRE.1554.2026-08-14
+  subjects:
+  - ENT.PERSON.CORNELIS
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.CLAES_MOTHER
+  - ENT.PERSON.CLAES_BROTHER
+  - ENT.PERSON.CLAES_UNBORN_SIBLING
+  story_time:
+    earliest: '1554-05-01'
+    latest_exclusive: '1554-05-18'
+    precision: approximate
+  tags: [family, goes, childhood, pre-fire, author-decision]
+- id: STC.CLAES.FAMILY_FIRE.1554.001
+  type: StoryClaim
+  statement: "In novel canon, the 18 May 1554 Goes fire makes the older-Nieuwstraat family home uninhabitable/destroys it. Claes and Cornelis survive away from the house; Claes' mother, his younger brother and the unborn child die in the fire."
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids:
+  - DEC.CLAES.FAMILY_FIRE.1554.2026-08-14
+  subjects:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.CORNELIS
+  - ENT.PERSON.CLAES_MOTHER
+  - ENT.PERSON.CLAES_BROTHER
+  - ENT.PERSON.CLAES_UNBORN_SIBLING
+  objects:
+  - ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
+  story_time:
+    date: '1554-05-18'
+    precision: day
+  source_refs:
+  - SC.HIST.GOES.FIRE_1554.NIEUWSTRAAT_BURNED_HOUSES.001
+  - SC.HIST.GOES.FIRE_1554.NIEUWSTRAAT_PARTIAL_DAMAGE.001
+  tags: [family, fire, trauma, nigredo, goes, author-decision]
+- id: STC.CLAES.GRANDFATHER.NISSEPAT.001
+  type: StoryClaim
+  statement: "For novel genealogy, historical Claes Jacobsz. Nissepat is the fictional father of Cornelis and paternal grandfather of Claes. He remains story-owner of the 1542 Nieuwstraat house through the fire, loses that property in 1554, and helps Cornelis continue paying for Claes' education afterward."
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids:
+  - DEC.CLAES.GRANDFATHER_LINK.2026-08-14
+  subjects:
+  - ENT.PERSON.CLAES_JACOBSZ_NISSEPAT
+  - ENT.PERSON.CORNELIS
+  - ENT.PERSON.CLAES
+  objects:
+  - ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
+  source_refs:
+  - SC.HIST.GOES.NISSEPAT.NIEUWSTRAAT_1542.001
+  tags: [genealogy, nissepat, grandfather, property, fiction-link, author-decision]
+- id: STC.CLAES.CORNELIS.POSTFIRE_SEPARATION.001
+  type: StoryClaim
+  statement: "After the 1554 fire Cornelis remains in Goes to rebuild livelihood, business and shelter and to finance Claes' education as far as possible, partly supported by his father Claes Jacobsz. Claes goes to Reimerswaal because the intended Zierikzee route has become financially unattainable. Their geographical separation is a second loss layered onto the destruction of the household: Cornelis acts from care and duty, while Claes can experience the same act as abandonment."
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids:
+  - DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14
+  subjects:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.CORNELIS
+  - ENT.PERSON.CLAES_JACOBSZ_NISSEPAT
+  objects:
+  - ENT.LOC.GOES
+  - ENT.LOC.REIMERSWAAL
+  story_time:
+    earliest: '1554-05-18'
+    latest_exclusive: '1561-09-01'
+    precision: bounded
+  tags: [father-son, separation, reimerswaal, education, rebuilding, grief, author-decision]
