@@ -33,8 +33,25 @@ decisions:
   domain: character
   priority: high
   question: Exact identity/name/background details of beloved/apothecary daughter
-  status: OPEN
+  status: RESOLVED
+  resolved_by: DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14
+  resolution:
+  - beloved is Mayken Adriaensdr. Lampert, born approximately 1546 in Goes
+  - in novel canon she is daughter of Adriaen Jacobsz. Lampert and granddaughter of the older Jacob/Jacop Lampart/Lambert apothecary household
+  - Mayken grows up in a practical apothecary/material environment and becomes Claes' material, botanical and error-check counterpart
+  - her family is materially touched by the 1554 fire through the burned Zwaene property, but she does not duplicate Claes' exact household loss
+  - her mother remains open/fictional
   fixed_function: material/Dodoens/error-check counterpart; Claes remains personal merels key-holder
+  historical_frame:
+  - Jacob/Jacop Lampart/Lambert is explicitly attested as a Goese apothecary
+  - Adriaen Jacopsen is explicitly styled apteker in 1554 and 1556; Adriaen Jacopsen Lampert has a matching property trail
+  - identification of the apteker with Adriaen Jacopsen Lampert is strongly supported but not literally stated in one current act
+  - Jacob-to-Adriaen father-son continuity is supported, not archivally proved
+  - no currently searchable transport act identifies a historical daughter of Adriaen
+  guardrails:
+  - Mayken is a fictional daughter attached to historical anchors, not a recovered historical daughter.
+  - The 1543 form Mayken huisvrouw Jacop Lampart supports the name environment but does not prove a grandmother or a naming chain.
+  - OPEN.DODOENS.PROVENANCE.001 remains open; Mayken's identity does not by itself establish the exact book-copy provenance.
 - id: OPEN.CHAPTER.NUMBERING.YOUTH.001
   domain: structure
   priority: low
@@ -91,6 +108,7 @@ decisions:
   priority: high
   question: Exact edition/copy status, owner, date and legal/social mechanism by which the special Dodoens reaches the Goes apothecary environment
   status: OPEN
+  fixed_context: Mayken Adriaensdr. Lampert and her fictional apothecary household now provide the human operating environment; the exact historical/fictional copy chain remains unresolved.
 - id: OPEN.CLAES.FAMILY_FIRE_1554.001
   domain: character_and_event
   priority: high
