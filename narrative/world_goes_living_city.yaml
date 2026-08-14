@@ -69,7 +69,7 @@ modules:
     - {person: ENT.PERSON.JAN_JANSEN_NISSEPAT, zone: ENT.LOC.GOES.VISMARKT, year: 1579, relation: PROPERTY_NETWORK}
     - {person: ENT.PERSON.JAN_PAUWELSEN_NISSEPAT, zone: ENT.LOC.GOES.NISSEPAD_CORRIDOR, year: 1577, relation: ADJOINS_BREWERY}
     fiction_guardrail: "Do not turn these different documented Nissepat nodes into one proven nuclear family without a separate genealogical decision."
-  corneliS_and_household:
+  cornelis_and_household:
     person: ENT.PERSON.CORNELIS
     fixed:
     - "Cornelis is a merchant/beer-trader/rhetorician in active canon."
