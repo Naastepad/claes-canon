@@ -53,7 +53,7 @@ No new `DEC.*` or `STC.*` has been created for Cornelis' residence, the pre-1594
 - existing `OPEN.*` decisions remain unchanged/open unless separately decided.
 
 ## Validation state
-Structural/canon validation must be checked on the final PR head before merge. A passing validator cannot promote PROPOSED or OPEN material to canon.
+Final PR-head validation is being checked after synchronization. A passing validator cannot promote PROPOSED or OPEN material to canon.
 
 ## Legacy/audit note
 - `storybible/LEMMA_MCKEE_MASTER.md` is retained as the earlier transformed work edition and is no longer the active operating master while it contains migration-era wording.
