@@ -128,7 +128,8 @@ entities:
     status: explicit_novel_canon_not_archival_genealogy
   story_death:
     approximate: '1543'
-    evidence_status: FICTIONAL_RECONSTRUCTION
+    evidence_status: PLAUSIBLE
+    historical_status: fictional_reconstruction_not_archival_death_date
     guardrail: "Do not present 1543 as an archival death date; the same-name kuiper cluster is identity-ambiguous and later direct mentions may belong to another man."
   narrative_function:
     primary: "connects Tanneken's family to the craft world of staves, hoops, barrels, beer, harbour trade and material containment"
