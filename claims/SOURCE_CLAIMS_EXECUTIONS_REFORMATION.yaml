@@ -2,163 +2,138 @@ schema_version: 1.1.0
 kind: SourceClaimRegistry
 id: SCR.EXECUTIONS_REFORMATION.2026-08-15
 status: AUTHORING
-scope: Casteels execution culture, doopsgezinde martelaarsbronnen, ars moriendi, Antwerp book repression, and execution knowledge available to Claes.
+scope: Casteels execution culture, doopsgezinde martelaarsbronnen, ars moriendi, Marnef book repression, Haecht market book-burning context, and execution knowledge available to Claes.
 source_groups:
   - id: SRC.CASTEELS.LOOKING_FOR_JUSTICE.2025
-    label: Isabel Casteels, Looking for Justice: execution spectators and the Revolt in the Low Countries, ca. 1520-1585
+    label: 'Isabel Casteels, Looking for Justice: execution spectators and the Revolt in the Low Countries, ca. 1520-1585'
     type: dissertation
     use: principal analytical frame for public punishment, spectators, execution disruption, secret executions and rebel inversion of justice
   - id: SRC.MARTELAARSSPIEGEL.DOOPSGEZINDEN
     label: Martelaarsspiegel / doopsgezinde martyrological tradition and extracted Antwerp martyr lists
     type: martyrological_memory_source
     use: names, family chains, letters, songs, prison scenes and later memory; not neutral legal record
+  - id: SRC.MARNEF.ANTWERP_BOOK_REPRESSION
+    label: Guido Marnef on Antwerp Reformation, censorship and book repression
+    type: modern_scholarship
+    use: legal and institutional plausibility for book visitations, arrests, borg, ban, seditious paper traffic and why simple book possession is insufficient for Cornelis' execution
+  - id: SRC.HAECHT.CHRONYK.1569
+    label: Godevaert van Haecht / Antwerp chronicle evidence for 1569 book burning and execution environment
+    type: contemporary_or_near_contemporary_chronicle
+    use: documented Antwerp market book-burning context on 19 November 1569; does not document Cornelis
   - id: SRC.ALLARD_PIERSON.MAEYKEN_WENS
     label: Allard Pierson material on Maeyken Wens' martyr letter
     type: object_and_memory_source
     use: martyr letter, children, tongue screw, survival of voice after execution
-  - id: SRC.MARNEF.ANTWERP_BOOK_REPRESSION.1992
-    label: Guido Marnef, Repressie en censuur in het Antwerps boekbedrijf, 1567-1576
-    type: secondary_historical_study
-    url: https://www.dbnl.org/tekst/_zev001199201_01/_zev001199201_01_0026.php
-    use: Antwerp book repression, edicts, printer/bookseller cases, confiscations, bail, banishment and the March-November 1569 book-control wave
-  - id: SRC.MARNEF.CALVINIST_COMMUNITY.ANTWERP
-    label: Guido Marnef, Antwerpen in de tijd van de Reformatie — chapter on Calvinist community under pressure
-    type: secondary_historical_study
-    url: https://www.dbnl.org/tekst/marn002antw01_01/marn002antw01_01_0009.php
-    use: clandestine Calvinist correspondence, copyists, libels and underground distribution pressure after 1566
-  - id: SRC.HAECHT.CHRONICLE.NOVEMBER_1569
-    label: Godevaert van Haecht, De kroniek ... November 1569
-    type: contemporary_chronicle_edited
-    url: https://www.dbnl.org/tekst/haec002kron01_01/haec002kron01_01_0060.php
-    use: 19 November 1569 Antwerp market book burning, remaining imprisoned booksellers, executions same day, and 23 November burned Anabaptists with tongue-screws
-  - id: SRC.ANTWERPSCH_CHRONYKJE.1569
-    label: Antwerpsch chronykje, 1569
-    type: chronicle_compilation
-    url: https://www.dbnl.org/tekst/loon003antw01_01/loon003antw01_01_0068.php
-    use: Antwerp execution-place/method checks for 1569, including Grote Markt burnings and public punishment routes from Het Steen
 claims:
   - id: SC.HIST.EXECUTIONS.ARS_MORIENDI.BASELINE.001
     type: SourceClaim
     evidence_status: SUPPORTED
-    statement: Sixteenth-century executions were expected to follow a Christian death script in which the condemned died with repentance, priestly/civic ordering and public compassion.
+    statement: >-
+      Sixteenth-century executions were expected to follow a Christian death script in which the condemned died with repentance, priestly/civic ordering and public compassion.
     source_refs: [SRC.CASTEELS.LOOKING_FOR_JUSTICE.2025]
     tags: [execution_culture, ars_moriendi, catholic_baseline]
-
   - id: SC.HIST.EXECUTIONS.SPECTATORS.ACTOR.001
     type: SourceClaim
     evidence_status: SUPPORTED
-    statement: Execution spectators were not passive; they could confirm, disrupt or reverse the meaning of the execution through compassion, encouragement, kissing, singing, rescue attempts, stone throwing or later memory work.
+    statement: >-
+      Execution spectators were not passive; they could confirm, disrupt or reverse the meaning of the execution through compassion, encouragement, kissing, singing, rescue attempts, stone throwing or later memory work.
     source_refs: [SRC.CASTEELS.LOOKING_FOR_JUSTICE.2025]
     tags: [spectators, reformation, public_ritual]
-
   - id: SC.HIST.ANTWERP.EXECUTIONS.1557_1564.001
     type: SourceClaim
     evidence_status: SUPPORTED
-    statement: In Antwerp between 1557 and 1564 the executioner carried out 160 executions; 83 were for crimes in fide, including 55 secret drownings in Het Steen, 16 executions by sword and 12 by fire.
+    statement: >-
+      In Antwerp between 1557 and 1564 the executioner carried out 160 executions; 83 were for crimes in fide, including 55 secret drownings in Het Steen, 16 executions by sword and 12 by fire.
     source_refs: [SRC.CASTEELS.LOOKING_FOR_JUSTICE.2025]
     tags: [Antwerp, Het_Steen, drowning, statistics]
-
   - id: SC.HIST.ANTWERP.SECRET_NOT_UNKNOWN.001
     type: SourceClaim
     evidence_status: SUPPORTED
-    statement: Antwerp secret executions were better understood as closed-door or limited-access executions; inhabitants and coreligionists often knew that drownings in barrels or tubs took place in Het Steen.
+    statement: >-
+      Antwerp secret executions were better understood as closed-door or limited-access executions; inhabitants and coreligionists often knew that drownings in barrels or tubs took place in Het Steen.
     source_refs: [SRC.CASTEELS.LOOKING_FOR_JUSTICE.2025]
     tags: [Antwerp, secrecy, rumor]
-
   - id: SC.HIST.ANTWERP.FABRITIUS.1564.001
     type: SourceClaim
     evidence_status: SUPPORTED
-    statement: Christoffel Fabritius, a Reformed preacher and former Augustinian monk, was executed in Antwerp on 4 October 1564 in a heavily controlled public burning that was disrupted by psalm-singing, stones and attempted rescue.
+    statement: >-
+      Christoffel Fabritius, a Reformed preacher and former Augustinian monk, was executed in Antwerp on 4 October 1564 in a heavily controlled public burning that was disrupted by psalm-singing, stones and attempted rescue.
     source_refs: [SRC.CASTEELS.LOOKING_FOR_JUSTICE.2025]
     tags: [Antwerp, Fabritius, security_break, psalms, stones]
-
   - id: SC.HIST.ANTWERP.ROBERT_DU_BRIEL.1564.001
     type: SourceClaim
     evidence_status: SUPPORTED
-    statement: Robbert du Briel was executed after disrupting Fabritius' execution; his body was displayed with stones as a symbolic punishment linked to the stone throwing.
+    statement: >-
+      Robbert du Briel was executed after disrupting Fabritius' execution; his body was displayed with stones as a symbolic punishment linked to the stone throwing.
     source_refs: [SRC.CASTEELS.LOOKING_FOR_JUSTICE.2025]
     tags: [Antwerp, spectator_punished, body_display]
-
   - id: SC.HIST.GOES.GRENDEL.1563.001
     type: SourceClaim
     evidence_status: SUPPORTED
-    statement: Jan Jansz. Grendel is the principal Goese faith-execution anchor: a man from Kortrijk who came to Goes, confessed his faith, was imprisoned and was burned on the market of Goes in 1563.
+    statement: >-
+      Jan Jansz. Grendel is the principal Goese faith-execution anchor: a man from Kortrijk who came to Goes, confessed his faith, was imprisoned and was burned on the market of Goes in 1563.
     source_refs: [SRC.MARTELAARSSPIEGEL.DOOPSGEZINDEN]
     tags: [Goes, Jan_Grendel, Anabaptist, market]
-
   - id: SC.HIST.ANTWERP.PLEUNTGEN_VAN_DER_GOES.1559.001
     type: SourceClaim
     evidence_status: SUPPORTED
-    statement: Pleuntgen van der Goes, with Fransken de Vroedvrouw and Naentgen Leerverkooper, appears in the Antwerp martyr tradition as secretly drowned in Het Steen on 19 March 1559.
+    statement: >-
+      Pleuntgen van der Goes, with Fransken de Vroedvrouw and Naentgen Leerverkooper, appears in the Antwerp martyr tradition as secretly drowned in Het Steen on 19 March 1559.
     source_refs: [SRC.MARTELAARSSPIEGEL.DOOPSGEZINDEN]
     tags: [Goes, Antwerp, Het_Steen, women, drowning]
-
   - id: SC.HIST.ANTWERP.MARTYR_LIST.1557_1577.001
     type: SourceClaim
     evidence_status: SUPPORTED
-    statement: The Antwerp doopsgezinde martyr list supplies a dense sequence of names, dates and methods from 1557 through 1577, including burnings, beheadings and many secret drownings in Het Steen.
+    statement: >-
+      The Antwerp doopsgezinde martyr list supplies a dense sequence of names, dates and methods from 1557 through 1577, including burnings, beheadings and many secret drownings in Het Steen.
     source_refs: [SRC.MARTELAARSSPIEGEL.DOOPSGEZINDEN]
     tags: [Antwerp, martyr_list, knowledge_reservoir]
-
   - id: SC.HIST.ANTWERP.MAEYKEN_WENS.1573.001
     type: SourceClaim
     evidence_status: SUPPORTED
-    statement: Maeyken Wens' 1573 execution tradition links martyr letter, children as witnesses, tongschroef and the survival of a martyr's voice through writing and object memory.
+    statement: >-
+      Maeyken Wens' 1573 execution tradition links martyr letter, children as witnesses, tongschroef and the survival of a martyr's voice through writing and object memory.
     source_refs: [SRC.MARTELAARSSPIEGEL.DOOPSGEZINDEN, SRC.ALLARD_PIERSON.MAEYKEN_WENS]
     tags: [Maeyken_Wens, letter, tongue_screw, relic]
-
   - id: SC.HIST.ANTWERP.HANS_BRET.1577.001
     type: SourceClaim
     evidence_status: SUPPORTED
-    statement: Hans Bret's 1577 execution tradition preserves the tongschroef as a doopsgezind memory object, showing that imposed silence could become relic and testimony.
+    statement: >-
+      Hans Bret's 1577 execution tradition preserves the tongschroef as a doopsgezind memory object, showing that imposed silence could become relic and testimony.
     source_refs: [SRC.MARTELAARSSPIEGEL.DOOPSGEZINDEN]
     tags: [Hans_Bret, tongue_screw, relic, Antwerp]
-
   - id: SC.HIST.REBEL_JUSTICE.INVERSION.1572.001
     type: SourceClaim
     evidence_status: SUPPORTED
-    statement: In 1572 rebel violence under leaders such as Lumey and Sonoy inverted judicial ritual through mock trials, torture and hanging of clergy, producing Catholic counter-martyr memory.
+    statement: >-
+      In 1572 rebel violence under leaders such as Lumey and Sonoy inverted judicial ritual through mock trials, torture and hanging of clergy, producing Catholic counter-martyr memory.
     source_refs: [SRC.CASTEELS.LOOKING_FOR_JUSTICE.2025]
     tags: [Geuzen, Sonoy, Lumey, Enkhuizen, Delft, counter_martyrs]
-
-  - id: SC.HIST.ANTWERP.BOOK_EDICT.1567.001
+  - id: SC.HIST.ANTWERP.BOOK_REPRESSION.1567.001
     type: SourceClaim
     evidence_status: SUPPORTED
-    statement: After the Wonderjaar, Antwerp book repression targeted printers and booksellers involved with heretical, defamatory, seditious or rebellious books, songs, figures/prints and papers; the 28 May 1567 edict made professional book actors liable to death penalty and confiscation.
-    source_refs: [SRC.MARNEF.ANTWERP_BOOK_REPRESSION.1992]
-    tags: [Antwerp, book_repression, edict, sedition]
-
-  - id: SC.HIST.ANTWERP.BOOK_CASES.BAIL_AND_NON_EXECUTION.1567_1569.001
+    statement: >-
+      After the Wonderjaar, Antwerp repression explicitly targeted the book world, including forbidden heretical, scandalous, seditious books, songs, images, prints and papers; formal penalties could be severe, but actual cases often involved arrest, inventories, borg, release, ban or pardon.
+    source_refs: [SRC.MARNEF.ANTWERP_BOOK_REPRESSION]
+    tags: [Antwerp, books, censorship, Marnef, borg]
+  - id: SC.HIST.ANTWERP.CLANDESTINE_PAPERS.1568.001
     type: SourceClaim
     evidence_status: SUPPORTED
-    statement: Antwerp book and print cases often did not end in execution: Coppens van Diest and Willem van Parijs were released on bail, Silvius was acquitted, Hans van Vossenhole was banished, and several 1569 arrested booksellers were later released or pardoned.
-    source_refs: [SRC.MARNEF.ANTWERP_BOOK_REPRESSION.1992]
-    tags: [Antwerp, book_repression, bail, caution, plausibility_guardrail]
-
-  - id: SC.HIST.ANTWERP.CLANDESTINE_PRINT_COPY_NETWORK.1568.001
+    statement: >-
+      In 1568 Antwerp investigations exposed clandestine printing and copying of seditious books, songs, refrains, billets, libels and correspondence connected with underground Reformed networks.
+    source_refs: [SRC.MARNEF.ANTWERP_BOOK_REPRESSION]
+    tags: [Antwerp, clandestine_printing, libels, seditious]
+  - id: SC.HIST.ANTWERP.BOOK_VISITATION.1569.001
     type: SourceClaim
     evidence_status: SUPPORTED
-    statement: In 1568 Antwerp authorities uncovered clandestine production and circulation of seditious books, songs, refrains, libels and billets linked to underground Reformed networks, including printers, copyists, carriers and distributors.
-    source_refs: [SRC.MARNEF.ANTWERP_BOOK_REPRESSION.1992, SRC.MARNEF.CALVINIST_COMMUNITY.ANTWERP]
-    tags: [Antwerp, clandestine_network, copyists, libels, carriers]
-
-  - id: SC.HIST.ANTWERP.BOOK_VISITATIONS.MARCH_NOV_1569.001
+    statement: >-
+      In March 1569 Antwerp bookshops were visited and suspect books were inventoried or seized; on 19 November 1569 condemned books from that visitation were publicly burned on the market while some book-world actors were still imprisoned.
+    source_refs: [SRC.MARNEF.ANTWERP_BOOK_REPRESSION, SRC.HAECHT.CHRONYK.1569]
+    tags: [Antwerp, book_visitation, book_burning, '1569']
+  - id: SC.HIST.HAECHT.NO_CORNELIS.1569.001
     type: SourceClaim
     evidence_status: SUPPORTED
-    statement: In March 1569 Antwerp bookshops were searched and suspect books seized; on 19 November 1569, from 9 to 12, the books found in bookshops in the previous March and judged unfit by Leuven deputies were burned publicly, while some booksellers were still imprisoned.
-    source_refs: [SRC.MARNEF.ANTWERP_BOOK_REPRESSION.1992, SRC.HAECHT.CHRONICLE.NOVEMBER_1569]
-    tags: [Antwerp, book_burning, market, 1569, March, November]
-
-  - id: SC.HIST.ANTWERP.EXECUTION_CONTEXT.NOVEMBER_1569.001
-    type: SourceClaim
-    evidence_status: SUPPORTED
-    statement: Haecht places the 19 November 1569 Antwerp book burning next to the same-day execution of seven street offenders, and on 23 November records the public burning of two Anabaptist men and a woman with their speech blocked by iron tongue devices.
-    source_refs: [SRC.HAECHT.CHRONICLE.NOVEMBER_1569]
-    tags: [Antwerp, executions, book_burning, tongue_screw, November_1569]
-
-  - id: SC.HIST.ANTWERP.EXECUTION_PLACES.1569.001
-    type: SourceClaim
-    evidence_status: SUPPORTED
-    statement: 1569 Antwerp sources support multiple public punishment routes and places: Grote Markt burnings for religious offenders, movement from Het Steen to public punishment, and castle/citadel-linked execution for military or treason-like charges.
-    source_refs: [SRC.HAECHT.CHRONICLE.NOVEMBER_1569, SRC.ANTWERPSCH_CHRONYKJE.1569]
-    tags: [Antwerp, Grote_Markt, Het_Steen, castle, execution_place]
+    statement: >-
+      The 19 November 1569 Antwerp book-burning context is documented in Haecht, but Cornelis is not a documented historical offender there; he remains a fictional insertion into a historically attested ritual environment.
+    source_refs: [SRC.HAECHT.CHRONYK.1569]
+    tags: [guardrail, Cornelis, fictionalization, Haecht]
