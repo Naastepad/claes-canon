@@ -80,12 +80,15 @@ def check_ref(value: str, where: str):
 
 REF_KEYS = {
     "subject", "subjects", "object", "objects", "parent", "participants",
-    "entities", "locations", "pov", "supported_by", "source_refs",
-    "supports_story_claims", "decision_ids", "narrative_instances",
-    "story_claims", "affects", "arcs_advanced", "motifs", "claims_active",
-    "claims_introduced", "applies_to", "contradicts", "qualifies",
-    "knowledge_object_targets", "ko_targets", "story_instance", "motif",
-    "relationship", "destination", "arc", "location_anchor",
+    "entities", "locations", "location", "pov", "supported_by", "source_refs",
+    "supports_story_claims", "decision_ids", "decision_id", "decision",
+    "narrative_instances", "story_claims", "affects", "arcs_advanced",
+    "motifs", "claims_active", "claims_introduced", "applies_to",
+    "contradicts", "qualifies", "knowledge_object_targets", "ko_targets",
+    "story_instance", "motif", "relationship", "destination", "origin",
+    "arc", "location_anchor", "canonical_residence",
+    "rhetorician_meeting_environment", "rhetorician_decision",
+    "chamber_identity", "resolved_by", "organization",
 }
 
 
@@ -224,6 +227,7 @@ required_files = [
     ROOT / "review" / "SYNC_STATUS.md",
     ROOT / "storybible" / "LEMMA_MCKEE_MASTER_2026-08-13.md",
     ROOT / "canon" / "DECISIONS_2026-08-13.md",
+    ROOT / "canon" / "DECISIONS_2026-08-14.md",
     ROOT / "canon" / "DECISIONS.yaml",
 ]
 for path in required_files:
@@ -264,6 +268,54 @@ for required_id in [
     if required_id not in all_ids:
         errors.append(f"missing synchronized decision/narrative record: {required_id}")
 
+# Explicit 14-Aug-2026 Goes decisions must be synchronized across decision, claim,
+# entity, world and human-readable master layers.
+for required_id in [
+    "DEC.CORNELIS.RESIDENCE.GOES.2026-08-14",
+    "DEC.GOES.NIEUWSTRAAT.IDENTITY.2026-08-14",
+    "DEC.GOES.REDERIJKERS.MEETINGPLACE.2026-08-14",
+    "STC.CORNELIS.HOUSEHOLD_GOES.1542.001",
+    "STC.GOES.NIEUWSTRAAT.PRE1594.001",
+    "STC.CORNELIS.REDERIJKERS.ZUSTERHUIS.001",
+    "ENT.LOC.GOES.ZUSTERHUIS",
+    "ENT.LOC.GOES.NIEUWSTRAAT_PRE1594",
+    "ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542",
+    "ENT.ORG.GOES.NARDUSBLOEM",
+]:
+    if required_id not in all_ids:
+        errors.append(f"missing synchronized 14-Aug-2026 Goes record: {required_id}")
+
+cornelis_entity = record_by_id.get("ENT.PERSON.CORNELIS") or {}
+if (cornelis_entity.get("household_residence") or {}).get("location") != "ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542":
+    errors.append("ENT.PERSON.CORNELIS household residence must be the 1542 older-Nieuwstraat house")
+if (cornelis_entity.get("rhetorician_meeting_environment") or {}).get("location") != "ENT.LOC.GOES.ZUSTERHUIS":
+    errors.append("ENT.PERSON.CORNELIS rhetorician meeting environment must be the Zusterhuis")
+
+if (claes_entity.get("childhood_residence") or {}).get("location") != "ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542":
+    errors.append("ENT.PERSON.CLAES childhood residence must be the 1542 older-Nieuwstraat house")
+
+old_nieuwstraat = record_by_id.get("ENT.LOC.GOES.NIEUWSTRAAT_PRE1594") or {}
+if old_nieuwstraat.get("canon_status") != "CANON":
+    errors.append("pre-1594 Nieuwstraat entity must be active CANON at zone level")
+if (old_nieuwstraat.get("reconstruction") or {}).get("exact_street_axis") != "UNKNOWN":
+    errors.append("pre-1594 Nieuwstraat exact street axis must remain UNKNOWN")
+
+for open_id, decision_id in [
+    ("OPEN.CORNELIS.RESIDENCE.GOES.1542.001", "DEC.CORNELIS.RESIDENCE.GOES.2026-08-14"),
+    ("OPEN.GOES.NIEUWSTRAAT.PRE1594.001", "DEC.GOES.NIEUWSTRAAT.IDENTITY.2026-08-14"),
+    ("OPEN.GOES.REDERIJKERS.MEETINGPLACE.001", "DEC.GOES.REDERIJKERS.MEETINGPLACE.2026-08-14"),
+]:
+    record = record_by_id.get(open_id) or {}
+    if record.get("status") != "RESOLVED" or record.get("resolved_by") != decision_id:
+        errors.append(f"{open_id} must be RESOLVED by {decision_id}")
+
+nardus = record_by_id.get("ENT.ORG.GOES.NARDUSBLOEM") or {}
+location_history = nardus.get("location_history") or []
+if not location_history or location_history[0].get("location") != "ENT.LOC.GOES.ZUSTERHUIS" or location_history[0].get("through") != 1626:
+    errors.append("Nardusbloem location history must retain Zusterhuis through 1626")
+if len(location_history) < 2 or location_history[1].get("location") != "ENT.LOC.GOES.SEBASTIAANSHOF" or location_history[1].get("from") != 1626:
+    errors.append("Nardusbloem location history must place Sint-Sebastiaanshof from 1626, not in Cornelis' period")
+
 master_path = ROOT / "storybible" / "LEMMA_MCKEE_MASTER_2026-08-13.md"
 if master_path.exists():
     master_text = master_path.read_text(encoding="utf-8")
@@ -274,6 +326,9 @@ if master_path.exists():
     for phrase in ["road toward Enkhuizen", "matter toward spirituality", "knowledge-as-control"]:
         if phrase not in master_text:
             errors.append(f"current operating master missing synchronized character architecture phrase: {phrase}")
+    for phrase in ["20 March 1542", "Armenhoek", "Zusterhuis", "only then moved to the building/hof of the handbow guild Sint-Sebastiaan"]:
+        if phrase not in master_text:
+            errors.append(f"current operating master missing synchronized Goes phrase: {phrase}")
 
 sync_path = ROOT / "review" / "SYNC_STATUS.md"
 if sync_path.exists() and "SYNC_COMPLETE" not in sync_path.read_text(encoding="utf-8"):
@@ -289,4 +344,4 @@ print("CLAES CANON VALIDATION: PASSED")
 print(f"Structured IDs: {len(all_ids)}")
 print(f"Source records: {len(source_ids)}")
 print(f"Migration-reviewed Story Claims: {len(story_claim_ids)}")
-print("Author decisions synchronized: 2026-08-13")
+print("Author decisions synchronized through: 2026-08-14")
