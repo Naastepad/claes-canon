@@ -44,7 +44,7 @@ This branch records the author's explicit approval of the extended Claes family 
 - `review/MIGRATION_REVIEW.yaml` now classifies 42 Story Claims, of which eight are NEW/HUMAN_DECISION.
 
 ## Validation state
-The first PR validation run failed only on two mechanical issues: an out-of-vocabulary evidence status and `SYNC_PENDING`. The evidence status has been normalized to `PLAUSIBLE`, and this branch is now marked synchronized so the validator can rerun. Awaiting the new workflow result.
+GitHub Actions workflow **Validate Claes canon repository**, run **145**, passed successfully on synchronized feature-branch commit `d4b09ac2529bd649b9631fac028575df974215f0`. The earlier failed run was resolved by normalizing the evidence-status vocabulary and marking the synchronized branch state correctly.
 
 ## Merge policy
-Do not merge without explicit author instruction. Once validation passes, this branch is ready for author-approved merge.
+Do not merge without explicit author instruction. The branch is synchronized, validated and ready for author-approved merge.
