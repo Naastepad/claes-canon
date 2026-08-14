@@ -1,4 +1,4 @@
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: SourceClaimRegistry
 claims:
 - id: SC.HIST.GOES.NISSEPAT.NOORDEINDE_1534.001
@@ -62,20 +62,77 @@ claims:
   evidence_status: VERIFIED
   source_ids: [SRC-HIST-GOES-LIVING-CITY-001]
   retrieval: {tags: [goes, westzelke, zoutkeet, salt, harbour, 1540s]}
+- id: SC.HIST.GOES.SALT.NORTH_HARBOUR_1554.001
+  type: SourceClaim
+  statement: "Immediately before the 1554 fire the Goese salt-work complex lay outside the walls on the north side of the harbour; local reconstruction gives 81 keten in the harbour zone, with Oostzelke and Westzelke forming the salt-industrial harbour edges rather than a southern industrial district."
+  claim_type: industrial_geography
+  subject: ENT.LOC.GOES
+  predicate: had_northern_harbour_salt_industry
+  object: "salt works north of walled city along harbour; Oostzelke and Westzelke harbour edges; 81 keten total in local reconstruction"
+  story_time: {earliest: '1554-01-01', latest_exclusive: '1554-05-19', precision: bounded}
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-GOES-LIVING-CITY-001]
+  qualifies:
+  - "The figure 81 is the total harbour-zone inventory in the cited local reconstruction, not the number proven to have burned on 18 May."
+  - "Individual pre-fire keten locations remain schematic unless a transport chain fixes their topology."
+  retrieval: {tags: [goes, salt, zoutketen, oostzelke, westzelke, harbour, north, 1554]}
 - id: SC.HIST.GOES.FIRE_1554.FOOTPRINT.001
   type: SourceClaim
-  statement: "The 18 May 1554 fire began in an unidentified salt pan on the Oostzelke and, driven by a strong north-easterly wind, struck the harbour zone and concentrated damage in northern and western Goes; the supported footprint includes Turfkade, watermill, Kruisbroeders complex and Westzelke access, while most individual parcel-level losses remain unknown."
+  statement: "The 18 May 1554 fire began in an unidentified salt pan on the Oostzelke in the northern harbour-industrial zone and, driven by a strong north-easterly wind, struck the harbour and concentrated damage in northern and western Goes; the supported footprint includes Turfkade, watermill, Kruisbroeders complex and Westzelke access, while most individual parcel-level losses remain unknown."
   claim_type: urban_event_footprint
   subject: ENT.LOC.GOES
   predicate: suffered_fire_footprint
-  object: "Oostzelke origin; harbour; Turfkade; watermill; Kruisbroeders; Westzelke access; broad north/west damage zone"
+  object: "northern Oostzelke origin; harbour; Turfkade; watermill; Kruisbroeders; Westzelke access; broad north/west damage zone"
   story_time: {earliest: '1554-05-18', latest_exclusive: '1554-05-19', precision: day}
   evidence_status: SUPPORTED
   source_ids: [SRC-HIST-GOES-LIVING-CITY-001]
   qualifies:
-  - "Approximate damage scale in the current synthesis is about one quarter of city/harbour buildings."
+  - "Approximate damage scale in the current source-weighted synthesis is about one quarter of city/harbour buildings."
   - "Do not mark an individual house burned unless separate evidence supports it."
-  retrieval: {tags: [goes, fire, 1554, oostzelke, turfkade, kruisbroeders, westzelke]}
+  - "The older-Nieuwstraat/Armenhoek household residence is not currently proven destroyed."
+  retrieval: {tags: [goes, fire, 1554, oostzelke, turfkade, kruisbroeders, westzelke, harbour]}
+- id: SC.HIST.GOES.FIRE_1554.SPREAD.001
+  type: SourceClaim
+  statement: "The source-supported spread sequence is Oostzelke salt pan to surrounding and neighbouring harbour structures, followed by wind-driven sparks toward west/south-west and multiple city ignitions; Turfkade, the watermill/Molenwater zone and the Kruisbroeders/western fabric lie within the supported destructive corridor, but exact ignition order and minute-by-minute timing are not preserved."
+  claim_type: urban_event_spread
+  subject: ENT.LOC.GOES
+  predicate: fire_spread_reconstructed_as
+  object: "Oostzelke -> neighbouring harbour/salt structures -> wind-driven west/south-west spread -> Turfkade and multiple urban ignitions -> watermill/Molenwater -> Kruisbroeders/western fabric"
+  story_time: {earliest: '1554-05-18', latest_exclusive: '1554-05-19', precision: day}
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-GOES-LIVING-CITY-001]
+  qualifies:
+  - "This is a source-weighted corridor, not a claim that every named node ignited strictly after the previous node."
+  - "Opril evidence is useful as a post-fire damage/rebuilding marker but does not establish a meter-exact terminal fire line."
+  retrieval: {tags: [goes, fire, 1554, route, spread, wind, sparks, harbour, turfkade, watermill, kruisbroeders]}
+- id: SC.MODEL.GOES.FIRE_1554.FIREBRANDS.001
+  type: SourceClaim
+  statement: "Modern fire-science experiments support the physical plausibility of wind-driven firebrands creating separate roof and structure ignitions ahead of a main flame front; this may be used to block the 1554 Goes fire as a multi-front brandwaaier rather than a tidy street-by-street wall of flame."
+  claim_type: reconstruction_mechanism
+  subject: ENT.LOC.GOES
+  predicate: may_use_firebrand_spotting_model
+  object: "qualitative multi-front spotting / secondary ignition model"
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-GOES-LIVING-CITY-001]
+  qualifies:
+  - "The NIST material is a modern physical analogue, not historical evidence for exact Goese roof materials, ember ranges, wind speed or ignition minutes."
+  - "Scene-blocking bands such as tens of minutes to a few hours are reconstruction aids, never archival timestamps."
+  retrieval: {tags: [goes, fire, 1554, firebrand, spotting, reconstruction, speed, wind]}
+- id: SC.HIST.GOES.FIRE_1554.CASUALTIES.001
+  type: SourceClaim
+  statement: "The currently consulted fire-specific sources do not supply a reliable number of people killed or injured in the 18 May 1554 Goes fire; the human casualty count therefore remains unknown in the present evidence bundle."
+  claim_type: evidence_limit
+  subject: ENT.LOC.GOES
+  predicate: casualty_count_in_current_bundle
+  object: "UNKNOWN"
+  story_time: {earliest: '1554-05-18', latest_exclusive: '1554-05-19', precision: day}
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-GOES-LIVING-CITY-001]
+  qualifies:
+  - "No number is not evidence of zero casualties."
+  - "General statements that early-modern city fires could cause deaths or injuries do not prove deaths or injuries in this specific fire."
+  - "Any named fictional death, including Claes' mother, requires an explicit story decision rather than presentation as historical fact."
+  retrieval: {tags: [goes, fire, 1554, casualties, deaths, injuries, unknown]}
 - id: SC.HIST.GOES.BREWERY.NISSEPAD_1577.001
   type: SourceClaim
   statement: "In 1577 a brewery at the Nissepad was transferred with kettles, vats/tubs and tools; the common footpath bordered east, Jan Pauwelsen south, Pieter den Hollander west and a road north."
