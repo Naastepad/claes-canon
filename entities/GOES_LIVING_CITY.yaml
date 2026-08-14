@@ -1,0 +1,214 @@
+schema_version: 1.0.0
+kind: EntityRegistry
+entities:
+- id: ENT.LOC.GOES.GROTE_MARKT
+  type: Location
+  label: Grote Markt, Goes
+  fictionality: historical
+  canon_status: PROPOSED
+  parent: ENT.LOC.GOES
+- id: ENT.LOC.GOES.VISMARKT
+  type: Location
+  label: Vismarkt / Oude Vismarkt-zone, Goes
+  fictionality: historical
+  canon_status: PROPOSED
+  parent: ENT.LOC.GOES
+- id: ENT.LOC.GOES.LANGE_VORSTSTRAAT
+  type: Location
+  label: Lange Vorststraat, Goes
+  fictionality: historical
+  canon_status: PROPOSED
+  parent: ENT.LOC.GOES
+- id: ENT.LOC.GOES.NOORDEINDE
+  type: Location
+  label: Noordeinde, Goes
+  fictionality: historical
+  canon_status: PROPOSED
+  parent: ENT.LOC.GOES
+- id: ENT.LOC.GOES.HAVEN
+  type: Location
+  label: Goese haven en binnenhaven
+  fictionality: historical
+  canon_status: PROPOSED
+  parent: ENT.LOC.GOES
+- id: ENT.LOC.GOES.WESTZELKE
+  type: Location
+  label: Westzelke — zoutindustriezone
+  fictionality: historical
+  canon_status: PROPOSED
+  parent: ENT.LOC.GOES
+- id: ENT.LOC.GOES.OOSTZELKE
+  type: Location
+  label: Oostzelke — zoutindustriezone
+  fictionality: historical
+  canon_status: PROPOSED
+  parent: ENT.LOC.GOES
+- id: ENT.LOC.GOES.TURFKADE
+  type: Location
+  label: Turfkade, Goes
+  fictionality: historical
+  canon_status: PROPOSED
+  parent: ENT.LOC.GOES
+- id: ENT.LOC.GOES.KRUISBROEDERS
+  type: Location
+  label: Kruisbroedersklooster en terrein
+  fictionality: historical
+  canon_status: PROPOSED
+  parent: ENT.LOC.GOES
+- id: ENT.LOC.GOES.GANZEPOORT
+  type: Location
+  label: Ganzepoort / Zuidpoort
+  fictionality: historical
+  canon_status: PROPOSED
+  parent: ENT.LOC.GOES
+- id: ENT.LOC.GOES.VOORSTAD
+  type: Location
+  label: Voorstad buiten de Ganzepoort
+  fictionality: historical
+  canon_status: PROPOSED
+  parent: ENT.LOC.GOES
+- id: ENT.LOC.GOES.SHEER_HENDRIKSKINDERENPOORT
+  type: Location
+  label: 's-Heer Hendrikskinderenpoort
+  fictionality: historical
+  canon_status: PROPOSED
+  parent: ENT.LOC.GOES
+- id: ENT.LOC.GOES.HAVENPOORT
+  type: Location
+  label: Havenpoort / toegang bij haven
+  fictionality: historical
+  canon_status: PROPOSED
+  parent: ENT.LOC.GOES
+- id: ENT.LOC.GOES.SCHUTTERSHOF_STADSSCHOOL
+  type: Location
+  label: Stadsschool bij het Schuttershofstraatje
+  fictionality: historical
+  canon_status: PROPOSED
+  parent: ENT.LOC.GOES
+  valid_time:
+    earliest_attestation: '1558-01-17'
+    earlier_continuity: UNKNOWN
+- id: ENT.LOC.GOES.NIEUWSTRAAT_PRE1594
+  type: Location
+  label: Nieuwstraat vermeld vóór 1594 — historische identiteit nog te lokaliseren
+  fictionality: historical_reconstructed
+  canon_status: OPEN
+  parent: ENT.LOC.GOES
+  constraints:
+  - must not be automatically identified with the planned Nieuwstraat of 1594
+- id: ENT.LOC.GOES.NIEUWSTRAAT_1594
+  type: Location
+  label: Planmatige Nieuwstraat vanaf 1594
+  fictionality: historical
+  canon_status: PROPOSED
+  parent: ENT.LOC.GOES
+  valid_time:
+    earliest: '1594-01-01'
+    precision: year
+- id: ENT.LOC.GOES.NISSEPAD_CORRIDOR
+  type: Location
+  label: Nissepadcorridor buiten Goes
+  fictionality: historical_reconstructed
+  canon_status: CANON
+  parent: ENT.LOC.GOES
+  usage: routezone; not a single cadastral line for all periods
+- id: ENT.LOC.GOES.KARNEMELKSEPUT
+  type: Location
+  label: Karnemelkseput / zuidelijk routeanker
+  fictionality: historical_reconstructed
+  canon_status: PROPOSED
+  parent: ENT.LOC.GOES.NISSEPAD_CORRIDOR
+- id: ENT.LOC.GOES.HUYBELAMSHOEK
+  type: Location
+  label: Huybelamshoek
+  fictionality: historical_reconstructed
+  canon_status: PROPOSED
+  parent: ENT.LOC.GOES.NISSEPAD_CORRIDOR
+- id: ENT.LOC.GOES.TERWELHOEK
+  type: Location
+  label: Terwelhoek
+  fictionality: historical_reconstructed
+  canon_status: PROPOSED
+  parent: ENT.LOC.GOES.NISSEPAD_CORRIDOR
+- id: ENT.ORG.GOES.STADSSCHOOL
+  type: Organization
+  label: Stedelijke school van Goes
+  fictionality: historical
+  canon_status: PROPOSED
+  location_anchor: ENT.LOC.GOES.SCHUTTERSHOF_STADSSCHOOL
+  usage: city-school anchor; formal Latin curriculum in Claes' childhood must not be assumed without evidence
+- id: ENT.ORG.GOES.REDERIJKERS
+  type: Organization
+  label: Goese rederijkersmilieu / kamer
+  fictionality: historical
+  canon_status: PROPOSED
+  parent: ENT.LOC.GOES
+  usage: active cultural network; exact meeting-house location remains unresolved unless separately sourced
+- id: ENT.PERSON.CLAES_JACOBSZ_NISSEPAT
+  type: Person
+  label: Claes Jacobsz. Nissepat
+  fictionality: historical
+  canon_status: PROPOSED
+  roles:
+  - documented-property-holder
+  usage: strongest historical candidate for fictional grandfather-link; genealogy to Cornelis is not historically proven
+- id: ENT.PERSON.JAN_JANSEN_NISSEPAT
+  type: Person
+  label: Jan Jansen Nissepat / Nissepadt
+  fictionality: historical
+  canon_status: PROPOSED
+  roles:
+  - documented-property-holder
+- id: ENT.PERSON.CLAES_PIERSEN_NISSEPAT
+  type: Person
+  label: Claes Piersen Nissepat
+  fictionality: historical
+  canon_status: PROPOSED
+  roles:
+  - documented-property-holder
+- id: ENT.PERSON.JAN_PAUWELSEN_NISSEPAT
+  type: Person
+  label: Jan Pauwelsen Nissepat
+  fictionality: historical
+  canon_status: PROPOSED
+  roles:
+  - documented-property-holder
+  usage: family identification derives from the wider Nissepat register; individual brewery acts may name him only as Jan Pauwelsen
+- id: ENT.PROP.GOES.NISSEPAT.NOORDEINDE_1534
+  type: Property
+  label: House sold by Claes Jacobsz. Nissepat at Noordeinde in 1534
+  fictionality: historical
+  canon_status: PROPOSED
+  parent: ENT.LOC.GOES.NOORDEINDE
+- id: ENT.PROP.GOES.NISSEPAT.NISSEPAD_1540
+  type: Property
+  label: House and land sold by Claes Jacobsz. Nissepat by the Nissepad in 1540
+  fictionality: historical
+  canon_status: PROPOSED
+  parent: ENT.LOC.GOES.NISSEPAD_CORRIDOR
+- id: ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
+  type: Property
+  label: House bought by Claes Jacobsz. Nissepat in a Nieuwstraat in 1542
+  fictionality: historical
+  canon_status: OPEN
+  parent: ENT.LOC.GOES.NIEUWSTRAAT_PRE1594
+- id: ENT.PROP.GOES.NISSEPAD.BREWERY_1577
+  type: Property
+  label: Documented Nissepad brewery with kettles, vats and tools, 1577
+  fictionality: historical
+  canon_status: PROPOSED
+  parent: ENT.LOC.GOES.NISSEPAD_CORRIDOR
+- id: ENT.PROP.GOES.WESTZELKE.GEMEEN_KEETGE
+  type: Property
+  label: Burned salt-pan site 't gemeen keetge at Westzelke
+  fictionality: historical
+  canon_status: PROPOSED
+  parent: ENT.LOC.GOES.WESTZELKE
+- id: ENT.PROP.GOES.VOORSTAD.BREWERY_1572
+  type: Property
+  label: Brewery in the Voorstad reported burned during the 1572 siege
+  fictionality: historical
+  canon_status: PROPOSED
+  parent: ENT.LOC.GOES.VOORSTAD
+  constraints:
+  - not proven identical to the documented Nissepad brewery of 1577
