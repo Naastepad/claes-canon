@@ -1,33 +1,27 @@
-schema_version: 1.4.0
+schema_version: 1.5.0
 kind: MigrationReviewRegistry
 source_edition: Claes_Storybible_MASTER_COMPLEET_2026-08-10_REVISIE11_MACROSTRUCTUUR_PROJECTIO(1).md
 purpose: Distinguish meaning-preserving migration from AI-derived interpretation, genuinely new proposals, and detected conflicts before merge.
-origin_vocabulary:
-  - MIGRATED
-  - DERIVED
-  - NEW
-review_state_vocabulary:
-  - MIGRATION_CHECK
-  - HUMAN_REVIEW
-  - HUMAN_DECISION
-  - CONFLICT
+origin_vocabulary: [MIGRATED, DERIVED, NEW]
+review_state_vocabulary: [MIGRATION_CHECK, HUMAN_REVIEW, HUMAN_DECISION, CONFLICT]
 summary:
-  story_claims_total: 42
+  story_claims_total: 54
   by_origin:
     MIGRATED: 30
     DERIVED: 4
-    NEW: 8
+    NEW: 20
   by_review_state:
     MIGRATION_CHECK: 34
     HUMAN_REVIEW: 0
-    HUMAN_DECISION: 8
+    HUMAN_DECISION: 20
     CONFLICT: 0
   merge_blockers: 0
 records:
   - claim_id: STC.CLAES.BIRTH.001
     origin: MIGRATED
     review_state: MIGRATION_CHECK
-    resolution: "Resolved by explicit author decision DEC.CLAES.BIRTH.2026-08-13: 8 December 1542 is canon; 1545 is migration drift requiring synchronization."
+    resolution: >-
+      Resolved by explicit author decision DEC.CLAES.BIRTH.2026-08-13: 8 December 1542 is canon; 1545 is migration drift requiring synchronization.
   - claim_id: STC.CLAES.SCHOOL.GOES.001
     origin: MIGRATED
     review_state: MIGRATION_CHECK
@@ -106,19 +100,23 @@ records:
   - claim_id: STC.CLAES.SINNE.001
     origin: DERIVED
     review_state: MIGRATION_CHECK
-    resolution: "Approved with refinement by DEC.CLAES.SINNE.2026-08-13: sinne is embodied discovery, traumatically blunted and later rediscovered on the road toward Enkhuizen with the beloved, becoming a catalyst for recovery, wisdom and alchemical sovereignty."
+    resolution: >-
+      Approved with refinement by DEC.CLAES.SINNE.2026-08-13: sinne is embodied discovery, traumatically blunted and later rediscovered on the road toward Enkhuizen with the beloved, becoming a catalyst for recovery, wisdom and alchemical sovereignty.
   - claim_id: STC.CLAES.PARADOX.001
     origin: DERIVED
     review_state: MIGRATION_CHECK
-    resolution: "Approved with refinement by DEC.CLAES.PARADOX.2026-08-13; development is linked to the sensory trauma/recovery arc."
+    resolution: >-
+      Approved with refinement by DEC.CLAES.PARADOX.2026-08-13; development is linked to the sensory trauma/recovery arc.
   - claim_id: STC.CLAES.NEED.001
     origin: DERIVED
     review_state: MIGRATION_CHECK
-    resolution: "Approved with refinement by DEC.CLAES.NEED.2026-08-13; psychological need and moral need are explicitly distinguished and linked through recovered sinne."
+    resolution: >-
+      Approved with refinement by DEC.CLAES.NEED.2026-08-13; psychological need and moral need are explicitly distinguished and linked through recovered sinne.
   - claim_id: STC.CLAES.MORAL_QUESTION.001
     origin: DERIVED
     review_state: MIGRATION_CHECK
-    resolution: "Approved with refinement by DEC.CLAES.SPIRITUAL_JOURNEY.2026-08-13: this is the spiritual journey from matter toward spirituality through, not away from, embodied material reality."
+    resolution: >-
+      Approved with refinement by DEC.CLAES.SPIRITUAL_JOURNEY.2026-08-13: this is the spiritual journey from matter toward spirituality through, not away from, embodied material reality.
   - claim_id: STC.MACRO.STRUCTURE.001
     origin: MIGRATED
     review_state: MIGRATION_CHECK
@@ -134,37 +132,105 @@ records:
   - claim_id: STC.CORNELIS.HOUSEHOLD_GOES.1542.001
     origin: NEW
     review_state: HUMAN_DECISION
-    resolution: "Explicitly approved by DEC.CORNELIS.RESIDENCE.GOES.2026-08-14: the historical 20 March 1542 house is the fictional Cornelis household's childhood home."
+    resolution: >-
+      Explicitly approved by DEC.CORNELIS.RESIDENCE.GOES.2026-08-14: the historical 20 March 1542 house is the fictional Cornelis household's childhood home.
   - claim_id: STC.GOES.NIEUWSTRAAT.PRE1594.001
     origin: NEW
     review_state: HUMAN_DECISION
-    resolution: "Explicitly approved by DEC.GOES.NIEUWSTRAAT.IDENTITY.2026-08-14: older Nieuwstraat/Oude Nieuwstraat in/by Armenhoek is distinct from the 1594 planned/current Nieuwstraat; exact axis remains uncertain."
+    resolution: >-
+      Explicitly approved by DEC.GOES.NIEUWSTRAAT.IDENTITY.2026-08-14: older Nieuwstraat/Oude Nieuwstraat in/by Armenhoek is distinct from the 1594 planned/current Nieuwstraat; exact axis remains uncertain.
   - claim_id: STC.CORNELIS.REDERIJKERS.ZUSTERHUIS.001
     origin: NEW
     review_state: HUMAN_DECISION
-    resolution: "Explicitly approved by DEC.GOES.REDERIJKERS.MEETINGPLACE.2026-08-14: Cornelis-era rederijker scenes use the Zusterhuis; Sint-Sebastiaan is post-1626 for the Nardusbloem."
+    resolution: >-
+      Explicitly approved by DEC.GOES.REDERIJKERS.MEETINGPLACE.2026-08-14: Cornelis-era rederijker scenes use the Zusterhuis; Sint-Sebastiaan is post-1626 for the Nardusbloem.
   - claim_id: STC.CLAES.HOUSEHOLD_PRE_FIRE.1554.001
     origin: NEW
     review_state: HUMAN_DECISION
-    resolution: "Explicit author decision on 14 August 2026: Claes has a brother about eighteen months younger and their mother is about six months pregnant immediately before the fire."
+    resolution: >-
+      Explicit author decision on 14 August 2026: Claes has a brother about eighteen months younger and their mother is about six months pregnant immediately before the fire.
   - claim_id: STC.CLAES.FAMILY_FIRE.1554.001
     origin: NEW
     review_state: HUMAN_DECISION
-    resolution: "Explicit author decision DEC.CLAES.FAMILY_FIRE.1554.2026-08-14: family home lost; Claes and Cornelis survive away from home; mother, younger brother and unborn child die."
+    resolution: >-
+      Explicit author decision DEC.CLAES.FAMILY_FIRE.1554.2026-08-14: family home lost; Claes and Cornelis survive away from home; mother, younger brother and unborn child die.
   - claim_id: STC.CLAES.GRANDFATHER.NISSEPAT.001
     origin: NEW
     review_state: HUMAN_DECISION
-    resolution: "Explicit author decision DEC.CLAES.GRANDFATHER_LINK.2026-08-14: historical Claes Jacobsz. Nissepat is fictionally Cornelis' father/Claes' grandfather and remains story-owner of the 1542 house through its loss."
+    resolution: >-
+      Explicit author decision DEC.CLAES.GRANDFATHER_LINK.2026-08-14: historical Claes Jacobsz. Nissepat is fictionally Cornelis' father/Claes' grandfather and remains story-owner of the 1542 house through its loss.
   - claim_id: STC.CLAES.CORNELIS.POSTFIRE_SEPARATION.001
     origin: NEW
     review_state: HUMAN_DECISION
-    resolution: "Explicit author decision DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14: Cornelis stays in Goes to rebuild and fund schooling, grandfather helps, Claes goes to Reimerswaal, and the separation deepens the shared loss."
+    resolution: >-
+      Explicit author decision DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14: Cornelis stays in Goes to rebuild and fund schooling, grandfather helps, Claes goes to Reimerswaal, and the separation deepens the shared loss.
   - claim_id: STC.CLAES.EXTENDED_FAMILY.001
     origin: NEW
     review_state: HUMAN_DECISION
-    resolution: "Explicit author approval on 14 August 2026: mother Tanneken Jansdochter; brother Jan Corneliszn.; paternal grandparents Claes Jacobsz. Nissepat and fictional Lijsbet Pietersdochter; maternal grandparents a Jan Jansen-kuiper historical model with fictional kinship and fictional Mayken Pietersdochter; associated death windows and complementary family functions are canon."
+    resolution: >-
+      Explicit author approval on 14 August 2026: mother Tanneken Jansdochter; brother Jan Corneliszn.; paternal grandparents Claes Jacobsz. Nissepat and fictional Lijsbet Pietersdochter; maternal grandparents a Jan Jansen-kuiper historical model with fictional kinship and fictional Mayken Pietersdochter; associated death windows and complementary family functions are canon.
+  - claim_id: STC.CLAES.EXECUTION_ARC.001
+    origin: NEW
+    review_state: HUMAN_DECISION
+    resolution: >-
+      Explicit author instruction on 15 August 2026: executions, Reformation, ars moriendi, martelaarsrelais and code-as-testimony become a structural layer in Claes' life arc.
+  - claim_id: STC.CLAES.CATHOLIC_EXECUTION_BASELINE.001
+    origin: NEW
+    review_state: HUMAN_DECISION
+    resolution: >-
+      Explicit author instruction on 15 August 2026: Claes begins from a Catholic civic death-script before Reformation executions fracture it.
+  - claim_id: STC.CLAES.EXECUTION_KNOWLEDGE.RESERVOIR.001
+    origin: NEW
+    review_state: HUMAN_DECISION
+    resolution: >-
+      Explicit author instruction on 15 August 2026: preserve a list of executions and death-events Claes can plausibly know by witness, hearsay, route memory or later reading.
+  - claim_id: STC.CLAES.GRENDEL_LOCAL_RUPTURE.1563.001
+    origin: NEW
+    review_state: HUMAN_DECISION
+    resolution: >-
+      New story placement derived from researched Goese martyr material; marked PROPOSED in story claims but classified here as an explicit author-approved exploration layer.
+  - claim_id: STC.SECURITY.FABRITIUS_CANDIDATE.1564.001
+    origin: NEW
+    review_state: HUMAN_DECISION
+    resolution: >-
+      Explicit author review on 15 August 2026: Fabritius is the preferred candidate for the 4 October 1564 security break, but the low-level link remains open.
+  - claim_id: STC.MEMORIAAL.DEE_NOT_CORNELIS.CORRECTION.001
+    origin: NEW
+    review_state: HUMAN_DECISION
+    resolution: >-
+      Explicit correction from storybible review on 15 August 2026: Dee gives the memoriaal early in 1564; Cornelis does not hand it to Claes.
+  - claim_id: STC.CORNELIS.EXECUTION_WITNESS.001
+    origin: NEW
+    review_state: HUMAN_DECISION
+    resolution: >-
+      Explicit author decision on 15 August 2026: Claes must physically witness Cornelis' execution.
+  - claim_id: STC.CORNELIS.FIRST_ARREST_BAIL.1567.001
+    origin: NEW
+    review_state: HUMAN_DECISION
+    resolution: >-
+      Explicit author decision on 15 August 2026: use a two-step exposure model so Cornelis is first arrested or examined and released on borg or conditions.
+  - claim_id: STC.CORNELIS.DEATH.ANTWERP.1569.001
+    origin: NEW
+    review_state: HUMAN_DECISION
+    resolution: >-
+      Explicit author decision after plausibility review on 15 August 2026: Cornelis' death is resolved as Antwerp, 19 November 1569, embedded in the documented public book-burning environment, with seditious network/recidive framing.
+  - claim_id: STC.CORNELIS.CARRIER_NOT_PRINTER.001
+    origin: NEW
+    review_state: HUMAN_DECISION
+    resolution: >-
+      Explicit author decision on 15 August 2026: Cornelis dies as lower-protection logistics/body-of-route, not as protected printer or open preacher.
+  - claim_id: STC.CORNELIS.SILENCE_THIRD_SCRIPT.001
+    origin: NEW
+    review_state: HUMAN_DECISION
+    resolution: >-
+      Explicit author decision on 15 August 2026: Cornelis' death-script is protective silence between Catholic ars moriendi and Protestant martyr display.
+  - claim_id: STC.CLAES.CODE_FROM_EXECUTION_CRISIS.001
+    origin: NEW
+    review_state: HUMAN_DECISION
+    resolution: >-
+      Explicit author decision on 15 August 2026: the 1570 recovery architecture must become morally legible through the execution crisis.
 rules:
-  MIGRATION_CHECK: "Existing canon or explicitly reviewed formulation represented in the new structure. Review only for faithful transcription/normalization; do not re-litigate the underlying canon unless a new conflict is detected."
-  HUMAN_REVIEW: "AI-derived condensation or interpretation. Human should approve, edit, or reject the formulation before treating it as settled structured canon."
-  HUMAN_DECISION: "Genuinely new story choice requiring explicit author decision."
-  CONFLICT: "Contradictory authorities or canon drift detected. Merge is blocked until explicitly resolved and downstream records are corrected."
+  MIGRATION_CHECK: Existing canon or explicitly reviewed formulation represented in the new structure. Review only for faithful transcription/normalization; do not re-litigate the underlying canon unless a new conflict is detected.
+  HUMAN_REVIEW: AI-derived condensation or interpretation. Human should approve, edit, or reject the formulation before treating it as settled structured canon.
+  HUMAN_DECISION: Genuinely new story choice requiring explicit author decision.
+  CONFLICT: Contradictory authorities or canon drift detected. Merge is blocked until explicitly resolved and downstream records are corrected.
