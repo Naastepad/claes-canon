@@ -2,9 +2,9 @@
 
 Status: `SYNC_COMPLETE`
 
-Release state: `FEATURE_BRANCH_READY_FOR_PR`
+Release state: `PR_OPEN_VALIDATED`
 
-PR #5 and PR #6 are merged on `main`. Branch `mayken-lampert-beloved-20260814` adds the explicit author-approved identity of Claes' beloved as **Mayken Adriaensdr. Lampert** and synchronizes that choice through source claims, story claims, entities, decisions, relationships and human-readable storybible authority.
+PR #5 and PR #6 are merged on `main`. PR #7 / branch `mayken-lampert-beloved-20260814` adds the explicit author-approved identity of Claes' beloved as **Mayken Adriaensdr. Lampert** and synchronizes that choice through source claims, story claims, entities, decisions, relationships and human-readable storybible authority.
 
 ## Canonical family state
 - mother: **Tanneken Jansdochter**, fictional, born approximately 1519–1522 / preferred ca. 1520, dies 18 May 1554;
@@ -56,7 +56,7 @@ PR #5 and PR #6 are merged on `main`. Branch `mayken-lampert-beloved-20260814` a
 - `sources/SRC-HIST-GOES-LAMPERT-APOTHECARY-001.md` holds the historical/fictive source boundary.
 - `claims/SOURCE_CLAIMS_LAMPERT_APOTHECARY.yaml` atomizes the historical evidence and uncertainty.
 - `claims/STORY_CLAIMS_MAYKEN_LAMPERT.yaml` contains the five new author-approved story claims.
-- `entities/MAYKEN_LAMPERT.yaml` holds Mayken and the Lampert historical anchor entities.
+- `entities/MAYKEN_LAMPERT.yaml` holds non-duplicating detail projections for Mayken and the Lampert historical anchor entities; canonical IDs remain in `entities/ENTITIES.yaml`.
 - `entities/ENTITIES.yaml` resolves `ENT.PERSON.BELOVED` to Mayken.
 - `canon/DECISIONS.yaml` and `canon/DECISIONS_2026-08-14.md` contain `DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14`.
 - `canon/OPEN_DECISIONS.yaml` resolves `OPEN.CLAES.BELOVED.IDENTITY.001`; Dodoens provenance remains open.
@@ -65,7 +65,8 @@ PR #5 and PR #6 are merged on `main`. Branch `mayken-lampert-beloved-20260814` a
 - `review/MIGRATION_REVIEW.yaml` now classifies 47 Story Claims, including five new Mayken claims as `NEW` / `HUMAN_DECISION`.
 
 ## Validation and merge state
-- This feature branch must pass **Validate Claes canon repository** before merge.
+- PR #7 validation run **151** completed successfully after correcting duplicate detail IDs and repository-vocabulary values exposed by the first validation attempt.
+- PR #7 is open and mergeable.
 - No merge into `main` occurs without explicit author instruction.
 
 ## Remaining open matters
@@ -73,5 +74,5 @@ The authoritative list is `canon/OPEN_DECISIONS.yaml`. `OPEN.CLAES.BELOVED.IDENT
 
 ## Lemma execution policy
 - `lemma/*.lemma` remains the deterministic rules-as-code layer and is versioned and validated in GitHub.
-- GitHub `main` remains authoritative until this feature branch is explicitly merged.
+- GitHub `main` remains authoritative until PR #7 is explicitly merged.
 - LemmaBase is optional and downstream-only; it never overrides GitHub canon.
