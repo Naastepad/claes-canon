@@ -28,6 +28,11 @@
 - `RAZE-1746-0153`, 20-03-1542: Claes Jacopsen Nissepat buys a house in a `Nieuwstraat`; street on the east and Jacob Dierixsen de Bye on north, west and south. The house is therefore on the west side of the historical street. The pre-1594 street/toponym is treated at zone level as the older Nieuwstraat/Oude Nieuwstraat in or by the Armenhoek, explicitly distinct from the planmatige/current Nieuwstraat of the 1594 expansion; the exact old street axis remains unknown.
 - `RAZE-1746-0290`, 24-09-1543: house and hof outside the Gansepoort, showing inhabited/built southern approach.
 - `RAZE-1746-0291`, 24-09-1543: salt pan at Westzelke bounded on multiple sides by the city harbour.
+- `RAZE-1748-0290`, 13-11-1554: an ordinary `Huis` is transferred in Nieuwstraat, east and south bounded by streets and west/north by Pieter Danckertsen. This proves that the whole old Nieuwstraat was not erased by the May 1554 fire.
+- `RAZE-1748-0301`, 07-01-1555 and `RAZE-1748-0358`, 27-05-1555: further ordinary houses are transferred in Nieuwstraat, confirming post-fire continuity of built property there.
+- `RAZE-1748-0441`, 27-04-1556, fol. 137: an `Afgebrand huis` at `Hoek van de Nieuwstraat`; east Arent Blanckenburgh, south street, west street, north Cornelis Fruytsen.
+- `RAZE-1748-0458`, 18-05-1556, fol. 140: a `Verbrand huis` at `Hoek Nieuwstraat`; east Arendt Blanckenburch, south street, west street, north Jacop Cornelissen Frueyt.
+- `RAZE-1748-0463`, 25-05-1556, fol. 141: a `Verbrand huis` in `Armenhoek`; east street, south/west buyer, north Cornelie widow of Cornelis Jacopsen.
 - `RAZE-1748-0638`, 17-01-1558: house `bij de stadsschool in het Schuttershofstraatje`; this fixes a city-school anchor by 1558 but does not itself prove identical location in 1542.
 - `RAZE-1749-0505` and `RAZE-1749-0512`, May/June 1568: Claes Piersen Nissepat buys and then sells a Noordeinde house with Kruisbroeders as western boundary and Frans Blauhuys north, showing later Nissepat presence in the same northern-western urban fabric.
 - `RAZE-1750-0361`, 15-01-1577: brewery at Nissepad, east path, south Jan Pauwelsen, west Pieter den Hollander, north road.
@@ -38,7 +43,13 @@
 ## Event evidence used
 
 ### Fire of 18 May 1554
-Current evidence supports a fire beginning in one unidentified salt pan on the Oostzelke, driven by strong north-easterly wind through the harbour toward northern/western Goes. The supported event layer includes the Oostzelke origin zone, harbour-side salt-industry cluster, complete destruction along Turfkade in the cited fire reconstruction, burned watermill, burned Kruisbroeders complex, loss of the wooden Westzelke access, and a broad northern/western damage zone. The current synthesis estimates roughly one quarter of city/harbour building stock affected. Exact damage to most individual transport parcels is unknown and must not be fabricated. In novel canon the older-Nieuwstraat house is the Cornelis household's childhood residence, but current historical evidence does not prove that this parcel burned.
+Current evidence supports a fire beginning in one unidentified salt pan on the Oostzelke, driven by strong north-easterly wind through the harbour toward northern/western Goes. The supported event layer includes the Oostzelke origin zone, harbour-side salt-industry cluster, complete destruction along Turfkade in the cited fire reconstruction, burned watermill, burned Kruisbroeders complex, loss of the wooden Westzelke access, and a broad northern/western damage zone. The current synthesis estimates roughly one quarter of city/harbour building stock affected.
+
+The transport evidence now materially sharpens the micro-footprint around the older Nieuwstraat. In April–May 1556 the register explicitly calls houses at the **corner of Nieuwstraat** `Afgebrand`/`Verbrand`, and on 25 May 1556 a house in the **Armenhoek** is likewise `Verbrand`. Those deed descriptions verify burned properties in that environment. The deeds do not themselves say which fire destroyed them, so linking them specifically to the great fire of 18 May 1554 is a **supported historical reconstruction**, not a verbatim source statement.
+
+At the same time, ordinary houses in Nieuwstraat were still transferred on 13 November 1554 and during 1555. The correct reconstruction is therefore **partial/mixed destruction**, not “the old Nieuwstraat escaped” and not “the entire old Nieuwstraat vanished.” This removes the previous basis for treating the Cornelis household's older-Nieuwstraat residence as presumptively outside the fire zone. It still does **not** prove that the particular 1542 Nissepat parcel burned.
+
+For novel use this creates a legitimate choice space: the 1542 family home may be left standing, damaged, or fictionally made uninhabitable/destroyed, provided the latter is labelled a parcel-level story choice inside a historically supported damaged street environment. Human casualties within the fictional household are likewise a story decision; no known source provides a victim list that can historically identify them.
 
 ### Siege of 1572
 The source bundle distinguishes this from 1554. During the siege the salt works outside the walls were burned for military reasons; a brewery in the Voorstad also burned. The 's-Heer Hendrikskinderenpoort and Havenpoort took the strongest pressure. The city was not captured; Mondragón relieved it in October. Later property sales may be post-war liquidation or ordinary transfer unless the act explicitly proves execution/confiscation.
@@ -50,4 +61,5 @@ The source bundle distinguishes this from 1554. During the siege the salt works 
 - Transport chains across 1533–1675 are not automatically simultaneous physical parcels. Repeated ownership chains may refer to the same physical place through time.
 - Modern street names and RCE geometry are reference anchors. Historical continuity must be recorded separately.
 - The pre-1594 `Nieuwstraat` is resolved only at historical-name/zone level as the older Nieuwstraat/Oude Nieuwstraat in or by the Armenhoek. It must never be snapped to the post-1594 planned/current Nieuwstraat, and no exact 1542 axis may be invented.
+- Burned-house evidence at Nieuwstraat/Armenhoek changes the event footprint but does not identify the 1542 Nissepat house as one of those burned parcels.
 - Family filters are secondary overlays. All non-family residents, craftsmen, institutions and businesses remain part of the living-city background.

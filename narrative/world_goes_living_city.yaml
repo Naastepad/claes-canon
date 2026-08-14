@@ -1,4 +1,4 @@
-schema_version: 1.1.0
+schema_version: 1.3.0
 kind: WorldModuleRegistry
 modules:
 - id: WORLD.GOES_LIVING_CITY
@@ -15,6 +15,8 @@ modules:
   - SC.HIST.GOES.STADSSCHOOL.LOCATION_1558.001
   - SC.HIST.GOES.SALT.WESTZELKE_1543_1544.001
   - SC.HIST.GOES.FIRE_1554.FOOTPRINT.001
+  - SC.HIST.GOES.NIEUWSTRAAT.BURNED_HOUSES_1556.001
+  - SC.HIST.GOES.FIRE_1554.NIEUWSTRAAT_PARTIAL_DAMAGE.001
   - SC.HIST.GOES.BREWERY.NISSEPAD_1577.001
   - SC.HIST.GOES.WESTZELKE.BURNT_SALTPAN_1577.001
   - SC.HIST.GOES.SIEGE_1572.INDUSTRY.001
@@ -57,33 +59,41 @@ modules:
       rule: "Use an older Nieuwstraat/Oude Nieuwstraat in or by the Armenhoek for pre-1594 acts. The historical toponym is certain, the Armenhoek zone is supported, and the exact 1542 street axis remains unknown."
       evidence_hook: ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
       parcel_topology: "1542 Nissepat house: street east; Jacob Dierixsen de Bye north, west and south; therefore house is on the west side of the historical street."
+      fire_state: "Post-fire deeds document burned houses at the corner of Nieuwstraat and in Armenhoek, while ordinary Nieuwstraat houses also survive/transfer. Treat as mixed partial damage, not safe zone and not total destruction."
     planned_nieuwstraat:
       entity: ENT.LOC.GOES.NIEUWSTRAAT_1594
       status: PROPOSED_HISTORICAL_ANCHOR
       rule: "Only active as the planmatige/current Nieuwstraat from the 1594 expansion decision; never use it for the 1542 Nissepat house."
   nissepat_property_network:
-    historical_grandfather_candidate:
+    canonical_story_grandfather:
       person: ENT.PERSON.CLAES_JACOBSZ_NISSEPAT
-      property_events:
+      historical_property_events:
       - {year: 1534, relation: SELLS, property: ENT.PROP.GOES.NISSEPAT.NOORDEINDE_1534}
       - {year: 1540, relation: SELLS, property: ENT.PROP.GOES.NISSEPAT.NISSEPAD_1540, note: "seller remained east neighbour, so adjoining property remained in his hands at the act date"}
       - {year: 1542, relation: BUYS, property: ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542}
-      genealogy_to_cornelis: "fictional candidate link only; not historical evidence"
+      novel_genealogy: "fictional father of Cornelis and paternal grandfather of Claes under DEC.CLAES.GRANDFATHER_LINK.2026-08-14"
+      historical_guardrail: "The genealogy is not proven by the transport registers."
+      1554_story_state: "loses the 1542 house as a property asset and helps Cornelis sustain Claes' education afterward"
     later_family_nodes:
     - {person: ENT.PERSON.CLAES_PIERSEN_NISSEPAT, zone: ENT.LOC.GOES.NOORDEINDE, year: 1568, relation: BUYS_AND_SELLS}
     - {person: ENT.PERSON.JAN_JANSEN_NISSEPAT, zone: ENT.LOC.GOES.WESTZELKE, year: 1577, relation: SELLS_BURNED_SALT_SITE}
     - {person: ENT.PERSON.JAN_JANSEN_NISSEPAT, zone: ENT.LOC.GOES.VISMARKT, year: 1579, relation: PROPERTY_NETWORK}
     - {person: ENT.PERSON.JAN_PAUWELSEN_NISSEPAT, zone: ENT.LOC.GOES.NISSEPAD_CORRIDOR, year: 1577, relation: ADJOINS_BREWERY}
-    fiction_guardrail: "Do not turn these different documented Nissepat nodes into one proven nuclear family without a separate genealogical decision."
+    fiction_guardrail: "Do not turn other documented Nissepat nodes into one proven nuclear family without a separate genealogical decision."
   cornelis_and_household:
     person: ENT.PERSON.CORNELIS
     fixed:
     - "Cornelis is a merchant/beer-trader/rhetorician in active canon."
     - "The family home during Claes' Goes childhood is ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542 under DEC.CORNELIS.RESIDENCE.GOES.2026-08-14."
-    - "The historical purchase belongs to Claes Jacobsz. Nissepat; occupation by Cornelis' fictional household is novel canon."
+    - "Historical Claes Jacobsz. Nissepat bought that house; the paternal genealogy and household use are novel canon."
+    - "Immediately before the fire the household contains Cornelis, Claes' mother, Claes, a brother about eighteen months younger, and an unborn child; the mother is about six months pregnant."
     canonical_residence: ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
     residence_decision: DEC.CORNELIS.RESIDENCE.GOES.2026-08-14
     business_separation: "Nissepad, harbour, brewery, salt and storage locations remain separate relations unless separately linked."
+    fire_outcome_1554: DEC.CLAES.FAMILY_FIRE.1554.2026-08-14
+    fire_outcome_note: "In novel canon the house is destroyed/uninhabitable; mother, younger brother and unborn child die; Claes and Cornelis survive away from the house. This is fiction grounded in a historically supported partially damaged street environment."
+    post_fire_father_son: DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14
+    post_fire_note: "Cornelis stays in Goes to rebuild livelihood/business/shelter and pay for Claes' education; Claes goes to Reimerswaal, so surviving father and son grieve apart."
     rhetorician_meeting_environment: ENT.LOC.GOES.ZUSTERHUIS
     rhetorician_decision: DEC.GOES.REDERIJKERS.MEETINGPLACE.2026-08-14
     chamber_identity: OPEN.CORNELIS.REDERIJKERS.CHAMBER.001
@@ -121,18 +131,25 @@ modules:
       city_state: "walled late-medieval trading town centred on market, church and harbour; salt industry at harbour edges; active southern/western gate approaches"
       church: "pre-Reformation Catholic interior"
       school: "city schooling exists, but the 1558 Schuttershof location must not be back-projected as certain without further evidence"
-      nissepat: "On 20 March historical Claes Jacobsz. Nissepat buys the older-Nieuwstraat house; in novel canon it becomes Cornelis' family home and Claes is born there later that year."
+      nissepat: "On 20 March historical Claes Jacobsz. Nissepat buys the older-Nieuwstraat house; in novel canon he is Cornelis' father and makes it the family home. Claes is born later that year."
       residence: ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
       rhetorician_environment: ENT.LOC.GOES.ZUSTERHUIS
     '1554_pre_fire':
       city_state: "same core street/harbour system immediately before the 18 May fire"
       household_home: ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
+      household: ENT.FAMILY.CORNELIS_HOUSEHOLD_1554
+      family_state: "Cornelis + pregnant mother + Claes + younger brother + unborn child"
     '1554_post_fire':
       destroyed_or_confirmed_damage: [ENT.LOC.GOES.TURFKADE, ENT.LOC.GOES.KRUISBROEDERS]
       origin_zone: ENT.LOC.GOES.OOSTZELKE
       broad_damage: "harbour plus northern/western Goes"
-      parcel_rule: "The older-Nieuwstraat family home is not marked destroyed: no matching parcel-level evidence currently proves destruction."
-      narrative_function: "supports disruption of trade, schooling network or leased/storage assets while the family home itself can remain standing"
+      nieuwstraat_microfootprint: "mixed/partial damage supported: burned houses are documented at the corner of Nieuwstraat and in Armenhoek in 1556, while ordinary Nieuwstraat houses are also transferred after the fire"
+      family_home_specific_state: "NOVEL_CANON_DESTROYED_OR_UNINHABITABLE"
+      family_casualties_story: [ENT.PERSON.CLAES_MOTHER, ENT.PERSON.CLAES_BROTHER, ENT.PERSON.CLAES_UNBORN_SIBLING]
+      survivors_story: [ENT.PERSON.CLAES, ENT.PERSON.CORNELIS]
+      grandfather_loss_story: "Claes Jacobsz. loses the house as his property asset"
+      historical_guardrail: "No current chain proves that the documented burned houses are the 1542 Nissepat parcel and no victim list proves the fictional deaths."
+      narrative_function: "1554 destroys the family as a household; Reimerswaal then separates the two survivors geographically while Cornelis stays in Goes to rebuild and finance Claes' future."
     '1572':
       siege_pressure: [ENT.LOC.GOES.SHEER_HENDRIKSKINDERENPOORT, ENT.LOC.GOES.HAVENPOORT]
       destroyed_industry: ["outside salt works", ENT.PROP.GOES.VOORSTAD.BREWERY_1572]
@@ -156,7 +173,7 @@ modules:
     steps:
     - "Resolve scene year."
     - "Resolve character relation to place: RESIDES/OWNS/WORKS/OPERATES/VISITS."
-    - "Apply explicit 14-August decisions before using generic inference: residence, old Nieuwstraat identity and Zusterhuis meeting environment."
+    - "Apply explicit 14-August decisions before using generic inference: residence, old Nieuwstraat identity, family-fire outcome and Zusterhuis meeting environment."
     - "Query year-valid street/gate/landmark anchors."
     - "Query transport-register people/occupations on the route or immediate blocks."
     - "Apply event footprint for 1554, 1572, 1578 or later urban changes."
@@ -168,6 +185,9 @@ modules:
   - "Do not invent the exact 1542 axis of the older Nieuwstraat beyond the supported Armenhoek zone and deed topology."
   - "Cornelis' family home is canonically resolved, but residence remains distinct from his occupation and business properties."
   - "Do not conflate the 1572 burned Voorstad brewery with the documented 1577 Nissepad brewery."
-  - "Do not claim a specific Nissepat house burned in 1554 unless parcel-level evidence is found."
+  - "Do not describe the older Nieuwstraat as untouched by the 1554 fire; post-fire deeds prove burned houses in the Nieuwstraat/Armenhoek environment."
+  - "The 1542 house is destroyed/uninhabitable in novel canon, but that specific parcel loss is not a historical claim."
+  - "Claes' mother, younger brother and unborn sibling are fictional fire casualties; never present them as names recovered from historical victim records."
+  - "The Claes Jacobsz. → Cornelis → Claes genealogy is novel canon using a historical person; it is not proven by the transport registers."
   - "Do not back-project the Nardusbloem's post-1626 Sint-Sebastiaanshof meeting place into Cornelis' period."
   - "Do not infer a shared fixed meeting room for all four named Goese chambers from the Nardusbloem evidence."

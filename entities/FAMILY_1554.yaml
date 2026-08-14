@@ -1,0 +1,81 @@
+schema_version: 1.0.0
+kind: EntityRegistry
+entities:
+- id: ENT.PERSON.CLAES_MOTHER
+  type: Person
+  label: Moeder van Claes — naam open
+  fictionality: fictional
+  canon_status: CANON
+  roles:
+  - mother
+  - wife_of_cornelis
+  household:
+    spouse: ENT.PERSON.CORNELIS
+    children:
+    - ENT.PERSON.CLAES
+    - ENT.PERSON.CLAES_BROTHER
+    - ENT.PERSON.CLAES_UNBORN_SIBLING
+  pregnancy_1554:
+    status: CANON
+    gestation_at_fire: approximately_six_months
+    child: ENT.PERSON.CLAES_UNBORN_SIBLING
+  death:
+    date: '1554-05-18'
+    place: ENT.LOC.GOES
+    cause_story: Goes city fire
+    historical_status: fictional_casualty_within_historically_supported_fire_environment
+  name_status: OPEN
+- id: ENT.PERSON.CLAES_BROTHER
+  type: Person
+  label: Jongere broer van Claes — naam open
+  fictionality: fictional
+  canon_status: CANON
+  roles:
+  - younger_brother
+  birth:
+    earliest: '1544-05-01'
+    latest_exclusive: '1544-08-01'
+    preferred: approximately June 1544
+    relation_to_claes: approximately eighteen months younger
+  character_function:
+    relation: "love + rivalry + daily companionship"
+    contrast_to_claes: "more immediate/action-oriented; can pull Claes out of prolonged observation"
+    guardrail: "Do not reduce him to a sacrificial child introduced only to die; establish ordinary affection, rivalry, play and unfinished conflict before 18 May 1554."
+  death:
+    date: '1554-05-18'
+    place: ENT.LOC.GOES
+    cause_story: Goes city fire
+    historical_status: fictional_casualty_within_historically_supported_fire_environment
+  name_status: OPEN
+- id: ENT.PERSON.CLAES_UNBORN_SIBLING
+  type: Person
+  label: Ongeboren kind van Cornelis en Claes' moeder
+  fictionality: fictional
+  canon_status: CANON
+  roles:
+  - unborn_sibling
+  gestational_state:
+    at_date: '1554-05-18'
+    approximate_months: 6
+    sex: UNKNOWN
+  narrative_function:
+    primary: "embodies a future that Claes knows is real before it can be seen"
+    sinne_link: "Claes can know the child through touch/movement under his mother's skin; this becomes an early embodied example that reality can exist beyond visibility."
+  death:
+    date: '1554-05-18'
+    place: ENT.LOC.GOES
+    cause_story: death_with_mother_in_city_fire
+- id: ENT.FAMILY.CORNELIS_HOUSEHOLD_1554
+  type: FamilyUnit
+  label: Huishouden Cornelis Nissepat vóór de brand van 1554
+  fictionality: fictional_with_historical_property_anchor
+  canon_status: CANON
+  members:
+  - ENT.PERSON.CORNELIS
+  - ENT.PERSON.CLAES_MOTHER
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.CLAES_BROTHER
+  - ENT.PERSON.CLAES_UNBORN_SIBLING
+  residence: ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
+  state_before_fire: intact_household
+  state_after_fire: "reduced to Cornelis and Claes, followed by geographical separation Goes/Reimerswaal"

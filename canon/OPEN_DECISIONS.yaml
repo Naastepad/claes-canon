@@ -1,4 +1,4 @@
-schema_version: 1.3.0
+schema_version: 1.5.0
 kind: OpenDecisionRegistry
 decisions:
 - id: OPEN.CLAES.DEATH.001
@@ -91,11 +91,35 @@ decisions:
   priority: high
   question: Exact edition/copy status, owner, date and legal/social mechanism by which the special Dodoens reaches the Goes apothecary environment
   status: OPEN
+- id: OPEN.CLAES.FAMILY_FIRE_1554.001
+  domain: character_and_event
+  priority: high
+  question: What is the fictional household-level outcome of the 18 May 1554 fire for the older-Nieuwstraat home, Claes' mother and any younger sibling(s)?
+  status: RESOLVED
+  resolved_by: DEC.CLAES.FAMILY_FIRE.1554.2026-08-14
+  resolution:
+  - the 1542 family home becomes uninhabitable or is destroyed in the fire
+  - Claes and Cornelis survive because they are away from the house when the fire reaches the street
+  - Claes' mother dies in the fire while about six months pregnant
+  - Claes' younger brother, born about eighteen months after Claes, dies in the fire
+  - the unborn child dies with the mother
+  - 1554 becomes the first personal Nigredo and the rupture that precedes Reimerswaal
+  historical_frame:
+  - burned houses are explicitly documented at the corner of the older Nieuwstraat and in the Armenhoek in post-fire RAZE 1748 transport records
+  - ordinary houses also continue to be transferred in Nieuwstraat after May 1554, so the street suffered mixed/partial destruction rather than total loss
+  - no current source proves that the specific 1542 Nissepat parcel burned
+  - no current source provides a victim list identifying members of the fictional household
+  guardrails:
+  - Present the house loss and casualties as explicit novel canon, not archival fact.
+  - Do not invent historical victim documentation for the mother, brother or unborn child.
+  - Brother name and mother name remain open.
 - id: OPEN.MOTHER.ADULT_FUNCTION.001
   domain: character
   priority: medium
-  question: Adult plot function of Claes' mother after Cornelis' arrest
-  status: OPEN
+  question: If Claes' mother survives the 1554 fire, what is her adult plot function after Cornelis' arrest/death?
+  status: RESOLVED_NOT_APPLICABLE
+  resolved_by: DEC.CLAES.FAMILY_FIRE.1554.2026-08-14
+  resolution: Claes' mother dies in the 18 May 1554 fire; she has no adult plot function after Cornelis' later arrest/death.
 - id: OPEN.GILLIS.ROLE.001
   domain: character
   priority: medium
@@ -152,7 +176,7 @@ decisions:
   guardrails:
   - Historical purchase and parcel topology are evidence; occupation by Cornelis' fictional household is novel canon.
   - Residence does not establish ownership by Cornelis and is distinct from Nissepad, harbour, brewery, warehouse and salt-business sites.
-  - The 1554 fire does not automatically destroy this house without parcel-level evidence.
+  - The house is canonically lost in 1554 under DEC.CLAES.FAMILY_FIRE.1554.2026-08-14; that specific parcel loss remains fiction grounded in a historically supported partially damaged street environment.
 - id: OPEN.GOES.NIEUWSTRAAT.PRE1594.001
   domain: historical_reconstruction
   priority: high
@@ -164,10 +188,12 @@ decisions:
   - transport acts attest a Nieuwstraat before 1594
   - later transport locators connect Nieuwstraat/Oude Nieuwstraat with the Armenhoek
   - the planmatige/current Nieuwstraat belongs to the 1594 expansion decision
+  - post-fire RAZE 1748 acts document burned houses at the corner of Nieuwstraat and in the Armenhoek, while other Nieuwstraat houses survive/transfer after the fire
   guardrails:
   - Never merge the two location identities by normalized name alone.
   - Preserve the 1542 parcel topology: street east; Jacob Dierixsen de Bye north, west and south.
   - Zone-level resolution does not license an invented exact cadastral street line.
+  - Fire-damage evidence supports a mixed/partial damage zone, not automatic destruction of every property.
 - id: OPEN.GOES.REDERIJKERS.MEETINGPLACE.001
   domain: historical_reconstruction
   priority: medium

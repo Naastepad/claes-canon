@@ -1,4 +1,4 @@
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: SourceClaimRegistry
 claims:
 - id: SC.HIST.GOES.NISSEPAT.NOORDEINDE_1534.001
@@ -74,8 +74,37 @@ claims:
   source_ids: [SRC-HIST-GOES-LIVING-CITY-001]
   qualifies:
   - "Approximate damage scale in the current synthesis is about one quarter of city/harbour buildings."
-  - "Do not mark an individual house burned unless separate evidence supports it."
+  - "Do not mark an individual house burned unless separate evidence supports it or novel canon explicitly chooses a plausible parcel outcome."
   retrieval: {tags: [goes, fire, 1554, oostzelke, turfkade, kruisbroeders, westzelke]}
+- id: SC.HIST.GOES.NIEUWSTRAAT.BURNED_HOUSES_1556.001
+  type: SourceClaim
+  statement: "Post-fire transport records explicitly identify burned houses in the older Nieuwstraat/Armenhoek environment: on 27 April 1556 an 'Afgebrand huis' stood at the corner of the Nieuwstraat; on 18 May 1556 a 'Verbrand huis' again stood at the corner Nieuwstraat; and on 25 May 1556 a 'Verbrand huis' was transferred in the Armenhoek."
+  claim_type: post_fire_property_evidence
+  subject: ENT.LOC.GOES.NIEUWSTRAAT_PRE1594
+  predicate: contained_documented_burned_houses
+  object: "RAZE-1748-0441 / fol. 137; RAZE-1748-0458 / fol. 140; RAZE-1748-0463 / fol. 141"
+  story_time: {earliest: '1556-04-27', latest_exclusive: '1556-05-26', precision: bounded}
+  evidence_status: VERIFIED
+  source_ids: [SRC-HIST-GOES-LIVING-CITY-001]
+  qualifies:
+  - "The deeds verify that those properties were burned; they do not themselves name the destructive event."
+  - "The two Nieuwstraat-corner records may represent different legal/property mentions in the same micro-area; do not assume identity without chain evidence."
+  retrieval: {tags: [goes, nieuwstraat, armenhoek, burned-house, fire, 1556, RAZE-1748]}
+- id: SC.HIST.GOES.FIRE_1554.NIEUWSTRAAT_PARTIAL_DAMAGE.001
+  type: SourceClaim
+  statement: "The older Nieuwstraat should be treated as a partially affected fire environment rather than as certainly outside the 1554 damage zone: burned houses are documented there and in the Armenhoek in the post-fire register, while ordinary houses continued to be transferred in Nieuwstraat after the fire, including 13 November 1554 and 27 May 1555."
+  claim_type: urban_event_microfootprint
+  subject: ENT.LOC.GOES.NIEUWSTRAAT_PRE1594
+  predicate: was_partially_affected_in_1554_fire_reconstruction
+  object: "mixed survival and burned-property evidence"
+  story_time: {earliest: '1554-05-18', latest_exclusive: '1556-05-26', precision: reconstruction-window}
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-GOES-LIVING-CITY-001]
+  qualifies:
+  - "Association of the 1556 burned-house descriptions specifically with the great fire of 18 May 1554 is a historical reconstruction, not wording in those deeds."
+  - "The evidence rules out treating the whole older Nieuwstraat as either certainly destroyed or certainly untouched."
+  - "It does not prove that the 1542 Nissepat house burned."
+  retrieval: {tags: [goes, fire, 1554, nieuwstraat, armenhoek, partial-damage, survival]}
 - id: SC.HIST.GOES.BREWERY.NISSEPAD_1577.001
   type: SourceClaim
   statement: "In 1577 a brewery at the Nissepad was transferred with kettles, vats/tubs and tools; the common footpath bordered east, Jan Pauwelsen south, Pieter den Hollander west and a road north."

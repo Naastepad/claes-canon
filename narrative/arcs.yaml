@@ -1,4 +1,4 @@
-schema_version: 1.1.1
+schema_version: 1.2.0
 kind: NarrativeArcRegistry
 arcs:
 - id: ARC.CLAES.LIFE
@@ -22,7 +22,7 @@ arcs:
       latest_exclusive: '1554-05-18'
       precision: approximate
     dominant_movement: Wijsheid en Hoop
-    value_shift: order can be learned through attention
+    value_shift: "order can be learned through attention within an intact household of parents, two brothers and an expected child"
   - id: ARC.CLAES.LIFE.P03
     label: Verdreven kind
     story_time:
@@ -30,7 +30,9 @@ arcs:
       latest_exclusive: '1561-09-01'
       precision: bounded
     dominant_movement: Hoop under pressure
-    value_shift: observation cannot prevent loss
+    value_shift: "observation cannot prevent loss; home, mother, brother and unborn sibling are lost, then the surviving father is also lost to daily life through the Goes/Reimerswaal separation"
+    wound: "If I had seen early enough, could I have prevented what happened?"
+    relational_pressure: "Cornelis' loving attempt to preserve Claes' future is experienced through physical absence."
   - id: ARC.CLAES.LIFE.P04
     label: Adolescent die leert interpreteren
     story_time:
@@ -147,4 +149,9 @@ arcs:
   participants:
   - ENT.PERSON.CLAES
   - ENT.PERSON.CORNELIS
-  movement: admiration/need for recognition → interpretive distance → inherited responsibility → adult moral separation
+  movement: "dependence/admiration within an intact family → shared catastrophic loss → loving but painful physical separation Goes/Reimerswaal → interpretive distance/secrecy → inherited responsibility → adult moral separation"
+  1554_hinge:
+    decision_id: DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14
+    father: "stays in Goes to rebuild livelihood, business and shelter and keep paying for Claes' schooling"
+    son: "goes to Reimerswaal and can experience the father's sacrifice as another abandonment"
+    shared_truth: "Both survive the same collapse of family but must grieve it apart."
