@@ -165,15 +165,55 @@ entities:
   usage: historical context; direct story use remains conditional
 - id: ENT.PERSON.BELOVED
   type: Person
-  label: Geliefde / apothekersdochter
+  label: Mayken Adriaensdr. Lampert
   fictionality: fictional
   canon_status: CANON
   roles:
   - partner
+  - apothecary-daughter
   - material-expert
+  - botanical-counterpart
   - error-checker
   - recovery-catalyst
-  identity_status: OPEN
+  identity_status: RESOLVED
+  aliases:
+  - Mayken
+  - Mayken Adriaens
+  - Mayken Adriaensdochter
+  birth:
+    place: ENT.LOC.GOES
+    year_approx: 1546
+    precision: approximate
+  family_detail: entities/MAYKEN_LAMPERT.yaml
+  decision_id: DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14
+- id: ENT.PERSON.ADRIAEN_JACOBSZ_LAMPERT
+  type: Person
+  label: Adriaen Jacopsen Lampert
+  fictionality: historical_anchor_with_fictional_kinship
+  canon_status: CANON_CONTEXT
+  roles:
+  - Goese-property-holder
+  - likely-apothecary
+  - fictional-father-of-Mayken
+  detail: entities/MAYKEN_LAMPERT.yaml
+- id: ENT.PERSON.JACOB_LAMPART_APOTHECARY
+  type: Person
+  label: Jacob/Jacop Lampart/Lambert, apotheker
+  fictionality: historical_anchor_with_fictional_kinship
+  canon_status: CANON_CONTEXT
+  roles:
+  - Goese-apothecary
+  - fictional-grandfather-of-Mayken
+  detail: entities/MAYKEN_LAMPERT.yaml
+- id: ENT.PERSON.MERRICKEN_LAMPART_HOUSEHOLD
+  type: Person
+  label: Merricken, huisvrouw van Jacop/Jacob de apotheker
+  fictionality: historical_anchor_with_fictional_kinship
+  canon_status: CANON_CONTEXT
+  roles:
+  - Goese-apothecary-household
+  - fictional-grandmother-of-Mayken
+  detail: entities/MAYKEN_LAMPERT.yaml
 - id: ENT.LOC.GOES
   type: Location
   label: Goes
