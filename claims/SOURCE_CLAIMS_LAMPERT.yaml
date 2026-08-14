@@ -1,0 +1,69 @@
+schema_version: 1.0.0
+kind: SourceClaimRegistry
+claims:
+- id: SC.HIST.GOES.JACOB_LAMPART.APOTHECARY.001
+  type: SourceClaim
+  statement: Jacob/Jacop Lampart or Lambert is explicitly attested as an apothecary in Goes in the 1530s-1540s.
+  evidence_status: VERIFIED
+  source_refs:
+  - RAZE-1745-0249
+  - RAZE-1745-0334
+  - RAZE-1746-0472
+  - RAZE-1746-0473
+  notes:
+  - RAZE-1745-0334 names Jacop de apotheker with Merricken his wife in 1539.
+  - RAZE-1746-0472 and 0473 name Merricken as wife of Jacob Lambert apothecary in 1545.
+- id: SC.HIST.GOES.MAYKEN_LAMPART.1543.001
+  type: SourceClaim
+  statement: A Mayken described as wife of Jacop Lampart sells a house on the Molendijk on 9 July 1543.
+  evidence_status: VERIFIED
+  source_refs:
+  - RAZE-1746-0278
+  guardrail: This does not prove that Mayken and Merricken are the same woman and does not establish a direct ancestry for fictional Mayken Adriaensdr. Lampert.
+- id: SC.HIST.GOES.ADRIAEN_JACOPSEN.APOTHECARY.001
+  type: SourceClaim
+  statement: Adriaen Jacopsen is explicitly attested as an apothecary in Goes in the mid-1550s.
+  evidence_status: VERIFIED
+  source_refs:
+  - RAZE-1748 source row for 12 March 1554 house purchase in Lange Vorststraat
+  - RAZE-1748 1556 apothecary occurrence
+- id: SC.HIST.GOES.ADRIAEN_JACOPSEN_LAMPERT.IDENTITY.001
+  type: SourceClaim
+  statement: The identification of Adriaen Jacopsen the apothecary with the repeatedly attested Adriaen Jacopsen Lampert is strongly supported by name, chronology and property continuity but is not yet stated explicitly in a deed.
+  evidence_status: SUPPORTED
+  source_refs:
+  - RAZE-1747-0579
+  - RAZE-1748-0110
+  - RAZE-1748-0307
+  - RAZE-1748-0308
+  - RAZE-1748-0634
+  - RAZE-1748-0635
+  - RAZE-1748-0636
+  - RAZE-1748-0637
+  - RAZE-1748-0798
+  guardrail: Do not upgrade this identity to VERIFIED without an explicit bridging source.
+- id: SC.HIST.GOES.LAMPERT.FAMILY_SUCCESSION.001
+  type: SourceClaim
+  statement: Adriaen Jacopsen Lampert is plausibly a son or professional/family successor of the older Jacob Lambert/Lampart apothecary, including continuity around Den Eenhoorn, but the father-son relation is not explicitly proved by the current corpus.
+  evidence_status: PLAUSIBLE
+  source_refs:
+  - RAZE-1746-0205
+  - RAZE-1746-0472
+  - RAZE-1748-0637
+  - RAZE-1748-0960
+  guardrail: Treat as historical reconstruction/model, not archival genealogy.
+- id: SC.HIST.GOES.LAMPERT.ZWAENE.FIRE_1554.001
+  type: SourceClaim
+  statement: Adriaen Jacopsen Lampert acquired the house called the Nieuwe Zwaene on the north side of the Grote Markt/Oprel in 1553, and the same property appears in January 1555 as a burned house called de Zwaene.
+  evidence_status: VERIFIED
+  source_refs:
+  - RAZE-1748-0110
+  - RAZE-1748-0307
+  notes:
+  - This provides a direct historical fire-loss anchor for the Lampert milieu.
+  - It does not document deaths in the household.
+- id: SC.HIST.GOES.LAMPERT.DAUGHTER_NOT_FOUND.001
+  type: SourceClaim
+  statement: No daughter of Adriaen Jacopsen Lampert has been identified in the currently searched transport/knowledge-graph corpus.
+  evidence_status: VERIFIED_AS_SEARCH_RESULT
+  guardrail: Absence from the transport corpus is not evidence that Adriaen had no daughter; Weeskamer, testament and estate sources remain the strongest route for further research.
