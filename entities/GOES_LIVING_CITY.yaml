@@ -1,4 +1,4 @@
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: EntityRegistry
 entities:
 - id: ENT.LOC.GOES.GROTE_MARKT
@@ -90,21 +90,52 @@ entities:
     earlier_continuity: UNKNOWN
 - id: ENT.LOC.GOES.NIEUWSTRAAT_PRE1594
   type: Location
-  label: Nieuwstraat vermeld vóór 1594 — historische identiteit nog te lokaliseren
+  label: Oude/pre-1594 Nieuwstraat in of bij de Armenhoek
   fictionality: historical_reconstructed
-  canon_status: OPEN
+  canon_status: CANON
   parent: ENT.LOC.GOES
+  aliases:
+  - Nieuwstraat (pre-1594 deed-name)
+  - Oude Nieuwstraat
+  reconstruction:
+    toponym_status: VERIFIED
+    zone_status: SUPPORTED
+    probable_zone: Sint-Jacobstraat–Oude Vismarkt–Blauwe Steen / Armenhoek
+    exact_street_axis: UNKNOWN
+    decision_id: DEC.GOES.NIEUWSTRAAT.IDENTITY.2026-08-14
   constraints:
-  - must not be automatically identified with the planned Nieuwstraat of 1594
+  - must not be identified with the planned Nieuwstraat of 1594
+  - preserve deed-specific topology instead of inventing an exact cadastral trace
 - id: ENT.LOC.GOES.NIEUWSTRAAT_1594
   type: Location
-  label: Planmatige Nieuwstraat vanaf 1594
+  label: Planmatige/current Nieuwstraat from the 1594 expansion decision
   fictionality: historical
   canon_status: PROPOSED
   parent: ENT.LOC.GOES
   valid_time:
     earliest: '1594-01-01'
     precision: year
+  constraints:
+  - not the location for deeds using Nieuwstraat before 1594
+- id: ENT.LOC.GOES.ZUSTERHUIS
+  type: Location
+  label: Zusterhuis / former Zwarte-Zusters complex, Singelstraat
+  fictionality: historical_reconstructed
+  canon_status: CANON
+  parent: ENT.LOC.GOES
+  usage: canonical Cornelis-era rederijker meeting environment; historically documented for the Nardusbloem until 1626
+  reconstruction:
+    complex_location: SUPPORTED
+    exact_rederijker_room: UNKNOWN
+    later_use: orphanage from 1628
+    decision_id: DEC.GOES.REDERIJKERS.MEETINGPLACE.2026-08-14
+- id: ENT.LOC.GOES.SEBASTIAANSHOF
+  type: Location
+  label: Hof/gebouw van het Sint-Sebastiaangilde
+  fictionality: historical
+  canon_status: PROPOSED
+  parent: ENT.LOC.GOES
+  usage: Nardusbloem meeting place only from 1626 onward; not Cornelis-era default
 - id: ENT.LOC.GOES.NISSEPAD_CORRIDOR
   type: Location
   label: Nissepadcorridor buiten Goes
@@ -139,11 +170,23 @@ entities:
   usage: city-school anchor; formal Latin curriculum in Claes' childhood must not be assumed without evidence
 - id: ENT.ORG.GOES.REDERIJKERS
   type: Organization
-  label: Goese rederijkersmilieu / kamer
+  label: Goese rederijkersmilieu / kamers
   fictionality: historical
   canon_status: PROPOSED
   parent: ENT.LOC.GOES
-  usage: active cultural network; exact meeting-house location remains unresolved unless separately sourced
+  usage: umbrella for the historically separate Goudtsblome, Clisblome, Nardusbloem and Edele Castanienbloem; do not assume one meeting place for all four
+- id: ENT.ORG.GOES.NARDUSBLOEM
+  type: Organization
+  label: De Nardusbloem / oude Goese kamer van retorica
+  fictionality: historical
+  canon_status: CANON
+  parent: ENT.ORG.GOES.REDERIJKERS
+  location_history:
+  - location: ENT.LOC.GOES.ZUSTERHUIS
+    through: 1626
+  - location: ENT.LOC.GOES.SEBASTIAANSHOF
+    from: 1626
+  usage: strongest historically documented institutional model for Cornelis-era rederijker scene blocking; Cornelis' exact chamber-name remains a separate story choice
 - id: ENT.PERSON.CLAES_JACOBSZ_NISSEPAT
   type: Person
   label: Claes Jacobsz. Nissepat
@@ -188,10 +231,12 @@ entities:
   parent: ENT.LOC.GOES.NISSEPAD_CORRIDOR
 - id: ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
   type: Property
-  label: House bought by Claes Jacobsz. Nissepat in a Nieuwstraat in 1542
-  fictionality: historical
-  canon_status: OPEN
+  label: House bought by Claes Jacobsz. Nissepat in the older Nieuwstraat on 20 March 1542
+  fictionality: historical_with_fictional_story_use
+  canon_status: CANON
   parent: ENT.LOC.GOES.NIEUWSTRAAT_PRE1594
+  historical_topology: "street east; Jacob Dierixsen de Bye north, west and south"
+  story_use: canonical household residence of Cornelis and young Claes under DEC.CORNELIS.RESIDENCE.GOES.2026-08-14
 - id: ENT.PROP.GOES.NISSEPAD.BREWERY_1577
   type: Property
   label: Documented Nissepad brewery with kettles, vats and tools, 1577
