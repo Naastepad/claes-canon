@@ -1,4 +1,4 @@
-schema_version: 1.5.0
+schema_version: 1.6.0
 kind: OpenDecisionRegistry
 decisions:
 - id: OPEN.CLAES.DEATH.001
@@ -100,9 +100,9 @@ decisions:
   resolution:
   - the 1542 family home becomes uninhabitable or is destroyed in the fire
   - Claes and Cornelis survive because they are away from the house when the fire reaches the street
-  - Claes' mother dies in the fire while about six months pregnant
-  - Claes' younger brother, born about eighteen months after Claes, dies in the fire
-  - the unborn child dies with the mother
+  - Tanneken Jansdochter dies in the fire while about six months pregnant
+  - Jan Corneliszn. Nissepat, born about eighteen months after Claes, dies in the fire
+  - the unborn child dies with Tanneken
   - 1554 becomes the first personal Nigredo and the rupture that precedes Reimerswaal
   historical_frame:
   - burned houses are explicitly documented at the corner of the older Nieuwstraat and in the Armenhoek in post-fire RAZE 1748 transport records
@@ -111,15 +111,31 @@ decisions:
   - no current source provides a victim list identifying members of the fictional household
   guardrails:
   - Present the house loss and casualties as explicit novel canon, not archival fact.
-  - Do not invent historical victim documentation for the mother, brother or unborn child.
-  - Brother name and mother name remain open.
+  - Do not invent historical victim documentation for Tanneken, Jan or the unborn child.
+  - Mother and brother names are fixed by DEC.CLAES.EXTENDED_FAMILY.2026-08-14; the unborn child's sex remains open.
+- id: OPEN.CLAES.EXTENDED_FAMILY.001
+  domain: genealogy_and_character
+  priority: medium
+  question: Names, grandparents and functional distinction of Claes' paternal and maternal family lines
+  status: RESOLVED
+  resolved_by: DEC.CLAES.EXTENDED_FAMILY.2026-08-14
+  resolution:
+  - mother is Tanneken Jansdochter
+  - younger brother is Jan Corneliszn. Nissepat, approximately June 1544
+  - paternal grandparents are historical Claes Jacobsz. Nissepat plus fictional Lijsbet Pietersdochter
+  - maternal grandparents are a fictionalized grandfather modeled on a historical Goese Jan Jansen kuiper plus fictional Mayken Pietersdochter
+  - Jan is named for the maternal-grandfather figure in novel canon
+  - Lijsbet dies circa 1540–1541 in story canon; the maternal-grandfather model around 1543; Mayken survives 1554
+  guardrails:
+  - Historical source anchors and fictional kinship must remain explicitly separated.
+  - The Jan Jansen kuiper cluster may conflate same-name individuals; do not present a unique archival maternal grandfather as proven.
 - id: OPEN.MOTHER.ADULT_FUNCTION.001
   domain: character
   priority: medium
   question: If Claes' mother survives the 1554 fire, what is her adult plot function after Cornelis' arrest/death?
   status: RESOLVED_NOT_APPLICABLE
   resolved_by: DEC.CLAES.FAMILY_FIRE.1554.2026-08-14
-  resolution: Claes' mother dies in the 18 May 1554 fire; she has no adult plot function after Cornelis' later arrest/death.
+  resolution: Tanneken dies in the 18 May 1554 fire; she has no adult plot function after Cornelis' later arrest/death.
 - id: OPEN.GILLIS.ROLE.001
   domain: character
   priority: medium
@@ -172,7 +188,7 @@ decisions:
   question: Where do Cornelis Claesz Nissepat, his wife and young Claes reside in Goes during Claes' childhood, distinct from business and family property locations?
   status: RESOLVED
   resolved_by: DEC.CORNELIS.RESIDENCE.GOES.2026-08-14
-  resolution: The historical house bought by Claes Jacobsz. Nissepat in the pre-1594 Nieuwstraat on 20 March 1542 is canonically the fictional Cornelis household's family home during Claes' Goes childhood.
+  resolution: The historical house bought by Claes Jacobsz. Nissepat in the pre-1594 Nieuwstraat on 20 March 1542 is canonically the fictional Cornelis household's family home during Claes' childhood.
   guardrails:
   - Historical purchase and parcel topology are evidence; occupation by Cornelis' fictional household is novel canon.
   - Residence does not establish ownership by Cornelis and is distinct from Nissepad, harbour, brewery, warehouse and salt-business sites.

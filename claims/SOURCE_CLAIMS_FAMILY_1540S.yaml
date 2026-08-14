@@ -1,0 +1,18 @@
+schema_version: 1.0.0
+kind: SourceClaimRegistry
+claims:
+- id: SC.HIST.GOES.JAN_JANSEN_KUIPER.CLUSTER_1535_1544.001
+  type: SourceClaim
+  statement: "The Goese transport corpus contains repeated mentions of a Jan Jansen identified as kuiper between 1535 and 1544, including a 1541 purchase of a house by the Speelhuis and a 1543 transfer there by heirs of a Jan Jansen kuiper; because the name is generic and the normalized person cluster also contains later direct mentions, continuity of every same-name act as one individual is not proven."
+  claim_type: historical_person_cluster
+  subject: ENT.PERSON.JAN_JANSEN_KUIPER_MODEL
+  predicate: historical_model_for
+  object: "Goese kuiper active in the 1530s–1540s"
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-GOES-LIVING-CITY-001]
+  qualifies:
+  - "RAZE-1746-0066, 2 August 1541: Jan Jansen kuiper buys a house by the Speelhuis."
+  - "RAZE-1746-0294, 15 October 1543: heirs of Jan Jansen kuiper transfer a house by the Speelhuis."
+  - "The normalized knowledge graph groups additional Jan Jansen kuiper mentions from 1535–1544 and later; generic-name conflation remains possible."
+  - "No source proves that this historical kuiper was Tanneken's father or Claes' maternal grandfather. That kinship is explicit novel canon."
+  retrieval: {tags: [goes, jan-jansen, kuiper, cooper, speelhuis, 1541, 1543, family-model]}
