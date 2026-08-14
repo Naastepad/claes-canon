@@ -1,14 +1,15 @@
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: StoryClaimRegistry
-claim_count: 4
+claim_count: 5
 claims:
 - id: STC.CLAES.HOUSEHOLD_PRE_FIRE.1554.001
   type: StoryClaim
-  statement: "Immediately before the 18 May 1554 fire, the fictional household consists of Cornelis, Claes' mother, Claes, a younger brother about eighteen months younger than Claes, and an unborn child; the mother is about six months pregnant."
+  statement: "Immediately before the 18 May 1554 fire, the fictional household consists of Cornelis, his wife Tanneken Jansdochter, Claes, their son Jan Corneliszn. Nissepat about eighteen months younger than Claes, and an unborn child; Tanneken is about six months pregnant."
   canon_status: CANON
   evidence_status: PLAUSIBLE
   decision_ids:
   - DEC.CLAES.FAMILY_FIRE.1554.2026-08-14
+  - DEC.CLAES.EXTENDED_FAMILY.2026-08-14
   subjects:
   - ENT.PERSON.CORNELIS
   - ENT.PERSON.CLAES
@@ -19,14 +20,15 @@ claims:
     earliest: '1554-05-01'
     latest_exclusive: '1554-05-18'
     precision: approximate
-  tags: [family, goes, childhood, pre-fire, author-decision]
+  tags: [family, goes, childhood, pre-fire, tanneken, jan, author-decision]
 - id: STC.CLAES.FAMILY_FIRE.1554.001
   type: StoryClaim
-  statement: "In novel canon, the 18 May 1554 Goes fire makes the older-Nieuwstraat family home uninhabitable/destroys it. Claes and Cornelis survive away from the house; Claes' mother, his younger brother and the unborn child die in the fire."
+  statement: "In novel canon, the 18 May 1554 Goes fire makes the older-Nieuwstraat family home uninhabitable/destroys it. Claes and Cornelis survive away from the house; Tanneken Jansdochter, Jan Corneliszn. Nissepat and the unborn child die in the fire."
   canon_status: CANON
   evidence_status: PLAUSIBLE
   decision_ids:
   - DEC.CLAES.FAMILY_FIRE.1554.2026-08-14
+  - DEC.CLAES.EXTENDED_FAMILY.2026-08-14
   subjects:
   - ENT.PERSON.CLAES
   - ENT.PERSON.CORNELIS
@@ -41,7 +43,7 @@ claims:
   source_refs:
   - SC.HIST.GOES.NIEUWSTRAAT.BURNED_HOUSES_1556.001
   - SC.HIST.GOES.FIRE_1554.NIEUWSTRAAT_PARTIAL_DAMAGE.001
-  tags: [family, fire, trauma, nigredo, goes, author-decision]
+  tags: [family, fire, trauma, nigredo, goes, tanneken, jan, author-decision]
 - id: STC.CLAES.GRANDFATHER.NISSEPAT.001
   type: StoryClaim
   statement: "For novel genealogy, historical Claes Jacobsz. Nissepat is the fictional father of Cornelis and paternal grandfather of Claes. He remains story-owner of the 1542 Nieuwstraat house through the fire, loses that property in 1554, and helps Cornelis continue paying for Claes' education afterward."
@@ -77,3 +79,26 @@ claims:
     latest_exclusive: '1561-09-01'
     precision: bounded
   tags: [father-son, separation, reimerswaal, education, rebuilding, grief, author-decision]
+- id: STC.CLAES.EXTENDED_FAMILY.001
+  type: StoryClaim
+  statement: "Claes' extended novel family consists on the paternal side of historical Claes Jacobsz. Nissepat and fictional Lijsbet Pietersdochter, and on the maternal side of Tanneken's father modeled on a historical Goese Jan Jansen kuiper and fictional Mayken Pietersdochter. Jan Corneliszn. is named for his maternal grandfather in novel canon. Lijsbet has died by Claes' early childhood; the maternal-grandfather model dies around 1543 in the story; Mayken survives the 1554 fire and preserves care and family memory, while Claes Jacobsz. chiefly helps secure economic and educational continuity."
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids:
+  - DEC.CLAES.EXTENDED_FAMILY.2026-08-14
+  subjects:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.CLAES_JACOBSZ_NISSEPAT
+  - ENT.PERSON.LIJSBET_PIETERSDOCHTER
+  - ENT.PERSON.JAN_JANSEN_KUIPER_MODEL
+  - ENT.PERSON.MAYKEN_PIETERSDOCHTER
+  - ENT.PERSON.CLAES_MOTHER
+  - ENT.PERSON.CLAES_BROTHER
+  source_refs:
+  - SC.HIST.GOES.NISSEPAT.NIEUWSTRAAT_1542.001
+  - SC.HIST.GOES.JAN_JANSEN_KUIPER.CLUSTER_1535_1544.001
+  tags: [family, genealogy, grandparents, tanneken, jan, kuiper, mayken, lijsbet, author-decision]
+  guardrails:
+  - "Claes Jacobsz. Nissepat is historical; his kinship to fictional Cornelis is novel canon."
+  - "The Jan Jansen kuiper cluster is a historical model; its identification as Tanneken's father and his circa-1543 story death are fiction."
+  - "Lijsbet and Mayken are fictional."
