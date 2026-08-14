@@ -1,4 +1,4 @@
-schema_version: 1.3.0
+schema_version: 1.4.0
 kind: OpenDecisionRegistry
 decisions:
 - id: OPEN.CLAES.DEATH.001
@@ -91,11 +91,37 @@ decisions:
   priority: high
   question: Exact edition/copy status, owner, date and legal/social mechanism by which the special Dodoens reaches the Goes apothecary environment
   status: OPEN
+- id: OPEN.CLAES.FAMILY_FIRE_1554.001
+  domain: character_and_event
+  priority: high
+  question: What is the fictional household-level outcome of the 18 May 1554 fire for the older-Nieuwstraat home, Claes' mother and any younger sibling(s)?
+  status: OPEN
+  historical_frame:
+  - burned houses are explicitly documented at the corner of the older Nieuwstraat and in the Armenhoek in post-fire RAZE 1748 transport records
+  - ordinary houses also continue to be transferred in Nieuwstraat after May 1554, so the street suffered mixed/partial destruction rather than total loss
+  - no current source proves that the specific 1542 Nissepat parcel burned
+  - no current source provides a victim list identifying members of the fictional household
+  preferred_story_hypothesis:
+  - the 1542 family home becomes uninhabitable or is destroyed in the fire
+  - Claes and Cornelis survive because they are away from the house when the fire reaches the street
+  - Claes' mother and one younger sister die in the fire
+  - this creates the first personal Nigredo and gives the move to Reimerswaal both educational and emergency-household logic
+  status_of_preference: PROPOSED_NOT_CANON
+  alternatives:
+  - house destroyed but mother survives
+  - house damaged but repairable; no immediate family deaths
+  - house survives while another family/business property is lost
+  guardrails:
+  - Do not present the destruction of the 1542 Nissepat house as a historical fact unless parcel-chain evidence is found.
+  - Do not invent named historical fire victims; mother/sibling casualties would be explicit novel fiction.
+  - If mother dies in 1554, OPEN.MOTHER.ADULT_FUNCTION.001 becomes obsolete and must be resolved accordingly.
 - id: OPEN.MOTHER.ADULT_FUNCTION.001
   domain: character
   priority: medium
-  question: Adult plot function of Claes' mother after Cornelis' arrest
+  question: If Claes' mother survives the 1554 fire, what is her adult plot function after Cornelis' arrest/death?
   status: OPEN
+  depends_on: OPEN.CLAES.FAMILY_FIRE_1554.001
+  note: "This question existed before the Nieuwstraat fire evidence was sharpened. It is now conditional: if the preferred 1554 casualty hypothesis is canonised, there is no later adult-mother function."
 - id: OPEN.GILLIS.ROLE.001
   domain: character
   priority: medium
@@ -152,7 +178,7 @@ decisions:
   guardrails:
   - Historical purchase and parcel topology are evidence; occupation by Cornelis' fictional household is novel canon.
   - Residence does not establish ownership by Cornelis and is distinct from Nissepad, harbour, brewery, warehouse and salt-business sites.
-  - The 1554 fire does not automatically destroy this house without parcel-level evidence.
+  - The old Nieuwstraat is now a supported partially damaged 1554 fire environment; the specific 1542 house outcome remains OPEN.CLAES.FAMILY_FIRE_1554.001 rather than being presumed safe or destroyed.
 - id: OPEN.GOES.NIEUWSTRAAT.PRE1594.001
   domain: historical_reconstruction
   priority: high
@@ -164,10 +190,12 @@ decisions:
   - transport acts attest a Nieuwstraat before 1594
   - later transport locators connect Nieuwstraat/Oude Nieuwstraat with the Armenhoek
   - the planmatige/current Nieuwstraat belongs to the 1594 expansion decision
+  - post-fire RAZE 1748 acts document burned houses at the corner of Nieuwstraat and in the Armenhoek, while other Nieuwstraat houses survive/transfer after the fire
   guardrails:
   - Never merge the two location identities by normalized name alone.
   - Preserve the 1542 parcel topology: street east; Jacob Dierixsen de Bye north, west and south.
   - Zone-level resolution does not license an invented exact cadastral street line.
+  - Fire-damage evidence supports a mixed/partial damage zone, not automatic destruction of every property.
 - id: OPEN.GOES.REDERIJKERS.MEETINGPLACE.001
   domain: historical_reconstruction
   priority: medium
