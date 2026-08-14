@@ -1,4 +1,4 @@
-schema_version: 1.4.0
+schema_version: 1.5.0
 kind: OpenDecisionRegistry
 decisions:
 - id: OPEN.CLAES.DEATH.001
@@ -95,33 +95,31 @@ decisions:
   domain: character_and_event
   priority: high
   question: What is the fictional household-level outcome of the 18 May 1554 fire for the older-Nieuwstraat home, Claes' mother and any younger sibling(s)?
-  status: OPEN
+  status: RESOLVED
+  resolved_by: DEC.CLAES.FAMILY_FIRE.1554.2026-08-14
+  resolution:
+  - the 1542 family home becomes uninhabitable or is destroyed in the fire
+  - Claes and Cornelis survive because they are away from the house when the fire reaches the street
+  - Claes' mother dies in the fire while about six months pregnant
+  - Claes' younger brother, born about eighteen months after Claes, dies in the fire
+  - the unborn child dies with the mother
+  - 1554 becomes the first personal Nigredo and the rupture that precedes Reimerswaal
   historical_frame:
   - burned houses are explicitly documented at the corner of the older Nieuwstraat and in the Armenhoek in post-fire RAZE 1748 transport records
   - ordinary houses also continue to be transferred in Nieuwstraat after May 1554, so the street suffered mixed/partial destruction rather than total loss
   - no current source proves that the specific 1542 Nissepat parcel burned
   - no current source provides a victim list identifying members of the fictional household
-  preferred_story_hypothesis:
-  - the 1542 family home becomes uninhabitable or is destroyed in the fire
-  - Claes and Cornelis survive because they are away from the house when the fire reaches the street
-  - Claes' mother and one younger sister die in the fire
-  - this creates the first personal Nigredo and gives the move to Reimerswaal both educational and emergency-household logic
-  status_of_preference: PROPOSED_NOT_CANON
-  alternatives:
-  - house destroyed but mother survives
-  - house damaged but repairable; no immediate family deaths
-  - house survives while another family/business property is lost
   guardrails:
-  - Do not present the destruction of the 1542 Nissepat house as a historical fact unless parcel-chain evidence is found.
-  - Do not invent named historical fire victims; mother/sibling casualties would be explicit novel fiction.
-  - If mother dies in 1554, OPEN.MOTHER.ADULT_FUNCTION.001 becomes obsolete and must be resolved accordingly.
+  - Present the house loss and casualties as explicit novel canon, not archival fact.
+  - Do not invent historical victim documentation for the mother, brother or unborn child.
+  - Brother name and mother name remain open.
 - id: OPEN.MOTHER.ADULT_FUNCTION.001
   domain: character
   priority: medium
   question: If Claes' mother survives the 1554 fire, what is her adult plot function after Cornelis' arrest/death?
-  status: OPEN
-  depends_on: OPEN.CLAES.FAMILY_FIRE_1554.001
-  note: "This question existed before the Nieuwstraat fire evidence was sharpened. It is now conditional: if the preferred 1554 casualty hypothesis is canonised, there is no later adult-mother function."
+  status: RESOLVED_NOT_APPLICABLE
+  resolved_by: DEC.CLAES.FAMILY_FIRE.1554.2026-08-14
+  resolution: Claes' mother dies in the 18 May 1554 fire; she has no adult plot function after Cornelis' later arrest/death.
 - id: OPEN.GILLIS.ROLE.001
   domain: character
   priority: medium
@@ -178,7 +176,7 @@ decisions:
   guardrails:
   - Historical purchase and parcel topology are evidence; occupation by Cornelis' fictional household is novel canon.
   - Residence does not establish ownership by Cornelis and is distinct from Nissepad, harbour, brewery, warehouse and salt-business sites.
-  - The old Nieuwstraat is now a supported partially damaged 1554 fire environment; the specific 1542 house outcome remains OPEN.CLAES.FAMILY_FIRE_1554.001 rather than being presumed safe or destroyed.
+  - The house is canonically lost in 1554 under DEC.CLAES.FAMILY_FIRE.1554.2026-08-14; that specific parcel loss remains fiction grounded in a historically supported partially damaged street environment.
 - id: OPEN.GOES.NIEUWSTRAAT.PRE1594.001
   domain: historical_reconstruction
   priority: high
