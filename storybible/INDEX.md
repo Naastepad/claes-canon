@@ -14,6 +14,7 @@ Operational navigation for the Lemma-focused, McKee/NOS-inspired Claes Storybibl
 
 - `MASTER.md` — authority manifest and source/conversion context.
 - `../canon/DECISIONS_2026-08-13.md` — current explicit author decisions.
+- `../canon/DECISIONS_2026-08-15.md` — execution/Reformation arc, Cornelis execution witness decision and Fabritius-security-break clarification.
 - `../canon/DECISIONS.yaml` — machine-readable current decisions.
 - `../mapping/CONVERSION_LEDGER.yaml` — all 31 Revision 11 top-level source sections with line ranges/hashes.
 - `../mapping/CONVERSION_REPORT.yaml` — conversion completeness and remaining normalization.
@@ -21,7 +22,9 @@ Operational navigation for the Lemma-focused, McKee/NOS-inspired Claes Storybibl
 ## Canon truth
 
 - `../claims/SOURCE_CLAIMS.yaml` — historical/research claims.
+- `../claims/SOURCE_CLAIMS_EXECUTIONS_REFORMATION.yaml` — Casteels, martelaarsbronnen and execution-culture source claims.
 - `../claims/STORY_CLAIMS.yaml` — atomic novel truths.
+- `../claims/STORY_CLAIMS_EXECUTIONS_REFORMATION.yaml` — execution/Reformation story claims for Claes and Cornelis.
 - `../claims/DECISIONS.yaml` — general architecture/story decisions.
 - `../canon/OPEN_DECISIONS.yaml` — unresolved author decisions.
 - `../review/MIGRATION_REVIEW.yaml` — migrated/derived/new/conflict review state.
@@ -36,6 +39,7 @@ Operational navigation for the Lemma-focused, McKee/NOS-inspired Claes Storybibl
 ## Narrative realization
 
 - `../narrative/instances.yaml` — chapters, scenes, sequences and events.
+- `../narrative/instances_executions_reformation.yaml` — execution/Reformation narrative instances and scene candidates.
 - `../narrative/scenes.yaml` — richer scene analyses.
 - `../narrative/arcs.yaml` — base character, relationship and macro arcs.
 - `../narrative/sinne_recovery.yaml` — approved *sinne* trauma/recovery/sovereignty arc extension.
@@ -45,6 +49,11 @@ Operational navigation for the Lemma-focused, McKee/NOS-inspired Claes Storybibl
 - `../narrative/themes.yaml` — controlling idea, needs, spiritual journey and value axes.
 - `../narrative/code_architecture.yaml` — recovery/code architecture.
 - `../narrative/CRAFT_GUARDRAILS.yaml` — writing and continuity guardrails.
+
+## Storybible dossiers
+
+- `EXECUTIONS_REFORMATION_CLAES.md` — executions, Reformation, ars moriendi, Casteels, martelaarsbronnen, Cornelis' death model and the execution knowledge reservoir.
+- `FAMILY_CLAES_1542_1554.md` — family, house, 1554 fire and post-fire rupture.
 
 ## Deterministic engine
 
