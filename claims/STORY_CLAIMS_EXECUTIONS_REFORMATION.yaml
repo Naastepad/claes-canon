@@ -1,0 +1,114 @@
+schema_version: 1.0.0
+kind: StoryClaimRegistry
+id: STCR.EXECUTIONS_REFORMATION.2026-08-15
+status: AUTHORING
+claims:
+  - id: STC.CLAES.EXECUTION_ARC.001
+    type: StoryClaim
+    canon_status: CANON
+    evidence_status: SUPPORTED
+    decision_ids: [DEC.CLAES.EXECUTIONS_REFORMATION_ARC.2026-08-15]
+    statement: Claes' understanding of execution develops from Catholic civic ars moriendi through Reformation martyr disruption into the moral insight that truth may need indirect carriers when bodies, mouths and public rituals fail.
+    subjects: [ENT.PERSON.CLAES]
+    tags: [execution_arc, reformation, ars_moriendi, martyrdom, code]
+
+  - id: STC.CLAES.CATHOLIC_EXECUTION_BASELINE.001
+    type: StoryClaim
+    canon_status: CANON
+    evidence_status: PLAUSIBLE
+    statement: Claes begins as a Catholic-formed observer who understands execution as part of a shared order of sin, punishment, priestly consolation, repentance and public compassion.
+    subjects: [ENT.PERSON.CLAES]
+    objects: [ENT.LOC.GOES]
+    story_time:
+      earliest: '1547-01-01'
+      latest_exclusive: '1554-05-19'
+      precision: approximate
+    tags: [Goes, catholic_baseline, ars_moriendi]
+
+  - id: STC.CLAES.EXECUTION_KNOWLEDGE.RESERVOIR.001
+    type: StoryClaim
+    canon_status: CANON
+    evidence_status: SUPPORTED
+    statement: Claes may have knowledge by witness, hearsay, rumor, merchant talk, prison talk, martyrs' books or later reading of a broad execution reservoir along his route, especially Goes, Antwerp, Middelburg, Delft, Hoorn and Enkhuizen.
+    subjects: [ENT.PERSON.CLAES]
+    source_claims:
+      - SC.HIST.ANTWERP.MARTYR_LIST.1557_1577.001
+      - SC.HIST.ANTWERP.EXECUTIONS.1557_1564.001
+      - SC.HIST.REBEL_JUSTICE.INVERSION.1572.001
+    tags: [knowledge, execution_list, route]
+
+  - id: STC.CLAES.GRENDEL_LOCAL_RUPTURE.1563.001
+    type: StoryClaim
+    canon_status: PROPOSED
+    evidence_status: SUPPORTED
+    statement: Jan Grendel's execution on the market of Goes functions as Claes' local rupture: Goes itself, not only Antwerp, becomes capable of turning faith into public fire.
+    subjects: [ENT.PERSON.CLAES]
+    objects: [ENT.LOC.GOES]
+    story_time:
+      earliest: '1563-01-01'
+      latest_exclusive: '1564-01-01'
+      precision: year
+    source_claims: [SC.HIST.GOES.GRENDEL.1563.001]
+    tags: [Goes, Jan_Grendel, local_rupture]
+
+  - id: STC.SECURITY.FABRITIUS_CANDIDATE.1564.001
+    type: StoryClaim
+    canon_status: PROPOSED
+    evidence_status: SUPPORTED
+    statement: Christoffel Fabritius' disrupted Antwerp execution on 4 October 1564 is the preferred historical candidate for the existing storybible security break after stonesoproer, but the low-level link that makes Cornelis unsafe remains open.
+    subjects: [ENT.PERSON.CLAES, ENT.PERSON.CORNELIS]
+    objects: [ENT.LOC.ANTWERP]
+    story_time:
+      date: '1564-10-04'
+      precision: day
+    source_claims: [SC.HIST.ANTWERP.FABRITIUS.1564.001]
+    open_decisions: [OPEN.SECURITY.LOW_LINK.1564.001]
+    tags: [Fabritius, security_break, Antwerp, proposed]
+
+  - id: STC.MEMORIAAL.DEE_NOT_CORNELIS.CORRECTION.001
+    type: StoryClaim
+    canon_status: CANON
+    evidence_status: SUPPORTED
+    statement: Cornelis does not give Claes the memoriaal; Dee gives it early in 1564 as a pedagogical workbook, and after 4 October 1564 that existing object is prepared as blind recovery carrier.
+    subjects: [ENT.PERSON.CLAES, ENT.PERSON.JOHN_DEE, ENT.PERSON.CORNELIS]
+    objects: [OBJ.MEMORIAAL]
+    tags: [memoriaal, correction, Dee, Cornelis]
+
+  - id: STC.CORNELIS.EXECUTION_WITNESS.001
+    type: StoryClaim
+    canon_status: CANON
+    evidence_status: PLAUSIBLE
+    decision_ids: [DEC.CLAES.CORNELIS_EXECUTION_WITNESS.2026-08-15]
+    statement: Claes is physically present as witness at Cornelis' execution; exact date, place, formal charge and manner remain open within the working 1568-1569 window.
+    subjects: [ENT.PERSON.CLAES, ENT.PERSON.CORNELIS]
+    story_time:
+      earliest: '1568-07-01'
+      latest_exclusive: '1570-01-01'
+      precision: work-window
+    open_decisions: [OPEN.CORNELIS.DEATH.001]
+    tags: [Cornelis, execution, witness, canon_function_open_details]
+
+  - id: STC.CORNELIS.CARRIER_NOT_PRINTER.001
+    type: StoryClaim
+    canon_status: PROPOSED
+    evidence_status: PLAUSIBLE
+    statement: Cornelis' plausible death model is not that he is a protected printer like Plantin or Silvius, but that he is a lower-protection logistical carrier whose routes, vaten, storage, papers, contacts and silence make him expendable.
+    subjects: [ENT.PERSON.CORNELIS]
+    tags: [Cornelis, book_smuggling, logistics, plausibility]
+
+  - id: STC.CORNELIS.SILENCE_THIRD_SCRIPT.001
+    type: StoryClaim
+    canon_status: PROPOSED
+    evidence_status: PLAUSIBLE
+    statement: Cornelis should die neither as ordinary repentant criminal nor as loud Protestant martyr, but in a third script of protective silence: he gives no names and no complete explanation.
+    subjects: [ENT.PERSON.CORNELIS, ENT.PERSON.CLAES]
+    tags: [Cornelis, silence, ars_moriendi, martyrdom, father_son]
+
+  - id: STC.CLAES.CODE_FROM_EXECUTION_CRISIS.001
+    type: StoryClaim
+    canon_status: CANON
+    evidence_status: SUPPORTED
+    statement: The 1570 recovery architecture becomes morally legible through the execution crisis: as bodies can be burned, drowned, displayed or silenced, testimony must survive through indirect carriers such as letters, relics, books and code.
+    subjects: [ENT.PERSON.CLAES]
+    objects: [OBJ.MEMORIAAL, OBJ.LASCASAS_CIPHERTEXT]
+    tags: [code, martyr_memory, moral_burden, testimony]
