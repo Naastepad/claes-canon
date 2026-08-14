@@ -190,7 +190,7 @@ entities:
   type: Person
   label: Adriaen Jacopsen Lampert
   fictionality: historical_anchor_with_fictional_kinship
-  canon_status: CANON_CONTEXT
+  canon_status: CANON
   roles:
   - Goese-property-holder
   - likely-apothecary
@@ -200,7 +200,7 @@ entities:
   type: Person
   label: Jacob/Jacop Lampart/Lambert, apotheker
   fictionality: historical_anchor_with_fictional_kinship
-  canon_status: CANON_CONTEXT
+  canon_status: CANON
   roles:
   - Goese-apothecary
   - fictional-grandfather-of-Mayken
@@ -209,7 +209,7 @@ entities:
   type: Person
   label: Merricken, huisvrouw van Jacop/Jacob de apotheker
   fictionality: historical_anchor_with_fictional_kinship
-  canon_status: CANON_CONTEXT
+  canon_status: CANON
   roles:
   - Goese-apothecary-household
   - fictional-grandmother-of-Mayken
