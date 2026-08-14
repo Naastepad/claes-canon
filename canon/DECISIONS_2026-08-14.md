@@ -89,6 +89,36 @@ This gives the same act two simultaneous meanings:
 
 The father-son arc must preserve both truths. Cornelis' continued labour, payments, books and messages are acts of care; physical absence can nevertheless be experienced by Claes as abandonment. Cornelis' later death is therefore also the loss of time they believed they might still recover.
 
+## DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14 — Mayken Adriaensdr. Lampert
+
+**Decision:** Claes' beloved is **Mayken Adriaensdr. Lampert**, a fictional Goese woman born approximately **1546**.
+
+In novel canon:
+- Mayken is the daughter of **Adriaen Jacobsz. Lampert**;
+- Adriaen belongs to the Goese apothecary milieu and is fictionally made the son/family successor of the older **Jacob/Jacop Lampart/Lambert, apotheker**;
+- Mayken therefore grows up amid materia medica, botanical identification, preparation, measurement, sensory material judgement and practical book use;
+- this independently grounds her later function in Dodoens work, material verification and error control;
+- she becomes Claes' beloved and later sensory/spiritual companion without becoming his therapist or solving his personal recovery for him.
+
+The historical foundation is deliberately layered:
+- **verified:** Jacob/Jacop Lampart/Lambert is named as an apotheker in Goese acts of the 1530s/1540s;
+- **verified:** Adriaen Jacopsen is explicitly called `apteker` in 1554 and 1556;
+- **verified:** Adriaen Jacopsen Lampert has a substantial Goese property trail;
+- **supported, not literally proved in one current act:** Adriaen Jacopsen apteker and Adriaen Jacopsen Lampert are the same man;
+- **supported, not archival proof:** Jacob/Jacop Lampart/Lambert is Adriaen's father/family predecessor;
+- **not found:** no currently searchable transport act identifies a historical daughter of Adriaen.
+
+The name **Mayken** is selected from the direct historical Lampart environment: in 1543 a `Mayken huisvrouw Jacop Lampart` is documented. This establishes an appropriate family-environment name, but **does not** prove that she was the grandmother of the fictional Mayken. Other acts call the wife of Jacop/Jacob the apothecary **Merricken**; the relation between the Mayken and Merricken forms remains unresolved.
+
+Mayken and Claes share the historical horizon of the **1554 Goes fire**, but not the same fictional trauma. Adriaen Jacopsen Lampert's `Nyen Zwaene`, acquired in 1553, appears in January 1555 as a **verbrand huis genaamd de Zwaene**. In story canon Mayken remembers the fire and her family's material disruption/rebuilding; Claes loses his immediate household. Their experiences may resonate but must not be made identical.
+
+**Guardrails:**
+- Mayken is not a recovered historical daughter; her existence and daughtership are fiction.
+- Do not turn the likely Adriaen-apotheker/Lampert identity into an unqualified archival fact.
+- Do not turn the likely Jacob→Adriaen continuity into proven genealogy.
+- Mayken's mother remains open/fictional.
+- `OPEN.DODOENS.PROVENANCE.001` remains open: fixing Mayken's identity does not establish which Dodoens edition/copy enters the recovery architecture or by what legal/social route.
+
 ## Chamber chronology guardrail
 
 Do not flatten the four named Goese chambers into one simultaneous institution:
@@ -97,4 +127,4 @@ Do not flatten the four named Goese chambers into one simultaneous institution:
 - De Nardusbloem / older Magdalena tradition: active in the mid-sixteenth-century Goese rhetorician landscape;
 - De Edele Castanienbloem: documented from 1595 and therefore not a historical Cornelis-era chamber unless deliberately used as an acknowledged fictional back-projection.
 
-These decisions are propagated to Story Claims, family/person/property entities, Narrative Instances, arcs, relationships, the Goes world module and the operating master before merge of PR #5.
+These decisions are propagated to Story Claims, family/person/property entities, Narrative Instances, arcs, relationships, the Goes world module and the operating master before merge of the relevant integration PRs.
