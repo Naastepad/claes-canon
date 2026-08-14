@@ -55,7 +55,7 @@ claims:
     type: StoryClaim
     canon_status: PROPOSED
     evidence_status: SUPPORTED
-    statement: Christoffel Fabritius' disrupted Antwerp execution on 4 October 1564 is the preferred historical candidate for the existing storybible security break after stonesoproer, but the low-level link that makes Cornelis unsafe remains open.
+    statement: Christoffel Fabritius' disrupted Antwerp execution on 4 October 1564 is the preferred historical candidate for the existing storybible security break after stenenoproer, but the low-level link that makes Cornelis unsafe remains open.
     subjects: [ENT.PERSON.CLAES, ENT.PERSON.CORNELIS]
     objects: [ENT.LOC.ANTWERP]
     story_time:
@@ -79,28 +79,46 @@ claims:
     canon_status: CANON
     evidence_status: PLAUSIBLE
     decision_ids: [DEC.CLAES.CORNELIS_EXECUTION_WITNESS.2026-08-15]
-    statement: Claes is physically present as witness at Cornelis' execution; exact date, place, formal charge and manner remain open within the working 1568-1569 window.
+    statement: Claes is physically present as witness at Cornelis' execution.
     subjects: [ENT.PERSON.CLAES, ENT.PERSON.CORNELIS]
     story_time:
-      earliest: '1568-07-01'
-      latest_exclusive: '1570-01-01'
-      precision: work-window
-    open_decisions: [OPEN.CORNELIS.DEATH.001]
-    tags: [Cornelis, execution, witness, canon_function_open_details]
+      date: '1569-03-12'
+      precision: day
+    tags: [Cornelis, execution, witness, canon]
+
+  - id: STC.CORNELIS.DEATH.ANTWERP.1569.001
+    type: StoryClaim
+    canon_status: CANON_AUTHORING_BRANCH
+    evidence_status: PLAUSIBLE
+    decision_ids: [DEC.CORNELIS.DEATH.1569.2026-08-15]
+    statement: Cornelis is executed publicly in Antwerp on 12 March 1569 after detention in or by Het Steen and a sentence for logistical complicity in forbidden heretical and seditious book/paper traffic and refusal to name accomplices; he is beheaded by sword on the Grote Markt before/near the Stadhuis.
+    subjects: [ENT.PERSON.CORNELIS, ENT.PERSON.CLAES]
+    objects: [ENT.LOC.ANTWERP, ENT.LOC.ANTWERP.STEEN, ENT.LOC.ANTWERP.GROTE_MARKT]
+    story_time:
+      date: '1569-03-12'
+      precision: day
+    tags: [Cornelis, Antwerp, execution, beheading, forbidden_books, protective_silence]
+    guardrails:
+      - Cornelis is not a protected printer, author or preacher.
+      - Cornelis is not carrying OBJ.MEMORIAAL.
+      - Claes does not understand the Las Casas recovery architecture at the execution.
+      - This is novel canon, not archival evidence for a historical Cornelis execution.
 
   - id: STC.CORNELIS.CARRIER_NOT_PRINTER.001
     type: StoryClaim
-    canon_status: PROPOSED
+    canon_status: CANON_AUTHORING_BRANCH
     evidence_status: PLAUSIBLE
-    statement: Cornelis' plausible death model is not that he is a protected printer like Plantin or Silvius, but that he is a lower-protection logistical carrier whose routes, vaten, storage, papers, contacts and silence make him expendable.
+    decision_ids: [DEC.CORNELIS.DEATH.1569.2026-08-15]
+    statement: Cornelis' death model is not that he is a protected printer like Plantin or Silvius, but that he is a lower-protection logistical carrier whose routes, vaten, storage, papers, contacts and silence make him expendable.
     subjects: [ENT.PERSON.CORNELIS]
     tags: [Cornelis, book_smuggling, logistics, plausibility]
 
   - id: STC.CORNELIS.SILENCE_THIRD_SCRIPT.001
     type: StoryClaim
-    canon_status: PROPOSED
+    canon_status: CANON_AUTHORING_BRANCH
     evidence_status: PLAUSIBLE
-    statement: Cornelis should die neither as ordinary repentant criminal nor as loud Protestant martyr, but in a third script of protective silence: he gives no names and no complete explanation.
+    decision_ids: [DEC.CORNELIS.DEATH.1569.2026-08-15]
+    statement: Cornelis dies neither as ordinary repentant criminal nor as loud Protestant martyr, but in a third script of protective silence: he gives no names and no complete explanation.
     subjects: [ENT.PERSON.CORNELIS, ENT.PERSON.CLAES]
     tags: [Cornelis, silence, ars_moriendi, martyrdom, father_son]
 
