@@ -1,0 +1,145 @@
+schema_version: 1.0.0
+kind: WorldModuleRegistry
+modules:
+- id: WORLD.GOES_LIVING_CITY
+  label: "Goes als levende stad — 1542–1579"
+  canon_status: PROPOSED
+  record_role: RESEARCH_AND_SCENE_BLOCKING_FRAMEWORK
+  historical_method: TIME_SLICED_TOPOLOGICAL_AND_TOPOGRAPHIC_RECONSTRUCTION
+  location_anchor: ENT.LOC.GOES
+  supported_by:
+  - SC.HIST.GOES.NISSEPAT.NOORDEINDE_1534.001
+  - SC.HIST.GOES.NISSEPAT.NISSEPAD_1540.001
+  - SC.HIST.GOES.NISSEPAT.NIEUWSTRAAT_1542.001
+  - SC.HIST.GOES.STADSSCHOOL.LOCATION_1558.001
+  - SC.HIST.GOES.SALT.WESTZELKE_1543_1544.001
+  - SC.HIST.GOES.FIRE_1554.FOOTPRINT.001
+  - SC.HIST.GOES.BREWERY.NISSEPAD_1577.001
+  - SC.HIST.GOES.WESTZELKE.BURNT_SALTPAN_1577.001
+  - SC.HIST.GOES.SIEGE_1572.INDUSTRY.001
+  - SC.HIST.GOES.REDERIJKERS.LOCATION_UNKNOWN.001
+  - SC.HIST.GOES_GROTE_KERK.BUILD.001
+  - SC.HIST.GOES_GROTE_KERK.INTERIOR.001
+  purpose:
+    primary: "Answer scene questions spatially and socially: who/what is where, which streets and gates connect them, what a route passes, and what changes after fire, siege and confessional transition."
+    atlas_relation: "The Storybible stores semantic/time/evidence relations; the Stadsatlas stores dense parcel geometry and routing. Neither replaces the other."
+  spatial_reasoning_contract:
+    relations_are_distinct: [OWNS, SELLS, BUYS, RESIDES, RENTS, OPERATES_BUSINESS, WORKS_AT, ADJOINS, USES, VISITS]
+    residence_rule: "Never infer RESIDES from OWNS, ADJOINS or OPERATES_BUSINESS. If no residence relation exists, answer that residence is unresolved."
+    parcel_rule: "A transport chain is not automatically one simultaneous physical parcel. Use the year slider and physical-place/slot inference before depicting multiple houses."
+    boundary_rule: "Four belendingen support topology, side-of-street and neighbourhood sequence, not exact cadastral shape."
+    modern_map_rule: "Modern street names may anchor durable geometry but do not prove identical sixteenth-century names or micro-traces."
+  core_anchors:
+    civic_religious:
+    - {location: ENT.LOC.GOES.GROTE_MARKT, function: market_and_civic_focus}
+    - {location: ENT.LOC.GOES_GROTE_KERK, function: catholic_church_until_1578_then_confessional_transition}
+    - {location: ENT.LOC.GOES.SCHUTTERSHOF_STADSSCHOOL, function: city_school_anchor_attested_1558}
+    commerce_industry:
+    - {location: ENT.LOC.GOES.HAVEN, function: shipping_trade_supply_and_market_access}
+    - {location: ENT.LOC.GOES.WESTZELKE, function: salt_industry_and_harbour_edge}
+    - {location: ENT.LOC.GOES.OOSTZELKE, function: salt_industry_and_1554_fire_origin_zone}
+    - {location: ENT.LOC.GOES.TURFKADE, function: trade_street_and_1554_confirmed_damage_area}
+    movement:
+    - {location: ENT.LOC.GOES.GANZEPOORT, function: southern_city_threshold}
+    - {location: ENT.LOC.GOES.VOORSTAD, function: built_approach_outside_southern_gate}
+    - {location: ENT.LOC.GOES.NISSEPAD_CORRIDOR, function: southern_rural_business_and_family_property_corridor}
+    - {location: ENT.LOC.GOES.SHEER_HENDRIKSKINDERENPOORT, function: western_gateway_and_1572_pressure_point}
+    - {location: ENT.LOC.GOES.HAVENPOORT, function: harbour_gateway_and_1572_pressure_point}
+  street_and_place_identity_rules:
+    pre1594_nieuwstraat:
+      entity: ENT.LOC.GOES.NIEUWSTRAAT_PRE1594
+      status: OPEN
+      rule: "Use for acts dated before 1594; do not place these on the planmatige post-1594 Nieuwstraat until identity is solved."
+      evidence_hook: ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
+    planned_nieuwstraat:
+      entity: ENT.LOC.GOES.NIEUWSTRAAT_1594
+      status: PROPOSED
+      rule: "Only active as the planned extension from 1594 onward."
+  nissepat_property_network:
+    historical_grandfather_candidate:
+      person: ENT.PERSON.CLAES_JACOBSZ_NISSEPAT
+      property_events:
+      - {year: 1534, relation: SELLS, property: ENT.PROP.GOES.NISSEPAT.NOORDEINDE_1534}
+      - {year: 1540, relation: SELLS, property: ENT.PROP.GOES.NISSEPAT.NISSEPAD_1540, note: "seller remained east neighbour, so adjoining property remained in his hands at the act date"}
+      - {year: 1542, relation: BUYS, property: ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542}
+      genealogy_to_cornelis: "fictional candidate link only; not historical evidence"
+    later_family_nodes:
+    - {person: ENT.PERSON.CLAES_PIERSEN_NISSEPAT, zone: ENT.LOC.GOES.NOORDEINDE, year: 1568, relation: BUYS_AND_SELLS}
+    - {person: ENT.PERSON.JAN_JANSEN_NISSEPAT, zone: ENT.LOC.GOES.WESTZELKE, year: 1577, relation: SELLS_BURNED_SALT_SITE}
+    - {person: ENT.PERSON.JAN_JANSEN_NISSEPAT, zone: ENT.LOC.GOES.VISMARKT, year: 1579, relation: PROPERTY_NETWORK}
+    - {person: ENT.PERSON.JAN_PAUWELSEN_NISSEPAT, zone: ENT.LOC.GOES.NISSEPAD_CORRIDOR, year: 1577, relation: ADJOINS_BREWERY}
+    fiction_guardrail: "Do not turn these different documented Nissepat nodes into one proven nuclear family without a separate genealogical decision."
+  corneliS_and_household:
+    person: ENT.PERSON.CORNELIS
+    fixed:
+    - "Cornelis is a merchant/beer-trader/rhetorician in active canon."
+    - "The technical/business Nissepad line is a meaningful story environment, but exact ownership and residence require separate story claims/decisions."
+    unresolved_residence: OPEN.CORNELIS.RESIDENCE.GOES.1542.001
+    prohibited_shortcut: "Nissepad business proximity does not establish that wife and child live on the business site."
+  route_templates:
+    child_to_church:
+      status: conditional_on_residence
+      destination: ENT.LOC.GOES_GROTE_KERK
+      instruction: "Once a residence is canonised, obtain the year-valid atlas route and pass named streets/landmarks; do not invent a direct line."
+    south_to_city:
+      status: usable_framework
+      sequence: [ENT.LOC.GOES.NISSEPAD_CORRIDOR, ENT.LOC.GOES.KARNEMELKSEPUT, ENT.LOC.GOES.VOORSTAD, ENT.LOC.GOES.GANZEPOORT, ENT.LOC.GOES.GROTE_MARKT]
+      note: "The Nissepad proper begins beyond the Karnemelkseput in the route reconstruction; do not label every southern approach segment 'Nissepad'."
+    market_harbour:
+      status: source_weighted
+      sequence: [ENT.LOC.GOES.GROTE_MARKT, ENT.LOC.GOES.VISMARKT, ENT.LOC.GOES.HAVEN]
+  city_population_layer:
+    source: SRC-HIST-GOES-LIVING-CITY-001
+    rule: "Use transport parties and named belenders as a year- and location-filtered social backdrop. A person named as buyer/seller/belender may be present in the property network but is not automatically resident at that parcel."
+    examples_from_1530s_1550s:
+    - "wagenmakers occur in property transactions behind the dorp and outside the Gansepoort"
+    - "smiths/smeden occur at Westzelke and near urban access points"
+    - "a scheepstimmerman appears as Westzelke neighbour, fitting the harbour-industrial environment"
+    - "bakers/bakkers occur as named neighbours in the dense urban fabric"
+    - "a mesmaker occurs at Zuideinde"
+    - "a priest and an organist are parties to the 1558 house by the city school"
+    scene_use: "Populate a route with only the occupations/names attested in the relevant period or with generic historically plausible people clearly not presented as named historical residents."
+  time_slices:
+    '1542':
+      city_state: "walled late-medieval trading town centred on market, church and harbour; salt industry at harbour edges; active southern/western gate approaches"
+      church: "pre-Reformation Catholic interior"
+      school: "city schooling exists, but the 1558 Schuttershof location must not be back-projected as certain without further evidence"
+      nissepat: "Claes Jacobsz. has recently sold Nissepad property and buys a house in a pre-1594 Nieuwstraat; Cornelis household residence remains open"
+    '1554_pre_fire':
+      city_state: "same core street/harbour system immediately before the 18 May fire"
+    '1554_post_fire':
+      destroyed_or_confirmed_damage: [ENT.LOC.GOES.TURFKADE, ENT.LOC.GOES.KRUISBROEDERS]
+      origin_zone: ENT.LOC.GOES.OOSTZELKE
+      broad_damage: "harbour plus northern/western Goes"
+      parcel_rule: "individual Nissepat property is not marked destroyed without a matching act/source"
+      narrative_function: "supports disruption of trade, schooling network or leased/storage assets without automatically burning the family home"
+    '1572':
+      siege_pressure: [ENT.LOC.GOES.SHEER_HENDRIKSKINDERENPOORT, ENT.LOC.GOES.HAVENPOORT]
+      destroyed_industry: ["outside salt works", ENT.PROP.GOES.VOORSTAD.BREWERY_1572]
+      distinction: "1572 military burning is separate from 1554 accidental/urban fire"
+    '1577_1579':
+      city_state: "post-siege legal and property reorganisation; Satisfactie is a political/religious governance layer, not itself a physical rebuilding date"
+      nissepat_examples: [ENT.PROP.GOES.WESTZELKE.GEMEEN_KEETGE, ENT.PROP.GOES.NISSEPAD.BREWERY_1577]
+      legal_guardrail: "sales are not called executions/confiscations unless the act proves that procedure"
+  unresolved_institutions:
+    rhetoricians:
+      entity: ENT.ORG.GOES.REDERIJKERS
+      known: "Goese rhetorician culture is historically supported; Maria Magdalena devotion is relevant to rhetoricians."
+      unknown: "exact meeting-house/room for Cornelis' period"
+      rule: "Do not place a chamber house on the map until sourced. Use processions, church devotion, market/public performance or known social networks only when evidence fits the scene."
+  scene_query_protocol:
+    steps:
+    - "Resolve scene year."
+    - "Resolve character relation to place: RESIDES/OWNS/WORKS/OPERATES/VISITS."
+    - "Query year-valid street/gate/landmark anchors."
+    - "Query transport-register people/occupations on the route or immediate blocks."
+    - "Apply event footprint for 1554, 1572, 1578 or later urban changes."
+    - "Return route plus named anchors, source certainty and unresolved gaps."
+    required_answer_shape: "where + route + what is passed + who plausibly appears + what changed since previous time slice + certainty labels"
+  guardrails:
+  - "Goes must not be rendered as empty geometry: use the register population layer, markets, craft, harbour traffic, church rhythms, gates and changing damage states."
+  - "Do not use modern atlas street labels as proof of sixteenth-century name identity."
+  - "Do not infer Cornelis' house from his occupation or from Nissepat family proximity."
+  - "Do not conflate the 1572 burned Voorstad brewery with the documented 1577 Nissepad brewery."
+  - "Do not claim a specific Nissepat house burned in 1554 unless parcel-level evidence is found."
+  - "Do not infer an exact rederijkerskamer location from the Maria Magdalena devotional link."
