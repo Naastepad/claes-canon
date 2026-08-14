@@ -1,4 +1,4 @@
-schema_version: 1.1.0
+schema_version: 1.2.0
 kind: WorldModuleRegistry
 modules:
 - id: WORLD.GOES_LIVING_CITY
@@ -14,7 +14,11 @@ modules:
   - SC.HIST.GOES.NIEUWSTRAAT.PRE1594.001
   - SC.HIST.GOES.STADSSCHOOL.LOCATION_1558.001
   - SC.HIST.GOES.SALT.WESTZELKE_1543_1544.001
+  - SC.HIST.GOES.SALT.NORTH_HARBOUR_1554.001
   - SC.HIST.GOES.FIRE_1554.FOOTPRINT.001
+  - SC.HIST.GOES.FIRE_1554.SPREAD.001
+  - SC.MODEL.GOES.FIRE_1554.FIREBRANDS.001
+  - SC.HIST.GOES.FIRE_1554.CASUALTIES.001
   - SC.HIST.GOES.BREWERY.NISSEPAD_1577.001
   - SC.HIST.GOES.WESTZELKE.BURNT_SALTPAN_1577.001
   - SC.HIST.GOES.SIEGE_1572.INDUSTRY.001
@@ -40,9 +44,9 @@ modules:
     - {location: ENT.LOC.GOES.ZUSTERHUIS, function: cornelis_era_rhetorician_meeting_environment}
     commerce_industry:
     - {location: ENT.LOC.GOES.HAVEN, function: shipping_trade_supply_and_market_access}
-    - {location: ENT.LOC.GOES.WESTZELKE, function: salt_industry_and_harbour_edge}
-    - {location: ENT.LOC.GOES.OOSTZELKE, function: salt_industry_and_1554_fire_origin_zone}
-    - {location: ENT.LOC.GOES.TURFKADE, function: trade_street_and_1554_confirmed_damage_area}
+    - {location: ENT.LOC.GOES.WESTZELKE, function: north-harbour salt industry and western harbour edge}
+    - {location: ENT.LOC.GOES.OOSTZELKE, function: north-harbour salt industry and 1554 fire origin zone}
+    - {location: ENT.LOC.GOES.TURFKADE, function: trade street and 1554 confirmed damage area}
     movement:
     - {location: ENT.LOC.GOES.GANZEPOORT, function: southern_city_threshold}
     - {location: ENT.LOC.GOES.VOORSTAD, function: built_approach_outside_southern_gate}
@@ -87,6 +91,43 @@ modules:
     rhetorician_meeting_environment: ENT.LOC.GOES.ZUSTERHUIS
     rhetorician_decision: DEC.GOES.REDERIJKERS.MEETINGPLACE.2026-08-14
     chamber_identity: OPEN.CORNELIS.REDERIJKERS.CHAMBER.001
+  fire_1554_reconstruction:
+    status: SOURCE_WEIGHTED_WITH_MODELLED_SCENE_BLOCKING
+    historical_core:
+      date: '1554-05-18'
+      salt_industry_position: "outside the walls on the north side of the harbour; Oostzelke and Westzelke are harbour-industrial edges, not a southern salt district"
+      harbour_keten_inventory: 81
+      inventory_qualifier: "81 is the cited total harbour-zone inventory, not the number proven destroyed"
+      origin: ENT.LOC.GOES.OOSTZELKE
+      wind: "strong north-easterly; destructive transport broadly west/south-west"
+      source_weighted_sequence:
+      - "one Oostzelke salt pan ignites"
+      - "surrounding and neighbouring harbour/salt structures become involved"
+      - "wind-driven sparks/firebrands seed multiple ignitions toward west and south-west"
+      - "Turfkade and north-western harbour/city fabric become major fire fields"
+      - "watermill/Molenwater and Kruisbroeders/western fabric fall within the supported destructive corridor"
+      damage_scale: "approximately one quarter of city/harbour building stock in the current supported synthesis"
+      casualties: "UNKNOWN — current fire-specific source bundle gives no reliable dead/injured count"
+    spread_model:
+      model_status: PLAUSIBLE_RECONSTRUCTION_NOT_ARCHIVAL_TIMELINE
+      mechanism: "brandwaaier / firebrand spotting: secondary roofs or structures may ignite ahead of the main flame front, so the city need not burn in one neat street-by-street line"
+      support: SC.MODEL.GOES.FIRE_1554.FIREBRANDS.001
+      scene_blocking_bands:
+      - {elapsed: "0–10 min", model: "first Oostzelke keten develops into a building fire"}
+      - {elapsed: "5–30 min", model: "neighbouring industrial structures become involved; strong firebrand production becomes plausible"}
+      - {elapsed: "20–60 min", model: "secondary harbour/northern-edge roof ignitions can appear; Turfkade enters the major fire field"}
+      - {elapsed: "45–120 min", model: "separate pockets can merge around inner harbour/watermill/Molenwater and north-western blocks"}
+      - {elapsed: "1–3 h", model: "destructive expansion can plausibly reach Kruisbroeders/western fabric while buildings continue burning much longer"}
+      guardrail: "These are order-of-magnitude scene bands only. Never present them as recorded Goese clock times."
+    household_intersection:
+      home: ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
+      historical_parcel_damage: UNKNOWN
+      fixed_guardrail: "No source currently proves total destruction of the older-Nieuwstraat/Armenhoek residence."
+      preferred_scene_blocking_status: PROPOSED
+      preferred_scene_blocking: "The family first experiences wind, smoke, ash and falling firebrands; a roof edge, outbuilding or stored material can ignite locally and be fought while the main dwelling survives. This lets Claes experience the fire physically without fabricating a destroyed parcel."
+      dramatic_logic: "Cornelis can be forced to spend time saving the household while harbour-linked assets, routes or people become unreachable elsewhere; home survival and business/social loss therefore need not coincide."
+      mother_fate: OPEN.MOTHER.FIRE_1554.001
+      mother_guardrail: "If the mother dies, place the fatal exposure in the heavily affected harbour/Turfkade/Kruisbroeders corridor, during re-entry into it, or as later death from burns/smoke/collapse injury. Do not imply a historically documented casualty or require total destruction of the family home."
   route_templates:
     child_to_church:
       status: ORIGIN_RESOLVED_ROUTE_TO_QUERY
@@ -125,12 +166,20 @@ modules:
       residence: ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
       rhetorician_environment: ENT.LOC.GOES.ZUSTERHUIS
     '1554_pre_fire':
-      city_state: "same core street/harbour system immediately before the 18 May fire"
+      city_state: "same core street/harbour system immediately before the 18 May fire; the salt-work complex lies north of the walled city along the harbour rather than south of Goes"
+      salt_industry: "Oostzelke/Westzelke harbour-industrial edges; 81 keten in the cited local inventory, individual building placement partly schematic"
       household_home: ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
+    '1554_fire':
+      origin_zone: ENT.LOC.GOES.OOSTZELKE
+      wind: "north-east to west/south-west"
+      spread: "multi-front harbour-to-city brandwaaier; source-weighted corridor Oostzelke -> neighbouring harbour structures -> Turfkade/north-western fabric -> watermill/Molenwater -> Kruisbroeders/western fabric"
+      household_home: ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
+      household_scene_model: "local spot-fire exposure may damage roof edge/outbuilding/stores while the dwelling survives; PROPOSED, not parcel evidence"
+      casualties: "UNKNOWN historically; mother's outcome remains OPEN.MOTHER.FIRE_1554.001"
     '1554_post_fire':
       destroyed_or_confirmed_damage: [ENT.LOC.GOES.TURFKADE, ENT.LOC.GOES.KRUISBROEDERS]
       origin_zone: ENT.LOC.GOES.OOSTZELKE
-      broad_damage: "harbour plus northern/western Goes"
+      broad_damage: "harbour plus northern/western Goes; watermill also reported burned"
       parcel_rule: "The older-Nieuwstraat family home is not marked destroyed: no matching parcel-level evidence currently proves destruction."
       narrative_function: "supports disruption of trade, schooling network or leased/storage assets while the family home itself can remain standing"
     '1572':
@@ -160,6 +209,7 @@ modules:
     - "Query year-valid street/gate/landmark anchors."
     - "Query transport-register people/occupations on the route or immediate blocks."
     - "Apply event footprint for 1554, 1572, 1578 or later urban changes."
+    - "For 1554 distinguish fixed geography, source-supported damage, qualitative firebrand mechanism and modelled scene timing."
     - "Return route plus named anchors, source certainty and unresolved gaps."
     required_answer_shape: "where + route + what is passed + who plausibly appears + what changed since previous time slice + certainty labels"
   guardrails:
@@ -169,5 +219,10 @@ modules:
   - "Cornelis' family home is canonically resolved, but residence remains distinct from his occupation and business properties."
   - "Do not conflate the 1572 burned Voorstad brewery with the documented 1577 Nissepad brewery."
   - "Do not claim a specific Nissepat house burned in 1554 unless parcel-level evidence is found."
+  - "Do not place the 1554 salt-work origin south of the city: the source-weighted salt complex lies north of the walls along the harbour."
+  - "Do not convert the figure of 81 harbour keten into 81 burned keten."
+  - "Do not invent a 1554 casualty count; the present evidence bundle records the human toll as UNKNOWN."
+  - "Do not present the modelled minute/hour bands as historical timestamps; they are scene-blocking estimates derived from qualitative fire behaviour."
+  - "Do not make Claes' mother a historical victim by implication. Her 1554 fate is an author decision under OPEN.MOTHER.FIRE_1554.001."
   - "Do not back-project the Nardusbloem's post-1626 Sint-Sebastiaanshof meeting place into Cornelis' period."
   - "Do not infer a shared fixed meeting room for all four named Goese chambers from the Nardusbloem evidence."
