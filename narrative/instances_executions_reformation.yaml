@@ -78,26 +78,34 @@ instances:
     function: Trigger the declassification of Cornelis as direct-key recipient and the post-break secret loading of Claes' existing memoriaal.
     guardrail: Cornelis need not throw stones, sing, rescue anyone or be arrested in 1564.
 
-  - id: NI.SCENE.CORNELIS_EXECUTION_WITNESS.1568_1569.001
+  - id: NI.SCENE.CORNELIS_EXECUTION.ANTWERP.1569.001
     type: SceneInstance
-    label: Claes getuigt van Cornelis' executie
-    canon_status: CANON_FUNCTION_OPEN_DETAILS
+    label: Claes getuigt van Cornelis' onthoofding in Antwerpen
+    canon_status: CANON_AUTHORING_BRANCH
     story_time:
-      earliest: '1568-07-01'
-      latest_exclusive: '1570-01-01'
-      precision: work-window
-    locations: []
+      date: '1569-03-12'
+      precision: day
+    locations: [ENT.LOC.ANTWERP, ENT.LOC.ANTWERP.STEEN, ENT.LOC.ANTWERP.GROTE_MARKT]
     entities: [ENT.PERSON.CLAES, ENT.PERSON.CORNELIS]
     story_claims:
       - STC.CORNELIS.EXECUTION_WITNESS.001
+      - STC.CORNELIS.DEATH.ANTWERP.1569.001
       - STC.CORNELIS.SILENCE_THIRD_SCRIPT.001
-    open_decisions: [OPEN.CORNELIS.DEATH.001]
-    function: Cornelis' death becomes Claes' decisive father-loss and moral inheritance; the exact place, charge and method remain to be fixed.
+    function: Cornelis' public beheading becomes Claes' decisive father-loss and moral inheritance; it resolves the father as vulnerable carrier, not protected printer, and clarifies why truth must survive through indirect carriers.
     required_scene_logic:
-      - Claes is physically present.
+      - Claes is physically present in the crowd on the Grote Markt.
+      - Cornelis has been detained in or by Het Steen.
+      - The formal story charge concerns forbidden and seditious books, papers, liederen, figures/prints, correspondence and refusal to name others.
+      - Cornelis is beheaded by sword, not burned and not secretly drowned.
+      - Confiscated papers may be burned separately as proof/staging.
       - Cornelis' death must not depend on him carrying OBJ.MEMORIAAL.
       - Cornelis never reveals the full recovery key.
-      - The scene should contrast ars moriendi, martyr witness and protective silence.
+      - The final usable clue is minimal: "Castanea. Niet onze bloem — de boom."
+      - The scene contrasts Catholic ars moriendi, Protestant martyr display and Cornelis' protective silence.
+    value_shift:
+      opening: hope_that_father_can_still_be_recovered_or_explained
+      turn: Cornelis refuses the names and does not enter either available death-script cleanly
+      closing: father_lost_as_body_but_inherited_as_unresolved_moral_burden
 
   - id: NI.SEQUENCE.MARTYR_LETTER_RELIC.1573_1577.001
     type: SequenceInstance
