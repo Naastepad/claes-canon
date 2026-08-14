@@ -15,7 +15,7 @@ relationships:
         story_time: {earliest: 1554-05-18, latest_exclusive: 1561-09-01, precision: bounded}
         value_state: "shared family -> surviving father and son who also lose daily access to each other"
         function: "Both lose Tanneken, Jan, the unborn child and home. Cornelis remains in Goes to rebuild livelihood, business and shelter and to finance Claes' education; Claes is sent to Reimerswaal. Cornelis' act of care is therefore also experienced by Claes as distance and possible abandonment."
-        support: "Claes Jacobsz. Nissepat, fictionally Cornelis' father, helps where possible despite losing the 1542 house as his own asset; Mayken preserves a different kind of continuity through care and family memory."
+        support: "Claes Jacobsz. Nissepat, fictionally Cornelis' father, helps where possible despite losing the 1542 house as his own asset; Mayken Pietersdochter preserves a different kind of continuity through care and family memory."
         decision_id: DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14
       - label: "distance through secrecy"
         story_time: {earliest: 1560-01-01, latest_exclusive: 1564-10-04, precision: interval}
@@ -92,10 +92,10 @@ relationships:
     label: "Claes and maternal grandparents"
     participants: [ENT.PERSON.CLAES, ENT.PERSON.JAN_JANSEN_KUIPER_MODEL, ENT.PERSON.MAYKEN_PIETERSDOCHTER]
     status: CANON_MIXED_HISTORICAL_MODEL_FICTIONAL
-    function: "The maternal line brings craft, bodily care and practical material knowledge: the grandfather-model is a cooper linked to barrels and trade; Mayken preserves family memory and care after Tanneken's death."
+    function: "The maternal line brings craft, bodily care and practical material knowledge: the grandfather-model is a cooper linked to barrels and trade; Mayken Pietersdochter preserves family memory and care after Tanneken's death."
     naming_link: "Jan Corneliszn. is named for the maternal-grandfather figure in novel canon."
-    post_fire_function: "Mayken can provide temporary care, mourning continuity and memories of Tanneken, while Claes Jacobsz. is the stronger economic/educational support figure."
-    guardrail: "The Jan Jansen kuiper evidence is a historical model cluster, not proven genealogy or a securely identified single man across every act. Mayken is fictional."
+    post_fire_function: "Mayken Pietersdochter can provide temporary care, mourning continuity and memories of Tanneken, while Claes Jacobsz. is the stronger economic/educational support figure."
+    guardrail: "The Jan Jansen kuiper evidence is a historical model cluster, not proven genealogy or a securely identified single man across every act. Mayken Pietersdochter is fictional."
     decision_id: DEC.CLAES.EXTENDED_FAMILY.2026-08-14
     ko_targets: [KO.RELATIONSHIP, KO.VALUE, KO.CHARACTER]
 
@@ -142,13 +142,22 @@ relationships:
 
   - id: REL.CLAES.BELOVED
     type: Relationship
-    label: "Claes and beloved/apothecary daughter"
+    label: "Claes and Mayken Adriaensdr. Lampert"
     participants: [ENT.PERSON.CLAES, ENT.PERSON.BELOVED]
-    status: CANON_FUNCTION_OPEN_IDENTITY
+    status: CANON
+    identity_decision: DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14
+    shared_origin:
+      place: ENT.LOC.GOES
+      fire_horizon: NI.EVENT.GOES_FIRE.1554.001
+      distinction: "Both know the 1554 catastrophe, but Claes loses his immediate household while Mayken's historically anchored family loss is material/property disruption through de Zwaene; do not make their trauma biographies identical."
     phases:
+      - label: "separate Goese histories"
+        story_time: {earliest: 1546-01-01, latest_exclusive: 1566-08-01, precision: approximate}
+        value_state: "same city and fire horizon -> separate formation"
+        function: "Mayken grows in a practical apothecary/material environment while Claes is displaced to Reimerswaal and later Antwerp. They may know of each other without being written as childhood sweethearts."
       - label: "material proximity"
         story_time: {earliest: 1566-08-01, latest_exclusive: 1570-01-01, precision: bounded}
-        value_state: "separate expertise -> potential complementarity"
+        value_state: "separate expertise -> complementarity"
         object: OBJ.DODOENS_CARRIER
       - label: "recovery collaboration"
         story_time: {earliest: 1570-01-01, latest_exclusive: 1571-01-01, precision: year}
@@ -156,10 +165,18 @@ relationships:
         narrative_instances: [NI.SEQUENCE.RECOVERY.1570.001]
       - label: "relational maturation"
         story_time: {earliest: 1570-01-01, precision: lower-bound}
-        value_state: "secrecy as isolation -> trust without surrender of responsibility"
+        value_state: "secrecy as isolation -> trust and love without surrender of responsibility"
+      - label: "sensory/spiritual companionship"
+        story_time: {earliest: 1584-01-01, precision: lower-bound}
+        value_state: "constricted sinne -> embodied resonance and shared travel"
+        function: "Mayken catalyses Claes' return to matter and the senses without performing his recovery for him."
     role_split:
-      claes: ["merels", "Dee-memory", "Monas", "Castanea-memory", "clear-text decisions"]
-      beloved: ["materials", "botany", "Dodoens loci", "lists", "error control", "contradiction"]
+      claes: ["merels", "Dee-memory", "Monas", "Castanea-memory", "clear-text decisions", "final responsibility"]
+      mayken: ["materials", "materia medica", "botany", "Dodoens loci", "lists", "error control", "contradiction"]
+    guardrails:
+      - "Mayken is a fictional daughter of the historical Lampert apothecary milieu; no historical daughter has been recovered."
+      - "Do not turn Mayken into a therapist, reward, passive assistant or duplicate of Claes' trauma."
+      - "OPEN.DODOENS.PROVENANCE.001 remains open."
     ko_targets: [KO.RELATIONSHIP, KO.CONFLICT, KO.VALUE, KO.CHARACTER]
 
   - id: REL.CLAES.RADERMACHER
