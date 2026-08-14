@@ -1,0 +1,102 @@
+schema_version: 1.0.0
+kind: SourceClaimRegistry
+id: SCR.EXECUTIONS_REFORMATION.2026-08-15
+status: AUTHORING
+scope: Casteels execution culture, doopsgezinde martelaarsbronnen, ars moriendi, and execution knowledge available to Claes.
+source_groups:
+  - id: SRC.CASTEELS.LOOKING_FOR_JUSTICE.2025
+    label: Isabel Casteels, Looking for Justice: execution spectators and the Revolt in the Low Countries, ca. 1520-1585
+    type: dissertation
+    use: principal analytical frame for public punishment, spectators, execution disruption, secret executions and rebel inversion of justice
+  - id: SRC.MARTELAARSSPIEGEL.DOOPSGEZINDEN
+    label: Martelaarsspiegel / doopsgezinde martyrological tradition and extracted Antwerp martyr lists
+    type: martyrological_memory_source
+    use: names, family chains, letters, songs, prison scenes and later memory; not neutral legal record
+  - id: SRC.ALLARD_PIERSON.MAEYKEN_WENS
+    label: Allard Pierson material on Maeyken Wens' martyr letter
+    type: object_and_memory_source
+    use: martyr letter, children, tongue screw, survival of voice after execution
+claims:
+  - id: SC.HIST.EXECUTIONS.ARS_MORIENDI.BASELINE.001
+    type: SourceClaim
+    evidence_status: SUPPORTED
+    statement: Sixteenth-century executions were expected to follow a Christian death script in which the condemned died with repentance, priestly/civic ordering and public compassion.
+    source_refs: [SRC.CASTEELS.LOOKING_FOR_JUSTICE.2025]
+    tags: [execution_culture, ars_moriendi, catholic_baseline]
+
+  - id: SC.HIST.EXECUTIONS.SPECTATORS.ACTOR.001
+    type: SourceClaim
+    evidence_status: SUPPORTED
+    statement: Execution spectators were not passive; they could confirm, disrupt or reverse the meaning of the execution through compassion, encouragement, kissing, singing, rescue attempts, stone throwing or later memory work.
+    source_refs: [SRC.CASTEELS.LOOKING_FOR_JUSTICE.2025]
+    tags: [spectators, reformation, public_ritual]
+
+  - id: SC.HIST.ANTWERP.EXECUTIONS.1557_1564.001
+    type: SourceClaim
+    evidence_status: SUPPORTED
+    statement: In Antwerp between 1557 and 1564 the executioner carried out 160 executions; 83 were for crimes in fide, including 55 secret drownings in Het Steen, 16 executions by sword and 12 by fire.
+    source_refs: [SRC.CASTEELS.LOOKING_FOR_JUSTICE.2025]
+    tags: [Antwerp, Het_Steen, drowning, statistics]
+
+  - id: SC.HIST.ANTWERP.SECRET_NOT_UNKNOWN.001
+    type: SourceClaim
+    evidence_status: SUPPORTED
+    statement: Antwerp secret executions were better understood as closed-door or limited-access executions; inhabitants and coreligionists often knew that drownings in barrels or tubs took place in Het Steen.
+    source_refs: [SRC.CASTEELS.LOOKING_FOR_JUSTICE.2025]
+    tags: [Antwerp, secrecy, rumor]
+
+  - id: SC.HIST.ANTWERP.FABRITIUS.1564.001
+    type: SourceClaim
+    evidence_status: SUPPORTED
+    statement: Christoffel Fabritius, a Reformed preacher and former Augustinian monk, was executed in Antwerp on 4 October 1564 in a heavily controlled public burning that was disrupted by psalm-singing, stones and attempted rescue.
+    source_refs: [SRC.CASTEELS.LOOKING_FOR_JUSTICE.2025]
+    tags: [Antwerp, Fabritius, security_break, psalms, stones]
+
+  - id: SC.HIST.ANTWERP.ROBERT_DU_BRIEL.1564.001
+    type: SourceClaim
+    evidence_status: SUPPORTED
+    statement: Robbert du Briel was executed after disrupting Fabritius' execution; his body was displayed with stones as a symbolic punishment linked to the stone throwing.
+    source_refs: [SRC.CASTEELS.LOOKING_FOR_JUSTICE.2025]
+    tags: [Antwerp, spectator_punished, body_display]
+
+  - id: SC.HIST.GOES.GRENDEL.1563.001
+    type: SourceClaim
+    evidence_status: SUPPORTED
+    statement: Jan Jansz. Grendel is the principal Goese faith-execution anchor: a man from Kortrijk who came to Goes, confessed his faith, was imprisoned and was burned on the market of Goes in 1563.
+    source_refs: [SRC.MARTELAARSSPIEGEL.DOOPSGEZINDEN]
+    tags: [Goes, Jan_Grendel, Anabaptist, market]
+
+  - id: SC.HIST.ANTWERP.PLEUNTGEN_VAN_DER_GOES.1559.001
+    type: SourceClaim
+    evidence_status: SUPPORTED
+    statement: Pleuntgen van der Goes, with Fransken de Vroedvrouw and Naentgen Leerverkooper, appears in the Antwerp martyr tradition as secretly drowned in Het Steen on 19 March 1559.
+    source_refs: [SRC.MARTELAARSSPIEGEL.DOOPSGEZINDEN]
+    tags: [Goes, Antwerp, Het_Steen, women, drowning]
+
+  - id: SC.HIST.ANTWERP.MARTYR_LIST.1557_1577.001
+    type: SourceClaim
+    evidence_status: SUPPORTED
+    statement: The Antwerp doopsgezinde martyr list supplies a dense sequence of names, dates and methods from 1557 through 1577, including burnings, beheadings and many secret drownings in Het Steen.
+    source_refs: [SRC.MARTELAARSSPIEGEL.DOOPSGEZINDEN]
+    tags: [Antwerp, martyr_list, knowledge_reservoir]
+
+  - id: SC.HIST.ANTWERP.MAEYKEN_WENS.1573.001
+    type: SourceClaim
+    evidence_status: SUPPORTED
+    statement: Maeyken Wens' 1573 execution tradition links martyr letter, children as witnesses, tongschroef and the survival of a martyr's voice through writing and object memory.
+    source_refs: [SRC.MARTELAARSSPIEGEL.DOOPSGEZINDEN, SRC.ALLARD_PIERSON.MAEYKEN_WENS]
+    tags: [Maeyken_Wens, letter, tongue_screw, relic]
+
+  - id: SC.HIST.ANTWERP.HANS_BRET.1577.001
+    type: SourceClaim
+    evidence_status: SUPPORTED
+    statement: Hans Bret's 1577 execution tradition preserves the tongschroef as a doopsgezind memory object, showing that imposed silence could become relic and testimony.
+    source_refs: [SRC.MARTELAARSSPIEGEL.DOOPSGEZINDEN]
+    tags: [Hans_Bret, tongue_screw, relic, Antwerp]
+
+  - id: SC.HIST.REBEL_JUSTICE.INVERSION.1572.001
+    type: SourceClaim
+    evidence_status: SUPPORTED
+    statement: In 1572 rebel violence under leaders such as Lumey and Sonoy inverted judicial ritual through mock trials, torture and hanging of clergy, producing Catholic counter-martyr memory.
+    source_refs: [SRC.CASTEELS.LOOKING_FOR_JUSTICE.2025]
+    tags: [Geuzen, Sonoy, Lumey, Enkhuizen, Delft, counter_martyrs]
