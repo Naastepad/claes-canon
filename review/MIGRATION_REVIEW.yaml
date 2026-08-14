@@ -1,4 +1,4 @@
-schema_version: 1.3.0
+schema_version: 1.4.0
 kind: MigrationReviewRegistry
 source_edition: Claes_Storybible_MASTER_COMPLEET_2026-08-10_REVISIE11_MACROSTRUCTUUR_PROJECTIO(1).md
 purpose: Distinguish meaning-preserving migration from AI-derived interpretation, genuinely new proposals, and detected conflicts before merge.
@@ -12,15 +12,15 @@ review_state_vocabulary:
   - HUMAN_DECISION
   - CONFLICT
 summary:
-  story_claims_total: 41
+  story_claims_total: 42
   by_origin:
     MIGRATED: 30
     DERIVED: 4
-    NEW: 7
+    NEW: 8
   by_review_state:
     MIGRATION_CHECK: 34
     HUMAN_REVIEW: 0
-    HUMAN_DECISION: 7
+    HUMAN_DECISION: 8
     CONFLICT: 0
   merge_blockers: 0
 records:
@@ -159,6 +159,10 @@ records:
     origin: NEW
     review_state: HUMAN_DECISION
     resolution: "Explicit author decision DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14: Cornelis stays in Goes to rebuild and fund schooling, grandfather helps, Claes goes to Reimerswaal, and the separation deepens the shared loss."
+  - claim_id: STC.CLAES.EXTENDED_FAMILY.001
+    origin: NEW
+    review_state: HUMAN_DECISION
+    resolution: "Explicit author approval on 14 August 2026: mother Tanneken Jansdochter; brother Jan Corneliszn.; paternal grandparents Claes Jacobsz. Nissepat and fictional Lijsbet Pietersdochter; maternal grandparents a Jan Jansen-kuiper historical model with fictional kinship and fictional Mayken Pietersdochter; associated death windows and complementary family functions are canon."
 rules:
   MIGRATION_CHECK: "Existing canon or explicitly reviewed formulation represented in the new structure. Review only for faithful transcription/normalization; do not re-litigate the underlying canon unless a new conflict is detected."
   HUMAN_REVIEW: "AI-derived condensation or interpretation. Human should approve, edit, or reject the formulation before treating it as settled structured canon."
