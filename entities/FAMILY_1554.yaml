@@ -1,33 +1,48 @@
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: EntityRegistry
 entities:
 - id: ENT.PERSON.CLAES_MOTHER
   type: Person
-  label: Moeder van Claes — naam open
+  label: Tanneken Jansdochter
   fictionality: fictional
   canon_status: CANON
   roles:
   - mother
   - wife_of_cornelis
+  - source_of_embodied_household_knowledge
+  birth:
+    earliest: '1519-01-01'
+    latest_exclusive: '1523-01-01'
+    preferred: approximately 1520
+  parents:
+    father: ENT.PERSON.JAN_JANSEN_KUIPER_MODEL
+    mother: ENT.PERSON.MAYKEN_PIETERSDOCHTER
   household:
     spouse: ENT.PERSON.CORNELIS
     children:
     - ENT.PERSON.CLAES
     - ENT.PERSON.CLAES_BROTHER
     - ENT.PERSON.CLAES_UNBORN_SIBLING
+  character_function:
+    core: "practical, bodily and sensory knowledge acquired through daily work rather than theoretical explanation"
+    examples: [bread_and_fermentation, illness_and_temperature, linen_and_dryness, wood_and_weather, household_timing, food_preservation]
+    sinne_link: "Claes learns from Tanneken that the body can know before abstract explanation; this is an early foundation of his later sinne architecture."
   pregnancy_1554:
     status: CANON
     gestation_at_fire: approximately_six_months
     child: ENT.PERSON.CLAES_UNBORN_SIBLING
+    guardrail: "Pregnancy deepens relational and sensory stakes; it is not the mechanical reason Tanneken cannot escape the fire."
   death:
     date: '1554-05-18'
     place: ENT.LOC.GOES
     cause_story: Goes city fire
     historical_status: fictional_casualty_within_historically_supported_fire_environment
-  name_status: OPEN
+  name_status: CANON
+  decision_id: DEC.CLAES.EXTENDED_FAMILY.2026-08-14
+
 - id: ENT.PERSON.CLAES_BROTHER
   type: Person
-  label: Jongere broer van Claes — naam open
+  label: Jan Corneliszn. Nissepat
   fictionality: fictional
   canon_status: CANON
   roles:
@@ -37,19 +52,25 @@ entities:
     latest_exclusive: '1544-08-01'
     preferred: approximately June 1544
     relation_to_claes: approximately eighteen months younger
+  naming:
+    namesake: ENT.PERSON.JAN_JANSEN_KUIPER_MODEL
+    rationale: "In novel canon Jan is named for Tanneken's father; the exact early-modern naming mechanism is story reconstruction, not archival genealogy."
   character_function:
     relation: "love + rivalry + daily companionship"
-    contrast_to_claes: "more immediate/action-oriented; can pull Claes out of prolonged observation"
-    guardrail: "Do not reduce him to a sacrificial child introduced only to die; establish ordinary affection, rivalry, play and unfinished conflict before 18 May 1554."
+    contrast_to_claes: "more immediate/action-oriented and physically testing; can pull Claes out of prolonged observation"
+    recurring_material: [play, competition, quarrels, loyalty, shared_mischief, unfinished_ordinary_conflict]
+    guardrail: "Do not reduce Jan to a sacrificial child introduced only to die; establish a full ordinary brother relationship before 18 May 1554."
   death:
     date: '1554-05-18'
     place: ENT.LOC.GOES
     cause_story: Goes city fire
     historical_status: fictional_casualty_within_historically_supported_fire_environment
-  name_status: OPEN
+  name_status: CANON
+  decision_id: DEC.CLAES.EXTENDED_FAMILY.2026-08-14
+
 - id: ENT.PERSON.CLAES_UNBORN_SIBLING
   type: Person
-  label: Ongeboren kind van Cornelis en Claes' moeder
+  label: Ongeboren kind van Cornelis en Tanneken
   fictionality: fictional
   canon_status: CANON
   roles:
@@ -60,14 +81,87 @@ entities:
     sex: UNKNOWN
   narrative_function:
     primary: "embodies a future that Claes knows is real before it can be seen"
-    sinne_link: "Claes can know the child through touch/movement under his mother's skin; this becomes an early embodied example that reality can exist beyond visibility."
+    sinne_link: "Claes can know the child through touch/movement under Tanneken's skin; this becomes an early embodied example that reality can exist beyond visibility."
   death:
     date: '1554-05-18'
     place: ENT.LOC.GOES
     cause_story: death_with_mother_in_city_fire
+
+- id: ENT.PERSON.LIJSBET_PIETERSDOCHTER
+  type: Person
+  label: Lijsbet Pietersdochter
+  fictionality: fictional
+  canon_status: CANON
+  roles:
+  - paternal_grandmother_of_claes
+  - wife_of_claes_jacobsz_nissepat
+  birth:
+    earliest: '1498-01-01'
+    latest_exclusive: '1503-01-01'
+    precision: approximate
+  spouse: ENT.PERSON.CLAES_JACOBSZ_NISSEPAT
+  child_in_novel_genealogy: ENT.PERSON.CORNELIS
+  death:
+    earliest: '1540-01-01'
+    latest_exclusive: '1542-01-01'
+    precision: approximate_story_window
+  narrative_function:
+    primary: "paternal family memory carried through household objects, inherited habits and Claes Jacobsz.' earlier experience of bereavement"
+    guardrail: "No archival claim is made for her identity, dates or marriage."
+  decision_id: DEC.CLAES.EXTENDED_FAMILY.2026-08-14
+
+- id: ENT.PERSON.JAN_JANSEN_KUIPER_MODEL
+  type: Person
+  label: Jan Jansen, kuiper — maternal grandfather model
+  fictionality: historical_model_with_fictional_kinship
+  canon_status: CANON
+  roles:
+  - maternal_grandfather_of_claes_in_novel
+  - cooper
+  historical_basis:
+    source_claim: SC.HIST.GOES.JAN_JANSEN_KUIPER.CLUSTER_1535_1544.001
+    status: "A Jan Jansen identified as kuiper occurs repeatedly in the Goese transport corpus in the 1535–1544 period; exact identity continuity across all same-name acts is not guaranteed."
+  story_genealogy:
+    spouse: ENT.PERSON.MAYKEN_PIETERSDOCHTER
+    daughter: ENT.PERSON.CLAES_MOTHER
+    grandson_namesake: ENT.PERSON.CLAES_BROTHER
+    status: explicit_novel_canon_not_archival_genealogy
+  story_death:
+    approximate: '1543'
+    evidence_status: FICTIONAL_RECONSTRUCTION
+    guardrail: "Do not present 1543 as an archival death date; the same-name kuiper cluster is identity-ambiguous and later direct mentions may belong to another man."
+  narrative_function:
+    primary: "connects Tanneken's family to the craft world of staves, hoops, barrels, beer, harbour trade and material containment"
+    carrier_link: "A cooper makes a vessel that carries liquid without being the liquid; this is lived material culture, not a secret symbolic teaching."
+  decision_id: DEC.CLAES.EXTENDED_FAMILY.2026-08-14
+
+- id: ENT.PERSON.MAYKEN_PIETERSDOCHTER
+  type: Person
+  label: Mayken Pietersdochter
+  fictionality: fictional
+  canon_status: CANON
+  roles:
+  - maternal_grandmother_of_claes
+  - widow_of_jan_jansen_kuiper_in_novel
+  birth:
+    earliest: '1498-01-01'
+    latest_exclusive: '1504-01-01'
+    precision: approximate
+  spouse: ENT.PERSON.JAN_JANSEN_KUIPER_MODEL
+  child: ENT.PERSON.CLAES_MOTHER
+  life_state_1554: alive
+  character_function:
+    primary: "care, bodily memory, family ritual and continuity after Tanneken's death"
+    practical_knowledge: [textile, food_preservation, ordinary_household_herbs, pregnancy_and_birth_experience, mourning_ritual]
+    guardrail: "Do not turn Mayken into an apothecary or learned herbalist; the later apothecary-daughter line must retain its distinct expertise."
+  post_fire_function:
+    primary: "preserves family memory and can provide temporary care after the fire, while Claes Jacobsz. primarily protects the educational/economic future"
+  death: OPEN
+  decision_id: DEC.CLAES.EXTENDED_FAMILY.2026-08-14
+
 - id: ENT.FAMILY.CORNELIS_HOUSEHOLD_1554
   type: FamilyUnit
-  label: Huishouden Cornelis Nissepat vóór de brand van 1554
+  label: Huishouden Cornelis en Tanneken Nissepat vóór de brand van 1554
   fictionality: fictional_with_historical_property_anchor
   canon_status: CANON
   members:
@@ -77,5 +171,25 @@ entities:
   - ENT.PERSON.CLAES_BROTHER
   - ENT.PERSON.CLAES_UNBORN_SIBLING
   residence: ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
-  state_before_fire: intact_household
+  state_before_fire: intact_household_of_five_counting_unborn_child
   state_after_fire: "reduced to Cornelis and Claes, followed by geographical separation Goes/Reimerswaal"
+
+- id: ENT.FAMILY.CLAES_EXTENDED_FAMILY_1554
+  type: FamilyUnit
+  label: Uitgebreide familie van Claes rond 1554
+  fictionality: mixed_historical_and_fictional
+  canon_status: CANON
+  paternal_line:
+    grandfather: ENT.PERSON.CLAES_JACOBSZ_NISSEPAT
+    grandmother: ENT.PERSON.LIJSBET_PIETERSDOCHTER
+    son: ENT.PERSON.CORNELIS
+  maternal_line:
+    grandfather: ENT.PERSON.JAN_JANSEN_KUIPER_MODEL
+    grandmother: ENT.PERSON.MAYKEN_PIETERSDOCHTER
+    daughter: ENT.PERSON.CLAES_MOTHER
+  grandchildren:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.CLAES_BROTHER
+  - ENT.PERSON.CLAES_UNBORN_SIBLING
+  historical_guardrail: "Only specifically sourced historical persons/acts are archival facts. All cross-generation kinship except Claes' fictional household relations is novel canon and must be labelled as such."
+  decision_id: DEC.CLAES.EXTENDED_FAMILY.2026-08-14
