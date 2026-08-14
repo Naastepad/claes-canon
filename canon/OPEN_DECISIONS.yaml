@@ -142,3 +142,38 @@ decisions:
   question: Exact opponent, stakes and action of the final merels scene
   status: OPEN
   fixed_function: Mastery expressed as balance, space and release rather than maximum domination
+- id: OPEN.CORNELIS.RESIDENCE.GOES.1542.001
+  domain: spatial_continuity
+  priority: high
+  question: Where do Cornelis Claesz Nissepat, his wife and young Claes reside in Goes during Claes' childhood, distinct from business and family property locations?
+  status: OPEN
+  fixed:
+  - Cornelis' residence must not be inferred from ownership, family proximity or a business site.
+  - Claes is born in Goes on 8 December 1542.
+  candidates:
+  - the house bought by historical Claes Jacobsz Nissepat in a pre-1594 Nieuwstraat on 20 March 1542, fictionally made available to Cornelis
+  - a separate intramural residence not yet identified
+  - residence near the southern business environment, only if separately established
+  guardrails:
+  - Do not canonise residence at the Nissepad merely because Cornelis' technical/business line is associated with that corridor.
+  - Once decided, synchronize the atlas route to church, market, school and business.
+- id: OPEN.GOES.NIEUWSTRAAT.PRE1594.001
+  domain: historical_reconstruction
+  priority: high
+  question: What street/place identity do the transport-register references to Nieuwstraat before 1594 represent, including Claes Jacobsz Nissepat's 1542 house?
+  status: OPEN
+  fixed:
+  - transport acts attest a Nieuwstraat before 1594
+  - the planmatige Nieuwstraat has an aanlegbesluit in 1594
+  guardrails:
+  - Never merge the two location identities by normalized name alone.
+  - Preserve the 1542 parcel topology: street east; Jacob Dierixsen de Bye north, west and south.
+- id: OPEN.GOES.REDERIJKERS.MEETINGPLACE.001
+  domain: historical_reconstruction
+  priority: medium
+  question: Where did the active Goese rederijkers meet, rehearse or store chamber property during Cornelis' period?
+  status: OPEN
+  fixed:
+  - Goese rhetorician culture is historically established.
+  - Maria Magdalena devotion has a documented rhetorician connection.
+  guardrail: Neither fact establishes a chamber house or formal meeting right in the Maria Magdalenakerk.
