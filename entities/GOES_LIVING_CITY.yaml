@@ -1,4 +1,4 @@
-schema_version: 1.1.0
+schema_version: 1.2.0
 kind: EntityRegistry
 entities:
 - id: ENT.LOC.GOES.GROTE_MARKT
@@ -191,10 +191,20 @@ entities:
   type: Person
   label: Claes Jacobsz. Nissepat
   fictionality: historical
-  canon_status: PROPOSED
+  canon_status: CANON
   roles:
   - documented-property-holder
-  usage: strongest historical candidate for fictional grandfather-link; genealogy to Cornelis is not historically proven
+  - fictional_paternal_grandfather_of_claes
+  historical_evidence:
+    genealogy_to_cornelis: NOT_PROVEN
+    documented_property_role: "buyer of the 1542 older-Nieuwstraat house"
+  novel_canon:
+    relation_to_cornelis: father
+    relation_to_claes: paternal_grandfather
+    property_state_1554: "story-owner of the 1542 house; loses the asset in the fire"
+    post_fire_function: "supports Cornelis materially where possible and helps sustain Claes' Reimerswaal education"
+    decision_id: DEC.CLAES.GRANDFATHER_LINK.2026-08-14
+  guardrail: "The person and purchase are historical; the paternal genealogy, continued ownership in 1554 and support role are novel fiction."
 - id: ENT.PERSON.JAN_JANSEN_NISSEPAT
   type: Person
   label: Jan Jansen Nissepat / Nissepadt
@@ -236,7 +246,13 @@ entities:
   canon_status: CANON
   parent: ENT.LOC.GOES.NIEUWSTRAAT_PRE1594
   historical_topology: "street east; Jacob Dierixsen de Bye north, west and south"
+  historical_fire_status: "specific parcel loss in 1554 not proven"
   story_use: canonical household residence of Cornelis and young Claes under DEC.CORNELIS.RESIDENCE.GOES.2026-08-14
+  novel_state_1554:
+    owner: ENT.PERSON.CLAES_JACOBSZ_NISSEPAT
+    household: ENT.FAMILY.CORNELIS_HOUSEHOLD_1554
+    building_state_after_fire: DESTROYED_OR_UNINHABITABLE
+    decision_id: DEC.CLAES.FAMILY_FIRE.1554.2026-08-14
 - id: ENT.PROP.GOES.NISSEPAD.BREWERY_1577
   type: Property
   label: Documented Nissepad brewery with kettles, vats and tools, 1577
