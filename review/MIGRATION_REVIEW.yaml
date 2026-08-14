@@ -12,15 +12,15 @@ review_state_vocabulary:
   - HUMAN_DECISION
   - CONFLICT
 summary:
-  story_claims_total: 42
+  story_claims_total: 47
   by_origin:
     MIGRATED: 30
     DERIVED: 4
-    NEW: 8
+    NEW: 13
   by_review_state:
     MIGRATION_CHECK: 34
     HUMAN_REVIEW: 0
-    HUMAN_DECISION: 8
+    HUMAN_DECISION: 13
     CONFLICT: 0
   merge_blockers: 0
 records:
@@ -163,6 +163,26 @@ records:
     origin: NEW
     review_state: HUMAN_DECISION
     resolution: "Explicit author approval on 14 August 2026: mother Tanneken Jansdochter; brother Jan Corneliszn.; paternal grandparents Claes Jacobsz. Nissepat and fictional Lijsbet Pietersdochter; maternal grandparents a Jan Jansen-kuiper historical model with fictional kinship and fictional Mayken Pietersdochter; associated death windows and complementary family functions are canon."
+  - claim_id: STC.CLAES.BELOVED.MAYKEN_LAMPERT.001
+    origin: NEW
+    review_state: HUMAN_DECISION
+    resolution: "Explicit author approval on 14 August 2026: Claes' beloved is fictional Mayken Adriaensdr. Lampert, born approximately 1546 in Goes, embedded in the source-anchored Lampert apothecary milieu."
+  - claim_id: STC.MAYKEN.LAMPERT.FAMILY_LINK.001
+    origin: NEW
+    review_state: HUMAN_DECISION
+    resolution: "Explicit author approval: Mayken is fictionally the daughter of Adriaen Jacobsz. Lampert and granddaughter of the older Jacob/Jacop Lampart/Lambert apothecary household; the genealogy is not archival proof."
+  - claim_id: STC.MAYKEN.FIRE_MEMORY.1554.001
+    origin: NEW
+    review_state: HUMAN_DECISION
+    resolution: "Explicit author approval: Mayken shares the 1554 Goes fire horizon and her family has the historically anchored Zwaene property loss, without duplicating Claes' exact household catastrophe."
+  - claim_id: STC.MAYKEN.APOTHECARY_EXPERTISE.001
+    origin: NEW
+    review_state: HUMAN_DECISION
+    resolution: "Explicit author approval: Mayken's practical apothecary formation grounds her materia-medica, botanical, Dodoens and error-check competence."
+  - claim_id: STC.CLAES.MAYKEN.RELATIONSHIP.001
+    origin: NEW
+    review_state: HUMAN_DECISION
+    resolution: "Explicit author approval: Claes and Mayken move from separate expertise through collaborative verification to trust, love without possession and sensory/spiritual companionship."
 rules:
   MIGRATION_CHECK: "Existing canon or explicitly reviewed formulation represented in the new structure. Review only for faithful transcription/normalization; do not re-litigate the underlying canon unless a new conflict is detected."
   HUMAN_REVIEW: "AI-derived condensation or interpretation. Human should approve, edit, or reject the formulation before treating it as settled structured canon."
