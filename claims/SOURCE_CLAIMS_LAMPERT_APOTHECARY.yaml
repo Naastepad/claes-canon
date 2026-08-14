@@ -43,5 +43,6 @@ claims:
 - id: SC.HIST.GOES.LAMPERT.DAUGHTER_SEARCH.001
   type: SourceClaim
   statement: No currently searchable transport record identifies a daughter of Adriaen Jacopsen Lampert.
-  evidence_status: NOT_FOUND
+  evidence_status: UNKNOWN
+  search_result: NOT_FOUND_IN_CURRENT_TRANSPORT_CORPUS
   guardrail: Absence from transport acts is not evidence that he had no daughter; weeskamer/testament/estate material remains relevant future research.
