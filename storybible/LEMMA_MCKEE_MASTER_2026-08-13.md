@@ -246,7 +246,7 @@ Post-fire, grandfather Claes Jacobsz. has lost the 1542 house as a story asset b
 
 The **1572 siege** remains a second and different destruction layer. Outside salt works were deliberately burned for military reasons and a brewery in the Voorstad was reported burned. The reported burned Voorstad brewery must not be conflated with the documented Nissepad brewery that appears equipped in 1577. If the novel links Cornelis' remaining business to the 1572 brewery loss, that still requires its own explicit business-location story decision.
 
-The **Goese rederijker meeting place** remains the Zusterhuis for Cornelis-era scenes; the Nardusbloem moved to the Sint-Sebastiaanshof only in 1626. The exact named chamber to which fictional Cornelis belongs remains open under `OPEN.CORNELIS.REDERIJKERS.CHAMBER.001`.
+The **Goese rederijker meeting place** remains the Zusterhuis for Cornelis-era scenes; the Nardusbloem remained there until 1626 and only then moved to the building/hof of the handbow guild Sint-Sebastiaan. The exact named chamber to which fictional Cornelis belongs remains open under `OPEN.CORNELIS.REDERIJKERS.CHAMBER.001`.
 
 For a concrete Goes scene the required spatial answer is: **where the character is in that year; what relation binds them to that place; the year-valid route; streets/gates/landmarks passed; named or generic people/trades available from the register layer; event damage/change since the previous time slice; and explicit certainty/open labels.**
 
