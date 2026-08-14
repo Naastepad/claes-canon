@@ -1,4 +1,4 @@
-schema_version: 1.1.0
+schema_version: 1.2.0
 kind: NarrativeInstanceRegistry
 instances:
 - id: NI.PROLOGUE.1542.001
@@ -64,16 +64,70 @@ instances:
   type: EventInstance
   label: Stadsbrand Goes
   canon_status: CANON
+  details_status: MIXED_SUPPORTED_AND_PROPOSED
   story_time:
     date: '1554-05-18'
     precision: day
   locations:
   - ENT.LOC.GOES
+  - ENT.LOC.GOES.OOSTZELKE
+  - ENT.LOC.GOES.TURFKADE
+  - ENT.LOC.GOES.KRUISBROEDERS
   entities:
   - ENT.PERSON.CLAES
   - ENT.PERSON.CORNELIS
+  source_refs:
+  - SC.HIST.GOES.SALT.NORTH_HARBOUR_1554.001
+  - SC.HIST.GOES.FIRE_1554.FOOTPRINT.001
+  - SC.HIST.GOES.FIRE_1554.SPREAD.001
+  - SC.MODEL.GOES.FIRE_1554.FIREBRANDS.001
+  - SC.HIST.GOES.FIRE_1554.CASUALTIES.001
+  historical_event:
+    salt_industry_position: "north of the walled city along the harbour; Oostzelke/Westzelke are harbour-industrial edges"
+    harbour_keten_inventory: "81 in the cited local reconstruction; not 81 proven destroyed"
+    origin: "one unidentified Oostzelke salt pan"
+    wind: "strong north-easterly, carrying sparks broadly west/south-west"
+    supported_spread_corridor:
+    - "Oostzelke origin and neighbouring harbour/salt structures"
+    - "multiple wind-driven harbour/city ignitions rather than one guaranteed linear front"
+    - "Turfkade and north-western harbour/city fabric"
+    - "watermill/Molenwater zone"
+    - "Kruisbroeders/western urban fabric"
+    damage_scale: "about one quarter of city/harbour building stock in the current source-weighted synthesis"
+    human_casualties: "UNKNOWN; current fire-specific sources provide no reliable dead/injured count"
+  scene_blocking:
+    canon_status: PROPOSED
+    fire_shape: "brandwaaier / multi-front spotting; a secondary roof may begin smoking while intermediate buildings remain temporarily intact"
+    sensory_order_for_claes:
+    - "wind"
+    - "smell/smoke"
+    - "ash and dark particles"
+    - "falling glowing firebrands"
+    - "local smoke/ignition at his own dwelling or outbuilding"
+    - "recognition that the fire is no longer only at the harbour"
+    timing_model:
+      status: PLAUSIBLE_RECONSTRUCTION_ONLY
+      bands:
+      - {elapsed: "0–10 min", event: "first Oostzelke keten develops into a building fire"}
+      - {elapsed: "5–30 min", event: "neighbouring industrial structures become involved; firebrand production increases"}
+      - {elapsed: "20–60 min", event: "secondary harbour/northern-edge ignitions can occur; Turfkade enters the major fire field"}
+      - {elapsed: "45–120 min", event: "separate pockets can merge around inner harbour/watermill/Molenwater and north-western blocks"}
+      - {elapsed: "1–3 h", event: "destructive expansion can plausibly reach Kruisbroeders/western fabric while individual structures burn much longer"}
+      guardrail: "Never present these bands as archival clock times."
+    household_home:
+      location: ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
+      historical_damage_status: UNKNOWN
+      proposed_effect: "The house survives, but wind-driven firebrands may ignite a roof edge, outbuilding or stored material; Cornelis and neighbours can fight that local ignition while harbour-linked assets/routes become unreachable elsewhere."
+      narrative_value: "The family can win the immediate fight for the dwelling while losing economic security, social/educational infrastructure or a person elsewhere in the fire corridor."
+    mother_outcome:
+      decision: OPEN.MOTHER.FIRE_1554.001
+      status: OPEN
+      guardrail: "Do not turn her into a historical casualty. If death is chosen later, the stronger spatial path is exposure in/re-entry into the harbour-Turfkade-Kruisbroeders corridor or later death from burns/smoke/collapse injury, not total destruction of the surviving family home."
+  arcs_advanced:
+  - ARC.CLAES.LIFE
   motifs:
   - MOTIF.FIRE_WATER
+  - MOTIF.SINNE
 - id: NI.EVENT.REIMERSWAAL_MOVE.1554.001
   type: EventInstance
   label: Vertrek als kostjongen naar Reimerswaal
