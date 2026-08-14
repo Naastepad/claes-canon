@@ -1,4 +1,4 @@
-schema_version: 1.2.0
+schema_version: 1.3.0
 kind: NarrativeRelationshipRegistry
 relationships:
   - id: REL.CLAES.CORNELIS
@@ -10,12 +10,12 @@ relationships:
       - label: "formation within an intact household"
         story_time: {earliest: 1547-01-01, latest_exclusive: 1554-05-18, precision: approximate}
         value_state: "dependence -> admiration"
-        function: "Cornelis teaches attention, craft, patience and the difference between pieces and routes while Claes remains one of two sons in an intact family."
+        function: "Cornelis teaches attention, craft, patience and the difference between pieces and routes while Claes remains one of two sons in the household of Cornelis and Tanneken."
       - label: "shared catastrophe and physical separation"
         story_time: {earliest: 1554-05-18, latest_exclusive: 1561-09-01, precision: bounded}
         value_state: "shared family -> surviving father and son who also lose daily access to each other"
-        function: "Both lose mother/wife, brother/son, unborn child and home. Cornelis remains in Goes to rebuild livelihood, business and shelter and to finance Claes' education; Claes is sent to Reimerswaal. Cornelis' act of care is therefore also experienced by Claes as distance and possible abandonment."
-        support: "Claes Jacobsz. Nissepat, fictionally Cornelis' father, helps where possible despite losing the 1542 house as his own asset."
+        function: "Both lose Tanneken, Jan, the unborn child and home. Cornelis remains in Goes to rebuild livelihood, business and shelter and to finance Claes' education; Claes is sent to Reimerswaal. Cornelis' act of care is therefore also experienced by Claes as distance and possible abandonment."
+        support: "Claes Jacobsz. Nissepat, fictionally Cornelis' father, helps where possible despite losing the 1542 house as his own asset; Mayken preserves a different kind of continuity through care and family memory."
         decision_id: DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14
       - label: "distance through secrecy"
         story_time: {earliest: 1560-01-01, latest_exclusive: 1564-10-04, precision: interval}
@@ -37,20 +37,34 @@ relationships:
 
   - id: REL.CLAES.BROTHER
     type: Relationship
-    label: "Claes and younger brother"
+    label: "Claes and Jan"
     participants: [ENT.PERSON.CLAES, ENT.PERSON.CLAES_BROTHER]
     status: CANON
     story_time: {earliest: 1544-05-01, latest_exclusive: 1554-05-19, precision: approximate}
     value_state: "love <-> rivalry <-> companionship -> irreversible loss"
-    function: "The brother is about eighteen months younger, close enough in age to be Claes' daily companion and rival. Their bond must contain play, competition, quarrels, loyalty and unfinished ordinary conflict before the fire."
+    function: "Jan is about eighteen months younger, close enough in age to be Claes' daily companion and rival. Their bond must contain play, competition, quarrels, loyalty, shared mischief and unfinished ordinary conflict before the fire."
     contrast:
       claes: "observes, compares, waits"
-      brother: "acts sooner, tests physically, pulls Claes toward action"
+      jan: "acts sooner, tests physically, pulls Claes toward action"
     termination:
       date: '1554-05-18'
       event: NI.EVENT.GOES_FIRE.1554.001
-    guardrail: "Do not write him as a decorative victim or foreshadow his death so heavily that ordinary brotherhood disappears."
+    guardrail: "Do not write Jan as a decorative victim or foreshadow his death so heavily that ordinary brotherhood disappears."
+    decision_id: DEC.CLAES.EXTENDED_FAMILY.2026-08-14
     ko_targets: [KO.RELATIONSHIP, KO.CONFLICT, KO.VALUE, KO.CHARACTER]
+
+  - id: REL.CLAES.TANNEKEN
+    type: Relationship
+    label: "Claes and Tanneken"
+    participants: [ENT.PERSON.CLAES, ENT.PERSON.CLAES_MOTHER]
+    status: CANON
+    story_time: {earliest: 1542-12-08, latest_exclusive: 1554-05-19, precision: bounded}
+    value_state: "embodied safety and practical knowing -> irreversible maternal loss"
+    function: "Tanneken is a primary source of Claes' pre-theoretical sensory education: heat, texture, smell, fermentation, illness, weather, cloth, food and household timing are known through body and practice before abstraction."
+    pregnancy_link: "Claes may feel the unborn child move under Tanneken's skin, giving him an early benign experience of reality known without sight."
+    guardrail: "Do not idealize Tanneken into a mystical mother or learned herbalist; her knowledge is ordinary, practiced, material and relational."
+    decision_id: DEC.CLAES.EXTENDED_FAMILY.2026-08-14
+    ko_targets: [KO.RELATIONSHIP, KO.VALUE, KO.CHARACTER]
 
   - id: REL.CORNELIS.CLAES_JACOBSZ_NISSEPAT
     type: Relationship
@@ -62,6 +76,28 @@ relationships:
     post_fire_function: "The older man loses the Nieuwstraat property he bought in 1542 but still helps Cornelis preserve Claes' educational future."
     decision_id: DEC.CLAES.GRANDFATHER_LINK.2026-08-14
     ko_targets: [KO.RELATIONSHIP, KO.VALUE, KO.CONFLICT]
+
+  - id: REL.CLAES.PATERNAL_GRANDPARENTS
+    type: Relationship
+    label: "Claes and paternal grandparents"
+    participants: [ENT.PERSON.CLAES, ENT.PERSON.CLAES_JACOBSZ_NISSEPAT, ENT.PERSON.LIJSBET_PIETERSDOCHTER]
+    status: CANON_MIXED_HISTORICAL_FICTIONAL
+    function: "Claes Jacobsz. represents property, accounting, credit, provenance and continuity; Lijsbet survives mainly as inherited household memory because she dies circa 1540–1541 in novel canon."
+    guardrail: "Claes Jacobsz. is historical but the kinship is fictional; Lijsbet is wholly fictional."
+    decision_id: DEC.CLAES.EXTENDED_FAMILY.2026-08-14
+    ko_targets: [KO.RELATIONSHIP, KO.VALUE]
+
+  - id: REL.CLAES.MATERNAL_GRANDPARENTS
+    type: Relationship
+    label: "Claes and maternal grandparents"
+    participants: [ENT.PERSON.CLAES, ENT.PERSON.JAN_JANSEN_KUIPER_MODEL, ENT.PERSON.MAYKEN_PIETERSDOCHTER]
+    status: CANON_MIXED_HISTORICAL_MODEL_FICTIONAL
+    function: "The maternal line brings craft, bodily care and practical material knowledge: the grandfather-model is a cooper linked to barrels and trade; Mayken preserves family memory and care after Tanneken's death."
+    naming_link: "Jan Corneliszn. is named for the maternal-grandfather figure in novel canon."
+    post_fire_function: "Mayken can provide temporary care, mourning continuity and memories of Tanneken, while Claes Jacobsz. is the stronger economic/educational support figure."
+    guardrail: "The Jan Jansen kuiper evidence is a historical model cluster, not proven genealogy or a securely identified single man across every act. Mayken is fictional."
+    decision_id: DEC.CLAES.EXTENDED_FAMILY.2026-08-14
+    ko_targets: [KO.RELATIONSHIP, KO.VALUE, KO.CHARACTER]
 
   - id: REL.CLAES.DEE.001
     type: Relationship
