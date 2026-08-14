@@ -1,4 +1,4 @@
-schema_version: 1.1.0
+schema_version: 1.2.0
 kind: NarrativeRelationshipRegistry
 relationships:
   - id: REL.CLAES.CORNELIS
@@ -7,14 +7,20 @@ relationships:
     participants: [ENT.PERSON.CLAES, ENT.PERSON.CORNELIS]
     status: CANON
     phases:
-      - label: "formation"
+      - label: "formation within an intact household"
         story_time: {earliest: 1547-01-01, latest_exclusive: 1554-05-18, precision: approximate}
         value_state: "dependence -> admiration"
-        function: "Cornelis teaches attention, craft, patience and the difference between pieces and routes."
+        function: "Cornelis teaches attention, craft, patience and the difference between pieces and routes while Claes remains one of two sons in an intact family."
+      - label: "shared catastrophe and physical separation"
+        story_time: {earliest: 1554-05-18, latest_exclusive: 1561-09-01, precision: bounded}
+        value_state: "shared family -> surviving father and son who also lose daily access to each other"
+        function: "Both lose mother/wife, brother/son, unborn child and home. Cornelis remains in Goes to rebuild livelihood, business and shelter and to finance Claes' education; Claes is sent to Reimerswaal. Cornelis' act of care is therefore also experienced by Claes as distance and possible abandonment."
+        support: "Claes Jacobsz. Nissepat, fictionally Cornelis' father, helps where possible despite losing the 1542 house as his own asset."
+        decision_id: DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14
       - label: "distance through secrecy"
         story_time: {earliest: 1560-01-01, latest_exclusive: 1564-10-04, precision: interval}
         value_state: "admiration -> suspicion/exclusion"
-        function: "Claes sees that Cornelis hides not only from authorities but also from him."
+        function: "The earlier physical separation gives way to a new interpretive separation: Claes sees that Cornelis hides not only from authorities but also from him."
       - label: "fallback asymmetry"
         story_time: {earliest: 1564-10-04, latest_exclusive: 1568-07-01, precision: bounded}
         value_state: "father protects son through ignorance while using him as fallback"
@@ -23,10 +29,39 @@ relationships:
         story_time: {earliest: 1568-07-01, latest_exclusive: 1570-01-01, precision: work-window}
         value_state: "living authority -> absent moral inheritance"
         transfer: "Castanea. Niet onze bloem — de boom."
+        resonance: "Cornelis' death closes the possibility that father and son will ever recover all the time lost after 1554."
       - label: "differentiation"
         story_time: {earliest: 1570-01-01, precision: lower-bound}
         value_state: "inheritance -> independent moral judgement"
     ko_targets: [KO.CHARACTER, KO.VALUE, KO.CONFLICT, KO.RELATIONSHIP]
+
+  - id: REL.CLAES.BROTHER
+    type: Relationship
+    label: "Claes and younger brother"
+    participants: [ENT.PERSON.CLAES, ENT.PERSON.CLAES_BROTHER]
+    status: CANON
+    story_time: {earliest: 1544-05-01, latest_exclusive: 1554-05-19, precision: approximate}
+    value_state: "love <-> rivalry <-> companionship -> irreversible loss"
+    function: "The brother is about eighteen months younger, close enough in age to be Claes' daily companion and rival. Their bond must contain play, competition, quarrels, loyalty and unfinished ordinary conflict before the fire."
+    contrast:
+      claes: "observes, compares, waits"
+      brother: "acts sooner, tests physically, pulls Claes toward action"
+    termination:
+      date: '1554-05-18'
+      event: NI.EVENT.GOES_FIRE.1554.001
+    guardrail: "Do not write him as a decorative victim or foreshadow his death so heavily that ordinary brotherhood disappears."
+    ko_targets: [KO.RELATIONSHIP, KO.CONFLICT, KO.VALUE, KO.CHARACTER]
+
+  - id: REL.CORNELIS.CLAES_JACOBSZ_NISSEPAT
+    type: Relationship
+    label: "Cornelis and Claes Jacobsz. Nissepat"
+    participants: [ENT.PERSON.CORNELIS, ENT.PERSON.CLAES_JACOBSZ_NISSEPAT]
+    status: CANON_FICTIONAL_KINSHIP
+    relation: father_and_son
+    historical_guardrail: "The historical identity and 1542 purchase of Claes Jacobsz. are documented; his fatherhood of fictional Cornelis is novel canon, not historical genealogy."
+    post_fire_function: "The older man loses the Nieuwstraat property he bought in 1542 but still helps Cornelis preserve Claes' educational future."
+    decision_id: DEC.CLAES.GRANDFATHER_LINK.2026-08-14
+    ko_targets: [KO.RELATIONSHIP, KO.VALUE, KO.CONFLICT]
 
   - id: REL.CLAES.DEE.001
     type: Relationship
