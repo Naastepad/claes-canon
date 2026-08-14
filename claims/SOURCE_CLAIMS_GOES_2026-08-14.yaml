@@ -1,0 +1,55 @@
+schema_version: 1.0.0
+kind: SourceClaimRegistry
+claims:
+- id: SC.HIST.GOES.NIEUWSTRAAT.PRE1594.001
+  type: SourceClaim
+  statement: "Transport records attest a street/toponym Nieuwstraat before 1594; later records explicitly use forms linking Nieuwstraat/Oude Nieuwstraat with the Armenhoek, while the planmatige/current Nieuwstraat belongs to the 1594 expansion decision."
+  claim_type: historical_toponym_identity
+  subject: ENT.LOC.GOES.NIEUWSTRAAT_PRE1594
+  predicate: distinct_from
+  object: ENT.LOC.GOES.NIEUWSTRAAT_1594
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-GOES-NIEUWSTRAAT-001]
+  qualifies:
+  - "Pre-1594 existence of the Nieuwstraat name is verified by transport acts."
+  - "The Armenhoek/Oude Nieuwstraat zone identification is supported; the exact 1542 street axis remains unknown."
+  - "The 20 March 1542 Nissepat house lies on the west side of the historical street because the deed gives street as its eastern boundary."
+  retrieval: {tags: [goes, nieuwstraat, armenhoek, old-nieuwstraat, 1542, 1594, topography]}
+- id: SC.HIST.GOES.REDERIJKERS.NARDUSBLOEM_ZUSTERHUIS.001
+  type: SourceClaim
+  statement: "The Nardusbloem met in the Zusterhuis until 1626 and moved in 1626 to the building/hof of the Sint-Sebastiaangilde; the Sebastiaanshof must therefore not be back-projected as its Cornelis-era meeting place."
+  claim_type: institutional_location_chronology
+  subject: ENT.ORG.GOES.NARDUSBLOEM
+  predicate: met_at
+  object: ENT.LOC.GOES.ZUSTERHUIS
+  evidence_status: VERIFIED
+  source_ids: [SRC-HIST-GOES-REDERIJKERS-001]
+  qualifies:
+  - "The exact room within the Zusterhuis is not established."
+  - "This evidence is specific to the Nardusbloem/old Goese chamber and does not prove that all separately named Goese chambers used the same room."
+  retrieval: {tags: [goes, rederijkers, nardusbloem, zusterhuis, sebastiaangilde, 1626]}
+- id: SC.HIST.GOES.ZUSTERHUIS.SINGELSTRAAT.001
+  type: SourceClaim
+  statement: "The Zusterhuis relevant to the rederijker chronology is spatially associated with the former Zwarte-Zusters convent complex at the Singelstraat, later converted to the Goese orphanage."
+  claim_type: historical_location
+  subject: ENT.LOC.GOES.ZUSTERHUIS
+  predicate: located_in_zone
+  object: "former Zwarte-Zusters / later orphanage complex, Singelstraat"
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-GOES-REDERIJKERS-001]
+  qualifies:
+  - "The complex is locatable; the exact rhetorician room inside it remains unknown."
+  retrieval: {tags: [goes, zusterhuis, zwarte-zusters, singelstraat, weeshuis, rederijkers]}
+- id: SC.HIST.GOES.REDERIJKERS.FOUR_CHAMBERS.001
+  type: SourceClaim
+  statement: "The named Goese record includes De Goudtsblome (1540–1543), De Clisblome (1545/1546), the older Nardusbloem/Magdalena tradition whose mid-sixteenth-century name/devise is attested, and De Edele Castanienbloem from 1595."
+  claim_type: institutional_chronology
+  subject: ENT.ORG.GOES.REDERIJKERS
+  predicate: included_named_chambers
+  object: "Goudtsblome; Clisblome; Nardusbloem; Edele Castanienbloem"
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-GOES-REDERIJKERS-001]
+  qualifies:
+  - "These four names are not evidence that four chambers operated simultaneously throughout the sixteenth century."
+  - "The fixed pre-1630 meeting place of the Edele Castanienbloem is not established by this claim."
+  retrieval: {tags: [goes, rederijkers, goudtsblome, clisblome, nardusbloem, castanienbloem]}
