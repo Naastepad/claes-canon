@@ -13,12 +13,9 @@ instances:
       precision: bounded
     locations: [ENT.LOC.GOES, ENT.LOC.REIMERSWAAL, ENT.LOC.ANTWERP, ENT.LOC.MIDDELBURG, ENT.LOC.DELFT, ENT.LOC.ENKHUIZEN]
     entities: [ENT.PERSON.CLAES, ENT.PERSON.CORNELIS]
-    story_claims:
-      - STC.CLAES.EXECUTION_ARC.001
-      - STC.CLAES.EXECUTION_KNOWLEDGE.RESERVOIR.001
+    story_claims: [STC.CLAES.EXECUTION_ARC.001, STC.CLAES.EXECUTION_KNOWLEDGE.RESERVOIR.001]
     motifs: [MOTIF.FIRE_WATER, MOTIF.CARRIER_MEANING, MOTIF.SINNE]
     function: Claes' execution knowledge develops from Catholic civic order through Reformation martyr disruption toward code-as-testimony and moral responsibility.
-
   - id: NI.SCENE.EXECUTION_BASELINE.GOES.1547_1554.001
     type: ScenePattern
     label: Katholieke basisorde van straf en sterven
@@ -32,7 +29,6 @@ instances:
     story_claims: [STC.CLAES.CATHOLIC_EXECUTION_BASELINE.001]
     function: Establish the old ars moriendi script through an ordinary criminal or civic execution environment before faith executions fracture that script.
     guardrail: Do not invent a specific historical Goese execution unless separately sourced.
-
   - id: NI.EVENT.EXECUTION_GRENDEL.GOES.1563.001
     type: EventInstance
     label: Jan Grendel op de Goese markt
@@ -46,7 +42,6 @@ instances:
     story_claims: [STC.CLAES.GRENDEL_LOCAL_RUPTURE.1563.001]
     function: Localize the Reformation execution crisis in Goes; Claes sees or hears that his own city can burn a believer.
     knowledge_route: witness_or_near_immediate_hearsay
-
   - id: NI.SEQUENCE.STEEN_RUMOURS.ANTWERP.1559_1564.001
     type: SequenceInstance
     label: Het Steen als verborgen dodenplaats
@@ -57,13 +52,8 @@ instances:
       precision: bounded
     locations: [ENT.LOC.ANTWERP]
     entities: [ENT.PERSON.CLAES, ENT.PERSON.CORNELIS]
-    story_claims:
-      - STC.CLAES.EXECUTION_KNOWLEDGE.RESERVOIR.001
-    source_claims:
-      - SC.HIST.ANTWERP.EXECUTIONS.1557_1564.001
-      - SC.HIST.ANTWERP.SECRET_NOT_UNKNOWN.001
+    story_claims: [STC.CLAES.EXECUTION_KNOWLEDGE.RESERVOIR.001]
     function: Saturate Claes' Antwerp years with the rumor of tubs, barrels, night, doors and water rather than only spectacular public burnings.
-
   - id: NI.EVENT.SECURITY_BREAK.FABRITIUS_CANDIDATE.1564.001
     type: EventCandidate
     label: Fabritius als historische invulling van de veiligheidsbreuk
@@ -77,75 +67,66 @@ instances:
     story_claims: [STC.SECURITY.FABRITIUS_CANDIDATE.1564.001]
     function: Trigger the declassification of Cornelis as direct-key recipient and the post-break secret loading of Claes' existing memoriaal.
     guardrail: Cornelis need not throw stones, sing, rescue anyone or be arrested in 1564.
-
   - id: NI.EVENT.CORNELIS_FIRST_ARREST.ANTWERP.1567.001
     type: EventInstance
-    label: Eerste arrestatie / borgtocht Cornelis
-    canon_status: CANON_AUTHORING_BRANCH
+    label: Cornelis' eerste arrestatie en borgtocht
+    canon_status: CANON
     story_time:
       earliest: '1567-09-01'
       latest_exclusive: '1568-01-01'
       precision: season
     locations: [ENT.LOC.ANTWERP]
     entities: [ENT.PERSON.CORNELIS]
-    story_claims:
-      - STC.CORNELIS.FIRST_ARREST_BAIL.1567.001
-      - STC.CORNELIS.CARRIER_NOT_PRINTER.001
-    function: Prove in-scene or through recalled record that Cornelis has become visible after the 1564 security break, but that first book/paper suspicion alone does not yet plausibly kill him.
-    guardrail: Use borg/release/conditions as plausibility device, not as a full acquittal or exoneration.
-
+    story_claims: [STC.CORNELIS.FIRST_ARREST_BAIL.1567.001, STC.CORNELIS.CARRIER_NOT_PRINTER.001]
+    function: Show that Cornelis was correctly declassified after 1564; he is compromised and watched, but the first exposure is not yet a historically convincing immediate death sentence.
+    required_scene_logic:
+      - First arrest or examination concerns papers, routes, carriers, storage or book-world contacts.
+      - Release happens through borg, conditions, lack of complete proof or usefulness as a traceable route.
+      - This event must not involve OBJ.MEMORIAAL.
   - id: NI.SEQUENCE.CORNELIS_REEXPOSURE.ANTWERP.1568_1569.001
     type: SequenceInstance
-    label: Heropduiken van Cornelis' route in clandestiene papierstroom
-    canon_status: CANON_AUTHORING_BRANCH
+    label: Hernieuwde blootstelling via clandestiene papieren en boekvisitatie
+    canon_status: CANON
     story_time:
       earliest: '1568-09-01'
       latest_exclusive: '1569-11-19'
       precision: bounded
-    locations: [ENT.LOC.ANTWERP, ENT.LOC.GOES]
-    entities: [ENT.PERSON.CORNELIS, ENT.PERSON.CLAES]
-    story_claims:
-      - STC.CORNELIS.DEATH.ANTWERP.1569.001
-      - STC.CORNELIS.CARRIER_NOT_PRINTER.001
-    source_claims:
-      - SC.HIST.ANTWERP.CLANDESTINE_PRINT_COPY_NETWORK.1568.001
-      - SC.HIST.ANTWERP.BOOK_VISITATIONS.MARCH_NOV_1569.001
-    function: Build the second, fatal exposure through clandestine letters, libels, liederen, figures/prints, bookshop visitations and old route traces rather than a single book-smuggling catch.
-
+    locations: [ENT.LOC.ANTWERP]
+    entities: [ENT.PERSON.CORNELIS]
+    story_claims: [STC.CORNELIS.DEATH.ANTWERP.1569.001, STC.CORNELIS.CARRIER_NOT_PRINTER.001]
+    function: Move Cornelis from warned/borged route-person to recidive/seditious network suspect whose silence can plausibly become fatal.
+    required_sequence_logic:
+      - Simple book possession is insufficient.
+      - The second exposure must involve seditious network framing, renewed contact or transport evidence, and refusal to name others.
+      - The March 1569 book visitation supplies the documented pressure environment, not a documented Cornelis record.
   - id: NI.SCENE.CORNELIS_EXECUTION.ANTWERP.1569.001
     type: SceneInstance
-    label: Claes getuigt van Cornelis' executie op de dag van de boekverbranding
-    canon_status: CANON_AUTHORING_BRANCH
+    label: Claes getuigt van Cornelis' executie in Antwerpen
+    canon_status: CANON
     story_time:
       date: '1569-11-19'
       precision: day
-    locations: [ENT.LOC.ANTWERP, ENT.LOC.ANTWERP.STEEN, ENT.LOC.ANTWERP.GROTE_MARKT]
+    locations: [ENT.LOC.ANTWERP]
     entities: [ENT.PERSON.CLAES, ENT.PERSON.CORNELIS]
-    story_claims:
-      - STC.CORNELIS.EXECUTION_WITNESS.001
-      - STC.CORNELIS.DEATH.ANTWERP.1569.001
-      - STC.CORNELIS.SILENCE_THIRD_SCRIPT.001
-    source_claims:
-      - SC.HIST.ANTWERP.BOOK_VISITATIONS.MARCH_NOV_1569.001
-      - SC.HIST.ANTWERP.EXECUTION_CONTEXT.NOVEMBER_1569.001
-    function: Cornelis' public execution is fictionally embedded in the documented 19 November 1569 Antwerp market book-burning environment; Claes sees father, books, civic judgement and public punishment bound together.
+    story_claims: [STC.CORNELIS.EXECUTION_WITNESS.001, STC.CORNELIS.DEATH.ANTWERP.1569.001, STC.CORNELIS.SILENCE_THIRD_SCRIPT.001]
+    function: Cornelis' public execution becomes Claes' decisive father-loss and moral inheritance; it resolves the father as vulnerable carrier, not protected printer, and clarifies why truth must survive through indirect carriers.
+    sublocations_text:
+      - Het Steen as detention-route context
+      - Grote Markt / market book-burning environment as preferred public setting
     required_scene_logic:
-      - Claes is physically present in the crowd on the Grote Markt.
-      - Cornelis has been detained in or by Het Steen.
-      - The formal story charge requires recidive after first warning/borg, clandestine network traffic, heretical and seditious papers/books/liederen/prints/libels/correspondence and refusal to name others.
-      - Cornelis is not killed for simple book possession.
-      - Cornelis is beheaded by sword only because the charge is framed as seditious/network/recidive; reopen method if that framing is weakened.
-      - Books or papers seized in March burn as public evidence/context; do not claim the historical book burning was caused by Cornelis.
-      - Do not claim Haecht's historical seven offenders included Cornelis.
+      - Claes is physically present in the crowd.
+      - Cornelis has previously been detained or examined in Antwerp and is linked to book/paper traffic by renewed exposure.
+      - The formal story charge concerns seditious network complicity, forbidden papers/books/liederen/prints/correspondence, recidive after earlier borg/conditions, and refusal to name others.
+      - Simple book smuggling alone is insufficient.
       - Cornelis' death must not depend on him carrying OBJ.MEMORIAAL.
       - Cornelis never reveals the full recovery key.
-      - The final usable clue is minimal: "Castanea. Niet onze bloem — de boom."
+      - The final usable clue is minimal: Castanea. Niet onze bloem - de boom.
       - The scene contrasts Catholic ars moriendi, Protestant martyr display and Cornelis' protective silence.
+      - Do not claim Haecht documents Cornelis.
     value_shift:
       opening: hope_that_father_can_still_be_recovered_or_explained
       turn: Cornelis refuses the names and does not enter either available death-script cleanly
       closing: father_lost_as_body_but_inherited_as_unresolved_moral_burden
-
   - id: NI.SEQUENCE.MARTYR_LETTER_RELIC.1573_1577.001
     type: SequenceInstance
     label: Brief, tongschroef en reliek
@@ -156,12 +137,8 @@ instances:
       precision: bounded
     locations: [ENT.LOC.ANTWERP]
     entities: [ENT.PERSON.CLAES]
-    source_claims:
-      - SC.HIST.ANTWERP.MAEYKEN_WENS.1573.001
-      - SC.HIST.ANTWERP.HANS_BRET.1577.001
     function: Later martyr memory teaches Claes that a closed mouth can still produce surviving voice through letter, object and community memory.
     knowledge_route: later_hearsay_or_reading
-
   - id: NI.SEQUENCE.REBEL_COUNTER_MARTYRS.1572_PLUS.001
     type: SequenceInstance
     label: Geuzenrecht en katholieke tegenmartelaren
@@ -172,6 +149,5 @@ instances:
       precision: bounded
     locations: [ENT.LOC.DELFT, ENT.LOC.ENKHUIZEN]
     entities: [ENT.PERSON.CLAES]
-    source_claims: [SC.HIST.REBEL_JUSTICE.INVERSION.1572.001]
     function: Prevent moral simplification by showing that rebel power also stages death, mock trial and martyr memory.
     knowledge_route: later_route_memory
