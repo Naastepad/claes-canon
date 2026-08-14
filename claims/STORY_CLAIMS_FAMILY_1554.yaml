@@ -39,7 +39,7 @@ claims:
     date: '1554-05-18'
     precision: day
   source_refs:
-  - SC.HIST.GOES.FIRE_1554.NIEUWSTRAAT_BURNED_HOUSES.001
+  - SC.HIST.GOES.NIEUWSTRAAT.BURNED_HOUSES_1556.001
   - SC.HIST.GOES.FIRE_1554.NIEUWSTRAAT_PARTIAL_DAMAGE.001
   tags: [family, fire, trauma, nigredo, goes, author-decision]
 - id: STC.CLAES.GRANDFATHER.NISSEPAT.001
