@@ -1,4 +1,4 @@
-schema_version: 1.3.0
+schema_version: 1.4.0
 kind: OpenDecisionRegistry
 decisions:
 - id: OPEN.CLAES.DEATH.001
@@ -91,11 +91,32 @@ decisions:
   priority: high
   question: Exact edition/copy status, owner, date and legal/social mechanism by which the special Dodoens reaches the Goes apothecary environment
   status: OPEN
+- id: OPEN.MOTHER.FIRE_1554.001
+  domain: character_trauma
+  priority: high
+  question: Does Claes' mother survive the 18 May 1554 Goes fire, or does the fire become the event in which Claes loses her?
+  status: OPEN
+  historical_guardrails:
+  - "The current fire-specific source bundle supplies no reliable number of dead or injured; her death would therefore be authorial fiction, not a historical casualty claim."
+  - "The family home in the older Nieuwstraat/Armenhoek is not historically proven destroyed and should not be made a total-loss parcel merely to cause her death."
+  - "The salt-fire origin is north of the walled city along the harbour; the supported destructive corridor runs from Oostzelke/harbour through Turfkade and north-western/western fabric toward watermill/Molenwater and Kruisbroeders."
+  if_death_is_chosen:
+    strongest_spatial_options:
+    - "She is already at or near a harbour-linked household/business/storage destination when the fire multiplies into separate fronts."
+    - "She re-enters or attempts to cross the harbour/Turfkade/Kruisbroeders damage corridor for a person or essential household/business matter and is cut off by new spot fires or collapse."
+    - "She is recovered alive with burns, smoke injury or collapse trauma and dies later; this avoids inventing an instantaneous documented death in the street."
+    weaker_option: "Death inside a totally destroyed family home while the house otherwise survives the fire reconstruction."
+    dramatic_consequence: "Cornelis may save Claes/the dwelling while failing to reach her; Claes can later misread that impossible choice as a preventable failure, deepening the 1554 micro-Nigredo and the constriction of the sinne."
+  if_survival_is_chosen:
+    consequence: "OPEN.MOTHER.ADULT_FUNCTION.001 remains active and her later relationship to Cornelis' fall, Claes and the household must be developed."
+  downstream_dependency: OPEN.MOTHER.ADULT_FUNCTION.001
 - id: OPEN.MOTHER.ADULT_FUNCTION.001
   domain: character
   priority: medium
   question: Adult plot function of Claes' mother after Cornelis' arrest
   status: OPEN
+  depends_on: "OPEN.MOTHER.FIRE_1554.001 resolving that she survives the 1554 fire"
+  guardrail: "If OPEN.MOTHER.FIRE_1554.001 resolves that she dies from the 1554 fire, this adult-function question becomes not applicable and must be resolved explicitly rather than silently deleted."
 - id: OPEN.GILLIS.ROLE.001
   domain: character
   priority: medium
