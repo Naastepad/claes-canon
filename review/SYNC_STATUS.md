@@ -2,64 +2,52 @@
 
 Status: `SYNC_COMPLETE_ON_FEATURE_BRANCH`
 
-Release state: `HUMAN_REVIEW_REQUIRED`
+Release state: `MERGE_AUTHORIZED_BY_HUMAN`
 
-`main` remains the canonical source of truth. The explicit author decisions of 13 August 2026 remain synchronized there. The authoring branch `goes-grote-kerk-20260813` / PR #3 now contains an additional source-weighted Goes normalization; it is **not canonical until human review and merge**.
+`main` remains canonical until PR #3 is merged. The author has explicitly ordered the merge of PR #3 after resolving the Goes residence, Nieuwstraat and rederijker-location questions.
 
-## Main authority chain retained
-- `canon/DECISIONS_2026-08-13.md` — human-readable decisions
-- `canon/DECISIONS.yaml` — machine-readable decision IDs
-- `claims/STORY_CLAIMS.yaml` — birth and approved character claims
-- `entities/ENTITIES.yaml` — Claes birth and beloved recovery role
-- `narrative/arcs.yaml` — birth anchors corrected to 1542
-- `narrative/themes.yaml` — psychological need, moral need, spiritual journey and `VALUE.CLAES.SINNE`
-- `narrative/sinne_recovery.yaml` — canonical trauma/constriction/recovery/sovereignty extension
-- `narrative/beloved_recovery.yaml` — beloved/apothecary-daughter role in the Enkhuizen recovery line
-- `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` — current operating master
-- `review/MIGRATION_REVIEW.yaml` and `MIGRATION_REVIEW.md` — review decisions resolved
-- `scripts/validate_canon.py` — repository cross-layer validator
+## Authority chain synchronized on PR #3
+- `canon/DECISIONS_2026-08-13.md` and `canon/DECISIONS_2026-08-14.md` — human-readable decisions;
+- `canon/DECISIONS.yaml` — machine-readable decision IDs through 14 August 2026;
+- `claims/STORY_CLAIMS.yaml` and `claims/STORY_CLAIMS_2026-08-14.yaml` — active story truths;
+- `claims/SOURCE_CLAIMS_GOES_LIVING_CITY.yaml` and `claims/SOURCE_CLAIMS_GOES_2026-08-14.yaml` — normalized Goes evidence;
+- `entities/ENTITIES.yaml`, `entities/GOES_LIVING_CITY.yaml`, `entities/GOES_GROTE_KERK.yaml` — persons, properties and locations;
+- `narrative/world_goes_living_city.yaml` and `narrative/world_goes_grote_kerk.yaml` — time-sensitive Goes scene frameworks;
+- `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` and `storybible/MASTER.md` — synchronized human-readable operating authority;
+- `review/MIGRATION_REVIEW.yaml` — all 37 Story Claims classified, including the three explicit 14-August human decisions;
+- `scripts/validate_canon.py` — cross-layer validation through 14 August 2026.
 
-## PR #3 — Goes evidence/worldbuilding synchronization
-The branch integrates the Maria Magdalenakerk evidence and now also the living-city framework without silently closing story choices.
+## PR #3 — integrated scope
+The branch contains the Maria Magdalenakerk evidence, living-city framework, old-Nieuwstraat reconstruction, Cornelis household residence decision and the corrected rederijker meeting chronology.
 
-Added/updated layers:
-- `sources/SRC-HIST-GOES-GROTEKERK-001.md` and `claims/SOURCE_CLAIMS.yaml` church evidence from the earlier PR #3 work;
-- `entities/GOES_GROTE_KERK.yaml` and `narrative/world_goes_grote_kerk.yaml`;
-- `sources/SRC-HIST-GOES-LIVING-CITY-001.md` — transport-register, atlas/topography and event provenance;
-- `claims/SOURCE_CLAIMS_GOES_LIVING_CITY.yaml` — normalized property, school, salt-industry, fire, siege and institutional-location claims;
-- `entities/GOES_LIVING_CITY.yaml` — addressable Goes locations, historical Nissepat persons and key property/event entities;
-- `narrative/world_goes_living_city.yaml` — year-sensitive spatial/social scene framework and route-query protocol;
-- `canon/OPEN_DECISIONS.yaml` — Cornelis household residence, pre-1594 Nieuwstraat identity and rederijkers meeting-place explicitly kept OPEN;
-- `mapping/CONVERSION_LEDGER.yaml` — Revision-11 sections 18 (Goes), 19 (Nissepad) and 21 (historical Nissepat) advanced from indexed to normalized_core;
-- `AGENTS.md` — mandatory spatial-reasoning guardrails for atlas-backed settings;
-- `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` — human-readable Goes living-city synthesis.
+### Closed Goes decisions
+- `OPEN.CORNELIS.RESIDENCE.GOES.1542.001` → resolved by `DEC.CORNELIS.RESIDENCE.GOES.2026-08-14`: the historically documented house bought by Claes Jacobsz. Nissepat on 20 March 1542 in the older Nieuwstraat is the fictional Cornelis household's childhood home. Purchase/topology are historical; occupancy is novel canon. Residence is separate from business.
+- `OPEN.GOES.NIEUWSTRAAT.PRE1594.001` → resolved by `DEC.GOES.NIEUWSTRAAT.IDENTITY.2026-08-14`: pre-1594 `Nieuwstraat` is treated as the older Nieuwstraat/Oude Nieuwstraat in or by the Armenhoek, distinct from the planmatige/current Nieuwstraat of the 1594 expansion; exact 1542 street axis remains unknown.
+- `OPEN.GOES.REDERIJKERS.MEETINGPLACE.001` → resolved by `DEC.GOES.REDERIJKERS.MEETINGPLACE.2026-08-14`: Cornelis-era meetings use the Zusterhuis/former Zwarte-Zusters complex at the Singelstraat. The Nardusbloem moved to the Sint-Sebastiaanshof only in 1626, so that later meeting place is not back-projected.
 
-No new `DEC.*` or `STC.*` has been created for Cornelis' residence, the pre-1594 Nieuwstraat identity, the exact rederijkers meeting place or a direct ownership link between Cornelis and a historical brewery. These remain evidence/proposal/open-decision territory.
+### Remaining related question
+- `OPEN.CORNELIS.REDERIJKERS.CHAMBER.001` remains open only for the **named chamber identity** of fictional Cornelis. Meeting location is already closed. The Nardusbloem/old Magdalena-linked chamber and a generic Goese kamer are the historically safest options; Castanienbloem is not to be back-projected as historical Cornelis-era fact.
 
-## Spatial integrity rules now represented
-- ownership, residence, business operation and adjacency are distinct relations;
-- the 9,912-act transport corpus is a dense social/property evidence layer, not proof that all ownership chains are simultaneous physical houses;
+## Spatial integrity rules
+- ownership, residence, business operation and adjacency remain distinct relations;
+- the 9,912-act transport corpus is a dense social/property evidence layer, not proof that every ownership chain is a simultaneous physical house;
 - four belendingen support topology and street-side reasoning, not exact cadastral polygons;
-- named parties/occupations can populate scene backgrounds only at their supported time/location level;
-- 1554 fire and 1572 military destruction are separate event footprints;
-- the pre-1594 `Nieuwstraat` is not automatically the planned Nieuwstraat of 1594;
+- the older Nieuwstraat is resolved at toponym/zone level only; its exact old axis must not be invented;
+- the 1542 family home is on the west side of its historical street according to the deed topology (street east);
+- 1554 fire and 1572 military destruction remain separate event footprints;
+- the family home is not declared burned in 1554 without parcel-level evidence;
 - the 1572 burned Voorstad brewery is not automatically the equipped Nissepad brewery documented in 1577;
-- individual Nissepat houses are not marked destroyed in 1554 without parcel-level evidence.
-
-## Remaining human decisions
-- `OPEN.CORNELIS.RESIDENCE.GOES.1542.001`
-- `OPEN.GOES.NIEUWSTRAAT.PRE1594.001`
-- `OPEN.GOES.REDERIJKERS.MEETINGPLACE.001`
-- existing `OPEN.*` decisions remain unchanged/open unless separately decided.
+- Zusterhuis, Maria Magdalena devotional space and post-1626 Sint-Sebastiaanshof are distinct places/functions/times.
 
 ## Validation state
-Repository continuity validation passed on the current synchronized branch head in workflow run 106. A passing validator cannot promote PROPOSED or OPEN material to canon.
+Repository continuity validation **passed** on PR-head `9f89ab435c79a50693159b4bb7bb656d88469465` in workflow run **121**. The validator includes explicit assertions for the three 14-August decisions, 37 migration-reviewed Story Claims, the residence links, old-Nieuwstraat uncertainty boundary and the Nardusbloem Zusterhuis→Sint-Sebastiaan chronology.
 
 ## Legacy/audit note
-- `storybible/LEMMA_MCKEE_MASTER.md` is retained as the earlier transformed work edition and is no longer the active operating master while it contains migration-era wording.
-- `MOTIF.SINNE` and `REL.CLAES.BELOVED` retain their original base records; their approved 13-Aug-2026 development is represented by the canonical extension records `MOTIF.SINNE.RECOVERY`, `ARC.CLAES.SINNE_RECOVERY` and `REL.CLAES.BELOVED.RECOVERY`.
+- `storybible/LEMMA_MCKEE_MASTER.md` remains the earlier transformed work edition; the dated operating master is authoritative while legacy wording remains unreconciled there.
+- Resolved `OPEN.*` records are retained with `status: RESOLVED` for audit history rather than deleted.
+- `MOTIF.SINNE` and `REL.CLAES.BELOVED` retain their original base records; their approved 13-Aug-2026 development remains represented by the canonical extension records.
 
 ## Lemma execution policy
-- `lemma/*.lemma` is the repository's deterministic rules-as-code layer and is versioned and validated in GitHub.
-- GitHub `main` is authoritative for both Storybible content and Lemma source.
+- `lemma/*.lemma` remains the repository's deterministic rules-as-code layer and is versioned and validated in GitHub.
+- GitHub `main` is authoritative after merge for both Storybible content and Lemma source.
 - LemmaBase is optional and downstream-only; it never overrides GitHub canon.
