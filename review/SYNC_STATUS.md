@@ -53,7 +53,7 @@ No new `DEC.*` or `STC.*` has been created for Cornelis' residence, the pre-1594
 - existing `OPEN.*` decisions remain unchanged/open unless separately decided.
 
 ## Validation state
-Repository continuity validation passed on the synchronized branch after the YAML quoting fix in `entities/GOES_LIVING_CITY.yaml` (workflow run 101, commit `1018054a90d2a1c842bcd40f040b0d540de7bad3`). The final status-only commit must retain the same green structural state. A passing validator cannot promote PROPOSED or OPEN material to canon.
+Repository continuity validation passed on the final synchronized branch head through workflow run 102. A passing validator cannot promote PROPOSED or OPEN material to canon.
 
 ## Legacy/audit note
 - `storybible/LEMMA_MCKEE_MASTER.md` is retained as the earlier transformed work edition and is no longer the active operating master while it contains migration-era wording.
