@@ -1,4 +1,4 @@
-schema_version: 1.2.0
+schema_version: 1.3.0
 kind: CanonDecisionRegistry
 decisions:
 - id: DEC.CLAES.BIRTH.2026-08-13
@@ -111,3 +111,21 @@ decisions:
   - ARC.CLAES.CORNELIS
   - NI.EVENT.REIMERSWAAL_MOVE.1554.001
   rationale: This preserves the complexity that both father and son lose almost everything in 1554 while making Cornelis' continued labour and educational sacrifice a form of love rather than simple emotional withdrawal.
+- id: DEC.CLAES.EXTENDED_FAMILY.2026-08-14
+  type: CanonDecision
+  status: CANON
+  decision: "The approved extended family is: mother Tanneken Jansdochter; younger brother Jan Corneliszn. Nissepat, born approximately June 1544 and named in novel canon for Tanneken's father; paternal grandparents historical Claes Jacobsz. Nissepat and fictional Lijsbet Pietersdochter; maternal grandparents a fictionalized maternal-grandfather figure modeled on a historical Goese Jan Jansen kuiper and fictional Mayken Pietersdochter. Lijsbet dies circa 1540–1541 in story canon, the maternal-grandfather model around 1543, and Mayken survives the 1554 fire."
+  affects:
+  - STC.CLAES.HOUSEHOLD_PRE_FIRE.1554.001
+  - STC.CLAES.FAMILY_FIRE.1554.001
+  - STC.CLAES.EXTENDED_FAMILY.001
+  - ENT.PERSON.CLAES_MOTHER
+  - ENT.PERSON.CLAES_BROTHER
+  - ENT.PERSON.LIJSBET_PIETERSDOCHTER
+  - ENT.PERSON.JAN_JANSEN_KUIPER_MODEL
+  - ENT.PERSON.MAYKEN_PIETERSDOCHTER
+  - ENT.FAMILY.CLAES_EXTENDED_FAMILY_1554
+  - REL.CLAES.BROTHER
+  - REL.CLAES.TANNEKEN
+  - REL.CLAES.MATERNAL_GRANDPARENTS
+  rationale: "The author explicitly approved the proposed family architecture. Historical source and fiction remain separated: Claes Jacobsz. and the Goese Jan Jansen-kuiper evidence are historical anchors/models, while the kinship assignments, Lijsbet, Mayken, the exact maternal-grandfather identity/death and all cross-generation relations are novel canon."
