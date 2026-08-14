@@ -1,4 +1,4 @@
-schema_version: 1.2.0
+schema_version: 1.3.0
 kind: OpenDecisionRegistry
 decisions:
 - id: OPEN.CLAES.DEATH.001
@@ -146,34 +146,49 @@ decisions:
   domain: spatial_continuity
   priority: high
   question: Where do Cornelis Claesz Nissepat, his wife and young Claes reside in Goes during Claes' childhood, distinct from business and family property locations?
-  status: OPEN
-  fixed:
-  - Cornelis' residence must not be inferred from ownership, family proximity or a business site.
-  - Claes is born in Goes on 8 December 1542.
-  candidates:
-  - the house bought by historical Claes Jacobsz Nissepat in a pre-1594 Nieuwstraat on 20 March 1542, fictionally made available to Cornelis
-  - a separate intramural residence not yet identified
-  - residence near the southern business environment, only if separately established
+  status: RESOLVED
+  resolved_by: DEC.CORNELIS.RESIDENCE.GOES.2026-08-14
+  resolution: The historical house bought by Claes Jacobsz. Nissepat in the pre-1594 Nieuwstraat on 20 March 1542 is canonically the fictional Cornelis household's family home during Claes' Goes childhood.
   guardrails:
-  - Do not canonise residence at the Nissepad merely because Cornelis' technical/business line is associated with that corridor.
-  - Once decided, synchronize the atlas route to church, market, school and business.
+  - Historical purchase and parcel topology are evidence; occupation by Cornelis' fictional household is novel canon.
+  - Residence does not establish ownership by Cornelis and is distinct from Nissepad, harbour, brewery, warehouse and salt-business sites.
+  - The 1554 fire does not automatically destroy this house without parcel-level evidence.
 - id: OPEN.GOES.NIEUWSTRAAT.PRE1594.001
   domain: historical_reconstruction
   priority: high
   question: What street/place identity do the transport-register references to Nieuwstraat before 1594 represent, including Claes Jacobsz Nissepat's 1542 house?
-  status: OPEN
+  status: RESOLVED
+  resolved_by: DEC.GOES.NIEUWSTRAAT.IDENTITY.2026-08-14
+  resolution: Treat the pre-1594 deed-name as an older Nieuwstraat/Oude Nieuwstraat in or by the Armenhoek, distinct from the planmatige/current Nieuwstraat associated with the 1594 expansion. Exact 1542 axis remains uncertain.
   fixed:
   - transport acts attest a Nieuwstraat before 1594
-  - the planmatige Nieuwstraat has an aanlegbesluit in 1594
+  - later transport locators connect Nieuwstraat/Oude Nieuwstraat with the Armenhoek
+  - the planmatige/current Nieuwstraat belongs to the 1594 expansion decision
   guardrails:
   - Never merge the two location identities by normalized name alone.
   - Preserve the 1542 parcel topology: street east; Jacob Dierixsen de Bye north, west and south.
+  - Zone-level resolution does not license an invented exact cadastral street line.
 - id: OPEN.GOES.REDERIJKERS.MEETINGPLACE.001
   domain: historical_reconstruction
   priority: medium
   question: Where did the active Goese rederijkers meet, rehearse or store chamber property during Cornelis' period?
+  status: RESOLVED
+  resolved_by: DEC.GOES.REDERIJKERS.MEETINGPLACE.2026-08-14
+  resolution: Cornelis-era rederijker scenes use the Zusterhuis/former Zwarte-Zusters complex at the Singelstraat. The Nardusbloem moved to the Sint-Sebastiaangilde only in 1626, so that hof is not back-projected into Cornelis' period.
+  guardrails:
+  - The Zusterhuis chronology is specifically documented for the Nardusbloem/old Goese chamber; do not infer the same fixed room for every separately named Goese chamber.
+  - Maria Magdalena devotion and worldly meeting place remain distinct institutional relations.
+  - Exact room inside the Zusterhuis remains unknown.
+- id: OPEN.CORNELIS.REDERIJKERS.CHAMBER.001
+  domain: character_historical_embedding
+  priority: medium
+  question: Which named Goese chamber, if any, is fictional Cornelis explicitly said to belong to?
   status: OPEN
-  fixed:
-  - Goese rhetorician culture is historically established.
-  - Maria Magdalena devotion has a documented rhetorician connection.
-  guardrail: Neither fact establishes a chamber house or formal meeting right in the Maria Magdalenakerk.
+  candidates:
+  - Nardusbloem / old Magdalena-linked chamber as the strongest continuous mid-sixteenth-century model
+  - generic Goese kamer van retorica without naming it
+  guardrails:
+  - De Goudtsblome is documented 1540–1543 and should not be treated as continuously active through Cornelis' later story without evidence.
+  - De Clisblome is documented briefly around 1545/1546.
+  - De Edele Castanienbloem is documented from 1595 and must not be presented as a historical Cornelis-era chamber unless explicitly chosen as acknowledged fictional back-projection.
+  - The meeting-place decision is already closed; this open record concerns chamber identity only.
