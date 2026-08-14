@@ -1,4 +1,4 @@
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: StoryClaimRegistry
 id: STCR.EXECUTIONS_REFORMATION.2026-08-15
 status: AUTHORING
@@ -82,42 +82,70 @@ claims:
     statement: Claes is physically present as witness at Cornelis' execution.
     subjects: [ENT.PERSON.CLAES, ENT.PERSON.CORNELIS]
     story_time:
-      date: '1569-03-12'
+      date: '1569-11-19'
       precision: day
     tags: [Cornelis, execution, witness, canon]
+
+  - id: STC.CORNELIS.FIRST_ARREST_BAIL.1567.001
+    type: StoryClaim
+    canon_status: CANON_AUTHORING_BRANCH
+    evidence_status: PLAUSIBLE
+    decision_ids: [DEC.CORNELIS.DEATH.1569.2026-08-15.REVISED]
+    statement: Cornelis is first arrested or seriously examined in Antwerp in autumn 1567 in a forbidden paper/book/print matter and is released on borg or equivalent surety/conditions, proving that he is operationally unsafe but not yet fatally exposed.
+    subjects: [ENT.PERSON.CORNELIS]
+    objects: [ENT.LOC.ANTWERP]
+    story_time:
+      earliest: '1567-09-01'
+      latest_exclusive: '1568-01-01'
+      precision: season
+    source_claims: [SC.HIST.ANTWERP.BOOK_CASES.BAIL_AND_NON_EXECUTION.1567_1569.001]
+    tags: [Cornelis, first_arrest, bail, book_repression, plausibility]
 
   - id: STC.CORNELIS.DEATH.ANTWERP.1569.001
     type: StoryClaim
     canon_status: CANON_AUTHORING_BRANCH
     evidence_status: PLAUSIBLE
-    decision_ids: [DEC.CORNELIS.DEATH.1569.2026-08-15]
-    statement: Cornelis is executed publicly in Antwerp on 12 March 1569 after detention in or by Het Steen and a sentence for logistical complicity in forbidden heretical and seditious book/paper traffic and refusal to name accomplices; he is beheaded by sword on the Grote Markt before/near the Stadhuis.
+    decision_ids: [DEC.CORNELIS.DEATH.1569.2026-08-15.REVISED]
+    statement: Cornelis is executed publicly in Antwerp on 19 November 1569, tied fictionally to the documented market/stadhuis environment in which books seized in March 1569 were burned; after a prior arrest/release he is condemned as a seditious logistical network carrier, not as a protected printer or simple book possessor.
     subjects: [ENT.PERSON.CORNELIS, ENT.PERSON.CLAES]
     objects: [ENT.LOC.ANTWERP, ENT.LOC.ANTWERP.STEEN, ENT.LOC.ANTWERP.GROTE_MARKT]
     story_time:
-      date: '1569-03-12'
+      date: '1569-11-19'
       precision: day
-    tags: [Cornelis, Antwerp, execution, beheading, forbidden_books, protective_silence]
+    source_claims:
+      - SC.HIST.ANTWERP.BOOK_VISITATIONS.MARCH_NOV_1569.001
+      - SC.HIST.ANTWERP.EXECUTION_CONTEXT.NOVEMBER_1569.001
+      - SC.HIST.ANTWERP.EXECUTION_PLACES.1569.001
+    tags: [Cornelis, Antwerp, execution, beheading, book_burning, forbidden_books, protective_silence]
+    charge_model:
+      not_enough: simple book possession or ordinary book-smuggling
+      required: recidive after warning or borg; clandestine network traffic; heretical and seditious papers/books/liederen/prints/libels/correspondence; refusal to name others
     guardrails:
       - Cornelis is not a protected printer, author or preacher.
       - Cornelis is not carrying OBJ.MEMORIAAL.
       - Claes does not understand the Las Casas recovery architecture at the execution.
       - This is novel canon, not archival evidence for a historical Cornelis execution.
+      - Do not claim that Haecht's historical seven offenders included Cornelis.
+      - The sword execution remains justified only by the seditious/network/recidive framing.
 
   - id: STC.CORNELIS.CARRIER_NOT_PRINTER.001
     type: StoryClaim
     canon_status: CANON_AUTHORING_BRANCH
     evidence_status: PLAUSIBLE
-    decision_ids: [DEC.CORNELIS.DEATH.1569.2026-08-15]
-    statement: Cornelis' death model is not that he is a protected printer like Plantin or Silvius, but that he is a lower-protection logistical carrier whose routes, vaten, storage, papers, contacts and silence make him expendable.
+    decision_ids: [DEC.CORNELIS.DEATH.1569.2026-08-15.REVISED]
+    statement: Cornelis' death model is not that he is a protected printer like Plantin or Silvius, but that he is a lower-protection logistical carrier whose routes, vaten, storage, papers, contacts, prior warning and silence make him expendable.
     subjects: [ENT.PERSON.CORNELIS]
+    source_claims:
+      - SC.HIST.ANTWERP.BOOK_EDICT.1567.001
+      - SC.HIST.ANTWERP.BOOK_CASES.BAIL_AND_NON_EXECUTION.1567_1569.001
+      - SC.HIST.ANTWERP.CLANDESTINE_PRINT_COPY_NETWORK.1568.001
     tags: [Cornelis, book_smuggling, logistics, plausibility]
 
   - id: STC.CORNELIS.SILENCE_THIRD_SCRIPT.001
     type: StoryClaim
     canon_status: CANON_AUTHORING_BRANCH
     evidence_status: PLAUSIBLE
-    decision_ids: [DEC.CORNELIS.DEATH.1569.2026-08-15]
+    decision_ids: [DEC.CORNELIS.DEATH.1569.2026-08-15.REVISED]
     statement: Cornelis dies neither as ordinary repentant criminal nor as loud Protestant martyr, but in a third script of protective silence: he gives no names and no complete explanation.
     subjects: [ENT.PERSON.CORNELIS, ENT.PERSON.CLAES]
     tags: [Cornelis, silence, ars_moriendi, martyrdom, father_son]
