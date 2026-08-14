@@ -1,4 +1,4 @@
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: NarrativeInstanceRegistry
 id: NIR.EXECUTIONS_REFORMATION.2026-08-15
 status: AUTHORING
@@ -78,12 +78,46 @@ instances:
     function: Trigger the declassification of Cornelis as direct-key recipient and the post-break secret loading of Claes' existing memoriaal.
     guardrail: Cornelis need not throw stones, sing, rescue anyone or be arrested in 1564.
 
-  - id: NI.SCENE.CORNELIS_EXECUTION.ANTWERP.1569.001
-    type: SceneInstance
-    label: Claes getuigt van Cornelis' onthoofding in Antwerpen
+  - id: NI.EVENT.CORNELIS_FIRST_ARREST.ANTWERP.1567.001
+    type: EventInstance
+    label: Eerste arrestatie / borgtocht Cornelis
     canon_status: CANON_AUTHORING_BRANCH
     story_time:
-      date: '1569-03-12'
+      earliest: '1567-09-01'
+      latest_exclusive: '1568-01-01'
+      precision: season
+    locations: [ENT.LOC.ANTWERP]
+    entities: [ENT.PERSON.CORNELIS]
+    story_claims:
+      - STC.CORNELIS.FIRST_ARREST_BAIL.1567.001
+      - STC.CORNELIS.CARRIER_NOT_PRINTER.001
+    function: Prove in-scene or through recalled record that Cornelis has become visible after the 1564 security break, but that first book/paper suspicion alone does not yet plausibly kill him.
+    guardrail: Use borg/release/conditions as plausibility device, not as a full acquittal or exoneration.
+
+  - id: NI.SEQUENCE.CORNELIS_REEXPOSURE.ANTWERP.1568_1569.001
+    type: SequenceInstance
+    label: Heropduiken van Cornelis' route in clandestiene papierstroom
+    canon_status: CANON_AUTHORING_BRANCH
+    story_time:
+      earliest: '1568-09-01'
+      latest_exclusive: '1569-11-19'
+      precision: bounded
+    locations: [ENT.LOC.ANTWERP, ENT.LOC.GOES]
+    entities: [ENT.PERSON.CORNELIS, ENT.PERSON.CLAES]
+    story_claims:
+      - STC.CORNELIS.DEATH.ANTWERP.1569.001
+      - STC.CORNELIS.CARRIER_NOT_PRINTER.001
+    source_claims:
+      - SC.HIST.ANTWERP.CLANDESTINE_PRINT_COPY_NETWORK.1568.001
+      - SC.HIST.ANTWERP.BOOK_VISITATIONS.MARCH_NOV_1569.001
+    function: Build the second, fatal exposure through clandestine letters, libels, liederen, figures/prints, bookshop visitations and old route traces rather than a single book-smuggling catch.
+
+  - id: NI.SCENE.CORNELIS_EXECUTION.ANTWERP.1569.001
+    type: SceneInstance
+    label: Claes getuigt van Cornelis' executie op de dag van de boekverbranding
+    canon_status: CANON_AUTHORING_BRANCH
+    story_time:
+      date: '1569-11-19'
       precision: day
     locations: [ENT.LOC.ANTWERP, ENT.LOC.ANTWERP.STEEN, ENT.LOC.ANTWERP.GROTE_MARKT]
     entities: [ENT.PERSON.CLAES, ENT.PERSON.CORNELIS]
@@ -91,13 +125,18 @@ instances:
       - STC.CORNELIS.EXECUTION_WITNESS.001
       - STC.CORNELIS.DEATH.ANTWERP.1569.001
       - STC.CORNELIS.SILENCE_THIRD_SCRIPT.001
-    function: Cornelis' public beheading becomes Claes' decisive father-loss and moral inheritance; it resolves the father as vulnerable carrier, not protected printer, and clarifies why truth must survive through indirect carriers.
+    source_claims:
+      - SC.HIST.ANTWERP.BOOK_VISITATIONS.MARCH_NOV_1569.001
+      - SC.HIST.ANTWERP.EXECUTION_CONTEXT.NOVEMBER_1569.001
+    function: Cornelis' public execution is fictionally embedded in the documented 19 November 1569 Antwerp market book-burning environment; Claes sees father, books, civic judgement and public punishment bound together.
     required_scene_logic:
       - Claes is physically present in the crowd on the Grote Markt.
       - Cornelis has been detained in or by Het Steen.
-      - The formal story charge concerns forbidden and seditious books, papers, liederen, figures/prints, correspondence and refusal to name others.
-      - Cornelis is beheaded by sword, not burned and not secretly drowned.
-      - Confiscated papers may be burned separately as proof/staging.
+      - The formal story charge requires recidive after first warning/borg, clandestine network traffic, heretical and seditious papers/books/liederen/prints/libels/correspondence and refusal to name others.
+      - Cornelis is not killed for simple book possession.
+      - Cornelis is beheaded by sword only because the charge is framed as seditious/network/recidive; reopen method if that framing is weakened.
+      - Books or papers seized in March burn as public evidence/context; do not claim the historical book burning was caused by Cornelis.
+      - Do not claim Haecht's historical seven offenders included Cornelis.
       - Cornelis' death must not depend on him carrying OBJ.MEMORIAAL.
       - Cornelis never reveals the full recovery key.
       - The final usable clue is minimal: "Castanea. Niet onze bloem — de boom."
