@@ -69,7 +69,7 @@ entities:
   parent: ENT.LOC.GOES
 - id: ENT.LOC.GOES.SHEER_HENDRIKSKINDERENPOORT
   type: Location
-  label: 's-Heer Hendrikskinderenpoort
+  label: "'s-Heer Hendrikskinderenpoort"
   fictionality: historical
   canon_status: PROPOSED
   parent: ENT.LOC.GOES
