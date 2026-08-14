@@ -1,4 +1,4 @@
-schema_version: 1.1.0
+schema_version: 1.2.0
 kind: WorldModuleRegistry
 modules:
 - id: WORLD.GOES_LIVING_CITY
@@ -15,6 +15,8 @@ modules:
   - SC.HIST.GOES.STADSSCHOOL.LOCATION_1558.001
   - SC.HIST.GOES.SALT.WESTZELKE_1543_1544.001
   - SC.HIST.GOES.FIRE_1554.FOOTPRINT.001
+  - SC.HIST.GOES.NIEUWSTRAAT.BURNED_HOUSES_1556.001
+  - SC.HIST.GOES.FIRE_1554.NIEUWSTRAAT_PARTIAL_DAMAGE.001
   - SC.HIST.GOES.BREWERY.NISSEPAD_1577.001
   - SC.HIST.GOES.WESTZELKE.BURNT_SALTPAN_1577.001
   - SC.HIST.GOES.SIEGE_1572.INDUSTRY.001
@@ -57,6 +59,7 @@ modules:
       rule: "Use an older Nieuwstraat/Oude Nieuwstraat in or by the Armenhoek for pre-1594 acts. The historical toponym is certain, the Armenhoek zone is supported, and the exact 1542 street axis remains unknown."
       evidence_hook: ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
       parcel_topology: "1542 Nissepat house: street east; Jacob Dierixsen de Bye north, west and south; therefore house is on the west side of the historical street."
+      fire_state: "Post-fire deeds document burned houses at the corner of Nieuwstraat and in Armenhoek, while ordinary Nieuwstraat houses also survive/transfer. Treat as mixed partial damage, not safe zone and not total destruction."
     planned_nieuwstraat:
       entity: ENT.LOC.GOES.NIEUWSTRAAT_1594
       status: PROPOSED_HISTORICAL_ANCHOR
@@ -84,6 +87,8 @@ modules:
     canonical_residence: ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
     residence_decision: DEC.CORNELIS.RESIDENCE.GOES.2026-08-14
     business_separation: "Nissepad, harbour, brewery, salt and storage locations remain separate relations unless separately linked."
+    fire_outcome_1554: OPEN.CLAES.FAMILY_FIRE_1554.001
+    fire_outcome_note: "The street environment is now supported as partially damaged; destruction of this specific house and any household deaths remain an explicit story decision."
     rhetorician_meeting_environment: ENT.LOC.GOES.ZUSTERHUIS
     rhetorician_decision: DEC.GOES.REDERIJKERS.MEETINGPLACE.2026-08-14
     chamber_identity: OPEN.CORNELIS.REDERIJKERS.CHAMBER.001
@@ -131,8 +136,10 @@ modules:
       destroyed_or_confirmed_damage: [ENT.LOC.GOES.TURFKADE, ENT.LOC.GOES.KRUISBROEDERS]
       origin_zone: ENT.LOC.GOES.OOSTZELKE
       broad_damage: "harbour plus northern/western Goes"
-      parcel_rule: "The older-Nieuwstraat family home is not marked destroyed: no matching parcel-level evidence currently proves destruction."
-      narrative_function: "supports disruption of trade, schooling network or leased/storage assets while the family home itself can remain standing"
+      nieuwstraat_microfootprint: "mixed/partial damage supported: burned houses are documented at the corner of Nieuwstraat and in Armenhoek in 1556, while ordinary Nieuwstraat houses are also transferred after the fire"
+      family_home_specific_state: OPEN.CLAES.FAMILY_FIRE_1554.001
+      parcel_rule: "Do not presume the 1542 Nissepat home either safe or burned. The street-level evidence now makes destruction plausible, but no current chain ties the documented burned houses to the 1542 parcel."
+      narrative_function: "The current preferred but non-canonical hypothesis is destruction/uninhabitability of the family home, with mother and one younger sister killed while Claes and Cornelis are away; this must remain PROPOSED until human decision."
     '1572':
       siege_pressure: [ENT.LOC.GOES.SHEER_HENDRIKSKINDERENPOORT, ENT.LOC.GOES.HAVENPOORT]
       destroyed_industry: ["outside salt works", ENT.PROP.GOES.VOORSTAD.BREWERY_1572]
@@ -168,6 +175,8 @@ modules:
   - "Do not invent the exact 1542 axis of the older Nieuwstraat beyond the supported Armenhoek zone and deed topology."
   - "Cornelis' family home is canonically resolved, but residence remains distinct from his occupation and business properties."
   - "Do not conflate the 1572 burned Voorstad brewery with the documented 1577 Nissepad brewery."
-  - "Do not claim a specific Nissepat house burned in 1554 unless parcel-level evidence is found."
+  - "Do not describe the older Nieuwstraat as untouched by the 1554 fire; post-fire deeds prove burned houses in the Nieuwstraat/Armenhoek environment."
+  - "Do not claim the specific 1542 Nissepat house burned in 1554 as historical fact; its fate is OPEN.CLAES.FAMILY_FIRE_1554.001."
+  - "Do not make Claes' mother or sibling(s) historical fire victims; any such deaths are explicit novel fiction and remain open until author decision."
   - "Do not back-project the Nardusbloem's post-1626 Sint-Sebastiaanshof meeting place into Cornelis' period."
   - "Do not infer a shared fixed meeting room for all four named Goese chambers from the Nardusbloem evidence."
