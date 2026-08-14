@@ -1,0 +1,48 @@
+schema_version: 1.0.0
+kind: StoryClaimRegistry
+claim_count: 3
+claims:
+- id: STC.CORNELIS.HOUSEHOLD_GOES.1542.001
+  type: StoryClaim
+  statement: "In novel canon, Cornelis' household uses the house bought by historical Claes Jacobsz. Nissepat in the pre-1594 Nieuwstraat on 20 March 1542 as its Goese family home; Claes grows up there until his departure to Reimerswaal after the 1554 fire."
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids:
+  - DEC.CORNELIS.RESIDENCE.GOES.2026-08-14
+  subjects:
+  - ENT.PERSON.CORNELIS
+  - ENT.PERSON.CLAES
+  objects:
+  - ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
+  story_time:
+    earliest: '1542-03-20'
+    latest_exclusive: '1554-05-19'
+    precision: bounded-story-window
+  tags: [goes, residence, childhood, nieuwstraat, author-decision]
+- id: STC.GOES.NIEUWSTRAAT.PRE1594.001
+  type: StoryClaim
+  statement: "For novel and atlas continuity, the pre-1594 deed-name Nieuwstraat is treated as an older Nieuwstraat/Oude Nieuwstraat in or by the Armenhoek, distinct from the planmatige Nieuwstraat laid out from 1594; its exact 1542 street axis remains uncertain."
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  decision_ids:
+  - DEC.GOES.NIEUWSTRAAT.IDENTITY.2026-08-14
+  objects:
+  - ENT.LOC.GOES.NIEUWSTRAAT_PRE1594
+  - ENT.LOC.GOES.NIEUWSTRAAT_1594
+  source_refs:
+  - SC.HIST.GOES.NIEUWSTRAAT.PRE1594.001
+  tags: [goes, topography, nieuwstraat, armenhoek, continuity]
+- id: STC.CORNELIS.REDERIJKERS.ZUSTERHUIS.001
+  type: StoryClaim
+  statement: "Cornelis' rederijker meetings in mid-sixteenth-century Goes are staged in the Zusterhuis/former Zwarte-Zusters complex at the Singelstraat; the Sint-Sebastiaanshof is not used as his meeting place because the Nardusbloem moved there only in 1626."
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  decision_ids:
+  - DEC.GOES.REDERIJKERS.MEETINGPLACE.2026-08-14
+  subjects:
+  - ENT.PERSON.CORNELIS
+  objects:
+  - ENT.LOC.GOES.ZUSTERHUIS
+  source_refs:
+  - SC.HIST.GOES.REDERIJKERS.NARDUSBLOEM_ZUSTERHUIS.001
+  tags: [goes, rederijkers, zusterhuis, cornelis, author-decision]
