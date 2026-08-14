@@ -1,0 +1,128 @@
+schema_version: 1.0.0
+kind: SourceClaimRegistry
+claims:
+- id: SC.HIST.GOES.NISSEPAT.NOORDEINDE_1534.001
+  type: SourceClaim
+  statement: "On 18 May 1534 Claes Jacopsen Nissepat sold a house at Noordeinde; Frans Blauhuus bordered east, the Kruisbroeders south and west, and the dike north."
+  claim_type: property_topology
+  subject: ENT.PROP.GOES.NISSEPAT.NOORDEINDE_1534
+  predicate: had_boundaries
+  object: "east Frans Blauhuus; south/west Kruisbroeders; north dike"
+  story_time: {earliest: '1534-05-18', latest_exclusive: '1534-05-19', precision: day}
+  evidence_status: VERIFIED
+  source_ids: [SRC-HIST-GOES-LIVING-CITY-001]
+  retrieval: {tags: [goes, nissepat, noordeinde, kruisbroeders, 1534, property]}
+- id: SC.HIST.GOES.NISSEPAT.NISSEPAD_1540.001
+  type: SourceClaim
+  statement: "On 3 February 1540 Claes Jacopsen Nissepat sold a house and land by the Nissepad; the seller himself remained the eastern neighbour, Jan Adriaensen Stevensen bordered south, a zoekweg west and a road north."
+  claim_type: property_topology
+  subject: ENT.PROP.GOES.NISSEPAT.NISSEPAD_1540
+  predicate: had_boundaries
+  object: "east seller; south Jan Adriaensen Stevensen; west zoekweg; north road"
+  story_time: {earliest: '1540-02-03', latest_exclusive: '1540-02-04', precision: day}
+  evidence_status: VERIFIED
+  source_ids: [SRC-HIST-GOES-LIVING-CITY-001]
+  qualifies:
+  - "The eastern boundary proves adjoining seller property at the time, not its full extent or later inheritance."
+  retrieval: {tags: [goes, nissepad, claes-jacobsz, 1540, property, boundary]}
+- id: SC.HIST.GOES.NISSEPAT.NIEUWSTRAAT_1542.001
+  type: SourceClaim
+  statement: "On 20 March 1542 Claes Jacopsen Nissepat bought a house in a street called Nieuwstraat; the street lay east and Jacob Dierixsen de Bye bordered north, west and south."
+  claim_type: property_topology
+  subject: ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
+  predicate: had_boundaries
+  object: "east street; north/west/south Jacob Dierixsen de Bye"
+  story_time: {earliest: '1542-03-20', latest_exclusive: '1542-03-21', precision: day}
+  evidence_status: VERIFIED
+  source_ids: [SRC-HIST-GOES-LIVING-CITY-001]
+  qualifies:
+  - "This pre-1594 Nieuwstraat cannot automatically be identified with the planned Nieuwstraat whose aanleg was decided in 1594."
+  retrieval: {tags: [goes, nissepat, nieuwstraat, 1542, property, unresolved-location]}
+- id: SC.HIST.GOES.STADSSCHOOL.LOCATION_1558.001
+  type: SourceClaim
+  statement: "A transport act of 17 January 1558 locates a house 'bij de stadsschool in het Schuttershofstraatje', fixing a city-school spatial anchor by that date."
+  claim_type: institution_location
+  subject: ENT.ORG.GOES.STADSSCHOOL
+  predicate: located_at
+  object: ENT.LOC.GOES.SCHUTTERSHOF_STADSSCHOOL
+  story_time: {earliest: '1558-01-17', latest_exclusive: '1558-01-18', precision: day}
+  evidence_status: VERIFIED
+  source_ids: [SRC-HIST-GOES-LIVING-CITY-001]
+  qualifies:
+  - "The act does not by itself prove that the school occupied the identical site in 1542 or that Claes' childhood schooling there was Latin-school level."
+  retrieval: {tags: [goes, school, stadsschool, schuttershofstraatje, 1558]}
+- id: SC.HIST.GOES.SALT.WESTZELKE_1543_1544.001
+  type: SourceClaim
+  statement: "Transport acts of 1543–1544 repeatedly place salt pans on the Westzelke in direct relation to the city harbour, streets, watercourses and neighbouring industrial properties."
+  claim_type: industrial_geography
+  subject: ENT.LOC.GOES.WESTZELKE
+  predicate: contained_salt_industry
+  object: "salt pans / zoutketen linked to harbour-side property topology"
+  story_time: {earliest: '1543-01-01', latest_exclusive: '1545-01-01', precision: interval}
+  evidence_status: VERIFIED
+  source_ids: [SRC-HIST-GOES-LIVING-CITY-001]
+  retrieval: {tags: [goes, westzelke, zoutkeet, salt, harbour, 1540s]}
+- id: SC.HIST.GOES.FIRE_1554.FOOTPRINT.001
+  type: SourceClaim
+  statement: "The 18 May 1554 fire began in an unidentified salt pan on the Oostzelke and, driven by a strong north-easterly wind, struck the harbour zone and concentrated damage in northern and western Goes; the supported footprint includes Turfkade, watermill, Kruisbroeders complex and Westzelke access, while most individual parcel-level losses remain unknown."
+  claim_type: urban_event_footprint
+  subject: ENT.LOC.GOES
+  predicate: suffered_fire_footprint
+  object: "Oostzelke origin; harbour; Turfkade; watermill; Kruisbroeders; Westzelke access; broad north/west damage zone"
+  story_time: {earliest: '1554-05-18', latest_exclusive: '1554-05-19', precision: day}
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-GOES-LIVING-CITY-001]
+  qualifies:
+  - "Approximate damage scale in the current synthesis is about one quarter of city/harbour buildings."
+  - "Do not mark an individual house burned unless separate evidence supports it."
+  retrieval: {tags: [goes, fire, 1554, oostzelke, turfkade, kruisbroeders, westzelke]}
+- id: SC.HIST.GOES.BREWERY.NISSEPAD_1577.001
+  type: SourceClaim
+  statement: "In 1577 a brewery at the Nissepad was transferred with kettles, vats/tubs and tools; the common footpath bordered east, Jan Pauwelsen south, Pieter den Hollander west and a road north."
+  claim_type: industrial_property_topology
+  subject: ENT.PROP.GOES.NISSEPAD.BREWERY_1577
+  predicate: had_boundaries_and_equipment
+  object: "east common footpath; south Jan Pauwelsen; west Pieter den Hollander; north road; brewery equipment present"
+  story_time: {earliest: '1577-01-15', latest_exclusive: '1578-01-01', precision: bounded}
+  evidence_status: VERIFIED
+  source_ids: [SRC-HIST-GOES-LIVING-CITY-001]
+  qualifies:
+  - "This documented brewery is not proven to be Cornelis' fictional business."
+  - "It is not proven identical to the brewery reported burned in the Voorstad in 1572."
+  retrieval: {tags: [goes, nissepad, brewery, brouwerij, 1577, lambrecht, jan-pauwelsen]}
+- id: SC.HIST.GOES.WESTZELKE.BURNT_SALTPAN_1577.001
+  type: SourceClaim
+  statement: "On 12 May 1577 Jan Jansen Nissepat sold the place of a burned salt pan called 't gemeen keetge at Westzelke; the harbour bordered east, NN Jopsen south and Jasper Borselair west and north."
+  claim_type: post_destruction_property_topology
+  subject: ENT.PROP.GOES.WESTZELKE.GEMEEN_KEETGE
+  predicate: was_sold_as_burned_site
+  object: "east harbour; south NN Jopsen; west/north Jasper Borselair"
+  story_time: {earliest: '1577-05-12', latest_exclusive: '1577-05-13', precision: day}
+  evidence_status: VERIFIED
+  source_ids: [SRC-HIST-GOES-LIVING-CITY-001]
+  qualifies:
+  - "The act does not identify whether the destructive event was the 1554 fire, the 1572 military burning, or another event."
+  retrieval: {tags: [goes, westzelke, nissepat, salt-pan, burned, 1577]}
+- id: SC.HIST.GOES.SIEGE_1572.INDUSTRY.001
+  type: SourceClaim
+  statement: "During the 1572 siege the salt works outside Goes were burned for military reasons and a brewery in the Voorstad also burned; the heaviest pressure fell on the 's-Heer Hendrikskinderenpoort and Havenpoort."
+  claim_type: siege_footprint
+  subject: ENT.LOC.GOES
+  predicate: suffered_siege_industrial_destruction
+  object: "outside salt works and a Voorstad brewery; pressure at western and harbour gates"
+  story_time: {earliest: '1572-08-01', latest_exclusive: '1572-10-22', precision: bounded}
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-GOES-LIVING-CITY-001]
+  retrieval: {tags: [goes, siege, 1572, voorstad, brewery, salt-works, mondragon]}
+- id: SC.HIST.GOES.REDERIJKERS.LOCATION_UNKNOWN.001
+  type: SourceClaim
+  statement: "The supplied evidence establishes a Goese rhetorician culture and chamber activity, but does not yet establish an exact meeting-house for Cornelis' period."
+  claim_type: institutional_location_limit
+  subject: ENT.ORG.GOES.REDERIJKERS
+  predicate: exact_meeting_location
+  object: "not established in current evidence bundle"
+  evidence_status: UNKNOWN
+  source_ids: [SRC-HIST-GOES-LIVING-CITY-001]
+  qualifies:
+  - "Maria Magdalena devotion is relevant to rhetoricians, but that does not prove chamber ownership or meeting rights in the church."
+  retrieval: {tags: [goes, rederijkers, chamber, meeting-place, uncertainty]}

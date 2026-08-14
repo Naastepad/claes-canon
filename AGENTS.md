@@ -62,6 +62,25 @@ Historical evidence (`SC.*`) does not become story canon merely because it is ve
 - Explain downstream effects of canon changes.
 - Never silently close `OPEN.*` decisions.
 
+## Spatial reasoning rule — Goes and other atlas-backed settings
+For questions about where a person **lives, owns property, works, operates a business, meets, travels or witnesses an event**, keep the spatial relation explicit. `RESIDES`, `OWNS`, `RENTS`, `OPERATES_BUSINESS`, `WORKS_AT`, `ADJOINS`, `USES` and `VISITS` are not interchangeable.
+
+For Goes scene/topography work:
+- read `narrative/world_goes_living_city.yaml` and the relevant `SC.HIST.GOES.*` records;
+- use the Stadsatlas/transport-register layer for parcel topology, year-valid routes, named parties, occupations and belendingen;
+- never infer residence from ownership, business location, adjacency or family proximity;
+- never infer an exact parcel polygon from four belendingen alone;
+- preserve the distinction between a transport/ownership chain and a physical place through time;
+- apply the time slice before answering: streets, gates, institutional functions, damage zones and routes can change;
+- if a route is requested, resolve the scene year and origin/destination first, then use year-valid street/gate/landmark anchors and report meaningful pass-by places rather than inventing a straight-line path;
+- use modern/RCE street geometry as a reference crosswalk only where historical continuity is separately supported;
+- keep the pre-1594 `Nieuwstraat` distinct from the planned `Nieuwstraat` of 1594 until `OPEN.GOES.NIEUWSTRAAT.PRE1594.001` is resolved;
+- keep 1554 fire damage and 1572 military destruction as separate event footprints;
+- if Cornelis' household residence matters, consult `OPEN.CORNELIS.RESIDENCE.GOES.1542.001` and report it as unresolved unless a human decision has closed it;
+- if the exact Goese rederijkers meeting place matters, consult `OPEN.GOES.REDERIJKERS.MEETINGPLACE.001`; do not infer it from the Maria Magdalena devotional link.
+
+A strong spatial answer should state: **where + relation to place + route + what is passed + who/what plausibly populates the route in that year + what has changed because of relevant events + certainty/open status**.
+
 ## State vocabularies
 Evidence: `VERIFIED / SUPPORTED / PLAUSIBLE / DISPUTED / UNKNOWN`
 Canon: `PROPOSED / CANON / OPEN / DEPRECATED / REJECTED`

@@ -1,4 +1,4 @@
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: CanonDecisionRegistry
 decisions:
 - id: DEC.CLAES.BIRTH.2026-08-13
@@ -41,3 +41,36 @@ decisions:
   - STC.CLAES.MORAL_QUESTION.001
   - THEME.CLAES.SPIRITUAL_JOURNEY
   - ARC.CLAES.MACRO_TRANSMUTATION
+- id: DEC.CORNELIS.RESIDENCE.GOES.2026-08-14
+  type: CanonDecision
+  status: CANON
+  decision: In novel canon, the house bought by historical Claes Jacobsz. Nissepat in the pre-1594 Nieuwstraat on 20 March 1542 is made available as the family home of Cornelis, his wife and young Claes; Claes grows up there until his departure to Reimerswaal after the 1554 fire.
+  affects:
+  - STC.CORNELIS.HOUSEHOLD_GOES.1542.001
+  - ENT.PERSON.CORNELIS
+  - ENT.PERSON.CLAES
+  - ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
+  - WORLD.GOES_LIVING_CITY
+  rationale: The purchase and parcel topology are historical; occupation by the fictional Cornelis household is the accepted story choice. Residence remains distinct from Nissepad, harbour and other business locations.
+- id: DEC.GOES.NIEUWSTRAAT.IDENTITY.2026-08-14
+  type: CanonDecision
+  status: CANON
+  decision: The Nieuwstraat named in pre-1594 transport acts is treated as an older Nieuwstraat/Oude Nieuwstraat in or by the Armenhoek, distinct from the planmatige/current Nieuwstraat whose aanleg belongs to the 1594 expansion; the exact 1542 street axis remains uncertain.
+  affects:
+  - STC.GOES.NIEUWSTRAAT.PRE1594.001
+  - ENT.LOC.GOES.NIEUWSTRAAT_PRE1594
+  - ENT.LOC.GOES.NIEUWSTRAAT_1594
+  - ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
+  - WORLD.GOES_LIVING_CITY
+  rationale: Pre-1594 use of the toponym is directly attested, later records connect Oude Nieuwstraat and Armenhoek, while the present/planned Nieuwstraat belongs to the 1594 urban expansion. Zone-level identity is sufficient for story continuity without fabricating an exact street line.
+- id: DEC.GOES.REDERIJKERS.MEETINGPLACE.2026-08-14
+  type: CanonDecision
+  status: CANON
+  decision: Cornelis-era rederijker meetings are staged in the Zusterhuis/former Zwarte-Zusters complex at the Singelstraat; the Sint-Sebastiaanshof is not back-projected into his period because the Nardusbloem moved there only in 1626.
+  affects:
+  - STC.CORNELIS.REDERIJKERS.ZUSTERHUIS.001
+  - ENT.PERSON.CORNELIS
+  - ENT.LOC.GOES.ZUSTERHUIS
+  - ENT.ORG.GOES.NARDUSBLOEM
+  - WORLD.GOES_LIVING_CITY
+  rationale: The Zusterhuis-to-Sint-Sebastiaan sequence is historically documented for the Nardusbloem. This decision establishes Cornelis' scene environment, not proof that every Goese chamber used the same room or that a real Nissepat met there.

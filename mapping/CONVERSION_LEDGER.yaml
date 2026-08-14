@@ -109,14 +109,14 @@ sections:
   title: '6. Goes: topografie en tijdlijn'
   source_lines: {start: 2279, end: 2436}
   source_sha256: a8da640cec3ee9e72929172354b8e253a286825ddd14bf60b7fff03646795b82
-  conversion_status: indexed
-  targets: [narrative/instances.yaml, narrative/structure.yaml]
+  conversion_status: normalized_core
+  targets: [narrative/instances.yaml, narrative/structure.yaml, narrative/world_goes_living_city.yaml, entities/GOES_LIVING_CITY.yaml, claims/SOURCE_CLAIMS_GOES_LIVING_CITY.yaml]
 - id: SB.SEC.019
   title: 7. Het Nissepad — definitieve, brongewogen reconstructie
   source_lines: {start: 2437, end: 2718}
   source_sha256: 938dfd7c4d82e3f5dc931cff186420b339f7ffe9afc57551eaeb8c70c5b9a450
-  conversion_status: indexed
-  targets: [sources/, claims/SOURCE_CLAIMS.yaml]
+  conversion_status: normalized_core
+  targets: [sources/SRC-HIST-GOES-LIVING-CITY-001.md, claims/SOURCE_CLAIMS_GOES_LIVING_CITY.yaml, entities/GOES_LIVING_CITY.yaml, narrative/world_goes_living_city.yaml]
 - id: SB.SEC.020
   title: 8. Brood, graanhandel en bakpraktijk — brongewogen canon voor Goes, Antwerpen en Enkhuizen
   source_lines: {start: 2719, end: 3170}
@@ -127,8 +127,8 @@ sections:
   title: 9. De historische familie Nissepat/Nissepadt — overzicht
   source_lines: {start: 3171, end: 3201}
   source_sha256: 7236b7d7c12a3021b1a4a971859f160cabb5dd97eab4a32ab848c5faf7e1803f
-  conversion_status: indexed
-  targets: []
+  conversion_status: normalized_core
+  targets: [entities/GOES_LIVING_CITY.yaml, claims/SOURCE_CLAIMS_GOES_LIVING_CITY.yaml, narrative/world_goes_living_city.yaml]
 - id: SB.SEC.022
   title: 10. Craft-principes (blijvend van kracht)
   source_lines: {start: 3202, end: 3221}

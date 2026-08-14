@@ -1,7 +1,7 @@
-schema_version: 1.1.0
+schema_version: 1.2.0
 kind: MigrationReviewRegistry
 source_edition: Claes_Storybible_MASTER_COMPLEET_2026-08-10_REVISIE11_MACROSTRUCTUUR_PROJECTIO(1).md
-purpose: Distinguish meaning-preserving migration from AI-derived interpretation, genuinely new proposals, and detected conflicts before PR #1 can be merged.
+purpose: Distinguish meaning-preserving migration from AI-derived interpretation, genuinely new proposals, and detected conflicts before merge.
 origin_vocabulary:
   - MIGRATED
   - DERIVED
@@ -12,15 +12,15 @@ review_state_vocabulary:
   - HUMAN_DECISION
   - CONFLICT
 summary:
-  story_claims_total: 34
+  story_claims_total: 37
   by_origin:
     MIGRATED: 30
     DERIVED: 4
-    NEW: 0
+    NEW: 3
   by_review_state:
     MIGRATION_CHECK: 34
     HUMAN_REVIEW: 0
-    HUMAN_DECISION: 0
+    HUMAN_DECISION: 3
     CONFLICT: 0
   merge_blockers: 0
 records:
@@ -28,7 +28,6 @@ records:
     origin: MIGRATED
     review_state: MIGRATION_CHECK
     resolution: "Resolved by explicit author decision DEC.CLAES.BIRTH.2026-08-13: 8 December 1542 is canon; 1545 is migration drift requiring synchronization."
-
   - claim_id: STC.CLAES.SCHOOL.GOES.001
     origin: MIGRATED
     review_state: MIGRATION_CHECK
@@ -104,7 +103,6 @@ records:
   - claim_id: STC.CLAES.PROJECTIO.001
     origin: MIGRATED
     review_state: MIGRATION_CHECK
-
   - claim_id: STC.CLAES.SINNE.001
     origin: DERIVED
     review_state: MIGRATION_CHECK
@@ -121,7 +119,6 @@ records:
     origin: DERIVED
     review_state: MIGRATION_CHECK
     resolution: "Approved with refinement by DEC.CLAES.SPIRITUAL_JOURNEY.2026-08-13: this is the spiritual journey from matter toward spirituality through, not away from, embodied material reality."
-
   - claim_id: STC.MACRO.STRUCTURE.001
     origin: MIGRATED
     review_state: MIGRATION_CHECK
@@ -134,7 +131,18 @@ records:
   - claim_id: STC.NISSEPAD.RECONSTRUCTION.001
     origin: MIGRATED
     review_state: MIGRATION_CHECK
-
+  - claim_id: STC.CORNELIS.HOUSEHOLD_GOES.1542.001
+    origin: NEW
+    review_state: HUMAN_DECISION
+    resolution: "Explicitly approved by DEC.CORNELIS.RESIDENCE.GOES.2026-08-14: the historical 20 March 1542 house is the fictional Cornelis household's childhood home."
+  - claim_id: STC.GOES.NIEUWSTRAAT.PRE1594.001
+    origin: NEW
+    review_state: HUMAN_DECISION
+    resolution: "Explicitly approved by DEC.GOES.NIEUWSTRAAT.IDENTITY.2026-08-14: older Nieuwstraat/Oude Nieuwstraat in/by Armenhoek is distinct from the 1594 planned/current Nieuwstraat; exact axis remains uncertain."
+  - claim_id: STC.CORNELIS.REDERIJKERS.ZUSTERHUIS.001
+    origin: NEW
+    review_state: HUMAN_DECISION
+    resolution: "Explicitly approved by DEC.GOES.REDERIJKERS.MEETINGPLACE.2026-08-14: Cornelis-era rederijker scenes use the Zusterhuis; Sint-Sebastiaan is post-1626 for the Nardusbloem."
 rules:
   MIGRATION_CHECK: "Existing canon or explicitly reviewed formulation represented in the new structure. Review only for faithful transcription/normalization; do not re-litigate the underlying canon unless a new conflict is detected."
   HUMAN_REVIEW: "AI-derived condensation or interpretation. Human should approve, edit, or reject the formulation before treating it as settled structured canon."

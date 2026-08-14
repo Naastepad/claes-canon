@@ -1,4 +1,4 @@
-schema_version: 1.2.0
+schema_version: 1.3.0
 kind: EntityRegistry
 entities:
 - id: ENT.PERSON.CLAES
@@ -10,6 +10,12 @@ entities:
     date: '1542-12-08'
     place: ENT.LOC.GOES
     decision_id: DEC.CLAES.BIRTH.2026-08-13
+  childhood_residence:
+    location: ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
+    relation: RESIDES
+    earliest: '1542-12-08'
+    latest_exclusive: '1554-05-19'
+    decision_id: DEC.CORNELIS.RESIDENCE.GOES.2026-08-14
   death:
     status: OPEN
     not_before: '1602-01-01'
@@ -33,6 +39,18 @@ entities:
   - beer-trader
   - rhetorician
   - book-carrier
+  household_residence:
+    location: ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
+    relation: RESIDES
+    from: '1542-03-20'
+    childhood_scope_through: '1554'
+    later_end: OPEN
+    decision_id: DEC.CORNELIS.RESIDENCE.GOES.2026-08-14
+    note: "Canonical family home during Claes' Goes childhood; this does not equate the residence with Cornelis' business sites."
+  rhetorician_meeting_environment:
+    location: ENT.LOC.GOES.ZUSTERHUIS
+    decision_id: DEC.GOES.REDERIJKERS.MEETINGPLACE.2026-08-14
+    note: "Story placement aligned with the Nardusbloem's documented Zusterhuis chronology; Cornelis' exact chamber-name is not asserted here."
   death:
     window:
       earliest: '1568-07-01'
