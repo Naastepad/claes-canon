@@ -2,7 +2,7 @@
 
 **Logical master ID:** `SB.CLAES.MASTER`
 
-This repository now contains the **structured operating projection** of Revision 11. The original long-form edition remains the lossless prose source from which this projection was transmuted.
+This repository contains the **structured operating projection** of Revision 11 plus explicit later human canon decisions. The original long-form edition remains the lossless prose source from which the projection was transmuted; later decisions override conflicting or still-open source wording.
 
 ## Source edition
 
@@ -18,21 +18,33 @@ The raw 3803-line prose source is not silently replaced by a summary. Every top-
 
 ## Structured operating master
 
-The storybible is now distributed by responsibility:
+The storybible is distributed by responsibility:
 
+- `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` — current synchronized human-readable operating synthesis, including decisions through 14 August 2026;
 - `mapping/CONVERSION_LEDGER.yaml` — loss-prevention map from all 31 top-level source sections into the structured model;
 - `mapping/CONVERSION_REPORT.yaml` — conversion scope and next normalization passes;
-- `claims/SOURCE_CLAIMS.yaml` — atomic claims about historical/research reality;
-- `claims/STORY_CLAIMS.yaml` — atomic truths of the novel;
-- `claims/DECISIONS.yaml` — human canon/architecture decisions;
-- `entities/ENTITIES.yaml` — stable persons and locations;
+- `claims/SOURCE_CLAIMS.yaml`, `claims/SOURCE_CLAIMS_GOES_LIVING_CITY.yaml`, `claims/SOURCE_CLAIMS_GOES_2026-08-14.yaml` — atomic historical/research claims;
+- `claims/STORY_CLAIMS.yaml`, `claims/STORY_CLAIMS_2026-08-14.yaml` — atomic truths of the novel;
+- `canon/DECISIONS.yaml`, `canon/DECISIONS_2026-08-13.md`, `canon/DECISIONS_2026-08-14.md` — explicit human canon decisions;
+- `entities/ENTITIES.yaml` plus setting-specific entity registries — stable persons, locations and properties;
 - `objects/OBJECTS.yaml` — books, carriers, keys and other continuity-sensitive objects;
 - `narrative/instances.yaml` — concrete chapters, scenes, sequences and events;
 - `narrative/arcs.yaml` — character, relationship and macro-transformation arcs;
 - `narrative/motifs.yaml` — recurring sensory/symbolic structures;
+- `narrative/world_goes_living_city.yaml` — year-sensitive Goes scene/blocking framework;
 - `narrative/CRAFT_GUARDRAILS.yaml` — writing and continuity constraints;
-- `canon/OPEN_DECISIONS.yaml` — genuinely unresolved author decisions;
+- `canon/OPEN_DECISIONS.yaml` — unresolved matters and audit-preserved resolved open records;
 - `lemma/` — only the deterministic subset that benefits from executable consistency rules.
+
+## Explicit Goes normalization — 14 August 2026
+
+Three previously open spatial questions are closed by human decision:
+
+1. **Cornelis' household residence:** the historically documented house bought by Claes Jacobsz. Nissepat on 20 March 1542 in the older Nieuwstraat is the fictional family home of Cornelis, his wife and young Claes during Claes' Goes childhood. Historical purchase and fictional occupancy remain distinct.
+2. **Pre-1594 Nieuwstraat:** the older deed-name is treated as Nieuwstraat/Oude Nieuwstraat in or by the Armenhoek, distinct from the planmatige/current Nieuwstraat associated with the 1594 expansion. The exact old street axis remains unknown.
+3. **Cornelis' rederijker meeting environment:** Cornelis-era meetings use the Zusterhuis/former Zwarte-Zusters complex at the Singelstraat. The Nardusbloem moved to the Sint-Sebastiaanshof only in 1626, so that later location is not back-projected.
+
+The exact named Goese chamber to which fictional Cornelis belongs remains separately open; meeting location and chamber identity are not conflated.
 
 ## McKee/NOS interface
 
@@ -48,14 +60,15 @@ while:
 
 1. An explicit current human canon decision (`DEC.*`) governs structured canon state.
 2. Active `STC.*` records are the machine-readable story truth.
-3. The lossless Revision 11 prose source governs meaning not yet atomized.
-4. Lemma may reject an impossible combination, but Lemma never invents story truth.
-5. AI proposals never become canon merely by being plausible.
+3. The synchronized human-readable operating master expresses the active model coherently.
+4. The lossless Revision 11 prose source governs meaning not yet atomized and not superseded by later decisions.
+5. Lemma may reject an impossible combination, but Lemma never invents story truth.
+6. AI proposals never become canon merely by being plausible.
 
-If structured data and the source prose appear to conflict, create a proposal and resolve it explicitly. Never silently overwrite either layer.
+If structured data and the source prose appear to conflict, apply explicit later decisions first; otherwise create a proposal and resolve it explicitly. Never silently overwrite either layer.
 
 ## Conversion state
 
-Revision 11 has completed a **first full semantic conversion pass**: all 31 top-level sections are accounted for, and the core chronology, character arc, macrostructure, code architecture, objects, motifs, open decisions and key Narrative Instances have been normalized.
+Revision 11 has completed a **first full semantic conversion pass**: all 31 top-level sections are accounted for, and the core chronology, character arc, macrostructure, code architecture, objects, motifs, open decisions and key Narrative Instances have been normalized. The Goes living-city, church, old-Nieuwstraat and rederijker layers have since received additional structured normalization.
 
 This does **not** mean every paragraph has already become its own atomic record. The conversion ledger makes that remaining normalization measurable and loss-safe.
