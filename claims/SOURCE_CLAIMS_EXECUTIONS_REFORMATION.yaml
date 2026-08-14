@@ -1,8 +1,8 @@
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: SourceClaimRegistry
 id: SCR.EXECUTIONS_REFORMATION.2026-08-15
 status: AUTHORING
-scope: Casteels execution culture, doopsgezinde martelaarsbronnen, ars moriendi, and execution knowledge available to Claes.
+scope: Casteels execution culture, doopsgezinde martelaarsbronnen, ars moriendi, Antwerp book repression, and execution knowledge available to Claes.
 source_groups:
   - id: SRC.CASTEELS.LOOKING_FOR_JUSTICE.2025
     label: Isabel Casteels, Looking for Justice: execution spectators and the Revolt in the Low Countries, ca. 1520-1585
@@ -16,6 +16,26 @@ source_groups:
     label: Allard Pierson material on Maeyken Wens' martyr letter
     type: object_and_memory_source
     use: martyr letter, children, tongue screw, survival of voice after execution
+  - id: SRC.MARNEF.ANTWERP_BOOK_REPRESSION.1992
+    label: Guido Marnef, Repressie en censuur in het Antwerps boekbedrijf, 1567-1576
+    type: secondary_historical_study
+    url: https://www.dbnl.org/tekst/_zev001199201_01/_zev001199201_01_0026.php
+    use: Antwerp book repression, edicts, printer/bookseller cases, confiscations, bail, banishment and the March-November 1569 book-control wave
+  - id: SRC.MARNEF.CALVINIST_COMMUNITY.ANTWERP
+    label: Guido Marnef, Antwerpen in de tijd van de Reformatie — chapter on Calvinist community under pressure
+    type: secondary_historical_study
+    url: https://www.dbnl.org/tekst/marn002antw01_01/marn002antw01_01_0009.php
+    use: clandestine Calvinist correspondence, copyists, libels and underground distribution pressure after 1566
+  - id: SRC.HAECHT.CHRONICLE.NOVEMBER_1569
+    label: Godevaert van Haecht, De kroniek ... November 1569
+    type: contemporary_chronicle_edited
+    url: https://www.dbnl.org/tekst/haec002kron01_01/haec002kron01_01_0060.php
+    use: 19 November 1569 Antwerp market book burning, remaining imprisoned booksellers, executions same day, and 23 November burned Anabaptists with tongue-screws
+  - id: SRC.ANTWERPSCH_CHRONYKJE.1569
+    label: Antwerpsch chronykje, 1569
+    type: chronicle_compilation
+    url: https://www.dbnl.org/tekst/loon003antw01_01/loon003antw01_01_0068.php
+    use: Antwerp execution-place/method checks for 1569, including Grote Markt burnings and public punishment routes from Het Steen
 claims:
   - id: SC.HIST.EXECUTIONS.ARS_MORIENDI.BASELINE.001
     type: SourceClaim
@@ -100,3 +120,45 @@ claims:
     statement: In 1572 rebel violence under leaders such as Lumey and Sonoy inverted judicial ritual through mock trials, torture and hanging of clergy, producing Catholic counter-martyr memory.
     source_refs: [SRC.CASTEELS.LOOKING_FOR_JUSTICE.2025]
     tags: [Geuzen, Sonoy, Lumey, Enkhuizen, Delft, counter_martyrs]
+
+  - id: SC.HIST.ANTWERP.BOOK_EDICT.1567.001
+    type: SourceClaim
+    evidence_status: SUPPORTED
+    statement: After the Wonderjaar, Antwerp book repression targeted printers and booksellers involved with heretical, defamatory, seditious or rebellious books, songs, figures/prints and papers; the 28 May 1567 edict made professional book actors liable to death penalty and confiscation.
+    source_refs: [SRC.MARNEF.ANTWERP_BOOK_REPRESSION.1992]
+    tags: [Antwerp, book_repression, edict, sedition]
+
+  - id: SC.HIST.ANTWERP.BOOK_CASES.BAIL_AND_NON_EXECUTION.1567_1569.001
+    type: SourceClaim
+    evidence_status: SUPPORTED
+    statement: Antwerp book and print cases often did not end in execution: Coppens van Diest and Willem van Parijs were released on bail, Silvius was acquitted, Hans van Vossenhole was banished, and several 1569 arrested booksellers were later released or pardoned.
+    source_refs: [SRC.MARNEF.ANTWERP_BOOK_REPRESSION.1992]
+    tags: [Antwerp, book_repression, bail, caution, plausibility_guardrail]
+
+  - id: SC.HIST.ANTWERP.CLANDESTINE_PRINT_COPY_NETWORK.1568.001
+    type: SourceClaim
+    evidence_status: SUPPORTED
+    statement: In 1568 Antwerp authorities uncovered clandestine production and circulation of seditious books, songs, refrains, libels and billets linked to underground Reformed networks, including printers, copyists, carriers and distributors.
+    source_refs: [SRC.MARNEF.ANTWERP_BOOK_REPRESSION.1992, SRC.MARNEF.CALVINIST_COMMUNITY.ANTWERP]
+    tags: [Antwerp, clandestine_network, copyists, libels, carriers]
+
+  - id: SC.HIST.ANTWERP.BOOK_VISITATIONS.MARCH_NOV_1569.001
+    type: SourceClaim
+    evidence_status: SUPPORTED
+    statement: In March 1569 Antwerp bookshops were searched and suspect books seized; on 19 November 1569, from 9 to 12, the books found in bookshops in the previous March and judged unfit by Leuven deputies were burned publicly, while some booksellers were still imprisoned.
+    source_refs: [SRC.MARNEF.ANTWERP_BOOK_REPRESSION.1992, SRC.HAECHT.CHRONICLE.NOVEMBER_1569]
+    tags: [Antwerp, book_burning, market, 1569, March, November]
+
+  - id: SC.HIST.ANTWERP.EXECUTION_CONTEXT.NOVEMBER_1569.001
+    type: SourceClaim
+    evidence_status: SUPPORTED
+    statement: Haecht places the 19 November 1569 Antwerp book burning next to the same-day execution of seven street offenders, and on 23 November records the public burning of two Anabaptist men and a woman with their speech blocked by iron tongue devices.
+    source_refs: [SRC.HAECHT.CHRONICLE.NOVEMBER_1569]
+    tags: [Antwerp, executions, book_burning, tongue_screw, November_1569]
+
+  - id: SC.HIST.ANTWERP.EXECUTION_PLACES.1569.001
+    type: SourceClaim
+    evidence_status: SUPPORTED
+    statement: 1569 Antwerp sources support multiple public punishment routes and places: Grote Markt burnings for religious offenders, movement from Het Steen to public punishment, and castle/citadel-linked execution for military or treason-like charges.
+    source_refs: [SRC.HAECHT.CHRONICLE.NOVEMBER_1569, SRC.ANTWERPSCH_CHRONYKJE.1569]
+    tags: [Antwerp, Grote_Markt, Het_Steen, castle, execution_place]
