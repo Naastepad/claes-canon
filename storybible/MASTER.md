@@ -22,23 +22,24 @@ The storybible is distributed by responsibility:
 
 - `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` — current synchronized human-readable operating synthesis for the broad novel architecture;
 - `storybible/FAMILY_CLAES_1542_1554.md` — canonical detailed family dossier for Tanneken, Jan and all four grandparents; where older broad prose still uses generic labels such as “mother” or “younger brother”, this dossier supplies the fixed names and family identities;
+- `storybible/MAYKEN_LAMPERT.md` — canonical detailed identity, historical embedding and relationship dossier for **Mayken Adriaensdr. Lampert**, resolving the older generic/open “beloved / apothecary daughter” label;
 - `mapping/CONVERSION_LEDGER.yaml` — loss-prevention map from all 31 top-level source sections into the structured model;
 - `mapping/CONVERSION_REPORT.yaml` — conversion scope and next normalization passes;
-- `claims/SOURCE_CLAIMS.yaml`, `claims/SOURCE_CLAIMS_GOES_LIVING_CITY.yaml`, `claims/SOURCE_CLAIMS_GOES_2026-08-14.yaml`, `claims/SOURCE_CLAIMS_FAMILY_1540S.yaml` — atomic historical/research claims;
-- `claims/STORY_CLAIMS.yaml`, `claims/STORY_CLAIMS_2026-08-14.yaml`, `claims/STORY_CLAIMS_FAMILY_1554.yaml` — atomic truths of the novel;
+- `claims/SOURCE_CLAIMS.yaml`, `claims/SOURCE_CLAIMS_GOES_LIVING_CITY.yaml`, `claims/SOURCE_CLAIMS_GOES_2026-08-14.yaml`, `claims/SOURCE_CLAIMS_FAMILY_1540S.yaml`, `claims/SOURCE_CLAIMS_LAMPERT_APOTHECARY.yaml` — atomic historical/research claims;
+- `claims/STORY_CLAIMS.yaml`, `claims/STORY_CLAIMS_2026-08-14.yaml`, `claims/STORY_CLAIMS_FAMILY_1554.yaml`, `claims/STORY_CLAIMS_MAYKEN_LAMPERT.yaml` — atomic truths of the novel;
 - `canon/DECISIONS.yaml`, `canon/DECISIONS_2026-08-13.md`, `canon/DECISIONS_2026-08-14.md` — explicit human canon decisions;
-- `entities/ENTITIES.yaml`, `entities/FAMILY_1554.yaml` plus setting-specific entity registries — stable persons, family units, locations and properties;
+- `entities/ENTITIES.yaml`, `entities/FAMILY_1554.yaml`, `entities/MAYKEN_LAMPERT.yaml` plus setting-specific entity registries — stable persons, family units, locations and properties;
 - `objects/OBJECTS.yaml` — books, carriers, keys and other continuity-sensitive objects;
 - `narrative/instances.yaml` — concrete chapters, scenes, sequences and events;
 - `narrative/arcs.yaml` — character, relationship and macro-transformation arcs;
-- `narrative/relationships.yaml` — explicit relationship dynamics, including Claes–Cornelis, Claes–Jan, Claes–Tanneken and both grandparent lines;
+- `narrative/relationships.yaml` — explicit relationship dynamics, including Claes–Cornelis, Claes–Jan, Claes–Tanneken, both grandparent lines and Claes–Mayken;
 - `narrative/motifs.yaml` — recurring sensory/symbolic structures;
 - `narrative/world_goes_living_city.yaml` — year-sensitive Goes scene/blocking framework;
 - `narrative/CRAFT_GUARDRAILS.yaml` — writing and continuity constraints;
 - `canon/OPEN_DECISIONS.yaml` — unresolved matters and audit-preserved resolved open records;
 - `lemma/` — only the deterministic subset that benefits from executable consistency rules.
 
-## Explicit Goes and family normalization — 14 August 2026
+## Explicit Goes, family and Mayken normalization — 14 August 2026
 
 The following points are closed by human decision:
 
@@ -49,12 +50,15 @@ The following points are closed by human decision:
 5. **Family outcome of the 1554 fire:** the family house is destroyed/uninhabitable in novel canon; Claes and Cornelis survive away from the house; Tanneken, Jan and the unborn child die. This is fiction grounded in documented burned houses in the old Nieuwstraat/Armenhoek environment, not a historical victim/property claim.
 6. **Paternal grandparents:** historical **Claes Jacobsz. Nissepat** is fictionally Cornelis' father and Claes' paternal grandfather. His wife and Claes' paternal grandmother is fictional **Lijsbet Pietersdochter**, who dies circa 1540–1541 in story canon. Claes Jacobsz.' historical purchase is real; the genealogy and Lijsbet are fiction.
 7. **Maternal grandparents:** Tanneken's father is a fictionalized maternal-grandfather figure modeled on a historically attested Goese **Jan Jansen, kuiper** cluster; Tanneken's mother is fictional **Mayken Pietersdochter**. The grandfather-model dies around 1543 in story canon; Mayken survives 1554. Jan Corneliszn. is named for this maternal-grandfather figure in novel canon.
-8. **Post-fire grandparent functions:** Mayken primarily preserves bodily care, Tanneken's memory and family continuity; Claes Jacobsz. primarily helps Cornelis preserve material, credit and educational continuity. Neither replaces the lost household.
+8. **Post-fire grandparent functions:** Mayken Pietersdochter primarily preserves bodily care, Tanneken's memory and family continuity; Claes Jacobsz. primarily helps Cornelis preserve material, credit and educational continuity. Neither replaces the lost household.
 9. **Post-fire father–son separation:** Cornelis stays in Goes to rebuild livelihood, business and shelter and to keep financing Claes' education, partly helped by his father. Claes goes to Reimerswaal because the intended Zierikzee route has become financially unattainable. The separation is an additional loss layered onto the destruction of the household.
+10. **Beloved identity:** Claes' beloved is **Mayken Adriaensdr. Lampert**, a fictional Goese woman born approximately 1546. In novel canon she is the daughter of Adriaen Jacobsz. Lampert and granddaughter of the older Jacob/Jacop Lampart/Lambert apothecary household. The historical apothecary milieu is source-anchored; the daughter and genealogy are fiction.
+11. **Mayken's 1554 contrast:** Mayken and Claes share the Goese fire horizon, but not the same losses. The Lampert property `de Zwaene` is historically documented as burned between 1553 and 1555; Mayken's personal memory and family response are fictional. Her family therefore supplies a counter-memory of destruction followed by material rebuilding rather than a duplicate of Claes' household annihilation.
+12. **Mayken's function:** her practical formation in materia medica, botanical identification, preparation, measurement, sensory material judgement and book use grounds her independent role in the 1570 recovery sequence. Claes remains the personal merels/Dee/Monas/Castanea key-holder. Mayken is not a passive assistant, reward or therapist.
 
-Historical/fictive guardrail: the archival corpus supports Claes Jacobsz. Nissepat and a Goese Jan Jansen-kuiper pattern, but it does **not** prove the novel genealogy. The maternal-grandfather identity is deliberately modeled rather than claimed as a securely identified historical ancestor; the same-name kuiper cluster may contain conflated individuals.
+Historical/fictive guardrail: the archival corpus supports Claes Jacobsz. Nissepat, a Goese Jan Jansen-kuiper pattern, Jacob/Jacop Lampart/Lambert as apothecary, Adriaen Jacopsen as apteker and a substantial Adriaen Jacopsen Lampert property trail. It does **not** prove the novel genealogies. The maternal-grandfather identity is deliberately modeled rather than claimed as a securely identified historical ancestor; the same-name kuiper cluster may contain conflated individuals. The identification `Adriaen Jacopsen apteker = Adriaen Jacopsen Lampert` is strongly supported but not literally stated in one current act, and no historical daughter Mayken has been recovered.
 
-The exact named Goese chamber to which fictional Cornelis belongs remains separately open; meeting location and chamber identity are not conflated. The unborn child's sex and name remain open/unknown. Tanneken and Jan's names are no longer open.
+The exact named Goese chamber to which fictional Cornelis belongs remains separately open; meeting location and chamber identity are not conflated. The unborn child's sex and name remain open/unknown. Mayken Lampert's mother remains open/fictional. The **exact Dodoens copy provenance remains open** even though the human apothecary environment is now fixed.
 
 ## McKee/NOS interface
 
@@ -71,15 +75,16 @@ while:
 1. An explicit current human canon decision (`DEC.*`) governs structured canon state.
 2. Active `STC.*` records are the machine-readable story truth.
 3. `storybible/FAMILY_CLAES_1542_1554.md` is the detailed human-readable authority for the childhood family where broad older master wording is less specific.
-4. The synchronized human-readable operating master expresses the broader active model coherently.
-5. The lossless Revision 11 prose source governs meaning not yet atomized and not superseded by later decisions.
-6. Lemma may reject an impossible combination, but Lemma never invents story truth.
-7. AI proposals never become canon merely by being plausible.
+4. `storybible/MAYKEN_LAMPERT.md` is the detailed human-readable authority for the beloved's identity, family embedding and apothecary function where the broad older master still uses a generic/open label.
+5. The synchronized human-readable operating master expresses the broader active model coherently.
+6. The lossless Revision 11 prose source governs meaning not yet atomized and not superseded by later decisions.
+7. Lemma may reject an impossible combination, but Lemma never invents story truth.
+8. AI proposals never become canon merely by being plausible.
 
 If structured data and the source prose appear to conflict, apply explicit later decisions first; otherwise create a proposal and resolve it explicitly. Never silently overwrite either layer.
 
 ## Conversion state
 
-Revision 11 has completed a **first full semantic conversion pass**: all 31 top-level sections are accounted for, and the core chronology, character arc, macrostructure, code architecture, objects, motifs, open decisions and key Narrative Instances have been normalized. The Goes living-city, church, old-Nieuwstraat, rederijker, 1554 family-rupture and extended-family layers have since received additional structured normalization.
+Revision 11 has completed a **first full semantic conversion pass**: all 31 top-level sections are accounted for, and the core chronology, character arc, macrostructure, code architecture, objects, motifs, open decisions and key Narrative Instances have been normalized. The Goes living-city, church, old-Nieuwstraat, rederijker, 1554 family-rupture, extended-family and Mayken-Lampert/apothecary layers have since received additional structured normalization.
 
 This does **not** mean every paragraph has already become its own atomic record. The conversion ledger makes that remaining normalization measurable and loss-safe.
