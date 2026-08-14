@@ -1,74 +1,130 @@
-# Cornelis' executie — Antwerpen, 12 maart 1569
+# Cornelis' executie — Antwerpen, 19 november 1569
 
 **Status:** authoring-branch canon resolution / novel canon if PR accepted  
-**Decision:** `DEC.CORNELIS.DEATH.1569.2026-08-15`  
+**Decision:** `DEC.CORNELIS.DEATH.1569.2026-08-15.REVISED`  
 **Scene instance:** `NI.SCENE.CORNELIS_EXECUTION.ANTWERP.1569.001`  
-**Story claims:** `STC.CORNELIS.DEATH.ANTWERP.1569.001`, `STC.CORNELIS.EXECUTION_WITNESS.001`, `STC.CORNELIS.SILENCE_THIRD_SCRIPT.001`
+**Story claims:** `STC.CORNELIS.DEATH.ANTWERP.1569.001`, `STC.CORNELIS.EXECUTION_WITNESS.001`, `STC.CORNELIS.FIRST_ARREST_BAIL.1567.001`, `STC.CORNELIS.SILENCE_THIRD_SCRIPT.001`
 
-This dossier resolves the previously open Cornelis-death variables for the authoring branch: date, place, charge, manner, witness relation and death-script. It remains explicitly fictionalized historical reconstruction, not archival evidence for a historical Cornelis Nissepat execution.
+This dossier resolves the previously open Cornelis-death variables for the authoring branch: two-step exposure, date, place, charge, manner, witness relation and death-script. It remains explicitly fictionalized historical reconstruction, not archival evidence for a historical Cornelis Nissepat execution.
+
+The earlier authoring-draft date **12 March 1569** is rejected here as too arbitrary and insufficiently anchored. The revised model chooses **19 November 1569**, because Antwerp sources document a public market book-burning on that date of books seized in March 1569, while execution culture is present in the same chronicle environment.
 
 ---
 
 ## 1. Fixed story resolution
 
-Cornelis is executed in **Antwerp on 12 March 1569**.
+Cornelis is executed in **Antwerp on 19 November 1569**.
 
-He has been detained in or by **Het Steen** and is led to a public execution on the **Grote Markt before/near the Stadhuis**. Claes is physically present in the crowd and sees the execution.
+He has been detained in or by **Het Steen** and is led into the public **Grote Markt / Stadhuis** punishment environment on the day when books seized in Antwerp bookshops in March 1569 are publicly burned.
 
-Cornelis is **beheaded by sword**. He is not burned as an open heretic, and he is not secretly drowned in a tub or barrel. Confiscated papers may be burned separately as visible evidence, but Cornelis' body is not the fire's main object.
+Cornelis is **beheaded by sword**. This method is not justified by simple book possession. It only holds if the formal charge is framed as seditious/network/recidive: a man previously warned or released on borg, then again found connected to forbidden, heretical and seditious traffic and refusing names.
+
+Confiscated books or papers burn separately as public evidence and public pedagogy. Cornelis' body is not the fire's main object.
 
 His formal story charge is not simple book possession. It is:
 
-> logistical complicity in the transport, concealment and distribution of forbidden, heretical and seditious books, papers, liederen, figures/prints and correspondence between Antwerp, Goes and Zeeland, compounded by refusal under examination to name accomplices, readers, printers, binders, carriers or recipients.
+> after prior arrest/release, renewed logistical complicity in the transport, concealment and distribution of forbidden, heretical and seditious books, papers, liederen, figures/prints, libels/billets and correspondence between Antwerp, Goes and Zeeland, compounded by refusal under examination to name accomplices, readers, printers, binders, copyists, carriers or recipients.
 
 This charge deliberately makes him a **carrier**, not a protected printer, author or preacher.
 
 ---
 
-## 2. Why Antwerp, not Goes
+## 2. Historical anchor for 19 November 1569
+
+Godevaert van Haecht records that on **19 November 1569**, from roughly nine until twelve, books found in Antwerp bookshops in the preceding March and judged not good by deputies from Leuven were burned publicly. He adds that some booksellers who were then imprisoned were still imprisoned. The editor's marginal note identifies the event as Christian books burned on the market.
+
+The same chronicle entry immediately places this book-burning beside executions in Antwerp that day and, a few days later, the burning of three Anabaptists with their speech blocked by iron devices at the tongue. This does **not** document Cornelis. It gives the ritual environment: market, books, judgement, execution, speech control and public terror.
+
+Therefore the novel uses 19 November 1569 not as a discovered Cornelis record, but as a historically grounded public day into which a fictional vulnerable carrier can be inserted.
+
+Guardrail:
+
+> Do not claim that Haecht's seven offenders include Cornelis. Cornelis is a fictional insertion into a documented Antwerp ritual environment.
+
+---
+
+## 3. Why the two-step arrest model is required
+
+Simple forbidden-book traffic is not enough. Antwerp book repression was severe, but surviving cases show that even serious printers and booksellers often escaped execution through borg, pardon, acquittal, banishment or patronage.
+
+Therefore Cornelis must not be killed at first exposure.
+
+The better model is:
+
+### First exposure — autumn 1567
+
+Cornelis is arrested or seriously examined in Antwerp in a paper/book/print matter. The evidence is worrying but incomplete. He is not a printer, preacher or leader. He is released on **borg** or equivalent surety/conditions.
+
+This first arrest proves the 1564 safety decision correct: Cornelis has become visible and dangerous as direct-key recipient. It also gives Claes and Cornelis a last interval of strained, unfinished father-son relation.
+
+### Renewed exposure — late 1568 through March 1569
+
+Cornelis' name, route or freight resurfaces through clandestine paper circulation: liederen, libels, billets, copied correspondence, anti-inquisitorial or seditious figures/prints, and bookshop visitations.
+
+Now the case is no longer a single forbidden freight. It becomes:
+
+- prior warning or borg;
+- renewed involvement;
+- clandestine network traffic;
+- heretical and seditious material;
+- Antwerp-Goes-Zeeland routes;
+- refusal to name others.
+
+### Fatal use — 19 November 1569
+
+When books seized in March are burned on the market, Cornelis is made into the human form of the route that carried such matter. The state burns text and cuts off the body that moved text.
+
+---
+
+## 4. Why Antwerp, not Goes
 
 Antwerp is the stronger resolution because Cornelis' danger arises from the Antwerp book, print, prison and execution ecology:
 
 - Het Steen is already the symbol of hidden religious death.
 - Fabritius' execution on 4 October 1564 already forms the canonical security-break candidate.
 - Silvius, Dee, the wrong chest, bookwork, hidden production and the route-world are Antwerp-centered.
+- 1567-1569 Antwerp book repression gives a better factual matrix than a purely Goese invented trial.
 - Cornelis' difference from Plantin/Silvius is most visible there: they have formal roles and protective networks; Cornelis is the physical, lower-protection route.
 
 Goes remains emotionally central as Claes' origin, family-loss city and place of return. Antwerp becomes the adult wound: the city where his father's silence is executed in public.
 
 ---
 
-## 3. Why 12 March 1569
+## 5. Why Grote Markt / Stadhuis environment
 
-The date sits inside the existing work window for Cornelis' fall: second half 1568 through 1569. It is late enough for post-1566 repression, confiscation, questioning and network tracing to matter, and early enough that Claes' 1570 recovery sequence still follows as an unresolved moral and epistemic consequence.
+The Grote Markt is not selected because a Cornelis record exists. It is selected because the historical 19 November 1569 book-burning is market/public in character and because Antwerp's execution culture repeatedly uses highly visible civic spaces to stage religious and political punishment.
 
-The date is not derived from a historical execution record. It is a novel date chosen to resolve continuity and create enough time for:
+The **new castle/citadel** remains a historically possible setting for military/treason-like cases. It would become preferable if Cornelis were reframed as an actual military conspirator or castle-betrayal figure. That is not the preferred story.
 
-1. 1564 security break;
-2. secret loading of the existing memoriaal;
-3. 1565-1566 operational suspicion;
-4. 1566 Beeldenstorm and aftermath;
-5. 1568 arrest/examination;
-6. 1569 public execution;
-7. 1570 activation and recovery.
+For this novel function the Grote Markt / Stadhuis environment is stronger:
+
+- books are publicly burned;
+- judgement is civic and visible;
+- Claes can be present;
+- the scene echoes Fabritius without copying his martyr-fire;
+- body and paper are punished together but differently.
 
 ---
 
-## 4. Why beheading by sword
+## 6. Why beheading by sword
 
-Beheading by sword solves three story and plausibility requirements:
+Beheading by sword solves three story requirements, but remains conditional on the charge.
 
 1. **Claes can witness it.** Secret drowning would hide the death; burning risks making Cornelis too much like an open doctrinal martyr.
-2. **The charge can remain political-seditious and logistical.** Cornelis dies because his route, vaten, storage, papers and silence make him useful to punish.
+2. **The charge can remain political-seditious and logistical.** Cornelis dies because his route, vaten, storage, papers, prior warning and silence make him useful to punish.
 3. **The scene remains between scripts.** He is not an ordinary thief or murderer dying under a full Catholic ars moriendi, but also not a psalm-singing preacher whose death becomes an easy Protestant triumph.
 
-The state may burn selected confiscated papers separately. This creates the right visual grammar: Cornelis' body is cut off; the papers are burned; the names are not given.
+Guardrail:
+
+> If future research weakens the seditious/network/recidive framing, reopen the execution method. Simple book-smuggling alone is not enough for this sword death.
+
+The state may burn selected confiscated papers or related books separately. This creates the right visual grammar: Cornelis' body is cut off; the papers are burned; the names are not given.
 
 ---
 
-## 5. How Cornelis differs from Plantin and Silvius
+## 7. How Cornelis differs from Plantin and Silvius
 
-Cornelis must not die because he is more important than Plantin or Silvius. He dies because he is less protected.
+Cornelis must not die because he is more important than Plantin or Silvius. He dies because he is less protected and because the case is not framed as a protected printer's shop problem.
 
 | Protected book-world actors | Cornelis |
 |---|---|
@@ -76,13 +132,13 @@ Cornelis must not die because he is more important than Plantin or Silvius. He d
 | can invoke shop practice, assistants, commissions, patrons, absence or privilege | is linked to physical freight, vaten, storage and route |
 | economically and politically useful to elites | replaceable low-level logistics body |
 | can plausibly deny knowledge of every sheet | is asked to name the route and refuses |
-| survives by structure and patronage | dies by exposure and silence |
+| may survive by structure, borg, pardon, banishment, patronage or acquittal | first survives by borg/conditions, then dies by recidive/exposure/silence |
 
 The point is not that Cornelis is the intellectual center. The point is that he is the visible body of a deniable network.
 
 ---
 
-## 6. Relationship to Fabritius and the 1564 security break
+## 8. Relationship to Fabritius and the 1564 security break
 
 Fabritius is a good historical candidate for the already-canonical 4 October 1564 security break because of the date, stones, psalms and public-control failure. But Fabritius is not the direct legal cause of Cornelis' 1569 sentence.
 
@@ -93,15 +149,16 @@ Correct chain:
 → **Cornelis is declassified as direct-key recipient**  
 → **existing memoriaal is secretly prepared as blind recovery carrier**  
 → **Cornelis remains alive but unsafe, without the full recovery key**  
-→ **1568 arrest/examination through transport traces, papers, contacts, refusal to name others**  
-→ **12 March 1569 public execution**  
+→ **autumn 1567 first arrest/examination; release on borg/conditions**  
+→ **late 1568-March 1569 renewed exposure through clandestine paper/book traffic and bookshop visitations**  
+→ **19 November 1569 market book-burning and Cornelis' public execution**  
 → **1570 recovery activation**
 
 Fabritius is therefore the catalyst of access change, not the whole evidence package.
 
 ---
 
-## 7. Relation to the memoriaal and code architecture
+## 9. Relation to the memoriaal and code architecture
 
 Cornelis does **not** hand the memoriaal to Claes. Dee has already given it to Claes early in 1564 as a pedagogical workbook.
 
@@ -117,7 +174,7 @@ This protects the plot and makes Cornelis' silence credible. Even broken under e
 
 ---
 
-## 8. The last transfer: Castanea
+## 10. The last transfer: Castanea
 
 The final usable transfer from Cornelis remains minimal:
 
@@ -129,7 +186,7 @@ It works because Cornelis knows Castanea matters but does not know the recovery 
 
 ---
 
-## 9. The death-script: third form, protective silence
+## 11. The death-script: third form, protective silence
 
 Cornelis' execution must be staged against two available sixteenth-century death scripts.
 
@@ -159,7 +216,7 @@ Cornelis dies with protective silence.
 
 ---
 
-## 10. Claes' witness experience
+## 12. Claes' witness experience
 
 Claes must see enough to be changed, but not enough to understand the system.
 
@@ -168,7 +225,7 @@ He sees:
 - the old Catholic death apparatus: priest, cross, ritual expectation;
 - the public square trying to read his father;
 - guarded authority trying to prevent another Fabritius-like collapse;
-- confiscated papers as material proof;
+- books or papers burned as material proof and public purification;
 - the sword as civic instrument;
 - the father's refusal to name;
 - the absence of a clean category.
@@ -186,26 +243,29 @@ The immediate wound is not only grief. It is interpretive failure: Claes witness
 
 ---
 
-## 11. Scene mechanics
+## 13. Scene mechanics
 
 Recommended structure:
 
-1. **Before the execution:** Claes arrives too late to save Cornelis and possibly too late to understand the sentence fully.
+1. **Before the execution:** Claes arrives into a market already shaped by book-burning preparations or aftermath.
 2. **Last contact:** Cornelis gives the Castanea line under guard.
-3. **The square:** public execution environment, controlled but tense; the memory of Fabritius hangs over the staging.
+3. **The square:** public book destruction and execution environment; the memory of Fabritius hangs over the staging.
 4. **The priest/cross moment:** Cornelis does not perform clean refusal or clean submission.
 5. **The question of names:** implied or explicitly recalled from examination; his silence is the moral core.
 6. **The sword:** short bodily end, but long interpretive aftershock.
-7. **Papers burned:** testimony and evidence are staged as destruction.
+7. **Books/papers burned:** testimony and evidence are staged as destruction; not all paper dies.
 8. **Claes after:** he does not yet have a revelation; he has a wound and a phrase.
 
 ---
 
-## 12. Guardrails
+## 14. Guardrails
 
 - Do not make Cornelis a historical documented victim.
+- Do not claim Haecht or the Antwerpsch chronykje names him.
+- Do not identify Cornelis with Haecht's seven offenders on 19 November 1569.
 - Do not make Cornelis a public Calvinist preacher or Anabaptist teacher unless a separate decision changes his religious profile.
 - Do not make his death a punishment for possessing `OBJ.MEMORIAAL`.
+- Do not make simple book-smuggling enough for his execution.
 - Do not give Claes premature understanding.
 - Do not allow the execution to become an easy conversion scene.
 - Do not let Plantin or Silvius deliberately betray Cornelis unless a separate, very strong decision supports that darker plot.
@@ -214,6 +274,6 @@ Recommended structure:
 
 ---
 
-## 13. Storybible formula
+## 15. Storybible formula
 
-> Cornelis is not executed because he is the author of forbidden truth. He is executed because he is the body by which truth travelled. Antwerp does not kill a printer in him, nor a preacher, but a route. Claes sees the sword fall without yet knowing what his father has preserved. Only later will he understand that the silence he resented was the form of love that kept the key from becoming a confession.
+> Cornelis is not executed because he is the author of forbidden truth. He is executed because he is the body by which truth travelled after being warned not to carry it. Antwerp does not kill a printer in him, nor a preacher, but a route. On the day books burn in the market, Claes sees the sword fall without yet knowing what his father has preserved. Only later will he understand that the silence he resented was the form of love that kept the key from becoming a confession.
