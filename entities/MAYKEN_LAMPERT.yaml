@@ -1,14 +1,11 @@
 schema_version: 1.0.0
-kind: EntityRegistry
-entities:
-- id: ENT.PERSON.BELOVED
-  type: Person
+kind: EntityDetailRegistry
+entity_details:
+- entity_ref: ENT.PERSON.BELOVED
   label: Mayken Adriaensdr. Lampert
-  fictionality: fictional
-  canon_status: CANON
   aliases: [Mayken, Mayken Adriaens, Mayken Adriaensdochter]
   birth:
-    place: ENT.LOC.GOES
+    place_ref: ENT.LOC.GOES
     year_approx: 1546
     precision: approximate
   roles:
@@ -19,23 +16,19 @@ entities:
   - botanical-counterpart
   - error-checker
   - recovery-catalyst
-  father:
-    entity: ENT.PERSON.ADRIAEN_JACOBSZ_LAMPERT
-    relation_status: CANON_FICTIONAL_KINSHIP
-  paternal_grandfather:
-    entity: ENT.PERSON.JACOB_LAMPART_APOTHECARY
-    relation_status: CANON_FICTIONAL_KINSHIP
-  paternal_grandmother:
-    entity: ENT.PERSON.MERRICKEN_LAMPART_HOUSEHOLD
-    relation_status: CANON_FICTIONAL_KINSHIP
-    guardrail: The historical Merricken/Mayken household-name evidence is unresolved; do not identify the 1543 Mayken automatically with Merricken.
-  mother:
-    status: OPEN_FICTIONAL
+  father_ref: ENT.PERSON.ADRIAEN_JACOBSZ_LAMPERT
+  father_relation_status: CANON_FICTIONAL_KINSHIP
+  paternal_grandfather_ref: ENT.PERSON.JACOB_LAMPART_APOTHECARY
+  paternal_grandfather_relation_status: CANON_FICTIONAL_KINSHIP
+  paternal_grandmother_ref: ENT.PERSON.MERRICKEN_LAMPART_HOUSEHOLD
+  paternal_grandmother_relation_status: CANON_FICTIONAL_KINSHIP
+  grandmother_guardrail: The historical Merricken/Mayken household-name evidence is unresolved; do not identify the 1543 Mayken automatically with Merricken.
+  mother_status: OPEN_FICTIONAL
   childhood_fire:
-    event: NI.EVENT.GOES_FIRE.1554.001
+    event_ref: NI.EVENT.GOES_FIRE.1554.001
     age_approx: 8
     family_property_loss: de Zwaene
-    historical_anchor: SC.HIST.GOES.LAMPERT.ZWAENE_BURNED.1554.001
+    historical_anchor_ref: SC.HIST.GOES.LAMPERT.ZWAENE_BURNED.1554.001
     guardrail: Her personal fire experience is fictional; the Lampert property transition from house to burned house is historically attested.
   expertise:
   - materia_medica
@@ -44,41 +37,32 @@ entities:
   - sensory_material_judgement
   - Dodoens_use
   - error_control
-  decision_id: DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14
+  decision_ref: DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14
 
-- id: ENT.PERSON.ADRIAEN_JACOBSZ_LAMPERT
-  type: Person
+- entity_ref: ENT.PERSON.ADRIAEN_JACOBSZ_LAMPERT
   label: Adriaen Jacopsen Lampert
-  fictionality: historical_anchor_with_fictional_kinship
-  canon_status: CANON_CONTEXT
   historical_status:
     name_chain: VERIFIED
     apothecary_identity: SUPPORTED
   roles: [Goese_property_holder, likely_apothecary, father_of_Mayken_in_novel]
-  source_refs:
+  source_claim_refs:
   - SC.HIST.GOES.APOTHECARY.ADRIAEN_JACOPSEN.1554_1556.001
   - SC.HIST.GOES.LAMPERT.ADRIAEN_PROPERTY_CHAIN.1551_1561.001
   - SC.HIST.GOES.LAMPERT.ADRIAEN_APOTHECARY_IDENTITY.001
   guardrail: The historical record does not currently identify a daughter Mayken.
 
-- id: ENT.PERSON.JACOB_LAMPART_APOTHECARY
-  type: Person
+- entity_ref: ENT.PERSON.JACOB_LAMPART_APOTHECARY
   label: Jacob/Jacop Lampart/Lambert, apotheker
-  fictionality: historical_anchor_with_fictional_kinship
-  canon_status: CANON_CONTEXT
   roles: [Goese_apothecary, grandfather_of_Mayken_in_novel]
-  source_refs:
+  source_claim_refs:
   - SC.HIST.GOES.APOTHECARY.JACOB_LAMPART.1538_1545.001
   guardrail: His fatherhood of Adriaen is a supported reconstruction adopted as novel genealogy, not archival proof.
 
-- id: ENT.PERSON.MERRICKEN_LAMPART_HOUSEHOLD
-  type: Person
+- entity_ref: ENT.PERSON.MERRICKEN_LAMPART_HOUSEHOLD
   label: Merricken, huisvrouw van Jacop/Jacob de apotheker
-  fictionality: historical_anchor_with_fictional_kinship
-  canon_status: CANON_CONTEXT
   roles: [Goese_apothecary_household, grandmother_of_Mayken_in_novel]
-  source_refs:
+  source_claim_refs:
   - SC.HIST.GOES.APOTHECARY.JACOB_LAMPART.1538_1545.001
   ambiguity:
     mayken_1543_same_person: UNRESOLVED
-    source_ref: SC.HIST.GOES.LAMPART.MAYKEN_1543.001
+    source_claim_ref: SC.HIST.GOES.LAMPART.MAYKEN_1543.001
