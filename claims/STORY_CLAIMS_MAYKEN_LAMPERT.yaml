@@ -1,0 +1,46 @@
+schema_version: 1.0.0
+kind: StoryClaimRegistry
+claims:
+- id: STC.CLAES.BELOVED.MAYKEN_LAMPERT.001
+  type: StoryClaim
+  statement: Claes' beloved is Mayken Adriaensdr. Lampert, a fictional Goese woman born approximately in 1546 and raised in the apothecary environment attached to Adriaen Jacopsen Lampert.
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids: [DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14]
+  subjects: [ENT.PERSON.BELOVED]
+  story_time: {earliest: '1546-01-01', latest_exclusive: '1547-01-01', precision: approximate_birth_year}
+- id: STC.MAYKEN.LAMPERT.FAMILY_LINK.001
+  type: StoryClaim
+  statement: In novel canon Mayken is the daughter of Adriaen Jacobsz. Lampert and the granddaughter of the older Goese apothecary Jacob/Jacop Lampart/Lambert and his household; these kinships are explicit fiction attached to historical source anchors.
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids: [DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14]
+  subjects: [ENT.PERSON.BELOVED, ENT.PERSON.ADRIAEN_JACOBSZ_LAMPERT, ENT.PERSON.JACOB_LAMPART_APOTHECARY]
+  source_refs: [SC.HIST.GOES.LAMPERT.JACOB_ADRIAEN_GENERATION.001]
+  guardrail: Do not present either father-daughter or grandfather-granddaughter relation as archival fact.
+- id: STC.MAYKEN.FIRE_MEMORY.1554.001
+  type: StoryClaim
+  statement: Mayken is a child in Goes during the 1554 city fire and her family experiences material loss through the burned Zwaene property; she therefore shares knowledge of the catastrophe without sharing Claes' exact household bereavement.
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids: [DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14]
+  subjects: [ENT.PERSON.BELOVED, ENT.PERSON.ADRIAEN_JACOBSZ_LAMPERT]
+  source_refs: [SC.HIST.GOES.LAMPERT.ZWAENE_BURNED.1554.001]
+  guardrail: Mayken's personal presence, reaction and childhood biography are fictional; only the Lampert property loss is historically anchored.
+- id: STC.MAYKEN.APOTHECARY_EXPERTISE.001
+  type: StoryClaim
+  statement: Mayken grows up with practical access to materia medica, preparation, smell, texture, drying, measuring, botanical identification and apothecary book culture, making her a credible material/botanical counterpart in the 1570 recovery sequence.
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids: [DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14]
+  subjects: [ENT.PERSON.BELOVED]
+  objects: [OBJ.DODOENS_CARRIER]
+  guardrail: Her expertise is practical and learned within the fictional household; do not convert it into an unsupported formal guild office or university education.
+- id: STC.CLAES.MAYKEN.RELATIONSHIP.001
+  type: StoryClaim
+  statement: Claes and Mayken develop from separate expertise and shared Goese memory toward collaborative verification, trust, love without possession and later sensory/spiritual companionship; Mayken catalyses but does not perform Claes' recovery of the sinne.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  decision_ids: [DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14, DEC.CLAES.SINNE.2026-08-13]
+  subjects: [ENT.PERSON.CLAES, ENT.PERSON.BELOVED]
+  relation: REL.CLAES.BELOVED
