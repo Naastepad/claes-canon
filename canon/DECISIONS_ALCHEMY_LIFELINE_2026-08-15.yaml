@@ -1,4 +1,4 @@
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: CanonDecisionSupplement
 decisions:
 - id: DEC.CORNELIS.ROLE.POORTER_RED_BROUWER.2026-08-15
@@ -57,3 +57,80 @@ decisions:
   - Do not present the chain as a real recipe or proof of literal lead-to-gold transmutation.
   - The 1602 Enkhuizen transmutation remains convincing to early-modern witnesses, chemically interpretable as hidden Sol becoming visible, and morally decisive for Claes.
   - The beloved/apothecary-daughter and Enkhuizen recovery line supports Claes' reopening of embodied sinne and his movement from control to relation and release.
+- id: DEC.ALCHEMY.RED_LION.PROJECTION_POWDER.2026-08-16
+  type: CanonDecision
+  status: CANON
+  decision: Claes' completed projectiepoeder is the Rode Leeuw. It is materially and visually distinct from the earlier Groene Leeuw/vitriol phase. For story purposes Rode Leeuw and completed projection powder functionally coincide, without claiming that these terms were universal historical-alchemical synonyms.
+  appearance:
+    state: fine heavy powder
+    colour_range: deep red to red-brown
+    comparisons:
+    - dried blood
+    - red earth
+    - iron rust
+    - burnt ochre
+    constraints:
+    - darker and duller than bright vermilion/cinnabar
+    - never green
+    - never visibly gold-yellow
+    - no visible golden glitter is required or desired
+    context_effect:
+    - on white ceramic the red reads more strongly
+    - in paper or a dark container it may read nearly brown-red
+    - an uninformed observer may take it for earth, rust or an apothecary powder
+  symbolic_distribution:
+    Groene_Leeuw:
+    - green vitriol / FeSO4-bearing vitriol material as historical-chemical reference where appropriate
+    - vitriool-loog
+    - revealer / opener
+    - digestion / corrosion / disclosure
+    Rode_Leeuw:
+    - rubedo
+    - fixation
+    - completed projectiepoeder
+    - fixed Sol / culmination of the material line
+    Sol:
+    - gold principle may be materially hidden in the reconstructed process
+    - Sol must not make the powder visibly golden
+  narrative_chain:
+  - green belongs to vitriol, revelation, opening and digestion
+  - death/opening of Sol separates the green phase from final fixation
+  - red belongs to rubedo, fixation and projection
+  - projectio into Saturn/lead is the outward culmination, not the moral endpoint
+  guardrails:
+  - Never describe Claes' final projectiepoeder as green vitriol or as a green powder.
+  - Never collapse Groene Leeuw and Rode Leeuw into the same material stage.
+  - FeSO4 is not the completed projection powder; it belongs upstream in the vitriol/opening line.
+  - Do not infer the historical colour or composition of Alexander Seton's Enkhuizen powder from Claes' fictional powder.
+  - Do not turn this colour canon into a modern operational recipe.
+- id: DEC.SETON.ENKHUIZEN_PROJECTIO_ROLE.1602.2026-08-16
+  type: CanonDecision
+  status: CANON
+  decision: Alexander Seton is incorporated as the historical-alchemical catalyst of the Enkhuizen 1602 projectio climax. His narrative function is not to replace Dee as Claes' teacher or to hand Claes a recipe, but to embody and test the final question of the Work: what one does with knowledge, proof and power once possession becomes possible.
+  historical_anchor:
+    date: '1602-03-13'
+    time: '16:00'
+    place: ENT.LOC.ENKHUIZEN
+    tradition:
+    - Seton is reported to have performed a projection/transmutation in the house of Jacob Hanssen/Haussen in Enkhuizen.
+    - The tradition describes lead becoming gold and a portion being retained through the Van der Linden family and later seen by Daniel Georg Morhof.
+    - These reports are historical testimony/tradition, not modern proof of literal elemental transmutation.
+  narrative_function:
+  - late mirror/foil for Claes
+  - external catalyst of Claes' final alchemical transition
+  - embodiment of release rather than accumulation
+  - warning about rulers or patrons who seek to possess coerced knowledge
+  - convergence point for material alchemy, hidden-text/revelation motifs and Claes' recovered sinne
+  relationship_to_existing_mentors:
+  - Dee remains the major scholar/code-architect and must not be displaced by Seton.
+  - Seton does not solve Claes' life-work for him.
+  - Recognition between Seton and Claes should be stronger than exposition; they may understand aspects of one another without explaining the complete Work aloud.
+  political_guardrails:
+  - Do not canonize Seton as Protestant, Dutch patriot or ideologically anti-Spanish without evidence.
+  - He may distrust coercive princely appropriation of knowledge irrespective of confession or dynasty.
+  - Any sympathy with victims of Habsburg power must remain character-level inference unless separately sourced and decided.
+  historical_uncertainty:
+  - Seton's exact identity and Scottish family connection remain uncertain.
+  - Do not identify him as a documented member of the noble Seton family without evidence.
+  - Do not canonize a historical recipe or a historical green/red colour for his Enkhuizen projection powder.
+  - Later stories about imprisonment, torture, Sendivogius and authorship must retain their appropriate evidence status rather than being flattened into certain biography.
