@@ -6,7 +6,7 @@ Release state: `AUTHORING_BRANCH`
 
 Branch: `authoring/memoriaal-brevisima-print-20260815`
 
-The explicit 15 August 2026 author decision for the memoriaal/Brevísima carrier has been normalized across the primary structured canon layers. It is **not yet merge-ready as SYNC_COMPLETE** because the dated broad synthesis `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` still contains the superseded post-4-October memoriaal model and repository validation has not yet been confirmed for this branch.
+The explicit 15 August 2026 author decision for the memoriaal/Brevísima carrier has been normalized across the primary structured canon layers. Repository continuity and Lemma validation are green for the canonical content commit `2a08146b7af36ae824ed38ba8c6c0f41cc454d96`. The branch remains **SYNC_PENDING**, rather than `SYNC_COMPLETE`, solely because the dated broad synthesis `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` still contains the superseded post-4-October memoriaal model and must be regenerated or explicitly patched before final synchronization.
 
 ## New canonical memoriaal state
 
@@ -39,6 +39,7 @@ The explicit 15 August 2026 author decision for the memoriaal/Brevísima carrier
 - `storybible/MEMORIAAL_BREVISIMA_PRINT_1564.md`
 - `storybible/MASTER.md`
 - `storybible/INDEX.md`
+- `review/MIGRATION_REVIEW.yaml`
 - `review/SYNC_STATUS.md`
 
 ## Explicit supersession
@@ -55,12 +56,17 @@ The authoritative domain dossier is now `storybible/MEMORIAAL_BREVISIMA_PRINT_15
 - `OPEN.MATERIAL.WET_TEST.001` remains required to determine real transfer, dry visibility/gloss, *moet*, paper behavior and vitriol-development performance.
 - `OPEN.GRAPHITE_STIFT.PROVENANCE.1564.001` preserves uncertainty about the exact physical form/provenance of Dee's graphite marking tool while leaving its story function fixed.
 
+## Validation
+
+- **Validate Claes canon repository**, run 184: continuity compilation passed on commit `2a08146b7af36ae824ed38ba8c6c0f41cc454d96`.
+- **Validate Lemma canon**, run 102: all active Lemma specs passed on the same commit.
+- The validation failures in earlier PR #9 runs were repaired: first a YAML quoting error in `STC.CODE.RECOVERY_SEQUENCE.001`, then the three new memoriaal Story Claims were added to `review/MIGRATION_REVIEW.yaml` and its totals synchronized from 54 to 57.
+
 ## Remaining synchronization work
 
 1. Regenerate or patch `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` so its old memoriaal sections no longer contradict the 15 August decision.
-2. Run/confirm repository and Lemma validation for the authoring branch/PR.
-3. If validation exposes any dangling IDs or schema assumptions, repair them before changing this status to `SYNC_COMPLETE`.
-4. Resolve separately, not silently, `OPEN.MERELS.ENTRY_AFTER_MEMORIAAL_REDESIGN.001`; this is a story-design open question, not a synchronization defect in the new physical carrier decision.
+2. After that master synchronization, rerun repository and Lemma validation before changing this status to `SYNC_COMPLETE`.
+3. Resolve separately, not silently, `OPEN.MERELS.ENTRY_AFTER_MEMORIAAL_REDESIGN.001`; this is a story-design open question, not a synchronization defect in the new physical carrier decision.
 
 ## Existing family state remains unchanged
 
