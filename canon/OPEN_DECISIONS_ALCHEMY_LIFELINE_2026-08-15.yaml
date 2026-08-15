@@ -1,4 +1,4 @@
-schema_version: 1.1.0
+schema_version: 1.2.0
 kind: OpenDecisionSupplement
 decisions:
 - id: OPEN.CORNELIS.CASTANIE.DEKEN.001
@@ -20,6 +20,7 @@ decisions:
   status: OPEN
   fixed:
   - Alexander Seton is the historical-alchemical catalyst in the Enkhuizen 1602 projectio climax.
+  - Seton has no function in revealing, decoding, reading or solving the Brevisima; that textual line is completed by the Antwerp 1578 print event.
   - The 1602 Enkhuizen event is the outward projectio of Claes' projectiepoeder line.
   - Claes' completed projectiepoeder/Rode Leeuw is deep red to red-brown, never green or visibly gold-yellow.
   - Groene Leeuw/vitriol belongs upstream to revelation, opening and digestion, not to the final projection powder.
@@ -27,9 +28,9 @@ decisions:
   - The event must force Claes toward release rather than ownership of the Work.
   - Historical Seton tradition and fictional Claes material logic must remain distinguishable.
   unresolved:
-  - Is Jacob Hanssen/Haussen's 1601 Scottish landfall an accidental shipwreck, a deliberately risky approach, or a cover story for a mission?
-  - If Hanssen is seeking Seton, who sends him and what exactly does the sender know?
-  - Is the motive connected to the hidden/memorial book as a material problem rather than a cipher that only Seton can decode?
+  - Is Jacob Hanssen/Haussen's 1601 Scottish landfall an accidental shipwreck, a deliberately risky approach, or a later cover story?
+  - If Hanssen is deliberately seeking Seton, who sends him and why is Seton's alchemical reputation relevant to Claes' late-life projectio line?
+  - Does Claes already know of Seton's reputed projective demonstrations before 1602, or does Seton arrive as an unexpected figure?
   - Does Claes meet Seton before the projection, and if so under what pretext?
   - Who supplies the lead, crucible, fire and assay materials?
   - Does Seton touch the working materials or deliberately leave handling to witnesses?
@@ -40,10 +41,11 @@ decisions:
   - Who keeps the resulting gold and how does its material witness-chain intersect with the historical tradition?
   - What does Seton recognize in Claes, and what do the two deliberately leave unsaid?
   - What immediate choice or relinquishment by Claes proves that projectio has become release rather than possession?
+  - How much of Seton's later danger or future persecution is foreshadowed without importing later legend as certain fact?
   guardrails:
   - Do not write a modern complete recipe.
   - Do not close witnesses, location details, mission theory, assay sequence or public/private degree without a separate decision.
   - Do not make metallic success the final moral meaning of the novel.
   - Do not make Hanssen's secret mission historical fact; it is a story hypothesis until explicitly closed as fiction-canon.
   - Do not claim Seton's historical Enkhuizen powder was red or green; the surviving tradition does not securely establish that for this event.
-  - Do not make Seton the sole decoder of the hidden book if this contradicts the established tannin/vitriol material-revelation mechanism.
+  - Do not reconnect Seton to the Brevisima, memoriaal, hidden print or any textual decoding/revelation task.
