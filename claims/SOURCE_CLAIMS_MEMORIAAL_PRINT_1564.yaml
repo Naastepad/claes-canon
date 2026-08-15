@@ -47,6 +47,30 @@ claims:
     retrieval:
       tags: [antwerp, medicinal-weight, drachm, ounce, metrology]
 
+  - id: SC.HIST.LASCAS.BRABANT_1578.CAPACITY_SEQUENCE.001
+    type: SourceClaim
+    statement: "In the supplied 1578 Brabant/Dutch Seer cort Verhael facsimile, the visible title page and separate translator's address precede Las Casas' own prologue; the Las Casas body runs from PDF page 12 through PDF page 147 inclusive, yielding 136 scanned page surfaces, while PDF page 17 visibly carries an A2 signature."
+    claim_type: historical_textual_typographic_witness
+    subject: OBJ.LASCASAS_PLAINTEXT
+    predicate: has_later_brabant_witness_suitable_as_capacity_sequence_analogue
+    object: "136-page Las Casas body after separate visible-edition paratext"
+    evidence_status: SUPPORTED
+    source_ids:
+      - SRC-HIST-LASCAS-SEER-CORT-VERHAEL-1578-FACSIMILE-001
+    supports_story_claims:
+      - STC.MEMORIAAL.PRINT_PROCESS.001
+      - STC.MEMORIAAL.BREVISIMA_CARRIER.001
+    contradicts: []
+    qualifies:
+      - "The 1578 witness does not prove a hidden 1564 edition or tannin/gum printing."
+      - "The 17-sheet quarto format is an authorial capacity inference from the 136-page body, not a claim that the fictional 1564 object copies the 1578 design page-for-page."
+      - "The 1578 title page, translator's address, ornaments and decorated initials are not visual templates for Claes' memoriaal."
+    verification:
+      status: uploaded_facsimile_checked
+      note: "Rendered pages and parsed text were checked for title, translator address, prologue opening, tract opening, A2 signature and end of the text body."
+    retrieval:
+      tags: [las-casas, brevisima, seer-cort-verhael, 1578, brabant, quarto, capacity, memoriaal]
+
   - id: SC.RECON.MEMORIAAL.TANNIN_GUM_PRINT.001
     type: SourceClaim
     statement: "A near-invisible first-pass relief-printing medium made from clear gallnut/tannin extract plus gum arabic, without iron/vitriol or visible pigment, is a chemically and craft-technically plausible authorial reconstruction for experimental printing on movable metal type; the exact transfer, visibility, gloss and press-impression performance remains unverified by a physical wet/press test."
@@ -62,6 +86,7 @@ claims:
     source_ids:
       - SRC-HIST-PLANTIN-PRINT-DIALOGUES-1567-001
       - SRC-SECONDARY-BOONMAN-METROLOGY-2015-001
+      - SRC-HIST-LASCAS-SEER-CORT-VERHAEL-1578-FACSIMILE-001
     supports_story_claims:
       - STC.MEMORIAAL.PRINT_PROCESS.001
       - STC.MEMORIAAL.BREVISIMA_CARRIER.001
@@ -70,6 +95,7 @@ claims:
       - "This is not a recovered Plantin or Silvius recipe."
       - "The physical wet/press test remains OPEN.MATERIAL.WET_TEST.001."
       - "Gum-arabic material-property research in the project supports the binder/film-forming hypothesis but is not represented here as proof of historical metal-type use."
+      - "The 1578 facsimile is cited only for capacity/text-sequence context, never as evidence for the invisible medium."
     verification:
       status: reconstruction_not_physically_tested
       note: "Canon may use the process as story technology while prose must preserve its reconstructed rather than documented status when discussing historical evidence."
