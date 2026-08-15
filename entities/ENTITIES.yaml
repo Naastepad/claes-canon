@@ -1,4 +1,4 @@
-schema_version: 1.4.0
+schema_version: 1.5.0
 kind: EntityRegistry
 entities:
 - id: ENT.PERSON.CLAES
@@ -91,7 +91,8 @@ entities:
   - travelling-adept
   - projectio-catalyst
   - late-mirror-for-Claes
-  usage: historical actor incorporated into the Enkhuizen 1602 climax under DEC.SETON.ENKHUIZEN_PROJECTIO_ROLE.1602.2026-08-16
+  - test-of-release-beyond-possession
+  usage: historical actor incorporated exclusively into the late Enkhuizen 1602 alchemical climax under DEC.SETON.ENKHUIZEN_ALCHEMICAL_MIRROR.1602.2026-08-16
   historical_status:
     identity: uncertain
     origin: Scottish attribution in tradition; exact identity unresolved
@@ -99,11 +100,13 @@ entities:
     confession: unknown
     political_alignment: unknown
   constraints:
-  - Do not displace John Dee as Claes' principal scholar/code-architect.
+  - Do not displace John Dee as Claes' earlier principal scholar/mentor.
   - Do not give Seton a verified modern recipe for transmutation.
   - Do not state that Seton's historical Enkhuizen powder was green or red.
   - Do not state as fact that he belonged to the noble Seton family.
   - Do not state as fact that he was Protestant, anti-Spanish or a partisan of the Dutch Revolt.
+  - Do not connect Seton to revealing, decoding, reading, authenticating, printing or recovering the Brevisima or memoriaal.
+  - The Brevisima textual mission is already completed by the Antwerp 1578 print event.
 - id: ENT.PERSON.JACOB_HANSSEN
   type: Person
   label: Jacob Hanssen / Haussen
@@ -124,6 +127,7 @@ entities:
   constraints:
   - A deliberate mission to find Seton is fiction-design, not established history.
   - Do not silently turn the shipwreck tradition into a staged wreck.
+  - If a secret mission is chosen, its motive must arise from the late alchemical/projectio line, not from the Brevisima or a hidden-text problem.
 - id: ENT.PERSON.VANDERLINDEN_ENKHUIZEN
   type: Person
   label: Van der Linden, physician of Enkhuizen
