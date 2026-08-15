@@ -1,4 +1,4 @@
-schema_version: 1.1.0
+schema_version: 1.2.0
 kind: NarrativeInstanceRegistry
 id: NIR.EXECUTIONS_REFORMATION.2026-08-15
 status: AUTHORING
@@ -15,7 +15,7 @@ instances:
     entities: [ENT.PERSON.CLAES, ENT.PERSON.CORNELIS]
     story_claims: [STC.CLAES.EXECUTION_ARC.001, STC.CLAES.EXECUTION_KNOWLEDGE.RESERVOIR.001]
     motifs: [MOTIF.FIRE_WATER, MOTIF.CARRIER_MEANING, MOTIF.SINNE]
-    function: Claes' execution knowledge develops from Catholic civic order through Reformation martyr disruption toward code-as-testimony and moral responsibility.
+    function: Claes' execution knowledge develops from Catholic civic order through Reformation martyr disruption toward hidden testimony and moral responsibility.
   - id: NI.SCENE.EXECUTION_BASELINE.GOES.1547_1554.001
     type: ScenePattern
     label: Katholieke basisorde van straf en sterven
@@ -65,7 +65,7 @@ instances:
     entities: [ENT.PERSON.CLAES, ENT.PERSON.CORNELIS]
     existing_instance: NI.EVENT.SECURITY_BREAK.1564.001
     story_claims: [STC.SECURITY.FABRITIUS_CANDIDATE.1564.001]
-    function: Trigger the declassification of Cornelis as direct-key recipient and the post-break secret loading of Claes' existing memoriaal.
+    function: Intensify Cornelis' exposure and the clandestine network risk while serving as the adult macro-Nigredo hinge; it does not alter, load or key Claes' memoriaal.
     guardrail: Cornelis need not throw stones, sing, rescue anyone or be arrested in 1564.
   - id: NI.EVENT.CORNELIS_FIRST_ARREST.ANTWERP.1567.001
     type: EventInstance
@@ -78,7 +78,7 @@ instances:
     locations: [ENT.LOC.ANTWERP]
     entities: [ENT.PERSON.CORNELIS]
     story_claims: [STC.CORNELIS.FIRST_ARREST_BAIL.1567.001, STC.CORNELIS.CARRIER_NOT_PRINTER.001]
-    function: Show that Cornelis was correctly declassified after 1564; he is compromised and watched, but the first exposure is not yet a historically convincing immediate death sentence.
+    function: Show that Cornelis is compromised and watched, but that the first exposure is not yet a historically convincing immediate death sentence.
     required_scene_logic:
       - First arrest or examination concerns papers, routes, carriers, storage or book-world contacts.
       - Release happens through borg, conditions, lack of complete proof or usefulness as a traceable route.
@@ -109,7 +109,7 @@ instances:
     locations: [ENT.LOC.ANTWERP]
     entities: [ENT.PERSON.CLAES, ENT.PERSON.CORNELIS]
     story_claims: [STC.CORNELIS.EXECUTION_WITNESS.001, STC.CORNELIS.DEATH.ANTWERP.1569.001, STC.CORNELIS.SILENCE_THIRD_SCRIPT.001]
-    function: Cornelis' public execution becomes Claes' decisive father-loss and moral inheritance; it resolves the father as vulnerable carrier, not protected printer, and clarifies why truth must survive through indirect carriers.
+    function: Cornelis' public execution becomes Claes' decisive father-loss and moral inheritance; it resolves the father as vulnerable carrier, not protected printer, and clarifies why testimony may need to survive indirectly.
     sublocations_text:
       - Het Steen as detention-route context
       - Grote Markt / market book-burning environment as preferred public setting
@@ -119,8 +119,8 @@ instances:
       - The formal story charge concerns seditious network complicity, forbidden papers/books/liederen/prints/correspondence, recidive after earlier borg/conditions, and refusal to name others.
       - Simple book smuggling alone is insufficient.
       - Cornelis' death must not depend on him carrying OBJ.MEMORIAAL.
-      - Cornelis never reveals the full recovery key.
-      - The final usable clue is minimal: Castanea. Niet onze bloem - de boom.
+      - No cryptographic key or Castanea clue is required at the execution.
+      - Any final exchange should serve relationship, testimony or protective silence rather than puzzle mechanics.
       - The scene contrasts Catholic ars moriendi, Protestant martyr display and Cornelis' protective silence.
       - Do not claim Haecht documents Cornelis.
     value_shift:
