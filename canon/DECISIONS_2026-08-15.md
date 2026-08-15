@@ -1,6 +1,6 @@
 # Canon decisions — 15 August 2026
 
-These decisions process the execution/Reformation material from the 15 August 2026 research chat. They do not replace earlier decisions; they add a focused execution-culture layer.
+These decisions process the execution/Reformation material and later memoriaal/Brevísima material from the 15 August 2026 research chats. They do not replace earlier decisions except where a later decision explicitly states that it supersedes an earlier physical-carrier model.
 
 ## DEC.CLAES.EXECUTIONS_REFORMATION_ARC.2026-08-15 — CANON
 
@@ -16,7 +16,7 @@ Claes must be physically present as witness at Cornelis' execution.
 
 This fixes the witness relation and scene function. It does **not** by itself close the exact date, place, formal charge, execution method or degree of public ritual. Those are closed for the authoring branch only by `DEC.CORNELIS.DEATH.1569.2026-08-15.REVISED` below.
 
-Cornelis' death must not depend on him carrying `OBJ.MEMORIAAL`. Dee gave Claes the memoriaal early in 1564 as a pedagogical workbook; only after 4 October 1564 is that existing object prepared as blind recovery carrier.
+Cornelis' death must not depend on him carrying `OBJ.MEMORIAAL`. Under the later memoriaal decision below, Dee gives Claes the already prepared memoriaal before the journey to Boom in early 1564; it already carries the hidden printed Las Casas ciphertext. The 4 October 1564 security break changes access/key architecture, not the physical loading of the Brevísima into the book.
 
 Cornelis should remain a vulnerable logistical carrier and father, not a protected printer and not necessarily an open preacher. His plausible death model is: routes, vaten, storage, prohibited papers/books/liederen/prenten, dangerous contacts and refusal to give names. His strongest dramatic death-script is protective silence between Catholic ars moriendi and Protestant martyr display.
 
@@ -62,21 +62,65 @@ Guardrails:
 
 Fabritius is the preferred historical candidate for the already canonical `NI.EVENT.SECURITY_BREAK.1564.001` because the date, stones, psalm-singing, public-control failure and Antwerp context fit the existing storybible hinge.
 
-This remains a candidate until `OPEN.SECURITY.LOW_LINK.1564.001` is explicitly closed. Cornelis need not be a stone thrower, need not sing, need not try to rescue Fabritius and need not be arrested in 1564. The fixed story function is that the event makes Cornelis operationally unsafe as direct-key recipient and activates the fallback architecture.
+This remains a candidate until `OPEN.SECURITY.LOW_LINK.1564.001` is explicitly closed. Cornelis need not be a stone thrower, need not sing, need not try to rescue Fabritius and need not be arrested in 1564. The fixed story function is that the event makes Cornelis operationally unsafe as direct-key recipient and activates the fallback architecture. Under the later memoriaal decision, this event does **not** cause a secret physical load to be inserted into Claes' book.
+
+## DEC.MEMORIAAL.BREVISIMA_PRINT_GIFT.2026-08-15 — CANON
+
+The translated, already encoded Diets/Brabant `Brevísima` is physically carried in Claes' memoriaal **from the moment Dee gives the book to him before Claes departs for Boom in early 1564**. The book is therefore not an ordinary workbook that is secretly converted after 4 October 1564. It is a hidden printed carrier from the beginning, while remaining an ordinary pedagogical workbook in Claes' own understanding.
+
+### Fixed physical production
+
+1. Silvius' shop sets the encoded translated `Brevísima` in movable type and prints it on **loose sheets before binding**.
+2. The clandestine first-pass printing medium contains a clear, filtered gallnut/tannin extract plus gum arabic. It contains **no green vitriol/iron salt, no soot and no visible pigment**.
+3. Canonical workshop starting recipe, expressed in period working measures:
+   - break **2 drachmen good gallnuts** and steep them in **2½ medicinal ounces clear water**;
+   - filter through fine linen and take **2 medicinal ounces of the clearest extract**;
+   - dissolve **1½ medicinal ounces good gum arabic** in that extract;
+   - if the medium runs from the letter, add a little gum; if it is too stiff for clean transfer, temper with a few drops of clear water.
+4. The technical criterion is the printer's, not a modern concentration number: the medium must remain sufficiently `dick ende clemachtich` on the type to transfer a complete thin film without being laid so heavily that the dry page visibly shines or the press leaves an obvious *moet*.
+5. The loose sheets are printed recto/verso in correct imposition, dried, folded/gathered and **bound as an apparently blank memoriaalboek**. The hidden text is therefore not placed in a hollow binding and is not inserted later as a separate little book: the apparently blank writing paper **is** the hidden book.
+6. A developed proof may be tested with a weak green-vitriol solution. The story workshop reference for such a proof is **½ drachme green vitriol in 4 medicinal ounces clear water**. The production sheets themselves remain undeveloped.
+7. The precise performance of this reconstructed tannin-gum relief medium remains subject to `OPEN.MATERIAL.WET_TEST.001`; it is story-canon technical reconstruction and must not be presented as a documented historical Plantin/Silvius recipe.
+
+### Dee's handoff before Boom
+
+Before `NI.CHAPTER.1564.03` (`De Kies Van Boom`), Dee gives Claes:
+
+- `OBJ.MEMORIAAL`, already bound from the invisibly printed Brevísima sheets; and
+- `OBJ.GRAPHITE_STIFT`, a graphite marking stick/stylus whose exact historical form/provenance remains to be separately verified.
+
+Dee explicitly forbids Claes to write in the memoriaal with ink **for as long as Claes remains his pupil**. Claes must use the graphite stift for notes, diagrams, observations and corrections.
+
+The in-world instruction is pedagogical and peremptory; Dee does not explain the carrier secret. Operationally, the rule prevents ordinary iron-gall writing ink from introducing iron into the tannin-loaded pages and from accidentally disturbing or locally activating the hidden chemical layer.
+
+Claes knows only that the book is his memoriaal and that Dee insists on graphite. He does **not** know that the pages already contain the translated Brevísima, that the apparently blank paper has been typographically printed, or that green vitriol can later reveal the hidden stream.
+
+### Supersession and continuity effects
+
+This decision explicitly supersedes the older physical-carrier model represented by `STC.MEMORIAAL.SECRET_PHASE.001`, the `OBJ.MEMORIAAL` constraint that the secret load occurs only after 4 October 1564, and the hard guardrail that vitriol reveals merels rather than Las Casas ciphertext.
+
+The following remain canon unless separately changed:
+
+- 4 October 1564 remains the adult macro-Nigredo/security hinge;
+- that security break may change direct-key access and the fallback/recovery architecture;
+- the encoded Las Casas stream is not re-ciphered after October 1564;
+- Claes remains ignorant of the Las Casas purpose until the later reveal/recovery sequence;
+- merels, Monas, Castanea, Dodoens, Primus Index and the nomenclator remain components of the established recovery architecture, but the **exact in-world placement/entry point of the 24 merels problems is reopened** because they are no longer the hidden content revealed from the memoriaal.
 
 ## Required synchronization
 
-This decision is synchronized in this branch through:
+The execution/Reformation decisions are represented through their existing dossiers and registers. The memoriaal/Brevísima decision requires synchronization through:
 
-- `storybible/EXECUTIONS_REFORMATION_CLAES.md`
-- `storybible/CORNELIS_EXECUTION_1569.md`
-- `claims/SOURCE_CLAIMS_EXECUTIONS_REFORMATION.yaml`
-- `claims/STORY_CLAIMS_EXECUTIONS_REFORMATION.yaml`
-- `narrative/instances_executions_reformation.yaml`
+- `claims/STORY_CLAIMS.yaml`;
+- `objects/OBJECTS.yaml`;
+- `narrative/instances.yaml`;
+- `narrative/knowledge_states.yaml`;
+- `narrative/relationships.yaml`;
+- `narrative/code_architecture.yaml`;
+- `canon/OPEN_DECISIONS.yaml`;
+- `lemma/decode.lemma`;
+- `storybible/MEMORIAAL_BREVISIMA_PRINT_1564.md`;
+- `storybible/MASTER.md` and `storybible/INDEX.md`;
+- `review/SYNC_STATUS.md`.
 
-Remaining pending after this branch, if accepted:
-
-- update `canon/OPEN_DECISIONS.yaml` to note that Claes witnessing Cornelis' execution is fixed and that this branch resolves the Cornelis-death model as 19 November 1569 Antwerp tied to the documented book-burning environment;
-- optionally promote Fabritius from preferred candidate to closed historical identification of `NI.EVENT.SECURITY_BREAK.1564.001`;
-- fold the dossier into the next synchronized operating master rather than duplicating all material in `LEMMA_MCKEE_MASTER_2026-08-13.md` immediately;
-- add Lemma constraints after this execution date/place/method is accepted into main.
+The dated operating synthesis `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` still contains the superseded post-4-October memoriaal model and must be regenerated or explicitly patched in a later master synchronization pass; until then, this decision and the dedicated memoriaal dossier outrank those stale passages.
