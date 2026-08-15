@@ -1,0 +1,77 @@
+schema_version: "1.0.0"
+kind: SourceClaimRegistry
+claims:
+  - id: SC.HIST.PRINTING.PLANTIN_1567.INK_AND_PRESS.001
+    type: SourceClaim
+    statement: "The consulted 1567 Antwerp printing dialogue distinguishes printer's ink from writing ink, describes ordinary printer's ink as turpentine/oil/smoke-black based, describes prior moistening of paper for the very sticky ink, leather-covered wool ink balls, a medium thick/sticky enough not to run from the letters, and the tympan/frisket/two-pull press workflow."
+    claim_type: historical_printing_practice
+    subject: ENT.PERSON.WILLEM_SILVIUS
+    predicate: could_work_with_period_antwerp_relief_printing_practice
+    object: "movable type, form, ink balls, tympan/frisket and hand press"
+    story_time:
+      earliest: 1564-01-01
+      latest_exclusive: 1565-01-01
+      precision: year_context
+    evidence_status: SUPPORTED
+    source_ids:
+      - SRC-HIST-PLANTIN-PRINT-DIALOGUES-1567-001
+    supports_story_claims:
+      - STC.MEMORIAAL.PRINT_PROCESS.001
+    contradicts: []
+    qualifies:
+      - "The source documents normal oil-based printing practice, not the fictional tannin/gum invisible medium."
+    verification:
+      status: uploaded_facsimile_checked
+      note: "Used as apparatus/craft-criterion evidence and near-contemporary Antwerp context."
+    retrieval:
+      tags: [plantin, silvius, antwerp, printing, ink, press, 1567]
+
+  - id: SC.HIST.METROLOGY.ANTWERP_MEDICINAL.001
+    type: SourceClaim
+    statement: "A medicinal ounce is divided into eight drachms, each drachm into three scruples and each scruple into twenty grains; the consulted Antwerp medicinal-weight data permit small workshop quantities to be expressed in medicinal ounces and drachms rather than modern metric units."
+    claim_type: historical_metrology
+    subject: ENT.LOC.ANTWERP
+    predicate: used_medicinal_weight_hierarchy
+    object: "ounce/drachm/scruple/grain"
+    evidence_status: SUPPORTED
+    source_ids:
+      - SRC-SECONDARY-BOONMAN-METROLOGY-2015-001
+    supports_story_claims:
+      - STC.MEMORIAAL.PRINT_PROCESS.001
+    contradicts: []
+    qualifies:
+      - "Commercial, Troois and medicinal weights must not be silently treated as one identical system."
+    verification:
+      status: uploaded_pdf_checked
+      note: "The authorial recipe uses the medicinal hierarchy because the quantities are apothecary-scale."
+    retrieval:
+      tags: [antwerp, medicinal-weight, drachm, ounce, metrology]
+
+  - id: SC.RECON.MEMORIAAL.TANNIN_GUM_PRINT.001
+    type: SourceClaim
+    statement: "A near-invisible first-pass relief-printing medium made from clear gallnut/tannin extract plus gum arabic, without iron/vitriol or visible pigment, is a chemically and craft-technically plausible authorial reconstruction for experimental printing on movable metal type; the exact transfer, visibility, gloss and press-impression performance remains unverified by a physical wet/press test."
+    claim_type: technical_reconstruction
+    subject: OBJ.MEMORIAAL
+    predicate: could_be_prepared_by_reconstructed_hidden_print_process
+    object: "gallnut/tannin + gum-arabic typographic first pass, later developed by green vitriol"
+    story_time:
+      earliest: 1564-01-01
+      latest_exclusive: 1564-04-01
+      precision: interval
+    evidence_status: PLAUSIBLE
+    source_ids:
+      - SRC-HIST-PLANTIN-PRINT-DIALOGUES-1567-001
+      - SRC-SECONDARY-BOONMAN-METROLOGY-2015-001
+    supports_story_claims:
+      - STC.MEMORIAAL.PRINT_PROCESS.001
+      - STC.MEMORIAAL.BREVISIMA_CARRIER.001
+    contradicts: []
+    qualifies:
+      - "This is not a recovered Plantin or Silvius recipe."
+      - "The physical wet/press test remains OPEN.MATERIAL.WET_TEST.001."
+      - "Gum-arabic material-property research in the project supports the binder/film-forming hypothesis but is not represented here as proof of historical metal-type use."
+    verification:
+      status: reconstruction_not_physically_tested
+      note: "Canon may use the process as story technology while prose must preserve its reconstructed rather than documented status when discussing historical evidence."
+    retrieval:
+      tags: [memoriaal, brevisima, invisible-print, gallnut, tannin, gum-arabic, reconstruction]
