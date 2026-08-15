@@ -1,0 +1,59 @@
+schema_version: 1.0.0
+kind: CanonDecisionSupplement
+decisions:
+- id: DEC.CORNELIS.ROLE.POORTER_RED_BROUWER.2026-08-15
+  type: CanonDecision
+  status: DEPRECATED
+  superseded_by: DEC.CORNELIS.ROLE.BIERSTEKER_CASTANIE_OPEN.2026-08-15
+  decision: Earlier branch wording incorrectly fixed Cornelis as bierbrouwer/biersteker and deken of De Edele Castanienbloem.
+  retained:
+  - Cornelis is a Goes poorter.
+  - Cornelis belongs in the beer/book transport logic.
+  - Cornelis is part of the rederijker network.
+  - Cornelis must not be made a printer.
+  rejected:
+  - Cornelis as fixed bierbrouwer or brewery owner.
+  - Cornelis as fixed deken of De Edele Castanienbloem.
+- id: DEC.CORNELIS.ROLE.BIERSTEKER_CASTANIE_OPEN.2026-08-15
+  type: CanonDecision
+  status: CANON
+  decision: Cornelis is a Goes poorter, biersteker and member of De Edele Castanienbloem. The family/business environment may include a brewery or brewing infrastructure, but Cornelis' fixed occupation is biersteker, not brewery owner. Whether he is deken remains OPEN/onbeslist.
+  affects:
+  - ENT.PERSON.CORNELIS
+  - REL.CLAES.CORNELIS
+  - WORLD.ANTWERP_BOOK_TRANSPORT
+  - OPEN.CORNELIS.CASTANIE.DEKEN.001
+  guardrails:
+  - Do not call Cornelis a printer.
+  - Do not give him Silvius' composing-stick, proofing or press work.
+  - Do not call Cornelis deken of De Edele Castanienbloem until the open decision is closed.
+  - Do not describe Cornelis' personal enterprise as the brewery.
+  - Book transport may use beer-route, civic and rederijker cover.
+- id: DEC.ALCHEMY.CLAES_LIFELINE_PROJECTIEPOEDER.2026-08-15
+  type: CanonDecision
+  status: CANON
+  decision: The alchemical steps toward projectiepoeder lead Claes' whole life-line toward and beyond the 1602 Enkhuizen transmutation. The process is a cross-layer narrative grammar, not merely a chemistry subplot.
+  affects:
+  - ARC.CLAES.MACRO_TRANSMUTATION
+  - ARC.CLAES.SINNE_RECOVERY
+  - THEME.CLAES.SPIRITUAL_JOURNEY
+  - MOTIF.ALCHEMY.PROCESS_CHAIN
+  - NI.CHAPTER.BOOM.KIES
+  - NI.CHAPTER.ANTWERP.LOOG
+  - NI.CHAPTER.SOL.DEATH
+  - NI.CHAPTER.RED_LION
+  - NI.EVENT.ENKHUIZEN.TRANSMUTATION.1602
+  material_chain:
+  - kies / pyrite-bearing waste
+  - weathering / care / digestion
+  - vitriool-loog / Groene Leeuw
+  - strong waters
+  - death / opening of Sol
+  - red fixation / Rode Leeuw
+  - Saturn / lead / cupellation-like test
+  - projectio / release beyond possession
+  guardrails:
+  - Keep chemistry, alchemical language, historical reconstruction and story canon separate.
+  - Do not present the chain as a real recipe or proof of literal lead-to-gold transmutation.
+  - The 1602 Enkhuizen transmutation remains convincing to early-modern witnesses, chemically interpretable as hidden Sol becoming visible, and morally decisive for Claes.
+  - The beloved/apothecary-daughter and Enkhuizen recovery line supports Claes' reopening of embodied sinne and his movement from control to relation and release.
