@@ -1,6 +1,6 @@
 # Canon decisions — 15 August 2026
 
-These decisions process the execution/Reformation material and later memoriaal/Brevísima material from the 15 August 2026 research chats. Later decisions explicitly supersede earlier development models where stated.
+These decisions process the execution/Reformation material, the memoriaal/Brevísima material, and the later Antwerp/alchemical-process material from the 15 August 2026 research chats. Later decisions explicitly supersede earlier development models where stated.
 
 ## DEC.CLAES.EXECUTIONS_REFORMATION_ARC.2026-08-15 — CANON
 
@@ -8,13 +8,13 @@ The novel must process sixteenth-century executions as a structural moral and re
 
 Claes begins within a Catholic civic understanding of execution: ordinary criminals may die under the ars moriendi script of confession, priestly consolation, cross, repentance, prayer and public compassion. The Reformation breaks that shared death script. Wederdopers and Reformed condemned persons increasingly die as witnesses rather than penitents; spectators become active through encouragement, kissing, psalm-singing, stone throwing, rescue attempts, letters, songs and later martyrology.
 
-This arc must connect to the survival of testimony: bodies can be burned, drowned, displayed or silenced; voices can be blocked by tongschroef or secrecy; therefore testimony must learn to survive through indirect carriers such as letters, relics, hidden writing and books. The Brevísima memoriaal now uses chemical concealment rather than a cryptographic cipher.
+This arc must connect to the survival of testimony: bodies can be burned, drowned, displayed or silenced; voices can be blocked by tongschroef or secrecy; therefore testimony must learn to survive through indirect carriers such as letters, relics, hidden writing and books. The Brevísima memoriaal uses chemical concealment rather than a cryptographic cipher.
 
 ## DEC.CLAES.CORNELIS_EXECUTION_WITNESS.2026-08-15 — CANON
 
 Claes must be physically present as witness at Cornelis' execution.
 
-This fixes the witness relation and scene function. It does **not** by itself close the exact date, place, formal charge, execution method or degree of public ritual. Those are closed for the authoring branch only by `DEC.CORNELIS.DEATH.1569.2026-08-15.REVISED` below.
+This fixes the witness relation and scene function. It does **not** by itself close the exact date, place, formal charge, execution method or degree of public ritual. Those are closed for this authoring branch by `DEC.CORNELIS.DEATH.1569.2026-08-15.REVISED` below.
 
 Cornelis' death must not depend on him carrying `OBJ.MEMORIAAL`. Dee gives Claes the already prepared memoriaal before the journey to Boom in early 1564; it already carries the hidden readable Las Casas translation. The 4 October 1564 security break changes political/network risk, not the physical loading, encoding or keying of the Brevísima into the book.
 
@@ -120,28 +120,24 @@ The revealed letters are already ordinary language. Therefore:
 
 The dramatic recognition becomes materially immediate: the apparently blank memoriaal was never blank.
 
-## Required synchronization
+## DEC.CORNELIS.ROLE.POORTER_RED_BROUWER.2026-08-15 — DEPRECATED / SUPERSEDED
 
-This direct-text decision must govern:
+This earlier branch decision incorrectly fixed Cornelis as **bierbrouwer/biersteker and deken** of De Edele Castanienbloem. It is superseded by `DEC.CORNELIS.ROLE.BIERSTEKER_CASTANIE_OPEN.2026-08-15`.
 
-- `claims/STORY_CLAIMS.yaml`;
-- `objects/OBJECTS.yaml`;
-- `narrative/instances.yaml`;
-- `narrative/knowledge_states.yaml`;
-- `narrative/relationships.yaml`;
-- `narrative/code_architecture.yaml` (now a direct reveal architecture with the old cipher preserved only as deprecated audit history);
-- `canon/OPEN_DECISIONS.yaml`;
-- `lemma/decode.lemma`;
-- `storybible/MEMORIAAL_BREVISIMA_PRINT_1564.md`;
-- `storybible/MASTER.md`, `storybible/INDEX.md` and `review/SYNC_STATUS.md` as navigation/synchronization surfaces.
+Retained element: Cornelis is a Goes poorter, participates in beer/book transport logic, belongs to the rederijker network, and must not be turned into a printer.
 
-The dated operating synthesis `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` still requires a later regeneration/patch where it contains the old cipher/recovery design. Until then this decision, active Story Claims and the dedicated memoriaal dossier outrank those stale passages.
+Rejected elements:
 
-## DEC.CORNELIS.ROLE.POORTER_RED_BROUWER.2026-08-15 — CANON
+- Cornelis as fixed bierbrouwer / brewery owner;
+- Cornelis as fixed deken of De Edele Castanienbloem.
 
-Cornelis' canonical role in the Antwerp/boekentransport material is fixed as **Goes poorter, bierbrouwer/biersteker and deken of rederijkerskamer De Edele Castanienbloem**.
+## DEC.CORNELIS.ROLE.BIERSTEKER_CASTANIE_OPEN.2026-08-15 — CANON
 
-He must not be flattened into a generic brewer and must not be turned into a printer. His economic practice gives him barrels, vats, storage, routes, freight papers, carts/ships and plausible cover for transported material. His civic and rederijker position gives him trust, symbolic literacy, chamber connections, speech discipline and social standing.
+Cornelis' canonical role in the Antwerp/boekentransport material is fixed as **Goes poorter, biersteker and member of De Edele Castanienbloem**.
+
+The brewery/brewing infrastructure belongs within the wider family/business context but is **not** fixed as Cornelis' own brewery or as his personal occupation. Whether Cornelis is deken of De Edele Castanienbloem remains **OPEN/onbeslist** and must not be written as fact until explicitly closed.
+
+Cornelis' economic practice gives him routes, beer trade, barrels/kists, storage, freight papers, carts/ships and plausible cover for transported material. His civic and rederijker context gives him trust, symbolic literacy, chamber connections, speech discipline and social standing.
 
 Authoring rule: Cornelis can carry books, papers or sensitive material because beer trade, civic trust and rederijker culture overlap. He does not set type. Zetletters, press rhythm, proofing and typographic expertise belong to Silvius' workshop.
 
@@ -151,7 +147,7 @@ If he transports books for Vesalius/Vaselius, the exact name and source-standard
 
 Claes' Antwerp formation is organized as three visits rather than by forcing John Dee into the documented space of the 1561 Landjuweel.
 
-1. **1561 Landjuweel:** Claes visits Antwerp through Cornelis' rederijker/civic/book-transport world. Function: the city as theatre; blazoens, chambers, allegory, public performance and concealed meanings. Claes learns that meaning can hide in play and civic spectacle.
+1. **1561 Landjuweel:** Claes visits Antwerp through Cornelis' civic/rederijker/book-transport world. Dee is not placed here. Function: the city as theatre; blazoens, chambers, allegory, public performance and concealed meanings. Claes learns that meaning can hide in play and civic spectacle.
 2. **1563/1564 Dee/Silvius/Boom:** Claes returns through the transport/book network. Dee and Silvius become active. Function: the city as book/workshop; hidden print, kies, Green Lion, ink, vitriol and material instruction. Claes learns that meaning can hide in matter.
 3. **1566 Beeldenstorm:** Claes returns to a city where images and signs are attacked. Function: the city as broken image; symbols become dangerous under religious/political pressure. Claes learns that meaning can cost safety.
 
@@ -181,3 +177,30 @@ Narrative rule: these processes must recur at multiple levels:
 - Claes' observation becomes responsibility.
 
 The governing prose sequence after Boom is: `De kies van Boom` -> `De loog van Antwerpen` -> `De dood van Sol` -> `De rode massa/Rode Leeuw` -> `Saturnus`. This sequence is authoring architecture; chapter titles may be revised without changing the process order.
+
+## DEC.ALCHEMY.CLAES_LIFELINE_PROJECTIEPOEDER.2026-08-15 — CANON
+
+The alchemical steps toward projectiepoeder must lead Claes' life-line. The process is not confined to workshop scenes. It structures Claes' movement from childhood *sinne*, through fire and loss, rederijker signs, Dee/Silvius material instruction, the Green Lion, the death/opening of Sol, Cornelis' execution and testimony, the memoriaal reveal, adult red fixation and the 1602 Enkhuizen transmutation.
+
+The 1602 Enkhuizen event is the outward projectio of the material line, but it is not the final moral meaning of the story. By and beyond 1602 Claes must learn that the Work is not possession of gold or proof, but the capacity to reveal, transmit, restrain and release hidden meaning responsibly.
+
+`storybible/ALCHEMICAL_CHEMICAL_PROCESS_CHAIN_CLAES_LIFELINE.md` is the governing detailed dossier for this decision.
+
+Guardrails:
+
+- The life-line must keep chemistry, alchemical language, historical reconstruction and story canon separate.
+- The process may be chemically interpretable but may not be presented as a real recipe for transmutation.
+- The Enkhuizen transmutation should remain materially ambiguous: convincing to early-modern witnesses, interpretable to modern readers as hidden Sol becoming visible through process/test/assay, and decisive for Claes as an ethical/spiritual event.
+- The beloved/apothecary-daughter and road-to-Enkhuizen recovery line should support the reopening of Claes' embodied *sinne* and his movement from knowledge-as-control to wisdom-in-relation.
+
+## Required synchronization
+
+These decisions govern:
+
+- `storybible/ANTWERP_THREE_VISITS_ALCHEMICAL_ARC_1561_1569.md`;
+- `storybible/ALCHEMICAL_CHEMICAL_PROCESS_CHAIN_CLAES_LIFELINE.md`;
+- `storybible/MEMORIAAL_BREVISIMA_PRINT_1564.md`;
+- `storybible/MASTER.md` and `storybible/INDEX.md` as navigation/synchronization surfaces;
+- `claims/STORY_CLAIMS.yaml`, `objects/OBJECTS.yaml`, `narrative/instances.yaml`, `narrative/knowledge_states.yaml`, `narrative/relationships.yaml`, `narrative/motifs.yaml`, `narrative/themes.yaml`, `narrative/arcs.yaml` and relevant Lemma only in a later downstream synchronization pass.
+
+The dated operating synthesis `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` still requires later regeneration/patching where it contains older carrier/cipher or insufficiently developed alchemical-process wording. Until then this decision file, the active Story Claims and the dedicated focused dossiers outrank stale broad synthesis passages.
