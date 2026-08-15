@@ -1,56 +1,89 @@
 # Synchronization status
 
-Status: `SYNC_COMPLETE`
+Status: `SYNC_PENDING`
 
-Release state: `MAIN_CANONICAL`
+Release state: `AUTHORING_BRANCH`
 
-PR #5 and PR #6 are merged. `main` is the canonical source of truth for the integrated Goes fire/family rupture, Tanneken Jansdochter, Jan Corneliszn. Nissepat and both grandparent lines.
+Branch: `authoring/memoriaal-brevisima-print-20260815`
 
-## Canonical family state
-- mother: **Tanneken Jansdochter**, fictional, born approximately 1519–1522 / preferred ca. 1520, dies 18 May 1554;
-- younger brother: **Jan Corneliszn. Nissepat**, fictional, born approximately June 1544, about eighteen months younger than Claes, dies 18 May 1554;
-- unborn third child: sex/name remain unknown; Tanneken is about six months pregnant on 18 May 1554;
-- paternal grandfather: historical **Claes Jacobsz. Nissepat**, with fictional kinship to Cornelis/Claes;
-- paternal grandmother: fictional **Lijsbet Pietersdochter**, story death ca. 1540–1541;
-- maternal grandfather: fictional kinship figure modeled on historical Goese **Jan Jansen kuiper** evidence; story death around 1543, not an archival death date;
-- maternal grandmother: fictional **Mayken Pietersdochter**, alive in 1554.
+The explicit 15 August 2026 author decision `DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15` has replaced the former cipher workaround across the primary structured canon layers. The active model is now chemical steganography: readable Diets/Brabant text is invisibly printed before binding and later revealed directly by green vitriol. The branch remains **SYNC_PENDING**, rather than `SYNC_COMPLETE`, because two older broad prose dossiers still contain cipher-era wording and require regeneration/patching before final synchronization.
 
-## Functional distinction
-- Tanneken anchors embodied, practical household knowledge and the early *sinne* line.
-- Jan anchors love, rivalry, action and immediacy; he is not a decorative casualty.
-- Claes Jacobsz. anchors property, credit, provenance and educational continuity after 1554.
-- Mayken anchors care, bodily memory, Tanneken's family history and post-fire mourning continuity.
-- The Jan Jansen-kuiper model anchors craft, barrels, containment and the material economy around Cornelis' beer trade without becoming a proven genealogical ancestor.
-- Lijsbet anchors inherited paternal-family memory and gives Claes Jacobsz. an earlier experience of spousal bereavement.
+## New canonical memoriaal state
 
-## Historical integrity rules
-- Historical Claes Jacobsz. Nissepat and his documented property acts remain separate from the fictional genealogy.
-- `SC.HIST.GOES.JAN_JANSEN_KUIPER.CLUSTER_1535_1544.001` records a historical Goese kuiper pattern but explicitly warns that the generic name may conflate multiple men.
-- The maternal-grandfather identity, kinship and circa-1543 story death are novel reconstruction.
-- Lijsbet, Mayken, Tanneken and Jan Corneliszn. are fictional.
-- The unborn child's sex/name remain open.
-- The 1554 loss of the specific Nissepat household and its casualties remain novel canon grounded in the historically supported partially burned Nieuwstraat/Armenhoek environment, not archival victim/property proof.
+- the completed readable Diets/Brabant *Brevísima* is set in ordinary movable type and printed on loose sheets **before binding**;
+- the reconstructed first-pass printing medium is clear gallnut/tannin extract + gum arabic, without intentional iron/vitriol, soot or visible pigment;
+- the printed sheets are dried, folded/gathered and bound as `OBJ.MEMORIAAL`, an apparently blank writing book;
+- Dee gives that already prepared memoriaal to Claes before Boom in early 1564;
+- Dee simultaneously gives `OBJ.GRAPHITE_STIFT` and forbids ink while Claes remains his pupil;
+- Claes' graphite observations form the visible layer while the readable tannin-printed Brevísima remains latent;
+- Claes knows the pedagogical workbook and graphite-only rule but not the hidden Brevísima payload or the chemical reason for avoiding ink;
+- 4 October 1564 remains the security/Nigredo and political/network hinge but does not load, recipher, key, lock or unlock the memoriaal;
+- green vitriol later reveals `OBJ.LASCASAS_PLAINTEXT` directly from the memoriaal;
+- reveal is reading, not decryption;
+- the former `FINAL CIPHER-1564`, direct key, 24×24 matrix, merels recovery set, Monas ordering key, Castanea key anchor, special Dodoens nomenclator carrier, Primus Index and multi-week reconstruction are deprecated for the Brevísima mechanism;
+- merels, *Monas*, Dodoens and Castanea may remain elsewhere only for independent narrative/historical functions;
+- `OBJ.ZOVITIUS_1570_TRIGGER` may remain as a material cue through `GALLA LEO VIRIDIS`, not as a cryptographic key.
 
-## Storybible synchronization
-- `entities/FAMILY_1554.yaml` contains the canonical named family and both grandparent lines.
-- `claims/STORY_CLAIMS_FAMILY_1554.yaml` contains `STC.CLAES.EXTENDED_FAMILY.001` and the named 1554 household/fire claims.
-- `claims/SOURCE_CLAIMS_FAMILY_1540S.yaml` contains the source-weighted Jan Jansen-kuiper model claim.
-- `canon/DECISIONS.yaml` contains `DEC.CLAES.EXTENDED_FAMILY.2026-08-14`.
-- `canon/OPEN_DECISIONS.yaml` records former naming/genealogy uncertainty as resolved while preserving archival guardrails.
-- `narrative/relationships.yaml` contains Claes–Tanneken, Claes–Jan and both grandparent-line relations.
-- `storybible/FAMILY_CLAES_1542_1554.md` is the detailed canonical family dossier.
-- `storybible/MASTER.md` points to the family dossier as detailed authority where older prose remains generic.
-- `review/MIGRATION_REVIEW.yaml` classifies 42 Story Claims, of which eight are NEW/HUMAN_DECISION.
+## Synchronized files in this authoring branch
 
-## Validation and merge state
-- PR #5 was previously merged as `0f7f8778acc6437ad9a16bb8ffda9aa6625c375c` after its validated family-fire synchronization.
-- PR #6 passed **Validate Claes canon repository**, workflow run **146**, on head `f32f6e1720df97323a89b340dbdb4c637cfb39de`.
-- PR #6 was merged on explicit author instruction as `3aa883f64f68469188285b8d8d9a63b2c66fa54b`.
+- `canon/DECISIONS_2026-08-15.md`
+- `canon/DECISIONS.yaml`
+- `claims/STORY_CLAIMS.yaml`
+- `claims/STORY_CLAIMS_EXECUTIONS_REFORMATION.yaml`
+- `claims/SOURCE_CLAIMS_MEMORIAAL_PRINT_1564.yaml`
+- `sources/SRC-HIST-PLANTIN-PRINT-DIALOGUES-1567-001.md`
+- `sources/SRC-SECONDARY-BOONMAN-METROLOGY-2015-001.md`
+- `objects/OBJECTS.yaml`
+- `narrative/instances.yaml`
+- `narrative/instances_executions_reformation.yaml`
+- `narrative/knowledge_states.yaml`
+- `narrative/relationships.yaml`
+- `narrative/code_architecture.yaml` — legacy filename; active content is direct material reveal with deprecated cipher history
+- `canon/OPEN_DECISIONS.yaml`
+- `lemma/decode.lemma` — legacy filename; active rule is direct plaintext reveal from memoriaal + vitriol availability
+- `storybible/MEMORIAAL_BREVISIMA_PRINT_1564.md`
+- `storybible/CORNELIS_EXECUTION_1569.md`
+- `storybible/MASTER.md`
+- `storybible/INDEX.md`
+- `review/MIGRATION_REVIEW.yaml`
+- `review/SYNC_STATUS.md`
 
-## Remaining open matters
-The authoritative list is `canon/OPEN_DECISIONS.yaml`. Resolved records are retained there for audit history and must not be counted as active open decisions.
+## Explicit supersession
+
+`DEC.MEMORIAAL.BREVISIMA_PRINT_GIFT.2026-08-15` is retained as `DEPRECATED` development history and is superseded by `DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15`.
+
+The following Story Claims/objects remain only as deprecated audit history where present: `STC.MEMORIAAL.SECRET_PHASE.001`, `STC.CORNELIS.FALLBACK_KNOWLEDGE.001`, the `STC.CODE.*` recovery claims, `OBJ.LASCASAS_CIPHERTEXT`, `OBJ.DIRECT_KEY`, `OBJ.MERELS_24` as recovery object, `OBJ.CASTANEA` as key anchor, `OBJ.DODOENS_CARRIER` as nomenclator carrier and `OBJ.PRIMUS_INDEX`.
+
+The authoritative domain dossier is `storybible/MEMORIAAL_BREVISIMA_PRINT_1564.md`.
+
+## Historical/reconstruction boundary
+
+- `SRC-HIST-PLANTIN-PRINT-DIALOGUES-1567-001` supports period Antwerp printing apparatus and craft criteria; it does not document tannin/gum invisible printing.
+- `SRC-SECONDARY-BOONMAN-METROLOGY-2015-001` supports the medicinal ounce/drachm framework used for the reconstructed workshop measures.
+- `SC.RECON.MEMORIAAL.TANNIN_GUM_PRINT.001` explicitly labels the tannin/gum metal-type process as a plausible authorial technical reconstruction, not a recovered Plantin/Silvius recipe.
+- `OPEN.MATERIAL.WET_TEST.001` remains required to determine real transfer, dry visibility/gloss, *moet*, paper behavior and vitriol-development performance.
+- `OPEN.GRAPHITE_STIFT.PROVENANCE.1564.001` preserves uncertainty about the exact physical form/provenance of Dee's graphite marking tool while leaving its story function fixed.
+
+## Validation
+
+- The first direct-text continuity run exposed a YAML quoting error in `canon/DECISIONS.yaml`; that parse error was repaired without changing the decision.
+- **Validate Claes canon repository**, run **203**: continuity compilation passed on PR-head commit `c312781e19a401198fab36cf91f2f1a81c8f6e8a` after the direct-text structured canon plus human-readable MASTER/INDEX synchronization.
+- **Validate Lemma canon**, run **121**: all active Lemma specs passed on the same PR-head commit.
+- This sync-status update itself is documentation-only; validation should still be rechecked on the eventual merge head after the two remaining broad prose files are regenerated.
+
+## Remaining synchronization work
+
+1. Regenerate or patch `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md`, which still contains the old post-4-October carrier and cipher/key-recovery architecture.
+2. Patch/regenerate `storybible/EXECUTIONS_REFORMATION_CLAES.md`, whose broad execution/testimony analysis still contains old direct-key, Castanea and code-as-testimony wording. The structured execution claims/instances and `CORNELIS_EXECUTION_1569.md` are already synchronized and outrank those stale passages.
+3. After those two broad prose surfaces are synchronized, rerun repository and Lemma validation and only then promote this record to `SYNC_COMPLETE`.
+
+## Existing family state remains unchanged
+
+The integrated Goes fire/family rupture, Tanneken Jansdochter, Jan Corneliszn. Nissepat and both grandparent lines remain canonical and are not altered by this branch.
 
 ## Lemma execution policy
+
 - `lemma/*.lemma` remains the deterministic rules-as-code layer and is versioned and validated in GitHub.
-- GitHub `main` is authoritative for both Storybible content and Lemma source.
+- `lemma/decode.lemma` now has one active material-access rule: readable plaintext can be revealed when the memoriaal and green vitriol are available under active canon.
+- GitHub `main` remains authoritative until this authoring branch is reviewed/merged.
 - LemmaBase is optional and downstream-only; it never overrides GitHub canon.

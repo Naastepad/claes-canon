@@ -1,4 +1,4 @@
-schema_version: 1.3.0
+schema_version: 1.4.0
 kind: CanonDecisionRegistry
 decisions:
 - id: DEC.CLAES.BIRTH.2026-08-13
@@ -129,3 +129,59 @@ decisions:
   - REL.CLAES.TANNEKEN
   - REL.CLAES.MATERNAL_GRANDPARENTS
   rationale: "The author explicitly approved the proposed family architecture. Historical source and fiction remain separated: Claes Jacobsz. and the Goese Jan Jansen-kuiper evidence are historical anchors/models, while the kinship assignments, Lijsbet, Mayken, the exact maternal-grandfather identity/death and all cross-generation relations are novel canon."
+- id: DEC.MEMORIAAL.BREVISIMA_PRINT_GIFT.2026-08-15
+  type: CanonDecision
+  status: DEPRECATED
+  superseded_by: DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15
+  decision: The encoded Diets/Brabant Brevísima is printed before binding on loose sheets with a nearly invisible gallnut/tannin plus gum-arabic medium, bound as Claes' apparently blank memoriaal, and given by John Dee to Claes before the journey to Boom in early 1564 together with a graphite stift; Dee forbids ink while Claes remains his pupil.
+  rationale: Retained as audit history. The physical print-before-binding, tannin/gum medium, Dee handoff and graphite-only rule are retained by the superseding decision, while the cipher/key architecture is rejected.
+- id: DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15
+  type: CanonDecision
+  status: CANON
+  decision: The completed Diets/Brabant Brevísima translation is set in ordinary readable text and printed before binding on loose sheets with the near-invisible gallnut/tannin plus gum-arabic medium; the sheets are bound as Claes' apparently blank memoriaal, Dee gives the book and a graphite stift to Claes before Boom and forbids ink while Claes remains his pupil, and later green vitriol reveals the readable Brevísima directly without cryptographic decoding.
+  affects:
+  - STC.MEMORIAAL.GIFT.001
+  - STC.MEMORIAAL.BREVISIMA_CARRIER.001
+  - STC.MEMORIAAL.PRINT_PROCESS.001
+  - STC.MEMORIAAL.GRAPHITE_RULE.001
+  - STC.CORNELIS.FALLBACK_KNOWLEDGE.001
+  - STC.ZOVITIUS.TRIGGER.1570.001
+  - STC.CODE.RECOVERY_SEQUENCE.001
+  - STC.CODE.MERELS.RECOVERY_NOT_CIPHER.001
+  - STC.CODE.MERELS.P15.001
+  - STC.CODE.MONAS.FUNCTION.001
+  - STC.CODE.CASTANEA.FUNCTION.001
+  - STC.CODE.DODOENS.REQUIRED.001
+  - STC.CODE.PRIMUS_INDEX.FUNCTION.001
+  - STC.CODE.DURATION.001
+  - STC.LASCASAS.PUBLICATION.1578.001
+  - OBJ.MEMORIAAL
+  - OBJ.LASCASAS_PLAINTEXT
+  - OBJ.LASCASAS_CIPHERTEXT
+  - OBJ.DIRECT_KEY
+  - OBJ.MERELS_24
+  - OBJ.CASTANEA
+  - OBJ.DODOENS_CARRIER
+  - OBJ.PRIMUS_INDEX
+  - OBJ.MONAS_CLAES
+  - NI.SCENE.MEMORIAAL_GIFT.1564.001
+  - NI.EVENT.SECURITY_BREAK.1564.001
+  - NI.SEQUENCE.RECOVERY.1570.001
+  - REL.CLAES.CORNELIS
+  - REL.CLAES.DEE.001
+  - REL.CLAES.SILVIUS
+  - REL.CLAES.BELOVED
+  - CODE.RECOVERY.CLAES.1570
+  rationale: >-
+    The cipher was introduced only because whole-book invisible printing initially appeared impracticable. The reconstructed tannin/gum letterpress process removes that technical premise. Keeping a cipher would therefore duplicate the concealment mechanism without a remaining story function. Chemical steganography is the concealment: Silvius prints readable language; graphite lets Claes use the same pages safely; green vitriol later completes the visible ink.
+- id: DEC.MEMORIAAL.FORMAT_17Q.2026-08-15
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    The hidden printed body of Claes' memoriaal is fixed at 17 single-sheet quarto gatherings: 17 full sheets, 68 printed leaves and 136 latent pages, plus any genuinely blank binder-added endleaves. The hidden text begins with Las Casas' prologue to Prince Philip and excludes the later visible-edition title page and separate translator's address. Each sheet uses normal quarto imposition, first forme 1-4-5-8 and wederdruk 2-3-6-7. The 1578 Brabant/Dutch Seer cort Verhael facsimile is the primary capacity and text-sequence analogue, not evidence for the fictional 1564 clandestine edition.
+  affects:
+  - STC.MEMORIAAL.PRINT_PROCESS.001
+  - OBJ.MEMORIAAL
+  - OBJ.LASCASAS_PLAINTEXT
+  rationale: >-
+    The supplied 1578 facsimile separates a title leaf and translator's address from the Las Casas text body. From the prologue through the end of the tract the facsimile occupies 136 scanned page surfaces, exactly 17 quarto sheets at eight pages per sheet. This replaces the provisional 18-sheet/144-page estimate while preserving a strict evidence boundary: the 1578 witness anchors capacity and sequence only; the hidden 1564 edition remains novel reconstruction.

@@ -5,7 +5,7 @@
 **Scene instance:** `NI.SCENE.CORNELIS_EXECUTION.ANTWERP.1569.001`  
 **Story claims:** `STC.CORNELIS.DEATH.ANTWERP.1569.001`, `STC.CORNELIS.EXECUTION_WITNESS.001`, `STC.CORNELIS.FIRST_ARREST_BAIL.1567.001`, `STC.CORNELIS.SILENCE_THIRD_SCRIPT.001`
 
-This dossier resolves the previously open Cornelis-death variables for the authoring branch: two-step exposure, date, place, charge, manner, witness relation and death-script. It remains explicitly fictionalized historical reconstruction, not archival evidence for a historical Cornelis Nissepat execution.
+This dossier resolves the Cornelis-death variables for the authoring branch: two-step exposure, date, place, charge, manner, witness relation and death-script. It remains explicitly fictionalized historical reconstruction, not archival evidence for a historical Cornelis Nissepat execution.
 
 The earlier authoring-draft date **12 March 1569** is rejected here as too arbitrary and insufficiently anchored. The revised model chooses **19 November 1569**, because Antwerp sources document a public market book-burning on that date of books seized in March 1569, while execution culture is present in the same chronicle environment.
 
@@ -49,13 +49,11 @@ Simple forbidden-book traffic is not enough. Antwerp book repression was severe,
 
 Therefore Cornelis must not be killed at first exposure.
 
-The better model is:
-
 ### First exposure — autumn 1567
 
 Cornelis is arrested or seriously examined in Antwerp in a paper/book/print matter. The evidence is worrying but incomplete. He is not a printer, preacher or leader. He is released on **borg** or equivalent surety/conditions.
 
-This first arrest proves the 1564 safety decision correct: Cornelis has become visible and dangerous as direct-key recipient. It also gives Claes and Cornelis a last interval of strained, unfinished father-son relation.
+This first arrest proves that the network danger surrounding Cornelis has become real. It also gives Claes and Cornelis a last interval of strained, unfinished father-son relation. It no longer serves to justify withdrawal of a cryptographic key; the memoriaal needs no such key.
 
 ### Renewed exposure — late 1568 through March 1569
 
@@ -144,45 +142,42 @@ Fabritius is a good historical candidate for the already-canonical 4 October 156
 
 Correct chain:
 
-**Dee gives memoriaal early 1564**  
-→ **Fabritius/stenenoproer, 4 October 1564: security break**  
-→ **Cornelis is declassified as direct-key recipient**  
-→ **existing memoriaal is secretly prepared as blind recovery carrier**  
-→ **Cornelis remains alive but unsafe, without the full recovery key**  
+**Silvius prints the readable Brevísima invisibly on loose memoriaal sheets**  
+→ **Dee gives the bound memoriaal and graphite stift to Claes before Boom**  
+→ **Fabritius/stenenoproer, 4 October 1564: political/network security break and macro-Nigredo hinge**  
+→ **the memoriaal remains physically unchanged and requires no cipher key**  
 → **autumn 1567 first arrest/examination; release on borg/conditions**  
 → **late 1568-March 1569 renewed exposure through clandestine paper/book traffic and bookshop visitations**  
 → **19 November 1569 market book-burning and Cornelis' public execution**  
-→ **1570 recovery activation**
+→ **later material cue + green vitriol reveal the readable text**
 
-Fabritius is therefore the catalyst of access change, not the whole evidence package.
-
----
-
-## 9. Relation to the memoriaal and code architecture
-
-Cornelis does **not** hand the memoriaal to Claes. Dee has already given it to Claes early in 1564 as a pedagogical workbook.
-
-After the security break, the memoriaal Claes already possesses becomes the blind recovery carrier. Cornelis knows only that Claes is fallback and that Castanea remains relevant. He does not know:
-
-- the 24 merels outputs;
-- Monas ordering;
-- the vitriol trigger;
-- the complete recovery architecture;
-- the Las Casas content as Claes will recover it in 1570.
-
-This protects the plot and makes Cornelis' silence credible. Even broken under examination, he cannot yield the full key.
+Fabritius is therefore a catalyst of danger and exposure, not a trigger for cryptographic declassification.
 
 ---
 
-## 10. The last transfer: Castanea
+## 9. Relation to the memoriaal
 
-The final usable transfer from Cornelis remains minimal:
+Cornelis does **not** hand the memoriaal to Claes. Dee has already given it to Claes before Boom in early 1564 as a pedagogical workbook.
+
+At that moment the book already contains the complete readable Diets/Brabant *Brevísima* in a latent tannin/gum typographic layer. Claes can write over and between that hidden layer with graphite because Dee forbids ink while Claes remains his pupil.
+
+The 4 October security break does not turn the book into a different object. There is no post-break insertion, cipher, nomenclator or recovery key.
+
+Cornelis may know that dangerous Las Casas material is being protected somewhere in the project, and may know that Claes' book is significant if a later scene needs that asymmetry. But he does not need to possess or transfer a key, and his silence is not made credible by ignorance of a 24-part recovery system. It is credible because he refuses to name people, routes and sources.
+
+---
+
+## 10. No compulsory Castanea transfer
+
+The former line:
 
 > Castanea. Niet onze bloem — de boom.
 
-This should be given in a last guarded prison contact, along the route out of Het Steen, or at the edge of the execution setting. It should not be a public explanation and not be theatrical enough for authorities or spectators to understand.
+was created as a minimal key component inside the retired cipher architecture. It is **no longer required** at Cornelis' death.
 
-It works because Cornelis knows Castanea matters but does not know the recovery route. The line is therefore both inheritance and frustration: a father giving exactly as much as he can, and far less than Claes needs.
+If Castanea later proves independently valuable as botanical image, memory, rederijker resonance or alchemical motif, it may return through a separate decision. It must not be smuggled back into the execution merely because an earlier code design used it.
+
+A last prison or route exchange may still occur, but its job should be relational: forgiveness withheld or attempted, a warning, a name not spoken, a practical instruction, an unfinished ordinary sentence, or silence itself. Its exact content remains open unless separately fixed.
 
 ---
 
@@ -218,7 +213,7 @@ Cornelis dies with protective silence.
 
 ## 12. Claes' witness experience
 
-Claes must see enough to be changed, but not enough to understand the system.
+Claes must see enough to be changed, but not enough to understand the hidden book already in his own possession.
 
 He sees:
 
@@ -234,12 +229,10 @@ He does **not** yet understand:
 
 - the full Las Casas purpose;
 - the hidden function of the memoriaal;
-- GALLA LEO VIRIDIS;
-- merels-to-Monas architecture;
-- why Castanea is sufficient;
-- why his father's silence is both love and burden.
+- that its apparently blank sheets already contain readable printed language;
+- how gall/tannin and green vitriol will reveal it.
 
-The immediate wound is not only grief. It is interpretive failure: Claes witnesses the most important event of his adult life and cannot yet read it.
+The immediate wound is not only grief. It is interpretive failure: Claes witnesses the most important event of his adult life and cannot yet read either his father or the book he already carries.
 
 ---
 
@@ -248,13 +241,13 @@ The immediate wound is not only grief. It is interpretive failure: Claes witness
 Recommended structure:
 
 1. **Before the execution:** Claes arrives into a market already shaped by book-burning preparations or aftermath.
-2. **Last contact:** Cornelis gives the Castanea line under guard.
+2. **Last contact, if used:** no puzzle delivery is required; the contact should deepen father-son meaning or protective silence.
 3. **The square:** public book destruction and execution environment; the memory of Fabritius hangs over the staging.
 4. **The priest/cross moment:** Cornelis does not perform clean refusal or clean submission.
 5. **The question of names:** implied or explicitly recalled from examination; his silence is the moral core.
 6. **The sword:** short bodily end, but long interpretive aftershock.
 7. **Books/papers burned:** testimony and evidence are staged as destruction; not all paper dies.
-8. **Claes after:** he does not yet have a revelation; he has a wound and a phrase.
+8. **Claes after:** he does not yet have a revelation; he has a wound, his father's silence and an apparently ordinary graphite-filled memoriaal whose deeper text remains latent.
 
 ---
 
@@ -266,14 +259,14 @@ Recommended structure:
 - Do not make Cornelis a public Calvinist preacher or Anabaptist teacher unless a separate decision changes his religious profile.
 - Do not make his death a punishment for possessing `OBJ.MEMORIAAL`.
 - Do not make simple book-smuggling enough for his execution.
-- Do not give Claes premature understanding.
+- Do not give Claes premature understanding of the hidden Brevísima.
+- Do not restore a cipher, direct key, Castanea clue, merels recovery sequence or Dodoens nomenclator through this execution scene.
 - Do not allow the execution to become an easy conversion scene.
 - Do not let Plantin or Silvius deliberately betray Cornelis unless a separate, very strong decision supports that darker plot.
-- Do not over-theatricalize the Castanea clue.
 - Keep Cornelis' death morally ambiguous enough that Claes must spend years interpreting it.
 
 ---
 
 ## 15. Storybible formula
 
-> Cornelis is not executed because he is the author of forbidden truth. He is executed because he is the body by which truth travelled after being warned not to carry it. Antwerp does not kill a printer in him, nor a preacher, but a route. On the day books burn in the market, Claes sees the sword fall without yet knowing what his father has preserved. Only later will he understand that the silence he resented was the form of love that kept the key from becoming a confession.
+> Cornelis is not executed because he is the author of forbidden truth. He is executed because he is the body by which dangerous paper and dangerous people could be connected. Antwerp does not kill a printer in him, nor a preacher, but a route. On the day books burn in the market, Claes sees the sword fall without yet knowing that another forbidden testimony has survived for years inside the apparently blank book already in his own hands.
