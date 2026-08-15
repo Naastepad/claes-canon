@@ -6,27 +6,70 @@ objects:
   type: BookObject
   canon_status: CANON
   historical_status: FICTIONAL_OBJECT
+  decision_ids:
+  - DEC.MEMORIAAL.BREVISIMA_PRINT_GIFT.2026-08-15
   phases:
-  - phase: pedagogical
+  - phase: hidden-print-production
     window: {earliest: '1564-01-01', latest_exclusive: '1564-04-01', precision: interval}
-    function: ordinary-looking workbook given by Dee before Boom
-  - phase: recovery-carrier
+    function: loose sheets carry the encoded Diets/Brabant Brevísima in a near-invisible tannin/gallnut + gum-arabic typographic layer before binding
+    production:
+      order: [set-ciphertext, print-recto-verso, dry, fold-gather, bind]
+      first_pass_medium: clear filtered gallnut/tannin extract + gum arabic
+      excludes: [green-vitriol, iron-salt, soot, visible-pigment]
+      workshop_starting_recipe:
+        gallnuts: 2 medicinal drachmen
+        steeping_water: 2.5 medicinal ounces
+        retained_clear_extract: 2 medicinal ounces
+        gum_arabic: 1.5 medicinal ounces
+        adjustment: small additions of gum or clear water by behaviour on type
+      proof_developer: 0.5 medicinal drachme green vitriol in 4 medicinal ounces clear water
+      historical_status: AUTHORIAL_TECHNICAL_RECONSTRUCTION_WET_TEST_OPEN
+  - phase: pedagogical-hidden-carrier
+    window: {earliest: '1564-01-01', latest_exclusive: '1570-01-01', precision: bounded}
+    function: apparently blank workbook given by Dee before Boom; simultaneously already carries OBJ.LASCASAS_CIPHERTEXT without Claes knowing it
+    writing_rule: graphite only while Claes remains Dee's pupil; no ink
+    paired_object: OBJ.GRAPHITE_STIFT
+  - phase: security-break-unchanged-object
     earliest: '1564-10-04'
-    function: blind carrier containing 24 problem rectos + 2 key rectos
-    hidden_structure:
-      problem_rectos: 24
-      key_rectos: 2
-      hidden_layer: tannin/galnut layer on rectos only
-      visible_before_activation: red corner marks and limited registration puncta
+    function: 4 October changes access/key architecture, not the physical content already bound into the memoriaal
   - phase: activated
     window: {earliest: '1570-01-01', latest_exclusive: '1571-01-01', precision: year}
-    function: green-vitriol development makes hidden diagrams/text readable
+    function: controlled green-vitriol development makes the hidden printed Las Casas ciphertext visible
+  hidden_structure:
+    carrier: OBJ.LASCASAS_CIPHERTEXT
+    physical_form: encoded translated Brevísima printed on the writing sheets themselves before binding
+    visible_before_activation: apparently blank/usable writing paper, with only any later graphite notes visible
+    merels_placement: OPEN_AFTER_CARRIER_REDESIGN
   constraints:
-  - secret load occurs after 1564-10-04
-  - Claes genuinely does not know hidden function at insertion
-  - vitriol reveals the memoriaal, not Las Casas directly
-  - memoriaal supplies merels/theorem/Monas bridge, not Dodoens content values
+  - hidden Brevísima load exists before Dee gives the book to Claes and before the journey to Boom
+  - Claes genuinely does not know the hidden function or Las Casas content during Dee formation
+  - ordinary iron-gall ink is forbidden while Claes remains Dee's pupil
+  - green vitriol reveals the hidden printed ciphertext directly
+  - 4 October 1564 may change key access but does not insert or recipher the hidden text
+  - exact in-world placement/entry point of OBJ.MERELS_24 is open after the carrier redesign
   deterministic_domains: [possession, knowledge, decode]
+
+- id: OBJ.GRAPHITE_STIFT
+  label: Dee’s grafietstift voor Claes
+  type: WritingTool
+  canon_status: CANON
+  historical_status: STORY_OBJECT_HISTORICAL_FORM_AND_PROVENANCE_OPEN
+  decision_ids:
+  - DEC.MEMORIAAL.BREVISIMA_PRINT_GIFT.2026-08-15
+  phases:
+  - phase: gift-before-Boom
+    window: {earliest: '1564-01-01', latest_exclusive: '1564-04-01', precision: interval}
+    holder: ENT.PERSON.CLAES
+    giver: ENT.PERSON.JOHN_DEE
+    paired_object: OBJ.MEMORIAAL
+  functions:
+  - permits dry marking, notation and diagram work in the memoriaal without ordinary iron-gall ink
+  - enforces Dee's pedagogical/material-security rule during Claes' pupil phase
+  constraints:
+  - represent as a graphite marking stift/stylus, not automatically as a modern wood-cased pencil
+  - exact historical material form and route by which Dee has it in Antwerp in 1564 remain open for verification
+  - it is not itself a cipher key
+  deterministic_domains: [possession, use]
 
 - id: OBJ.MONAS_CLAES
   label: Claes’ exemplaar van Monas Hieroglyphica
@@ -145,9 +188,13 @@ objects:
     pages_estimate: 66-75
     sheets_estimate: 34-38
     identical_sets_workcanon: 3-6
+    claes_carrier: OBJ.MEMORIAAL
+    claes_set_printed_before_binding: true
+    first_pass_visibility: near-invisible tannin/gum print
   constraints:
   - completed Diets/Brabant plaintext exists before encryption
   - merels recovery does not recipher this stream
+  - at least the Claes set is already physically printed and bound before the journey to Boom
 
 - id: OBJ.DIRECT_KEY
   label: Oorspronkelijke directe sleutel
@@ -168,6 +215,7 @@ objects:
   internal_concordance: P1–P14 + P16–P25
   reader_rule: no P numbers in-world; 24 complete sheets
   output: permutation of theorem I–XXIV exactly once
+  placement_status: OPEN_AFTER_MEMORIAAL_REDESIGN
   notation_grammar:
     shape: which locally distinguished stone
     letter: which problem-local relevant locus
@@ -177,6 +225,7 @@ objects:
   - no fixed modern coordinate system in-world
   - local letters and local stone forms have problem-local meaning
   - pigment, party and shape remain independent information layers
+  - no longer assume that these 24 problems are the chemical layer revealed from OBJ.MEMORIAAL
 
 - id: OBJ.CASTANEA
   label: Castanea-anker
