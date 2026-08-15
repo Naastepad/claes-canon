@@ -1,4 +1,4 @@
-schema_version: 1.3.0
+schema_version: 1.4.0
 kind: EntityRegistry
 entities:
 - id: ENT.PERSON.CLAES
@@ -76,6 +76,84 @@ entities:
   - publisher
   - translator
   - editor
+- id: ENT.PERSON.ALEXANDER_SETON
+  type: Person
+  label: Alexander Seton
+  fictionality: historical
+  canon_status: CANON
+  aliases:
+  - Alexander Sethon
+  - Setonius
+  - Sethonius
+  - Cosmopolites
+  roles:
+  - alchemist
+  - travelling-adept
+  - projectio-catalyst
+  - late-mirror-for-Claes
+  usage: historical actor incorporated into the Enkhuizen 1602 climax under DEC.SETON.ENKHUIZEN_PROJECTIO_ROLE.1602.2026-08-16
+  historical_status:
+    identity: uncertain
+    origin: Scottish attribution in tradition; exact identity unresolved
+    noble_seton_family_connection: unproven
+    confession: unknown
+    political_alignment: unknown
+  constraints:
+  - Do not displace John Dee as Claes' principal scholar/code-architect.
+  - Do not give Seton a verified modern recipe for transmutation.
+  - Do not state that Seton's historical Enkhuizen powder was green or red.
+  - Do not state as fact that he belonged to the noble Seton family.
+  - Do not state as fact that he was Protestant, anti-Spanish or a partisan of the Dutch Revolt.
+- id: ENT.PERSON.JACOB_HANSSEN
+  type: Person
+  label: Jacob Hanssen / Haussen
+  fictionality: historical_tradition
+  canon_status: CANON_CONTEXT
+  aliases:
+  - Jacob Haussen
+  - James Haussen
+  roles:
+  - Enkhuizen-sailor-pilot
+  - Seton-host
+  - witness-in-transmutation-tradition
+  historical_anchor:
+    '1601': shipwreck/rescue on Scottish coast in later tradition
+    '1602-03-13': host/witness of Seton projection at Enkhuizen in Morhof-derived tradition
+  story_use:
+    secret_mission: OPEN
+  constraints:
+  - A deliberate mission to find Seton is fiction-design, not established history.
+  - Do not silently turn the shipwreck tradition into a staged wreck.
+- id: ENT.PERSON.VANDERLINDEN_ENKHUIZEN
+  type: Person
+  label: Van der Linden, physician of Enkhuizen
+  fictionality: historical_tradition
+  canon_status: CANON_CONTEXT
+  roles:
+  - physician
+  - recipient-of-gold-fragment
+  - witness-chain-node
+  constraints:
+  - Distinguish this Enkhuizen physician from later descendants in the Van der Linden witness chain.
+  - Exact personal identification requires further source work before stronger biographical claims.
+- id: ENT.PERSON.JOHANNES_ANTONIDES_VANDERLINDEN
+  type: Person
+  label: Johannes Antonides van der Linden
+  fictionality: historical
+  canon_status: CANON_CONTEXT
+  roles:
+  - physician
+  - later-holder-in-gold-witness-chain
+  usage: later material-witness link in Morhof tradition; exact genealogy and chain should remain source-controlled
+- id: ENT.PERSON.DANIEL_GEORG_MORHOF
+  type: Person
+  label: Daniel Georg Morhof
+  fictionality: historical
+  canon_status: CANON_CONTEXT
+  roles:
+  - scholar
+  - reporter-of-Enkhuizen-gold-tradition
+  usage: later source witness; not an eyewitness to the 1602 projection
 - id: ENT.PERSON.MARCUS_GILLIS
   type: Person
   label: Marcus Antonius Gillis van Diest
@@ -210,7 +288,7 @@ entities:
   label: Enkhuizen
   fictionality: historical
   canon_status: CANON
-  usage: contextual; destination associated with late sensory/spiritual recovery line
+  usage: destination associated with late sensory/spiritual recovery line and the 1602 Seton/projectio climax
 - id: ENT.LOC.SILVIUS_GULDEN_ENGEL
   type: Location
   label: Silvius’ Gulden Engel
@@ -225,3 +303,13 @@ entities:
   canon_status: CANON
   parent: ENT.LOC.GOES
   usage: contextual
+- id: ENT.OBJ.ENKHUIZEN_SETON_GOLD_1602
+  type: Object
+  label: Enkhuizen Seton-goudfragment (1602)
+  fictionality: historical_tradition
+  canon_status: CANON_CONTEXT
+  origin_event: NI.EVENT.ENKHUIZEN.TRANSMUTATION.1602
+  description: Material witness-object in the later Morhof tradition, reportedly originating from Seton's Enkhuizen projection and passing through the Hanssen/Van der Linden chain.
+  constraints:
+  - Its reported survival supports the history of the testimony, not modern proof of literal lead-to-gold transmutation.
+  - Exact mass, dimensions, assay history and complete custody chain remain unresolved unless separately sourced.
