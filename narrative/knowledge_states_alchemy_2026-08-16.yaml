@@ -1,0 +1,71 @@
+schema_version: 1.0.0
+kind: KnowledgeStateSupplement
+purpose: Refined alchemical/material knowledge boundaries; supplements narrative/knowledge_states.yaml without changing the direct-readable memoriaal model.
+actors:
+- entity_id: ENT.PERSON.CLAES
+  states:
+  - phase: boom-1564
+    window: {earliest: '1564-01-01', latest_exclusive: '1564-10-04', precision: bounded}
+    learns:
+    - rejected or deceptive-looking kies can carry a materially useful hidden process
+    - pyritic/vitriolic matter responds to water, air and time rather than only violent heat
+    does_not_know:
+    - full projectiepoeder chain
+    - exact red-fixation carrier
+    - later Seton/Enkhuizen frame
+  - phase: vitriol-antwerp-1564
+    window: {earliest: '1564-01-01', latest_exclusive: '1564-10-04', precision: bounded}
+    learns:
+    - leaching/weathering can yield a green vitriolic liquor and green crystals
+    - the material called Groene Leeuw in Dee's working context is operationally powerful as opener/revealer
+    - green vitriol belongs to ink chemistry and can make tannin/gall relations darken
+    does_not_know:
+    - that Green Lion is a universal fixed alchemical synonym; canon explicitly denies such universality
+    - that green vitriol alone can dissolve gold; it cannot in the author-side model
+  - phase: death-of-sol-1564
+    window: {earliest: '1564-01-01', latest_exclusive: '1564-10-04', precision: bounded}
+    learns_in_order:
+    - strong water can attack lesser metals yet leave Sol resisting
+    - greater corrosive force alone is not sufficient
+    - the right compound relation can make visible gold lose its visible metallic body while remaining materially present
+    does_not_know:
+    - final red carrier composition
+    - final Saturn/assay choreography
+  - phase: memoriaal-reveal-1570
+    window: {earliest: '1570-01-01', latest_exclusive: '1571-01-01', precision: year}
+    integrates:
+    - green vitriol directly reveals the tannin-loaded hidden typography
+    - the book law and the Sol law share a narrative principle without being the same chemical reaction: what becomes visible was already present
+  - phase: late-red-fixation
+    window: {earliest: '1584-01-01', latest_exclusive: '1602-03-13', precision: approximate}
+    learns:
+    - already-opened Sol can be carried/fixed in a portable red or dark matrix
+    - conservation of the gold-bearing fraction matters more than claims of miraculous creation
+    - assay can expose presence without proving metaphysical transmutation
+    open:
+    - exact non-gold red carrier composition until OPEN.ALCHEMY.RED_LION.CARRIER_COMPOSITION.001 is resolved
+  - phase: enkhuizen-projectio-1602
+    earliest: '1602-03-13'
+    knows:
+    - enough of the material chain to understand the convincing result as the return/visibility of already-present Sol
+    - witnesses may reasonably interpret what they see as transmutation within early-modern categories
+    moral_delta: proof no longer entitles possession; mastery culminates in restraint, transmission and release
+- entity_id: ENT.PERSON.JOHN_DEE
+  states:
+  - phase: alchemical-formation-1564
+    window: {earliest: '1564-01-01', latest_exclusive: '1564-10-04', precision: bounded}
+    knows:
+    - Green Lion vocabulary is process-dependent rather than universally fixed
+    - green vitriol directly belongs to the memoriaal reveal chemistry but is not by itself a gold solvent
+    - ordinary strong water can fail on Sol and compound relations matter
+    behavior_constraint: Dee teaches by partial demonstration, failure, silence and material observation rather than giving Claes a complete executable process.
+- entity_id: ENT.PERSON.CORNELIS
+  states:
+  - phase: rederijker-polarisation-1560s
+    window: {earliest: '1563-01-01', latest_exclusive: '1570-01-01', precision: reconstruction-window}
+    knows:
+    - his inherited/active chamber home is the Nardusbloem and its older Magdalena-linked Catholic culture
+    - reform-minded religious and textual currents are creating pressure inside and around the Goese rederijker world
+    participates_in:
+    - the novel's formative reform-minded/protestantiserende current that later becomes the Edele Castanienbloem
+    guardrail: He must not know future documentary terminology such as 'first attested in 1595'; that is author metadata.
