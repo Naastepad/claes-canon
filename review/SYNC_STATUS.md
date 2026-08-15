@@ -67,9 +67,9 @@ The authoritative domain dossier is `storybible/MEMORIAAL_BREVISIMA_PRINT_1564.m
 ## Validation
 
 - The first direct-text continuity run exposed a YAML quoting error in `canon/DECISIONS.yaml`; that parse error was repaired without changing the decision.
-- **Validate Claes canon repository**, run **200**: continuity compilation passed on commit `3dd0c172b33bd6d768f95da2b3ca2f28b91b6a91`.
-- **Validate Lemma canon**, run **118**: all active Lemma specs passed on the same commit.
-- Later commits in this branch update only human-readable navigation/authority surfaces (`storybible/MASTER.md`, `storybible/INDEX.md`, this sync record); final PR-head validation should be checked again before merge.
+- **Validate Claes canon repository**, run **203**: continuity compilation passed on PR-head commit `c312781e19a401198fab36cf91f2f1a81c8f6e8a` after the direct-text structured canon plus human-readable MASTER/INDEX synchronization.
+- **Validate Lemma canon**, run **121**: all active Lemma specs passed on the same PR-head commit.
+- This sync-status update itself is documentation-only; validation should still be rechecked on the eventual merge head after the two remaining broad prose files are regenerated.
 
 ## Remaining synchronization work
 
