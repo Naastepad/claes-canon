@@ -4,86 +4,153 @@ Status: `SYNC_PENDING`
 
 Release state: `AUTHORING_BRANCH`
 
-Branch: `authoring/memoriaal-brevisima-print-20260815`
+Branch: `authoring/alchemy-rederijker-refinement-20260816`
 
-The explicit 15 August 2026 author decision `DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15` has replaced the former cipher workaround across the primary structured canon layers. The active model is now chemical steganography: readable Diets/Brabant text is invisibly printed before binding and later revealed directly by green vitriol. The branch remains **SYNC_PENDING**, rather than `SYNC_COMPLETE`, because two older broad prose dossiers still contain cipher-era wording and require regeneration/patching before final synchronization.
+Current branch purpose: synchronize the explicit 16 August 2026 correction/refinement of the alchemical life-line and Cornelis' rederijker identity across canon decisions, provenance, Story Claims, entities, objects, narrative arcs/instances/knowledge states, human-readable authority surfaces and review records.
 
-## New canonical memoriaal state
+`main` remains canonical until this branch passes validation, is reviewed through a PR and is explicitly merged.
 
-- the completed readable Diets/Brabant *Brevísima* is set in ordinary movable type and printed on loose sheets **before binding**;
-- the reconstructed first-pass printing medium is clear gallnut/tannin extract + gum arabic, without intentional iron/vitriol, soot or visible pigment;
-- the printed sheets are dried, folded/gathered and bound as `OBJ.MEMORIAAL`, an apparently blank writing book;
-- Dee gives that already prepared memoriaal to Claes before Boom in early 1564;
-- Dee simultaneously gives `OBJ.GRAPHITE_STIFT` and forbids ink while Claes remains his pupil;
-- Claes' graphite observations form the visible layer while the readable tannin-printed Brevísima remains latent;
-- Claes knows the pedagogical workbook and graphite-only rule but not the hidden Brevísima payload or the chemical reason for avoiding ink;
-- 4 October 1564 remains the security/Nigredo and political/network hinge but does not load, recipher, key, lock or unlock the memoriaal;
-- green vitriol later reveals `OBJ.LASCASAS_PLAINTEXT` directly from the memoriaal;
-- reveal is reading, not decryption;
-- the former `FINAL CIPHER-1564`, direct key, 24×24 matrix, merels recovery set, Monas ordering key, Castanea key anchor, special Dodoens nomenclator carrier, Primus Index and multi-week reconstruction are deprecated for the Brevísima mechanism;
-- merels, *Monas*, Dodoens and Castanea may remain elsewhere only for independent narrative/historical functions;
-- `OBJ.ZOVITIUS_1570_TRIGGER` may remain as a material cue through `GALLA LEO VIRIDIS`, not as a cryptographic key.
+## Canonical correction now represented on this branch
 
-## Synchronized files in this authoring branch
+### Cornelis / rederijkers
 
-- `canon/DECISIONS_2026-08-15.md`
-- `canon/DECISIONS.yaml`
-- `claims/STORY_CLAIMS.yaml`
-- `claims/STORY_CLAIMS_EXECUTIONS_REFORMATION.yaml`
-- `claims/SOURCE_CLAIMS_MEMORIAAL_PRINT_1564.yaml`
-- `sources/SRC-HIST-PLANTIN-PRINT-DIALOGUES-1567-001.md`
-- `sources/SRC-SECONDARY-BOONMAN-METROLOGY-2015-001.md`
-- `objects/OBJECTS.yaml`
-- `narrative/instances.yaml`
-- `narrative/instances_executions_reformation.yaml`
-- `narrative/knowledge_states.yaml`
-- `narrative/relationships.yaml`
-- `narrative/code_architecture.yaml` — legacy filename; active content is direct material reveal with deprecated cipher history
-- `canon/OPEN_DECISIONS.yaml`
-- `lemma/decode.lemma` — legacy filename; active rule is direct plaintext reveal from memoriaal + vitriol availability
-- `storybible/MEMORIAAL_BREVISIMA_PRINT_1564.md`
-- `storybible/CORNELIS_EXECUTION_1569.md`
-- `storybible/MASTER.md`
-- `storybible/INDEX.md`
-- `review/MIGRATION_REVIEW.yaml`
-- `review/SYNC_STATUS.md`
+- Cornelis is a **Goes poorter and biersteker**; the brewery belongs to the wider family/business environment rather than being fixed as his personal brewery.
+- Cornelis is a **member of the Nardusbloem / older Magdalena-linked Goese rederijker tradition**.
+- The Nardusbloem's 1563 institutional profile is treated as strongly Catholic on the basis of its Maria-Magdalena/chapel/death-mass/requiem context.
+- In novel canon Cornelis plays a formative role in a **reform-minded/protestantiserende 1560s current** that becomes the later Edele Castanienbloem.
+- **1595 is the earliest surviving source attestation of the Castanienbloem, not a founding date.** The 1560s origin is explicit historical fiction/reconstruction inside a documentary gap.
+- The 1563 Nardusbloem conflict/member-change discussion may provide historical pressure but does not prove a confessional split.
+- Meertens' later religious-split hypothesis is retained as historiography, not proof; his proposed confessional direction is not binding on novel canon.
+- Later Nissepat participation around 1595–1596 remains a deliberate historical/family resonance.
+- Cornelis' exact deken office remains `OPEN.CORNELIS.REDERIJKER.DEKEN.001`.
+- Cornelis is not a printer; Silvius remains the press/type/proofing authority.
 
-## Explicit supersession
+### Refined alchemical material chain
 
-`DEC.MEMORIAAL.BREVISIMA_PRINT_GIFT.2026-08-15` is retained as `DEPRECATED` development history and is superseded by `DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15`.
+The active material/process model is:
 
-The following Story Claims/objects remain only as deprecated audit history where present: `STC.MEMORIAAL.SECRET_PHASE.001`, `STC.CORNELIS.FALLBACK_KNOWLEDGE.001`, the `STC.CODE.*` recovery claims, `OBJ.LASCASAS_CIPHERTEXT`, `OBJ.DIRECT_KEY`, `OBJ.MERELS_24` as recovery object, `OBJ.CASTANEA` as key anchor, `OBJ.DODOENS_CARRIER` as nomenclator carrier and `OBJ.PRIMUS_INDEX`.
+`kies / pyritic-vitriolic rejected matter → weathering + water + air + time → vitrioolwater / green liquor → green vitriol / operational Groene Leeuw → direct tannin-text reveal + learned opening principle → ordinary strong-water failure on Sol → right compound corrosive relation → death/opening of Sol → materially continuous hidden Sol → red fixation / Rode Leeuw carrier → Saturn/lead → assay/cupellation-like reveal → projectio → release beyond possession`.
 
-The authoritative domain dossier is `storybible/MEMORIAAL_BREVISIMA_PRINT_1564.md`.
+Hard guardrails:
 
-## Historical/reconstruction boundary
+- Green Lion is an **operational name in Dee/Claes' process**, not a universal historical equation `Green Lion = FeSO4`.
+- Green vitriol **directly develops the tannin-loaded memoriaal text**, but it does **not** directly dissolve gold.
+- `De dood van Sol` requires failure-before-opening: a strong water may attack lesser metals and still fail against Sol; force alone is not the right relation.
+- `OBJ.SOL_GOLD_FRACTION` is materially continuous from visible gold through opening, red fixation, Saturn/projectio and the later visible assay result.
+- No stage creates gold from lead and no fresh gold may be silently introduced after the deliberate opening of Sol.
+- `OBJ.RED_LION_PROJECTIEPOEDER` carries already-present Sol; only its exact non-gold carrier/matrix composition remains open.
+- Ercker supports a sixteenth-century *Probierkunst*/small-fire assay culture. A lead/cupellation-like explanation is an **author-side reconstruction**, not a documented Seton procedure.
+- Technical prose should distinguish acidic/vitriolic `vitrioolwater/uitloogwater/oplossing/liquor` from modern alkaline lye; the chapter title `De loog van Antwerpen` may remain.
+- Do not use routine tasting of vitriol or corrosive liquors as sensory diagnosis.
 
-- `SRC-HIST-PLANTIN-PRINT-DIALOGUES-1567-001` supports period Antwerp printing apparatus and craft criteria; it does not document tannin/gum invisible printing.
-- `SRC-SECONDARY-BOONMAN-METROLOGY-2015-001` supports the medicinal ounce/drachm framework used for the reconstructed workshop measures.
-- `SC.RECON.MEMORIAAL.TANNIN_GUM_PRINT.001` explicitly labels the tannin/gum metal-type process as a plausible authorial technical reconstruction, not a recovered Plantin/Silvius recipe.
-- `OPEN.MATERIAL.WET_TEST.001` remains required to determine real transfer, dry visibility/gloss, *moet*, paper behavior and vitriol-development performance.
-- `OPEN.GRAPHITE_STIFT.PROVENANCE.1564.001` preserves uncertainty about the exact physical form/provenance of Dee's graphite marking tool while leaving its story function fixed.
+Governing law:
 
-## Validation
+> **What becomes visible was already present.**
 
-- The first direct-text continuity run exposed a YAML quoting error in `canon/DECISIONS.yaml`; that parse error was repaired without changing the decision.
-- **Validate Claes canon repository**, run **203**: continuity compilation passed on PR-head commit `c312781e19a401198fab36cf91f2f1a81c8f6e8a` after the direct-text structured canon plus human-readable MASTER/INDEX synchronization.
-- **Validate Lemma canon**, run **121**: all active Lemma specs passed on the same PR-head commit.
-- This sync-status update itself is documentation-only; validation should still be rechecked on the eventual merge head after the two remaining broad prose files are regenerated.
+For the memoriaal typography and Sol this has literal material meaning; for testimony, memory and recovered *sinne* it is an analogy rather than identical chemistry.
+
+### Enkhuizen 1602
+
+The chosen novel frame now follows Morhof's retrospective 1673 Seton tradition:
+
+- Enkhuizen;
+- house of sailor Jacob Hausfsen;
+- 13 March 1602;
+- approximately the fourth hour after noon (~16:00);
+- Alexander Seton/Sidonius as the historical-tradition figure.
+
+The source distance remains explicit: Morhof reports the tradition roughly seventy years later. Exact furnace/projection/assay choreography, quantities, additional witnesses, public/private degree and immediate aftermath remain open.
+
+## Provenance now synchronized
+
+Dedicated source records now exist for:
+
+- `SRC-HIST-AGRICOLA-DE-RE-METALLICA-1556-VITRIOL-001` — vitriolic/pyritic matter, water/leaching, green liquor and green-vitriol process family;
+- `SRC-HIST-NORTON-KEY-ALCHEMY-GREEN-LION-001` — Green Lion semantic multivalence plus specific vitriol/copperas usage;
+- `SRC-HIST-ERCKER-PROBIERKUNST-1574-001` — assay/Probierkunst and small-fire testing/separation context;
+- `SRC-HIST-MORHOF-SETON-ENKHUIZEN-1673-001` — retrospective Seton/Enkhuizen/Hausfsen/date/time tradition;
+- updated `SRC-HIST-GOES-REDERIJKERS-001` — Nardusbloem Catholic context, 1563 conflict boundary, 1595 earliest surviving Castanien attestation and split historiography.
+
+`claims/SOURCE_CLAIMS_ALCHEMY_2026-08-16.yaml` atomizes the supported claims and explicit non-inferences.
+
+## Structured layers synchronized in this pass
+
+### Decisions / open decisions
+
+- `canon/DECISIONS_2026-08-16.md`
+- `canon/DECISIONS_ALCHEMY_REFINEMENT_2026-08-16.yaml`
+- corrected `canon/DECISIONS_ALCHEMY_LIFELINE_2026-08-15.yaml`
+- corrected `canon/OPEN_DECISIONS_ALCHEMY_LIFELINE_2026-08-15.yaml`
+- `canon/OPEN_DECISIONS_ALCHEMY_REFINEMENT_2026-08-16.yaml`
+
+### Claims / review
+
+- `claims/SOURCE_CLAIMS_ALCHEMY_2026-08-16.yaml`
+- `claims/STORY_CLAIMS_ALCHEMY_REFINEMENT_2026-08-16.yaml`
+- `review/MIGRATION_REVIEW.yaml` — all seven new 16 August Story Claims classified as explicit `HUMAN_DECISION`; no new AI-derived canon is hidden in migration.
+
+### Entities / objects
+
+- `entities/ENTITIES.yaml` — Cornelis now explicitly Nardusbloem member with formative Castanien-origin role; occupation normalized to biersteker.
+- `entities/ALCHEMY_REDERIJKER_2026-08-16.yaml` — Castanienbloem historical-organisation/fictional-early-origin layer plus Seton and Hausfsen.
+- `objects/ALCHEMY_OBJECTS_2026-08-16.yaml` — green vitriol, materially continuous Sol fraction and Rode Leeuw/projectiepoeder.
+
+### Narrative structure
+
+- `narrative/alchemy_lifeline_refinement_2026-08-16.yaml` — material-process arc, alchemical process-chain motif, hidden-presence motif and secondary controlling principle.
+- `narrative/instances_alchemy_rederijker_2026-08-16.yaml` — Castanien-origin sequence, Rode Leeuw, Saturnus and fixed-frame Enkhuizen projectio.
+- `narrative/knowledge_states_alchemy_2026-08-16.yaml` — staged Boom/vitriol/Sol/reveal/red-fixation/1602 knowledge states plus Cornelis' Nardus/Castanien boundary.
+- `narrative/motifs.yaml` — Castanea has been decoupled from the retired Brevísima recovery-key architecture and retained only as independent context/resonance.
+
+### Human-readable storybible
+
+- `storybible/ALCHEMICAL_PROCESS_REFINEMENT_2026-08-16.md` — governing detailed correction/refinement layer.
+- `storybible/ANTWERP_THREE_VISITS_ALCHEMICAL_ARC_1561_1569.md` — directly synchronized to Cornelis=Nardusbloem, fictional Castanien origin, operational Green Lion, failure-before-Sol and material Sol continuity.
+- `storybible/MASTER.md` — current precedence and 16 August normalization integrated.
+- `storybible/INDEX.md` — all new decisions, sources, claims, entities, objects, narrative supplements and dossiers indexed.
+
+## Existing memoriaal state remains active
+
+The merged 15 August direct-text memoriaal model remains unchanged:
+
+- readable Diets/Brabant Brevísima printed before binding in tannin/gum medium;
+- Dee gives memoriaal + graphite before Boom;
+- graphite remains visible while hidden tannin typography is latent;
+- green vitriol later reveals readable text directly;
+- no cipher/key-recovery architecture is required;
+- 17 single-sheet quarto gatherings / 68 leaves / 136 latent pages remain the operational cast-off model.
+
+The 16 August alchemical refinement strengthens, rather than alters, the material distinction: green vitriol is the **direct memoriaal developer**, while gold opening belongs to a different later compound-corrosive operation.
 
 ## Remaining synchronization work
 
-1. Regenerate or patch `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md`, which still contains the old post-4-October carrier and cipher/key-recovery architecture.
-2. Patch/regenerate `storybible/EXECUTIONS_REFORMATION_CLAES.md`, whose broad execution/testimony analysis still contains old direct-key, Castanea and code-as-testimony wording. The structured execution claims/instances and `CORNELIS_EXECUTION_1569.md` are already synchronized and outrank those stale passages.
-3. After those two broad prose surfaces are synchronized, rerun repository and Lemma validation and only then promote this record to `SYNC_COMPLETE`.
+The branch remains `SYNC_PENDING` for identifiable, bounded reasons:
+
+1. `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` still contains retired post-4-October carrier/cipher/key-recovery prose and older alchemical shorthand.
+2. `storybible/EXECUTIONS_REFORMATION_CLAES.md` still contains old direct-key/Castanea/code-as-testimony language in broad prose; current structured execution claims and `CORNELIS_EXECUTION_1569.md` outrank it.
+3. `storybible/ALCHEMICAL_CHEMICAL_PROCESS_CHAIN_CLAES_LIFELINE.md` is retained as the 15 August base dossier and still contains looser shorthand in places (including older Green-Lion wording and a sensory taste suggestion). `ALCHEMICAL_PROCESS_REFINEMENT_2026-08-16.md` explicitly governs every conflict until the base dossier is fully regenerated.
+4. `canon/OPEN_DECISIONS.yaml` still contains the older `OPEN.CORNELIS.REDERIJKERS.CHAMBER.001` as open. The 16 August explicit decision has in fact closed chamber identity as Nardusbloem; the later decision and supplemental open-decision files outrank this stale audit surface until the core file is regenerated.
+5. `canon/DECISIONS.yaml` is an older core registry and does not yet absorb every 15–16 August supplement. The dated/supplemental decision files are current authority; the core registry should be regenerated in a later consolidation pass rather than silently rewritten without preserving audit history.
+
+These remaining items are **representation drift**, not undecided story canon. The 16 August decisions and focused structured layers already govern the domain.
+
+## Validation
+
+Validation has **not yet been run on this 16 August branch**. After the current writes are complete:
+
+1. open a PR to `main`;
+2. run/inspect `Validate Claes canon repository`;
+3. run/inspect `Validate Lemma canon`;
+4. repair any reference/schema failures without changing author decisions;
+5. keep `SYNC_PENDING` until the explicitly listed stale broad/core surfaces are regenerated, even if CI is green.
 
 ## Existing family state remains unchanged
 
-The integrated Goes fire/family rupture, Tanneken Jansdochter, Jan Corneliszn. Nissepat and both grandparent lines remain canonical and are not altered by this branch.
+The Goes fire/family rupture, Tanneken Jansdochter, Jan Corneliszn. Nissepat and both grandparent lines remain canonical and are not altered by this branch.
 
 ## Lemma execution policy
 
-- `lemma/*.lemma` remains the deterministic rules-as-code layer and is versioned and validated in GitHub.
-- `lemma/decode.lemma` now has one active material-access rule: readable plaintext can be revealed when the memoriaal and green vitriol are available under active canon.
-- GitHub `main` remains authoritative until this authoring branch is reviewed/merged.
-- LemmaBase is optional and downstream-only; it never overrides GitHub canon.
+- `lemma/*.lemma` remains the deterministic rules-as-code layer.
+- The alchemical life-line is primarily a material/narrative continuity architecture; only genuinely deterministic prerequisites belong in Lemma.
+- `lemma/decode.lemma` continues to model the direct memoriaal reveal, not a cipher.
+- GitHub `main` remains authoritative until this authoring branch is reviewed and merged.
