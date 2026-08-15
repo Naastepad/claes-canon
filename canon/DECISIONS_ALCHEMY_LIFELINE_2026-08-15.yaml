@@ -1,4 +1,4 @@
-schema_version: 1.0.0
+schema_version: 1.0.1
 kind: CanonDecisionSupplement
 decisions:
 - id: DEC.CORNELIS.ROLE.POORTER_RED_BROUWER.2026-08-15
@@ -16,19 +16,22 @@ decisions:
   - Cornelis as fixed deken of De Edele Castanienbloem.
 - id: DEC.CORNELIS.ROLE.BIERSTEKER_CASTANIE_OPEN.2026-08-15
   type: CanonDecision
-  status: CANON
-  decision: Cornelis is a Goes poorter, biersteker and member of De Edele Castanienbloem. The family/business environment may include a brewery or brewing infrastructure, but Cornelis' fixed occupation is biersteker, not brewery owner. Whether he is deken remains OPEN/onbeslist.
-  affects:
-  - ENT.PERSON.CORNELIS
-  - REL.CLAES.CORNELIS
-  - WORLD.ANTWERP_BOOK_TRANSPORT
-  - OPEN.CORNELIS.CASTANIE.DEKEN.001
-  guardrails:
-  - Do not call Cornelis a printer.
-  - Do not give him Silvius' composing-stick, proofing or press work.
-  - Do not call Cornelis deken of De Edele Castanienbloem until the open decision is closed.
-  - Do not describe Cornelis' personal enterprise as the brewery.
+  status: DEPRECATED_IN_PART
+  superseded_in_part_by: DEC.CORNELIS.REDERIJKER.NARDUS_CASTANIE_ORIGIN.2026-08-16
+  decision: The 15 August decision correctly fixed Cornelis as Goes poorter and biersteker, kept the brewery in the wider family/business context rather than as his own enterprise, and prohibited making him a printer. Its statement that Cornelis is simply a member of De Edele Castanienbloem is superseded.
+  retained:
+  - Cornelis is a Goes poorter.
+  - Cornelis is a biersteker.
+  - The family/business environment may include brewery/brewing infrastructure, but Cornelis is not fixed as brewery owner.
   - Book transport may use beer-route, civic and rederijker cover.
+  - Cornelis is not a printer and does not perform Silvius' composing-stick, proofing or press work.
+  superseded:
+  - Cornelis as a straightforward member of De Edele Castanienbloem during his lifetime.
+  current_rederijker_state:
+  - Cornelis is a member of the Nardusbloem / older Magdalena-linked Goese tradition.
+  - In novel canon he plays a formative role in the 1560s emergence of the reform-minded/protestantiserende current that becomes the Edele Castanienbloem.
+  - 1595 remains the earliest surviving historical attestation, not an asserted founding date.
+  - Cornelis' exact deken status remains OPEN under the 16 August decision.
 - id: DEC.ALCHEMY.CLAES_LIFELINE_PROJECTIEPOEDER.2026-08-15
   type: CanonDecision
   status: CANON
@@ -46,14 +49,15 @@ decisions:
   material_chain:
   - kies / pyrite-bearing waste
   - weathering / care / digestion
-  - vitriool-loog / Groene Leeuw
-  - strong waters
-  - death / opening of Sol
-  - red fixation / Rode Leeuw
+  - vitrioolwater / Groene Leeuw as operational process name
+  - strong waters and the failure of force alone on Sol
+  - death / opening of Sol under the right compound relation
+  - red fixation / Rode Leeuw carrying already-present Sol
   - Saturn / lead / cupellation-like test
   - projectio / release beyond possession
   guardrails:
   - Keep chemistry, alchemical language, historical reconstruction and story canon separate.
   - Do not present the chain as a real recipe or proof of literal lead-to-gold transmutation.
-  - The 1602 Enkhuizen transmutation remains convincing to early-modern witnesses, chemically interpretable as hidden Sol becoming visible, and morally decisive for Claes.
+  - DEC.ALCHEMY.GREEN_LION_SOL_CONTINUITY.2026-08-16 governs the detailed material continuity and Green Lion boundaries.
+  - DEC.ENKHUIZEN.SETON_FRAME.1602.2026-08-16 governs the chosen Morhof-derived 1602 frame.
   - The beloved/apothecary-daughter and Enkhuizen recovery line supports Claes' reopening of embodied sinne and his movement from control to relation and release.
