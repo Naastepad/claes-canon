@@ -189,6 +189,30 @@ instances:
   entities:
   - ENT.PERSON.CLAES
   story_file: 1564_2_de_verkeerde_kist.md
+- id: NI.SCENE.MEMORIAAL_GIFT.1564.001
+  type: SceneInstance
+  label: Dee geeft memoriaal en grafietstift
+  canon_status: CANON
+  story_time:
+    earliest: '1564-01-01'
+    latest_exclusive: '1564-04-01'
+    precision: interval
+  sequence_constraint: occurs before NI.CHAPTER.1564.03
+  locations:
+  - ENT.LOC.ANTWERP
+  entities:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.JOHN_DEE
+  objects:
+  - OBJ.MEMORIAAL
+  - OBJ.GRAPHITE_STIFT
+  story_claims:
+  - STC.MEMORIAAL.GIFT.001
+  - STC.MEMORIAAL.BREVISIMA_CARRIER.001
+  - STC.MEMORIAAL.GRAPHITE_RULE.001
+  arcs_advanced:
+  - ARC.CLAES.DEE
+  function: "Dee gives Claes the apparently blank memoriaal and a graphite stift before Boom, forbidding ink while Claes remains his pupil; Claes reads this as discipline, not as protection of an already hidden tannin-printed ciphertext."
 - id: NI.CHAPTER.1564.03
   type: ChapterInstance
   label: De Kies Van Boom
@@ -242,9 +266,10 @@ instances:
   - ENT.PERSON.CORNELIS
   story_claims:
   - STC.MACRO.NIGREDO_START.1564.001
-  - STC.MEMORIAAL.SECRET_PHASE.001
+  - STC.CORNELIS.FALLBACK_KNOWLEDGE.001
   arcs_advanced:
   - ARC.CLAES.MACRO_TRANSMUTATION
+  continuity_note: "The security break changes direct-key/fallback access. It does not insert the Brevísima into OBJ.MEMORIAAL; that hidden printed carrier has already been in Claes' possession since before Boom."
 - id: NI.CHAPTER.1564.06
   type: ChapterInstance
   label: De honderd gulden
