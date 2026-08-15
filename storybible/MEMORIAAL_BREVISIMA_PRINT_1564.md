@@ -123,6 +123,56 @@ Normal sixteenth-century printer's ink is oil/turpentine/soot based and very sti
 
 For the hidden process, the optimum is not the thickest possible ink. It is the thinnest coherent reactive film that transfers the complete letter while leaving the least visible tint, gloss and mechanical impression.
 
+### Canonical format, cast-off and imposition
+
+The physical carrier is fixed as a sequence of **17 single-sheet quarto gatherings**:
+
+- **17 full sheets**;
+- each sheet printed on both sides and folded twice as a quarto;
+- **4 leaves / 8 pages per sheet**;
+- **68 printed leaves / 136 latent pages total** before binder-added endleaves;
+- every completed sheet is dried, folded immediately and kept in sequence before binding, because the production sheets appear visually blank;
+- temporary external wrappers/strips may carry workshop sequence marks; visible black signatures are not required in Claes' finished memoriaal.
+
+The 1578 Brabant/Dutch *Seer cort Verhael vande destructie van d’Indien* facsimile is the project’s **primary typographic/capacity reference**, not evidence for the fictional 1564 hidden-print event. In that copy, after excluding the later title leaf and the translator’s separate *Den oversetter aenden Leser*, the Las Casas body from the prologue through the end occupies exactly **136 scanned page surfaces**. This empirical fit replaces the earlier provisional 18-sheet / 144-page estimate.
+
+For each quarto sheet, the canonical page imposition is:
+
+- first/outside forme: `1-4-5-8` relative to that sheet’s eight-page sequence;
+- second/inside forme (wederdruk): `2-3-6-7`.
+
+For sheet A, the first eight latent memoriaal pages correspond in content to the 1578 facsimile’s PDF pages 12–19:
+
+1. beginning of Las Casas’ prologue to Prince Philip;
+2. prologue continued;
+3. prologue continued;
+4. end of prologue;
+5. beginning of *Cort verhael vande Destructie van Indien*;
+6. description of the Indians, culminating in the sheep-versus-wolves/tigers/lions contrast;
+7. enlargement to the devastation of islands and mainland;
+8. the two principal modes of destruction and the pursuit of gold/wealth as motive.
+
+Thus sheet A is imposed as:
+
+- first forme: memoriaal pages `1, 4, 5, 8`;
+- wederdruk: memoriaal pages `2, 3, 6, 7`.
+
+The **content extent** is canonical; exact line endings, catchword positions and word-at-line-number placement are not fixed until a definitive 1564-style cast-off is made.
+
+### Typographic austerity
+
+The 1578 facsimile is a capacity and textual-sequence anchor, **not** a visual template. Its title page, ornaments and large decorated initials are not copied into Claes’ hidden memoriaal. Silvius’ clandestine carrier is deliberately austere:
+
+- no visible commercial title page;
+- no translator’s 1578-style address to the reader;
+- no printer’s mark, privilege, place or date;
+- no decorative woodcut ornaments;
+- no large decorated initials where a smaller ordinary type treatment suffices;
+- ordinary readable small book type, with enough white space to remain usable as a memoriaal;
+- no requirement for visible page numbers, running titles, catchwords or signatures.
+
+The objective is not maximum text density. The objective is a stable 17-sheet carrier whose latent print remains physically unobtrusive and leaves Claes usable space for graphite observations.
+
 ### The *moet*
 
 The press can leave a physical impression in the sheet. This remains the principal non-chemical trace before development. Silvius therefore minimizes pressure consistent with complete transfer. The hidden page need not be forensically undetectable under raking light to a specialist; it must pass ordinary handling as blank writing paper.
@@ -228,11 +278,15 @@ The project source record `SRC-HIST-PLANTIN-PRINT-DIALOGUES-1567-001` supports t
 
 `SRC-SECONDARY-BOONMAN-METROLOGY-2015-001` supports the period-compatible medicinal ounce/drachm hierarchy used to translate the reconstructed formulation out of modern grams.
 
+The supplied 1578 *Seer cort Verhael vande destructie van d’Indien* facsimile supports the later Brabant/Dutch text sequence, the separate translator’s address, the prologue-to-Philip opening, the subsequent *Cort verhael* opening, ordinary quarto-signature practice in the visible edition, and the 136-page body used here as an empirical capacity analogue. It does **not** prove the fictional 1564 hidden edition, its exact copy-text, or tannin/gum printing.
+
 ### Authorial reconstruction
 
 `SC.RECON.MEMORIAAL.TANNIN_GUM_PRINT.001` marks the central technical proposition as **PLAUSIBLE reconstruction**, not verified historical practice: tannin/gallnut + gum arabic is used as a near-invisible first-pass typographic medium and later developed with green vitriol.
 
 The decision to print ordinary readable language rather than ciphertext is a story-design consequence of that technical reconstruction, not a separate historical claim.
+
+The 17-sheet format is story canon grounded in the observed capacity of the 1578 Brabant/Dutch witness; it is not asserted as evidence that a 1564 edition existed in precisely this material form.
 
 ### Still open experimentally
 
@@ -262,3 +316,7 @@ Until that test exists, prose may confidently use the **canon story process**, b
 9. 4 October 1564 does not alter the book's physical payload or create a key-access condition.
 10. The recipe is a historically disciplined reconstruction, not archival fact.
 11. The wet/press test remains required before hard historical claims about exact performance or invisibility.
+12. The memoriaal’s hidden printed body uses **17 single-sheet quarto gatherings = 68 printed leaves = 136 latent pages**, plus any truly blank binder-added endleaves.
+13. The 1578 Brabant/Dutch facsimile is a capacity/text-sequence analogue, not proof of the fictional 1564 clandestine edition.
+14. The hidden carrier excludes the later visible-edition title page and separate translator’s address; the latent text begins with Las Casas’ prologue to Prince Philip.
+15. Exact line endings and word-to-line placement remain uncodified until a definitive 1564 cast-off is produced.
