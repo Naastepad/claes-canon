@@ -1,4 +1,4 @@
-schema_version: 1.6.0
+schema_version: 1.7.0
 kind: OpenDecisionRegistry
 decisions:
 - id: OPEN.CLAES.DEATH.001
@@ -17,8 +17,16 @@ decisions:
   domain: object
   priority: high
   question: Exact bookbinding/material mechanism by which prepared rectos/quires enter the used memoriaal
-  status: OPEN
-  fixed: secret load follows safety breach; content and 24+2 architecture closed
+  status: RESOLVED
+  resolved_by: DEC.MEMORIAAL.BREVISIMA_PRINT_GIFT.2026-08-15
+  resolution:
+  - the encoded translated Brevísima is printed on loose sheets before binding with the reconstructed near-invisible tannin/gallnut + gum-arabic first-pass medium
+  - the sheets are printed recto/verso in correct imposition, dried, folded/gathered and bound as the apparently blank memoriaal before Dee gives it to Claes
+  - no post-4-October physical insertion or hollow-book mechanism is used
+  - 4 October changes access/key architecture rather than the physical payload
+  guardrails:
+  - the exact reconstructed printing medium remains subject to OPEN.MATERIAL.WET_TEST.001
+  - do not present the tannin-gum typographic recipe as a documented historical Silvius recipe
 - id: OPEN.TRANSLATOR.1564.001
   domain: historical_reconstruction
   priority: high
@@ -58,6 +66,19 @@ decisions:
   question: Which four to six merels problems receive close-up narrative treatment
   status: OPEN
   fixed: all 24 remain one recovery sequence; first/interesting double diagram/text operator/error-check/final checksum are candidates
+- id: OPEN.MERELS.ENTRY_AFTER_MEMORIAAL_REDESIGN.001
+  domain: code_and_object
+  priority: high
+  question: Where and by what route do the 24 complete merels problems enter Claes' 1570 key-recovery sequence now that the memoriaal's chemically revealed layer is the Las Casas ciphertext itself?
+  status: OPEN
+  fixed:
+  - all 24 complete problems remain canonical
+  - merels remains ad-hoc key recovery rather than original cipher or reciphering
+  - theorem I–XXIV checksum and Monas ordering remain unchanged
+  - the problems are not automatically assumed to be the tannin-printed hidden content of OBJ.MEMORIAAL
+  guardrails:
+  - do not silently restore the deprecated 24+2 memoriaal layer
+  - physical ciphertext reveal and key recovery are distinct paths that converge for full decoding
 - id: OPEN.CODE.P1_P3_P4.001
   domain: code
   priority: high
@@ -67,14 +88,32 @@ decisions:
 - id: OPEN.MATERIAL.WET_TEST.001
   domain: material
   priority: high
-  question: Wet material test for red markers + tannin/galnut layer + diluted green vitriol + suitable paper
+  question: Physical wet/press test of the reconstructed gallnut/tannin + gum-arabic medium on metal relief type, including transfer, dry visibility/gloss, mechanical moet, paper condition and subsequent diluted green-vitriol development
   status: OPEN
-  guardrail: No untested recipe becomes hard historical prose
+  fixed_workshop_start:
+  - 2 medicinal drachmen gallnuts steeped in 2.5 medicinal ounces clear water
+  - retain 2 medicinal ounces clearest filtered extract
+  - dissolve 1.5 medicinal ounces gum arabic; tune slightly by behaviour on type
+  - proof developer reference is 0.5 medicinal drachme green vitriol in 4 medicinal ounces clear water
+  guardrails:
+  - No untested recipe becomes hard historical prose.
+  - The story process is canon as technical reconstruction; experimental performance and exact optimum remain open.
 - id: OPEN.MEMORIAAL.FACSIMILE.001
   domain: object
   priority: medium
-  question: Final facsimile hand/ductus and visual production of the 24 memoriaal diagrams
+  question: Final facsimile appearance of the apparently blank/graphite-used memoriaal and the developed typographic ciphertext pages
   status: OPEN
+- id: OPEN.GRAPHITE_STIFT.PROVENANCE.1564.001
+  domain: historical_reconstruction
+  priority: medium
+  question: Exact historically defensible physical form and provenance of the graphite marking stift Dee gives Claes in Antwerp in early 1564
+  status: OPEN
+  fixed_story_function:
+  - Dee gives Claes a graphite marking tool with OBJ.MEMORIAAL before Boom
+  - Dee forbids ink while Claes remains his pupil
+  guardrails:
+  - do not automatically depict a later modern wood-cased pencil
+  - historical form/provenance uncertainty does not reopen the fixed story function
 - id: OPEN.SECURITY.LOW_LINK.1564.001
   domain: plot
   priority: high
@@ -154,8 +193,11 @@ decisions:
 - id: OPEN.CIPHER.PHYSICAL_PRODUCTION.001
   domain: object
   priority: medium
-  question: Final setting/facsimile proof, exact set count within 3–6 work canon, binding/camouflage and fate of possible 24 composite sorts
+  question: Final setting/facsimile proof, exact set count within 3–6 work canon and fate of possible 24 composite sorts
   status: OPEN
+  fixed_by_memoriaal_decision:
+  - Claes' set is printed on loose sheets and bound as OBJ.MEMORIAAL before Boom
+  - the hidden-print camouflage mechanism for Claes' set is fixed
 - id: OPEN.ZOVITIUS.DELIVERY.1570.001
   domain: plot
   priority: high
@@ -174,8 +216,10 @@ decisions:
 - id: OPEN.CHAPTER.CALENDAR.1564.001
   domain: chronology
   priority: high
-  question: Calendar audit of 1564_1 through 1564_5 against wrong chest → code production → decisive transfer journey → 4 October security break
+  question: Calendar audit of 1564_1 through 1564_5 against wrong chest → code production → memoriaal/graphite handoff before Boom → decisive transfer journey → 4 October security break
   status: OPEN
+  fixed:
+  - NI.SCENE.MEMORIAAL_GIFT.1564.001 occurs before NI.CHAPTER.1564.03
 - id: OPEN.FINAL_MERELS.001
   domain: ending
   priority: medium
