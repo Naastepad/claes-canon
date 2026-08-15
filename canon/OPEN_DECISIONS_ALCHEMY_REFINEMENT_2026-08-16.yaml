@@ -1,0 +1,38 @@
+schema_version: 1.0.0
+kind: OpenDecisionSupplement
+decisions:
+- id: OPEN.CORNELIS.REDERIJKER.DEKEN.001
+  domain: character_and_rederijker_network
+  priority: medium
+  question: Does Cornelis ever serve as deken of the Nardusbloem or of the emerging reform-minded Castanien current during his lifetime?
+  status: OPEN
+  fixed:
+  - Cornelis is a Nardusbloem member.
+  - Cornelis plays a formative fictional role in the 1560s origin of the later Edele Castanienbloem.
+  - No deken office is currently canon.
+  guardrails:
+  - Do not use deken status to justify access or logistics that are already supported by poorter, biersteker, rederijker and trust networks.
+- id: OPEN.ALCHEMY.RED_LION.CARRIER_COMPOSITION.001
+  domain: alchemical_material_reconstruction
+  priority: high
+  question: What exact non-gold carrier/matrix composition gives the Rode Leeuw/projectiepoeder its red or dark appearance while carrying the already-present Sol fraction?
+  status: OPEN
+  fixed:
+  - The gold-bearing fraction is materially continuous from opened Sol into the red matrix and later assay.
+  - The carrier may be informed by historically plausible red iron, mercury, antimony or other mineral preparations, but none is canon yet.
+  guardrails:
+  - No carrier choice may introduce new gold after De dood van Sol.
+  - Do not choose a composition merely for symbolic colour if it breaks period craft plausibility or the hidden-Sol conservation model.
+- id: OPEN.ALCHEMY.ENKHUIZEN_1602.ASSAY_DESIGN.001
+  domain: alchemical_lifeline
+  priority: high
+  question: Exact furnace, projection, lead/Saturn, cupellation-like assay sequence, quantities, additional witnesses and immediate aftermath for the 13 March 1602 Enkhuizen scene.
+  status: OPEN
+  fixed:
+  - Enkhuizen; house of Jacob Hausfsen; 13 March 1602; approximately 16:00; Seton/Sidonius frame.
+  - The apparent result must remain consistent with already-present hidden Sol becoming visible rather than literal lead-to-gold creation.
+  - The scene must remain convincing from an early-modern witness perspective.
+  guardrails:
+  - Ercker supports the surrounding assay/Probierkunst culture, not Seton's exact procedure.
+  - Morhof supplies the retrospective event frame, not cupellation choreography.
+  - Do not turn the storybible into a modern executable transmutation recipe.
