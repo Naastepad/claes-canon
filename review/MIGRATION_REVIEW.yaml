@@ -1,19 +1,19 @@
-schema_version: 1.5.0
+schema_version: 1.6.0
 kind: MigrationReviewRegistry
 source_edition: Claes_Storybible_MASTER_COMPLEET_2026-08-10_REVISIE11_MACROSTRUCTUUR_PROJECTIO(1).md
 purpose: Distinguish meaning-preserving migration from AI-derived interpretation, genuinely new proposals, and detected conflicts before merge.
 origin_vocabulary: [MIGRATED, DERIVED, NEW]
 review_state_vocabulary: [MIGRATION_CHECK, HUMAN_REVIEW, HUMAN_DECISION, CONFLICT]
 summary:
-  story_claims_total: 54
+  story_claims_total: 57
   by_origin:
     MIGRATED: 30
     DERIVED: 4
-    NEW: 20
+    NEW: 23
   by_review_state:
     MIGRATION_CHECK: 34
     HUMAN_REVIEW: 0
-    HUMAN_DECISION: 20
+    HUMAN_DECISION: 23
     CONFLICT: 0
   merge_blockers: 0
 records:
@@ -229,6 +229,21 @@ records:
     review_state: HUMAN_DECISION
     resolution: >-
       Explicit author decision on 15 August 2026: the 1570 recovery architecture must become morally legible through the execution crisis.
+  - claim_id: STC.MEMORIAAL.BREVISIMA_CARRIER.001
+    origin: NEW
+    review_state: HUMAN_DECISION
+    resolution: >-
+      Explicit author decision DEC.MEMORIAAL.BREVISIMA_PRINT_GIFT.2026-08-15: the encoded translated Brevísima is printed on loose sheets before binding and is already hidden in Claes' apparently blank memoriaal before Dee gives it to him prior to Boom.
+  - claim_id: STC.MEMORIAAL.PRINT_PROCESS.001
+    origin: NEW
+    review_state: HUMAN_DECISION
+    resolution: >-
+      Explicit author decision DEC.MEMORIAAL.BREVISIMA_PRINT_GIFT.2026-08-15: canon adopts the historically disciplined reconstructed gallnut/tannin + gum-arabic first-pass printing process and period-measure starting formulation, while physical performance remains open to wet/press testing.
+  - claim_id: STC.MEMORIAAL.GRAPHITE_RULE.001
+    origin: NEW
+    review_state: HUMAN_DECISION
+    resolution: >-
+      Explicit author decision DEC.MEMORIAAL.BREVISIMA_PRINT_GIFT.2026-08-15: Dee gives Claes a graphite marking stift with the memoriaal and forbids ink while Claes remains his pupil; the exact historical form/provenance of the graphite tool remains open.
 rules:
   MIGRATION_CHECK: Existing canon or explicitly reviewed formulation represented in the new structure. Review only for faithful transcription/normalization; do not re-litigate the underlying canon unless a new conflict is detected.
   HUMAN_REVIEW: AI-derived condensation or interpretation. Human should approve, edit, or reject the formulation before treating it as settled structured canon.
