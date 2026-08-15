@@ -8,12 +8,33 @@ objects:
   historical_status: FICTIONAL_OBJECT
   decision_ids:
   - DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15
+  - DEC.MEMORIAAL.FORMAT_17Q.2026-08-15
   phases:
   - phase: hidden-print-production
     window: {earliest: '1564-01-01', latest_exclusive: '1564-04-01', precision: interval}
     function: loose sheets carry the completed Diets/Brabant Brevísima in ordinary readable type as a near-invisible tannin/gallnut + gum-arabic typographic layer before binding
     production:
       order: [set-readable-translation, print-recto-verso, dry, fold-gather, bind]
+      format:
+        gathering_mode: single-sheet quarto
+        full_sheets: 17
+        printed_leaves: 68
+        latent_pages: 136
+        binder_endleaves: genuinely blank and additional to the 68 printed leaves
+        imposition_first_forme: [1, 4, 5, 8]
+        imposition_wederdruk: [2, 3, 6, 7]
+        sequence_control: fold each completed sheet promptly and keep order by temporary external workshop wrappers/strips rather than relying on visible black signatures in Claes' finished book
+        reference_analogue: 1578 Brabant/Dutch Seer cort Verhael facsimile, used for capacity and text sequence only
+        supersedes_provisional_estimate: 18 sheets / 72 leaves / 144 pages
+      text_body:
+        begins_with: Las Casas prologue to Prince Philip
+        excludes: [later-visible-edition-title-page, separate-translator-address]
+        sheet_A_content_reference: facsimile PDF pages 12-19; prologue through beginning of Cort verhael and first general destruction/gold-motive passages
+        exact_line_breaks: OPEN_UNTIL_DEFINITIVE_1564_CAST_OFF
+      typography:
+        mode: austere readable small book type
+        excludes: [commercial-title-page, printer-mark, privilege, place-date-imprint, decorative-woodcut-ornaments, large-decorated-initials-as-default]
+        objective: physically unobtrusive latent text with usable white space for Claes' graphite notes
       first_pass_medium: clear filtered gallnut/tannin extract + gum arabic
       excludes: [green-vitriol, iron-salt, soot, visible-pigment]
       workshop_starting_recipe:
@@ -37,7 +58,7 @@ objects:
     function: controlled green-vitriol development makes the hidden printed readable Brevísima visible directly
   hidden_structure:
     carrier: OBJ.LASCASAS_PLAINTEXT
-    physical_form: translated Brevísima printed in ordinary readable type on the writing sheets themselves before binding
+    physical_form: translated Brevísima printed in ordinary readable type on 17 single-sheet quarto gatherings before binding
     visible_before_activation: apparently blank/usable writing paper, with only any later graphite notes visible
     cryptographic_layer: none
   constraints:
@@ -47,6 +68,8 @@ objects:
   - green vitriol reveals the hidden readable text directly
   - 4 October 1564 does not insert, recipher or add a key architecture to the hidden text
   - chemical steganography is the concealment mechanism; no nomenclator or decryption layer is required
+  - hidden printed body is 17 full quarto sheets = 68 printed leaves = 136 latent pages, excluding genuinely blank binder-added endleaves
+  - the 1578 facsimile anchors capacity and sequence only and is not evidence that the fictional 1564 hidden edition historically existed
   deterministic_domains: [possession, knowledge, reveal]
 
 - id: OBJ.GRAPHITE_STIFT
@@ -137,6 +160,7 @@ objects:
   historical_status: FICTIONAL_EARLY_PROVENANCE
   decision_ids:
   - DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15
+  - DEC.MEMORIAAL.FORMAT_17Q.2026-08-15
   phases:
   - phase: completed-translation-before-hidden-print
   - phase: arrives-in-Antwerp-via-wrong-chest
@@ -147,6 +171,8 @@ objects:
   constraints:
   - historical 1578 publication is real; Claes provenance is fictional
   - no cipher transformation separates the hidden printed text from the readable translation
+  - the hidden 1564 carrier begins with Las Casas' prologue to Prince Philip and excludes the later visible-edition title page and separate translator's address
+  - capacity/sequence are anchored to the 136-page Las Casas body observed in the 1578 Brabant/Dutch facsimile, without treating that witness as proof of a 1564 edition
 
 - id: OBJ.LASCASAS_CIPHERTEXT
   label: FINAL CIPHER-1564
