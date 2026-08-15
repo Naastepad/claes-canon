@@ -34,7 +34,7 @@ claims:
   - education
 - id: STC.CLAES.REIMERSWAAL.001
   type: StoryClaim
-  statement: After the Goes fire Claes is sent as a cost pupil to the Latin school of Reimerswaal and remains there until summer 1561.
+  statement: Claes receives elementary education in Goes before May 1554; no full official Latin school is claimed.
   canon_status: CANON
   evidence_status: SUPPORTED
   subjects:
@@ -267,7 +267,7 @@ claims:
     precision: year
 - id: STC.CODE.RECOVERY_SEQUENCE.001
   type: StoryClaim
-  statement: The recovery architecture now separates physical reveal from key recovery: Zovitius 1570 → GALLA LEO VIRIDIS → green vitriol → memoriaal → hidden Las Casas ciphertext becomes visible; merels → theorem I–XXIV → personal Monas marginalia → 24×24 matrix → Castanea → nine Dodoens tables → Primus Index → nomenclator remains the canonical key-recovery chain, while the exact in-world entry/placement of the 24 merels problems after the memoriaal redesign is OPEN.
+  statement: "The recovery architecture now separates physical reveal from key recovery: Zovitius 1570 → GALLA LEO VIRIDIS → green vitriol → memoriaal → hidden Las Casas ciphertext becomes visible; merels → theorem I–XXIV → personal Monas marginalia → 24×24 matrix → Castanea → nine Dodoens tables → Primus Index → nomenclator remains the canonical key-recovery chain, while the exact in-world entry/placement of the 24 merels problems after the memoriaal redesign is OPEN."
   canon_status: CANON
   evidence_status: SUPPORTED
   decision_ids:
