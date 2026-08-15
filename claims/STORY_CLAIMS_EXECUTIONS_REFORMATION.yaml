@@ -1,4 +1,4 @@
-schema_version: 1.1.0
+schema_version: 1.2.0
 kind: StoryClaimRegistry
 id: STCR.EXECUTIONS_REFORMATION.2026-08-15
 status: AUTHORING
@@ -10,7 +10,7 @@ claims:
     statement: >-
       Claes' understanding of execution develops from Catholic civic ars moriendi through Reformation martyr disruption into the moral insight that truth may need indirect carriers when bodies, mouths and public rituals fail.
     subjects: [ENT.PERSON.CLAES]
-    tags: [execution_arc, reformation, ars_moriendi, martyrdom, code]
+    tags: [execution_arc, reformation, ars_moriendi, martyrdom, hidden_testimony]
   - id: STC.CLAES.CATHOLIC_EXECUTION_BASELINE.001
     type: StoryClaim
     canon_status: CANON
@@ -63,10 +63,10 @@ claims:
     canon_status: CANON
     evidence_status: SUPPORTED
     statement: >-
-      Cornelis does not give Claes the memoriaal; Dee gives it early in 1564 as a pedagogical workbook, and after 4 October 1564 that existing object is prepared as blind recovery carrier.
+      Cornelis does not give Claes the memoriaal; Dee gives it before Boom in early 1564 as a pedagogical workbook that is already bound from invisibly printed readable Brevísima sheets. The 4 October security break does not alter the book.
     subjects: [ENT.PERSON.CLAES, ENT.PERSON.JOHN_DEE, ENT.PERSON.CORNELIS]
-    objects: [OBJ.MEMORIAAL]
-    tags: [memoriaal, correction, Dee, Cornelis]
+    objects: [OBJ.MEMORIAAL, OBJ.LASCASAS_PLAINTEXT]
+    tags: [memoriaal, correction, Dee, Cornelis, direct_hidden_print]
   - id: STC.CORNELIS.EXECUTION_WITNESS.001
     type: StoryClaim
     canon_status: CANON
@@ -108,7 +108,7 @@ claims:
       - Cornelis is not carrying OBJ.MEMORIAAL.
       - Simple book-smuggling or book possession is insufficient for Cornelis' death.
       - Do not claim that Haecht documents Cornelis or that Cornelis is one of the historical offenders recorded on 19 November 1569.
-      - Claes does not understand the Las Casas recovery architecture at the execution.
+      - Claes does not yet understand the hidden Las Casas function of his memoriaal at the execution.
   - id: STC.CORNELIS.CARRIER_NOT_PRINTER.001
     type: StoryClaim
     canon_status: CANON
@@ -130,7 +130,7 @@ claims:
     canon_status: CANON
     evidence_status: SUPPORTED
     statement: >-
-      The 1570 recovery architecture becomes morally legible through the execution crisis: as bodies can be burned, drowned, displayed or silenced, testimony must survive through indirect carriers such as letters, relics, books and code.
+      The hidden Brevísima becomes morally legible through the execution crisis: as bodies can be burned, drowned, displayed or silenced, testimony must survive through indirect carriers such as letters, relics, books and chemically concealed writing. The memoriaal embodies survival of testimony without requiring a cipher.
     subjects: [ENT.PERSON.CLAES]
-    objects: [OBJ.MEMORIAAL, OBJ.LASCASAS_CIPHERTEXT]
-    tags: [code, martyr_memory, moral_burden, testimony]
+    objects: [OBJ.MEMORIAAL, OBJ.LASCASAS_PLAINTEXT]
+    tags: [hidden_testimony, martyr_memory, moral_burden, chemical_steganography]
