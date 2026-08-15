@@ -177,9 +177,11 @@ decisions:
 - id: DEC.MEMORIAAL.FORMAT_17Q.2026-08-15
   type: CanonDecision
   status: CANON
-  decision: The hidden printed body of Claes' memoriaal is fixed at 17 single-sheet quarto gatherings: 17 full sheets, 68 printed leaves and 136 latent pages, plus any genuinely blank binder-added endleaves. The hidden text begins with Las Casas' prologue to Prince Philip and excludes the later visible-edition title page and separate translator's address. Each sheet uses normal quarto imposition, first forme 1-4-5-8 and wederdruk 2-3-6-7. The 1578 Brabant/Dutch Seer cort Verhael facsimile is the primary capacity and text-sequence analogue, not evidence for the fictional 1564 clandestine edition.
+  decision: >-
+    The hidden printed body of Claes' memoriaal is fixed at 17 single-sheet quarto gatherings: 17 full sheets, 68 printed leaves and 136 latent pages, plus any genuinely blank binder-added endleaves. The hidden text begins with Las Casas' prologue to Prince Philip and excludes the later visible-edition title page and separate translator's address. Each sheet uses normal quarto imposition, first forme 1-4-5-8 and wederdruk 2-3-6-7. The 1578 Brabant/Dutch Seer cort Verhael facsimile is the primary capacity and text-sequence analogue, not evidence for the fictional 1564 clandestine edition.
   affects:
   - STC.MEMORIAAL.PRINT_PROCESS.001
   - OBJ.MEMORIAAL
   - OBJ.LASCASAS_PLAINTEXT
-  rationale: The supplied 1578 facsimile separates a title leaf and translator's address from the Las Casas text body. From the prologue through the end of the tract the facsimile occupies 136 scanned page surfaces, exactly 17 quarto sheets at eight pages per sheet. This replaces the provisional 18-sheet/144-page estimate while preserving a strict evidence boundary: the 1578 witness anchors capacity and sequence only; the hidden 1564 edition remains novel reconstruction.
+  rationale: >-
+    The supplied 1578 facsimile separates a title leaf and translator's address from the Las Casas text body. From the prologue through the end of the tract the facsimile occupies 136 scanned page surfaces, exactly 17 quarto sheets at eight pages per sheet. This replaces the provisional 18-sheet/144-page estimate while preserving a strict evidence boundary: the 1578 witness anchors capacity and sequence only; the hidden 1564 edition remains novel reconstruction.
