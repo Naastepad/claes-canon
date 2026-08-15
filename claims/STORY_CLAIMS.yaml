@@ -1,4 +1,4 @@
-schema_version: 1.3.0
+schema_version: 1.4.0
 kind: StoryClaimRegistry
 claim_count: 37
 claims:
@@ -131,11 +131,11 @@ claims:
   - macrostructure
 - id: STC.MEMORIAAL.GIFT.001
   type: StoryClaim
-  statement: Before the journey to Boom in early 1564, Dee gives Claes the apparently blank memoriaal as a pedagogical workbook; unbeknownst to Claes it is already the bound hidden carrier of the encoded translated Brevísima, and the same handoff includes a graphite stift.
+  statement: Before the journey to Boom in early 1564, Dee gives Claes the apparently blank memoriaal as a pedagogical workbook; unbeknownst to Claes it is already the bound hidden carrier of the translated Brevísima printed in ordinary readable language, and the same handoff includes a graphite stift.
   canon_status: CANON
   evidence_status: PLAUSIBLE
   decision_ids:
-  - DEC.MEMORIAAL.BREVISIMA_PRINT_GIFT.2026-08-15
+  - DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15
   subjects:
   - ENT.PERSON.CLAES
   - ENT.PERSON.JOHN_DEE
@@ -154,7 +154,7 @@ claims:
   superseded_by:
   - STC.MEMORIAAL.BREVISIMA_CARRIER.001
   decision_ids:
-  - DEC.MEMORIAAL.BREVISIMA_PRINT_GIFT.2026-08-15
+  - DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15
   subjects:
   - ENT.PERSON.CLAES
   objects:
@@ -162,21 +162,21 @@ claims:
   story_time:
     earliest: '1564-10-04'
     precision: lower-bound
-  note: Retained for audit only; the memoriaal is already the hidden Brevísima carrier before Boom.
+  note: Retained for audit only; the memoriaal already carries the hidden readable Brevísima before Boom.
 - id: STC.MEMORIAAL.BREVISIMA_CARRIER.001
   type: StoryClaim
-  statement: The encoded translated Diets/Brabant Brevísima is printed invisibly on loose sheets before binding; those sheets are folded/gathered and bound as Claes’ apparently blank memoriaal before Dee gives it to him in early 1564.
+  statement: The completed translated Diets/Brabant Brevísima is set in ordinary readable type and printed nearly invisibly on loose sheets before binding; those sheets are folded/gathered and bound as Claes’ apparently blank memoriaal before Dee gives it to him in early 1564, and green vitriol later reveals the readable text directly.
   canon_status: CANON
   evidence_status: PLAUSIBLE
   decision_ids:
-  - DEC.MEMORIAAL.BREVISIMA_PRINT_GIFT.2026-08-15
+  - DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15
   subjects:
   - ENT.PERSON.CLAES
   - ENT.PERSON.JOHN_DEE
   - ENT.PERSON.WILLEM_SILVIUS
   objects:
   - OBJ.MEMORIAAL
-  - OBJ.LASCASAS_CIPHERTEXT
+  - OBJ.LASCASAS_PLAINTEXT
   story_time:
     earliest: '1564-01-01'
     latest_exclusive: '1564-04-01'
@@ -184,6 +184,7 @@ claims:
   tags:
   - carrier
   - hidden-print
+  - direct-readable-reveal
   - author-decision
 - id: STC.MEMORIAAL.PRINT_PROCESS.001
   type: StoryClaim
@@ -191,7 +192,7 @@ claims:
   canon_status: CANON
   evidence_status: PLAUSIBLE
   decision_ids:
-  - DEC.MEMORIAAL.BREVISIMA_PRINT_GIFT.2026-08-15
+  - DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15
   subjects:
   - ENT.PERSON.WILLEM_SILVIUS
   objects:
@@ -207,7 +208,7 @@ claims:
   canon_status: CANON
   evidence_status: PLAUSIBLE
   decision_ids:
-  - DEC.MEMORIAAL.BREVISIMA_PRINT_GIFT.2026-08-15
+  - DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15
   subjects:
   - ENT.PERSON.CLAES
   - ENT.PERSON.JOHN_DEE
@@ -220,14 +221,17 @@ claims:
 - id: STC.CORNELIS.FALLBACK_KNOWLEDGE.001
   type: StoryClaim
   statement: Cornelis knows that Claes is being used unknowingly as a fallback but does not know the recovery key itself.
-  canon_status: CANON
+  canon_status: DEPRECATED
   evidence_status: SUPPORTED
+  decision_ids:
+  - DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15
   subjects:
   - ENT.PERSON.CORNELIS
   - ENT.PERSON.CLAES
   story_time:
     earliest: '1564-10-04'
     precision: lower-bound
+  note: Deprecated because the direct-readable tannin print removes the cryptographic fallback/key architecture. Cornelis' separate knowledge of clandestine printing or network risk may be handled independently.
 - id: STC.CLAES.RETURN_GOES.1566.001
   type: StoryClaim
   statement: Claes returns canonically to Goes after the Beeldenstorm of 1566.
@@ -254,9 +258,11 @@ claims:
     precision: work-window
 - id: STC.ZOVITIUS.TRIGGER.1570.001
   type: StoryClaim
-  statement: A special 1570 Zovitius copy activates the recovery route through GALLA LEO VIRIDIS.
+  statement: A special 1570 Zovitius copy can activate the chemical reveal route through GALLA LEO VIRIDIS, pointing Claes toward gall/tannin and green vitriol rather than supplying a cryptographic key.
   canon_status: CANON
   evidence_status: SUPPORTED
+  decision_ids:
+  - DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15
   subjects:
   - ENT.PERSON.CLAES
   objects:
@@ -267,11 +273,11 @@ claims:
     precision: year
 - id: STC.CODE.RECOVERY_SEQUENCE.001
   type: StoryClaim
-  statement: "The recovery architecture now separates physical reveal from key recovery: Zovitius 1570 → GALLA LEO VIRIDIS → green vitriol → memoriaal → hidden Las Casas ciphertext becomes visible; merels → theorem I–XXIV → personal Monas marginalia → 24×24 matrix → Castanea → nine Dodoens tables → Primus Index → nomenclator remains the canonical key-recovery chain, while the exact in-world entry/placement of the 24 merels problems after the memoriaal redesign is OPEN."
-  canon_status: CANON
+  statement: "Deprecated design: Zovitius → vitriol → ciphertext plus merels → Monas → matrix → Castanea → Dodoens → Primus Index → nomenclator formerly converged on plaintext reconstruction."
+  canon_status: DEPRECATED
   evidence_status: SUPPORTED
   decision_ids:
-  - DEC.MEMORIAAL.BREVISIMA_PRINT_GIFT.2026-08-15
+  - DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15
   objects:
   - OBJ.ZOVITIUS_1570_TRIGGER
   - OBJ.MEMORIAAL
@@ -282,69 +288,83 @@ claims:
   - OBJ.DODOENS_CARRIER
   - OBJ.PRIMUS_INDEX
   tags:
-  - code-chain
-  - open-entry-link
+  - deprecated-code-chain
+  note: The cipher existed as a workaround while whole-book invisible printing seemed impracticable. Direct tannin/gum printing now reveals readable language without decoding.
 - id: STC.CODE.MERELS.RECOVERY_NOT_CIPHER.001
   type: StoryClaim
   statement: Merels is an ad-hoc recovery layer and not the original cipher; the 35,584-group stream is not re-encoded after October 1564.
-  canon_status: CANON
+  canon_status: DEPRECATED
   evidence_status: SUPPORTED
+  decision_ids:
+  - DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15
   objects:
   - OBJ.MERELS_24
   - OBJ.LASCASAS_CIPHERTEXT
   tags:
-  - code-guardrail
+  - deprecated-code-guardrail
 - id: STC.CODE.MERELS.P15.001
   type: StoryClaim
   statement: The reader and Claes encounter 24 complete unnumbered problem sheets; the scholarly P15 lacuna is author metadata and not an in-world puzzle.
-  canon_status: CANON
+  canon_status: DEPRECATED
   evidence_status: SUPPORTED
+  decision_ids:
+  - DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15
   objects:
   - OBJ.MERELS_24
   tags:
-  - reader-layer
-  - guardrail
+  - deprecated-code-layer
+  note: The 24-problem recovery set is no longer required by the Brevísima mechanism; ordinary merels scenes/motifs remain separately available.
 - id: STC.CODE.MONAS.FUNCTION.001
   type: StoryClaim
   statement: Monas provides ordering, not plaintext.
-  canon_status: CANON
+  canon_status: DEPRECATED
   evidence_status: SUPPORTED
+  decision_ids:
+  - DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15
   objects:
   - OBJ.MONAS_CLAES
   tags:
-  - code-guardrail
+  - deprecated-code-guardrail
 - id: STC.CODE.CASTANEA.FUNCTION.001
   type: StoryClaim
   statement: Castanea is wayfinding/authentication, not leaf or fruit counting.
-  canon_status: CANON
+  canon_status: DEPRECATED
   evidence_status: SUPPORTED
+  decision_ids:
+  - DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15
   objects:
   - OBJ.CASTANEA
   tags:
-  - code-guardrail
+  - deprecated-code-guardrail
 - id: STC.CODE.DODOENS.REQUIRED.001
   type: StoryClaim
   statement: The Dodoens carrier is necessary for nomenclator values; without it full decoding is impossible.
-  canon_status: CANON
+  canon_status: DEPRECATED
   evidence_status: SUPPORTED
+  decision_ids:
+  - DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15
   objects:
   - OBJ.DODOENS_CARRIER
   tags:
-  - code-guardrail
+  - deprecated-code-guardrail
 - id: STC.CODE.PRIMUS_INDEX.FUNCTION.001
   type: StoryClaim
   statement: Primus Index reveals identity quickly but does not reconstruct the full text.
-  canon_status: CANON
+  canon_status: DEPRECATED
   evidence_status: SUPPORTED
+  decision_ids:
+  - DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15
   objects:
   - OBJ.PRIMUS_INDEX
   tags:
-  - code-guardrail
+  - deprecated-code-guardrail
 - id: STC.CODE.DURATION.001
   type: StoryClaim
   statement: Full 1570 reconstruction takes weeks, not one night; the working model is approximately five to eight weeks of regular work.
-  canon_status: CANON
+  canon_status: DEPRECATED
   evidence_status: SUPPORTED
+  decision_ids:
+  - DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15
   subjects:
   - ENT.PERSON.CLAES
   - ENT.PERSON.BELOVED
@@ -353,12 +373,15 @@ claims:
     duration_days_max: 56
     precision: working-model
   tags:
-  - realism
+  - deprecated-code-duration
+  note: Direct chemical development reveals readable text; no multi-week cryptographic reconstruction is required.
 - id: STC.LASCASAS.PUBLICATION.1578.001
   type: StoryClaim
-  statement: In novel canon, Claes’ reconstructed text is led toward anonymous publication/distribution in 1578; the historical print is real, this provenance is fictional.
+  statement: In novel canon, the readable Diets/Brabant text revealed from Claes' memoriaal is led toward anonymous publication/distribution in 1578; the historical print is real, this provenance is fictional.
   canon_status: CANON
   evidence_status: PLAUSIBLE
+  decision_ids:
+  - DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15
   subjects:
   - ENT.PERSON.CLAES
   objects:
