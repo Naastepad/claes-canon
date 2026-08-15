@@ -1,4 +1,4 @@
-schema_version: 1.3.0
+schema_version: 1.3.1
 kind: EntityRegistry
 entities:
 - id: ENT.PERSON.CLAES
@@ -36,7 +36,7 @@ entities:
   roles:
   - father
   - merchant
-  - beer-trader
+  - biersteker
   - rhetorician
   - book-carrier
   household_residence:
@@ -50,7 +50,14 @@ entities:
   rhetorician_meeting_environment:
     location: ENT.LOC.GOES.ZUSTERHUIS
     decision_id: DEC.GOES.REDERIJKERS.MEETINGPLACE.2026-08-14
-    note: "Story placement aligned with the Nardusbloem's documented Zusterhuis chronology; Cornelis' exact chamber-name is not asserted here."
+    note: "Story placement aligned with the Nardusbloem's documented Zusterhuis chronology."
+  rhetorician_affiliation:
+    chamber: ENT.ORG.GOES.NARDUSBLOEM
+    status: CANON
+    decision_id: DEC.CORNELIS.REDERIJKER.NARDUS_CASTANIE_ORIGIN.2026-08-16
+    later_function: "formative fictional participant in the reform-minded/protestantiserende current that becomes ENT.ORG.GOES.CASTANIENBLOEM"
+    deken_status: OPEN
+    evidence_guardrail: "Nardusbloem membership and the 1560s Castanien origin are novel canon; the historical sources support the chamber context and a 1595 earliest surviving Castanien attestation, not Cornelis' membership or the exact split."
   death:
     window:
       earliest: '1568-07-01'
