@@ -2,7 +2,7 @@
 
 **Logical master ID:** `SB.CLAES.MASTER`
 
-This repository contains the **structured operating projection** of Revision 11 plus explicit later human canon decisions. The original long-form edition remains the lossless prose source from which the projection was transmuted; later decisions override conflicting or still-open source wording.
+This repository contains the **structured operating projection** of Revision 11 plus explicit later human canon decisions. The original long-form edition remains the lossless prose source from which the projection was transmuted; later explicit decisions override conflicting or still-open source wording.
 
 ## Source edition
 
@@ -20,24 +20,29 @@ The raw 3803-line prose source is not silently replaced by a summary. Every top-
 
 The storybible is distributed by responsibility:
 
-- `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` — dated broad operating synthesis; where it conflicts with explicit decisions after 13 August, later decisions and dedicated dossiers below outrank its stale passages until the next full synthesis regeneration;
-- `storybible/MEMORIAAL_BREVISIMA_PRINT_1564.md` — canonical detailed authority for the pre-binding hidden readable Brevísima print, period workshop formulation, Dee's pre-Boom handoff, graphite-only writing rule, knowledge boundary and direct green-vitriol reveal;
-- `storybible/FAMILY_CLAES_1542_1554.md` — canonical detailed family dossier for Tanneken, Jan and all four grandparents; where older broad prose still uses generic labels such as “mother” or “younger brother”, this dossier supplies the fixed names and family identities;
+- `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` — dated broad operating synthesis; where it conflicts with explicit decisions after 13 August, later decisions and dedicated dossiers below outrank stale passages until the next full synthesis regeneration;
+- `storybible/MEMORIAAL_BREVISIMA_PRINT_1564.md` — canonical detailed authority for the pre-binding hidden readable Brevísima print, Dee's pre-Boom handoff, graphite-only rule and direct green-vitriol reveal;
+- `storybible/MEMORIAAL_BREVISIMA_CASTOFF_1564.md` — canonical 17-quarto-sheet / 136-page cast-off and page-span model for the hidden readable text;
+- `storybible/ALCHEMICAL_CHEMICAL_PROCESS_CHAIN_CLAES_LIFELINE.md` — base detailed alchemical/chemical life-line dossier;
+- `storybible/ALCHEMICAL_PROCESS_REFINEMENT_2026-08-16.md` — **governing correction/refinement layer** for Green Lion semantics, strong-water failure, material continuity of Sol, Rode Leeuw, assay/Probierkunst, Morhof's 1602 Seton frame, safe sensory practice and Cornelis' Nardusbloem→Castanien line; where this conflicts with the 15 August base dossier, the 16 August refinement governs;
+- `storybible/ANTWERP_THREE_VISITS_ALCHEMICAL_ARC_1561_1569.md` — three-visit Antwerp/process scaffold; where it still contains 15 August Castanien-membership or looser chemical wording, the 16 August decisions/refinement dossier govern until that prose surface is fully regenerated;
+- `storybible/FAMILY_CLAES_1542_1554.md` — canonical detailed family dossier for Tanneken, Jan and all four grandparents;
 - `mapping/CONVERSION_LEDGER.yaml` — loss-prevention map from all 31 top-level source sections into the structured model;
 - `mapping/CONVERSION_REPORT.yaml` — conversion scope and next normalization passes;
-- `claims/SOURCE_CLAIMS.yaml`, `claims/SOURCE_CLAIMS_GOES_LIVING_CITY.yaml`, `claims/SOURCE_CLAIMS_GOES_2026-08-14.yaml`, `claims/SOURCE_CLAIMS_FAMILY_1540S.yaml`, `claims/SOURCE_CLAIMS_MEMORIAAL_PRINT_1564.yaml` — atomic historical/research/reconstruction claims;
-- `claims/STORY_CLAIMS.yaml`, `claims/STORY_CLAIMS_2026-08-14.yaml`, `claims/STORY_CLAIMS_FAMILY_1554.yaml` — atomic truths of the novel;
-- `canon/DECISIONS.yaml`, `canon/DECISIONS_2026-08-13.md`, `canon/DECISIONS_2026-08-14.md`, `canon/DECISIONS_2026-08-15.md` — explicit human canon decisions;
-- `entities/ENTITIES.yaml`, `entities/FAMILY_1554.yaml` plus setting-specific entity registries — stable persons, family units, locations and properties;
-- `objects/OBJECTS.yaml` — books, carriers and other continuity-sensitive objects, including `OBJ.MEMORIAAL` and `OBJ.GRAPHITE_STIFT`; former cipher/key objects are retained only as deprecated audit records where applicable;
-- `narrative/instances.yaml` — concrete chapters, scenes, sequences and events, including `NI.SCENE.MEMORIAAL_GIFT.1564.001`;
-- `narrative/arcs.yaml` — character, relationship and macro-transformation arcs;
-- `narrative/relationships.yaml` — explicit relationship dynamics, including the Dee handoff/knowledge asymmetry;
-- `narrative/motifs.yaml` — recurring sensory/symbolic structures;
-- `narrative/code_architecture.yaml` — despite the legacy filename, now the direct material reveal architecture; the former cipher/recovery design is kept only as deprecated audit history;
+- `claims/SOURCE_CLAIMS*.yaml` — atomic historical/research/reconstruction claims, including `SOURCE_CLAIMS_ALCHEMY_2026-08-16.yaml`;
+- `claims/STORY_CLAIMS*.yaml` — atomic truths of the novel, including `STORY_CLAIMS_ALCHEMY_REFINEMENT_2026-08-16.yaml`;
+- `canon/DECISIONS*.yaml` and dated `canon/DECISIONS_*.md` files — explicit human canon decisions; the 16 August alchemy/rederijker supplement is a current machine-readable authority alongside the core registry;
+- `entities/ENTITIES.yaml`, `entities/FAMILY_1554.yaml`, `entities/ALCHEMY_REDERIJKER_2026-08-16.yaml` plus setting-specific registries — stable persons, organizations, locations and properties;
+- `objects/OBJECTS.yaml` plus `objects/ALCHEMY_OBJECTS_2026-08-16.yaml` — continuity-sensitive objects/materials, including memoriaal, graphite, green vitriol, the materially continuous Sol fraction and Rode Leeuw/projectiepoeder;
+- `narrative/instances*.yaml` — concrete chapters, sequences and events, including the Castanien-origin sequence, Rode Leeuw, Saturnus and 13 March 1602 Enkhuizen projectio;
+- `narrative/arcs.yaml`, `narrative/alchemy_lifeline_refinement_2026-08-16.yaml` — character, macro and material-process arcs;
+- `narrative/knowledge_states*.yaml` — who knows what when, with the 16 August supplement distinguishing direct tannin reveal, strong-water failure, Sol continuity and late assay knowledge;
+- `narrative/relationships.yaml` — explicit relationship dynamics;
+- `narrative/motifs.yaml` plus the 16 August alchemical supplement — recurring sensory/symbolic structures; Castanea no longer functions as a Brevísima recovery key;
+- `narrative/code_architecture.yaml` — despite the legacy filename, now the direct material reveal architecture; former cipher/recovery design is deprecated audit history;
 - `narrative/world_goes_living_city.yaml` — year-sensitive Goes scene/blocking framework;
 - `narrative/CRAFT_GUARDRAILS.yaml` — writing and continuity constraints;
-- `canon/OPEN_DECISIONS.yaml` — unresolved matters and audit-preserved resolved open records;
+- `canon/OPEN_DECISIONS*.yaml` — unresolved matters and audit-preserved resolved/superseded records;
 - `lemma/` — only the deterministic subset that benefits from executable consistency rules.
 
 ## Explicit Goes and family normalization — 14 August 2026
@@ -56,30 +61,107 @@ The following points are closed by human decision:
 
 Historical/fictive guardrail: the archival corpus supports Claes Jacobsz. Nissepat and a Goese Jan Jansen-kuiper pattern, but it does **not** prove the novel genealogy. The maternal-grandfather identity is deliberately modeled rather than claimed as a securely identified historical ancestor; the same-name kuiper cluster may contain conflated individuals.
 
-The exact named Goese chamber to which fictional Cornelis belongs remains separately open; meeting location and chamber identity are not conflated. The unborn child's sex and name remain open/unknown. Tanneken and Jan's names are no longer open.
+The unborn child's sex and name remain open/unknown. Tanneken and Jan's names are no longer open.
 
 ## Explicit memoriaal / Brevísima normalization — 15 August 2026
 
-`DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15` is the current authority. It preserves the successful physical print-before-binding breakthrough of the earlier memoriaal decision but explicitly retires the cipher and key-recovery architecture because that architecture had existed only as a workaround for the earlier assumption that whole-book invisible printing was not feasible.
+`DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15` is the current authority. It preserves the successful physical print-before-binding breakthrough while retiring the cipher/key-recovery workaround.
 
-1. **The hidden book is the memoriaal paper itself.** The completed Diets/Brabant *Brevísima* is set in ordinary readable movable type and printed on loose sheets before binding. No hollow book, separately inserted miniature codex or ciphertext stream is required.
-2. **First-pass printing medium:** the canonical reconstructed workshop medium is clear filtered gallnut/tannin extract plus gum arabic, without green vitriol/iron, soot or visible pigment. Its exact historical performance remains subject to physical wet/press testing and must not be presented as a recovered Silvius recipe.
-3. **Period workshop start:** 2 medicinal drachmen broken gallnuts are steeped in 2½ medicinal ounces clear water; 2 medicinal ounces of the clearest filtered extract are retained; 1½ medicinal ounces gum arabic are dissolved in that extract, then tuned slightly with gum or water according to behavior on type.
-4. **Binding order:** set readable translation → print recto/verso → dry → fold/gather → bind. The apparently blank bound object is already the readable Brevísima carrier when Dee gives it to Claes.
-5. **Dee handoff before Boom:** Dee gives Claes both `OBJ.MEMORIAAL` and `OBJ.GRAPHITE_STIFT` before `NI.CHAPTER.1564.03`. He forbids Claes to write in the book with ink while Claes remains his pupil.
-6. **Two material layers:** Claes' own graphite observations remain visible while the tannin/gum typographic Brevísima remains latent. The graphite rule therefore functions simultaneously as pedagogy and material protection.
-7. **Knowledge asymmetry:** Claes knows the workbook and graphite-only rule but not the hidden print, Las Casas payload, tannin layer, material reason for avoiding ink or future vitriol reveal. Dee and Silvius know the hidden-print mechanism.
-8. **4 October 1564:** the security break remains an adult macro-Nigredo and political/network hinge, but it does not physically load, recipher, key, lock or unlock the memoriaal.
-9. **Direct reveal:** green vitriol supplies iron to the tannin-loaded typographic letterforms and reveals `OBJ.LASCASAS_PLAINTEXT` directly. The revealed text is already ordinary readable Diets/Brabant language; reveal is not decryption.
-10. **Cipher architecture retired:** `OBJ.LASCASAS_CIPHERTEXT`, the direct key, the 24×24 matrix, merels as recovery key, Monas as permutation key, Castanea as key anchor, the special coded Dodoens carrier, Primus Index and the multi-week nomenclator reconstruction are deprecated for the Brevísima mechanism. Merels, *Monas*, Dodoens and Castanea may survive independently where they serve another historical, pedagogical, thematic or character function.
-11. **Zovitius may remain a cue, not a key:** `GALLA LEO VIRIDIS` can point Claes toward gall/tannin and the Green Lion/green vitriol without opening a cryptographic chain.
-12. **Graphite historical guardrail:** the story function of Dee's graphite marking stift is fixed; its exact historically defensible physical form/provenance in Antwerp in 1564 remains open and must not automatically be rendered as a modern standardized wood-cased pencil.
+1. **The hidden book is the memoriaal paper itself.** The completed Diets/Brabant *Brevísima* is set in ordinary readable movable type and printed on loose sheets before binding.
+2. **First-pass printing medium:** canonical reconstruction is clear filtered gallnut/tannin extract plus gum arabic, without green vitriol/iron, soot or visible pigment; exact physical performance remains subject to wet/press testing.
+3. **Period workshop start:** 2 medicinal drachmen broken gallnuts steeped in 2½ medicinal ounces clear water; 2 medicinal ounces clear extract retained; 1½ medicinal ounces gum arabic dissolved, with small gum/water tuning by press behavior.
+4. **Binding order:** set readable translation → print recto/verso → dry → fold/gather → bind.
+5. **Dee handoff before Boom:** Dee gives Claes `OBJ.MEMORIAAL` and `OBJ.GRAPHITE_STIFT` before `NI.CHAPTER.1564.03`; he forbids ink while Claes remains his pupil.
+6. **Two material layers:** graphite remains visible while tannin/gum typography remains latent.
+7. **Knowledge asymmetry:** Claes knows the workbook/rule but not hidden Las Casas payload, tannin layer, material reason for avoiding ink or future reveal.
+8. **4 October 1564:** political/network and adult macro-Nigredo hinge only; it does not physically load/key/recipher the memoriaal.
+9. **Direct reveal:** green vitriol supplies iron to the tannin-loaded letterforms and directly reveals `OBJ.LASCASAS_PLAINTEXT`; reveal is reading, not decryption.
+10. **Cipher architecture retired:** former matrix/merels/Monas/Castanea/Dodoens/Primus/nomenclator chain is deprecated for Brevísima recovery. Those motifs may survive only independently where separately useful.
+11. **Zovitius may remain a cue:** `GALLA LEO VIRIDIS` can point toward gall/tannin and green vitriol, not a cipher key.
+12. **Graphite guardrail:** exact historically defensible physical form/provenance remains open; do not default to a modern standardized wood-cased pencil.
+13. **Format/cast-off:** `DEC.MEMORIAAL.FORMAT_17Q.2026-08-15` fixes 17 single-sheet quarto gatherings = 68 leaves = 136 latent pages, with the 1578 Brabant/Dutch witness used as capacity/text-sequence analogue rather than evidence for a real 1564 clandestine edition.
 
-For detailed authoring use, `storybible/MEMORIAAL_BREVISIMA_PRINT_1564.md` is the governing dossier. For source/reconstruction status, use `claims/SOURCE_CLAIMS_MEMORIAAL_PRINT_1564.yaml` and the corresponding source records.
+Detailed authorities: `MEMORIAAL_BREVISIMA_PRINT_1564.md` and `MEMORIAAL_BREVISIMA_CASTOFF_1564.md`.
+
+## Explicit alchemical / rederijker refinement — 16 August 2026
+
+The 15 August alchemical life-line remains canon, but three 16 August decisions sharpen its chemistry, provenance and Cornelis continuity:
+
+### 1. Cornelis: Nardusbloem member, formative Castanien origin
+
+`DEC.CORNELIS.REDERIJKER.NARDUS_CASTANIE_ORIGIN.2026-08-16` governs.
+
+- Cornelis is canonically a **member of the Nardusbloem / older Magdalena-linked Goese tradition**.
+- The Nardusbloem's documented 1563 institutional profile is strongly Catholic: Maria Magdalena, chapel, dodenmis/requiem obligations.
+- In novel canon Cornelis plays a formative role in a **reform-minded/protestantiserende current** arising during the confessional polarisation/hagepreek years of the 1560s; this current becomes the later Edele Castanienbloem.
+- The historical 1563 internal Nardusbloem pressure/conflict may form background but does not prove a confessional split.
+- Meertens' later religious-split hypothesis is historiography, not proof; his proposed confessional direction does not bind the novel.
+- **1595 is the earliest surviving source attestation of the Edele Castanienbloem, not a foundation date.** The novel's earlier origin is explicit historical fiction inside a documentary gap.
+- Later documented Nissepat participation around 1595–1596 functions as a deliberate family/historical resonance.
+- Whether Cornelis ever serves as deken remains `OPEN.CORNELIS.REDERIJKER.DEKEN.001`.
+
+This supersedes the 15 August shorthand that made Cornelis simply a Castanienbloem member. It does **not** change his fixed economic/civic role as Goes poorter and **biersteker**, or the guardrail that he is not a printer/brewery owner.
+
+### 2. Green Lion, strong waters and material continuity of Sol
+
+`DEC.ALCHEMY.GREEN_LION_SOL_CONTINUITY.2026-08-16` governs.
+
+Refined chain:
+
+`kies / vitriolic-pyritic rejected matter → weathering + water + air + time → vitrioolwater/green liquor → green vitriol / operational Groene Leeuw → direct tannin-text reveal + learned opening principle → ordinary strong-water failure on Sol → right compound corrosive relation → death/opening of Sol → materially continuous hidden Sol → red fixation / Rode Leeuw carrier → Saturn/lead → assay/cupellation-like reveal → projectio → release`.
+
+Hard guardrails:
+
+- **Green Lion is process-dependent vocabulary**, not a universal historical equation `Green Lion = FeSO4`. Samuel Norton explicitly supports semantic multivalence and a specific vitriol/copperas reading without universal identity.
+- **Green vitriol directly reveals the memoriaal** by completing the iron–tannin relation; it does **not** directly dissolve gold.
+- `De dood van Sol` requires a **failure-before-opening**: a strong water can attack lesser metals yet fail against Sol. The lesson is that greater force is not the same as the right relation.
+- From deliberate opening/dissolution onward, `OBJ.SOL_GOLD_FRACTION` is materially continuous. **No gold is created from lead and no fresh gold may be silently introduced later.**
+- `OBJ.RED_LION_PROJECTIEPOEDER` canonically carries already-present Sol. Only the **non-gold carrier composition** remains open.
+- Ercker 1574 supports the surrounding *Probierkunst*/small-fire assay culture; the novel's lead/cupellation-like mechanism is an author-side reconstruction and is **not** presented as a documented Seton procedure.
+- Do not use routine tasting of vitriol/corrosive solutions as a sensory diagnostic. Prefer colour, stain, crystallisation, sound, heat, fumes at distance, corrosion and tool/vessel behavior.
+- The chapter title `De loog van Antwerpen` may remain, but technical narration should use `vitrioolwater`, `uitloogwater`, `oplossing`, `liquor` or other context-appropriate wording rather than silently making the acidic vitriol stage an alkaline lye process.
+
+The governing material/narrative law is:
+
+> **What becomes visible was already present.**
+
+This is literal material continuity for hidden typography and Sol; it is an analogy rather than the same chemistry for testimony, memory and recovered *sinne*.
+
+### 3. Enkhuizen 1602: Morhof frame fixed, assay design still open
+
+`DEC.ENKHUIZEN.SETON_FRAME.1602.2026-08-16` governs the chosen historical frame:
+
+- **Enkhuizen**;
+- house of sailor **Jacob Hausfsen**;
+- **13 March 1602**;
+- approximately the **fourth hour after noon** (~16:00);
+- Alexander **Seton/Sidonius** as the historical-tradition figure.
+
+These details come from Daniel Georg Morhof's **1673 retrospective report**, not a contemporaneous eyewitness record. The source distance is part of the canon. Exact furnace choreography, quantities, additional witnesses, cupellation-like assay sequence, public/private degree and immediate aftermath remain open.
+
+Three readings must coexist:
+
+- early-modern witnesses can reasonably experience an extraordinarily convincing transmutation;
+- the author's material model reads it as already-present hidden Sol becoming visible/testable through process and assay;
+- for Claes the event is morally completed only when projectio becomes **release rather than possession**.
+
+The governing detail is `storybible/ALCHEMICAL_PROCESS_REFINEMENT_2026-08-16.md`.
+
+## Provenance added for the alchemical line
+
+The alchemical reconstruction now has dedicated evidence records rather than floating only as story prose:
+
+- `SRC-HIST-AGRICOLA-DE-RE-METALLICA-1556-VITRIOL-001` — vitriolic pyrites/water → green liquor → concentration/crystallised green vitriol process family;
+- `SRC-HIST-NORTON-KEY-ALCHEMY-GREEN-LION-001` — semantic multivalence of Green Lion plus specific vitriol/copperas usage;
+- `SRC-HIST-ERCKER-PROBIERKUNST-1574-001` — period assay/Probierkunst and small-fire testing/separation culture;
+- `SRC-HIST-MORHOF-SETON-ENKHUIZEN-1673-001` — retrospective Seton/Enkhuizen/Hausfsen/date/time tradition;
+- `SRC-HIST-GOES-REDERIJKERS-001` — Nardusbloem/meeting/confessional/attestation boundaries and historiographic split context.
+
+`claims/SOURCE_CLAIMS_ALCHEMY_2026-08-16.yaml` atomizes what those sources do and do not support.
 
 ## McKee/NOS interface
 
-The Claes repository does **not** contain universal McKee/Truby/etc. theory as canon. Concrete Narrative Instances may point to external `KO.*` Knowledge Objects for analysis. Thus:
+The Claes repository does **not** contain universal McKee/Truby/etc. theory as canon. Concrete Narrative Instances may point to external `KO.*` Knowledge Objects for analysis.
 
 `Narrative Knowledge Base (KO.*) + Claes Narrative Instances (NI.*) -> diagnostics`
 
@@ -91,18 +173,26 @@ while:
 
 1. An explicit current human canon decision (`DEC.*`) governs structured canon state.
 2. Active `STC.*` records are the machine-readable story truth.
-3. Dedicated later-decision dossiers such as `MEMORIAAL_BREVISIMA_PRINT_1564.md` and `FAMILY_CLAES_1542_1554.md` govern their domains where the dated broad synthesis is stale or less specific.
+3. Dedicated later-decision dossiers govern their domains where broad or earlier dossiers are stale or less specific. For the current alchemical/rederijker correction, `ALCHEMICAL_PROCESS_REFINEMENT_2026-08-16.md` outranks conflicting 15 August prose.
 4. The synchronized human-readable operating master expresses the broader active model coherently where not superseded.
 5. The lossless Revision 11 prose source governs meaning not yet atomized and not superseded by later decisions.
 6. Lemma may reject an impossible combination, but Lemma never invents story truth.
 7. AI proposals never become canon merely by being plausible.
 
-If structured data and the source prose appear to conflict, apply explicit later decisions first; otherwise create a proposal and resolve it explicitly. Never silently overwrite either layer.
+If structured data and source prose conflict, apply explicit later human decisions first; otherwise create a proposal and resolve it explicitly. Never silently overwrite either layer.
 
-## Conversion state
+## Conversion / synchronization state
 
-Revision 11 has completed a **first full semantic conversion pass**: all 31 top-level sections are accounted for, and the core chronology, character arc, macrostructure, objects, motifs, open decisions and key Narrative Instances have been normalized. The former cipher architecture is retained only as deprecated development history; the active memoriaal mechanism is the direct material reveal architecture. The Goes living-city, church, old-Nieuwstraat, rederijker, 1554 family-rupture, extended-family and 1564 memoriaal/Brevísima carrier layers have received additional structured normalization.
+Revision 11 has completed a first full semantic conversion pass, but later decisions intentionally continue to create synchronization work.
 
-The dated `LEMMA_MCKEE_MASTER_2026-08-13.md` and parts of `EXECUTIONS_REFORMATION_CLAES.md` still contain pre-decision wording for the old carrier/cipher architecture and must be regenerated or patched in a future synchronization pass. Until then, the explicit 15 August direct-text decision, active Story Claims, object/reveal registries and dedicated memoriaal dossier above are authoritative for that domain.
+As of the 16 August alchemy/rederijker refinement:
 
-This does **not** mean every paragraph has already become its own atomic record. The conversion ledger and sync status make remaining normalization measurable and loss-safe.
+- the new decisions, source claims, story claims, entities, objects, material-process arc, motifs, theme, knowledge-state supplement and Enkhuizen/Castanien Narrative Instances are structured;
+- Cornelis' core entity now explicitly records Nardusbloem membership and formative Castanien origin;
+- the old Castanea recovery-key function has been removed from the active motif registry;
+- dedicated historical provenance has been added for Agricola, Norton, Ercker and Morhof;
+- `review/MIGRATION_REVIEW.yaml` classifies the new Story Claims as explicit HUMAN_DECISION rather than allowing derived canon to appear silently.
+
+`review/SYNC_STATUS.md` remains the authoritative checklist for stale broad prose surfaces. In particular, the dated broad synthesis and older execution/code prose still require regeneration for retired cipher language, and the 15 August Antwerp/alchemy base dossiers may contain superseded shorthand that is governed by the 16 August correction layer until fully rewritten.
+
+This does **not** mean any older contradictory wording regains authority: the 16 August decisions and dedicated refinement dossier already govern the domain. `SYNC_PENDING` means prose/registry synchronization is incomplete, not that the canon decision itself is undecided.
