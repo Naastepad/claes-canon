@@ -1,0 +1,28 @@
+schema_version: 1.0.0
+kind: OpenDecisionSupplement
+decisions:
+- id: OPEN.CORNELIS.CASTANIE.DEKEN.001
+  domain: character_and_rederijker_network
+  priority: high
+  question: Is Cornelis merely a member of De Edele Castanienbloem or also deken during the relevant Antwerp/book-transport period?
+  status: OPEN
+  fixed:
+  - Cornelis is a member of De Edele Castanienbloem.
+  - Cornelis is a Goes poorter and biersteker.
+  - Cornelis' beer-route/civic/rederijker position can support book-transport plausibility.
+  guardrails:
+  - Do not write Cornelis as deken until this is explicitly closed.
+  - Do not use deken status to justify plot mechanics that can already be justified by poorter/member/biersteker/trust networks.
+- id: OPEN.ALCHEMY.ENKHUIZEN_1602.EVENT_DESIGN.001
+  domain: alchemical_lifeline
+  priority: high
+  question: Exact scene design, witnesses, assay/cupellation logic, risk level and moral consequence of the 1602 Enkhuizen transmutation/projectio event.
+  status: OPEN
+  fixed:
+  - The 1602 Enkhuizen event is the outward projectio of the projectiepoeder line.
+  - The event remains chemically interpretable as hidden Sol becoming visible through process/test/assay, not literal lead-to-gold creation.
+  - The event must force Claes toward release rather than ownership of the Work.
+  guardrails:
+  - Do not write a modern complete recipe.
+  - Do not close witnesses, location details or public/private degree without a separate decision.
+  - Do not make metallic success the final moral meaning of the novel.
