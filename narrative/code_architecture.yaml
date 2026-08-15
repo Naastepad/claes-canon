@@ -1,62 +1,78 @@
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: CodeArchitectureRegistry
 id: CODE.RECOVERY.CLAES.1570
 canon_status: CANON
-source_storybible_section: "4B COMPLETE CODEARCHITECTUUR"
-purpose: "Formal human-readable representation of the closed recovery architecture; Lemma consumes only deterministic subsets."
-chain:
-  - step: 1
+source_storybible_section: "4B COMPLETE CODEARCHITECTUUR + DEC.MEMORIAAL.BREVISIMA_PRINT_GIFT.2026-08-15"
+purpose: "Formal human-readable representation of the recovery architecture; physical ciphertext reveal and cryptographic key recovery are now explicit separate paths that must converge for full decoding. Lemma consumes only deterministic subsets."
+physical_carrier:
+  object: OBJ.MEMORIAAL
+  payload: OBJ.LASCASAS_CIPHERTEXT
+  production_time: "before Dee gives the memoriaal to Claes and before Boom, early 1564"
+  production_order: [set-ciphertext, invisible-tannin-gum-print-on-loose-sheets, dry, fold-gather, bind]
+  claes_initial_knowledge: "ordinary pedagogical memoriaal; graphite-only rule; no awareness of hidden payload"
+  security_break_effect: "4 October 1564 changes access/key architecture; it does not load or recipher the memoriaal"
+
+reveal_chain:
+  - step: R1
     id: CODE.STEP.ZOVITIUS_TRIGGER
     input: OBJ.ZOVITIUS_1570_TRIGGER
     output: "GALLA LEO VIRIDIS"
     meaning: "personal activation signal"
-  - step: 2
+  - step: R2
     id: CODE.STEP.VITRIOL
     input: "GALLA LEO VIRIDIS"
     output: "controlled use of green vitriol"
     prerequisite: "Dee-memory + suitable material handling"
-  - step: 3
+  - step: R3
     id: CODE.STEP.MEMORIAAL_REVEAL
     input: OBJ.MEMORIAAL
-    output: OBJ.MERELS_24
-    effect: "hidden recto layer becomes readable"
-  - step: 4
+    output: OBJ.LASCASAS_CIPHERTEXT
+    effect: "green vitriol completes the iron-tannin colour reaction and makes the already printed encoded Brevísima typographic layer visible"
+    guardrail: "reveal is not yet plaintext decoding"
+
+key_recovery_chain:
+  entry_status: OPEN_AFTER_MEMORIAAL_REDESIGN
+  open_question: "exact in-world placement/delivery/entry point of the 24 complete merels problems"
+  - step: K1
     id: CODE.STEP.MERELS
     input: OBJ.MERELS_24
     output: "theorem permutation I-XXIV"
     checksum: "I through XXIV exactly once"
-  - step: 5
+  - step: K2
     id: CODE.STEP.MONAS
     input: OBJ.MONAS_CLAES
     output: "row and column permutations"
     function: "ordering"
-  - step: 6
+  - step: K3
     id: CODE.STEP.MATRIX
     input: "24 problem-order notae + 24 theorem-order notae"
     output: "24 x 24 matrix"
     combinations: 576
-  - step: 7
+  - step: K4
     id: CODE.STEP.CASTANEA
     input: OBJ.CASTANEA
     output: "entry into special Dodoens carrier"
     function: "wayfinding/authentication"
-  - step: 8
+  - step: K5
     id: CODE.STEP.DODOENS
     input: OBJ.DODOENS_CARRIER
     output: "nine-table third dimension"
     tables: [C, N, H, F, P, L, D, O, S]
     nomenclator_values: 5184
-  - step: 9
+  - step: K6
     id: CODE.STEP.PRIMUS_INDEX
     input: OBJ.PRIMUS_INDEX
-    output: "identity: Bartolome de Las Casas / destruction of the Indies / Diets-Brabant translation"
+    output: "identity confirmation: Bartolome de Las Casas / destruction of the Indies / Diets-Brabant translation"
     narrative_time_to_identity_minutes: {min: 30, max: 60}
-  - step: 10
-    id: CODE.STEP.FULL_DECODE
-    input: [OBJ.LASCASAS_CIPHERTEXT, OBJ.DODOENS_CARRIER]
-    output: OBJ.LASCASAS_PLAINTEXT
-    work_duration_days: {min: 35, max: 56}
-    work_hours_estimate: {min: 172, max: 256}
+
+convergence:
+  id: CODE.STEP.FULL_DECODE
+  requires:
+  - visible OBJ.LASCASAS_CIPHERTEXT from reveal_chain
+  - completed key_recovery_chain through OBJ.DODOENS_CARRIER and OBJ.PRIMUS_INDEX
+  output: OBJ.LASCASAS_PLAINTEXT
+  work_duration_days: {min: 35, max: 56}
+  work_hours_estimate: {min: 172, max: 256}
 
 merels:
   count: 24
@@ -65,6 +81,7 @@ merels:
   reader_layer_numbering: false
   p15_rule: "not an in-world lacuna, checksum or hidden clue"
   theorem_sequence_by_problem: [I, II, III, IV, V, XXIV, XIV, VII, VIII, IX, X, XI, XII, XV, XVI, XVII, XVIII, XIX, XX, XXI, XIII, XXIII, XXII, VI]
+  placement_status: OPEN_AFTER_MEMORIAAL_REDESIGN
   local_notation_grammar:
     shape: "which locally distinguished stone"
     letter: "which problem-local relevant locus"
@@ -75,6 +92,7 @@ merels:
     - "historical arrows invented from modern trail visualisation"
     - "universal meaning assigned to stone shape"
     - "pigment treated automatically as party identity"
+    - "automatic assumption that merels are the tannin-printed hidden content of the memoriaal"
 
 monas:
   note_alphabet:
@@ -121,35 +139,40 @@ cipher:
   spelling_subword_segments: 1671
   phrase_segments: 3371
   round_trip_verified: true
+  physical_state_early_1564: "printed invisibly in OBJ.MEMORIAAL before binding"
 
 role_split:
   claes:
-    indispensable_for: ["merels skill", "Dee memory", "personal Monas", "Castanea memory", "pattern recognition", "clear-text reconstruction choices"]
+    indispensable_for: ["Dee trigger memory", "merels skill", "personal Monas", "Castanea memory", "pattern recognition", "clear-text reconstruction choices"]
   beloved:
-    indispensable_for: ["materials", "botanical recognition", "Dodoens loci", "weighing and notation", "error checking", "challenging unsupported elegance"]
+    indispensable_for: ["materials", "controlled development", "botanical recognition", "Dodoens loci", "weighing and notation", "error checking", "challenging unsupported elegance"]
   principle: "collaboration demonstrates that secrecy is not the same as isolation"
 
 hard_guardrails:
   - "The completed Diets/Brabant plaintext exists before Antwerp encryption."
-  - "Cornelis is original intended practical recipient."
-  - "October 1564 changes access, not plaintext, nomenclator or ciphertext."
+  - "At least Claes' ciphertext set is invisibly printed on the memoriaal sheets and bound before Boom in early 1564."
+  - "Claes may possess the ciphertext without knowing that it exists."
+  - "Dee's graphite-only rule protects the tannin-loaded pages; Claes knows the rule but not the hidden reason."
+  - "October 1564 changes access/key architecture, not plaintext, nomenclator, ciphertext or physical loading of the memoriaal."
   - "Merels is ad-hoc key recovery, not original cipher and not reciphering."
-  - "Cornelis knows Claes is fallback but never knows the recovery key."
+  - "The exact in-world entry/placement of the 24 merels problems is OPEN after the memoriaal redesign."
+  - "Cornelis knows Claes is fallback but never knows the complete recovery key."
   - "Zovitius is trigger only."
-  - "Vitriool reveals memoriaal, not Las Casas directly."
-  - "Memoriaal yields merels/theorem/Monas bridge, not Dodoens values."
+  - "Green vitriol reveals the hidden Las Casas ciphertext in the memoriaal directly; visible ciphertext is not plaintext."
   - "Monas yields order, not plaintext."
   - "Castanea yields wayfinding/authentication, not numeric counting."
   - "Dodoens is required for content values."
-  - "Primus Index yields identity, not full text."
+  - "Primus Index yields identity confirmation, not full text."
   - "Full reconstruction takes weeks."
   - "1578 publication is novel canon; actual historical provenance is not claimed."
 
 lemma_candidates:
+  - rule_family: can_reveal_ciphertext
+    prerequisites: ["trigger_known", "memoriaal_available", "vitriol_available"]
+  - rule_family: can_recover_theorem_sequence
+    prerequisites: ["merels_available", "merels_skill"]
   - rule_family: can_decode
-    prerequisites: ["trigger_known", "memoriaal_available", "vitriool_available", "merels_skill", "monas_copy_available", "dodoens_carrier_available"]
-  - rule_family: recovery_stage_available
-    dependency: "strict ordered chain"
+    prerequisites: ["ciphertext_revealed", "merels_available", "merels_skill", "monas_copy_available", "dodoens_carrier_available", "primus_index_available"]
   - rule_family: actor_can_possess_required_object
   - rule_family: actor_can_know_required_knowledge
   - rule_family: checksum_valid
