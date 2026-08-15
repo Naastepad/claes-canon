@@ -1,39 +1,66 @@
 # Memoriaal / verborgen Brevísima-druk — 1564
 
 **Status:** CANON story process / historically disciplined technical reconstruction  
-**Decision:** `DEC.MEMORIAAL.BREVISIMA_PRINT_GIFT.2026-08-15`  
+**Decision:** `DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15`  
 **Primary object:** `OBJ.MEMORIAAL`  
-**Payload:** `OBJ.LASCASAS_CIPHERTEXT`  
+**Payload:** `OBJ.LASCASAS_PLAINTEXT`  
 **Paired writing tool:** `OBJ.GRAPHITE_STIFT`
 
 ## 1. Canonical core
 
-The translated, already encoded Diets/Brabant *Brevísima* is not hidden as a small physical book inside a hollow larger book. The hidden book **is the writing paper of Claes' memoriaal**.
+The completed Diets/Brabant translation of the *Brevísima* is hidden **chemically, not cryptographically**.
 
-Silvius' shop sets the encoded text in movable type and prints it on loose sheets before binding with a nearly invisible first-pass medium containing gallnut/tannin extract and gum arabic but **no iron/vitriol, no soot and no visible pigment**. After recto/verso printing, drying and normal imposition, the sheets are folded/gathered and bound as an apparently blank memoriaalboek.
+Silvius' shop sets the translation in ordinary readable movable type and prints it on loose sheets before binding with a nearly invisible first-pass medium containing gallnut/tannin extract and gum arabic but **no intentional iron/vitriol, no soot and no visible pigment**. After recto/verso printing, drying and normal imposition, the sheets are folded/gathered and bound as an apparently blank memoriaalboek.
 
-John Dee gives this already prepared book to Claes before Claes departs for Boom in early 1564. Claes does not know the pages already carry ciphertext.
+The hidden book is therefore not a separate miniature book, hollow compartment or coded stream. The apparently blank writing paper **is** the translated *Brevísima* in a latent chemical state.
+
+John Dee gives this already prepared book to Claes before Claes departs for Boom in early 1564. Claes does not know that the pages already carry readable printed text.
 
 At the same handoff Dee gives Claes a graphite marking stift and orders him not to use ink in the memoriaal for as long as he remains Dee's pupil. Claes experiences this as a rule of observation and disciplined notation. Dee also knows that ordinary iron-gall ink would introduce iron into tannin-loaded pages and could locally disturb or activate the hidden chemical layer.
 
-## 2. Production order
+## 2. Why the cipher is removed
+
+The former `FINAL CIPHER-1564` architecture was introduced as a workaround when whole-book invisible printing seemed technically impracticable. Once the tannin/gum movable-type reconstruction provides a plausible path to print the complete readable translation on loose sheets, that premise disappears.
+
+The project therefore does **not** stack a cipher on top of chemical concealment merely because the cipher architecture had already been designed.
+
+The canonical principle is now:
+
+**chemical steganography is the concealment mechanism.**
+
+Silvius sets language. Green vitriol later makes that same language visible.
+
+The following former Brevísima-access mechanisms are deprecated:
+
+- `OBJ.LASCASAS_CIPHERTEXT` / `FINAL CIPHER-1564`;
+- direct cryptographic key;
+- 24×24 matrix;
+- merels as recovery key;
+- *Monas* as row/column permutation key;
+- Castanea as key anchor;
+- special Dodoens nomenclator carrier;
+- Primus Index;
+- multi-week cryptographic reconstruction.
+
+Merels, *Monas*, Dodoens and Castanea may remain elsewhere in the novel where they have independent historical, pedagogical, thematic or character value. They are simply no longer required to reveal the *Brevísima*.
+
+## 3. Production order
 
 The fixed order is:
 
-1. completed Diets/Brabant plaintext exists;
-2. plaintext is encoded as `FINAL CIPHER-1564 v2.7`;
-3. encoded stream is set in movable type;
-4. loose memoriaal sheets are printed recto and verso with the tannin/gum first-pass medium;
-5. sheets are fully dried;
-6. sheets are folded and gathered according to their imposition;
-7. gathered sheets are bound as the apparently blank memoriaal;
-8. Dee gives the bound memoriaal and graphite stift to Claes before Boom;
-9. Claes uses the book as a workbook without knowing its hidden payload;
-10. much later, controlled green-vitriol development reveals the already present typographic ciphertext.
+1. a completed Diets/Brabant readable translation exists;
+2. the translation is set in ordinary movable type;
+3. loose memoriaal sheets are printed recto and verso with the tannin/gum first-pass medium;
+4. sheets are fully dried;
+5. sheets are folded and gathered according to their imposition;
+6. gathered sheets are bound as the apparently blank memoriaal;
+7. Dee gives the bound memoriaal and graphite stift to Claes before Boom;
+8. Claes uses the book as a workbook without knowing its hidden payload;
+9. much later, controlled green-vitriol development reveals the already present readable typographic text.
 
-No secret physical insertion takes place after 4 October 1564.
+No secret physical insertion, reciphering or keying takes place after 4 October 1564.
 
-## 3. Canonical workshop starting formulation
+## 4. Canonical workshop starting formulation
 
 This is a **story-canon reconstructed starting formulation**, expressed in period-compatible medicinal weights. It is not claimed as a recovered Plantin/Silvius recipe.
 
@@ -66,9 +93,9 @@ A sacrificial proof may be developed with the working reference:
 - **½ medicinal drachme green vitriol**;
 - in **4 medicinal ounces clear water**.
 
-The proof lets Silvius judge whether the hidden print has transferred completely even though the production sheets themselves remain visually unreadable. A developed proof is not bound into Claes' memoriaal.
+The proof lets Silvius judge whether the hidden readable print has transferred completely even though the production sheets themselves remain visually unreadable. A developed proof is not bound into Claes' memoriaal.
 
-## 4. Modern conversion for author/research use only
+## 5. Modern conversion for author/research use only
 
 Using the Antwerp medicinal-weight reconstruction currently adopted for the project, approximately:
 
@@ -82,17 +109,17 @@ Using the Antwerp medicinal-weight reconstruction currently adopted for the proj
 
 These values are **not dialogue or in-world recipe language**. They exist only for reproducibility and future wet testing.
 
-## 5. Printing practice
+## 6. Printing practice
 
 The reconstruction keeps the historical Antwerp relief-printing apparatus intact:
 
-- movable metal type and locked form;
+- ordinary movable metal type and locked form;
 - dedicated clean inking balls or equivalent clean period-compatible application surfaces, uncontaminated by ordinary oily black ink;
 - tympan/frisket and hand press;
 - correct recto/verso register and imposition;
 - drying before the reverse side is printed and before binding.
 
-Normal sixteenth-century printer's ink is oil/turpentine/soot based and very sticky. The tannin/gum medium is therefore an intentional experimental departure in **medium**, not in the existence of the printing apparatus or the printer's ability to tune tack, distribution, paper condition and pull.
+Normal sixteenth-century printer's ink is oil/turpentine/soot based and very sticky. The tannin/gum medium is therefore an intentional experimental departure in **medium**, not in the printing apparatus or in Silvius' skill at setting readable text, tuning tack, distributing a film, conditioning paper and controlling the pull.
 
 For the hidden process, the optimum is not the thickest possible ink. It is the thinnest coherent reactive film that transfers the complete letter while leaving the least visible tint, gloss and mechanical impression.
 
@@ -102,7 +129,7 @@ The press can leave a physical impression in the sheet. This remains the princip
 
 The precise optimum between dry/slightly conditioned paper, gum concentration, transfer and *moet* remains experimental under `OPEN.MATERIAL.WET_TEST.001`.
 
-## 6. Chemical state of the book
+## 7. Chemical state of the book
 
 Before development the page carries, locally in the typographic letterforms:
 
@@ -110,21 +137,21 @@ Before development the page carries, locally in the typographic letterforms:
 
 but no intentional iron salt. The result should be pale to nearly invisible rather than magically optically nonexistent.
 
-During later controlled development, green vitriol supplies iron. The iron complexes with the tannins where the hidden type deposited them, producing a dark iron-tannin/gallate-type image. Therefore the second component completes the visible ink only much later.
+During later controlled development, green vitriol supplies iron. The iron complexes with the tannins where the hidden type deposited them, producing a dark iron-tannin/gallate-type image. The text appears in the same readable letterforms Silvius originally set.
 
 Conceptually:
 
-**Silvius prints the first half of the ink; Claes later supplies the second.**
+**Silvius prints the first half of the visible ink; Claes later supplies the second.**
 
 This is a story interpretation of the chemistry, not a claim that historical printers described the process that way.
 
-## 7. Dee's handoff and the graphite rule
+## 8. Dee's handoff and the graphite rule
 
 `NI.SCENE.MEMORIAAL_GIFT.1564.001` occurs in Antwerp before `NI.CHAPTER.1564.03` (*De Kies Van Boom*).
 
 Dee gives Claes:
 
-- `OBJ.MEMORIAAL`, already carrying the hidden encoded Brevísima; and
+- `OBJ.MEMORIAAL`, already carrying the hidden readable Brevísima; and
 - `OBJ.GRAPHITE_STIFT`.
 
 His rule is fixed:
@@ -135,63 +162,65 @@ The exact wording in prose is not fixed by canon, only the prohibition and its d
 
 Claes may use graphite for observations, diagrams, measurements, corrections and marginal thinking. The rule simultaneously creates a pedagogical habit and protects the hidden chemical carrier, but Claes knows only the pedagogical surface reason.
 
+The physical book therefore accumulates two simultaneous layers:
+
+- Claes' visible graphite life/work notes;
+- Silvius' latent readable Brevísima beneath and between them.
+
 ### Graphite guardrail
 
 The story function of a graphite marking stift is fixed. Its exact historically defensible physical form and provenance in Dee's Antwerp environment in early 1564 remain open under `OPEN.GRAPHITE_STIFT.PROVENANCE.1564.001`. Do not automatically depict a later standardized wood-cased pencil.
 
-## 8. Knowledge boundary
+## 9. Knowledge boundary
 
-Before the 1570 activation Claes may know:
+Before the later reveal Claes may know:
 
 - Dee gave him the memoriaal;
 - Dee ordered graphite rather than ink;
 - the book is useful for his own observations;
-- its pages may acquire his own graphite traces.
+- its pages contain his own graphite traces.
 
 He does **not** know:
 
 - that the paper was already printed before binding;
-- that the hidden print is the encoded translated *Brevísima*;
+- that the hidden print is the translated *Brevísima*;
 - that gallnut/tannin is present in typographic letterforms;
 - why ordinary ink is materially dangerous;
-- that green vitriol can reveal the hidden text;
-- the complete recovery architecture.
+- that green vitriol can reveal the hidden text.
 
-Physical possession is therefore explicitly separated from knowledge.
+He does not need to know or recover a cipher key because no cipher is present.
 
-## 9. Effect on 4 October 1564
+Physical possession is therefore explicitly separated from knowledge, but not from readability once the chemical layer is developed.
 
-The security breach on 4 October 1564 remains canonically crucial, but its function is narrower and cleaner:
+## 10. Effect on 4 October 1564
 
-- **before 4 October:** the hidden ciphertext already exists in Claes' book;
-- **after 4 October:** Cornelis becomes operationally unsafe for direct-key access and Claes becomes an unwitting fallback;
-- the ciphertext is **not** reciphered;
-- the memoriaal is **not** reopened and secretly loaded;
-- the binding is **not** replaced to insert the Brevísima.
+The security breach on 4 October 1564 remains canonically important as political/network pressure and as the adult macro-Nigredo hinge.
 
-This explicitly supersedes `STC.MEMORIAAL.SECRET_PHASE.001`, retained only as deprecated audit history.
+It does **not** perform any operation on the memoriaal:
 
-## 10. Consequence for the 1570 recovery architecture
+- before 4 October the hidden readable text already exists in Claes' book;
+- after 4 October exactly the same hidden readable text remains there;
+- the memoriaal is not reopened or secretly loaded;
+- the text is not encoded or reciphered;
+- no direct key is withheld or destroyed as a prerequisite for reading the memoriaal.
 
-Green vitriol now reveals **`OBJ.LASCASAS_CIPHERTEXT` directly** from `OBJ.MEMORIAAL`.
+`STC.MEMORIAAL.SECRET_PHASE.001` and `STC.CORNELIS.FALLBACK_KNOWLEDGE.001` are retained only as deprecated audit history.
 
-That does not make the text intelligible: it reveals the encoded stream, not the plaintext.
+## 11. Later reveal
 
-The established key-recovery architecture remains:
+The simplest canonical reveal chain is:
 
-**merels → theorem I–XXIV → personal Monas marginalia → 24×24 matrix → Castanea → nine Dodoens tables → Primus Index → nomenclator → clear-text reconstruction.**
+**material cue / remembered Dee context → green vitriol → readable Brevísima.**
 
-However, the old assumption that the 24 merels problems themselves form the tannin-hidden memoriaal layer is rejected. The exact in-world placement/delivery/entry point of `OBJ.MERELS_24` is reopened under `OPEN.MERELS.ENTRY_AFTER_MEMORIAAL_REDESIGN.001`.
+`OBJ.ZOVITIUS_1570_TRIGGER` may remain as the compact clue **GALLA LEO VIRIDIS**, because that points naturally toward gall/tannin and the Green Lion/green vitriol. It is not a cipher key and no specific key architecture must follow it.
 
-Thus two routes must eventually converge:
+When controlled green-vitriol solution reaches the tannin-printed letterforms, the previously latent typography darkens. Claes sees ordinary words and sentences. The moment of recognition is therefore immediate in kind, even if developing, drying and reading the whole book still takes ordinary physical time.
 
-**physical reveal:** Zovitius → GALLA LEO VIRIDIS → green vitriol → visible ciphertext;
+The dramatic problem after reveal is not “How do I decode this?” but:
 
-**key recovery:** merels → Monas → Castanea → Dodoens → nomenclator.
+**“What is this testimony, why was it placed in my hands, and what does it now ask of me?”**
 
-Only together do they permit full decoding.
-
-## 11. Evidence and reconstruction boundary
+## 12. Evidence and reconstruction boundary
 
 ### Historically supported context
 
@@ -202,6 +231,8 @@ The project source record `SRC-HIST-PLANTIN-PRINT-DIALOGUES-1567-001` supports t
 ### Authorial reconstruction
 
 `SC.RECON.MEMORIAAL.TANNIN_GUM_PRINT.001` marks the central technical proposition as **PLAUSIBLE reconstruction**, not verified historical practice: tannin/gallnut + gum arabic is used as a near-invisible first-pass typographic medium and later developed with green vitriol.
+
+The decision to print ordinary readable language rather than ciphertext is a story-design consequence of that technical reconstruction, not a separate historical claim.
 
 ### Still open experimentally
 
@@ -218,15 +249,16 @@ The project source record `SRC-HIST-PLANTIN-PRINT-DIALOGUES-1567-001` supports t
 
 Until that test exists, prose may confidently use the **canon story process**, but research commentary must not call it a documented historical Silvius technique.
 
-## 12. Hard guardrails
+## 13. Hard guardrails
 
 1. No hollow book or separate miniature Brevísima is required for Claes' carrier.
-2. The Brevísima ciphertext is printed on loose sheets **before binding**.
+2. The readable Diets/Brabant Brevísima is printed on loose sheets **before binding**.
 3. The pages are already loaded before Dee gives Claes the memoriaal and before Boom.
-4. Dee gives the graphite stift in the same handoff and forbids ink while Claes remains his pupil.
-5. Claes does not know the hidden reason for the graphite rule.
-6. 4 October 1564 changes key/access security, not the book's physical payload.
-7. Green vitriol reveals ciphertext directly, not plaintext.
-8. The 24 merels problems remain canon, but their new in-world entry/placement is open.
-9. The recipe is a historically disciplined reconstruction, not archival fact.
-10. The wet/press test remains required before hard claims about exact performance or invisibility.
+4. Silvius sets ordinary readable language, not ciphertext.
+5. Dee gives the graphite stift in the same handoff and forbids ink while Claes remains his pupil.
+6. Claes does not know the hidden reason for the graphite rule.
+7. Green vitriol reveals readable text directly.
+8. No nomenclator, 24×24 matrix, Dodoens carrier, Primus Index or merels/Monas/Castanea recovery chain is required for the Brevísima.
+9. 4 October 1564 does not alter the book's physical payload or create a key-access condition.
+10. The recipe is a historically disciplined reconstruction, not archival fact.
+11. The wet/press test remains required before hard historical claims about exact performance or invisibility.
