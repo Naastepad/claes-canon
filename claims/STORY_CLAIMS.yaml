@@ -1,6 +1,6 @@
 schema_version: 1.3.0
 kind: StoryClaimRegistry
-claim_count: 34
+claim_count: 37
 claims:
 - id: STC.CLAES.BIRTH.001
   type: StoryClaim
@@ -131,14 +131,17 @@ claims:
   - macrostructure
 - id: STC.MEMORIAAL.GIFT.001
   type: StoryClaim
-  statement: Dee gives Claes the ordinary-looking memoriaal before Boom in early 1564 as a pedagogical workbook.
+  statement: Before the journey to Boom in early 1564, Dee gives Claes the apparently blank memoriaal as a pedagogical workbook; unbeknownst to Claes it is already the bound hidden carrier of the encoded translated Brevísima, and the same handoff includes a graphite stift.
   canon_status: CANON
-  evidence_status: SUPPORTED
+  evidence_status: PLAUSIBLE
+  decision_ids:
+  - DEC.MEMORIAAL.BREVISIMA_PRINT_GIFT.2026-08-15
   subjects:
   - ENT.PERSON.CLAES
   - ENT.PERSON.JOHN_DEE
   objects:
   - OBJ.MEMORIAAL
+  - OBJ.GRAPHITE_STIFT
   story_time:
     earliest: '1564-01-01'
     latest_exclusive: '1564-04-01'
@@ -146,8 +149,12 @@ claims:
 - id: STC.MEMORIAAL.SECRET_PHASE.001
   type: StoryClaim
   statement: Only after the safety breach of 4 October 1564 does Claes’ existing memoriaal become a blind recovery carrier.
-  canon_status: CANON
+  canon_status: DEPRECATED
   evidence_status: SUPPORTED
+  superseded_by:
+  - STC.MEMORIAAL.BREVISIMA_CARRIER.001
+  decision_ids:
+  - DEC.MEMORIAAL.BREVISIMA_PRINT_GIFT.2026-08-15
   subjects:
   - ENT.PERSON.CLAES
   objects:
@@ -155,6 +162,61 @@ claims:
   story_time:
     earliest: '1564-10-04'
     precision: lower-bound
+  note: Retained for audit only; the memoriaal is already the hidden Brevísima carrier before Boom.
+- id: STC.MEMORIAAL.BREVISIMA_CARRIER.001
+  type: StoryClaim
+  statement: The encoded translated Diets/Brabant Brevísima is printed invisibly on loose sheets before binding; those sheets are folded/gathered and bound as Claes’ apparently blank memoriaal before Dee gives it to him in early 1564.
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids:
+  - DEC.MEMORIAAL.BREVISIMA_PRINT_GIFT.2026-08-15
+  subjects:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.JOHN_DEE
+  - ENT.PERSON.WILLEM_SILVIUS
+  objects:
+  - OBJ.MEMORIAAL
+  - OBJ.LASCASAS_CIPHERTEXT
+  story_time:
+    earliest: '1564-01-01'
+    latest_exclusive: '1564-04-01'
+    precision: interval
+  tags:
+  - carrier
+  - hidden-print
+  - author-decision
+- id: STC.MEMORIAAL.PRINT_PROCESS.001
+  type: StoryClaim
+  statement: Silvius’ clandestine memoriaal print uses a clear filtered gallnut/tannin extract with gum arabic and no vitriol, soot or pigment; the canonical starting recipe is 2 drachmen gallnuts steeped in 2½ medicinal ounces clear water, 2 medicinal ounces clear extract retained, then 1½ medicinal ounces gum arabic dissolved in it, with small gum/water adjustments by print behaviour.
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids:
+  - DEC.MEMORIAAL.BREVISIMA_PRINT_GIFT.2026-08-15
+  subjects:
+  - ENT.PERSON.WILLEM_SILVIUS
+  objects:
+  - OBJ.MEMORIAAL
+  source_refs:
+  - SC.RECON.MEMORIAAL.TANNIN_GUM_PRINT.001
+  tags:
+  - material-process
+  - technical-reconstruction
+- id: STC.MEMORIAAL.GRAPHITE_RULE.001
+  type: StoryClaim
+  statement: Dee gives Claes a graphite stift with the memoriaal and forbids him to use ink in the book for as long as Claes remains Dee’s pupil; Claes understands this as a pedagogical rule and does not know that it also protects the tannin-loaded hidden print from iron-gall ink.
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids:
+  - DEC.MEMORIAAL.BREVISIMA_PRINT_GIFT.2026-08-15
+  subjects:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.JOHN_DEE
+  objects:
+  - OBJ.MEMORIAAL
+  - OBJ.GRAPHITE_STIFT
+  tags:
+  - pedagogy
+  - material-security
 - id: STC.CORNELIS.FALLBACK_KNOWLEDGE.001
   type: StoryClaim
   statement: Cornelis knows that Claes is being used unknowingly as a fallback but does not know the recovery key itself.
@@ -205,20 +267,23 @@ claims:
     precision: year
 - id: STC.CODE.RECOVERY_SEQUENCE.001
   type: StoryClaim
-  statement: The canonical recovery chain is Zovitius 1570 → GALLA LEO VIRIDIS → green vitriol → memoriaal → 24 merels problems → theorem I–XXIV → personal Monas marginalia → 24×24 matrix → Castanea → nine Dodoens tables → Primus Index → nomenclator → Las Casas.
+  statement: The recovery architecture now separates physical reveal from key recovery: Zovitius 1570 → GALLA LEO VIRIDIS → green vitriol → memoriaal → hidden Las Casas ciphertext becomes visible; merels → theorem I–XXIV → personal Monas marginalia → 24×24 matrix → Castanea → nine Dodoens tables → Primus Index → nomenclator remains the canonical key-recovery chain, while the exact in-world entry/placement of the 24 merels problems after the memoriaal redesign is OPEN.
   canon_status: CANON
   evidence_status: SUPPORTED
+  decision_ids:
+  - DEC.MEMORIAAL.BREVISIMA_PRINT_GIFT.2026-08-15
   objects:
   - OBJ.ZOVITIUS_1570_TRIGGER
   - OBJ.MEMORIAAL
+  - OBJ.LASCASAS_CIPHERTEXT
   - OBJ.MERELS_24
   - OBJ.MONAS_CLAES
   - OBJ.CASTANEA
   - OBJ.DODOENS_CARRIER
   - OBJ.PRIMUS_INDEX
-  - OBJ.LASCASAS_CIPHERTEXT
   tags:
   - code-chain
+  - open-entry-link
 - id: STC.CODE.MERELS.RECOVERY_NOT_CIPHER.001
   type: StoryClaim
   statement: Merels is an ad-hoc recovery layer and not the original cipher; the 35,584-group stream is not re-encoded after October 1564.
