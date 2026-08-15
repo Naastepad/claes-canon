@@ -129,3 +129,20 @@ decisions:
   - REL.CLAES.TANNEKEN
   - REL.CLAES.MATERNAL_GRANDPARENTS
   rationale: "The author explicitly approved the proposed family architecture. Historical source and fiction remain separated: Claes Jacobsz. and the Goese Jan Jansen-kuiper evidence are historical anchors/models, while the kinship assignments, Lijsbet, Mayken, the exact maternal-grandfather identity/death and all cross-generation relations are novel canon."
+- id: DEC.MEMORIAAL.BREVISIMA_PRINT_GIFT.2026-08-15
+  type: CanonDecision
+  status: CANON
+  decision: The encoded Diets/Brabant Brevísima is printed before binding on loose sheets with a nearly invisible gallnut/tannin plus gum-arabic medium, bound as Claes' apparently blank memoriaal, and given by John Dee to Claes before the journey to Boom in early 1564 together with a graphite stift; Dee forbids ink while Claes remains his pupil.
+  affects:
+  - STC.MEMORIAAL.GIFT.001
+  - STC.MEMORIAAL.SECRET_PHASE.001
+  - STC.MEMORIAAL.BREVISIMA_CARRIER.001
+  - STC.MEMORIAAL.PRINT_PROCESS.001
+  - STC.MEMORIAAL.GRAPHITE_RULE.001
+  - OBJ.MEMORIAAL
+  - OBJ.GRAPHITE_STIFT
+  - OBJ.LASCASAS_CIPHERTEXT
+  - NI.SCENE.MEMORIAAL_GIFT.1564.001
+  - REL.CLAES.DEE.001
+  - CODE.RECOVERY.CLAES.1570
+  rationale: This replaces the post-4-October secret-load model. The hidden text is physically present before Boom; 4 October 1564 remains the security hinge for access/key architecture rather than for inserting the Brevísima into the book. The printing recipe is authorial technical reconstruction grounded in period printing/material practice and remains subject to physical wet-test validation rather than being claimed as a documented Silvius recipe.
