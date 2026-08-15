@@ -1,28 +1,31 @@
-schema_version: 1.0.0
+schema_version: 1.0.1
 kind: OpenDecisionSupplement
 decisions:
 - id: OPEN.CORNELIS.CASTANIE.DEKEN.001
   domain: character_and_rederijker_network
   priority: high
-  question: Is Cornelis merely a member of De Edele Castanienbloem or also deken during the relevant Antwerp/book-transport period?
-  status: OPEN
-  fixed:
-  - Cornelis is a member of De Edele Castanienbloem.
-  - Cornelis is a Goes poorter and biersteker.
-  - Cornelis' beer-route/civic/rederijker position can support book-transport plausibility.
-  guardrails:
-  - Do not write Cornelis as deken until this is explicitly closed.
-  - Do not use deken status to justify plot mechanics that can already be justified by poorter/member/biersteker/trust networks.
+  question: Was Cornelis deken of the Edele Castanienbloem in the older 15 August membership model?
+  status: DEPRECATED
+  superseded_by: OPEN.CORNELIS.REDERIJKER.DEKEN.001
+  resolution_note: DEC.CORNELIS.REDERIJKER.NARDUS_CASTANIE_ORIGIN.2026-08-16 supersedes the premise that Cornelis is simply a Castanienbloem member. He is a Nardusbloem member who plays a formative fictional role in the emerging reform-minded Castanien current; any deken office remains separately open.
 - id: OPEN.ALCHEMY.ENKHUIZEN_1602.EVENT_DESIGN.001
   domain: alchemical_lifeline
   priority: high
-  question: Exact scene design, witnesses, assay/cupellation logic, risk level and moral consequence of the 1602 Enkhuizen transmutation/projectio event.
-  status: OPEN
+  question: Exact scene design, additional witnesses, assay/cupellation choreography, quantities, risk level and immediate moral consequence of the 1602 Enkhuizen transmutation/projectio event.
+  status: PARTIALLY_RESOLVED
+  resolved_in_part_by: DEC.ENKHUIZEN.SETON_FRAME.1602.2026-08-16
   fixed:
   - The 1602 Enkhuizen event is the outward projectio of the projectiepoeder line.
-  - The event remains chemically interpretable as hidden Sol becoming visible through process/test/assay, not literal lead-to-gold creation.
+  - The chosen historical frame is Enkhuizen, the house of sailor Jacob Hausfsen, 13 March 1602, approximately the fourth hour after noon, following Morhof's 1673 retrospective account.
+  - The event remains chemically interpretable as already-present hidden Sol becoming visible through process/test/assay, not literal lead-to-gold creation.
   - The event must force Claes toward release rather than ownership of the Work.
+  remains_open:
+  - exact furnace and assay choreography
+  - exact quantities and appearance of the projected material
+  - additional witnesses beyond the Morhof-derived frame
+  - public/private degree and immediate risk
+  - immediate moral aftermath and disposal/transmission of material
   guardrails:
   - Do not write a modern complete recipe.
-  - Do not close witnesses, location details or public/private degree without a separate decision.
+  - A cupellation-like explanation is authorial reconstruction, not a documented Seton procedure.
   - Do not make metallic success the final moral meaning of the novel.
