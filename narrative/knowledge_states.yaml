@@ -1,6 +1,6 @@
 schema_version: 1.1.0
 kind: KnowledgeStateRegistry
-purpose: Narrative knowledge boundaries extracted from Revision 11; deterministic candidates feed Lemma but remain human-readable here.
+purpose: Narrative knowledge boundaries extracted from Revision 11 and later explicit author decisions; deterministic candidates feed Lemma but remain human-readable here.
 actors:
 - entity_id: ENT.PERSON.CLAES
   states:
@@ -11,8 +11,11 @@ actors:
     knows:
     - Dee personally
     - ordinary educational use of his memoriaal and Monas
+    - Dee requires graphite rather than ink in the memoriaal while Claes remains his pupil
     does_not_know:
+    - the memoriaal sheets already carry the hidden printed encoded Brevísima
     - Las Casas project
+    - why ink is materially dangerous to the memoriaal carrier
     - recovery architecture
     - future vitriol trigger
   - phase: C
@@ -21,9 +24,10 @@ actors:
     latest_exclusive: '1566-08-01'
     knows:
     - his own pedagogical objects
+    - the graphite-only rule he received from Dee
     does_not_know:
+    - that the memoriaal already contains Las Casas ciphertext
     - that he is fallback keyholder
-    - hidden 24+2 memoriaal layer
     - merels→Monas recovery
     - Las Casas content
   - phase: E
@@ -34,6 +38,7 @@ actors:
     - father shows unusual interest in certain objects
     does_not_know:
     - complete purpose of that interest
+    - hidden Brevísima function of the memoriaal
   - phase: F
     label: Cornelis fall 1568/69
     earliest: '1568-07-01'
@@ -42,6 +47,7 @@ actors:
     - Castanea hint after Cornelis communicates it
     does_not_know:
     - why Castanea matters
+    - that his memoriaal contains Las Casas ciphertext
     - full recovery route
   - phase: G
     label: 1570 activation
@@ -49,17 +55,18 @@ actors:
     latest_exclusive: '1571-01-01'
     learns_in_order:
     - GALLA LEO VIRIDIS is a personal Dee-derived trigger
-    - green vitriol can reveal the memoriaal's hidden layer
-    - the hidden layer is a 24-problem merels recovery sequence
-    - each solved problem yields one theorem value
+    - green vitriol can develop the apparently blank memoriaal pages
+    - the developed typographic layer is an encoded hidden text already present in the book since 1564
+    - the hidden text is the Las Casas ciphertext; its full plaintext remains inaccessible without the key architecture
+    - the merels recovery sequence supplies theorem values, with its exact in-world entry/placement after the memoriaal redesign still open
     - theorem values map into personal Monas marginalia
     - row and column orderings form a 24×24 matrix
     - Castanea points to the special Dodoens carrier
-    - Primus Index identifies Las Casas and the Diets testimony
+    - Primus Index confirms Las Casas / destruction of the Indies / Diets-Brabant testimony
     - full nomenclator allows reconstruction of the text
     dramatic_turn:
-      at: Primus Index
-      from: understand father/Dee/Silvius
+      at: Primus Index / identity confirmation
+      from: understand father/Dee/Silvius and the hidden carrier
       to: decide what the testimony asks of Claes
 - entity_id: ENT.PERSON.CORNELIS
   states:
@@ -67,10 +74,13 @@ actors:
     earliest: '1563-12-01'
     latest_exclusive: '1564-04-01'
     knows:
-    - dangerous Diets Las Casas text is intended for him as carrier/keeper
+    - dangerous Diets Las Casas text is being protected within the project
     - Dodoens/Castanea belongs to direct-key context
+    may_know:
+    - Claes' memoriaal is operationally significant
     does_not_know:
     - future ad-hoc recovery architecture
+    - any later complete merels→Monas fallback solution
   - phase: C
     earliest: '1564-10-04'
     latest_exclusive: '1568-07-01'
@@ -80,9 +90,9 @@ actors:
     does_not_know:
     - 24 correct merels outputs
     - Monas ordering
-    - vitriool trigger
+    - vitriol trigger
     - complete recovery key
-    behavior_constraint: May search memoriaal and Dodoens and fail; may never act as if he knows the recovery solution.
+    behavior_constraint: May show unusual interest in memoriaal and Dodoens and fail to recover the system; may never act as if he knows the recovery solution.
   - phase: F
     earliest: '1568-07-01'
     latest_exclusive: '1570-01-01'
@@ -94,12 +104,15 @@ actors:
     latest_exclusive: '1564-10-04'
     knows:
     - security architecture
-    - 24-value structure
-    - pedagogical identity of Claes' objects
+    - the memoriaal given before Boom already carries the hidden printed Las Casas ciphertext
+    - graphite rather than iron-gall ink protects the tannin-loaded pages during Claes' pupil phase
+    - 24-value/key-recovery structure
+    - pedagogical identity Claes assigns to his objects
   - phase: C
     earliest: '1564-10-04'
     knows:
     - full merels→Monas recovery design
+    - 4 October changes access and fallback, not the physical ciphertext already in Claes' book
     note: Direct presence after this point is not required for the system to function.
 - entity_id: ENT.PERSON.WILLEM_SILVIUS
   states:
@@ -110,17 +123,21 @@ actors:
     - project
     - translation/production route
     - Dodoens function
-    - Cornelis as intended external recipient
+    - Cornelis as intended external recipient within the initial architecture
+    - the encoded Brevísima is set and printed on loose memoriaal sheets before binding
+    - the first-pass gallnut/tannin + gum-arabic print medium and proof-development procedure
   - phase: B
     earliest: '1564-01-01'
     latest_exclusive: '1564-10-04'
     knows:
     - coding, set-ability, correction and distribution
+    - the physical hidden-print carrier already exists before Boom
   - phase: C
     earliest: '1564-10-04'
     knows:
     - direct key must not be handed to Cornelis
     - external activation must remain possible
+    - the carrier need not be physically reloaded or reciphered
   - phase: G
     earliest: '1570-01-01'
     latest_exclusive: '1571-01-01'
@@ -141,6 +158,7 @@ actors:
     latest_exclusive: '1571-01-01'
     learns:
     - controlled material development procedure
+    - that the memoriaal carries a previously invisible typographic ciphertext layer
     - Dodoens carrier use
     - checksum/error-control role
     does_not_replace_claes_in:
@@ -156,5 +174,6 @@ lemma_projection:
   hard_guardrails:
   - No actor may use knowledge before acquisition.
   - Cornelis never knows the full recovery key.
-  - Claes knows no Las Casas purpose before the 1570 reveal chain reaches it.
+  - Claes may physically possess the hidden Las Casas ciphertext from early 1564 while remaining ignorant of its existence and purpose.
+  - Claes knows no Las Casas purpose before the 1570 reveal chain reaches identity/content recognition.
   - The beloved may notice Castanea before 1570 without understanding its function.
