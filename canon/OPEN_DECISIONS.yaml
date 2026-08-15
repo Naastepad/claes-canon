@@ -1,4 +1,4 @@
-schema_version: 1.7.0
+schema_version: 1.8.0
 kind: OpenDecisionRegistry
 decisions:
 - id: OPEN.CLAES.DEATH.001
@@ -18,12 +18,12 @@ decisions:
   priority: high
   question: Exact bookbinding/material mechanism by which prepared rectos/quires enter the used memoriaal
   status: RESOLVED
-  resolved_by: DEC.MEMORIAAL.BREVISIMA_PRINT_GIFT.2026-08-15
+  resolved_by: DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15
   resolution:
-  - the encoded translated Brevísima is printed on loose sheets before binding with the reconstructed near-invisible tannin/gallnut + gum-arabic first-pass medium
+  - the completed readable Diets/Brabant Brevísima is printed on loose sheets before binding with the reconstructed near-invisible tannin/gallnut + gum-arabic first-pass medium
   - the sheets are printed recto/verso in correct imposition, dried, folded/gathered and bound as the apparently blank memoriaal before Dee gives it to Claes
   - no post-4-October physical insertion or hollow-book mechanism is used
-  - 4 October changes access/key architecture rather than the physical payload
+  - no cipher or key layer is inserted at any stage
   guardrails:
   - the exact reconstructed printing medium remains subject to OPEN.MATERIAL.WET_TEST.001
   - do not present the tannin-gum typographic recipe as a documented historical Silvius recipe
@@ -42,7 +42,7 @@ decisions:
   priority: high
   question: Exact identity/name/background details of beloved/apothecary daughter
   status: OPEN
-  fixed_function: material/Dodoens/error-check counterpart; Claes remains personal merels key-holder
+  fixed_function: material, apothecary and relational counterpart; she may assist controlled reveal and reading but is not a Dodoens/nomenclator key-holder
 - id: OPEN.CHAPTER.NUMBERING.YOUTH.001
   domain: structure
   priority: low
@@ -63,28 +63,23 @@ decisions:
 - id: OPEN.MERELS.CLOSEUPS.001
   domain: scene
   priority: medium
-  question: Which four to six merels problems receive close-up narrative treatment
+  question: Which merels scenes/problems deserve close-up narrative treatment now that merels is independent of the Brevísima cipher architecture?
   status: OPEN
-  fixed: all 24 remain one recovery sequence; first/interesting double diagram/text operator/error-check/final checksum are candidates
+  fixed: merels remains available as game, skill, relationship and thematic motif; no fixed 24-problem recovery sequence is required
 - id: OPEN.MERELS.ENTRY_AFTER_MEMORIAAL_REDESIGN.001
   domain: code_and_object
   priority: high
   question: Where and by what route do the 24 complete merels problems enter Claes' 1570 key-recovery sequence now that the memoriaal's chemically revealed layer is the Las Casas ciphertext itself?
-  status: OPEN
-  fixed:
-  - all 24 complete problems remain canonical
-  - merels remains ad-hoc key recovery rather than original cipher or reciphering
-  - theorem I–XXIV checksum and Monas ordering remain unchanged
-  - the problems are not automatically assumed to be the tannin-printed hidden content of OBJ.MEMORIAAL
-  guardrails:
-  - do not silently restore the deprecated 24+2 memoriaal layer
-  - physical ciphertext reveal and key recovery are distinct paths that converge for full decoding
+  status: RESOLVED_NOT_APPLICABLE
+  resolved_by: DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15
+  resolution: The 24-problem recovery sequence is retired because no cipher or key-recovery sequence remains. Merels may continue independently as game/motif.
 - id: OPEN.CODE.P1_P3_P4.001
   domain: code
   priority: high
   question: Final engine/source-technical control of P1, P3 and P4
-  status: OPEN
-  guardrail: Do not alter the 24×24 architecture unless source loci actually fail
+  status: RESOLVED_NOT_APPLICABLE
+  resolved_by: DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15
+  resolution: The 24×24 recovery architecture is retired with the cipher.
 - id: OPEN.MATERIAL.WET_TEST.001
   domain: material
   priority: high
@@ -101,7 +96,7 @@ decisions:
 - id: OPEN.MEMORIAAL.FACSIMILE.001
   domain: object
   priority: medium
-  question: Final facsimile appearance of the apparently blank/graphite-used memoriaal and the developed typographic ciphertext pages
+  question: Final facsimile appearance of the apparently blank/graphite-used memoriaal and the developed directly readable Brevísima pages
   status: OPEN
 - id: OPEN.GRAPHITE_STIFT.PROVENANCE.1564.001
   domain: historical_reconstruction
@@ -120,16 +115,21 @@ decisions:
   question: Exact low-level incident or identifiable network link that makes Cornelis operationally unsafe after 4 October 1564
   status: OPEN
   exclusions: [Cornelis need not be a stone thrower, Cornelis need not be arrested in 1564]
+  guardrail: This remains a persecution/network question and no longer controls access to a cipher key or the physical memoriaal.
 - id: OPEN.SECURITY.DECLASSIFICATION.001
   domain: plot
   priority: medium
   question: Who formally decides that Cornelis loses direct-key access — Silvius alone or Silvius with Dee/another keeper?
-  status: OPEN
+  status: RESOLVED_NOT_APPLICABLE
+  resolved_by: DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15
+  resolution: No direct cryptographic key remains to be withheld after 4 October 1564.
 - id: OPEN.DODOENS.PROVENANCE.001
   domain: object
   priority: high
   question: Exact edition/copy status, owner, date and legal/social mechanism by which the special Dodoens reaches the Goes apothecary environment
-  status: OPEN
+  status: RESOLVED_NOT_APPLICABLE
+  resolved_by: DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15
+  resolution: The special coded Dodoens carrier is retired. Ordinary Dodoens use may be researched independently if needed for botany/apothecary scenes.
 - id: OPEN.CLAES.FAMILY_FIRE_1554.001
   domain: character_and_event
   priority: high
@@ -194,15 +194,15 @@ decisions:
   domain: object
   priority: medium
   question: Final setting/facsimile proof, exact set count within 3–6 work canon and fate of possible 24 composite sorts
-  status: OPEN
-  fixed_by_memoriaal_decision:
-  - Claes' set is printed on loose sheets and bound as OBJ.MEMORIAAL before Boom
-  - the hidden-print camouflage mechanism for Claes' set is fixed
+  status: RESOLVED_NOT_APPLICABLE
+  resolved_by: DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15
+  resolution: Silvius sets ordinary readable Diets/Brabant text; no cipher groups or special 24 composite sorts are required.
 - id: OPEN.ZOVITIUS.DELIVERY.1570.001
   domain: plot
   priority: high
   question: Exact route by which the special 1570 Zovitius copy reaches Claes in Goes
   status: OPEN
+  guardrail: If retained, its function is a material cue toward GALLA LEO VIRIDIS, not delivery of a cryptographic key.
 - id: OPEN.ANTWERP.1564.NAMES.001
   domain: historical_research
   priority: low
@@ -211,12 +211,12 @@ decisions:
 - id: OPEN.PUBLICATION.TRANSMISSION.1570_1578.001
   domain: plot
   priority: high
-  question: Exact production/transmission route of the reconstructed clear text between 1570 and the fictionally linked anonymous 1578 publication
+  question: Exact production/transmission route of the revealed readable Diets/Brabant text between the memoriaal reveal and the fictionally linked anonymous 1578 publication
   status: OPEN
 - id: OPEN.CHAPTER.CALENDAR.1564.001
   domain: chronology
   priority: high
-  question: Calendar audit of 1564_1 through 1564_5 against wrong chest → code production → memoriaal/graphite handoff before Boom → decisive transfer journey → 4 October security break
+  question: Calendar audit of 1564_1 through 1564_5 against wrong chest → readable translation production → invisible tannin/gum print → memoriaal/graphite handoff before Boom → decisive transfer journey → 4 October security break
   status: OPEN
   fixed:
   - NI.SCENE.MEMORIAAL_GIFT.1564.001 occurs before NI.CHAPTER.1564.03
