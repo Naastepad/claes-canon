@@ -172,4 +172,5 @@ decisions:
   - REL.CLAES.SILVIUS
   - REL.CLAES.BELOVED
   - CODE.RECOVERY.CLAES.1570
-  rationale: The cipher was introduced only because whole-book invisible printing initially appeared impracticable. The reconstructed tannin/gum letterpress process removes that technical premise. Keeping a cipher would therefore duplicate the concealment mechanism without a remaining story function. Chemical steganography is the concealment: Silvius prints readable language; graphite lets Claes use the same pages safely; green vitriol later completes the visible ink.
+  rationale: >-
+    The cipher was introduced only because whole-book invisible printing initially appeared impracticable. The reconstructed tannin/gum letterpress process removes that technical premise. Keeping a cipher would therefore duplicate the concealment mechanism without a remaining story function. Chemical steganography is the concealment: Silvius prints readable language; graphite lets Claes use the same pages safely; green vitriol later completes the visible ink.
