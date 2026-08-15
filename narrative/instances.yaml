@@ -1,4 +1,4 @@
-schema_version: 1.2.0
+schema_version: 1.3.0
 kind: NarrativeInstanceRegistry
 instances:
 - id: NI.PROLOGUE.1542.001
@@ -212,7 +212,7 @@ instances:
   - STC.MEMORIAAL.GRAPHITE_RULE.001
   arcs_advanced:
   - ARC.CLAES.DEE
-  function: "Dee gives Claes the apparently blank memoriaal and a graphite stift before Boom, forbidding ink while Claes remains his pupil; Claes reads this as discipline, not as protection of an already hidden tannin-printed ciphertext."
+  function: "Dee gives Claes the apparently blank memoriaal and a graphite stift before Boom, forbidding ink while Claes remains his pupil; Claes reads this as discipline, not as protection of an already hidden tannin-printed readable Brevísima."
 - id: NI.CHAPTER.1564.03
   type: ChapterInstance
   label: De Kies Van Boom
@@ -266,10 +266,9 @@ instances:
   - ENT.PERSON.CORNELIS
   story_claims:
   - STC.MACRO.NIGREDO_START.1564.001
-  - STC.CORNELIS.FALLBACK_KNOWLEDGE.001
   arcs_advanced:
   - ARC.CLAES.MACRO_TRANSMUTATION
-  continuity_note: "The security break changes direct-key/fallback access. It does not insert the Brevísima into OBJ.MEMORIAAL; that hidden printed carrier has already been in Claes' possession since before Boom."
+  continuity_note: "The security break remains a political/network and macro-Nigredo hinge. It does not insert, recipher, key or otherwise alter OBJ.MEMORIAAL, whose readable hidden Brevísima has already been in Claes' possession since before Boom."
 - id: NI.CHAPTER.1564.06
   type: ChapterInstance
   label: De honderd gulden
@@ -313,7 +312,7 @@ instances:
   - STC.CORNELIS.DEATH.WORK.001
 - id: NI.SEQUENCE.RECOVERY.1570.001
   type: SequenceInstance
-  label: Recovery en reconstructie 1570
+  label: Onthulling en lezing van het memoriaal 1570
   canon_status: CANON
   story_time:
     earliest: '1570-01-01'
@@ -324,16 +323,19 @@ instances:
   entities:
   - ENT.PERSON.CLAES
   - ENT.PERSON.BELOVED
+  objects:
+  - OBJ.MEMORIAAL
+  - OBJ.LASCASAS_PLAINTEXT
+  - OBJ.ZOVITIUS_1570_TRIGGER
   story_claims:
-  - STC.CODE.RECOVERY_SEQUENCE.001
-  - STC.CODE.DURATION.001
+  - STC.ZOVITIUS.TRIGGER.1570.001
+  - STC.MEMORIAAL.BREVISIMA_CARRIER.001
   arcs_advanced:
   - ARC.CLAES.LIFE
   - ARC.CLAES.MACRO_TRANSMUTATION
   motifs:
   - MOTIF.BLACKENING_REVEAL
-  - MOTIF.MERELS_WAYS
-  - MOTIF.CASTANEA
+  function: "A material cue and controlled green-vitriol development transform the apparently blank pages into readable Diets/Brabant Brevísima text. The dramatic work is recognition, reading and moral response, not cryptographic reconstruction."
 - id: NI.EVENT.PUBLICATION.1578.001
   type: EventInstance
   label: Anonieme verspreiding/druk Las Casas
