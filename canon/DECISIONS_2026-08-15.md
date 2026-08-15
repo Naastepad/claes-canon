@@ -136,3 +136,48 @@ This direct-text decision must govern:
 - `storybible/MASTER.md`, `storybible/INDEX.md` and `review/SYNC_STATUS.md` as navigation/synchronization surfaces.
 
 The dated operating synthesis `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` still requires a later regeneration/patch where it contains the old cipher/recovery design. Until then this decision, active Story Claims and the dedicated memoriaal dossier outrank those stale passages.
+
+## DEC.CORNELIS.ROLE.POORTER_RED_BROUWER.2026-08-15 — CANON
+
+Cornelis' canonical role in the Antwerp/boekentransport material is fixed as **Goes poorter, bierbrouwer/biersteker and deken of rederijkerskamer De Edele Castanienbloem**.
+
+He must not be flattened into a generic brewer and must not be turned into a printer. His economic practice gives him barrels, vats, storage, routes, freight papers, carts/ships and plausible cover for transported material. His civic and rederijker position gives him trust, symbolic literacy, chamber connections, speech discipline and social standing.
+
+Authoring rule: Cornelis can carry books, papers or sensitive material because beer trade, civic trust and rederijker culture overlap. He does not set type. Zetletters, press rhythm, proofing and typographic expertise belong to Silvius' workshop.
+
+If he transports books for Vesalius/Vaselius, the exact name and source-standardization must be checked later; the active story function is the same: anatomically/humanistically sensitive book material travels between Goes/Zeeland and Antwerp under commercial/rederijker cover.
+
+## DEC.ANTWERP.THREE_VISITS_PROCESS_ARC.2026-08-15 — CANON
+
+Claes' Antwerp formation is organized as three visits rather than by forcing John Dee into the documented space of the 1561 Landjuweel.
+
+1. **1561 Landjuweel:** Claes visits Antwerp through Cornelis' rederijker/civic/book-transport world. Function: the city as theatre; blazoens, chambers, allegory, public performance and concealed meanings. Claes learns that meaning can hide in play and civic spectacle.
+2. **1563/1564 Dee/Silvius/Boom:** Claes returns through the transport/book network. Dee and Silvius become active. Function: the city as book/workshop; hidden print, kies, Green Lion, ink, vitriol and material instruction. Claes learns that meaning can hide in matter.
+3. **1566 Beeldenstorm:** Claes returns to a city where images and signs are attacked. Function: the city as broken image; symbols become dangerous under religious/political pressure. Claes learns that meaning can cost safety.
+
+The 1566 visit does **not** supersede the current 19 November 1569 Cornelis execution decision. The earlier idea of Cornelis being murdered in the Beeldenstorm is rejected/deprecated by the active authoring-branch death model unless a future explicit decision reopens it.
+
+The three visits may function as a hidden analogue to three initiatory degrees: seeing, working, carrying. This is a structural analogy only, not diegetic freemasonry and not a historical claim about sixteenth-century masonic blue degrees.
+
+## DEC.ALCHEMY.PROCESS_LAYERS.2026-08-15 — CANON
+
+The chemical/alchemical process sequence discussed on 15 August becomes a cross-story process grammar across material, symbolic, moral and spiritual layers.
+
+The canonical reconstructed material chain is:
+
+`kies / pyrite-bearing waste -> weathering/care/digestion -> vitriool-loog / Green Lion -> strong waters -> death/opening of Sol -> red fixation / Red Lion -> Saturn/lead/cupellation-like test`.
+
+This is not a modern recipe and not proof of real lead-to-gold transmutation. Individual technical building blocks are historically/chemically supported by the research discussed in the chat, while the full projectiepoeder chain is an authorial historical-chemical reconstruction. The apparent gold result should remain chemically interpretable as hidden Sol becoming visible through process and assay, not as literal creation of gold from lead.
+
+Narrative rule: these processes must recur at multiple levels:
+
+- rederijkers hide meaning in allegory;
+- Cornelis hides books in trade and trust;
+- Silvius hides readable text in blank-looking paper;
+- Dee teaches that matter hides process;
+- green vitriol reveals writing and opens matter;
+- Sol dies as visible form and survives as hidden presence;
+- Cornelis' silence becomes testimony under pressure;
+- Claes' observation becomes responsibility.
+
+The governing prose sequence after Boom is: `De kies van Boom` -> `De loog van Antwerpen` -> `De dood van Sol` -> `De rode massa/Rode Leeuw` -> `Saturnus`. This sequence is authoring architecture; chapter titles may be revised without changing the process order.
