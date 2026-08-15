@@ -1,0 +1,66 @@
+schema_version: 1.0.0
+kind: SourceClaimRegistry
+claims:
+- id: SC.HIST.ALCHEMY.AGRICOLA.VITRIOL_PYRITES.1556.001
+  type: SourceClaim
+  statement: Agricola's De re metallica describes a process family in which vitriolic pyritic material is exposed to or leached with water, yielding a green vitriolic liquor that is clarified, concentrated and crystallised as green vitriol.
+  evidence_status: VERIFIED
+  source_refs:
+  - SRC-HIST-AGRICOLA-DE-RE-METALLICA-1556-VITRIOL-001
+  guardrails:
+  - This does not prove that the fictional Boom material is Agricola's exact ore or that Dee/Silvius used this procedure.
+  - It supports the historical craft family, not the complete novel projectiepoeder chain.
+- id: SC.HIST.ALCHEMY.NORTON.GREEN_LION.MULTIVALENT.001
+  type: SourceClaim
+  statement: Samuel Norton's Key of Alchemy treats Green Lion as a multivalent alchemical term, distinguishes philosophical and foolish/vulgar readings, and acknowledges a specific copperas/vitriol Green Lion usage without making that equivalence universal.
+  evidence_status: SUPPORTED
+  source_refs:
+  - SRC-HIST-NORTON-KEY-ALCHEMY-GREEN-LION-001
+  guardrails:
+  - Do not state Green Lion equals FeSO4 universally.
+  - Do not claim Dee is documented using Norton's exact vocabulary in Antwerp in 1564.
+- id: SC.HIST.METALLURGY.ERCKER.ASSAY.1574.001
+  type: SourceClaim
+  statement: Ercker's 1574 metallurgical work documents an early-modern Probierkunst context in which ores and metals are tested in small fire and gold, silver and other metals are separated and assessed.
+  evidence_status: VERIFIED
+  source_refs:
+  - SRC-HIST-ERCKER-PROBIERKUNST-1574-001
+  guardrails:
+  - This supports an assay/fire-test culture, not a documented Seton cupellation procedure.
+- id: SC.HIST.SETON.MORHOF.ENKHUIZEN.1602.001
+  type: SourceClaim
+  statement: Morhof's 1673 retrospective report places an Alexander Seton/Sidonius projection at Enkhuizen in the house of sailor Jacob Hausfsen and transmits a date of 13 March 1602 at the fourth hour after noon through a later chain of testimony associated with a gold fragment and the Van der Linden physician family.
+  evidence_status: SUPPORTED
+  source_refs:
+  - SRC-HIST-MORHOF-SETON-ENKHUIZEN-1673-001
+  guardrails:
+  - Morhof is retrospective by roughly seventy years and is not a contemporaneous eyewitness source for the event.
+  - The report does not prove literal transmutation, cupellation, powder composition or exact furnace choreography.
+- id: SC.HIST.REDERIJKERS.NARDUS.CATHOLIC_1563.001
+  type: SourceClaim
+  statement: The 1563 Nardusbloem institutional record is explicitly connected to Maria Magdalena, her chapel, a mass for deceased chamber brothers and a requiem after Magdalen day, supporting a strongly Catholic institutional profile in Cornelis' period.
+  evidence_status: VERIFIED
+  source_refs:
+  - SRC-HIST-GOES-REDERIJKERS-001
+- id: SC.HIST.REDERIJKERS.NARDUS_CONFLICT_1563.001
+  type: SourceClaim
+  statement: The later repertory interpretation of the 1563 Nardusbloem ordinance indicates an internal conflict and possible departure or removal of members, but surviving evidence does not establish the conflict as confessional or prove a direct Castanienbloem succession.
+  evidence_status: SUPPORTED
+  source_refs:
+  - SRC-HIST-GOES-REDERIJKERS-001
+- id: SC.HIST.REDERIJKERS.CASTANIA.EARLIEST_1595.001
+  type: SourceClaim
+  statement: The earliest surviving source attestation currently registered for the Edele Castanienbloem is 1595; that attestation already shows an organised chamber context, but it is not an attested founding date.
+  evidence_status: VERIFIED
+  source_refs:
+  - SRC-HIST-GOES-REDERIJKERS-001
+  guardrails:
+  - Earliest surviving mention is a terminus ante quem for organised existence, not proof of how many years earlier the chamber began.
+- id: SC.HIST.REDERIJKERS.MEERTENS_SPLIT_HYPOTHESIS.001
+  type: SourceClaim
+  statement: Meertens proposed a historiographic hypothesis that the Castanienbloem arose from a religious split from the Nardusbloem in the later sixteenth century; his proposed confessional direction is interpretation rather than archival proof.
+  evidence_status: SUPPORTED
+  source_refs:
+  - SRC-HIST-GOES-REDERIJKERS-001
+  guardrails:
+  - Treat as historiography, not evidence that the novel's Protestantising split happened historically.
