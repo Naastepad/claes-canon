@@ -1,4 +1,4 @@
-schema_version: 1.1.0
+schema_version: 1.2.0
 kind: CanonDecisionSupplement
 decisions:
 - id: DEC.CORNELIS.ROLE.POORTER_RED_BROUWER.2026-08-15
@@ -74,10 +74,6 @@ decisions:
     - never green
     - never visibly gold-yellow
     - no visible golden glitter is required or desired
-    context_effect:
-    - on white ceramic the red reads more strongly
-    - in paper or a dark container it may read nearly brown-red
-    - an uninformed observer may take it for earth, rust or an apothecary powder
   symbolic_distribution:
     Groene_Leeuw:
     - green vitriol / FeSO4-bearing vitriol material as historical-chemical reference where appropriate
@@ -92,11 +88,6 @@ decisions:
     Sol:
     - gold principle may be materially hidden in the reconstructed process
     - Sol must not make the powder visibly golden
-  narrative_chain:
-  - green belongs to vitriol, revelation, opening and digestion
-  - death/opening of Sol separates the green phase from final fixation
-  - red belongs to rubedo, fixation and projection
-  - projectio into Saturn/lead is the outward culmination, not the moral endpoint
   guardrails:
   - Never describe Claes' final projectiepoeder as green vitriol or as a green powder.
   - Never collapse Groene Leeuw and Rode Leeuw into the same material stage.
@@ -105,32 +96,49 @@ decisions:
   - Do not turn this colour canon into a modern operational recipe.
 - id: DEC.SETON.ENKHUIZEN_PROJECTIO_ROLE.1602.2026-08-16
   type: CanonDecision
+  status: DEPRECATED
+  superseded_by: DEC.SETON.ENKHUIZEN_ALCHEMICAL_MIRROR.1602.2026-08-16
+  decision: Earlier formulation correctly placed Seton in the 1602 projectio climax, but still allowed a convergence with hidden-text/revelation motifs that is now obsolete because the Brevisima textual line is completed by the Antwerp 1578 print event.
+  retained:
+  - Seton is the historical-alchemical catalyst of the Enkhuizen 1602 climax.
+  - Seton does not replace Dee or solve Claes' life-work.
+  - Seton embodies the danger of possession, proof, patronage and coerced knowledge.
+  rejected:
+  - Any role for Seton in revealing, decoding, materially reading or solving the hidden Brevisima/memoriaal.
+  - Any causal dependency between Seton and the 1578 Brevisima print line.
+- id: DEC.SETON.ENKHUIZEN_ALCHEMICAL_MIRROR.1602.2026-08-16
+  type: CanonDecision
   status: CANON
-  decision: Alexander Seton is incorporated as the historical-alchemical catalyst of the Enkhuizen 1602 projectio climax. His narrative function is not to replace Dee as Claes' teacher or to hand Claes a recipe, but to embody and test the final question of the Work: what one does with knowledge, proof and power once possession becomes possible.
+  decision: Alexander Seton enters Claes' story only in the late alchemical line. By 1602 the Brevisima textual mission has long been completed through the Antwerp 1578 print event. Seton's function is therefore to confront Claes with the final consequence of the Great Work: projectio, proof, power, possession and release.
   historical_anchor:
     date: '1602-03-13'
     time: '16:00'
     place: ENT.LOC.ENKHUIZEN
-    tradition:
-    - Seton is reported to have performed a projection/transmutation in the house of Jacob Hanssen/Haussen in Enkhuizen.
-    - The tradition describes lead becoming gold and a portion being retained through the Van der Linden family and later seen by Daniel Georg Morhof.
-    - These reports are historical testimony/tradition, not modern proof of literal elemental transmutation.
   narrative_function:
-  - late mirror/foil for Claes
+  - late mirror and foil for Claes
   - external catalyst of Claes' final alchemical transition
-  - embodiment of release rather than accumulation
-  - warning about rulers or patrons who seek to possess coerced knowledge
-  - convergence point for material alchemy, hidden-text/revelation motifs and Claes' recovered sinne
+  - living demonstration that technical success does not settle the moral meaning of the Work
+  - embodiment of the danger created when rulers and patrons understand transmutation only as wealth and power
+  - catalyst that moves Claes from mastery/control toward release beyond possession
+  relationship_to_brevisima:
+  - none
+  - Seton does not decode, reveal, read, print, authenticate or recover the Brevisima.
+  - The Brevisima line is already completed in Antwerp in 1578 and must not be reopened in 1602.
   relationship_to_existing_mentors:
-  - Dee remains the major scholar/code-architect and must not be displaced by Seton.
-  - Seton does not solve Claes' life-work for him.
-  - Recognition between Seton and Claes should be stronger than exposition; they may understand aspects of one another without explaining the complete Work aloud.
+  - Dee remains an earlier intellectual/material mentor and is not displaced.
+  - Seton arrives when Claes technically has little left to be taught; the unresolved task is ethical, existential and alchemical.
+  - Recognition between Seton and Claes should operate through competence, restraint, silence, material practice and choices rather than exposition.
+  thematic_questions:
+  - Can the Work be completed?
+  - What counts as proof?
+  - What happens when others want to own the proof?
+  - If the Work succeeds, to whom does it belong?
+  - Can Claes release what he spent a lifetime learning to control?
   political_guardrails:
   - Do not canonize Seton as Protestant, Dutch patriot or ideologically anti-Spanish without evidence.
   - He may distrust coercive princely appropriation of knowledge irrespective of confession or dynasty.
-  - Any sympathy with victims of Habsburg power must remain character-level inference unless separately sourced and decided.
   historical_uncertainty:
   - Seton's exact identity and Scottish family connection remain uncertain.
   - Do not identify him as a documented member of the noble Seton family without evidence.
   - Do not canonize a historical recipe or a historical green/red colour for his Enkhuizen projection powder.
-  - Later stories about imprisonment, torture, Sendivogius and authorship must retain their appropriate evidence status rather than being flattened into certain biography.
+  - Later stories about imprisonment, torture, Sendivogius and authorship retain evidence-controlled status.
