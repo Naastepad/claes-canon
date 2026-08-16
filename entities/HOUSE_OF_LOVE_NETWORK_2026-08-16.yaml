@@ -1,0 +1,148 @@
+schema_version: 1.0.0
+kind: EntityRegistryExtension
+entities:
+- id: ENT.HIST.PERSON.GHYSBRECHT_ANTWERP_COOPER
+  type: HistoricalPersonAnchor
+  label: Ghysbrecht/Gijsbrecht, kuiper van Antwerpen
+  fictionality: historical_anchor_with_identity_inference
+  canon_status: HISTORICAL_ANCHOR
+  historical_state:
+    attested_1551: true
+    attested_1554: true
+    same_person_across_records: supported_inference
+    familist_membership: NOT_EVIDENCED
+  roles:
+  - cooper
+  - Antwerp-origin commercial actor with property interests in Goes
+  story_use:
+  - trusted commercial relation of Cornelis
+  - fictional social bridge toward Adriaan Dens
+  guardrails:
+  - Never call him a documented Familist.
+  - Never claim a documented relationship with Adriaan Dens.
+  - Preserve the Ghysbrecht/Gijsbrecht spelling variation as source-normal.
+
+- id: ENT.HIST.PERSON.ADRIAAN_DENS
+  type: HistoricalPersonAnchor
+  label: Adriaan Dens
+  fictionality: historical_person_novel_encounter
+  canon_status: HISTORICAL_ANCHOR
+  historical_state:
+    role: early follower of Hendrik Niclaes
+    family_link: brother of Clara Dens, wife of François Niclaes
+  story_use:
+  - first knowingly identifiable Familist encountered by Cornelis
+  - social/religious bridge to Barrefelt
+  guardrails:
+  - Cornelis' meeting with Dens is novel canon, not a discovered historical record.
+
+- id: ENT.HIST.PERSON.HENDRIK_JANSEN_BARREFELT
+  type: HistoricalPersonAnchor
+  label: Hendrik Jansen van Barrefelt
+  aliases:
+  - Hiel
+  fictionality: historical_person_novel_encounter
+  canon_status: HISTORICAL_ANCHOR
+  historical_state:
+    role:
+    - early Niclaes associate
+    - distributor of writings
+    - Antwerp-region network agent
+  story_use:
+  - deepens Cornelis' Familist affiliation
+  - connects local commercial trust to a translocal religious-text network
+  guardrails:
+  - Do not turn Barrefelt into an invented formal priest or initiator with a ritual not supported by evidence.
+
+- id: ENT.HIST.PERSON.CHRISTOPHE_PLANTIN
+  type: HistoricalPersonAnchor
+  label: Christophe Plantin
+  fictionality: historical_person_novel_contact
+  canon_status: HISTORICAL_ANCHOR
+  story_use:
+  - later Antwerp print/distribution node in Cornelis' network
+  historical_boundary:
+    relationship_with_niclaes_barrefelt_milieu: SUPPORTED
+    exact_degree_and_duration_of_familist_adherence: HISTORIOGRAPHICALLY_NUANCED
+  guardrails:
+  - Plantin is not Cornelis' converter.
+  - Do not flatten the historiography into an uncomplicated permanent sect label.
+
+- id: ENT.NETWORK.HOUSE_OF_LOVE_TRANSLOCAL
+  type: ReligiousSocialNetwork
+  label: Huis der Liefde / Familia Caritatis
+  fictionality: historical_network_with_novel_participation
+  canon_status: CANON_WORLD_NETWORK
+  structure_model:
+  - translocal
+  - trust-based
+  - text- and correspondence-mediated
+  - compatible with outward conformity
+  - not dependent on a visible local congregation in Goes
+  story_members:
+  - ENT.PERSON.CORNELIS
+  historical_anchors:
+  - ENT.HIST.PERSON.ADRIAAN_DENS
+  - ENT.HIST.PERSON.HENDRIK_JANSEN_BARREFELT
+  later_print_node:
+  - ENT.HIST.PERSON.CHRISTOPHE_PLANTIN
+
+relations:
+- id: REL.CORNELIS.GHYSBRECHT
+  type: CommercialTrustRelation
+  subject: ENT.PERSON.CORNELIS
+  predicate: repeatedly_deals_with
+  object: ENT.HIST.PERSON.GHYSBRECHT_ANTWERP_COOPER
+  canon_status: CANON
+  fictionality: novel_reconstruction
+  material_basis:
+  - casks
+  - cooperage
+  - beer trade
+  - credit
+  - delivery
+  - Antwerp-Goes movement
+
+- id: REL.GHYSBRECHT.ADRIAAN_DENS
+  type: NovelSocialBridge
+  subject: ENT.HIST.PERSON.GHYSBRECHT_ANTWERP_COOPER
+  predicate: opens_social_path_to
+  object: ENT.HIST.PERSON.ADRIAAN_DENS
+  canon_status: CANON
+  fictionality: explicit_novel_bridge
+  evidence_boundary: No historical Ghysbrecht-Dens relationship is claimed.
+
+- id: REL.CORNELIS.ADRIAAN_DENS
+  type: ReligiousNetworkRelation
+  subject: ENT.PERSON.CORNELIS
+  predicate: first_knows_familist_through
+  object: ENT.HIST.PERSON.ADRIAAN_DENS
+  canon_status: CANON
+  fictionality: novel_encounter
+
+- id: REL.CORNELIS.BARREFELT
+  type: ReligiousNetworkRelation
+  subject: ENT.PERSON.CORNELIS
+  predicate: affiliation_deepened_by
+  object: ENT.HIST.PERSON.HENDRIK_JANSEN_BARREFELT
+  canon_status: CANON
+  fictionality: novel_encounter_on_historical_role
+
+- id: REL.CORNELIS.HOUSE_OF_LOVE
+  type: NetworkAffiliation
+  subject: ENT.PERSON.CORNELIS
+  predicate: belongs_to
+  object: ENT.NETWORK.HOUSE_OF_LOVE_TRANSLOCAL
+  canon_status: CANON
+  fictionality: novel_canon
+  begins: ca_1552_1553
+  public_state: outwardly_embedded_in_goes_catholic_civic_world
+
+- id: REL.CORNELIS.PLANTIN
+  type: LaterPrintNetworkRelation
+  subject: ENT.PERSON.CORNELIS
+  predicate: later_connects_with
+  object: ENT.HIST.PERSON.CHRISTOPHE_PLANTIN
+  canon_status: CANON
+  fictionality: novel_contact_on_historical_network
+  sequence_rule: after_REL.CORNELIS.HOUSE_OF_LOVE
