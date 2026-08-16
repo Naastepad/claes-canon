@@ -54,22 +54,47 @@ These details are canon as the novel's chosen historical frame, not as contempor
 
 The exact furnace choreography, quantities, witnesses beyond those required by the Morhof frame, assay sequence, public/private degree, danger level and immediate moral aftermath remain OPEN. Any cupellation-like explanation remains an authorial reconstruction consistent with `DEC.ALCHEMY.GREEN_LION_SOL_CONTINUITY.2026-08-16`, not a claim about Morhof's or Seton's actual procedure.
 
+## DEC.GOES.CLERGY.MATHIJS_VICE_CUREYT.2026-08-16 — CANON
+
+**Mr. Mathijs Jacopsen/Jacobsen** is the named historical clergy anchor for the Catholic Goese world immediately preceding and entering Claes' birth year. The transport evidence explicitly names him **vice-pastoor** on 14 March 1541 and **`vice-cureyt ter Goes`** on 27 February 1542.
+
+The decisive boundary is chronological: Claes is born on **8 December 1542**, while the recovered proof fixes Mathijs in office on **27 February 1542**. Therefore Mathijs may anchor early-1542 Goese church scenes, but the novel must **not** silently extend his incumbency to Claes' birth date.
+
+The Maria Magdalena connection is retained as a strong contextual identification through the Goese parochial setting and Mathijs' church/kerkhof/choir property network. The 27 February act itself, however, says only `ter Goes`.
+
+The project must not assert as fact that Mathijs was the titular benefice-holder, that he still held office on 8 December 1542, that he baptized Claes, or that his church-area property proves residence.
+
+## DEC.GOES.CLERGY.CLEMENS_VAN_DEN_DALE.2026-08-16 — CANON
+
+**Clemens van den Dale** is a documented later Goese clergy anchor. On **20 March 1564** a Goese transport act explicitly titles him **`licentiaat pastoor Goes`** when he buys the house *de Lombaert* on the north side of the Grote Markt.
+
+His presence belongs to the verified institutional world of Goes in 1564. It does not by itself establish that Claes knows or meets him.
+
+## DEC.GOES.CLERGY.SUCCESSION_BOUNDARY.2026-08-16 — CANON_GUARDRAIL
+
+The exact titular pastor above Mathijs and the complete succession between the recovered Mathijs attestations in 1542 and Clemens van den Dale in 1564 remain unresolved in the present evidence set.
+
+Do not fill the interval **1542–1563** by extending Mathijs or Clemens through plausibility alone. New benefice/collation evidence may refine that interval later without disturbing the fixed February 1542 and March 1564 anchors.
+
+The governing clergy dossier is `storybible/GOES_CLERGY_MATHIJS_CLEMENS_1541_1564.md`; machine-readable synchronization lives in the corresponding source-claim, story-claim, entity and world supplements dated 16 August 2026.
+
 ## Required synchronization
 
 These decisions must govern:
 
-- `claims/STORY_CLAIMS.yaml`;
-- `entities/ENTITIES.yaml`;
-- `objects/OBJECTS.yaml`;
+- `claims/STORY_CLAIMS.yaml` and active dated Story Claim supplements;
+- `entities/ENTITIES.yaml` and active dated entity supplements;
+- `objects/OBJECTS.yaml` where object continuity is affected;
 - `narrative/instances.yaml`;
 - `narrative/knowledge_states.yaml`;
 - `narrative/arcs.yaml`;
 - `narrative/motifs.yaml`;
 - `narrative/themes.yaml`;
-- `canon/OPEN_DECISIONS.yaml` and the alchemy open-decision supplement;
+- `canon/OPEN_DECISIONS.yaml` and relevant supplements;
 - `storybible/ALCHEMICAL_CHEMICAL_PROCESS_CHAIN_CLAES_LIFELINE.md`;
 - `storybible/ANTWERP_THREE_VISITS_ALCHEMICAL_ARC_1561_1569.md`;
-- `storybible/MASTER.md`, `storybible/INDEX.md` and `review/SYNC_STATUS.md`;
-- new source/provenance records for Agricola, Norton, Ercker and Morhof, plus the existing Goese rederijker evidence bundle.
+- `storybible/GOES_CLERGY_MATHIJS_CLEMENS_1541_1564.md` and `narrative/world_goes_clergy_1541_1564.yaml`;
+- `storybible/MASTER.md`, `storybible/INDEX.md` and `review/SYNC_STATUS.md` as navigation/operating summaries;
+- source/provenance records for the relevant historical evidence bundles.
 
 Historical evidence and novel choice remain separate throughout.
