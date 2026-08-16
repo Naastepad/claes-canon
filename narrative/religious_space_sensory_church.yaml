@@ -1,0 +1,309 @@
+schema_version: "1.0.0"
+kind: WorldModule
+id: WORLD.RELIGIOUS_SPACE.SENSORY_CHURCH
+status: ACTIVE_RESEARCH_MODULE
+source_ids:
+  - SRC-WAUTERS-RELIGIOUS-SPACE-2021
+applies_to:
+  primary: [Antwerp]
+  transferable_with_scaling: [Goes, Reimerswaal]
+  local_verification_required: true
+
+historical_model:
+  senses:
+    period_terms:
+      - "die uterste sinne"
+      - "den uutwendighen sinnen"
+      - "die vijf sinnen des lichaems"
+    faculties: [sight, hearing, smell, taste, touch]
+    processing_model:
+      sequence: [sensation, comparison, relation, pattern, understanding]
+      sensus_communis_role: "compares and orders data from distinct external senses"
+    moral_dimension: "The senses are gateways toward the inner person and may require discipline; sensory perception is not culturally neutral."
+    claes_bridge: "body → sinne → spatial/social orientation → comparison/pattern → understanding → moral discernment"
+    guardrail: "Do not assert that Claes studied Aristotelian faculty psychology unless separately established."
+
+church_as_institution:
+  principle: "The church is not one actor but an overlapping institutional ecology."
+  actors:
+    - parish_clergy
+    - chapter_or_collegiate_authority_where_applicable
+    - churchwardens_and_church_fabric
+    - chaplains
+    - confraternities
+    - guilds_and_crafts
+    - civic_government
+    - shooters_guilds_or_civic_militias
+    - rhetoricians
+    - sextons
+    - singers_and_musicians
+    - donors_and_parishioners
+  writing_rule: "Name the concrete actor in a scene rather than letting 'the Church' act as a monolith."
+
+church_as_building:
+  model:
+    - "liturgical container"
+    - "sensory field"
+    - "social map"
+    - "corporate stage"
+    - "memory repository"
+    - "acoustic landmark"
+    - "olfactory landmark"
+    - "interface between private memory and public identity"
+  spatial_principles:
+    - "Access is differentiated; choir, altar enclosures and private seating create unequal zones."
+    - "The nave may function as a territorial patchwork of altar zones, routes, barriers and gathering points."
+    - "Movement through space can communicate status and belonging."
+    - "The same physical zone can carry radically different meanings for different people because of graves, donors, patron saints and personal memory."
+
+sensory_fields:
+  visual:
+    features:
+      - changing daylight by hour and season
+      - candle and lamp light
+      - stained glass and coloured surfaces where locally present
+      - textiles changing acoustic and visual character
+      - altar curtains and controlled visibility
+      - retables opened or closed according to use and feast
+      - processional objects
+      - donor arms, inscriptions and corporate emblems
+    dramatic_rule: "Seeing is often partial. Concealment, signal and revelation are normal components of pre-Tridentine religious space."
+    claes_use: "Let Claes learn to infer unseen activity from partial visual evidence rather than treating the church as a fully visible tableau."
+
+  auditory:
+    features:
+      - sung Latin
+      - spoken prayer
+      - preaching
+      - bells and altar bells
+      - footsteps
+      - shuffling and crowd movement
+      - whispers and conversation
+      - overlapping devotions
+      - exterior city bells penetrating the church
+    acoustic_principle: "Large churches generate diffuse sound; textiles, crowd size and furnishing modify the acoustic field."
+    altar_bell:
+      function:
+        - attract attention
+        - mark spiritual intensity
+        - create temporary acoustic focus around an altar
+        - mobilize or reunify participants
+      scene_effect: "A bell can cause bodies to turn, move, press forward or redirect attention before Claes understands why."
+    guardrail: "Scale down simultaneous services and acoustic complexity for Goes/Reimerswaal unless local evidence supports Antwerp-like intensity."
+
+  olfactory:
+    features:
+      - incense
+      - wax
+      - lamp oil
+      - flowers and herbs
+      - human bodies and sweat
+      - damp stone and textiles
+      - dust
+      - graves and disturbed earth
+      - stale or poorly ventilated air
+    meaning:
+      - atmosphere
+      - purification within contemporary miasmatic thinking
+      - ritual transition
+      - emotional association
+      - involuntary memory
+    claes_use: "Smell should function as recognition and memory trigger, especially across trauma, bereavement and return."
+    guardrail: "Do not invent exact historical scent recipes or claim every church always smelled of incense."
+
+  tactile:
+    features:
+      - cold stone
+      - kneeling
+      - crowd pressure
+      - wooden barriers and benches
+      - thresholds and steps
+      - cloth and clothing
+      - touch of devotional objects where permitted
+      - earth and funerary disturbance
+    social_dimension: "Who may cross, sit, kneel, stand or approach is socially meaningful."
+
+  gustatory:
+    scope: "Less central to ordinary lay church experience than the other four senses, but culturally present through sacramental and devotional frameworks and through the period model of the five senses."
+    guardrail: "Do not force taste into every church scene merely to complete a five-sense checklist."
+
+guilds_crafts_confraternities:
+  historical_role:
+    - maintain or sponsor side altars
+    - endow masses
+    - commission retables, textiles, windows and liturgical objects
+    - fund candles, lamps, bells, music, flowers or herbs
+    - organize patronal observances and processional participation
+    - display corporate symbols
+    - compete for prestige and visibility
+  spatial_effect: "A well-funded altar zone can become a psychologically distinct chapel within the larger church."
+  social_effect: "Corporate identity is made visible, audible and sometimes olfactory; the church materializes urban relationships."
+  claes_use:
+    - "Cornelis can teach Claes to read people through altar affiliation, symbols, location and patron saints."
+    - "A guild feast can transform the sensory state of a familiar church without changing the architecture."
+    - "Prestige can be dramatized through location and material investment rather than exposition."
+  transfer_rule:
+    Goes: "Strongly usable as evidence-based reconstruction, but verify actual guilds, altars, patrons and locations."
+    Reimerswaal: "Usable with stronger scaling and local verification; do not assume Antwerp-level resources."
+    Antwerp: "Source-direct when matching Wauters' documented cases."
+
+rhetoricians:
+  principle: "Rederijker culture is a vernacular performance and communication medium within the same urban religious culture, not automatically a liturgical institution."
+  supported_intersections:
+    - "religious and moral themes in competition and performance"
+    - "Landjuweel themes may serve civic and devotional agendas"
+    - "five-senses morality appears in Elckerlijc within rederijker performance culture"
+    - "rhetorical culture joins word, voice, body, image, audience and civic identity"
+  claes_use:
+    - "Let ideas first experienced bodily in church recur later in vernacular performance."
+    - "Let a rederijker formulation of the five senses give language to something Claes already knows bodily."
+    - "Use church and chamber as resonant but distinct institutions."
+  hard_guardrail: "Do not assume a Goes or Reimerswaal chamber owned an altar or performed formal liturgical duties without local evidence."
+
+church_as_memory_palace:
+  carriers:
+    - graves
+    - inscriptions
+    - coats_of_arms
+    - donor portraits
+    - stained_glass
+    - retables
+    - patron saints
+    - endowed masses
+    - donated objects
+    - recurring routes and feast practices
+  principle: "Material and ritual traces anchor both collective and individual memory."
+  claes_application:
+    childhood: "The church is first learned as rhythm, scale, smell, sound and bodily rule."
+    post_fire: "Familiar zones acquire fear, vigilance and loss without necessarily changing physically."
+    bereavement: "A grave or memorial zone personalizes the larger institutional space."
+    post_1566: "Damage to images and altars can register as destruction of social and mnemonic architecture, not merely of art."
+    late_return: "An unchanged carrier may produce changed meaning because Claes' sinne and memories have changed."
+
+church_city_permeability:
+  mechanisms:
+    - processions carry objects and corporate identity into streets
+    - bells project sacred and civic time beyond the walls
+    - funerary and viaticum rites connect household, street and church
+    - feast decoration can transform exterior routes into temporary sacred space
+  narrative_rule: "Claes can live in church time while physically outside the church."
+
+annual_and_daily_variability:
+  principle: "The church is a changing state, not a fixed set."
+  variables:
+    - liturgical season
+    - feast rank
+    - patronal observance
+    - time of day
+    - daylight
+    - crowd density
+    - textile use
+    - number and type of services
+    - funerals and memorial masses
+    - corporate sponsorship
+    - cleaning and decoration
+  writing_rule: "Date and occasion should alter light, sound, smell, movement and visible objects."
+
+transferability:
+  evidence_levels:
+    ANTWERP_SOURCE_DIRECT:
+      definition: "Documented by Wauters for Antwerp; may be used as historical anchor in Antwerp scenes."
+    LOW_COUNTRIES_TRANSFERABLE:
+      definition: "Broad urban pre-Tridentine practice or sensory mechanism; may inform evidence-based reconstruction in Goes/Reimerswaal when scaled."
+    LOCAL_VERIFICATION_REQUIRED:
+      definition: "Specific number, ownership, dedication, route, object, exact placement, feast custom, local liturgical usage or post-1566 chronology requires local evidence."
+  explicit_non_transferables:
+    - exact Antwerp altar counts
+    - exact Antwerp guild dedications
+    - Antwerp-specific relics
+    - Antwerp spatial positions
+    - Antwerp expenditure levels
+    - Antwerp processional routes
+    - exact Antwerp simultaneity of services
+
+scene_templates:
+  - id: SCENE.CHURCH.CHILD_SENSORIUM
+    target_period: "ca. 1547-1554"
+    purpose: "Establish body-before-meaning and the church as a first school of the sinne."
+    sensory_beats:
+      - scale and verticality
+      - cold stone versus candle warmth
+      - sung or spoken Latin as sound before semantic comprehension
+      - incense/wax/body smell
+      - kneeling or standing by imitation
+      - altar bell causing collective reorientation
+    avoid: "theological exposition from a small child"
+
+  - id: SCENE.CHURCH.CORPORATE_MAP
+    target_period: "childhood through young adulthood"
+    purpose: "Teach Claes that urban society is spatially encoded in the church."
+    sensory_beats:
+      - different altar richness
+      - heraldic or corporate signs
+      - restricted versus open zones
+      - greeting, deference and recognition among adults
+      - seating and movement showing status
+    character_function: "Cornelis can act as interpreter of social order without delivering a lecture."
+
+  - id: SCENE.CHURCH.RHETORICIAN_RESONANCE
+    target_period: "school/rederijker formation"
+    purpose: "Connect bodily church knowledge to vernacular language about the five sinne."
+    structure:
+      - first plant bodily or moral sensory experience
+      - later echo it in a rederijker text/performance
+      - Claes recognizes rather than merely learns the concept
+    guardrail: "Do not collapse chamber and church into one institution."
+
+  - id: SCENE.CHURCH.FEAST_TRANSFORMATION
+    target_period: "any pre-1566 feast"
+    purpose: "Show carrier unchanged while sensory meaning changes."
+    sensory_beats:
+      - more light
+      - richer textiles
+      - increased candles
+      - flowers/herbs
+      - music and bells
+      - corporate insignia
+      - altered crowd routes
+    motif_link: "carrier / processing / meaning"
+
+  - id: SCENE.CHURCH.DEATH_AND_MATTER
+    target_period: "pre-1566 or later where locally supported"
+    purpose: "Place death, decomposition, memorial and liturgy in the same material space."
+    sensory_beats:
+      - stone moved or grave zone encountered
+      - disturbed earth or dampness
+      - incense or candles
+      - requiem sound against continuing church activity
+      - bodily awareness of death beneath the floor
+    motif_link: [earth, flowers, decay, transformation, memory]
+
+  - id: SCENE.CHURCH.ICONOCLASTIC_RUPTURE
+    target_period: "1566 where historically and locally appropriate"
+    purpose: "Represent iconoclasm as destruction of sensory, social and mnemonic architecture."
+    losses_to_register:
+      - familiar image
+      - altar identity
+      - donor memory
+      - corporate place
+      - ritual route
+      - acoustic or visual expectation
+    guardrail: "Local Goes/Reimerswaal sequence must be checked before scene specifics are canonized."
+
+  - id: SCENE.CHURCH.SENSORY_RECURRENCE
+    target_period: "late Claes"
+    purpose: "Use old church-linked smells, sounds or light structures as involuntary memory carriers in the sinne recovery arc."
+    rule: "Recovery is not nostalgia; the same stimulus should return with altered discernment and moral relation."
+
+writing_protocol_extension:
+  before_any_church_scene_ask:
+    - "Which city and exact/approximate year?"
+    - "What is documented locally and what is transferred reconstruction?"
+    - "What liturgical or civic occasion is occurring?"
+    - "Which institution/group owns or controls the relevant micro-space?"
+    - "What is Claes allowed to see, hear, approach or know at this age?"
+    - "Which senses dominate naturally in this scene?"
+    - "What social information is encoded in movement and location?"
+    - "What memory does the place already carry for Claes?"
+    - "What changes between entry and exit in objective, knowledge, value or bodily state?"
+  style_rule: "Never checklist all five senses. Build one dominant sensory field, one counter-sense and one social/spatial inference unless the scene genuinely demands more."

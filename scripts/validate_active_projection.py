@@ -71,6 +71,50 @@ checks = {
             "8 December 1545",
         ],
     },
+    "narrative/religious_space_sensory_church.yaml": {
+        "required": [
+            "WORLD.RELIGIOUS_SPACE.SENSORY_CHURCH",
+            "local_verification_required: true",
+            "Never checklist all five senses",
+            "church_as_memory_palace",
+        ],
+        "forbidden": [],
+    },
+    "storybible/modules/HISTORICAL_SUBSTRATE_1540_1605.md": {
+        "required": [
+            "source → HIST.EVENT",
+            "information status",
+            "layered identity",
+            "Reimerswaal's interaction of war, flood/erosion, demography, trade and church life",
+        ],
+        "forbidden": [],
+    },
+    "storybible/modules/WORLD_GOES_CHURCH_LOCAL.md": {
+        "required": [
+            "12 March 1442",
+            "31 May 1471",
+            "Niehoff replacement organ from 1550",
+        ],
+        "forbidden": [],
+    },
+    "history/LOW_COUNTRIES_TRANSFORMATION_1540_1605.md": {
+        "required": [
+            "Low Countries transformation, 1540–1605",
+            "1572, Goes",
+            "17 August 1585",
+            "20 March 1602",
+        ],
+        "forbidden": [],
+    },
+    "claims/SOURCE_CLAIMS_HISTORICAL_SUBSTRATE_RECOVERY_2026-08-16.yaml": {
+        "required": [
+            "SC.HIST.CATHOLIC_BIBLE.LATIN_VULGATE.1550.001",
+            "SC.HIST.RELIGIOUS_SPACE.SENSORY_SOCIAL_FIELD.001",
+            "SC.HIST.REDERIJKERS.PUBLIC_COMMUNICATION_NETWORK.001",
+            "SC.HIST.REVOLT.INFORMATION_ECOLOGY.1560_1585.001",
+        ],
+        "forbidden": [],
+    },
 }
 
 errors = []

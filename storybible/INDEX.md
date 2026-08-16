@@ -9,6 +9,7 @@ Operational navigation for the current Claes Storybible.
 3. `../canon/OPEN_DECISIONS.yaml` — active unresolved backlog only.
 4. `../review/SYNC_STATUS.md` — synchronization status.
 5. `../review/CANON_CONFLICT_AUDIT_2026-08-16.md` — conflicts found and their resolution.
+6. `../review/HISTORICAL_SUBSTRATE_RECOVERY_2026-08-16.md` — recovered historical/worldbuilding layer and recovery boundaries.
 
 `LEMMA_MCKEE_MASTER_2026-08-13.md` is a dated legacy snapshot. It is retained for development history but is not current authoring authority.
 
@@ -41,6 +42,29 @@ Resolved/not-applicable records no longer remain mixed into the active open regi
 - `../claims/SOURCE_CLAIMS_MEMORIAAL_PRINT_1564.yaml`
 - `../claims/SOURCE_CLAIMS_LAMPERT_APOTHECARY.yaml` — Goese Lampart/Lambert/Lampert apothecary evidence.
 - `../claims/SOURCE_CLAIMS_ALCHEMY_2026-08-16.yaml` — Agricola/Norton/Ercker/Morhof-based refinement claims.
+- `../claims/SOURCE_CLAIMS_GOES_RELIGION_1577_1578.yaml` — recovered Goes 1577/1578 and Reimerswaal 1574 local history claims.
+- `../claims/SOURCE_CLAIMS_HISTORICAL_SUBSTRATE_RECOVERY_2026-08-16.yaml` — recovered Catholic Bible, sensory church, rederijker, information-ecology and layered-identity claims.
+
+## Historical substrate / scene-world authority
+
+This layer supplies non-fiction world state and scene conditions. It never creates fictional Claes participation by itself and never outranks later explicit story decisions.
+
+- `../history/LOW_COUNTRIES_TRANSFORMATION_1540_1605.yaml` — machine-readable macro historical state, 1540–1605.
+- `../history/LOW_COUNTRIES_TRANSFORMATION_1540_1605.md` — human-readable scene-oriented historical synthesis.
+- `../history/ZEELAND_REVOLT_TIMELINE.yaml` — Zeeland-specific scene-changing chronology.
+- `modules/HISTORICAL_SUBSTRATE_1540_1605.md` — integration and scene-query contract.
+- `modules/PUBLIC_OPINION_IDENTITY_REVOLT.md` — rumour, verification, public opinion and layered identity.
+- `../narrative/religious_space_sensory_church.yaml` — church as sensory field, social map and memory carrier; source-direct for Antwerp and transferable with scaling/local verification to Goes/Reimerswaal.
+- `modules/WORLD_GOES_CHURCH_LOCAL.md` — local Goese church chronology, Seven Hours, music and guild materiality.
+- `modules/WORLD_GOES_CHURCH_LITURGICAL_GUARDRAILS.md` — comparative liturgical/sensory scene guardrails.
+- `modules/HISTORICAL_SUBSTRATE_GOES_CHURCH_LINK.md` — precedence between local Goes evidence and transferable comparative reconstruction.
+- `modules/GOES_RELIGIOUS_TRANSITION_1577_1578.md` — Catholic continuity → confessional pressure → Reformed public-space transition.
+
+Recovered provenance includes Wauters, Van Bruaene, Groenveld et al., Pollmann, Pollmann & Spicer, Stein & Pollmann, Catholic Bible/Luke 8 sources and the project-wide Revolt synthesis under `../sources/`.
+
+### Writing-readiness rule
+
+A historical domain is not considered chapter-ready merely because a source or dossier exists. For a relevant place/year/person/activity the authoring layer should be able to retrieve: provenance/evidence status, time-valid world state, actors/actions, materials, sensory fields, character knowledge/access, local-versus-transfer boundary, explicit guardrails and scene consequences.
 
 ## Story truth
 
@@ -71,6 +95,8 @@ Resolved/not-applicable records no longer remain mixed into the active open regi
 - `../narrative/world_goes_grote_kerk.yaml`
 - `../entities/GOES_LIVING_CITY.yaml`
 - `../entities/GOES_GROTE_KERK.yaml`
+- `modules/WORLD_GOES_CHURCH_LOCAL.md`
+- `modules/WORLD_GOES_CHURCH_LITURGICAL_GUARDRAILS.md`
 
 ### Mayken
 
@@ -88,6 +114,7 @@ Resolved/not-applicable records no longer remain mixed into the active open regi
 - `CORNELIS_EXECUTION_1569.md` — exact execution resolution.
 - `EXECUTIONS_REFORMATION_CLAES_2026-08-16.md` — current execution/testimony mechanics.
 - `EXECUTIONS_REFORMATION_CLAES.md` — older source-rich dossier; stale cipher/death-window passages are superseded.
+- `modules/PUBLIC_OPINION_IDENTITY_REVOLT.md` — period information/identity context for repression, rumour and public interpretation.
 
 ### Alchemy / Antwerp / Enkhuizen
 
@@ -109,8 +136,9 @@ Resolved/not-applicable records no longer remain mixed into the active open regi
 - `../narrative/motifs.yaml`
 - `../narrative/themes.yaml`
 - `../narrative/CRAFT_GUARDRAILS.yaml`
+- `../narrative/religious_space_sensory_church.yaml`
 
-Important current limitation: `structure.yaml` still needs populated Book/Act/Sequence/Chapter/Beat hierarchy and `scenes.yaml` needs many more scene-level diagnostics. This is an authoring backlog, not an unresolved canon contradiction.
+Important current limitation: `structure.yaml` still needs populated Book/Act/Sequence/Chapter/Beat hierarchy and `scenes.yaml` needs many more scene-level diagnostics. Bread, beer, Reimerswaal daily life/school, rederijker practice/Landjuweel, Antwerp time slices and military/schutterij practice also still require domain-to-scene rebuilding after the recovered substrate.
 
 ## Objects
 
@@ -143,11 +171,14 @@ Key current rules:
 - `../mapping/CONVERSION_REPORT.yaml`
 - `../review/MIGRATION_REVIEW.yaml` — historical migration audit; its old zero-conflict summary is not the current conflict assessment.
 - `../review/CANON_CONFLICT_AUDIT_2026-08-16.md` — current conflict assessment.
+- `../review/HISTORICAL_SUBSTRATE_RECOVERY_2026-08-16.md` — Round-A recovery audit.
+- `../review/CHAT_COMMITMENT_AUDIT_2026-08-13.md` and addendum — recovered evidence of what earlier research work was actually completed.
 - `../review/SYNC_STATUS.md`
 
 ## Validation
 
 - `../scripts/validate_canon.py`
+- `../scripts/validate_active_projection.py`
 - `../.github/workflows/canon-repository-validate.yml`
 - `../.github/workflows/lemma-validate.yml`
 

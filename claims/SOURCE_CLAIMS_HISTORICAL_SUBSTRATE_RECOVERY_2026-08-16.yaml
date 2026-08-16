@@ -1,0 +1,117 @@
+schema_version: "1.0.0"
+kind: SourceClaimRegistryExtension
+recovery:
+  recovered_on: "2026-08-16"
+  source_commit: "4cef46d4f2c077b27a1c6796ff011776dd8d9ef8"
+  rule: "Recovered historical/research claims do not override later explicit story decisions."
+claims:
+  - id: SC.HIST.CATHOLIC_BIBLE.LATIN_VULGATE.1550.001
+    type: SourceClaim
+    statement: "For Catholics in the mid-sixteenth-century Low Countries, Latin was the official language of the Church and the Vulgate was the authoritative Latin biblical text; vernacular Catholic translations did not replace Latin liturgical Scripture."
+    claim_type: historical_religious_practice
+    subject: WORLD.RELIGION.CATHOLIC_LOW_COUNTRIES
+    predicate: normative_scriptural_language
+    object: LATIN_VULGATE
+    story_time: {earliest: 1550-01-01, latest_exclusive: 1581-01-01, precision: interval}
+    evidence_status: VERIFIED
+    source_ids: [SRC-HIST-CATHOLIC-BIBLE-LOWCOUNTRIES-1548-001]
+    verification:
+      status: verified_primary_digital_edition_context
+      note: "A Catholic character may know Scripture through Latin liturgy, preaching, schooling and vernacular aids; a Dutch household Bible is not the normative liturgical text."
+
+  - id: SC.HIST.LEUVEN_BIBLE.1548.001
+    type: SourceClaim
+    statement: "The Leuven Bible of 1548, translated by Nicolaas van Winghe from the Catholic Vulgate tradition and approved by Catholic censors, was the first official complete Dutch Catholic Bible and was reprinted during Claes' lifetime."
+    claim_type: historical_book_history
+    subject: OBJ.HIST.LEUVEN_BIBLE_1548
+    predicate: catholic_vernacular_bible
+    object: DUTCH_LANGUAGE
+    story_time: {earliest: 1548-09-01, latest_exclusive: 1599-01-01, precision: interval}
+    evidence_status: VERIFIED
+    source_ids: [SRC-HIST-CATHOLIC-BIBLE-LOWCOUNTRIES-1548-001]
+    verification:
+      status: verified_primary_digital_edition_context
+      note: "Appropriate as Catholic vernacular aid or owned/read object, not a replacement for Latin liturgy."
+
+  - id: SC.HIST.LIESVELT_BIBLE.1526_1542.001
+    type: SourceClaim
+    statement: "The Liesvelt Bible was the first complete Dutch Bible (1526); its New Testament followed Luther and its sixth and last edition appeared in 1542, making it confessionally unsuitable as the default Catholic Bible for mid-sixteenth-century Goes."
+    claim_type: historical_book_history
+    subject: OBJ.HIST.LIESVELT_BIBLE
+    predicate: confessional_profile
+    object: REFORMATION_INFLUENCED_DUTCH_BIBLE
+    story_time: {earliest: 1526-01-01, latest_exclusive: 1543-01-01, precision: interval}
+    evidence_status: VERIFIED
+    source_ids: [SRC-HIST-CATHOLIC-BIBLE-LOWCOUNTRIES-1548-001]
+    verification:
+      status: verified_primary_digital_edition_context
+
+  - id: SC.HIST.CATHOLIC_IDENTITY.REVOLT.1520_1635.001
+    type: SourceClaim
+    statement: "The Dutch Revolt transformed Catholic religious life in the Low Countries over several generations; Catholic identity and practice adapted under political and confessional pressure rather than disappearing instantaneously."
+    claim_type: historical_religious_change
+    subject: WORLD.RELIGION.CATHOLIC_LOW_COUNTRIES
+    predicate: transformed_during_revolt
+    object: DUTCH_REVOLT
+    story_time: {earliest: 1520-01-01, latest_exclusive: 1636-01-01, precision: interval}
+    evidence_status: SUPPORTED
+    source_ids: [SRC-POLLMANN-CATHOLIC-IDENTITY-2011]
+    verification:
+      status: partial_official_metadata_abstract_verification
+      note: "The full monograph was not read in the recovered research pass; framework-level use only."
+
+  - id: SC.HIST.RELIGIOUS_SPACE.SENSORY_SOCIAL_FIELD.001
+    type: SourceClaim
+    statement: "Late-medieval and sixteenth-century urban church space functioned simultaneously as liturgical container, sensory field, social map, corporate stage and memory repository; access, movement, furnishing, sound and smell could encode social and devotional distinctions."
+    claim_type: historical_worldbuilding_mechanism
+    subject: WORLD.RELIGIOUS_SPACE.SENSORY_CHURCH
+    predicate: functions_as
+    object: SENSORY_SOCIAL_MEMORY_FIELD
+    story_time: {earliest: 1540-01-01, latest_exclusive: 1580-01-01, precision: interval}
+    evidence_status: SUPPORTED
+    source_ids: [SRC-WAUTERS-RELIGIOUS-SPACE-2021]
+    verification:
+      status: targeted_review
+      note: "Antwerp evidence is source-direct; transfer to Goes/Reimerswaal requires scaling and local verification."
+
+  - id: SC.HIST.REDERIJKERS.PUBLIC_COMMUNICATION_NETWORK.001
+    type: SourceClaim
+    statement: "Rederijkerskamers were urban corporations of public communication whose drama, lyric, competition and sociability connected craft, trade, civic identity, devotion, mobility and contested ideas."
+    claim_type: historical_institutional_mechanism
+    subject: WORLD.REDERIJKERS.LOW_COUNTRIES
+    predicate: operated_as
+    object: CIVIC_PUBLIC_COMMUNICATION_NETWORK
+    story_time: {earliest: 1540-01-01, latest_exclusive: 1605-01-01, precision: interval}
+    evidence_status: SUPPORTED
+    source_ids: [SRC-VAN-BRUAENE-OM-BETERS-WILLE-2008]
+    verification:
+      status: targeted_review
+      note: "General South-Netherlandish patterns do not prove a particular Goes/Reimerswaal office, membership or local custom."
+
+  - id: SC.HIST.REVOLT.INFORMATION_ECOLOGY.1560_1585.001
+    type: SourceClaim
+    statement: "In the Revolt-era information ecology, oral tidings, eyewitness and traveller reports could precede letters, pamphlets and printed confirmation; contemporaries assessed reports through repetition, source interest, independent witnesses and plausibility."
+    claim_type: historical_information_ecology
+    subject: WORLD.REVOLT.INFORMATION
+    predicate: circulated_through
+    object: ORAL_WRITTEN_PRINTED_NETWORKS
+    story_time: {earliest: 1560-01-01, latest_exclusive: 1586-01-01, precision: interval}
+    evidence_status: SUPPORTED
+    source_ids: [SRC-POLLMANN-SPICER-PUBLIC-OPINION-2007, SRC-STEIN-POLLMANN-NETWORKS-REGIONS-NATIONS-2010]
+    verification:
+      status: targeted_review
+      note: "Specific local carriers, timings and wording require local evidence."
+
+  - id: SC.HIST.REVOLT.IDENTITY.LAYERED.001
+    type: SourceClaim
+    statement: "Sixteenth-century political and confessional identity in the Low Countries was layered across household, town, corporation, province, confession and dynastic allegiance rather than reducible to a modern national binary."
+    claim_type: historical_identity_model
+    subject: WORLD.REVOLT.IDENTITY
+    predicate: structured_as
+    object: LAYERED_AFFILIATIONS
+    story_time: {earliest: 1540-01-01, latest_exclusive: 1605-01-01, precision: interval}
+    evidence_status: SUPPORTED
+    source_ids: [SRC-STEIN-POLLMANN-NETWORKS-REGIONS-NATIONS-2010, SRC-POLLMANN-SPICER-PUBLIC-OPINION-2007]
+    verification:
+      status: targeted_review
+      note: "Do not write a modern Dutch-versus-Belgian identity into Claes' period."

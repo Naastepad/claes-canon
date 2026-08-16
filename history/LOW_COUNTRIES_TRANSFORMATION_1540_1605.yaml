@@ -1,0 +1,116 @@
+schema_version: "1.1.0"
+kind: HistoricalTimeline
+id: HIST.TIMELINE.LOW_COUNTRIES.1540_1605
+title: "Low Countries transformation, 1540–1605"
+scope:
+  start: 1540-01-01
+  end: 1605-12-31
+  regions: [LOW_COUNTRIES, ZEELAND, HOLLAND, BRABANT, FLANDERS]
+completion_definition: >
+  Complete for the Claes project means the major political, military, confessional,
+  civic-cultural and material transitions that can change scene conditions between
+  1540 and 1605 are represented. It is not a catalogue of every skirmish, ordinance
+  or office-holder.
+principles:
+  - "History layer contains no fictional Claes causation."
+  - "Political allegiance, public worship and personal confession are separate variables."
+  - "Event, perception, retelling and cultural memory must not be conflated."
+  - "Local scene detail requires local evidence even when the macro-event is verified."
+source_ids:
+  - SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008
+  - SRC-CANON-NL-OPSTAND-2026
+  - SRC-POLLMANN-MEMORY-EARLY-MODERN-EUROPE-2017
+  - SRC-POLLMANN-CATHOLIC-IDENTITY-2011
+  - SRC-VAN-BRUAENE-OM-BETERS-WILLE-2008
+  - SRC-WAUTERS-RELIGIOUS-SPACE-2021
+  - SRC-HIST-CATHOLIC-BIBLE-LOWCOUNTRIES-1548-001
+
+events:
+  - {id: HIST.BIBLE.LEUVEN.1548, date: 1548-09, geography: [LEUVEN, LOW_COUNTRIES], type: book_religion, evidence_status: VERIFIED, source_ids: [SRC-HIST-CATHOLIC-BIBLE-LOWCOUNTRIES-1548-001], summary: "Approved complete Dutch Catholic Leuven Bible appears; Latin liturgical Scripture remains normative."}
+  - {id: HIST.GOES.FIRE.1554, date: 1554-05-18, geography: [GOES, ZEELAND], type: urban_disaster, evidence_status: VERIFIED, source_ids: [], summary: "Major fire at Goes; direct Claes historical anchor and urban rupture."}
+  - {id: HIST.PHILIP.SUCCESSION.1555, date: 1555-10, geography: [LOW_COUNTRIES], type: dynastic_government, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Charles V transfers lordship of the Netherlands to Philip II."}
+  - {id: HIST.EPISCOPAL.REORGANISATION.1559_1561, date_start: 1559, date_end: 1561, geography: [LOW_COUNTRIES, ZEELAND], type: church_institution, evidence_status: SUPPORTED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008], summary: "New episcopal structure embeds Catholic reform; Middelburg becomes a bishopric in the northern ecclesiastical reorganisation."}
+  - {id: HIST.ANTWERP.LANDJUWEEL.1561, date: 1561, geography: [ANTWERP, BRABANT], type: civic_culture_rederijkers, evidence_status: VERIFIED, source_ids: [SRC-VAN-BRUAENE-OM-BETERS-WILLE-2008], summary: "Antwerp hosts the culminating Brabant landjuweel/haagspel network; civic prestige, rhetoric, devotion and confessional debate overlap."}
+  - {id: HIST.ORANGE.MODERATION_SPEECH.1564, date: 1564-12, geography: [BRUSSELS, LOW_COUNTRIES], type: confessional_policy, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "William of Orange argues for moderation in persecution policy."}
+  - {id: HIST.SEGOVIA.LETTERS.1565, date: 1565-10, geography: [LOW_COUNTRIES], type: confessional_policy, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Royal instructions insist on maintaining anti-heresy policy and placards."}
+  - {id: HIST.COMPROMISE.NOBLES.1566, date: 1566-04, geography: [BRUSSELS, LOW_COUNTRIES], type: political_religious_petition, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Noble petition asks for suspension/mitigation of persecution; 'Geuzen' identity enters the conflict."}
+  - {id: HIST.HAGEPREKEN.1566, date_start: 1566-06, date_end: 1566-08, geography: [LOW_COUNTRIES], type: public_religion, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Open-air Calvinist preaching makes confessional conflict publicly visible and spatial."}
+  - {id: HIST.ICONOCLASM.LOW_COUNTRIES.1566, date_start: 1566-08-10, date_end: 1566-10, geography: [LOW_COUNTRIES], type: religion_political_crisis, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026, SRC-POLLMANN-MEMORY-EARLY-MODERN-EUROPE-2017], summary: "Iconoclastic wave attacks Catholic sacred interiors and transforms religious/public space."}
+  - {id: HIST.ICONOCLASM.ZEELAND.1566, date: 1566-08-22, geography: [MIDDELBURG, WALCHEREN, ZEELAND], type: religion_local, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Iconoclasm reaches Middelburg and spreads from Middelburg, Veere and Vlissingen across parts of Walcheren; most other Zeeland areas are reported as escaping direct attacks except Bakendorp."}
+  - {id: HIST.ALVA.ARRIVAL.1567, date: 1567, geography: [LOW_COUNTRIES], type: repression_government, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Alva arrives with troops; open Protestant worship is suppressed and the Council of Troubles begins repression."}
+  - {id: HIST.HEILIGERLEE.1568, date: 1568-05-23, geography: [GRONINGEN_REGION], type: military, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Battle of Heiligerlee becomes an early military success for the rebel side."}
+  - {id: HIST.EGMONT_HORNE.EXECUTION.1568, date: 1568-06-05, geography: [BRUSSELS], type: political_execution, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Counts Egmont and Horne are executed; repression becomes a powerful political-memory marker."}
+  - {id: HIST.MIDDELBURG.EXECUTIONS.1569, date: 1569, geography: [MIDDELBURG, ZEELAND], type: repression_confessional, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Sixteen people are executed in Middelburg in the post-1566 repression."}
+  - {id: HIST.BRIELLE.1572, date: 1572-04-01, geography: [BRIELLE, HOLLAND], type: military_political_control, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Sea Beggars take Den Briel; territorial rebellion accelerates."}
+  - {id: HIST.VLISSINGEN.REVOLT.1572, date: 1572-04-06, geography: [VLISSINGEN, ZEELAND], type: political_control, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Vlissingen joins the Revolt, opening the Zeeland phase of sustained warfare."}
+  - {id: HIST.VEERE.REVOLT.1572, date: 1572, geography: [VEERE, ZEELAND], type: political_control, evidence_status: SUPPORTED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Veere joins the rebel side in the early Zeeland shift."}
+  - {id: HIST.GOES.SIEGE_RELIEF.1572, date_start: 1572-08, date_end: 1572-10, geography: [GOES, ZEELAND], type: military_urban, evidence_status: SUPPORTED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008], summary: "Goes remains royalist and is besieged; Mondragón's relief preserves royalist control. Exact civilian chronology remains a dedicated local-research matter."}
+  - {id: HIST.MIDDELBURG.SIEGE.1572_1574, date_start: 1572, date_end: 1574-02, geography: [MIDDELBURG, ZEELAND], type: siege, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026, SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008], summary: "Middelburg is besieged until surrender in February 1574."}
+  - {id: HIST.HAARLEM.SIEGE.1572_1573, date_start: 1572-12, date_end: 1573-07, geography: [HAARLEM, HOLLAND], type: siege, evidence_status: SUPPORTED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008], summary: "Long siege and fall of Haarlem intensify the war's violence and memory culture."}
+  - {id: HIST.ALKMAAR.1573, date: 1573, geography: [ALKMAAR, HOLLAND], type: siege, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Alkmaar resists royal troops; northern territorial resistance strengthens."}
+  - {id: HIST.REIMERSWAAL.NAVAL_BATTLE.1574, date: 1574-01, geography: [REIMERSWAAL_AREA, ZEELAND_DELTA], type: naval_military, evidence_status: VERIFIED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008], summary: "Rebel fleet defeats a Habsburg/Spanish fleet near Reimerswaal, cutting maritime relief to Middelburg."}
+  - {id: HIST.MIDDELBURG.SURRENDER.1574, date: 1574-02, geography: [MIDDELBURG, ZEELAND], type: political_control, evidence_status: VERIFIED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008], summary: "Middelburg surrenders to the rebel side after prolonged blockade and failed relief."}
+  - {id: HIST.MOOKERHEI.1574, date: 1574-04-14, geography: [MOOK], type: battle, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Nassau army is defeated; Louis and Henry of Nassau are killed."}
+  - {id: HIST.LEIDEN.RELIEF.1574, date: 1574-10-03, geography: [LEIDEN, HOLLAND], type: siege_relief, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Relief of Leiden becomes a durable rebel victory and memory marker."}
+  - {id: HIST.ZIJPE.MARCH.1575, date: 1575, geography: [ZEELAND_DELTA], type: military_water_crossing, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Spanish forces cross/move through the Zijpe, demonstrating the military use of Zeeland's tidal-water geography."}
+  - {id: HIST.ZIERIKZEE.SIEGE.1576, date: 1576, geography: [ZIERIKZEE, ZEELAND], type: siege, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Zierikzee is besieged under Mondragón; Zeeland remains a war theatre."}
+  - {id: HIST.SPANISH_FURY.ANTWERP.1576, date: 1576-11-04, geography: [ANTWERP, BRABANT], type: urban_violence, evidence_status: SUPPORTED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008, SRC-POLLMANN-MEMORY-EARLY-MODERN-EUROPE-2017], summary: "The Spanish Fury devastates Antwerp and becomes a major atrocity-memory event."}
+  - {id: HIST.PACIFICATION.GHENT.1576, date: 1576-11-08, geography: [LOW_COUNTRIES], type: political_settlement, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026, SRC-POLLMANN-MEMORY-EARLY-MODERN-EUROPE-2017], summary: "Pacification of Ghent unites provinces against mutinous troops and uses political forgetting as a settlement device."}
+  - {id: HIST.GOES.SATISFACTION.1577, date: 1577-03, geography: [GOES, ZEELAND], type: political_confessional_settlement, evidence_status: VERIFIED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008], summary: "Goes, last royalist town in Zeeland, reaches a satisfactie with Orange while Catholicism remains the sole permitted public religion."}
+  - {id: HIST.DON_JUAN.NAMUR.1577, date: 1577-07-24, geography: [NAMUR, LOW_COUNTRIES], type: political_military, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Don Juan seizes Namur citadel; distrust and generalisation of the revolt deepen."}
+  - {id: HIST.GHENT.CALVINIST_REGIME.1577, date: 1577-11, geography: [GHENT, FLANDERS], type: urban_revolution, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Revolutionary Ghent government develops in a Calvinist direction."}
+  - {id: HIST.GEMBLOUX.1578, date: 1578-01-31, geography: [GEMBLOUX], type: battle, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "States army suffers a major defeat; political and confessional radicalisation accelerates."}
+  - {id: HIST.GOES.REFORMED_PREACHING.1578, date: 1578, geography: [GOES, ZEELAND], type: confessional_public_space, evidence_status: VERIFIED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008], summary: "Reformed preaching is introduced under pressure in the Holland/Zeeland satisfactie towns; Goes' 1577 Catholic-only settlement destabilises."}
+  - {id: HIST.GHENT.PUBLIC_CALVINIST_PREACHING.1578, date: 1578-06-01, geography: [GHENT, FLANDERS], type: public_religion, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Public Calvinist preaching begins in Ghent amid the southern radicalisation."}
+  - {id: HIST.ORANGE.RELIGIOUS_PEACE.1578, date: 1578-07, geography: [LOW_COUNTRIES], type: confessional_policy, evidence_status: VERIFIED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008], summary: "Orange proposes reciprocal religious peace; coexistence versus monopoly remains unsettled."}
+  - {id: HIST.PARMA.GOVERNOR.1578, date: 1578, geography: [LOW_COUNTRIES], type: government, evidence_status: SUPPORTED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008], summary: "Alexander Farnese/Parma takes leadership and pursues military reconquest plus reconciliation with Catholic discontents."}
+  - {id: HIST.UNION.ARRAS.1579, date: 1579-01, geography: [ARTOIS, HAINAUT], type: political_confessional_alliance, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Southern Catholic provinces move toward reconciliation with Philip II."}
+  - {id: HIST.UNION.UTRECHT.1579, date: 1579-01-23, geography: [NORTHERN_LOW_COUNTRIES, ZEELAND], type: political_alliance, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Union of Utrecht binds the core rebel provinces; Zeeland is part of the alliance."}
+  - {id: HIST.PHILIP.BAN.ORANGE.1580, date: 1580, geography: [LOW_COUNTRIES], type: sovereignty_propaganda, evidence_status: SUPPORTED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008], summary: "Philip II puts William of Orange under ban, escalating the personal and sovereign conflict."}
+  - {id: HIST.ACT_ABJURATION.1581, date: 1581-07-26, geography: [REBELLIOUS_LOW_COUNTRIES], type: sovereignty, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Act of Abjuration rejects Philip II as sovereign; legitimacy is framed as reciprocal obligation between ruler and subjects."}
+  - {id: HIST.ORANGE.ASSASSINATION_ATTEMPT.1582, date: 1582, geography: [ANTWERP], type: political_violence, evidence_status: SUPPORTED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008], summary: "William of Orange survives an assassination attempt; political violence becomes intimate and bodily."}
+  - {id: HIST.FRENCH_FURY.ANTWERP.1583, date: 1583-01-17, geography: [ANTWERP, BRABANT], type: urban_violence, evidence_status: SUPPORTED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008], summary: "Anjou's failed seizure of Antwerp deepens distrust of foreign protectors and urban political volatility."}
+  - {id: HIST.DELFT.ORANGE_DEATH.1584, date: 1584-07-10, geography: [DELFT, HOLLAND], type: political_assassination, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "William of Orange is assassinated at Delft; a direct Claes story anchor and major memory event."}
+  - {id: HIST.GHENT_BRUGES_FALL.1584, date: 1584, geography: [GHENT, BRUGES, FLANDERS], type: military_reconquest, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Ghent and Bruges return to Habsburg control as Parma's reconquest advances."}
+  - {id: HIST.ANTWERP.FALL.1585, date: 1585-08-17, geography: [ANTWERP, BRABANT], type: siege_migration_confessional, evidence_status: VERIFIED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008, SRC-POLLMANN-MEMORY-EARLY-MODERN-EUROPE-2017], summary: "Antwerp capitulates to Parma; political-confessional separation hardens and migration reshapes northern cities and networks."}
+  - {id: HIST.LEICESTER.MISSION.1585_1587, date_start: 1585, date_end: 1587, geography: [DUTCH_REPUBLIC], type: foreign_alliance_government, evidence_status: SUPPORTED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008], summary: "English intervention under Leicester reveals continuing uncertainty over sovereignty and war leadership."}
+  - {id: HIST.REPUBLIC.CONSOLIDATION.1588, date: 1588, geography: [DUTCH_REPUBLIC], type: state_formation, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "The northern rebel polity continues without a replacement monarch as the Republic of the Seven United Netherlands."}
+  - {id: HIST.SPANISH_ARMADA.1588, date: 1588, geography: [NORTH_SEA, ENGLAND, LOW_COUNTRIES_CONTEXT], type: international_war, evidence_status: SUPPORTED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008], summary: "Failure of the Spanish Armada alters the international strategic environment of the Revolt."}
+  - {id: HIST.BREDA.1590, date: 1590-03-04, geography: [BREDA, BRABANT], type: military_capture, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Maurits' forces take Breda using the peat-ship stratagem; the Republic regains strategic initiative."}
+  - {id: HIST.ZUTPHEN_DEVENTER_NIJMEGEN.1591, date: 1591, geography: [EASTERN_NETHERLANDS], type: military_campaign, evidence_status: SUPPORTED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008], summary: "Maurits' 1591 campaign captures key eastern cities including Zutphen, Deventer and Nijmegen, strengthening the Republic's frontier."}
+  - {id: HIST.STEENWIJK_COEVORDEN.1592, date: 1592, geography: [NORTHEAST_NETHERLANDS], type: military_campaign, evidence_status: SUPPORTED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008], summary: "Maurits takes Steenwijk and Coevorden; military consolidation continues."}
+  - {id: HIST.PARMA.DEATH.1592, date: 1592, geography: [HABSBURG_LOW_COUNTRIES], type: leadership_change, evidence_status: SUPPORTED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008], summary: "Alexander Farnese/Parma dies, ending the career of the principal Habsburg reconquest commander."}
+  - {id: HIST.GEERTRUIDENBERG.1593, date: 1593, geography: [GEERTRUIDENBERG], type: siege_capture, evidence_status: SUPPORTED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008], summary: "Maurits captures Geertruidenberg; siegecraft and disciplined campaigning become hallmarks of the new war phase."}
+  - {id: HIST.GRONINGEN.REDUCTION.1594, date: 1594, geography: [GRONINGEN], type: military_state_confessional, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Groningen is reduced and joined with the Ommelanden; Reformed public privilege follows the political takeover."}
+  - {id: HIST.HULST.HABSBURG.1596, date: 1596, geography: [HULST, ZEELAND_FLANDERS], type: siege_capture, evidence_status: SUPPORTED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008], summary: "Hulst falls to the Habsburg side; eastern Zeeuws-Vlaanderen remains a contested frontier."}
+  - {id: HIST.TURNHOUT.1597, date: 1597-01-24, geography: [TURNHOUT, BRABANT], type: battle, evidence_status: SUPPORTED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008], summary: "States forces win at Turnhout; 1597 becomes part of Maurits' successful campaign phase."}
+  - {id: HIST.ALBERT_ISABELLA.1598, date: 1598, geography: [HABSBURG_LOW_COUNTRIES], type: dynastic_government, evidence_status: SUPPORTED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008, SRC-POLLMANN-CATHOLIC-IDENTITY-2011], summary: "Albert and Isabella begin the new Habsburg regime as Philip II dies; Catholic restoration and reconciliation enter a new phase in the South."}
+  - {id: HIST.BOMMELERWAARD.1599, date: 1599, geography: [BOMMELERWAARD], type: military_frontier, evidence_status: SUPPORTED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008], summary: "Fighting around Zaltbommel and the Bommelerwaard shows the continuing strategic importance of rivers and fortified lines."}
+  - {id: HIST.NIEUWPOORT.1600, date: 1600-07-02, geography: [NIEUWPOORT, FLANDERS], type: battle, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Maurits defeats the Habsburg army at Nieuwpoort, but the expedition gains little lasting territorial result."}
+  - {id: HIST.OSTEND.SIEGE.1601_1604, date_start: 1601, date_end: 1604, geography: [OSTEND, FLANDERS], type: siege, evidence_status: SUPPORTED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008], summary: "The protracted siege of Ostend consumes men, money and matériel and epitomises attritional warfare."}
+  - {id: HIST.VOC.1602, date: 1602-03-20, geography: [DUTCH_REPUBLIC, GLOBAL_TRADE], type: economy_state_trade, evidence_status: SUPPORTED, source_ids: [], summary: "VOC foundation marks the Republic's expanding commercial-state capacity and global maritime orientation; relevant to the late economic world but not a direct Revolt battle."}
+  - {id: HIST.SLUIS.1604, date: 1604, geography: [SLUIS, ZEELAND_FLANDERS], type: siege_capture, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Maurits captures Sluis; western Zeeuws-Vlaanderen is more firmly tied to the Republic's frontier system."}
+  - {id: HIST.LONDON.PEACE.1604, date: 1604, geography: [ENGLAND, SPAIN, DUTCH_CONTEXT], type: international_diplomacy, evidence_status: SUPPORTED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008], summary: "Anglo-Spanish peace changes the international diplomatic setting while the Dutch-Habsburg war continues."}
+  - {id: HIST.SPINOLA.CAMPAIGN.1605, date: 1605, geography: [EASTERN_NETHERLANDS], type: military_campaign, evidence_status: SUPPORTED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008], summary: "Spinola's campaigning demonstrates that the Republic's territorial consolidation is not yet secure at the close of the Claes timeline."}
+
+cross_cutting_scene_filters:
+  religion:
+    - "What public worship is permitted here, at this date?"
+    - "What remains privately practiced despite public rules?"
+    - "How has the same church building changed in sound, objects, access and authority?"
+  war:
+    - "Is this place front, rear area, supply route, garrison, siege zone or maritime corridor?"
+    - "What can civilians perceive: billets, taxes, prices, bells, ships, refugees, wounded, requisitions, rumours?"
+  civic_culture:
+    - "What happens to guild, confraternity and rhetorician functions under confessional/political pressure?"
+  memory:
+    - "Separate event, Claes' perception, later story and public commemoration."
+  print_books:
+    - "Track censorship, confessional provenance, reprints, migration of printers and changed meanings of the same text/object."
+
+research_backlog:
+  - {id: OPEN.HIST.GOES.1566_1580.LOCAL, priority: critical, question: "Exact Goese church-use, clergy, preaching, altar/image and private Catholic chronology, especially the implementation of the 1578 shift."}
+  - {id: OPEN.HIST.GOES.1572.CIVILIANS, priority: critical, question: "Source-locate the siege/relief sequence and civilian, guild, church, food and market consequences in Goes."}
+  - {id: OPEN.HIST.REIMERSWAAL.1570S.DAILY, priority: high, question: "Localise naval-war, flood/erosion, trade, depopulation and urban-religious consequences in Reimerswaal."}
+  - {id: OPEN.HIST.ZEELAND.DAILY_WAR, priority: high, question: "Add year/interval evidence on taxation, billeting, food, shipping, disease, migration and markets for Zeeland."}
+  - {id: OPEN.HIST.POLLMANN.FULLTEXT, priority: high, question: "If the full Pollmann 2011 monograph becomes available, replace abstract-level provenance with chapter-level locators and extract Catholic lived-experience claims."}

@@ -1,6 +1,23 @@
-schema_version: 1.1.0
+schema_version: 1.2.0
 kind: WorldModuleRegistry
 modules:
+  - id: WORLD.HISTORICAL_SUBSTRATE_1540_1605
+    label: "Historical substrate — Low Countries and Zeeland 1540–1605"
+    canon_status: CANON
+    record_role: NON_FICTION_SCENE_CONDITION_LAYER
+    historical_method: SOURCE_WEIGHTED_EVENT_TO_LOCAL_PERCEPTION_MODEL
+    detail_files:
+      - history/LOW_COUNTRIES_TRANSFORMATION_1540_1605.yaml
+      - history/LOW_COUNTRIES_TRANSFORMATION_1540_1605.md
+      - history/ZEELAND_REVOLT_TIMELINE.yaml
+      - storybible/modules/HISTORICAL_SUBSTRATE_1540_1605.md
+      - storybible/modules/PUBLIC_OPINION_IDENTITY_REVOLT.md
+    scene_query_dimensions: [political_control, public_worship, private_confession, military_status, transport_and_tides, provisioning, taxation_and_billeting, institutions, print_and_censorship, sensory_consequences, information_status, layered_identity, later_memory]
+    guardrails:
+      - "Historical relevance never creates fictional Claes participation by itself."
+      - "Separate event, local implementation, inhabitant perception, later retelling/memory and fictional use."
+      - "Later explicit story decisions override any older story implication in recovered historical prose."
+
   - id: WORLD.GOES
     label: "Goes — topography, trade and catastrophe"
     canon_status: CANON
@@ -11,6 +28,8 @@ modules:
       - {date: 1566-08-01, precision: lower-bound, event: "Claes returns after Beeldenstorm", story_instance: NI.EVENT.CLAES_RETURN_GOES.1566.001}
     narrative_functions: ["childhood material world", "elementary schooling", "fire/air half of elemental symmetry", "family trade and later return", "1570 reveal work environment"]
     educational_route: "Claes receives elementary schooling in Goes; Cornelis intends Zierikzee as the next Latin-school destination before the 1554 fire."
+    linked_world_modules: [WORLD.HISTORICAL_SUBSTRATE_1540_1605, WORLD.RELIGIOUS_SPACE.SENSORY_CHURCH]
+    local_scene_layers: [narrative/world_goes_living_city.yaml, narrative/world_goes_grote_kerk.yaml, storybible/modules/WORLD_GOES_CHURCH_LOCAL.md, storybible/modules/WORLD_GOES_CHURCH_LITURGICAL_GUARDRAILS.md]
     guardrails:
       - "Do not claim a continuously operating full official Goes Latin school through 1554 without evidence."
       - "Do not make Claes' Reimerswaal route begin from educational zero; his earlier elementary schooling in Goes is canon."
@@ -25,6 +44,7 @@ modules:
     claes_presence: {earliest: 1554-05-19, latest_exclusive: 1561-09-01, precision: bounded}
     narrative_functions: ["displacement", "Latin formation", "advanced older-pupil formation", "water/earth half of elemental symmetry", "adaptation to strange households", "water-marked Zovitius object biography"]
     educational_route: "After the Goes fire, Reimerswaal replaces the intended Zierikzee destination. Claes enters after elementary schooling in Goes; the 1554–1561 span progresses into advanced/older-pupil formation and is not seven years of beginner curriculum."
+    linked_world_modules: [WORLD.HISTORICAL_SUBSTRATE_1540_1605, WORLD.RELIGIOUS_SPACE.SENSORY_CHURCH]
     guardrails:
       - "The city still functions during Claes' stay."
       - "Claes experiences water threat, not the later final fall of the city."
@@ -39,9 +59,23 @@ modules:
     educational_model:
       includes: ["free-school environment", "private instruction", "Latin", "limited Greek", "French", "bookkeeping", "copying", "trade correspondence"]
       excludes: ["modern university model", "Leuven as part of Claes' canon route"]
+    linked_world_modules: [WORLD.HISTORICAL_SUBSTRATE_1540_1605, WORLD.RELIGIOUS_SPACE.SENSORY_CHURCH]
     guardrails:
       - "Claes is not a university student in Antwerp."
       - "Plantin can remain peripheral/prudent; no need to make him a core conspirator."
+
+  - id: WORLD.RELIGIOUS_SPACE.SENSORY_CHURCH
+    label: "Religious space — sensory, social and mnemonic church world"
+    canon_status: CANON
+    record_role: RESEARCH_AND_SCENE_USE_FRAMEWORK
+    historical_method: ANTWERP_SOURCE_DIRECT_PLUS_LOW_COUNTRIES_TRANSFER_WITH_LOCAL_VERIFICATION
+    detail_file: narrative/religious_space_sensory_church.yaml
+    local_goes_layers: [storybible/modules/WORLD_GOES_CHURCH_LOCAL.md, storybible/modules/WORLD_GOES_CHURCH_LITURGICAL_GUARDRAILS.md, storybible/modules/HISTORICAL_SUBSTRATE_GOES_CHURCH_LINK.md]
+    narrative_functions: ["body-before-meaning", "sinne as cognition", "church as social map", "church as memory carrier", "confessional change made materially perceptible"]
+    guardrails:
+      - "Never checklist all five senses; select a dominant sensory field, a counter-sense and a social/spatial inference when appropriate."
+      - "Antwerp-specific scale, altar maps, relics and simultaneity do not automatically transfer to Goes or Reimerswaal."
+      - "Local evidence outranks comparative reconstruction."
 
   - id: WORLD.NISSEPAD
     label: "Nissepad — source-weighted family landscape"

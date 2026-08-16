@@ -1,0 +1,34 @@
+schema_version: "1.1.0"
+kind: RegionalHistoricalTimeline
+id: HIST.TIMELINE.ZEELAND.REVOLT
+region: ZEELAND
+parent_timeline: HIST.TIMELINE.LOW_COUNTRIES.1540_1605
+places_priority: [GOES, REIMERSWAAL, MIDDELBURG, VLISSINGEN, VEERE, ZIERIKZEE, WALCHEREN, ZEELAND_DELTA, HULST, SLUIS]
+principles:
+  - "Water is geography, economy and military infrastructure at once."
+  - "Public confession, political allegiance and household belief are separate fields."
+  - "General evidence may explain mechanisms but not unverified local detail."
+events:
+  - {id: HIST.ZEELAND.MIDDELBURG_BISHOPRIC.1559, date_start: 1559, date_end: 1561, place: MIDDELBURG, type: church_institution, evidence_status: SUPPORTED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008], summary: "Middelburg becomes a bishopric in the Catholic reorganisation."}
+  - {id: HIST.ZEELAND.ICONOCLASM.1566, date: 1566-08-22, place: MIDDELBURG_WALCHEREN, type: confessional_public_space, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Iconoclasm reaches Middelburg and parts of Walcheren; the Zeeland synthesis reports most other Zeeland areas escaping direct attacks except Bakendorp."}
+  - {id: HIST.ZEELAND.MIDDELBURG_REPRESSION.1569, date: 1569, place: MIDDELBURG, type: repression, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Sixteen people are executed in Middelburg in the repression after 1566."}
+  - {id: HIST.ZEELAND.VLISSINGEN_REVOLT.1572, date: 1572-04-06, place: VLISSINGEN, type: political_control, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Vlissingen joins the Revolt."}
+  - {id: HIST.ZEELAND.VEERE_REVOLT.1572, date: 1572, place: VEERE, type: political_control, evidence_status: SUPPORTED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Veere joins the rebel side in the early Zeeland shift."}
+  - {id: HIST.ZEELAND.MIDDELBURG_SIEGE.1572_1574, date_start: 1572, date_end: 1574-02, place: MIDDELBURG, type: siege, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026, SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008], summary: "Middelburg is besieged until surrender in February 1574."}
+  - {id: HIST.ZEELAND.GOES_SIEGE_RELIEF.1572, date_start: 1572-08, date_end: 1572-10, place: GOES, type: siege_relief, evidence_status: SUPPORTED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008], summary: "Royalist Goes is besieged and relieved by Mondragón; civilian detail remains a local research task."}
+  - {id: HIST.ZEELAND.REIMERSWAAL_NAVAL.1574, date: 1574-01, place: REIMERSWAAL_AREA, type: naval_battle, evidence_status: VERIFIED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008], summary: "A rebel fleet defeats a Habsburg/Spanish fleet near Reimerswaal and disrupts relief of Middelburg.", do_not_infer: ["Street fighting inside Reimerswaal"]}
+  - {id: HIST.ZEELAND.MIDDELBURG_SURRENDER.1574, date: 1574-02, place: MIDDELBURG, type: political_control, evidence_status: VERIFIED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008], summary: "Middelburg surrenders after the prolonged siege and failed relief."}
+  - {id: HIST.ZEELAND.ZIJPE.1575, date: 1575, place: ZEELAND_DELTA, type: military_waterway, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Royal forces use the Zijpe/tidal geography during military operations."}
+  - {id: HIST.ZEELAND.ZIERIKZEE_SIEGE.1576, date: 1576, place: ZIERIKZEE, type: siege, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Zierikzee is besieged under Mondragón."}
+  - {id: HIST.ZEELAND.GOES_SATISFACTION.1577, date: 1577-03, place: GOES, type: political_confessional_settlement, evidence_status: VERIFIED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008], summary: "Goes reaches a satisfactie with Orange while Catholicism remains the sole permitted public religion."}
+  - {id: HIST.ZEELAND.GOES_REFORMED_PREACHING.1578, date: 1578, place: GOES, type: confessional_public_space, evidence_status: VERIFIED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008], summary: "Reformed preaching is introduced under pressure during the 1578 radicalisation; exact Goese implementation remains open."}
+  - {id: HIST.ZEELAND.UNION_UTRECHT.1579, date: 1579-01-23, place: ZEELAND, type: political_alliance, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Zeeland participates in the Union of Utrecht."}
+  - {id: HIST.ZEELAND.HULST_HABSBURG.1596, date: 1596, place: HULST, type: frontier_control, evidence_status: SUPPORTED, source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008], summary: "Hulst falls to the Habsburg side and the eastern Zeeland-Flanders frontier remains contested."}
+  - {id: HIST.ZEELAND.NIEUWPOORT_CONTEXT.1600, date: 1600, place: ZEELAND_FLANDERS_CORRIDOR, type: campaign_logistics, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "The Nieuwpoort campaign underscores the importance of coastal and maritime logistics south of Zeeland."}
+  - {id: HIST.ZEELAND.SLUIS_CAPTURE.1604, date: 1604, place: SLUIS, type: frontier_control, evidence_status: VERIFIED, source_ids: [SRC-CANON-NL-OPSTAND-2026], summary: "Maurits captures Sluis, strengthening Republican control in western Zeeland-Flanders."}
+scene_query_dimensions: [date, place, political_control, public_worship, military_pressure, waterways_shipping, food_provisioning, guilds_corporations, church_building_state, sounds, smells, crowd_movement, books_print_censorship, migration, memory_afterlife]
+research_backlog:
+  - "Exact Goes 1572 civilian, guild, church, food and fuel consequences."
+  - "Exact Goes 1578 church transition, actors and private Catholic adaptation."
+  - "Reimerswaal war/flood/demography/trade/ecclesiastical interaction."
+  - "Annual Zeeland taxation, billeting, prices, disease, provisioning and shipping."
