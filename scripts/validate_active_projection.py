@@ -46,6 +46,20 @@ checks = {
             "mother_fate: OPEN",
         ],
     },
+    "narrative/instances.yaml": {
+        "required": [
+            "intentional exact-date resonance with Claes' canonical birth on 8 December 1542",
+            "STC.CLAES.ZIERIKZEE.PLAN.001",
+            "STC.CORNELIS.FIRST_ARREST_BAIL.1567.001",
+            "STC.CORNELIS.DEATH.ANTWERP.1569.001",
+            "19 November 1569: fictional public execution in Antwerp",
+            "Antwerpse druk / Projectio van het Woord",
+        ],
+        "forbidden": [
+            "not shared birth-year resonance",
+            "label: Arrestatie en dood Cornelis\n  canon_status: CANON\n  details_status: OPEN",
+        ],
+    },
     "storybible/LEMMA_MCKEE_MASTER.md": {
         "required": [
             "8 December 1542",
