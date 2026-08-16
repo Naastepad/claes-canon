@@ -16,17 +16,7 @@ checks = {
         "forbidden": ["Dodoens yields values", "Primus Index identifies", "full reconstruction takes weeks"],
     },
     "narrative/world_modules.yaml": {
-        "required": [
-            "elementary schooling",
-            "advanced older-pupil formation",
-            "chemical/material, not a cipher-key architecture",
-            "WORLD.BEER_BREWING_DISTRIBUTION",
-            "Cornelis is a biersteker, not automatically a brewer or brewery owner",
-            "WORLD.SCHUTTERIJ_MILITARY",
-            "1516/1530",
-            "1607 Wapenhandelinghe is not a 1572 Goes drill manual",
-            "Never write Antwerp as one unchanged scene world",
-        ],
+        "required": ["elementary schooling", "advanced older-pupil formation", "chemical/material, not a cipher-key architecture", "WORLD.BEER_BREWING_DISTRIBUTION", "Cornelis is a biersteker, not automatically a brewer or brewery owner", "WORLD.SCHUTTERIJ_MILITARY", "1516/1530", "1607 Wapenhandelinghe is not a 1572 Goes drill manual", "Never write Antwerp as one unchanged scene world"],
         "forbidden": ["cipher knowledge may belong", "source, key and destination"],
     },
     "narrative/world_goes_living_city.yaml": {
@@ -37,32 +27,14 @@ checks = {
         "required": ["intentional exact-date resonance with Claes' canonical birth on 8 December 1542", "STC.CLAES.ZIERIKZEE.PLAN.001", "STC.CORNELIS.FIRST_ARREST_BAIL.1567.001", "STC.CORNELIS.DEATH.ANTWERP.1569.001", "19 November 1569: fictional public execution in Antwerp", "Antwerpse druk / Projectio van het Woord"],
         "forbidden": ["not shared birth-year resonance", "label: Arrestatie en dood Cornelis\n  canon_status: CANON\n  details_status: OPEN"],
     },
-    "storybible/LEMMA_MCKEE_MASTER.md": {
-        "required": ["8 December 1542", "not decryption", "Mayken", "19 November 1569"],
-        "forbidden": ["8 December 1545"],
-    },
-    "narrative/religious_space_sensory_church.yaml": {
-        "required": ["WORLD.RELIGIOUS_SPACE.SENSORY_CHURCH", "local_verification_required: true", "Never checklist all five senses", "church_as_memory_palace"],
-        "forbidden": [],
-    },
-    "storybible/modules/HISTORICAL_SUBSTRATE_1540_1605.md": {
-        "required": ["source → HIST.EVENT", "information status", "layered identity", "Reimerswaal's interaction of war, flood/erosion, demography, trade and church life"],
-        "forbidden": [],
-    },
-    "storybible/modules/WORLD_GOES_CHURCH_LOCAL.md": {
-        "required": ["12 March 1442", "31 May 1471", "Niehoff replacement organ from 1550"],
-        "forbidden": [],
-    },
-    "history/LOW_COUNTRIES_TRANSFORMATION_1540_1605.md": {
-        "required": ["Low Countries transformation, 1540–1605", "1572, Goes", "17 August 1585", "20 March 1602"],
-        "forbidden": [],
-    },
-    "claims/SOURCE_CLAIMS_HISTORICAL_SUBSTRATE_RECOVERY_2026-08-16.yaml": {
-        "required": ["SC.HIST.CATHOLIC_BIBLE.LATIN_VULGATE.1550.001", "SC.HIST.RELIGIOUS_SPACE.SENSORY_SOCIAL_FIELD.001", "SC.HIST.REDERIJKERS.PUBLIC_COMMUNICATION_NETWORK.001", "SC.HIST.REVOLT.INFORMATION_ECOLOGY.1560_1585.001"],
-        "forbidden": [],
-    },
+    "storybible/LEMMA_MCKEE_MASTER.md": {"required": ["8 December 1542", "not decryption", "Mayken", "19 November 1569"], "forbidden": ["8 December 1545"]},
+    "narrative/religious_space_sensory_church.yaml": {"required": ["WORLD.RELIGIOUS_SPACE.SENSORY_CHURCH", "local_verification_required: true", "Never checklist all five senses", "church_as_memory_palace"], "forbidden": []},
+    "storybible/modules/HISTORICAL_SUBSTRATE_1540_1605.md": {"required": ["source → HIST.EVENT", "information status", "layered identity", "Reimerswaal's interaction of war, flood/erosion, demography, trade and church life"], "forbidden": []},
+    "storybible/modules/WORLD_GOES_CHURCH_LOCAL.md": {"required": ["12 March 1442", "31 May 1471", "Niehoff replacement organ from 1550"], "forbidden": []},
+    "history/LOW_COUNTRIES_TRANSFORMATION_1540_1605.md": {"required": ["Low Countries transformation, 1540–1605", "1572, Goes", "17 August 1585", "20 March 1602"], "forbidden": []},
+    "claims/SOURCE_CLAIMS_HISTORICAL_SUBSTRATE_RECOVERY_2026-08-16.yaml": {"required": ["SC.HIST.CATHOLIC_BIBLE.LATIN_VULGATE.1550.001", "SC.HIST.RELIGIOUS_SPACE.SENSORY_SOCIAL_FIELD.001", "SC.HIST.REDERIJKERS.PUBLIC_COMMUNICATION_NETWORK.001", "SC.HIST.REVOLT.INFORMATION_ECOLOGY.1560_1585.001"], "forbidden": []},
     "storybible/domains/BREAD_GRAIN_BAKING_1540_1602.md": {
-        "required": ["professional urban bakery", "one dominant field + one counter-sense + one inference", "exact Celsius temperatures", "A proposed youth bakery scene remains an authorial scene choice"],
+        "required": ["professional urban bakery", "one dominant field + one counter-sense + one inference", "exact Celsius temperatures", "It does not canonize a specific bakery scene"],
         "forbidden": ["Use a fixed modern recipe"],
     },
     "storybible/domains/BEER_BREWING_BEERSTEKER_1540_1580.md": {
@@ -82,17 +54,11 @@ checks = {
         "forbidden": ["Antwerp remains unchanged from 1561 to 1585"],
     },
     "storybible/domains/SCHUTTERIJ_MILITARY_PRACTICE_1550_1607.md": {
-        "required": ["1516", "1530", "De Gheyn 1607", "1572 Goes drill manual", "schuttersgilde", "garrison/professional troops", "twelve apostles/furket/exact one-shot-per-minute"],
+        "required": ["1516", "1530", "De Gheyn 1607", "De Gheyn 1607 as a 1572 manual", "schuttersgilde", "garrison/professional troops", "twelve apostles/furket/exact one-shot-per-minute"],
         "forbidden": ["De Gheyn 1607 proves Goes 1572 drill", "Edele Busse founded in 1516 as settled canon", "Edele Busse founded in 1530 as settled canon"],
     },
-    "claims/SOURCE_CLAIMS_DOMAIN_REBUILD_2026-08-16.yaml": {
-        "required": ["SC.HIST.REIMERSWAAL.SCHOOL.CONTINUITY.001", "SC.HIST.LANDJUWEEL.ANTWERP.14_CHAMBERS.1561.001", "SC.HIST.LANDJUWEEL.GOES_PARTICIPATION.1561.001", "SC.HIST.GOES.SCHUTTERIJ.FIREARM_GUILD.16C.001", "SC.HIST.DEGHEYN.WAPENHANDELINGHE.1607.001"],
-        "forbidden": [],
-    },
-    "narrative/domain_scene_packs.yaml": {
-        "required": ["PACK.BEER.GOES_BIERSTEKER", "PACK.REIMERSWAAL.SCHOOL_1554_1561", "PACK.REDERIJKERS.ANTWERP_LANDJUWEEL_1561", "PACK.ANTWERP.1567_1569", "PACK.GOES.SCHUTTERIJ", "PACK.MILITARY.DEGHEYN_1607_COMPARATOR"],
-        "forbidden": [],
-    },
+    "claims/SOURCE_CLAIMS_DOMAIN_REBUILD_2026-08-16.yaml": {"required": ["SC.HIST.REIMERSWAAL.SCHOOL.CONTINUITY.001", "SC.HIST.LANDJUWEEL.ANTWERP.14_CHAMBERS.1561.001", "SC.HIST.LANDJUWEEL.GOES_PARTICIPATION.1561.001", "SC.HIST.GOES.SCHUTTERIJ.FIREARM_GUILD.16C.001", "SC.HIST.DEGHEYN.WAPENHANDELINGHE.1607.001"], "forbidden": []},
+    "narrative/domain_scene_packs.yaml": {"required": ["PACK.BEER.GOES_BIERSTEKER", "PACK.REIMERSWAAL.SCHOOL_1554_1561", "PACK.REDERIJKERS.ANTWERP_LANDJUWEEL_1561", "PACK.ANTWERP.1567_1569", "PACK.GOES.SCHUTTERIJ", "PACK.MILITARY.DEGHEYN_1607_COMPARATOR"], "forbidden": []},
 }
 
 errors = []
