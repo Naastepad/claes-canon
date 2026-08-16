@@ -123,6 +123,7 @@ Use these dossiers together with `../narrative/domain_scene_packs.yaml`.
 Round C is the bridge from chapter-ready world knowledge to future Book/Act/Sequence/Chapter/Scene structure.
 
 - `STORY_PROJECTION_ROUND_C.md` — human-readable governing projection.
+- `ALCHEMICAL_OPERATION_PALETTE.md` — non-binding author-side palette of seven classic operations (Calcination, Sublimation, Solution, Putrefaction, Distillation, Coagulation, Tincture), with narrative, sensory and show-don't-tell applications; never a mandatory 3×7 or 21-chapter template.
 - `../narrative/story_projection_round_c.yaml` — `ARC.CLAES.CAUSAL_SPINE`, fourteen current causal hinges from Status Prima to Status Prima Nova.
 - `../narrative/alchemical_authorial_architecture.yaml` — `ARC.CLAES.GREAT_WORK.AUTHORIAL`: Status Prima; interwoven Corpus/Anima/Spiritus; Transmutatio/Rubedo; Projectio; Status Prima Nova.
 - `../narrative/mayken_independent_arc.yaml` — `ARC.MAYKEN.LIFE`.
@@ -134,6 +135,8 @@ Round C is the bridge from chapter-ready world knowledge to future Book/Act/Sequ
 `ARC.CLAES.MACRO_TRANSMUTATION` remains the chronological **Drager → Nigredo → Albedo → Rubedo → Projectio** spine. The deeper Round-C architecture does not replace it.
 
 **Status Prima → Corpus / Anima / Spiritus → Transmutatio/Rubedo → Projectio → Status Prima Nova** is an author-side register model. Corpus/Anima/Spiritus spiral through the same chronology and must not become three mechanically identical cycles. No fixed alchemical operation count is mandatory.
+
+The seven-operation palette is therefore a **compositional and diagnostic vocabulary only**. Use an operation when a scene's actual material, relational or inner causality earns it; never reverse-engineer a scene solely to satisfy the palette.
 
 ### Mayken rule
 
@@ -249,6 +252,7 @@ Standing hard-review mode under `GRD.EDITORIAL.RUTHLESS_EDITOR`:
 
 - `ALCHEMICAL_CHEMICAL_PROCESS_CHAIN_CLAES_LIFELINE.md`
 - `ALCHEMICAL_PROCESS_REFINEMENT_2026-08-16.md`
+- `ALCHEMICAL_OPERATION_PALETTE.md`
 - `ANTWERP_THREE_VISITS_ALCHEMICAL_ARC_1561_1569.md`
 - `../narrative/alchemical_authorial_architecture.yaml`
 - `../objects/ALCHEMY_OBJECTS_2026-08-16.yaml`
