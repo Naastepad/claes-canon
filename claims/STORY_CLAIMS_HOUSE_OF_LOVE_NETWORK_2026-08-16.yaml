@@ -1,0 +1,90 @@
+schema_version: 1.0.0
+kind: StoryClaimRegistryExtension
+claims:
+- id: STC.CORNELIS.HOUSE_OF_LOVE.ENTRY.1552_1553.001
+  type: StoryClaim
+  statement: >-
+    By approximately 1552-1553 Cornelis belongs in novel canon to the translocal Huis der Liefde network while continuing to live and function publicly in Goes.
+  subject: ENT.PERSON.CORNELIS
+  predicate: belongs_to
+  object: ENT.NETWORK.HOUSE_OF_LOVE_TRANSLOCAL
+  canon_status: CANON
+  decision_id: DEC.CORNELIS.HOUSE_OF_LOVE.ENTRY_NETWORK.2026-08-16
+  fictionality: novel_canon_on_historical_network
+
+- id: STC.CORNELIS.GHYSBRECHT.TRUSTED_COMMERCIAL_RELATION.001
+  type: StoryClaim
+  statement: >-
+    Cornelis has a repeated commercial relationship with Ghysbrecht/Gijsbrecht, the Antwerp cooper with Goese interests; casks, credit, delivery and repeated dealings create enough trust for the relationship to become a social bridge into Antwerp circles.
+  subject: ENT.PERSON.CORNELIS
+  predicate: trusted_commercial_relation_with
+  object: ENT.HIST.PERSON.GHYSBRECHT_ANTWERP_COOPER
+  canon_status: CANON
+  decision_id: DEC.CORNELIS.HOUSE_OF_LOVE.ENTRY_NETWORK.2026-08-16
+  fictionality: novel_reconstruction
+
+- id: STC.CORNELIS.GHYSBRECHT_TO_DENS.BRIDGE.001
+  type: StoryClaim
+  statement: >-
+    In novel canon Ghysbrecht opens the social path by which Cornelis meets Adriaan Dens. This is a deliberate fictional bridge and must never be presented as evidence that Ghysbrecht was a Familist or that a historical Ghysbrecht-Dens relationship is documented.
+  subject: ENT.HIST.PERSON.GHYSBRECHT_ANTWERP_COOPER
+  predicate: introduces_or_socially_routes
+  object: ENT.HIST.PERSON.ADRIAAN_DENS
+  canon_status: CANON
+  decision_id: DEC.CORNELIS.HOUSE_OF_LOVE.ENTRY_NETWORK.2026-08-16
+  fictionality: explicit_novel_bridge
+
+- id: STC.CORNELIS.DENS.FIRST_IDENTIFIABLE_FAMILIST.001
+  type: StoryClaim
+  statement: >-
+    Adriaan Dens is the first person Cornelis knowingly recognizes as belonging to H.N.'s circle; through Dens the religious ideas cease to be anonymous printed or spoken possibilities and become attached to a trusted human network.
+  subject: ENT.PERSON.CORNELIS
+  predicate: first_recognizes_familist_through
+  object: ENT.HIST.PERSON.ADRIAAN_DENS
+  canon_status: CANON
+  decision_id: DEC.CORNELIS.HOUSE_OF_LOVE.ENTRY_NETWORK.2026-08-16
+  fictionality: novel_canon
+
+- id: STC.CORNELIS.BARREFELT.DEEPENING.001
+  type: StoryClaim
+  statement: >-
+    Dens connects Cornelis onward to Hendrik Jansen van Barrefelt, who functions in the novel as the historically plausible network deepener: a person able to test trust, transmit writings and connect the Antwerp/Brabant route to the wider Huis der Liefde.
+  subject: ENT.PERSON.CORNELIS
+  predicate: deepens_affiliation_through
+  object: ENT.HIST.PERSON.HENDRIK_JANSEN_BARREFELT
+  canon_status: CANON
+  decision_id: DEC.CORNELIS.HOUSE_OF_LOVE.ENTRY_NETWORK.2026-08-16
+  fictionality: novel_meeting_on_historical_role
+
+- id: STC.CORNELIS.FIRE1554.TESTS_PREEXISTING_FAITH.001
+  type: StoryClaim
+  statement: >-
+    The 18 May 1554 Goes fire confronts Cornelis with catastrophic loss after his Familist affiliation already exists. The catastrophe tests and transforms his understanding of love, suffering and responsibility; it is not his conversion trigger.
+  subject: ENT.PERSON.CORNELIS
+  predicate: has_preexisting_affiliation_tested_by
+  object: NI.GOES.FIRE.1554
+  canon_status: CANON
+  decision_id: DEC.CORNELIS.HOUSE_OF_LOVE.PRE_FIRE_AFFILIATION.2026-08-16
+  fictionality: novel_canon
+
+- id: STC.CORNELIS.PLANTIN.LATER_NODE.001
+  type: StoryClaim
+  statement: >-
+    Plantin becomes important to Cornelis only after Cornelis already belongs to the Huis der Liefde, as a later Antwerp print/distribution node rather than as his converter.
+  subject: ENT.PERSON.CORNELIS
+  predicate: later_network_contact_with
+  object: ENT.HIST.PERSON.CHRISTOPHE_PLANTIN
+  canon_status: CANON
+  decision_id: DEC.CORNELIS.HOUSE_OF_LOVE.PLANTIN_LATER_NODE.2026-08-16
+  fictionality: novel_canon_on_historical_connection
+
+- id: STC.CORNELIS.LOGISTICS.BEER_TO_PAPER.001
+  type: StoryClaim
+  statement: >-
+    Cornelis' later book and paper carrying grows out of the same practical network competencies used in the beer trade: containers, storage, accounts, credit, route knowledge, carrier selection, repeated transactions and discretion. The thematic continuity is material and social, not proof that books are concealed in beer casks.
+  subject: ENT.PERSON.CORNELIS
+  predicate: transfers_logistical_competence_from
+  object: beer_distribution_to_book_and_paper_routes
+  canon_status: CANON
+  decision_id: DEC.CORNELIS.HOUSE_OF_LOVE.LOGISTICS_TO_BOOK_ROUTE.2026-08-16
+  fictionality: novel_canon
