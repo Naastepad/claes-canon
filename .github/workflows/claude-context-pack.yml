@@ -1,0 +1,34 @@
+name: Build Claude context pack
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'prompts/CLAUDE_CONTEXT_PACK.md'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-pack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate self-contained Claude context pack
+        run: python scripts/generate_claude_context_pack.py
+
+      - name: Commit generated pack when changed
+        run: |
+          if git diff --quiet -- prompts/CLAUDE_CONTEXT_PACK.md && git ls-files --error-unmatch prompts/CLAUDE_CONTEXT_PACK.md >/dev/null 2>&1; then
+            echo 'Claude context pack already current.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add prompts/CLAUDE_CONTEXT_PACK.md
+          git commit -m 'Regenerate Claude context pack [skip ci]'
+          git push
