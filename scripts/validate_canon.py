@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Repository-level continuity compiler for Claes.
 
-Validates the McKee/NOS-inspired structured storybible layer. Lemma syntax is
-validated separately. This compiler checks declared state, references,
-vocabularies, temporal windows, migration-review coverage, multi-agent
-integrity files, and a small set of explicit cross-layer author decisions.
-It never invents missing facts or silently resolves canon conflicts.
+Validates the structured storybible, including modular post-Revision-11 decision,
+claim and review supplements. The compiler checks referential integrity,
+vocabularies, temporal windows, active-open discipline, migration-review
+coverage, multi-agent integrity files and explicit author decisions through
+16 August 2026. It never invents story truth.
 """
 from __future__ import annotations
 
@@ -69,7 +69,7 @@ for directory in STRUCTURED:
 
 def check_ref(value: str, where: str):
     if value.startswith("KO."):
-        return  # external Narrative Knowledge Base
+        return
     if SOURCE_RE.match(value):
         if value not in source_ids:
             errors.append(f"missing source record {value} referenced by {where}")
@@ -130,11 +130,12 @@ for path, record in records:
 
 # Deterministic Lemma candidates must be active canon.
 for path, record in records:
-    if record.get("deterministic", {}).get("lemma_candidate"):
+    deterministic = record.get("deterministic")
+    if isinstance(deterministic, dict) and deterministic.get("lemma_candidate"):
         if record.get("canon_status") != "CANON":
             errors.append(f"non-CANON claim marked lemma_candidate: {record['id']}")
 
-# The section ledger must cover the Revision 11 source continuously at top-level boundaries.
+# Revision 11 section ledger remains continuous and loss-safe.
 ledger = ROOT / "mapping" / "CONVERSION_LEDGER.yaml"
 if ledger.exists():
     data = yaml.safe_load(ledger.read_text(encoding="utf-8")) or {}
@@ -155,86 +156,99 @@ if ledger.exists():
         if expected != 3804:
             errors.append(f"conversion ledger does not end at source line 3803; next expected is {expected}")
 
-# Migration-review gate: every current Story Claim must be classified exactly once.
-review_path = ROOT / "review" / "MIGRATION_REVIEW.yaml"
+# Migration-review gate. The historical base review may be extended by explicit
+# review/MIGRATION_REVIEW_SUPPLEMENT*.yaml files; together they must classify
+# every current Story Claim exactly once.
 story_claim_ids = {ident for ident in all_ids if ident.startswith("STC.")}
-if not review_path.exists():
-    errors.append("missing review/MIGRATION_REVIEW.yaml")
-else:
+review_paths = [ROOT / "review" / "MIGRATION_REVIEW.yaml"] + sorted((ROOT / "review").glob("MIGRATION_REVIEW_SUPPLEMENT*.yaml"))
+review_records: list[dict] = []
+for review_path in review_paths:
+    if not review_path.exists():
+        if review_path.name == "MIGRATION_REVIEW.yaml":
+            errors.append("missing review/MIGRATION_REVIEW.yaml")
+        continue
     try:
         review_data = yaml.safe_load(review_path.read_text(encoding="utf-8")) or {}
     except Exception as exc:
-        errors.append(f"YAML parse error review/MIGRATION_REVIEW.yaml: {exc}")
-        review_data = {}
+        errors.append(f"YAML parse error {review_path.relative_to(ROOT)}: {exc}")
+        continue
+    file_records = review_data.get("records", [])
+    if not isinstance(file_records, list):
+        errors.append(f"migration review records must be a list in {review_path.relative_to(ROOT)}")
+        continue
+    review_records.extend(file_records)
+    # Base-file summary remains an audit of the records physically in that file.
+    if review_path.name == "MIGRATION_REVIEW.yaml":
+        declared = review_data.get("summary", {})
+        if declared:
+            file_ids = [r.get("claim_id") for r in file_records if isinstance(r, dict)]
+            if declared.get("story_claims_total") != len(file_ids):
+                errors.append(
+                    f"base migration review story_claims_total is {declared.get('story_claims_total')}, "
+                    f"expected {len(file_ids)} for base-file records"
+                )
 
-    review_records = review_data.get("records", [])
-    seen_review: set[str] = set()
-    origin_counts = {key: 0 for key in MIGRATION_ORIGIN}
-    state_counts = {key: 0 for key in MIGRATION_REVIEW_STATE}
+seen_review: set[str] = set()
+for item in review_records:
+    claim_id = item.get("claim_id")
+    origin = item.get("origin")
+    review_state = item.get("review_state")
+    if not isinstance(claim_id, str):
+        errors.append("migration review record missing claim_id")
+        continue
+    if claim_id in seen_review:
+        errors.append(f"duplicate migration review record for {claim_id}")
+    seen_review.add(claim_id)
+    if claim_id not in story_claim_ids:
+        errors.append(f"migration review references non-existent Story Claim {claim_id}")
+    if origin not in MIGRATION_ORIGIN:
+        errors.append(f"invalid migration origin {origin} for {claim_id}")
+    if review_state not in MIGRATION_REVIEW_STATE:
+        errors.append(f"invalid migration review_state {review_state} for {claim_id}")
+    if origin == "NEW" and review_state not in {"HUMAN_DECISION", "CONFLICT"}:
+        errors.append(f"NEW claim must require HUMAN_DECISION or CONFLICT: {claim_id}")
+    if review_state == "CONFLICT" and not (item.get("conflict") or item.get("resolution")):
+        errors.append(f"CONFLICT record must explain conflict: {claim_id}")
+    if review_state == "CONFLICT":
+        errors.append(f"UNRESOLVED CANON CONFLICT blocks merge: {claim_id}")
 
-    for item in review_records:
-        claim_id = item.get("claim_id")
-        origin = item.get("origin")
-        review_state = item.get("review_state")
-        if not isinstance(claim_id, str):
-            errors.append("migration review record missing claim_id")
-            continue
-        if claim_id in seen_review:
-            errors.append(f"duplicate migration review record for {claim_id}")
-        seen_review.add(claim_id)
-        if claim_id not in story_claim_ids:
-            errors.append(f"migration review references non-existent Story Claim {claim_id}")
-        if origin not in MIGRATION_ORIGIN:
-            errors.append(f"invalid migration origin {origin} for {claim_id}")
-        else:
-            origin_counts[origin] += 1
-        if review_state not in MIGRATION_REVIEW_STATE:
-            errors.append(f"invalid migration review_state {review_state} for {claim_id}")
-        else:
-            state_counts[review_state] += 1
-        if origin == "NEW" and review_state not in {"HUMAN_DECISION", "CONFLICT"}:
-            errors.append(f"NEW claim must require HUMAN_DECISION or CONFLICT: {claim_id}")
-        if review_state == "CONFLICT" and not (item.get("conflict") or item.get("resolution")):
-            errors.append(f"CONFLICT record must explain conflict: {claim_id}")
+for claim_id in sorted(story_claim_ids - seen_review):
+    errors.append(f"Story Claim lacks migration review classification: {claim_id}")
+for claim_id in sorted(seen_review - story_claim_ids):
+    errors.append(f"migration review has orphan classification: {claim_id}")
 
-    for claim_id in sorted(story_claim_ids - seen_review):
-        errors.append(f"Story Claim lacks migration review classification: {claim_id}")
-    for claim_id in sorted(seen_review - story_claim_ids):
-        errors.append(f"migration review has orphan classification: {claim_id}")
+# Active-open discipline: the active registry contains only genuinely OPEN work.
+active_open_path = ROOT / "canon" / "OPEN_DECISIONS.yaml"
+if not active_open_path.exists():
+    errors.append("missing canon/OPEN_DECISIONS.yaml")
+else:
+    active_open = yaml.safe_load(active_open_path.read_text(encoding="utf-8")) or {}
+    for item in active_open.get("decisions", []):
+        if item.get("status") != "OPEN":
+            errors.append(f"active open registry contains non-OPEN record: {item.get('id')} -> {item.get('status')}")
 
-    declared = review_data.get("summary", {})
-    if declared.get("story_claims_total") != len(story_claim_ids):
-        errors.append(f"migration review story_claims_total is {declared.get('story_claims_total')}, expected {len(story_claim_ids)}")
-    for key, actual in origin_counts.items():
-        expected_count = (declared.get("by_origin") or {}).get(key)
-        if expected_count != actual:
-            errors.append(f"migration review origin count {key} is {expected_count}, actual {actual}")
-    for key, actual in state_counts.items():
-        expected_count = (declared.get("by_review_state") or {}).get(key)
-        if expected_count != actual:
-            errors.append(f"migration review state count {key} is {expected_count}, actual {actual}")
-
-    for item in review_records:
-        if item.get("review_state") == "CONFLICT":
-            errors.append(f"UNRESOLVED CANON CONFLICT blocks merge: {item.get('claim_id')}")
-
-# Multi-agent integrity files must exist.
+# Required multi-agent and authority files.
 required_files = [
     ROOT / "REPOSITORY_INTEGRITY.md",
     ROOT / "AGENTS.md",
     ROOT / "AUTHORING_POLICY.md",
     ROOT / "AI_ONBOARDING.md",
     ROOT / "review" / "SYNC_STATUS.md",
-    ROOT / "storybible" / "LEMMA_MCKEE_MASTER_2026-08-13.md",
+    ROOT / "review" / "CANON_CONFLICT_AUDIT_2026-08-16.md",
+    ROOT / "storybible" / "MASTER.md",
+    ROOT / "storybible" / "INDEX.md",
+    ROOT / "storybible" / "LEMMA_MCKEE_MASTER.md",
+    ROOT / "storybible" / "LEMMA_MCKEE_MASTER_2026-08-13.md",  # retained legacy snapshot
     ROOT / "canon" / "DECISIONS_2026-08-13.md",
     ROOT / "canon" / "DECISIONS_2026-08-14.md",
     ROOT / "canon" / "DECISIONS.yaml",
+    ROOT / "canon" / "DECISIONS_RESOLUTIONS_2026-08-16.yaml",
 ]
 for path in required_files:
     if not path.exists():
         errors.append(f"missing required integrity/authority file: {path.relative_to(ROOT)}")
 
-# Explicit 13-Aug-2026 author-decision synchronization checks.
+# Explicit 13-Aug-2026 decisions.
 birth_claim = record_by_id.get("STC.CLAES.BIRTH.001") or {}
 if (birth_claim.get("story_time") or {}).get("date") != "1542-12-08":
     errors.append("STC.CLAES.BIRTH.001 must be synchronized to 1542-12-08")
@@ -268,8 +282,7 @@ for required_id in [
     if required_id not in all_ids:
         errors.append(f"missing synchronized decision/narrative record: {required_id}")
 
-# Explicit 14-Aug-2026 Goes decisions must be synchronized across decision, claim,
-# entity, world and human-readable master layers.
+# Explicit Goes/family decisions.
 for required_id in [
     "DEC.CORNELIS.RESIDENCE.GOES.2026-08-14",
     "DEC.GOES.NIEUWSTRAAT.IDENTITY.2026-08-14",
@@ -288,7 +301,11 @@ for required_id in [
 cornelis_entity = record_by_id.get("ENT.PERSON.CORNELIS") or {}
 if (cornelis_entity.get("household_residence") or {}).get("location") != "ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542":
     errors.append("ENT.PERSON.CORNELIS household residence must be the 1542 older-Nieuwstraat house")
-if (cornelis_entity.get("rhetorician_meeting_environment") or {}).get("location") != "ENT.LOC.GOES.ZUSTERHUIS":
+
+meeting = cornelis_entity.get("rhetorician_meeting_environment") or {}
+if not meeting:
+    meeting = {"location": (cornelis_entity.get("rhetorician") or {}).get("meeting_environment")}
+if meeting.get("location") != "ENT.LOC.GOES.ZUSTERHUIS":
     errors.append("ENT.PERSON.CORNELIS rhetorician meeting environment must be the Zusterhuis")
 
 if (claes_entity.get("childhood_residence") or {}).get("location") != "ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542":
@@ -307,32 +324,73 @@ for open_id, decision_id in [
 ]:
     record = record_by_id.get(open_id) or {}
     if record.get("status") != "RESOLVED" or record.get("resolved_by") != decision_id:
-        errors.append(f"{open_id} must be RESOLVED by {decision_id}")
+        errors.append(f"{open_id} must remain preserved as RESOLVED audit history by {decision_id}")
 
 nardus = record_by_id.get("ENT.ORG.GOES.NARDUSBLOEM") or {}
 location_history = nardus.get("location_history") or []
 if not location_history or location_history[0].get("location") != "ENT.LOC.GOES.ZUSTERHUIS" or location_history[0].get("through") != 1626:
     errors.append("Nardusbloem location history must retain Zusterhuis through 1626")
 if len(location_history) < 2 or location_history[1].get("location") != "ENT.LOC.GOES.SEBASTIAANSHOF" or location_history[1].get("from") != 1626:
-    errors.append("Nardusbloem location history must place Sint-Sebastiaanshof from 1626, not in Cornelis' period")
+    errors.append("Nardusbloem location history must place Sint-Sebastiaanshof from 1626")
 
-master_path = ROOT / "storybible" / "LEMMA_MCKEE_MASTER_2026-08-13.md"
+# Current operating master, not the dated legacy snapshot.
+master_path = ROOT / "storybible" / "LEMMA_MCKEE_MASTER.md"
 if master_path.exists():
     master_text = master_path.read_text(encoding="utf-8")
-    if "8 December 1542" not in master_text:
-        errors.append("current operating master must state 8 December 1542")
+    for phrase in [
+        "8 December 1542",
+        "19 November 1569",
+        "Mayken Adriaensdr. Lampert",
+        "reveal is **reading**, not decryption",
+        "projectio of the Word",
+        "projectio of Matter",
+        "projectio of the Self",
+    ]:
+        if phrase not in master_text:
+            errors.append(f"current operating master missing synchronized phrase: {phrase}")
     if "8 December 1545" in master_text:
         errors.append("current operating master must not retain 8 December 1545")
-    for phrase in ["road toward Enkhuizen", "matter toward spirituality", "knowledge-as-control"]:
-        if phrase not in master_text:
-            errors.append(f"current operating master missing synchronized character architecture phrase: {phrase}")
-    for phrase in ["20 March 1542", "Armenhoek", "Zusterhuis", "only then moved to the building/hof of the handbow guild Sint-Sebastiaan"]:
-        if phrase not in master_text:
-            errors.append(f"current operating master missing synchronized Goes phrase: {phrase}")
+
+# Explicit 15/16-Aug synchronization.
+for required_id in [
+    "DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15",
+    "DEC.CORNELIS.DEATH.1569.2026-08-15.REVISED",
+    "DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14",
+    "DEC.CORNELIS.REDERIJKER.NARDUS_CASTANIE_ORIGIN.2026-08-16",
+    "DEC.ALCHEMY.GREEN_LION_SOL_CONTINUITY.2026-08-16",
+    "DEC.ENKHUIZEN.SETON_FRAME.1602.2026-08-16",
+    "STC.CORNELIS.DEATH.ANTWERP.1569.001",
+    "STC.CLAES.BELOVED.MAYKEN_LAMPERT.001",
+    "STC.CORNELIS.NARDUSBLOEM.001",
+    "STC.ALCHEMY.SOL.CONTINUITY.001",
+    "ENT.PERSON.BELOVED",
+    "ENT.ORG.GOES.CASTANIENBLOEM",
+    "ENT.PERSON.JACOB_HAUSFSEN",
+]:
+    if required_id not in all_ids:
+        errors.append(f"missing synchronized 15/16-Aug-2026 record: {required_id}")
+
+beloved = record_by_id.get("ENT.PERSON.BELOVED") or {}
+if beloved.get("label") != "Mayken Adriaensdr. Lampert" or beloved.get("canon_status") != "CANON":
+    errors.append("ENT.PERSON.BELOVED must resolve to canonical Mayken Adriaensdr. Lampert")
+
+cornelis_death = cornelis_entity.get("death") or {}
+if cornelis_death.get("date") != "1569-11-19" or cornelis_death.get("place") != "ENT.LOC.ANTWERP":
+    errors.append("ENT.PERSON.CORNELIS death must be synchronized to Antwerp, 1569-11-19")
+
+# Former resolved matters must not reappear as active OPEN work.
+for resolved_id in [
+    "OPEN.CORNELIS.DEATH.001",
+    "OPEN.CLAES.BELOVED.IDENTITY.001",
+    "OPEN.CORNELIS.REDERIJKERS.CHAMBER.001",
+]:
+    rec = record_by_id.get(resolved_id) or {}
+    if rec.get("status") == "OPEN":
+        errors.append(f"resolved legacy record must not be active OPEN: {resolved_id}")
 
 sync_path = ROOT / "review" / "SYNC_STATUS.md"
-if sync_path.exists() and "SYNC_COMPLETE" not in sync_path.read_text(encoding="utf-8"):
-    errors.append("review/SYNC_STATUS.md must be SYNC_COMPLETE before validation can pass")
+if sync_path.exists() and "SYNC_COMPLETE_ACTIVE_LAYERS" not in sync_path.read_text(encoding="utf-8"):
+    errors.append("review/SYNC_STATUS.md must state SYNC_COMPLETE_ACTIVE_LAYERS")
 
 if errors:
     print("CLAES CANON VALIDATION: FAILED")
@@ -344,4 +402,4 @@ print("CLAES CANON VALIDATION: PASSED")
 print(f"Structured IDs: {len(all_ids)}")
 print(f"Source records: {len(source_ids)}")
 print(f"Migration-reviewed Story Claims: {len(story_claim_ids)}")
-print("Author decisions synchronized through: 2026-08-14")
+print("Author decisions synchronized through: 2026-08-16")

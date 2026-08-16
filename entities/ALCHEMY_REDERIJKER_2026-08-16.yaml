@@ -1,4 +1,4 @@
-schema_version: 1.0.0
+schema_version: 1.0.1
 kind: EntitySupplement
 entities:
 - id: ENT.ORG.GOES.CASTANIENBLOEM
@@ -25,23 +25,16 @@ entities:
   - Do not call 1595 the founding year.
   - Do not present the 1560s Protestantising origin as archival fact.
   - Do not infer Cornelis' deken status.
-- id: ENT.PERSON.ALEXANDER_SETON
-  type: Person
-  label: Alexander Seton / Sidonius
-  fictionality: historical_tradition
-  canon_status: CANON
-  roles: [alchemist, projectio-figure]
-  usage: chosen historical-tradition figure for the 1602 Enkhuizen projectio frame
-  source_status: Morhof 1673 retrospective report; not contemporaneous verification
-  source_refs:
-  - SRC-HIST-MORHOF-SETON-ENKHUIZEN-1673-001
+
 - id: ENT.PERSON.JACOB_HAUSFSEN
   type: Person
   label: Jacob Hausfsen
   fictionality: historical_tradition
   canon_status: CANON
+  aliases: [Jacob Hanssen, Jacob Haussen, James Haussen]
   roles: [sailor, reported-householder]
   usage: Morhof reports Seton's Enkhuizen projection as occurring in his house
   source_status: Morhof 1673 retrospective report
   source_refs:
   - SRC-HIST-MORHOF-SETON-ENKHUIZEN-1673-001
+  identity_relation: Same historical-tradition figure represented in older broad prose as ENT.PERSON.JACOB_HANSSEN; this canonical source-form entity exists so source-specific claims can use Morhof's Hausfsen form without duplicating Alexander Seton.

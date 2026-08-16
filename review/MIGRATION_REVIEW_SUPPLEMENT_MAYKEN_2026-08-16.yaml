@@ -1,0 +1,28 @@
+schema_version: 1.0.0
+kind: MigrationReviewSupplement
+purpose: Classify the Mayken Lampert Story Claims recovered and synchronized on 16 August 2026 without rewriting the historical base migration audit.
+records:
+- claim_id: STC.CLAES.BELOVED.MAYKEN_LAMPERT.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicit author-approved character decision recovered from the earlier Mayken branch and synchronized to current no-cipher canon.
+- claim_id: STC.MAYKEN.LAMPERT.FAMILY_LINK.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicit novel genealogy attached to verified/supported Lampert apothecary anchors with historical/fictive boundaries preserved.
+- claim_id: STC.MAYKEN.FIRE_MEMORY.1554.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicit author-approved use of the historically burned Zwaene property as Mayken's distinct family fire-memory frame, not a duplicate of Claes' household loss.
+- claim_id: STC.MAYKEN.APOTHECARY_EXPERTISE.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicit author-approved practical apothecary/material competence; no unsupported formal physician or university status.
+- claim_id: STC.MAYKEN.MEMORIAAL_REVEAL_ROLE.1570.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Synchronization decision required by the later no-cipher canon; Mayken may assist material reveal/read/error-control but is not a cryptographic or special-Dodoens key-holder.
+- claim_id: STC.CLAES.MAYKEN.RELATIONSHIP.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicit author-approved relationship role linking material complementarity, trust, love without possession and later sensory recovery while preserving Claes' own agency.

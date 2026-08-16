@@ -1,0 +1,39 @@
+schema_version: 1.0.0
+kind: ResolvedDecisionAuditRegistry
+purpose: Preserve stable legacy OPEN.* IDs for referential integrity without mixing resolved questions into the active canon/OPEN_DECISIONS.yaml backlog.
+decisions:
+- id: OPEN.CORNELIS.RESIDENCE.GOES.1542.001
+  domain: spatial_continuity
+  status: RESOLVED
+  resolved_by: DEC.CORNELIS.RESIDENCE.GOES.2026-08-14
+  resolution: The historical 20 March 1542 older-Nieuwstraat house is the fictional Cornelis household's childhood residence.
+
+- id: OPEN.GOES.NIEUWSTRAAT.PRE1594.001
+  domain: historical_reconstruction
+  status: RESOLVED
+  resolved_by: DEC.GOES.NIEUWSTRAAT.IDENTITY.2026-08-14
+  resolution: Pre-1594 Nieuwstraat is treated as an older Nieuwstraat/Oude Nieuwstraat in or by Armenhoek, distinct from the planned/current 1594 Nieuwstraat; exact old axis remains unknown.
+
+- id: OPEN.GOES.REDERIJKERS.MEETINGPLACE.001
+  domain: historical_reconstruction
+  status: RESOLVED
+  resolved_by: DEC.GOES.REDERIJKERS.MEETINGPLACE.2026-08-14
+  resolution: Cornelis-era rederijker scenes use the Zusterhuis/former Zwarte-Zusters complex at Singelstraat; the Nardusbloem moves to Sint-Sebastiaanshof only in 1626.
+
+- id: OPEN.CORNELIS.REDERIJKERS.CHAMBER.001
+  domain: character_historical_embedding
+  status: RESOLVED
+  resolved_by: DEC.CORNELIS.REDERIJKER.NARDUS_CASTANIE_ORIGIN.2026-08-16
+  resolution: Cornelis is a Nardusbloem / older Magdalena-linked member; his fictional role in a reform-minded 1560s current toward the later Castanienbloem is separate from historical attestation. Deken status remains independently open as OPEN.CORNELIS.REDERIJKER.DEKEN.001.
+
+- id: OPEN.CORNELIS.DEATH.001
+  domain: character
+  status: RESOLVED
+  resolved_by: DEC.CORNELIS.DEATH.1569.2026-08-15.REVISED
+  resolution: Cornelis is fictionally executed in Antwerp on 19 November 1569 after first arrest/examination in autumn 1567 and renewed network exposure; Claes witnesses.
+
+- id: OPEN.CLAES.BELOVED.IDENTITY.001
+  domain: character
+  status: RESOLVED
+  resolved_by: DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14
+  resolution: Claes' beloved is fictional Mayken Adriaensdr. Lampert, ca.1546 Goes, embedded in the historical Goese Lampert apothecary milieu and synchronized to the no-cipher reveal model.

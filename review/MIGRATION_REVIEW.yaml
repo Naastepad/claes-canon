@@ -1,19 +1,19 @@
-schema_version: 1.6.0
+schema_version: 1.7.0
 kind: MigrationReviewRegistry
 source_edition: Claes_Storybible_MASTER_COMPLEET_2026-08-10_REVISIE11_MACROSTRUCTUUR_PROJECTIO(1).md
 purpose: Distinguish meaning-preserving migration from AI-derived interpretation, genuinely new proposals, and detected conflicts before merge.
 origin_vocabulary: [MIGRATED, DERIVED, NEW]
 review_state_vocabulary: [MIGRATION_CHECK, HUMAN_REVIEW, HUMAN_DECISION, CONFLICT]
 summary:
-  story_claims_total: 57
+  story_claims_total: 64
   by_origin:
     MIGRATED: 30
     DERIVED: 4
-    NEW: 23
+    NEW: 30
   by_review_state:
     MIGRATION_CHECK: 34
     HUMAN_REVIEW: 0
-    HUMAN_DECISION: 23
+    HUMAN_DECISION: 30
     CONFLICT: 0
   merge_blockers: 0
 records:
@@ -233,17 +233,52 @@ records:
     origin: NEW
     review_state: HUMAN_DECISION
     resolution: >-
-      Explicit author decision DEC.MEMORIAAL.BREVISIMA_PRINT_GIFT.2026-08-15: the encoded translated Brevísima is printed on loose sheets before binding and is already hidden in Claes' apparently blank memoriaal before Dee gives it to him prior to Boom.
+      Explicit author decision DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15: the translated Brevísima is printed as ordinary readable hidden text before binding and is already carried in Claes' memoriaal before Boom.
   - claim_id: STC.MEMORIAAL.PRINT_PROCESS.001
     origin: NEW
     review_state: HUMAN_DECISION
     resolution: >-
-      Explicit author decision DEC.MEMORIAAL.BREVISIMA_PRINT_GIFT.2026-08-15: canon adopts the historically disciplined reconstructed gallnut/tannin + gum-arabic first-pass printing process and period-measure starting formulation, while physical performance remains open to wet/press testing.
+      Explicit author decision DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15: canon adopts the historically disciplined reconstructed gallnut/tannin + gum-arabic first-pass printing process and period-measure starting formulation, while physical performance remains open to wet/press testing.
   - claim_id: STC.MEMORIAAL.GRAPHITE_RULE.001
     origin: NEW
     review_state: HUMAN_DECISION
     resolution: >-
-      Explicit author decision DEC.MEMORIAAL.BREVISIMA_PRINT_GIFT.2026-08-15: Dee gives Claes a graphite marking stift with the memoriaal and forbids ink while Claes remains his pupil; the exact historical form/provenance of the graphite tool remains open.
+      Explicit author decision DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15: Dee gives Claes a graphite marking stift with the memoriaal and forbids ink while Claes remains his pupil; the exact historical form/provenance of the graphite tool remains open.
+  - claim_id: STC.CORNELIS.NARDUSBLOEM.001
+    origin: NEW
+    review_state: HUMAN_DECISION
+    resolution: >-
+      Explicit author correction DEC.CORNELIS.REDERIJKER.NARDUS_CASTANIE_ORIGIN.2026-08-16: Cornelis is a Nardusbloem member, not simply a Castanienbloem member.
+  - claim_id: STC.CASTANIENBLOEM.ORIGIN.1560S.001
+    origin: NEW
+    review_state: HUMAN_DECISION
+    resolution: >-
+      Explicit author decision on 16 August 2026: Cornelis has a formative fictional role in a reform-minded/protestantiserende 1560s current that becomes the Edele Castanienbloem; 1595 is earliest surviving attestation, not founding date.
+  - claim_id: STC.ALCHEMY.GREEN_LION.OPERATIONAL.001
+    origin: NEW
+    review_state: HUMAN_DECISION
+    resolution: >-
+      Explicit author approval of the refined alchemical model: green vitriol is Dee/Claes' operational Groene Leeuw in this process, not a universal historical synonym.
+  - claim_id: STC.ALCHEMY.STRONG_WATER.FAILURE.001
+    origin: NEW
+    review_state: HUMAN_DECISION
+    resolution: >-
+      Explicit author approval of the required failure-before-opening stage: force that attacks lesser metals does not by itself open Sol.
+  - claim_id: STC.ALCHEMY.SOL.CONTINUITY.001
+    origin: NEW
+    review_state: HUMAN_DECISION
+    resolution: >-
+      Explicit author approval of the hidden material conservation model: Sol remains materially present from opening through red fixation and the later projectio/assay.
+  - claim_id: STC.ALCHEMY.CUPELLATION.INTERPRETATION.001
+    origin: NEW
+    review_state: HUMAN_DECISION
+    resolution: >-
+      Explicit author approval: lead/cupellation-like assay is an author-side historical-chemical reconstruction, not a documented Seton procedure.
+  - claim_id: STC.ENKHUIZEN.SETON.FRAME.1602.001
+    origin: NEW
+    review_state: HUMAN_DECISION
+    resolution: >-
+      Explicit author approval to anchor the scene to Morhof's retrospective Seton tradition: Enkhuizen, Jacob Hausfsen's house, 13 March 1602, about 16:00, with source distance preserved.
 rules:
   MIGRATION_CHECK: Existing canon or explicitly reviewed formulation represented in the new structure. Review only for faithful transcription/normalization; do not re-litigate the underlying canon unless a new conflict is detected.
   HUMAN_REVIEW: AI-derived condensation or interpretation. Human should approve, edit, or reject the formulation before treating it as settled structured canon.
