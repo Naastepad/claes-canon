@@ -1,4 +1,4 @@
-schema_version: 1.3.0
+schema_version: 1.4.0
 kind: NarrativeInstanceRegistry
 instances:
 - id: NI.PROLOGUE.1542.001
@@ -10,7 +10,7 @@ instances:
     latest_exclusive: '1543-01-01'
     precision: month
   story_file: prologue_de_bladzijde
-  notes: Valencia; thematic/technical bridge to later testimony, not shared birth-year resonance
+  notes: "Valencia; thematic/technical bridge to later testimony and intentional exact-date resonance with Claes' canonical birth on 8 December 1542."
 - id: NI.SCENE.DREMPEL.1547.001
   type: SceneInstance
   label: De Drempel
@@ -64,11 +64,13 @@ instances:
   type: EventInstance
   label: Stadsbrand Goes — verlies van huis en gezin
   canon_status: CANON
+  details_status: MIXED_HISTORICAL_AND_NOVEL_CANON
   story_time:
     date: '1554-05-18'
     precision: day
   locations:
   - ENT.LOC.GOES
+  - ENT.LOC.GOES.OOSTZELKE
   - ENT.LOC.GOES.NIEUWSTRAAT_PRE1594
   entities:
   - ENT.PERSON.CLAES
@@ -83,16 +85,23 @@ instances:
   - STC.CLAES.HOUSEHOLD_PRE_FIRE.1554.001
   - STC.CLAES.FAMILY_FIRE.1554.001
   - STC.CLAES.GRANDFATHER.NISSEPAT.001
+  claims_active:
+  - SC.HIST.GOES.SALT.NORTH_HARBOUR_1554.001
+  - SC.HIST.GOES.FIRE_1554.FOOTPRINT.001
+  - SC.HIST.GOES.FIRE_1554.SPREAD.001
+  - SC.MODEL.GOES.FIRE_1554.FIREBRANDS.001
+  - SC.HIST.GOES.FIRE_1554.CASUALTIES.001
   arcs_advanced:
   - ARC.CLAES.LIFE
   - ARC.CLAES.CORNELIS
   motifs:
   - MOTIF.FIRE_WATER
   - MOTIF.SINNE
+  refinement: WORLD.GOES.FIRE_1554.REFINEMENT
   narrative_state_change:
     before: "intact household: parents, Claes, younger brother, expected child, shared home"
     after: "Cornelis and Claes survive; mother, brother and unborn child are dead; home is lost; grandfather loses the property asset"
-  historical_guardrail: "Burned houses in the old Nieuwstraat/Armenhoek environment are documented; the loss of this specific house and these family deaths are novel canon, not documented victims/property loss."
+  historical_guardrail: "Historical evidence supports a northern-harbour origin, broad north/west damage and mixed damage in the old Nieuwstraat/Armenhoek environment, but not the loss of this specific house or these named family casualties; the current fire-specific casualty count remains UNKNOWN."
 - id: NI.SEQUENCE.POSTFIRE_FAMILY.1554.001
   type: SequenceInstance
   label: Nasleep — vader en zoon verliezen ook elkaar
@@ -128,6 +137,7 @@ instances:
   - ENT.PERSON.CLAES_JACOBSZ_NISSEPAT
   story_claims:
   - STC.CLAES.REIMERSWAAL.001
+  - STC.CLAES.ZIERIKZEE.PLAN.001
   - STC.CLAES.CORNELIS.POSTFIRE_SEPARATION.001
   cause: "Post-fire household/economic collapse makes the original Zierikzee plan unaffordable; Reimerswaal preserves Claes' educational route at lower cost while Cornelis remains in Goes."
 - id: NI.EVENT.LANDJUWEEL.1561.001
@@ -299,17 +309,27 @@ instances:
   - STC.CLAES.RETURN_GOES.1566.001
 - id: NI.EVENT.CORNELIS_FALL.1568.001
   type: EventInstance
-  label: Arrestatie en dood Cornelis
+  label: Val en dood Cornelis — 1567–1569
   canon_status: CANON
-  details_status: OPEN
+  details_status: CANON
   story_time:
-    earliest: '1568-07-01'
-    latest_exclusive: '1570-01-01'
-    precision: work-window
+    earliest: '1567-09-01'
+    latest_exclusive: '1569-11-20'
+    precision: bounded
+  locations:
+  - ENT.LOC.ANTWERP
   entities:
   - ENT.PERSON.CORNELIS
+  - ENT.PERSON.CLAES
   story_claims:
-  - STC.CORNELIS.DEATH.WORK.001
+  - STC.CORNELIS.FIRST_ARREST_BAIL.1567.001
+  - STC.CORNELIS.DEATH.ANTWERP.1569.001
+  - STC.CORNELIS.EXECUTION_WITNESS.001
+  sequence:
+  - "autumn 1567: first arrest/examination in Antwerp; release on borg or equivalent conditions"
+  - "late 1568 through 1569: renewed exposure through clandestine book/paper traffic and refusal to name others"
+  - "19 November 1569: fictional public execution in Antwerp; Claes witnesses"
+  decision: DEC.CORNELIS.DEATH.1569.2026-08-15.REVISED
 - id: NI.SEQUENCE.RECOVERY.1570.001
   type: SequenceInstance
   label: Onthulling en lezing van het memoriaal 1570
@@ -338,16 +358,19 @@ instances:
   function: "A material cue and controlled green-vitriol development transform the apparently blank pages into readable Diets/Brabant Brevísima text. The dramatic work is recognition, reading and moral response, not cryptographic reconstruction."
 - id: NI.EVENT.PUBLICATION.1578.001
   type: EventInstance
-  label: Anonieme verspreiding/druk Las Casas
+  label: Antwerpse druk / Projectio van het Woord
   canon_status: CANON
   story_time:
     earliest: '1578-01-01'
     latest_exclusive: '1579-01-01'
     precision: year
+  locations:
+  - ENT.LOC.ANTWERP
   entities:
   - ENT.PERSON.CLAES
   story_claims:
   - STC.LASCASAS.PUBLICATION.1578.001
+  function: "The readable testimony leaves private possession through an Antwerp print event; exact printer, production route and distribution chain remain separately open/evidence-controlled."
 - id: NI.CHAPTER.1584.01
   type: ChapterInstance
   label: De markt van Delft
