@@ -1,0 +1,106 @@
+schema_version: "1.0.0"
+kind: SourceClaimRegistryExtension
+claims:
+  - id: SC.HIST.ROSE.GALLICA.OFFICINALIS.MEDICINAL_CULTURE.001
+    type: SourceClaim
+    statement: "Rosa gallica/officinalis is a historically appropriate cultivated medicinal rose for late-medieval and sixteenth-century European materia medica; rose-based preparations belong plausibly in an apothecary household or workshop."
+    claim_type: historical_botanical_reconstruction
+    subject: "Rosa gallica/officinalis"
+    predicate: "cultivated medicinal use"
+    object: "sixteenth-century European materia medica"
+    evidence_status: SUPPORTED
+    source_ids: []
+    verification:
+      status: supported_in_project_research_needs_source_ingest
+      note: "The chat-level research supports the reconstruction, but source records should be added before this claim is promoted to VERIFIED."
+
+  - id: SC.HIST.ROSE.PREPARATIONS.001
+    type: SourceClaim
+    statement: "Rose water, rose oil or oil-based rose preparations, rose syrups/conserves and rose-containing wound remedies are historically plausible in sixteenth-century European medical and apothecary practice."
+    claim_type: historical_materia_medica
+    subject: "rose preparations"
+    predicate: "documented therapeutic forms"
+    object: "water, oil/preparation, syrup/conserve, wound remedy"
+    evidence_status: SUPPORTED
+    source_ids: []
+    verification:
+      status: supported_in_project_research_needs_source_ingest
+      note: "Do not collapse different recipes, rose taxa, concentrations or indications into one standardized drug."
+
+  - id: SC.HIST.ROSE.BURN_WOUND_USE.001
+    type: SourceClaim
+    statement: "Rose oil/rose-water-containing remedies occur in early-modern wound and burn-care traditions, making rose-based care after fire injury historically plausible as one component of treatment."
+    claim_type: historical_medical_practice
+    subject: "rose-based remedies"
+    predicate: "used in"
+    object: "wound/burn care"
+    evidence_status: SUPPORTED
+    source_ids: []
+    verification:
+      status: supported_in_project_research_needs_source_ingest
+      note: "This supports use, not modern efficacy claims and not rose treatment as the sole determinant of survival."
+
+  - id: SC.HIST.ROSE.SMOKE_INHALATION.CURE.001
+    type: SourceClaim
+    statement: "The project does not currently possess sufficient evidence that Rosa gallica preparations effectively treated severe smoke-inhalation injury or chronic structural lung damage in a way that outperformed other West-Frisian care."
+    claim_type: evidence_boundary
+    subject: "Rosa gallica preparations for severe smoke inhalation"
+    predicate: "therapeutic superiority"
+    object: "not established"
+    evidence_status: UNKNOWN
+    source_ids: []
+    verification:
+      status: negative_project_evidence_boundary
+      note: "Historical use for cough, comfort or humoral indications must not be rewritten as proven treatment of modern inhalation injury."
+
+  - id: SC.HIST.WEST_FRIESLAND.ROSE_PREPARATION_DEFICIT.001
+    type: SourceClaim
+    statement: "The project does not currently establish that West-Friesland between 1550 and 1602 lacked the apparatus, apothecaries or knowledge needed to make competent rose waters, oils, syrups or salves, nor that southern Netherlandish versions were pharmacologically superior as a class."
+    claim_type: evidence_boundary
+    subject: "West-Friesland rose-preparation capacity"
+    predicate: "regional inferiority"
+    object: "not established"
+    evidence_status: UNKNOWN
+    source_ids: []
+    verification:
+      status: correction_of_overclaim
+      note: "Trade access and reputation may have differed regionally, but do not use a categorical north-versus-south therapeutic gap without direct evidence."
+
+  - id: SC.HIST.WEST_FRIESLAND.GALLICA.WILD_1602.001
+    type: SourceClaim
+    statement: "A wild or naturalised occurrence of Rosa gallica/officinalis in West-Friesland or Wieringen around 1602 is currently unverified in the project. Cultivation or escape from cultivation may be plausible but requires local historical-botanical evidence before being written as fact."
+    claim_type: evidence_boundary
+    subject: "Rosa gallica/officinalis in West-Friesland/Wieringen c.1602"
+    predicate: "wild or naturalised occurrence"
+    object: "unverified"
+    evidence_status: UNKNOWN
+    source_ids: []
+    verification:
+      status: local_evidence_required
+      note: "Do not use 'wild' casually for an old cultivated rose."
+
+  - id: SC.HIST.ROSE.ROUTE.SPECIES.001
+    type: SourceClaim
+    statement: "Rosa pimpinellifolia, Rosa canina and Rosa rubiginosa are suitable candidate species for a white-pale-pink-deeper-pink rose motif on a Zeeland-to-North-Holland journey only where period distribution, habitat, season and exact route make the occurrence plausible."
+    claim_type: historical_ecological_reconstruction
+    subject: "rose species along Zeeland-North-Holland route"
+    predicate: "candidate motif species"
+    object: "pimpinellifolia, canina, rubiginosa"
+    evidence_status: PROVISIONAL
+    source_ids: []
+    verification:
+      status: route_level_botanical_check_required
+      note: "Do not encode a guaranteed geographic sequence before route-specific flora evidence is added."
+
+  - id: SC.HIST.EGMOND.1573.DEMOLITION_FIRE_BOUNDARY.001
+    type: SourceClaim
+    statement: "For current story use, the Abbey of Egmond in 1573 must be represented primarily as subject to planned systematic demolition and material reuse; 7 June burning must not be simplified into 'the abbey was burned down that day'. The supplied research distinguishes burning of the Slot op den Hoef, Adelbertuskerk and Buurkerk from the abbey demolition and notes separate uncertainty around later fire damage."
+    claim_type: historical_event_evidence_boundary
+    subject: "Abbey of Egmond 1573"
+    predicate: "destruction mode"
+    object: "systematic demolition, with separate nearby burnings"
+    evidence_status: SUPPORTED
+    source_ids: []
+    verification:
+      status: based_on_supplied_secondary_source_with_primary-source_discussion
+      note: "Before publication-level factual assertion, ingest the underlying archival references and eyewitness texts cited in the supplied article."
