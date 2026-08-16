@@ -1,0 +1,57 @@
+schema_version: 1.0.0
+kind: CanonDecisionSupplement
+decisions:
+- id: DEC.CLAES.ROSE_JOURNEY.2026-08-16
+  type: CanonDecision
+  status: CANON
+  decision: "The later journey toward Enkhuizen carries an author-side rose motif that moves from white through pale pink to deeper pink/red: faith/trust at departure, hope while travelling, and love as relation and concrete responsibility toward another person. The motif is experienced through landscape, plant recognition, smell, colour, touch, preparation and action; characters do not explain the symbolic scheme in prose."
+  affects:
+  - ARC.CLAES.SINNE_RECOVERY
+  - ARC.CLAES.LIFE
+  - ARC.MAYKEN.LIFE
+  - REL.CLAES.BELOVED.RECOVERY
+  - REL.CLAES.MAYKEN.CONJUNCTIO
+  - MOTIF.ROSES.FIDES_SPES_CARITAS
+  principles:
+  - "White / Rosa pimpinellifolia is the preferred authorial image for faith/trust and coastal departure where historically and ecologically plausible."
+  - "Pale pink / Rosa canina is the preferred travelling image for hope along hedges, dikes and waysides where historically and ecologically plausible."
+  - "Deeper pink / Rosa rubiginosa may carry the movement toward human nearness and love where historically and ecologically plausible."
+  - "Rosa gallica officinalis functions not as a fourth abstract virtue but as love becoming material care: cultivated materia medica, preparation, judgement and service to damaged bodies."
+  - "The rose sequence must serve Claes' sinne pattern: sensation -> recognition -> comparison -> pattern -> understanding -> choice."
+  - "The culmination of the motif is caritas as action toward another person, not merely romantic completion."
+  guardrails:
+  - "Do not state in narration that the flowers 'mean' faith, hope or love unless a historically plausible character actually makes such a devotional association."
+  - "Do not force all three species into every stage of the route; ecology, season and route take precedence over symbolic neatness."
+  - "Do not present Rosa gallica officinalis as a miracle cure."
+  - "Do not claim that West-Friesland lacked competent apothecaries or distillation unless separately evidenced."
+  - "Do not claim that severe smoke-inhalation injury was effectively cured by rose preparations."
+  - "Any specific wild or naturalised occurrence of Rosa gallica officinalis in West-Friesland or Wieringen in 1602 remains evidence-dependent and may not be asserted as fact without a local source."
+
+- id: DEC.MAYKEN.ROSE_MATERIA_MEDICA.2026-08-16
+  type: CanonDecision
+  status: CANON
+  decision: "Mayken's established materia-medica competence may be concretely dramatized through historical rose preparations, especially Rosa gallica/officinalis, provided her practice remains bounded by sixteenth-century knowledge and source-supported uses. Her contribution is recognition, selection, preparation, measurement, observation and care; she is neither miraculous healer nor auxiliary to Claes' inner arc."
+  affects:
+  - ENT.PERSON.BELOVED
+  - ARC.MAYKEN.LIFE
+  - REL.CLAES.BELOVED.RECOVERY
+  - MOTIF.ROSES.FIDES_SPES_CARITAS
+  guardrails:
+  - "Keep Mayken an acting subject with her own judgement, objective and limits."
+  - "Separate historically attested rose preparations from modern pharmacological claims."
+  - "Where treatment outcome matters dramatically, preserve uncertainty, infection risk, scar formation, pain and the limits of early-modern care."
+
+- id: DEC.NORTH_HOLLAND.FIRE_CARE_HINGE.2026-08-16
+  type: CanonDecision
+  status: PROPOSED
+  decision: "A late northern scene may culminate the rose motif by confronting Claes and Mayken with people suffering burns or fire-related injury, allowing Mayken's material knowledge and Claes' recovered capacity to perceive-and-act to become caritas toward strangers or community members. The exact fire, date, location, victims and clinical severity remain open pending selection of a documented event that fits the established route and chronology."
+  affects:
+  - NI.OPEN.NORTH_HOLLAND.FIRE_CARE
+  - ARC.CLAES.SINNE_RECOVERY
+  - ARC.MAYKEN.LIFE
+  - REL.CLAES.MAYKEN.CONJUNCTIO
+  - MOTIF.ROSES.FIDES_SPES_CARITAS
+  guardrails:
+  - "Do not invent a major Hoorn fire in 1572."
+  - "Do not use the destruction of Egmond Abbey as a simple 7 June 1573 abbey-burning event; current project evidence distinguishes systematic demolition of the abbey from documented burning of other Egmond buildings and leaves later fire questions separate."
+  - "The scene must not imply that rose therapy alone determines survival."
