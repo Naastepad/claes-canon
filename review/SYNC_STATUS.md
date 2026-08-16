@@ -4,6 +4,8 @@ Status: `SYNC_COMPLETE_ACTIVE_LAYERS`
 
 Release state: `MAIN_CANON_SYNCHRONIZED_2026-08-16`
 
+Authoring world-state addendum: `ROUND_B_DOMAIN_REBUILD_IMPLEMENTED`
+
 This status means the **active authoritative layers** have been synchronized to the explicit decisions currently available. Dated legacy prose may remain as development/audit history but must not outrank the current master, latest decisions or dedicated current dossiers.
 
 ## Current governing state
@@ -65,7 +67,63 @@ This status means the **active authoritative layers** have been synchronized to 
 - Morhof supplies retrospective Enkhuizen frame, not exact assay choreography;
 - cupellation-like interpretation remains authorial reconstruction.
 
-## Files promoted or regenerated in this synchronization
+## Historical substrate recovery — Round A
+
+The previously completed historical/worldbuilding substrate was restored and rebased onto current canon. Active authoring now again includes:
+
+- Low Countries/Zeeland historical timeline 1540–1605;
+- public opinion, rumour and layered identity;
+- Wauters-based sensory church model;
+- local Goese church/liturgical guardrails;
+- Van Bruaene/rederijker and Pollmann provenance;
+- recovered Catholic Bible and local Goes 1577/1578 / Reimerswaal 1574 claims;
+- commitment-audit provenance showing what prior chat research was actually completed.
+
+## Chapter-ready historical practice domains — Round B
+
+Round B converts six previously thin framework areas into source-bounded authoring domains. Governing audit: `review/DOMAIN_REBUILD_ROUND_B_2026-08-16.md`.
+
+### Bread / grain / baking
+
+`storybible/domains/BREAD_GRAIN_BAKING_1540_1602.md`
+
+Professional/regulatory urban baking is the safer scene default than an invented household oven. Exact Goese recipe, ferment, price and loaf weight remain locally open. Craft scenes must work through material action and diagnostic senses rather than modern recipe precision.
+
+### Beer / biersteker
+
+`storybible/domains/BEER_BREWING_BEERSTEKER_1540_1580.md`
+
+Cornelis' professional scene grammar now follows biersteker work — ordering/receiving, condition, casks, accounts, storage, movement and delivery — rather than silently making him a brewer. The Nissepad brewery remains a distinct historical/material anchor, not proven Cornelis property.
+
+### Reimerswaal / school
+
+`storybible/domains/REIMERSWAAL_SCHOOL_1554_1561.md`
+
+A durable Reimerswaal school institution is historically supported through medieval and late-sixteenth-century records. Claes' exact 1554–1561 Latin curriculum and attendance remain source-weighted novel reconstruction. The city is written as functioning under cumulative water/fire pressure, not as an abandoned ruin.
+
+### Rederijkers / Landjuweel 1561
+
+`storybible/domains/REDERIJKERS_LANDJUWEEL_1561.md`
+
+Ordinary chamber practice and the Antwerp event are now scene-operational. Silvius' 1562 print anchors fourteen official competitors; current evidence does not establish a Goese chamber among them. Cornelis remains Nardusbloem member; deken is open and factor/prince are not silently assigned.
+
+### Antwerp time slices
+
+`storybible/domains/ANTWERP_TIME_SLICES_1561_1585.md`
+
+Required states: 1561 theatre; 1563–64 book/workshop; 1566 broken image; 1567–69 surveillance/repression; 1576–78 wound/rumour/print release; 1585 transformed formative city. A single timeless Antwerp ambience is forbidden.
+
+### Schutterij / military practice
+
+`storybible/domains/SCHUTTERIJ_MILITARY_PRACTICE_1550_1607.md`
+
+Schuttersgilde, broader civic defence, professional/garrison soldiers and later standardized drill are distinct. The Edele Busse/Sint Adriaan start-date conflict (1516 versus 1530 in current local heritage sources) remains explicit. De Gheyn's 1607 *Wapenhandelinghe* is a late comparator, not a 1572 Goes manual.
+
+### Scene retrieval
+
+`narrative/domain_scene_packs.yaml` supplies machine-readable scene-context packets. A pack constrains history/world state and allowed activity; it never creates a fictional Narrative Instance by itself.
+
+## Files promoted or regenerated in synchronization
 
 ### Active masters / navigation
 
@@ -74,6 +132,8 @@ This status means the **active authoritative layers** have been synchronized to 
 - `storybible/LEMMA_MCKEE_MASTER.md`
 - `review/SYNC_STATUS.md`
 - `review/CANON_CONFLICT_AUDIT_2026-08-16.md`
+- `review/HISTORICAL_SUBSTRATE_RECOVERY_2026-08-16.md`
+- `review/DOMAIN_REBUILD_ROUND_B_2026-08-16.md`
 
 ### Decisions / open registry
 
@@ -85,6 +145,18 @@ This status means the **active authoritative layers** have been synchronized to 
 - `canon/OPEN_DECISIONS_ALCHEMY_LIFELINE_2026-08-15.yaml`
 - `canon/OPEN_DECISIONS_ALCHEMY_REFINEMENT_2026-08-16.yaml`
 
+### Historical practice / Round B
+
+- `claims/SOURCE_CLAIMS_DOMAIN_REBUILD_2026-08-16.yaml`
+- `narrative/domain_scene_packs.yaml`
+- `storybible/domains/BREAD_GRAIN_BAKING_1540_1602.md`
+- `storybible/domains/BEER_BREWING_BEERSTEKER_1540_1580.md`
+- `storybible/domains/REIMERSWAAL_SCHOOL_1554_1561.md`
+- `storybible/domains/REDERIJKERS_LANDJUWEEL_1561.md`
+- `storybible/domains/ANTWERP_TIME_SLICES_1561_1585.md`
+- `storybible/domains/SCHUTTERIJ_MILITARY_PRACTICE_1550_1607.md`
+- corresponding `sources/SRC-HIST-*` domain records.
+
 ### Mayken / Lampert
 
 - `storybible/MAYKEN_LAMPERT.md`
@@ -92,13 +164,6 @@ This status means the **active authoritative layers** have been synchronized to 
 - `claims/STORY_CLAIMS_MAYKEN_LAMPERT.yaml`
 - `claims/SOURCE_CLAIMS_LAMPERT_APOTHECARY.yaml`
 - `sources/SRC-HIST-GOES-LAMPERT-APOTHECARY-001.md`
-
-### Execution / relationships / arcs
-
-- `storybible/EXECUTIONS_REFORMATION_CLAES_2026-08-16.md`
-- `entities/ENTITIES.yaml`
-- `narrative/relationships.yaml`
-- `narrative/arcs.yaml`
 
 ### Alchemical refinement / sources
 
@@ -110,28 +175,16 @@ This status means the **active authoritative layers** have been synchronized to 
 - `narrative/alchemy_lifeline_refinement_2026-08-16.yaml`
 - `narrative/instances_alchemy_rederijker_2026-08-16.yaml`
 - `narrative/knowledge_states_alchemy_2026-08-16.yaml`
-- `sources/SRC-HIST-AGRICOLA-DE-RE-METALLICA-1556-VITRIOL-001.md`
-- `sources/SRC-HIST-ERCKER-PROBIERKUNST-1574-001.md`
-- `sources/SRC-HIST-GOES-REDERIJKERS-001.md`
-- `sources/SRC-HIST-MORHOF-SETON-ENKHUIZEN-1673-001.md`
-- `sources/SRC-HIST-NORTON-KEY-ALCHEMY-GREEN-LION-001.md`
 
 ## Legacy surfaces
 
-The following may contain superseded development wording and are not current authority where they conflict with later decisions:
-
-- `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md`
-- older portions of `storybible/EXECUTIONS_REFORMATION_CLAES.md`
-- historical migration summaries in `review/MIGRATION_REVIEW.yaml`
-- deprecated Story Claims/objects retained as audit history.
-
-They need not be destroyed; precedence now makes their status explicit.
+Dated legacy prose may contain superseded development wording and is not current authority where it conflicts with later decisions. In particular, old cipher architecture, 1545 birth, unresolved Cornelis death windows, old beloved identity and old Cornelis chamber/office assumptions remain audit history only.
 
 ## Genuine remaining work
 
-The active open registries now contain only unresolved research, experimental or authorial-design questions. Separately, dramatic realization remains underdeveloped: `narrative/structure.yaml` needs actual hierarchy population and `narrative/scenes.yaml` needs scene diagnostics for the major fixed hinges.
+Canon normalization and historical practice loading are now ahead of dramatic realization. `narrative/structure.yaml` still needs the actual Book/Act/Sequence/Chapter/Beat hierarchy and `narrative/scenes.yaml` needs many more full scene diagnostics. Mayken's independent scene-by-scene agency, the 1572–1579 Goes causal departure line and the late 1584–1602 event spine also remain narrative-development work.
 
-`SYNC_COMPLETE_ACTIVE_LAYERS` therefore means **canon synchronization is coherent**, not that the novel or every paragraph-level normalization task is complete.
+`SYNC_COMPLETE_ACTIVE_LAYERS` therefore means **canon plus current chapter-world synchronization is coherent**, not that the novel is fully structured or written.
 
 ## Validation note
 
