@@ -1,0 +1,58 @@
+schema_version: 1.0.0
+kind: SourceClaimRegistryExtension
+claims:
+- id: SC.HIST.BIERSTEKER.DISTRIBUTION_CHAIN.002
+  type: SourceClaim
+  statement: >-
+    For scene reconstruction a biersteker may be treated as an intermediary who obtains or receives beer from brewers, handles casks and storage, monitors condition and quantity, keeps accounts and obligations, and arranges delivery to customers; this role does not itself prove brewing or brewery ownership.
+  claim_type: historical_trade_role
+  subject: ENT.PERSON.CORNELIS
+  predicate: transferable_role_model
+  object: beer_distribution_intermediary
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-BEER-LOWCOUNTRIES-GOES-001]
+  verification:
+    status: transferable_with_local_limits
+    note: Exact mid-sixteenth-century Goese contracts and task boundaries remain locally incomplete.
+
+- id: SC.HIST.BEER.PRODUCTION_DISTRIBUTION.SEPARATION.001
+  type: SourceClaim
+  statement: >-
+    Brewing, casking, carriage, biersteker distribution, retail tapping and onward shipping should be represented as distinct economic functions unless a specific source shows that one actor combined them.
+  claim_type: historical_economic_process
+  subject: WORLD.NISSEPAT_BEER_NETWORK
+  predicate: authoring_guardrail
+  object: separate_production_distribution_retail_shipping_roles
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-BEER-LOWCOUNTRIES-GOES-001]
+  verification:
+    status: historical_process_synthesis
+    note: This supports scene architecture but does not identify the individual historical actors in the fictional family network.
+
+- id: SC.HIST.NISSEPAD.BREWERY.FAMILY_OWNERSHIP_BOUNDARY.001
+  type: SourceClaim
+  statement: >-
+    The project has historical evidence for a later-sixteenth-century brewery environment at the Nissepad, but current evidence does not prove that Cornelis owned it or that the exact earlier ownership structure matched the fictional wider-Nissepat-family business model.
+  claim_type: evidence_boundary
+  subject: ENT.PROP.GOES.NISSEPAD.BREWERY_1577
+  predicate: ownership_not_historically_established_for_cornelis
+  object: ENT.PERSON.CORNELIS
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-BEER-LOWCOUNTRIES-GOES-001, SRC-HIST-GOES-LIVING-CITY-001]
+  verification:
+    status: local_anchor_plus_novel_connection
+    note: Wider-family ownership before Cornelis' death is a CanonDecision, not a SourceClaim.
+
+- id: SC.HIST.GOES.BEERFLOW.ROUTE_BOUNDARY.001
+  type: SourceClaim
+  statement: >-
+    Nissepad-to-Goes movement and onward urban or harbour distribution are scene-safe as a functional goods-flow model when constrained by the established topography and Cornelis' biersteker role, but no single invariant cart route or universal harbour passage is claimed as historical fact.
+  claim_type: historical_scene_reconstruction
+  subject: REL.NISSEPAT_BEERFLOW.GOES
+  predicate: functional_route_model
+  object: Nissepad_to_Goes_to_local_or_onward_distribution
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-BEER-LOWCOUNTRIES-GOES-001, SRC-HIST-GOES-LIVING-CITY-001]
+  verification:
+    status: topography_plus_trade_role_synthesis
+    note: Local sale in Goes is a valid endpoint; onward shipping is conditional, not mandatory.
