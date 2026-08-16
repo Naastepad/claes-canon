@@ -1,4 +1,4 @@
-schema_version: 1.2.0
+schema_version: 1.2.1
 kind: WorldModuleRegistry
 modules:
   - id: WORLD.HISTORICAL_SUBSTRATE_1540_1605
@@ -63,19 +63,6 @@ modules:
     guardrails:
       - "Claes is not a university student in Antwerp."
       - "Plantin can remain peripheral/prudent; no need to make him a core conspirator."
-
-  - id: WORLD.RELIGIOUS_SPACE.SENSORY_CHURCH
-    label: "Religious space — sensory, social and mnemonic church world"
-    canon_status: CANON
-    record_role: RESEARCH_AND_SCENE_USE_FRAMEWORK
-    historical_method: ANTWERP_SOURCE_DIRECT_PLUS_LOW_COUNTRIES_TRANSFER_WITH_LOCAL_VERIFICATION
-    detail_file: narrative/religious_space_sensory_church.yaml
-    local_goes_layers: [storybible/modules/WORLD_GOES_CHURCH_LOCAL.md, storybible/modules/WORLD_GOES_CHURCH_LITURGICAL_GUARDRAILS.md, storybible/modules/HISTORICAL_SUBSTRATE_GOES_CHURCH_LINK.md]
-    narrative_functions: ["body-before-meaning", "sinne as cognition", "church as social map", "church as memory carrier", "confessional change made materially perceptible"]
-    guardrails:
-      - "Never checklist all five senses; select a dominant sensory field, a counter-sense and a social/spatial inference when appropriate."
-      - "Antwerp-specific scale, altar maps, relics and simultaneity do not automatically transfer to Goes or Reimerswaal."
-      - "Local evidence outranks comparative reconstruction."
 
   - id: WORLD.NISSEPAD
     label: "Nissepad — source-weighted family landscape"

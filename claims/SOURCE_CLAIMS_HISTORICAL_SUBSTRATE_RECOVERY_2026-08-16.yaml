@@ -1,4 +1,4 @@
-schema_version: "1.0.0"
+schema_version: "1.0.1"
 kind: SourceClaimRegistryExtension
 recovery:
   recovered_on: "2026-08-16"
@@ -9,9 +9,9 @@ claims:
     type: SourceClaim
     statement: "For Catholics in the mid-sixteenth-century Low Countries, Latin was the official language of the Church and the Vulgate was the authoritative Latin biblical text; vernacular Catholic translations did not replace Latin liturgical Scripture."
     claim_type: historical_religious_practice
-    subject: WORLD.RELIGION.CATHOLIC_LOW_COUNTRIES
+    subject: "Catholic religious practice in the Low Countries"
     predicate: normative_scriptural_language
-    object: LATIN_VULGATE
+    object: "Latin Vulgate"
     story_time: {earliest: 1550-01-01, latest_exclusive: 1581-01-01, precision: interval}
     evidence_status: VERIFIED
     source_ids: [SRC-HIST-CATHOLIC-BIBLE-LOWCOUNTRIES-1548-001]
@@ -23,9 +23,9 @@ claims:
     type: SourceClaim
     statement: "The Leuven Bible of 1548, translated by Nicolaas van Winghe from the Catholic Vulgate tradition and approved by Catholic censors, was the first official complete Dutch Catholic Bible and was reprinted during Claes' lifetime."
     claim_type: historical_book_history
-    subject: OBJ.HIST.LEUVEN_BIBLE_1548
+    subject: "Leuven Bible 1548"
     predicate: catholic_vernacular_bible
-    object: DUTCH_LANGUAGE
+    object: "Dutch language"
     story_time: {earliest: 1548-09-01, latest_exclusive: 1599-01-01, precision: interval}
     evidence_status: VERIFIED
     source_ids: [SRC-HIST-CATHOLIC-BIBLE-LOWCOUNTRIES-1548-001]
@@ -37,9 +37,9 @@ claims:
     type: SourceClaim
     statement: "The Liesvelt Bible was the first complete Dutch Bible (1526); its New Testament followed Luther and its sixth and last edition appeared in 1542, making it confessionally unsuitable as the default Catholic Bible for mid-sixteenth-century Goes."
     claim_type: historical_book_history
-    subject: OBJ.HIST.LIESVELT_BIBLE
+    subject: "Liesvelt Bible"
     predicate: confessional_profile
-    object: REFORMATION_INFLUENCED_DUTCH_BIBLE
+    object: "Reformation-influenced Dutch Bible"
     story_time: {earliest: 1526-01-01, latest_exclusive: 1543-01-01, precision: interval}
     evidence_status: VERIFIED
     source_ids: [SRC-HIST-CATHOLIC-BIBLE-LOWCOUNTRIES-1548-001]
@@ -50,9 +50,9 @@ claims:
     type: SourceClaim
     statement: "The Dutch Revolt transformed Catholic religious life in the Low Countries over several generations; Catholic identity and practice adapted under political and confessional pressure rather than disappearing instantaneously."
     claim_type: historical_religious_change
-    subject: WORLD.RELIGION.CATHOLIC_LOW_COUNTRIES
+    subject: "Catholic identity in the Low Countries"
     predicate: transformed_during_revolt
-    object: DUTCH_REVOLT
+    object: "Dutch Revolt"
     story_time: {earliest: 1520-01-01, latest_exclusive: 1636-01-01, precision: interval}
     evidence_status: SUPPORTED
     source_ids: [SRC-POLLMANN-CATHOLIC-IDENTITY-2011]
@@ -66,7 +66,7 @@ claims:
     claim_type: historical_worldbuilding_mechanism
     subject: WORLD.RELIGIOUS_SPACE.SENSORY_CHURCH
     predicate: functions_as
-    object: SENSORY_SOCIAL_MEMORY_FIELD
+    object: "sensory, social and mnemonic field"
     story_time: {earliest: 1540-01-01, latest_exclusive: 1580-01-01, precision: interval}
     evidence_status: SUPPORTED
     source_ids: [SRC-WAUTERS-RELIGIOUS-SPACE-2021]
@@ -78,9 +78,9 @@ claims:
     type: SourceClaim
     statement: "Rederijkerskamers were urban corporations of public communication whose drama, lyric, competition and sociability connected craft, trade, civic identity, devotion, mobility and contested ideas."
     claim_type: historical_institutional_mechanism
-    subject: WORLD.REDERIJKERS.LOW_COUNTRIES
+    subject: "Rederijker chambers in the Low Countries"
     predicate: operated_as
-    object: CIVIC_PUBLIC_COMMUNICATION_NETWORK
+    object: "civic public-communication networks"
     story_time: {earliest: 1540-01-01, latest_exclusive: 1605-01-01, precision: interval}
     evidence_status: SUPPORTED
     source_ids: [SRC-VAN-BRUAENE-OM-BETERS-WILLE-2008]
@@ -92,9 +92,9 @@ claims:
     type: SourceClaim
     statement: "In the Revolt-era information ecology, oral tidings, eyewitness and traveller reports could precede letters, pamphlets and printed confirmation; contemporaries assessed reports through repetition, source interest, independent witnesses and plausibility."
     claim_type: historical_information_ecology
-    subject: WORLD.REVOLT.INFORMATION
+    subject: "Revolt-era information circulation"
     predicate: circulated_through
-    object: ORAL_WRITTEN_PRINTED_NETWORKS
+    object: "oral, written and printed networks"
     story_time: {earliest: 1560-01-01, latest_exclusive: 1586-01-01, precision: interval}
     evidence_status: SUPPORTED
     source_ids: [SRC-POLLMANN-SPICER-PUBLIC-OPINION-2007, SRC-STEIN-POLLMANN-NETWORKS-REGIONS-NATIONS-2010]
@@ -106,9 +106,9 @@ claims:
     type: SourceClaim
     statement: "Sixteenth-century political and confessional identity in the Low Countries was layered across household, town, corporation, province, confession and dynastic allegiance rather than reducible to a modern national binary."
     claim_type: historical_identity_model
-    subject: WORLD.REVOLT.IDENTITY
+    subject: "Low Countries identity during the Revolt"
     predicate: structured_as
-    object: LAYERED_AFFILIATIONS
+    object: "layered affiliations"
     story_time: {earliest: 1540-01-01, latest_exclusive: 1605-01-01, precision: interval}
     evidence_status: SUPPORTED
     source_ids: [SRC-STEIN-POLLMANN-NETWORKS-REGIONS-NATIONS-2010, SRC-POLLMANN-SPICER-PUBLIC-OPINION-2007]
