@@ -1,0 +1,42 @@
+schema_version: 1.0.0
+kind: CanonDecisionSupplement
+decisions:
+- id: DEC.GOES.CLERGY.MATHIJS_VICE_CUREYT.2026-08-16
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    Mr. Mathijs Jacopsen/Jacobsen is the canonical named historical clergy anchor for the Catholic Goese church world immediately preceding and entering Claes' birth year. He is documented as vice-pastoor on 14 March 1541 and as `vice-cureyt ter Goes` on 27 February 1542.
+  historical_basis:
+  - SC.HIST.GOES.CLERGY.MATHIJS.VICE_PASTOOR_1541.001
+  - SC.HIST.GOES.CLERGY.MATHIJS.VICE_CUREYT_1542.001
+  - SC.HIST.GOES.CLERGY.MATHIJS.CHURCH_PROPERTY_1541_1542.001
+  story_function: >-
+    He may be used as the real priestly face of the Goese Catholic parish environment for scenes whose chronology fits the attested period, rather than inventing an anonymous priest where a documented person is available.
+  fixed_boundaries:
+  - The project may associate his function with the Maria Magdalena parish/church context, but must preserve that the decisive 27 February 1542 act itself says only `ter Goes`.
+  - Mathijs is not proven to be the titular benefice-holder; the evidence explicitly supports a vice-cureit / deputy cure-of-souls role.
+  - Mathijs is not proven to still hold the office on 8 December 1542, Claes' canonical birth date.
+  - Mathijs is not proven to have baptized Claes.
+  - Property by the kerkhof/choir does not prove residence.
+
+- id: DEC.GOES.CLERGY.CLEMENS_VAN_DEN_DALE.2026-08-16
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    Clemens van den Dale is retained as a documented later Goese clergy anchor because the 20 March 1564 transport act explicitly titles him `licentiaat pastoor Goes`.
+  historical_basis:
+  - SC.HIST.GOES.CLERGY.CLEMENS.PASTOOR_1564.001
+  story_function: >-
+    He belongs to the verified Goese institutional world of 1564; his existence does not automatically create a scene or a personal relationship with Claes.
+
+- id: DEC.GOES.CLERGY.SUCCESSION_BOUNDARY.2026-08-16
+  type: CanonDecision
+  status: CANON_GUARDRAIL
+  decision: >-
+    The exact titular pastor above Mathijs and the complete Goese clergy succession from the recovered 1542 Mathijs attestations to Clemens van den Dale in 1564 remain historically unresolved in the present evidence set.
+  evidence_basis:
+  - SC.HIST.GOES.CLERGY.SUCCESSION_1542_1563.001
+  guardrails:
+  - Do not fill 1542–1563 with an invented continuous incumbency for Mathijs or Clemens.
+  - Do not infer a December 1542 office-holder from a February 1542 act.
+  - New benefice/collation evidence may refine this chronology without disturbing the established February 1542 and March 1564 anchors.
