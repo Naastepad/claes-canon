@@ -1,0 +1,61 @@
+schema_version: 1.0.0
+kind: SourceClaimRegistry
+claims:
+- id: SC.HIST.GOES.SALT.NORTH_HARBOUR_1554.001
+  type: SourceClaim
+  statement: "Immediately before the 1554 fire the Goese salt-work complex lay outside the walls in the northern harbour-industrial zone; Oostzelke and Westzelke belong to the harbour edges, and the cited figure of 81 keten is an inventory figure rather than a count of keten proven destroyed."
+  claim_type: industrial_geography
+  subject: ENT.LOC.GOES
+  predicate: had_northern_harbour_salt_industry
+  object: "Oostzelke/Westzelke harbour-industrial salt complex; 81 keten cited as total inventory"
+  story_time: {earliest: '1554-01-01', latest_exclusive: '1554-05-19', precision: bounded}
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-GOES-FIRE-1554-REFINEMENT-001]
+  qualifies:
+  - "Do not convert the figure 81 into 81 burned keten."
+  - "Individual pre-fire keten locations remain schematic unless a transport chain fixes their topology."
+  retrieval: {tags: [goes, salt, zoutketen, oostzelke, westzelke, harbour, 1554]}
+
+- id: SC.HIST.GOES.FIRE_1554.SPREAD.001
+  type: SourceClaim
+  statement: "The source-weighted 18 May 1554 spread corridor runs from the Oostzelke origin through neighbouring harbour/salt structures, with strong north-easterly wind driving fire and secondary ignitions broadly west/south-west toward Turfkade, the watermill/Molenwater zone and the Kruisbroeders/western fabric; exact ignition order and clock timing are not preserved."
+  claim_type: urban_event_spread
+  subject: ENT.LOC.GOES
+  predicate: fire_spread_reconstructed_as
+  object: "Oostzelke -> harbour/salt structures -> west/south-west secondary ignitions -> Turfkade/north-west -> watermill/Molenwater -> Kruisbroeders/west"
+  story_time: {earliest: '1554-05-18', latest_exclusive: '1554-05-19', precision: day}
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-GOES-FIRE-1554-REFINEMENT-001]
+  qualifies:
+  - "This is a source-weighted corridor, not a claim that every named node ignited strictly after the previous node."
+  - "No minute-by-minute archival fire route is claimed."
+  retrieval: {tags: [goes, fire, 1554, spread, wind, harbour, turfkade, watermill, kruisbroeders]}
+
+- id: SC.MODEL.GOES.FIRE_1554.FIREBRANDS.001
+  type: SourceClaim
+  statement: "Modern fire-science experiments make wind-driven firebrands and separate secondary roof/structure ignitions physically plausible, so scene blocking may represent the 1554 fire as a multi-front brandwaaier rather than a tidy street-by-street wall of flame."
+  claim_type: reconstruction_mechanism
+  subject: ENT.LOC.GOES
+  predicate: may_use_firebrand_spotting_model
+  object: "qualitative multi-front spotting / secondary ignition model"
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-GOES-FIRE-1554-REFINEMENT-001]
+  qualifies:
+  - "Modern fire science is an analogue, not historical evidence for exact Goese roofing, ember ranges, wind speed or ignition minutes."
+  - "Any timing bands used in drafting are reconstruction aids, never archival timestamps."
+  retrieval: {tags: [goes, fire, 1554, firebrand, spotting, reconstruction, wind]}
+
+- id: SC.HIST.GOES.FIRE_1554.CASUALTIES.001
+  type: SourceClaim
+  statement: "The currently consulted fire-specific sources do not supply a reliable number of people killed or injured in the 18 May 1554 Goes fire; the historical human casualty count therefore remains unknown in the present evidence bundle."
+  claim_type: evidence_limit
+  subject: ENT.LOC.GOES
+  predicate: casualty_count_in_current_bundle
+  object: "UNKNOWN"
+  story_time: {earliest: '1554-05-18', latest_exclusive: '1554-05-19', precision: day}
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-GOES-FIRE-1554-REFINEMENT-001]
+  qualifies:
+  - "No number is not evidence of zero casualties."
+  - "The fictional deaths of Tanneken, Jan and the unborn child are novel canon, not recovered historical victim data."
+  retrieval: {tags: [goes, fire, 1554, casualties, deaths, injuries, unknown]}

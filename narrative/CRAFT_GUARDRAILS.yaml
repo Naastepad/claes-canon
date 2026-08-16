@@ -1,4 +1,4 @@
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: CraftGuardrailRegistry
 guardrails:
 - id: GRD.SINNE.ORDER
@@ -7,17 +7,21 @@ guardrails:
   rule: Never invent an exact day when canon/source precision is month, season, year or interval.
 - id: GRD.HIST.FICTION.SEPARATION
   rule: Keep historical support distinct from fictional story decisions.
+- id: GRD.CLAES.AGE
+  rule: Derive every age-sensitive description from Claes' canonical birth date 8 December 1542; never reuse the superseded 1545 chronology.
+- id: GRD.REIMERSWAAL.EDUCATION
+  rule: Reimerswaal begins later in 1554 after elementary schooling in Goes and develops into advanced older-pupil formation before September 1561; do not portray the whole stay as beginner-level Latin schooling or invent a formal local office to explain its duration.
 - id: GRD.MERELS.INWORLD
   rule: No modern a1–g7 coordinates, engine IDs, P labels or pulsing trails in-world.
 - id: GRD.MERELS.LOCAL
   rule: Local letters and stone shapes are problem-local identifiers; pigment is not party proof.
-- id: GRD.CODE.FUNCTIONS
-  rule: Zovitius opens door; vitriol reveals memoriaal; memoriaal yields merels/theorem/Monas and points to Castanea; Monas orders; Dodoens yields values; Primus Index identifies; full reconstruction takes weeks.
+- id: GRD.MEMORIAAL.DIRECT_REVEAL
+  rule: The readable Diets/Brabant Brevísima is invisibly printed in tannin/gallnut plus gum arabic before binding; green vitriol develops the existing letterforms directly. Reveal is reading, not decryption, and no Monas/Dodoens/Primus/nomenclator/key reconstruction is required.
 - id: GRD.ALCHEMY.AUTHORIAL
   rule: Nigredo/Albedo/Rubedo/Projectio are authorial architecture, not a mandatory in-world doctrine.
 - id: GRD.LOVE.COUNTERFORCE
-  rule: The beloved is moral/material counterforce and error-checker, not a replacement merels expert.
-- id: GRD.NO_ONE_NIGHT_DECODE
-  rule: No miraculous one-night full decode.
+  rule: Mayken is an independent material/sensory counterforce and error-checker, not a cipher solver, therapist or replacement merels expert.
+- id: GRD.NO_DECRYPTION_BACKSLIDE
+  rule: Do not reintroduce the retired multi-week cipher-recovery architecture, a one-night decode, or any special Dodoens/Monas/Primus key dependency; the hidden Brevísima becomes readable by direct chemical development.
 - id: GRD.MASTER.AUTHORITY
-  rule: Structured registries are projections of the storybible; conflict requires proposal and human decision, never silent overwrite.
+  rule: Structured registries are projections of the storybible; conflict requires provenance review and explicit human decision, never silent overwrite.

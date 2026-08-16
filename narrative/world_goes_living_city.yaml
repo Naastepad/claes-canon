@@ -1,4 +1,4 @@
-schema_version: 1.3.0
+schema_version: 1.4.0
 kind: WorldModuleRegistry
 modules:
 - id: WORLD.GOES_LIVING_CITY
@@ -14,7 +14,11 @@ modules:
   - SC.HIST.GOES.NIEUWSTRAAT.PRE1594.001
   - SC.HIST.GOES.STADSSCHOOL.LOCATION_1558.001
   - SC.HIST.GOES.SALT.WESTZELKE_1543_1544.001
+  - SC.HIST.GOES.SALT.NORTH_HARBOUR_1554.001
   - SC.HIST.GOES.FIRE_1554.FOOTPRINT.001
+  - SC.HIST.GOES.FIRE_1554.SPREAD.001
+  - SC.MODEL.GOES.FIRE_1554.FIREBRANDS.001
+  - SC.HIST.GOES.FIRE_1554.CASUALTIES.001
   - SC.HIST.GOES.NIEUWSTRAAT.BURNED_HOUSES_1556.001
   - SC.HIST.GOES.FIRE_1554.NIEUWSTRAAT_PARTIAL_DAMAGE.001
   - SC.HIST.GOES.BREWERY.NISSEPAD_1577.001
@@ -25,15 +29,18 @@ modules:
   - SC.HIST.GOES.REDERIJKERS.FOUR_CHAMBERS.001
   - SC.HIST.GOES_GROTE_KERK.BUILD.001
   - SC.HIST.GOES_GROTE_KERK.INTERIOR.001
+
   purpose:
     primary: "Answer scene questions spatially and socially: who/what is where, which streets and gates connect them, what a route passes, and what changes after fire, siege and confessional transition."
     atlas_relation: "The Storybible stores semantic/time/evidence relations; the Stadsatlas stores dense parcel geometry and routing. Neither replaces the other."
+
   spatial_reasoning_contract:
     relations_are_distinct: [OWNS, SELLS, BUYS, RESIDES, RENTS, OPERATES_BUSINESS, WORKS_AT, ADJOINS, USES, VISITS]
-    residence_rule: "Never infer RESIDES from OWNS, ADJOINS or OPERATES_BUSINESS. Cornelis/young Claes have one explicit exception only because DEC.CORNELIS.RESIDENCE.GOES.2026-08-14 creates the RESIDES relation to the 1542 house."
+    residence_rule: "Never infer RESIDES from OWNS, ADJOINS or OPERATES_BUSINESS. Cornelis/young Claes have one explicit exception because DEC.CORNELIS.RESIDENCE.GOES.2026-08-14 creates the RESIDES relation to the 1542 house."
     parcel_rule: "A transport chain is not automatically one simultaneous physical parcel. Use the year slider and physical-place/slot inference before depicting multiple houses."
     boundary_rule: "Four belendingen support topology, side-of-street and neighbourhood sequence, not exact cadastral shape."
     modern_map_rule: "Modern street names may anchor durable geometry but do not prove identical sixteenth-century names or micro-traces."
+
   core_anchors:
     civic_religious:
     - {location: ENT.LOC.GOES.GROTE_MARKT, function: market_and_civic_focus}
@@ -42,8 +49,8 @@ modules:
     - {location: ENT.LOC.GOES.ZUSTERHUIS, function: cornelis_era_rhetorician_meeting_environment}
     commerce_industry:
     - {location: ENT.LOC.GOES.HAVEN, function: shipping_trade_supply_and_market_access}
-    - {location: ENT.LOC.GOES.WESTZELKE, function: salt_industry_and_harbour_edge}
-    - {location: ENT.LOC.GOES.OOSTZELKE, function: salt_industry_and_1554_fire_origin_zone}
+    - {location: ENT.LOC.GOES.WESTZELKE, function: north_harbour_salt_industry_and_harbour_edge}
+    - {location: ENT.LOC.GOES.OOSTZELKE, function: north_harbour_salt_industry_and_1554_fire_origin_zone}
     - {location: ENT.LOC.GOES.TURFKADE, function: trade_street_and_1554_confirmed_damage_area}
     movement:
     - {location: ENT.LOC.GOES.GANZEPOORT, function: southern_city_threshold}
@@ -51,6 +58,7 @@ modules:
     - {location: ENT.LOC.GOES.NISSEPAD_CORRIDOR, function: southern_rural_business_and_family_property_corridor}
     - {location: ENT.LOC.GOES.SHEER_HENDRIKSKINDERENPOORT, function: western_gateway_and_1572_pressure_point}
     - {location: ENT.LOC.GOES.HAVENPOORT, function: harbour_gateway_and_1572_pressure_point}
+
   street_and_place_identity_rules:
     pre1594_nieuwstraat:
       entity: ENT.LOC.GOES.NIEUWSTRAAT_PRE1594
@@ -59,11 +67,12 @@ modules:
       rule: "Use an older Nieuwstraat/Oude Nieuwstraat in or by the Armenhoek for pre-1594 acts. The historical toponym is certain, the Armenhoek zone is supported, and the exact 1542 street axis remains unknown."
       evidence_hook: ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
       parcel_topology: "1542 Nissepat house: street east; Jacob Dierixsen de Bye north, west and south; therefore house is on the west side of the historical street."
-      fire_state: "Post-fire deeds document burned houses at the corner of Nieuwstraat and in Armenhoek, while ordinary Nieuwstraat houses also survive/transfer. Treat as mixed partial damage, not safe zone and not total destruction."
+      fire_state: "Post-fire deeds document burned houses at the corner of Nieuwstraat and in Armenhoek, while ordinary houses also survive/transfer. Treat the micro-area as mixed partial damage, not a safe zone and not total destruction."
     planned_nieuwstraat:
       entity: ENT.LOC.GOES.NIEUWSTRAAT_1594
       status: PROPOSED_HISTORICAL_ANCHOR
       rule: "Only active as the planmatige/current Nieuwstraat from the 1594 expansion decision; never use it for the 1542 Nissepat house."
+
   nissepat_property_network:
     canonical_story_grandfather:
       person: ENT.PERSON.CLAES_JACOBSZ_NISSEPAT
@@ -80,23 +89,47 @@ modules:
     - {person: ENT.PERSON.JAN_JANSEN_NISSEPAT, zone: ENT.LOC.GOES.VISMARKT, year: 1579, relation: PROPERTY_NETWORK}
     - {person: ENT.PERSON.JAN_PAUWELSEN_NISSEPAT, zone: ENT.LOC.GOES.NISSEPAD_CORRIDOR, year: 1577, relation: ADJOINS_BREWERY}
     fiction_guardrail: "Do not turn other documented Nissepat nodes into one proven nuclear family without a separate genealogical decision."
+
   cornelis_and_household:
     person: ENT.PERSON.CORNELIS
     fixed:
-    - "Cornelis is a merchant/beer-trader/rhetorician in active canon."
+    - "Cornelis is a Goes poorter and biersteker; he is not the brewery owner or printer."
     - "The family home during Claes' Goes childhood is ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542 under DEC.CORNELIS.RESIDENCE.GOES.2026-08-14."
     - "Historical Claes Jacobsz. Nissepat bought that house; the paternal genealogy and household use are novel canon."
-    - "Immediately before the fire the household contains Cornelis, Claes' mother, Claes, a brother about eighteen months younger, and an unborn child; the mother is about six months pregnant."
+    - "Immediately before the fire the household contains Cornelis, Tanneken, Claes, younger brother Jan and an unborn child; Tanneken is about six months pregnant."
     canonical_residence: ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
     residence_decision: DEC.CORNELIS.RESIDENCE.GOES.2026-08-14
     business_separation: "Nissepad, harbour, brewery, salt and storage locations remain separate relations unless separately linked."
     fire_outcome_1554: DEC.CLAES.FAMILY_FIRE.1554.2026-08-14
-    fire_outcome_note: "In novel canon the house is destroyed/uninhabitable; mother, younger brother and unborn child die; Claes and Cornelis survive away from the house. This is fiction grounded in a historically supported partially damaged street environment."
+    fire_outcome_note: "In novel canon the house is destroyed/uninhabitable; Tanneken, Jan and the unborn child die; Claes and Cornelis survive away from the house. This is fiction grounded in a historically supported partially damaged street environment."
     post_fire_father_son: DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14
     post_fire_note: "Cornelis stays in Goes to rebuild livelihood/business/shelter and pay for Claes' education; Claes goes to Reimerswaal, so surviving father and son grieve apart."
     rhetorician_meeting_environment: ENT.LOC.GOES.ZUSTERHUIS
     rhetorician_decision: DEC.GOES.REDERIJKERS.MEETINGPLACE.2026-08-14
-    chamber_identity: OPEN.CORNELIS.REDERIJKERS.CHAMBER.001
+    chamber_identity: ENT.ORG.GOES.NARDUSBLOEM
+    chamber_decision: DEC.CORNELIS.REDERIJKER.NARDUS_CASTANIE_ORIGIN.2026-08-16
+    castanien_relation: "In novel canon Cornelis has a formative role in the reform-minded/protestantiserende 1560s current that later becomes the Edele Castanienbloem; 1595 remains the earliest surviving attestation, not a proved founding date."
+    deken_status: OPEN.CORNELIS.REDERIJKER.DEKEN.001
+
+  fire_1554_reconstruction:
+    refinement_module: WORLD.GOES.FIRE_1554.REFINEMENT
+    historical_core:
+      date: '1554-05-18'
+      salt_industry_position: "north of the walled city along the harbour"
+      harbour_keten_inventory: 81
+      inventory_guardrail: "81 is the cited harbour-zone inventory, not the number proven destroyed"
+      origin: ENT.LOC.GOES.OOSTZELKE
+      wind: "strong north-easterly; destructive transport broadly west/south-west"
+      spread_shape: "multi-front brandwaaier/spotting is physically plausible; exact ignition timing is unknown"
+      casualty_count: UNKNOWN
+    current_story_boundary:
+      home: ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
+      historical_parcel_damage: UNKNOWN
+      novel_canon: "destroyed/uninhabitable"
+      fictional_casualties: [ENT.PERSON.CLAES_MOTHER, ENT.PERSON.CLAES_BROTHER, ENT.PERSON.CLAES_UNBORN_SIBLING]
+      survivors: [ENT.PERSON.CLAES, ENT.PERSON.CORNELIS]
+      decision: DEC.CLAES.FAMILY_FIRE.1554.2026-08-14
+
   route_templates:
     child_to_church:
       status: ORIGIN_RESOLVED_ROUTE_TO_QUERY
@@ -107,14 +140,15 @@ modules:
       status: ORIGINS_RESOLVED_ROUTE_TO_QUERY
       origin: ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
       destination: ENT.LOC.GOES.ZUSTERHUIS
-      instruction: "Use the year-valid atlas route; Cornelis' exact named chamber remains separate from the meeting-place decision."
+      instruction: "Use the year-valid atlas route. Cornelis' canonical chamber affiliation is Nardusbloem; do not reopen the old generic chamber-identity question."
     south_to_city:
       status: usable_framework
       sequence: [ENT.LOC.GOES.NISSEPAD_CORRIDOR, ENT.LOC.GOES.KARNEMELKSEPUT, ENT.LOC.GOES.VOORSTAD, ENT.LOC.GOES.GANZEPOORT, ENT.LOC.GOES.GROTE_MARKT]
-      note: "The Nissepad proper begins beyond the Karnemelkseput in the route reconstruction; do not label every southern approach segment 'Nissepad'."
+      note: "The Nissepad proper begins beyond the Karnemelkseput in the route reconstruction; do not label every southern approach segment Nissepad."
     market_harbour:
       status: source_weighted
       sequence: [ENT.LOC.GOES.GROTE_MARKT, ENT.LOC.GOES.VISMARKT, ENT.LOC.GOES.HAVEN]
+
   city_population_layer:
     source: SRC-HIST-GOES-LIVING-CITY-001
     rule: "Use transport parties and named belenders as a year- and location-filtered social backdrop. A person named as buyer/seller/belender may be present in the property network but is not automatically resident at that parcel."
@@ -126,6 +160,7 @@ modules:
     - "a mesmaker occurs at Zuideinde"
     - "a priest and an organist are parties to the 1558 house by the city school"
     scene_use: "Populate a route with only the occupations/names attested in the relevant period or with generic historically plausible people clearly not presented as named historical residents."
+
   time_slices:
     '1542':
       city_state: "walled late-medieval trading town centred on market, church and harbour; salt industry at harbour edges; active southern/western gate approaches"
@@ -135,20 +170,27 @@ modules:
       residence: ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
       rhetorician_environment: ENT.LOC.GOES.ZUSTERHUIS
     '1554_pre_fire':
-      city_state: "same core street/harbour system immediately before the 18 May fire"
+      city_state: "same core street/harbour system immediately before the 18 May fire; salt-work complex north of the walls along the harbour"
+      salt_industry: "Oostzelke/Westzelke harbour-industrial edges; 81 keten in the cited inventory, individual placement partly schematic"
       household_home: ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
       household: ENT.FAMILY.CORNELIS_HOUSEHOLD_1554
-      family_state: "Cornelis + pregnant mother + Claes + younger brother + unborn child"
+      family_state: "Cornelis + Tanneken + Claes + Jan + unborn child"
+    '1554_fire':
+      origin_zone: ENT.LOC.GOES.OOSTZELKE
+      wind: "north-east toward west/south-west"
+      spread: "source-weighted multi-front harbour-to-city corridor; exact minute-by-minute sequence unknown"
+      historical_casualty_count: UNKNOWN
+      household_story: "house destroyed/uninhabitable; Tanneken, Jan and unborn child die; Claes and Cornelis survive away"
     '1554_post_fire':
       destroyed_or_confirmed_damage: [ENT.LOC.GOES.TURFKADE, ENT.LOC.GOES.KRUISBROEDERS]
       origin_zone: ENT.LOC.GOES.OOSTZELKE
-      broad_damage: "harbour plus northern/western Goes"
-      nieuwstraat_microfootprint: "mixed/partial damage supported: burned houses are documented at the corner of Nieuwstraat and in Armenhoek in 1556, while ordinary Nieuwstraat houses are also transferred after the fire"
+      broad_damage: "harbour plus northern/western Goes; watermill also reported burned"
+      nieuwstraat_microfootprint: "mixed/partial damage supported: burned houses documented in Nieuwstraat/Armenhoek, while ordinary houses also survive/transfer"
       family_home_specific_state: "NOVEL_CANON_DESTROYED_OR_UNINHABITABLE"
       family_casualties_story: [ENT.PERSON.CLAES_MOTHER, ENT.PERSON.CLAES_BROTHER, ENT.PERSON.CLAES_UNBORN_SIBLING]
       survivors_story: [ENT.PERSON.CLAES, ENT.PERSON.CORNELIS]
       grandfather_loss_story: "Claes Jacobsz. loses the house as his property asset"
-      historical_guardrail: "No current chain proves that the documented burned houses are the 1542 Nissepat parcel and no victim list proves the fictional deaths."
+      historical_guardrail: "No current chain proves that a documented burned parcel is the 1542 Nissepat house and no victim list proves the fictional family deaths."
       narrative_function: "1554 destroys the family as a household; Reimerswaal then separates the two survivors geographically while Cornelis stays in Goes to rebuild and finance Claes' future."
     '1572':
       siege_pressure: [ENT.LOC.GOES.SHEER_HENDRIKSKINDERENPOORT, ENT.LOC.GOES.HAVENPOORT]
@@ -158,6 +200,7 @@ modules:
       city_state: "post-siege legal and property reorganisation; Satisfactie is a political/religious governance layer, not itself a physical rebuilding date"
       nissepat_examples: [ENT.PROP.GOES.WESTZELKE.GEMEEN_KEETGE, ENT.PROP.GOES.NISSEPAD.BREWERY_1577]
       legal_guardrail: "sales are not called executions/confiscations unless the act proves that procedure"
+
   institutions:
     rhetoricians:
       umbrella: ENT.ORG.GOES.REDERIJKERS
@@ -166,28 +209,36 @@ modules:
       - {organization: ENT.ORG.GOES.NARDUSBLOEM, location: ENT.LOC.GOES.SEBASTIAANSHOF, from: 1626}
       cornelis_scene_location: ENT.LOC.GOES.ZUSTERHUIS
       cornelis_scene_decision: DEC.GOES.REDERIJKERS.MEETINGPLACE.2026-08-14
-      chamber_name_status: OPEN.CORNELIS.REDERIJKERS.CHAMBER.001
-      rule: "Do not generalize the Nardusbloem Zusterhuis evidence into a claim that Goudtsblome, Clisblome or Castanienbloem necessarily used the same room."
+      cornelis_chamber: ENT.ORG.GOES.NARDUSBLOEM
+      cornelis_chamber_decision: DEC.CORNELIS.REDERIJKER.NARDUS_CASTANIE_ORIGIN.2026-08-16
+      castanien_origin: ENT.ORG.GOES.CASTANIENBLOEM
+      deken_status: OPEN.CORNELIS.REDERIJKER.DEKEN.001
+      rule: "Do not generalize the Nardusbloem Zusterhuis evidence into a claim that every Goese chamber necessarily used the same room."
       guardrail: "The Maria Magdalena devotional relation, the Zusterhuis worldly meeting environment and the post-1626 Sint-Sebastiaanshof are three distinct relations and times."
+
   scene_query_protocol:
     steps:
     - "Resolve scene year."
     - "Resolve character relation to place: RESIDES/OWNS/WORKS/OPERATES/VISITS."
-    - "Apply explicit 14-August decisions before using generic inference: residence, old Nieuwstraat identity, family-fire outcome and Zusterhuis meeting environment."
+    - "Apply explicit 14- and 16-August decisions before generic inference: residence, old Nieuwstraat identity, family-fire outcome, Zusterhuis meeting environment and Cornelis' Nardusbloem affiliation."
     - "Query year-valid street/gate/landmark anchors."
     - "Query transport-register people/occupations on the route or immediate blocks."
     - "Apply event footprint for 1554, 1572, 1578 or later urban changes."
+    - "For 1554 distinguish historical geography, source-supported damage, qualitative firebrand model and explicit fictional family outcome."
     - "Return route plus named anchors, source certainty and unresolved gaps."
     required_answer_shape: "where + route + what is passed + who plausibly appears + what changed since previous time slice + certainty labels"
+
   guardrails:
   - "Goes must not be rendered as empty geometry: use the register population layer, markets, craft, harbour traffic, church rhythms, gates and changing damage states."
   - "Do not use the modern/planned Nieuwstraat of 1594 as the location of the 1542 Nissepat house."
   - "Do not invent the exact 1542 axis of the older Nieuwstraat beyond the supported Armenhoek zone and deed topology."
-  - "Cornelis' family home is canonically resolved, but residence remains distinct from his occupation and business properties."
+  - "Cornelis' family home is canonically resolved, but residence remains distinct from occupation and business properties."
   - "Do not conflate the 1572 burned Voorstad brewery with the documented 1577 Nissepad brewery."
-  - "Do not describe the older Nieuwstraat as untouched by the 1554 fire; post-fire deeds prove burned houses in the Nieuwstraat/Armenhoek environment."
+  - "Do not place the 1554 salt-work origin south of the city: the source-weighted salt complex lies north of the walls along the harbour."
+  - "Do not convert the figure of 81 harbour keten into 81 burned keten."
+  - "Do not invent a historical 1554 casualty count; the present evidence bundle records it as UNKNOWN."
   - "The 1542 house is destroyed/uninhabitable in novel canon, but that specific parcel loss is not a historical claim."
-  - "Claes' mother, younger brother and unborn sibling are fictional fire casualties; never present them as names recovered from historical victim records."
+  - "Tanneken, Jan and the unborn child are fictional fire casualties; never present them as names recovered from a historical victim record."
   - "The Claes Jacobsz. → Cornelis → Claes genealogy is novel canon using a historical person; it is not proven by the transport registers."
+  - "Do not reopen Cornelis' generic chamber identity: Nardusbloem is canon; only deken status remains open."
   - "Do not back-project the Nardusbloem's post-1626 Sint-Sebastiaanshof meeting place into Cornelis' period."
-  - "Do not infer a shared fixed meeting room for all four named Goese chambers from the Nardusbloem evidence."

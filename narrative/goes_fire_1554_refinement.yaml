@@ -1,0 +1,47 @@
+schema_version: 1.0.0
+kind: NarrativeRefinementRegistry
+modules:
+- id: WORLD.GOES.FIRE_1554.REFINEMENT
+  type: NarrativeInstance.WorldRefinement
+  label: "Goes 1554 — source-weighted fire reconstruction"
+  canon_status: CANON
+  story_time: {earliest: '1554-05-18', latest_exclusive: '1554-05-19', precision: day}
+  location: ENT.LOC.GOES
+  claims_active:
+  - SC.HIST.GOES.SALT.NORTH_HARBOUR_1554.001
+  - SC.HIST.GOES.FIRE_1554.FOOTPRINT.001
+  - SC.HIST.GOES.FIRE_1554.SPREAD.001
+  - SC.MODEL.GOES.FIRE_1554.FIREBRANDS.001
+  - SC.HIST.GOES.FIRE_1554.CASUALTIES.001
+  historical_core:
+    salt_industry_position: "outside the walls in the northern harbour-industrial zone; Oostzelke and Westzelke belong to the harbour edges"
+    harbour_keten_inventory: 81
+    inventory_guardrail: "81 is the cited inventory figure, not the number proven burned"
+    origin: ENT.LOC.GOES.OOSTZELKE
+    wind: "strong north-easterly; destructive transport broadly west/south-west"
+    source_weighted_corridor:
+    - "Oostzelke origin and neighbouring harbour/salt structures"
+    - "wind-driven secondary ignitions toward west and south-west"
+    - "Turfkade and north-western harbour/city fabric"
+    - "watermill/Molenwater zone"
+    - "Kruisbroeders/western urban fabric"
+    casualty_count: UNKNOWN
+  scene_blocking:
+    evidence_status: PLAUSIBLE
+    fire_shape: "brandwaaier / multi-front spotting rather than one neat street-by-street flame wall"
+    guardrails:
+    - "Do not assign archival clock times to the spread."
+    - "Do not infer exact ember distances or roof materials from modern analogues."
+    - "Do not turn the historical casualty count UNKNOWN into zero casualties."
+  household_intersection:
+    home: ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
+    historical_parcel_damage: UNKNOWN
+    novel_canon: "The house is destroyed/uninhabitable; Tanneken, Jan and the unborn child die; Claes and Cornelis survive away from the house."
+    decision: DEC.CLAES.FAMILY_FIRE.1554.2026-08-14
+    guardrails:
+    - "The specific Nissepat parcel loss is novel canon, not a proven archival parcel identification."
+    - "The named family deaths are fictional story casualties, not names recovered from a historical victim list."
+  narrative_function:
+  - "micro-Nigredo and destruction of Claes' household world"
+  - "credible material cause for the post-fire Reimerswaal schooling route"
+  - "sensory trauma through wind, smoke, heat, ash, noise and loss without false historical precision"
