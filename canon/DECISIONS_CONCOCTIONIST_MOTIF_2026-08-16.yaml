@@ -1,0 +1,21 @@
+schema_version: 1.0.0
+kind: CanonDecisionRegistryExtension
+decisions:
+- id: DEC.DEE.CONCOCTIONIST.MOTIF.2026-08-16
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    During Claes' first encounter with John Dee in the 1563 Antwerp formation, Dee makes a learned, deliberately inaccurate joke about Cornelis' occupation as biersteker by rendering it into the semantic field of concoction or compounding. The joke is not a correct translation and should register as an amused over-intellectualization of a practical beer trade. The author-side label for this recurring callback is 'concoctionist'.
+  affects:
+  - ENT.PERSON.CORNELIS
+  - ENT.PERSON.CLAES
+  - MOTIF.CONCOCTIONIST
+  rationale: >-
+    The joke begins as characterization of Dee and Cornelis but later acquires thematic accuracy: Cornelis combines routes, casks, credit, people and trust; Mayken is materially closest to literal medicinal/apothecary compounding; Claes eventually learns to work through proportion, relation and transformation rather than force. The callback therefore connects beer trade, apothecary practice, alchemy and mature relational knowledge without collapsing those domains into each other.
+  guardrails:
+  - "'Concoctionist' is an author-side motif label. Do not require Dee to utter that exact English noun unless a period attestation is separately established."
+  - "Dee's in-scene wording may use a period-safer learned paraphrase around concoct/concocter/compounding, but the final dialogue wording remains a scene-level writing choice."
+  - 'The joke must remain visibly inaccurate as a translation of biersteker.'
+  - 'Do not make Cornelis an apothecary, physician or alchemist because of the joke.'
+  - 'Do not make Mayken merely the literal fulfillment of a male joke; her apothecary competence is independent and precedes any later callback.'
+  - 'Do not turn the motif into explanatory foreshadowing; its later meaning should emerge retrospectively.'
