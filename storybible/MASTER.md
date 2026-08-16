@@ -42,6 +42,7 @@ The dated `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` is a **legacy snapshot**
 - `MEMORIAAL_BREVISIMA_PRINT_1564.md` — hidden readable tannin/gum print, Dee handoff, graphite rule, direct green-vitriol reveal.
 - `MEMORIAAL_BREVISIMA_CASTOFF_1564.md` — 17 single-sheet quarto gatherings / 136 latent pages.
 - `FAMILY_CLAES_1542_1554.md` — Tanneken, Jan, grandparents, 1542 house and 1554 family rupture.
+- `GOES_CLERGY_MATHIJS_CLEMENS_1541_1564.md` — named historical Goese clergy anchors: Mathijs Jacopsen/Jacobsen in 1541–early 1542, Clemens van den Dale in 1564, with the 1542–1563 succession gap preserved.
 - `MAYKEN_LAMPERT.md` — resolved identity and independent character/material role of Mayken, synchronized to no-cipher canon.
 - `CORNELIS_HOUSE_OF_LOVE_NETWORK_1551_1569.md` — governing route from beer/cask commerce through Ghysbrecht, Dens and Barrefelt into the translocal Huis der Liefde; Plantin is a later node and the evidence/fiction boundary is explicit.
 - `CORNELIS_EXECUTION_1569.md` — detailed 19 November 1569 Cornelis execution model.
@@ -60,6 +61,7 @@ Current explicit author decisions live across:
 - `canon/DECISIONS.yaml`
 - dated `canon/DECISIONS_*.md`
 - `canon/DECISIONS_2026-08-16.yaml`
+- `canon/DECISIONS_GOES_CLERGY_2026-08-16.yaml`
 - `canon/DECISIONS_ALCHEMY_LIFELINE_2026-08-15.yaml`
 - `canon/DECISIONS_ALCHEMY_REFINEMENT_2026-08-16.yaml`
 - `canon/DECISIONS_RESOLUTIONS_2026-08-16.yaml`
@@ -75,6 +77,7 @@ Latest explicit decision wins within its domain. A base registry is not allowed 
 - `narrative/world_modules.yaml`
 - `narrative/domain_scene_packs.yaml`
 - `narrative/religious_space_sensory_church.yaml`
+- `narrative/world_goes_clergy_1541_1564.yaml`
 - `storybible/domains/*.md`
 
 These define what can plausibly happen in a place/time/activity. A world module never creates fictional participation by itself.
@@ -111,13 +114,16 @@ Editorial verdicts (`RETAIN / REVISE / MERGE / CUT`) do not alter canon. They ju
 
 The following are current and must not be reopened by legacy prose:
 
-- **8 December 1542:** birth of Claes in Goes.
+- **14 March 1541:** historical anchor — mr. Mathijs Jacopsen is explicitly attested in Goes as **vice-pastoor**.
+- **27 February 1542:** historical anchor — mr. Mathijs Jacobsen is explicitly attested as **`vice-cureyt ter Goes`**.
+- **8 December 1542:** birth of Claes in Goes. The exact Goese priest/office-holder on this date remains historically **UNKNOWN**; Mathijs must not be projected automatically from February to December and is not proven to have baptized Claes.
 - **12 January 1551:** historical anchor — Ghysbrecht, kuiper van Antwerpen, acquires *De Haeswindeken* in Goes; Cornelis' commercial relationship with him is novel canon, not archival fact.
 - **ca. 1552–1553:** Cornelis belongs in novel canon to the translocal Huis der Liefde through the chain Ghysbrecht → Adriaan Dens → Barrefelt. The Ghysbrecht → Dens bridge is explicit novel reconstruction; Plantin is not the converter.
 - **18 May 1554:** fictional family home lost; Tanneken, Jan and unborn child die; Claes and Cornelis survive. This catastrophe tests an already existing Familist conviction rather than causing Cornelis' conversion.
 - **1554–1561:** Claes at Reimerswaal; Zierikzee is the abandoned pre-fire plan.
 - **August 1561:** Antwerp Landjuweel; Dee is not placed there; Goes is not currently established as one of the fourteen official competing chambers.
 - **1563/early 1564:** Dee/Silvius formation.
+- **20 March 1564:** historical anchor — Clemens van den Dale is explicitly attested as **`licentiaat pastoor Goes`**.
 - **before Boom in early 1564:** Dee gives the already hidden-print memoriaal and graphite stift to Claes.
 - **4 October 1564:** adult macro-Nigredo/security break; no physical alteration or ciphering of the memoriaal. Cornelis' Familist background does not by itself close the separate exact low-level trigger.
 - **autumn 1567:** first Cornelis arrest/examination in Antwerp and release on borg/conditions.
@@ -128,6 +134,20 @@ The following are current and must not be reopened by legacy prose:
 - **1584:** Delft moral bottom / Albedo threshold.
 - **13 March 1602, ca.16:00, Enkhuizen:** Morhof-framed Seton projectio at the house of Jacob Hausfsen — projectio of Matter.
 - **after 1602:** projectio of the Self / Status Prima Nova; exact death remains open.
+
+## Goese clergy / Maria Magdalena current state
+
+`DEC.GOES.CLERGY.MATHIJS_VICE_CUREYT.2026-08-16`, `DEC.GOES.CLERGY.CLEMENS_VAN_DEN_DALE.2026-08-16` and `DEC.GOES.CLERGY.SUCCESSION_BOUNDARY.2026-08-16` govern.
+
+- **Mathijs Jacopsen/Jacobsen** is a historical person and the named clergy anchor for the Catholic Goese world immediately preceding and entering Claes' birth year.
+- He is verified as **vice-pastoor** on 14 March 1541 and **`vice-cureyt ter Goes`** on 27 February 1542.
+- His association with the **Maria Magdalenaparochie / Grote Kerk** is a strongly supported contextual identification, but the decisive 1542 act itself says only `ter Goes`.
+- Property transactions `aan het kerkhof` and `achter het koor van de kerk` strengthen his church-world embedding but do **not** prove residence.
+- He is not proven to be the titular benefice-holder, not proven in office on 8 December 1542 and not proven to have baptized Claes.
+- **Clemens van den Dale** is verified as **`licentiaat pastoor Goes`** on 20 March 1564.
+- The exact titular pastor above Mathijs and the complete **1542–1563** succession remain a historical research gap. Do not extend Mathijs or Clemens across that interval by plausibility alone.
+
+The governing human-readable dossier is `storybible/GOES_CLERGY_MATHIJS_CLEMENS_1541_1564.md`; machine-readable support lives in `claims/SOURCE_CLAIMS_GOES_CLERGY_2026-08-16.yaml`, `claims/STORY_CLAIMS_GOES_CLERGY_2026-08-16.yaml`, `entities/GOES_CLERGY_1541_1564.yaml` and `narrative/world_goes_clergy_1541_1564.yaml`.
 
 ## Memoriaal / Brevísima current state
 
@@ -312,12 +332,14 @@ Round-C high-impact authorial opens include:
 
 Neither may be silently closed by prose, reader preference or historical plausibility alone.
 
+The Goese clergy succession gap between the February 1542 Mathijs anchor and the March 1564 Clemens anchor is a **historical/research open**, not an authorial invitation to invent a continuous incumbency.
+
 ## Narrative development backlog
 
 The recovery and readiness rounds are now complete:
 
 - **A** — historical substrate recovered;
-- **B** — six major world/practice domains made chapter-ready;
+- **B** — six major world/practice domains made chapter-ready, supplemented by the evidence-bounded Goese clergy world state;
 - **C** — world projected into causal character architecture;
 - **D** — editorial, pacing and reader-feedback gates made operational.
 
