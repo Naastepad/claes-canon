@@ -35,6 +35,7 @@ The dated `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` is a **legacy snapshot**
 ## Dedicated governing dossiers
 
 - `STORY_PROJECTION_ROUND_C.md` — causal spine, deeper Great-Work architecture, Mayken independent arc and explicit open 1572–1579 Goes hinge.
+- `ALCHEMICAL_OPERATION_PALETTE.md` — non-binding author-side palette for Calcination, Sublimation, Solution, Putrefaction, Distillation, Coagulation and Tincture; diagnostic and compositional only, never a mandatory 3×7/21-chapter scheme.
 - `WRITING_PROTOCOL.md` — scene construction, prose, pacing, reader experience and editorial decision rules.
 - `review/READER_EXPERIENCE_PROTOCOL.md` — reader-testing authority.
 - `review/READER_FEEDBACK_TEMPLATE.md` — consistent reader-evidence logging.
@@ -212,6 +213,8 @@ This **nests with and does not replace** `ARC.CLAES.MACRO_TRANSMUTATION`:
 - **Spiritus**: Claes' vigilance, certainty-seeking, grief, agency, embodied *sinne*, responsibility and sovereignty.
 
 Corpus, Anima and Spiritus are simultaneous spiral registers, **not three successive books or three mechanically identical cycles**. `Solve et Coagula` is an author-side movement of separating false fusions and reconnecting in truer relation. No fixed operation count is mandatory.
+
+The seven-operation palette in `ALCHEMICAL_OPERATION_PALETTE.md` preserves **Calcination, Sublimation, Solution, Putrefaction, Distillation, Coagulation and Tincture** as a non-binding compositional vocabulary. It may diagnose or enrich a scene, sequence or causal hinge only when the real material and human event earns that operation. It must never be used to force a 3×7 structure, an exact 21-chapter count, or a false historical claim that this sequence was universal.
 
 > **The author knows the Work; Claes undergoes it; the reader experiences it.**
 
