@@ -1,6 +1,6 @@
 # Synchronization status
 
-Status: `SYNC_COMPLETE_ACTIVE_LAYERS`
+Status: `SYNC_PENDING_AUTHOR_REVIEW_ON_AUTHORING_BRANCH`
 
 Release state: `MAIN_CANON_SYNCHRONIZED_2026-08-16`
 
@@ -12,7 +12,11 @@ Story-projection addendum: `ROUND_C_STORY_PROJECTION_IMPLEMENTED`
 
 Editorial/reader addendum: `ROUND_D_EDITORIAL_READER_PROTOCOL_IMPLEMENTED`
 
-This status means the active evidence/canon/world/story-projection and authoring-quality layers are synchronized to the explicit decisions currently available. Dated legacy prose may remain as development/audit history but must not outrank the current master, latest decisions or dedicated current dossiers.
+News ecology addendum: `ROUND_E_CLAES_NEWS_ECOLOGY_PROPOSED`
+
+This branch adds a source-weighted authoring guide for Claes' information ecology: what he can plausibly hear, partly hear, misunderstand, receive through routes, or only experience as consequence. It does not silently promote chat material into canon decisions and does not replace existing timelines. The addendum is pending author review and later atomization into Source Claims / Story Claims / knowledge-state records if approved.
+
+This status means the active evidence/canon/world/story-projection and authoring-quality layers are synchronized to the explicit decisions currently available on `main`, while this branch carries an additional proposed authoring layer. Dated legacy prose may remain as development/audit history but must not outrank the current master, latest decisions or dedicated current dossiers.
 
 ## Current governing chronology
 
@@ -150,6 +154,30 @@ Standing hard-review mode:
 
 Required order: verdict -> necessity -> primary problem -> causality/character -> pacing/reader experience -> prose -> continuity/history -> RETAIN/REVISE/MERGE/CUT.
 
+## Round E — Claes news ecology addendum
+
+Branch-local proposed files:
+
+- `history/CLAES_NEWS_ECOLOGY_1548_1604.md`
+- `history/CLAES_NEWS_ECOLOGY_1548_1604.yaml`
+- `sources/SRC-HIST-SMALLEGANGE-NIEUWE-CRONYK-ZEELAND-1696-001.md`
+- `sources/SRC-HIST-DBNL-HOGELANDE-NNBW-001.md`
+
+Purpose:
+
+- add a bridge between event history and Claes' plausible knowledge;
+- model access as direct local knowledge, route-news, printed news, rumour, delayed effect, invisible cause or restricted access;
+- preserve the key guardrail that Claes does not know events as a modern macrohistorical overview;
+- capture the Goes-Middelburg-Arnemuiden/Vlissingen/Veere-Antwerp information network;
+- explicitly correct Theobaldus ab Hogelande: strong late/Middelburg chymical resonance, but not Claes' pre-1570 master.
+
+Pending if accepted:
+
+- exact Smallegange page/folio locators before atomized Source Claims;
+- formal cross-link into `storybible/INDEX.md`;
+- optional split into `narrative/knowledge_states*.yaml` records;
+- optional use in `narrative/goes_departure_1572_1579.yaml` for the exact departure/severance causal design.
+
 ## Current active high-impact authorial opens
 
 - `OPEN.GOES.CLAES_DEPARTURE_1572_1579.001`;
@@ -159,7 +187,8 @@ Required order: verdict -> necessity -> primary problem -> causality/character -
 - exact material wet/press validation;
 - exact Rode-Leeuw carrier composition;
 - exact Enkhuizen assay choreography;
-- Claes' exact death and final merels realization.
+- Claes' exact death and final merels realization;
+- Round-E exact Smallegange locators and atomized Source Claims, if this branch is accepted.
 
 See `canon/OPEN_DECISIONS.yaml` and alchemical open supplements for the complete active list.
 
@@ -174,9 +203,10 @@ The repository is now ready to begin **structural realization** rather than anot
 1. Round-C causal hinges;
 2. Round-B domain scene packs;
 3. character/relationship/object/knowledge state;
-4. Round-D scene-necessity, pacing, prose and reader-experience gates.
+4. Round-D scene-necessity, pacing, prose and reader-experience gates;
+5. Round-E news-access labels where scene knowledge depends on what Claes could plausibly hear, partly hear, misunderstand or only experience as consequence.
 
-`SYNC_COMPLETE_ACTIVE_LAYERS` means canon, chapter-world, causal story projection and editorial/reader protocol are coherent. It does **not** mean the novel is fully structured or written.
+`SYNC_COMPLETE_ACTIVE_LAYERS` on `main` means canon, chapter-world, causal story projection and editorial/reader protocol are coherent. This branch is `SYNC_PENDING_AUTHOR_REVIEW_ON_AUTHORING_BRANCH` because Round-E is a proposed authoring layer, not yet atomized into all downstream records.
 
 ## Validation note
 
