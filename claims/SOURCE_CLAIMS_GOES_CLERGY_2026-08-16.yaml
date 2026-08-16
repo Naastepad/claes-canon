@@ -1,0 +1,75 @@
+schema_version: 1.0.0
+kind: SourceClaimSupplement
+source_records:
+- SRC-HIST-GOES-CLERGY-RAZE-1536-1564-001
+claims:
+- id: SC.HIST.GOES.CLERGY.MATHIJS.PASTOOR_1536.001
+  type: SourceClaim
+  statement: >-
+    On 21 March 1536 the Goese transport register names mr. Mathijs Jacopsen as pastoor.
+  evidence_status: VERIFIED
+  source_refs:
+  - SRC-HIST-GOES-CLERGY-RAZE-1536-1564-001
+  source_anchor: RAZE-1745-0112
+  story_relevance: Establishes Mathijs as a real cleric active in the Goese property network before Claes' birth.
+
+- id: SC.HIST.GOES.CLERGY.MATHIJS.VICE_PASTOOR_1541.001
+  type: SourceClaim
+  statement: >-
+    On 14 March 1541 the Goese transport register explicitly calls mr. Mathijs Jacopsen vice-pastoor.
+  evidence_status: VERIFIED
+  source_refs:
+  - SRC-HIST-GOES-CLERGY-RAZE-1536-1564-001
+  source_anchor: RAZE-1746-0015
+
+- id: SC.HIST.GOES.CLERGY.MATHIJS.VICE_CUREYT_1542.001
+  type: SourceClaim
+  statement: >-
+    On 27 February 1542 the Goese transport register explicitly names mr. Mathijs Jacobsen `vice-cureyt ter Goes`.
+  evidence_status: VERIFIED
+  source_refs:
+  - SRC-HIST-GOES-CLERGY-RAZE-1536-1564-001
+  source_anchor: RAZE-1746-0138
+  interpretation: >-
+    This directly establishes a local cure-of-souls / deputy parochial function in Goes at that date.
+  guardrail: >-
+    It does not establish that Mathijs still held the office on 8 December 1542 or that he baptized Claes.
+
+- id: SC.HIST.GOES.CLERGY.MATHIJS.CHURCH_PROPERTY_1541_1542.001
+  type: SourceClaim
+  statement: >-
+    Mathijs Jacopsen is involved in property transactions at the kerkhof and behind the choir of the church in 1541–1542.
+  evidence_status: VERIFIED
+  source_refs:
+  - SRC-HIST-GOES-CLERGY-RAZE-1536-1564-001
+  source_anchors:
+  - RAZE-1746-0053
+  - RAZE-1746-0126
+  guardrail: Ownership and transaction location do not prove residence.
+
+- id: SC.RECON.GOES.CLERGY.MATHIJS.MARIA_MAGDALENA.001
+  type: SourceClaim
+  statement: >-
+    The identification of Mathijs' Goese vice-cureit function with the Maria Magdalenaparochie is strongly supported by the Goese parochial context and his church-centred property pattern.
+  evidence_status: SUPPORTED
+  source_refs:
+  - SRC-HIST-GOES-CLERGY-RAZE-1536-1564-001
+  guardrail: >-
+    The decisive 27 February 1542 transport act says `ter Goes` and does not itself spell out Maria Magdalena.
+
+- id: SC.HIST.GOES.CLERGY.CLEMENS.PASTOOR_1564.001
+  type: SourceClaim
+  statement: >-
+    On 20 March 1564 the Goese transport register names Clemens van den Dale as `licentiaat pastoor Goes` when he buys the house de Lombaert on the north side of the Grote Markt.
+  evidence_status: VERIFIED
+  source_refs:
+  - SRC-HIST-GOES-CLERGY-RAZE-1536-1564-001
+  source_anchor: RAZE-1749-0154
+
+- id: SC.HIST.GOES.CLERGY.SUCCESSION_1542_1563.001
+  type: SourceClaim
+  statement: >-
+    The currently recovered local transport evidence does not identify the complete sequence of Goese titular pastors or vice-cureits between Mathijs' 1542 attestations and Clemens van den Dale's 1564 attestation.
+  evidence_status: UNKNOWN
+  source_refs:
+  - SRC-HIST-GOES-CLERGY-RAZE-1536-1564-001
