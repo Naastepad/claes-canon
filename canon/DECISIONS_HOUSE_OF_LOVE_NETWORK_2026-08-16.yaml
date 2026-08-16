@@ -1,0 +1,79 @@
+schema_version: 1.0.0
+kind: CanonDecisionRegistryExtension
+decisions:
+- id: DEC.CORNELIS.HOUSE_OF_LOVE.ENTRY_NETWORK.2026-08-16
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    Cornelis enters the Familist world through the social trust created by his beer and cask trade. In novel canon a trusted commercial relation with Ghysbrecht/Gijsbrecht, an Antwerp cooper with Goese property interests, opens a social path to Adriaan Dens. Dens is the first person Cornelis knowingly recognizes as belonging to H.N.'s circle and connects him onward with Hendrik Jansen van Barrefelt, who deepens the contact. By approximately 1552-1553 Cornelis is treated in the story as belonging to the Huis der Liefde while remaining resident in Goes.
+  affects:
+  - ENT.PERSON.CORNELIS
+  - WORLD.NISSEPAT_BEER_NETWORK
+  - ENT.NETWORK.HOUSE_OF_LOVE_TRANSLOCAL
+  - REL.CORNELIS.GHYSBRECHT
+  - REL.CORNELIS.ADRIAAN_DENS
+  - REL.CORNELIS.BARREFELT
+  rationale: >-
+    This makes Cornelis' religious network emerge from his already-canonical occupation instead of from a coincidental meeting with a famous printer. It preserves the material and social logic of trust: barrels, credit, repeated transactions and Antwerp travel precede confidential religious access.
+  evidence_boundary:
+  - Ghysbrecht/Gijsbrecht the Antwerp cooper and his Goese property interests are historical archival anchors.
+  - The identification of the 1551 and 1554 name forms as the same man is strongly supported by name, occupation, origin and house-name continuity but remains an inference.
+  - There is no evidence that Ghysbrecht was a Familist or personally knew Adriaan Dens.
+  - The bridge Ghysbrecht -> Dens and Cornelis' participation in it are explicit novel reconstruction.
+  - Adriaan Dens and Barrefelt are historical Familist-network actors; Cornelis' meetings with them are novel canon.
+
+- id: DEC.CORNELIS.HOUSE_OF_LOVE.PRE_FIRE_AFFILIATION.2026-08-16
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    Cornelis' Familist/Huis der Liefde affiliation precedes the Goes fire of 18 May 1554. The fire tests, strains and deepens an already existing conviction; it does not cause his conversion and must not be written as a simple grief-to-sect origin story.
+  affects:
+  - ENT.PERSON.CORNELIS
+  - NI.GOES.FIRE.1554
+  - storybible/FAMILY_CLAES_1542_1554.md
+  guardrails:
+  - Cornelis must not discover the Huis der Liefde only because Tanneken, Jan and the unborn child die.
+  - The 1554 catastrophe may alter how he understands love, suffering, providence, secrecy and responsibility without creating the affiliation ex nihilo.
+
+- id: DEC.CORNELIS.HOUSE_OF_LOVE.OUTWARD_CONFORMITY.2026-08-16
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    Cornelis can belong to the translocal Huis der Liefde while continuing to live in Goes and outwardly participating in the Catholic civic and religious world. No separate Goese Familist congregation, meetinghouse or public confession is required. His affiliation is carried by trusted persons, correspondence, books and travel rather than by an invented local institutional church.
+  affects:
+  - ENT.PERSON.CORNELIS
+  - ENT.NETWORK.HOUSE_OF_LOVE_TRANSLOCAL
+  - WORLD.GOES_LIVING_CITY
+  guardrails:
+  - Do not make Cornelis an open Calvinist or Anabaptist preacher merely because he is Familist.
+  - Do not invent a formal Goese Familist congregation without separate evidence or author decision.
+  - Do not treat outward Catholic practice as proof that the inward/network affiliation is impossible.
+
+- id: DEC.CORNELIS.HOUSE_OF_LOVE.PLANTIN_LATER_NODE.2026-08-16
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    Christophe Plantin is a later print and distribution node in Cornelis' Antwerp network, not Cornelis' initial converter or first doorway into the Huis der Liefde. Cornelis is already Familist in novel canon before Plantin becomes narratively important to him. The story may use Plantin's documented relationship with the Niclaes/Barrefelt milieu while preserving historiographical caution about reducing Plantin to a simple, permanently fixed sectarian label.
+  affects:
+  - ENT.PERSON.CORNELIS
+  - ENT.HIST.PERSON.CHRISTOPHE_PLANTIN
+  - REL.CORNELIS.PLANTIN
+  guardrails:
+  - Do not stage a first-conversion scene in Plantin's shop.
+  - Do not make Plantin the sole cause of Cornelis' clandestine book network.
+  - Do not present disputed degrees of Plantin's Familist adherence as simpler than the evidence permits.
+
+- id: DEC.CORNELIS.HOUSE_OF_LOVE.LOGISTICS_TO_BOOK_ROUTE.2026-08-16
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    Cornelis' movement from beer distribution into clandestine book and paper logistics is a development of the same competencies: casks, storage, accounts, credit, route knowledge, repeated carriers, discretion and trust. This continuity helps explain his later vulnerability in the 1567-1569 Antwerp book/paper case, but it does not by itself resolve the separate exact low-level security trigger of 4 October 1564.
+  affects:
+  - ENT.PERSON.CORNELIS
+  - WORLD.NISSEPAT_BEER_NETWORK
+  - REL.CORNELIS.BOOK_ROUTE
+  - storybible/CORNELIS_EXECUTION_1569.md
+  guardrails:
+  - Do not infer that forbidden books were literally hidden inside beer casks unless a separate scene decision establishes it.
+  - Similar logistics does not mean identical cargo, route or carrier on every journey.
+  - Preserve OPEN.SECURITY.LOW_LINK.1564.001 unless separately resolved.
