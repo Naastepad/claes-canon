@@ -6,11 +6,13 @@ Operational navigation for the current Claes Storybible.
 
 1. `MASTER.md` — authority, precedence and current fixed state.
 2. `LEMMA_MCKEE_MASTER.md` — **current synchronized human-readable story synthesis** through 16 August 2026.
-3. `../canon/OPEN_DECISIONS.yaml` — active unresolved backlog only.
-4. `../review/SYNC_STATUS.md` — synchronization status.
-5. `../review/CANON_CONFLICT_AUDIT_2026-08-16.md` — conflicts found and their resolution.
-6. `../review/HISTORICAL_SUBSTRATE_RECOVERY_2026-08-16.md` — recovered historical/worldbuilding layer and recovery boundaries.
-7. `../review/DOMAIN_REBUILD_ROUND_B_2026-08-16.md` — chapter-readiness rebuild for bread, beer, Reimerswaal, rederijkers/Landjuweel, Antwerp and schutterij/military practice.
+3. `STORY_PROJECTION_ROUND_C.md` — current causal/character projection from the settled world into future chapter structure.
+4. `../canon/OPEN_DECISIONS.yaml` — active unresolved backlog only.
+5. `../review/SYNC_STATUS.md` — synchronization status.
+6. `../review/CANON_CONFLICT_AUDIT_2026-08-16.md` — conflicts found and their resolution.
+7. `../review/HISTORICAL_SUBSTRATE_RECOVERY_2026-08-16.md` — Round-A recovery.
+8. `../review/DOMAIN_REBUILD_ROUND_B_2026-08-16.md` — Round-B chapter-readiness rebuild.
+9. `../review/STORY_PROJECTION_ROUND_C_2026-08-16.md` — Round-C projection audit.
 
 `LEMMA_MCKEE_MASTER_2026-08-13.md` is a dated legacy snapshot. It is retained for development history but is not current authoring authority.
 
@@ -23,11 +25,12 @@ Operational navigation for the current Claes Storybible.
 - `../canon/DECISIONS_2026-08-16.yaml` — Brevísima 1578 / Seton separation.
 - `../canon/DECISIONS_ALCHEMY_LIFELINE_2026-08-15.yaml` — current merged alchemical life-line state, including later supersessions.
 - `../canon/DECISIONS_ALCHEMY_REFINEMENT_2026-08-16.yaml` — Green Lion/Sol/Enkhuizen and Nardusbloem refinement.
-- `../canon/DECISIONS_RESOLUTIONS_2026-08-16.yaml` — callback-recovered Mayken decision and explicit Cornelis-death precedence.
+- `../canon/DECISIONS_RESOLUTIONS_2026-08-16.yaml` — callback-recovered Mayken identity and Cornelis-death precedence.
+- `../canon/DECISIONS_STORY_PROJECTION_2026-08-16.yaml` — Great-Work authorial architecture, Mayken independent arc and Claes-Mayken conjunctio.
 
 ## Active open decisions
 
-- `../canon/OPEN_DECISIONS.yaml` — only genuinely unresolved core questions.
+- `../canon/OPEN_DECISIONS.yaml` — only genuinely unresolved core questions, now including the 1572–1579 Goes causal break and Mayken independent mid-arc design.
 - `../canon/OPEN_DECISIONS_ALCHEMY_REFINEMENT_2026-08-16.yaml` — Rode-Leeuw carrier composition and exact Enkhuizen assay/choreography.
 - `../canon/OPEN_DECISIONS_ALCHEMY_LIFELINE_2026-08-15.yaml` — legacy redirect/supersession record only.
 
@@ -114,6 +117,34 @@ These dossiers are the authoring-facing bridge from research to scene constructi
 - world: `WORLD.SCHUTTERIJ_MILITARY`
 - key boundary: schuttersgilde, civic watch, garrison/professionals and later standardized drill are separate; local sources disagree on 1516 versus 1530 for Edele Busse/Sint Adriaan; De Gheyn 1607 is a late comparator, not a Goes-1572 manual.
 
+## Story projection / causal architecture — Round C
+
+Round C is the bridge from chapter-ready world knowledge to future Book/Act/Sequence/Chapter/Scene structure.
+
+- `STORY_PROJECTION_ROUND_C.md` — human-readable governing projection.
+- `../narrative/story_projection_round_c.yaml` — `ARC.CLAES.CAUSAL_SPINE`, fourteen current causal hinges from Status Prima to Status Prima Nova.
+- `../narrative/alchemical_authorial_architecture.yaml` — `ARC.CLAES.GREAT_WORK.AUTHORIAL`: Status Prima; interwoven Corpus/Anima/Spiritus; Transmutatio/Rubedo; Projectio; Status Prima Nova.
+- `../narrative/mayken_independent_arc.yaml` — `ARC.MAYKEN.LIFE`, her independent agency from childhood material formation through late partnership.
+- `../narrative/mayken_relationship_projection.yaml` — `REL.CLAES.MAYKEN.CONJUNCTIO`, two-center relationship architecture.
+- `../narrative/goes_departure_1572_1579.yaml` — explicit open causal design projection for Claes' final material/economic severance from Goes.
+
+### Great-Work rule
+
+`ARC.CLAES.MACRO_TRANSMUTATION` remains the chronological **Drager → Nigredo → Albedo → Rubedo → Projectio** spine. The deeper Round-C architecture does not replace it.
+
+**Status Prima → Corpus / Anima / Spiritus → Transmutatio/Rubedo → Projectio → Status Prima Nova** is an author-side register model. Corpus/Anima/Spiritus spiral through the same chronology and must not become three mechanically identical cycles. No fixed alchemical operation count is mandatory.
+
+### Mayken rule
+
+`ENT.PERSON.BELOVED` is the legacy technical entity ID for the resolved character **Mayken Adriaensdr. Lampert**. Identity is not open.
+
+Any developed Mayken scene must load `ARC.MAYKEN.LIFE` as well as the Claes–Mayken relationship. Mayken requires her own objective, judgement, cost or choice; she is not a reward, therapist, decoder or sensory prop.
+
+### Current high-priority Round-C open hinges
+
+- `OPEN.GOES.CLAES_DEPARTURE_1572_1579.001` — exact material/economic/legal chain that finally makes Goes nonrecoverable as Claes' home/economic base.
+- `OPEN.MAYKEN.INDEPENDENT_MIDARC.001` — concrete adult work/family/social pressure through which Mayken's independent agency becomes dramatically visible.
+
 ## Story truth
 
 - `../claims/STORY_CLAIMS.yaml` — base story claims; older working claims are superseded where later explicit decisions say so.
@@ -129,10 +160,12 @@ These dossiers are the authoring-facing bridge from research to scene constructi
 - `../entities/FAMILY_1554.yaml`
 - `../entities/MAYKEN_LAMPERT.yaml`
 - `../entities/ALCHEMY_REDERIJKER_2026-08-16.yaml`
-- `../narrative/relationships.yaml` — current Claes–Cornelis and Claes–Mayken dynamics.
-- `../narrative/arcs.yaml` — cradle-to-grave and macro-transmutation arcs.
-- `../narrative/sinne_recovery.yaml`
-- `../narrative/beloved_recovery.yaml` — read together with Mayken detail dossier if generic labels survive.
+- `../narrative/relationships.yaml` — base Claes–Cornelis and Claes–Mayken dynamics.
+- `../narrative/arcs.yaml` — cradle-to-grave and macro-transmutation arcs, now linked to the Round-C deeper architecture and causal projection.
+- `../narrative/sinne_recovery.yaml` — synchronized to Mayken identity, independent arc and reciprocal late relationship.
+- `../narrative/beloved_recovery.yaml` — resolved Mayken identity; no longer an open-identity layer.
+- `../narrative/mayken_independent_arc.yaml`
+- `../narrative/mayken_relationship_projection.yaml`
 
 ## Major Storybible dossiers
 
@@ -148,13 +181,15 @@ These dossiers are the authoring-facing bridge from research to scene constructi
 
 ### Mayken
 
-- `MAYKEN_LAMPERT.md` — governing detail authority; explicitly synchronized to the no-cipher model.
+- `MAYKEN_LAMPERT.md` — governing identity/detail authority; explicitly synchronized to the no-cipher model.
+- `../narrative/mayken_independent_arc.yaml` — governing independent character projection.
+- `../narrative/mayken_relationship_projection.yaml` — reciprocal conjunctio/relationship projection.
 - `../sources/SRC-HIST-GOES-LAMPERT-APOTHECARY-001.md`
 
 ### Memoriaal / Brevísima
 
 - `MEMORIAAL_BREVISIMA_PRINT_1564.md` — direct hidden readable print and chemical reveal.
-- `MEMORIAAL_BREVISIMA_CASTOFF_1564.md` — 17 quarto sheets / 136 latent pages.
+- `MEMORIAAL_BREVISIMA_CASTOFF_1564.md` — 17 single-sheet quarto gatherings / 136 latent pages.
 - `../narrative/code_architecture.yaml` — legacy filename; current content is direct material reveal, not a cipher architecture.
 
 ### Execution / Reformation
@@ -169,6 +204,7 @@ These dossiers are the authoring-facing bridge from research to scene constructi
 - `ALCHEMICAL_CHEMICAL_PROCESS_CHAIN_CLAES_LIFELINE.md` — base process dossier.
 - `ALCHEMICAL_PROCESS_REFINEMENT_2026-08-16.md` — governing current refinement.
 - `ANTWERP_THREE_VISITS_ALCHEMICAL_ARC_1561_1569.md` — three Antwerp visits / process scaffold.
+- `../narrative/alchemical_authorial_architecture.yaml` — deeper Great-Work authorial architecture.
 - `../objects/ALCHEMY_OBJECTS_2026-08-16.yaml`
 - `../narrative/alchemy_lifeline_refinement_2026-08-16.yaml`
 - `../narrative/instances_alchemy_rederijker_2026-08-16.yaml`
@@ -176,6 +212,7 @@ These dossiers are the authoring-facing bridge from research to scene constructi
 
 ## Narrative realization
 
+- `../narrative/story_projection_round_c.yaml` — causal pre-structure; load before final chapter architecture.
 - `../narrative/instances.yaml`
 - `../narrative/instances_executions_reformation.yaml`
 - `../narrative/instances_alchemy_rederijker_2026-08-16.yaml`
@@ -187,7 +224,7 @@ These dossiers are the authoring-facing bridge from research to scene constructi
 - `../narrative/CRAFT_GUARDRAILS.yaml`
 - `../narrative/religious_space_sensory_church.yaml`
 
-Important current limitation: `structure.yaml` still needs populated Book/Act/Sequence/Chapter/Beat hierarchy and `scenes.yaml` needs many more scene-level diagnostics. Round B makes six previously thin world/practice domains chapter-ready; it does **not** yet turn them into fixed chapters or Narrative Instances.
+Important current limitation: `structure.yaml` still needs populated Book/Act/Sequence/Chapter/Beat hierarchy and `scenes.yaml` needs many more scene-level diagnostics. Round C now supplies the causal spine that should govern that future population. The two high-impact design openings above must remain visible rather than being silently decided by chapter prose.
 
 ## Objects
 
@@ -222,6 +259,7 @@ Key current rules:
 - `../review/CANON_CONFLICT_AUDIT_2026-08-16.md` — current conflict assessment.
 - `../review/HISTORICAL_SUBSTRATE_RECOVERY_2026-08-16.md` — Round-A recovery audit.
 - `../review/DOMAIN_REBUILD_ROUND_B_2026-08-16.md` — Round-B domain readiness audit.
+- `../review/STORY_PROJECTION_ROUND_C_2026-08-16.md` — Round-C story-projection audit.
 - `../review/CHAT_COMMITMENT_AUDIT_2026-08-13.md` and addendum — recovered evidence of what earlier research work was actually completed.
 - `../review/SYNC_STATUS.md`
 

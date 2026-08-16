@@ -1,0 +1,90 @@
+schema_version: 1.0.0
+kind: NarrativeArcExtension
+records:
+- id: ARC.MAYKEN.LIFE
+  type: CharacterArc
+  label: "Mayken — material competence, independent judgement and relation without absorption"
+  canon_status: CANON
+  protagonist: ENT.PERSON.BELOVED
+  decision_id: DEC.MAYKEN.INDEPENDENT_ARC.2026-08-16
+  identity_note: "ENT.PERSON.BELOVED is the legacy entity ID for the resolved character Mayken Adriaensdr. Lampert. Identity is not open."
+
+  phases:
+  - id: ARC.MAYKEN.LIFE.P01
+    label: "Kind van een werkende materiële wereld"
+    story_time: {earliest: '1546-01-01', latest_exclusive: '1554-05-18', precision: approximate}
+    fixed_state:
+    - "Mayken grows up in the fictional daughter-line of the historically anchored Lampert apothecary environment."
+    - "Her formation is practical: plants, substances, storage, weight, condition, preparation and names that may not match matter perfectly."
+    value_movement: "dependence -> trained attention"
+    contrast_with_claes: "Claes is drawn toward hidden order and pattern; Mayken begins with whether the thing in her hand is actually what someone says it is."
+
+  - id: ARC.MAYKEN.LIFE.P02
+    label: "Brand, verlies en herstel"
+    story_time: {earliest: '1554-05-18', latest_exclusive: '1566-01-01', precision: approximate}
+    fixed_state:
+    - "The Lampert property De Zwaene belongs to Mayken's fictional childhood fire horizon and is historically documented as burned property after 1554."
+    - "Her household is not annihilated like Claes' household."
+    value_movement: "material security -> damaged continuity -> rebuilding competence"
+    function: "Mayken learns a counter-truth to Claes' wound: destruction is real, but damaged material life can sometimes be sorted, repaired, replaced and worked again."
+    guardrail: "Do not make this a lesser version of Claes' trauma or invent identical bereavements."
+
+  - id: ARC.MAYKEN.LIFE.P03
+    label: "Volwassen vakkennis wordt eigen oordeel"
+    story_time: {earliest: '1566-01-01', latest_exclusive: '1570-01-01', precision: approximate}
+    status: CANON_FUNCTION_WITH_OPEN_EVENT_DESIGN
+    value_movement: "inherited household competence -> personally owned judgement"
+    required_authoring_result: "At least one developed sequence must show Mayken making a consequential material, social or moral judgement that is not caused by Claes' immediate problem."
+    open_design: OPEN.MAYKEN.INDEPENDENT_MIDARC.001
+    possible_but_not_canonized_lines:
+    - "family/social pressure around religion, trade or apothecary standing"
+    - "greater reliance on a female household or practical healing network"
+    - "a kruidenvrouw-like practical role without unsupported formal medical status"
+    guardrails:
+    - "Do not silently copy Cornelis' prosecution arc onto Adriaen."
+    - "Do not make Mayken's independence begin only when Claes notices her."
+
+  - id: ARC.MAYKEN.LIFE.P04
+    label: "Materiële tegenspraak en gedeeld risico"
+    story_time: {earliest: '1570-01-01', latest_exclusive: '1571-01-01', precision: year}
+    value_movement: "competence -> agency under moral risk"
+    relationship: REL.CLAES.BELOVED
+    function: "During the direct memoriaal reveal, Mayken contributes handling, measurement, observation, repeatability and contradiction. Her importance lies in being able to say that Claes' interpretation or procedure is materially wrong, not in solving a cipher."
+    independent_choice_rule: "Her participation must include a reason and risk she accepts as Mayken, not merely obedience to Claes."
+
+  - id: ARC.MAYKEN.LIFE.P05
+    label: "Eigen volwassen lijn naast Claes"
+    story_time: {earliest: '1571-01-01', latest_exclusive: '1584-01-01', precision: approximate}
+    status: AUTHORIAL_DEVELOPMENT_REQUIRED
+    value_movement: "collaboration -> sustained independent agency"
+    function: "Mayken must not disappear into an off-screen waiting role between the 1570 reveal and the late recovery line. Her work, obligations, relationships and limits continue even when Claes' plot is elsewhere."
+    required_scene_question: "What does Mayken want or refuse here if Claes were absent from the scene?"
+    guardrail: "Exact profession, residence, household crisis and relationship chronology remain design work unless separately decided."
+
+  - id: ARC.MAYKEN.LIFE.P06
+    label: "Conjunctio zonder opgaan in de ander"
+    story_time: {earliest: '1584-01-01', latest_exclusive: '1602-03-14', precision: developmental}
+    value_movement: "independent competence -> chosen reciprocal relation"
+    relationship: REL.CLAES.MAYKEN.CONJUNCTIO
+    function: "Mayken travels/acts beside Claes in the late sensory-recovery line, returning attention to weather, plants, food, fatigue, preparation and bodily limits while retaining her own judgement."
+    reciprocal_effect:
+      on_claes: "embodied perception and relation reopen; certainty loses monopoly"
+      on_mayken: "she chooses intimacy without surrendering competence, contradiction or separate agency"
+    guardrail: "Do not write her as therapist, saintly healer or passive witness to Claes' enlightenment."
+
+  - id: ARC.MAYKEN.LIFE.P07
+    label: "Na de projectio"
+    story_time: {earliest: '1602-03-13', precision: open-ended}
+    status: CANON_FUNCTION_END_DETAILS_OPEN
+    value_movement: "relation -> capacity to let the other act/release without possession"
+    function: "Mayken's mature relation to Claes must remain compatible with the final projectio principle: love does not require control over his Work, outcome, memory or death."
+    guardrail: "Mayken's own death, residence and exact final fate are not fixed here."
+
+  scene_agency_contract:
+  - "Every developed Mayken scene has her own objective, however small."
+  - "At least one pressure in the scene must test her judgement, resources, reputation, body, work or relationship — not only Claes'."
+  - "If she agrees with Claes, the writer must know why she could have disagreed."
+  - "Her trained senses generate inference; do not reduce her to floral/medicinal atmosphere."
+  - "Her errors remain possible. Competence is not omniscience."
+
+  ko_targets: [KO.CHARACTER, KO.VALUE, KO.CONFLICT, KO.RELATIONSHIP]

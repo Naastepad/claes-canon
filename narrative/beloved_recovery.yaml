@@ -1,22 +1,31 @@
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: NarrativeRelationshipExtension
 records:
 - id: REL.CLAES.BELOVED.RECOVERY
   type: RelationshipExtension
-  label: Claes and beloved — recovery companionship
-  status: CANON_FUNCTION_OPEN_IDENTITY
+  label: Claes and Mayken — recovery companionship
+  status: CANON_RESOLVED_IDENTITY
   participants:
   - ENT.PERSON.CLAES
   - ENT.PERSON.BELOVED
+  identity: "Mayken Adriaensdr. Lampert"
+  identity_status: RESOLVED
   parent: REL.CLAES.BELOVED
   decision_ids:
   - DEC.CLAES.SINNE.2026-08-13
-  story_function: on the road toward Enkhuizen their companionship catalyses Claes' rediscovery of the sinne and its inward resonance
+  - DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14
+  - DEC.MAYKEN.INDEPENDENT_ARC.2026-08-16
+  - DEC.CLAES_MAYKEN.CONJUNCTIO.2026-08-16
+  story_function: "On the road toward Enkhuizen, Claes and Mayken's companionship catalyses Claes' rediscovery of the sinne while Mayken remains an independently motivated adult whose own material judgement, work and limits continue to matter."
   boundaries:
-  - beloved accompanies and catalyses; she does not solve or perform Claes' inner transformation for him
-  - her identity and detailed apothecary-family biography remain open
-  - love matures toward relation without possession
+  - "Mayken accompanies and catalyses; she does not solve or perform Claes' inner transformation for him."
+  - "Her identity is fixed. What remains open is the exact mid-arc family/work trajectory and some relationship chronology, not who she is."
+  - "Love matures toward relation without possession."
+  - "Mayken must retain an objective, judgement or cost of her own in developed scenes."
   arc: ARC.CLAES.SINNE_RECOVERY
+  counterpart_arc: ARC.MAYKEN.LIFE
+  relationship_projection: REL.CLAES.MAYKEN.CONJUNCTIO
+  authorial_architecture: ARC.CLAES.GREAT_WORK.AUTHORIAL
   location_anchor: ENT.LOC.ENKHUIZEN
   ko_targets:
   - KO.RELATIONSHIP

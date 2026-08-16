@@ -1,0 +1,57 @@
+schema_version: 1.0.0
+kind: NarrativeDesignProjection
+records:
+- id: ARC.CLAES.GOES_DEPARTURE_1572_1579
+  type: AuthorialDesignProjection
+  label: "Goes 1572–1579 — second material severance / departure causality"
+  status: OPEN
+  protagonist: ENT.PERSON.CLAES
+  decision_id: OPEN.GOES.CLAES_DEPARTURE_1572_1579.001
+  supported_by:
+  - SC.HIST.GOES.SIEGE_1572.INDUSTRY.001
+  - SC.HIST.GOES.BREWERY.NISSEPAD_1577.001
+  - SC.HIST.GOES.WESTZELKE.BURNT_SALTPAN_1577.001
+
+  fixed_context:
+  - "Cornelis is already dead before the 1572 siege; his execution occurs 19 November 1569."
+  - "Claes has returned to Goes by 1566 and the direct memoriaal reveal occurs there in 1570."
+  - "The 1572 siege historically damages outside salt works and a brewery in the Voorstad."
+  - "A Nissepad brewery is documented with equipment in 1577 and is not proven identical to the brewery burned in the Voorstad in 1572."
+  - "A Nissepat-linked burned salt-pan site at Westzelke is sold in 1577, but the act does not identify whether its destruction came from 1554, 1572 or another event."
+  - "The Antwerp 1578 print event remains fixed as Projectio of the Word."
+
+  dramatic_question: "What concrete material, financial and relational consequence of 1572–1579 finally makes Goes cease to function as Claes' recoverable home or economic anchor?"
+
+  desired_function_if_resolved:
+  - "Create a second material severance from Goes that is distinct from the 1554 family fire and the 1569 death of Cornelis."
+  - "Convert siege and postwar property history into personal causality rather than historical wallpaper."
+  - "Make Claes' departure arise from accumulated obligations, losses and choices, not from an unsupported single-property melodrama."
+  - "Allow the 1577–1579 legal/property aftermath to echo the theme that destruction continues as accounts, claims and transfers after visible violence ends."
+
+  candidate_models:
+  - id: A
+    status: PROPOSED
+    model: "A fictional residual beer/salt/storage interest outside the walls is materially damaged in 1572, but it must be a separately reconstructed interest rather than the documented 1577 Nissepad brewery automatically assigned to Cornelis/Claes."
+  - id: B
+    status: PROPOSED
+    model: "Postwar debts, arrears, supplier/customer credit and family claims consume or immobilize what remains of Claes' economic stake; 1577–1579 transfers become legal winding-down rather than confiscation."
+  - id: C
+    status: PROPOSED
+    model: "No single asset is decisive; the siege, damaged outside economy, family dispersal, confessional change and later settlements make the old network nonviable, so leaving is a cumulative decision."
+  - id: D
+    status: PROPOSED
+    model: "Combination: one genuine material loss in 1572 creates pressure, while 1577–1579 debt/claim settlement prevents meaningful recovery."
+
+  unresolved_elements:
+  - "Claes' exact legal/economic relation to any property or lease damaged in 1572."
+  - "Exact date and immediate trigger of permanent or semi-permanent departure from Goes."
+  - "Destination and sequence of moves between Goes, Antwerp/Middelburg/Delft and the later northern line."
+  - "Whether Mayken shares, resists or separately responds to the same Goese economic rupture."
+  - "What portion, if any, of settlement proceeds reaches Claes as cash, claim, debt relief or nothing."
+
+  hard_guardrails:
+  - "Do not identify the 1572 burned Voorstad brewery with the documented Nissepad brewery without new evidence or an explicit reconstruction that respects the 1577 survival evidence."
+  - "Do not call 1577–1579 property transfers executions, confiscations or forced sales unless a source proves that legal character."
+  - "Do not make Jan Jansen Nissepat or Jan Pauwelsen Nissepat automatic members of Claes' nuclear family; those genealogical links are not fixed."
+  - "Do not assign the 1577 burned Westzelke salt-pan destruction specifically to 1554 or 1572 without evidence."
+  - "Do not let the departure decision erase Claes' fixed 1578 Antwerp publication endpoint."

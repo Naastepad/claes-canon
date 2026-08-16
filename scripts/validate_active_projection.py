@@ -2,8 +2,8 @@
 """Guard the human-readable/authoring projection against known superseded canon drift.
 
 The structural compiler validates IDs and references. This companion catches semantic
-regressions in files writers are most likely to read directly, including the recovered
-historical substrate and chapter-ready Round-B practice domains.
+regressions in files writers are most likely to read directly, including recovered
+historical substrate, chapter-ready practice domains and Round-C causal story projection.
 """
 from pathlib import Path
 import sys
@@ -11,6 +11,32 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 
 checks = {
+    "AI_ONBOARDING.md": {
+        "required": [
+            "`storybible/LEMMA_MCKEE_MASTER.md`",
+            "`storybible/STORY_PROJECTION_ROUND_C.md`",
+            "`narrative/story_projection_round_c.yaml`",
+            "`narrative/mayken_independent_arc.yaml`",
+            "A chapter is not justified merely because research material exists",
+        ],
+        "forbidden": [
+            "The current synchronized human-readable operating master is:\n\n`storybible/LEMMA_MCKEE_MASTER_2026-08-13.md`",
+        ],
+    },
+    "AGENTS.md": {
+        "required": [
+            "storybible/STORY_PROJECTION_ROUND_C.md",
+            "ARC.CLAES.CAUSAL_SPINE",
+            "DEC.CORNELIS.RESIDENCE.GOES.2026-08-14",
+            "DEC.GOES.REDERIJKERS.MEETINGPLACE.2026-08-14",
+            "OPEN.GOES.CLAES_DEPARTURE_1572_1579.001",
+        ],
+        "forbidden": [
+            "OPEN.CORNELIS.RESIDENCE.GOES.1542.001",
+            "OPEN.GOES.REDERIJKERS.MEETINGPLACE.001",
+            "OPEN.GOES.NIEUWSTRAAT.PRE1594.001",
+        ],
+    },
     "narrative/CRAFT_GUARDRAILS.yaml": {
         "required": ["GRD.CLAES.AGE", "GRD.REIMERSWAAL.EDUCATION", "GRD.MEMORIAAL.DIRECT_REVEAL", "GRD.NO_DECRYPTION_BACKSLIDE"],
         "forbidden": ["Dodoens yields values", "Primus Index identifies", "full reconstruction takes weeks"],
@@ -27,36 +53,151 @@ checks = {
         "required": ["intentional exact-date resonance with Claes' canonical birth on 8 December 1542", "STC.CLAES.ZIERIKZEE.PLAN.001", "STC.CORNELIS.FIRST_ARREST_BAIL.1567.001", "STC.CORNELIS.DEATH.ANTWERP.1569.001", "19 November 1569: fictional public execution in Antwerp", "Antwerpse druk / Projectio van het Woord"],
         "forbidden": ["not shared birth-year resonance", "label: Arrestatie en dood Cornelis\n  canon_status: CANON\n  details_status: OPEN"],
     },
-    "storybible/LEMMA_MCKEE_MASTER.md": {"required": ["8 December 1542", "not decryption", "Mayken", "19 November 1569"], "forbidden": ["8 December 1545"]},
+    "storybible/MASTER.md": {
+        "required": [
+            "STORY_PROJECTION_ROUND_C.md",
+            "DEC.CLAES.GREAT_WORK.AUTHORIAL_ARCHITECTURE.2026-08-16",
+            "Status Prima → Corpus / Anima / Spiritus",
+            "OPEN.GOES.CLAES_DEPARTURE_1572_1579.001",
+            "OPEN.MAYKEN.INDEPENDENT_MIDARC.001",
+            "ARC.MAYKEN.LIFE",
+        ],
+        "forbidden": ["beloved identity remains open"],
+    },
+    "storybible/LEMMA_MCKEE_MASTER.md": {
+        "required": [
+            "8 December 1542",
+            "not decryption",
+            "Mayken",
+            "19 November 1569",
+            "Status Prima → Corpus / Anima / Spiritus",
+            "ARC.CLAES.CAUSAL_SPINE",
+            "OPEN.GOES.CLAES_DEPARTURE_1572_1579.001",
+            "OPEN.MAYKEN.INDEPENDENT_MIDARC.001",
+        ],
+        "forbidden": ["8 December 1545", "Still open: her mother and the detailed scene-by-scene biography"],
+    },
+    "storybible/STORY_PROJECTION_ROUND_C.md": {
+        "required": [
+            "Status Prima → Corpus / Anima / Spiritus",
+            "The author knows the Work; Claes undergoes it; the reader experiences it",
+            "ARC.MAYKEN.LIFE",
+            "OPEN.GOES.CLAES_DEPARTURE_1572_1579.001",
+            "OPEN.MAYKEN.INDEPENDENT_MIDARC.001",
+            "two centers of agency",
+        ],
+        "forbidden": [],
+    },
+    "narrative/alchemical_authorial_architecture.yaml": {
+        "required": [
+            "ARC.CLAES.GREAT_WORK.AUTHORIAL",
+            "Status Prima",
+            "name: Corpus",
+            "name: Anima",
+            "name: Spiritus",
+            "Status Prima Nova",
+            "Do not force every scene into an operation name",
+            "The author knows the Work; Claes undergoes it; the reader experiences it",
+        ],
+        "forbidden": ["mandatory seven-operation"],
+    },
+    "narrative/arcs.yaml": {
+        "required": [
+            "ARC.CLAES.GREAT_WORK.AUTHORIAL",
+            "OPEN.GOES.CLAES_DEPARTURE_1572_1579.001",
+            "ARC.MAYKEN.LIFE",
+            "REL.CLAES.MAYKEN.CONJUNCTIO",
+            "Corpus, Anima and Spiritus are interwoven registers",
+        ],
+        "forbidden": [],
+    },
+    "narrative/mayken_independent_arc.yaml": {
+        "required": [
+            "ARC.MAYKEN.LIFE",
+            "OPEN.MAYKEN.INDEPENDENT_MIDARC.001",
+            "What does Mayken want or refuse here if Claes were absent from the scene?",
+            "Her errors remain possible. Competence is not omniscience",
+        ],
+        "forbidden": [],
+    },
+    "narrative/mayken_relationship_projection.yaml": {
+        "required": [
+            "REL.CLAES.MAYKEN.CONJUNCTIO",
+            "Does the scene preserve two centers of agency?",
+            "Mayken is not a reward, therapist, saint, decoder or missing ingredient",
+        ],
+        "forbidden": [],
+    },
+    "narrative/beloved_recovery.yaml": {
+        "required": [
+            "CANON_RESOLVED_IDENTITY",
+            "Mayken Adriaensdr. Lampert",
+            "identity_status: RESOLVED",
+            "ARC.MAYKEN.LIFE",
+            "REL.CLAES.MAYKEN.CONJUNCTIO",
+        ],
+        "forbidden": [
+            "CANON_FUNCTION_OPEN_IDENTITY",
+            "her identity and detailed apothecary-family biography remain open",
+        ],
+    },
+    "narrative/sinne_recovery.yaml": {
+        "required": ["Mayken", "ARC.MAYKEN.LIFE", "REL.CLAES.MAYKEN.CONJUNCTIO", "ARC.CLAES.GREAT_WORK.AUTHORIAL"],
+        "forbidden": ["beloved/apothecary daughter beside him"],
+    },
+    "narrative/story_projection_round_c.yaml": {
+        "required": [
+            "ARC.CLAES.CAUSAL_SPINE",
+            "id: H09",
+            "OPEN.GOES.CLAES_DEPARTURE_1572_1579.001",
+            "ARC.MAYKEN.LIFE",
+            "Status Prima Nova",
+            "World detail from Round B is selected because it creates pressure, choice, contrast or consequence",
+        ],
+        "forbidden": [],
+    },
+    "narrative/goes_departure_1572_1579.yaml": {
+        "required": [
+            "SC.HIST.GOES.SIEGE_1572.INDUSTRY.001",
+            "SC.HIST.GOES.BREWERY.NISSEPAD_1577.001",
+            "SC.HIST.GOES.WESTZELKE.BURNT_SALTPAN_1577.001",
+            "not proven identical to the brewery burned in the Voorstad in 1572",
+            "Do not call 1577–1579 property transfers executions, confiscations or forced sales",
+        ],
+        "forbidden": ["Nissepad brewery was destroyed in 1572"],
+    },
+    "canon/OPEN_DECISIONS.yaml": {
+        "required": ["OPEN.GOES.CLAES_DEPARTURE_1572_1579.001", "OPEN.MAYKEN.INDEPENDENT_MIDARC.001"],
+        "forbidden": [],
+    },
+    "canon/DECISIONS_STORY_PROJECTION_2026-08-16.yaml": {
+        "required": [
+            "DEC.CLAES.GREAT_WORK.AUTHORIAL_ARCHITECTURE.2026-08-16",
+            "DEC.MAYKEN.INDEPENDENT_ARC.2026-08-16",
+            "DEC.CLAES_MAYKEN.CONJUNCTIO.2026-08-16",
+            "No fixed seven-operation scheme is mandatory",
+        ],
+        "forbidden": [],
+    },
+    "storybible/INDEX.md": {
+        "required": ["STORY_PROJECTION_ROUND_C.md", "ARC.CLAES.CAUSAL_SPINE", "ARC.MAYKEN.LIFE", "REL.CLAES.MAYKEN.CONJUNCTIO"],
+        "forbidden": ["read together with Mayken detail dossier if generic labels survive"],
+    },
+    "review/SYNC_STATUS.md": {
+        "required": ["ROUND_C_STORY_PROJECTION_IMPLEMENTED", "ARC.CLAES.CAUSAL_SPINE", "OPEN.GOES.CLAES_DEPARTURE_1572_1579.001", "OPEN.MAYKEN.INDEPENDENT_MIDARC.001"],
+        "forbidden": [],
+    },
     "narrative/religious_space_sensory_church.yaml": {"required": ["WORLD.RELIGIOUS_SPACE.SENSORY_CHURCH", "local_verification_required: true", "Never checklist all five senses", "church_as_memory_palace"], "forbidden": []},
     "storybible/modules/HISTORICAL_SUBSTRATE_1540_1605.md": {"required": ["source → HIST.EVENT", "information status", "layered identity", "Reimerswaal's interaction of war, flood/erosion, demography, trade and church life"], "forbidden": []},
     "storybible/modules/WORLD_GOES_CHURCH_LOCAL.md": {"required": ["12 March 1442", "31 May 1471", "Niehoff replacement organ from 1550"], "forbidden": []},
     "history/LOW_COUNTRIES_TRANSFORMATION_1540_1605.md": {"required": ["Low Countries transformation, 1540–1605", "1572, Goes", "17 August 1585", "20 March 1602"], "forbidden": []},
     "claims/SOURCE_CLAIMS_HISTORICAL_SUBSTRATE_RECOVERY_2026-08-16.yaml": {"required": ["SC.HIST.CATHOLIC_BIBLE.LATIN_VULGATE.1550.001", "SC.HIST.RELIGIOUS_SPACE.SENSORY_SOCIAL_FIELD.001", "SC.HIST.REDERIJKERS.PUBLIC_COMMUNICATION_NETWORK.001", "SC.HIST.REVOLT.INFORMATION_ECOLOGY.1560_1585.001"], "forbidden": []},
-    "storybible/domains/BREAD_GRAIN_BAKING_1540_1602.md": {
-        "required": ["professional urban bakery", "one dominant field + one counter-sense + one inference", "exact Celsius temperatures", "It does not canonize a specific bakery scene"],
-        "forbidden": ["Use a fixed modern recipe"],
-    },
-    "storybible/domains/BEER_BREWING_BEERSTEKER_1540_1580.md": {
-        "required": ["Cornelis is a **biersteker**", "**not** canonically the brewer", "generic medieval gruit ale", "Nissepad brewery relationship"],
-        "forbidden": ["Cornelis is canonically the brewer", "Cornelis owns the Nissepad brewery"],
-    },
-    "storybible/domains/REIMERSWAAL_SCHOOL_1554_1561.md": {
-        "required": ["living city that knows it is vulnerable", "school tradition before 1296", "story reconstruction grounded in durable school infrastructure", "No seven-year beginner curriculum"],
-        "forbidden": ["Reimerswaal is an abandoned ruin in 1554", "seven years of beginner Latin"],
-    },
-    "storybible/domains/REDERIJKERS_LANDJUWEEL_1561.md": {
-        "required": ["fourteen official competitors", "no current proof of a Goese chamber among the fourteen official competitors", "Dee is not in this 1561 story visit", "factor/prince are not current canon"],
-        "forbidden": ["Cornelis is factor van de Nardusbloem", "Goes is an official competing chamber in 1561"],
-    },
-    "storybible/domains/ANTWERP_TIME_SLICES_1561_1585.md": {
-        "required": ["1561: CITY AS THEATRE", "1563–early 1564: CITY AS BOOK / WORKSHOP", "1566: CITY AS BROKEN IMAGE", "1567–19 November 1569: CITY AS SURVEILLANCE / REPRESSION", "1576–1578: CITY AS WOUND / PRINT RELEASE", "1585: CITY AS TRANSFORMED FORMATIVE PLACE", "Never write"],
-        "forbidden": ["Antwerp remains unchanged from 1561 to 1585"],
-    },
-    "storybible/domains/SCHUTTERIJ_MILITARY_PRACTICE_1550_1607.md": {
-        "required": ["1516", "1530", "De Gheyn 1607", "De Gheyn 1607 as a 1572 manual", "schuttersgilde", "garrison/professional troops", "twelve apostles/furket/exact one-shot-per-minute"],
-        "forbidden": ["De Gheyn 1607 proves Goes 1572 drill", "Edele Busse founded in 1516 as settled canon", "Edele Busse founded in 1530 as settled canon"],
-    },
+    "storybible/domains/BREAD_GRAIN_BAKING_1540_1602.md": {"required": ["professional urban bakery", "one dominant field + one counter-sense + one inference", "exact Celsius temperatures", "It does not canonize a specific bakery scene"], "forbidden": ["Use a fixed modern recipe"]},
+    "storybible/domains/BEER_BREWING_BEERSTEKER_1540_1580.md": {"required": ["Cornelis is a **biersteker**", "**not** canonically the brewer", "generic medieval gruit ale", "Nissepad brewery relationship"], "forbidden": ["Cornelis is canonically the brewer", "Cornelis owns the Nissepad brewery"]},
+    "storybible/domains/REIMERSWAAL_SCHOOL_1554_1561.md": {"required": ["living city that knows it is vulnerable", "school tradition before 1296", "story reconstruction grounded in durable school infrastructure", "No seven-year beginner curriculum"], "forbidden": ["Reimerswaal is an abandoned ruin in 1554", "seven years of beginner Latin"]},
+    "storybible/domains/REDERIJKERS_LANDJUWEEL_1561.md": {"required": ["fourteen official competitors", "no current proof of a Goese chamber among the fourteen official competitors", "Dee is not in this 1561 story visit", "factor/prince are not current canon"], "forbidden": ["Cornelis is factor van de Nardusbloem", "Goes is an official competing chamber in 1561"]},
+    "storybible/domains/ANTWERP_TIME_SLICES_1561_1585.md": {"required": ["1561: CITY AS THEATRE", "1563–early 1564: CITY AS BOOK / WORKSHOP", "1566: CITY AS BROKEN IMAGE", "1567–19 November 1569: CITY AS SURVEILLANCE / REPRESSION", "1576–1578: CITY AS WOUND / PRINT RELEASE", "1585: CITY AS TRANSFORMED FORMATIVE PLACE", "Never write"], "forbidden": ["Antwerp remains unchanged from 1561 to 1585"]},
+    "storybible/domains/SCHUTTERIJ_MILITARY_PRACTICE_1550_1607.md": {"required": ["1516", "1530", "De Gheyn 1607", "De Gheyn 1607 as a 1572 manual", "schuttersgilde", "garrison/professional troops", "twelve apostles/furket/exact one-shot-per-minute"], "forbidden": ["De Gheyn 1607 proves Goes 1572 drill", "Edele Busse founded in 1516 as settled canon", "Edele Busse founded in 1530 as settled canon"]},
     "claims/SOURCE_CLAIMS_DOMAIN_REBUILD_2026-08-16.yaml": {"required": ["SC.HIST.REIMERSWAAL.SCHOOL.CONTINUITY.001", "SC.HIST.LANDJUWEEL.ANTWERP.14_CHAMBERS.1561.001", "SC.HIST.LANDJUWEEL.GOES_PARTICIPATION.1561.001", "SC.HIST.GOES.SCHUTTERIJ.FIREARM_GUILD.16C.001", "SC.HIST.DEGHEYN.WAPENHANDELINGHE.1607.001"], "forbidden": []},
     "narrative/domain_scene_packs.yaml": {"required": ["PACK.BEER.GOES_BIERSTEKER", "PACK.REIMERSWAAL.SCHOOL_1554_1561", "PACK.REDERIJKERS.ANTWERP_LANDJUWEEL_1561", "PACK.ANTWERP.1567_1569", "PACK.GOES.SCHUTTERIJ", "PACK.MILITARY.DEGHEYN_1607_COMPARATOR"], "forbidden": []},
 }

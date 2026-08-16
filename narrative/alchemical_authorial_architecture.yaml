@@ -1,0 +1,144 @@
+schema_version: 1.0.0
+kind: AuthorialArchitectureRegistry
+architectures:
+- id: ARC.CLAES.GREAT_WORK.AUTHORIAL
+  type: AuthorialArchitecture
+  label: "The Great Work — Status Prima, Corpus, Anima, Spiritus, Projectio"
+  canon_status: CANON
+  protagonist: ENT.PERSON.CLAES
+  decision_id: DEC.CLAES.GREAT_WORK.AUTHORIAL_ARCHITECTURE.2026-08-16
+  nested_with:
+  - ARC.CLAES.MACRO_TRANSMUTATION
+  - ARC.CLAES.LIFE
+  - ARC.CLAES.SINNE_RECOVERY
+  governing_sentence: "The author knows the Work; Claes undergoes it; the reader experiences it."
+  movement_law: "Solve et Coagula — separate what has been falsely fused, then reconnect what can enter a truer relation."
+
+  status_prima:
+    story_time: {earliest: '1542-12-08', latest_exclusive: '1554-05-18', precision: bounded}
+    function: "Claes begins embedded in body, household, church, craft, food, trade and ordinary sensory trust before he can theorize their order."
+    value_state: "belonging and sensory openness without mature self-knowledge"
+    warning: "Status Prima is not innocence-as-perfection; it is the undivided starting condition from which later distinctions become possible."
+
+  registers:
+  - name: Corpus
+    function: "The visible/material Work: bodies, food, beer, paper, ink, books, plants, buildings, fire, water, salts, vitriol, metals, tools, roads and cities change under real processes."
+    authoring_question: "What materially changes here, by which action, and what remains materially continuous through that change?"
+    recurring_domains:
+    - WORLD.BREAD_GRAIN
+    - WORLD.BEER_BREWING_DISTRIBUTION
+    - WORLD.GOES
+    - WORLD.REIMERSWAAL
+    - WORLD.PRINT_BOOK_NETWORK
+    - WORLD.SCHUTTERIJ_MILITARY
+    material_law: "Never substitute symbolism for process. Matter must behave causally enough that the reader could notice the difference between appearance and transformation."
+  - name: Anima
+    function: "The relational/meaning Work: belief, interpretation, loyalty, testimony, language, love, public opinion, memory and moral obligation are separated, tested and recombined."
+    authoring_question: "Which meaning, loyalty or relation is being tested, and who interprets the same sign differently?"
+    recurring_domains:
+    - WORLD.RELIGIOUS_SPACE.SENSORY_CHURCH
+    - WORLD.ANTWERP
+    - WORLD.MUSIC_PRAYER_TRANSFORMATION
+    - WORLD.PRINT_BOOK_NETWORK
+    relational_law: "A sign may remain materially identical while its social or moral meaning changes with audience, confession, memory and use."
+  - name: Spiritus
+    function: "The inner Work: Claes' vigilance, certainty-seeking, grief, agency, embodied sinne, responsibility and sovereignty are transformed."
+    authoring_question: "What does this event make Claes able or unable to perceive, distinguish, choose, carry or release?"
+    recurring_arcs:
+    - ARC.CLAES.LIFE
+    - ARC.CLAES.SINNE_RECOVERY
+    - ARC.CLAES.CORNELIS
+    inner_law: "Knowledge must cease to promise control and become responsible action under uncertainty."
+
+  register_rule: "Corpus, Anima and Spiritus are simultaneous spiral registers. A scene may strongly activate one, two or all three; the novel must not mechanically march through three identical cycles."
+
+  non_binding_operation_vocabulary:
+    status: AUTHOR_SIDE_DIAGNOSTIC_NOT_FIXED_HISTORICAL_SEQUENCE
+    operations:
+    - ontvangen
+    - verbranden
+    - oplossen
+    - onderscheiden
+    - verheffen
+    - gebruikt_worden
+    - scheiden
+    - verrotten
+    - verenigen
+    - verliezen
+    - herhalen
+    - zwart_worden
+    - wit_worden
+    - rijpen
+    - rood_worden
+    - projecteren
+    - loslaten
+    rule: "Use an operation only if the actual event earns it. No scene, act or life phase is required to match one operation or a fixed count."
+
+  projection_grid:
+  - hinge: "1547–1554 Goes childhood"
+    corpus: "bread, beer, household timing, church bodies/materials, routes and craft teach change through touch, smell, heat, sound and weight"
+    anima: "order first appears as shared custom, prayer, story, language and family practice"
+    spiritus: "sinne is open; Claes learns that attention seems to make the world legible"
+  - hinge: "18 May 1554 Goes fire"
+    corpus: "house and bodies are destroyed; survival and loss are materially irreversible"
+    anima: "home, family continuity and divine/social order no longer align with what Claes expected"
+    spiritus: "the wound forms: if he had seen earlier, could he have prevented loss?"
+  - hinge: "1554–1561 Reimerswaal"
+    corpus: "water, repairs, salt, school materials and repeated damage show slow erosion rather than one clean catastrophe"
+    anima: "Claes learns rules and Latin while belonging itself feels conditional"
+    spiritus: "attention becomes vigilance; competence grows while sensory openness narrows"
+  - hinge: "1561 Landjuweel"
+    corpus: "bodies, costumes, blazons, wagons, streets and performance materialize rhetoric"
+    anima: "one sign acquires competing meanings across chamber, audience, judge, authority and print"
+    spiritus: "Claes moves from observation toward interpretation"
+  - hinge: "1563–1564 Dee/Silvius/Boom"
+    corpus: "paper, graphite, pyritic matter, vitriol and Sol teach that hidden or conserved matter can reappear through right relation"
+    anima: "authority, text, secrecy and trust are separated from simple obedience"
+    spiritus: "Claes becomes a causal actor and begins to equate understanding with control"
+  - hinge: "19 November 1569 Cornelis execution"
+    corpus: "the father's vulnerable body and separately destroyed papers/books make public power physical"
+    anima: "silence, loyalty, testimony and inherited responsibility split apart"
+    spiritus: "the possibility of later reconciliation ends; responsibility survives the father"
+  - hinge: "1570 memoriaal reveal"
+    corpus: "green vitriol develops readable words already present in the paper"
+    anima: "private testimony becomes a moral demand rather than a puzzle prize"
+    spiritus: "recognition must become decision; Mayken's material contradiction limits Claes' overconfidence"
+  - hinge: "1578 Antwerp print"
+    corpus: "text receives another body through print and multiplication"
+    anima: "testimony leaves private ownership and enters public interpretation"
+    spiritus: "Claes performs projectio of the Word by releasing rather than possessing the text"
+  - hinge: "1584 Delft moral bottom"
+    corpus: "political violence and mortal consequence refuse abstraction"
+    anima: "certainty and rightness separate"
+    spiritus: "macro-Nigredo reaches moral bottom; Albedo requires distinction without withdrawal"
+  - hinge: "1584–1602 Mayken and late road"
+    corpus: "weather, plants, food, fatigue, preparation and travel return Claes to embodied material life"
+    anima: "love becomes relation without possession; differing expertise is not an obstacle to union"
+    spiritus: "sinne recovers as resonance and embodied discernment"
+  - hinge: "13 March 1602 Enkhuizen"
+    corpus: "the Sol/Rode-Leeuw line is tested materially under the Morhof-framed event"
+    anima: "witness, credibility and transmission matter more than possession of a marvel"
+    spiritus: "mastery is tested by whether Claes can release ownership and control"
+
+  transmutatio_rubedo:
+    story_time: {earliest: '1599-01-01', latest_exclusive: '1603-01-01', precision: approximate}
+    function: "Corpus, Anima and Spiritus no longer operate as isolated problems: material judgement, relationship and self-knowledge can resonate without collapsing into sameness."
+    relationship_expression: REL.CLAES.MAYKEN.CONJUNCTIO
+
+  projectio:
+    triad:
+    - "1578 — Word: testimony is printed and released beyond private possession."
+    - "1602 — Matter: the late Sol/Rode-Leeuw line is tested in Enkhuizen."
+    - "post-1602 — Self: Claes releases the need to possess the Work, its outcome or his own legacy."
+
+  status_prima_nova:
+    story_time: {earliest: '1602-03-13', precision: open-ended}
+    function: "The new status is not a return to the first household or to innocence. Claes can remain embodied, relational and responsible without demanding certainty or possession."
+    mature_sequence: "perceive -> distinguish -> choose -> carry -> release"
+
+  hard_guardrails:
+  - "This is authorial structure, not an in-world universal alchemical catechism."
+  - "Do not force every scene into an operation name."
+  - "Do not let later Basilian/Valentinian or seventeenth-century formulations leak backward unless separately time-verified."
+  - "The Great Work does not excuse historical anachronism or implausible chemistry."
+  - "Mayken is counterpart and conjunctio-partner, not the missing ingredient that magically completes Claes."

@@ -1,0 +1,53 @@
+schema_version: 1.0.0
+kind: NarrativeRelationshipExtension
+records:
+- id: REL.CLAES.MAYKEN.CONJUNCTIO
+  type: RelationshipExtension
+  label: "Claes and Mayken — complementarity, risk and conjunctio"
+  canon_status: CANON
+  participants: [ENT.PERSON.CLAES, ENT.PERSON.BELOVED]
+  parent: REL.CLAES.BELOVED
+  decision_ids:
+  - DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14
+  - DEC.MAYKEN.INDEPENDENT_ARC.2026-08-16
+  - DEC.CLAES_MAYKEN.CONJUNCTIO.2026-08-16
+  identity_note: "ENT.PERSON.BELOVED is Mayken Adriaensdr. Lampert; the legacy entity ID does not indicate an open identity."
+  arcs:
+  - ARC.CLAES.SINNE_RECOVERY
+  - ARC.MAYKEN.LIFE
+  - ARC.CLAES.GREAT_WORK.AUTHORIAL
+
+  movement:
+  - phase: "separate expertise"
+    story_time: {earliest: '1566-08-01', latest_exclusive: '1570-01-01', precision: bounded}
+    claes: "pattern, memory, hidden order, inherited secrecy"
+    mayken: "materia medica, condition, measurement, repeatability, direct contradiction"
+    relation: "proximity without fusion; each can know something the other cannot"
+  - phase: "collaborative risk"
+    story_time: {earliest: '1570-01-01', latest_exclusive: '1571-01-01', precision: year}
+    relation: "controlled material reveal becomes a test of trust because error, testimony and consequence are shared without becoming identical responsibilities"
+    guardrail: "Mayken does not solve the text; Claes does not own her expertise."
+  - phase: "parallel adult agency"
+    story_time: {earliest: '1571-01-01', latest_exclusive: '1584-01-01', precision: approximate}
+    relation: "their bond may persist, change, strain or deepen, but Mayken retains an adult line that cannot be reduced to waiting for Claes"
+    design_note: "Exact relationship chronology in this span remains to be scenically designed; no unearned off-screen perfect harmony."
+  - phase: "conjunctio"
+    story_time: {earliest: '1584-01-01', latest_exclusive: '1602-03-14', precision: developmental}
+    relation: "difference becomes the condition of mature union: perception and abstraction, matter and pattern, care and responsibility, intimacy and separate agency can coexist"
+    claes_shift: "from secrecy/control toward relation and release"
+    mayken_shift: "from competence defended as separate ground toward chosen reciprocal intimacy without surrender of judgement"
+  - phase: "release"
+    story_time: {earliest: '1602-03-13', precision: open-ended}
+    relation: "neither partner possesses the other, the Work or its outcome; mature love can permit action and loss without converting them into ownership"
+
+  authoring_tests:
+  - "Can Mayken disagree here for reasons grounded in her own knowledge, work or values?"
+  - "Does Claes receive relation as correction rather than as confirmation?"
+  - "Does the scene preserve two centers of agency?"
+  - "If alchemical language is removed from the author's notes, does the human relationship still work causally?"
+
+  guardrails:
+  - "Conjunctio is an author-side structural function, not mandatory in-world terminology."
+  - "Mayken is not a reward, therapist, saint, decoder or missing ingredient."
+  - "Claes is not entitled to Mayken because he suffers or completes the Work."
+  - "Difference must remain visible after union; sameness would destroy the function of the relationship."

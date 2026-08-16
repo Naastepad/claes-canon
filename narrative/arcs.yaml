@@ -1,4 +1,4 @@
-schema_version: 1.3.0
+schema_version: 1.4.0
 kind: NarrativeArcRegistry
 arcs:
 - id: ARC.CLAES.LIFE
@@ -6,6 +6,8 @@ arcs:
   label: Claes cradle-to-grave
   status: CANON
   protagonist: ENT.PERSON.CLAES
+  authorial_architecture: ARC.CLAES.GREAT_WORK.AUTHORIAL
+  causal_projection: ARC.CLAES.CAUSAL_SPINE
   phases:
   - id: ARC.CLAES.LIFE.P01
     label: Wieg en lichaam
@@ -43,7 +45,9 @@ arcs:
     - autumn 1567 Cornelis first arrest/examination and release
     - 19 November 1569 Cornelis executed in Antwerp with Claes present
     - 1570 direct chemical reveal/read of the hidden Brevísima
+    - 1572–1579 Goes material/economic severance remains an explicit authorial-design hinge
     - 1578 Antwerp print event as projectio of the Word
+    open_hinge: OPEN.GOES.CLAES_DEPARTURE_1572_1579.001
   - id: ARC.CLAES.LIFE.P07
     label: Man in Nigredo
     story_time: {earliest: '1578-01-01', latest_exclusive: '1585-01-01', precision: bounded}
@@ -55,6 +59,8 @@ arcs:
     dominant_movement: Albedo to Rubedo
     value_shift: distinguish then reconnect; recovered sinne becomes relation rather than control
     relational_catalyst: Mayken accompanies the later sensory/spiritual recovery without performing it for Claes.
+    counterpart_arc: ARC.MAYKEN.LIFE
+    relationship_projection: REL.CLAES.MAYKEN.CONJUNCTIO
   - id: ARC.CLAES.LIFE.P09
     label: Laatste beweging en graf
     story_time: {earliest: '1602-03-13', precision: open-ended}
@@ -66,6 +72,8 @@ arcs:
   type: MacroArc
   label: Drager -> Nigredo -> Albedo -> Rubedo -> Projectio
   status: CANON
+  authorial_architecture: ARC.CLAES.GREAT_WORK.AUTHORIAL
+  architecture_relation: "This operational macro arc remains the chronological transformation spine. The Status Prima / Corpus-Anima-Spiritus / Status Prima Nova architecture is a deeper author-side register model, not a replacement timeline."
   phases:
   - label: Drager
     story_time: {earliest: '1542-12-08', latest_exclusive: '1564-10-04', precision: bounded}
@@ -84,6 +92,8 @@ arcs:
   guardrails:
   - Authorial architecture, not an in-world universal alchemical doctrine.
   - What becomes visible was already present: literally for hidden typography and the conserved Sol fraction; analogically for testimony, memory and recovered sinne.
+  - Corpus, Anima and Spiritus are interwoven registers and must not become three mechanically repeated cycles.
+  - No fixed count or sequence of alchemical operations may be forced onto scenes that do not earn it.
 
 - id: ARC.CLAES.DEE
   type: RelationshipArc

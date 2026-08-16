@@ -1,4 +1,4 @@
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: NarrativeArcExtension
 records:
 - id: ARC.CLAES.SINNE_RECOVERY
@@ -11,6 +11,7 @@ records:
   - DEC.CLAES.PARADOX.2026-08-13
   - DEC.CLAES.NEED.2026-08-13
   - DEC.CLAES.SPIRITUAL_JOURNEY.2026-08-13
+  - DEC.CLAES_MAYKEN.CONJUNCTIO.2026-08-16
   progression:
   - phase: childhood_openness
     movement: embodied sensation develops through recognition, comparison and pattern toward understanding
@@ -19,13 +20,20 @@ records:
   - phase: constriction
     movement: accumulated trauma, secrecy and consequence blunt sensory openness even while analytical skill remains strong
   - phase: recovery
-    movement: on the road toward Enkhuizen, with the beloved/apothecary daughter beside him, Claes rediscovers embodied perception
+    movement: "on the road toward Enkhuizen, with Mayken beside him as an independently acting partner, Claes rediscovers embodied perception through weather, plants, food, fatigue, material work and contradiction"
   - phase: resonance
     movement: sensation is no longer only registered outside him but echoes inwardly and reconnects body, memory, relation and meaning
   - phase: sovereignty
     movement: mature sinne becomes perceive → distinguish → choose → carry → release
   culmination: the Great Work is lived as the transmutation of knowledge-as-control into wisdom-in-relation and inner sovereignty
-  guardrail: recovery is not a return to untouched childhood innocence and the beloved does not perform Claes' transformation for him
+  counterpart_arc: ARC.MAYKEN.LIFE
+  relationship: REL.CLAES.MAYKEN.CONJUNCTIO
+  authorial_architecture: ARC.CLAES.GREAT_WORK.AUTHORIAL
+  reciprocal_rule: "Mayken catalyses Claes' sensory recovery, but the late relationship must also advance Mayken's own independent arc; a scene that changes only Claes is incomplete unless the asymmetry is deliberate and paid for."
+  guardrails:
+  - recovery is not a return to untouched childhood innocence
+  - Mayken does not perform Claes' transformation for him
+  - Mayken's competence is not omniscience and her disagreement must remain possible
   ko_targets:
   - KO.CHARACTER
   - KO.VALUE
@@ -44,5 +52,5 @@ records:
   - embodied discernment
   - wisdom
   - release
-  relationship: REL.CLAES.BELOVED
+  relationship: REL.CLAES.MAYKEN.CONJUNCTIO
   destination: ENT.LOC.ENKHUIZEN

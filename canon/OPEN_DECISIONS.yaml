@@ -1,4 +1,4 @@
-schema_version: 2.0.0
+schema_version: 2.1.0
 kind: OpenDecisionRegistry
 policy:
   active_only: true
@@ -166,3 +166,38 @@ decisions:
   guardrails:
   - Do not use deken status to justify access or logistics already supported by poorter, biersteker, rederijker and trust networks.
   - The pre-1595 Castanien origin is explicit novel reconstruction, not historical attestation.
+
+- id: OPEN.GOES.CLAES_DEPARTURE_1572_1579.001
+  domain: plot_and_economic_causality
+  priority: high
+  question: "Which historically disciplined chain of siege damage, residual family/business interest, debt/claims and 1577–1579 legal settlement makes Goes cease to function as Claes' recoverable home/economic anchor, and when does he actually leave?"
+  status: OPEN
+  fixed:
+  - "Cornelis is already dead before the 1572 siege."
+  - "The 1572 siege damages outside salt works and a brewery in the Voorstad."
+  - "The Nissepad brewery documented in 1577 is not proven identical to the brewery burned in the Voorstad in 1572 and is not proven Cornelis property."
+  - "The burned Westzelke salt-pan site sold by Jan Jansen Nissepat in 1577 has an unknown destruction event."
+  - "The 1578 Antwerp publication endpoint remains fixed."
+  guardrails:
+  - Do not solve this by silently destroying the documented Nissepad brewery.
+  - Do not label 1577–1579 transport acts executions, confiscations or forced sales without evidence.
+  - Do not make documented Nissepat names one proven nuclear family without a genealogical decision.
+  - Any fictional property/lease connection used to motivate Claes must be explicitly marked novel reconstruction.
+
+- id: OPEN.MAYKEN.INDEPENDENT_MIDARC.001
+  domain: character
+  priority: high
+  question: "What concrete pressure, work trajectory and consequential choice between the 1554 rebuilding horizon and the 1570 reveal makes Mayken's independent adult agency visible before she becomes Claes' late partner?"
+  status: OPEN
+  fixed:
+  - "Mayken's identity as Mayken Adriaensdr. Lampert is resolved."
+  - "She has an independent character arc under DEC.MAYKEN.INDEPENDENT_ARC.2026-08-16."
+  - "Her competence grows from the apothecary/material world and differs from Claes' hidden-order orientation."
+  - "She must have goals/choices not reducible to Claes."
+  candidate_line_to_revalidate:
+  - "Earlier authorial development considered family/social pressure, expulsion or loss of standing followed by greater reliance on female practical-healing/herbal networks; this is a development seed, not current event canon."
+  guardrails:
+  - Do not duplicate Cornelis' prosecution history onto Adriaen without a separate story choice and historical feasibility check.
+  - Do not grant Mayken unsupported university, physician or guild status.
+  - Do not turn a possible kruidenvrouw line into a stereotype or a secret cipher role.
+  - Preserve her distinct 1554 experience: destruction plus rebuilding, not Claes' household annihilation.

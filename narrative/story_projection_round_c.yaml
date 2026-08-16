@@ -1,0 +1,132 @@
+schema_version: 1.0.0
+kind: StoryProjectionRegistry
+projections:
+- id: ARC.CLAES.CAUSAL_SPINE
+  type: CausalStoryProjection
+  label: "Claes — causal spine from Status Prima to Projectio"
+  canon_status: CANON
+  protagonist: ENT.PERSON.CLAES
+  authorial_architecture: ARC.CLAES.GREAT_WORK.AUTHORIAL
+  counterpart_arc: ARC.MAYKEN.LIFE
+  relationship_projection: REL.CLAES.MAYKEN.CONJUNCTIO
+  purpose: "Bridge settled canon and chapter-ready world modules into a causal pre-structure before Book/Act/Sequence/Chapter/Beat realization."
+
+  hinges:
+  - id: H01
+    story_time: {earliest: '1542-12-08', latest_exclusive: '1554-05-18', precision: bounded}
+    label: "Status Prima — body, family, church, food, craft and routes form one lived world"
+    cause: "Claes grows inside an intact household and a material/sensory civic order."
+    effect: "He learns the useful but dangerous intuition that attention makes the world legible."
+    registers: [Corpus, Anima, Spiritus]
+    authoring_inputs: [WORLD.GOES, WORLD.BREAD_GRAIN, WORLD.BEER_BREWING_DISTRIBUTION, WORLD.RELIGIOUS_SPACE.SENSORY_CHURCH]
+
+  - id: H02
+    story_time: {date: '1554-05-18', precision: day}
+    label: "Goes fire — first catastrophic solve"
+    cause: "The historically grounded city fire intersects the fictional Nissepat household."
+    effect: "House, mother, brother and unborn sibling are lost; Claes' belief in attention as protection is wounded rather than disproved in his own mind."
+    instances: [NI.EVENT.GOES_FIRE.1554.001]
+    arcs_advanced: [ARC.CLAES.LIFE, ARC.CLAES.CORNELIS, ARC.CLAES.SINNE_RECOVERY]
+
+  - id: H03
+    story_time: {earliest: '1554-05-19', latest_exclusive: '1561-09-01', precision: bounded}
+    label: "Reimerswaal — learning under slow erosion"
+    cause: "Post-fire economics replace the intended Zierikzee path with Reimerswaal and separate father and son."
+    effect: "Claes gains language/rule competence while repeated water/fire pressure turns attention into vigilance."
+    instances: [NI.EVENT.REIMERSWAAL_MOVE.1554.001]
+    authoring_inputs: [WORLD.REIMERSWAAL]
+
+  - id: H04
+    story_time: {earliest: '1561-08-01', latest_exclusive: '1561-09-01', precision: month}
+    label: "Landjuweel — meaning becomes multiple"
+    cause: "Public rhetoric materializes signs before competing audiences."
+    effect: "Claes moves from noticing patterns toward judging interpretation, role and consequence."
+    instances: [NI.EVENT.LANDJUWEEL.1561.001]
+    authoring_inputs: [WORLD.ANTWERP]
+
+  - id: H05
+    story_time: {earliest: '1563-02-01', latest_exclusive: '1564-10-04', precision: bounded}
+    label: "Dee/Silvius/Boom — process becomes power"
+    cause: "Claes learns through print, materials, graphite, pyritic matter, vitriol and the death/opening problem of Sol."
+    effect: "He becomes a causal actor and begins to overvalue complete understanding as a route to control."
+    instances: [NI.SCENE.DEE_FIRST_ENCOUNTER.1563.001, NI.SCENE.MEMORIAAL_GIFT.1564.001, NI.EVENT.SECURITY_BREAK.1564.001]
+    arcs_advanced: [ARC.CLAES.DEE, ARC.CLAES.MACRO_TRANSMUTATION]
+
+  - id: H06
+    story_time: {earliest: '1566-08-01', latest_exclusive: '1570-01-01', precision: bounded}
+    label: "Return to Goes — old place, altered meanings"
+    cause: "Claes returns after years of formation into a city whose religious, family and material order is no longer the childhood world."
+    effect: "The place that should confirm identity instead exposes discontinuity; Mayken enters as a materially grounded equal rather than as a recovered piece of childhood."
+    instances: [NI.EVENT.CLAES_RETURN_GOES.1566.001]
+    relationship_projection: REL.CLAES.MAYKEN.CONJUNCTIO
+
+  - id: H07
+    story_time: {earliest: '1567-09-01', latest_exclusive: '1569-11-20', precision: bounded}
+    label: "Cornelis — warning, secrecy and irreversible inheritance"
+    cause: "Network exposure and repression convert Cornelis' protective secrecy into arrest, recidive pressure and public execution."
+    effect: "Claes loses the possibility of repairing father-son time and inherits responsibility without receiving a cryptographic answer."
+    instances: [NI.EVENT.CORNELIS_FALL.1568.001]
+    arcs_advanced: [ARC.CLAES.CORNELIS, ARC.CLAES.LIFE]
+
+  - id: H08
+    story_time: {earliest: '1570-01-01', latest_exclusive: '1571-01-01', precision: year}
+    label: "Memoriaal reveal — truth becomes obligation"
+    cause: "A material cue plus controlled green-vitriol development reveals readable testimony already present."
+    effect: "The problem changes from 'what is hidden?' to 'what must we do with what can now be read?'; Mayken's independent material judgement prevents solitary certainty."
+    instances: [NI.SEQUENCE.RECOVERY.1570.001]
+    arcs_advanced: [ARC.CLAES.LIFE, ARC.CLAES.MACRO_TRANSMUTATION, ARC.MAYKEN.LIFE]
+
+  - id: H09
+    story_time: {earliest: '1572-01-01', latest_exclusive: '1580-01-01', precision: design-window}
+    label: "Goes second severance — material/economic causality still to be chosen"
+    status: OPEN_AUTHORIAL_HINGE
+    cause: "1572 siege destruction and 1577–1579 postwar property/legal afterlife create historically grounded pressure."
+    effect_if_resolved: "Goes ceases to be a recoverable economic/home base through a concrete chain of loss, debt, claims or network collapse."
+    open_projection: ARC.CLAES.GOES_DEPARTURE_1572_1579
+    decision_id: OPEN.GOES.CLAES_DEPARTURE_1572_1579.001
+    guardrail: "Do not fill this gap by destroying the documented Nissepad brewery or by labeling ordinary transfers confiscations."
+
+  - id: H10
+    story_time: {earliest: '1578-01-01', latest_exclusive: '1579-01-01', precision: year}
+    label: "Projectio of the Word"
+    cause: "Claes chooses to move testimony out of private possession into print."
+    effect: "The textual mission is completed by release; public interpretation can no longer be controlled by Claes."
+    instances: [NI.EVENT.PUBLICATION.1578.001]
+    arcs_advanced: [ARC.CLAES.MACRO_TRANSMUTATION]
+
+  - id: H11
+    story_time: {earliest: '1584-01-01', latest_exclusive: '1585-01-01', precision: year}
+    label: "Delft — moral Nigredo / Albedo threshold"
+    cause: "Political violence and mortal consequence expose the limits of rightness, foreknowledge and control."
+    effect: "Claes must learn to distinguish truth from certainty and right action from guaranteed outcome."
+    instances: [NI.CHAPTER.1584.01]
+    arcs_advanced: [ARC.CLAES.LIFE, ARC.CLAES.MACRO_TRANSMUTATION]
+
+  - id: H12
+    story_time: {earliest: '1584-01-01', latest_exclusive: '1602-03-14', precision: developmental}
+    label: "Mayken and the late road — conjunctio as recovery in relation"
+    cause: "Claes' analytical competence survives while embodied openness is constricted; Mayken's independent material mode continually contradicts disembodied certainty."
+    effect: "Sinne returns as resonance: perception, body, memory, relation and moral choice can coexist."
+    arcs_advanced: [ARC.CLAES.SINNE_RECOVERY, ARC.MAYKEN.LIFE]
+    relationship_projection: REL.CLAES.MAYKEN.CONJUNCTIO
+
+  - id: H13
+    story_time: {date: '1602-03-13', precision: day}
+    label: "Enkhuizen — Projectio of Matter"
+    cause: "The late Sol/Rode-Leeuw line reaches a materially witnessed test under the Morhof-framed Seton event."
+    effect: "The deeper test is whether Claes can understand material success without converting it into ownership, proof of self or total control."
+    arcs_advanced: [ARC.CLAES.MACRO_TRANSMUTATION, ARC.CLAES.GREAT_WORK.AUTHORIAL]
+
+  - id: H14
+    story_time: {earliest: '1602-03-13', precision: open-ended}
+    label: "Status Prima Nova — Projectio of Self"
+    cause: "Word and Matter have both passed beyond private possession."
+    effect: "Claes can perceive, distinguish, choose, carry and release without demanding that the world become safe, certain or owned."
+    arcs_advanced: [ARC.CLAES.GREAT_WORK.AUTHORIAL]
+
+  chapter_projection_rule:
+  - "Every future chapter should identify which hinge it serves or justify why a new hinge is necessary."
+  - "A chapter may activate multiple Corpus/Anima/Spiritus registers but must still have ordinary human causality."
+  - "World detail from Round B is selected because it creates pressure, choice, contrast or consequence — not because research exists."
+  - "Mayken's presence invokes ARC.MAYKEN.LIFE as well as the Claes relationship; she never exists only inside Claes' arc."
+  - "Open hinge H09 must remain visibly open until the author chooses the 1572–1579 causal model."

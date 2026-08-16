@@ -1,0 +1,58 @@
+schema_version: 1.0.0
+kind: CanonDecisionSupplement
+decisions:
+- id: DEC.CLAES.GREAT_WORK.AUTHORIAL_ARCHITECTURE.2026-08-16
+  type: CanonDecision
+  status: CANON
+  decision: "The deep author-side architecture of Claes' Great Work is Status Prima -> three interwoven registers Corpus, Anima and Spiritus -> Transmutatio/Rubedo -> Projectio -> Status Prima Nova. This architecture nests with, and does not replace, the operational Drager/Nigredo/Albedo/Rubedo/Projectio macro arc."
+  affects:
+  - ARC.CLAES.GREAT_WORK.AUTHORIAL
+  - ARC.CLAES.MACRO_TRANSMUTATION
+  - ARC.CLAES.LIFE
+  - ARC.CLAES.SINNE_RECOVERY
+  principles:
+  - "The author knows the Work; Claes undergoes it; the reader experiences it."
+  - "Solve et Coagula is an authorial movement of separation and renewed relation, not a slogan characters must repeat."
+  - "Corpus, Anima and Spiritus spiral through the same chronology; they are not three mechanically identical cycles or three successive books."
+  - "Material processes must remain causally real in the story; the alchemical architecture is not decorative allegory laid over unrelated events."
+  - "Status Prima Nova is not restoration of untouched childhood but a changed capacity for relation, discernment and release."
+  guardrails:
+  - No fixed seven-operation scheme is mandatory.
+  - No historical claim that all alchemists used this exact narrative architecture.
+  - No requirement that every scene receive an alchemical label in prose.
+  - Do not let symbolic interpretation override the actual chemistry, craft, politics, grief or human causality of a scene.
+
+- id: DEC.MAYKEN.INDEPENDENT_ARC.2026-08-16
+  type: CanonDecision
+  status: CANON
+  decision: "Mayken has an independent character arc and must function as an equal necessary other rather than as reward, therapist, decoder or auxiliary to Claes. Her own line grows from the Lampert material/apothecary world, the 1554 experience of destruction-with-rebuilding, trained sensory judgement and choices that can support, contradict or limit Claes."
+  affects:
+  - ARC.MAYKEN.LIFE
+  - REL.CLAES.BELOVED
+  - REL.CLAES.BELOVED.RECOVERY
+  - REL.CLAES.MAYKEN.CONJUNCTIO
+  principles:
+  - "Every developed Mayken scene must give her an objective, judgement or choice that is not reducible to Claes' immediate need."
+  - "Her competence is body/plants/material identification/measurement/error control, not hidden-order decoding."
+  - "Her different 1554 loss is a counter-memory: damaged material life can be worked and rebuilt."
+  - "Her late companionship may catalyse Claes' sensory recovery while she remains an acting subject with her own limits and decisions."
+  guardrails:
+  - Do not duplicate Claes' trauma biography.
+  - Do not give Mayken unsupported university, physician or later guild status.
+  - Do not make her a cipher/nomenclator/special-Dodoens key-holder.
+  - Exact mid-arc family pressure, professional independence and any kruidenvrouw trajectory remain authorial-design work under OPEN.MAYKEN.INDEPENDENT_MIDARC.001.
+
+- id: DEC.CLAES_MAYKEN.CONJUNCTIO.2026-08-16
+  type: CanonDecision
+  status: CANON
+  decision: "The mature Claes-Mayken relationship functions on the authorial level as conjunctio: two unlike modes of knowing and acting enter relation without one absorbing the other. Love matures from complementarity and collaborative risk toward relation without possession."
+  affects:
+  - REL.CLAES.MAYKEN.CONJUNCTIO
+  - REL.CLAES.BELOVED
+  - ARC.CLAES.SINNE_RECOVERY
+  - ARC.MAYKEN.LIFE
+  guardrails:
+  - Conjunctio is authorial architecture, not proof that the characters consciously name their relationship in alchemical terms.
+  - Mayken does not complete Claes' Great Work for him.
+  - Claes does not become whole by possessing Mayken.
+  - The relationship may contain disagreement, separate work and asymmetry of knowledge; harmony is not the same as sameness.
