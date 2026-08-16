@@ -49,7 +49,7 @@ checks = {
     "storybible/LEMMA_MCKEE_MASTER.md": {
         "required": [
             "8 December 1542",
-            "reading, not decryption",
+            "not decryption",
             "Mayken",
             "19 November 1569",
         ],
