@@ -1,0 +1,208 @@
+schema_version: "1.0.0"
+kind: HistoricalInformationEcology
+id: HIST.NEWS_ECOLOGY.CLAES.1548_1604
+status: AUTHORING_GUIDE
+scope:
+  start: 1548
+  end: 1604
+  protagonist: ENT.PERSON.CLAES
+  regions: [GOES, MIDDELBURG, ARNEMUIDEN, VLISSINGEN, VEERE, ANTWERP, ZEELAND_DELTA]
+source_ids:
+  - SRC-HIST-SMALLEGANGE-NIEUWE-CRONYK-ZEELAND-1696-001
+  - SRC-HIST-DBNL-HOGELANDE-NNBW-001
+  - SRC-HIST-ANTWERP-TIMESLICES-1561-1585-001
+  - SRC-HIST-BEER-LOWCOUNTRIES-GOES-001
+  - SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008
+  - SRC-CANON-NL-OPSTAND-2026
+principles:
+  - "News access is not the same as historical event knowledge."
+  - "Claes receives events through routes, materials, people, institutions, delays and absences."
+  - "Direct knowledge is strongest for Goes; route knowledge is strongest for Middelburg, harbour places and Antwerp."
+  - "Invisible decisions must remain invisible unless a specific access channel is established."
+  - "Event, perception, rumour, propaganda and later memory must remain separate."
+access_labels:
+  DIRECT_LOCAL: "Local event or local consequence in Goes, household, church, market, gilde, harbour or civic government."
+  DIRECT_ROUTE: "Event affects ordinary travel/education/trade routes: Goes, Middelburg, Arnemuiden, Vlissingen, Veere or Antwerp."
+  ROUTE_NEWS: "News carried by ships, merchants, students, soldiers, refugees, letters, vaten or books."
+  PRINTED_NEWS: "Placards, books, pamphlets, schoolbooks, chronicles, bans or printer networks."
+  RUMOUR: "Unstable oral report through herberg, harbour, market, gilde, ship, schoolyard or refugee channel."
+  DELAYED_EFFECT: "Cause may remain unknown; consequence is felt later in route, price, gate, tax, licence or absence."
+  INVISIBLE_CAUSE: "Council, court, royal, military or diplomatic decision probably not directly accessible."
+  RESTRICTED_ACCESS: "Learned, chymical, clandestine or diplomatic knowledge; requires explicit access path."
+routes:
+  goes:
+    access_strength: highest
+    channels: [household, biersteker_trade, market, church, school, rederijkers, magistracy, guilds, harbour, gates]
+  middelburg:
+    access_strength: high
+    channels: [school, bishopric, government, siege_memory, church, learned_reputation, later_chymical_resonance]
+  arnemuiden_vlissingen_veere:
+    access_strength: high_for_route_news
+    channels: [shipping, tolls, soldiers, foreign_sailors, merchants, refugees, harbour_regulation, naval_news]
+  antwerp:
+    access_strength: high_but_fragile
+    channels: [book_trade, printers, Dee_Silvius_network, Landjuweel_memory, repression, refugee_news, scheldt_control]
+  mayken_apothecary:
+    access_strength: restricted_independent
+    channels: [materia_medica, botanical_reading, substances, sensory_error_control, apothecary_network]
+events:
+  - id: NEWS.CLAES.POLITES.GOES_ANTWERP_LEUVEN.1548
+    date: 1548
+    places: [GOES, ANTWERP, LEUVEN]
+    access: [PRINTED_NEWS, ROUTE_NEWS]
+    certainty_for_claes: later_reputation
+    summary: "Joachim Polites of Goes is part of the Goes-Antwerp-Leuven learned reputation line."
+    scene_use: "Goes can imagine itself connected to Antwerp and learned Europe."
+    guardrails: ["Do not make this a direct childhood encounter without separate fiction decision."]
+  - id: NEWS.CLAES.REYGERSBERG.ANTWERP_PRINT.1551
+    date: 1551
+    places: [ZEELAND, ANTWERP]
+    access: [PRINTED_NEWS]
+    certainty_for_claes: probable_later_awareness
+    summary: "Reygersbergh's Zeeland chronicle is printed at Antwerp."
+    scene_use: "Supports Zeeland-Antwerp print traffic and book-world plausibility."
+  - id: NEWS.CLAES.MIDDELBURG_BISHOPRIC.1559_1561
+    date_start: 1559
+    date_end: 1561
+    places: [MIDDELBURG, GOES, ZEELAND]
+    access: [DIRECT_ROUTE, PRINTED_NEWS]
+    certainty_for_claes: high
+    summary: "Middelburg becomes bishopric in the Catholic reorganisation against kettery."
+    scene_use: "Middelburg is education, control, church hierarchy and later siege memory."
+  - id: NEWS.CLAES.LANDJUWEEL.ANTWERP.1561
+    date: 1561
+    places: [ANTWERP]
+    access: [DIRECT_ROUTE, ROUTE_NEWS]
+    certainty_for_claes: depends_on_scene
+    summary: "Antwerp Landjuweel/rederijker world."
+    scene_use: "Initiation into rhetoric, public ambiguity, printers and civic performance."
+    guardrails: ["Do not place Dee at the 1561 Landjuweel."]
+  - id: NEWS.CLAES.DEE_SILVIUS.FORMATION.1563_1564
+    date_start: 1563
+    date_end: 1564
+    places: [ANTWERP]
+    access: [RESTRICTED_ACCESS, PRINTED_NEWS]
+    certainty_for_claes: canon_if_scene_uses_current_formation
+    summary: "Dee/Silvius formation phase from current canon."
+    scene_use: "Books, signs, graphite/memoriaal and guarded knowledge become active."
+  - id: NEWS.CLAES.ICONOCLASM_ZEELAND.1566
+    date: 1566
+    places: [ZEELAND, MIDDELBURG, WALCHEREN, GOES]
+    access: [DIRECT_ROUTE, RUMOUR, PRINTED_NEWS]
+    certainty_for_claes: high_for_news_not_full_detail
+    summary: "Hagepreken and iconoclasm become public religious rupture."
+    scene_use: "Public religion becomes spatial and dangerous; sacred interiors become contested carriers."
+    guardrails: ["Do not assume direct iconoclastic attack in Goes without local evidence."]
+  - id: NEWS.CLAES.ALVA_REPRESSION.CORNELIS.1567_1569
+    date_start: 1567
+    date_end: 1569
+    places: [ANTWERP, MIDDELBURG, LOW_COUNTRIES]
+    access: [DIRECT_ROUTE, RESTRICTED_ACCESS, DELAYED_EFFECT]
+    certainty_for_claes: very_high_for_cornelis_story_claim
+    summary: "Alva, repression, arrests/examinations and Cornelis' canon execution in Antwerp."
+    scene_use: "Travel and book movement become legally and bodily dangerous."
+  - id: NEWS.CLAES.ALVA_PENNINGEN.ZEELAND.1571
+    date: 1571
+    places: [ZEELAND, GOES]
+    access: [DIRECT_LOCAL]
+    certainty_for_claes: high
+    summary: "Fiscal resistance against Alva intersects with urban trade and biersteker economy."
+    scene_use: "Tax, accijns, beer, transport and political freedom merge."
+  - id: NEWS.CLAES.ZEELAND_SHIFT.1572
+    date: 1572
+    places: [BRIELLE, VLISSINGEN, VEERE, GOES, ZEELAND_DELTA]
+    access: [ROUTE_NEWS, DIRECT_ROUTE]
+    certainty_for_claes: high
+    summary: "Den Briel, Vlissingen and Veere mark the Zeeland shift into open war geography."
+    scene_use: "The sea stops being neutral commerce and becomes war infrastructure."
+  - id: NEWS.CLAES.GOES_SIEGE_RELIEF.1572
+    date: 1572
+    places: [GOES]
+    access: [DIRECT_LOCAL]
+    certainty_for_claes: high_or_memory_if_absent
+    summary: "Royalist Goes is besieged and relieved."
+    scene_use: "Goes becomes contested political ground."
+    guardrails: ["Civilian chronology remains local research backlog."]
+  - id: NEWS.CLAES.MIDDELBURG_SIEGE.1572_1574
+    date_start: 1572
+    date_end: 1574
+    places: [MIDDELBURG, ARNEMUIDEN, ZEELAND_DELTA]
+    access: [DIRECT_ROUTE, ROUTE_NEWS]
+    certainty_for_claes: high
+    summary: "Middelburg is besieged and then surrenders."
+    scene_use: "Claes' school/chymical/regional city changes allegiance and meaning."
+  - id: NEWS.CLAES.REIMERSWAAL_NAVAL.1574
+    date: 1574
+    places: [REIMERSWAAL_AREA, ZEELAND_DELTA]
+    access: [ROUTE_NEWS]
+    certainty_for_claes: likely
+    summary: "Naval defeat near Reimerswaal cuts a key relief route toward Middelburg."
+    scene_use: "Waterways carry war outcomes."
+    guardrails: ["Do not relocate naval action into Reimerswaal streets."]
+  - id: NEWS.CLAES.SPANISH_FURY_PACIFICATION.1576
+    date: 1576
+    places: [ANTWERP, LOW_COUNTRIES, ZEELAND]
+    access: [ROUTE_NEWS, RUMOUR, PRINTED_NEWS, DELAYED_EFFECT]
+    certainty_for_claes: high_for_news_fragmentary
+    summary: "Spanish Fury and Pacification of Ghent reach Claes as trauma, settlement, propaganda and practical disruption."
+    scene_use: "Public settlement can declare forgetting without erasing material memory."
+    guardrails: ["Do not call this Smallegange-derived until exact chronicle locator exists."]
+  - id: NEWS.CLAES.GOES_SATISFACTION.1577
+    date: 1577-03
+    places: [GOES]
+    access: [DIRECT_LOCAL]
+    certainty_for_claes: very_high
+    summary: "Goes' satisfactie transfers political allegiance while initially protecting Catholic public worship."
+    scene_use: "Political allegiance and public confession diverge in Claes' own city."
+  - id: NEWS.CLAES.GOES_REFORMED_PREACHING.1578
+    date: 1578
+    places: [GOES]
+    access: [DIRECT_LOCAL]
+    certainty_for_claes: high
+    summary: "Reformed preaching pressure destabilises the 1577 Catholic-only arrangement."
+    scene_use: "Settlement slides into confessional reordering rather than flipping instantly."
+  - id: NEWS.CLAES.ORANGE_MURDER.1584
+    date: 1584
+    places: [DELFT, ZEELAND]
+    access: [ROUTE_NEWS, PRINTED_NEWS]
+    certainty_for_claes: high
+    summary: "William of Orange is murdered."
+    scene_use: "Political father-loss and moral bottom."
+  - id: NEWS.CLAES.ANTWERP_SCHELDT.1585
+    date: 1585
+    places: [ANTWERP, SCHELDT, LILLO, LIEFKENSHOEK, ZEELAND_DELTA]
+    access: [DIRECT_ROUTE, ROUTE_NEWS, DELAYED_EFFECT]
+    certainty_for_claes: high
+    summary: "Antwerp capitulates and Scheldt control/licents/migration transform access."
+    scene_use: "Antwerp becomes a wounded/former formative city; books, letters and people do not move as before."
+  - id: NEWS.CLAES.ZEELAND_FLANDERS_FRONTIER.1586_1604
+    date_start: 1586
+    date_end: 1604
+    places: [ZEELAND_FLANDERS, SLUIS, HULST, AXEL, ZEELAND_DELTA]
+    access: [ROUTE_NEWS, DELAYED_EFFECT]
+    certainty_for_claes: medium_to_high_depending_on_late_route
+    summary: "Frontier warfare, inundations, forts and Sluis/Hulst/Axel news shape late maritime war context."
+    scene_use: "Late Claes experiences war as controlled water, paperwork, licents, fortification and logistics."
+  - id: NEWS.CLAES.SETON.ENKHUIZEN.1602
+    date: 1602-03-13
+    places: [ENKHUIZEN]
+    access: [RESTRICTED_ACCESS]
+    certainty_for_claes: canon_late_projectio_if_scene_used
+    summary: "Seton frame belongs to late projectio architecture, not general news ecology."
+    scene_use: "Restricted late event, not public background knowledge."
+theobaldus_guardrail:
+  source_ids: [SRC-HIST-SMALLEGANGE-NIEUWE-CRONYK-ZEELAND-1696-001, SRC-HIST-DBNL-HOGELANDE-NNBW-001]
+  allowed:
+    - "later chymical reputation"
+    - "later contact, echo, comparator or younger counterpart"
+    - "evidence that Middelburg can carry chymical/intellectual resonance"
+  blocked:
+    - "Claes' childhood or pre-1570 master"
+    - "the reason for Claes' early Middelburg schooling"
+    - "back-projection of later printed reputation into Claes' youth"
+open_backlog:
+  - "Atomize exact Smallegange locators into Source Claims before promoting chronicle-derived claims."
+  - "Locate or fail-locate Smallegange passages for Spanish Fury and Antwerp 1585 capitulation."
+  - "Decide whether to split this model into formal narrative/knowledge_states records by period."
+  - "Cross-link with domain_scene_packs for beer, rederijkers, Antwerp and Reimerswaal."
+  - "Use access labels to refine OPEN.GOES.CLAES_DEPARTURE_1572_1579.001."
