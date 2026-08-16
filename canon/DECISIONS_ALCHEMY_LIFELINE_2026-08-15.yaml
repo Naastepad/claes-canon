@@ -1,4 +1,4 @@
-schema_version: 1.3.0
+schema_version: 1.3.1
 kind: CanonDecisionSupplement
 decisions:
 - id: DEC.CORNELIS.ROLE.POORTER_RED_BROUWER.2026-08-15
@@ -150,7 +150,8 @@ decisions:
 - id: DEC.ENKHUIZEN.SETON_FRAME.1602.2026-08-16
   type: CanonDecision
   status: CANON
-  decision: The novel anchors the 1602 projectio scene to Morhof's retrospective Seton tradition: Enkhuizen, the house of sailor Jacob Hausfsen, 13 March 1602, approximately the fourth hour after noon. These are chosen story-frame facts from a 1673 retrospective account, not contemporaneously verified event facts.
+  decision: >-
+    The novel anchors the 1602 projectio scene to Morhof's retrospective Seton tradition: Enkhuizen, the house of sailor Jacob Hausfsen, 13 March 1602, approximately the fourth hour after noon. These are chosen story-frame facts from a 1673 retrospective account, not contemporaneously verified event facts.
   fixed:
     date: '1602-03-13'
     time_approx: '16:00'

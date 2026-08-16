@@ -1,4 +1,4 @@
-schema_version: 1.5.0
+schema_version: 1.5.1
 kind: NarrativeRelationshipRegistry
 relationships:
 - id: REL.CLAES.CORNELIS
@@ -59,7 +59,7 @@ relationships:
   status: CANON
   story_time: {earliest: '1542-12-08', latest_exclusive: '1554-05-19', precision: bounded}
   value_state: embodied safety and practical knowing -> irreversible maternal loss
-  function: Tanneken is a primary source of Claes' pre-theoretical sensory education: heat, texture, smell, fermentation, illness, weather, cloth, food and household timing are known through body and practice before abstraction.
+  function: "Tanneken is a primary source of Claes' pre-theoretical sensory education: heat, texture, smell, fermentation, illness, weather, cloth, food and household timing are known through body and practice before abstraction."
   pregnancy_link: Claes may feel the unborn child move under Tanneken's skin, giving him an early benign experience of reality known without sight.
   guardrail: Do not idealize Tanneken into a mystical mother or learned herbalist; her knowledge is ordinary, practiced, material and relational.
   decision_id: DEC.CLAES.EXTENDED_FAMILY.2026-08-14
@@ -181,5 +181,5 @@ relationships:
   participants: [ENT.PERSON.CLAES, ENT.PERSON.RADERMACHER]
   status: OPEN
   possible_story_time: {earliest: '1599-01-01', latest_exclusive: '1603-01-01', precision: approximate}
-  function_if_used: late Rubedo social mirror: trade, books, religious caution and cross-border help in one network
+  function_if_used: "Late Rubedo social mirror: trade, books, religious caution and cross-border help in one network."
   guardrail: No unsupported formal Familist membership.

@@ -1,17 +1,9 @@
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: OpenDecisionSupplement
+policy:
+  scope: alchemical material and Enkhuizen scene design only
+  note: Cornelis deken status is maintained once in canon/OPEN_DECISIONS.yaml to avoid duplicate stable IDs.
 decisions:
-- id: OPEN.CORNELIS.REDERIJKER.DEKEN.001
-  domain: character_and_rederijker_network
-  priority: medium
-  question: Does Cornelis ever serve as deken of the Nardusbloem or of the emerging reform-minded Castanien current during his lifetime?
-  status: OPEN
-  fixed:
-  - Cornelis is a Nardusbloem member.
-  - Cornelis plays a formative fictional role in the 1560s origin of the later Edele Castanienbloem.
-  - No deken office is currently canon.
-  guardrails:
-  - Do not use deken status to justify access or logistics that are already supported by poorter, biersteker, rederijker and trust networks.
 - id: OPEN.ALCHEMY.RED_LION.CARRIER_COMPOSITION.001
   domain: alchemical_material_reconstruction
   priority: high
@@ -23,6 +15,7 @@ decisions:
   guardrails:
   - No carrier choice may introduce new gold after De dood van Sol.
   - Do not choose a composition merely for symbolic colour if it breaks period craft plausibility or the hidden-Sol conservation model.
+
 - id: OPEN.ALCHEMY.ENKHUIZEN_1602.ASSAY_DESIGN.001
   domain: alchemical_lifeline
   priority: high

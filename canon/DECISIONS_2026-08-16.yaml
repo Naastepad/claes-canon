@@ -1,30 +1,31 @@
-schema_version: 1.0.0
+schema_version: 1.0.1
 kind: CanonDecisionSupplement
 decisions:
 - id: DEC.BREVISIMA.ANTWERP_PRINT.1578.2026-08-16
   type: CanonDecision
   status: CANON
-  decision: The Brevisima textual mission reaches its public/material culmination in Antwerp in 1578 through printing. By 1602 this textual line is complete and must not be reopened through Alexander Seton or the Enkhuizen projectio.
+  decision: The Brevísima textual mission reaches its public/material culmination in Antwerp in 1578 through printing. By 1602 this textual line is complete and must not be reopened through Alexander Seton or the Enkhuizen projectio.
   affects:
-  - ARC.CLAES.TEXTUAL_TESTIMONY
-  - WORLD.ANTWERP_PRINT_NETWORK
-  - OBJ.BREVISIMA
+  - ARC.CLAES.MACRO_TRANSMUTATION
+  - NI.EVENT.PUBLICATION.1578.001
+  - OBJ.LASCASAS_PLAINTEXT
   - DEC.SETON.ENKHUIZEN_ALCHEMICAL_MIRROR.1602.2026-08-16
   fixed:
   - year: 1578
   - place: Antwerp
   - mode: printed publication / print event
   structural_function:
-  - 1578 is the projectio of the Word: dangerous testimony is multiplied and released into the world.
-  - The later 1602 alchemical projectio must answer a different question: what Claes does with material mastery, proof and power.
+  - '1578 is the projectio of the Word: dangerous testimony is multiplied and released into the world.'
+  - 'The later 1602 alchemical projectio answers a different question: what Claes does with material mastery, proof and power.'
   guardrails:
-  - Do not make Seton necessary for decoding, revealing, authenticating, printing or recovering the Brevisima.
-  - Do not postpone completion of the Brevisima line to Enkhuizen 1602.
+  - Do not make Seton necessary for decoding, revealing, authenticating, printing or recovering the Brevísima.
+  - Do not postpone completion of the Brevísima line to Enkhuizen 1602.
   - Exact printer, edition architecture, cover identity, distribution route and surviving-copy logic remain separately evidence-controlled unless already decided elsewhere.
+
 - id: DEC.SETON.ROLE.SEPARATED_FROM_BREVISIMA.2026-08-16
   type: CanonDecision
   status: CANON
-  decision: Seton's role is fully separated from the Brevisima and hidden-text line. He belongs exclusively to Claes' late alchemical and existential development.
+  decision: Seton's role is fully separated from the Brevísima and hidden-text line. He belongs exclusively to Claes' late alchemical and existential development.
   structural_parallel:
   - '1578: projectio of the Word — testimony is released through print.'
   - '1602: projectio of Matter — the Rode Leeuw is tested against Saturnus and apparent Sol becomes materially persuasive.'
