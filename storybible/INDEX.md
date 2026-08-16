@@ -10,6 +10,7 @@ Operational navigation for the current Claes Storybible.
 4. `../review/SYNC_STATUS.md` — synchronization status.
 5. `../review/CANON_CONFLICT_AUDIT_2026-08-16.md` — conflicts found and their resolution.
 6. `../review/HISTORICAL_SUBSTRATE_RECOVERY_2026-08-16.md` — recovered historical/worldbuilding layer and recovery boundaries.
+7. `../review/DOMAIN_REBUILD_ROUND_B_2026-08-16.md` — chapter-readiness rebuild for bread, beer, Reimerswaal, rederijkers/Landjuweel, Antwerp and schutterij/military practice.
 
 `LEMMA_MCKEE_MASTER_2026-08-13.md` is a dated legacy snapshot. It is retained for development history but is not current authoring authority.
 
@@ -44,6 +45,7 @@ Resolved/not-applicable records no longer remain mixed into the active open regi
 - `../claims/SOURCE_CLAIMS_ALCHEMY_2026-08-16.yaml` — Agricola/Norton/Ercker/Morhof-based refinement claims.
 - `../claims/SOURCE_CLAIMS_GOES_RELIGION_1577_1578.yaml` — recovered Goes 1577/1578 and Reimerswaal 1574 local history claims.
 - `../claims/SOURCE_CLAIMS_HISTORICAL_SUBSTRATE_RECOVERY_2026-08-16.yaml` — recovered Catholic Bible, sensory church, rederijker, information-ecology and layered-identity claims.
+- `../claims/SOURCE_CLAIMS_DOMAIN_REBUILD_2026-08-16.yaml` — Round-B atomic claims for food/craft, Reimerswaal school, Landjuweel, Antwerp print practice and schutterij/De Gheyn.
 
 ## Historical substrate / scene-world authority
 
@@ -65,6 +67,52 @@ Recovered provenance includes Wauters, Van Bruaene, Groenveld et al., Pollmann, 
 ### Writing-readiness rule
 
 A historical domain is not considered chapter-ready merely because a source or dossier exists. For a relevant place/year/person/activity the authoring layer should be able to retrieve: provenance/evidence status, time-valid world state, actors/actions, materials, sensory fields, character knowledge/access, local-versus-transfer boundary, explicit guardrails and scene consequences.
+
+## Chapter-ready practice domains — Round B
+
+These dossiers are the authoring-facing bridge from research to scene construction. Use them together with `../narrative/domain_scene_packs.yaml`.
+
+### Bread / grain / baking
+
+- `domains/BREAD_GRAIN_BAKING_1540_1602.md`
+- `../sources/SRC-HIST-BREAD-LOWCOUNTRIES-ZEELAND-001.md`
+- world: `WORLD.BREAD_GRAIN`
+- key boundary: urban professional bakery is a safer default than an invented household oven; exact Goese recipe, ferment, price and loaf weight remain open/local.
+
+### Beer / biersteker / brewery economy
+
+- `domains/BEER_BREWING_BEERSTEKER_1540_1580.md`
+- `../sources/SRC-HIST-BEER-LOWCOUNTRIES-GOES-001.md`
+- world: `WORLD.BEER_BREWING_DISTRIBUTION`
+- key boundary: Cornelis is a **biersteker**, not automatically brewer or Nissepad-brewery owner; no generic gruit or modern style taxonomy.
+
+### Reimerswaal / school / cost-pupil life
+
+- `domains/REIMERSWAAL_SCHOOL_1554_1561.md`
+- `../sources/SRC-HIST-REIMERSWAAL-SCHOOL-CITY-001.md`
+- world: `WORLD.REIMERSWAAL`
+- key boundary: durable historical school tradition is supported; Claes' exact 1554–1561 Latin curriculum, teacher/building and attendance are source-weighted novel reconstruction.
+
+### Rederijkers / Nardusbloem / Antwerp Landjuweel 1561
+
+- `domains/REDERIJKERS_LANDJUWEEL_1561.md`
+- `../sources/SRC-HIST-REDERIJKERS-LANDJUWEEL-1561-001.md`
+- `../sources/SRC-HIST-GOES-REDERIJKERS-001.md`
+- key boundary: Silvius 1562 anchors fourteen official Antwerp competitors; current evidence does **not** establish Goes as one of them. Cornelis' deken status remains open; factor/prince are not canon.
+
+### Antwerp time slices
+
+- `domains/ANTWERP_TIME_SLICES_1561_1585.md`
+- `../sources/SRC-HIST-ANTWERP-TIMESLICES-1561-1585-001.md`
+- world: `WORLD.ANTWERP`
+- required slices: 1561 theatre; 1563–64 book/workshop; 1566 broken image; 1567–69 surveillance/repression; 1576–78 wound/print release; 1585 transformed formative city.
+
+### Goes schutterij / military practice
+
+- `domains/SCHUTTERIJ_MILITARY_PRACTICE_1550_1607.md`
+- `../sources/SRC-HIST-GOES-SCHUTTERIJ-DEGHEYN-001.md`
+- world: `WORLD.SCHUTTERIJ_MILITARY`
+- key boundary: schuttersgilde, civic watch, garrison/professionals and later standardized drill are separate; local sources disagree on 1516 versus 1530 for Edele Busse/Sint Adriaan; De Gheyn 1607 is a late comparator, not a Goes-1572 manual.
 
 ## Story truth
 
@@ -131,6 +179,7 @@ A historical domain is not considered chapter-ready merely because a source or d
 - `../narrative/instances.yaml`
 - `../narrative/instances_executions_reformation.yaml`
 - `../narrative/instances_alchemy_rederijker_2026-08-16.yaml`
+- `../narrative/domain_scene_packs.yaml` — chapter-ready world/activity packets; these constrain possible scenes but do not create fiction automatically.
 - `../narrative/scenes.yaml`
 - `../narrative/structure.yaml`
 - `../narrative/motifs.yaml`
@@ -138,7 +187,7 @@ A historical domain is not considered chapter-ready merely because a source or d
 - `../narrative/CRAFT_GUARDRAILS.yaml`
 - `../narrative/religious_space_sensory_church.yaml`
 
-Important current limitation: `structure.yaml` still needs populated Book/Act/Sequence/Chapter/Beat hierarchy and `scenes.yaml` needs many more scene-level diagnostics. Bread, beer, Reimerswaal daily life/school, rederijker practice/Landjuweel, Antwerp time slices and military/schutterij practice also still require domain-to-scene rebuilding after the recovered substrate.
+Important current limitation: `structure.yaml` still needs populated Book/Act/Sequence/Chapter/Beat hierarchy and `scenes.yaml` needs many more scene-level diagnostics. Round B makes six previously thin world/practice domains chapter-ready; it does **not** yet turn them into fixed chapters or Narrative Instances.
 
 ## Objects
 
@@ -172,6 +221,7 @@ Key current rules:
 - `../review/MIGRATION_REVIEW.yaml` — historical migration audit; its old zero-conflict summary is not the current conflict assessment.
 - `../review/CANON_CONFLICT_AUDIT_2026-08-16.md` — current conflict assessment.
 - `../review/HISTORICAL_SUBSTRATE_RECOVERY_2026-08-16.md` — Round-A recovery audit.
+- `../review/DOMAIN_REBUILD_ROUND_B_2026-08-16.md` — Round-B domain readiness audit.
 - `../review/CHAT_COMMITMENT_AUDIT_2026-08-13.md` and addendum — recovered evidence of what earlier research work was actually completed.
 - `../review/SYNC_STATUS.md`
 
