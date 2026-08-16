@@ -1,0 +1,72 @@
+schema_version: 1.0.0
+kind: WorldModuleRegistry
+modules:
+- id: WORLD.GOES.CLERGY_1541_1564
+  label: "Goese parochiegeestelijkheid — Mathijs Jacopsen tot Clemens van den Dale"
+  canon_status: CANON
+  record_role: HISTORICAL_WORLD_AND_SCENE_BLOCKING
+  location_anchor: ENT.LOC.GOES
+  supported_by:
+  - SC.HIST.GOES.CLERGY.MATHIJS.VICE_PASTOOR_1541.001
+  - SC.HIST.GOES.CLERGY.MATHIJS.VICE_CUREYT_1542.001
+  - SC.HIST.GOES.CLERGY.MATHIJS.CHURCH_PROPERTY_1541_1542.001
+  - SC.RECON.GOES.CLERGY.MATHIJS.MARIA_MAGDALENA.001
+  - SC.HIST.GOES.CLERGY.CLEMENS.PASTOOR_1564.001
+  decisions:
+  - DEC.GOES.CLERGY.MATHIJS_VICE_CUREYT.2026-08-16
+  - DEC.GOES.CLERGY.CLEMENS_VAN_DEN_DALE.2026-08-16
+  - DEC.GOES.CLERGY.SUCCESSION_BOUNDARY.2026-08-16
+
+  purpose: >-
+    Supply named, evidence-bounded clergy for the Catholic Goese world without inventing incumbencies, baptisms or residence.
+
+  time_slices:
+    '1541-03-14':
+      person: ENT.PERSON.MATHIJS_JACOPSEN_VICE_CUREIT
+      attested_role: vice_pastoor
+      certainty: VERIFIED
+    '1541-06-27':
+      person: ENT.PERSON.MATHIJS_JACOPSEN_VICE_CUREIT
+      event: buys_house_at_kerkhof
+      certainty: VERIFIED
+      spatial_guardrail: ownership_not_residence
+    '1542-01-23':
+      person: ENT.PERSON.MATHIJS_JACOPSEN_VICE_CUREIT
+      attested_role: pastoor
+      event: sells_house_behind_choir_of_church
+      certainty: VERIFIED
+    '1542-02-27':
+      person: ENT.PERSON.MATHIJS_JACOPSEN_VICE_CUREIT
+      attested_role: vice_cureit_ter_goes
+      certainty: VERIFIED
+      note: strongest direct local office anchor
+    '1542-12-08':
+      event: claes_birth
+      exact_goes_office_holder: UNKNOWN
+      guardrail: Mathijs must not be projected automatically from February to December
+    '1564-03-20':
+      person: ENT.PERSON.CLEMENS_VAN_DEN_DALE
+      attested_role: licentiaat_pastoor_goes
+      certainty: VERIFIED
+
+  church_context:
+    primary_environment: ENT.LOC.GOES_GROTE_KERK
+    historical_identification: Maria_Magdalena_parish_context
+    certainty: SUPPORTED
+    guardrail: >-
+      The 27 February 1542 act itself says vice-cureyt ter Goes, not vice-cureyt of Maria Magdalena.
+
+  spatial_evidence:
+    mathijs:
+    - {date: '1541-06-27', relation: BUYS, place_description: 'aan het kerkhof'}
+    - {date: '1542-01-23', relation: SELLS, place_description: 'achter het koor van de kerk'}
+    - {date: '1542-02-27', relation: BUYS, place_description: 'Zuideinde bij Handbogenhof'}
+    rule: >-
+      These transactions locate Mathijs in the property network and institutional geography; they do not prove where he slept or maintained a parsonage.
+
+  scene_guardrails:
+  - Use Mathijs as a named real priest only when scene chronology fits the attested window or new evidence extends it.
+  - Never write `Mathijs baptized Claes` as fact under current canon.
+  - Do not invent the complete 1542–1563 succession.
+  - Clemens is available as a documented 1564 institutional figure but is not automatically known personally to Claes.
+  - If a scene requires the exact celebrant on 8 December 1542, the answer remains unknown until additional benefice/collation evidence is found.
