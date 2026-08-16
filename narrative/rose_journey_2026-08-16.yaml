@@ -1,4 +1,4 @@
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: NarrativeMotifExtension
 records:
 - id: MOTIF.ROSES.FIDES_SPES_CARITAS
@@ -8,6 +8,7 @@ records:
   decision_ids:
   - DEC.CLAES.ROSE_JOURNEY.2026-08-16
   - DEC.MAYKEN.ROSE_MATERIA_MEDICA.2026-08-16
+  - DEC.CLAES.ROSE_JOURNEY.HOORN_FIRE_1602.2026-08-16
   linked_arcs:
   - ARC.CLAES.SINNE_RECOVERY
   - ARC.CLAES.LIFE
@@ -46,23 +47,48 @@ records:
   - Avoid modern Latin-binomial dialogue unless narratively justified; species names are principally author-side controls.
   - Care scenes require pain, uncertainty, labour and limits; no magical healing beat.
 
-- id: NI.OPEN.NORTH_HOLLAND.FIRE_CARE
-  type: NarrativeHingeProposal
-  label: Northern fire-care culmination of the rose motif
-  status: OPEN_RESEARCH_DEPENDENCY
-  target_period: "late arc before or around Enkhuizen 1602, exact placement open"
+- id: NI.HOORN.GEERTRUID_FIRE_CARE.1602
+  type: NarrativeHinge
+  label: Hoorn 1602 — fire-care culmination of the Tocht der Rozen
+  status: CANON_WITH_EVIDENCE_BOUNDARIES
+  decision_id: DEC.CLAES.ROSE_JOURNEY.HOORN_FIRE_1602.2026-08-16
+  story_time:
+    earliest: '1602-06-01'
+    latest_exclusive: '1602-07-01'
+    precision: month
+  location: Hoorn
+  historical_anchor:
+    event: "In June 1602 a severe night fire broke out in the church of the former Sint-Geertruidenklooster in Hoorn; citizens fought the fire and succeeded in checking/extinguishing it."
+    source_note: "Anchor derived from the Hoorn chronicle tradition discussed in research; retain exact victim/injury counts as unknown unless separately sourced."
+    evidence_boundary:
+    - "Do not invent a documented death toll or documented number of burn casualties."
+    - "Do not state as historical fact that Claes, Mayken or named fictional casualties were present."
+    - "Burns, smoke irritation, falls, cuts and exhaustion among fictional helpers are plausible scene-level reconstruction, not documented event facts."
   participants:
   - ENT.PERSON.CLAES
   - ENT.PERSON.BELOVED
   required_story_functions:
-  - make Mayken's materia-medica expertise causally useful
-  - force Claes from perception into timely action
+  - make Mayken's materia-medica expertise causally useful without turning it into miracle medicine
+  - force Claes from perception into timely embodied action
   - transform romantic love into caritas toward a third party
-  - reactivate fire memory without merely repeating the 1554 trauma scene
+  - reactivate Claes' 1554 fire memory while reversing his relation to fire: from helpless loss/control to responsible assistance
   - preserve uncertainty of outcome and early-modern therapeutic limits
-  research_gate:
-    need: "Select a documented North-Holland/West-Friesland fire, fire aftermath, shipboard burn incident, or other historically anchored setting compatible with route and chronology."
-    rejected_shortcuts:
-    - "Hoorn 1572 major city fire — unsupported and may not be used."
-    - "Egmond Abbey simply burned down on 7 June 1573 — contradicted by the currently adopted evidence boundary; distinguish demolition of the abbey from burning of other Egmond buildings."
-  outcome_gate: "A striking recovery may be experienced by characters as providential or wonder-like, but the narrative may not assert that rose treatment medically caused a miraculous cure."
+  rose_culmination:
+    plant: Rosa gallica/officinalis
+    use: "Mayken may employ historically plausible rose-based wound-care preparations as one component of broader early-modern care."
+    meaning: "The medicinal rose completes the author-side movement from love as relation to love enacted as care."
+    prohibition: "Never claim that rose treatment cures severe inhalation injury, prevents infection reliably, or uniquely succeeds where all local medicine fails."
+  claes_mirror:
+    1554_goes: "Fire destroys home and family; Claes is a child acted upon by catastrophe."
+    1602_hoorn: "Fire returns; Claes is an adult who can remain present, assist Mayken and serve injured strangers without pretending to master the outcome."
+    value_shift: "fire as traumatic loss/control problem -> fire as occasion for presence, responsibility and caritas"
+  mayken_function:
+    rule: "Mayken leads within her material competence and must make at least one consequential judgement about what to use, what not to use, or when care exceeds what she can safely promise."
+    anti_instrumentalization: "Her work is not merely a device for Claes' healing; the injured person's need and Mayken's own professional/moral agency remain real scene objectives."
+  setting_resonance:
+    note: "The former convent setting allows old religious material culture, post-Reformation Hoorn and emerging mercantile/VOC-era Hoorn to occupy the same urban moment without forcing an explanatory speech."
+  outcome_gate: "A striking recovery may be experienced by characters as providential or wonder-like, but narration may not assert a miraculous causal efficacy of the rose preparation."
+  rejected_alternatives:
+  - "Hoorn 1572 major city fire — unsupported."
+  - "Egmond Abbey simply burned down on 7 June 1573 — do not use; distinguish systematic abbey demolition from documented burning of other Egmond buildings."
+  - "Hoorn shipboard powder fire 1603 — historically attractive but outside the preferred 1602 culmination and therefore retained only as background research unless chronology changes."
