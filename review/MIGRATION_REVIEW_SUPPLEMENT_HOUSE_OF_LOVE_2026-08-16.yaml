@@ -1,0 +1,36 @@
+schema_version: 1.0.0
+kind: MigrationReviewSupplement
+purpose: Classify the Cornelis Huis der Liefde network Story Claims explicitly approved and added on 16 August 2026.
+records:
+- claim_id: STC.CORNELIS.HOUSE_OF_LOVE.ENTRY.1552_1553.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicit author-approved canon decision placing Cornelis in the translocal Huis der Liefde by ca.1552-1553 while preserving outward public life in Goes.
+- claim_id: STC.CORNELIS.GHYSBRECHT.TRUSTED_COMMERCIAL_RELATION.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicit novel relationship built on the verified Antwerp-cooper archival anchor; the commercial relation to fictional Cornelis remains reconstruction.
+- claim_id: STC.CORNELIS.GHYSBRECHT_TO_DENS.BRIDGE.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicit author-approved fictional bridge; no historical Ghysbrecht-Dens relation or Ghysbrecht Familist membership is claimed.
+- claim_id: STC.CORNELIS.DENS.FIRST_IDENTIFIABLE_FAMILIST.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicit author-approved story role for historical early follower Adriaan Dens as Cornelis' first knowingly identifiable Familist.
+- claim_id: STC.CORNELIS.BARREFELT.DEEPENING.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicit author-approved novel encounter using Barrefelt's historically supported distributor/Antwerp-network role as the affiliation deepener.
+- claim_id: STC.CORNELIS.FIRE1554.TESTS_PREEXISTING_FAITH.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicit author decision that the 1554 fire tests an affiliation already present and must not become Cornelis' conversion cause.
+- claim_id: STC.CORNELIS.PLANTIN.LATER_NODE.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicit author decision retaining Plantin as a later print/distribution node rather than Cornelis' converter, with historiographical caution preserved.
+- claim_id: STC.CORNELIS.LOGISTICS.BEER_TO_PAPER.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicit author decision that Cornelis' book/paper route develops from beer-trade logistics without automatically placing books inside beer casks.
