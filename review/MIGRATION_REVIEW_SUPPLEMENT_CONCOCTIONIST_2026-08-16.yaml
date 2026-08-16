@@ -1,0 +1,12 @@
+schema_version: 1.0.0
+kind: MigrationReviewSupplement
+purpose: Classify the Dee/concoctionist Story Claims explicitly approved by the author on 16 August 2026.
+records:
+- claim_id: STC.DEE.CORNELIS.CONCOCTION_JOKE.1563.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicit author-approved scene beat for Claes' first encounter with Dee; the semantic mismatch is intentional and the exact spoken word remains constrained by period-language guardrails.
+- claim_id: STC.CLAES.MAYKEN.CONCOCTIONIST_CALLBACK.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicit author-approved long-range motif linking Cornelis' practical network craft, Mayken's independent apothecary compounding and Claes' mature understanding of proportion and relation without collapsing their distinct roles.
