@@ -59,3 +59,19 @@ motifs:
   status: CANON_CONTEXT
   function: independent botanical, family-memory and later Castanienbloem/Nissepat resonance; no longer a Brevísima recovery key or authentication step
   guardrail: do not restore the deprecated Castanea cipher/key-anchor function without an explicit new decision
+- id: MOTIF.CONCOCTIONIST
+  label: concoctionist
+  status: CANON
+  function: >-
+    Long-range verbal callback beginning as Dee's learned, deliberately inaccurate joke about Cornelis' occupation as biersteker and maturing into a description of Claes' and Mayken's joint capacity to bring substances, observations and relations into the right proportion without confusing mixture with mastery.
+  progression:
+  - 'first Dee encounter, ca.1563: biersteker is playfully overtranslated into the semantic field of concoction/compounding'
+  - 'Cornelis: combines routes, casks, credit, people and trust rather than medicinal substances'
+  - 'Mayken: materially closest to literal compounding through apothecary preparation, weighing, extraction and materia medica'
+  - 'Claes: learns to combine material process with judgement, relation and responsibility'
+  - 'mature callback: right relation and proportion matter more than brute force or possession'
+  guardrails:
+  - "'Concoctionist' is the author-side motif label; do not require Dee to utter that exact English noun unless a period attestation is separately established."
+  - "Dee's joke is intentionally not an accurate lexical translation of biersteker."
+  - 'Do not turn Cornelis into an apothecary, physician or alchemist because of the joke.'
+  - 'Do not reduce Mayken to an ingredient, assistant or symbolic completion of Claes; her practical knowledge and agency remain independent.'
