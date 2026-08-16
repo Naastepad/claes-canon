@@ -62,28 +62,28 @@ checks = {
         "forbidden": [],
     },
     "storybible/domains/BREAD_GRAIN_BAKING_1540_1602.md": {
-        "required": ["professional urban bakery", "one dominant field + one counter-sense + one inference", "No modern recipe precision"],
-        "forbidden": ["exact Celsius temperatures"],
+        "required": ["professional urban bakery", "one dominant field + one counter-sense + one inference", "exact Celsius temperatures", "A proposed youth bakery scene remains an authorial scene choice"],
+        "forbidden": ["Use a fixed modern recipe"],
     },
     "storybible/domains/BEER_BREWING_BEERSTEKER_1540_1580.md": {
-        "required": ["Cornelis is a **biersteker**", "not canonically the brewer", "Do not write sixteenth-century Goes as if all beer is still generic medieval gruit ale"],
-        "forbidden": ["Cornelis is a brewer"],
+        "required": ["Cornelis is a **biersteker**", "**not** canonically the brewer", "generic medieval gruit ale", "Nissepad brewery relationship"],
+        "forbidden": ["Cornelis is canonically the brewer", "Cornelis owns the Nissepad brewery"],
     },
     "storybible/domains/REIMERSWAAL_SCHOOL_1554_1561.md": {
-        "required": ["living city that knows it is vulnerable", "school tradition before 1296", "Exact 1554 Latin curriculum = story reconstruction", "No seven-year beginner curriculum"],
-        "forbidden": ["abandoned ruin in 1554"],
+        "required": ["living city that knows it is vulnerable", "school tradition before 1296", "story reconstruction grounded in durable school infrastructure", "No seven-year beginner curriculum"],
+        "forbidden": ["Reimerswaal is an abandoned ruin in 1554", "seven years of beginner Latin"],
     },
     "storybible/domains/REDERIJKERS_LANDJUWEEL_1561.md": {
-        "required": ["fourteen official Brabantine competing chambers", "no current proof of a Goese chamber among the fourteen official competitors", "Dee is not in this 1561 story visit"],
-        "forbidden": ["Cornelis, factor van de Nardusbloem", "Goes won"],
+        "required": ["fourteen official competitors", "no current proof of a Goese chamber among the fourteen official competitors", "Dee is not in this 1561 story visit", "factor/prince are not current canon"],
+        "forbidden": ["Cornelis is factor van de Nardusbloem", "Goes is an official competing chamber in 1561"],
     },
     "storybible/domains/ANTWERP_TIME_SLICES_1561_1585.md": {
-        "required": ["1561: CITY AS THEATRE", "1563–early 1564: CITY AS BOOK / WORKSHOP", "1566: CITY AS BROKEN IMAGE", "1567–19 November 1569: CITY AS SURVEILLANCE / REPRESSION", "1576–1578: CITY AS WOUND / PRINT RELEASE", "1585: CITY AS TRANSFORMED FORMATIVE PLACE"],
-        "forbidden": ["one timeless Antwerp ambience"],
+        "required": ["1561: CITY AS THEATRE", "1563–early 1564: CITY AS BOOK / WORKSHOP", "1566: CITY AS BROKEN IMAGE", "1567–19 November 1569: CITY AS SURVEILLANCE / REPRESSION", "1576–1578: CITY AS WOUND / PRINT RELEASE", "1585: CITY AS TRANSFORMED FORMATIVE PLACE", "Never write"],
+        "forbidden": ["Antwerp remains unchanged from 1561 to 1585"],
     },
     "storybible/domains/SCHUTTERIJ_MILITARY_PRACTICE_1550_1607.md": {
-        "required": ["1516", "1530", "De Gheyn 1607", "not a 1572 Goes drill manual", "schuttersgilde", "garrison/professional troops"],
-        "forbidden": ["twelve apostles/furket/exact one-shot-per-minute as automatic 1572"],
+        "required": ["1516", "1530", "De Gheyn 1607", "1572 Goes drill manual", "schuttersgilde", "garrison/professional troops", "twelve apostles/furket/exact one-shot-per-minute"],
+        "forbidden": ["De Gheyn 1607 proves Goes 1572 drill", "Edele Busse founded in 1516 as settled canon", "Edele Busse founded in 1530 as settled canon"],
     },
     "claims/SOURCE_CLAIMS_DOMAIN_REBUILD_2026-08-16.yaml": {
         "required": ["SC.HIST.REIMERSWAAL.SCHOOL.CONTINUITY.001", "SC.HIST.LANDJUWEEL.ANTWERP.14_CHAMBERS.1561.001", "SC.HIST.LANDJUWEEL.GOES_PARTICIPATION.1561.001", "SC.HIST.GOES.SCHUTTERIJ.FIREARM_GUILD.16C.001", "SC.HIST.DEGHEYN.WAPENHANDELINGHE.1607.001"],
