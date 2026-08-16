@@ -16,16 +16,21 @@ records:
   - DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14
   - DEC.MAYKEN.INDEPENDENT_ARC.2026-08-16
   - DEC.CLAES_MAYKEN.CONJUNCTIO.2026-08-16
-  story_function: "On the road toward Enkhuizen, Claes and Mayken's companionship catalyses Claes' rediscovery of the sinne while Mayken remains an independently motivated adult whose own material judgement, work and limits continue to matter."
+  - DEC.CLAES.ROSE_JOURNEY.2026-08-16
+  - DEC.MAYKEN.ROSE_MATERIA_MEDICA.2026-08-16
+  story_function: "On the road toward Enkhuizen, Claes and Mayken's companionship catalyses Claes' rediscovery of the sinne while Mayken remains an independently motivated adult whose own material judgement, work and limits continue to matter. The author-side Tocht der Rozen may make this recovery sensorially recurrent: trust/faith at departure, hope in the duration of travel, and love becoming caritas through concrete responsibility toward another person."
   boundaries:
   - "Mayken accompanies and catalyses; she does not solve or perform Claes' inner transformation for him."
   - "Her identity is fixed. What remains open is the exact mid-arc family/work trajectory and some relationship chronology, not who she is."
   - "Love matures toward relation without possession."
   - "Mayken must retain an objective, judgement or cost of her own in developed scenes."
+  - "The rose symbolism remains author-side and must be dramatized rather than explained."
+  - "Rose-based care must remain historically bounded and may not function as miraculous modern medicine."
   arc: ARC.CLAES.SINNE_RECOVERY
   counterpart_arc: ARC.MAYKEN.LIFE
   relationship_projection: REL.CLAES.MAYKEN.CONJUNCTIO
   authorial_architecture: ARC.CLAES.GREAT_WORK.AUTHORIAL
+  motif_projection: MOTIF.ROSES.FIDES_SPES_CARITAS
   location_anchor: ENT.LOC.ENKHUIZEN
   ko_targets:
   - KO.RELATIONSHIP
