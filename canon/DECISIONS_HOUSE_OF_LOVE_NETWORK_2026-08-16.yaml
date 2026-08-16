@@ -29,7 +29,7 @@ decisions:
     Cornelis' Familist/Huis der Liefde affiliation precedes the Goes fire of 18 May 1554. The fire tests, strains and deepens an already existing conviction; it does not cause his conversion and must not be written as a simple grief-to-sect origin story.
   affects:
   - ENT.PERSON.CORNELIS
-  - NI.GOES.FIRE.1554
+  - Goes_fire_18_May_1554
   - storybible/FAMILY_CLAES_1542_1554.md
   guardrails:
   - Cornelis must not discover the Huis der Liefde only because Tanneken, Jan and the unborn child die.
