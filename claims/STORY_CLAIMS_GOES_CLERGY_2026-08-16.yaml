@@ -1,0 +1,63 @@
+schema_version: 1.0.0
+kind: StoryClaimSupplement
+claims:
+- id: STC.GOES.CLERGY.MATHIJS_EARLY_WORLD.001
+  type: StoryClaim
+  statement: >-
+    Mathijs Jacopsen/Jacobsen is the named historical clergy anchor for the Catholic Goese church world immediately preceding and entering Claes' birth year: he is documented as vice-pastoor in 1541 and as vice-cureit of Goes on 27 February 1542.
+  canon_status: CANON
+  evidence_status: VERIFIED
+  decision_ids:
+  - DEC.GOES.CLERGY.MATHIJS_VICE_CUREYT.2026-08-16
+  subjects:
+  - ENT.PERSON.MATHIJS_JACOPSEN_VICE_CUREIT
+  objects:
+  - ENT.LOC.GOES
+  - ENT.LOC.GOES_GROTE_KERK
+  source_refs:
+  - SC.HIST.GOES.CLERGY.MATHIJS.VICE_PASTOOR_1541.001
+  - SC.HIST.GOES.CLERGY.MATHIJS.VICE_CUREYT_1542.001
+  story_time:
+    earliest: '1541-03-14'
+    latest_exclusive: '1542-02-28'
+    precision: documented-points
+  guardrails:
+  - Do not assert that Mathijs still held the office on 8 December 1542 without new evidence.
+  - Do not assert that Mathijs baptized Claes.
+  - A scene may use him as a real historical priest only within the evidence-bounded Goese clergy environment or with later separately justified chronology.
+
+- id: STC.GOES.CLERGY.MATHIJS_MAGDALENA_CONTEXT.001
+  type: StoryClaim
+  statement: >-
+    For scene blocking, Mathijs' Goese vice-cureit role is associated with the Maria Magdalena parish/church environment, while the project preserves that this identification is contextual rather than literally named in the decisive 27 February 1542 act.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  decision_ids:
+  - DEC.GOES.CLERGY.MATHIJS_VICE_CUREYT.2026-08-16
+  subjects:
+  - ENT.PERSON.MATHIJS_JACOPSEN_VICE_CUREIT
+  objects:
+  - ENT.LOC.GOES_GROTE_KERK
+  source_refs:
+  - SC.RECON.GOES.CLERGY.MATHIJS.MARIA_MAGDALENA.001
+  - SC.HIST.GOES.CLERGY.MATHIJS.CHURCH_PROPERTY_1541_1542.001
+
+- id: STC.GOES.CLERGY.CLEMENS_1564.001
+  type: StoryClaim
+  statement: >-
+    Clemens van den Dale is a documented later Goese clergy anchor: on 20 March 1564 he is explicitly titled licentiaat pastoor Goes.
+  canon_status: CANON
+  evidence_status: VERIFIED
+  decision_ids:
+  - DEC.GOES.CLERGY.CLEMENS_VAN_DEN_DALE.2026-08-16
+  subjects:
+  - ENT.PERSON.CLEMENS_VAN_DEN_DALE
+  objects:
+  - ENT.LOC.GOES
+  source_refs:
+  - SC.HIST.GOES.CLERGY.CLEMENS.PASTOOR_1564.001
+  story_time:
+    date: '1564-03-20'
+    precision: day
+  guardrail: >-
+    This historical world-state does not by itself establish a personal meeting with Claes.
