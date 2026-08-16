@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths-ignore:
       - 'prompts/CLAUDE_CONTEXT_PACK.md'
+      - 'prompts/CLAUDE_CONTEXT_INDEX.md'
+      - 'prompts/CLAUDE_CONTEXT_*.md'
   workflow_dispatch:
 
 permissions:
@@ -18,17 +20,17 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Generate self-contained Claude context pack
+      - name: Generate Claude context packs
         run: python scripts/generate_claude_context_pack.py
 
-      - name: Commit generated pack when changed
+      - name: Commit generated packs when changed
         run: |
-          if git diff --quiet -- prompts/CLAUDE_CONTEXT_PACK.md && git ls-files --error-unmatch prompts/CLAUDE_CONTEXT_PACK.md >/dev/null 2>&1; then
-            echo 'Claude context pack already current.'
+          if git diff --quiet -- prompts/CLAUDE_CONTEXT*.md && git ls-files --error-unmatch prompts/CLAUDE_CONTEXT_INDEX.md >/dev/null 2>&1; then
+            echo 'Claude context packs already current.'
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add prompts/CLAUDE_CONTEXT_PACK.md
-          git commit -m 'Regenerate Claude context pack [skip ci]'
+          git add prompts/CLAUDE_CONTEXT*.md
+          git commit -m 'Regenerate Claude context packs [skip ci]'
           git push
