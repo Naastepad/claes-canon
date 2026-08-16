@@ -1,0 +1,112 @@
+schema_version: 1.0.0
+kind: SourceClaimRegistryExtension
+claims:
+- id: SC.HIST.DEGHEYN.DRILL.NUMBERED_COMMAND_SYSTEM.001
+  type: SourceClaim
+  statement: >-
+    De Gheyn's 1607 Wapenhandelinghe couples numbered figures to detailed written instructions and to an explicit ordered list of 'woorden van commandement'; it is therefore a visual-verbal drill system rather than a set of uncaptioned military illustrations.
+  claim_type: primary_source_structure
+  subject: OBJ.DEGHEYN.WAPENHANDELINGHE.1607
+  predicate: combines
+  object: numbered_figures_written_instruction_command_words
+  evidence_status: VERIFIED
+  source_ids: [SRC-HIST-DEGHEYN-WAPENHANDELINGHE-1607-001]
+
+- id: SC.HIST.DEGHEYN.ROER.42.001
+  type: SourceClaim
+  statement: >-
+    The roer/schutten sequence contains 42 corresponding figures and commands.
+  claim_type: primary_source_count
+  subject: OBJ.DEGHEYN.WAPENHANDELINGHE.1607.ROER
+  predicate: figure_command_count
+  object: 42
+  evidence_status: VERIFIED
+  source_ids: [SRC-HIST-DEGHEYN-WAPENHANDELINGHE-1607-001]
+
+- id: SC.HIST.DEGHEYN.MUSQUET.43.001
+  type: SourceClaim
+  statement: >-
+    The musquetier sequence contains 43 corresponding figures and commands and explicitly integrates handling of the musket together with the furquet.
+  claim_type: primary_source_count
+  subject: OBJ.DEGHEYN.WAPENHANDELINGHE.1607.MUSQUET
+  predicate: figure_command_count
+  object: 43
+  evidence_status: VERIFIED
+  source_ids: [SRC-HIST-DEGHEYN-WAPENHANDELINGHE-1607-001]
+
+- id: SC.HIST.DEGHEYN.SPIES.32.001
+  type: SourceClaim
+  statement: >-
+    The spiesdrager/pike sequence is a separate weapon-specific drill of 32 figures and commands.
+  claim_type: primary_source_count
+  subject: OBJ.DEGHEYN.WAPENHANDELINGHE.1607.SPIES
+  predicate: figure_command_count
+  object: 32
+  evidence_status: VERIFIED
+  source_ids: [SRC-HIST-DEGHEYN-WAPENHANDELINGHE-1607-001]
+
+- id: SC.HIST.DEGHEYN.COMMAND_WORDS.NOT_NUMBERS.001
+  type: SourceClaim
+  statement: >-
+    In the source, the numbered figures index the corresponding explanations while the separate 'woorden van commandement' provide the verbal orders. The source does not establish that an officer's operational command consisted merely of shouting a figure number such as 'Ten achtste'.
+  claim_type: interpretation_guardrail
+  subject: OBJ.DEGHEYN.WAPENHANDELINGHE.1607
+  predicate: command_language_guardrail
+  object: use_command_phrases_not_unproven_number_calls
+  evidence_status: VERIFIED
+  source_ids: [SRC-HIST-DEGHEYN-WAPENHANDELINGHE-1607-001]
+
+- id: SC.HIST.DEGHEYN.FIGURE8.MATCH.001
+  type: SourceClaim
+  statement: >-
+    In the roer sequence figure/command 8 is 'U lont versoect' (English 1607: 'Try your match'): the soldier checks and adjusts the match so that it will function correctly.
+  claim_type: primary_source_detail
+  subject: OBJ.DEGHEYN.WAPENHANDELINGHE.1607.ROER.FIGURE8
+  predicate: action
+  object: try_and_adjust_match
+  evidence_status: VERIFIED
+  source_ids: [SRC-HIST-DEGHEYN-WAPENHANDELINGHE-1607-001]
+
+- id: SC.HIST.DEGHEYN.GEEFT_ACHT.NOT_FROM_STEP8.001
+  type: SourceClaim
+  statement: >-
+    Nothing in the De Gheyn source supports deriving the military expression 'geeft acht' from the eighth drill figure; the numeric association is to be treated as rejected speculation unless independent linguistic evidence establishes it.
+  claim_type: rejected_inference
+  subject: TERM.GEEFT_ACHT
+  predicate: not_derived_by_this_source_from
+  object: OBJ.DEGHEYN.WAPENHANDELINGHE.1607.ROER.FIGURE8
+  evidence_status: VERIFIED_AS_SOURCE_BOUNDARY
+  source_ids: [SRC-HIST-DEGHEYN-WAPENHANDELINGHE-1607-001]
+
+- id: SC.HIST.DEGHEYN.FIRE_RELOAD_CYCLE.001
+  type: SourceClaim
+  statement: >-
+    De Gheyn presents the firearm drill as a cycle beginning from a prepared weapon: match handling and presentation precede firing; after the shot the pan is made safe and primed, after which the main barrel is reloaded and the weapon returns to carry/readiness.
+  claim_type: primary_source_process
+  subject: OBJ.DEGHEYN.WAPENHANDELINGHE.1607.ROER
+  predicate: sequence_logic
+  object: prepared_weapon_to_fire_to_prime_to_reload_to_readiness
+  evidence_status: VERIFIED
+  source_ids: [SRC-HIST-DEGHEYN-WAPENHANDELINGHE-1607-001]
+
+- id: SC.HIST.DEGHEYN.PRIMING_FLASK.001
+  type: SourceClaim
+  statement: >-
+    De Gheyn explicitly distinguishes a small flask with priming/touch powder for the pan from the flask or measured charges used for the main load.
+  claim_type: primary_source_material_culture
+  subject: OBJ.DEGHEYN.WAPENHANDELINGHE.1607.FIREARM_KIT
+  predicate: distinguishes
+  object: priming_flask_from_main_charge_container
+  evidence_status: VERIFIED
+  source_ids: [SRC-HIST-DEGHEYN-WAPENHANDELINGHE-1607-001]
+
+- id: SC.HIST.DEGHEYN.GOES_MODEL_NOT_PROVEN.001
+  type: SourceClaim
+  statement: >-
+    The Wapenhandelinghe does not identify the engraved soldiers as Goese or Zeeuwse troops and does not establish Goes as a model garrison, experimental drill centre, or source of De Gheyn's human models.
+  claim_type: evidence_boundary
+  subject: OBJ.DEGHEYN.WAPENHANDELINGHE.1607
+  predicate: does_not_prove
+  object: Goes_as_model_or_depicted_unit
+  evidence_status: VERIFIED_AS_SOURCE_BOUNDARY
+  source_ids: [SRC-HIST-DEGHEYN-WAPENHANDELINGHE-1607-001]
