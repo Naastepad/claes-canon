@@ -1,0 +1,107 @@
+schema_version: 1.0.0
+kind: StoryClaimSupplement
+claims:
+- id: STC.CORNELIS.NARDUSBLOEM.001
+  type: StoryClaim
+  statement: Cornelis is a member of the Nardusbloem / older Magdalena-linked Goese rederijker tradition during his active mid-sixteenth-century life.
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids:
+  - DEC.CORNELIS.REDERIJKER.NARDUS_CASTANIE_ORIGIN.2026-08-16
+  subjects:
+  - ENT.PERSON.CORNELIS
+  objects:
+  - ENT.ORG.GOES.NARDUSBLOEM
+  source_refs:
+  - SRC-HIST-GOES-REDERIJKERS-001
+  tags: [rederijkers, character, author-decision]
+- id: STC.CASTANIENBLOEM.ORIGIN.1560S.001
+  type: StoryClaim
+  statement: In novel canon, a reform-minded/protestantiserende rederijker current emerges from the older Goese chamber world during the confessional polarisation and hagepreek years of the 1560s, with Cornelis in a formative role; this current becomes the Edele Castanienbloem, whose earliest surviving historical attestation remains 1595 rather than an asserted founding date.
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids:
+  - DEC.CORNELIS.REDERIJKER.NARDUS_CASTANIE_ORIGIN.2026-08-16
+  subjects:
+  - ENT.PERSON.CORNELIS
+  objects:
+  - ENT.ORG.GOES.NARDUSBLOEM
+  - ENT.ORG.GOES.CASTANIENBLOEM
+  source_refs:
+  - SRC-HIST-GOES-REDERIJKERS-001
+  story_time:
+    earliest: '1563-01-01'
+    latest_exclusive: '1570-01-01'
+    precision: reconstruction-window
+  tags: [rederijkers, Reformation, fictional-reconstruction]
+- id: STC.ALCHEMY.GREEN_LION.OPERATIONAL.001
+  type: StoryClaim
+  statement: Within Dee and Claes' working process, green vitriol can function under the name Groene Leeuw because of its opening/revealing role; the novel does not treat Green Lion as a universal historical synonym for iron sulfate.
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids:
+  - DEC.ALCHEMY.GREEN_LION_SOL_CONTINUITY.2026-08-16
+  subjects:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.JOHN_DEE
+  objects:
+  - OBJ.GREEN_VITRIOL
+  source_refs:
+  - SRC-HIST-NORTON-KEY-ALCHEMY-GREEN-LION-001
+  tags: [alchemy, terminology, guardrail]
+- id: STC.ALCHEMY.STRONG_WATER.FAILURE.001
+  type: StoryClaim
+  statement: Claes learns that a strong corrosive water may attack lesser metals yet fail to open Sol; the death/opening of gold therefore requires the right compound relation of substances rather than force alone.
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids:
+  - DEC.ALCHEMY.GREEN_LION_SOL_CONTINUITY.2026-08-16
+  subjects:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.JOHN_DEE
+  objects:
+  - OBJ.SOL_GOLD_FRACTION
+  tags: [alchemy, Sol, process-law]
+- id: STC.ALCHEMY.SOL.CONTINUITY.001
+  type: StoryClaim
+  statement: The author's hidden material model conserves Sol from its deliberate opening/dissolution through red fixation and the later Saturn/assay event; the gold made visible in 1602 was already materially present and is neither created from lead nor silently introduced at a later stage.
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids:
+  - DEC.ALCHEMY.GREEN_LION_SOL_CONTINUITY.2026-08-16
+  objects:
+  - OBJ.SOL_GOLD_FRACTION
+  - OBJ.RED_LION_PROJECTIEPOEDER
+  tags: [alchemy, conservation, hidden-presence]
+- id: STC.ALCHEMY.CUPELLATION.INTERPRETATION.001
+  type: StoryClaim
+  statement: A lead/Saturn and cupellation-like assay is the novel's author-side historically disciplined explanation for how already-present hidden Sol can become visibly testable after projectio; it is not presented as a historically documented Seton procedure.
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids:
+  - DEC.ALCHEMY.GREEN_LION_SOL_CONTINUITY.2026-08-16
+  objects:
+  - OBJ.RED_LION_PROJECTIEPOEDER
+  - OBJ.SOL_GOLD_FRACTION
+  source_refs:
+  - SRC-HIST-ERCKER-PROBIERKUNST-1574-001
+  tags: [alchemy, assay, reconstruction]
+- id: STC.ENKHUIZEN.SETON.FRAME.1602.001
+  type: StoryClaim
+  statement: The novel stages its 1602 projectio within Morhof's retrospective Seton tradition at Enkhuizen, in the house of sailor Jacob Hausfsen, on 13 March 1602 at approximately the fourth hour after noon; this frame is canon while its seventeenth-century retrospective evidence status remains explicit.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  decision_ids:
+  - DEC.ENKHUIZEN.SETON_FRAME.1602.2026-08-16
+  subjects:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.ALEXANDER_SETON
+  - ENT.PERSON.JACOB_HAUSFSEN
+  objects:
+  - ENT.LOC.ENKHUIZEN
+  source_refs:
+  - SRC-HIST-MORHOF-SETON-ENKHUIZEN-1673-001
+  story_time:
+    date: '1602-03-13'
+    precision: day
+  tags: [Enkhuizen, Seton, projectio, retrospective-source]

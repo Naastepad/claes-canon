@@ -1,0 +1,59 @@
+schema_version: 1.0.1
+kind: CanonDecisionSupplement
+decisions:
+- id: DEC.CORNELIS.REDERIJKER.NARDUS_CASTANIE_ORIGIN.2026-08-16
+  type: CanonDecision
+  status: CANON
+  decision: "Cornelis is a member of the Nardusbloem/older Magdalena-linked Goese rederijker tradition and plays a formative fictional role in the emergence of the reform-minded/protestantiserende Edele Castanienbloem during the confessional polarisation and hagepreek years of the 1560s. The 1595 record is the earliest surviving attestation, not a founding date."
+  supersedes_in_part:
+  - DEC.CORNELIS.ROLE.BIERSTEKER_CASTANIE_OPEN.2026-08-15
+  affects:
+  - ENT.PERSON.CORNELIS
+  - ENT.ORG.GOES.NARDUSBLOEM
+  - ENT.ORG.GOES.CASTANIENBLOEM
+  - STC.CORNELIS.NARDUSBLOEM.001
+  - STC.CASTANIENBLOEM.ORIGIN.1560S.001
+  - NI.SEQUENCE.CASTANIENBLOEM_ORIGIN.1560S.001
+  - OPEN.CORNELIS.REDERIJKERS.CHAMBER.001
+  - OPEN.CORNELIS.REDERIJKER.DEKEN.001
+  guardrails:
+  - "Historical evidence supports the Nardusbloem's Catholic institutional profile in 1563 and the Castanienbloem's first surviving attestation in 1595; it does not prove the novel's 1560s Protestant split."
+  - Do not call 1595 the founding year.
+  - Cornelis' deken status remains open.
+  - Retain Cornelis as poorter and biersteker; do not make him a printer or brewery owner.
+- id: DEC.ALCHEMY.GREEN_LION_SOL_CONTINUITY.2026-08-16
+  type: CanonDecision
+  status: CANON
+  decision: "The Green Lion is Dee/Claes' operational name for green vitriol in this process rather than a universal alchemical identity; green vitriol directly develops the tannin memoriaal but does not directly dissolve gold; the Sol that later reappears remains materially continuous through opening, red fixation, Saturn and assay."
+  affects:
+  - STC.ALCHEMY.GREEN_LION.OPERATIONAL.001
+  - STC.ALCHEMY.STRONG_WATER.FAILURE.001
+  - STC.ALCHEMY.SOL.CONTINUITY.001
+  - STC.ALCHEMY.CUPELLATION.INTERPRETATION.001
+  - OBJ.GREEN_VITRIOL
+  - OBJ.RED_LION_PROJECTIEPOEDER
+  - OBJ.SOL_GOLD_FRACTION
+  - ARC.CLAES.MACRO_TRANSMUTATION
+  - MOTIF.ALCHEMY.PROCESS_CHAIN
+  - MOTIF.HIDDEN_PRESENCE
+  guardrails:
+  - No real lead-to-gold creation.
+  - No universal claim Green Lion equals FeSO4.
+  - No claim that Seton historically used the novel's cupellation-like mechanism.
+  - Exact non-gold carrier composition of the red matrix remains open.
+  - Avoid tasting vitriol/corrosive liquors as routine sensory diagnosis.
+  - "Prefer vitrioolwater/uitloogwater/oplossing in technical description; the chapter title De loog van Antwerpen may remain."
+- id: DEC.ENKHUIZEN.SETON_FRAME.1602.2026-08-16
+  type: CanonDecision
+  status: CANON
+  decision: "The novel anchors the 1602 projectio scene to Morhof's retrospective Seton tradition: Enkhuizen, the house of sailor Jacob Hausfsen, 13 March 1602, approximately the fourth hour after noon. These are chosen story-frame facts sourced from a 1673 retrospective account, not contemporaneously verified event facts."
+  affects:
+  - STC.ENKHUIZEN.SETON.FRAME.1602.001
+  - ENT.PERSON.ALEXANDER_SETON
+  - ENT.PERSON.JACOB_HAUSFSEN
+  - NI.EVENT.ENKHUIZEN.TRANSMUTATION.1602
+  - OPEN.ALCHEMY.ENKHUIZEN_1602.EVENT_DESIGN.001
+  guardrails:
+  - Preserve Morhof's retrospective transmission status.
+  - Exact assay choreography, additional witnesses, quantities, danger and immediate moral aftermath remain open.
+  - A cupellation-like explanation is authorial reconstruction, not Morhof/Seton procedure.

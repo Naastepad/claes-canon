@@ -1,0 +1,73 @@
+schema_version: 1.1.0
+kind: EntityDetailRegistry
+entity_details:
+- entity_ref: ENT.PERSON.BELOVED
+  label: Mayken Adriaensdr. Lampert
+  aliases: [Mayken, Mayken Adriaens, Mayken Adriaensdochter]
+  birth:
+    place_ref: ENT.LOC.GOES
+    year_approx: 1546
+    precision: approximate
+  roles:
+  - beloved
+  - partner
+  - apothecary-daughter
+  - material-expert
+  - botanical-counterpart
+  - error-checker
+  - sensory-recovery-companion
+  father_ref: ENT.PERSON.ADRIAEN_JACOBSZ_LAMPERT
+  father_relation_status: CANON_FICTIONAL_KINSHIP
+  paternal_grandfather_ref: ENT.PERSON.JACOB_LAMPART_APOTHECARY
+  paternal_grandfather_relation_status: CANON_FICTIONAL_KINSHIP
+  paternal_grandmother_ref: ENT.PERSON.MERRICKEN_LAMPART_HOUSEHOLD
+  paternal_grandmother_relation_status: CANON_FICTIONAL_KINSHIP
+  grandmother_guardrail: The historical Merricken/Mayken household-name evidence is unresolved; do not identify the 1543 Mayken automatically with Merricken.
+  mother_status: OPEN_FICTIONAL
+  childhood_fire:
+    event_ref: NI.EVENT.GOES_FIRE.1554.001
+    age_approx: 8
+    family_property_loss: de Zwaene
+    historical_anchor_ref: SC.HIST.GOES.LAMPERT.ZWAENE_BURNED.1554.001
+    guardrail: Her personal fire experience is fictional; the Lampert property transition from house to burned house is historically attested.
+  expertise:
+  - materia_medica
+  - botanical_identification
+  - preparation_and_measurement
+  - sensory_material_judgement
+  - practical_book_use
+  - ordinary_Dodoens_use_where_historically_plausible
+  - error_control
+  reveal_role:
+  - May assist safe material handling and controlled green-vitriol testing.
+  - May observe, read and challenge Claes' interpretations.
+  - Is not a cipher solver, nomenclator operator or special Dodoens key-holder.
+  decision_ref: DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14
+
+- entity_ref: ENT.PERSON.ADRIAEN_JACOBSZ_LAMPERT
+  label: Adriaen Jacopsen Lampert
+  historical_status:
+    name_chain: VERIFIED
+    apothecary_identity: SUPPORTED
+  roles: [Goese_property_holder, likely_apothecary, father_of_Mayken_in_novel]
+  source_claim_refs:
+  - SC.HIST.GOES.APOTHECARY.ADRIAEN_JACOPSEN.1554_1556.001
+  - SC.HIST.GOES.LAMPERT.ADRIAEN_PROPERTY_CHAIN.1551_1561.001
+  - SC.HIST.GOES.LAMPERT.ADRIAEN_APOTHECARY_IDENTITY.001
+  guardrail: The historical record does not currently identify a daughter Mayken.
+
+- entity_ref: ENT.PERSON.JACOB_LAMPART_APOTHECARY
+  label: Jacob/Jacop Lampart/Lambert, apotheker
+  roles: [Goese_apothecary, grandfather_of_Mayken_in_novel]
+  source_claim_refs:
+  - SC.HIST.GOES.APOTHECARY.JACOB_LAMPART.1538_1545.001
+  guardrail: His fatherhood of Adriaen is a supported reconstruction adopted as novel genealogy, not archival proof.
+
+- entity_ref: ENT.PERSON.MERRICKEN_LAMPART_HOUSEHOLD
+  label: Merricken, huisvrouw van Jacop/Jacob de apotheker
+  roles: [Goese_apothecary_household, grandmother_of_Mayken_in_novel]
+  source_claim_refs:
+  - SC.HIST.GOES.APOTHECARY.JACOB_LAMPART.1538_1545.001
+  ambiguity:
+    mayken_1543_same_person: UNRESOLVED
+    source_claim_ref: SC.HIST.GOES.LAMPART.MAYKEN_1543.001

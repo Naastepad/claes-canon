@@ -1,0 +1,47 @@
+schema_version: 1.0.0
+kind: EntitySupplement
+entities:
+- id: ENT.ORG.GOES.CASTANIENBLOEM
+  type: Organization
+  label: De Edele Castanienbloem
+  fictionality: historical_organization_with_fictional_early_origin
+  canon_status: CANON
+  historical_attestation:
+    earliest_surviving: '1595'
+    precision: year
+    source_refs:
+    - SRC-HIST-GOES-REDERIJKERS-001
+  novel_origin:
+    story_time:
+      earliest: '1563-01-01'
+      latest_exclusive: '1570-01-01'
+      precision: reconstruction-window
+    description: reform-minded/protestantiserende rederijker current emerging from the older Goese chamber world during confessional polarisation; Cornelis has a formative role
+    historical_status: AUTHORIAL_RECONSTRUCTION
+  later_history:
+    nissepat_resonance: documented Nissepat participation around 1595-1596 remains a later family echo
+    merger: merged into Nardusbloem in 1630
+  guardrails:
+  - Do not call 1595 the founding year.
+  - Do not present the 1560s Protestantising origin as archival fact.
+  - Do not infer Cornelis' deken status.
+- id: ENT.PERSON.ALEXANDER_SETON
+  type: Person
+  label: Alexander Seton / Sidonius
+  fictionality: historical_tradition
+  canon_status: CANON
+  roles: [alchemist, projectio-figure]
+  usage: chosen historical-tradition figure for the 1602 Enkhuizen projectio frame
+  source_status: Morhof 1673 retrospective report; not contemporaneous verification
+  source_refs:
+  - SRC-HIST-MORHOF-SETON-ENKHUIZEN-1673-001
+- id: ENT.PERSON.JACOB_HAUSFSEN
+  type: Person
+  label: Jacob Hausfsen
+  fictionality: historical_tradition
+  canon_status: CANON
+  roles: [sailor, reported-householder]
+  usage: Morhof reports Seton's Enkhuizen projection as occurring in his house
+  source_status: Morhof 1673 retrospective report
+  source_refs:
+  - SRC-HIST-MORHOF-SETON-ENKHUIZEN-1673-001

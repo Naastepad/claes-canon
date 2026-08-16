@@ -1,18 +1,18 @@
 # Claes Nissepat — Lemma/McKee Storybible Master
 
-**ID:** `SB.CLAES.LEMMA_MCKEE`
-**Status:** AUTHORING MASTER
-**Source authority:** `SB.CLAES.MASTER` — Revision 11, 10 August 2026
-**Purpose:** human-readable bridge between the full prose Storybible, atomic canon registers, Narrative Instances and executable Lemma constraints.
+**ID:** `SB.CLAES.LEMMA_MCKEE`  
+**Status:** CURRENT OPERATING SYNTHESIS  
+**Synchronized:** 16 August 2026  
+**Source authority:** `SB.CLAES.MASTER`
 
-This document does **not** replace the detailed historical prose of Revision 11. It transposes that material into a form in which every important statement can be traced to one of four layers:
+This is the current human-readable operating synthesis of the Claes canon. The dated `LEMMA_MCKEE_MASTER_2026-08-13.md` is a historical snapshot only. Where older prose describes a 1545 birth, post-4-October loading of the memoriaal, a 24×24/cipher recovery chain, Cornelis' death as still open, or Cornelis as a straightforward member of the Edele Castanienbloem, that wording is superseded.
 
-1. **Source Claim (`SC.*`)** — what evidence or research supports.
+The project separates four layers:
+
+1. **Source Claim (`SC.*`)** — what evidence supports.
 2. **Story Claim (`STC.*`)** — what is true in the novel.
-3. **Narrative Instance (`NI.*`)** — where that truth becomes story: event, sequence, chapter, scene or beat.
-4. **Lemma constraint** — only the subset that can be evaluated deterministically.
-
-The McKee/NOS influence is structural: stable IDs, value change, controlling idea, character desire/need, pressure, turning points, progressive complications, object biographies, motifs and scene-level Narrative Instances. McKee theory itself remains external as `KO.*` knowledge objects.
+3. **Narrative Instance (`NI.*`)** — where it becomes scene, chapter, sequence or event.
+4. **Lemma constraint** — only deterministic continuity that can be evaluated safely.
 
 ---
 
@@ -20,146 +20,133 @@ The McKee/NOS influence is structural: stable IDs, value change, controlling ide
 
 ### Controlling idea
 
-`THEME.CLAES.CONTROLLING_IDEA`
-
-> A man who spends his life seeking hidden order becomes whole only when knowledge ceases to be a means of control and becomes a responsibility toward other people.
+A man who spends his life seeking hidden order becomes whole only when knowledge ceases to be a means of control and becomes a responsibility toward other people.
 
 ### Core dramatic question
 
-`THEME.CLAES.DRAMATIC_QUESTION`
-
-> What does truth ask of Claes toward the other when certainty, safety and control are impossible?
+What does truth ask of Claes toward the other when certainty, safety and control are impossible?
 
 ### Character engine
 
 - **Conscious desire:** understand the hidden order behind visible reality.
-- **Psychological need:** act without waiting for complete certainty.
+- **Psychological need:** recover trust in embodied perception and act without complete certainty.
 - **Moral need:** understand that knowledge increases responsibility toward others.
 - **Gift:** prolonged, precise, embodied perception — *sinne*.
-- **Shadow:** continuing to observe after the moment for action has arrived.
-- **Initial lie:** if I look carefully enough, I can avoid being surprised or losing what matters.
+- **Shadow:** remaining in observation after the moment for action has arrived.
+- **Childhood wound:** if I had seen early enough, perhaps I could have prevented the loss.
 - **Adult lie:** if I understand the process, I can control the consequences.
-- **Final truth:** right action is not made right by certainty of success.
+- **Final truth:** mastery is incomplete until it can be released without possession.
 
-Canonical claim anchors: `STC.CLAES.SINNE.001`, `STC.CLAES.PARADOX.001`, `STC.CLAES.NEED.001`, `STC.CLAES.MORAL_QUESTION.001`.
+Canonical anchors: `DEC.CLAES.SINNE.2026-08-13`, `DEC.CLAES.PARADOX.2026-08-13`, `DEC.CLAES.NEED.2026-08-13`, `DEC.CLAES.SPIRITUAL_JOURNEY.2026-08-13`.
 
 ---
 
-## 2. Macrostructure — the alchemical dramatic spine
+## 2. Macrostructure — alchemical dramatic spine
 
-`ARC.CLAES.MACRO_TRANSMUTATION`
-
-| Phase | Story time | McKee function | Claes' movement | Canon anchors |
-|---|---|---|---|---|
-| **DRAGER** | 1545–4 Oct 1564 | setup + progressive education of perception | receive → recognize → interpret | childhood, school, Landjuweel, Silvius, Dee, Monas, memoriaal |
-| **GEBONDENHEID / NIGREDO** | 4 Oct 1564–1584 | pressure, complication, consequence, loss of control | understand → control → act → fail → assume responsibility | security breach, compartmentalisation, recovery architecture, 1570 decode, 1578 publication, Delft 1584 |
-| **ONDERSCHEIDING / ALBEDO** | 1584–ca. 1599 | self-revelation and separation of confused values | observe → distinguish → choose | truth ≠ certainty; knowledge ≠ control; protection ≠ possession |
-| **VERBINDING / RUBEDO** | ca. 1599–1602+ | reintegration | choose → connect → serve | wisdom + love; strength + responsibility; belief + uncertainty |
-| **PROJECTIO / OVERDRACHT** | final movement | final value test | carry → transmit → release | last transfer, last merels game, freedom of the recipient |
+| Phase | Story time | Claes' movement | Fixed hinges |
+|---|---|---|---|
+| **DRAGER** | 1542–4 Oct 1564 | receive → recognize → interpret → act on matter | childhood, 1554 first blackening, Reimerswaal, 1561 Landjuweel, Dee/Silvius 1563–64, memoriaal before Boom |
+| **GEBONDENHEID / NIGREDO** | 4 Oct 1564–1584 | act → become entangled → lose → assume responsibility | Fabritius/security hinge, 1567 first Cornelis arrest, 19 Nov 1569 execution, 1570 reveal, 1578 print, Delft 1584 |
+| **ONDERSCHEIDING / ALBEDO** | 1584–ca.1599 | distinguish confused values | truth ≠ certainty; knowledge ≠ control; protection ≠ possession |
+| **VERBINDING / RUBEDO** | ca.1599–1602 | reconnect in right proportion | recovered *sinne*, Mayken, love and material practice |
+| **PROJECTIO / OVERDRACHT** | 1602+ | prove → release → transmit | Enkhuizen 13 Mar 1602; final merels/death still open |
 
 Hard guardrails:
 
-- 1554 is **micro-Nigredo / first blackening**, not the adult main Nigredo.
-- 4 October 1564 is the canonical adult macro-Nigredo hinge.
-- 1570 is the epistemic climax.
-- 1578 is the public consequence.
-- 1584 is the moral bottom and Albedo threshold.
-- Projectio is authorial architecture, not an extra historical cipher stage.
-- the 24 merels problems remain one recovery sequence and are never redistributed into symbolic act-groups.
+- 1554 is Claes' first personal **micro-Nigredo**, not the start of the adult macro-Nigredo.
+- **4 October 1564** is the adult macro-Nigredo/security hinge.
+- 4 October changes **network risk**, not the physical content of the memoriaal.
+- **1578** completes the textual mission: projectio of the Word.
+- **1602** is projectio of Matter: the late alchemical test.
+- **After 1602** comes projectio of the Self: can Claes release ownership/control?
+- Projectio is authorial architecture, not proof of a universal historical alchemical doctrine.
 
 ---
 
 ## 3. Claes — cradle to grave
 
-Primary subject: `ENT.PERSON.CLAES`
-Primary arc: `ARC.CLAES.LIFE`
+### I — 8 December 1542–ca.1547: body before meaning
 
-### I — 1545–ca. 1547: body before meaning
+Claes is born in Goes on **8 December 1542**. Early knowledge begins in warmth, cold, smell, light, sound, hunger, rhythm and touch. The body knows before the mind explains.
 
-**Value state:** unformed perception → bodily trust.
+### II — ca.1547–18 May 1554: discovering order
 
-Claes is born in Goes on **8 December 1545**. The early world is registered through warmth, cold, smell, light, sound, silence and rhythm before language. Wierook, wax, bells and collective liturgical silence establish the principle that the body knows before the mind explains.
+The household consists of Cornelis, Tanneken, Claes, younger brother **Jan Corneliszn. Nissepat** and, immediately before the fire, an unborn child. Cornelis teaches attention and craft; Tanneken teaches ordinary embodied knowing; Jan gives play, rivalry and action.
 
-Narrative target: `NI.SCENE.DREMPEL.1547.001`.
+The family home is the fictional household use of the historically documented 1542 Nissepat house in the older Nieuwstraat/Armenhoek environment.
 
-### II — ca. 1547–spring 1554: discovering order
+### III — 18 May 1554–1561: first blackening and Reimerswaal
 
-**Value state:** wonder → confidence in knowable order.
+The Goes fire destroys or makes the family house uninhabitable in novel canon. Claes and Cornelis survive because they are away; Tanneken, Jan and the unborn child die. Historical evidence supports a partially damaged old-Nieuwstraat/Armenhoek environment but does not document these fictional casualties.
 
-Home, trade, church, school, brewing and merels teach Claes that visible things are governed by relation and process. Cornelis trains attention through waiting, counting, smelling and looking again. The first merels lesson establishes the lifelong distinction between counting pieces and seeing routes.
+Cornelis remains in Goes to rebuild livelihood and finance Claes' education. Zierikzee becomes unaffordable; Claes goes to Reimerswaal. The separation is care experienced as another loss.
 
-Canonical motif: `MOTIF.MERELS_WAYS`.
+Reimerswaal teaches another form of impermanence: a city can remain inhabited while water progressively changes its future.
 
-### III — 1554–1561: displaced child / hope under pressure
+### IV — 1561–1563: Antwerp and interpretive plurality
 
-**Value state:** security → disrupted order → vigilant hope.
+In August 1561 Claes travels with Cornelis from Reimerswaal to the Antwerp Landjuweel and does not return. Dee is **not** placed at the Landjuweel.
 
-The Goes fire on **18 May 1554** damages Cornelis' salt/trade capital but not the Nissepad brewery. The originally intended school route to Zierikzee becomes financially unrealistic. Claes goes instead as a cost pupil to the Latin school of Reimerswaal and remains until summer 1561. Water threat in 1555 and the decaying environment teach that a place may still exist yet cease to be the same place.
+Antwerp becomes a practical-humanist learning ecology. Rhetoric, theatre, trade and print teach that carrier, appearance, intention and meaning can diverge.
 
-Core wound:
+### V — 1563–early 1564: Dee, Silvius and matter
 
-> I did not see early enough what was happening.
+Claes first encounters Dee briefly in 1563; intensive formation follows in early 1564. Dee moves him from observation toward hypothesis and intervention.
 
-The water-damaged but complete Zovitius schoolbook becomes an object-biographical counterpoint to Cornelis' papers lost by fire: fire destroys text; water deforms but leaves it readable.
+Before the journey to Boom, Dee gives Claes:
 
-Claims: `STC.CLAES.REIMERSWAAL.001`, `STC.CLAES.ZIERIKZEE.PLAN.001`.
+- `OBJ.MEMORIAAL`, already bound from sheets carrying the hidden readable Diets/Brabant *Brevísima*;
+- `OBJ.GRAPHITE_STIFT`;
+- the prohibition against writing in the book with ink while Claes remains his pupil.
 
-### IV — 1560–1563: interpreting roles and intentions
+Claes thinks he has a pedagogical workbook. He does not know the hidden text or the material reason for the graphite rule.
 
-**Value state:** recognition → interpretation.
+### VI — 4 October 1564–19 November 1569: network danger and the father
 
-As older pupil/repetitor Claes learns that understanding is not repetition. His marginal correction to Zovitius is a fictional pedagogical intervention grounded in use: a text works when the pupil can answer. In August 1561 he leaves Reimerswaal for Antwerp with Cornelis for the Landjuweel and does not return. Antwerp becomes a practical-humanist learning ecology: Latin, limited Greek, French, correspondence, bookkeeping, copying and print culture.
+Christoffel Fabritius' disrupted Antwerp execution on **4 October 1564** is the preferred historical candidate for the existing security hinge. The exact low-level link by which Cornelis becomes unsafe remains `OPEN.SECURITY.LOW_LINK.1564.001`.
 
-The Landjuweel teaches that performance can simultaneously be art, competition, religious caution, political communication and printed afterlife. Form, carrier, intention and effect do not automatically coincide.
+The crucial correction is negative: nothing is inserted, keyed or reciphered in Claes' memoriaal after this date.
 
-### V — 1563–1564: Dee and the move from observer to cause
+Cornelis' fall is now fixed as a two-step exposure:
 
-**Value state:** interpretation → experimental agency.
+1. **autumn 1567, Antwerp:** first arrest or serious examination in a book/paper matter; release on borg or equivalent conditions;
+2. **late 1568–1569:** renewed exposure through clandestine book/paper traffic, network traces and refusal to name others.
 
-Claes first meets Dee briefly in February 1563 in or around Silvius' Gulden Engel. Intensive formation follows in January–March 1564. Dee makes Claes formulate observations, risk hypotheses, act on matter and endure correction. Claes experiences that his own action can actualise a hidden possibility.
+On **19 November 1569** Cornelis is fictionally executed in Antwerp in the documented Grote-Markt/stadhuis book-burning environment. Public beheading by sword is the preferred story method under the recidive/seditious-network framing. Claes is physically present.
 
-This produces the dangerous adult form of his lie:
+Cornelis is not a historical addition to Haecht's list, not a protected printer, not an open preacher and not carrying the memoriaal. His death-script is protective silence: he gives no names.
 
-> If I understand the process, I can control the consequences.
+### VII — 1570–1578: reveal and projectio of the Word
 
-Claims: `STC.CLAES.DEE_ENCOUNTER.1563.001`, `STC.CLAES.DEE_FORMATION.1564.001`.
+A special 1570 Zovitius copy may provide the material cue **GALLA LEO VIRIDIS**. It is a cue, not a key.
 
-### VI — 4 October 1564–1578: action under consequence
+Green vitriol develops the tannin-loaded typographic letterforms in the memoriaal. What appears is already ordinary readable Diets/Brabant language.
 
-**Value state:** agency → entanglement → responsibility.
+Therefore:
 
-The security breach of 4 October 1564 changes network behaviour. The code itself is not redesigned; access to it is compartmentalised. Cornelis becomes too visible to combine knowledge, carrier and direct key. Claes becomes useful because he genuinely does not know what he carries.
+- reveal is **reading**, not decryption;
+- there is no 24×24 recovery matrix;
+- no nomenclator is required;
+- merels is not a recovery key;
+- Monas is not a permutation key for the *Brevísima*;
+- Castanea is not a key anchor;
+- no special Dodoens carrier is required;
+- no Primus Index is required;
+- no multi-week cryptographic reconstruction is required.
 
-The memoriaal has two biographies:
+Mayken may assist safe handling, controlled testing, material observation, reading and contradiction. She is not a key-holder or replacement solver.
 
-1. pedagogical workbook received before Boom;
-2. blind recovery carrier after the October security break.
+The exact human/production route from reveal to publication remains open, but the endpoint is fixed: **Antwerp, 1578, printed publication**. This is the **projectio of the Word**: dangerous testimony is multiplied and released beyond Claes' control.
 
-After the Beeldenstorm Claes returns to Goes. Cornelis' persecution line culminates under working canon in arrest during the second half of 1568 and death in late 1568 or 1569, with exact details still open.
+### VIII — 1578–1584: knowledge fails as protection
 
-In 1570 the dormant architecture activates. Claes initially decodes for personal reasons — to understand Cornelis, Dee and Silvius. The Primus Index changes the story value: private mystery becomes moral burden. The full reconstruction takes weeks and requires cooperation with the beloved/apothecary daughter.
+Claes' wound changes from *I did not see early enough* to *I saw, and still did not do enough*.
 
-In 1578 the reconstructed testimony reaches anonymous publication/distribution in novel canon. The historical 1578 edition is real; Claes' provenance is fiction.
+Delft 1584 remains the moral bottom and threshold toward Albedo. The problem is no longer finding hidden truth but acting when truth does not guarantee a safe or clean outcome.
 
-### VII — 1578–1584: collapse of epistemic certainty
+### IX — 1584–1602: Albedo, Rubedo and Mayken
 
-**Value state:** knowledge-as-protection → knowledge unable to guarantee moral action.
-
-Claes' childhood wound changes from:
-
-> I did not see early enough.
-
-into:
-
-> I saw and still did not do enough.
-
-Delft 1584 is the moral bottom. The governing question changes from discovering what is hidden to deciding what to do when injustice is fully visible.
-
-### VIII — 1584–1602: Albedo to Rubedo
-
-**Value state:** confusion → distinction → right relation.
-
-Claes separates what he previously fused:
+Claes must distinguish:
 
 - truth from certainty;
 - knowledge from control;
@@ -168,303 +155,187 @@ Claes separates what he previously fused:
 - belief from dogma;
 - love from holding on.
 
-Only after distinction can he reconnect them in better proportion. The mature *sinne* becomes:
+His relationship with **Mayken Adriaensdr. Lampert** becomes one of the primary relational/material counterforces. She is a fictional Goese apothecary daughter, ca.1546, grounded in the historically attested Lampart/Lambert/Lampert apothecary milieu. Her family also knows the 1554 fire through the burned *Zwaene* property, but her trauma is not Claes' duplicate.
 
-> observe → distinguish → choose → carry.
+Her epistemology is practical: materia medica, preparation, weighing, smell, texture, condition, repeatability and contradiction. On the road toward Enkhuizen, shared material life helps Claes reopen the *sinne*. She catalyses; she does not cure or complete him.
 
-Possible late Middelburg/Radermacher material may serve as a social mirror, never as unsupported proof that Claes was a formal Familist.
+### X — 13 March 1602 and after: projectio of Matter and Self
 
-### IX — 1602 or later: Projectio
+The Enkhuizen climax is anchored to the retrospective Seton tradition transmitted by Daniel Georg Morhof:
 
-**Value state:** mastery-as-control → mastery-as-release.
+- **Enkhuizen**;
+- house of sailor **Jacob Hausfsen**;
+- **13 March 1602**;
+- approximately **16:00**;
+- Alexander Seton/Sidonius as the historical-tradition figure.
 
-The exact circumstances of Claes' death remain open. The function does not: his final test is whether he can transfer something without owning the recipient's future choice. The last merels game should test balance and freedom, not simply prove superior tactical skill.
+Morhof writes around seventy years later. These are chosen story-frame facts, not contemporaneously verified eyewitness facts.
 
----
+The alchemical rule is: **what becomes visible was already materially present**. The Sol seen in the late assay was already present in the process; the novel does not create gold from lead. The Rode Leeuw is deep red to red-brown and carries the already-present Sol in a still-open non-gold matrix.
 
-## 4. Relationship system
+Seton has **no** role in the *Brevísima*. He is a late mirror for Claes' relation to mastery, proof, coercive power and possession.
 
-### Claes ↔ Cornelis
-
-`REL.CLAES.CORNELIS`
-
-Primary value movement: **dependence → admiration → exclusion → inheritance → moral differentiation**.
-
-Cornelis gives Claes attention, craft discipline, silence and responsibility, but also models strategic concealment. Claes must inherit the virtues without reproducing the closedness.
-
-### Claes ↔ Dee
-
-`REL.CLAES.DEE.001`
-
-Primary value movement: **recognition → initiation → intellectual formation → critical independence → internalised legacy**.
-
-Dee expands Claes from seeing to acting, but his fallibility prevents discipleship from becoming submission.
-
-### Claes ↔ beloved / apothecary daughter
-
-`REL.CLAES.BELOVED`
-
-Primary value movement: **solitary pattern recognition → collaborative verification → trust → love without possession**.
-
-She is not a replacement solver. Claes remains indispensable to merels, Dee-memory, Monas and Castanea. She is indispensable to material handling, botanical recognition, lists, error control and contradiction of elegant but physically unsupported theories.
-
-### Claes ↔ Silvius
-
-`REL.CLAES.SILVIUS`
-
-Primary value movement: **editor recognises learner → practical trust → mediated knowledge transmission → external activation**.
-
-The water-marked schoolbook and Claes' pedagogical glosses establish a non-mystical foundation for trust before the later clandestine activation channel.
+Claes' exact death remains open. Its function does not: he must finally be able to transfer without owning the recipient's choice.
 
 ---
 
-## 5. Object biographies — story as material causality
+## 4. Cornelis — occupation and rederijker identity
 
-The storybible treats major objects as Narrative Objects whose state changes matter as much as possession.
+Fixed:
 
-### `OBJ.ZOVITIUS_SCHOOLBOOK`
+- Goes poorter;
+- **biersteker**, not fixed brewery owner;
+- book/material carrier through commercial and trust networks;
+- rederijker;
+- not a printer.
 
-Older complete schoolbook/text-form → water damaged in Reimerswaal → marginally annotated by Claes → recognised by Silvius → possible anonymous pedagogical influence on 1570 edition.
+His named chamber is now fixed as the **Nardusbloem / older Magdalena-linked Goese tradition**. The Zusterhuis/Singelstraat remains the Cornelis-era meeting environment.
 
-**Must never be conflated with** `OBJ.ZOVITIUS_1570_TRIGGER`.
+In novel canon Cornelis helps form a reform-minded/protestantiserende current in the 1560s that becomes the later Edele Castanienbloem. This is explicit historical fiction in a documentary gap. **1595 is the earliest surviving attestation, not a proved foundation date.** Later documented Nissepat participation in 1595–1596 acts as resonance.
 
-### `OBJ.ZOVITIUS_1570_TRIGGER`
+Whether Cornelis ever serves as **deken** remains open.
 
-Historical 1570 Silvius publication + fictional micro-markings → selects `GALLA LEO VIRIDIS` → awakens Claes' Dee-memory → causes him to test the memoriaal.
+---
 
-It opens the door; it does not contain the full key.
+## 5. Mayken — independent character function
+
+Mayken is not merely “the beloved”. Her required independent functions are:
+
+- practical apothecary/material competence;
+- a different 1554 memory: disruption and rebuilding rather than annihilated household;
+- trained sensory judgement that can contradict Claes' elegant abstractions;
+- collaboration in the direct material reveal without becoming a decoder;
+- relational movement from trust to love without possession;
+- later companionship in Claes' recovery of embodied *sinne*.
+
+Still open: her mother and the detailed scene-by-scene biography of her own desire, conflict and choices.
+
+---
+
+## 6. Object biographies
 
 ### `OBJ.MEMORIAAL`
 
-Ordinary pedagogical workbook → later physically prepared as blind recovery carrier → 24 problem rectos + 2 key rectos → hidden tannin/galnut layer activated by green vitriol → outputs theorem sequence and bridge instructions.
+Readable Diets/Brabant *Brevísima* set in ordinary movable type → printed nearly invisibly with tannin/gallnut + gum arabic before binding → folded/gathered into 17 single-sheet quarto gatherings → Dee gives the already prepared book to Claes before Boom → Claes writes only in graphite → green vitriol later reveals the already readable text.
 
-### `OBJ.MONAS_CLAES`
+Canonical capacity: **17 sheets = 68 leaves = 136 latent pages**, plus any genuinely blank binder endleaves.
 
-Historical 1564 work, fictional personal marginalia → 24 four-symbol permutations → transforms theorem selection into row/column ordering. Monas gives **order**, not plaintext.
+### `OBJ.GRAPHITE_STIFT`
 
-### `OBJ.DODOENS_CARRIER`
+Story function fixed; exact historically defensible physical form/provenance remains open. Do not automatically render a later standardized wood-cased pencil.
 
-Historical herb-book substrate + fictional special carrier mapping → nine botanical tables and physical content addresses. Dodoens supplies values that the abstract 24×24 matrix cannot supply on its own.
+### `OBJ.ZOVITIUS_1570_TRIGGER`
 
-### `OBJ.CASTANEA`
+May cue `GALLA LEO VIRIDIS` and activate memory/material testing. It does not contain a cryptographic key.
 
-Hand-coloured Castanea is authentication and wayfinding, not a counting cipher. Cornelis' line “Castanea. Not our flower — the tree.” becomes meaningful only when the memoriaal later says to begin at Castanea.
+### Merels
 
-### `OBJ.LASCASAS_CIPHERTEXT`
+Merels remains a game, a learned skill, a relationship device and a thematic model of visible pieces versus invisible routes. It is **independent of Brevísima recovery**.
 
-Completed Diets/Brabant plaintext arrives first; cipher is produced later in Antwerp. Frozen technical layer: **30,930 words → 35,584 codegroups**, nomenclator **5,184 values**. Merels is recovery of access, not reciphering of the ciphertext.
+### Dodoens / Monas / Castanea
 
----
+They may remain where they independently serve history, botany, education, symbolism or character. They do not form a required decryption chain.
 
-## 6. Recovery architecture — deterministic canon
+### Rode Leeuw / Sol
 
-Canonical chain:
-
-> **Zovitius 1570 → GALLA LEO VIRIDIS → green vitriol → memoriaal → 24 merels problems → theorem I–XXIV → personal Monas marginalia → 24×24 matrix → Castanea → nine Dodoens tables → Primus Index → nomenclator → Las Casas.**
-
-Deterministic constraints belong in Lemma when syntax and tests are available.
-
-Hard narrative constraints:
-
-- the reader sees 24 complete unnumbered problem sheets;
-- P-labels and the scholarly P15 issue stay backstage;
-- theorem I–XXIV must appear exactly once;
-- theorem XV is produced by the internally labelled P14 sheet;
-- local letters are problem-local, never a universal coordinate system;
-- stone shape, textual party and pigment remain separate information layers;
-- no modern `a1–g7` notation in-world;
-- Monas orders; Dodoens values; Primus Index identifies; none alone yields plaintext;
-- full reconstruction takes roughly 5–8 weeks, not one night;
-- beloved supports material/botanical/error-control work; Claes remains personal keyholder;
-- the clear text's later path toward 1578 is canon, its claim to actual historical provenance is not.
+Rode Leeuw = Claes' completed red/red-brown projectiepoeder stage in novel canon. It is not green and not visibly gold-yellow. Its exact non-gold carrier matrix remains open. The gold-bearing fraction is materially continuous; no later silent gold addition is allowed.
 
 ---
 
-## 7. McKee-facing Narrative Instances
+## 7. Alchemical process grammar
 
-Narrative Instances are concrete story units, never universal theory. They can be evaluated against external `KO.*` objects.
+Current chain:
 
-Current key instances include:
+`kies / pyritic rejected matter → weathering + water + air + time → vitrioolwater / green vitriol / operational Groene Leeuw → direct tannin-text reveal + learned opening principle → ordinary strong-water failure on Sol → right compound relation → death/opening of Sol → materially continuous hidden Sol → red fixation / Rode Leeuw → Saturn/lead → assay/cupellation-like reveal → projectio → release`
 
-- `NI.PROLOGUE.1542.001` — De Bladzijde.
-- `NI.SCENE.DREMPEL.1547.001` — body before meaning.
-- `NI.SCENE.FIRST_MERELS.1553.001` — stones vs routes.
-- `NI.SCENE.SOWER.1554.001` — seed, craft, transformation.
-- `NI.EVENT.GOES_FIRE.1554.001` — first blackening.
-- `NI.EVENT.REIMERSWAAL_MOVE.1554.001` — displacement.
-- `NI.EVENT.LANDJUWEEL.1561.001` — multiple representation.
-- `NI.SCENE.DEE_FIRST_ENCOUNTER.1563.001` — recognition.
-- `NI.CHAPTER.1564.01`–`.05` — early Antwerp/Monas sequence.
-- `NI.EVENT.SECURITY_BREAK.1564.001` — macro-Nigredo hinge.
-- `NI.CHAPTER.1564.06` — proposed “De honderd gulden”.
-- `NI.EVENT.CLAES_RETURN_GOES.1566.001`.
-- `NI.EVENT.CORNELIS_FALL.1568.001`.
-- `NI.SEQUENCE.RECOVERY.1570.001`.
-- `NI.EVENT.PUBLICATION.1578.001`.
-- `NI.CHAPTER.1584.01` — De markt van Delft.
-- `NI.SEQUENCE.LATE_RUBEDO.1599.001` — open-form late social mirror.
-- `NI.SCENE.FINAL_MERELS.1602.001` — open-form final Projectio test.
+Guardrails:
 
-Each developed scene should ultimately expose at least:
-
-- desire/objective;
-- conflict/pressure;
-- opening value;
-- turning point;
-- closing value;
-- story claims introduced or paid off;
-- arc movement;
-- motifs activated;
-- knowledge gained/lost;
-- objects transferred or transformed;
-- `KO.*` targets for external diagnostic analysis.
+- “Groene Leeuw” is operational vocabulary in this process, not a universal historical equation with FeSO4.
+- Green vitriol reveals the memoriaal directly; it does not directly dissolve gold.
+- A strong water must first **fail** against Sol before the lesson of right proportion/relation becomes clear.
+- Cupellation-like explanation is authorial historical-chemical reconstruction, not a documented Seton procedure.
+- Do not use routine tasting of vitriol or corrosive liquids.
+- Prefer technically defensible terms such as `vitrioolwater`, `uitloogwater`, `oplossing` or `liquor`; the chapter title *De loog van Antwerpen* may remain.
 
 ---
 
-## 8. Motif system
+## 8. Execution / testimony arc
 
-### `MOTIF.SINNE`
-Sensation → bodily response → recognition → comparison → pattern → understanding → choice.
+Claes begins within a Catholic civic ars-moriendi understanding: punishment, confession, priestly consolation, repentance and public compassion can belong to one death script.
 
-### `MOTIF.MERELS_WAYS`
-Visible pieces versus invisible routes; later evolves from blocking others to allowing space.
+Reformation executions fracture that shared script. Condemned persons and spectators can convert punishment into witness through steadfastness, psalms, letters, songs and memory.
 
-### `MOTIF.TIK_TIK_TIK`
-Typesetting/patience → violence/loss → involuntary memory.
+Cornelis forms a third script: **protective silence**. He does not die as a loud martyr but refuses names.
 
-### `MOTIF.INCENSE_WAX`
-Early bodily memory and later callback; never an exposition device.
+The thematic carrier chain is now:
 
-### `MOTIF.CARRIER_MEANING`
-A carrier can remain recognisable while words, readability, function or meaning change: contrafact, printed play, book, chemical layer, game position, memoriaal.
+**body → suppression/destruction → memory/letter/song/book → chemically hidden writing → public print**.
 
-### `MOTIF.BLACKENING_REVEAL`
-In the vitriol scene the page must darken before what was hidden becomes readable. The alchemical resonance is thematic; the chemistry remains concrete.
-
-### `MOTIF.FIRE_WATER`
-Goes: fire/air. Reimerswaal: water/earth. Salt is materially central in both environments but not asserted as the same causal mechanism.
-
-### `MOTIF.BREAD_TRANSFORMATION`
-Material lesson in transformation: flour → dough → fermentation → stored oven heat → bread. Local practice must remain source-weighted.
-
-### `MOTIF.OLD_MELODY`
-A familiar melody can carry changed words. Contrafact becomes an auditory preparation for carrier ≠ content.
+Do not reintroduce “code” as necessary testimony mechanism for the *Brevísima*.
 
 ---
 
-## 9. World modules
+## 9. Open decisions — active backlog only
 
-### Goes
+The canonical active registry is `canon/OPEN_DECISIONS.yaml`, supplemented by `canon/OPEN_DECISIONS_ALCHEMY_REFINEMENT_2026-08-16.yaml`.
 
-Use source-weighted topography. Distinguish historical anchor, reconstruction and fiction. The 1554 fire is fixed on 18 May. The Nissepad reconstruction remains revisable at micro-topographic level when archival evidence improves.
+High-value remaining questions include:
 
-### Reimerswaal
+- exact circumstances/place/cause of Claes' death;
+- Spanish→Diets translator/source route in 1564;
+- physical wet/press validation of tannin/gum printing;
+- exact graphite-stift form/provenance;
+- exact low-level Fabritius→Cornelis security link;
+- exact Zovitius delivery route;
+- exact 1570→1578 publication/transmission chain;
+- 1564 chapter calendar audit;
+- final merels opponent/stakes/action;
+- whether Cornelis ever serves as deken;
+- exact non-gold Rode Leeuw carrier composition;
+- exact Enkhuizen furnace/assay choreography and additional witnesses.
 
-School destination 1554–1561; city remains functioning during Claes' years. The 1555 water threat is experienced, not the later final destruction. No invented rector or fixed surviving medieval school building.
-
-### Antwerp
-
-Landjuweel, free schools, trade, print world, Silvius, Dee, Plantin as surrounding ecosystem. No modern university model is imposed on Claes' formation.
-
-### Bread / grain / salt
-
-Worldbuilding is treated as material culture, not generic atmosphere. Bread type, grain route, urban professional baking and regional practice require their own evidence status. Salt functions economically and materially across Goes/Reimerswaal, but causal claims must not be overstated.
-
-### Music / prayer / Reformation
-
-Catholic/vernacular musical culture → contrafact → differentiating confessional song cultures. The alchemical/transmutation parallel is authorial, not a claim that the historical song sources encode alchemy.
-
-### Huis der Liefde / Radermacher
-
-Use as historically plausible network/social mirror around Antwerp–Middelburg–book culture and spiritualism. Never claim a proven Goes cell or institutional proto-Masonic lodge.
+Open scene choices such as Radermacher and the bakery remain authorial design decisions, not research problems that evidence can necessarily close.
 
 ---
 
-## 10. Open questions — canon must preserve uncertainty
+## 10. Narrative development still required
 
-Open records belong in `narrative/open_questions.yaml`; they are not invitations for an AI to silently decide.
+The canon is substantially richer than the current scene model. This is not an open-canon defect but an authoring backlog.
 
-High-priority unresolved matters include:
+`narrative/structure.yaml` still needs actual Book/Act/Sequence/Chapter/Beat population. `narrative/scenes.yaml` contains only a small fraction of the scene analyses the novel now requires.
 
-- exact Cornelis arrest date, place, charge and death mode within 1568/69 window;
-- the low-level incident making Cornelis operationally unsafe in 1564;
-- who formally decides declassification/compartmentalisation;
-- exact bookbinding intervention for the prepared memoriaal quires;
-- final wet-material test for red markers + tannin/galnut + green vitriol + paper;
-- exact Dodoens copy history and transfer into the Goes apothecary environment;
-- identity and biography of the beloved/apothecary family;
-- identity of the first Spanish→Diets source translator;
-- whether Gillis and/or Miggrode enter the novel directly;
-- exact delivery route of the 1570 Zovitius trigger to Goes;
-- physical facsimile/setting decisions for the clandestine supplement;
-- exact transmission route from reconstructed text 1570 to anonymous publication 1578;
-- exact death scene/location/cause for Claes;
-- final placement and wording of the last merels scene;
-- chapter calendar audit for the 1564 sequence.
+Priority scene-engineering targets:
 
----
+1. 1554 fire and survivor separation;
+2. Reimerswaal arrival and water threat;
+3. 1561 Landjuweel;
+4. Dee/Silvius/Boom material formation;
+5. 4 October 1564 security rupture;
+6. 1567 first Cornelis arrest;
+7. 19 November 1569 execution witnessed by Claes;
+8. 1570 direct memoriaal reveal with Mayken;
+9. 1578 print/release;
+10. Delft 1584 moral bottom;
+11. later *sinne* recovery with Mayken;
+12. Enkhuizen 13 March 1602;
+13. final merels/death Projectio.
 
-## 11. Continuity compiler rules
-
-The repository validator and Lemma together must enforce different classes of truth.
-
-### Repository validator
-
-Checks referential integrity and metadata discipline:
-
-- IDs unique;
-- referenced IDs exist;
-- canon/evidence vocabularies valid;
-- date windows valid;
-- source records and story claims linked;
-- deprecated/rejected items not silently used as active canon;
-- no invented precision beyond source/story precision;
-- Narrative Instances point to valid entities, claims, arcs and motifs.
-
-### Lemma
-
-Checks only deterministic constraints, including progressively:
-
-- `can_know` / `can_possibly_know`;
-- `can_meet`;
-- `can_be_at`;
-- `can_possess`;
-- `can_use`;
-- `can_decode`;
-- temporal compatibility;
-- acquisition windows;
-- object availability;
-- prerequisite chains;
-- hard continuity vetoes.
-
-Lemma must never decide whether a merely plausible reconstruction becomes story canon. That is an author decision recorded in `DEC.*`.
+Each developed scene should expose objective, pressure, opening value, turning point, closing value, knowledge change, object change and arc movement.
 
 ---
 
-## 12. Authoring workflow
+## 11. Canon precedence
 
-Every future change follows:
+When records conflict:
 
-> **source → SC claim → proposal/decision → STC claim → Storybible meaning → Narrative Instance → deterministic subset → Lemma → validation → human approval → publication**
+1. latest explicit current `DEC.*` author decision, including dated/supplement decisions;
+2. active domain-specific `STC.*` claim or explicit supersession noted by a later decision;
+3. dedicated current detail dossier;
+4. this current `LEMMA_MCKEE_MASTER.md` synthesis;
+5. other synchronized structured narrative/entity/object registries;
+6. Revision 11 prose for material not yet atomized and not superseded;
+7. source claims for historical support;
+8. proposals/open questions;
+9. dated legacy masters and session memory — audit/context only.
 
-External narrative theory follows a different route:
-
-> **McKee/Truby/etc. source → Source Claim → KO.* Knowledge Object → diagnostic → NI.* Narrative Instance**
-
-The two systems meet at the Narrative Instance. Universal theory never becomes Claes canon merely because it diagnoses a scene; Claes canon never becomes universal theory merely because it works in this novel.
-
----
-
-## 13. Canon precedence
-
-When records conflict, use this order:
-
-1. explicit current `DEC.*` author decision;
-2. active `STC.*` Story Claim;
-3. this Lemma/McKee transformed master;
-4. full Revision 11 prose Storybible for context and details not yet atomised;
-5. `SC.*` source claims for historical support;
-6. hypotheses/proposals/open questions;
-7. session memory — never authoritative.
-
-A conflict between a Story Claim and historical evidence is not automatically resolved. The claim may be deliberate fiction; the discrepancy must remain visible through independent `evidence_status` and `canon_status` fields.
+Lemma can reject an impossible combination but never invent story truth.

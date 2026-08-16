@@ -1,4 +1,4 @@
-schema_version: 1.5.0
+schema_version: 1.6.0
 kind: EntityRegistry
 entities:
 - id: ENT.PERSON.CLAES
@@ -18,16 +18,17 @@ entities:
     decision_id: DEC.CORNELIS.RESIDENCE.GOES.2026-08-14
   death:
     status: OPEN
-    not_before: '1602-01-01'
+    not_before: '1602-03-13'
   roles:
   - protagonist
   - student
   - copyist
   - trader
-  - decoder
-  - keeper
+  - material-interpreter
+  - keeper-of-testimony
   aliases:
   - Claes Nissepat
+
 - id: ENT.PERSON.CORNELIS
   type: Person
   label: Cornelis Claesz Nissepat
@@ -46,17 +47,26 @@ entities:
     childhood_scope_through: '1554'
     later_end: OPEN
     decision_id: DEC.CORNELIS.RESIDENCE.GOES.2026-08-14
-    note: "Canonical family home during Claes' Goes childhood; this does not equate the residence with Cornelis' business sites."
-  rhetorician_meeting_environment:
-    location: ENT.LOC.GOES.ZUSTERHUIS
-    decision_id: DEC.GOES.REDERIJKERS.MEETINGPLACE.2026-08-14
-    note: "Story placement aligned with the Nardusbloem's documented Zusterhuis chronology; Cornelis' exact chamber-name is not asserted here."
+    note: Canonical family home during Claes' Goes childhood; residence is distinct from Cornelis' business sites.
+  rhetorician:
+    chamber: ENT.ORG.GOES.NARDUSBLOEM
+    meeting_environment: ENT.LOC.GOES.ZUSTERHUIS
+    meeting_decision_id: DEC.GOES.REDERIJKERS.MEETINGPLACE.2026-08-14
+    affiliation_decision_id: DEC.CORNELIS.REDERIJKER.NARDUS_CASTANIE_ORIGIN.2026-08-16
+    novel_reconstruction: Cornelis plays a formative role in the 1560s reform-minded/protestantiserende current that becomes the later Edele Castanienbloem.
+    deken_status: OPEN
+    deken_open_id: OPEN.CORNELIS.REDERIJKER.DEKEN.001
+    guardrail: The pre-1595 Castanien origin is novel reconstruction; 1595 is the earliest surviving attestation, not a proved founding date.
   death:
-    window:
-      earliest: '1568-07-01'
-      latest_exclusive: '1570-01-01'
-      precision: interval
-    precision: work-canon
+    date: '1569-11-19'
+    place: ENT.LOC.ANTWERP
+    setting: Grote Markt / stadhuis public execution-and-book-burning environment after detention in or by Het Steen
+    manner: public beheading by sword under the seditious/network/recidive story framing
+    fictionality: novel_canon_in_historical_ritual_frame
+    decision_id: DEC.CORNELIS.DEATH.1569.2026-08-15.REVISED
+    witness: ENT.PERSON.CLAES
+    guardrail: Cornelis is not a documented historical victim in the surviving 19 November 1569 record.
+
 - id: ENT.PERSON.JOHN_DEE
   type: Person
   label: John Dee
@@ -65,7 +75,12 @@ entities:
   roles:
   - scholar
   - mentor
-  - code-architect
+  - mathematician
+  - cryptographic-and-material-scholar
+  constraints:
+  - Dee mentors Claes and gives the already prepared memoriaal plus graphite stift before Boom.
+  - The Brevísima is readable hidden text, not a Dee-designed cipher requiring later decryption.
+
 - id: ENT.PERSON.WILLEM_SILVIUS
   type: Person
   label: Willem Silvius
@@ -74,8 +89,11 @@ entities:
   roles:
   - printer
   - publisher
-  - translator
   - editor
+  constraints:
+  - Silvius sets and prints the fictional 1564 readable hidden Brevísima in novel canon.
+  - The identity of the initial Spanish-to-Diets translator remains OPEN.TRANSLATOR.1564.001; do not infer that Silvius is the translator from his printer/editor role.
+
 - id: ENT.PERSON.ALEXANDER_SETON
   type: Person
   label: Alexander Seton
@@ -105,15 +123,17 @@ entities:
   - Do not state that Seton's historical Enkhuizen powder was green or red.
   - Do not state as fact that he belonged to the noble Seton family.
   - Do not state as fact that he was Protestant, anti-Spanish or a partisan of the Dutch Revolt.
-  - Do not connect Seton to revealing, decoding, reading, authenticating, printing or recovering the Brevisima or memoriaal.
-  - The Brevisima textual mission is already completed by the Antwerp 1578 print event.
+  - Do not connect Seton to revealing, decoding, reading, authenticating, printing or recovering the Brevísima or memoriaal.
+  - The Brevísima textual mission is already completed by the Antwerp 1578 print event.
+
 - id: ENT.PERSON.JACOB_HANSSEN
   type: Person
-  label: Jacob Hanssen / Haussen
+  label: Jacob Hanssen / Haussen / Hausfsen
   fictionality: historical_tradition
   canon_status: CANON_CONTEXT
   aliases:
   - Jacob Haussen
+  - Jacob Hausfsen
   - James Haussen
   roles:
   - Enkhuizen-sailor-pilot
@@ -127,7 +147,8 @@ entities:
   constraints:
   - A deliberate mission to find Seton is fiction-design, not established history.
   - Do not silently turn the shipwreck tradition into a staged wreck.
-  - If a secret mission is chosen, its motive must arise from the late alchemical/projectio line, not from the Brevisima or a hidden-text problem.
+  - If a secret mission is chosen, its motive must arise from the late alchemical/projectio line, not from the Brevísima or a hidden-text problem.
+
 - id: ENT.PERSON.VANDERLINDEN_ENKHUIZEN
   type: Person
   label: Van der Linden, physician of Enkhuizen
@@ -140,122 +161,153 @@ entities:
   constraints:
   - Distinguish this Enkhuizen physician from later descendants in the Van der Linden witness chain.
   - Exact personal identification requires further source work before stronger biographical claims.
+
 - id: ENT.PERSON.JOHANNES_ANTONIDES_VANDERLINDEN
   type: Person
   label: Johannes Antonides van der Linden
   fictionality: historical
   canon_status: CANON_CONTEXT
-  roles:
-  - physician
-  - later-holder-in-gold-witness-chain
-  usage: later material-witness link in Morhof tradition; exact genealogy and chain should remain source-controlled
+  roles: [physician, later-holder-in-gold-witness-chain]
+  usage: later material-witness link in Morhof tradition; exact genealogy and chain remain source-controlled
+
 - id: ENT.PERSON.DANIEL_GEORG_MORHOF
   type: Person
   label: Daniel Georg Morhof
   fictionality: historical
   canon_status: CANON_CONTEXT
-  roles:
-  - scholar
-  - reporter-of-Enkhuizen-gold-tradition
+  roles: [scholar, reporter-of-Enkhuizen-gold-tradition]
   usage: later source witness; not an eyewitness to the 1602 projection
+
 - id: ENT.PERSON.MARCUS_GILLIS
   type: Person
   label: Marcus Antonius Gillis van Diest
   fictionality: historical
   canon_status: OPEN
-  roles:
-  - translator
-  - editor
-  - historical-model
+  roles: [translator, editor, historical-model]
+
 - id: ENT.PERSON.PLANTIN
   type: Person
   label: Christoffel Plantijn
   fictionality: historical
   canon_status: CANON
-  roles:
-  - printer
-  - network-node
+  roles: [printer, network-node]
+
 - id: ENT.PERSON.MORETUS
   type: Person
   label: Jan I Moretus
   fictionality: historical
   canon_status: CANON
-  roles:
-  - printer
-  - historical-network
-  constraints:
-  - not available as 1564 translator
+  roles: [printer, historical-network]
+  constraints: [not available as 1564 translator]
+
 - id: ENT.PERSON.MIGGRODE
   type: Person
   label: Johannes/Jacques van Miggrode
   fictionality: historical
   canon_status: OPEN
-  roles:
-  - later-las-casas-parallel
+  roles: [later-las-casas-parallel]
+
 - id: ENT.PERSON.CORDERO
   type: Person
   label: Juan Martín Cordero
   fictionality: historical
   canon_status: CANON
-  roles:
-  - spanish-translator-context
-  constraints:
-  - not available in Antwerp in 1564
+  roles: [spanish-translator-context]
+  constraints: [not available in Antwerp in 1564]
+
 - id: ENT.PERSON.HENDRIK_NICLAES
   type: Person
   label: Hendrik Niclaes
   fictionality: historical
   canon_status: CANON
-  roles:
-  - founder-family-of-love
+  roles: [founder-family-of-love]
   usage: historical context; direct story use remains conditional
+
 - id: ENT.PERSON.RADERMACHER
   type: Person
   label: Johan Radermacher de Oude
   fictionality: historical
   canon_status: OPEN
-  roles:
-  - merchant
-  - humanist
-  - network-node
+  roles: [merchant, humanist, network-node]
   usage: possible late social mirror
+
 - id: ENT.PERSON.GILLIS_HOOFTMAN
   type: Person
   label: Gillis Hooftman
   fictionality: historical
   canon_status: CANON
-  roles:
-  - merchant
-  - network-node
+  roles: [merchant, network-node]
   usage: historical context; direct story use remains conditional
+
 - id: ENT.PERSON.ORTELIUS
   type: Person
   label: Abraham Ortelius
   fictionality: historical
   canon_status: CANON
-  roles:
-  - cartographer
-  - humanist
+  roles: [cartographer, humanist]
   usage: historical context; direct story use remains conditional
+
 - id: ENT.PERSON.GLAUDE_LUYTHON
   type: Person
   label: Glaude Luython
   fictionality: historical
   canon_status: CANON
-  roles:
-  - schoolmaster
+  roles: [schoolmaster]
   usage: historical context; direct story use remains conditional
+
 - id: ENT.PERSON.BELOVED
   type: Person
-  label: Geliefde / apothekersdochter
+  label: Mayken Adriaensdr. Lampert
   fictionality: fictional
   canon_status: CANON
+  aliases: [Mayken, Mayken Adriaens, Mayken Adriaensdochter]
+  birth:
+    earliest: '1546-01-01'
+    latest_exclusive: '1547-01-01'
+    place: ENT.LOC.GOES
+    precision: approximate
   roles:
   - partner
+  - apothecary-daughter
   - material-expert
+  - botanical-counterpart
   - error-checker
-  - recovery-catalyst
-  identity_status: OPEN
+  - sensory-recovery-companion
+  identity_status: RESOLVED
+  decision_id: DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14
+  detail_registry: entities/MAYKEN_LAMPERT.yaml
+  constraints:
+  - Mayken is fictional and is not a historically recovered daughter.
+  - She may assist direct chemical reveal and reading but is not a cipher, nomenclator or special-Dodoens key-holder.
+
+- id: ENT.PERSON.ADRIAEN_JACOBSZ_LAMPERT
+  type: Person
+  label: Adriaen Jacopsen Lampert
+  fictionality: historical_with_fictional_kinship
+  canon_status: CANON_CONTEXT
+  roles: [Goese-property-holder, likely-apothecary, father-of-Mayken-in-novel]
+  constraints:
+  - Identification with Adriaen Jacopsen apteker is SUPPORTED, not literally proved in one act.
+  - Historical records do not currently identify a daughter Mayken.
+
+- id: ENT.PERSON.JACOB_LAMPART_APOTHECARY
+  type: Person
+  label: Jacob/Jacop Lampart/Lambert, apotheker
+  fictionality: historical_with_fictional_kinship
+  canon_status: CANON_CONTEXT
+  roles: [Goese-apothecary, grandfather-of-Mayken-in-novel]
+  constraints:
+  - Fatherhood of Adriaen is supported reconstruction adopted as novel genealogy, not archival proof.
+
+- id: ENT.PERSON.MERRICKEN_LAMPART_HOUSEHOLD
+  type: Person
+  label: Merricken, huisvrouw van Jacop/Jacob de apotheker
+  fictionality: historical_with_fictional_kinship
+  canon_status: CANON_CONTEXT
+  roles: [Goese-apothecary-household, grandmother-of-Mayken-in-novel]
+  constraints:
+  - Do not automatically identify her with the Mayken named as Jacop Lampart's wife in 1543.
+
 - id: ENT.LOC.GOES
   type: Location
   label: Goes
@@ -292,10 +344,10 @@ entities:
   label: Enkhuizen
   fictionality: historical
   canon_status: CANON
-  usage: destination associated with late sensory/spiritual recovery line and the 1602 Seton/projectio climax
+  usage: destination associated with late sensory/spiritual recovery and 1602 Seton/projectio climax
 - id: ENT.LOC.SILVIUS_GULDEN_ENGEL
   type: Location
-  label: Silvius’ Gulden Engel
+  label: Silvius' Gulden Engel
   fictionality: historical
   canon_status: CANON
   parent: ENT.LOC.ANTWERP
@@ -307,6 +359,7 @@ entities:
   canon_status: CANON
   parent: ENT.LOC.GOES
   usage: contextual
+
 - id: ENT.OBJ.ENKHUIZEN_SETON_GOLD_1602
   type: Object
   label: Enkhuizen Seton-goudfragment (1602)

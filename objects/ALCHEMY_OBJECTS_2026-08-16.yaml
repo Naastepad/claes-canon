@@ -1,0 +1,54 @@
+schema_version: 1.0.0
+kind: ObjectSupplement
+objects:
+- id: OBJ.GREEN_VITRIOL
+  label: Groene vitriool / green copperas in Claes' process
+  type: MaterialObject
+  canon_status: CANON
+  historical_status: HISTORICAL_MATERIAL_STORY_PROCESS_ROLE
+  source_refs:
+  - SRC-HIST-AGRICOLA-DE-RE-METALLICA-1556-VITRIOL-001
+  - SRC-HIST-NORTON-KEY-ALCHEMY-GREEN-LION-001
+  functions:
+  - direct iron source that develops the tannin-loaded memoriaal typography into dark readable text
+  - operational Groene Leeuw in Dee and Claes' specific process vocabulary
+  - upstream member of Claes' learned vitriol/corrosive-water process family
+  constraints:
+  - not a universal historical definition of Green Lion
+  - not itself the direct solvent that opens gold in De dood van Sol
+  - do not use tasting of vitriol/corrosive liquor as routine scene diagnosis
+- id: OBJ.SOL_GOLD_FRACTION
+  label: Materieel continue Sol-fractie
+  type: MaterialContinuityObject
+  canon_status: CANON
+  historical_status: AUTHORIAL_CHEMICAL_MODEL
+  phases:
+  - visible-gold-before-opening
+  - chemically-opened-or-dissolved-hidden-Sol
+  - recovered-or-fixed-gold-bearing-fraction-in-red-matrix
+  - hidden-Sol-carried-into-Saturn-projectio
+  - visible-gold-bearing-result-after-assay
+  constraints:
+  - no stage creates gold from lead
+  - no new gold may be silently introduced after the deliberate opening of Sol
+  - disappearance of visible gold is change of material form, not annihilation
+  - exact speciation and laboratory composition need not be narrated in modern chemical terms
+- id: OBJ.RED_LION_PROJECTIEPOEDER
+  label: Rode Leeuw / projectiepoeder
+  type: MaterialObject
+  canon_status: CANON
+  historical_status: FICTIONAL_HISTORICAL_CHEMICAL_RECONSTRUCTION
+  decision_ids:
+  - DEC.ALCHEMY.GREEN_LION_SOL_CONTINUITY.2026-08-16
+  functions:
+  - portable red/dark carrier in which already-present Sol is hidden/fixed
+  - material culmination of the red-fixation stage
+  - dangerous portable analogue to a book or other carrier of hidden meaning
+  material_model:
+    gold_fraction: OBJ.SOL_GOLD_FRACTION
+    non_gold_carrier: OPEN.ALCHEMY.RED_LION.CARRIER_COMPOSITION.001
+  constraints:
+  - exact non-gold carrier composition remains open
+  - appearance may draw on period red mineral/metal preparations but symbolic colour alone may not determine chemistry
+  - must remain consistent with a later apparent projection in which already-present Sol becomes visible
+  - must not be treated as proof of literal transmutation

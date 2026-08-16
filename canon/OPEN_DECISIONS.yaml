@@ -1,89 +1,60 @@
-schema_version: 1.8.0
+schema_version: 2.0.0
 kind: OpenDecisionRegistry
+policy:
+  active_only: true
+  note: Resolved, superseded and not-applicable records belong in dated decision/audit files and are not retained here as apparent open work.
 decisions:
 - id: OPEN.CLAES.DEATH.001
   domain: ending
   priority: high
-  question: Exact circumstances, place and cause of Claes’ death
+  question: Exact circumstances, place and cause of Claes' death
   status: OPEN
   fixed_function: Projectio / transfer without control
-- id: OPEN.CORNELIS.DEATH.001
-  domain: character
-  priority: high
-  question: Exact date, place, formal charge and manner of Cornelis’ death
-  status: OPEN
-  bounded_by: second half 1568 through 1569 working canon
-- id: OPEN.MEMORIAAL.BINDING.001
-  domain: object
-  priority: high
-  question: Exact bookbinding/material mechanism by which prepared rectos/quires enter the used memoriaal
-  status: RESOLVED
-  resolved_by: DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15
-  resolution:
-  - the completed readable Diets/Brabant Brevísima is printed on loose sheets before binding with the reconstructed near-invisible tannin/gallnut + gum-arabic first-pass medium
-  - the sheets are printed recto/verso in correct imposition, dried, folded/gathered and bound as the apparently blank memoriaal before Dee gives it to Claes
-  - no post-4-October physical insertion or hollow-book mechanism is used
-  - no cipher or key layer is inserted at any stage
-  guardrails:
-  - the exact reconstructed printing medium remains subject to OPEN.MATERIAL.WET_TEST.001
-  - do not present the tannin-gum typographic recipe as a documented historical Silvius recipe
+
 - id: OPEN.TRANSLATOR.1564.001
   domain: historical_reconstruction
   priority: high
-  question: Identity of initial Spanish-to-Diets/intermediate source translator
+  question: Identity of the initial Spanish-to-Diets translator or intermediate-source route for the completed 1564 text
   status: OPEN
   guardrails:
-  - Gillis may be Dutch stylist/editor; Spanish competence unproven
-  - Moretus unavailable for 1564
-  - Cordero no longer in Antwerp
-  - Miggrode in Veere
-- id: OPEN.CLAES.BELOVED.IDENTITY.001
-  domain: character
-  priority: high
-  question: Exact identity/name/background details of beloved/apothecary daughter
-  status: OPEN
-  fixed_function: material, apothecary and relational counterpart; she may assist controlled reveal and reading but is not a Dodoens/nomenclator key-holder
+  - Gillis may be a Diets stylist/editor; Spanish competence remains unproven.
+  - Moretus is unavailable for 1564.
+  - Cordero is no longer in Antwerp.
+  - Miggrode is in Veere.
+  - Do not make Silvius the translator merely because he prints the text.
+
 - id: OPEN.CHAPTER.NUMBERING.YOUTH.001
   domain: structure
   priority: low
-  question: Whether youth chapters use parallel numbering or join the chronological numbering of 1564 sequence
+  question: Whether youth chapters use parallel numbering or join the chronological numbering of the 1564 sequence
   status: OPEN
+
 - id: OPEN.BAKERY.SCENE.001
   domain: scene
   priority: low
-  question: Whether and where to use proposed “De Gest” bakery scene
+  question: Whether and where to use the proposed 'De Gest' bakery scene
   status: OPEN
-  canon_status: OPEN
+
 - id: OPEN.LATE_RADERMACHER.001
   domain: scene
   priority: low
-  question: Whether Claes directly meets Radermacher in late Middelburg line
+  question: Whether Claes directly meets Radermacher in the late Middelburg line
   status: OPEN
-  guardrail: network plausibility does not prove meeting or formal Familist affiliation
+  guardrail: Network plausibility does not prove a meeting or formal Familist affiliation.
+
 - id: OPEN.MERELS.CLOSEUPS.001
   domain: scene
   priority: medium
-  question: Which merels scenes/problems deserve close-up narrative treatment now that merels is independent of the Brevísima cipher architecture?
+  question: Which merels scenes or problems deserve close-up narrative treatment now that merels is independent of the Brevísima mechanism
   status: OPEN
-  fixed: merels remains available as game, skill, relationship and thematic motif; no fixed 24-problem recovery sequence is required
-- id: OPEN.MERELS.ENTRY_AFTER_MEMORIAAL_REDESIGN.001
-  domain: code_and_object
-  priority: high
-  question: Where and by what route do the 24 complete merels problems enter Claes' 1570 key-recovery sequence now that the memoriaal's chemically revealed layer is the Las Casas ciphertext itself?
-  status: RESOLVED_NOT_APPLICABLE
-  resolved_by: DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15
-  resolution: The 24-problem recovery sequence is retired because no cipher or key-recovery sequence remains. Merels may continue independently as game/motif.
-- id: OPEN.CODE.P1_P3_P4.001
-  domain: code
-  priority: high
-  question: Final engine/source-technical control of P1, P3 and P4
-  status: RESOLVED_NOT_APPLICABLE
-  resolved_by: DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15
-  resolution: The 24×24 recovery architecture is retired with the cipher.
+  fixed:
+  - Merels remains a game, skill, relationship device and thematic motif.
+  - No fixed 24-problem recovery sequence is required.
+
 - id: OPEN.MATERIAL.WET_TEST.001
   domain: material
   priority: high
-  question: Physical wet/press test of the reconstructed gallnut/tannin + gum-arabic medium on metal relief type, including transfer, dry visibility/gloss, mechanical moet, paper condition and subsequent diluted green-vitriol development
+  question: Physical wet/press test of the reconstructed gallnut/tannin plus gum-arabic medium on metal relief type, including transfer, dry visibility/gloss, mechanical moet, paper condition and diluted green-vitriol development
   status: OPEN
   fixed_workshop_start:
   - 2 medicinal drachmen gallnuts steeped in 2.5 medicinal ounces clear water
@@ -92,189 +63,106 @@ decisions:
   - proof developer reference is 0.5 medicinal drachme green vitriol in 4 medicinal ounces clear water
   guardrails:
   - No untested recipe becomes hard historical prose.
-  - The story process is canon as technical reconstruction; experimental performance and exact optimum remain open.
+  - The process is canon as technical reconstruction; experimental performance and exact optimum remain open.
+
 - id: OPEN.MEMORIAAL.FACSIMILE.001
   domain: object
   priority: medium
   question: Final facsimile appearance of the apparently blank/graphite-used memoriaal and the developed directly readable Brevísima pages
   status: OPEN
+
 - id: OPEN.GRAPHITE_STIFT.PROVENANCE.1564.001
   domain: historical_reconstruction
   priority: medium
   question: Exact historically defensible physical form and provenance of the graphite marking stift Dee gives Claes in Antwerp in early 1564
   status: OPEN
   fixed_story_function:
-  - Dee gives Claes a graphite marking tool with OBJ.MEMORIAAL before Boom
-  - Dee forbids ink while Claes remains his pupil
+  - Dee gives Claes a graphite marking tool with OBJ.MEMORIAAL before Boom.
+  - Dee forbids ink while Claes remains his pupil.
   guardrails:
-  - do not automatically depict a later modern wood-cased pencil
-  - historical form/provenance uncertainty does not reopen the fixed story function
+  - Do not automatically depict a later standardized wood-cased pencil.
+  - Historical form/provenance uncertainty does not reopen the fixed story function.
+
 - id: OPEN.SECURITY.LOW_LINK.1564.001
   domain: plot
   priority: high
-  question: Exact low-level incident or identifiable network link that makes Cornelis operationally unsafe after 4 October 1564
+  question: Exact low-level incident or identifiable network link by which the 4 October 1564 Fabritius crisis makes Cornelis operationally unsafe
   status: OPEN
-  exclusions: [Cornelis need not be a stone thrower, Cornelis need not be arrested in 1564]
-  guardrail: This remains a persecution/network question and no longer controls access to a cipher key or the physical memoriaal.
-- id: OPEN.SECURITY.DECLASSIFICATION.001
-  domain: plot
-  priority: medium
-  question: Who formally decides that Cornelis loses direct-key access — Silvius alone or Silvius with Dee/another keeper?
-  status: RESOLVED_NOT_APPLICABLE
-  resolved_by: DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15
-  resolution: No direct cryptographic key remains to be withheld after 4 October 1564.
-- id: OPEN.DODOENS.PROVENANCE.001
-  domain: object
-  priority: high
-  question: Exact edition/copy status, owner, date and legal/social mechanism by which the special Dodoens reaches the Goes apothecary environment
-  status: RESOLVED_NOT_APPLICABLE
-  resolved_by: DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15
-  resolution: The special coded Dodoens carrier is retired. Ordinary Dodoens use may be researched independently if needed for botany/apothecary scenes.
-- id: OPEN.CLAES.FAMILY_FIRE_1554.001
-  domain: character_and_event
-  priority: high
-  question: What is the fictional household-level outcome of the 18 May 1554 fire for the older-Nieuwstraat home, Claes' mother and any younger sibling(s)?
-  status: RESOLVED
-  resolved_by: DEC.CLAES.FAMILY_FIRE.1554.2026-08-14
-  resolution:
-  - the 1542 family home becomes uninhabitable or is destroyed in the fire
-  - Claes and Cornelis survive because they are away from the house when the fire reaches the street
-  - Tanneken Jansdochter dies in the fire while about six months pregnant
-  - Jan Corneliszn. Nissepat, born about eighteen months after Claes, dies in the fire
-  - the unborn child dies with Tanneken
-  - 1554 becomes the first personal Nigredo and the rupture that precedes Reimerswaal
-  historical_frame:
-  - burned houses are explicitly documented at the corner of the older Nieuwstraat and in the Armenhoek in post-fire RAZE 1748 transport records
-  - ordinary houses also continue to be transferred in Nieuwstraat after May 1554, so the street suffered mixed/partial destruction rather than total loss
-  - no current source proves that the specific 1542 Nissepat parcel burned
-  - no current source provides a victim list identifying members of the fictional household
-  guardrails:
-  - Present the house loss and casualties as explicit novel canon, not archival fact.
-  - Do not invent historical victim documentation for Tanneken, Jan or the unborn child.
-  - Mother and brother names are fixed by DEC.CLAES.EXTENDED_FAMILY.2026-08-14; the unborn child's sex remains open.
-- id: OPEN.CLAES.EXTENDED_FAMILY.001
-  domain: genealogy_and_character
-  priority: medium
-  question: Names, grandparents and functional distinction of Claes' paternal and maternal family lines
-  status: RESOLVED
-  resolved_by: DEC.CLAES.EXTENDED_FAMILY.2026-08-14
-  resolution:
-  - mother is Tanneken Jansdochter
-  - younger brother is Jan Corneliszn. Nissepat, approximately June 1544
-  - paternal grandparents are historical Claes Jacobsz. Nissepat plus fictional Lijsbet Pietersdochter
-  - maternal grandparents are a fictionalized grandfather modeled on a historical Goese Jan Jansen kuiper plus fictional Mayken Pietersdochter
-  - Jan is named for the maternal-grandfather figure in novel canon
-  - Lijsbet dies circa 1540–1541 in story canon; the maternal-grandfather model around 1543; Mayken survives 1554
-  guardrails:
-  - Historical source anchors and fictional kinship must remain explicitly separated.
-  - The Jan Jansen kuiper cluster may conflate same-name individuals; do not present a unique archival maternal grandfather as proven.
-- id: OPEN.MOTHER.ADULT_FUNCTION.001
-  domain: character
-  priority: medium
-  question: If Claes' mother survives the 1554 fire, what is her adult plot function after Cornelis' arrest/death?
-  status: RESOLVED_NOT_APPLICABLE
-  resolved_by: DEC.CLAES.FAMILY_FIRE.1554.2026-08-14
-  resolution: Tanneken dies in the 18 May 1554 fire; she has no adult plot function after Cornelis' later arrest/death.
+  exclusions:
+  - Cornelis need not be a stone thrower.
+  - Cornelis need not be arrested in 1564.
+  guardrail: This is a persecution/network question; it does not control a cryptographic key or physical loading of the memoriaal.
+
 - id: OPEN.GILLIS.ROLE.001
   domain: character
   priority: medium
-  question: Whether Marcus Antonius Gillis appears directly as limited Diets redactor/model
+  question: Whether Marcus Antonius Gillis appears directly as a limited Diets redactor/model
   status: OPEN
+
 - id: OPEN.MIGGRODE.ROLE.001
   domain: character
   priority: low
   question: Whether Miggrode receives any fictional pre-1578 contact line
   status: OPEN
+
 - id: OPEN.DEE.SPANISH.001
   domain: historical_reconstruction
   priority: low
-  question: Dee's Spanish reading competence, unless new evidence closes it
+  question: Dee's Spanish reading competence, but only if it remains necessary to a scene after the translator decision is designed
   status: OPEN
-- id: OPEN.CIPHER.PHYSICAL_PRODUCTION.001
-  domain: object
-  priority: medium
-  question: Final setting/facsimile proof, exact set count within 3–6 work canon and fate of possible 24 composite sorts
-  status: RESOLVED_NOT_APPLICABLE
-  resolved_by: DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15
-  resolution: Silvius sets ordinary readable Diets/Brabant text; no cipher groups or special 24 composite sorts are required.
+
 - id: OPEN.ZOVITIUS.DELIVERY.1570.001
   domain: plot
   priority: high
   question: Exact route by which the special 1570 Zovitius copy reaches Claes in Goes
   status: OPEN
   guardrail: If retained, its function is a material cue toward GALLA LEO VIRIDIS, not delivery of a cryptographic key.
+
 - id: OPEN.ANTWERP.1564.NAMES.001
   domain: historical_research
   priority: low
   question: Primary verification of names, if used, for the Vrouwenbroeder of 4 October and the Walloon executed 19 December 1564
   status: OPEN
+
 - id: OPEN.PUBLICATION.TRANSMISSION.1570_1578.001
   domain: plot
   priority: high
-  question: Exact production/transmission route of the revealed readable Diets/Brabant text between the memoriaal reveal and the fictionally linked anonymous 1578 publication
+  question: Exact human, production and distribution route from the revealed readable Diets/Brabant text to the Antwerp 1578 print event
   status: OPEN
+  fixed:
+  - year: 1578
+  - place: Antwerp
+  - mode: printed publication / print event
+  - function: projectio of the Word; the textual mission is complete by 1578
+  guardrails:
+  - Seton has no role in this route.
+  - Exact printer, cover identity, distribution route and surviving-copy logic remain evidence-controlled or explicit novel reconstruction.
+
 - id: OPEN.CHAPTER.CALENDAR.1564.001
   domain: chronology
   priority: high
-  question: Calendar audit of 1564_1 through 1564_5 against wrong chest → readable translation production → invisible tannin/gum print → memoriaal/graphite handoff before Boom → decisive transfer journey → 4 October security break
+  question: Calendar audit of 1564 chapters against readable translation production, invisible tannin/gum print, memoriaal/graphite handoff before Boom, Boom/Antwerp process lessons and the 4 October security break
   status: OPEN
   fixed:
-  - NI.SCENE.MEMORIAAL_GIFT.1564.001 occurs before NI.CHAPTER.1564.03
+  - NI.SCENE.MEMORIAAL_GIFT.1564.001 occurs before NI.CHAPTER.1564.03.
+  - 4 October changes network risk, not the physical contents of the memoriaal.
+
 - id: OPEN.FINAL_MERELS.001
   domain: ending
   priority: medium
   question: Exact opponent, stakes and action of the final merels scene
   status: OPEN
-  fixed_function: Mastery expressed as balance, space and release rather than maximum domination
-- id: OPEN.CORNELIS.RESIDENCE.GOES.1542.001
-  domain: spatial_continuity
-  priority: high
-  question: Where do Cornelis Claesz Nissepat, his wife and young Claes reside in Goes during Claes' childhood, distinct from business and family property locations?
-  status: RESOLVED
-  resolved_by: DEC.CORNELIS.RESIDENCE.GOES.2026-08-14
-  resolution: The historical house bought by Claes Jacobsz. Nissepat in the pre-1594 Nieuwstraat on 20 March 1542 is canonically the fictional Cornelis household's family home during Claes' childhood.
-  guardrails:
-  - Historical purchase and parcel topology are evidence; occupation by Cornelis' fictional household is novel canon.
-  - Residence does not establish ownership by Cornelis and is distinct from Nissepad, harbour, brewery, warehouse and salt-business sites.
-  - The house is canonically lost in 1554 under DEC.CLAES.FAMILY_FIRE.1554.2026-08-14; that specific parcel loss remains fiction grounded in a historically supported partially damaged street environment.
-- id: OPEN.GOES.NIEUWSTRAAT.PRE1594.001
-  domain: historical_reconstruction
-  priority: high
-  question: What street/place identity do the transport-register references to Nieuwstraat before 1594 represent, including Claes Jacobsz Nissepat's 1542 house?
-  status: RESOLVED
-  resolved_by: DEC.GOES.NIEUWSTRAAT.IDENTITY.2026-08-14
-  resolution: Treat the pre-1594 deed-name as an older Nieuwstraat/Oude Nieuwstraat in or by the Armenhoek, distinct from the planmatige/current Nieuwstraat associated with the 1594 expansion. Exact 1542 axis remains uncertain.
-  fixed:
-  - transport acts attest a Nieuwstraat before 1594
-  - later transport locators connect Nieuwstraat/Oude Nieuwstraat with the Armenhoek
-  - the planmatige/current Nieuwstraat belongs to the 1594 expansion decision
-  - post-fire RAZE 1748 acts document burned houses at the corner of Nieuwstraat and in the Armenhoek, while other Nieuwstraat houses survive/transfer after the fire
-  guardrails:
-  - Never merge the two location identities by normalized name alone.
-  - Preserve the 1542 parcel topology: street east; Jacob Dierixsen de Bye north, west and south.
-  - Zone-level resolution does not license an invented exact cadastral street line.
-  - Fire-damage evidence supports a mixed/partial damage zone, not automatic destruction of every property.
-- id: OPEN.GOES.REDERIJKERS.MEETINGPLACE.001
-  domain: historical_reconstruction
+  fixed_function: Mastery expressed as balance, space and release rather than maximum domination.
+
+- id: OPEN.CORNELIS.REDERIJKER.DEKEN.001
+  domain: character_and_rederijker_network
   priority: medium
-  question: Where did the active Goese rederijkers meet, rehearse or store chamber property during Cornelis' period?
-  status: RESOLVED
-  resolved_by: DEC.GOES.REDERIJKERS.MEETINGPLACE.2026-08-14
-  resolution: Cornelis-era rederijker scenes use the Zusterhuis/former Zwarte-Zusters complex at the Singelstraat. The Nardusbloem moved to the Sint-Sebastiaangilde only in 1626, so that hof is not back-projected into Cornelis' period.
-  guardrails:
-  - The Zusterhuis chronology is specifically documented for the Nardusbloem/old Goese chamber; do not infer the same fixed room for every separately named Goese chamber.
-  - Maria Magdalena devotion and worldly meeting place remain distinct institutional relations.
-  - Exact room inside the Zusterhuis remains unknown.
-- id: OPEN.CORNELIS.REDERIJKERS.CHAMBER.001
-  domain: character_historical_embedding
-  priority: medium
-  question: Which named Goese chamber, if any, is fictional Cornelis explicitly said to belong to?
+  question: Does Cornelis ever serve as deken of the Nardusbloem or of the emerging reform-minded Castanien current during his lifetime
   status: OPEN
-  candidates:
-  - Nardusbloem / old Magdalena-linked chamber as the strongest continuous mid-sixteenth-century model
-  - generic Goese kamer van retorica without naming it
+  fixed:
+  - Cornelis is a member of the Nardusbloem / older Magdalena-linked Goese tradition.
+  - In novel canon he plays a formative role in the 1560s emergence of the reform-minded/protestantiserende current that becomes the later Edele Castanienbloem.
+  - No deken office is currently canon.
   guardrails:
-  - De Goudtsblome is documented 1540–1543 and should not be treated as continuously active through Cornelis' later story without evidence.
-  - De Clisblome is documented briefly around 1545/1546.
-  - De Edele Castanienbloem is documented from 1595 and must not be presented as a historical Cornelis-era chamber unless explicitly chosen as acknowledged fictional back-projection.
-  - The meeting-place decision is already closed; this open record concerns chamber identity only.
+  - Do not use deken status to justify access or logistics already supported by poorter, biersteker, rederijker and trust networks.
+  - The pre-1595 Castanien origin is explicit novel reconstruction, not historical attestation.

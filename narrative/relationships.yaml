@@ -1,173 +1,185 @@
-schema_version: 1.4.0
+schema_version: 1.5.0
 kind: NarrativeRelationshipRegistry
 relationships:
-  - id: REL.CLAES.CORNELIS
-    type: Relationship
-    label: "Claes and Cornelis"
-    participants: [ENT.PERSON.CLAES, ENT.PERSON.CORNELIS]
-    status: CANON
-    phases:
-      - label: "formation within an intact household"
-        story_time: {earliest: 1547-01-01, latest_exclusive: 1554-05-18, precision: approximate}
-        value_state: "dependence -> admiration"
-        function: "Cornelis teaches attention, craft, patience and the difference between pieces and routes while Claes remains one of two sons in the household of Cornelis and Tanneken."
-      - label: "shared catastrophe and physical separation"
-        story_time: {earliest: 1554-05-18, latest_exclusive: 1561-09-01, precision: bounded}
-        value_state: "shared family -> surviving father and son who also lose daily access to each other"
-        function: "Both lose Tanneken, Jan, the unborn child and home. Cornelis remains in Goes to rebuild livelihood, business and shelter and to finance Claes' education; Claes is sent to Reimerswaal. Cornelis' act of care is therefore also experienced by Claes as distance and possible abandonment."
-        support: "Claes Jacobsz. Nissepat, fictionally Cornelis' father, helps where possible despite losing the 1542 house as his own asset; Mayken preserves a different kind of continuity through care and family memory."
-        decision_id: DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14
-      - label: "distance through secrecy"
-        story_time: {earliest: 1560-01-01, latest_exclusive: 1568-07-01, precision: interval}
-        value_state: "admiration -> suspicion/exclusion"
-        function: "The earlier physical separation gives way to a new interpretive separation: Claes sees that Cornelis hides routes, papers, books and dangerous loyalties from authorities and from him. The relationship no longer depends on a cipher/fallback-key asymmetry."
-      - label: "loss and inheritance"
-        story_time: {earliest: 1568-07-01, latest_exclusive: 1570-01-01, precision: work-window}
-        value_state: "living authority -> absent moral inheritance"
-        transfer: "No cryptographic Castanea clue is required; Cornelis' final transfer may remain human, relational or testimony-centered and can be staged separately."
-        resonance: "Cornelis' death closes the possibility that father and son will ever recover all the time lost after 1554."
-      - label: "differentiation"
-        story_time: {earliest: 1570-01-01, precision: lower-bound}
-        value_state: "inheritance -> independent moral judgement"
-    ko_targets: [KO.CHARACTER, KO.VALUE, KO.CONFLICT, KO.RELATIONSHIP]
+- id: REL.CLAES.CORNELIS
+  type: Relationship
+  label: Claes and Cornelis
+  participants: [ENT.PERSON.CLAES, ENT.PERSON.CORNELIS]
+  status: CANON
+  phases:
+  - label: formation within an intact household
+    story_time: {earliest: '1547-01-01', latest_exclusive: '1554-05-18', precision: approximate}
+    value_state: dependence -> admiration
+    function: Cornelis teaches attention, craft, patience and the difference between pieces and routes while Claes grows up with Tanneken, younger brother Jan and an expected unborn sibling.
+  - label: shared catastrophe and physical separation
+    story_time: {earliest: '1554-05-18', latest_exclusive: '1561-09-01', precision: bounded}
+    value_state: shared family -> surviving father and son who also lose daily access to each other
+    function: Both lose Tanneken, Jan, the unborn child and home. Cornelis remains in Goes to rebuild livelihood, business and shelter and finance Claes' education; Claes is sent to Reimerswaal. Cornelis' act of care is therefore also experienced by Claes as distance and possible abandonment.
+    support: Claes Jacobsz. Nissepat, fictionally Cornelis' father, helps where possible despite losing the 1542 house; maternal grandmother Mayken Pietersdochter preserves a different continuity through care and family memory.
+    decision_id: DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14
+  - label: distance through secrecy and network risk
+    story_time: {earliest: '1561-09-01', latest_exclusive: '1567-09-01', precision: interval}
+    value_state: admiration -> suspicion/exclusion
+    function: The earlier physical separation gives way to interpretive separation as Claes sees that Cornelis hides routes, papers, books and dangerous loyalties. The relationship does not depend on a cipher or fallback key.
+  - label: warning, recidive and final loss
+    story_time: {earliest: '1567-09-01', latest_exclusive: '1569-11-20', precision: bounded}
+    value_state: compromised living father -> condemned protective silence -> absent moral inheritance
+    events:
+    - autumn 1567 first Antwerp arrest/examination and release on borg or conditions
+    - late 1568 through March 1569 renewed exposure through clandestine book/paper traffic
+    - 19 November 1569 public execution in Antwerp witnessed by Claes
+    transfer: No cryptographic clue is required. Any final exchange is human, relational or testimony-centered.
+    resonance: Cornelis' death closes the possibility that father and son will recover the time lost after 1554.
+    decision_id: DEC.CORNELIS.DEATH.1569.2026-08-15.REVISED
+  - label: differentiation
+    story_time: {earliest: '1569-11-20', precision: lower-bound}
+    value_state: inheritance -> independent moral judgement
+  ko_targets: [KO.CHARACTER, KO.VALUE, KO.CONFLICT, KO.RELATIONSHIP]
 
-  - id: REL.CLAES.BROTHER
-    type: Relationship
-    label: "Claes and Jan"
-    participants: [ENT.PERSON.CLAES, ENT.PERSON.CLAES_BROTHER]
-    status: CANON
-    story_time: {earliest: 1544-05-01, latest_exclusive: 1554-05-19, precision: approximate}
-    value_state: "love <-> rivalry <-> companionship -> irreversible loss"
-    function: "Jan is about eighteen months younger, close enough in age to be Claes' daily companion and rival. Their bond must contain play, competition, quarrels, loyalty, shared mischief and unfinished ordinary conflict before the fire."
-    contrast:
-      claes: "observes, compares, waits"
-      jan: "acts sooner, tests physically, pulls Claes toward action"
-    termination:
-      date: '1554-05-18'
-      event: NI.EVENT.GOES_FIRE.1554.001
-    guardrail: "Do not write Jan as a decorative victim or foreshadow his death so heavily that ordinary brotherhood disappears."
-    decision_id: DEC.CLAES.EXTENDED_FAMILY.2026-08-14
-    ko_targets: [KO.RELATIONSHIP, KO.CONFLICT, KO.VALUE, KO.CHARACTER]
+- id: REL.CLAES.BROTHER
+  type: Relationship
+  label: Claes and Jan
+  participants: [ENT.PERSON.CLAES, ENT.PERSON.CLAES_BROTHER]
+  status: CANON
+  story_time: {earliest: '1544-05-01', latest_exclusive: '1554-05-19', precision: approximate}
+  value_state: love <-> rivalry <-> companionship -> irreversible loss
+  function: Jan is about eighteen months younger, close enough in age to be Claes' daily companion and rival. Their bond contains play, competition, quarrels, loyalty, shared mischief and unfinished ordinary conflict before the fire.
+  contrast:
+    claes: observes, compares, waits
+    jan: acts sooner, tests physically, pulls Claes toward action
+  termination: {date: '1554-05-18', event: NI.EVENT.GOES_FIRE.1554.001}
+  guardrail: Do not write Jan as a decorative victim or foreshadow his death so heavily that ordinary brotherhood disappears.
+  decision_id: DEC.CLAES.EXTENDED_FAMILY.2026-08-14
+  ko_targets: [KO.RELATIONSHIP, KO.CONFLICT, KO.VALUE, KO.CHARACTER]
 
-  - id: REL.CLAES.TANNEKEN
-    type: Relationship
-    label: "Claes and Tanneken"
-    participants: [ENT.PERSON.CLAES, ENT.PERSON.CLAES_MOTHER]
-    status: CANON
-    story_time: {earliest: 1542-12-08, latest_exclusive: 1554-05-19, precision: bounded}
-    value_state: "embodied safety and practical knowing -> irreversible maternal loss"
-    function: "Tanneken is a primary source of Claes' pre-theoretical sensory education: heat, texture, smell, fermentation, illness, weather, cloth, food and household timing are known through body and practice before abstraction."
-    pregnancy_link: "Claes may feel the unborn child move under Tanneken's skin, giving him an early benign experience of reality known without sight."
-    guardrail: "Do not idealize Tanneken into a mystical mother or learned herbalist; her knowledge is ordinary, practiced, material and relational."
-    decision_id: DEC.CLAES.EXTENDED_FAMILY.2026-08-14
-    ko_targets: [KO.RELATIONSHIP, KO.VALUE, KO.CHARACTER]
+- id: REL.CLAES.TANNEKEN
+  type: Relationship
+  label: Claes and Tanneken
+  participants: [ENT.PERSON.CLAES, ENT.PERSON.CLAES_MOTHER]
+  status: CANON
+  story_time: {earliest: '1542-12-08', latest_exclusive: '1554-05-19', precision: bounded}
+  value_state: embodied safety and practical knowing -> irreversible maternal loss
+  function: Tanneken is a primary source of Claes' pre-theoretical sensory education: heat, texture, smell, fermentation, illness, weather, cloth, food and household timing are known through body and practice before abstraction.
+  pregnancy_link: Claes may feel the unborn child move under Tanneken's skin, giving him an early benign experience of reality known without sight.
+  guardrail: Do not idealize Tanneken into a mystical mother or learned herbalist; her knowledge is ordinary, practiced, material and relational.
+  decision_id: DEC.CLAES.EXTENDED_FAMILY.2026-08-14
+  ko_targets: [KO.RELATIONSHIP, KO.VALUE, KO.CHARACTER]
 
-  - id: REL.CORNELIS.CLAES_JACOBSZ_NISSEPAT
-    type: Relationship
-    label: "Cornelis and Claes Jacobsz. Nissepat"
-    participants: [ENT.PERSON.CORNELIS, ENT.PERSON.CLAES_JACOBSZ_NISSEPAT]
-    status: CANON_FICTIONAL_KINSHIP
-    relation: father_and_son
-    historical_guardrail: "The historical identity and 1542 purchase of Claes Jacobsz. are documented; his fatherhood of fictional Cornelis is novel canon, not historical genealogy."
-    post_fire_function: "The older man loses the Nieuwstraat property he bought in 1542 but still helps Cornelis preserve Claes' educational future."
-    decision_id: DEC.CLAES.GRANDFATHER_LINK.2026-08-14
-    ko_targets: [KO.RELATIONSHIP, KO.VALUE, KO.CONFLICT]
+- id: REL.CORNELIS.CLAES_JACOBSZ_NISSEPAT
+  type: Relationship
+  label: Cornelis and Claes Jacobsz. Nissepat
+  participants: [ENT.PERSON.CORNELIS, ENT.PERSON.CLAES_JACOBSZ_NISSEPAT]
+  status: CANON_FICTIONAL_KINSHIP
+  relation: father_and_son
+  historical_guardrail: The historical identity and 1542 purchase of Claes Jacobsz. are documented; his fatherhood of fictional Cornelis is novel canon, not historical genealogy.
+  post_fire_function: The older man loses the Nieuwstraat property he bought in 1542 but still helps Cornelis preserve Claes' educational future.
+  decision_id: DEC.CLAES.GRANDFATHER_LINK.2026-08-14
+  ko_targets: [KO.RELATIONSHIP, KO.VALUE, KO.CONFLICT]
 
-  - id: REL.CLAES.PATERNAL_GRANDPARENTS
-    type: Relationship
-    label: "Claes and paternal grandparents"
-    participants: [ENT.PERSON.CLAES, ENT.PERSON.CLAES_JACOBSZ_NISSEPAT, ENT.PERSON.LIJSBET_PIETERSDOCHTER]
-    status: CANON_MIXED_HISTORICAL_FICTIONAL
-    function: "Claes Jacobsz. represents property, accounting, credit, provenance and continuity; Lijsbet survives mainly as inherited household memory because she dies circa 1540–1541 in novel canon."
-    guardrail: "Claes Jacobsz. is historical but the kinship is fictional; Lijsbet is wholly fictional."
-    decision_id: DEC.CLAES.EXTENDED_FAMILY.2026-08-14
-    ko_targets: [KO.RELATIONSHIP, KO.VALUE]
+- id: REL.CLAES.PATERNAL_GRANDPARENTS
+  type: Relationship
+  label: Claes and paternal grandparents
+  participants: [ENT.PERSON.CLAES, ENT.PERSON.CLAES_JACOBSZ_NISSEPAT, ENT.PERSON.LIJSBET_PIETERSDOCHTER]
+  status: CANON_MIXED_HISTORICAL_FICTIONAL
+  function: Claes Jacobsz. represents property, accounting, credit, provenance and continuity; Lijsbet survives mainly as inherited household memory because she dies circa 1540–1541 in novel canon.
+  guardrail: Claes Jacobsz. is historical but the kinship is fictional; Lijsbet is wholly fictional.
+  decision_id: DEC.CLAES.EXTENDED_FAMILY.2026-08-14
+  ko_targets: [KO.RELATIONSHIP, KO.VALUE]
 
-  - id: REL.CLAES.MATERNAL_GRANDPARENTS
-    type: Relationship
-    label: "Claes and maternal grandparents"
-    participants: [ENT.PERSON.CLAES, ENT.PERSON.JAN_JANSEN_KUIPER_MODEL, ENT.PERSON.MAYKEN_PIETERSDOCHTER]
-    status: CANON_MIXED_HISTORICAL_MODEL_FICTIONAL
-    function: "The maternal line brings craft, bodily care and practical material knowledge: the grandfather-model is a cooper linked to barrels and trade; Mayken preserves family memory and care after Tanneken's death."
-    naming_link: "Jan Corneliszn. is named for the maternal-grandfather figure in novel canon."
-    post_fire_function: "Mayken can provide temporary care, mourning continuity and memories of Tanneken, while Claes Jacobsz. is the stronger economic/educational support figure."
-    guardrail: "The Jan Jansen kuiper evidence is a historical model cluster, not proven genealogy or a securely identified single man across every act. Mayken is fictional."
-    decision_id: DEC.CLAES.EXTENDED_FAMILY.2026-08-14
-    ko_targets: [KO.RELATIONSHIP, KO.VALUE, KO.CHARACTER]
+- id: REL.CLAES.MATERNAL_GRANDPARENTS
+  type: Relationship
+  label: Claes and maternal grandparents
+  participants: [ENT.PERSON.CLAES, ENT.PERSON.JAN_JANSEN_KUIPER_MODEL, ENT.PERSON.MAYKEN_PIETERSDOCHTER]
+  status: CANON_MIXED_HISTORICAL_MODEL_FICTIONAL
+  function: The maternal line brings craft, bodily care and practical material knowledge. The grandfather-model is a cooper linked to barrels and trade; Mayken Pietersdochter preserves family memory and care after Tanneken's death.
+  naming_link: Jan Corneliszn. is named for the maternal-grandfather figure in novel canon.
+  post_fire_function: Mayken Pietersdochter can provide temporary care, mourning continuity and memories of Tanneken, while Claes Jacobsz. is the stronger economic/educational support figure.
+  guardrail: The Jan Jansen kuiper evidence is a historical model cluster, not proven genealogy or a securely identified single man across every act. Mayken Pietersdochter is fictional.
+  decision_id: DEC.CLAES.EXTENDED_FAMILY.2026-08-14
+  ko_targets: [KO.RELATIONSHIP, KO.VALUE, KO.CHARACTER]
 
-  - id: REL.CLAES.DEE.001
-    type: Relationship
-    label: "Claes and John Dee"
-    participants: [ENT.PERSON.CLAES, ENT.PERSON.JOHN_DEE]
-    status: CANON
-    arc: ARC.CLAES.DEE
-    phases:
-      - label: "recognition"
-        story_time: {earliest: 1563-02-01, latest_exclusive: 1563-03-01, precision: month}
-        narrative_instances: [NI.SCENE.DEE_FIRST_ENCOUNTER.1563.001]
-        value_state: "distant intellectual possibility -> personally encountered figure"
-      - label: "formation and disciplined inscription"
-        story_time: {earliest: 1564-01-01, latest_exclusive: 1564-04-01, precision: interval}
-        value_state: "recognition -> formative master relationship"
-        narrative_instances: [NI.SCENE.MEMORIAAL_GIFT.1564.001]
-        objects: [OBJ.MEMORIAAL, OBJ.GRAPHITE_STIFT]
-        function: "Before Claes leaves for Boom, Dee gives him the apparently blank memoriaal and a graphite stift and forbids ink while Claes remains his pupil. Claes experiences this as exacting pedagogical discipline; Dee also knows the rule protects the already tannin-printed hidden readable Brevísima."
-        knowledge_asymmetry: "Dee knows the book already carries readable hidden text and how green vitriol can reveal it; Claes knows only its workbook function and the graphite-only rule."
-      - label: "critical independence"
-        story_time: {earliest: 1564-01-01, precision: lower-bound}
-        value_state: "admiration -> recognition of Dee's fallibility"
-      - label: "internalised legacy"
-        story_time: {earliest: 1564-10-04, precision: lower-bound}
-        value_state: "direct teacher -> methods, prohibitions and material memories embedded in Claes' later reasoning"
-    knowledge_object_targets: [KO.VALUE, KO.CONFLICT, KO.EVENT, KO.RELATIONSHIP]
+- id: REL.CLAES.DEE.001
+  type: Relationship
+  label: Claes and John Dee
+  participants: [ENT.PERSON.CLAES, ENT.PERSON.JOHN_DEE]
+  status: CANON
+  arc: ARC.CLAES.DEE
+  phases:
+  - label: recognition
+    story_time: {earliest: '1563-02-01', latest_exclusive: '1563-03-01', precision: month}
+    narrative_instances: [NI.SCENE.DEE_FIRST_ENCOUNTER.1563.001]
+    value_state: distant intellectual possibility -> personally encountered figure
+  - label: formation and disciplined inscription
+    story_time: {earliest: '1564-01-01', latest_exclusive: '1564-04-01', precision: interval}
+    value_state: recognition -> formative master relationship
+    narrative_instances: [NI.SCENE.MEMORIAAL_GIFT.1564.001]
+    objects: [OBJ.MEMORIAAL, OBJ.GRAPHITE_STIFT]
+    function: Before Claes leaves for Boom, Dee gives him the apparently blank memoriaal and graphite stift and forbids ink while Claes remains his pupil. Claes experiences exacting pedagogical discipline; Dee also knows the rule protects the already tannin-printed hidden readable Brevísima.
+    knowledge_asymmetry: Dee knows the book carries readable hidden text and how green vitriol can reveal it; Claes knows only its workbook function and graphite-only rule.
+  - label: critical independence
+    story_time: {earliest: '1564-01-01', precision: lower-bound}
+    value_state: admiration -> recognition of Dee's fallibility
+  - label: internalised legacy
+    story_time: {earliest: '1564-10-04', precision: lower-bound}
+    value_state: direct teacher -> methods, prohibitions and material memories embedded in Claes' later reasoning
+  knowledge_object_targets: [KO.VALUE, KO.CONFLICT, KO.EVENT, KO.RELATIONSHIP]
 
-  - id: REL.CLAES.SILVIUS
-    type: Relationship
-    label: "Claes and Willem Silvius"
-    participants: [ENT.PERSON.CLAES, ENT.PERSON.WILLEM_SILVIUS]
-    status: CANON
-    phases:
-      - label: "editorial recognition"
-        story_time: {earliest: 1561-08-01, latest_exclusive: 1564-01-01, precision: bounded}
-        value_state: "young learner -> useful observer/editorial source"
-        object: OBJ.ZOVITIUS_SCHOOLBOOK
-      - label: "practical trust"
-        story_time: {earliest: 1564-01-01, latest_exclusive: 1564-10-04, precision: bounded}
-        value_state: "recognition -> operational trust"
-        hidden_parallel: "Silvius can set and print the readable Brevísima invisibly while Claes understands the bound object only as Dee's memoriaal."
-      - label: "mediated transmission"
-        story_time: {earliest: 1570-01-01, latest_exclusive: 1571-01-01, precision: year}
-        value_state: "direct access absent -> remembered/material cue may reopen the hidden layer"
-        object: OBJ.ZOVITIUS_1570_TRIGGER
-    ko_targets: [KO.RELATIONSHIP, KO.EVENT, KO.VALUE]
+- id: REL.CLAES.SILVIUS
+  type: Relationship
+  label: Claes and Willem Silvius
+  participants: [ENT.PERSON.CLAES, ENT.PERSON.WILLEM_SILVIUS]
+  status: CANON
+  phases:
+  - label: editorial recognition
+    story_time: {earliest: '1561-08-01', latest_exclusive: '1564-01-01', precision: bounded}
+    value_state: young learner -> useful observer/editorial source
+    object: OBJ.ZOVITIUS_SCHOOLBOOK
+  - label: practical trust
+    story_time: {earliest: '1564-01-01', latest_exclusive: '1564-10-04', precision: bounded}
+    value_state: recognition -> operational trust
+    hidden_parallel: Silvius can set and print the readable Brevísima invisibly while Claes understands the bound object only as Dee's memoriaal.
+  - label: mediated material cue
+    story_time: {earliest: '1570-01-01', latest_exclusive: '1571-01-01', precision: year}
+    value_state: direct access absent -> remembered/material cue may expose what was already present
+    object: OBJ.ZOVITIUS_1570_TRIGGER
+  ko_targets: [KO.RELATIONSHIP, KO.EVENT, KO.VALUE]
 
-  - id: REL.CLAES.BELOVED
-    type: Relationship
-    label: "Claes and beloved/apothecary daughter"
-    participants: [ENT.PERSON.CLAES, ENT.PERSON.BELOVED]
-    status: CANON_FUNCTION_OPEN_IDENTITY
-    phases:
-      - label: "material proximity"
-        story_time: {earliest: 1566-08-01, latest_exclusive: 1570-01-01, precision: bounded}
-        value_state: "separate expertise -> potential complementarity"
-      - label: "reveal collaboration"
-        story_time: {earliest: 1570-01-01, latest_exclusive: 1571-01-01, precision: year}
-        value_state: "solitary interpretation -> collaborative material verification"
-        narrative_instances: [NI.SEQUENCE.RECOVERY.1570.001]
-        function: "The collaboration concerns controlled development, reading, material observation and the moral consequences of the testimony, not cryptographic reconstruction."
-      - label: "relational maturation"
-        story_time: {earliest: 1570-01-01, precision: lower-bound}
-        value_state: "secrecy as isolation -> trust without surrender of responsibility"
-    role_split:
-      claes: ["Dee-memory", "recognition", "interpretive responsibility", "decision what to do with testimony"]
-      beloved: ["materials", "weighing", "controlled development", "paper/ink observation", "contradiction"]
-    ko_targets: [KO.RELATIONSHIP, KO.CONFLICT, KO.VALUE, KO.CHARACTER]
+- id: REL.CLAES.BELOVED
+  type: Relationship
+  label: Claes and Mayken
+  participants: [ENT.PERSON.CLAES, ENT.PERSON.BELOVED]
+  status: CANON
+  decision_id: DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14
+  phases:
+  - label: separate Goese histories and material proximity
+    story_time: {earliest: '1566-08-01', latest_exclusive: '1570-01-01', precision: bounded}
+    value_state: separate expertise -> potential complementarity
+    function: Both remember the 1554 fire, but Claes' household annihilation and Mayken's family material loss/rebuilding must remain distinct.
+  - label: reveal collaboration
+    story_time: {earliest: '1570-01-01', latest_exclusive: '1571-01-01', precision: year}
+    value_state: solitary interpretation -> collaborative material verification
+    narrative_instances: [NI.SEQUENCE.RECOVERY.1570.001]
+    function: Collaboration concerns controlled development, reading, material observation and the moral consequences of testimony, not cryptographic reconstruction.
+  - label: relational maturation
+    story_time: {earliest: '1570-01-01', precision: lower-bound}
+    value_state: secrecy as isolation -> trust without surrender of responsibility
+  - label: sinne recovery companionship
+    story_time: {earliest: '1584-01-01', latest_exclusive: '1602-03-14', precision: developmental}
+    value_state: constricted perception -> embodied relation and renewed sensory openness
+    function: Mayken draws Claes back into shared material life through trained sensation, travel, weather, plants, preparation, food, fatigue and contradiction; she catalyses but does not perform his recovery.
+  role_split:
+    claes: [Dee-memory, recognition, interpretive responsibility, decision what to do with testimony, moral ownership without possession]
+    mayken: [materia-medica knowledge, weighing, controlled development, paper/ink observation, botanical/material contradiction, error control, sensory companionship]
+  guardrails:
+  - Mayken is not a cryptographic solver or key-holder.
+  - Ordinary Dodoens use may remain part of her apothecary world; the retired special Dodoens carrier does not.
+  ko_targets: [KO.RELATIONSHIP, KO.CONFLICT, KO.VALUE, KO.CHARACTER]
 
-  - id: REL.CLAES.RADERMACHER
-    type: RelationshipPotential
-    label: "Claes and Johan Radermacher"
-    participants: [ENT.PERSON.CLAES, ENT.PERSON.RADERMACHER]
-    status: OPEN
-    possible_story_time: {earliest: 1599-01-01, latest_exclusive: 1603-01-01, precision: approximate}
-    function_if_used: "late Rubedo social mirror: trade, books, religious caution and cross-border help in one network"
-    guardrail: "No unsupported formal Familist membership."
+- id: REL.CLAES.RADERMACHER
+  type: RelationshipPotential
+  label: Claes and Johan Radermacher
+  participants: [ENT.PERSON.CLAES, ENT.PERSON.RADERMACHER]
+  status: OPEN
+  possible_story_time: {earliest: '1599-01-01', latest_exclusive: '1603-01-01', precision: approximate}
+  function_if_used: late Rubedo social mirror: trade, books, religious caution and cross-border help in one network
+  guardrail: No unsupported formal Familist membership.

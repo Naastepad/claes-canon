@@ -1,4 +1,4 @@
-schema_version: 1.2.0
+schema_version: 1.3.0
 kind: CanonDecisionSupplement
 decisions:
 - id: DEC.CORNELIS.ROLE.POORTER_RED_BROUWER.2026-08-15
@@ -8,59 +8,68 @@ decisions:
   decision: Earlier branch wording incorrectly fixed Cornelis as bierbrouwer/biersteker and deken of De Edele Castanienbloem.
   retained:
   - Cornelis is a Goes poorter.
-  - Cornelis belongs in the beer/book transport logic.
+  - Cornelis belongs in beer/book transport logic.
   - Cornelis is part of the rederijker network.
   - Cornelis must not be made a printer.
   rejected:
   - Cornelis as fixed bierbrouwer or brewery owner.
   - Cornelis as fixed deken of De Edele Castanienbloem.
+
 - id: DEC.CORNELIS.ROLE.BIERSTEKER_CASTANIE_OPEN.2026-08-15
   type: CanonDecision
-  status: CANON
-  decision: Cornelis is a Goes poorter, biersteker and member of De Edele Castanienbloem. The family/business environment may include a brewery or brewing infrastructure, but Cornelis' fixed occupation is biersteker, not brewery owner. Whether he is deken remains OPEN/onbeslist.
-  affects:
-  - ENT.PERSON.CORNELIS
-  - REL.CLAES.CORNELIS
-  - WORLD.ANTWERP_BOOK_TRANSPORT
-  - OPEN.CORNELIS.CASTANIE.DEKEN.001
-  guardrails:
-  - Do not call Cornelis a printer.
-  - Do not give him Silvius' composing-stick, proofing or press work.
-  - Do not call Cornelis deken of De Edele Castanienbloem until the open decision is closed.
-  - Do not describe Cornelis' personal enterprise as the brewery.
+  status: DEPRECATED_IN_PART
+  superseded_in_part_by: DEC.CORNELIS.REDERIJKER.NARDUS_CASTANIE_ORIGIN.2026-08-16
+  decision: The 15 August decision correctly fixed Cornelis as Goes poorter and biersteker, kept brewery infrastructure in the wider family/business environment and prohibited making him a printer. Its statement that Cornelis is simply a member of De Edele Castanienbloem is superseded.
+  retained:
+  - Cornelis is a Goes poorter.
+  - Cornelis is a biersteker.
+  - The family/business environment may include brewery/brewing infrastructure, but Cornelis is not fixed as brewery owner.
   - Book transport may use beer-route, civic and rederijker cover.
+  - Cornelis is not a printer and does not perform Silvius' composing-stick, proofing or press work.
+  superseded:
+  - Cornelis as a straightforward member of De Edele Castanienbloem during his lifetime.
+  current_rederijker_state:
+  - Cornelis is a member of the Nardusbloem / older Magdalena-linked Goese tradition.
+  - In novel canon he plays a formative role in the 1560s emergence of the reform-minded/protestantiserende current that becomes the Edele Castanienbloem.
+  - 1595 is the earliest surviving historical attestation, not a canonical founding date.
+  - Deken status remains open under OPEN.CORNELIS.REDERIJKER.DEKEN.001.
+
 - id: DEC.ALCHEMY.CLAES_LIFELINE_PROJECTIEPOEDER.2026-08-15
   type: CanonDecision
   status: CANON
-  decision: The alchemical steps toward projectiepoeder lead Claes' whole life-line toward and beyond the 1602 Enkhuizen transmutation. The process is a cross-layer narrative grammar, not merely a chemistry subplot.
+  decision: The alchemical steps toward projectiepoeder lead Claes' whole life-line toward and beyond the 1602 Enkhuizen projectio. The process is a cross-layer narrative grammar, not merely a chemistry subplot.
   affects:
   - ARC.CLAES.MACRO_TRANSMUTATION
   - ARC.CLAES.SINNE_RECOVERY
   - THEME.CLAES.SPIRITUAL_JOURNEY
   - MOTIF.ALCHEMY.PROCESS_CHAIN
-  - NI.CHAPTER.BOOM.KIES
-  - NI.CHAPTER.ANTWERP.LOOG
-  - NI.CHAPTER.SOL.DEATH
+  - NI.CHAPTER.1564.03
+  - NI.CHAPTER.1564.04
+  - NI.CHAPTER.1564.05
   - NI.CHAPTER.RED_LION
+  - NI.CHAPTER.SATURNUS
   - NI.EVENT.ENKHUIZEN.TRANSMUTATION.1602
   material_chain:
   - kies / pyrite-bearing waste
   - weathering / care / digestion
-  - vitriool-loog / Groene Leeuw
-  - strong waters
-  - death / opening of Sol
-  - red fixation / Rode Leeuw
+  - vitrioolwater / Groene Leeuw as an operational process name
+  - strong waters and the failure of force alone on Sol
+  - death / opening of Sol under the right compound relation
+  - materially continuous hidden Sol
+  - red fixation / Rode Leeuw carrying already-present Sol
   - Saturn / lead / cupellation-like test
   - projectio / release beyond possession
   guardrails:
   - Keep chemistry, alchemical language, historical reconstruction and story canon separate.
   - Do not present the chain as a real recipe or proof of literal lead-to-gold transmutation.
-  - The 1602 Enkhuizen transmutation remains convincing to early-modern witnesses, chemically interpretable as hidden Sol becoming visible, and morally decisive for Claes.
-  - The beloved/apothecary-daughter and Enkhuizen recovery line supports Claes' reopening of embodied sinne and his movement from control to relation and release.
+  - DEC.ALCHEMY.GREEN_LION_SOL_CONTINUITY.2026-08-16 governs Green Lion boundaries and material conservation of Sol.
+  - DEC.ENKHUIZEN.SETON_FRAME.1602.2026-08-16 governs the chosen Morhof-derived scene frame.
+  - Mayken supports Claes' reopening of embodied sinne and movement from control toward relation and release; she is not a cipher solver.
+
 - id: DEC.ALCHEMY.RED_LION.PROJECTION_POWDER.2026-08-16
   type: CanonDecision
   status: CANON
-  decision: Claes' completed projectiepoeder is the Rode Leeuw. It is materially and visually distinct from the earlier Groene Leeuw/vitriol phase. For story purposes Rode Leeuw and completed projection powder functionally coincide, without claiming that these terms were universal historical-alchemical synonyms.
+  decision: Claes' completed projectiepoeder is the Rode Leeuw. It is materially and visually distinct from the earlier Groene Leeuw/vitriol phase. Rode Leeuw and completed projection powder functionally coincide in novel canon without claiming universal historical-alchemical synonymy.
   appearance:
     state: fine heavy powder
     colour_range: deep red to red-brown
@@ -76,69 +85,78 @@ decisions:
     - no visible golden glitter is required or desired
   symbolic_distribution:
     Groene_Leeuw:
-    - green vitriol / FeSO4-bearing vitriol material as historical-chemical reference where appropriate
-    - vitriool-loog
-    - revealer / opener
-    - digestion / corrosion / disclosure
+    - green vitriol/copperas as operational process material
+    - revealer/opener upstream
+    - digestion/corrosion/disclosure
     Rode_Leeuw:
     - rubedo
     - fixation
     - completed projectiepoeder
-    - fixed Sol / culmination of the material line
-    Sol:
-    - gold principle may be materially hidden in the reconstructed process
-    - Sol must not make the powder visibly golden
+    - carrier of already-present hidden Sol
   guardrails:
   - Never describe Claes' final projectiepoeder as green vitriol or as a green powder.
   - Never collapse Groene Leeuw and Rode Leeuw into the same material stage.
-  - FeSO4 is not the completed projection powder; it belongs upstream in the vitriol/opening line.
-  - Do not infer the historical colour or composition of Alexander Seton's Enkhuizen powder from Claes' fictional powder.
+  - Do not infer the historical colour or composition of Seton's Enkhuizen powder from Claes' fictional powder.
   - Do not turn this colour canon into a modern operational recipe.
+
 - id: DEC.SETON.ENKHUIZEN_PROJECTIO_ROLE.1602.2026-08-16
   type: CanonDecision
   status: DEPRECATED
   superseded_by: DEC.SETON.ENKHUIZEN_ALCHEMICAL_MIRROR.1602.2026-08-16
-  decision: Earlier formulation correctly placed Seton in the 1602 projectio climax, but still allowed a convergence with hidden-text/revelation motifs that is now obsolete because the Brevisima textual line is completed by the Antwerp 1578 print event.
-  retained:
-  - Seton is the historical-alchemical catalyst of the Enkhuizen 1602 climax.
-  - Seton does not replace Dee or solve Claes' life-work.
-  - Seton embodies the danger of possession, proof, patronage and coerced knowledge.
-  rejected:
-  - Any role for Seton in revealing, decoding, materially reading or solving the hidden Brevisima/memoriaal.
-  - Any causal dependency between Seton and the 1578 Brevisima print line.
+  decision: Earlier formulation correctly placed Seton in the 1602 projectio climax but still allowed convergence with hidden-text/revelation motifs, which is obsolete because the Brevísima textual line is completed by the Antwerp 1578 print event.
+
 - id: DEC.SETON.ENKHUIZEN_ALCHEMICAL_MIRROR.1602.2026-08-16
   type: CanonDecision
   status: CANON
-  decision: Alexander Seton enters Claes' story only in the late alchemical line. By 1602 the Brevisima textual mission has long been completed through the Antwerp 1578 print event. Seton's function is therefore to confront Claes with the final consequence of the Great Work: projectio, proof, power, possession and release.
-  historical_anchor:
-    date: '1602-03-13'
-    time: '16:00'
-    place: ENT.LOC.ENKHUIZEN
+  decision: Alexander Seton enters Claes' story only in the late alchemical line. By 1602 the Brevísima textual mission has long been completed through the Antwerp 1578 print event. Seton's function is to confront Claes with projectio, proof, power, possession and release.
   narrative_function:
   - late mirror and foil for Claes
   - external catalyst of Claes' final alchemical transition
-  - living demonstration that technical success does not settle the moral meaning of the Work
-  - embodiment of the danger created when rulers and patrons understand transmutation only as wealth and power
-  - catalyst that moves Claes from mastery/control toward release beyond possession
+  - demonstration that technical success does not settle the moral meaning of the Work
+  - embodiment of danger when rulers and patrons treat knowledge as wealth or weapon
+  - catalyst from mastery/control toward release beyond possession
   relationship_to_brevisima:
   - none
-  - Seton does not decode, reveal, read, print, authenticate or recover the Brevisima.
-  - The Brevisima line is already completed in Antwerp in 1578 and must not be reopened in 1602.
+  - Seton does not decode, reveal, read, print, authenticate or recover the Brevísima.
+  - The Brevísima line is complete in Antwerp in 1578.
   relationship_to_existing_mentors:
   - Dee remains an earlier intellectual/material mentor and is not displaced.
-  - Seton arrives when Claes technically has little left to be taught; the unresolved task is ethical, existential and alchemical.
-  - Recognition between Seton and Claes should operate through competence, restraint, silence, material practice and choices rather than exposition.
-  thematic_questions:
-  - Can the Work be completed?
-  - What counts as proof?
-  - What happens when others want to own the proof?
-  - If the Work succeeds, to whom does it belong?
-  - Can Claes release what he spent a lifetime learning to control?
-  political_guardrails:
-  - Do not canonize Seton as Protestant, Dutch patriot or ideologically anti-Spanish without evidence.
-  - He may distrust coercive princely appropriation of knowledge irrespective of confession or dynasty.
+  - Seton arrives when Claes technically has little left to be taught; the unresolved task is ethical and existential.
   historical_uncertainty:
   - Seton's exact identity and Scottish family connection remain uncertain.
-  - Do not identify him as a documented member of the noble Seton family without evidence.
-  - Do not canonize a historical recipe or a historical green/red colour for his Enkhuizen projection powder.
-  - Later stories about imprisonment, torture, Sendivogius and authorship retain evidence-controlled status.
+  - Do not canonize a historical recipe or historical green/red colour for his Enkhuizen projection powder.
+
+- id: DEC.CORNELIS.REDERIJKER.NARDUS_CASTANIE_ORIGIN.2026-08-16
+  type: CanonDecision
+  status: CANON
+  decision: Cornelis is a member of the Nardusbloem / older Magdalena-linked Goese rederijker tradition and plays a formative fictional role in the emergence of the reform-minded/protestantiserende current that becomes the later Edele Castanienbloem during the confessional polarisation of the 1560s.
+  guardrails:
+  - The Nardusbloem membership is the canonical chamber affiliation.
+  - The earlier Castanien current is deliberate novel reconstruction within a documentary gap.
+  - 1595 is the earliest surviving attestation, not a proved founding date.
+  - Cornelis' deken status remains open.
+
+- id: DEC.ALCHEMY.GREEN_LION_SOL_CONTINUITY.2026-08-16
+  type: CanonDecision
+  status: CANON
+  decision: The Green Lion is Dee/Claes' operational name for green vitriol in this process rather than a universal alchemical identity; green vitriol directly develops the tannin memoriaal but does not directly dissolve gold; the Sol that later reappears remains materially continuous through opening, red fixation, Saturn and assay.
+  guardrails:
+  - No real lead-to-gold creation.
+  - No universal historical claim Green Lion equals FeSO4.
+  - No claim that Seton historically used the novel's cupellation-like mechanism.
+  - Exact non-gold carrier composition of the red matrix remains open.
+  - Avoid tasting vitriol/corrosive liquors as routine sensory diagnosis.
+
+- id: DEC.ENKHUIZEN.SETON_FRAME.1602.2026-08-16
+  type: CanonDecision
+  status: CANON
+  decision: The novel anchors the 1602 projectio scene to Morhof's retrospective Seton tradition: Enkhuizen, the house of sailor Jacob Hausfsen, 13 March 1602, approximately the fourth hour after noon. These are chosen story-frame facts from a 1673 retrospective account, not contemporaneously verified event facts.
+  fixed:
+    date: '1602-03-13'
+    time_approx: '16:00'
+    place: ENT.LOC.ENKHUIZEN
+    host: Jacob Hausfsen
+  guardrails:
+  - Preserve Morhof's retrospective transmission status.
+  - Exact assay choreography, additional witnesses, quantities, danger and immediate moral aftermath remain open.
+  - A cupellation-like explanation is authorial reconstruction, not Morhof/Seton procedure.

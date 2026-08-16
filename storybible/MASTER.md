@@ -1,8 +1,9 @@
 # Claes Storybible — MASTER / operating authority
 
-**Logical master ID:** `SB.CLAES.MASTER`
+**Logical master ID:** `SB.CLAES.MASTER`  
+**Current synchronization date:** 16 August 2026
 
-This repository contains the **structured operating projection** of Revision 11 plus explicit later human canon decisions. The original long-form edition remains the lossless prose source from which the projection was transmuted; later decisions override conflicting or still-open source wording.
+This repository is the structured operating projection of Revision 11 plus later explicit author decisions. The lossless source edition remains preserved for material not yet atomized, but later decisions override conflicting source or legacy-master wording.
 
 ## Source edition
 
@@ -14,95 +15,187 @@ This repository contains the **structured operating projection** of Revision 11 
 - source role: `LOSSLESS_PROSE_AUTHORITY`
 - structured role: `IN_REPOSITORY_OPERATING_PROJECTION`
 
-The raw 3803-line prose source is not silently replaced by a summary. Every top-level section is registered in `mapping/CONVERSION_LEDGER.yaml` with source line boundaries and a section hash. Material not yet atomized remains active source material rather than disappearing.
+Every top-level source section remains accounted for in `mapping/CONVERSION_LEDGER.yaml`. Unatomized prose does not disappear merely because it has not yet become a claim or Narrative Instance.
 
-## Structured operating master
+## Current human-readable authorities
 
-The storybible is distributed by responsibility:
+Start with:
 
-- `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` — dated broad operating synthesis; where it conflicts with explicit decisions after 13 August, later decisions and dedicated dossiers below outrank its stale passages until the next full synthesis regeneration;
-- `storybible/MEMORIAAL_BREVISIMA_PRINT_1564.md` — canonical detailed authority for the pre-binding hidden readable Brevísima print, period workshop formulation, Dee's pre-Boom handoff, graphite-only writing rule, knowledge boundary and direct green-vitriol reveal;
-- `storybible/FAMILY_CLAES_1542_1554.md` — canonical detailed family dossier for Tanneken, Jan and all four grandparents; where older broad prose still uses generic labels such as “mother” or “younger brother”, this dossier supplies the fixed names and family identities;
-- `mapping/CONVERSION_LEDGER.yaml` — loss-prevention map from all 31 top-level source sections into the structured model;
-- `mapping/CONVERSION_REPORT.yaml` — conversion scope and next normalization passes;
-- `claims/SOURCE_CLAIMS.yaml`, `claims/SOURCE_CLAIMS_GOES_LIVING_CITY.yaml`, `claims/SOURCE_CLAIMS_GOES_2026-08-14.yaml`, `claims/SOURCE_CLAIMS_FAMILY_1540S.yaml`, `claims/SOURCE_CLAIMS_MEMORIAAL_PRINT_1564.yaml` — atomic historical/research/reconstruction claims;
-- `claims/STORY_CLAIMS.yaml`, `claims/STORY_CLAIMS_2026-08-14.yaml`, `claims/STORY_CLAIMS_FAMILY_1554.yaml` — atomic truths of the novel;
-- `canon/DECISIONS.yaml`, `canon/DECISIONS_2026-08-13.md`, `canon/DECISIONS_2026-08-14.md`, `canon/DECISIONS_2026-08-15.md` — explicit human canon decisions;
-- `entities/ENTITIES.yaml`, `entities/FAMILY_1554.yaml` plus setting-specific entity registries — stable persons, family units, locations and properties;
-- `objects/OBJECTS.yaml` — books, carriers and other continuity-sensitive objects, including `OBJ.MEMORIAAL` and `OBJ.GRAPHITE_STIFT`; former cipher/key objects are retained only as deprecated audit records where applicable;
-- `narrative/instances.yaml` — concrete chapters, scenes, sequences and events, including `NI.SCENE.MEMORIAAL_GIFT.1564.001`;
-- `narrative/arcs.yaml` — character, relationship and macro-transformation arcs;
-- `narrative/relationships.yaml` — explicit relationship dynamics, including the Dee handoff/knowledge asymmetry;
-- `narrative/motifs.yaml` — recurring sensory/symbolic structures;
-- `narrative/code_architecture.yaml` — despite the legacy filename, now the direct material reveal architecture; the former cipher/recovery design is kept only as deprecated audit history;
-- `narrative/world_goes_living_city.yaml` — year-sensitive Goes scene/blocking framework;
-- `narrative/CRAFT_GUARDRAILS.yaml` — writing and continuity constraints;
-- `canon/OPEN_DECISIONS.yaml` — unresolved matters and audit-preserved resolved open records;
-- `lemma/` — only the deterministic subset that benefits from executable consistency rules.
+1. `storybible/LEMMA_MCKEE_MASTER.md` — **current operating synthesis**, synchronized through 16 August 2026.
+2. `storybible/INDEX.md` — operational navigation.
+3. `canon/OPEN_DECISIONS.yaml` — active unresolved backlog only.
+4. `review/SYNC_STATUS.md` — synchronization state.
 
-## Explicit Goes and family normalization — 14 August 2026
+The dated `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` is a **legacy snapshot**, not current authoring authority. It may preserve obsolete 1545/cipher/death-window wording for audit history only.
 
-The following points are closed by human decision:
+## Dedicated governing dossiers
 
-1. **Cornelis' household residence:** the historically documented house bought by Claes Jacobsz. Nissepat on 20 March 1542 in the older Nieuwstraat is the fictional family home of Cornelis, Tanneken and their children during Claes' Goes childhood. Historical purchase and fictional occupancy remain distinct.
-2. **Pre-1594 Nieuwstraat:** the older deed-name is treated as Nieuwstraat/Oude Nieuwstraat in or by the Armenhoek, distinct from the planmatige/current Nieuwstraat associated with the 1594 expansion. The exact old street axis remains unknown.
-3. **Cornelis' rederijker meeting environment:** Cornelis-era meetings use the Zusterhuis/former Zwarte-Zusters complex at the Singelstraat. The Nardusbloem moved to the Sint-Sebastiaanshof only in 1626, so that later location is not back-projected.
-4. **Pre-fire household:** mother is **Tanneken Jansdochter**; younger brother is **Jan Corneliszn. Nissepat**, born approximately June 1544 and about eighteen months younger than Claes; Tanneken is about six months pregnant on 18 May 1554.
-5. **Family outcome of the 1554 fire:** the family house is destroyed/uninhabitable in novel canon; Claes and Cornelis survive away from the house; Tanneken, Jan and the unborn child die. This is fiction grounded in documented burned houses in the old Nieuwstraat/Armenhoek environment, not a historical victim/property claim.
-6. **Paternal grandparents:** historical **Claes Jacobsz. Nissepat** is fictionally Cornelis' father and Claes' paternal grandfather. His wife and Claes' paternal grandmother is fictional **Lijsbet Pietersdochter**, who dies circa 1540–1541 in story canon. Claes Jacobsz.' historical purchase is real; the genealogy and Lijsbet are fiction.
-7. **Maternal grandparents:** Tanneken's father is a fictionalized maternal-grandfather figure modeled on a historically attested Goese **Jan Jansen, kuiper** cluster; Tanneken's mother is fictional **Mayken Pietersdochter**. The grandfather-model dies around 1543 in story canon; Mayken survives 1554. Jan Corneliszn. is named for this maternal-grandfather figure in novel canon.
-8. **Post-fire grandparent functions:** Mayken primarily preserves bodily care, Tanneken's memory and family continuity; Claes Jacobsz. primarily helps Cornelis preserve material, credit and educational continuity. Neither replaces the lost household.
-9. **Post-fire father–son separation:** Cornelis stays in Goes to rebuild livelihood, business and shelter and to keep financing Claes' education, partly helped by his father. Claes goes to Reimerswaal because the intended Zierikzee route has become financially unattainable. The separation is an additional loss layered onto the destruction of the household.
+- `MEMORIAAL_BREVISIMA_PRINT_1564.md` — hidden readable tannin/gum print, Dee handoff, graphite rule, direct green-vitriol reveal.
+- `MEMORIAAL_BREVISIMA_CASTOFF_1564.md` — 17 single-sheet quarto gatherings / 136 latent pages.
+- `FAMILY_CLAES_1542_1554.md` — Tanneken, Jan, grandparents, 1542 house and 1554 family rupture.
+- `MAYKEN_LAMPERT.md` — resolved identity and independent character/material role of Mayken, synchronized to no-cipher canon.
+- `CORNELIS_EXECUTION_1569.md` — detailed 19 November 1569 Cornelis execution model.
+- `EXECUTIONS_REFORMATION_CLAES_2026-08-16.md` — current execution/testimony mechanics; older execution dossier remains source-rich background only where not superseded.
+- `ALCHEMICAL_CHEMICAL_PROCESS_CHAIN_CLAES_LIFELINE.md` — base alchemical/chemical process dossier.
+- `ALCHEMICAL_PROCESS_REFINEMENT_2026-08-16.md` — governing refinements for Green Lion semantics, failure-before-opening, conserved Sol, Rode Leeuw, assay and Morhof Seton frame.
+- `ANTWERP_THREE_VISITS_ALCHEMICAL_ARC_1561_1569.md` — Antwerp three-visit/process scaffold, subject to later decisions where older wording survives.
 
-Historical/fictive guardrail: the archival corpus supports Claes Jacobsz. Nissepat and a Goese Jan Jansen-kuiper pattern, but it does **not** prove the novel genealogy. The maternal-grandfather identity is deliberately modeled rather than claimed as a securely identified historical ancestor; the same-name kuiper cluster may contain conflated individuals.
+## Machine-readable truth layers
 
-The exact named Goese chamber to which fictional Cornelis belongs remains separately open; meeting location and chamber identity are not conflated. The unborn child's sex and name remain open/unknown. Tanneken and Jan's names are no longer open.
+### Decisions
 
-## Explicit memoriaal / Brevísima normalization — 15 August 2026
+Current explicit author decisions live across:
 
-`DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15` is the current authority. It preserves the successful physical print-before-binding breakthrough of the earlier memoriaal decision but explicitly retires the cipher and key-recovery architecture because that architecture had existed only as a workaround for the earlier assumption that whole-book invisible printing was not feasible.
+- `canon/DECISIONS.yaml`
+- dated `canon/DECISIONS_*.md`
+- `canon/DECISIONS_2026-08-16.yaml`
+- `canon/DECISIONS_ALCHEMY_LIFELINE_2026-08-15.yaml`
+- `canon/DECISIONS_ALCHEMY_REFINEMENT_2026-08-16.yaml`
+- `canon/DECISIONS_RESOLUTIONS_2026-08-16.yaml`
 
-1. **The hidden book is the memoriaal paper itself.** The completed Diets/Brabant *Brevísima* is set in ordinary readable movable type and printed on loose sheets before binding. No hollow book, separately inserted miniature codex or ciphertext stream is required.
-2. **First-pass printing medium:** the canonical reconstructed workshop medium is clear filtered gallnut/tannin extract plus gum arabic, without green vitriol/iron, soot or visible pigment. Its exact historical performance remains subject to physical wet/press testing and must not be presented as a recovered Silvius recipe.
-3. **Period workshop start:** 2 medicinal drachmen broken gallnuts are steeped in 2½ medicinal ounces clear water; 2 medicinal ounces of the clearest filtered extract are retained; 1½ medicinal ounces gum arabic are dissolved in that extract, then tuned slightly with gum or water according to behavior on type.
-4. **Binding order:** set readable translation → print recto/verso → dry → fold/gather → bind. The apparently blank bound object is already the readable Brevísima carrier when Dee gives it to Claes.
-5. **Dee handoff before Boom:** Dee gives Claes both `OBJ.MEMORIAAL` and `OBJ.GRAPHITE_STIFT` before `NI.CHAPTER.1564.03`. He forbids Claes to write in the book with ink while Claes remains his pupil.
-6. **Two material layers:** Claes' own graphite observations remain visible while the tannin/gum typographic Brevísima remains latent. The graphite rule therefore functions simultaneously as pedagogy and material protection.
-7. **Knowledge asymmetry:** Claes knows the workbook and graphite-only rule but not the hidden print, Las Casas payload, tannin layer, material reason for avoiding ink or future vitriol reveal. Dee and Silvius know the hidden-print mechanism.
-8. **4 October 1564:** the security break remains an adult macro-Nigredo and political/network hinge, but it does not physically load, recipher, key, lock or unlock the memoriaal.
-9. **Direct reveal:** green vitriol supplies iron to the tannin-loaded typographic letterforms and reveals `OBJ.LASCASAS_PLAINTEXT` directly. The revealed text is already ordinary readable Diets/Brabant language; reveal is not decryption.
-10. **Cipher architecture retired:** `OBJ.LASCASAS_CIPHERTEXT`, the direct key, the 24×24 matrix, merels as recovery key, Monas as permutation key, Castanea as key anchor, the special coded Dodoens carrier, Primus Index and the multi-week nomenclator reconstruction are deprecated for the Brevísima mechanism. Merels, *Monas*, Dodoens and Castanea may survive independently where they serve another historical, pedagogical, thematic or character function.
-11. **Zovitius may remain a cue, not a key:** `GALLA LEO VIRIDIS` can point Claes toward gall/tannin and the Green Lion/green vitriol without opening a cryptographic chain.
-12. **Graphite historical guardrail:** the story function of Dee's graphite marking stift is fixed; its exact historically defensible physical form/provenance in Antwerp in 1564 remains open and must not automatically be rendered as a modern standardized wood-cased pencil.
+Latest explicit decision wins within its domain. A base registry is not allowed to resurrect an older state merely because a later decision lives in a supplement.
 
-For detailed authoring use, `storybible/MEMORIAAL_BREVISIMA_PRINT_1564.md` is the governing dossier. For source/reconstruction status, use `claims/SOURCE_CLAIMS_MEMORIAAL_PRINT_1564.yaml` and the corresponding source records.
+### Claims
 
-## McKee/NOS interface
+- `claims/SOURCE_CLAIMS*.yaml` — historical/research/reconstruction evidence.
+- `claims/STORY_CLAIMS*.yaml` — story truth.
+- Domain-specific later claim registries outrank stale working-state claims where a later `DEC.*` explicitly supersedes them.
 
-The Claes repository does **not** contain universal McKee/Truby/etc. theory as canon. Concrete Narrative Instances may point to external `KO.*` Knowledge Objects for analysis. Thus:
+### World state
 
-`Narrative Knowledge Base (KO.*) + Claes Narrative Instances (NI.*) -> diagnostics`
+- `entities/*.yaml`
+- `objects/*.yaml`
+- `narrative/knowledge_states*.yaml`
+- `narrative/relationships.yaml`
+- `narrative/arcs.yaml`
+- `narrative/motifs.yaml`
+- `narrative/instances*.yaml`
 
-while:
+### Deterministic subset
 
-`Source Claims (SC.*) -> Story Claims (STC.*) -> Lemma -> deterministic consistency`
+`lemma/*.lemma` is rules-as-code only. Lemma may veto an impossible combination; it never invents canon.
+
+## Fixed chronology and life-state corrections
+
+The following are current and must not be reopened by legacy prose:
+
+- **8 December 1542:** birth of Claes in Goes.
+- **18 May 1554:** fictional family home lost; Tanneken, Jan and unborn child die; Claes and Cornelis survive.
+- **1554–1561:** Claes at Reimerswaal; Zierikzee is the abandoned pre-fire plan.
+- **August 1561:** Antwerp Landjuweel; Dee is not placed there.
+- **1563/early 1564:** Dee/Silvius formation.
+- **before Boom in early 1564:** Dee gives the already hidden-print memoriaal and graphite stift to Claes.
+- **4 October 1564:** adult macro-Nigredo/security break; no physical alteration or ciphering of the memoriaal.
+- **autumn 1567:** first Cornelis arrest/examination in Antwerp and release on borg/conditions.
+- **19 November 1569:** Cornelis fictionally executed in Antwerp, witnessed by Claes.
+- **1570:** direct green-vitriol reveal/read of hidden readable Brevísima; no cryptographic recovery chain.
+- **1578, Antwerp:** printed publication completes the textual mission — projectio of the Word.
+- **1584:** Delft moral bottom / Albedo threshold.
+- **13 March 1602, ca.16:00, Enkhuizen:** Morhof-framed Seton projectio at the house of Jacob Hausfsen — projectio of Matter.
+- **after 1602:** projectio of the Self; exact death remains open.
+
+## Memoriaal / Brevísima current state
+
+`DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15` governs.
+
+The completed Diets/Brabant text is set in ordinary readable movable type and printed nearly invisibly with a reconstructed clear gallnut/tannin + gum-arabic medium before binding. The paper is the hidden book. Dee gives the bound object to Claes before Boom and requires graphite rather than ink.
+
+Green vitriol later supplies the iron that darkens the tannin-loaded letterforms. The result is already readable language. **Reveal is not decryption.**
+
+Retired from the Brevísima mechanism:
+
+- ciphertext/nomenclator stream;
+- 24×24 matrix;
+- merels as recovery key;
+- Monas as ordering key;
+- Castanea as key anchor;
+- special Dodoens nomenclator carrier;
+- Primus Index;
+- multi-week cryptographic reconstruction.
+
+Merels, Monas, Castanea and ordinary Dodoens may survive independently where they serve game, education, botany, symbolism or character.
+
+## Mayken current state
+
+The beloved identity is resolved as **Mayken Adriaensdr. Lampert**, fictional, born ca.1546 in Goes.
+
+Her historical embedding is the real Lampart/Lambert/Lampert apothecary environment. The project distinguishes verified persons/property records, supported identity/genealogy reconstruction and explicit fictional daughtership.
+
+Mayken is independently competent in materia medica, preparation, measurement, botanical/material identification, trained sensation and error control. She may assist direct reveal and reading but is **not** a cryptographic solver or special-Dodoens key-holder.
+
+Her family also experiences the 1554 fire through the burned *Zwaene* property. This gives shared historical memory without duplicating Claes' household annihilation.
+
+## Cornelis current state
+
+Cornelis is:
+
+- Goes poorter;
+- **biersteker**, not fixed brewery owner;
+- rederijker and logistical/book-material carrier;
+- not a printer.
+
+His chamber identity is fixed as the **Nardusbloem / older Magdalena-linked Goese tradition**. The Zusterhuis remains his meeting environment.
+
+In novel canon he helps form a reform-minded/protestantiserende current in the 1560s that becomes the later Edele Castanienbloem. The historical sources do not prove that early split. **1595 is the earliest surviving attestation, not a proved founding date.**
+
+Whether Cornelis ever serves as deken remains open.
+
+His death is fixed as the 19 November 1569 Antwerp fictional execution model; old “late 1568/1569 exact details open” statements are superseded.
+
+## Alchemical current state
+
+Refined process law:
+
+> **What becomes visible was already present.**
+
+Material chain:
+
+`kies / pyritic rejected matter → weathering + water + air + time → vitrioolwater / operational Groene Leeuw → direct tannin-text reveal + opening lesson → strong-water failure on Sol → right compound relation → death/opening of Sol → materially continuous hidden Sol → red fixation / Rode Leeuw → Saturn/lead → assay/cupellation-like reveal → projectio → release`
+
+Guardrails:
+
+- Green Lion is process-dependent vocabulary, not a universal historical equation `Green Lion = FeSO4`.
+- Green vitriol directly reveals the tannin text but does not directly dissolve gold.
+- Sol must first resist ordinary strong water: force is not the same as right relation.
+- No real gold is created from lead; no later silent gold addition is allowed.
+- Rode Leeuw/projectiepoeder is deep red to red-brown and carries already-present Sol; exact non-gold carrier composition remains open.
+- Cupellation-like assay is authorial reconstruction, not documented Seton protocol.
+- Do not use routine tasting of corrosive/vitriol liquors.
+- Seton is wholly separated from the Brevísima line.
+
+## Active open-decision policy
+
+`canon/OPEN_DECISIONS.yaml` now contains **only active unresolved questions**. Resolved, superseded and `RESOLVED_NOT_APPLICABLE` history belongs in decision/audit files rather than masquerading as current work.
+
+The alchemical refinement supplement contains only the still-open Rode-Leeuw carrier composition and Enkhuizen assay/choreography design.
+
+This distinction is mandatory:
+
+- **historical/research open** — evidence might close it;
+- **experimental open** — only a material test can close it;
+- **authorial design open** — the novel must choose it;
+- **irreducibly uncertain** — preserve historical uncertainty and choose an explicitly fictional reconstruction if needed.
+
+## Narrative development backlog
+
+A structurally important limitation remains: canon normalization is ahead of dramatic realization.
+
+`narrative/structure.yaml` still has no populated Book/Act/Sequence/Chapter/Beat hierarchy, and `narrative/scenes.yaml` contains only a small number of full scene diagnostics.
+
+This is **not** an unresolved canon conflict. It is the next major authoring task: turn the settled chronology, relationships, material processes and world model into a causal scene-by-scene novel architecture.
 
 ## Precedence
 
-1. An explicit current human canon decision (`DEC.*`) governs structured canon state.
-2. Active `STC.*` records are the machine-readable story truth.
-3. Dedicated later-decision dossiers such as `MEMORIAAL_BREVISIMA_PRINT_1564.md` and `FAMILY_CLAES_1542_1554.md` govern their domains where the dated broad synthesis is stale or less specific.
-4. The synchronized human-readable operating master expresses the broader active model coherently where not superseded.
-5. The lossless Revision 11 prose source governs meaning not yet atomized and not superseded by later decisions.
-6. Lemma may reject an impossible combination, but Lemma never invents story truth.
-7. AI proposals never become canon merely by being plausible.
+When records conflict:
 
-If structured data and the source prose appear to conflict, apply explicit later decisions first; otherwise create a proposal and resolve it explicitly. Never silently overwrite either layer.
+1. latest explicit current `DEC.*` author decision, including supplements;
+2. active later domain-specific `STC.*` story claim or an explicit supersession declared by a later decision;
+3. dedicated current dossier;
+4. current `LEMMA_MCKEE_MASTER.md`;
+5. synchronized entities/objects/arcs/relationships/instances;
+6. Revision 11 prose for unsuperseded unatomized meaning;
+7. source claims for historical support;
+8. proposals and open decisions;
+9. dated legacy masters/session memory — audit/context only.
 
-## Conversion state
-
-Revision 11 has completed a **first full semantic conversion pass**: all 31 top-level sections are accounted for, and the core chronology, character arc, macrostructure, objects, motifs, open decisions and key Narrative Instances have been normalized. The former cipher architecture is retained only as deprecated development history; the active memoriaal mechanism is the direct material reveal architecture. The Goes living-city, church, old-Nieuwstraat, rederijker, 1554 family-rupture, extended-family and 1564 memoriaal/Brevísima carrier layers have received additional structured normalization.
-
-The dated `LEMMA_MCKEE_MASTER_2026-08-13.md` and parts of `EXECUTIONS_REFORMATION_CLAES.md` still contain pre-decision wording for the old carrier/cipher architecture and must be regenerated or patched in a future synchronization pass. Until then, the explicit 15 August direct-text decision, active Story Claims, object/reveal registries and dedicated memoriaal dossier above are authoritative for that domain.
-
-This does **not** mean every paragraph has already become its own atomic record. The conversion ledger and sync status make remaining normalization measurable and loss-safe.
+Never silently resolve historical evidence into fiction or fiction into historical proof.

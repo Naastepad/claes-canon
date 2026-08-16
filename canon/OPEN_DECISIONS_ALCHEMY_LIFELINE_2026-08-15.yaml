@@ -1,51 +1,30 @@
-schema_version: 1.2.0
+schema_version: 1.3.0
 kind: OpenDecisionSupplement
+status: LEGACY_REDIRECT
+note: Active unresolved alchemy/rederijker questions are maintained in canon/OPEN_DECISIONS.yaml and canon/OPEN_DECISIONS_ALCHEMY_REFINEMENT_2026-08-16.yaml. These two older records are retained only as supersession history.
 decisions:
 - id: OPEN.CORNELIS.CASTANIE.DEKEN.001
   domain: character_and_rederijker_network
   priority: high
   question: Is Cornelis merely a member of De Edele Castanienbloem or also deken during the relevant Antwerp/book-transport period?
-  status: OPEN
-  fixed:
-  - Cornelis is a member of De Edele Castanienbloem.
-  - Cornelis is a Goes poorter and biersteker.
-  - Cornelis' beer-route/civic/rederijker position can support book-transport plausibility.
-  guardrails:
-  - Do not write Cornelis as deken until this is explicitly closed.
-  - Do not use deken status to justify plot mechanics that can already be justified by poorter/member/biersteker/trust networks.
+  status: SUPERSEDED
+  superseded_by: OPEN.CORNELIS.REDERIJKER.DEKEN.001
+  reason: DEC.CORNELIS.REDERIJKER.NARDUS_CASTANIE_ORIGIN.2026-08-16 supersedes the premise that Cornelis is simply a Castanienbloem member. His canonical chamber affiliation is the Nardusbloem; only any deken office remains open.
+
 - id: OPEN.ALCHEMY.ENKHUIZEN_1602.EVENT_DESIGN.001
   domain: alchemical_lifeline
   priority: high
-  question: Exact scene design, witnesses, assay/cupellation logic, risk level and moral consequence of the 1602 Enkhuizen transmutation/projectio event.
-  status: OPEN
-  fixed:
-  - Alexander Seton is the historical-alchemical catalyst in the Enkhuizen 1602 projectio climax.
-  - Seton has no function in revealing, decoding, reading or solving the Brevisima; that textual line is completed by the Antwerp 1578 print event.
-  - The 1602 Enkhuizen event is the outward projectio of Claes' projectiepoeder line.
-  - Claes' completed projectiepoeder/Rode Leeuw is deep red to red-brown, never green or visibly gold-yellow.
-  - Groene Leeuw/vitriol belongs upstream to revelation, opening and digestion, not to the final projection powder.
-  - The event remains chemically interpretable as hidden Sol becoming visible through process/test/assay, not literal lead-to-gold creation.
-  - The event must force Claes toward release rather than ownership of the Work.
-  - Historical Seton tradition and fictional Claes material logic must remain distinguishable.
-  unresolved:
-  - Is Jacob Hanssen/Haussen's 1601 Scottish landfall an accidental shipwreck, a deliberately risky approach, or a later cover story?
-  - If Hanssen is deliberately seeking Seton, who sends him and why is Seton's alchemical reputation relevant to Claes' late-life projectio line?
-  - Does Claes already know of Seton's reputed projective demonstrations before 1602, or does Seton arrive as an unexpected figure?
-  - Does Claes meet Seton before the projection, and if so under what pretext?
-  - Who supplies the lead, crucible, fire and assay materials?
-  - Does Seton touch the working materials or deliberately leave handling to witnesses?
-  - Is Claes an operator, witness, evaluator or silent recognizer during the event?
-  - Which historically plausible tests are actually performed in-scene: touchstone, acid comparison, cupellation-like assay, weighing, malleability, or another goldsmith's test?
-  - Who is physically present beyond Seton, Hanssen/Haussen and any Van der Linden figure?
-  - Is the event private, semi-private or allowed to become public only through subsequent retelling?
-  - Who keeps the resulting gold and how does its material witness-chain intersect with the historical tradition?
-  - What does Seton recognize in Claes, and what do the two deliberately leave unsaid?
-  - What immediate choice or relinquishment by Claes proves that projectio has become release rather than possession?
-  - How much of Seton's later danger or future persecution is foreshadowed without importing later legend as certain fact?
+  question: Exact scene design, witnesses, assay/cupellation logic, risk level and moral consequence of the 1602 Enkhuizen transmutation/projectio event
+  status: SUPERSEDED_BY_REFINEMENT
+  superseded_by: OPEN.ALCHEMY.ENKHUIZEN_1602.ASSAY_DESIGN.001
+  fixed_now:
+  - Enkhuizen
+  - house of sailor Jacob Hausfsen
+  - 13 March 1602
+  - approximately 16:00
+  - Seton/Sidonius as historical-tradition figure
+  - Seton has no function in the Brevísima/textual line
+  - the result is author-side interpretable as already-present hidden Sol becoming visible/testable, not literal lead-to-gold creation
   guardrails:
-  - Do not write a modern complete recipe.
-  - Do not close witnesses, location details, mission theory, assay sequence or public/private degree without a separate decision.
-  - Do not make metallic success the final moral meaning of the novel.
-  - Do not make Hanssen's secret mission historical fact; it is a story hypothesis until explicitly closed as fiction-canon.
-  - Do not claim Seton's historical Enkhuizen powder was red or green; the surviving tradition does not securely establish that for this event.
-  - Do not reconnect Seton to the Brevisima, memoriaal, hidden print or any textual decoding/revelation task.
+  - Morhof 1673 is retrospective and must not be treated as a contemporaneous eyewitness record.
+  - Exact furnace choreography, quantities, additional witnesses, assay sequence, public/private degree and immediate aftermath remain open in the refinement registry.

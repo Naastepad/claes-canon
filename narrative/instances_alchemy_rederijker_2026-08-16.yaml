@@ -1,0 +1,93 @@
+schema_version: 1.0.0
+kind: NarrativeInstanceSupplement
+instances:
+- id: NI.SEQUENCE.CASTANIENBLOEM_ORIGIN.1560S.001
+  type: SequenceInstance
+  label: Nardusbloem → hervormingsgezinde Castanien-stroom
+  canon_status: CANON
+  story_time:
+    earliest: '1563-01-01'
+    latest_exclusive: '1570-01-01'
+    precision: reconstruction-window
+  locations:
+  - ENT.LOC.GOES
+  entities:
+  - ENT.PERSON.CORNELIS
+  - ENT.ORG.GOES.NARDUSBLOEM
+  - ENT.ORG.GOES.CASTANIENBLOEM
+  story_claims:
+  - STC.CORNELIS.NARDUSBLOEM.001
+  - STC.CASTANIENBLOEM.ORIGIN.1560S.001
+  function: Cornelis remains rooted in the older Catholic Nardusbloem while taking a formative role in a reform-minded/protestantiserende rederijker current that later survives in the documentary record as the Edele Castanienbloem.
+  historical_guardrail: The split/origin is novel reconstruction; 1595 is the earliest surviving Castanienbloem attestation, not a proven founding year.
+- id: NI.CHAPTER.RED_LION
+  type: ChapterInstance
+  label: De rode massa / Rode Leeuw
+  canon_status: CANON
+  story_time:
+    earliest: '1584-01-01'
+    latest_exclusive: '1602-03-13'
+    precision: late-development-window
+  entities:
+  - ENT.PERSON.CLAES
+  objects:
+  - OBJ.SOL_GOLD_FRACTION
+  - OBJ.RED_LION_PROJECTIEPOEDER
+  story_claims:
+  - STC.ALCHEMY.SOL.CONTINUITY.001
+  arcs_advanced:
+  - ARC.CLAES.MACRO_TRANSMUTATION
+  - ARC.CLAES.ALCHEMICAL_PROCESS_LIFELINE
+  motifs:
+  - MOTIF.ALCHEMY.PROCESS_CHAIN
+  - MOTIF.HIDDEN_PRESENCE
+  function: Already-opened Sol is fixed/carried in a red or dark portable matrix; the exact non-gold carrier remains open while the continuity of the gold fraction is fixed.
+- id: NI.CHAPTER.SATURNUS
+  type: ChapterInstance
+  label: Saturnus
+  canon_status: CANON
+  story_time:
+    earliest: '1602-01-01'
+    latest_exclusive: '1602-03-14'
+    precision: lead-in-window
+  entities:
+  - ENT.PERSON.CLAES
+  objects:
+  - OBJ.RED_LION_PROJECTIEPOEDER
+  - OBJ.SOL_GOLD_FRACTION
+  story_claims:
+  - STC.ALCHEMY.CUPELLATION.INTERPRETATION.001
+  arcs_advanced:
+  - ARC.CLAES.ALCHEMICAL_PROCESS_LIFELINE
+  function: Saturn/lead becomes the receiving vessel for the hidden-Sol projectio and the threshold to an assay/fire-test in which already-present gold can become visibly testable.
+  historical_guardrail: Cupellation-like interpretation is an author-side reconstruction, not a documented Seton procedure.
+- id: NI.EVENT.ENKHUIZEN.TRANSMUTATION.1602
+  type: EventInstance
+  label: Seton-projectio Enkhuizen
+  canon_status: CANON
+  story_time:
+    date: '1602-03-13'
+    precision: day
+    approximate_local_time: '16:00'
+  locations:
+  - ENT.LOC.ENKHUIZEN
+  entities:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.ALEXANDER_SETON
+  - ENT.PERSON.JACOB_HAUSFSEN
+  objects:
+  - OBJ.RED_LION_PROJECTIEPOEDER
+  - OBJ.SOL_GOLD_FRACTION
+  story_claims:
+  - STC.ENKHUIZEN.SETON.FRAME.1602.001
+  - STC.ALCHEMY.SOL.CONTINUITY.001
+  - STC.ALCHEMY.CUPELLATION.INTERPRETATION.001
+  arcs_advanced:
+  - ARC.CLAES.LIFE
+  - ARC.CLAES.MACRO_TRANSMUTATION
+  - ARC.CLAES.ALCHEMICAL_PROCESS_LIFELINE
+  motifs:
+  - MOTIF.ALCHEMY.PROCESS_CHAIN
+  - MOTIF.HIDDEN_PRESENCE
+  function: Outward projectio of the material line; early-modern witnesses can experience an extraordinarily convincing transmutation while the author's material model remains hidden Sol becoming visible through process and assay. For Claes the decisive question is release rather than ownership.
+  evidence_guardrail: Enkhuizen, Hausfsen, date and time follow Morhof's 1673 retrospective tradition; exact furnace/assay choreography and additional witnesses remain open.

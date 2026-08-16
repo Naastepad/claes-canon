@@ -1,4 +1,4 @@
-schema_version: 1.1.0
+schema_version: 1.1.1
 kind: MotifRegistry
 motifs:
 - id: MOTIF.SINNE
@@ -56,5 +56,6 @@ motifs:
   function: material transformation, measure, labour, food and social order
 - id: MOTIF.CASTANEA
   label: Castanea
-  status: CANON
-  function: memory anchor and wayfinding/authentication in recovery chain
+  status: CANON_CONTEXT
+  function: independent botanical, family-memory and later Castanienbloem/Nissepat resonance; no longer a Brevísima recovery key or authentication step
+  guardrail: do not restore the deprecated Castanea cipher/key-anchor function without an explicit new decision

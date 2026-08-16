@@ -1,0 +1,66 @@
+schema_version: 1.0.0
+kind: NarrativeAlchemySupplement
+arcs:
+- id: ARC.CLAES.ALCHEMICAL_PROCESS_LIFELINE
+  type: MacroProcessArc
+  label: Kies → Groene Leeuw → Sol → Rode Leeuw → Saturnus → Projectio
+  status: CANON
+  protagonist: ENT.PERSON.CLAES
+  decision_ids:
+  - DEC.ALCHEMY.CLAES_LIFELINE_PROJECTIEPOEDER.2026-08-15
+  - DEC.ALCHEMY.GREEN_LION_SOL_CONTINUITY.2026-08-16
+  process_sequence:
+  - rejected pyritic/vitriolic matter
+  - weathering / care / water / air / time
+  - vitrioolwater and green vitriol / operational Groene Leeuw
+  - direct reveal of tannin text and learned principle of opening/revealing
+  - strong-water failure on Sol
+  - right compound condition opens/dissolves Sol
+  - already-present Sol carried into red fixation / Rode Leeuw
+  - hidden Sol brought to Saturn/lead and assay
+  - visible gold-bearing result / projectio
+  - release beyond possession
+  conservation_law: What becomes visible was already materially present; no gold is created from lead and no later gold insertion is permitted.
+  relation_to_macro_arc: This process arc is the material grammar nested inside ARC.CLAES.MACRO_TRANSMUTATION rather than a replacement for its Drager/Nigredo/Albedo/Rubedo/Projectio phases.
+  guardrails:
+  - chemistry, alchemical vocabulary, historical craft evidence and novel event truth remain distinct layers
+  - green vitriol directly develops the memoriaal but does not directly dissolve gold
+  - cupellation-like interpretation is author-side reconstruction, not documented Seton procedure
+motifs:
+- id: MOTIF.ALCHEMY.PROCESS_CHAIN
+  label: materiële keten / het Werk door de tijd
+  status: CANON
+  function: recurring cross-story process grammar linking rejected matter, patient transformation, revelation, loss of visible form, fixation, assay and release
+  progression:
+  - kies
+  - verwering/uitloging
+  - Groene Leeuw
+  - sterke wateren
+  - dood/opening van Sol
+  - Rode Leeuw
+  - Saturnus
+  - projectio/release
+  guardrail: never reduce the chain to a decorative series of alchemical labels; each return must alter matter, knowledge, relationship or moral choice
+- id: MOTIF.HIDDEN_PRESENCE
+  label: wat verschijnt was reeds aanwezig
+  status: CANON
+  function: links latent typography, dissolved/hidden Sol, testimony after bodily loss, memory and recovered sinne without claiming they are chemically identical phenomena
+  instances:
+  - hidden tannin-printed Brevísima revealed by green vitriol
+  - visible gold becoming chemically hidden and later visible again
+  - Cornelis' testimony surviving bodily removal and imposed silence
+  - Claes' damaged sensory openness returning as mature embodied discernment
+  anchor: What becomes visible was already present.
+themes:
+- id: THEME.CLAES.HIDDEN_PRESENCE
+  type: SecondaryControllingPrinciple
+  statement: Transformation does not create truth or value ex nihilo; Claes matures by learning to recognise, carry and reveal what already exists without confusing revelation with ownership.
+  canon_status: CANON
+  applies_to:
+  - ARC.CLAES.ALCHEMICAL_PROCESS_LIFELINE
+  - ARC.CLAES.MACRO_TRANSMUTATION
+  material_correlates:
+  - OBJ.MEMORIAAL
+  - OBJ.SOL_GOLD_FRACTION
+  - OBJ.RED_LION_PROJECTIEPOEDER
+  moral_culmination: projectio becomes release rather than possession

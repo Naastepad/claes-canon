@@ -1,0 +1,50 @@
+schema_version: 1.0.0
+kind: CanonDecisionSupplement
+decisions:
+- id: DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14
+  type: CanonDecision
+  status: CANON
+  recovered_from: author-approved prior branch PR-7 and synchronized to current no-cipher canon on 2026-08-16
+  decision: Claes' beloved is Mayken Adriaensdr. Lampert, a fictional Goese woman born approximately 1546. In novel canon she is daughter of Adriaen Jacobsz. Lampert and granddaughter of the older Jacob/Jacop Lampart/Lambert apothecary household. Her independent competence lies in materia medica, practical preparation, botanical and sensory judgement, measurement, ordinary book use and error control.
+  affects:
+  - ENT.PERSON.BELOVED
+  - ENT.PERSON.ADRIAEN_JACOBSZ_LAMPERT
+  - ENT.PERSON.JACOB_LAMPART_APOTHECARY
+  - STC.CLAES.BELOVED.MAYKEN_LAMPERT.001
+  - STC.MAYKEN.LAMPERT.FAMILY_LINK.001
+  - STC.MAYKEN.FIRE_MEMORY.1554.001
+  - STC.MAYKEN.APOTHECARY_EXPERTISE.001
+  - STC.MAYKEN.MEMORIAAL_REVEAL_ROLE.1570.001
+  - STC.CLAES.MAYKEN.RELATIONSHIP.001
+  - REL.CLAES.BELOVED
+  guardrails:
+  - Mayken is not a historically recovered daughter.
+  - Adriaen Jacopsen apteker equals Adriaen Jacopsen Lampert is supported, not literally proved in one current act.
+  - Jacob-to-Adriaen fatherhood is supported historical reconstruction adopted as novel genealogy, not archival proof.
+  - The 1543 Mayken wife of Jacop Lampart supports the name environment only; it does not prove a grandmother or naming chain.
+  - Mayken's mother remains open/fictional.
+  - Under DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15 Mayken is not a cipher, nomenclator or special-Dodoens key-holder; she may assist material reveal, reading, observation and contradiction.
+
+- id: DEC.CORNELIS.DEATH.1569.2026-08-15.REVISED
+  type: CanonDecision
+  status: CANON
+  synchronization_note: This decision was already active in the execution/Reformation decision layer; this supplement makes its precedence over stale working-window records explicit.
+  decision: Cornelis' death is a fictional but historically disciplined public execution in Antwerp on 19 November 1569, tied to the documented book-repression and public book-burning environment. Claes physically witnesses it.
+  fixed_story_resolution:
+    first_arrest_warning: autumn 1567 in Antwerp; released on borg or equivalent conditions
+    renewed_exposure: late 1568 through March 1569 through clandestine book/paper traffic and book-repression traces
+    execution_date: '1569-11-19'
+    place: Antwerp Grote Markt / stadhuis execution-and-book-burning environment, after detention in or by Het Steen
+    charge: renewed logistical complicity in forbidden/heretical/seditious books, papers, songs, prints, libels and correspondence plus refusal to name accomplices or recipients
+    preferred_execution_method: public beheading by sword, conditional on seditious/network/recidive framing
+    witness: Claes is physically present
+    after_ritual: related papers/books may burn separately; Cornelis' body is not returned to Claes
+  supersedes_story_working_state:
+  - STC.CORNELIS.DEATH.WORK.001
+  guardrails:
+  - Cornelis is not presented as a documented historical victim on 19 November 1569.
+  - Do not claim Haecht lists Cornelis among the historical offenders.
+  - Cornelis is not a protected printer, open preacher or author of the hidden Brevísima.
+  - Cornelis does not carry OBJ.MEMORIAAL at his execution.
+  - Simple book possession or smuggling alone is insufficient; the recidive/network/seditious framing and refusal to give names are required.
+  - Any final father-son exchange is human/testimony-centered, not cryptographic key transfer.
