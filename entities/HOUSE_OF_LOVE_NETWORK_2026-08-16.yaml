@@ -5,7 +5,7 @@ entities:
   type: HistoricalPersonAnchor
   label: Ghysbrecht/Gijsbrecht, kuiper van Antwerpen
   fictionality: historical_anchor_with_identity_inference
-  canon_status: HISTORICAL_ANCHOR
+  canon_status: CANON
   historical_state:
     attested_1551: true
     attested_1554: true
@@ -26,7 +26,7 @@ entities:
   type: HistoricalPersonAnchor
   label: Adriaan Dens
   fictionality: historical_person_novel_encounter
-  canon_status: HISTORICAL_ANCHOR
+  canon_status: CANON
   historical_state:
     role: early follower of Hendrik Niclaes
     family_link: brother of Clara Dens, wife of François Niclaes
@@ -42,7 +42,7 @@ entities:
   aliases:
   - Hiel
   fictionality: historical_person_novel_encounter
-  canon_status: HISTORICAL_ANCHOR
+  canon_status: CANON
   historical_state:
     role:
     - early Niclaes associate
@@ -58,7 +58,7 @@ entities:
   type: HistoricalPersonAnchor
   label: Christophe Plantin
   fictionality: historical_person_novel_contact
-  canon_status: HISTORICAL_ANCHOR
+  canon_status: CANON
   story_use:
   - later Antwerp print/distribution node in Cornelis' network
   historical_boundary:
@@ -72,7 +72,7 @@ entities:
   type: ReligiousSocialNetwork
   label: Huis der Liefde / Familia Caritatis
   fictionality: historical_network_with_novel_participation
-  canon_status: CANON_WORLD_NETWORK
+  canon_status: CANON
   structure_model:
   - translocal
   - trust-based
@@ -146,3 +146,18 @@ relations:
   canon_status: CANON
   fictionality: novel_contact_on_historical_network
   sequence_rule: after_REL.CORNELIS.HOUSE_OF_LOVE
+
+- id: REL.CORNELIS.BOOK_ROUTE
+  type: LogisticalDevelopmentRelation
+  subject: ENT.PERSON.CORNELIS
+  predicate: develops_logistical_role_in
+  object: book_and_paper_routes
+  canon_status: CANON
+  fictionality: novel_canon
+  basis:
+  - beer-distribution competence
+  - route knowledge
+  - carrier selection
+  - accounts and credit
+  - discretion and trust
+  guardrail: This relation does not imply routine concealment of books inside beer casks.
