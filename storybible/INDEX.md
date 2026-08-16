@@ -30,6 +30,7 @@ Operational navigation for the current Claes Storybible.
 - `../canon/DECISIONS_ALCHEMY_REFINEMENT_2026-08-16.yaml` — Green Lion/Sol/Enkhuizen and Nardusbloem refinement.
 - `../canon/DECISIONS_RESOLUTIONS_2026-08-16.yaml` — callback-recovered Mayken identity and Cornelis-death precedence.
 - `../canon/DECISIONS_STORY_PROJECTION_2026-08-16.yaml` — Great-Work authorial architecture, Mayken independent arc and Claes-Mayken conjunctio.
+- `../canon/DECISIONS_HOUSE_OF_LOVE_NETWORK_2026-08-16.yaml` — Cornelis' ca.1552–1553 Familist entry route, pre-fire affiliation, outward conformity, later Plantin role and beer-to-paper logistics continuity.
 
 ## Active open decisions
 
@@ -52,6 +53,7 @@ Resolved/not-applicable records no longer remain mixed into the active open regi
 - `../claims/SOURCE_CLAIMS_GOES_RELIGION_1577_1578.yaml`
 - `../claims/SOURCE_CLAIMS_HISTORICAL_SUBSTRATE_RECOVERY_2026-08-16.yaml`
 - `../claims/SOURCE_CLAIMS_DOMAIN_REBUILD_2026-08-16.yaml`
+- `../claims/SOURCE_CLAIMS_HOUSE_OF_LOVE_NETWORK_2026-08-16.yaml` — Ghysbrecht/Gijsbrecht archival anchors, Dens/Barrefelt network roles, outward-conformity boundary and Plantin historiographical caution.
 
 ## Historical substrate / scene-world authority — Round A
 
@@ -202,6 +204,7 @@ Standing hard-review mode under `GRD.EDITORIAL.RUTHLESS_EDITOR`:
 - `../claims/STORY_CLAIMS_2026-08-14.yaml`
 - `../claims/STORY_CLAIMS_MAYKEN_LAMPERT.yaml`
 - `../claims/STORY_CLAIMS_ALCHEMY_REFINEMENT_2026-08-16.yaml`
+- `../claims/STORY_CLAIMS_HOUSE_OF_LOVE_NETWORK_2026-08-16.yaml` — Cornelis' commercial trust bridge, Dens/Barrefelt affiliation, pre-fire state, later Plantin node and beer-to-paper logistics continuity.
 
 ## People and relationships
 
@@ -209,6 +212,7 @@ Standing hard-review mode under `GRD.EDITORIAL.RUTHLESS_EDITOR`:
 - `../entities/FAMILY_1554.yaml`
 - `../entities/MAYKEN_LAMPERT.yaml`
 - `../entities/ALCHEMY_REDERIJKER_2026-08-16.yaml`
+- `../entities/HOUSE_OF_LOVE_NETWORK_2026-08-16.yaml` — Ghysbrecht, Dens, Barrefelt, Plantin, translocal network entity and canonical Cornelis relationships.
 - `../narrative/relationships.yaml`
 - `../narrative/arcs.yaml`
 - `../narrative/sinne_recovery.yaml`
@@ -234,6 +238,16 @@ Standing hard-review mode under `GRD.EDITORIAL.RUTHLESS_EDITOR`:
 - `../narrative/mayken_independent_arc.yaml`
 - `../narrative/mayken_relationship_projection.yaml`
 - `../sources/SRC-HIST-GOES-LAMPERT-APOTHECARY-001.md`
+
+### Cornelis / Huis der Liefde / Antwerp route
+
+- `CORNELIS_HOUSE_OF_LOVE_NETWORK_1551_1569.md` — governing dossier; commercial trust → Ghysbrecht → fictional bridge to Dens → Barrefelt → Huis der Liefde; Plantin later.
+- `../canon/DECISIONS_HOUSE_OF_LOVE_NETWORK_2026-08-16.yaml`
+- `../claims/SOURCE_CLAIMS_HOUSE_OF_LOVE_NETWORK_2026-08-16.yaml`
+- `../claims/STORY_CLAIMS_HOUSE_OF_LOVE_NETWORK_2026-08-16.yaml`
+- `../entities/HOUSE_OF_LOVE_NETWORK_2026-08-16.yaml`
+- `../sources/SRC-HIST-HOUSE-OF-LOVE-GOES-ANTWERP-1551-1569-001.md`
+- `CORNELIS_EXECUTION_1569.md` — later legal/execution consequence layer; the new dossier supplies the longer network backstory.
 
 ### Memoriaal / Brevísima
 
