@@ -1,0 +1,85 @@
+schema_version: 1.0.0
+kind: LocalHistoricalProcess
+id: HIST.GOES.MILITARY_TRANSITION.1550_1607
+title: "Goes: royalist defence, political transition and mature States drill, 1550–1607"
+region: GOES_ZEELAND
+parent_timeline: HIST.TIMELINE.ZEELAND.REVOLT
+scope:
+  start: 1550-01-01
+  end: 1607-12-31
+principles:
+  - "Do not collapse royalist/Habsburg Goes, the 1577 satisfactie, and the mature Mauritian military system into one continuous military regime."
+  - "Political transfer does not imply instantaneous replacement of weapons, personnel, drill habits or institutional culture."
+  - "Urban militia, garrison troops and field-army troops are separate categories unless local evidence explicitly joins them."
+  - "De Gheyn 1607 is a terminus for codified mature drill, not evidence that the same drill existed unchanged in Goes decades earlier."
+
+anchors:
+- id: HIST.GOES.MILITARY.ROYALIST_PRE1577
+  date_start: 1550
+  date_end: 1577-03
+  status: HISTORICAL_CONTEXT
+  evidence_status: SUPPORTED
+  source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008]
+  summary: >-
+    Before the satisfactie Goes belongs to the royal/Habsburg political-military sphere. Any firearm or pike drill used in scenes from this phase must not be back-projected automatically from the mature 1607 States manual.
+  scene_guardrails:
+    - Do not use De Gheyn's 1607 command sequence verbatim as if documented for Goes in 1550–1576.
+    - Period-appropriate matchlock firearms, pikes and local/mercenary military practice are plausible, but exact local drill remains research-dependent.
+
+- id: HIST.GOES.MILITARY.SIEGE_RELIEF.1572
+  date_start: 1572-08
+  date_end: 1572-10
+  status: HISTORICAL_ANCHOR
+  evidence_status: SUPPORTED
+  source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008]
+  summary: >-
+    Royalist Goes is besieged and relieved by Mondragón. This is the clearest military anchor for Claes' adult experience of a city still defended within the royalist war system.
+  continuity_note: >-
+    The event demonstrates royalist control and active warfare, not a complete reconstruction of Goese drill, unit composition or command vocabulary.
+
+- id: HIST.GOES.MILITARY.SATISFACTION_TRANSITION.1577
+  date: 1577-03
+  status: HISTORICAL_ANCHOR
+  evidence_status: VERIFIED
+  source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008]
+  summary: >-
+    The satisfactie transfers Goes into Orange/States political alignment under negotiated conditions. It marks the beginning of a military-institutional transition, not an instantaneous adoption of the later Mauritian drill.
+  do_not_infer:
+    - immediate full professionalisation
+    - immediate uniform command vocabulary
+    - immediate replacement of all royalist-trained personnel
+    - direct use of De Gheyn's later 1607 manual
+
+- id: HIST.STATES.MILITARY.STANDARDISATION.LATE16C
+  date_start: 1580
+  date_end: 1607
+  status: MACRO_PROCESS
+  evidence_status: RESEARCH_SUPPORTED_GENERAL_NOT_LOCAL_EXACT
+  source_ids: [SRC-HIST-DEGHEYN-WAPENHANDELINGHE-1607-001]
+  summary: >-
+    By 1607 the States military culture has produced a highly articulated, repeatable weapon drill in which individual actions are decomposed into numbered figures, written instruction and fixed command words. The source securely documents the mature end-state; the exact pace and date of local adoption in Goes remain to be established from local or military administrative evidence.
+
+- id: HIST.DEGHEYN.WAPENHANDELINGHE.1607
+  date: 1607
+  status: PRIMARY_SOURCE_ANCHOR
+  evidence_status: VERIFIED
+  source_ids: [SRC-HIST-DEGHEYN-WAPENHANDELINGHE-1607-001]
+  summary: >-
+    Jacob de Gheyn II publishes/codifies the weapon handling of roers, muskets and pikes as a visual-verbal drill system: 42 roer figures/commands, 43 musket figures/commands and 32 pike figures/commands.
+  significance_for_story_world:
+    - knowledge_of_arms_has_become_explicitly_decomposed
+    - command_language_and_body_movement_are_linked
+    - safety_and_repeatability_are_built_into_the_sequence
+    - experienced_embodied_skill_can_now_be_transmitted_through_print_and_image
+
+local_application:
+  safe_statement: >-
+    By the end of Claes' life, the military world of the Republic can plausibly be represented as moving toward or operating within this much more standardised drill culture. The source is a strong model for the mature States military environment, but its exact institutional penetration into Goes requires separate evidence.
+  hypothesis_not_canon: >-
+    Because Goes entered the States political order later than several neighbouring rebel centres, it is conceivable that later training there reflected a relatively mature form of the new drill. No evidence currently establishes Goes as a proving ground, model garrison or source for De Gheyn's depicted soldiers.
+
+research_backlog:
+  - "Find Goese or Zeeuwse muster rolls, garrison accounts, schutterij ordinances, captain/sergeant instructions or weapon inventories for 1577–1607."
+  - "Determine when and how Mauritian drill reforms reached Zeeland garrisons and specifically Goes."
+  - "Separate documented Goese civic schutterij practice from States garrison and field-army practice."
+  - "Locate documented exercise grounds, guard posts and wall/gate routines in Goes around 1590–1607."
