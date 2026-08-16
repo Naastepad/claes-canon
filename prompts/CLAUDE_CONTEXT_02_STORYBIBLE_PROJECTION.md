@@ -1,0 +1,1947 @@
+# Claude Context Pack — 02_STORYBIBLE_PROJECTION — GENERATED
+
+> Generated projection; never edit by hand. GitHub source files remain authoritative.
+> Treat each SOURCE FILE section as the original source file.
+
+- source branch: `main`
+- source commit at generation: `f541df06f3c3b0fe8f4d058edd060926091f7e19`
+- generated UTC: `2026-08-16T19:20:27+00:00`
+- included files: `9`
+
+Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pack does not alter authority.
+
+---
+
+# SOURCE FILE: `storybible/LEMMA_MCKEE_MASTER.md`
+
+```markdown
+# Claes Nissepat — Lemma/McKee Storybible Master
+
+**ID:** `SB.CLAES.LEMMA_MCKEE`  
+**Status:** CURRENT OPERATING SYNTHESIS  
+**Synchronized:** 16 August 2026 — through Round C story projection and Cornelis/Huis der Liefde network decision  
+**Source authority:** `SB.CLAES.MASTER`
+
+This is the current human-readable operating synthesis of the Claes canon. The dated `LEMMA_MCKEE_MASTER_2026-08-13.md` is a historical snapshot only. Where older prose describes a 1545 birth, post-4-October loading of the memoriaal, a 24×24/cipher recovery chain, Cornelis' death as still open, Cornelis as a straightforward member of the Edele Castanienbloem, Plantin as Cornelis' converter into the Huis der Liefde, or Mayken's identity as still open, that wording is superseded.
+
+The project separates five working layers:
+
+1. **Source Claim (`SC.*`)** — what evidence supports.
+2. **Story Claim / Decision (`STC.*`, `DEC.*`)** — what is true or explicitly chosen in the novel.
+3. **World/practice state (`WORLD.*`, domain dossiers, scene packs)** — what can plausibly happen in a place/time/activity.
+4. **Narrative projection (`NI.*`, `ARC.*`, `REL.*`, `MOTIF.*`, `THEME.*`, `VALUE.*`)** — where and why story change happens.
+5. **Lemma constraint** — only deterministic continuity that can be evaluated safely.
+
+---
+
+## 1. Governing story proposition
+
+### Controlling idea
+
+A man who spends his life seeking hidden order becomes whole only when knowledge ceases to be a means of control and becomes a responsibility toward other people.
+
+### Core dramatic question
+
+What does truth ask of Claes toward the other when certainty, safety and control are impossible?
+
+### Character engine
+
+- **Conscious desire:** understand the hidden order behind visible reality.
+- **Psychological need:** recover trust in embodied perception and act without complete certainty.
+- **Moral need:** understand that knowledge increases responsibility toward others.
+- **Gift:** prolonged, precise, embodied perception — *sinne*.
+- **Shadow:** remaining in observation after the moment for action has arrived.
+- **Childhood wound:** if I had seen early enough, perhaps I could have prevented the loss.
+- **Adult lie:** if I understand the process, I can control the consequences.
+- **Final truth:** mastery is incomplete until it can be released without possession.
+
+Canonical anchors include `DEC.CLAES.SINNE.2026-08-13`, `DEC.CLAES.PARADOX.2026-08-13`, `DEC.CLAES.NEED.2026-08-13`, `DEC.CLAES.SPIRITUAL_JOURNEY.2026-08-13` and the Round-C authorial architecture decision.
+
+---
+
+## 2. Macrostructure — two nested alchemical layers
+
+### Operational chronological spine
+
+| Phase | Story time | Claes' movement | Fixed hinges |
+|---|---|---|---|
+| **DRAGER** | 1542–4 Oct 1564 | receive → recognize → interpret → act on matter | childhood, 1554 first blackening, Reimerswaal, 1561 Landjuweel, Dee/Silvius 1563–64, memoriaal before Boom |
+| **GEBONDENHEID / NIGREDO** | 4 Oct 1564–1584 | act → become entangled → lose → assume responsibility | Fabritius/security hinge, 1567 first Cornelis arrest, 19 Nov 1569 execution, 1570 reveal, 1572–79 Goes pressure, 1578 print, Delft 1584 |
+| **ONDERSCHEIDING / ALBEDO** | 1584–ca.1599 | distinguish confused values | truth ≠ certainty; knowledge ≠ control; protection ≠ possession |
+| **VERBINDING / RUBEDO** | ca.1599–1602 | reconnect in right proportion | recovered *sinne*, Mayken, love and material practice |
+| **PROJECTIO / OVERDRACHT** | 1602+ | prove → release → transmit | Enkhuizen 13 Mar 1602; final merels/death still open |
+
+Hard guardrails:
+
+- 1554 is Claes' first personal **micro-Nigredo**, not the start of the adult macro-Nigredo.
+- **4 October 1564** is the adult macro-Nigredo/security hinge.
+- 4 October changes **network risk**, not the physical content of the memoriaal.
+- **1578** completes the textual mission: projectio of the Word.
+- **1602** is projectio of Matter: the late alchemical test.
+- **After 1602** comes projectio of the Self: can Claes release ownership/control?
+
+### Deeper Great-Work authorial architecture
+
+`DEC.CLAES.GREAT_WORK.AUTHORIAL_ARCHITECTURE.2026-08-16` fixes the deeper author-side model:
+
+**Status Prima → Corpus / Anima / Spiritus → Transmutatio/Rubedo → Projectio → Status Prima Nova**.
+
+This architecture **nests with, and does not replace,** the chronological macro arc above.
+
+- **Corpus** — bodies, food, beer, paper, plants, buildings, fire, water, salts, vitriol, metals, tools, roads and cities undergo actual material change.
+- **Anima** — meaning, belief, language, loyalty, testimony, memory, love and public interpretation are separated and recombined.
+- **Spiritus** — Claes' vigilance, certainty-seeking, grief, agency, embodied *sinne*, responsibility and sovereignty change.
+
+Corpus, Anima and Spiritus are simultaneous spiral registers. They are **not** three successive books or three mechanically identical cycles.
+
+`Solve et Coagula` is an authorial movement: separate what has been falsely fused, then reconnect what can enter a truer relation.
+
+The recovered longer operation vocabulary — ontvangen, verbranden, oplossen, onderscheiden, verheffen, gebruikt worden, scheiden, verrotten, verenigen, verliezen, herhalen, zwart worden, wit worden, rijpen, rood worden, projecteren, loslaten — is diagnostic only. No fixed operation count is mandatory and no scene receives a label merely to complete a pattern.
+
+> **The author knows the Work; Claes undergoes it; the reader experiences it.**
+
+---
+
+## 3. Claes — cradle to grave / causal spine
+
+`ARC.CLAES.CAUSAL_SPINE` is the current pre-structure for eventual Book/Act/Sequence/Chapter/Scene realization.
+
+### I — 8 December 1542–ca.1547: body before meaning / Status Prima
+
+Claes is born in Goes on **8 December 1542**. Early knowledge begins in warmth, cold, smell, light, sound, hunger, rhythm and touch. The body knows before the mind explains.
+
+### II — ca.1547–18 May 1554: discovering order
+
+The household consists of Cornelis, Tanneken, Claes, younger brother **Jan Corneliszn. Nissepat** and, immediately before the fire, an unborn child. Cornelis teaches attention and craft; Tanneken teaches ordinary embodied knowing; Jan gives play, rivalry and action.
+
+The family home is the fictional household use of the historically documented 1542 Nissepat house in the older Nieuwstraat/Armenhoek environment.
+
+Bread, beer, church, household work and routes belong to Claes' first epistemology. His useful childhood intuition — careful attention makes the world legible — becomes the seed of his later false hope that enough attention might prevent loss.
+
+Cornelis' own Antwerp network also begins in this pre-fire world. A historical **Ghysbrecht/Gijsbrecht, kuiper van Antwerpen** with Goese property interests is the archival anchor; in novel canon repeated cask/beer dealings create a trusted commercial relation. The bridge from Ghysbrecht to **Adriaan Dens** is explicit fiction. Dens becomes the first person Cornelis knowingly recognizes as belonging to H.N.'s circle and routes him onward to **Hendrik Jansen van Barrefelt**. By approximately **1552–1553** Cornelis belongs in novel canon to the translocal Huis der Liefde while remaining publicly embedded in Catholic Goes. Plantin is not his converter.
+
+### III — 18 May 1554–1561: first blackening and Reimerswaal
+
+The Goes fire destroys or makes the family house uninhabitable in novel canon. Claes and Cornelis survive because they are away; Tanneken, Jan and the unborn child die. Historical evidence supports a partially damaged old-Nieuwstraat/Armenhoek environment but does not document these fictional casualties.
+
+For Cornelis the fire therefore **tests an already existing Familist conviction; it does not create it**. The same catastrophe also leaves Ghysbrecht's Goese property represented as burned in the 1554 archival record, allowing the trade relation to remain materially connected to the memory of burned Goes without making the two men's losses equivalent.
+
+Cornelis remains in Goes to rebuild livelihood and finance Claes' education. Zierikzee becomes unaffordable; Claes goes to Reimerswaal. The separation is care experienced as another loss.
+
+Reimerswaal remains a functioning city while recurrent water damage, repairs and later fire teach another form of impermanence. School gives Claes rule, memory and language; the threatened city turns attention increasingly into vigilance. The exact 1554 curriculum, teacher and school building remain reconstruction rather than archival fact.
+
+### IV — 1561–1563: Antwerp and interpretive plurality
+
+In August 1561 Claes travels with Cornelis from Reimerswaal to the Antwerp Landjuweel and does not return. Dee is **not** placed at the Landjuweel.
+
+The contemporary Silvius event record anchors fourteen official competing chambers. Current evidence does **not** establish a Goese chamber among those official competitors; Claes and Cornelis may nevertheless attend, observe and network in novel canon.
+
+Rhetoric, theatre, trade and print teach that carrier, appearance, intention and meaning can diverge. One sign can mean differently to chamber, spectator, judge, magistrate and printer.
+
+### V — 1563–early 1564: Dee, Silvius and matter
+
+Claes first encounters Dee briefly in 1563; intensive formation follows in early 1564. Dee moves him from observation toward hypothesis and intervention.
+
+Before the journey to Boom, Dee gives Claes:
+
+- `OBJ.MEMORIAAL`, already bound from sheets carrying the hidden readable Diets/Brabant *Brevísima*;
+- `OBJ.GRAPHITE_STIFT`;
+- the prohibition against writing in the book with ink while Claes remains his pupil.
+
+Claes thinks he has a pedagogical workbook. He does not know the hidden text or the material reason for the graphite rule.
+
+Print, graphite, pyritic matter, vitriol and the Sol problem teach him that apparent absence may conceal material continuity and that right relation can achieve what brute force cannot. This is genuine knowledge — and the seed of the adult lie that understanding a process may grant control over consequences.
+
+### VI — 4 October 1564–19 November 1569: network danger and the father
+
+Christoffel Fabritius' disrupted Antwerp execution on **4 October 1564** is the preferred historical candidate for the existing security hinge. The exact low-level link by which Cornelis becomes unsafe remains `OPEN.SECURITY.LOW_LINK.1564.001`.
+
+By this point Cornelis has already belonged to the Huis der Liefde for more than a decade in novel canon. His route is **beer/cask commerce → Ghysbrecht → fictional social bridge to Dens → Barrefelt → translocal affiliation**. He can remain outwardly Catholic in Goes; no separate Goese Familist congregation or invented initiation ritual is required. His later paper/book carrying grows out of the same competencies as the beer trade — containers, storage, accounts, credit, route knowledge, carrier choice, discretion and trust — but this does **not** mean that books are routinely hidden in beer casks.
+
+**Plantin is a later print/distribution node, not Cornelis' converter.** His historically substantial relation to the Niclaes/Barrefelt milieu may support later network scenes, but the historiography of Plantin's own adherence must not be flattened into a simple permanent sect label.
+
+The crucial correction is negative: nothing is inserted, keyed or reciphered in Claes' memoriaal after 4 October 1564. Cornelis' long Familist backstory does not by itself close the exact low-level security trigger.
+
+Cornelis' fall is fixed as a two-step exposure:
+
+1. **autumn 1567, Antwerp:** first arrest or serious examination in a book/paper matter; release on borg or equivalent conditions;
+2. **late 1568–1569:** renewed exposure through clandestine book/paper traffic, network traces and refusal to name others.
+
+On **19 November 1569** Cornelis is fictionally executed in Antwerp in the documented Grote-Markt/stadhuis book-burning environment. Public beheading by sword is the preferred story method under the recidive/seditious-network framing. Claes is physically present.
+
+Cornelis is not a historical addition to Haecht's list, not a protected printer, not an open preacher and not carrying the memoriaal. His death-script is protective silence: he gives no names. The new network backstory makes that silence the terminal consequence of a long practice of trust rather than a last-minute heroic pose.
+
+The father's vulnerable body and the possible separate destruction of papers/books teach that testimony can survive a carrier without becoming immaterial. Claes inherits responsibility, not a final key.
+
+### VII — 1570–1578: reveal, Mayken and projectio of the Word
+
+A special 1570 Zovitius copy may provide the material cue **GALLA LEO VIRIDIS**. It is a cue, not a key.
+
+Green vitriol develops the tannin-loaded typographic letterforms in the memoriaal. What appears is already ordinary readable Diets/Brabant language.
+
+Therefore:
+
+- reveal is **reading**, not decryption;
+- there is no 24×24 recovery matrix;
+- no nomenclator is required;
+- merels is not a recovery key;
+- Monas is not a permutation key for the *Brevísima*;
+- Castanea is not a key anchor;
+- no special Dodoens carrier is required;
+- no Primus Index is required;
+- no multi-week cryptographic reconstruction is required.
+
+Mayken participates as an independently competent adult. She may handle, measure, observe, read, repeat tests and contradict Claes. She is not a key-holder or replacement solver. Her participation must have a reason and accepted risk of her own, not merely obedience to Claes.
+
+The revealed words shift the dramatic problem from **what is hidden?** to **what does this readable truth require of us?**
+
+The exact human/production route from reveal to publication remains open, but the endpoint is fixed: **Antwerp, 1578, printed publication**. This is the **projectio of the Word**: dangerous testimony is multiplied and released beyond Claes' control.
+
+### VIII — 1572–1579: Goes second severance — explicit open hinge
+
+The source-grounded pressure is fixed but the personal causal chain is not.
+
+Historically supported:
+
+- the 1572 siege damages/burns outside salt works and a brewery in the Voorstad;
+- a Nissepad brewery with equipment is documented in 1577;
+- that Nissepad brewery is not proven identical to the 1572 burned Voorstad brewery and is not proven Cornelis' property;
+- Jan Jansen Nissepat sells a burned Westzelke salt-pan site in 1577, but the destructive event is not identified;
+- 1577–1579 property transfers do not automatically prove confiscation, execution sale or forced liquidation.
+
+The open novel question is `OPEN.GOES.CLAES_DEPARTURE_1572_1579.001`: **which chain of actual damage, fictional residual interest, debts/claims, legal settlement and network collapse finally makes Goes cease to function as Claes' recoverable home/economic base, and when does he leave?**
+
+Do not solve this by silently destroying the documented Nissepad brewery. A cumulative model or a combination of one real material loss plus postwar financial/legal afterlife is currently the safer design space, but it remains authorial design rather than canon.
+
+### IX — 1578–1584: knowledge fails as protection
+
+Claes' wound changes from *I did not see early enough* to *I saw, and still did not do enough*.
+
+Delft 1584 remains the moral bottom and threshold toward Albedo. The problem is no longer finding hidden truth but acting when truth does not guarantee a safe or clean outcome.
+
+### X — 1584–1602: Albedo, Rubedo, Mayken and conjunctio
+
+Claes must distinguish:
+
+- truth from certainty;
+- knowledge from control;
+- secrecy from isolation;
+- protection from possession;
+- belief from dogma;
+- love from holding on.
+
+His relationship with **Mayken Adriaensdr. Lampert** becomes one of the primary relational/material counterforces. She is a fictional Goese apothecary daughter, ca.1546, grounded in the historically attested Lampart/Lambert/Lampert apothecary milieu. Her family also knows the 1554 fire through the burned *Zwaene* property, but her trauma is not Claes' duplicate.
+
+Her epistemology is practical: materia medica, preparation, weighing, smell, texture, condition, repeatability and contradiction.
+
+The mature relationship has the author-side function of **conjunctio**: two unlike modes of knowing can enter reciprocal relation without one absorbing the other. This is not mandatory in-world terminology. Mayken is not the missing ingredient that completes Claes; Claes is not entitled to her because he suffers.
+
+On the road toward Enkhuizen, shared material life — weather, plants, food, preparation, fatigue, touch, sound, disagreement — helps Claes reopen the *sinne*. She catalyses; she does not cure or complete him. The scene architecture must preserve two centers of agency and advance Mayken's own arc as well as Claes'.
+
+### XI — 13 March 1602 and after: projectio of Matter, Self and Status Prima Nova
+
+The Enkhuizen climax is anchored to the retrospective Seton tradition transmitted by Daniel Georg Morhof:
+
+- **Enkhuizen**;
+- house of sailor **Jacob Hausfsen**;
+- **13 March 1602**;
+- approximately **16:00**;
+- Alexander Seton/Sidonius as the historical-tradition figure.
+
+Morhof writes around seventy years later. These are chosen story-frame facts, not contemporaneously verified eyewitness facts.
+
+The alchemical rule is: **what becomes visible was already materially present**. The Sol seen in the late assay was already present in the process; the novel does not create gold from lead. The Rode Leeuw is deep red to red-brown and carries the already-present Sol in a still-open non-gold matrix.
+
+Seton has **no** role in the *Brevísima*. He is a late mirror for Claes' relation to mastery, proof, coercive power and possession.
+
+Status Prima Nova is not restored childhood. Mature *sinne* becomes:
+
+**perceive → distinguish → choose → carry → release.**
+
+Claes' exact death remains open. Its function does not: he must finally be able to transfer without owning the recipient's choice, the Work or its outcome.
+
+---
+
+## 4. Cornelis — occupation, Huis der Liefde and rederijker identity
+
+Fixed:
+
+- Goes poorter;
+- **biersteker**, not fixed brewery owner;
+- book/material carrier through commercial and trust networks;
+- rederijker;
+- member in novel canon of the translocal **Huis der Liefde / Familia Caritatis** by ca. **1552–1553**;
+- not a printer.
+
+His entry route is fixed as:
+
+**beer/cask commerce → Ghysbrecht/Gijsbrecht, kuiper van Antwerpen → explicit fictional trusted bridge to Adriaan Dens → Hendrik Jansen van Barrefelt → Huis der Liefde.**
+
+Evidence boundary:
+
+- Ghysbrecht/Gijsbrecht is a historical Antwerp cooper with Goese property interests in the 1551/1554 archival record;
+- same-person identification across the two records is a supported inference;
+- Ghysbrecht is **not** a documented Familist;
+- no historical Ghysbrecht–Dens relationship is claimed;
+- the Ghysbrecht → Dens bridge and Cornelis' meetings are novel canon;
+- Dens and Barrefelt are historical actors whose known network positions make their story roles plausible.
+
+Dens is Cornelis' first knowingly identifiable Familist. Barrefelt deepens the affiliation and connects Cornelis' local/commercial trust to the wider translocal text network. Cornelis may remain outwardly embedded in Catholic Goes; no separate Goese Familist church, meetinghouse, hierarchy or formal initiation ritual is required.
+
+The **18 May 1554** fire tests this pre-existing affiliation; it does not cause the conversion. Plantin enters only later as a print/distribution node. His role must never collapse the chain into “Cornelis meets Plantin and becomes a Familist.”
+
+Cornelis' later clandestine book/paper logistics grow from the same competencies as the beer trade: casks and containers, storage, accounts, credit, route knowledge, carriers, repeated transactions, discretion and trust. This continuity does **not** establish routine hiding of forbidden books inside beer barrels.
+
+His named chamber is fixed as the **Nardusbloem / older Magdalena-linked Goese tradition**. The Zusterhuis/Singelstraat remains the Cornelis-era meeting environment.
+
+In novel canon Cornelis helps form a reform-minded/protestantiserende current in the 1560s that becomes the later Edele Castanienbloem. This is explicit historical fiction in a documentary gap. **1595 is the earliest surviving attestation, not a proved foundation date.** Later documented Nissepat participation in 1595–1596 acts as resonance.
+
+Whether Cornelis ever serves as **deken** remains open.
+
+The governing dedicated dossier is `CORNELIS_HOUSE_OF_LOVE_NETWORK_1551_1569.md`. The exact low-level 4 October 1564 security trigger remains open despite this now-fixed longer backstory.
+
+---
+
+## 5. Mayken — independent character arc
+
+`ENT.PERSON.BELOVED` is the legacy stable entity ID for the resolved character **Mayken Adriaensdr. Lampert**. Her identity is not open.
+
+`ARC.MAYKEN.LIFE` now governs her independent narrative line.
+
+### Childhood material formation
+
+Mayken grows within the fictional daughter-line of the historically anchored Lampert apothecary environment. Her first epistemology is practical identification: what is this substance, what condition is it in, has it been substituted, spoiled, dampened, dried, measured or prepared correctly?
+
+### 1554 — destruction plus rebuilding
+
+The burned *Zwaene* property gives her a historically anchored fire horizon without duplicating Claes' bereavement. Her counter-memory is that material destruction is real **and** that hands can sometimes return to sorting, repairing and working.
+
+### Adult judgement before Claes
+
+Inherited competence must become personally owned judgement before Mayken functions as Claes' equal. The exact event chain remains `OPEN.MAYKEN.INDEPENDENT_MIDARC.001`.
+
+Earlier development considered family/social pressure, possible loss of standing or displacement and stronger reliance on female practical-healing/herbal networks. That remains a candidate to revalidate, **not current event canon**. Do not copy Cornelis' prosecution history onto Adriaen or invent university/physician/guild status.
+
+### 1570 — shared risk
+
+Mayken chooses whether to participate in dangerous material verification and testimony. Her function is not “helping Claes solve it”; her value is independent observation and the capacity to tell him when matter contradicts his elegant interpretation.
+
+### 1571–1584 — no off-screen waiting role
+
+Future structure must give Mayken continuing work, obligations, constraints and choices. The diagnostic question is:
+
+> **What does Mayken want or refuse here if Claes were absent?**
+
+### Late relation
+
+`REL.CLAES.MAYKEN.CONJUNCTIO` requires two centers of agency. Mayken may catalyse Claes' recovery while remaining fallible, separate, contradictory and capable of refusal. Mature love is relation without possession, not sameness.
+
+---
+
+## 6. Chapter-ready world projection
+
+Round-B domain dossiers are active inputs to story construction:
+
+- bread/grain/baking;
+- beer/biersteker/brewery economy;
+- Reimerswaal school/cost-pupil life;
+- rederijker/Nardusbloem/Landjuweel practice;
+- Antwerp time slices;
+- Goes schutterij/military practice;
+- sensory church/historical substrate recovered in Round A.
+
+`narrative/domain_scene_packs.yaml` supplies machine-readable scene contexts. A pack constrains world state and activity; it does not create a fictional scene.
+
+For chapter construction the sequence is now:
+
+**causal hinge → character choice/pressure → relevant Corpus/Anima/Spiritus register(s) → domain scene pack/world state → value/knowledge/relationship/object change → scene diagnostics.**
+
+Do not reverse this into “we researched bread, so we need a bread chapter.”
+
+---
+
+## 7. Object biographies
+
+### `OBJ.MEMORIAAL`
+
+Readable Diets/Brabant *Brevísima* set in ordinary movable type → printed nearly invisibly with tannin/gallnut + gum arabic before binding → folded/gathered into 17 single-sheet quarto gatherings → Dee gives the already prepared book to Claes before Boom → Claes writes only in graphite → green vitriol later reveals the already readable text.
+
+Canonical capacity: **17 sheets = 68 leaves = 136 latent pages**, plus any genuinely blank binder endleaves.
+
+### `OBJ.GRAPHITE_STIFT`
+
+Story function fixed; exact historically defensible physical form/provenance remains open. Do not automatically render a later standardized wood-cased pencil.
+
+### `OBJ.ZOVITIUS_1570_TRIGGER`
+
+May cue `GALLA LEO VIRIDIS` and activate memory/material testing. It does not contain a cryptographic key.
+
+### Merels
+
+Merels remains a game, a learned skill, a relationship device and a thematic model of visible pieces versus invisible routes. It is **independent of Brevísima recovery**.
+
+### Dodoens / Monas / Castanea
+
+They may remain where they independently serve history, botany, education, symbolism or character. They do not form a required decryption chain.
+
+### Rode Leeuw / Sol
+
+Rode Leeuw = Claes' completed red/red-brown projectiepoeder stage in novel canon. It is not green and not visibly gold-yellow. Its exact non-gold carrier matrix remains open. The gold-bearing fraction is materially continuous; no later silent gold addition is allowed.
+
+---
+
+## 8. Alchemical material process grammar
+
+Current chain:
+
+`kies / pyritic rejected matter → weathering + water + air + time → vitrioolwater / green vitriol / operational Groene Leeuw → direct tannin-text reveal + learned opening principle → ordinary strong-water failure on Sol → right compound relation → death/opening of Sol → materially continuous hidden Sol → red fixation / Rode Leeuw → Saturn/lead → assay/cupellation-like reveal → projectio → release`
+
+Guardrails:
+
+- “Groene Leeuw” is operational vocabulary in this process, not a universal historical equation with FeSO4.
+- Green vitriol reveals the memoriaal directly; it does not directly dissolve gold.
+- A strong water must first **fail** against Sol before the lesson of right proportion/relation becomes clear.
+- Cupellation-like explanation is authorial historical-chemical reconstruction, not a documented Seton procedure.
+- Do not use routine tasting of vitriol or corrosive liquids.
+- Prefer technically defensible terms such as `vitrioolwater`, `uitloogwater`, `oplossing` or `liquor`; the chapter title *De loog van Antwerpen* may remain.
+- Material process remains causal reality; symbolic structure never substitutes for the actual process.
+
+---
+
+## 9. Execution / testimony arc
+
+Claes begins within a Catholic civic ars-moriendi understanding: punishment, confession, priestly consolation, repentance and public compassion can belong to one death script.
+
+Reformation executions fracture that shared script. Condemned persons and spectators can convert punishment into witness through steadfastness, psalms, letters, songs and memory.
+
+Cornelis forms a third script: **protective silence**. He does not die as a loud martyr but refuses names. The fixed Huis der Liefde backstory makes that silence continuous with more than a decade of learned relational trust, discretion and protection of other carriers.
+
+The thematic carrier chain is now:
+
+**body → suppression/destruction → memory/letter/song/book → chemically hidden writing → public print**.
+
+Do not reintroduce “code” as necessary testimony mechanism for the *Brevísima*.
+
+---
+
+## 10. Open decisions — active backlog only
+
+The canonical active registry is `canon/OPEN_DECISIONS.yaml`, supplemented by `canon/OPEN_DECISIONS_ALCHEMY_REFINEMENT_2026-08-16.yaml`.
+
+High-value remaining questions include:
+
+- exact circumstances/place/cause of Claes' death;
+- Spanish→Diets translator/source route in 1564;
+- physical wet/press validation of tannin/gum printing;
+- exact graphite-stift form/provenance;
+- exact low-level Fabritius→Cornelis security link;
+- exact Zovitius delivery route;
+- exact 1570→1578 publication/transmission chain;
+- 1564 chapter calendar audit;
+- exact **1572–1579 Goes material/economic/legal severance and departure causality**;
+- exact **Mayken independent adult mid-arc work/family/social-pressure line**;
+- final merels opponent/stakes/action;
+- whether Cornelis ever serves as deken;
+- exact non-gold Rode Leeuw carrier composition;
+- exact Enkhuizen furnace/assay choreography and additional witnesses.
+
+Open scene choices such as Radermacher and the bakery remain authorial design decisions, not research problems that evidence can necessarily close.
+
+Round-C opens `OPEN.GOES.CLAES_DEPARTURE_1572_1579.001` and `OPEN.MAYKEN.INDEPENDENT_MIDARC.001` are **authorial design opens**. Historical plausibility alone does not close them.
+
+---
+
+## 11. Narrative development still required
+
+The project now has a causal pre-structure but not yet a fully populated novel structure.
+
+`narrative/structure.yaml` still needs actual Book/Act/Sequence/Chapter/Beat population. `narrative/scenes.yaml` contains only a small fraction of the full scene analyses the novel requires.
+
+Use `ARC.CLAES.CAUSAL_SPINE` as the governing bridge. Current hinge targets are:
+
+1. childhood Status Prima / embodied Goes, including Cornelis' pre-fire beer/cask trust network and ca.1552–1553 Huis der Liefde affiliation as background rather than child exposition;
+2. 1554 fire and survivor separation — fire tests Cornelis' existing conviction rather than causing it;
+3. Reimerswaal formation under slow erosion;
+4. 1561 Landjuweel / multiple interpretation;
+5. Dee/Silvius/Boom material formation;
+6. return to altered Goes / Mayken proximity;
+7. 1567–1569 Cornelis warning, secrecy and execution, now grounded in the longer Ghysbrecht–Dens–Barrefelt trust history;
+8. 1570 direct memoriaal reveal with Mayken;
+9. **OPEN:** 1572–1579 Goes second material/economic severance;
+10. 1578 print/release of the Word;
+11. Delft 1584 moral bottom;
+12. later *sinne* recovery / reciprocal Mayken line;
+13. Enkhuizen 13 March 1602 / Matter;
+14. post-1602 Projectio of Self / Status Prima Nova.
+
+Each developed scene should expose objective, pressure, opening value, turning point, closing value, knowledge change, object change and arc movement. If Mayken appears, her own objective/judgement/cost must also be legible.
+
+Before large-scale drafting, the recovered reader-experience/pacing/cold-reader/retain-revise-merge-cut/ruthless-editor protocol still requires synchronization as the next authoring layer.
+
+---
+
+## 12. Canon precedence
+
+When records conflict:
+
+1. latest explicit current `DEC.*` author decision, including dated/supplement decisions;
+2. active domain-specific `STC.*` claim or explicit supersession noted by a later decision;
+3. dedicated current governing dossier, including `STORY_PROJECTION_ROUND_C.md` within its domain;
+4. this current `LEMMA_MCKEE_MASTER.md` synthesis;
+5. synchronized structured narrative/entity/object/world/projection registers;
+6. Revision 11 prose for material not yet atomized and not superseded;
+7. source claims for historical support;
+8. proposals/open questions;
+9. dated legacy masters and session memory — audit/context only.
+
+Lemma can reject an impossible combination but never invent story truth.
+```
+
+---
+
+# SOURCE FILE: `storybible/STORY_PROJECTION_ROUND_C.md`
+
+```markdown
+# Story projection — Round C
+## From chapter-ready world to causal character architecture
+
+**Status:** CURRENT AUTHORING AUTHORITY FOR STORY PROJECTION  
+**Date:** 16 August 2026  
+**Machine layers:** `narrative/alchemical_authorial_architecture.yaml`, `narrative/mayken_independent_arc.yaml`, `narrative/mayken_relationship_projection.yaml`, `narrative/goes_departure_1572_1579.yaml`, `narrative/story_projection_round_c.yaml`
+
+Round A restored lost historical/worldbuilding substrate. Round B made six major domains chapter-ready. Round C answers the next question: **what changes in the people because those worlds exist?**
+
+The rule is simple:
+
+> World detail earns space only when it creates pressure, choice, relationship, consequence or reader experience.
+
+## 1. The Great Work — two compatible layers
+
+The project now explicitly distinguishes two alchemical structures that must not be collapsed.
+
+### Operational chronological macro arc
+
+Existing and retained:
+
+**Drager → macro-Nigredo → Albedo/Onderscheiding → Rubedo/Verbinding → Projectio/Overdracht**
+
+This is the broad chronological transformation spine already present in `ARC.CLAES.MACRO_TRANSMUTATION`.
+
+### Deeper author-side architecture
+
+Recovered and fixed under `DEC.CLAES.GREAT_WORK.AUTHORIAL_ARCHITECTURE.2026-08-16`:
+
+**Status Prima → Corpus / Anima / Spiritus → Transmutatio/Rubedo → Projectio → Status Prima Nova**
+
+Corpus, Anima and Spiritus are **not three successive books and not three identical alchemical cycles**. They are three registers spiralling through the same life.
+
+- **Corpus** asks what happens to matter, bodies, food, books, buildings, plants, metals, roads and cities.
+- **Anima** asks what happens to meaning, belief, language, testimony, loyalty, love and social interpretation.
+- **Spiritus** asks what happens to Claes' vigilance, certainty, grief, agency, sinne, responsibility and sovereignty.
+
+A scene may work strongly in one register or in all three. The writer never has to label the operation in prose.
+
+The governing authorial rule is:
+
+> **The author knows the Work; Claes undergoes it; the reader experiences it.**
+
+And the governing movement is **Solve et Coagula**: separate what has been falsely fused, then reconnect what can enter a truer relation.
+
+## 2. No forced operation scheme
+
+The earlier development vocabulary is restored as a **non-binding diagnostic set**:
+
+*ontvangen — verbranden — oplossen — onderscheiden — verheffen — gebruikt worden — scheiden — verrotten — verenigen — verliezen — herhalen — zwart worden — wit worden — rijpen — rood worden — projecteren — loslaten.*
+
+This is not a historical universal recipe and not a chapter checklist. A scene receives an operation only if the human and material causality genuinely earns it.
+
+## 3. Claes' causal spine
+
+`ARC.CLAES.CAUSAL_SPINE` now bridges settled canon and later chapter structure.
+
+### Status Prima — childhood Goes
+
+Claes' first world is not an abstract idyll. It is body, Tanneken, Cornelis, Jan, unborn sibling, bread, beer, church, market, routes, weather, work and shared timing. *Sinne* precedes theory.
+
+His early useful belief becomes his later trap: **if attention makes the world legible, perhaps enough attention can make loss preventable.**
+
+### 1554 — fire
+
+Matter proves irreversible. The family catastrophe does not simply teach Claes that control is impossible; it gives him the opposite compulsion: perhaps he failed to see soon enough.
+
+### Reimerswaal 1554–1561
+
+Schooling gives rule and language while the city gives recurrent water, repair and instability. Attention becomes vigilance. Competence increases while openness contracts.
+
+### Landjuweel 1561
+
+Performance teaches that the same sign is not the same thing to performer, audience, judge, church, magistrate and printer. Observation becomes interpretation.
+
+### Dee/Silvius/Boom 1563–1564
+
+Material work teaches that apparent absence can conceal presence and that correct relation can reveal what force cannot. This is genuine knowledge — and the seed of Claes' adult error that complete understanding may grant control.
+
+### Cornelis 1567–1569
+
+Claes cannot solve the father. Cornelis' body can be destroyed, papers can burn, and yet responsibility survives. The final inheritance is moral, not cryptographic.
+
+### Reveal 1570
+
+The hidden words are already there. The question changes from **“what is the solution?”** to **“what does this readable truth require?”** Mayken matters precisely because material contradiction prevents Claes from making interpretation sovereign.
+
+### Goes 1572–1579 — deliberately open causal hinge
+
+This is now a visible, high-priority design problem rather than a hole.
+
+Historically fixed:
+- outside salt works and a brewery in the Voorstad are damaged/burned during the 1572 siege;
+- a Nissepad brewery exists with equipment in 1577 and is not proven the same brewery;
+- a Nissepat-linked burned Westzelke salt-pan site is sold in 1577, but the destructive event is unknown;
+- later transports do not automatically mean confiscation or execution.
+
+The unresolved novel question is: **which actual economic/material chain makes Goes cease to be Claes' recoverable home base?**
+
+The preferred design space is not “destroy a convenient brewery”. It is more likely a combination of genuine 1572 material damage plus debts, claims, postwar settlement and network collapse. That remains OPEN until explicitly chosen.
+
+### 1578 — Projectio of the Word
+
+The testimony leaves Claes' possession through print. That is already a form of mastery: he cannot dictate every future reading.
+
+### 1584 — moral Nigredo / Albedo threshold
+
+The problem is no longer whether Claes can know enough. It is whether he can distinguish truth from certainty and right action from guaranteed success.
+
+### Late line with Mayken
+
+The road north is not a romantic reward sequence. It is where matter, relationship and self begin to resonate again: weather, food, fatigue, plants, preparation, touch, sound, error, disagreement and companionship.
+
+### 1602 — Matter
+
+The Enkhuizen event tests whether Claes can encounter material success without turning it into proof of self or an object to possess.
+
+### Status Prima Nova — Self
+
+The ending state is not restored childhood. Claes' mature sequence is:
+
+**perceive → distinguish → choose → carry → release.**
+
+## 4. Mayken is now an independent protagonist-level secondary arc
+
+The repository had already fixed Mayken's identity and competence but still treated much of her narrative existence as a function of Claes. Round C repairs that.
+
+`ARC.MAYKEN.LIFE` now requires her own agency.
+
+### Childhood material formation
+
+Mayken grows in the fictional daughter-line of the real Lampert apothecary environment. Her first epistemology is not hidden order but **material identity**: is this really what it is called; is it sound, spoiled, substituted, wet, dry, correctly weighed, correctly prepared?
+
+### 1554 — different fire
+
+The Lampert *Zwaene* gives her a historically anchored burned-property horizon, but her family is not annihilated. Her counter-memory is essential:
+
+> Fire destroys; hands can sometimes return to work.
+
+Claes learns loss as irreversibility. Mayken learns destruction **and rebuilding**.
+
+### Adult judgement before Claes
+
+The exact mid-arc events remain open under `OPEN.MAYKEN.INDEPENDENT_MIDARC.001`, but the required result is fixed: Mayken's inherited competence must become **her own judgement** before she can function as Claes' equal.
+
+An earlier development seed — family/social pressure, loss of standing or expulsion followed by stronger reliance on female practical-healing/herbal networks — has been preserved as a candidate to revalidate, not silently canonized.
+
+### 1570 — shared risk
+
+Mayken does not “help Claes solve it”. She chooses whether to enter the risk of handling, verifying and reading dangerous testimony. Her value is that she can tell Claes: *your interpretation does not match the matter.*
+
+### 1571–1584 — no off-screen waiting woman
+
+This span must eventually contain Mayken's own work, obligations, constraints and choices. A future scene with Mayken must answer:
+
+> **What does Mayken want or refuse here if Claes were absent?**
+
+### Late conjunctio
+
+Their mature relation is an author-side **conjunctio**, not because two halves complete each other but because two unlike wholes can remain in relation.
+
+Claes: pattern, memory, interpretation, responsibility.  
+Mayken: matter, condition, measurement, practical contradiction.
+
+Neither becomes the other.
+
+## 5. Relationship rule: two centers of agency
+
+`REL.CLAES.MAYKEN.CONJUNCTIO` now governs the mature relationship projection.
+
+For any developed Claes–Mayken scene, test:
+
+1. Can Mayken disagree for reasons rooted in her own knowledge, work or values?
+2. Does Claes receive relationship as correction rather than mere confirmation?
+3. Are there still two centers of agency after intimacy deepens?
+4. Would the scene still work as human drama if the word *conjunctio* were removed from the author's notes?
+
+If not, the alchemical symbolism is compensating for a weak relationship scene.
+
+## 6. Scene-building consequences
+
+Round C does **not** populate Book/Act/Sequence/Chapter/Beat yet. It creates the causal bridge needed before doing so.
+
+Every future chapter should now identify:
+- which causal hinge it advances;
+- which Corpus/Anima/Spiritus register(s) are active;
+- which character makes the consequential choice;
+- how the chapter changes Claes and/or Mayken rather than only displaying world research;
+- whether an open design question is being intentionally resolved or merely used as if already canon.
+
+Mayken's presence automatically invokes both the relationship and `ARC.MAYKEN.LIFE`. She must never be loaded only as `Claes' beloved`.
+
+## 7. Remaining Round-C design openings
+
+Two newly explicit high-priority authorial questions remain:
+
+- `OPEN.GOES.CLAES_DEPARTURE_1572_1579.001` — the exact economic/material causal chain that finally severs Claes from Goes;
+- `OPEN.MAYKEN.INDEPENDENT_MIDARC.001` — the concrete work/family/social pressure through which Mayken's adult independence becomes dramatically visible.
+
+These are now correctly open. They no longer hide as missing story structure.
+```
+
+---
+
+# SOURCE FILE: `narrative/story_projection_round_c.yaml`
+
+```yaml
+schema_version: 1.0.0
+kind: StoryProjectionRegistry
+projections:
+- id: ARC.CLAES.CAUSAL_SPINE
+  type: CausalStoryProjection
+  label: "Claes — causal spine from Status Prima to Projectio"
+  canon_status: CANON
+  protagonist: ENT.PERSON.CLAES
+  authorial_architecture: ARC.CLAES.GREAT_WORK.AUTHORIAL
+  counterpart_arc: ARC.MAYKEN.LIFE
+  relationship_projection: REL.CLAES.MAYKEN.CONJUNCTIO
+  purpose: "Bridge settled canon and chapter-ready world modules into a causal pre-structure before Book/Act/Sequence/Chapter/Beat realization."
+
+  hinges:
+  - id: H01
+    story_time: {earliest: '1542-12-08', latest_exclusive: '1554-05-18', precision: bounded}
+    label: "Status Prima — body, family, church, food, craft and routes form one lived world"
+    cause: "Claes grows inside an intact household and a material/sensory civic order."
+    effect: "He learns the useful but dangerous intuition that attention makes the world legible."
+    registers: [Corpus, Anima, Spiritus]
+    authoring_inputs: [WORLD.GOES, WORLD.BREAD_GRAIN, WORLD.BEER_BREWING_DISTRIBUTION, WORLD.RELIGIOUS_SPACE.SENSORY_CHURCH]
+
+  - id: H02
+    story_time: {date: '1554-05-18', precision: day}
+    label: "Goes fire — first catastrophic solve"
+    cause: "The historically grounded city fire intersects the fictional Nissepat household."
+    effect: "House, mother, brother and unborn sibling are lost; Claes' belief in attention as protection is wounded rather than disproved in his own mind."
+    instances: [NI.EVENT.GOES_FIRE.1554.001]
+    arcs_advanced: [ARC.CLAES.LIFE, ARC.CLAES.CORNELIS, ARC.CLAES.SINNE_RECOVERY]
+
+  - id: H03
+    story_time: {earliest: '1554-05-19', latest_exclusive: '1561-09-01', precision: bounded}
+    label: "Reimerswaal — learning under slow erosion"
+    cause: "Post-fire economics replace the intended Zierikzee path with Reimerswaal and separate father and son."
+    effect: "Claes gains language/rule competence while repeated water/fire pressure turns attention into vigilance."
+    instances: [NI.EVENT.REIMERSWAAL_MOVE.1554.001]
+    authoring_inputs: [WORLD.REIMERSWAAL]
+
+  - id: H04
+    story_time: {earliest: '1561-08-01', latest_exclusive: '1561-09-01', precision: month}
+    label: "Landjuweel — meaning becomes multiple"
+    cause: "Public rhetoric materializes signs before competing audiences."
+    effect: "Claes moves from noticing patterns toward judging interpretation, role and consequence."
+    instances: [NI.EVENT.LANDJUWEEL.1561.001]
+    authoring_inputs: [WORLD.ANTWERP]
+
+  - id: H05
+    story_time: {earliest: '1563-02-01', latest_exclusive: '1564-10-04', precision: bounded}
+    label: "Dee/Silvius/Boom — process becomes power"
+    cause: "Claes learns through print, materials, graphite, pyritic matter, vitriol and the death/opening problem of Sol."
+    effect: "He becomes a causal actor and begins to overvalue complete understanding as a route to control."
+    instances: [NI.SCENE.DEE_FIRST_ENCOUNTER.1563.001, NI.SCENE.MEMORIAAL_GIFT.1564.001, NI.EVENT.SECURITY_BREAK.1564.001]
+    arcs_advanced: [ARC.CLAES.DEE, ARC.CLAES.MACRO_TRANSMUTATION]
+
+  - id: H06
+    story_time: {earliest: '1566-08-01', latest_exclusive: '1570-01-01', precision: bounded}
+    label: "Return to Goes — old place, altered meanings"
+    cause: "Claes returns after years of formation into a city whose religious, family and material order is no longer the childhood world."
+    effect: "The place that should confirm identity instead exposes discontinuity; Mayken enters as a materially grounded equal rather than as a recovered piece of childhood."
+    instances: [NI.EVENT.CLAES_RETURN_GOES.1566.001]
+    relationship_projection: REL.CLAES.MAYKEN.CONJUNCTIO
+
+  - id: H07
+    story_time: {earliest: '1567-09-01', latest_exclusive: '1569-11-20', precision: bounded}
+    label: "Cornelis — warning, secrecy and irreversible inheritance"
+    cause: "Network exposure and repression convert Cornelis' protective secrecy into arrest, recidive pressure and public execution."
+    effect: "Claes loses the possibility of repairing father-son time and inherits responsibility without receiving a cryptographic answer."
+    instances: [NI.EVENT.CORNELIS_FALL.1568.001]
+    arcs_advanced: [ARC.CLAES.CORNELIS, ARC.CLAES.LIFE]
+
+  - id: H08
+    story_time: {earliest: '1570-01-01', latest_exclusive: '1571-01-01', precision: year}
+    label: "Memoriaal reveal — truth becomes obligation"
+    cause: "A material cue plus controlled green-vitriol development reveals readable testimony already present."
+    effect: "The problem changes from 'what is hidden?' to 'what must we do with what can now be read?'; Mayken's independent material judgement prevents solitary certainty."
+    instances: [NI.SEQUENCE.RECOVERY.1570.001]
+    arcs_advanced: [ARC.CLAES.LIFE, ARC.CLAES.MACRO_TRANSMUTATION, ARC.MAYKEN.LIFE]
+
+  - id: H09
+    story_time: {earliest: '1572-01-01', latest_exclusive: '1580-01-01', precision: design-window}
+    label: "Goes second severance — material/economic causality still to be chosen"
+    status: OPEN_AUTHORIAL_HINGE
+    cause: "1572 siege destruction and 1577–1579 postwar property/legal afterlife create historically grounded pressure."
+    effect_if_resolved: "Goes ceases to be a recoverable economic/home base through a concrete chain of loss, debt, claims or network collapse."
+    open_projection: ARC.CLAES.GOES_DEPARTURE_1572_1579
+    decision_id: OPEN.GOES.CLAES_DEPARTURE_1572_1579.001
+    guardrail: "Do not fill this gap by destroying the documented Nissepad brewery or by labeling ordinary transfers confiscations."
+
+  - id: H10
+    story_time: {earliest: '1578-01-01', latest_exclusive: '1579-01-01', precision: year}
+    label: "Projectio of the Word"
+    cause: "Claes chooses to move testimony out of private possession into print."
+    effect: "The textual mission is completed by release; public interpretation can no longer be controlled by Claes."
+    instances: [NI.EVENT.PUBLICATION.1578.001]
+    arcs_advanced: [ARC.CLAES.MACRO_TRANSMUTATION]
+
+  - id: H11
+    story_time: {earliest: '1584-01-01', latest_exclusive: '1585-01-01', precision: year}
+    label: "Delft — moral Nigredo / Albedo threshold"
+    cause: "Political violence and mortal consequence expose the limits of rightness, foreknowledge and control."
+    effect: "Claes must learn to distinguish truth from certainty and right action from guaranteed outcome."
+    instances: [NI.CHAPTER.1584.01]
+    arcs_advanced: [ARC.CLAES.LIFE, ARC.CLAES.MACRO_TRANSMUTATION]
+
+  - id: H12
+    story_time: {earliest: '1584-01-01', latest_exclusive: '1602-03-14', precision: developmental}
+    label: "Mayken and the late road — conjunctio as recovery in relation"
+    cause: "Claes' analytical competence survives while embodied openness is constricted; Mayken's independent material mode continually contradicts disembodied certainty."
+    effect: "Sinne returns as resonance: perception, body, memory, relation and moral choice can coexist."
+    arcs_advanced: [ARC.CLAES.SINNE_RECOVERY, ARC.MAYKEN.LIFE]
+    relationship_projection: REL.CLAES.MAYKEN.CONJUNCTIO
+
+  - id: H13
+    story_time: {date: '1602-03-13', precision: day}
+    label: "Enkhuizen — Projectio of Matter"
+    cause: "The late Sol/Rode-Leeuw line reaches a materially witnessed test under the Morhof-framed Seton event."
+    effect: "The deeper test is whether Claes can understand material success without converting it into ownership, proof of self or total control."
+    arcs_advanced: [ARC.CLAES.MACRO_TRANSMUTATION, ARC.CLAES.GREAT_WORK.AUTHORIAL]
+
+  - id: H14
+    story_time: {earliest: '1602-03-13', precision: open-ended}
+    label: "Status Prima Nova — Projectio of Self"
+    cause: "Word and Matter have both passed beyond private possession."
+    effect: "Claes can perceive, distinguish, choose, carry and release without demanding that the world become safe, certain or owned."
+    arcs_advanced: [ARC.CLAES.GREAT_WORK.AUTHORIAL]
+
+  chapter_projection_rule:
+  - "Every future chapter should identify which hinge it serves or justify why a new hinge is necessary."
+  - "A chapter may activate multiple Corpus/Anima/Spiritus registers but must still have ordinary human causality."
+  - "World detail from Round B is selected because it creates pressure, choice, contrast or consequence — not because research exists."
+  - "Mayken's presence invokes ARC.MAYKEN.LIFE as well as the Claes relationship; she never exists only inside Claes' arc."
+  - "Open hinge H09 must remain visibly open until the author chooses the 1572–1579 causal model."
+```
+
+---
+
+# SOURCE FILE: `narrative/alchemical_authorial_architecture.yaml`
+
+```yaml
+schema_version: 1.0.0
+kind: AuthorialArchitectureRegistry
+architectures:
+- id: ARC.CLAES.GREAT_WORK.AUTHORIAL
+  type: AuthorialArchitecture
+  label: "The Great Work — Status Prima, Corpus, Anima, Spiritus, Projectio, Status Prima Nova"
+  canon_status: CANON
+  protagonist: ENT.PERSON.CLAES
+  decision_id: DEC.CLAES.GREAT_WORK.AUTHORIAL_ARCHITECTURE.2026-08-16
+  nested_with:
+  - ARC.CLAES.MACRO_TRANSMUTATION
+  - ARC.CLAES.LIFE
+  - ARC.CLAES.SINNE_RECOVERY
+  governing_sentence: "The author knows the Work; Claes undergoes it; the reader experiences it."
+  movement_law: "Solve et Coagula — separate what has been falsely fused, then reconnect what can enter a truer relation."
+
+  status_prima:
+    story_time: {earliest: '1542-12-08', latest_exclusive: '1554-05-18', precision: bounded}
+    function: "Claes begins embedded in body, household, church, craft, food, trade and ordinary sensory trust before he can theorize their order."
+    value_state: "belonging and sensory openness without mature self-knowledge"
+    warning: "Status Prima is not innocence-as-perfection; it is the undivided starting condition from which later distinctions become possible."
+
+  registers:
+  - name: Corpus
+    function: "The visible/material Work: bodies, food, beer, paper, ink, books, plants, buildings, fire, water, salts, vitriol, metals, tools, roads and cities change under real processes."
+    authoring_question: "What materially changes here, by which action, and what remains materially continuous through that change?"
+    recurring_domains:
+    - WORLD.BREAD_GRAIN
+    - WORLD.BEER_BREWING_DISTRIBUTION
+    - WORLD.GOES
+    - WORLD.REIMERSWAAL
+    - WORLD.PRINT_BOOK_NETWORK
+    - WORLD.SCHUTTERIJ_MILITARY
+    material_law: "Never substitute symbolism for process. Matter must behave causally enough that the reader could notice the difference between appearance and transformation."
+  - name: Anima
+    function: "The relational/meaning Work: belief, interpretation, loyalty, testimony, language, love, public opinion, memory and moral obligation are separated, tested and recombined."
+    authoring_question: "Which meaning, loyalty or relation is being tested, and who interprets the same sign differently?"
+    recurring_domains:
+    - WORLD.RELIGIOUS_SPACE.SENSORY_CHURCH
+    - WORLD.ANTWERP
+    - WORLD.MUSIC_PRAYER_TRANSFORMATION
+    - WORLD.PRINT_BOOK_NETWORK
+    relational_law: "A sign may remain materially identical while its social or moral meaning changes with audience, confession, memory and use."
+  - name: Spiritus
+    function: "The inner Work: Claes' vigilance, certainty-seeking, grief, agency, embodied sinne, responsibility and sovereignty are transformed."
+    authoring_question: "What does this event make Claes able or unable to perceive, distinguish, choose, carry or release?"
+    recurring_arcs:
+    - ARC.CLAES.LIFE
+    - ARC.CLAES.SINNE_RECOVERY
+    - ARC.CLAES.CORNELIS
+    inner_law: "Knowledge must cease to promise control and become responsible action under uncertainty."
+
+  register_rule: "Corpus, Anima and Spiritus are simultaneous spiral registers. A scene may strongly activate one, two or all three; the novel must not mechanically march through three identical cycles."
+
+  non_binding_operation_vocabulary:
+    status: AUTHOR_SIDE_DIAGNOSTIC_NOT_FIXED_HISTORICAL_SEQUENCE
+    operations:
+    - ontvangen
+    - verbranden
+    - oplossen
+    - onderscheiden
+    - verheffen
+    - gebruikt_worden
+    - scheiden
+    - verrotten
+    - verenigen
+    - verliezen
+    - herhalen
+    - zwart_worden
+    - wit_worden
+    - rijpen
+    - rood_worden
+    - projecteren
+    - loslaten
+    rule: "Use an operation only if the actual event earns it. No scene, act or life phase is required to match one operation or a fixed count."
+
+  projection_grid:
+  - hinge: "1547–1554 Goes childhood"
+    corpus: "bread, beer, household timing, church bodies/materials, routes and craft teach change through touch, smell, heat, sound and weight"
+    anima: "order first appears as shared custom, prayer, story, language and family practice"
+    spiritus: "sinne is open; Claes learns that attention seems to make the world legible"
+  - hinge: "18 May 1554 Goes fire"
+    corpus: "house and bodies are destroyed; survival and loss are materially irreversible"
+    anima: "home, family continuity and divine/social order no longer align with what Claes expected"
+    spiritus: "the wound forms: if he had seen earlier, could he have prevented loss?"
+  - hinge: "1554–1561 Reimerswaal"
+    corpus: "water, repairs, salt, school materials and repeated damage show slow erosion rather than one clean catastrophe"
+    anima: "Claes learns rules and Latin while belonging itself feels conditional"
+    spiritus: "attention becomes vigilance; competence grows while sensory openness narrows"
+  - hinge: "1561 Landjuweel"
+    corpus: "bodies, costumes, blazons, wagons, streets and performance materialize rhetoric"
+    anima: "one sign acquires competing meanings across chamber, audience, judge, authority and print"
+    spiritus: "Claes moves from observation toward interpretation"
+  - hinge: "1563–1564 Dee/Silvius/Boom"
+    corpus: "paper, graphite, pyritic matter, vitriol and Sol teach that hidden or conserved matter can reappear through right relation"
+    anima: "authority, text, secrecy and trust are separated from simple obedience"
+    spiritus: "Claes becomes a causal actor and begins to equate understanding with control"
+  - hinge: "19 November 1569 Cornelis execution"
+    corpus: "the father's vulnerable body and separately destroyed papers/books make public power physical"
+    anima: "silence, loyalty, testimony and inherited responsibility split apart"
+    spiritus: "the possibility of later reconciliation ends; responsibility survives the father"
+  - hinge: "1570 memoriaal reveal"
+    corpus: "green vitriol develops readable words already present in the paper"
+    anima: "private testimony becomes a moral demand rather than a puzzle prize"
+    spiritus: "recognition must become decision; Mayken's material contradiction limits Claes' overconfidence"
+  - hinge: "1578 Antwerp print"
+    corpus: "text receives another body through print and multiplication"
+    anima: "testimony leaves private ownership and enters public interpretation"
+    spiritus: "Claes performs projectio of the Word by releasing rather than possessing the text"
+  - hinge: "1584 Delft moral bottom"
+    corpus: "political violence and mortal consequence refuse abstraction"
+    anima: "certainty and rightness separate"
+    spiritus: "macro-Nigredo reaches moral bottom; Albedo requires distinction without withdrawal"
+  - hinge: "1584–1602 Mayken and late road"
+    corpus: "weather, plants, food, fatigue, preparation and travel return Claes to embodied material life"
+    anima: "love becomes relation without possession; differing expertise is not an obstacle to union"
+    spiritus: "sinne recovers as resonance and embodied discernment"
+  - hinge: "13 March 1602 Enkhuizen"
+    corpus: "the Sol/Rode-Leeuw line is tested materially under the Morhof-framed event"
+    anima: "witness, credibility and transmission matter more than possession of a marvel"
+    spiritus: "mastery is tested by whether Claes can release ownership and control"
+
+  transmutatio_rubedo:
+    story_time: {earliest: '1599-01-01', latest_exclusive: '1603-01-01', precision: approximate}
+    function: "Corpus, Anima and Spiritus no longer operate as isolated problems: material judgement, relationship and self-knowledge can resonate without collapsing into sameness."
+    relationship_expression: REL.CLAES.MAYKEN.CONJUNCTIO
+
+  projectio:
+    triad:
+    - "1578 — Word: testimony is printed and released beyond private possession."
+    - "1602 — Matter: the late Sol/Rode-Leeuw line is tested in Enkhuizen."
+    - "post-1602 — Self: Claes releases the need to possess the Work, its outcome or his own legacy."
+
+  status_prima_nova:
+    story_time: {earliest: '1602-03-13', precision: open-ended}
+    function: "The new status is not a return to the first household or to innocence. Claes can remain embodied, relational and responsible without demanding certainty or possession."
+    mature_sequence: "perceive -> distinguish -> choose -> carry -> release"
+
+  hard_guardrails:
+  - "This is authorial structure, not an in-world universal alchemical catechism."
+  - "Do not force every scene into an operation name."
+  - "Do not let later Basilian/Valentinian or seventeenth-century formulations leak backward unless separately time-verified."
+  - "The Great Work does not excuse historical anachronism or implausible chemistry."
+  - "Mayken is counterpart and conjunctio-partner, not the missing ingredient that magically completes Claes."
+```
+
+---
+
+# SOURCE FILE: `narrative/instances.yaml`
+
+```yaml
+schema_version: 1.4.0
+kind: NarrativeInstanceRegistry
+instances:
+- id: NI.PROLOGUE.1542.001
+  type: ChapterInstance
+  label: De Bladzijde
+  canon_status: CANON
+  story_time:
+    earliest: '1542-12-01'
+    latest_exclusive: '1543-01-01'
+    precision: month
+  story_file: prologue_de_bladzijde
+  notes: "Valencia; thematic/technical bridge to later testimony and intentional exact-date resonance with Claes' canonical birth on 8 December 1542."
+- id: NI.SCENE.DREMPEL.1547.001
+  type: SceneInstance
+  label: De Drempel
+  canon_status: PROPOSED
+  story_time:
+    earliest: '1547-01-01'
+    latest_exclusive: '1548-01-01'
+    precision: approximate
+  locations:
+  - ENT.LOC.GOES
+  entities:
+  - ENT.PERSON.CLAES
+  motifs:
+  - MOTIF.SINNE
+  - MOTIF.INCENSE_WAX
+- id: NI.SCENE.FIRST_MERELS.1553.001
+  type: SceneInstance
+  label: Eerste molenspel
+  canon_status: CANON
+  story_time:
+    earliest: '1553-12-01'
+    latest_exclusive: '1554-03-01'
+    precision: winter
+  locations:
+  - ENT.LOC.GOES
+  entities:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.CORNELIS
+  motifs:
+  - MOTIF.MERELS_WAYS
+  - MOTIF.TIK_TIK_TIK
+- id: NI.SCENE.SOWER.1554.001
+  type: SceneInstance
+  label: De Zaaierscène
+  canon_status: CANON
+  story_time:
+    earliest: '1554-02-01'
+    latest_exclusive: '1554-04-01'
+    precision: Lent
+  locations:
+  - ENT.LOC.GOES
+  entities:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.CORNELIS
+  arcs_advanced:
+  - ARC.CLAES.LIFE
+  motifs:
+  - MOTIF.INCENSE_WAX
+  - MOTIF.CARRIER_MEANING
+- id: NI.EVENT.GOES_FIRE.1554.001
+  type: EventInstance
+  label: Stadsbrand Goes — verlies van huis en gezin
+  canon_status: CANON
+  details_status: MIXED_HISTORICAL_AND_NOVEL_CANON
+  story_time:
+    date: '1554-05-18'
+    precision: day
+  locations:
+  - ENT.LOC.GOES
+  - ENT.LOC.GOES.OOSTZELKE
+  - ENT.LOC.GOES.NIEUWSTRAAT_PRE1594
+  entities:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.CORNELIS
+  - ENT.PERSON.CLAES_MOTHER
+  - ENT.PERSON.CLAES_BROTHER
+  - ENT.PERSON.CLAES_UNBORN_SIBLING
+  - ENT.PERSON.CLAES_JACOBSZ_NISSEPAT
+  objects:
+  - ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
+  story_claims:
+  - STC.CLAES.HOUSEHOLD_PRE_FIRE.1554.001
+  - STC.CLAES.FAMILY_FIRE.1554.001
+  - STC.CLAES.GRANDFATHER.NISSEPAT.001
+  claims_active:
+  - SC.HIST.GOES.SALT.NORTH_HARBOUR_1554.001
+  - SC.HIST.GOES.FIRE_1554.FOOTPRINT.001
+  - SC.HIST.GOES.FIRE_1554.SPREAD.001
+  - SC.MODEL.GOES.FIRE_1554.FIREBRANDS.001
+  - SC.HIST.GOES.FIRE_1554.CASUALTIES.001
+  arcs_advanced:
+  - ARC.CLAES.LIFE
+  - ARC.CLAES.CORNELIS
+  motifs:
+  - MOTIF.FIRE_WATER
+  - MOTIF.SINNE
+  refinement: WORLD.GOES.FIRE_1554.REFINEMENT
+  narrative_state_change:
+    before: "intact household: parents, Claes, younger brother, expected child, shared home"
+    after: "Cornelis and Claes survive; mother, brother and unborn child are dead; home is lost; grandfather loses the property asset"
+  historical_guardrail: "Historical evidence supports a northern-harbour origin, broad north/west damage and mixed damage in the old Nieuwstraat/Armenhoek environment, but not the loss of this specific house or these named family casualties; the current fire-specific casualty count remains UNKNOWN."
+- id: NI.SEQUENCE.POSTFIRE_FAMILY.1554.001
+  type: SequenceInstance
+  label: Nasleep — vader en zoon verliezen ook elkaar
+  canon_status: CANON
+  story_time:
+    earliest: '1554-05-18'
+    latest_exclusive: '1554-12-08'
+    precision: bounded
+  locations:
+  - ENT.LOC.GOES
+  - ENT.LOC.REIMERSWAAL
+  entities:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.CORNELIS
+  - ENT.PERSON.CLAES_JACOBSZ_NISSEPAT
+  story_claims:
+  - STC.CLAES.CORNELIS.POSTFIRE_SEPARATION.001
+  function: "Cornelis remains amid the Goese recovery to rebuild livelihood/business/shelter and fund Claes' schooling; grandfather helps despite his own property loss; Claes is sent away to Reimerswaal, turning care into physical separation."
+  value_shift: "surviving together -> grieving apart"
+- id: NI.EVENT.REIMERSWAAL_MOVE.1554.001
+  type: EventInstance
+  label: Vertrek als kostjongen naar Reimerswaal
+  canon_status: CANON
+  story_time:
+    earliest: '1554-05-19'
+    latest_exclusive: '1554-12-08'
+    precision: bounded
+  locations:
+  - ENT.LOC.REIMERSWAAL
+  entities:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.CORNELIS
+  - ENT.PERSON.CLAES_JACOBSZ_NISSEPAT
+  story_claims:
+  - STC.CLAES.REIMERSWAAL.001
+  - STC.CLAES.ZIERIKZEE.PLAN.001
+  - STC.CLAES.CORNELIS.POSTFIRE_SEPARATION.001
+  cause: "Post-fire household/economic collapse makes the original Zierikzee plan unaffordable; Reimerswaal preserves Claes' educational route at lower cost while Cornelis remains in Goes."
+- id: NI.EVENT.LANDJUWEEL.1561.001
+  type: EventInstance
+  label: Landjuweel Antwerpen
+  canon_status: CANON
+  story_time:
+    earliest: '1561-08-01'
+    latest_exclusive: '1561-09-01'
+    precision: month
+  locations:
+  - ENT.LOC.ANTWERP
+  entities:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.CORNELIS
+  story_claims:
+  - STC.CLAES.LANDJUWEEL.1561.001
+- id: NI.SCENE.DEE_FIRST_ENCOUNTER.1563.001
+  type: SceneInstance
+  label: Eerste ontmoeting Claes–Dee
+  canon_status: CANON
+  story_time:
+    earliest: '1563-02-01'
+    latest_exclusive: '1563-03-01'
+    precision: month
+  locations:
+  - ENT.LOC.SILVIUS_GULDEN_ENGEL
+  entities:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.JOHN_DEE
+  - ENT.PERSON.WILLEM_SILVIUS
+  story_claims:
+  - STC.CLAES.DEE_ENCOUNTER.1563.001
+  arcs_advanced:
+  - ARC.CLAES.DEE
+- id: NI.CHAPTER.1564.01
+  type: ChapterInstance
+  label: De Ladingen Van Antwerpen
+  canon_status: CANON
+  story_time:
+    earliest: '1564-01-01'
+    latest_exclusive: '1564-10-04'
+    precision: bounded
+  locations:
+  - ENT.LOC.ANTWERP
+  entities:
+  - ENT.PERSON.CLAES
+  story_file: 1564_1_de_ladingen_van_antwerpen.md
+- id: NI.CHAPTER.1564.02
+  type: ChapterInstance
+  label: De Verkeerde Kist
+  canon_status: CANON
+  story_time:
+    earliest: '1564-01-01'
+    latest_exclusive: '1564-10-04'
+    precision: bounded
+  locations:
+  - ENT.LOC.ANTWERP
+  entities:
+  - ENT.PERSON.CLAES
+  story_file: 1564_2_de_verkeerde_kist.md
+- id: NI.SCENE.MEMORIAAL_GIFT.1564.001
+  type: SceneInstance
+  label: Dee geeft memoriaal en grafietstift
+  canon_status: CANON
+  story_time:
+    earliest: '1564-01-01'
+    latest_exclusive: '1564-04-01'
+    precision: interval
+  sequence_constraint: occurs before NI.CHAPTER.1564.03
+  locations:
+  - ENT.LOC.ANTWERP
+  entities:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.JOHN_DEE
+  objects:
+  - OBJ.MEMORIAAL
+  - OBJ.GRAPHITE_STIFT
+  story_claims:
+  - STC.MEMORIAAL.GIFT.001
+  - STC.MEMORIAAL.BREVISIMA_CARRIER.001
+  - STC.MEMORIAAL.GRAPHITE_RULE.001
+  arcs_advanced:
+  - ARC.CLAES.DEE
+  function: "Dee gives Claes the apparently blank memoriaal and a graphite stift before Boom, forbidding ink while Claes remains his pupil; Claes reads this as discipline, not as protection of an already hidden tannin-printed readable Brevísima."
+- id: NI.CHAPTER.1564.03
+  type: ChapterInstance
+  label: De Kies Van Boom
+  canon_status: CANON
+  story_time:
+    earliest: '1564-01-01'
+    latest_exclusive: '1564-10-04'
+    precision: bounded
+  locations:
+  - ENT.LOC.BOOM
+  entities:
+  - ENT.PERSON.CLAES
+  story_file: 1564_3_de_kies_van_boom.md
+- id: NI.CHAPTER.1564.04
+  type: ChapterInstance
+  label: De Loog Van Antwerpen
+  canon_status: CANON
+  story_time:
+    earliest: '1564-01-01'
+    latest_exclusive: '1564-10-04'
+    precision: bounded
+  locations:
+  - ENT.LOC.ANTWERP
+  entities:
+  - ENT.PERSON.CLAES
+  story_file: 1564_4_de_loog_van_antwerpen.md
+- id: NI.CHAPTER.1564.05
+  type: ChapterInstance
+  label: De Dood Van Sol
+  canon_status: CANON
+  story_time:
+    earliest: '1564-01-01'
+    latest_exclusive: '1564-10-04'
+    precision: bounded
+  locations:
+  - ENT.LOC.ANTWERP
+  entities:
+  - ENT.PERSON.CLAES
+  story_file: 1564_5_de_dood_van_sol.md
+- id: NI.EVENT.SECURITY_BREAK.1564.001
+  type: EventInstance
+  label: Veiligheidsbreuk na stenenoproer
+  canon_status: CANON
+  story_time:
+    date: '1564-10-04'
+    precision: day
+  locations:
+  - ENT.LOC.ANTWERP
+  entities:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.CORNELIS
+  story_claims:
+  - STC.MACRO.NIGREDO_START.1564.001
+  arcs_advanced:
+  - ARC.CLAES.MACRO_TRANSMUTATION
+  continuity_note: "The security break remains a political/network and macro-Nigredo hinge. It does not insert, recipher, key or otherwise alter OBJ.MEMORIAAL, whose readable hidden Brevísima has already been in Claes' possession since before Boom."
+- id: NI.CHAPTER.1564.06
+  type: ChapterInstance
+  label: De honderd gulden
+  canon_status: PROPOSED
+  story_time:
+    earliest: '1564-10-04'
+    latest_exclusive: '1564-12-31'
+    precision: bounded
+  locations:
+  - ENT.LOC.ANTWERP
+  entities:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.CORNELIS
+  story_file: 1564_6_de_honderd_gulden.md
+- id: NI.EVENT.CLAES_RETURN_GOES.1566.001
+  type: EventInstance
+  label: Terugkeer Claes naar Goes
+  canon_status: CANON
+  story_time:
+    earliest: '1566-08-01'
+    latest_exclusive: '1567-01-01'
+    precision: bounded
+  locations:
+  - ENT.LOC.GOES
+  entities:
+  - ENT.PERSON.CLAES
+  story_claims:
+  - STC.CLAES.RETURN_GOES.1566.001
+- id: NI.EVENT.CORNELIS_FALL.1568.001
+  type: EventInstance
+  label: Val en dood Cornelis — 1567–1569
+  canon_status: CANON
+  details_status: CANON
+  story_time:
+    earliest: '1567-09-01'
+    latest_exclusive: '1569-11-20'
+    precision: bounded
+  locations:
+  - ENT.LOC.ANTWERP
+  entities:
+  - ENT.PERSON.CORNELIS
+  - ENT.PERSON.CLAES
+  story_claims:
+  - STC.CORNELIS.FIRST_ARREST_BAIL.1567.001
+  - STC.CORNELIS.DEATH.ANTWERP.1569.001
+  - STC.CORNELIS.EXECUTION_WITNESS.001
+  sequence:
+  - "autumn 1567: first arrest/examination in Antwerp; release on borg or equivalent conditions"
+  - "late 1568 through 1569: renewed exposure through clandestine book/paper traffic and refusal to name others"
+  - "19 November 1569: fictional public execution in Antwerp; Claes witnesses"
+  decision: DEC.CORNELIS.DEATH.1569.2026-08-15.REVISED
+- id: NI.SEQUENCE.RECOVERY.1570.001
+  type: SequenceInstance
+  label: Onthulling en lezing van het memoriaal 1570
+  canon_status: CANON
+  story_time:
+    earliest: '1570-01-01'
+    latest_exclusive: '1571-01-01'
+    precision: year
+  locations:
+  - ENT.LOC.GOES
+  entities:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.BELOVED
+  objects:
+  - OBJ.MEMORIAAL
+  - OBJ.LASCASAS_PLAINTEXT
+  - OBJ.ZOVITIUS_1570_TRIGGER
+  story_claims:
+  - STC.ZOVITIUS.TRIGGER.1570.001
+  - STC.MEMORIAAL.BREVISIMA_CARRIER.001
+  arcs_advanced:
+  - ARC.CLAES.LIFE
+  - ARC.CLAES.MACRO_TRANSMUTATION
+  motifs:
+  - MOTIF.BLACKENING_REVEAL
+  function: "A material cue and controlled green-vitriol development transform the apparently blank pages into readable Diets/Brabant Brevísima text. The dramatic work is recognition, reading and moral response, not cryptographic reconstruction."
+- id: NI.EVENT.PUBLICATION.1578.001
+  type: EventInstance
+  label: Antwerpse druk / Projectio van het Woord
+  canon_status: CANON
+  story_time:
+    earliest: '1578-01-01'
+    latest_exclusive: '1579-01-01'
+    precision: year
+  locations:
+  - ENT.LOC.ANTWERP
+  entities:
+  - ENT.PERSON.CLAES
+  story_claims:
+  - STC.LASCASAS.PUBLICATION.1578.001
+  function: "The readable testimony leaves private possession through an Antwerp print event; exact printer, production route and distribution chain remain separately open/evidence-controlled."
+- id: NI.CHAPTER.1584.01
+  type: ChapterInstance
+  label: De markt van Delft
+  canon_status: CANON
+  story_time:
+    earliest: '1584-01-01'
+    latest_exclusive: '1585-01-01'
+    precision: year
+  locations:
+  - ENT.LOC.DELFT
+  entities:
+  - ENT.PERSON.CLAES
+  story_file: 1584_1_de_markt_van_delft.md
+  story_claims:
+  - STC.CLAES.DELFT.1584.001
+  arcs_advanced:
+  - ARC.CLAES.LIFE
+  - ARC.CLAES.MACRO_TRANSMUTATION
+- id: NI.SEQUENCE.LATE_RUBEDO.1599.001
+  type: SequenceInstance
+  label: Late Rubedo / mogelijke Middelburg-spiegel
+  canon_status: OPEN
+  story_time:
+    earliest: '1599-01-01'
+    latest_exclusive: '1603-01-01'
+    precision: approximate
+  locations:
+  - ENT.LOC.MIDDELBURG
+  entities:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.RADERMACHER
+  arcs_advanced:
+  - ARC.CLAES.MACRO_TRANSMUTATION
+- id: NI.SCENE.FINAL_MERELS.1602.001
+  type: SceneInstance
+  label: Laatste molenspel
+  canon_status: OPEN
+  fixed_function: CANON
+  story_time:
+    earliest: '1602-01-01'
+    precision: open-ended
+  entities:
+  - ENT.PERSON.CLAES
+  story_claims:
+  - STC.CLAES.PROJECTIO.001
+  arcs_advanced:
+  - ARC.CLAES.LIFE
+  - ARC.CLAES.MACRO_TRANSMUTATION
+  motifs:
+  - MOTIF.MERELS_WAYS
+```
+
+---
+
+# SOURCE FILE: `narrative/arcs.yaml`
+
+```yaml
+schema_version: 1.4.0
+kind: NarrativeArcRegistry
+arcs:
+- id: ARC.CLAES.LIFE
+  type: CharacterArc
+  label: Claes cradle-to-grave
+  status: CANON
+  protagonist: ENT.PERSON.CLAES
+  authorial_architecture: ARC.CLAES.GREAT_WORK.AUTHORIAL
+  causal_projection: ARC.CLAES.CAUSAL_SPINE
+  phases:
+  - id: ARC.CLAES.LIFE.P01
+    label: Wieg en lichaam
+    story_time: {earliest: '1542-12-08', latest_exclusive: '1547-12-31', precision: approximate}
+    dominant_movement: ontvankelijkheid zonder duiding
+    value_shift: body before understanding
+  - id: ARC.CLAES.LIFE.P02
+    label: Kind dat orde ontdekt
+    story_time: {earliest: '1547-01-01', latest_exclusive: '1554-05-18', precision: approximate}
+    dominant_movement: Wijsheid en Hoop
+    value_shift: order can be learned through attention within an intact household of Cornelis, Tanneken, Claes, younger brother Jan and the expected unborn child
+  - id: ARC.CLAES.LIFE.P03
+    label: Verdreven kind
+    story_time: {earliest: '1554-05-18', latest_exclusive: '1561-09-01', precision: bounded}
+    dominant_movement: Hoop under pressure
+    value_shift: observation cannot prevent loss; home, mother, brother and unborn sibling are lost, then the surviving father is also lost to daily life through the Goes/Reimerswaal separation
+    wound: If I had seen early enough, could I have prevented what happened?
+    relational_pressure: Cornelis' attempt to preserve Claes' future is experienced through physical absence.
+  - id: ARC.CLAES.LIFE.P04
+    label: Adolescent die leert interpreteren
+    story_time: {earliest: '1560-01-01', latest_exclusive: '1563-12-31', precision: overlap}
+    dominant_movement: from observation to judgement
+    value_shift: roles, signs and meanings diverge
+  - id: ARC.CLAES.LIFE.P05
+    label: Jonge zoeker
+    story_time: {earliest: '1564-01-01', latest_exclusive: '1565-01-01', precision: year}
+    dominant_movement: Kracht/Geloof begins
+    value_shift: from observer to causal actor; matter can hide and reveal what is already present
+  - id: ARC.CLAES.LIFE.P06
+    label: Handelende volwassene
+    story_time: {earliest: '1565-01-01', latest_exclusive: '1578-01-01', precision: approximate}
+    dominant_movement: Kracht/Geloof under pressure
+    value_shift: act without complete certainty; father lost in 1569, hidden testimony revealed and released toward print
+    hinges:
+    - autumn 1567 Cornelis first arrest/examination and release
+    - 19 November 1569 Cornelis executed in Antwerp with Claes present
+    - 1570 direct chemical reveal/read of the hidden Brevísima
+    - 1572–1579 Goes material/economic severance remains an explicit authorial-design hinge
+    - 1578 Antwerp print event as projectio of the Word
+    open_hinge: OPEN.GOES.CLAES_DEPARTURE_1572_1579.001
+  - id: ARC.CLAES.LIFE.P07
+    label: Man in Nigredo
+    story_time: {earliest: '1578-01-01', latest_exclusive: '1585-01-01', precision: bounded}
+    dominant_movement: certainty dissolves
+    value_shift: seeing and knowing do not guarantee right action
+  - id: ARC.CLAES.LIFE.P08
+    label: Rijpe man en bewaarder
+    story_time: {earliest: '1584-01-01', latest_exclusive: '1603-01-01', precision: approximate}
+    dominant_movement: Albedo to Rubedo
+    value_shift: distinguish then reconnect; recovered sinne becomes relation rather than control
+    relational_catalyst: Mayken accompanies the later sensory/spiritual recovery without performing it for Claes.
+    counterpart_arc: ARC.MAYKEN.LIFE
+    relationship_projection: REL.CLAES.MAYKEN.CONJUNCTIO
+  - id: ARC.CLAES.LIFE.P09
+    label: Laatste beweging en graf
+    story_time: {earliest: '1602-03-13', precision: open-ended}
+    dominant_movement: Projectio
+    value_shift: material mastery -> release beyond possession -> transfer without control
+  knowledge_object_targets: [KO.STORY, KO.STRUCTURE, KO.VALUE, KO.CONFLICT, KO.EVENT]
+
+- id: ARC.CLAES.MACRO_TRANSMUTATION
+  type: MacroArc
+  label: Drager -> Nigredo -> Albedo -> Rubedo -> Projectio
+  status: CANON
+  authorial_architecture: ARC.CLAES.GREAT_WORK.AUTHORIAL
+  architecture_relation: "This operational macro arc remains the chronological transformation spine. The Status Prima / Corpus-Anima-Spiritus / Status Prima Nova architecture is a deeper author-side register model, not a replacement timeline."
+  phases:
+  - label: Drager
+    story_time: {earliest: '1542-12-08', latest_exclusive: '1564-10-04', precision: bounded}
+  - label: Gebondenheid / macro-Nigredo
+    story_time: {earliest: '1564-10-04', latest_exclusive: '1585-01-01', precision: bounded}
+  - label: Albedo / Onderscheiding
+    story_time: {earliest: '1584-01-01', latest_exclusive: '1599-01-01', precision: approximate}
+  - label: Rubedo / Verbinding
+    story_time: {earliest: '1599-01-01', latest_exclusive: '1603-01-01', precision: approximate}
+  - label: Projectio / Overdracht
+    story_time: {earliest: '1602-03-13', precision: open-ended}
+  projectio_triad:
+  - '1578: projectio of the Word — testimony is multiplied and released through print.'
+  - '1602: projectio of Matter — the Rode Leeuw/Sol line is materially tested in the Morhof-framed Enkhuizen event.'
+  - 'after 1602: projectio of the Self — Claes must release ownership, control and the need to possess the Work.'
+  guardrails:
+  - Authorial architecture, not an in-world universal alchemical doctrine.
+  - What becomes visible was already present: literally for hidden typography and the conserved Sol fraction; analogically for testimony, memory and recovered sinne.
+  - Corpus, Anima and Spiritus are interwoven registers and must not become three mechanically repeated cycles.
+  - No fixed count or sequence of alchemical operations may be forced onto scenes that do not earn it.
+
+- id: ARC.CLAES.DEE
+  type: RelationshipArc
+  label: Claes <-> Dee
+  status: CANON
+  participants: [ENT.PERSON.CLAES, ENT.PERSON.JOHN_DEE]
+  phases:
+  - label: recognition
+    story_time: {earliest: '1563-02-01', latest_exclusive: '1563-03-01', precision: month}
+  - label: formation
+    story_time: {earliest: '1564-01-01', latest_exclusive: '1564-04-01', precision: interval}
+  - label: independent judgement
+    story_time: {earliest: '1564-01-01', precision: developmental}
+  guardrail: Dee's role is intellectual/material formation; the Brevísima is not a cryptographic recovery system.
+  knowledge_object_targets: [KO.CONFLICT, KO.VALUE, KO.EVENT]
+
+- id: ARC.CLAES.CORNELIS
+  type: RelationshipArc
+  label: Claes <-> Cornelis
+  status: CANON
+  participants: [ENT.PERSON.CLAES, ENT.PERSON.CORNELIS]
+  movement: dependence/admiration within an intact family -> shared catastrophic loss -> loving but painful Goes/Reimerswaal separation -> interpretive distance/secrecy -> 1567 warning and repeated exposure -> witnessed execution 19 November 1569 -> inherited responsibility -> adult moral differentiation
+  1554_hinge:
+    decision_id: DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14
+    father: stays in Goes to rebuild livelihood, business and shelter and keep paying for Claes' schooling
+    son: goes to Reimerswaal and can experience the father's sacrifice as another abandonment
+    shared_truth: Both survive the same collapse of family but must grieve it apart.
+  1569_hinge:
+    decision_id: DEC.CORNELIS.DEATH.1569.2026-08-15.REVISED
+    date: '1569-11-19'
+    value_shift: possibility of reconciliation -> irreversible moral inheritance
+    witness: Claes
+```
+
+---
+
+# SOURCE FILE: `narrative/relationships.yaml`
+
+```yaml
+schema_version: 1.5.1
+kind: NarrativeRelationshipRegistry
+relationships:
+- id: REL.CLAES.CORNELIS
+  type: Relationship
+  label: Claes and Cornelis
+  participants: [ENT.PERSON.CLAES, ENT.PERSON.CORNELIS]
+  status: CANON
+  phases:
+  - label: formation within an intact household
+    story_time: {earliest: '1547-01-01', latest_exclusive: '1554-05-18', precision: approximate}
+    value_state: dependence -> admiration
+    function: Cornelis teaches attention, craft, patience and the difference between pieces and routes while Claes grows up with Tanneken, younger brother Jan and an expected unborn sibling.
+  - label: shared catastrophe and physical separation
+    story_time: {earliest: '1554-05-18', latest_exclusive: '1561-09-01', precision: bounded}
+    value_state: shared family -> surviving father and son who also lose daily access to each other
+    function: Both lose Tanneken, Jan, the unborn child and home. Cornelis remains in Goes to rebuild livelihood, business and shelter and finance Claes' education; Claes is sent to Reimerswaal. Cornelis' act of care is therefore also experienced by Claes as distance and possible abandonment.
+    support: Claes Jacobsz. Nissepat, fictionally Cornelis' father, helps where possible despite losing the 1542 house; maternal grandmother Mayken Pietersdochter preserves a different continuity through care and family memory.
+    decision_id: DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14
+  - label: distance through secrecy and network risk
+    story_time: {earliest: '1561-09-01', latest_exclusive: '1567-09-01', precision: interval}
+    value_state: admiration -> suspicion/exclusion
+    function: The earlier physical separation gives way to interpretive separation as Claes sees that Cornelis hides routes, papers, books and dangerous loyalties. The relationship does not depend on a cipher or fallback key.
+  - label: warning, recidive and final loss
+    story_time: {earliest: '1567-09-01', latest_exclusive: '1569-11-20', precision: bounded}
+    value_state: compromised living father -> condemned protective silence -> absent moral inheritance
+    events:
+    - autumn 1567 first Antwerp arrest/examination and release on borg or conditions
+    - late 1568 through March 1569 renewed exposure through clandestine book/paper traffic
+    - 19 November 1569 public execution in Antwerp witnessed by Claes
+    transfer: No cryptographic clue is required. Any final exchange is human, relational or testimony-centered.
+    resonance: Cornelis' death closes the possibility that father and son will recover the time lost after 1554.
+    decision_id: DEC.CORNELIS.DEATH.1569.2026-08-15.REVISED
+  - label: differentiation
+    story_time: {earliest: '1569-11-20', precision: lower-bound}
+    value_state: inheritance -> independent moral judgement
+  ko_targets: [KO.CHARACTER, KO.VALUE, KO.CONFLICT, KO.RELATIONSHIP]
+
+- id: REL.CLAES.BROTHER
+  type: Relationship
+  label: Claes and Jan
+  participants: [ENT.PERSON.CLAES, ENT.PERSON.CLAES_BROTHER]
+  status: CANON
+  story_time: {earliest: '1544-05-01', latest_exclusive: '1554-05-19', precision: approximate}
+  value_state: love <-> rivalry <-> companionship -> irreversible loss
+  function: Jan is about eighteen months younger, close enough in age to be Claes' daily companion and rival. Their bond contains play, competition, quarrels, loyalty, shared mischief and unfinished ordinary conflict before the fire.
+  contrast:
+    claes: observes, compares, waits
+    jan: acts sooner, tests physically, pulls Claes toward action
+  termination: {date: '1554-05-18', event: NI.EVENT.GOES_FIRE.1554.001}
+  guardrail: Do not write Jan as a decorative victim or foreshadow his death so heavily that ordinary brotherhood disappears.
+  decision_id: DEC.CLAES.EXTENDED_FAMILY.2026-08-14
+  ko_targets: [KO.RELATIONSHIP, KO.CONFLICT, KO.VALUE, KO.CHARACTER]
+
+- id: REL.CLAES.TANNEKEN
+  type: Relationship
+  label: Claes and Tanneken
+  participants: [ENT.PERSON.CLAES, ENT.PERSON.CLAES_MOTHER]
+  status: CANON
+  story_time: {earliest: '1542-12-08', latest_exclusive: '1554-05-19', precision: bounded}
+  value_state: embodied safety and practical knowing -> irreversible maternal loss
+  function: "Tanneken is a primary source of Claes' pre-theoretical sensory education: heat, texture, smell, fermentation, illness, weather, cloth, food and household timing are known through body and practice before abstraction."
+  pregnancy_link: Claes may feel the unborn child move under Tanneken's skin, giving him an early benign experience of reality known without sight.
+  guardrail: Do not idealize Tanneken into a mystical mother or learned herbalist; her knowledge is ordinary, practiced, material and relational.
+  decision_id: DEC.CLAES.EXTENDED_FAMILY.2026-08-14
+  ko_targets: [KO.RELATIONSHIP, KO.VALUE, KO.CHARACTER]
+
+- id: REL.CORNELIS.CLAES_JACOBSZ_NISSEPAT
+  type: Relationship
+  label: Cornelis and Claes Jacobsz. Nissepat
+  participants: [ENT.PERSON.CORNELIS, ENT.PERSON.CLAES_JACOBSZ_NISSEPAT]
+  status: CANON_FICTIONAL_KINSHIP
+  relation: father_and_son
+  historical_guardrail: The historical identity and 1542 purchase of Claes Jacobsz. are documented; his fatherhood of fictional Cornelis is novel canon, not historical genealogy.
+  post_fire_function: The older man loses the Nieuwstraat property he bought in 1542 but still helps Cornelis preserve Claes' educational future.
+  decision_id: DEC.CLAES.GRANDFATHER_LINK.2026-08-14
+  ko_targets: [KO.RELATIONSHIP, KO.VALUE, KO.CONFLICT]
+
+- id: REL.CLAES.PATERNAL_GRANDPARENTS
+  type: Relationship
+  label: Claes and paternal grandparents
+  participants: [ENT.PERSON.CLAES, ENT.PERSON.CLAES_JACOBSZ_NISSEPAT, ENT.PERSON.LIJSBET_PIETERSDOCHTER]
+  status: CANON_MIXED_HISTORICAL_FICTIONAL
+  function: Claes Jacobsz. represents property, accounting, credit, provenance and continuity; Lijsbet survives mainly as inherited household memory because she dies circa 1540–1541 in novel canon.
+  guardrail: Claes Jacobsz. is historical but the kinship is fictional; Lijsbet is wholly fictional.
+  decision_id: DEC.CLAES.EXTENDED_FAMILY.2026-08-14
+  ko_targets: [KO.RELATIONSHIP, KO.VALUE]
+
+- id: REL.CLAES.MATERNAL_GRANDPARENTS
+  type: Relationship
+  label: Claes and maternal grandparents
+  participants: [ENT.PERSON.CLAES, ENT.PERSON.JAN_JANSEN_KUIPER_MODEL, ENT.PERSON.MAYKEN_PIETERSDOCHTER]
+  status: CANON_MIXED_HISTORICAL_MODEL_FICTIONAL
+  function: The maternal line brings craft, bodily care and practical material knowledge. The grandfather-model is a cooper linked to barrels and trade; Mayken Pietersdochter preserves family memory and care after Tanneken's death.
+  naming_link: Jan Corneliszn. is named for the maternal-grandfather figure in novel canon.
+  post_fire_function: Mayken Pietersdochter can provide temporary care, mourning continuity and memories of Tanneken, while Claes Jacobsz. is the stronger economic/educational support figure.
+  guardrail: The Jan Jansen kuiper evidence is a historical model cluster, not proven genealogy or a securely identified single man across every act. Mayken Pietersdochter is fictional.
+  decision_id: DEC.CLAES.EXTENDED_FAMILY.2026-08-14
+  ko_targets: [KO.RELATIONSHIP, KO.VALUE, KO.CHARACTER]
+
+- id: REL.CLAES.DEE.001
+  type: Relationship
+  label: Claes and John Dee
+  participants: [ENT.PERSON.CLAES, ENT.PERSON.JOHN_DEE]
+  status: CANON
+  arc: ARC.CLAES.DEE
+  phases:
+  - label: recognition
+    story_time: {earliest: '1563-02-01', latest_exclusive: '1563-03-01', precision: month}
+    narrative_instances: [NI.SCENE.DEE_FIRST_ENCOUNTER.1563.001]
+    value_state: distant intellectual possibility -> personally encountered figure
+  - label: formation and disciplined inscription
+    story_time: {earliest: '1564-01-01', latest_exclusive: '1564-04-01', precision: interval}
+    value_state: recognition -> formative master relationship
+    narrative_instances: [NI.SCENE.MEMORIAAL_GIFT.1564.001]
+    objects: [OBJ.MEMORIAAL, OBJ.GRAPHITE_STIFT]
+    function: Before Claes leaves for Boom, Dee gives him the apparently blank memoriaal and graphite stift and forbids ink while Claes remains his pupil. Claes experiences exacting pedagogical discipline; Dee also knows the rule protects the already tannin-printed hidden readable Brevísima.
+    knowledge_asymmetry: Dee knows the book carries readable hidden text and how green vitriol can reveal it; Claes knows only its workbook function and graphite-only rule.
+  - label: critical independence
+    story_time: {earliest: '1564-01-01', precision: lower-bound}
+    value_state: admiration -> recognition of Dee's fallibility
+  - label: internalised legacy
+    story_time: {earliest: '1564-10-04', precision: lower-bound}
+    value_state: direct teacher -> methods, prohibitions and material memories embedded in Claes' later reasoning
+  knowledge_object_targets: [KO.VALUE, KO.CONFLICT, KO.EVENT, KO.RELATIONSHIP]
+
+- id: REL.CLAES.SILVIUS
+  type: Relationship
+  label: Claes and Willem Silvius
+  participants: [ENT.PERSON.CLAES, ENT.PERSON.WILLEM_SILVIUS]
+  status: CANON
+  phases:
+  - label: editorial recognition
+    story_time: {earliest: '1561-08-01', latest_exclusive: '1564-01-01', precision: bounded}
+    value_state: young learner -> useful observer/editorial source
+    object: OBJ.ZOVITIUS_SCHOOLBOOK
+  - label: practical trust
+    story_time: {earliest: '1564-01-01', latest_exclusive: '1564-10-04', precision: bounded}
+    value_state: recognition -> operational trust
+    hidden_parallel: Silvius can set and print the readable Brevísima invisibly while Claes understands the bound object only as Dee's memoriaal.
+  - label: mediated material cue
+    story_time: {earliest: '1570-01-01', latest_exclusive: '1571-01-01', precision: year}
+    value_state: direct access absent -> remembered/material cue may expose what was already present
+    object: OBJ.ZOVITIUS_1570_TRIGGER
+  ko_targets: [KO.RELATIONSHIP, KO.EVENT, KO.VALUE]
+
+- id: REL.CLAES.BELOVED
+  type: Relationship
+  label: Claes and Mayken
+  participants: [ENT.PERSON.CLAES, ENT.PERSON.BELOVED]
+  status: CANON
+  decision_id: DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14
+  phases:
+  - label: separate Goese histories and material proximity
+    story_time: {earliest: '1566-08-01', latest_exclusive: '1570-01-01', precision: bounded}
+    value_state: separate expertise -> potential complementarity
+    function: Both remember the 1554 fire, but Claes' household annihilation and Mayken's family material loss/rebuilding must remain distinct.
+  - label: reveal collaboration
+    story_time: {earliest: '1570-01-01', latest_exclusive: '1571-01-01', precision: year}
+    value_state: solitary interpretation -> collaborative material verification
+    narrative_instances: [NI.SEQUENCE.RECOVERY.1570.001]
+    function: Collaboration concerns controlled development, reading, material observation and the moral consequences of testimony, not cryptographic reconstruction.
+  - label: relational maturation
+    story_time: {earliest: '1570-01-01', precision: lower-bound}
+    value_state: secrecy as isolation -> trust without surrender of responsibility
+  - label: sinne recovery companionship
+    story_time: {earliest: '1584-01-01', latest_exclusive: '1602-03-14', precision: developmental}
+    value_state: constricted perception -> embodied relation and renewed sensory openness
+    function: Mayken draws Claes back into shared material life through trained sensation, travel, weather, plants, preparation, food, fatigue and contradiction; she catalyses but does not perform his recovery.
+  role_split:
+    claes: [Dee-memory, recognition, interpretive responsibility, decision what to do with testimony, moral ownership without possession]
+    mayken: [materia-medica knowledge, weighing, controlled development, paper/ink observation, botanical/material contradiction, error control, sensory companionship]
+  guardrails:
+  - Mayken is not a cryptographic solver or key-holder.
+  - Ordinary Dodoens use may remain part of her apothecary world; the retired special Dodoens carrier does not.
+  ko_targets: [KO.RELATIONSHIP, KO.CONFLICT, KO.VALUE, KO.CHARACTER]
+
+- id: REL.CLAES.RADERMACHER
+  type: RelationshipPotential
+  label: Claes and Johan Radermacher
+  participants: [ENT.PERSON.CLAES, ENT.PERSON.RADERMACHER]
+  status: OPEN
+  possible_story_time: {earliest: '1599-01-01', latest_exclusive: '1603-01-01', precision: approximate}
+  function_if_used: "Late Rubedo social mirror: trade, books, religious caution and cross-border help in one network."
+  guardrail: No unsupported formal Familist membership.
+```
+
+---
+
+# SOURCE FILE: `narrative/motifs.yaml`
+
+```yaml
+schema_version: 1.1.1
+kind: MotifRegistry
+motifs:
+- id: MOTIF.SINNE
+  label: sinne
+  status: CANON
+  function: sensory cognition; reader enters world through Claes
+  progression:
+  - sensation
+  - recognition
+  - comparison
+  - pattern
+  - understanding
+  - choice
+  - 'adult: perceive→distinguish→choose→carry'
+- id: MOTIF.TIK_TIK_TIK
+  label: tik-tik-tik
+  status: CANON
+  function: sound motif moving from work/patience to violence/loss and later integration
+- id: MOTIF.INCENSE_WAX
+  label: wierook en kaarslicht
+  status: CANON
+  function: sensory memory anchor from early mass onward
+- id: MOTIF.CARRIER_MEANING
+  label: drager / bewerking / betekenis
+  status: CANON
+  function: same carrier can change readability, function or meaning
+  instances:
+  - music contrafact
+  - printed play
+  - book
+  - material process
+  - game position
+  - memoriaal
+- id: MOTIF.MERELS_WAYS
+  label: stenen en wegen
+  status: CANON
+  function: relations and pathways matter more than counted possessions
+  anchor: Gij hebt mijn stenen geteld. Ik heb uw wegen geteld.
+- id: MOTIF.FIRE_WATER
+  label: vuur/lucht ↔ water/aarde
+  status: CANON
+  function: youth elemental symmetry Goes/Reimerswaal
+  guardrail: historical disasters first; not didactic allegory
+- id: MOTIF.MUSIC_OLD_TUNE
+  label: de oude wijs
+  status: CANON
+  function: auditory continuity across confessional change and preparation for hidden readability
+- id: MOTIF.BLACKENING_REVEAL
+  label: zwarting als onthulling
+  status: CANON
+  function: vitriol darkens hidden tannin layer and makes text readable; Nigredo resonance without didactic naming
+- id: MOTIF.BREAD
+  label: brood / gest / oven
+  status: CANON_CONTEXT
+  function: material transformation, measure, labour, food and social order
+- id: MOTIF.CASTANEA
+  label: Castanea
+  status: CANON_CONTEXT
+  function: independent botanical, family-memory and later Castanienbloem/Nissepat resonance; no longer a Brevísima recovery key or authentication step
+  guardrail: do not restore the deprecated Castanea cipher/key-anchor function without an explicit new decision
+- id: MOTIF.CONCOCTIONIST
+  label: concoctionist
+  status: CANON
+  function: >-
+    Long-range verbal callback beginning as Dee's learned, deliberately inaccurate joke about Cornelis' occupation as biersteker and maturing into a description of Claes' and Mayken's joint capacity to bring substances, observations and relations into the right proportion without confusing mixture with mastery.
+  progression:
+  - 'first Dee encounter, ca.1563: biersteker is playfully overtranslated into the semantic field of concoction/compounding'
+  - 'Cornelis: combines routes, casks, credit, people and trust rather than medicinal substances'
+  - 'Mayken: materially closest to literal compounding through apothecary preparation, weighing, extraction and materia medica'
+  - 'Claes: learns to combine material process with judgement, relation and responsibility'
+  - 'mature callback: right relation and proportion matter more than brute force or possession'
+  guardrails:
+  - "'Concoctionist' is the author-side motif label; do not require Dee to utter that exact English noun unless a period attestation is separately established."
+  - "Dee's joke is intentionally not an accurate lexical translation of biersteker."
+  - 'Do not turn Cornelis into an apothecary, physician or alchemist because of the joke.'
+  - 'Do not reduce Mayken to an ingredient, assistant or symbolic completion of Claes; her practical knowledge and agency remain independent.'
+```
+
+---
+
+# SOURCE FILE: `narrative/themes.yaml`
+
+```yaml
+schema_version: 1.2.0
+kind: ThemeRegistry
+themes:
+  - id: THEME.CLAES.CONTROLLING_IDEA
+    type: ControllingIdea
+    statement: "A man who seeks hidden order becomes whole only when knowledge ceases to be a means of control and becomes responsibility toward other people."
+    canon_status: CANON
+    applies_to: [ARC.CLAES.LIFE, ARC.CLAES.MACRO_TRANSMUTATION]
+    ko_targets: [KO.STORY, KO.VALUE, KO.CHARACTER]
+
+  - id: THEME.CLAES.DRAMATIC_QUESTION
+    type: DramaticQuestion
+    statement: "What does truth ask of Claes toward the other when certainty, safety and control are impossible?"
+    canon_status: CANON
+    applies_to: [ENT.PERSON.CLAES]
+
+  - id: THEME.CLAES.DESIRE
+    type: CharacterDesire
+    statement: "Claes wants to understand the hidden order behind visible reality."
+    canon_status: CANON
+    subject: ENT.PERSON.CLAES
+    ko_targets: [KO.CHARACTER.WANT]
+
+  - id: THEME.CLAES.PSYCHOLOGICAL_NEED
+    type: CharacterNeed
+    statement: "Claes must recover trust in embodied perception — the sinne — and learn to act without first acquiring complete certainty."
+    canon_status: CANON
+    subject: ENT.PERSON.CLAES
+    story_claims: [STC.CLAES.NEED.001, STC.CLAES.SINNE.001]
+    ko_targets: [KO.CHARACTER.NEED]
+
+  - id: THEME.CLAES.MORAL_NEED
+    type: MoralNeed
+    statement: "Claes must learn that knowledge and perception increase responsibility toward other people; discernment must become choice and choice must accept consequence without total control."
+    canon_status: CANON
+    subject: ENT.PERSON.CLAES
+
+  - id: THEME.CLAES.SPIRITUAL_JOURNEY
+    type: SpiritualJourney
+    statement: "Claes moves from 'What is true?' toward 'What does this truth ask of me toward the other?' and from matter toward spirituality through, not away from, embodied matter."
+    canon_status: CANON
+    subject: ENT.PERSON.CLAES
+    material_vessel: [senses, bodies, craft, books, plants, fire, water, alchemical_operations]
+    culmination: "knowledge-as-control → wisdom-in-relation → transmission-and-release"
+
+  - id: THEME.CLAES.LIE.CHILD
+    type: CharacterLie
+    statement: "If I look carefully enough, I can prevent being surprised or losing what matters."
+    canon_status: CANON
+    subject: ENT.PERSON.CLAES
+    active_phase: ARC.CLAES.LIFE.P02
+
+  - id: THEME.CLAES.LIE.ADULT
+    type: CharacterLie
+    statement: "If I understand the process, I can control the consequences."
+    canon_status: CANON
+    subject: ENT.PERSON.CLAES
+    active_phase: ARC.CLAES.LIFE.P05
+
+  - id: THEME.CLAES.FINAL_TRUTH
+    type: SelfRevelation
+    statement: "The value of a right action is not determined by certainty that it will succeed; mature mastery can transmit and release rather than possess."
+    canon_status: CANON
+    subject: ENT.PERSON.CLAES
+    threshold_instance: NI.CHAPTER.1584.01
+    ko_targets: [KO.CHARACTER.REVELATION, KO.VALUE]
+
+value_axes:
+  - id: VALUE.CLAES.TRUTH
+    spectrum: [ignorance, recognition, knowledge, certainty, wisdom]
+    warning: "Knowledge and certainty are not synonyms."
+  - id: VALUE.CLAES.AGENCY
+    spectrum: [passivity, observation, choice, action, control]
+    warning: "Action and control are not synonyms."
+  - id: VALUE.CLAES.RELATION
+    spectrum: [isolation, secrecy, protection, trust, love]
+    warning: "Protection and possession are not synonyms."
+  - id: VALUE.CLAES.FAITH
+    spectrum: [fear, certainty-seeking, obedience, trust-under-uncertainty, responsible-faith]
+  - id: VALUE.CLAES.MASTERY
+    spectrum: [counting-pieces, seeing-routes, blocking-routes, balancing-routes, leaving-space]
+    motif: MOTIF.MERELS_WAYS
+  - id: VALUE.CLAES.SINNE
+    spectrum: [sensory-openness, vigilance, blunting, recovery, resonance, embodied-discernment]
+    warning: "Trauma may constrict perception; recovery is not a return to innocence but a deeper embodied sovereignty."
+    world_modules: [WORLD.RELIGIOUS_SPACE.SENSORY_CHURCH]
+    authoring_rule: "Use sensory perception as cognition and social/spatial inference, not as a five-senses checklist."
+
+scene_diagnostic_contract:
+  required_fields_when_scene_is_developed:
+    - opening_value
+    - character_objective
+    - conflict_or_pressure
+    - turning_point
+    - closing_value
+    - value_charge_change
+    - story_claims_introduced_or_paid_off
+    - arcs_advanced
+    - knowledge_delta
+    - object_state_delta
+    - motif_payoff_or_plant
+    - ko_targets
+```
+
+---

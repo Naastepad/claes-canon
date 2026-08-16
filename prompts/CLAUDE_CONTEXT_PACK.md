@@ -4,8 +4,8 @@
 > Treat each SOURCE FILE section as the original source file.
 
 - source branch: `main`
-- source commit at generation: `aa98cf59c317741ef2c8494bf5e6736442a96baa`
-- generated UTC: `2026-08-16T19:20:11+00:00`
+- source commit at generation: `f541df06f3c3b0fe8f4d058edd060926091f7e19`
+- generated UTC: `2026-08-16T19:20:27+00:00`
 - included files: `44`
 
 Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pack does not alter authority.
