@@ -9,7 +9,7 @@ claims:
   subject: ENT.HIST.PERSON.GHYSBRECHT_ANTWERP_COOPER
   predicate: acquires_property_in_goes
   object: De_Haeswindeken
-  evidence_status: VERIFIED_IN_PROJECT_DATASET
+  evidence_status: VERIFIED
   source_ids:
   - SRC-HIST-HOUSE-OF-LOVE-GOES-ANTWERP-1551-1569-001
   verification:
@@ -25,7 +25,7 @@ claims:
   subject: ENT.HIST.PERSON.GHYSBRECHT_ANTWERP_COOPER
   predicate: sells_burned_property_in_goes
   object: d_Aeswinde
-  evidence_status: VERIFIED_IN_PROJECT_DATASET
+  evidence_status: VERIFIED
   source_ids:
   - SRC-HIST-HOUSE-OF-LOVE-GOES-ANTWERP-1551-1569-001
   verification:
@@ -41,9 +41,11 @@ claims:
   subject: ENT.HIST.PERSON.GHYSBRECHT_ANTWERP_COOPER
   predicate: likely_same_person_across_records
   object: RAZE_1747_0541_and_RAZE_1748_0281
-  evidence_status: SUPPORTED_INFERENCE
+  evidence_status: SUPPORTED
   source_ids:
   - SRC-HIST-HOUSE-OF-LOVE-GOES-ANTWERP-1551-1569-001
+  verification:
+    boundary: Same-person identity is inferred rather than directly stated by the records.
 
 - id: SC.HIST.FAMILIST.ADRIAAN_DENS.EARLY_FOLLOWER.001
   type: SourceClaim
@@ -89,9 +91,11 @@ claims:
   subject: ENT.HIST.PERSON.CHRISTOPHE_PLANTIN
   predicate: historically_connected_to
   object: ENT.NETWORK.HOUSE_OF_LOVE_TRANSLOCAL
-  evidence_status: SUPPORTED_WITH_HISTORIOGRAPHICAL_CAUTION
+  evidence_status: SUPPORTED
   source_ids:
   - SRC-HIST-HOUSE-OF-LOVE-GOES-ANTWERP-1551-1569-001
+  verification:
+    boundary: The relationship is supported; degree, duration and confessional label remain historiographically nuanced.
 
 - id: SC.HIST.GOES.SHIPPING_MILIEU.DIERICK_JANSEN.001
   type: SourceClaim
@@ -101,7 +105,7 @@ claims:
   subject: Dierick_Jansen_schipper
   predicate: demonstrates
   object: substantial_goese_shipping_milieu
-  evidence_status: VERIFIED_IN_PROJECT_DATASET
+  evidence_status: VERIFIED
   source_ids:
   - SRC-HIST-HOUSE-OF-LOVE-GOES-ANTWERP-1551-1569-001
   verification:
