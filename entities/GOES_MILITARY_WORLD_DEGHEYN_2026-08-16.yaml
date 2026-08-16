@@ -1,0 +1,92 @@
+schema_version: 1.0.0
+kind: EntityRegistryExtension
+entities:
+- id: ENT.PERSON.JACOB_DE_GHEYN_II
+  type: Person
+  label: Jacob de Gheyn II
+  fictionality: historical
+  canon_status: HISTORICAL_REFERENCE
+  life:
+    born: ca_1565
+    birthplace: Antwerp
+    died: 1629-03-29
+    deathplace: The_Hague
+  roles:
+    - draughtsman
+    - engraver
+    - painter
+    - designer_of_military_instruction_prints
+  project_relevance:
+    primary: >-
+      Creator of the 1607 Wapenhandelinghe, a key visual-verbal witness for the mature codification of States weapon drill near the end of Claes' life.
+    thematic: >-
+      Provides a historical parallel to the project's larger concern with converting embodied or hidden knowledge into repeatable systems of image, word, number and procedure.
+  direct_story_contact_with_claes: NONE_UNLESS_EXPLICITLY_DECIDED
+  source_ids:
+    - SRC-HIST-DEGHEYN-WAPENHANDELINGHE-1607-001
+  guardrails:
+    - Do not invent a personal meeting, correspondence or collaboration with Claes.
+    - Do not claim De Gheyn used Goese or Zeeuwse soldiers as identifiable models without new evidence.
+
+- id: OBJ.DEGHEYN.WAPENHANDELINGHE.1607
+  type: Object
+  label: Wapenhandelinghe van Roers, Musquetten ende Spiessen (1607)
+  fictionality: historical
+  canon_status: HISTORICAL_REFERENCE
+  creator: ENT.PERSON.JACOB_DE_GHEYN_II
+  components:
+    roer:
+      figures_commands: 42
+      source_claim: SC.HIST.DEGHEYN.ROER.42.001
+    musquet:
+      figures_commands: 43
+      source_claim: SC.HIST.DEGHEYN.MUSQUET.43.001
+    spies:
+      figures_commands: 32
+      source_claim: SC.HIST.DEGHEYN.SPIES.32.001
+  system_logic:
+    - numbered_figure
+    - prose_explanation
+    - corresponding_command_wording
+  usage: >-
+    Reference source for mature circa-1607 States drill and military body technique; not a template to paste unchanged into earlier royalist Goes.
+
+- id: ENT.ORG.GOES.CIVIC_SCHUTTERIJ
+  type: Organization
+  label: Goese burgerlijke schutterij / stedelijke gewapende wacht
+  fictionality: historical_category_local_details_incomplete
+  canon_status: PROPOSED
+  parent: ENT.LOC.GOES
+  usage: >-
+    Distinct analytical category for armed civic defence, gate/wall watch and corporate military culture. Exact organisation, weapon mix, officers and ordinances by year require local evidence.
+  constraints:
+    - Do not equate automatically with a States field-army company.
+    - Do not assume De Gheyn's 1607 drill was adopted in full at a specific date without evidence.
+
+- id: ENT.ORG.GOES.GARRISON
+  type: Organization
+  label: Garnizoen/troepen in Goes
+  fictionality: historical_category_variable_composition
+  canon_status: PROPOSED
+  parent: ENT.LOC.GOES
+  valid_time:
+    start: 1550
+    end: 1607
+  usage: >-
+    Time-sensitive category. Before the 1577 satisfactie military allegiance belongs to the royal/Habsburg sphere; afterward composition, command and drill must be reconstructed by date rather than treated as an instantaneous switch.
+  constraints:
+    - political_control_must_be_date_checked
+    - civic_schutterij_is_not_synonymous
+    - field_army_is_not_synonymous
+
+- id: ENT.LOC.GOES.MILITARY_EXERCISE_SPACE
+  type: Location
+  label: Goese exercitieplaats(en), ca. 1577–1607
+  fictionality: historical_reconstruction_required
+  canon_status: OPEN_RESEARCH
+  parent: ENT.LOC.GOES
+  usage: >-
+    Placeholder for a documented exercise ground or drill space. No exact square, courtyard or wall sector is canon until local evidence identifies it.
+  constraints:
+    - Never silently use an invented barracks courtyard as a documented Goese location.
+    - Gates and walls may be used as plausible guard environments only where scene claims remain appropriately qualified.
