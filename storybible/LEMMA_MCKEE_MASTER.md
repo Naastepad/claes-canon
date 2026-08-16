@@ -2,10 +2,10 @@
 
 **ID:** `SB.CLAES.LEMMA_MCKEE`  
 **Status:** CURRENT OPERATING SYNTHESIS  
-**Synchronized:** 16 August 2026 — through Round C story projection  
+**Synchronized:** 16 August 2026 — through Round C story projection and Cornelis/Huis der Liefde network decision  
 **Source authority:** `SB.CLAES.MASTER`
 
-This is the current human-readable operating synthesis of the Claes canon. The dated `LEMMA_MCKEE_MASTER_2026-08-13.md` is a historical snapshot only. Where older prose describes a 1545 birth, post-4-October loading of the memoriaal, a 24×24/cipher recovery chain, Cornelis' death as still open, Cornelis as a straightforward member of the Edele Castanienbloem, or Mayken's identity as still open, that wording is superseded.
+This is the current human-readable operating synthesis of the Claes canon. The dated `LEMMA_MCKEE_MASTER_2026-08-13.md` is a historical snapshot only. Where older prose describes a 1545 birth, post-4-October loading of the memoriaal, a 24×24/cipher recovery chain, Cornelis' death as still open, Cornelis as a straightforward member of the Edele Castanienbloem, Plantin as Cornelis' converter into the Huis der Liefde, or Mayken's identity as still open, that wording is superseded.
 
 The project separates five working layers:
 
@@ -101,9 +101,13 @@ The family home is the fictional household use of the historically documented 15
 
 Bread, beer, church, household work and routes belong to Claes' first epistemology. His useful childhood intuition — careful attention makes the world legible — becomes the seed of his later false hope that enough attention might prevent loss.
 
+Cornelis' own Antwerp network also begins in this pre-fire world. A historical **Ghysbrecht/Gijsbrecht, kuiper van Antwerpen** with Goese property interests is the archival anchor; in novel canon repeated cask/beer dealings create a trusted commercial relation. The bridge from Ghysbrecht to **Adriaan Dens** is explicit fiction. Dens becomes the first person Cornelis knowingly recognizes as belonging to H.N.'s circle and routes him onward to **Hendrik Jansen van Barrefelt**. By approximately **1552–1553** Cornelis belongs in novel canon to the translocal Huis der Liefde while remaining publicly embedded in Catholic Goes. Plantin is not his converter.
+
 ### III — 18 May 1554–1561: first blackening and Reimerswaal
 
 The Goes fire destroys or makes the family house uninhabitable in novel canon. Claes and Cornelis survive because they are away; Tanneken, Jan and the unborn child die. Historical evidence supports a partially damaged old-Nieuwstraat/Armenhoek environment but does not document these fictional casualties.
+
+For Cornelis the fire therefore **tests an already existing Familist conviction; it does not create it**. The same catastrophe also leaves Ghysbrecht's Goese property represented as burned in the 1554 archival record, allowing the trade relation to remain materially connected to the memory of burned Goes without making the two men's losses equivalent.
 
 Cornelis remains in Goes to rebuild livelihood and finance Claes' education. Zierikzee becomes unaffordable; Claes goes to Reimerswaal. The separation is care experienced as another loss.
 
@@ -135,7 +139,11 @@ Print, graphite, pyritic matter, vitriol and the Sol problem teach him that appa
 
 Christoffel Fabritius' disrupted Antwerp execution on **4 October 1564** is the preferred historical candidate for the existing security hinge. The exact low-level link by which Cornelis becomes unsafe remains `OPEN.SECURITY.LOW_LINK.1564.001`.
 
-The crucial correction is negative: nothing is inserted, keyed or reciphered in Claes' memoriaal after this date.
+By this point Cornelis has already belonged to the Huis der Liefde for more than a decade in novel canon. His route is **beer/cask commerce → Ghysbrecht → fictional social bridge to Dens → Barrefelt → translocal affiliation**. He can remain outwardly Catholic in Goes; no separate Goese Familist congregation or invented initiation ritual is required. His later paper/book carrying grows out of the same competencies as the beer trade — containers, storage, accounts, credit, route knowledge, carrier choice, discretion and trust — but this does **not** mean that books are routinely hidden in beer casks.
+
+**Plantin is a later print/distribution node, not Cornelis' converter.** His historically substantial relation to the Niclaes/Barrefelt milieu may support later network scenes, but the historiography of Plantin's own adherence must not be flattened into a simple permanent sect label.
+
+The crucial correction is negative: nothing is inserted, keyed or reciphered in Claes' memoriaal after 4 October 1564. Cornelis' long Familist backstory does not by itself close the exact low-level security trigger.
 
 Cornelis' fall is fixed as a two-step exposure:
 
@@ -144,7 +152,7 @@ Cornelis' fall is fixed as a two-step exposure:
 
 On **19 November 1569** Cornelis is fictionally executed in Antwerp in the documented Grote-Markt/stadhuis book-burning environment. Public beheading by sword is the preferred story method under the recidive/seditious-network framing. Claes is physically present.
 
-Cornelis is not a historical addition to Haecht's list, not a protected printer, not an open preacher and not carrying the memoriaal. His death-script is protective silence: he gives no names.
+Cornelis is not a historical addition to Haecht's list, not a protected printer, not an open preacher and not carrying the memoriaal. His death-script is protective silence: he gives no names. The new network backstory makes that silence the terminal consequence of a long practice of trust rather than a last-minute heroic pose.
 
 The father's vulnerable body and the possible separate destruction of papers/books teach that testimony can survive a carrier without becoming immaterial. Claes inherits responsibility, not a final key.
 
@@ -237,7 +245,7 @@ Claes' exact death remains open. Its function does not: he must finally be able 
 
 ---
 
-## 4. Cornelis — occupation and rederijker identity
+## 4. Cornelis — occupation, Huis der Liefde and rederijker identity
 
 Fixed:
 
@@ -245,13 +253,35 @@ Fixed:
 - **biersteker**, not fixed brewery owner;
 - book/material carrier through commercial and trust networks;
 - rederijker;
+- member in novel canon of the translocal **Huis der Liefde / Familia Caritatis** by ca. **1552–1553**;
 - not a printer.
+
+His entry route is fixed as:
+
+**beer/cask commerce → Ghysbrecht/Gijsbrecht, kuiper van Antwerpen → explicit fictional trusted bridge to Adriaan Dens → Hendrik Jansen van Barrefelt → Huis der Liefde.**
+
+Evidence boundary:
+
+- Ghysbrecht/Gijsbrecht is a historical Antwerp cooper with Goese property interests in the 1551/1554 archival record;
+- same-person identification across the two records is a supported inference;
+- Ghysbrecht is **not** a documented Familist;
+- no historical Ghysbrecht–Dens relationship is claimed;
+- the Ghysbrecht → Dens bridge and Cornelis' meetings are novel canon;
+- Dens and Barrefelt are historical actors whose known network positions make their story roles plausible.
+
+Dens is Cornelis' first knowingly identifiable Familist. Barrefelt deepens the affiliation and connects Cornelis' local/commercial trust to the wider translocal text network. Cornelis may remain outwardly embedded in Catholic Goes; no separate Goese Familist church, meetinghouse, hierarchy or formal initiation ritual is required.
+
+The **18 May 1554** fire tests this pre-existing affiliation; it does not cause the conversion. Plantin enters only later as a print/distribution node. His role must never collapse the chain into “Cornelis meets Plantin and becomes a Familist.”
+
+Cornelis' later clandestine book/paper logistics grow from the same competencies as the beer trade: casks and containers, storage, accounts, credit, route knowledge, carriers, repeated transactions, discretion and trust. This continuity does **not** establish routine hiding of forbidden books inside beer barrels.
 
 His named chamber is fixed as the **Nardusbloem / older Magdalena-linked Goese tradition**. The Zusterhuis/Singelstraat remains the Cornelis-era meeting environment.
 
 In novel canon Cornelis helps form a reform-minded/protestantiserende current in the 1560s that becomes the later Edele Castanienbloem. This is explicit historical fiction in a documentary gap. **1595 is the earliest surviving attestation, not a proved foundation date.** Later documented Nissepat participation in 1595–1596 acts as resonance.
 
 Whether Cornelis ever serves as **deken** remains open.
+
+The governing dedicated dossier is `CORNELIS_HOUSE_OF_LOVE_NETWORK_1551_1569.md`. The exact low-level 4 October 1564 security trigger remains open despite this now-fixed longer backstory.
 
 ---
 
@@ -367,7 +397,7 @@ Claes begins within a Catholic civic ars-moriendi understanding: punishment, con
 
 Reformation executions fracture that shared script. Condemned persons and spectators can convert punishment into witness through steadfastness, psalms, letters, songs and memory.
 
-Cornelis forms a third script: **protective silence**. He does not die as a loud martyr but refuses names.
+Cornelis forms a third script: **protective silence**. He does not die as a loud martyr but refuses names. The fixed Huis der Liefde backstory makes that silence continuous with more than a decade of learned relational trust, discretion and protection of other carriers.
 
 The thematic carrier chain is now:
 
@@ -412,13 +442,13 @@ The project now has a causal pre-structure but not yet a fully populated novel s
 
 Use `ARC.CLAES.CAUSAL_SPINE` as the governing bridge. Current hinge targets are:
 
-1. childhood Status Prima / embodied Goes;
-2. 1554 fire and survivor separation;
+1. childhood Status Prima / embodied Goes, including Cornelis' pre-fire beer/cask trust network and ca.1552–1553 Huis der Liefde affiliation as background rather than child exposition;
+2. 1554 fire and survivor separation — fire tests Cornelis' existing conviction rather than causing it;
 3. Reimerswaal formation under slow erosion;
 4. 1561 Landjuweel / multiple interpretation;
 5. Dee/Silvius/Boom material formation;
 6. return to altered Goes / Mayken proximity;
-7. 1567–1569 Cornelis warning, secrecy and execution;
+7. 1567–1569 Cornelis warning, secrecy and execution, now grounded in the longer Ghysbrecht–Dens–Barrefelt trust history;
 8. 1570 direct memoriaal reveal with Mayken;
 9. **OPEN:** 1572–1579 Goes second material/economic severance;
 10. 1578 print/release of the Word;
