@@ -1,8 +1,8 @@
 # Synchronization status
 
-Status: `SYNC_PENDING`
+Status: `SYNC_COMPLETE_ACTIVE_LAYERS`
 
-Release state: `MAIN_CANON_CLERGY_DECISION_ACTIVE_2026-08-16`
+Release state: `MAIN_CANON_SYNCHRONIZED_2026-08-16`
 
 Historical recovery addendum: `ROUND_A_HISTORICAL_SUBSTRATE_RECOVERED`
 
@@ -12,9 +12,9 @@ Story-projection addendum: `ROUND_C_STORY_PROJECTION_IMPLEMENTED`
 
 Editorial/reader addendum: `ROUND_D_EDITORIAL_READER_PROTOCOL_IMPLEMENTED`
 
-Goes clergy addendum: `GOES_CLERGY_MATHIJS_CLEMENS_CANONIZED_2026-08-16`
+Goes clergy addendum: `GOES_CLERGY_MATHIJS_CLEMENS_CANONIZED_AND_SYNCHRONIZED_2026-08-16`
 
-The explicit Goes clergy decisions are now authoritative in `canon/` and synchronized through dedicated source claims, Story Claims, entity records, a world module and a governing Storybible dossier. Two navigation summaries remain to be folded into their large aggregate files; this is recorded explicitly below rather than hidden.
+The explicit Goes clergy decisions are authoritative in `canon/` and are now synchronized through dedicated source claims, Story Claims, entity records, a world module, a governing Storybible dossier, `storybible/MASTER.md` and `storybible/INDEX.md`.
 
 ## Current governing chronology
 
@@ -188,7 +188,7 @@ See `canon/OPEN_DECISIONS.yaml` and alchemical open supplements for the complete
 
 ## Current clergy synchronization paths
 
-Synchronized now:
+Synchronized:
 
 - `sources/SRC-HIST-GOES-CLERGY-RAZE-1536-1564-001.md`;
 - `claims/SOURCE_CLAIMS_GOES_CLERGY_2026-08-16.yaml`;
@@ -198,14 +198,11 @@ Synchronized now:
 - `entities/GOES_CLERGY_1541_1564.yaml`;
 - `narrative/world_goes_clergy_1541_1564.yaml`;
 - `storybible/GOES_CLERGY_MATHIJS_CLEMENS_1541_1564.md`;
+- `storybible/MASTER.md`;
+- `storybible/INDEX.md`;
 - this sync-status file.
 
-`SYNC_PENDING` is limited to navigation/aggregate propagation into:
-
-- `storybible/MASTER.md`;
-- `storybible/INDEX.md`.
-
-The clergy canon itself is **active and authoritative now** because the explicit current decisions in `canon/` outrank aggregate summaries. Until the two navigation files are refreshed, all agents must load this sync-status addendum and the dedicated clergy dossier before answering or drafting clergy-sensitive Goes material.
+No known clergy-specific downstream synchronization remains pending.
 
 ## Next major work
 
