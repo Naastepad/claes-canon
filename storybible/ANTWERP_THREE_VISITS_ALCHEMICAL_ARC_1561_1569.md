@@ -1,7 +1,7 @@
 # Antwerp three visits and alchemical process arc (1561–1569)
 
-**Status:** CANON in authoring branch, corrected by explicit human decision on 15 August 2026.  
-**Decision anchors:** `DEC.ANTWERP.THREE_VISITS_PROCESS_ARC.2026-08-15`, `DEC.ALCHEMY.PROCESS_LAYERS.2026-08-15`, `DEC.ALCHEMY.CLAES_LIFELINE_PROJECTIEPOEDER.2026-08-15`, `DEC.CORNELIS.ROLE.BIERSTEKER_CASTANIE_OPEN.2026-08-15`.  
+**Status:** CANON in authoring branch, corrected by explicit human decisions on 15–16 August 2026.  
+**Decision anchors:** `DEC.ANTWERP.THREE_VISITS_PROCESS_ARC.2026-08-15`, `DEC.ALCHEMY.PROCESS_LAYERS.2026-08-15`, `DEC.ALCHEMY.CLAES_LIFELINE_PROJECTIEPOEDER.2026-08-15`, `DEC.CORNELIS.REDERIJKER.NARDUS_CASTANIE_ORIGIN.2026-08-16`, `DEC.DEE.CONCOCTIONIST.MOTIF.2026-08-16`.  
 **Detailed process authority:** `ALCHEMICAL_CHEMICAL_PROCESS_CHAIN_CLAES_LIFELINE.md`.
 
 ## Authority correction
@@ -13,8 +13,9 @@ Correct current state:
 - Cornelis is a Goes poorter.
 - Cornelis is a biersteker.
 - The brewery/brewing infrastructure is within the wider family/business context but is not fixed as Cornelis' own brewery.
-- Cornelis is a member of De Edele Castanienbloem.
-- Whether Cornelis is deken of De Edele Castanienbloem remains OPEN/onbeslist.
+- Cornelis is a member of the **Nardusbloem / older Magdalena-linked Goese rederijker tradition**.
+- In novel canon he plays a formative role in the reform-minded/protestantiserende current that becomes the later Edele Castanienbloem; pre-1595 existence/origin remains explicit historical reconstruction, not documentary fact.
+- Whether Cornelis is ever deken of the Nardusbloem or emerging Castanien current remains OPEN/onbeslist.
 - Cornelis is not a printer. Zetletters, type, proofing and press rhythm belong to Silvius' workshop.
 - John Dee is not placed in Antwerp in 1561. Dee becomes active for Claes in the 1563/1564 Antwerp/Silvius/Boom formation.
 
@@ -25,7 +26,7 @@ Claes' Antwerp material is organized as a three-visit formation arc rather than 
 The three visits are:
 
 1. **1561 — Landjuweel / city as theatre.** Claes visits Antwerp in the orbit of Cornelis' civic, rederijker and book-transport world. He sees chambers, blazoens, allegory, pageantry, kists, texts, performance and concealed meanings. This is the first threshold: he learns that meaning can hide in public forms.
-2. **1563/1564 — Dee, Silvius, Boom and Antwerp laboratory work / city as book and workshop.** Claes returns through the book/transport network. Dee and Silvius become active. The Boom kies and Antwerp vitriol work teach him that matter can carry hidden process just as language carries hidden meaning.
+2. **1563/1564 — Dee, Silvius, Boom and Antwerp laboratory work / city as book and workshop.** Claes returns through the book/transport network. His **first encounter with Dee is brief in 1563**; intensive formation follows in early 1564. Dee and Silvius become active. The Boom kies and Antwerp vitriol work teach him that matter can carry hidden process just as language carries hidden meaning.
 3. **1566 — Beeldenstorm / city as broken image.** Claes sees that symbols and images can be feared, broken, politicized and made dangerous. This is not Cornelis' death point in current canon; it is a security, fear, iconoclasm and meaning-under-violence hinge that prepares the later 1569 execution arc.
 
 This structure functions like a hidden three-degree formation pattern: not diegetic freemasonry, not a claim that later blue-degree masonry exists in Claes' world, but an underlying narrative grammar of initiation.
@@ -54,7 +55,7 @@ Cornelis must not be reduced to a generic carrier and must not be inflated into 
 
 Canonical formulation:
 
-> Cornelis is a Goes poorter, biersteker and member of De Edele Castanienbloem. His beer trade supplies routes, storage, barrels, kists, freight papers and commercial cover; his civic and rederijker context supplies trust, symbolic literacy, disciplined speech and network access. The brewery belongs to the family/business environment, not to Cornelis as his fixed personal brewery. His deken status remains open.
+> Cornelis is a Goes poorter, biersteker and member of the Nardusbloem / older Magdalena-linked Goese rederijker tradition. His beer trade supplies routes, storage, barrels, kists, freight papers and commercial cover; his civic and rederijker context supplies trust, symbolic literacy, disciplined speech and network access. In novel canon he also helps form the reform-minded current that later becomes the Edele Castanienbloem. The brewery belongs to the family/business environment, not to Cornelis as his fixed personal brewery. His deken status remains open.
 
 His function in Antwerp book traffic is therefore plausible but bounded. He can carry books or papers because beer trade, civic trust and rederijker culture overlap.
 
@@ -62,7 +63,8 @@ Guardrails:
 
 - Do **not** write Cornelis as a protected Antwerp printer like Plantin or Silvius.
 - Do **not** give him Silvius' work at the composing stick or press unless a future decision explicitly changes his occupation.
-- Do **not** call him deken of De Edele Castanienbloem as fact until `OPEN.CORNELIS.CASTANIE.DEKEN.001` is closed.
+- Do **not** call him deken of the Nardusbloem or emerging Castanien current as fact until the relevant open decision is closed.
+- Do **not** call him a documented pre-1595 member of De Edele Castanienbloem. His formative role in the current that later becomes that chamber is explicit novel reconstruction.
 - Do **not** call his own business a brewery. The brewery is a family/business context; Cornelis' fixed occupation in this line is biersteker.
 - Cornelis may understand texts, transport books and recognize their danger; he does not thereby become a printer.
 - His book transport for Vesalius/Vaselius must be source-standardized in later evidence work. Until then the fixed story function is: anatomically/humanistically sensitive book material can travel between Goes/Zeeland and Antwerp under commercial/rederijker cover.
@@ -70,6 +72,58 @@ Guardrails:
 Recommended line of characterization:
 
 > He was biersteker by livelihood, poorter by standing, rederijker by mind, and carrier by trust.
+
+## Dee's first-encounter joke — the `concoctionist` callback
+
+During Claes' **first brief encounter with John Dee in 1563**, Cornelis' occupation gives Dee a small opportunity for learned wordplay.
+
+Cornelis identifies himself, or is identified, as a **biersteker**. Dee deliberately over-intellectualizes the occupation by rendering it into the semantic field of **concoction / compounding**: something closer to a maker or preparer of compounds than to the actual beer-trade meaning of *biersteker*. Cornelis recognizes the mismatch and the joke.
+
+The scene logic is:
+
+> practical beer occupation → Dee's learned mistranslation → mild correction / dry amusement → Claes remembers the word-field long after the joke itself seems unimportant.
+
+The joke should primarily characterize the three men:
+
+- **Dee** hears a practical occupation and immediately reframes it through a learned material vocabulary;
+- **Cornelis** is sufficiently literate and socially self-possessed to recognize that the Englishman has elevated/misrepresented his trade and can answer without deference or embarrassment;
+- **Claes** hears that one occupation can be redescribed through another conceptual system — funny in the moment, formative only in retrospect.
+
+### Lexical guardrail
+
+`Concoctionist` is the **author-side label for the motif**, not a requirement that Dee literally utters that exact English noun in 1563. The exact noun is lexically suspect for the period unless separately attested.
+
+In final scene prose Dee may therefore use a period-safer learned formulation around *concoct*, *concocter*, compounding, preparation or an equivalent Latin/English circumlocution. The exact line remains a scene-level writing decision.
+
+What must remain fixed is the semantic joke:
+
+> Dee knowingly gives **biersteker** an overlearned medical/alchemical/compound-making shade that is not a correct occupational translation.
+
+Do not explain this etymologically in dialogue. Cornelis' reaction should make the joke legible.
+
+### Long-range callback
+
+The joke must **not** announce Claes' destiny. It becomes meaningful only retrospectively.
+
+Its later progression is:
+
+1. **Cornelis — social concoction without medicine.** He does not compound medicines, but he combines routes, casks, credit, carriers, customers, texts and trust. His craft is relational and logistical composition.
+2. **Mayken — material compounding.** Her apothecary formation brings her closest to the literal medicinal/material semantic field: weighing, drying, extraction, preparation, materia medica, substitution control and judgement of condition.
+3. **Claes — process and proportion.** He develops toward a broader form of compounding: not merely mixing substances, but learning when matter, observation, language, people and responsibility stand in the right relation.
+4. **Claes + Mayken — relation without fusion.** Their mature complementarity may echo the joke because each contributes a different mode of knowing. They do not become one undifferentiated 'concoction'; right relation depends on preserved difference.
+
+The motif therefore moves from comic mistranslation to thematic precision:
+
+> **Cornelis combines people. Mayken prepares substances. Claes eventually learns to do both without confusing combination with control.**
+
+This should rhyme with the process lesson already governing the alchemical line: greater force is not the same as **right relation and proportion**.
+
+Guardrails:
+
+- The joke does not make Cornelis an apothecary, physician or alchemist.
+- Mayken is not a payoff-object or ingredient in a joke planted by men; her independent competence exists on its own terms.
+- Claes does not become a generic 'mixer of everything'. The mature meaning is discrimination plus relation: know what must remain separate, what may be combined, in what proportion, and when to release control.
+- Do not repeat the word constantly. Prefer one strong early planting, one or two oblique later echoes, and a late recognition if dramatically earned.
 
 ## Corrections to the Boom / Loog sequence
 
@@ -139,6 +193,8 @@ Cornelis' 1569 death remains the mature consequence of transport, storage, paper
 
 > In 1561 Claes learns that meaning can hide in play. In 1563/1564 he learns that meaning can hide in matter. In 1566 he learns that meaning can become dangerous when power fears it. By 1569 he sees that carrying meaning can cost a life. By 1602 he must learn that completing the Work means releasing power, not possessing it.
 
+The `concoctionist` joke adds a smaller verbal version of the same architecture: a practical trade is first misunderstood through a learned category, then decades of experience make the 'wrong' category unexpectedly illuminating. The word-field itself changes meaning because Claes changes.
+
 This makes the whole process continuous across layers:
 
 - rederijkers: meaning hidden in allegory and public performance;
@@ -146,14 +202,17 @@ This makes the whole process continuous across layers:
 - invisible print: meaning hidden in blank paper;
 - vitriol: meaning made visible by chemical completion;
 - alchemy: matter transformed by patient process;
+- concoctionist callback: relation and proportion emerge from an early comic mistranslation;
 - Cornelis: testimony carried through silence;
 - Claes: observation transformed into responsibility and finally release.
 
 ## Authoring guardrails
 
 - Keep Dee historically clean: no documented 1561 Antwerp/Landjuweel presence is claimed.
+- Place the first brief Dee encounter in 1563; intensive Dee formation follows in early 1564.
+- `Concoctionist` is an author-side motif label unless its exact period use is separately attested; preserve the joke without forcing an anachronistic noun into Dee's mouth.
 - Let Claes' repeated Antwerp visits supply continuity.
-- Preserve Cornelis as poorter, biersteker, Castanienbloem member and logistical carrier; do not make him brewery owner, printer or confirmed deken.
+- Preserve Cornelis as poorter, biersteker, Nardusbloem member, formative participant in the later-Castanien current and logistical carrier; do not make him brewery owner, printer, documented pre-1595 Castanien member or confirmed deken.
 - Keep Silvius as printer and press authority.
 - Use Vesalius/Vaselius book transport only within the established story function until source-standardization is complete.
 - Do not turn the hidden three-degree analogy into explicit freemasonry in the sixteenth-century diegesis.
