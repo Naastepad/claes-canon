@@ -1,0 +1,24 @@
+schema_version: 1.0.0
+kind: StoryClaimRegistryExtension
+claims:
+- id: STC.DEE.CORNELIS.CONCOCTION_JOKE.1563.001
+  type: StoryClaim
+  statement: >-
+    In the 1563 first-encounter scene, Dee responds to Cornelis' occupation as biersteker with a learned, deliberately inaccurate rendering into the semantic field of concoction/compounding. Cornelis understands that Dee is making a joke rather than offering a proper occupational translation.
+  subject: ENT.PERSON.CORNELIS
+  predicate: becomes_subject_of_dee_concoction_joke
+  object: learned_misrendering_of_biersteker
+  canon_status: CANON
+  decision_id: DEC.DEE.CONCOCTIONIST.MOTIF.2026-08-16
+  fictionality: novel_canon
+
+- id: STC.CLAES.MAYKEN.CONCOCTIONIST_CALLBACK.001
+  type: StoryClaim
+  statement: >-
+    The Dee joke later gains retrospective thematic force through Claes and Mayken: Mayken works most literally with prepared compounds and materia medica, while Claes develops toward a broader practice of right proportion, material transformation and relational judgement. Their mature relation does not make them one person or collapse their separate competencies.
+  subject: ENT.PERSON.CLAES
+  predicate: develops_concoctionist_motif_with
+  object: Mayken_independent_apothecary_and_relational_counterpart
+  canon_status: CANON
+  decision_id: DEC.DEE.CONCOCTIONIST.MOTIF.2026-08-16
+  fictionality: authorial_motif_projection
