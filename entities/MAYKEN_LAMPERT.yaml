@@ -37,10 +37,26 @@ entity_details:
   - sensory_material_judgement
   - practical_book_use
   - ordinary_Dodoens_use_where_historically_plausible
+  - historical_rose_preparations_where_source_supported
   - error_control
+  rose_materia_medica:
+    decision_ref: DEC.MAYKEN.ROSE_MATERIA_MEDICA.2026-08-16
+    preferred_cultivated_anchor: Rosa gallica/officinalis
+    functions:
+    - distinguish wild rose from cultivated medicinal rose where morphology permits
+    - select and prepare plant material according to historically supportable practice
+    - judge preparation, concentration, cleanliness, smell, colour and material condition without modern chemical vocabulary
+    - participate in wound care without claiming miraculous efficacy
+    narrative_function: "The apothecary rose can turn love from abstract or romantic meaning into skilled caritas: attention to another body, practical preparation, limits, responsibility and care."
+    guardrails:
+    - Do not make Mayken a physician by title or training.
+    - Do not give her modern burn-care knowledge or modern claims about inhalation injury.
+    - Do not make Rosa gallica/officinalis a cure-all or sole cause of survival.
+    - Local wild/naturalised occurrence in West-Friesland or Wieringen in 1602 requires separate historical-botanical evidence.
   reveal_role:
   - May assist safe material handling and controlled green-vitriol testing.
   - May observe, read and challenge Claes' interpretations.
+  - May recognize and prepare historically plausible materia medica, including rose-based preparations where evidenced.
   - Is not a cipher solver, nomenclator operator or special Dodoens key-holder.
   decision_ref: DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14
 
