@@ -1,0 +1,55 @@
+schema_version: 1.0.0
+kind: EntitySupplement
+entities:
+- id: ENT.PERSON.MATHIJS_JACOPSEN_VICE_CUREIT
+  type: Person
+  label: "mr. Mathijs Jacopsen/Jacobsen"
+  historical_status: HISTORICAL
+  aliases:
+  - Mathijs Jacopsen
+  - Mathijs Jacobsen
+  - mr. Mathijs Jacopsen pastoor
+  - mr. Mathijs Jacopsen vice-pastoor
+  - mr. Mathijs Jacobsen vice-cureyt ter Goes
+  roles:
+  - role: pastoor
+    evidence_status: VERIFIED
+    attested_from: '1536-03-21'
+  - role: vice_pastoor
+    evidence_status: VERIFIED
+    attested_date: '1541-03-14'
+  - role: vice_cureit_ter_goes
+    evidence_status: VERIFIED
+    attested_date: '1542-02-27'
+  linked_locations:
+  - ENT.LOC.GOES
+  - ENT.LOC.GOES_GROTE_KERK
+  source_claims:
+  - SC.HIST.GOES.CLERGY.MATHIJS.PASTOOR_1536.001
+  - SC.HIST.GOES.CLERGY.MATHIJS.VICE_PASTOOR_1541.001
+  - SC.HIST.GOES.CLERGY.MATHIJS.VICE_CUREYT_1542.001
+  - SC.HIST.GOES.CLERGY.MATHIJS.CHURCH_PROPERTY_1541_1542.001
+  canon_decision: DEC.GOES.CLERGY.MATHIJS_VICE_CUREYT.2026-08-16
+  guardrails:
+  - Do not infer residence from church-area property transactions.
+  - Do not claim he baptized Claes.
+  - Do not extend his office through 8 December 1542 without new evidence.
+  - Treat Maria Magdalena linkage as supported contextual identification, not verbatim wording of the 27 February act.
+
+- id: ENT.PERSON.CLEMENS_VAN_DEN_DALE
+  type: Person
+  label: "Clemens van den Dale"
+  historical_status: HISTORICAL
+  aliases:
+  - Clemens van den Dale, licentiaat pastoor Goes
+  roles:
+  - role: licentiaat_pastoor_goes
+    evidence_status: VERIFIED
+    attested_date: '1564-03-20'
+  linked_locations:
+  - ENT.LOC.GOES
+  - ENT.LOC.GOES.GROTE_MARKT
+  source_claims:
+  - SC.HIST.GOES.CLERGY.CLEMENS.PASTOOR_1564.001
+  canon_decision: DEC.GOES.CLERGY.CLEMENS_VAN_DEN_DALE.2026-08-16
+  guardrail: His documented existence does not establish a personal relationship with Claes.
