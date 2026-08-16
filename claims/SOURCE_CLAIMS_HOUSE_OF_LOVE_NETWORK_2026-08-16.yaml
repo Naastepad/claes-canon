@@ -1,0 +1,111 @@
+schema_version: 1.0.0
+kind: SourceClaimRegistryExtension
+claims:
+- id: SC.HIST.GHYSBRECHT.ANTWERP_COOPER.GOES.1551.001
+  type: SourceClaim
+  statement: >-
+    A Goese transport act dated 12 January 1551 records Ghysbrecht, described as a cooper from Antwerp, acquiring the house De Haeswindeken at the Oostdijk/Oostpoort environment in Goes.
+  claim_type: archival_person_property
+  subject: ENT.HIST.PERSON.GHYSBRECHT_ANTWERP_COOPER
+  predicate: acquires_property_in_goes
+  object: De_Haeswindeken
+  evidence_status: VERIFIED_IN_PROJECT_DATASET
+  source_ids:
+  - SRC-HIST-HOUSE-OF-LOVE-GOES-ANTWERP-1551-1569-001
+  verification:
+    archival_reference: RAZE-1747-0541
+    folio: 145v
+    date: '1551-01-12'
+
+- id: SC.HIST.GHYSBRECHT.ANTWERP_COOPER.GOES.1554.001
+  type: SourceClaim
+  statement: >-
+    A Goese transport act dated 15 October 1554 records Gijsbrecht, described as a cooper from Antwerp, selling the burned house d'Aeswinde in the Oostdijk/Oostpoort environment after the 1554 Goes fire.
+  claim_type: archival_person_property
+  subject: ENT.HIST.PERSON.GHYSBRECHT_ANTWERP_COOPER
+  predicate: sells_burned_property_in_goes
+  object: d_Aeswinde
+  evidence_status: VERIFIED_IN_PROJECT_DATASET
+  source_ids:
+  - SRC-HIST-HOUSE-OF-LOVE-GOES-ANTWERP-1551-1569-001
+  verification:
+    archival_reference: RAZE-1748-0281
+    folio: 103v
+    date: '1554-10-15'
+
+- id: SC.HIST.GHYSBRECHT.ANTWERP_COOPER.SAME_PERSON_INFERENCE.001
+  type: SourceClaim
+  statement: >-
+    The 1551 Ghysbrecht and 1554 Gijsbrecht records are highly likely to concern the same Antwerp cooper because occupation, city of origin and the Haeswindeken/d'Aeswinde house-name align, but the project retains this as a supported identity inference rather than absolute archival proof.
+  claim_type: identity_inference
+  subject: ENT.HIST.PERSON.GHYSBRECHT_ANTWERP_COOPER
+  predicate: likely_same_person_across_records
+  object: RAZE_1747_0541_and_RAZE_1748_0281
+  evidence_status: SUPPORTED_INFERENCE
+  source_ids:
+  - SRC-HIST-HOUSE-OF-LOVE-GOES-ANTWERP-1551-1569-001
+
+- id: SC.HIST.FAMILIST.ADRIAAN_DENS.EARLY_FOLLOWER.001
+  type: SourceClaim
+  statement: >-
+    Secondary scholarship identifies Adriaan Dens as one of the early followers of Hendrik Niclaes; Dens was the brother of Clara Dens, who married Niclaes' eldest son François in Antwerp.
+  claim_type: historical_network
+  subject: ENT.HIST.PERSON.ADRIAAN_DENS
+  predicate: early_follower_in_niclaes_network
+  object: ENT.NETWORK.HOUSE_OF_LOVE_TRANSLOCAL
+  evidence_status: SUPPORTED
+  source_ids:
+  - SRC-HIST-HOUSE-OF-LOVE-GOES-ANTWERP-1551-1569-001
+
+- id: SC.HIST.FAMILIST.BARREFELT.DISTRIBUTOR_AGENT.001
+  type: SourceClaim
+  statement: >-
+    Scholarship places Hendrik Jansen van Barrefelt in Niclaes' service from the early 1540s, involved with production and distribution of Niclaes' writings across several Low Countries regions and functioning as an agent in the Antwerp area.
+  claim_type: historical_network
+  subject: ENT.HIST.PERSON.HENDRIK_JANSEN_BARREFELT
+  predicate: distributor_and_antwerp_network_agent
+  object: ENT.NETWORK.HOUSE_OF_LOVE_TRANSLOCAL
+  evidence_status: SUPPORTED
+  source_ids:
+  - SRC-HIST-HOUSE-OF-LOVE-GOES-ANTWERP-1551-1569-001
+
+- id: SC.HIST.FAMILIST.OUTWARD_CONFORMITY.TRANSLOCAL.001
+  type: SourceClaim
+  statement: >-
+    Scholarship on the Huis der Liefde emphasizes its difficult-to-trace, translocal character and the possibility that adherents outwardly conformed to established church practice rather than forming a visible separate local congregation.
+  claim_type: historical_religious_practice
+  subject: ENT.NETWORK.HOUSE_OF_LOVE_TRANSLOCAL
+  predicate: permits_clandestine_translocal_affiliation_with_outward_conformity
+  object: local_public_religious_life
+  evidence_status: SUPPORTED
+  source_ids:
+  - SRC-HIST-HOUSE-OF-LOVE-GOES-ANTWERP-1551-1569-001
+
+- id: SC.HIST.FAMILIST.PLANTIN.RELATIONSHIP_BOUNDARY.001
+  type: SourceClaim
+  statement: >-
+    Plantin's relationship with Hendrik Niclaes and the Barrefelt/Familist milieu is historically substantial, including printing and network contacts, while the exact duration, degree and best label for Plantin's own adherence should be represented with historiographical caution.
+  claim_type: historical_network_boundary
+  subject: ENT.HIST.PERSON.CHRISTOPHE_PLANTIN
+  predicate: historically_connected_to
+  object: ENT.NETWORK.HOUSE_OF_LOVE_TRANSLOCAL
+  evidence_status: SUPPORTED_WITH_HISTORIOGRAPHICAL_CAUTION
+  source_ids:
+  - SRC-HIST-HOUSE-OF-LOVE-GOES-ANTWERP-1551-1569-001
+
+- id: SC.HIST.GOES.SHIPPING_MILIEU.DIERICK_JANSEN.001
+  type: SourceClaim
+  statement: >-
+    The Goese transport records attest Dierick Jansen as a schipper with urban property and a financial relation to the scheepsliedengilde in the early 1540s, supporting the presence of substantial local shipping actors without proving that he personally carried Cornelis' goods to Antwerp.
+  claim_type: local_commercial_context
+  subject: Dierick_Jansen_schipper
+  predicate: demonstrates
+  object: substantial_goese_shipping_milieu
+  evidence_status: VERIFIED_IN_PROJECT_DATASET
+  source_ids:
+  - SRC-HIST-HOUSE-OF-LOVE-GOES-ANTWERP-1551-1569-001
+  verification:
+    references:
+    - RAZE-1746-0188
+    - RAZE-1746-0361
+    note: No Antwerp route for Dierick Jansen is claimed.
