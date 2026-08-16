@@ -1,0 +1,81 @@
+schema_version: 1.0.0
+kind: EntityRegistryExtension
+entities:
+- id: WORLD.NISSEPAT_BEER_NETWORK
+  type: EconomicNetwork
+  label: Nissepat bierproductie- en distributienetwerk
+  fictionality: novel_canon_on_historical_anchors
+  canon_status: CANON
+  decision_id: DEC.NISSEPAT.BREWERY.FAMILY_NETWORK.2026-08-16
+  production_anchor: ENT.PROP.GOES.NISSEPAD.BREWERY_1577
+  family_relation:
+    model: wider_nissepat_family_business_property
+    exact_owner: OPEN
+    exact_share_structure: OPEN
+    historical_proof_of_cornelis_ownership: false
+  primary_commercial_actor:
+    person: ENT.PERSON.CORNELIS
+    role: biersteker_and_merchant_distributor
+  material_flow:
+  - malted grain / brewing inputs
+  - brewing and wort production at brewery environment
+  - hopped boiling, cooling and fermentation as transferable craft background
+  - casking
+  - transport toward Goes
+  - receipt / storage / condition and quantity check
+  - accounts, duties, credit and customer obligations
+  - local delivery to tappers, inns, households or other buyers
+  - optional onward regional or shipping distribution where scene evidence permits
+  sensory_register:
+  - wet grain and malt
+  - sweet wort
+  - hop bitterness/aroma
+  - fermenting beer
+  - damp cellar wood
+  - leaking casks
+  - souring or spoiled beer
+  - weight and slosh of filled casks
+  scene_focus_for_cornelis:
+  - condition
+  - quantity
+  - loss
+  - measures
+  - accounts
+  - credit
+  - movement
+  - negotiation
+  constraints:
+  - Cornelis is not the default brewer.
+  - Cornelis is not the default recipe-maker.
+  - Cornelis is not fixed as sole legal owner of the brewery.
+  - The family-business connection is novel canon, not an archival ownership claim.
+  - Separate brewer, carrier, biersteker, tapper/innkeeper and shipper unless a source or scene explicitly combines roles.
+  - Do not use modern beer-style taxonomy, ABV/IBU language or invented exact recipes.
+  - Do not treat gruitbier as the default sixteenth-century Goese beer.
+  - Do not canonize the six-beer list from earlier exploratory chats.
+
+relations:
+- id: REL.CORNELIS.NISSEPAT_BREWERY
+  type: CommercialFamilyRelation
+  subject: ENT.PERSON.CORNELIS
+  predicate: distributes_beer_from_family_network
+  object: ENT.PROP.GOES.NISSEPAD.BREWERY_1577
+  canon_status: CANON
+  fictionality: novel_canon
+  decision_id: DEC.NISSEPAT.BREWERY.FAMILY_NETWORK.2026-08-16
+  guardrail: This relation does not mean Cornelis personally brews or is the documented historical owner.
+
+- id: REL.NISSEPAT_BEERFLOW.GOES
+  type: MaterialFlowRelation
+  subject: WORLD.NISSEPAT_BEER_NETWORK
+  predicate: moves_goods_into_and_through
+  object: ENT.LOC.GOES
+  canon_status: CANON
+  decision_id: DEC.CORNELIS.BEER.DISTRIBUTION_CHAIN.2026-08-16
+  route_model:
+  - ENT.LOC.GOES.NISSEPAD_CORRIDOR
+  - ENT.LOC.GOES.GANZEPOORT
+  - ENT.LOC.GOES.VOORSTAD
+  - urban storage / customers
+  - ENT.LOC.GOES.HAVEN if onward shipping is scene-relevant
+  guardrail: This is a functional corridor model, not proof of one invariant cart route or universal harbour passage.
