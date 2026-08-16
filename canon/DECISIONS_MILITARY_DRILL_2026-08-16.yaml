@@ -1,0 +1,84 @@
+schema_version: 1.0.0
+kind: CanonDecisionSupplement
+decisions:
+- id: DEC.GOES.MILITARY.TRANSITION.NOT_INSTANT.2026-08-16
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    Goes' 1577 satisfactie is treated as the political beginning of a military-institutional transition, not as an instantaneous conversion from Habsburg/royalist military practice to the mature Mauritian drill later codified by De Gheyn in 1607.
+  affects:
+    - HIST.GOES.MILITARY_TRANSITION.1550_1607
+    - ENT.ORG.GOES.CIVIC_SCHUTTERIJ
+    - ENT.ORG.GOES.GARRISON
+  fixed:
+    pre_1577: royal_or_habsburg_political_military_sphere
+    1577: negotiated_transition_anchor
+    1607: mature_states_drill_reference_point
+  guardrails:
+    - Do not make all Goese armed men switch drill, allegiance, vocabulary and organisation on one date.
+    - Distinguish civic schutterij, local garrison and States field army.
+    - Check scene year before selecting drill vocabulary or military allegiance.
+
+- id: DEC.DEGHEYN.GOES.MODEL_STATUS.2026-08-16
+  type: CanonDecision
+  status: CANON_GUARDRAIL
+  decision: >-
+    De Gheyn's Wapenhandelinghe may be used as a primary model for the mature States drill world around 1607, including scenes relevant to late-life Claes, but the project does not claim that the engraved soldiers are Goese/Zeeuwse troops or that Goes was a model garrison, proving ground or source of De Gheyn's models.
+  supported:
+    - 42-step roer/schutten sequence
+    - 43-step musquetier sequence
+    - 32-step spiesdrager sequence
+    - numbered image-to-text correspondence
+    - explicit ordered words of command
+    - safety-conscious muzzle, match and pan handling
+  hypothesis_allowed_but_not_fact:
+    - >-
+      Goes' later incorporation may have meant that soldiers there encountered a relatively mature version of States drill rather than the earliest experimental forms.
+  rejected_as_fact_without_new_evidence:
+    - De Gheyn depicted soldiers from Goes
+    - De Gheyn visited Goes to select military models
+    - Goes was the definitive training centre for all States troops
+    - Goese drill directly generated the 1607 sequence
+
+- id: DEC.DEGHEYN.COMMAND_LANGUAGE.2026-08-16
+  type: CanonDecision
+  status: CANON_GUARDRAIL
+  decision: >-
+    When De Gheyn drill is represented, use the historical command phrases as the verbal orders and treat the figure numbers primarily as the book's correspondence/index system. Do not routinely make officers shout 'Ten eerste', 'Ten achtste' or other figure numbers as if that is proven operational command practice.
+  source_claims:
+    - SC.HIST.DEGHEYN.DRILL.NUMBERED_COMMAND_SYSTEM.001
+    - SC.HIST.DEGHEYN.COMMAND_WORDS.NOT_NUMBERS.001
+  rejected:
+    - deriving 'Geeft acht' from figure 8
+    - treating figure 8 as an attention command
+  figure_8_roer:
+    dutch_command: "U lont versoect."
+    english_1607: "Try your match."
+    function: check_and_adjust_the_match
+
+- id: DEC.DEGHEYN.PROCESS_ORDER.2026-08-16
+  type: CanonDecision
+  status: CANON_GUARDRAIL
+  decision: >-
+    Scenes based specifically on De Gheyn must respect his process logic: the depicted sequence begins from a prepared/loaded firearm, moves through match preparation, presentation and firing, then pan safety/priming, main-barrel reloading and return to readiness. A generic modern summary of muzzle-loading must not silently replace this source-specific order.
+  material_details:
+    - separate small priming/touch-powder flask for the pan
+    - main flask or measured charges for the barrel load
+    - match handled, blown, cocked and tested before presentation
+    - muzzle-up safety is a repeated general command principle
+  source_claims:
+    - SC.HIST.DEGHEYN.FIRE_RELOAD_CYCLE.001
+    - SC.HIST.DEGHEYN.PRIMING_FLASK.001
+
+- id: DEC.DEGHEYN.THEMATIC.MIRROR.2026-08-16
+  type: CanonDecision
+  status: CANON_STORY_FUNCTION
+  decision: >-
+    De Gheyn's 1607 drill may function as a late-life thematic mirror for Claes: embodied expertise is decomposed into image, word, number and repeatable procedure. This parallels the novel's wider concern with making hidden or tacit processes legible through print, cryptography, alchemy and disciplined perception.
+  structural_axis:
+    old_world: knowledge_resides_in_experienced_body_and_local_practice
+    transitional_world: practice_is_analysed_and_standardised
+    printed_world: knowledge_is_externalised_into_image_word_number_and_command
+  guardrails:
+    - This is a narrative/thematic use, not a claim that Claes influenced De Gheyn.
+    - Do not invent personal contact between Claes and Jacob de Gheyn II unless separately decided.
