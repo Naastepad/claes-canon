@@ -26,6 +26,7 @@ Operational navigation for the current Claes Storybible.
 - `../canon/DECISIONS_2026-08-14.md` — Goes/family decisions.
 - `../canon/DECISIONS_2026-08-15.md` — execution/Reformation and memoriaal decisions.
 - `../canon/DECISIONS_2026-08-16.yaml` — Brevísima 1578 / Seton separation.
+- `../canon/DECISIONS_GOES_CLERGY_2026-08-16.yaml` — Mathijs Jacopsen/Jacobsen as verified vice-pastoor/vice-cureit anchor, Clemens van den Dale as verified 1564 pastoor anchor, and the 1542–1563 succession guardrail.
 - `../canon/DECISIONS_ALCHEMY_LIFELINE_2026-08-15.yaml` — current merged alchemical life-line state, including later supersessions.
 - `../canon/DECISIONS_ALCHEMY_REFINEMENT_2026-08-16.yaml` — Green Lion/Sol/Enkhuizen and Nardusbloem refinement.
 - `../canon/DECISIONS_RESOLUTIONS_2026-08-16.yaml` — callback-recovered Mayken identity and Cornelis-death precedence.
@@ -38,7 +39,7 @@ Operational navigation for the current Claes Storybible.
 - `../canon/OPEN_DECISIONS_ALCHEMY_REFINEMENT_2026-08-16.yaml` — Rode-Leeuw carrier composition and exact Enkhuizen assay/choreography.
 - `../canon/OPEN_DECISIONS_ALCHEMY_LIFELINE_2026-08-15.yaml` — legacy redirect/supersession record only.
 
-Resolved/not-applicable records no longer remain mixed into the active open registry.
+Resolved/not-applicable records no longer remain mixed into the active open registry. The 1542–1563 Goese clergy succession is a historical/research gap, not an authorial open to be filled by invention.
 
 ## Historical / research claims
 
@@ -46,6 +47,7 @@ Resolved/not-applicable records no longer remain mixed into the active open regi
 - `../claims/SOURCE_CLAIMS_EXECUTIONS_REFORMATION.yaml`
 - `../claims/SOURCE_CLAIMS_GOES_LIVING_CITY.yaml`
 - `../claims/SOURCE_CLAIMS_GOES_2026-08-14.yaml`
+- `../claims/SOURCE_CLAIMS_GOES_CLERGY_2026-08-16.yaml` — exact RAZE-backed Mathijs and Clemens clergy claims plus the Maria Magdalena evidence boundary.
 - `../claims/SOURCE_CLAIMS_FAMILY_1540S.yaml`
 - `../claims/SOURCE_CLAIMS_MEMORIAAL_PRINT_1564.yaml`
 - `../claims/SOURCE_CLAIMS_LAMPERT_APOTHECARY.yaml`
@@ -54,6 +56,7 @@ Resolved/not-applicable records no longer remain mixed into the active open regi
 - `../claims/SOURCE_CLAIMS_HISTORICAL_SUBSTRATE_RECOVERY_2026-08-16.yaml`
 - `../claims/SOURCE_CLAIMS_DOMAIN_REBUILD_2026-08-16.yaml`
 - `../claims/SOURCE_CLAIMS_HOUSE_OF_LOVE_NETWORK_2026-08-16.yaml` — Ghysbrecht/Gijsbrecht archival anchors, Dens/Barrefelt network roles, outward-conformity boundary and Plantin historiographical caution.
+- `../sources/SRC-HIST-GOES-CLERGY-RAZE-1536-1564-001.md` — primary provenance record for the recovered Goese clergy transport-register evidence.
 
 ## Historical substrate / scene-world authority — Round A
 
@@ -65,6 +68,8 @@ This layer supplies non-fiction world state and scene conditions. It never creat
 - `modules/HISTORICAL_SUBSTRATE_1540_1605.md`
 - `modules/PUBLIC_OPINION_IDENTITY_REVOLT.md`
 - `../narrative/religious_space_sensory_church.yaml`
+- `../narrative/world_goes_clergy_1541_1564.yaml` — evidence-bounded named clergy state for 1541–1542 and 1564; exact 8 December 1542 office-holder remains unknown.
+- `GOES_CLERGY_MATHIJS_CLEMENS_1541_1564.md` — governing human-readable clergy dossier.
 - `modules/WORLD_GOES_CHURCH_LOCAL.md`
 - `modules/WORLD_GOES_CHURCH_LITURGICAL_GUARDRAILS.md`
 - `modules/HISTORICAL_SUBSTRATE_GOES_CHURCH_LINK.md`
@@ -202,6 +207,7 @@ Standing hard-review mode under `GRD.EDITORIAL.RUTHLESS_EDITOR`:
 - `../claims/STORY_CLAIMS_EXECUTIONS_REFORMATION.yaml`
 - `../claims/STORY_CLAIMS_FAMILY_1554.yaml`
 - `../claims/STORY_CLAIMS_2026-08-14.yaml`
+- `../claims/STORY_CLAIMS_GOES_CLERGY_2026-08-16.yaml` — canonical scene-use boundaries for Mathijs and Clemens.
 - `../claims/STORY_CLAIMS_MAYKEN_LAMPERT.yaml`
 - `../claims/STORY_CLAIMS_ALCHEMY_REFINEMENT_2026-08-16.yaml`
 - `../claims/STORY_CLAIMS_HOUSE_OF_LOVE_NETWORK_2026-08-16.yaml` — Cornelis' commercial trust bridge, Dens/Barrefelt affiliation, pre-fire state, later Plantin node and beer-to-paper logistics continuity.
@@ -210,6 +216,7 @@ Standing hard-review mode under `GRD.EDITORIAL.RUTHLESS_EDITOR`:
 
 - `../entities/ENTITIES.yaml`
 - `../entities/FAMILY_1554.yaml`
+- `../entities/GOES_CLERGY_1541_1564.yaml` — historical Mathijs Jacopsen/Jacobsen and Clemens van den Dale entity supplement.
 - `../entities/MAYKEN_LAMPERT.yaml`
 - `../entities/ALCHEMY_REDERIJKER_2026-08-16.yaml`
 - `../entities/HOUSE_OF_LOVE_NETWORK_2026-08-16.yaml` — Ghysbrecht, Dens, Barrefelt, Plantin, translocal network entity and canonical Cornelis relationships.
@@ -222,13 +229,16 @@ Standing hard-review mode under `GRD.EDITORIAL.RUTHLESS_EDITOR`:
 
 ## Major Storybible dossiers
 
-### Goes / family
+### Goes / family / church
 
 - `FAMILY_CLAES_1542_1554.md`
+- `GOES_CLERGY_MATHIJS_CLEMENS_1541_1564.md` — governing named-clergy dossier; Mathijs is safe for 1541/early-1542 scenes, not automatically for 8 December 1542; Clemens is verified in 1564.
 - `../narrative/world_goes_living_city.yaml`
 - `../narrative/world_goes_grote_kerk.yaml`
+- `../narrative/world_goes_clergy_1541_1564.yaml`
 - `../entities/GOES_LIVING_CITY.yaml`
 - `../entities/GOES_GROTE_KERK.yaml`
+- `../entities/GOES_CLERGY_1541_1564.yaml`
 - `modules/WORLD_GOES_CHURCH_LOCAL.md`
 - `modules/WORLD_GOES_CHURCH_LITURGICAL_GUARDRAILS.md`
 
@@ -281,6 +291,7 @@ Standing hard-review mode under `GRD.EDITORIAL.RUTHLESS_EDITOR`:
 - `../narrative/instances_executions_reformation.yaml`
 - `../narrative/instances_alchemy_rederijker_2026-08-16.yaml`
 - `../narrative/domain_scene_packs.yaml`
+- `../narrative/world_goes_clergy_1541_1564.yaml`
 - `../narrative/editorial_gates.yaml`
 - `../narrative/scenes.yaml`
 - `../narrative/structure.yaml`
