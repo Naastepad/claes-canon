@@ -1,10 +1,17 @@
 # Canon Authoring Policy
 
 ## Core rule
-Evidence, story truth, narrative placement and executable constraints are maintained as separate layers. Explicit human decisions are authoritative and must be synchronized through every dependent representation.
+Evidence, story truth, world/practice state, narrative placement, editorial quality and executable constraints are maintained as separate layers. Explicit human decisions are authoritative and must be synchronized through every dependent representation.
 
 ## Required reading before writes
-A write-capable AI must read `AI_ONBOARDING.md`, `canon/`, `REPOSITORY_INTEGRITY.md`, this policy, and the relevant registers. It must re-fetch target files immediately before mutation.
+A write-capable AI must read `AI_ONBOARDING.md`, current `canon/`, `REPOSITORY_INTEGRITY.md`, this policy and the relevant registers. It must re-fetch target files immediately before mutation.
+
+Before drafting, revising or critiquing literary prose it must also read:
+
+- `WRITING_PROTOCOL.md`;
+- `storybible/STORY_PROJECTION_ROUND_C.md` when plot/scene causality is involved;
+- `review/READER_EXPERIENCE_PROTOCOL.md` when assessing prose, pacing or reader response;
+- `narrative/editorial_gates.yaml` for the active Round-D quality gates.
 
 ## Workflow
 1. Read current human decisions, operating Storybible and relevant sources.
@@ -14,21 +21,27 @@ A write-capable AI must read `AI_ONBOARDING.md`, `canon/`, `REPOSITORY_INTEGRITY
 5. Record significant human choices as `DEC.*` or repository-visible decision records.
 6. Link claims to `ENT.*` entities and relevant Narrative Instances.
 7. Preserve date precision and uncertainty ranges.
-8. Synchronize approved decisions through dependent entities, objects, knowledge states, Narrative Instances, arcs, relationships, motifs, themes/values and the operating master.
-9. Convert only deterministic accepted Story Claims into Lemma constraints.
-10. Run continuity and Lemma validation.
-11. Review changes before merge and LemmaBase publication.
+8. Synchronize approved decisions through dependent entities, objects, knowledge states, world/practice modules, Narrative Instances, arcs, relationships, motifs, themes/values and the operating master.
+9. Project world knowledge into causal story architecture before inventing chapter structure.
+10. Apply the editorial gates during scene construction and revision: scene necessity, prose quality, pacing, reader experience and reader feedback.
+11. Convert only deterministic accepted Story Claims into Lemma constraints.
+12. Run continuity and active-projection validation.
+13. Review changes before merge and LemmaBase publication.
 
 ## Multi-agent rule
 Never assume this repository is unchanged because the current chat wrote it earlier. Another session or model may have written meanwhile. Re-fetch branch state and target files before every write pass. If content changed, reconcile instead of overwriting. Follow `REPOSITORY_INTEGRITY.md`.
 
 ## Branch rule
-Canon development belongs on an authoring branch/PR. Do not merge, force-update, delete history, publish to LemmaBase, or promote OPEN/PROPOSED material without explicit human authority.
+Canon development belongs on an authoring branch/PR unless the human explicitly authorizes direct-main synchronization or the active conversation clearly continues an already authorized direct-main synchronization round. Do not force-update, delete history, publish to LemmaBase, merge a PR or promote OPEN/PROPOSED material without explicit human authority.
 
 ## Status vocabularies
 Evidence: `VERIFIED`, `SUPPORTED`, `PLAUSIBLE`, `DISPUTED`, `UNKNOWN`.
 Canon: `PROPOSED`, `CANON`, `OPEN`, `DEPRECATED`, `REJECTED`.
 These are independent dimensions. A historical fact can be verified without being used in the novel; a fictional event can be plausible and canon.
+
+Editorial verdicts are a separate axis: `RETAIN`, `REVISE`, `MERGE`, `CUT`. They judge prose/scene function and never alter canon by themselves.
+
+Reader-evidence classifications are also separate: `ISOLATED`, `REPEATED`, `CONVERGENT`, `RESOLVED`, `INTENTIONAL_VARIANCE`.
 
 ## Precision rule
 A month, season, year or interval remains that precision until an explicit story decision establishes greater precision.
@@ -36,10 +49,31 @@ A month, season, year or interval remains that precision until an explicit story
 ## Narrative theory boundary
 Universal `KO.*` narrative theory remains in the external Narrative Knowledge Base. This repository stores Claes-specific Narrative Instances and may reference Knowledge Objects as analysis targets.
 
+## Editorial boundary
+Historical accuracy, continuity and canon consistency are **necessary constraints but not proof of literary success**.
+
+A scene may be fully correct and still receive `CUT`.
+
+Reader feedback is evidence about delivery, not a vote on canon. Separate a reader's reported experience/problem from that reader's proposed solution. Repeated independent reader observations carry more revision weight than isolated taste.
+
+AI cold-reader simulation is useful but does not substitute for actual human pilot readers.
+
 ## Synchronization rule
 Use dependency order:
-`human decision → STC → ENT/OBJ/knowledge → NI/ARC/REL/MOTIF/THEME/VALUE → operating master → Lemma → validation/review`.
+
+`human decision → STC → ENT/OBJ/knowledge → WORLD/domain state → NI/ARC/REL/MOTIF/THEME/VALUE → causal story projection → operating master → prose/scene implementation → editorial gates + reader evidence → Lemma if deterministic → validation/review`.
+
 If technical limitations prevent a complete pass, report `SYNC_PENDING` with exact stale records; never hide partial synchronization.
 
 ## Review questions
-A change must make clear what evidence changed, what story truth changed, what decision supports it, where it is dramatized, which continuity domains are affected, whether Lemma changes, and whether all downstream representations are synchronized.
+A change must make clear:
+
+- what evidence changed;
+- what story truth changed;
+- what decision supports it;
+- where it is dramatized;
+- which continuity domains are affected;
+- whether the scene survives `RETAIN / REVISE / MERGE / CUT`;
+- what reader experience is intended and what cold/pilot-reader evidence exists;
+- whether Lemma changes;
+- whether all downstream representations are synchronized.

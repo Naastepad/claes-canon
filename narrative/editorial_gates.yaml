@@ -1,0 +1,104 @@
+schema_version: 1.0.0
+kind: EditorialGateRegistry
+purpose: "Round D authoring quality gates. These records govern drafting and revision; they do not create story canon."
+gates:
+- id: GRD.EDITORIAL.SCENE_NECESSITY
+  type: EditorialGate
+  status: ACTIVE_AUTHORING_POLICY
+  question: "Does this scene need to exist here, in this form?"
+  necessity_dimensions:
+  - plot: "The scene causes, prevents, reveals or materially changes a later event, obligation, risk or decision."
+  - character: "The scene contains a consequential choice, revelation, value shift, relationship shift or self-revelation that cannot be removed without flattening the character arc."
+  - information: "The reader needs this information for a later turn or consequence, and this scene/time/form is a strong delivery point."
+  - reader_experience: "The scene creates a necessary reader experience such as tension, dread, relief, intimacy, wonder, orientation, disorientation-with-payoff, surprise or anticipation."
+  uniqueness_test: "Being useful is not enough. If every useful function is served better elsewhere, this scene should not survive as a separate scene."
+  outcomes:
+    RETAIN: "Necessary and currently the strongest place/form for at least one indispensable function."
+    REVISE: "Necessary function, weak execution, weak turn, weak entry/exit, weak prose, unclear POV or avoidable reader friction."
+    MERGE: "Necessary material duplicates another scene or can gain force by sharing one scene-turn with it."
+    CUT: "No indispensable function, or all functions are served better elsewhere."
+  hard_rule: "Historical richness, research effort, thematic symbolism or a beautiful passage are never sufficient reasons by themselves to retain a scene."
+
+- id: GRD.EDITORIAL.PROSE_QUALITY
+  type: EditorialGate
+  status: ACTIVE_AUTHORING_POLICY
+  tests:
+  - "POV filters detail: the prose notices what this consciousness would notice now, under this pressure."
+  - "Concrete nouns, verbs and material actions carry more weight than abstract explanation."
+  - "Sentence and paragraph rhythm respond to perception, action, hesitation and consequence rather than staying metrically uniform."
+  - "Sensory detail performs cognition, atmosphere, pressure or social/spatial inference; it is not a five-senses inventory."
+  - "Research is metabolized into action and setting; no paragraph exists chiefly to prove that the author researched it."
+  - "Metaphor grows from the material and emotional field of the scene; avoid decorative image stacking."
+  - "Dialogue may be modern-readable but must not leak modern institutions, therapeutic language or explanatory worldview."
+  - "Scene exits stop on changed pressure, choice, image, obligation or question rather than summarizing what the reader has just read."
+
+- id: GRD.EDITORIAL.PACING
+  type: EditorialGate
+  status: ACTIVE_AUTHORING_POLICY
+  tests:
+  - "Expand time around irreversible choice, sensory recognition, danger, intimacy and costly consequence."
+  - "Compress routine movement, repeated explanation and research detail that does not change the scene."
+  - "Every scene should contain a pulse of expectation -> pressure/complication -> turn -> altered forward pressure, even when the turn is quiet."
+  - "A recovery or breathing scene must still reorient desire, relationship, knowledge or expectation; calm is not filler."
+  - "Chapter endings need forward pressure, not necessarily a cliffhanger."
+  - "Escalation means harder choices or deeper cost, not simply louder events."
+  diagnostic_question: "Where would a cold reader skim, stop, reread for the wrong reason, or feel that the scene has already ended?"
+
+- id: GRD.EDITORIAL.READER_EXPERIENCE
+  type: EditorialGate
+  status: ACTIVE_AUTHORING_POLICY
+  reader_state_fields:
+  - orientation
+  - curiosity
+  - emotional_investment
+  - tension_or_anticipation
+  - cognitive_load
+  - surprise_and_inevitability
+  - payoff
+  - remembered_image_or_question
+  core_rule: "The intended effect and the experienced effect are separate data. Authorial intention never disproves reader confusion, boredom or false inference."
+  ambiguity_rule: "Ambiguity may be designed; confusion about basic causal, spatial or motivational facts is not automatically productive ambiguity."
+
+- id: GRD.EDITORIAL.COLD_READER
+  type: EditorialGate
+  status: ACTIVE_AUTHORING_POLICY
+  protocol: "A cold-reader pass receives the prose and only minimal unavoidable front matter, not the Storybible explanation. It reports what the text itself communicated."
+  required_questions:
+  - "What happened?"
+  - "What did the viewpoint character want?"
+  - "What changed?"
+  - "What is clear, uncertain and confusing?"
+  - "Where did attention rise, sag or break?"
+  - "What do you expect or fear next?"
+  - "Which image, line, action or relationship beat remains in memory?"
+  guardrail: "AI cold-reader simulation is useful but does not substitute for actual human pilot readers."
+
+- id: GRD.EDITORIAL.PILOT_READER
+  type: EditorialGate
+  status: ACTIVE_AUTHORING_POLICY
+  protocol: "Use actual readers at deliberate milestones and log observations in review records. Separate reported experience from proposed fixes."
+  evidence_rule: "Repeated independent observations outrank isolated preferences. A reader's diagnosis of the problem is evidence; the reader's preferred solution is a proposal."
+  suggested_milestones:
+  - "after a structurally meaningful chapter cluster exists"
+  - "after a complete act/book section or equivalent arc movement exists"
+  - "after a full-draft pass before final line polish"
+  guardrails:
+  - "Do not coach readers toward the intended answer before they read."
+  - "Do not discard a repeated comprehension problem merely because the Storybible explains it."
+  - "Do not canonize reader suggestions automatically."
+
+- id: GRD.EDITORIAL.RUTHLESS_EDITOR
+  type: EditorialGate
+  status: ACTIVE_AUTHORING_POLICY
+  mode_name: "Meedogenloze redacteur"
+  instruction: "Niet aardig, wel precies. Geef een hard oordeel over wat niet werkt. Geen complimenten of verzachtende formuleringen als die de diagnose vertroebelen."
+  review_order:
+  - verdict
+  - scene_necessity
+  - fatal_or_primary_problem
+  - causality_and_character
+  - pacing_and_reader_experience
+  - prose_quality
+  - continuity_or_historical_risk
+  - retain_revise_merge_cut
+  final_rule: "A technically correct scene may still be weak fiction. Historical accuracy and canon consistency are necessary constraints, not proof that the scene works."

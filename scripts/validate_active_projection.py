@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Guard the human-readable/authoring projection against known superseded canon drift.
+"""Guard active human-readable/authoring projections against semantic regression.
 
-The structural compiler validates IDs and references. This companion catches semantic
-regressions in files writers are most likely to read directly, including recovered
-historical substrate, chapter-ready practice domains and Round-C causal story projection.
+The structural compiler validates IDs and references. This companion protects the
+surfaces writers actually read: current canon projection, Round-B world domains,
+Round-C causal architecture and Round-D editorial/reader gates.
 """
 from pathlib import Path
 import sys
@@ -17,7 +17,10 @@ checks = {
             "`storybible/STORY_PROJECTION_ROUND_C.md`",
             "`narrative/story_projection_round_c.yaml`",
             "`narrative/mayken_independent_arc.yaml`",
-            "A chapter is not justified merely because research material exists",
+            "`narrative/editorial_gates.yaml`",
+            "`review/READER_EXPERIENCE_PROTOCOL.md`",
+            "RETAIN / REVISE / MERGE / CUT",
+            "AI cold-reader simulation is not a substitute for actual human pilot readers",
         ],
         "forbidden": [
             "The current synchronized human-readable operating master is:\n\n`storybible/LEMMA_MCKEE_MASTER_2026-08-13.md`",
@@ -30,6 +33,9 @@ checks = {
             "DEC.CORNELIS.RESIDENCE.GOES.2026-08-14",
             "DEC.GOES.REDERIJKERS.MEETINGPLACE.2026-08-14",
             "OPEN.GOES.CLAES_DEPARTURE_1572_1579.001",
+            "GRD.EDITORIAL.SCENE_NECESSITY",
+            "Meedogenloze redacteur",
+            "RETAIN / REVISE / MERGE / CUT",
         ],
         "forbidden": [
             "OPEN.CORNELIS.RESIDENCE.GOES.1542.001",
@@ -37,12 +43,108 @@ checks = {
             "OPEN.GOES.NIEUWSTRAAT.PRE1594.001",
         ],
     },
+    "AUTHORING_POLICY.md": {
+        "required": [
+            "Editorial verdicts are a separate axis",
+            "RETAIN`, `REVISE`, `MERGE`, `CUT",
+            "AI cold-reader simulation is useful but does not substitute for actual human pilot readers",
+            "reader experience",
+        ],
+        "forbidden": [],
+    },
+    "WRITING_PROTOCOL.md": {
+        "required": [
+            "Scene necessity — the retain / revise / merge / cut gate",
+            "Plot necessity",
+            "Character necessity",
+            "Information necessity",
+            "Reader-experience necessity",
+            "Uniqueness test",
+            "Prose-quality gate",
+            "Pacing gate",
+            "Reader-experience gate",
+            "Cold-reader pass",
+            "Human pilot-reader feedback loop",
+            "Meedogenloze redacteur",
+            "RETAIN / REVISE / MERGE / CUT",
+            "Accuracy is a constraint; reader experience is part of the result",
+        ],
+        "forbidden": [
+            "historical richness alone is sufficient",
+        ],
+    },
+    "narrative/editorial_gates.yaml": {
+        "required": [
+            "GRD.EDITORIAL.SCENE_NECESSITY",
+            "GRD.EDITORIAL.PROSE_QUALITY",
+            "GRD.EDITORIAL.PACING",
+            "GRD.EDITORIAL.READER_EXPERIENCE",
+            "GRD.EDITORIAL.COLD_READER",
+            "GRD.EDITORIAL.PILOT_READER",
+            "GRD.EDITORIAL.RUTHLESS_EDITOR",
+            "RETAIN:",
+            "REVISE:",
+            "MERGE:",
+            "CUT:",
+            "AI cold-reader simulation is useful but does not substitute for actual human pilot readers",
+            "Meedogenloze redacteur",
+        ],
+        "forbidden": [],
+    },
+    "review/READER_EXPERIENCE_PROTOCOL.md": {
+        "required": [
+            "Authorial intention and reader experience are different evidence streams",
+            "Cold-reader pass",
+            "Human pilot-reader pass",
+            "Reader evidence versus reader solutions",
+            "Feedback convergence",
+            "RETAIN",
+            "REVISE",
+            "MERGE",
+            "CUT",
+            "Meedogenloze redacteur",
+            "AI simulation is not a substitute for real readers",
+        ],
+        "forbidden": [],
+    },
+    "review/READER_FEEDBACK_TEMPLATE.md": {
+        "required": [
+            "Reader reconstruction — no author correction yet",
+            "Reported experience/problem",
+            "Reader-proposed fix",
+            "ISOLATED / REPEATED / CONVERGENT / RESOLVED / INTENTIONAL_VARIANCE",
+            "Scene necessity gate",
+            "RETAIN / REVISE / MERGE / CUT",
+        ],
+        "forbidden": [],
+    },
+    "review/EDITORIAL_PROTOCOL_ROUND_D_2026-08-16.md": {
+        "required": [
+            "Round D",
+            "prose quality",
+            "cold-reader",
+            "actual human readers",
+            "RETAIN / REVISE / MERGE / CUT",
+            "Meedogenloze redacteur",
+        ],
+        "forbidden": [],
+    },
     "narrative/CRAFT_GUARDRAILS.yaml": {
         "required": ["GRD.CLAES.AGE", "GRD.REIMERSWAAL.EDUCATION", "GRD.MEMORIAAL.DIRECT_REVEAL", "GRD.NO_DECRYPTION_BACKSLIDE"],
         "forbidden": ["Dodoens yields values", "Primus Index identifies", "full reconstruction takes weeks"],
     },
     "narrative/world_modules.yaml": {
-        "required": ["elementary schooling", "advanced older-pupil formation", "chemical/material, not a cipher-key architecture", "WORLD.BEER_BREWING_DISTRIBUTION", "Cornelis is a biersteker, not automatically a brewer or brewery owner", "WORLD.SCHUTTERIJ_MILITARY", "1516/1530", "1607 Wapenhandelinghe is not a 1572 Goes drill manual", "Never write Antwerp as one unchanged scene world"],
+        "required": [
+            "elementary schooling",
+            "advanced older-pupil formation",
+            "chemical/material, not a cipher-key architecture",
+            "WORLD.BEER_BREWING_DISTRIBUTION",
+            "Cornelis is a biersteker, not automatically a brewer or brewery owner",
+            "WORLD.SCHUTTERIJ_MILITARY",
+            "1516/1530",
+            "1607 Wapenhandelinghe is not a 1572 Goes drill manual",
+            "Never write Antwerp as one unchanged scene world",
+        ],
         "forbidden": ["cipher knowledge may belong", "source, key and destination"],
     },
     "narrative/world_goes_living_city.yaml": {
@@ -61,8 +163,14 @@ checks = {
             "OPEN.GOES.CLAES_DEPARTURE_1572_1579.001",
             "OPEN.MAYKEN.INDEPENDENT_MIDARC.001",
             "ARC.MAYKEN.LIFE",
+            "Editorial / reader-experience current state — Round D",
+            "GRD.EDITORIAL.SCENE_NECESSITY",
+            "RETAIN",
+            "REVISE",
+            "MERGE",
+            "CUT",
         ],
-        "forbidden": ["beloved identity remains open"],
+        "forbidden": ["beloved identity remains open", "reader-experience/pacing/retain-revise-merge-cut/ruthless-editor protocol still needs"],
     },
     "storybible/LEMMA_MCKEE_MASTER.md": {
         "required": [
@@ -89,81 +197,35 @@ checks = {
         "forbidden": [],
     },
     "narrative/alchemical_authorial_architecture.yaml": {
-        "required": [
-            "ARC.CLAES.GREAT_WORK.AUTHORIAL",
-            "Status Prima",
-            "name: Corpus",
-            "name: Anima",
-            "name: Spiritus",
-            "Status Prima Nova",
-            "Do not force every scene into an operation name",
-            "The author knows the Work; Claes undergoes it; the reader experiences it",
-        ],
+        "required": ["ARC.CLAES.GREAT_WORK.AUTHORIAL", "Status Prima", "name: Corpus", "name: Anima", "name: Spiritus", "Status Prima Nova", "Do not force every scene into an operation name", "The author knows the Work; Claes undergoes it; the reader experiences it"],
         "forbidden": ["mandatory seven-operation"],
     },
     "narrative/arcs.yaml": {
-        "required": [
-            "ARC.CLAES.GREAT_WORK.AUTHORIAL",
-            "OPEN.GOES.CLAES_DEPARTURE_1572_1579.001",
-            "ARC.MAYKEN.LIFE",
-            "REL.CLAES.MAYKEN.CONJUNCTIO",
-            "Corpus, Anima and Spiritus are interwoven registers",
-        ],
+        "required": ["ARC.CLAES.GREAT_WORK.AUTHORIAL", "OPEN.GOES.CLAES_DEPARTURE_1572_1579.001", "ARC.MAYKEN.LIFE", "REL.CLAES.MAYKEN.CONJUNCTIO", "Corpus, Anima and Spiritus are interwoven registers"],
         "forbidden": [],
     },
     "narrative/mayken_independent_arc.yaml": {
-        "required": [
-            "ARC.MAYKEN.LIFE",
-            "OPEN.MAYKEN.INDEPENDENT_MIDARC.001",
-            "What does Mayken want or refuse here if Claes were absent from the scene?",
-            "Her errors remain possible. Competence is not omniscience",
-        ],
+        "required": ["ARC.MAYKEN.LIFE", "OPEN.MAYKEN.INDEPENDENT_MIDARC.001", "What does Mayken want or refuse here if Claes were absent from the scene?", "Her errors remain possible. Competence is not omniscience"],
         "forbidden": [],
     },
     "narrative/mayken_relationship_projection.yaml": {
-        "required": [
-            "REL.CLAES.MAYKEN.CONJUNCTIO",
-            "Does the scene preserve two centers of agency?",
-            "Mayken is not a reward, therapist, saint, decoder or missing ingredient",
-        ],
+        "required": ["REL.CLAES.MAYKEN.CONJUNCTIO", "Does the scene preserve two centers of agency?", "Mayken is not a reward, therapist, saint, decoder or missing ingredient"],
         "forbidden": [],
     },
     "narrative/beloved_recovery.yaml": {
-        "required": [
-            "CANON_RESOLVED_IDENTITY",
-            "Mayken Adriaensdr. Lampert",
-            "identity_status: RESOLVED",
-            "ARC.MAYKEN.LIFE",
-            "REL.CLAES.MAYKEN.CONJUNCTIO",
-        ],
-        "forbidden": [
-            "CANON_FUNCTION_OPEN_IDENTITY",
-            "her identity and detailed apothecary-family biography remain open",
-        ],
+        "required": ["CANON_RESOLVED_IDENTITY", "Mayken Adriaensdr. Lampert", "identity_status: RESOLVED", "ARC.MAYKEN.LIFE", "REL.CLAES.MAYKEN.CONJUNCTIO"],
+        "forbidden": ["CANON_FUNCTION_OPEN_IDENTITY", "her identity and detailed apothecary-family biography remain open"],
     },
     "narrative/sinne_recovery.yaml": {
         "required": ["Mayken", "ARC.MAYKEN.LIFE", "REL.CLAES.MAYKEN.CONJUNCTIO", "ARC.CLAES.GREAT_WORK.AUTHORIAL"],
         "forbidden": ["beloved/apothecary daughter beside him"],
     },
     "narrative/story_projection_round_c.yaml": {
-        "required": [
-            "ARC.CLAES.CAUSAL_SPINE",
-            "id: H09",
-            "OPEN.GOES.CLAES_DEPARTURE_1572_1579.001",
-            "ARC.MAYKEN.LIFE",
-            "Status Prima Nova",
-            "World detail from Round B is selected because it creates pressure, choice, contrast or consequence",
-        ],
+        "required": ["ARC.CLAES.CAUSAL_SPINE", "id: H09", "OPEN.GOES.CLAES_DEPARTURE_1572_1579.001", "ARC.MAYKEN.LIFE", "Status Prima Nova", "World detail from Round B is selected because it creates pressure, choice, contrast or consequence"],
         "forbidden": [],
     },
     "narrative/goes_departure_1572_1579.yaml": {
-        "required": [
-            "SC.HIST.GOES.SIEGE_1572.INDUSTRY.001",
-            "SC.HIST.GOES.BREWERY.NISSEPAD_1577.001",
-            "SC.HIST.GOES.WESTZELKE.BURNT_SALTPAN_1577.001",
-            "not proven identical to the brewery burned in the Voorstad in 1572",
-            "Do not call 1577–1579 property transfers executions, confiscations or forced sales",
-        ],
+        "required": ["SC.HIST.GOES.SIEGE_1572.INDUSTRY.001", "SC.HIST.GOES.BREWERY.NISSEPAD_1577.001", "SC.HIST.GOES.WESTZELKE.BURNT_SALTPAN_1577.001", "not proven identical to the brewery burned in the Voorstad in 1572", "Do not call 1577–1579 property transfers executions, confiscations or forced sales"],
         "forbidden": ["Nissepad brewery was destroyed in 1572"],
     },
     "canon/OPEN_DECISIONS.yaml": {
@@ -171,21 +233,32 @@ checks = {
         "forbidden": [],
     },
     "canon/DECISIONS_STORY_PROJECTION_2026-08-16.yaml": {
-        "required": [
-            "DEC.CLAES.GREAT_WORK.AUTHORIAL_ARCHITECTURE.2026-08-16",
-            "DEC.MAYKEN.INDEPENDENT_ARC.2026-08-16",
-            "DEC.CLAES_MAYKEN.CONJUNCTIO.2026-08-16",
-            "No fixed seven-operation scheme is mandatory",
-        ],
+        "required": ["DEC.CLAES.GREAT_WORK.AUTHORIAL_ARCHITECTURE.2026-08-16", "DEC.MAYKEN.INDEPENDENT_ARC.2026-08-16", "DEC.CLAES_MAYKEN.CONJUNCTIO.2026-08-16", "No fixed seven-operation scheme is mandatory"],
         "forbidden": [],
     },
     "storybible/INDEX.md": {
-        "required": ["STORY_PROJECTION_ROUND_C.md", "ARC.CLAES.CAUSAL_SPINE", "ARC.MAYKEN.LIFE", "REL.CLAES.MAYKEN.CONJUNCTIO"],
+        "required": [
+            "STORY_PROJECTION_ROUND_C.md",
+            "ARC.CLAES.CAUSAL_SPINE",
+            "ARC.MAYKEN.LIFE",
+            "REL.CLAES.MAYKEN.CONJUNCTIO",
+            "Writing / editorial / reader-experience layer — Round D",
+            "GRD.EDITORIAL.RUTHLESS_EDITOR",
+            "RETAIN / REVISE / MERGE / CUT",
+        ],
         "forbidden": ["read together with Mayken detail dossier if generic labels survive"],
     },
     "review/SYNC_STATUS.md": {
-        "required": ["ROUND_C_STORY_PROJECTION_IMPLEMENTED", "ARC.CLAES.CAUSAL_SPINE", "OPEN.GOES.CLAES_DEPARTURE_1572_1579.001", "OPEN.MAYKEN.INDEPENDENT_MIDARC.001"],
-        "forbidden": [],
+        "required": [
+            "ROUND_C_STORY_PROJECTION_IMPLEMENTED",
+            "ROUND_D_EDITORIAL_READER_PROTOCOL_IMPLEMENTED",
+            "ARC.CLAES.CAUSAL_SPINE",
+            "OPEN.GOES.CLAES_DEPARTURE_1572_1579.001",
+            "OPEN.MAYKEN.INDEPENDENT_MIDARC.001",
+            "GRD.EDITORIAL.RUTHLESS_EDITOR",
+            "RETAIN / REVISE / MERGE / CUT",
+        ],
+        "forbidden": ["reader-experience / pacing / ruthless-editor protocol recovered in the callback remains"],
     },
     "narrative/religious_space_sensory_church.yaml": {"required": ["WORLD.RELIGIOUS_SPACE.SENSORY_CHURCH", "local_verification_required: true", "Never checklist all five senses", "church_as_memory_palace"], "forbidden": []},
     "storybible/modules/HISTORICAL_SUBSTRATE_1540_1605.md": {"required": ["source → HIST.EVENT", "information status", "layered identity", "Reimerswaal's interaction of war, flood/erosion, demography, trade and church life"], "forbidden": []},
@@ -211,7 +284,7 @@ for rel, rules in checks.items():
     text = path.read_text(encoding="utf-8")
     for marker in rules["required"]:
         if marker not in text:
-            errors.append(f"{rel} missing required current-canon marker: {marker}")
+            errors.append(f"{rel} missing required active marker: {marker}")
     for marker in rules["forbidden"]:
         if marker in text:
             errors.append(f"{rel} retains superseded/forbidden marker: {marker}")

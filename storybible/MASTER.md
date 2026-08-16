@@ -1,7 +1,8 @@
 # Claes Storybible — MASTER / operating authority
 
 **Logical master ID:** `SB.CLAES.MASTER`  
-**Current synchronization date:** 16 August 2026
+**Current synchronization date:** 16 August 2026  
+**Authoring readiness:** Rounds A–D implemented
 
 This repository is the structured operating projection of Revision 11 plus later explicit author decisions. The lossless source edition remains preserved for material not yet atomized, but later decisions override conflicting source or legacy-master wording.
 
@@ -21,31 +22,36 @@ Every top-level source section remains accounted for in `mapping/CONVERSION_LEDG
 
 Start with:
 
-1. `storybible/LEMMA_MCKEE_MASTER.md` — **current operating synthesis**, synchronized through 16 August 2026.
-2. `storybible/STORY_PROJECTION_ROUND_C.md` — current causal/character projection from settled canon and chapter-ready world knowledge toward final structure.
-3. `storybible/INDEX.md` — operational navigation.
-4. `canon/OPEN_DECISIONS.yaml` — active unresolved backlog only.
-5. `review/SYNC_STATUS.md` — synchronization state.
+1. `storybible/LEMMA_MCKEE_MASTER.md` — **current operating story synthesis**.
+2. `storybible/STORY_PROJECTION_ROUND_C.md` — causal/character projection from settled canon and chapter-ready world knowledge toward final structure.
+3. `WRITING_PROTOCOL.md` — governing drafting, revision, pacing, prose-quality and scene-retention protocol.
+4. `review/READER_EXPERIENCE_PROTOCOL.md` — cold-reader, human pilot-reader and reader-feedback method.
+5. `storybible/INDEX.md` — operational navigation.
+6. `canon/OPEN_DECISIONS.yaml` — active unresolved backlog only.
+7. `review/SYNC_STATUS.md` — synchronization state.
 
 The dated `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` is a **legacy snapshot**, not current authoring authority. It may preserve obsolete 1545/cipher/death-window/open-beloved wording for audit history only.
 
 ## Dedicated governing dossiers
 
 - `STORY_PROJECTION_ROUND_C.md` — causal spine, deeper Great-Work architecture, Mayken independent arc and explicit open 1572–1579 Goes hinge.
+- `WRITING_PROTOCOL.md` — scene construction, prose, pacing, reader experience and editorial decision rules.
+- `review/READER_EXPERIENCE_PROTOCOL.md` — reader-testing authority.
+- `review/READER_FEEDBACK_TEMPLATE.md` — consistent reader-evidence logging.
 - `MEMORIAAL_BREVISIMA_PRINT_1564.md` — hidden readable tannin/gum print, Dee handoff, graphite rule, direct green-vitriol reveal.
 - `MEMORIAAL_BREVISIMA_CASTOFF_1564.md` — 17 single-sheet quarto gatherings / 136 latent pages.
 - `FAMILY_CLAES_1542_1554.md` — Tanneken, Jan, grandparents, 1542 house and 1554 family rupture.
 - `MAYKEN_LAMPERT.md` — resolved identity and independent character/material role of Mayken, synchronized to no-cipher canon.
 - `CORNELIS_EXECUTION_1569.md` — detailed 19 November 1569 Cornelis execution model.
-- `EXECUTIONS_REFORMATION_CLAES_2026-08-16.md` — current execution/testimony mechanics; older execution dossier remains source-rich background only where not superseded.
+- `EXECUTIONS_REFORMATION_CLAES_2026-08-16.md` — current execution/testimony mechanics.
 - `ALCHEMICAL_CHEMICAL_PROCESS_CHAIN_CLAES_LIFELINE.md` — base alchemical/chemical process dossier.
 - `ALCHEMICAL_PROCESS_REFINEMENT_2026-08-16.md` — governing refinements for Green Lion semantics, failure-before-opening, conserved Sol, Rode Leeuw, assay and Morhof Seton frame.
 - `ANTWERP_THREE_VISITS_ALCHEMICAL_ARC_1561_1569.md` — Antwerp three-visit/process scaffold, subject to later decisions where older wording survives.
 - `domains/*.md` — Round-B chapter-ready practice domains for bread, beer, Reimerswaal school, rederijkers/Landjuweel, Antwerp time slices and schutterij/military practice.
 
-## Machine-readable truth layers
+## Machine-readable layers
 
-### Decisions
+### Decisions / story truth
 
 Current explicit author decisions live across:
 
@@ -59,11 +65,7 @@ Current explicit author decisions live across:
 
 Latest explicit decision wins within its domain. A base registry is not allowed to resurrect an older state merely because a later decision lives in a supplement.
 
-### Claims
-
-- `claims/SOURCE_CLAIMS*.yaml` — historical/research/reconstruction evidence.
-- `claims/STORY_CLAIMS*.yaml` — story truth.
-- Domain-specific later claim registries outrank stale working-state claims where a later `DEC.*` explicitly supersedes them.
+`claims/SOURCE_CLAIMS*.yaml` stores evidence/reconstruction claims. `claims/STORY_CLAIMS*.yaml` stores novel truth. Evidence and story truth remain separate.
 
 ### World/practice state
 
@@ -89,9 +91,18 @@ These define what can plausibly happen in a place/time/activity. A world module 
 - `narrative/mayken_relationship_projection.yaml`
 - `narrative/goes_departure_1572_1579.yaml`
 
+### Editorial / reader layer
+
+- `narrative/editorial_gates.yaml`
+- `WRITING_PROTOCOL.md`
+- `review/READER_EXPERIENCE_PROTOCOL.md`
+- `review/READER_FEEDBACK_TEMPLATE.md`
+
+Editorial verdicts (`RETAIN / REVISE / MERGE / CUT`) do not alter canon. They judge whether a scene should exist and whether the prose successfully communicates the intended story.
+
 ### Deterministic subset
 
-`lemma/*.lemma` is rules-as-code only. Lemma may veto an impossible combination; it never invents canon.
+`lemma/*.lemma` is rules-as-code only. Lemma may veto an impossible combination; it never invents canon or literary quality.
 
 ## Fixed chronology and life-state corrections
 
@@ -107,7 +118,7 @@ The following are current and must not be reopened by legacy prose:
 - **autumn 1567:** first Cornelis arrest/examination in Antwerp and release on borg/conditions.
 - **19 November 1569:** Cornelis fictionally executed in Antwerp, witnessed by Claes.
 - **1570:** direct green-vitriol reveal/read of hidden readable Brevísima; no cryptographic recovery chain.
-- **1572–1579:** exact material/economic/legal chain by which Goes finally becomes nonrecoverable for Claes remains **authorial-design OPEN** under `OPEN.GOES.CLAES_DEPARTURE_1572_1579.001`; historical siege/property facts must not silently close it.
+- **1572–1579:** exact material/economic/legal chain by which Goes finally becomes nonrecoverable for Claes remains **authorial-design OPEN** under `OPEN.GOES.CLAES_DEPARTURE_1572_1579.001`.
 - **1578, Antwerp:** printed publication completes the textual mission — projectio of the Word.
 - **1584:** Delft moral bottom / Albedo threshold.
 - **13 March 1602, ca.16:00, Enkhuizen:** Morhof-framed Seton projectio at the house of Jacob Hausfsen — projectio of Matter.
@@ -142,9 +153,9 @@ Her historical embedding is the real Lampart/Lambert/Lampert apothecary environm
 
 Mayken is independently competent in materia medica, preparation, measurement, botanical/material identification, trained sensation and error control. She may assist direct reveal and reading but is **not** a cryptographic solver or special-Dodoens key-holder.
 
-Her family also experiences the 1554 fire through the burned *Zwaene* property. This gives shared historical memory without duplicating Claes' household annihilation. Her counter-memory is destruction **plus rebuilding**.
+Her family also experiences the 1554 fire through the burned *Zwaene* property. Her counter-memory is destruction **plus rebuilding**, not a duplicate of Claes' household annihilation.
 
-`ARC.MAYKEN.LIFE` is now a governing independent character arc under `DEC.MAYKEN.INDEPENDENT_ARC.2026-08-16`. Mayken must have objectives, judgements, costs and choices not reducible to Claes. Her exact adult mid-arc work/family/social-pressure chain remains open under `OPEN.MAYKEN.INDEPENDENT_MIDARC.001`.
+`ARC.MAYKEN.LIFE` is a governing independent character arc. Mayken must have objectives, judgements, costs and choices not reducible to Claes. Her exact adult mid-arc work/family/social-pressure chain remains open under `OPEN.MAYKEN.INDEPENDENT_MIDARC.001`.
 
 Her mature relationship with Claes is projected by `REL.CLAES.MAYKEN.CONJUNCTIO`: reciprocal relation between unlike modes of knowing without absorption or possession. Conjunctio is author-side architecture, not mandatory in-world terminology.
 
@@ -163,7 +174,7 @@ In novel canon he helps form a reform-minded/protestantiserende current in the 1
 
 Whether Cornelis ever serves as deken remains open.
 
-His death is fixed as the 19 November 1569 Antwerp fictional execution model; old “late 1568/1569 exact details open” statements are superseded.
+His death is fixed as the 19 November 1569 Antwerp fictional execution model.
 
 ## Alchemical current state
 
@@ -188,7 +199,7 @@ Guardrails:
 
 ### Great-Work authorial architecture
 
-`DEC.CLAES.GREAT_WORK.AUTHORIAL_ARCHITECTURE.2026-08-16` and `ARC.CLAES.GREAT_WORK.AUTHORIAL` govern the deeper story architecture:
+`DEC.CLAES.GREAT_WORK.AUTHORIAL_ARCHITECTURE.2026-08-16` and `ARC.CLAES.GREAT_WORK.AUTHORIAL` govern:
 
 `Status Prima → Corpus / Anima / Spiritus → Transmutatio/Rubedo → Projectio → Status Prima Nova`
 
@@ -200,11 +211,7 @@ This **nests with and does not replace** `ARC.CLAES.MACRO_TRANSMUTATION`:
 - **Anima**: meaning, language, belief, testimony, loyalty, memory, public interpretation and love.
 - **Spiritus**: Claes' vigilance, certainty-seeking, grief, agency, embodied *sinne*, responsibility and sovereignty.
 
-Corpus, Anima and Spiritus are simultaneous spiral registers, **not three successive books or three mechanically identical cycles**. `Solve et Coagula` is an author-side movement of separating false fusions and reconnecting in truer relation. No fixed seven-operation or other numerical operation scheme is mandatory.
-
-The recovered longer operation vocabulary may be used as a diagnostic only when actual material/human causality earns it. Symbolic neatness never outranks chemistry, history or character consequence.
-
-The governing sentence is:
+Corpus, Anima and Spiritus are simultaneous spiral registers, **not three successive books or three mechanically identical cycles**. `Solve et Coagula` is an author-side movement of separating false fusions and reconnecting in truer relation. No fixed operation count is mandatory.
 
 > **The author knows the Work; Claes undergoes it; the reader experiences it.**
 
@@ -226,46 +233,92 @@ Historically grounded current anchors:
 - Jan Jansen Nissepat sells a burned Westzelke salt-pan site in 1577, but the destructive event is unknown;
 - later transport acts are not automatically executions, confiscations or forced sales.
 
-The story question is therefore not “which convenient brewery do we destroy?” but: **which chain of real damage, fictional residual interest, debt/claims, legal settlement and network collapse finally makes Goes cease to function as Claes' recoverable home or economic anchor?**
+The open story question remains: **which chain of real damage, fictional residual interest, debt/claims, legal settlement and network collapse finally makes Goes cease to function as Claes' recoverable home or economic anchor?**
 
-This remains `OPEN.GOES.CLAES_DEPARTURE_1572_1579.001`.
+## Editorial / reader-experience current state — Round D
+
+Round D is now part of authoring authority, but it is not story canon.
+
+### Scene necessity
+
+`GRD.EDITORIAL.SCENE_NECESSITY` requires every developed scene to be tested for:
+
+1. plot necessity;
+2. character necessity;
+3. information necessity;
+4. reader-experience necessity;
+5. uniqueness — whether all useful functions are served better elsewhere.
+
+Verdicts:
+
+- **RETAIN** — indispensable and strongest current place/form;
+- **REVISE** — indispensable function, weak execution;
+- **MERGE** — necessary material duplicates or gains force in combination;
+- **CUT** — no indispensable function, or every function is better served elsewhere.
+
+Historical richness, research effort, symbolism and beautiful prose do not independently justify retention.
+
+### Prose and pacing
+
+`GRD.EDITORIAL.PROSE_QUALITY` and `GRD.EDITORIAL.PACING` require POV filtration, concrete material language, selective sensory cognition, metabolized research, responsive rhythm, meaningful entry/exit and allocation of reader attention around choice and consequence.
+
+Pacing is not simply speed. A quiet scene can be necessary; a calm scene cannot be inert filler.
+
+### Reader experience
+
+`GRD.EDITORIAL.READER_EXPERIENCE` separates authorial intention from experienced effect.
+
+Cold-reader passes must not preload hidden Storybible explanation. AI may simulate cold reading, but **AI cold-reader simulation does not substitute for actual human pilot readers**.
+
+Human reader observations are logged with `review/READER_FEEDBACK_TEMPLATE.md`, separating reported experience/problem from reader-proposed fix. Repeated independent reports carry more revision weight than isolated preference. Reader voting never decides canon.
+
+### Meedogenloze redacteur
+
+`GRD.EDITORIAL.RUTHLESS_EDITOR` is a standing hard-review mode:
+
+> **Niet aardig, wel precies. Als een scène niet werkt, zeg dat. Geen complimenten en geen verzachtende formuleringen wanneer die de diagnose vertroebelen.**
+
+A technically and historically correct scene may still be weak fiction and may still receive `CUT`.
 
 ## Active open-decision policy
 
-`canon/OPEN_DECISIONS.yaml` contains **only active unresolved questions**. Resolved, superseded and `RESOLVED_NOT_APPLICABLE` history belongs in decision/audit files rather than masquerading as current work.
-
-The alchemical refinement supplement contains only the still-open Rode-Leeuw carrier composition and Enkhuizen assay/choreography design.
+`canon/OPEN_DECISIONS.yaml` contains **only active unresolved questions**. Resolved, superseded and `RESOLVED_NOT_APPLICABLE` history belongs in decision/audit files.
 
 This distinction is mandatory:
 
 - **historical/research open** — evidence might close it;
 - **experimental open** — only a material test can close it;
 - **authorial design open** — the novel must choose it;
-- **irreducibly uncertain** — preserve historical uncertainty and choose an explicitly fictional reconstruction if needed.
+- **irreducibly uncertain** — preserve historical uncertainty and choose explicitly fictional reconstruction if needed.
 
-Round-C high-impact authorial opens are:
+Round-C high-impact authorial opens include:
 
 - `OPEN.GOES.CLAES_DEPARTURE_1572_1579.001`;
 - `OPEN.MAYKEN.INDEPENDENT_MIDARC.001`.
 
-Neither may be silently closed by scene prose or by historical plausibility alone.
+Neither may be silently closed by prose, reader preference or historical plausibility alone.
 
 ## Narrative development backlog
 
-The causal pre-structure now exists. `narrative/structure.yaml` still needs the actual Book/Act/Sequence/Chapter/Beat hierarchy, and `narrative/scenes.yaml` still contains only a small number of full scene diagnostics.
+The recovery and readiness rounds are now complete:
 
-The next structural authoring pass should use `ARC.CLAES.CAUSAL_SPINE` plus the Round-B `domain_scene_packs` rather than inventing chapters from research topics. Mayken scenes must also load `ARC.MAYKEN.LIFE`.
+- **A** — historical substrate recovered;
+- **B** — six major world/practice domains made chapter-ready;
+- **C** — world projected into causal character architecture;
+- **D** — editorial, pacing and reader-feedback gates made operational.
 
-Before large-scale drafting, the recovered reader-experience/pacing/retain-revise-merge-cut/ruthless-editor protocol still needs its own synchronization layer.
+The next major task is **structural realization**:
 
-This is **not** an unresolved canon conflict. It is dramatic realization work built on a now explicit causal architecture.
+`Book → Act → Sequence → Chapter → Scene → Beat`.
+
+`narrative/structure.yaml` remains largely unpopulated and `narrative/scenes.yaml` contains only a small number of full scene diagnostics. Future population should use `ARC.CLAES.CAUSAL_SPINE` plus Round-B scene packs and apply Round-D scene-necessity/pacing/reader gates during construction rather than only after a full draft exists.
 
 ## Precedence
 
 When records conflict:
 
 1. latest explicit current `DEC.*` author decision, including supplements;
-2. active later domain-specific `STC.*` story claim or an explicit supersession declared by a later decision;
+2. active later domain-specific `STC.*` story claim or explicit supersession declared by a later decision;
 3. dedicated current governing dossier, including `STORY_PROJECTION_ROUND_C.md` within its domain;
 4. current `LEMMA_MCKEE_MASTER.md`;
 5. synchronized entities/objects/world modules/arcs/relationships/instances and causal projections;
@@ -274,4 +327,4 @@ When records conflict:
 8. proposals and open decisions;
 9. dated legacy masters/session memory — audit/context only.
 
-Never silently resolve historical evidence into fiction or fiction into historical proof.
+`WRITING_PROTOCOL.md` and the Round-D editorial layer govern **implementation and evaluation**, not truth precedence. Never use an editorial verdict or reader preference to rewrite canon silently.

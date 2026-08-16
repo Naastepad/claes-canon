@@ -4,17 +4,18 @@
 
 ## 1. What this repository is
 
-This repository is the operating Storybible and canon-control system for the historical novel **Claes Nissepat**. It contains five distinct working layers:
+This repository is the operating Storybible and canon-control system for the historical novel **Claes Nissepat**. It contains six distinct working layers:
 
 1. **Evidence** — historical/research support (`SRC-*`, `SC.*`).
 2. **Story truth** — explicit novel truth (`STC.*`, `DEC.*`, `canon/`).
 3. **World/practice state** — time-bounded historical environments and chapter-ready activity domains (`WORLD.*`, `storybible/domains/`, `narrative/domain_scene_packs.yaml`).
 4. **Narrative meaning/projection** — character, causal spine, scene, sequence, arc, motif, relationship and value movement (`NI.*`, `ARC.*`, `REL.*`, `MOTIF.*`, `THEME.*`, `VALUE.*`).
-5. **Deterministic continuity** — only the subset that can usefully be evaluated as executable logic (`lemma/*.lemma`).
+5. **Editorial / reader validation** — prose quality, pacing, scene necessity, reader experience and feedback (`WRITING_PROTOCOL.md`, `narrative/editorial_gates.yaml`, `review/READER_EXPERIENCE_PROTOCOL.md`).
+6. **Deterministic continuity** — only the subset that can usefully be evaluated as executable logic (`lemma/*.lemma`).
 
 External McKee/NOS knowledge objects (`KO.*`) are narrative theory, not Claes canon.
 
-## 2. Current operating master
+## 2. Current operating authorities
 
 The current synchronized human-readable operating master is:
 
@@ -24,11 +25,18 @@ The dated `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` is a **legacy snapshot**
 
 Operational navigation is `storybible/INDEX.md`.
 
-For causal chapter construction, also read:
+For causal chapter construction, read:
 
 `storybible/STORY_PROJECTION_ROUND_C.md`
 
 Its machine-readable projection is `narrative/story_projection_round_c.yaml`.
+
+For drafting, revision and reader evaluation, read:
+
+- `WRITING_PROTOCOL.md`;
+- `narrative/editorial_gates.yaml`;
+- `review/READER_EXPERIENCE_PROTOCOL.md`;
+- `review/READER_FEEDBACK_TEMPLATE.md` when logging a real or simulated reader pass.
 
 ## 3. Authority hierarchy
 
@@ -42,6 +50,8 @@ When records appear to conflict, use this order:
 6. Source Claims/provenance;
 7. `PROPOSED` and `OPEN` records;
 8. dated legacy masters, model inference or session memory — never authoritative.
+
+Editorial protocols do **not** override canon. They govern whether canon has been dramatized effectively. A `CUT` verdict means a scene is weak or unnecessary, not that its underlying canon becomes false.
 
 A Lemma result can test declared constraints. Lemma does not decide literary truth and does not turn historical evidence into canon.
 
@@ -59,7 +69,6 @@ For canon-sensitive work:
 8. relevant structured registers and current governing dossier(s)
 9. relevant source claims/provenance
 10. relevant Lemma specs only when deterministic reasoning is needed
-11. `WRITING_PROTOCOL.md` before drafting or revising prose
 
 ### Additional required read order for chapter/scene construction
 
@@ -71,9 +80,21 @@ Before building a chapter or scene, also load:
 4. the relevant `narrative/domain_scene_packs.yaml` pack(s);
 5. relevant time-sliced world/practice dossier(s);
 6. participant arcs/relationships/knowledge states;
-7. if Mayken appears: `narrative/mayken_independent_arc.yaml` as well as the Claes-Mayken relationship projection.
+7. if Mayken appears: `narrative/mayken_independent_arc.yaml` as well as the Claes-Mayken relationship projection;
+8. `WRITING_PROTOCOL.md`;
+9. `narrative/editorial_gates.yaml`.
 
 A chapter is not justified merely because research material exists. It must create pressure, choice, consequence, relationship movement or necessary reader experience.
+
+### Additional required read order for critique/revision
+
+Before judging literary quality, also read:
+
+- `review/READER_EXPERIENCE_PROTOCOL.md`;
+- any relevant `review/READER_FEEDBACK_*` record;
+- the active Round-D gate definitions in `narrative/editorial_gates.yaml`.
+
+Do **not** line-polish a scene before deciding whether it is `RETAIN`, `REVISE`, `MERGE` or `CUT`.
 
 ## 5. ID semantics
 
@@ -90,6 +111,7 @@ A chapter is not justified merely because research material exists. It must crea
 - `THEME.*` — controlling idea, question, desire/need/lie/revelation
 - `VALUE.*` — McKee-facing value axis/state
 - `WORLD.*` — historical/worldbuilding module
+- `GRD.*` — authoring/editorial guardrail or gate; never story truth by itself
 - `CODE.*` — legacy/recovery architecture namespace where still present
 - `OPEN.*` — unresolved author decision
 - `KO.*` — external narrative-theory knowledge object; never Claes canon
@@ -100,7 +122,11 @@ Evidence: `VERIFIED / SUPPORTED / PLAUSIBLE / DISPUTED / UNKNOWN`
 
 Canon: `PROPOSED / CANON / OPEN / DEPRECATED / REJECTED`
 
-Migration origin/review is separate from both. Never collapse these axes and never silently promote `PROPOSED` or `OPEN` material to `CANON`.
+Editorial scene verdict: `RETAIN / REVISE / MERGE / CUT`
+
+Reader-evidence classification: `ISOLATED / REPEATED / CONVERGENT / RESOLVED / INTENTIONAL_VARIANCE`
+
+These axes are separate. Never convert editorial dislike into canon change or reader preference into historical evidence.
 
 ## 7. Time and uncertainty
 
@@ -121,9 +147,9 @@ Network proximity does not prove a meeting. A historical print does not prove Cl
 
 ## 9. Narrative interpretation
 
-When interpreting a scene/chapter/sequence, consider POV and knowledge state, objective, psychological/moral need, opening and closing value, conflict/pressure, turning point, claim/relationship/object/knowledge changes, arc movement and motif transformation.
+When interpreting a scene/chapter/sequence, consider POV and knowledge state, objective, psychological/moral need, opening and closing value, conflict/pressure, turning point, claim/relationship/object/knowledge changes, arc movement, motif transformation **and reader-state change**.
 
-The governing Claes movement is not merely puzzle-solving. The current architecture combines:
+The governing Claes movement combines:
 
 - `ARC.CLAES.MACRO_TRANSMUTATION` — Drager/Nigredo/Albedo/Rubedo/Projectio;
 - `ARC.CLAES.GREAT_WORK.AUTHORIAL` — Status Prima; interwoven Corpus/Anima/Spiritus; Transmutatio; Projectio; Status Prima Nova;
@@ -160,11 +186,40 @@ Read and obey `WRITING_PROTOCOL.md`. Before drafting, identify:
 - current `sinne` state;
 - applicable Corpus/Anima/Spiritus register(s);
 - relevant domain scene pack and historical guardrails;
-- unresolved `OPEN.*` matters that prose must not accidentally settle.
+- unresolved `OPEN.*` matters that prose must not accidentally settle;
+- intended reader movement: orientation, curiosity, emotion, tension, cognitive load and forward expectation.
 
 Prose may dramatize within open space but may not accidentally close an `OPEN.*` matter. If a creative choice would close an open question, leave it open or present it separately as a proposal.
 
-## 13. If you can modify the repository
+## 13. If you critique or revise prose
+
+Apply the Round-D gates in this order:
+
+1. scene necessity;
+2. `RETAIN / REVISE / MERGE / CUT`;
+3. causality and character choice;
+4. pacing and reader experience;
+5. prose quality;
+6. continuity/history risk;
+7. reader evidence and retest need.
+
+For a hard editorial pass, use `GRD.EDITORIAL.RUTHLESS_EDITOR` / **Meedogenloze redacteur**:
+
+> Niet aardig, wel precies. Als een scène niet werkt, zeg dat. Geen complimenten en geen verzachtende formuleringen wanneer die de diagnose vertroebelen.
+
+Do not praise accurate research as compensation for weak fiction.
+
+## 14. Cold-reader and pilot-reader rule
+
+A cold-reader pass must not preload the Storybible or intended interpretation. It tests what the prose itself communicated.
+
+AI may simulate a cold reader under restricted context, but **AI cold-reader simulation is not a substitute for actual human pilot readers**.
+
+Actual reader feedback is logged as experience/problem evidence separate from the reader's proposed fix. Repeated independent observations are stronger revision signals than isolated preferences. Reader voting never decides canon or theme.
+
+Use `review/READER_FEEDBACK_TEMPLATE.md`.
+
+## 15. If you can modify the repository
 
 Read `REPOSITORY_INTEGRITY.md`, `AGENTS.md`, `AUTHORING_POLICY.md` and `review/SYNC_STATUS.md` first.
 
@@ -181,14 +236,14 @@ Mandatory rules include:
 
 Required flow:
 
-`source/evidence -> SC.* -> human proposal/decision -> STC.* -> entities/objects/knowledge -> world/practice domains -> narrative projection/arcs/relationships -> operating master/index -> Lemma if deterministic -> validation -> review -> merge/publication`
+`source/evidence -> SC.* -> human proposal/decision -> STC.* -> entities/objects/knowledge -> world/practice domains -> narrative projection/arcs/relationships -> operating master/index -> prose/scene implementation -> Round-D editorial gates + reader evidence -> Lemma if deterministic -> validation -> review -> merge/publication`
 
-## 14. If you modify Lemma
+## 16. If you modify Lemma
 
 Lemma stores constraints, not literary interpretation. Suitable questions include whether people can meet, whether Claes can know/possess/use something at a time, whether prerequisite stages are satisfied, and whether declared temporal/object constraints are compatible.
 
-Emotional power, love, elegance, pacing and thematic satisfaction belong to narrative diagnosis, not deterministic Lemma rules.
+Emotional power, love, elegance, pacing, reader engagement and thematic satisfaction belong to narrative/editorial diagnosis, not deterministic Lemma rules.
 
-## 15. Cross-model handoff
+## 17. Cross-model handoff
 
-At the end of substantial work, record enough repository-visible state for another model to continue: files/records read, files/records changed, current sync status, unresolved matters, validation status and whether human approval remains required. Do not rely on private reasoning or chat memory as canonical storage.
+At the end of substantial work, record enough repository-visible state for another model to continue: files/records read, files/records changed, current sync status, unresolved matters, validation status, editorial verdicts/reader evidence where relevant and whether human approval remains required. Do not rely on private reasoning or chat memory as canonical storage.
