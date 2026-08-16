@@ -3,7 +3,7 @@ kind: AuthorialArchitectureRegistry
 architectures:
 - id: ARC.CLAES.GREAT_WORK.AUTHORIAL
   type: AuthorialArchitecture
-  label: "The Great Work — Status Prima, Corpus, Anima, Spiritus, Projectio"
+  label: "The Great Work — Status Prima, Corpus, Anima, Spiritus, Projectio, Status Prima Nova"
   canon_status: CANON
   protagonist: ENT.PERSON.CLAES
   decision_id: DEC.CLAES.GREAT_WORK.AUTHORIAL_ARCHITECTURE.2026-08-16
