@@ -1,0 +1,121 @@
+schema_version: "1.0.0"
+kind: DomainScenePackRegistry
+purpose: "Machine-readable retrieval bridge from historical domains to chapter/scene construction. Packs constrain world state; they do not create fictional scenes or participation."
+packs:
+  - id: PACK.BREAD.GOES_YOUTH
+    label: "Goes youth — bread/bakery practice"
+    status: AUTHORING_READY_SCENE_CONTEXT
+    world_modules: [WORLD.BREAD_GRAIN, WORLD.GOES]
+    detail_file: storybible/domains/BREAD_GRAIN_BAKING_1540_1602.md
+    source_claims: [SC.HIST.BREAD.URBAN_BAKERY.DEFAULT.001, SC.HIST.BREAD.ASSIZE.001]
+    time_window: "1547-1554"
+    fiction_gate: "OPEN.BAKERY.SCENE.001 must be placed before this becomes an actual scene."
+    action_chain: [grain, flour, mix, knead, ferment, shape, fire_oven, prepare_oven, bake, cool_inspect_sell]
+    sensory_rule: "one dominant material sense + one counter-sense + one inference"
+    hard_guardrails: ["no exact modern recipe", "no unsupported household oven", "no rigid grain-status taxonomy"]
+
+  - id: PACK.BEER.GOES_BIERSTEKER
+    label: "Goes — Cornelis as biersteker"
+    status: AUTHORING_READY_SCENE_CONTEXT
+    world_modules: [WORLD.BEER_BREWING_DISTRIBUTION, WORLD.GOES]
+    detail_file: storybible/domains/BEER_BREWING_BEERSTEKER_1540_1580.md
+    source_claims: [SC.HIST.BEER.PROCESS.HOPPED.001, SC.HIST.BIERSTEKER.DISTRIBUTION.001]
+    action_chain: [order_negotiate, receive, inspect, record, store, move, deliver, settle]
+    sensory_rule: "condition + quantity + movement: leakage/sourness/cask weight/cellar state"
+    hard_guardrails: ["Cornelis is not automatically brewer", "Nissepad brewery not proven Cornelis property", "no default gruit", "no ABV/IBU/style taxonomy"]
+
+  - id: PACK.REIMERSWAAL.SCHOOL_1554_1561
+    label: "Reimerswaal — cost pupil, school and changing city"
+    status: AUTHORING_READY_SCENE_CONTEXT
+    world_modules: [WORLD.REIMERSWAAL, WORLD.HISTORICAL_SUBSTRATE_1540_1605]
+    detail_file: storybible/domains/REIMERSWAAL_SCHOOL_1554_1561.md
+    source_claims: [SC.HIST.REIMERSWAAL.SCHOOL.CONTINUITY.001, SC.HIST.REIMERSWAAL.PRESSURE.1555_1561.001]
+    time_slices: ["1554 arrival/functioning city", "1555 water pressure", "1557 structural damage", "1558 fire", "1561 renewed flood/departure"]
+    school_reconstruction: [oral_recitation, grammar, memorisation, copying, correction, older_pupil_help]
+    hard_guardrails: ["exact 1554 Latin curriculum is reconstruction", "no invented rector/building", "not seven years beginner Latin", "city not abandoned ruin"]
+
+  - id: PACK.REDERIJKERS.GOES_CHAMBER
+    label: "Goes — Nardusbloem chamber evening"
+    status: AUTHORING_READY_SCENE_CONTEXT
+    world_modules: [WORLD.GOES]
+    detail_file: storybible/domains/REDERIJKERS_LANDJUWEEL_1561.md
+    source_claims: [SC.HIST.REDERIJKERS.PUBLIC_COMMUNICATION_NETWORK.001]
+    institution: ENT.ORG.GOES.NARDUSBLOEM
+    location: ENT.LOC.GOES.ZUSTERHUIS
+    action_options: [read_correct_text, rehearse, refrein, spel_van_sinne, esbattement, blazon, travel_costs, sociability_news]
+    hard_guardrails: ["Cornelis office not invented", "1563 Catholic/Magdalena institutional context retained", "chamber is not church"]
+
+  - id: PACK.REDERIJKERS.ANTWERP_LANDJUWEEL_1561
+    label: "Antwerp 1561 — Landjuweel observer context"
+    status: AUTHORING_READY_SCENE_CONTEXT
+    world_modules: [WORLD.ANTWERP, WORLD.HISTORICAL_SUBSTRATE_1540_1605]
+    detail_file: storybible/domains/REDERIJKERS_LANDJUWEEL_1561.md
+    source_claims: [SC.HIST.LANDJUWEEL.ANTWERP.14_CHAMBERS.1561.001, SC.HIST.LANDJUWEEL.GOES_PARTICIPATION.1561.001]
+    dramatic_mechanism: "sign → performance → audience → competing interpretation → social consequence"
+    hard_guardrails: ["Goes not proven official competitor", "no Goese prize invented", "Dee absent in 1561"]
+
+  - id: PACK.ANTWERP.1561
+    label: "Antwerp 1561 — city as theatre"
+    status: AUTHORING_READY_SCENE_CONTEXT
+    world_modules: [WORLD.ANTWERP]
+    detail_file: storybible/domains/ANTWERP_TIME_SLICES_1561_1585.md
+    dominant_world_state: [Landjuweel, trade, public_rhetoric, crowd_routes, multilingual_city]
+    hard_guardrails: ["Claes observer/network visitor", "Dee absent", "no official Goese competition role"]
+
+  - id: PACK.ANTWERP.1563_1564
+    label: "Antwerp 1563–early 1564 — city as book/workshop"
+    status: AUTHORING_READY_SCENE_CONTEXT
+    world_modules: [WORLD.ANTWERP, WORLD.PRINT_BOOK_NETWORK]
+    detail_file: storybible/domains/ANTWERP_TIME_SLICES_1561_1585.md
+    dominant_world_state: [print_divided_labour, multilingual_correspondence, Silvius_Dee, copying_accounts, censorship_permissions]
+    hard_guardrails: ["Claes not university student", "Plantin not automatic conspirator"]
+
+  - id: PACK.ANTWERP.1566
+    label: "Antwerp 1566 — city as broken image"
+    status: AUTHORING_READY_SCENE_CONTEXT
+    world_modules: [WORLD.ANTWERP, WORLD.RELIGIOUS_SPACE.SENSORY_CHURCH]
+    detail_file: storybible/domains/ANTWERP_TIME_SLICES_1561_1585.md
+    dominant_world_state: [iconoclasm, altered_religious_space, contested_public_confession, memory_loss]
+    hard_guardrails: ["show material/social rupture", "no simple binary population map"]
+
+  - id: PACK.ANTWERP.1567_1569
+    label: "Antwerp 1567–1569 — surveillance and repression"
+    status: AUTHORING_READY_SCENE_CONTEXT
+    world_modules: [WORLD.ANTWERP, WORLD.HISTORICAL_SUBSTRATE_1540_1605]
+    detail_file: storybible/domains/ANTWERP_TIME_SLICES_1561_1585.md
+    dominant_world_state: [repression, visibility_risk, partial_information, arrest_documentation, public_punishment]
+    hard_guardrails: ["Cornelis exact case is fiction", "execution date 19 November 1569 current canon"]
+
+  - id: PACK.ANTWERP.1576_1578
+    label: "Antwerp 1576–1578 — wound, rumour and print release"
+    status: AUTHORING_READY_SCENE_CONTEXT
+    world_modules: [WORLD.ANTWERP, WORLD.PRINT_BOOK_NETWORK, WORLD.HISTORICAL_SUBSTRATE_1540_1605]
+    detail_file: storybible/domains/ANTWERP_TIME_SLICES_1561_1585.md
+    dominant_world_state: [Spanish_Fury_memory, rumour_letters_print, production_risk, Projectio_Word]
+    hard_guardrails: ["Brevísima provenance remains fiction", "reveal is not decryption"]
+
+  - id: PACK.ANTWERP.1585
+    label: "Antwerp 1585 — transformed formative city"
+    status: AUTHORING_READY_SCENE_CONTEXT
+    world_modules: [WORLD.ANTWERP, WORLD.HISTORICAL_SUBSTRATE_1540_1605]
+    detail_file: storybible/domains/ANTWERP_TIME_SLICES_1561_1585.md
+    dominant_world_state: [capitulation, migration, network_fracture, changed_public_order]
+    hard_guardrails: ["do not reduce to battlefield date", "do not back-project this state into 1560s"]
+
+  - id: PACK.GOES.SCHUTTERIJ
+    label: "Goes — shooting guild/civic defence context"
+    status: AUTHORING_READY_SCENE_CONTEXT
+    world_modules: [WORLD.GOES, WORLD.SCHUTTERIJ_MILITARY]
+    detail_file: storybible/domains/SCHUTTERIJ_MILITARY_PRACTICE_1550_1607.md
+    source_claims: [SC.HIST.GOES.SCHUTTERIJ.FIREARM_GUILD.16C.001]
+    categories_to_keep_separate: [schuttersgilde, civic_watch, garrison_professionals, later_standardized_drill]
+    hard_guardrails: ["1516/1530 firearm-guild date conflict preserved", "no later equipment automatically in 1572"]
+
+  - id: PACK.MILITARY.DEGHEYN_1607_COMPARATOR
+    label: "Late military practice — De Gheyn comparator"
+    status: AUTHORING_REFERENCE_NOT_EARLY_SCENE_TEMPLATE
+    world_modules: [WORLD.SCHUTTERIJ_MILITARY]
+    detail_file: storybible/domains/SCHUTTERIJ_MILITARY_PRACTICE_1550_1607.md
+    source_claims: [SC.HIST.DEGHEYN.WAPENHANDELINGHE.1607.001]
+    function: "late comparator for standardized embodied weapon sequence"
+    hard_guardrails: ["not a 1572 Goes drill manual", "no automatic twelve-apostles/fork/fire-rate back-projection"]

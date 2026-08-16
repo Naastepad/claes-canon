@@ -1,0 +1,145 @@
+schema_version: "1.0.0"
+kind: SourceClaimRegistryExtension
+claims:
+  - id: SC.HIST.BREAD.URBAN_BAKERY.DEFAULT.001
+    type: SourceClaim
+    statement: "For a sixteenth-century urban bread scene, professional/regulatory baking is a safer default than inventing a private household oven; the exact Goese bakery and oven remain locally unverified."
+    claim_type: historical_craft_reconstruction
+    subject: "urban bread production"
+    predicate: "authoring default"
+    object: "professional or regulated bakery"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-HIST-BREAD-LOWCOUNTRIES-ZEELAND-001]
+    verification:
+      status: transferable_with_local_limits
+      note: "This is a scene default, not proof that every household lacked an oven."
+
+  - id: SC.HIST.BREAD.ASSIZE.001
+    type: SourceClaim
+    statement: "Bread assizes in the Low Countries connected grain prices with regulated loaf price or weight; Zeeland continuity is documented, but exact Goes 1550 tariffs are not established here."
+    claim_type: historical_food_regulation
+    subject: "bread assize"
+    predicate: "regulated"
+    object: "price-weight relation"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-HIST-BREAD-LOWCOUNTRIES-ZEELAND-001]
+    verification:
+      status: regional_continuity_not_local_tariff
+      note: "Do not invent exact Goese prices or loaf weights."
+
+  - id: SC.HIST.BEER.PROCESS.HOPPED.001
+    type: SourceClaim
+    statement: "Sixteenth-century Low Countries brewing can be modelled as malted grain to wort, boiling with hops, cooling, fermentation and casking; this is a transferable process chain, not a Goese recipe."
+    claim_type: historical_craft_process
+    subject: "beer production"
+    predicate: "transferable process"
+    object: "malt-wort-hop-ferment-cask chain"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-HIST-BEER-LOWCOUNTRIES-GOES-001]
+    verification:
+      status: historical_technical_synthesis
+      note: "Do not default sixteenth-century Goes to generic gruit or modern style categories."
+
+  - id: SC.HIST.BIERSTEKER.DISTRIBUTION.001
+    type: SourceClaim
+    statement: "A biersteker can safely be modelled as an intermediary in obtaining, storing, accounting for and distributing beer; the role does not by itself imply brewing or brewery ownership."
+    claim_type: historical_trade_role
+    subject: "biersteker"
+    predicate: "distribution role"
+    object: "beer intermediary"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-HIST-BEER-LOWCOUNTRIES-GOES-001]
+    verification:
+      status: role_synthesis_with_later_contractual_analogy
+      note: "Specific blending or recipe-making requires separate evidence."
+
+  - id: SC.HIST.REIMERSWAAL.SCHOOL.CONTINUITY.001
+    type: SourceClaim
+    statement: "Reimerswaal had a long-lived school institution: a school is reported before 1296, a 1497 regest reorganizes a scolaster into singing master plus schoolmaster, and schoolmaster appointments recur in 1569/1570."
+    claim_type: historical_education_institution
+    subject: "Reimerswaal school"
+    predicate: "institutional continuity"
+    object: "medieval through sixteenth century"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-HIST-REIMERSWAAL-SCHOOL-CITY-001]
+    verification:
+      status: local_reference_and_regest_evidence
+      note: "Does not prove the exact 1554 curriculum, building or teacher."
+
+  - id: SC.HIST.REIMERSWAAL.PRESSURE.1555_1561.001
+    type: SourceClaim
+    statement: "During Claes' fictional 1554-1561 residence, Reimerswaal remained a functioning town while major water events in 1555 and 1557, a fire in 1558 and renewed flooding in 1561 repeatedly damaged its material environment."
+    claim_type: historical_urban_change
+    subject: "Reimerswaal"
+    predicate: "functioning under recurrent disaster pressure"
+    object: "1555-1561"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-HIST-REIMERSWAAL-SCHOOL-CITY-001]
+    verification:
+      status: local_historical_synthesis
+      note: "Do not write the town as already abandoned or reduce every year to disaster spectacle."
+
+  - id: SC.HIST.LANDJUWEEL.ANTWERP.14_CHAMBERS.1561.001
+    type: SourceClaim
+    statement: "Willem Silvius' 1562 print states that fourteen chambers of rhetoric presented themselves at the Antwerp Landjuweel on 3 August 1561 and preserves charter, entry description, results, blazon and plays."
+    claim_type: historical_event_primary_print
+    subject: "Antwerp Landjuweel"
+    predicate: "official competition"
+    object: "fourteen chambers"
+    evidence_status: VERIFIED
+    source_ids: [SRC-HIST-REDERIJKERS-LANDJUWEEL-1561-001]
+    verification:
+      status: contemporary_print_description
+      note: "This is the principal event-level anchor for official participation."
+
+  - id: SC.HIST.LANDJUWEEL.GOES_PARTICIPATION.1561.001
+    type: SourceClaim
+    statement: "The currently consulted project evidence does not establish a Goese chamber as one of the fourteen official Antwerp Landjuweel competitors or as a prize winner in 1561."
+    claim_type: evidence_boundary
+    subject: "Goes chamber participation at Antwerp Landjuweel"
+    predicate: "not established"
+    object: "official competitor or prize winner"
+    evidence_status: UNKNOWN
+    source_ids: [SRC-HIST-REDERIJKERS-LANDJUWEEL-1561-001, SRC-HIST-GOES-REDERIJKERS-001]
+    verification:
+      status: negative_project_evidence_boundary
+      note: "Fictional attendance/observation is separate from official competition."
+
+  - id: SC.HIST.ANTWERP.PRINT.DIVIDED_LABOUR.001
+    type: SourceClaim
+    statement: "Antwerp print production is best represented as divided labour involving manuscript/editorial work, typesetting, presswork, correction, gathering/binding, bookselling and distribution rather than one all-knowing printer."
+    claim_type: historical_print_practice
+    subject: "Antwerp print production"
+    predicate: "divided labour"
+    object: "multi-actor workflow"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-HIST-ANTWERP-TIMESLICES-1561-1585-001]
+    verification:
+      status: institutional_museum_and_project_source_synthesis
+      note: "Do not infer secret-network knowledge from ordinary workshop proximity."
+
+  - id: SC.HIST.GOES.SCHUTTERIJ.FIREARM_GUILD.16C.001
+    type: SourceClaim
+    statement: "A Goese firearm/kolvenier shooting guild under Sint Adriaan/Edele Busse existed in the first half of the sixteenth century, but current local heritage sources disagree between 1516 and 1530 for its beginning."
+    claim_type: historical_local_institution
+    subject: "Goese firearm shooting guild"
+    predicate: "present"
+    object: "first half sixteenth century"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-HIST-GOES-SCHUTTERIJ-DEGHEYN-001]
+    verification:
+      status: local_sources_conflict_on_exact_start_date
+      note: "Preserve 1516/1530 discrepancy until archival provenance is reconciled."
+
+  - id: SC.HIST.DEGHEYN.WAPENHANDELINGHE.1607.001
+    type: SourceClaim
+    statement: "Jacob de Gheyn II's Wapenhandelinghe was published in 1607 and uses 117 engravings to show roer, musket and pike actions step by step."
+    claim_type: historical_military_book
+    subject: "Wapenhandelinghe"
+    predicate: "published and structured"
+    object: "1607 stepwise drill imagery"
+    evidence_status: VERIFIED
+    source_ids: [SRC-HIST-GOES-SCHUTTERIJ-DEGHEYN-001]
+    verification:
+      status: Rijksmuseum_object_record
+      note: "Use as late comparator; never as direct 1572 Goes drill evidence."

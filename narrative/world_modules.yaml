@@ -1,4 +1,4 @@
-schema_version: 1.2.1
+schema_version: 1.3.0
 kind: WorldModuleRegistry
 modules:
   - id: WORLD.HISTORICAL_SUBSTRATE_1540_1605
@@ -28,8 +28,8 @@ modules:
       - {date: 1566-08-01, precision: lower-bound, event: "Claes returns after Beeldenstorm", story_instance: NI.EVENT.CLAES_RETURN_GOES.1566.001}
     narrative_functions: ["childhood material world", "elementary schooling", "fire/air half of elemental symmetry", "family trade and later return", "1570 reveal work environment"]
     educational_route: "Claes receives elementary schooling in Goes; Cornelis intends Zierikzee as the next Latin-school destination before the 1554 fire."
-    linked_world_modules: [WORLD.HISTORICAL_SUBSTRATE_1540_1605, WORLD.RELIGIOUS_SPACE.SENSORY_CHURCH]
-    local_scene_layers: [narrative/world_goes_living_city.yaml, narrative/world_goes_grote_kerk.yaml, storybible/modules/WORLD_GOES_CHURCH_LOCAL.md, storybible/modules/WORLD_GOES_CHURCH_LITURGICAL_GUARDRAILS.md]
+    linked_world_modules: [WORLD.HISTORICAL_SUBSTRATE_1540_1605, WORLD.RELIGIOUS_SPACE.SENSORY_CHURCH, WORLD.BREAD_GRAIN, WORLD.BEER_BREWING_DISTRIBUTION, WORLD.SCHUTTERIJ_MILITARY]
+    local_scene_layers: [narrative/world_goes_living_city.yaml, narrative/world_goes_grote_kerk.yaml, storybible/modules/WORLD_GOES_CHURCH_LOCAL.md, storybible/modules/WORLD_GOES_CHURCH_LITURGICAL_GUARDRAILS.md, storybible/domains/BREAD_GRAIN_BAKING_1540_1602.md, storybible/domains/BEER_BREWING_BEERSTEKER_1540_1580.md, storybible/domains/REDERIJKERS_LANDJUWEEL_1561.md, storybible/domains/SCHUTTERIJ_MILITARY_PRACTICE_1550_1607.md]
     guardrails:
       - "Do not claim a continuously operating full official Goes Latin school through 1554 without evidence."
       - "Do not make Claes' Reimerswaal route begin from educational zero; his earlier elementary schooling in Goes is canon."
@@ -39,30 +39,38 @@ modules:
   - id: WORLD.REIMERSWAAL
     label: "Reimerswaal — cost pupil and Latin school years"
     canon_status: CANON
-    record_role: FRAMEWORK
+    record_role: FRAMEWORK_PLUS_ACTIVE_DOMAIN
     historical_method: SOURCE_WEIGHTED_RECONSTRUCTION
     claes_presence: {earliest: 1554-05-19, latest_exclusive: 1561-09-01, precision: bounded}
     narrative_functions: ["displacement", "Latin formation", "advanced older-pupil formation", "water/earth half of elemental symmetry", "adaptation to strange households", "water-marked Zovitius object biography"]
     educational_route: "After the Goes fire, Reimerswaal replaces the intended Zierikzee destination. Claes enters after elementary schooling in Goes; the 1554–1561 span progresses into advanced/older-pupil formation and is not seven years of beginner curriculum."
+    evidence_boundary: "Reimerswaal's durable school tradition is historically supported; the exact 1554 Latin curriculum, school building, teacher and Claes attendance are story reconstruction."
     linked_world_modules: [WORLD.HISTORICAL_SUBSTRATE_1540_1605, WORLD.RELIGIOUS_SPACE.SENSORY_CHURCH]
+    detail_files: [storybible/domains/REIMERSWAAL_SCHOOL_1554_1561.md, sources/SRC-HIST-REIMERSWAAL-SCHOOL-CITY-001.md]
+    scene_pack: PACK.REIMERSWAAL.SCHOOL_1554_1561
     guardrails:
       - "The city still functions during Claes' stay."
-      - "Claes experiences water threat, not the later final fall of the city."
+      - "Claes experiences recurrent water pressure, not the later final abandonment of the city."
       - "No invented named rector or fixed surviving medieval school building."
       - "Do not impose a modern fixed-age cohort or locally unverified class structure on the Reimerswaal school."
+      - "Exact 1554 Latin curriculum is source-weighted fictional reconstruction, not direct archival proof."
 
   - id: WORLD.ANTWERP
-    label: "Antwerp — free schools, trade, printing and clandestine knowledge"
+    label: "Antwerp — time-sliced trade, rhetoric, printing and conflict"
     canon_status: CANON
-    record_role: FRAMEWORK
-    narrative_functions: ["Landjuweel and multiple representation", "advanced practical-humanist formation", "Silvius/Dee network", "print-production reality", "security break and compartmentalisation"]
+    record_role: FRAMEWORK_PLUS_ACTIVE_DOMAIN
+    narrative_functions: ["Landjuweel and multiple representation", "advanced practical-humanist formation", "Silvius/Dee network", "print-production reality", "security break and compartmentalisation", "confessional rupture", "1578 Projectio of the Word", "1585 network transformation"]
     educational_model:
       includes: ["free-school environment", "private instruction", "Latin", "limited Greek", "French", "bookkeeping", "copying", "trade correspondence"]
       excludes: ["modern university model", "Leuven as part of Claes' canon route"]
     linked_world_modules: [WORLD.HISTORICAL_SUBSTRATE_1540_1605, WORLD.RELIGIOUS_SPACE.SENSORY_CHURCH]
+    detail_files: [storybible/domains/ANTWERP_TIME_SLICES_1561_1585.md, storybible/domains/REDERIJKERS_LANDJUWEEL_1561.md, sources/SRC-HIST-ANTWERP-TIMESLICES-1561-1585-001.md]
+    required_time_slices: ["1561 city as theatre", "1563-1564 city as book/workshop", "1566 city as broken image", "1567-1569 surveillance/repression", "1576-1578 wound/print release", "1585 transformed formative city"]
     guardrails:
       - "Claes is not a university student in Antwerp."
       - "Plantin can remain peripheral/prudent; no need to make him a core conspirator."
+      - "Dee is not placed at the 1561 Landjuweel."
+      - "Never write Antwerp as one unchanged scene world from 1561 to 1585."
 
   - id: WORLD.NISSEPAD
     label: "Nissepad — source-weighted family landscape"
@@ -79,7 +87,7 @@ modules:
   - id: WORLD.BREAD_GRAIN
     label: "Bread, grain and baking"
     canon_status: CANON
-    record_role: FRAMEWORK
+    record_role: ACTIVE_AUTHORING_DOMAIN
     historical_method: REGIONAL_SOURCE_WEIGHTING
     regions:
       Goes_Zeeland: "bread as matter and origin"
@@ -87,10 +95,41 @@ modules:
       Enkhuizen_North_Holland: "bread as distance, stock and sea"
     narrative_functions: ["sensory transformation", "material culture", "social hierarchy", "trade geography"]
     motif: MOTIF.BREAD
+    detail_files: [storybible/domains/BREAD_GRAIN_BAKING_1540_1602.md, sources/SRC-HIST-BREAD-LOWCOUNTRIES-ZEELAND-001.md]
+    scene_pack: PACK.BREAD.GOES_YOUTH
     guardrails:
       - "Do not install an unsupported private household oven when an urban professional bakery is more defensible."
       - "Keep grain type, flour refinement, ferment and oven practice historically/regionally specific."
       - "A proposed youth bakery scene remains OPEN until placed."
+      - "No modern recipe precision or rigid white-wheat/rye class taxonomy."
+
+  - id: WORLD.BEER_BREWING_DISTRIBUTION
+    label: "Beer production, distribution and biersteker practice"
+    canon_status: CANON
+    record_role: ACTIVE_AUTHORING_DOMAIN
+    historical_method: LOCAL_GOES_ANCHORS_PLUS_TRANSFERABLE_CRAFT_PROCESS
+    narrative_functions: ["Cornelis professional world", "trade and credit", "cask/transport materiality", "fermentation and condition as sensory training", "urban provisioning"]
+    detail_files: [storybible/domains/BEER_BREWING_BEERSTEKER_1540_1580.md, sources/SRC-HIST-BEER-LOWCOUNTRIES-GOES-001.md]
+    scene_pack: PACK.BEER.GOES_BIERSTEKER
+    guardrails:
+      - "Cornelis is a biersteker, not automatically a brewer or brewery owner."
+      - "The documented Nissepad brewery does not become proven Cornelis property."
+      - "Do not default sixteenth-century Goes to generic gruit beer."
+      - "No modern ABV/IBU/style taxonomy or invented exact recipe."
+
+  - id: WORLD.SCHUTTERIJ_MILITARY
+    label: "Goes shooting guilds, civic defence and later drill comparison"
+    canon_status: CANON
+    record_role: ACTIVE_AUTHORING_DOMAIN
+    historical_method: LOCAL_GOES_ANCHORS_PLUS_LATE_COMPARATOR
+    narrative_functions: ["civic defence", "bodily sequence and attention", "status/sociability", "1572 war pressure", "contrast between civic practice and later standardized drill"]
+    detail_files: [storybible/domains/SCHUTTERIJ_MILITARY_PRACTICE_1550_1607.md, sources/SRC-HIST-GOES-SCHUTTERIJ-DEGHEYN-001.md]
+    scene_packs: [PACK.GOES.SCHUTTERIJ, PACK.MILITARY.DEGHEYN_1607_COMPARATOR]
+    guardrails:
+      - "Keep schuttersgilde, civic watch, professional garrison and later standardized drill distinct."
+      - "Preserve the unresolved 1516/1530 local-source discrepancy for Edele Busse/Sint Adriaan."
+      - "Jacob de Gheyn's 1607 Wapenhandelinghe is not a 1572 Goes drill manual."
+      - "Do not back-project 1616-1665 equipment/costume and exact fire-rate claims into 1572."
 
   - id: WORLD.SALT
     label: "Salt as economic and elemental material"
