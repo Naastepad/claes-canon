@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-"""Generate a single self-contained Claude context pack.
+"""Generate Claude context packs sized for restricted chat fetchers.
 
-Claude Chat's restricted web fetcher may refuse URLs merely mentioned inside an
-already fetched document. This generator therefore concatenates the canonical
-files Claude needs for canon-sensitive writing/revision into one raw-fetchable
-file. GitHub remains source of truth; the pack is a generated projection only.
+Claude Chat may refuse repository traversal and may truncate one very large raw file.
+This generator therefore builds an index plus several thematic, self-contained packs.
+GitHub source files remain authoritative; generated packs are projections only.
 """
 from __future__ import annotations
 
@@ -13,62 +12,69 @@ from datetime import datetime, timezone
 import subprocess
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "prompts" / "CLAUDE_CONTEXT_PACK.md"
+PROMPTS = ROOT / "prompts"
+FULL_OUT = PROMPTS / "CLAUDE_CONTEXT_PACK.md"
+INDEX_OUT = PROMPTS / "CLAUDE_CONTEXT_INDEX.md"
 
-FIXED = [
-    "README.md",
-    "AI_ONBOARDING.md",
-    "CLAUDE.md",
-    "REPOSITORY_INTEGRITY.md",
-    "AUTHORING_POLICY.md",
-    "AGENTS.md",
-    "WRITING_PROTOCOL.md",
-    "canon/DECISIONS.yaml",
-    "canon/OPEN_DECISIONS.yaml",
-    "review/SYNC_STATUS.md",
-    "storybible/MASTER.md",
-    "storybible/INDEX.md",
-    "storybible/LEMMA_MCKEE_MASTER.md",
-    "storybible/STORY_PROJECTION_ROUND_C.md",
-    "storybible/MAYKEN_LAMPERT.md",
-    "narrative/story_projection_round_c.yaml",
-    "narrative/alchemical_authorial_architecture.yaml",
-    "narrative/domain_scene_packs.yaml",
-    "narrative/editorial_gates.yaml",
-    "narrative/mayken_independent_arc.yaml",
-    "narrative/mayken_relationship_projection.yaml",
-    "narrative/knowledge_states.yaml",
-    "narrative/instances.yaml",
-    "narrative/arcs.yaml",
-    "narrative/relationships.yaml",
-    "narrative/motifs.yaml",
-    "narrative/themes.yaml",
-    "review/READER_EXPERIENCE_PROTOCOL.md",
-    "review/READER_FEEDBACK_TEMPLATE.md",
-]
+PACKS = {
+    "01_CORE_CANON": [
+        "README.md",
+        "AI_ONBOARDING.md",
+        "CLAUDE.md",
+        "REPOSITORY_INTEGRITY.md",
+        "AUTHORING_POLICY.md",
+        "AGENTS.md",
+        "canon/DECISIONS.yaml",
+        "canon/OPEN_DECISIONS.yaml",
+        "review/SYNC_STATUS.md",
+        "storybible/MASTER.md",
+        "storybible/INDEX.md",
+    ],
+    "02_STORYBIBLE_PROJECTION": [
+        "storybible/LEMMA_MCKEE_MASTER.md",
+        "storybible/STORY_PROJECTION_ROUND_C.md",
+        "narrative/story_projection_round_c.yaml",
+        "narrative/alchemical_authorial_architecture.yaml",
+        "narrative/instances.yaml",
+        "narrative/arcs.yaml",
+        "narrative/relationships.yaml",
+        "narrative/motifs.yaml",
+        "narrative/themes.yaml",
+    ],
+    "03_WRITING_EDITORIAL": [
+        "WRITING_PROTOCOL.md",
+        "narrative/domain_scene_packs.yaml",
+        "narrative/editorial_gates.yaml",
+        "review/READER_EXPERIENCE_PROTOCOL.md",
+        "review/READER_FEEDBACK_TEMPLATE.md",
+    ],
+    "04_MAYKEN_KNOWLEDGE": [
+        "storybible/MAYKEN_LAMPERT.md",
+        "narrative/mayken_independent_arc.yaml",
+        "narrative/mayken_relationship_projection.yaml",
+        "narrative/knowledge_states.yaml",
+    ],
+}
 
 
 def git_sha() -> str:
     try:
-        return subprocess.check_output(
-            ["git", "rev-parse", "HEAD"], cwd=ROOT, text=True
-        ).strip()
+        return subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
     except Exception:
         return "unknown"
 
 
 def dated_decisions() -> list[str]:
-    paths: list[str] = []
+    out: list[str] = []
     cdir = ROOT / "canon"
     if not cdir.exists():
-        return paths
+        return out
     for p in sorted(cdir.glob("DECISIONS_*.md")):
-        paths.append(p.relative_to(ROOT).as_posix())
+        out.append(p.relative_to(ROOT).as_posix())
     for p in sorted(cdir.glob("DECISIONS_*.yaml")):
-        # DECISIONS.yaml itself is already fixed; include specialised dated registries.
         if p.name != "DECISIONS.yaml":
-            paths.append(p.relative_to(ROOT).as_posix())
-    return paths
+            out.append(p.relative_to(ROOT).as_posix())
+    return out
 
 
 def fence_for(path: str) -> str:
@@ -81,36 +87,27 @@ def fence_for(path: str) -> str:
     return "markdown"
 
 
-def main() -> None:
-    files: list[str] = []
-    for p in FIXED + dated_decisions():
-        if p not in files and (ROOT / p).is_file():
-            files.append(p)
+def existing(paths: list[str]) -> list[str]:
+    return [p for p in paths if (ROOT / p).is_file()]
 
-    timestamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
+
+def render_pack(title: str, files: list[str], sha: str, timestamp: str) -> str:
     lines = [
-        "# Claude Context Pack — GENERATED",
+        f"# Claude Context Pack — {title} — GENERATED",
         "",
-        "> **Generated projection; never edit by hand.** GitHub source files remain authoritative.",
-        "> This pack exists solely because some Claude Chat fetch environments only allow URLs",
-        "> explicitly supplied by the user and cannot traverse repository links reliably.",
+        "> Generated projection; never edit by hand. GitHub source files remain authoritative.",
+        "> Treat each SOURCE FILE section as the original source file.",
         "",
-        f"- source branch: `main`",
-        f"- source commit at generation: `{git_sha()}`",
+        "- source branch: `main`",
+        f"- source commit at generation: `{sha}`",
         f"- generated UTC: `{timestamp}`",
         f"- included files: `{len(files)}`",
         "",
-        "## Claude operating rule",
-        "",
-        "Treat every section below exactly as the source file named in its heading. Apply the",
-        "authority hierarchy in `AI_ONBOARDING.md`; physical order inside this concatenated pack",
-        "does not change authority. If this pack conflicts with a newer explicitly supplied GitHub",
-        "file, the newer source file wins and the pack should be regenerated.",
+        "Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pack does not alter authority.",
         "",
         "---",
         "",
     ]
-
     for path in files:
         text = (ROOT / path).read_text(encoding="utf-8")
         lines += [
@@ -123,10 +120,62 @@ def main() -> None:
             "---",
             "",
         ]
+    return "\n".join(lines)
 
-    OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text("\n".join(lines), encoding="utf-8")
-    print(f"Wrote {OUT.relative_to(ROOT)} with {len(files)} source files")
+
+def main() -> None:
+    PROMPTS.mkdir(parents=True, exist_ok=True)
+    sha = git_sha()
+    timestamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
+
+    packs = {name: existing(paths) for name, paths in PACKS.items()}
+    packs["05_DATED_DECISIONS"] = existing(dated_decisions())
+
+    all_files: list[str] = []
+    for files in packs.values():
+        for p in files:
+            if p not in all_files:
+                all_files.append(p)
+
+    # Retain the full pack for agents that can consume it, but Claude Chat should prefer split packs.
+    FULL_OUT.write_text(render_pack("FULL", all_files, sha, timestamp), encoding="utf-8")
+
+    index_lines = [
+        "# Claude Context Index — GENERATED",
+        "",
+        "> Use this index for Claude Chat. Fetch the thematic packs explicitly supplied by the user.",
+        "> GitHub `main` remains authoritative; these are generated projections.",
+        "",
+        f"- source commit: `{sha}`",
+        f"- generated UTC: `{timestamp}`",
+        "",
+        "## Recommended load order",
+        "",
+    ]
+
+    base = "https://raw.githubusercontent.com/Naastepad/claes-canon/main/prompts"
+    for i, (name, files) in enumerate(packs.items(), start=1):
+        filename = f"CLAUDE_CONTEXT_{name}.md"
+        out = PROMPTS / filename
+        out.write_text(render_pack(name, files, sha, timestamp), encoding="utf-8")
+        index_lines += [
+            f"{i}. `{name}` — {len(files)} files",
+            f"   {base}/{filename}",
+            "",
+        ]
+
+    index_lines += [
+        "## Task loading",
+        "",
+        "- Canon/history question: load `01_CORE_CANON` plus `05_DATED_DECISIONS` when recent decisions may matter.",
+        "- Chapter/scene construction: also load `02_STORYBIBLE_PROJECTION` and `03_WRITING_EDITORIAL`.",
+        "- Any Mayken scene: also load `04_MAYKEN_KNOWLEDGE`.",
+        "- Hard critique/revision: load `01_CORE_CANON`, `02_STORYBIBLE_PROJECTION`, and `03_WRITING_EDITORIAL`.",
+        "- If a pack is truncated, report the last SOURCE FILE heading seen; do not pretend the remainder was read.",
+    ]
+    INDEX_OUT.write_text("\n".join(index_lines), encoding="utf-8")
+
+    print(f"Wrote full pack, index and {len(packs)} thematic packs from {len(all_files)} source files")
 
 
 if __name__ == "__main__":
