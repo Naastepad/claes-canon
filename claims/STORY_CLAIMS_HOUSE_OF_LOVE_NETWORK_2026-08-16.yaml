@@ -62,7 +62,7 @@ claims:
     The 18 May 1554 Goes fire confronts Cornelis with catastrophic loss after his Familist affiliation already exists. The catastrophe tests and transforms his understanding of love, suffering and responsibility; it is not his conversion trigger.
   subject: ENT.PERSON.CORNELIS
   predicate: has_preexisting_affiliation_tested_by
-  object: NI.GOES.FIRE.1554
+  object: Goes_fire_18_May_1554
   canon_status: CANON
   decision_id: DEC.CORNELIS.HOUSE_OF_LOVE.PRE_FIRE_AFFILIATION.2026-08-16
   fictionality: novel_canon
