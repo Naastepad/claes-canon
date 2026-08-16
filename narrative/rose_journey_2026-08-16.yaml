@@ -1,0 +1,68 @@
+schema_version: 1.0.0
+kind: NarrativeMotifExtension
+records:
+- id: MOTIF.ROSES.FIDES_SPES_CARITAS
+  type: Motif
+  label: Tocht der Rozen — geloof, hoop, liefde
+  status: CANON
+  decision_ids:
+  - DEC.CLAES.ROSE_JOURNEY.2026-08-16
+  - DEC.MAYKEN.ROSE_MATERIA_MEDICA.2026-08-16
+  linked_arcs:
+  - ARC.CLAES.SINNE_RECOVERY
+  - ARC.CLAES.LIFE
+  - ARC.MAYKEN.LIFE
+  linked_relationships:
+  - REL.CLAES.BELOVED.RECOVERY
+  - REL.CLAES.MAYKEN.CONJUNCTIO
+  movement:
+  - stage: faith_trust
+    preferred_image: Rosa pimpinellifolia
+    sensory_register: white flower, coastal light, exposed sand or dune edge, thorn and wind
+    dramatic_function: "Departure requires trust before certainty."
+  - stage: hope
+    preferred_image: Rosa canina
+    sensory_register: pale pink flower in hedge, dike or wayside; recurrent rather than exceptional
+    dramatic_function: "Hope belongs to duration, distance and the possibility of a better destination."
+  - stage: love_nearness
+    preferred_image: Rosa rubiginosa
+    sensory_register: deeper pink flower and scented foliage in sheltered hedge or near habitation where ecologically plausible
+    dramatic_function: "Love first appears as nearness, recognition and relation rather than possession."
+  - stage: caritas_in_action
+    preferred_image: Rosa gallica/officinalis
+    sensory_register: cultivated medicinal rose, gathered petals, vessel, water/oil/fat/syrup, cloth, smell, stain, preparation and touch
+    dramatic_function: "Love becomes care when knowledge is used responsibly for another body."
+  clause: "The sequence is authorial architecture, not a botanical procession that must appear in a fixed or complete order on every route segment."
+  sinne_relation:
+    sequence: "sensation -> recognition -> comparison -> pattern -> understanding -> choice"
+    use: "Each recurrence should move Claes one step further from noticing toward responsible action."
+  mayken_relation:
+    function: "Mayken can name, test, select, prepare, reject or limit a use from her own material judgement; she is not present to decode symbolism for Claes."
+    agency_gate: "Every developed rose-care scene must give Mayken an objective, judgement, refusal, cost or decision of her own."
+  prose_guardrails:
+  - Never have narration explain that a rose 'stands for' a virtue merely to expose the design.
+  - Prefer recurrence with changed emotional value over repeated emblematic description.
+  - Ecology, season, route and historical naming outrank symbolic convenience.
+  - Avoid modern Latin-binomial dialogue unless narratively justified; species names are principally author-side controls.
+  - Care scenes require pain, uncertainty, labour and limits; no magical healing beat.
+
+- id: NI.OPEN.NORTH_HOLLAND.FIRE_CARE
+  type: NarrativeHingeProposal
+  label: Northern fire-care culmination of the rose motif
+  status: OPEN_RESEARCH_DEPENDENCY
+  target_period: "late arc before or around Enkhuizen 1602, exact placement open"
+  participants:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.BELOVED
+  required_story_functions:
+  - make Mayken's materia-medica expertise causally useful
+  - force Claes from perception into timely action
+  - transform romantic love into caritas toward a third party
+  - reactivate fire memory without merely repeating the 1554 trauma scene
+  - preserve uncertainty of outcome and early-modern therapeutic limits
+  research_gate:
+    need: "Select a documented North-Holland/West-Friesland fire, fire aftermath, shipboard burn incident, or other historically anchored setting compatible with route and chronology."
+    rejected_shortcuts:
+    - "Hoorn 1572 major city fire — unsupported and may not be used."
+    - "Egmond Abbey simply burned down on 7 June 1573 — contradicted by the currently adopted evidence boundary; distinguish demolition of the abbey from burning of other Egmond buildings."
+  outcome_gate: "A striking recovery may be experienced by characters as providential or wonder-like, but the narrative may not assert that rose treatment medically caused a miraculous cure."
