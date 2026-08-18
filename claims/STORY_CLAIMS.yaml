@@ -1,6 +1,6 @@
 schema_version: 1.2.0
 kind: StoryClaimRegistry
-claim_count: 34
+claim_count: 35
 claims:
 - id: STC.CLAES.BIRTH.001
   type: StoryClaim
@@ -17,7 +17,7 @@ claims:
   - brevisima-date-resonance
 - id: STC.CLAES.SCHOOL.GOES.001
   type: StoryClaim
-  statement: Claes receives elementary education in Goes before May 1554; no uninterrupted full official Goes Latin school in this period is claimed.
+  statement: Claes receives elementary education in Goes before May 1554 and is ready in his later Goese school years for initial Latin/humanist instruction; no uninterrupted full official Goes Latin school through 1554 is claimed.
   canon_status: CANON
   evidence_status: SUPPORTED
   subjects:
@@ -30,6 +30,26 @@ claims:
     precision: approximate
   tags:
   - education
+- id: STC.CLAES.PUTTUS.001
+  type: StoryClaim
+  statement: In novel canon, Nicolaes van de Put (Puttus) is Claes' Goese Latin master in the final school years before the May 1554 fire, building on Claes' elementary literacy and introducing him to Latin/humanist study.
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  subjects:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.NICOLAES_PUTTUS
+  objects:
+  - ENT.LOC.GOES
+  story_time:
+    earliest: '1551-01-01'
+    latest_exclusive: '1554-05-19'
+    precision: approximate
+  source_refs:
+  - SC.HIST.PUTTUS.GOES.1512.001
+  tags:
+  - education
+  - mentor
+  - historical-person-fictional-relationship
 - id: STC.CLAES.REIMERSWAAL.001
   type: StoryClaim
   statement: After the Goes fire Claes is sent later in 1554 as a cost pupil to the Latin school of Reimerswaal and remains in the Reimerswaal educational environment until summer 1561; the later years are advanced/older-pupil formation rather than seven years of beginner curriculum.
@@ -48,7 +68,7 @@ claims:
   - location
 - id: STC.CLAES.ZIERIKZEE.PLAN.001
   type: StoryClaim
-  statement: Before the 1554 fire Cornelis intends Claes to move from his elementary schooling in Goes into the Latin-school route at Zierikzee; after the fire Zierikzee is abandoned as the intended destination and Reimerswaal becomes the actual route.
+  statement: Before the 1554 fire Cornelis intends Claes to move from elementary schooling and initial Latin/humanist formation under Puttus in Goes into a more sustained Latin-school route at Zierikzee; after the fire Zierikzee is abandoned as the intended destination and Reimerswaal becomes the actual route.
   canon_status: CANON
   evidence_status: PLAUSIBLE
   subjects:
