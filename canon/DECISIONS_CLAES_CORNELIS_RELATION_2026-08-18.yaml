@@ -1,0 +1,62 @@
+schema_version: 1.0.0
+kind: CanonDecisionRegistryExtension
+decisions:
+- id: DEC.CLAES.CORNELIS.RECOGNITION.2026-08-18
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    Before the 1554 fire, Claes admires Cornelis and actively longs for his recognition. Cornelis does love and trust his son, but he expresses that love primarily through instruction, work, responsibility, material provision and investment in Claes' education rather than frequent verbal praise. Claes does not automatically experience those functional acts as recognition and therefore increasingly tries to earn approval by being useful, precise and dependable.
+  affects:
+  - REL.CLAES.CORNELIS
+  - ARC.CLAES.CORNELIS
+  - ARC.CLAES.LIFE.P02
+  - storybible/CLAES_CORNELIS_RELATION_1547_1569.md
+  guardrails:
+  - Cornelis is not canonically cold, loveless or contemptuous.
+  - Recognition scarcity is relational asymmetry, not proof that Cornelis does not value Claes.
+  - Do not make this a separate replacement core wound; it is a relational pressure that feeds Claes' existing attention/control vulnerability.
+
+- id: DEC.CLAES.CORNELIS.RESPONSIBILITY.2026-08-18
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    As Claes grows older, especially in the early 1550s, Cornelis increasingly entrusts him with age-appropriate household and small trade responsibilities, including tasks that matter while Cornelis is away on journeys. Claes can experience himself as the oldest son who must help carry the household, watch over Jan, remember or deliver instructions, count or check simple things, and assist Tanneken. Failure has real consequences, but no specific corporal-punishment regime is canonized.
+  affects:
+  - REL.CLAES.CORNELIS
+  - REL.CLAES.BROTHER
+  - storybible/FAMILY_CLAES_1542_1554.md
+  - storybible/CLAES_CORNELIS_RELATION_1547_1569.md
+  guardrails:
+  - Responsibilities must remain plausible for Claes' age and status; do not turn an eleven-year-old into an adult merchant or head of household.
+  - Consequences may include correction, repetition, extra work, loss of trust, practical repair or visible cost; corporal punishment is not implied unless separately decided.
+  - Claes' later guilt about the fire may include the subjective sense that he was supposed to help protect the household, but the story must not make him objectively responsible for the deaths.
+
+- id: DEC.CLAES.CORNELIS.RELIGIOUS_DISSONANCE.2026-08-18
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    From approximately 1552-1553, while Claes still inhabits the ordinary Catholic child-world of Goes, he begins to notice small unexplained differences in Cornelis' attention, silences, wording and reactions within that same outward Catholic environment. Claes does not know that Cornelis has entered the Huis der Liefde. The tension is therefore pre-conceptual religious dissonance, not an explicit Protestant-versus-Catholic father-son argument.
+  affects:
+  - REL.CLAES.CORNELIS
+  - ENT.PERSON.CORNELIS
+  - DEC.CORNELIS.HOUSE_OF_LOVE.PRE_FIRE_AFFILIATION.2026-08-16
+  - DEC.CORNELIS.HOUSE_OF_LOVE.OUTWARD_CONFORMITY.2026-08-16
+  - storybible/CLAES_CORNELIS_RELATION_1547_1569.md
+  guardrails:
+  - Do not call Cornelis simply Protestant in this period; current canon is Familist/Huis der Liefde with outward Catholic conformity.
+  - Claes does not identify the movement, doctrine or network before later evidence gives him reason to do so.
+  - Do not turn every church scene into coded suspicion; the dissonance should remain intermittent and child-scaled.
+
+- id: DEC.CLAES.CORNELIS.POSTFIRE_READING.2026-08-18
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    The established post-fire separation gains an additional relational layer: Cornelis' decision to preserve Claes' education by sending him to Reimerswaal is one of his strongest acts of care, while Claes can also read it through the older recognition gap as evidence that he is still not the son his father wants near him. This interpretation is Claes' wounded reading, not Cornelis' intention.
+  affects:
+  - DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14
+  - REL.CLAES.CORNELIS
+  - ARC.CLAES.CORNELIS
+  - storybible/CLAES_CORNELIS_RELATION_1547_1569.md
+  guardrails:
+  - Preserve both truths: Cornelis sacrifices to protect Claes' future; Claes experiences separation as another loss.
+  - Do not flatten the relationship into abuse or simple abandonment.
