@@ -1,0 +1,75 @@
+schema_version: 1.0.0
+kind: RelationshipRefinement
+id: REL.CLAES.CORNELIS.REFINEMENT.2026-08-18
+status: CANON
+participants: [ENT.PERSON.CLAES, ENT.PERSON.CORNELIS]
+governs: REL.CLAES.CORNELIS
+phases:
+- label: admiration and apprenticeship
+  story_time: {earliest: '1547-01-01', latest_exclusive: '1551-01-01', precision: approximate}
+  value_state: dependence -> admiration
+  claes_need: be seen and approved by Cornelis
+  cornelis_expression: instruction, task, correction, inclusion in practical work
+  tension: Claes can mistake functional trust for absence of affection because explicit praise is scarce.
+
+- label: recognition hunger and delegated responsibility
+  story_time: {earliest: '1551-01-01', latest_exclusive: '1554-05-18', precision: approximate}
+  value_state: admiration -> striving for earned recognition
+  mechanism:
+  - Cornelis gives Claes increasingly consequential but age-appropriate tasks.
+  - Claes responds by becoming more exact, useful and dependable.
+  - Successful performance often produces another task, correction or enlarged responsibility rather than explicit praise.
+  paradox: >-
+    Claes may believe he is still not good enough because his father rarely praises him, while Cornelis may be increasing responsibility precisely because he trusts him.
+  household_role:
+  - help Tanneken during Cornelis' absences
+  - watch or fetch Jan when appropriate
+  - carry or remember instructions and messages
+  - count/check simple household or trade items
+  - repair or repeat work after mistakes
+  guardrail: No adult merchant authority and no automatic corporal punishment.
+
+- label: pre-conceptual religious dissonance
+  story_time: {earliest: '1552-01-01', latest_exclusive: '1554-05-18', precision: approximate}
+  value_state: shared visible Catholic world -> first unexplained difference
+  cornelis_state: Familist/Huis der Liefde affiliation with outward Catholic conformity
+  claes_state: ordinary Catholic child-world; no knowledge of the Huis der Liefde
+  scene_language:
+  - differing attention in church
+  - a silence where Claes expects an answer
+  - wording that does not match priest/school language exactly
+  - a book, visitor or journey Cornelis closes off without explanation
+  guardrail: Do not stage an explicit Protestant-versus-Catholic argument.
+
+- label: fire and impossible responsibility
+  story_time: {earliest: '1554-05-18', latest_exclusive: '1554-06-01', precision: bounded}
+  value_state: useful oldest son -> survivor unable to protect the household
+  subjective_wound: >-
+    Because Claes had already begun to experience himself as someone who should help carry and watch over the household, the deaths of Tanneken, Jan and the unborn child can feed an irrational sense that he failed a responsibility.
+  objective_truth: Claes is not responsible for the fire or deaths.
+
+- label: care misread as rejection
+  story_time: {earliest: '1554-05-18', latest_exclusive: '1561-09-01', precision: bounded}
+  value_state: surviving pair -> loving sacrifice experienced as abandonment
+  cornelis_intention: preserve Claes' education and future while rebuilding in Goes
+  claes_reading: >-
+    The older recognition gap allows Claes to wonder whether being sent away confirms that his father still does not choose him for closeness.
+  guardrail: Preserve Cornelis' care and sacrifice; this is not simple abandonment.
+
+- label: old closed doors acquire meaning
+  story_time: {earliest: '1561-09-01', latest_exclusive: '1569-11-20', precision: bounded}
+  value_state: remembered childhood dissonance -> suspicion and partial understanding
+  function: >-
+    As Claes later sees Cornelis' dangerous routes, books, papers and loyalties, earlier childhood silences and incongruities retrospectively become meaningful. The adult son discovers that the closed doors he sensed as a child were real, even though he had misunderstood their cause.
+
+terminal_resonance:
+  date: '1569-11-19'
+  meaning: >-
+    Cornelis' execution removes not only the father but the remaining possibility of receiving the explicit recognition, explanation and reconciliation Claes had long wanted.
+
+scene_guardrails:
+- Do not explain the recognition dynamic in every scene; let it emerge from task, expectation, response and silence.
+- Cornelis may be demanding without being cruel.
+- Trust may be expressed as responsibility.
+- Claes' precision is both genuine aptitude and, in part, a relational strategy; neither explanation cancels the other.
+- Religious dissonance must remain child-scaled before 1554.
