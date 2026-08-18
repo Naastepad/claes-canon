@@ -1,4 +1,4 @@
-schema_version: "1.0.0"
+schema_version: "1.1.0"
 kind: SourceClaimRegistryExtension
 claims:
   - id: SC.HIST.NISSEPAT.ARMS.VOETBOOG.001
@@ -43,6 +43,48 @@ claims:
     verification:
       status: local_source_synthesis
       note: Preserve the separate 1516/1530 dispute only for the start date of the firearm guild; do not swap Sint Joris and Sint Sebastiaan.
+
+  - id: SC.HIST.GOES.SCHUTTERIJ.SINT_JORIS.DEVISE.001
+    type: SourceClaim
+    statement: >-
+      The Goese Sint-Joris / Edele Voetboog tradition is locally associated with the devies "Van Ongenugten Vrij".
+    claim_type: historical_local_guild_identity
+    subject: Goese Sint-Joris / Edele Voetboog
+    predicate: bears devies
+    object: Van Ongenugten Vrij
+    evidence_status: SUPPORTED
+    source_ids: [SRC-HIST-GOES-SCHUTTERIJ-DEGHEYN-001]
+    verification:
+      status: local_heritage_source_synthesis
+      note: The devies may be part of guild identity in prose, but do not invent a specific inscription object or display location without scene-level evidence.
+
+  - id: SC.HIST.GOES.SCHUTTERIJ.PAPEGAAI.001
+    type: SourceClaim
+    statement: >-
+      Goese shooting-guild practice included competitive shooting at a "papegay" / artificial bird on a high pole; the successful shooter could be recognized as schutterskoning.
+    claim_type: historical_local_guild_practice
+    subject: Goese schuttersgilden
+    predicate: practised
+    object: papegaai shooting / schutterskoning competition
+    evidence_status: SUPPORTED
+    source_ids: [SRC-HIST-GOES-SCHUTTERIJ-DEGHEYN-001]
+    verification:
+      status: local_heritage_source_synthesis
+      note: This supports a guild competition scene but does not canonize Cornelis as winner or king.
+
+  - id: SC.HIST.GOES.SCHUTTERIJ.HOVEN.SOUTHWEST.001
+    type: SourceClaim
+    statement: >-
+      The Sint-Joris voetboog and Sint-Sebastiaan handboog shooting grounds/hoven lay next to one another on the south-west side of Goes, south of the church, within the later Kreukelmarkt/Van de Spiegelstraat/Wijngaardstraat area.
+    claim_type: historical_local_topography
+    subject: Goese bow-guild hoven
+    predicate: located
+    object: south-west side of the city, south of the church
+    evidence_status: SUPPORTED_WITH_LATER_STREET_REFERENCE
+    source_ids: [SRC-HIST-GOES-SCHUTTERIJ-DEGHEYN-001]
+    verification:
+      status: local_topographic_synthesis
+      note: Use period-space description in prose; current street names are orientation aids, not sixteenth-century dialogue/toponymy.
 
   - id: SC.HIST.NISSEPAT.ARMS.ARMIGER_1581.001
     type: SourceClaim
