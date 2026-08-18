@@ -31,13 +31,19 @@ The family charge can be used as voetboog while those provenance details remain 
 
 Current Goese source synthesis keeps three institutions separate:
 
-- **Sint-Joris / Edele Voetboog** — voetboog/crossbow tradition;
+- **Sint-Joris / Edele Voetboog** — voetboog/crossbow tradition; devies **`Van Ongenugten Vrij`**;
 - **Sint-Sebastiaan** — handboog tradition;
 - **Sint-Adriaan / Edele Busse** — firearm/kolvenier tradition.
 
 For this project **Sint-Joris is the relevant guild** for Cornelis' fictional crossbow membership.
 
 Do not swap Sint-Joris and Sint-Sebastiaan merely because later/secondary pages are inconsistent. The governing local schutterij dossier and source bundle preserve the current project distinction.
+
+### Guild topography
+
+The Sint-Joris and Sint-Sebastiaan shooting grounds/hoven lay beside one another on the **south-west side of Goes, south of the church and within the walls**. Modern Kreukelmarkt / Van de Spiegelstraat / Wijngaardstraat references are orientation aids only; do not back-project those modern street labels into Claes' speech without separate period-name evidence.
+
+This makes the voetboog world a plausible ordinary part of Claes' lived city rather than a distant military excursion.
 
 ## 3. Fiction begins here: Cornelis
 
@@ -113,7 +119,37 @@ For Claes, it may mean:
 
 The voetboog gives that asymmetry physical form without requiring explanatory dialogue.
 
-## 7. Gift and shadow
+## 7. Papegaai, schutterskoning and public recognition
+
+Goese schutters practised competitive **papegaaischieten**: shooting at an artificial bird on a high pole. The successful shooter could be recognized as **schutterskoning**.
+
+This is particularly useful because it turns private skill into **publicly judged competence**.
+
+Possible scene functions:
+
+- Claes experiences the wait before each shot and the social reaction afterward;
+- a miss is public rather than private;
+- a winner receives visible communal recognition;
+- Cornelis can compete or simply participate without being made the winner;
+- Claes can see that the civic world has clear rituals of praise and status even while his father's praise toward him remains sparse.
+
+### Hard boundary
+
+**Cornelis is not canonically schutterskoning.** Making him win a papegaaischieten requires a separate scene/story decision. Exact prizes, chains, silver birds, rules, distances and ceremonial choreography remain unproven for mid-sixteenth-century Goes unless separately sourced.
+
+## 8. `Van Ongenugten Vrij`
+
+The historical devies of the Goese Sint-Joris / Edele Voetboog is **`Van Ongenugten Vrij`**.
+
+It may recur as an ordinary piece of guild identity known to Cornelis and Claes. Its later irony is powerful precisely because the characters do not explain it:
+
+- before 1554 it can belong simply to a prosperous civic brotherhood and a child's association with his father;
+- after fire, separation and Cornelis' death, the words acquire a different resonance for the reader;
+- no character needs to declare that Claes is obviously not “free of sorrows”.
+
+Do not invent a specific stone inscription, banner placement, badge or architectural display of the devies without evidence. The phrase is historically attached to the guild; its physical manifestation in a scene remains open.
+
+## 9. Gift and shadow
 
 Crossbow practice reinforces an existing Claes pattern; it does not create it from nothing.
 
@@ -132,7 +168,7 @@ This therefore resonates with his established gift/shadow:
 
 Do not write the crossbow as an overt psychological metaphor. It must first work as a real dangerous object within real civic practice.
 
-## 8. 1554: the sign can outlive the house
+## 10. 1554: the sign can outlive the house
 
 The family home and most of the household are destroyed in novel canon on 18 May 1554. The family sign need not disappear with them.
 
@@ -151,7 +187,7 @@ The result creates an early material form of a later project principle:
 
 This is a narrative resonance, not evidence that sixteenth-century Nissepat heraldry was understood philosophically in this way.
 
-## 9. Relation to the wider carrier/content architecture
+## 11. Relation to the wider carrier/content architecture
 
 The motif can later resonate with:
 
@@ -164,17 +200,20 @@ The motif can later resonate with:
 
 The familiewapen is therefore a useful early seed of continuity-through-carriers, but must never be retroactively described as a deliberate coded prefiguration.
 
-## 10. Hard guardrails
+## 12. Hard guardrails
 
 1. Nissepat family arms = voetboog/crossbow in current project canon.
 2. Recovered Muschart wording includes `lange zwengel`, but exact crossbow subtype remains open.
 3. Jacob Jansz./1581/charter-seal provenance remains pending direct source-line verification.
 4. Cornelis' Sint-Joris membership is fiction, not archival fact.
 5. Sint-Joris = voetboog; Sint-Sebastiaan = handboog; Sint-Adriaan/Edele Busse = firearm in current Goes canon.
-6. No noble-status inference from the existence of family arms.
-7. No claim that every Nissepat is a crossbowman.
-8. No invented Cornelis guild office or command rank.
-9. Claes' childhood weapon participation remains supervised and age-appropriate.
-10. The crossbow reinforces Claes' established gift/shadow; it is not the single cause of his personality.
-11. Symbolism stays author-side; scenes remain material, relational and civic first.
-12. If the Muschart card or its underlying primary source is later recovered directly, update the provenance layer without disturbing the fictional Cornelis decision unless the historical identification itself creates a contradiction.
+6. `Van Ongenugten Vrij` is historically attached to Sint Joris; its exact physical display remains scene-level open.
+7. Papegaaischieten and schutterskoning are historically supported; Cornelis winning is not canon.
+8. The bow-guild hoven belong south of the church / south-western city in the current topographic synthesis; modern street names are orientation only.
+9. No noble-status inference from the existence of family arms.
+10. No claim that every Nissepat is a crossbowman.
+11. No invented Cornelis guild office or command rank.
+12. Claes' childhood weapon participation remains supervised and age-appropriate.
+13. The crossbow reinforces Claes' established gift/shadow; it is not the single cause of his personality.
+14. Symbolism stays author-side; scenes remain material, relational and civic first.
+15. If the Muschart card or its underlying primary source is later recovered directly, update the provenance layer without disturbing the fictional Cornelis decision unless the historical identification itself creates a contradiction.
