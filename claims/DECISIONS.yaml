@@ -53,3 +53,23 @@ decisions:
       master_id: SB.CLAES.MASTER
       section_hint: "Claes — cradle to grave / Goes / Reimerswaal"
     note: "Post-Revision-11 decision. It supersedes Revision 11 references that place Claes' birth on 8 December 1545."
+
+  - id: DEC.CLAES.PUTTUS.001
+    type: StoryDecision
+    status: ACTIVE
+    decision: "Nicolaes van de Put (Puttus) is Claes' Goese Latin master in the final pre-fire school years, approximately 1551 through spring 1554."
+    rationale: "Puttus is historically documented as a successful Goese schoolmaster in 1512 whose teaching included Latin/humanist Aesop material and whom Meertens considers probably rector. A targeted August 2026 search located no death, departure or named successor that excludes Puttus from 1548–1554, and no better named Goese Latin master for Claes' years emerged. The author therefore chooses Puttus as the plausible historical bridge from Claes' elementary schooling to his intended Zierikzee and actual Reimerswaal Latin-school route."
+    evidence_status: PLAUSIBLE
+    canon_status: CANON
+    supported_by:
+      - SC.HIST.PUTTUS.GOES.1512.001
+    effects:
+      - claims/STORY_CLAIMS.yaml
+      - entities/ENTITIES.yaml
+      - narrative/world_modules.yaml
+      - storybible/LEMMA_MCKEE_MASTER.md
+      - storybible/MASTER.md
+    storybible_ref:
+      master_id: SB.CLAES.MASTER
+      section_hint: "Claes — pre-Reimerswaal education / Goes"
+    note: "The teacher-pupil relationship is fictional canon. Puttus' continuous tenure from 1512 to the 1550s remains historically unproved and must never be stated as fact outside the novel's story-truth layer."
