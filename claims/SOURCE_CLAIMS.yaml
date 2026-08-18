@@ -47,3 +47,29 @@ claims:
       note: "Critical digital edition identifies the primitive 1542 version; final publication bibliography should add the exact printed-edition locator for the closing date."
     retrieval:
       tags: [las-casas, brevisima, 1542, valencia, birth-resonance]
+
+  - id: SC.HIST.PUTTUS.GOES.1512.001
+    type: SourceClaim
+    statement: "Nicolaes van de Put (Puttus) was schoolmaster in Goes in 1512; Barlandus' 1512 Aesop material and accompanying letter support Meertens' conclusion that Puttus taught Latin/humanist material to the studying youth of Goes and was probably rector."
+    claim_type: historical_education_presence
+    subject: ENT.PERSON.NICOLAES_PUTTUS
+    predicate: schoolmaster_in
+    object: ENT.LOC.GOES
+    story_time:
+      date: 1512-01-01
+      precision: year
+    evidence_status: SUPPORTED
+    source_ids:
+      - SRC-HIST-1512-PUTTUS-GOES-001
+    supports_story_claims:
+      - STC.CLAES.PUTTUS.001
+    contradicts: []
+    qualifies:
+      - "No source located in the August 2026 audit proves Puttus remained in office through 1548–1554."
+      - "No death, departure or named successor found in the searchable material excludes him from those years either."
+      - "Puttus personally teaching Claes is story canon, not a historical assertion."
+    verification:
+      status: historical_anchor_verified_story_bridge_authorial
+      note: "Römer 1849 and Fortgens 1953 remain priority sources for future page-level audit; current searchable evidence establishes the 1512 anchor but not forty-year tenure."
+    retrieval:
+      tags: [puttus, nicolaes-van-de-put, goes, schoolmaster, latin, 1512, claes-youth]
