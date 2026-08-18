@@ -1,0 +1,49 @@
+schema_version: 1.0.0
+kind: WorldModuleRegistry
+modules:
+- id: WORLD.GOES.SCHOOLING_1550_1554
+  label: Goes — Claes' elementary and first Latin-humanist schooling before the 1554 fire
+  canon_status: CANON
+  record_role: GOVERNING_SUPPLEMENT
+  historical_method: SOURCE_WEIGHTED_RECONSTRUCTION_PLUS_EXPLICIT_STORY_DECISION
+  story_time:
+    earliest: '1550-01-01'
+    latest_exclusive: '1554-05-19'
+    precision: approximate
+  location: ENT.LOC.GOES
+  participants:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.NICOLAES_PUTTUS
+  story_claims:
+  - STC.CLAES.SCHOOL.GOES.001
+  - STC.CLAES.PUTTUS_MASTER.001
+  - STC.CLAES.ZIERIKZEE.PLAN.001
+  historical_anchors:
+  - claim: SC.HIST.GOES.PUTTUS.SCHOOLMASTER_1512.001
+    function: proves an earlier named Goese Latin-humanist schoolmaster tradition
+  - claim: SC.HIST.GOES.LATIN_SCHOOL_1569.001
+    function: proves a later pre-Revolt Goese Latin-school presence
+  educational_model:
+    elementary_layer:
+    - reading and spelling
+    - writing/copying
+    - religious literacy and memorisation
+    - elementary numeracy
+    status: supported reconstruction; exact local syllabus not preserved
+    puttus_layer:
+    - initial Latin vocabulary and grammar
+    - Latin reading/recitation appropriate to an early humanist school context
+    - humanist moral/fable material is available as a model through the Barlandus-Aesop anchor
+    status: novel canon grounded in Puttus' documented 1512 educational context
+  causal_function:
+    before_fire: Cornelis has already decided Claes should continue beyond local introductory formation; Zierikzee is the intended more sustained Latin-school route.
+    fire_effect: The 18 May 1554 catastrophe changes destination and affordability, not the fact that Claes has already begun a learned trajectory.
+    after_fire: Reimerswaal becomes the actual continuation; Claes does not arrive there as an educational zero-starter.
+  guardrails:
+  - Puttus personally teaching Claes is story truth, not historical proof.
+  - Do not claim that Puttus' 1512 rectorship/schoolmastership continued uninterrupted to 1554.
+  - Do not claim an exact Goese school building for Claes without new evidence.
+  - Do not use the later Kruisbroeders/Beestenmarkt school location as proof of Claes' pre-fire school location.
+  - Do not describe Zierikzee as necessary because Goes had no Latin teaching; it is the planned stronger continuation.
+  - Do not make Reimerswaal the beginning of Claes' literacy or first contact with Latin.
+  - The exact age/year at which Claes moves from elementary work into Puttus' Latin-humanist layer remains approximate within the pre-fire window.
