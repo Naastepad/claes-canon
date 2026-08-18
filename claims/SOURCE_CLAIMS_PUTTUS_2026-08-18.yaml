@@ -1,0 +1,44 @@
+schema_version: 1.0.0
+kind: SourceClaimRegistry
+claims:
+- id: SC.HIST.GOES.PUTTUS.SCHOOLMASTER_1512.001
+  type: SourceClaim
+  statement: Nicolaes van de Put (Puttus) is documented by Meertens as schoolmaster in Goes in 1512; the Barlandus/Aesop educational context supports Latin-humanist teaching and Meertens considers him probably rector.
+  claim_type: historical_education_presence
+  subject: ENT.PERSON.NICOLAES_PUTTUS
+  predicate: schoolmaster_in
+  object: ENT.LOC.GOES
+  story_time:
+    earliest: '1512-01-01'
+    latest_exclusive: '1513-01-01'
+    precision: year
+  evidence_status: SUPPORTED
+  source_ids:
+  - SRC-HIST-GOES-PUTTUS-SCHOOL-1512-1569-001
+  supports_story_claims:
+  - STC.CLAES.PUTTUS_MASTER.001
+  qualifies:
+  - The 1512 anchor does not establish continuous tenure through the 1550s.
+  - No death, departure or named successor excluding Puttus from ca. 1550-1554 was located in the 18 August 2026 digital audit.
+  retrieval:
+    tags: [goes, puttus, schoolmaster, latin, humanism, 1512]
+
+- id: SC.HIST.GOES.LATIN_SCHOOL_1569.001
+  type: SourceClaim
+  statement: The episcopal school inspection of 1569 found seven schools in Goes, including a Latin school.
+  claim_type: historical_institution_presence
+  subject: ENT.LOC.GOES
+  predicate: had_latin_school
+  story_time:
+    earliest: '1569-01-01'
+    latest_exclusive: '1570-01-01'
+    precision: year
+  evidence_status: SUPPORTED
+  source_ids:
+  - SRC-HIST-GOES-PUTTUS-SCHOOL-1512-1569-001
+  supports_story_claims:
+  - STC.CLAES.PUTTUS_MASTER.001
+  qualifies:
+  - This later anchor supports an older Goese Latin-school tradition but does not prove continuity in 1548-1554.
+  retrieval:
+    tags: [goes, latin-school, 1569, education]
