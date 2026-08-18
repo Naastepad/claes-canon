@@ -35,6 +35,8 @@ PACKS = {
         "storybible/STORY_PROJECTION_ROUND_C.md",
         "storybible/GOES_SCHOOLING_PUTTUS_1550_1554.md",
         "storybible/domains/REIMERSWAAL_SCHOOL_1554_1561.md",
+        "storybible/CLAES_CORNELIS_RELATION_1547_1569.md",
+        "narrative/claes_cornelis_relationship_refinement_2026-08-18.yaml",
         "narrative/story_projection_round_c.yaml",
         "narrative/alchemical_authorial_architecture.yaml",
         "narrative/instances.yaml",
