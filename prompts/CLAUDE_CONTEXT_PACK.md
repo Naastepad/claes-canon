@@ -4,9 +4,9 @@
 > Treat each SOURCE FILE section as the original source file.
 
 - source branch: `main`
-- source commit at generation: `f541df06f3c3b0fe8f4d058edd060926091f7e19`
-- generated UTC: `2026-08-16T19:20:27+00:00`
-- included files: `44`
+- source commit at generation: `007257fd58a146c5773ddc04b5f17a532e5c7995`
+- generated UTC: `2026-08-18T06:54:41+00:00`
+- included files: `45`
 
 Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pack does not alter authority.
 
@@ -6534,6 +6534,40 @@ decisions:
   guardrails:
     - This is a narrative/thematic use, not a claim that Claes influenced De Gheyn.
     - Do not invent personal contact between Claes and Jacob de Gheyn II unless separately decided.
+```
+
+---
+
+# SOURCE FILE: `canon/DECISIONS_PUTTUS_2026-08-18.yaml`
+
+```yaml
+schema_version: 1.0.0
+kind: CanonDecisionRegistry
+decisions:
+- id: DEC.CLAES.PUTTUS_MASTER.2026-08-18
+  type: CanonDecision
+  status: CANON
+  decision: In novel canon, Nicolaes van de Put (Puttus) is Claes' Goese Latin/humanist master in the final school years before the city fire of 18 May 1554.
+  affects:
+  - STC.CLAES.PUTTUS_MASTER.001
+  - ENT.PERSON.NICOLAES_PUTTUS
+  - WORLD.GOES.SCHOOLING_1550_1554
+  - STC.CLAES.SCHOOL.GOES.001
+  - STC.CLAES.ZIERIKZEE.PLAN.001
+  - STC.CLAES.REIMERSWAAL.001
+  rationale: >-
+    Puttus is historically documented as Goese schoolmaster in 1512 in a Latin-humanist educational context and Meertens considers him probably rector. A targeted 18 August 2026 search of accessible evidence and citations to the specialized histories by Römer (1849) and Fortgens (1953) found no death, departure or named successor that excludes him from Claes' early-1550s school years and no better named Goese Latin master for that interval. The author explicitly decides that, absent contrary evidence, Puttus is Claes' teacher. This closes the fictional teacher identity, not the historical question of Puttus' actual tenure.
+  evidence_status: PLAUSIBLE
+  canon_status: CANON
+  supported_by:
+  - SC.HIST.GOES.PUTTUS.SCHOOLMASTER_1512.001
+  - SC.HIST.GOES.LATIN_SCHOOL_1569.001
+  guardrails:
+  - Puttus teaching Claes is novel truth, not a documented historical teacher-pupil relationship.
+  - Do not state as historical fact that Puttus held the Goese rectorship continuously from 1512 to 1554.
+  - Do not invent Puttus' birth date, death date, appearance, exact age or exact tenure without new evidence.
+  - Do not infer that Claes completed a full formal Goese Latin-school curriculum before Reimerswaal.
+  - Zierikzee remains the intended more sustained pre-fire Latin-school continuation; Reimerswaal remains the actual post-fire route.
 ```
 
 ---
