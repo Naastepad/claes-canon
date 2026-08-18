@@ -13,8 +13,9 @@ That distinction is central to the book: Goes teaches sudden fire; Reimerswaal t
 ## Historical timeline inside Claes' stay
 
 ### 1554 — arrival after Goes
-- Claes has elementary schooling already.
+- Claes has elementary schooling **and an initial Latin/humanist foundation under Nicolaes van de Put (Puttus) in Goes** already; Puttus' personal teaching of Claes is novel canon under `DEC.CLAES.PUTTUS_MASTER.2026-08-18`.
 - Reimerswaal is the cheaper/possible alternative to the pre-fire Zierikzee plan in novel canon.
+- Reimerswaal therefore continues an existing learned trajectory; it is not Claes' first literacy or first contact with Latin.
 - First scenes should emphasize unfamiliar household/routines and a functioning town, not immediately stage catastrophe.
 
 ### 1555 — first major water impression
@@ -41,7 +42,9 @@ That distinction is central to the book: Goes teaches sudden fire; Reimerswaal t
 - schoolmaster appointments again documented in 1569/1570.
 
 ### Novel-canon educational model
-Claes receives Latin formation here 1554–summer 1561, developing from incoming pupil into older/advanced pupil. This is a **story reconstruction grounded in durable school infrastructure**, not a claim that the archives preserve his syllabus.
+Claes receives **sustained and increasingly advanced Latin formation** here from 1554 to summer 1561, developing from an incoming pupil who already has elementary literacy and initial Latin/humanist formation into an older/advanced pupil. This is a **story reconstruction grounded in durable school infrastructure**, not a claim that the archives preserve his syllabus.
+
+The pre-Reimerswaal foundation is governed by `storybible/GOES_SCHOOLING_PUTTUS_1550_1554.md`. Puttus is historically documented in Goes in 1512; his continued presence into the 1550s and his teaching of fictional Claes are deliberate story truth, not historical fact.
 
 ## Transferable school-day toolkit
 
@@ -102,6 +105,7 @@ The specific damage remains story truth, not archival evidence.
 2. No fixed named rector/schoolhouse without evidence.
 3. Exact Latin curriculum = story reconstruction.
 4. No seven-year beginner curriculum.
-5. Disaster chronology should alter daily life, not replace it.
-6. Never describe the 1574 naval battle as street fighting in Claes' school years.
-7. The city's later abandonment must not leak backward into 1554–61 narration as foreknown doom.
+5. Claes arrives with initial Latin/humanist formation; do not reset him to zero.
+6. Disaster chronology should alter daily life, not replace it.
+7. Never describe the 1574 naval battle as street fighting in Claes' school years.
+8. The city's later abandonment must not leak backward into 1554–61 narration as foreknown doom.
