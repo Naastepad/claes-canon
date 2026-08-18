@@ -1,0 +1,29 @@
+schema_version: 1.0.0
+kind: EntityRegistry
+entities:
+- id: ENT.PERSON.NICOLAES_PUTTUS
+  type: Person
+  label: Nicolaes van de Put (Puttus)
+  fictionality: historical
+  canon_status: CANON
+  roles:
+  - schoolmaster
+  - latin-humanist-teacher
+  historical_anchor:
+    place: ENT.LOC.GOES
+    year: 1512
+    precision: year
+    source_claim: SC.HIST.GOES.PUTTUS.SCHOOLMASTER_1512.001
+  life_dates:
+    status: UNKNOWN
+  story_role:
+    decision_id: DEC.CLAES.PUTTUS_MASTER.2026-08-18
+    relation_to_claes: Latin/humanist master in Claes' final pre-fire Goese school years
+    story_time:
+      earliest: '1550-01-01'
+      latest_exclusive: '1554-05-19'
+      precision: approximate
+  constraints:
+  - The historical record currently establishes Puttus in Goes in 1512, not his continuous presence into the 1550s.
+  - His personal teaching of Claes is explicit novel canon.
+  - Do not invent a birth date, death date, exact age, appearance, departure date or continuous rectoral tenure without new evidence.
