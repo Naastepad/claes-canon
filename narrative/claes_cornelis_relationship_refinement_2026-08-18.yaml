@@ -1,9 +1,17 @@
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: RelationshipRefinement
 id: REL.CLAES.CORNELIS.REFINEMENT.2026-08-18
 status: CANON
 participants: [ENT.PERSON.CLAES, ENT.PERSON.CORNELIS]
 governs: REL.CLAES.CORNELIS
+related_decisions:
+- DEC.CLAES.CORNELIS.RECOGNITION.2026-08-18
+- DEC.CLAES.CORNELIS.RESPONSIBILITY.2026-08-18
+- DEC.CLAES.CORNELIS.RELIGIOUS_DISSONANCE.2026-08-18
+- DEC.CLAES.CORNELIS.POSTFIRE_READING.2026-08-18
+- DEC.CORNELIS.SCHUTTERIJ.SINT_JORIS.2026-08-18
+- DEC.CLAES.CORNELIS.VOETBOOG_PEDAGOGY.2026-08-18
+related_motif: MOTIF.NISSEPAT_VOETBOOG
 phases:
 - label: admiration and apprenticeship
   story_time: {earliest: '1547-01-01', latest_exclusive: '1551-01-01', precision: approximate}
@@ -11,6 +19,10 @@ phases:
   claes_need: be seen and approved by Cornelis
   cornelis_expression: instruction, task, correction, inclusion in practical work
   tension: Claes can mistake functional trust for absence of affection because explicit praise is scarce.
+  embodied_contexts:
+  - household and trade observation
+  - biersteker work
+  - Sint-Joris / Edele Voetboog environment at child-safe distance
 
 - label: recognition hunger and delegated responsibility
   story_time: {earliest: '1551-01-01', latest_exclusive: '1554-05-18', precision: approximate}
@@ -27,7 +39,22 @@ phases:
   - carry or remember instructions and messages
   - count/check simple household or trade items
   - repair or repeat work after mistakes
-  guardrail: No adult merchant authority and no automatic corporal punishment.
+  voetboog_training:
+    story_claim: STC.CLAES.CORNELIS.VOETBOOG_FORMATION.001
+    institution: Goese Sint-Jorisgilde / Edele Voetboog
+    progression:
+    - observe safe handling and shooting-ground discipline
+    - carry or count child-safe equipment/tasks
+    - learn sequence, clear line and permission to act
+    - supervised handling only when age and scene evidence support it
+    - a carefully earned shot may occur if separately placed in scene chronology
+    relational_function: >-
+      Cornelis can communicate trust by granting Claes the next harder responsibility; Claes may experience the same act as another test because explicit praise remains scarce.
+    gift_shadow_resonance: 'see -> prepare -> hold tension -> wait -> choose -> release; danger emerges when waiting survives past the moment of required action'
+  guardrails:
+  - No adult merchant authority and no automatic corporal punishment.
+  - Crossbow practice reinforces rather than singularly causes Claes' observer gift/shadow.
+  - Exact loading/spanning choreography requires period support per scene.
 
 - label: pre-conceptual religious dissonance
   story_time: {earliest: '1552-01-01', latest_exclusive: '1554-05-18', precision: approximate}
@@ -47,6 +74,8 @@ phases:
   subjective_wound: >-
     Because Claes had already begun to experience himself as someone who should help carry and watch over the household, the deaths of Tanneken, Jan and the unborn child can feed an irrational sense that he failed a responsibility.
   objective_truth: Claes is not responsible for the fire or deaths.
+  heraldic_continuity: >-
+    A plausible Nissepat heraldic carrier may survive outside the destroyed household, allowing family sign and name to remain materially present without a miraculous rescue from the flames.
 
 - label: care misread as rejection
   story_time: {earliest: '1554-05-18', latest_exclusive: '1561-09-01', precision: bounded}
@@ -73,3 +102,4 @@ scene_guardrails:
 - Trust may be expressed as responsibility.
 - Claes' precision is both genuine aptitude and, in part, a relational strategy; neither explanation cancels the other.
 - Religious dissonance must remain child-scaled before 1554.
+- The Nissepat voetboog motif must first function as family heraldry and real weapon practice, not an announced symbol.
