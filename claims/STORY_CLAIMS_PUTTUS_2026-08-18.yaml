@@ -1,0 +1,28 @@
+schema_version: 1.0.0
+kind: StoryClaimRegistry
+claims:
+- id: STC.CLAES.PUTTUS_MASTER.001
+  type: StoryClaim
+  statement: In novel canon, Nicolaes van de Put (Puttus) teaches Claes initial Latin and humanist study in Goes during the final pre-fire school years; this builds on Claes' elementary schooling and precedes the intended Zierikzee continuation and actual Reimerswaal route.
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids:
+  - DEC.CLAES.PUTTUS_MASTER.2026-08-18
+  subjects:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.NICOLAES_PUTTUS
+  objects:
+  - ENT.LOC.GOES
+  story_time:
+    earliest: '1550-01-01'
+    latest_exclusive: '1554-05-19'
+    precision: approximate
+  source_refs:
+  - SC.HIST.GOES.PUTTUS.SCHOOLMASTER_1512.001
+  - SC.HIST.GOES.LATIN_SCHOOL_1569.001
+  tags:
+  - education
+  - latin
+  - humanism
+  - historical-person-fictional-relationship
+  guardrail: The relationship is novel canon; Puttus' actual presence and tenure in Goes during 1550-1554 remain historically unproved.
