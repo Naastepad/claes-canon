@@ -1,0 +1,52 @@
+schema_version: "1.0.0"
+kind: StoryClaimRegistryExtension
+claims:
+  - id: STC.NISSEPAT.FAMILY_ARMS.VOETBOOG.001
+    type: StoryClaim
+    status: CANON
+    statement: >-
+      In the novel's Nissepat family world, the family arms carry a voetboog/crossbow charge. The sign is treated first as ordinary family heraldry and material continuity, not as mystical destiny.
+    decision_id: DEC.CLAES.FAMILY_ARMS.VOETBOOG.2026-08-16
+    evidence_links: [SC.HIST.NISSEPAT.ARMS.VOETBOOG.001, SC.HIST.NISSEPAT.ARMS.ZWENGEL.001]
+    guardrails:
+      - Do not make the arms proof of noble status.
+      - Do not claim every Nissepat is a crossbowman.
+      - Do not require characters to explain the motif's later thematic meaning.
+
+  - id: STC.CORNELIS.SCHUTTERIJ.SINT_JORIS.001
+    type: StoryClaim
+    status: CANON
+    statement: >-
+      Cornelis is fictionally a member of the Goese Sint-Jorisgilde / Edele Voetboog and practises the voetboog within that civic-corporate world.
+    decision_id: DEC.CORNELIS.SCHUTTERIJ.SINT_JORIS.2026-08-18
+    evidence_links: [SC.HIST.GOES.SCHUTTERIJ.SINT_JORIS_VOETBOOG.001]
+    guardrails:
+      - Membership is fiction; no archival Cornelis claim.
+      - Sint Sebastiaan remains the separate handbow guild.
+      - No invented office/deanship or military command.
+
+  - id: STC.CLAES.CORNELIS.VOETBOOG_FORMATION.001
+    type: StoryClaim
+    status: CANON
+    statement: >-
+      During Claes' pre-fire childhood, Cornelis' voetboog practice is one recurring setting in which Claes learns bodily sequence, attention, controlled tension, waiting, precision, safety and choosing when action is permitted. Cornelis' progression of entrusted tasks also embodies his non-verbal way of showing trust.
+    decision_id: DEC.CLAES.CORNELIS.VOETBOOG_PEDAGOGY.2026-08-18
+    relation: REL.CLAES.CORNELIS
+    developmental_link: >-
+      The practice reinforces, but does not solely cause, Claes' established gift/shadow: prolonged precise perception can become failure to act when the moment has arrived.
+    guardrails:
+      - Child-scaled participation only.
+      - No exact historical spanning/loading choreography without scene-specific support.
+      - Do not make the motif more explicit in dialogue than ordinary family/guild life would warrant.
+
+  - id: STC.NISSEPAT.ARMS.CARRIER_CONTINUITY.001
+    type: StoryClaim
+    status: CANON_CONTEXT
+    statement: >-
+      The Nissepat arms may survive household rupture through a seal matrix, document, impression or other plausible family carrier that is already outside the destroyed 1554 household at the time of the fire. This permits the sign to outlive the house without requiring a miraculous rescue from the flames.
+    decision_id: DEC.CLAES.FAMILY_ARMS.VOETBOOG.2026-08-16
+    motif_link: MOTIF.NISSEPAT_VOETBOOG
+    guardrails:
+      - Exact carrier object remains scene-design choice unless separately fixed.
+      - Do not claim the historical Muschart source object is the same fictional carrier Claes possesses.
+      - Continuity must be materially plausible, not providentially convenient.

@@ -1,0 +1,63 @@
+schema_version: 1.0.0
+kind: CanonDecisionRegistryExtension
+decisions:
+  - id: DEC.CLAES.FAMILY_ARMS.VOETBOOG.2026-08-16
+    type: CanonDecision
+    status: CANON
+    amended_on: '2026-08-18'
+    decision: >-
+      The Nissepat family arms are read in project canon as showing a voetboog (crossbow), not an ordinary handboog. The 18 August refinement restores the stronger recovered evidence basis: earlier project transcription of CBG/Muschart record NL-HaCBG_1801_0082_0819 / 82L reads "een voetboog met den langen zwengel links". The decision is therefore not framed as an arbitrary choice between two equally unreadable bow types.
+    affects:
+      - ENT.PERSON.CORNELIS
+      - MOTIF.NISSEPAT_VOETBOOG
+      - STC.CORNELIS.SCHUTTERIJ.SINT_JORIS.001
+      - NI.SCENE.SOWER.1554.001
+    evidence_basis:
+      - SC.HIST.NISSEPAT.ARMS.VOETBOOG.001
+      - SC.HIST.NISSEPAT.ARMS.ZWENGEL.001
+    historical_boundary:
+      - The exact original armiger, ca.1581 callback date and underlying seal/charter source remain pending direct reinspection of Muschart's source line.
+      - The family arms do not prove that every Nissepat practised crossbow shooting.
+      - The exact historical spanning mechanism represented by the zwengel remains unresolved.
+    supersedes_open_note: >-
+      Closes the old handboog-versus-voetboog uncertainty at project-canon level. Remaining research concerns provenance, armiger/date and exact crossbow subtype, not the project's heraldic charge reading.
+
+  - id: DEC.CORNELIS.SCHUTTERIJ.SINT_JORIS.2026-08-18
+    type: CanonDecision
+    status: CANON
+    decision: >-
+      In novel canon Cornelis is a member of the Goese Sint-Jorisgilde / Edele Voetboog. This is deliberate fictional biography grounded in a real Goese crossbow-guild institution and made to resonate with the source-supported Nissepat family arms. Sint Sebastiaan remains the separate Goese handbow tradition; Sint Adriaan / Edele Busse remains the separate firearm/kolvenier tradition.
+    affects:
+      - ENT.PERSON.CORNELIS
+      - REL.CLAES.CORNELIS
+      - ARC.CLAES.CORNELIS
+      - MOTIF.NISSEPAT_VOETBOOG
+      - PACK.GOES.SCHUTTERIJ
+      - STC.CORNELIS.SCHUTTERIJ.SINT_JORIS.001
+      - STC.CLAES.CORNELIS.VOETBOOG_FORMATION.001
+    rationale: >-
+      The connection creates a fact-fiction loop without falsifying the historical record: a real Nissepat heraldic voetboog and a real Goese Edele Voetboog/Sint Joris institution become the substrate for fictional Cornelis' personal membership. Through Cornelis, the crossbow also becomes one bodily arena in which Claes learns attention, tension, waiting, precision and the obligation to choose the moment of action.
+    guardrails:
+      - Cornelis' personal membership is novel canon, not archival attestation.
+      - Do not infer his office, deanship or military command from membership.
+      - Do not call his guild Sint Sebastiaan; in current Goes canon Sint Sebastiaan is the handbow guild.
+      - Do not make heraldry a deterministic family destiny or claim all Nissepat men were crossbowmen.
+      - Do not force Claes to become a full guild member or skilled adult crossbowman in childhood.
+
+  - id: DEC.CLAES.CORNELIS.VOETBOOG_PEDAGOGY.2026-08-18
+    type: CanonDecision
+    status: CANON
+    decision: >-
+      Cornelis' voetboog practice becomes one recurring embodied teaching environment in Claes' childhood. Age-appropriate participation may progress from carrying, observing, counting, target-ground discipline and equipment care toward supervised handling, spanning/ranging tasks and eventually a carefully earned shot where scene chronology permits. Cornelis often expresses trust by granting the next responsibility rather than by verbal praise.
+    affects:
+      - REL.CLAES.CORNELIS
+      - ARC.CLAES.CORNELIS
+      - MOTIF.NISSEPAT_VOETBOOG
+      - STC.CLAES.CORNELIS.VOETBOOG_FORMATION.001
+    narrative_function: >-
+      The footbow gives bodily form to Claes' established gift/shadow: perception, controlled tension, waiting and precision are useful until waiting survives past the moment when action is required. It also concretizes the father-son recognition gap: Cornelis' increased trust can feel to Claes like another test because explicit praise remains sparse.
+    guardrails:
+      - Do not turn the crossbow into an explicit allegory explained by characters.
+      - The motif must remain materially credible before it becomes thematic.
+      - Exact loading/spanning procedure requires period-appropriate evidence per scene.
+      - Claes' central gift/shadow predates and exceeds this one training environment; the voetboog reinforces it rather than singularly causing it.

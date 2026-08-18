@@ -1,0 +1,101 @@
+schema_version: "1.1.0"
+kind: SourceClaimRegistryExtension
+claims:
+  - id: SC.HIST.NISSEPAT.ARMS.VOETBOOG.001
+    type: SourceClaim
+    statement: >-
+      Earlier project research of CBG/Muschart record NL-HaCBG_1801_0082_0819 (Nissepat, 82L) recovered the specific heraldic reading "een voetboog met den langen zwengel links"; the project therefore treats the Nissepat charge as a voetboog/crossbow rather than an ordinary handboog.
+    claim_type: historical_heraldic_reconstruction
+    subject: Nissepat family arms
+    predicate: depicts
+    object: voetboog / crossbow
+    evidence_status: SUPPORTED_CALLBACK_PENDING_DIRECT_SCAN_RECHECK
+    source_ids: [SRC-HIST-NISSEPAT-ARMS-MUSCHART-82L-001]
+    verification:
+      status: recovered_project_transcription
+      note: >-
+        The Muschart card itself should be directly re-opened before promoting the exact armiger, date or underlying charter/seal provenance. The earlier project decision of 18 July 2025 already fixed the charge reading as voetboog.
+
+  - id: SC.HIST.NISSEPAT.ARMS.ZWENGEL.001
+    type: SourceClaim
+    statement: >-
+      The recovered Muschart wording includes a "lange zwengel", supporting interpretation of the heraldic object as a mechanically spanned crossbow representation, while not determining one exact spanning mechanism or weapon subtype.
+    claim_type: historical_heraldic_technical_interpretation
+    subject: Nissepat heraldic voetboog
+    predicate: includes
+    object: long crank / mechanical spanning feature
+    evidence_status: SUPPORTED_WITH_TECHNICAL_BOUNDARY
+    source_ids: [SRC-HIST-NISSEPAT-ARMS-MUSCHART-82L-001]
+    verification:
+      status: interpretation_not_subtype_identification
+      note: Do not specify cranequin, windlass or another exact mechanism without separate evidence.
+
+  - id: SC.HIST.GOES.SCHUTTERIJ.SINT_JORIS_VOETBOOG.001
+    type: SourceClaim
+    statement: >-
+      In the current Goese local-source synthesis, Sint Joris / Edele Voetboog is the crossbow tradition, Sint Sebastiaan the handbow tradition, and Sint Adriaan / Edele Busse the firearm/kolvenier tradition.
+    claim_type: historical_local_institution
+    subject: Goese schuttersgilden
+    predicate: weapon tradition distinction
+    object: Sint Joris=voetboog; Sint Sebastiaan=handboog; Sint Adriaan=firearm
+    evidence_status: SUPPORTED
+    source_ids: [SRC-HIST-GOES-SCHUTTERIJ-DEGHEYN-001]
+    verification:
+      status: local_source_synthesis
+      note: Preserve the separate 1516/1530 dispute only for the start date of the firearm guild; do not swap Sint Joris and Sint Sebastiaan.
+
+  - id: SC.HIST.GOES.SCHUTTERIJ.SINT_JORIS.DEVISE.001
+    type: SourceClaim
+    statement: >-
+      The Goese Sint-Joris / Edele Voetboog tradition is locally associated with the devies "Van Ongenugten Vrij".
+    claim_type: historical_local_guild_identity
+    subject: Goese Sint-Joris / Edele Voetboog
+    predicate: bears devies
+    object: Van Ongenugten Vrij
+    evidence_status: SUPPORTED
+    source_ids: [SRC-HIST-GOES-SCHUTTERIJ-DEGHEYN-001]
+    verification:
+      status: local_heritage_source_synthesis
+      note: The devies may be part of guild identity in prose, but do not invent a specific inscription object or display location without scene-level evidence.
+
+  - id: SC.HIST.GOES.SCHUTTERIJ.PAPEGAAI.001
+    type: SourceClaim
+    statement: >-
+      Goese shooting-guild practice included competitive shooting at a "papegay" / artificial bird on a high pole; the successful shooter could be recognized as schutterskoning.
+    claim_type: historical_local_guild_practice
+    subject: Goese schuttersgilden
+    predicate: practised
+    object: papegaai shooting / schutterskoning competition
+    evidence_status: SUPPORTED
+    source_ids: [SRC-HIST-GOES-SCHUTTERIJ-DEGHEYN-001]
+    verification:
+      status: local_heritage_source_synthesis
+      note: This supports a guild competition scene but does not canonize Cornelis as winner or king.
+
+  - id: SC.HIST.GOES.SCHUTTERIJ.HOVEN.SOUTHWEST.001
+    type: SourceClaim
+    statement: >-
+      The Sint-Joris voetboog and Sint-Sebastiaan handboog shooting grounds/hoven lay next to one another on the south-west side of Goes, south of the church, within the later Kreukelmarkt/Van de Spiegelstraat/Wijngaardstraat area.
+    claim_type: historical_local_topography
+    subject: Goese bow-guild hoven
+    predicate: located
+    object: south-west side of the city, south of the church
+    evidence_status: SUPPORTED_WITH_LATER_STREET_REFERENCE
+    source_ids: [SRC-HIST-GOES-SCHUTTERIJ-DEGHEYN-001]
+    verification:
+      status: local_topographic_synthesis
+      note: Use period-space description in prose; current street names are orientation aids, not sixteenth-century dialogue/toponymy.
+
+  - id: SC.HIST.NISSEPAT.ARMS.ARMIGER_1581.001
+    type: SourceClaim
+    statement: >-
+      Earlier project callbacks associated the Muschart Nissepat arms record with Jacob Jansz./Janz. Nissepat, approximately 1581, possibly through a seal/charter source, but that exact armiger-date-document chain has not yet been directly reverified from Muschart's source line.
+    claim_type: evidence_boundary
+    subject: original Nissepat armiger/source
+    predicate: remains
+    object: unverified beyond callback
+    evidence_status: UNKNOWN_PENDING_DIRECT_PROVENANCE
+    source_ids: [SRC-HIST-NISSEPAT-ARMS-MUSCHART-82L-001]
+    verification:
+      status: do_not_promote
+      note: The voetboog reading may stand without treating the 1581 armiger/source chain as verified.
