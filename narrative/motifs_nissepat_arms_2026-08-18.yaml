@@ -1,4 +1,4 @@
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: MotifRegistryExtension
 motifs:
   - id: MOTIF.NISSEPAT_VOETBOOG
@@ -7,6 +7,9 @@ motifs:
     historical_substrate:
       family_arms: SC.HIST.NISSEPAT.ARMS.VOETBOOG.001
       goes_guild: SC.HIST.GOES.SCHUTTERIJ.SINT_JORIS_VOETBOOG.001
+      guild_devise: SC.HIST.GOES.SCHUTTERIJ.SINT_JORIS.DEVISE.001
+      papegaai_practice: SC.HIST.GOES.SCHUTTERIJ.PAPEGAAI.001
+      guild_topography: SC.HIST.GOES.SCHUTTERIJ.HOVEN.SOUTHWEST.001
     story_links:
       - STC.NISSEPAT.FAMILY_ARMS.VOETBOOG.001
       - STC.CORNELIS.SCHUTTERIJ.SINT_JORIS.001
@@ -22,9 +25,15 @@ motifs:
       - label: tension and permission
         period: childhood formation
         function: Claes learns that seeing a target is not identical to being permitted or ready to act; sequence, control and timing matter.
+      - label: public recognition at the papegaai
+        period: childhood before 1554
+        function: A guild competition can show Claes a civic world in which competence receives visible judgement and a successful shooter may become schutterskoning, sharpening by contrast the sparse verbal recognition he receives from Cornelis.
       - label: recognition through entrusted action
         period: early 1550s
         function: Cornelis' next entrusted task functions as paternal trust while Claes may misread it as another test.
+      - label: Van Ongenugten Vrij
+        period: childhood onward
+        function: The historical Sint-Joris devies begins as ordinary guild identity; later suffering can make its wording resonate differently for the reader without explicit irony in character speech.
       - label: carrier survives rupture
         period: after 18 May 1554
         function: The sign can outlive house and household through a plausible material carrier, preparing the wider carrier/content architecture without mystical explanation.
@@ -36,5 +45,7 @@ motifs:
       - Do not make the arms proof of nobility, destiny or hereditary martial essence.
       - Do not explain the motif to the reader in authorial exposition.
       - Do not make Sint Sebastiaan the voetboog guild in Goes.
+      - Do not canonize Cornelis as schutterskoning without a separate story decision.
+      - Do not invent a physical display location for Van Ongenugten Vrij without evidence.
       - Do not require the same physical heraldic object to survive every phase.
       - Do not turn Claes' observer-shadow into a one-cause result of crossbow training.
