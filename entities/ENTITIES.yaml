@@ -38,6 +38,25 @@ entities:
       latest_exclusive: '1570-01-01'
       precision: interval
     precision: work-canon
+- id: ENT.PERSON.NICOLAES_PUTTUS
+  type: Person
+  label: Nicolaes van de Put (Puttus)
+  fictionality: historical
+  canon_status: CANON
+  roles:
+  - schoolmaster
+  - latin-teacher
+  - humanist-educator
+  historical_anchor:
+    place: ENT.LOC.GOES
+    year: 1512
+    precision: year
+  life_dates:
+    status: UNKNOWN
+  story_use: "Canonically Claes' Goese Latin master in the final pre-fire school years; the teacher-pupil relationship and Puttus' continued presence into the 1550s are authorial fiction grounded in the 1512 historical anchor."
+  constraints:
+  - "Do not state as historical fact that Puttus remained rector continuously from 1512 to 1554."
+  - "Do not invent a birth date, death date, departure date or exact rectoral tenure."
 - id: ENT.PERSON.JOHN_DEE
   type: Person
   label: John Dee
