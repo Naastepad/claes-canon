@@ -4,8 +4,8 @@
 > Treat each SOURCE FILE section as the original source file.
 
 - source branch: `main`
-- source commit at generation: `3b2960e741d81db1b1542bb2a6e2564ef686b615`
-- generated UTC: `2026-08-18T08:11:51+00:00`
+- source commit at generation: `7407d17c0c7ad5cba3df7a706b3cec6ee4322572`
+- generated UTC: `2026-08-18T17:20:23+00:00`
 - included files: `5`
 
 Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pack does not alter authority.
@@ -475,9 +475,9 @@ A scene can pass continuity and still fail fiction. **Accuracy is a constraint; 
 # SOURCE FILE: `narrative/domain_scene_packs.yaml`
 
 ```yaml
-schema_version: "1.0.0"
+schema_version: "1.1.0"
 kind: DomainScenePackRegistry
-purpose: "Machine-readable retrieval bridge from historical domains to chapter/scene construction. Packs constrain world state; they do not create fictional scenes or participation."
+purpose: "Machine-readable retrieval bridge from historical domains to chapter/scene construction. Packs constrain world state; they do not create fictional scenes or participation unless an explicit Story Claim/Decision is linked."
 packs:
   - id: PACK.BREAD.GOES_YOUTH
     label: "Goes youth — bread/bakery practice"
@@ -580,13 +580,31 @@ packs:
     hard_guardrails: ["do not reduce to battlefield date", "do not back-project this state into 1560s"]
 
   - id: PACK.GOES.SCHUTTERIJ
-    label: "Goes — shooting guild/civic defence context"
+    label: "Goes — Sint Joris / shooting guild / civic defence context"
     status: AUTHORING_READY_SCENE_CONTEXT
     world_modules: [WORLD.GOES, WORLD.SCHUTTERIJ_MILITARY]
-    detail_file: storybible/domains/SCHUTTERIJ_MILITARY_PRACTICE_1550_1607.md
-    source_claims: [SC.HIST.GOES.SCHUTTERIJ.FIREARM_GUILD.16C.001]
-    categories_to_keep_separate: [schuttersgilde, civic_watch, garrison_professionals, later_standardized_drill]
-    hard_guardrails: ["1516/1530 firearm-guild date conflict preserved", "no later equipment automatically in 1572"]
+    detail_files:
+      - storybible/domains/SCHUTTERIJ_MILITARY_PRACTICE_1550_1607.md
+      - storybible/NISSEPAT_ARMS_SINT_JORIS_CORNELIS.md
+    source_claims:
+      - SC.HIST.GOES.SCHUTTERIJ.SINT_JORIS_VOETBOOG.001
+      - SC.HIST.GOES.SCHUTTERIJ.FIREARM_GUILD.16C.001
+      - SC.HIST.NISSEPAT.ARMS.VOETBOOG.001
+    story_claims:
+      - STC.CORNELIS.SCHUTTERIJ.SINT_JORIS.001
+      - STC.CLAES.CORNELIS.VOETBOOG_FORMATION.001
+    canonical_cornelis_institution: "Sint-Jorisgilde / Edele Voetboog"
+    motif: MOTIF.NISSEPAT_VOETBOOG
+    youth_action_chain: [observe, clear_line, wait_permission, count_or_carry_child_safe_items, inspect_under_supervision, prepare, hold_tension, choose, release_if_scene_earned]
+    categories_to_keep_separate: [Sint_Joris_voetboog, Sint_Sebastiaan_handboog, Sint_Adriaan_firearm, civic_watch, garrison_professionals, later_standardized_drill]
+    relational_function: "Cornelis expresses trust by enlarging responsibility; Claes may misread the next task as proof that he still has not earned explicit recognition."
+    hard_guardrails:
+      - "Cornelis membership is story canon, not archival fact"
+      - "Sint Sebastiaan is not the voetboog guild"
+      - "no Cornelis guild office without separate decision"
+      - "no exact zwengel/cranequin subtype without scene-specific evidence"
+      - "1516/1530 firearm-guild date conflict preserved"
+      - "no later equipment automatically in 1572"
 
   - id: PACK.MILITARY.DEGHEYN_1607_COMPARATOR
     label: "Late military practice — De Gheyn comparator"

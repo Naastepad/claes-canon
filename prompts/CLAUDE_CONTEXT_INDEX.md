@@ -4,15 +4,15 @@
 > GitHub `main` remains authoritative; these are generated projections.
 > IMPORTANT: `01_CORE_CANON` is not the complete decision registry. Current dated/supplemental decisions live in `05_DATED_DECISIONS` and may override or extend `canon/DECISIONS.yaml`.
 
-- source commit: `3b2960e741d81db1b1542bb2a6e2564ef686b615`
-- generated UTC: `2026-08-18T08:11:51+00:00`
+- source commit: `7407d17c0c7ad5cba3df7a706b3cec6ee4322572`
+- generated UTC: `2026-08-18T17:20:23+00:00`
 
 ## Recommended load order
 
 1. `01_CORE_CANON` — 11 files
    https://raw.githubusercontent.com/Naastepad/claes-canon/main/prompts/CLAUDE_CONTEXT_01_CORE_CANON.md
 
-2. `02_STORYBIBLE_PROJECTION` — 11 files
+2. `02_STORYBIBLE_PROJECTION` — 15 files
    https://raw.githubusercontent.com/Naastepad/claes-canon/main/prompts/CLAUDE_CONTEXT_02_STORYBIBLE_PROJECTION.md
 
 3. `03_WRITING_EDITORIAL` — 5 files
@@ -21,7 +21,7 @@
 4. `04_MAYKEN_KNOWLEDGE` — 4 files
    https://raw.githubusercontent.com/Naastepad/claes-canon/main/prompts/CLAUDE_CONTEXT_04_MAYKEN_KNOWLEDGE.md
 
-5. `05_DATED_DECISIONS` — 16 files
+5. `05_DATED_DECISIONS` — 18 files
    https://raw.githubusercontent.com/Naastepad/claes-canon/main/prompts/CLAUDE_CONTEXT_05_DATED_DECISIONS.md
 
 ## Task loading

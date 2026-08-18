@@ -4,9 +4,9 @@
 > Treat each SOURCE FILE section as the original source file.
 
 - source branch: `main`
-- source commit at generation: `3b2960e741d81db1b1542bb2a6e2564ef686b615`
-- generated UTC: `2026-08-18T08:11:51+00:00`
-- included files: `47`
+- source commit at generation: `7407d17c0c7ad5cba3df7a706b3cec6ee4322572`
+- generated UTC: `2026-08-18T17:20:23+00:00`
+- included files: `53`
 
 Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pack does not alter authority.
 
@@ -3058,6 +3058,624 @@ The specific damage remains story truth, not archival evidence.
 
 ---
 
+# SOURCE FILE: `storybible/CLAES_CORNELIS_RELATION_1547_1569.md`
+
+```markdown
+# Claes en Cornelis — vader-zoonrelatie 1547–1569
+
+**Status:** CANON — approved 18 August 2026  
+**Governing decisions:** `DEC.CLAES.CORNELIS.RECOGNITION.2026-08-18`, `DEC.CLAES.CORNELIS.RESPONSIBILITY.2026-08-18`, `DEC.CLAES.CORNELIS.RELIGIOUS_DISSONANCE.2026-08-18`, `DEC.CLAES.CORNELIS.POSTFIRE_READING.2026-08-18`  
+**Extends:** `REL.CLAES.CORNELIS`, `ARC.CLAES.CORNELIS`, `DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14`
+
+This dossier deepens the emotional and developmental logic of the existing father-son arc. It does not replace the established canon that Cornelis loves Claes, teaches him, sacrifices materially for his education and later becomes increasingly secretive through his dangerous networks.
+
+## 1. The central asymmetry
+
+Claes admires Cornelis and wants his recognition.
+
+Cornelis values and trusts Claes, but he expresses that primarily through:
+
+- instruction;
+- correction;
+- practical inclusion;
+- work;
+- enlarged responsibility;
+- material provision;
+- investment in Claes' schooling and future.
+
+He gives comparatively little explicit praise.
+
+That creates the central childhood asymmetry:
+
+> Claes looks for recognition in words and visible approval; Cornelis often expresses recognition by entrusting him with more to do.
+
+The relationship must therefore never be reduced to a cold father and neglected son. Cornelis' love is real. The dramatic problem is that father and son do not automatically read the same acts in the same way.
+
+## 2. Claes' striving
+
+By the early 1550s Claes increasingly learns a relational equation that is only partly true:
+
+**observe carefully → perform correctly → be useful → perhaps father will see me.**
+
+His precision is genuine aptitude. It is not invented by paternal pressure. But the wish for Cornelis' approval gives that aptitude extra force and helps turn usefulness, accuracy and dependability into personal strategies.
+
+This must remain subordinate to Claes' established core movement. It is not a second replacement wound. It helps explain why attention, competence and control become emotionally charged for him.
+
+### Scene grammar
+
+Prefer:
+
+- Claes waiting for a response after doing something well;
+- Cornelis checking the result and immediately giving the next task;
+- a brief correction where Claes had hoped for praise;
+- Cornelis increasing responsibility because the previous task went well;
+- Claes reading that increase as another test rather than as trust.
+
+Avoid repeated internal narration that tells the reader “Claes wanted his father's approval.” The dynamic should be visible in expectation, response and silence.
+
+## 3. Responsibility while Cornelis travels
+
+Cornelis' trade and network life take him away from the immediate household at times. As Claes grows older, especially in the early 1550s, he is entrusted with age-appropriate duties that matter during those absences.
+
+Possible canonical task classes:
+
+- help Tanneken with errands or practical household work;
+- keep an eye on Jan or fetch him when required;
+- remember and deliver a message;
+- count or check simple household or trade items;
+- note or report an obvious shortage, leak, breakage or missed instruction;
+- repeat or repair work after an error.
+
+Claes may therefore begin to experience himself as **the oldest son who must help carry the household when father is away**.
+
+This is not adult authority. At eleven he is still a child within a working household. Do not make him a substitute merchant, bookkeeper with independent legal power, or de facto paterfamilias.
+
+## 4. Consequences of failure
+
+A mistake can matter.
+
+The canon deliberately does **not** fix a corporal-punishment regime. Consequences remain scene-specific and may include:
+
+- a sharp correction;
+- doing the task again;
+- extra work;
+- temporary loss of trust or responsibility;
+- helping repair a practical loss;
+- having to explain a shortfall or failure;
+- Cornelis' terse judgement that something was not done properly.
+
+For Claes, a short functional judgement from Cornelis can carry disproportionate emotional weight because approval matters so much to him.
+
+Do not turn Cornelis into an anachronistic therapeutic father, but do not turn ordinary sixteenth-century paternal authority into gratuitous cruelty either.
+
+## 5. Responsibility for Tanneken, Jan and the unborn child
+
+As the oldest child, Claes can feel increasing responsibility toward the intact household:
+
+- Tanneken is pregnant and has ordinary work to do;
+- Jan is close enough in age to be companion and rival but still the younger brother;
+- the unborn child is already experienced as part of the family before it can be seen.
+
+Claes' sense of responsibility is therefore real as a feeling, but limited in fact.
+
+This distinction becomes crucial after the fire.
+
+### Hard guardrail
+
+Claes is **not objectively responsible** for the deaths of Tanneken, Jan or the unborn child on 18 May 1554.
+
+However, because he had begun to think of himself as someone who should notice, remember, help and watch over the household, the catastrophe can produce irrational survivor reasoning:
+
+> I was supposed to help carry them. What did I fail to see?
+
+That subjective guilt feeds the already established wound — *if I had seen early enough, could I have prevented what happened?* — without creating a factual causal responsibility.
+
+## 6. Religious dissonance before the fire
+
+Cornelis is not simply “becoming Protestant” in current canon.
+
+By approximately 1552–1553 he belongs in novel canon to the translocal **Huis der Liefde** while remaining outwardly embedded in Catholic Goes. He can attend church and civic-religious life without publicly declaring a separate confession.
+
+Claes, meanwhile, still inhabits the ordinary Catholic child-world of Goes: church, images, prayers, school language, feast rhythm and inherited practice.
+
+The resulting pre-fire tension is therefore subtle.
+
+Claes may notice:
+
+- Cornelis looking somewhere other than expected during a religious moment;
+- a silence where Claes expects the same answer he has heard from school or church;
+- a phrase from Cornelis that sounds close to orthodox language but not quite identical;
+- a visitor, book, journey or conversation that Cornelis closes off;
+- a moment in which father and son are physically participating in the same Catholic practice but seem not to be attending to exactly the same thing.
+
+Claes does **not** know the words *Huis der Liefde*, *Familist* or the network behind Cornelis' inward affiliation.
+
+Do not stage explicit Protestant-versus-Catholic debate in the pre-1554 childhood chapters. The dramatic state is **unexplained difference**, not doctrinal comprehension.
+
+## 7. Puttus, school and religious ambiguity
+
+Puttus may deepen Claes' capacity to notice distinctions between words, surface meaning and interpretation, but no specific anti-image, anti-ritual or anti-clerical doctrine is assigned to Puttus without separate historical support.
+
+Therefore:
+
+- Puttus can teach Latinity, fable, grammar, rhetorical distinction and humanist reading;
+- a school remark may incidentally resonate with something Claes has heard or observed at home;
+- do not use Puttus as a convenient proto-Protestant mouthpiece merely to create father-son conflict.
+
+The useful structure is that church, school and father do not always produce identical meanings for Claes, even when none of them openly declares a confessional break.
+
+## 8. The fire changes the meaning of the recognition gap
+
+Before 18 May 1554, Claes can still imagine recognition as something he may earn tomorrow.
+
+After the fire, Cornelis makes one of the strongest acts of paternal care in the entire relationship: he stays in Goes to rebuild livelihood, credit and shelter while preserving enough means to continue Claes' education elsewhere.
+
+Yet the act is structurally tragic because Claes can read it through the older gap:
+
+> Everyone else is gone, and now father sends me away too.
+
+The established double truth remains binding:
+
+- **Cornelis:** I send him away because I refuse to let the fire take his future.
+- **Claes:** I am the surviving son, and still father does not choose to keep me beside him.
+
+The second statement is Claes' wounded interpretation, not Cornelis' intention.
+
+## 9. Reimerswaal and distance
+
+During the 1554–1561 separation, Cornelis' care can remain materially visible through:
+
+- payment;
+- books or school materials;
+- messages;
+- practical arrangements;
+- visits where plausible;
+- continued concern for Claes' progress.
+
+Those acts do not automatically satisfy Claes' need for recognition or closeness.
+
+This makes the separation richer than simple abandonment: Claes can possess evidence that his father cares and still feel abandoned.
+
+## 10. Later secrecy gives childhood memories new meaning
+
+From 1561 onward, and especially as dangerous books, papers, routes and loyalties become visible, Claes begins to understand that the closed doors he sensed in childhood were real.
+
+The causal movement is:
+
+**childhood unexplained difference → adolescent suspicion → adult partial understanding.**
+
+Claes should not retrospectively become omniscient. He can recognize patterns without suddenly knowing every earlier conversation, visitor or motive.
+
+## 11. 1569 — what is finally lost
+
+Cornelis' execution on 19 November 1569 removes more than a living parent.
+
+It closes the remaining possibility of:
+
+- explicit paternal recognition;
+- explanation of the old silences;
+- clarification of what Cornelis believed and why;
+- reconciliation over the post-fire separation;
+- asking whether Cornelis saw Claes in the way Claes had always watched him.
+
+This strengthens the existing canonical resonance that Cornelis' death is also the loss of time father and son may have believed they could still recover.
+
+The final inheritance remains moral, not cryptographic.
+
+## 12. Writing guardrails
+
+1. Cornelis loves Claes; do not rewrite him into a loveless father.
+2. Cornelis' trust is often expressed as increased responsibility.
+3. Claes' recognition hunger is real but should usually be dramatized rather than named.
+4. Claes' precision is both innate/formative aptitude and partly a relational strategy; neither explanation replaces the other.
+5. Responsibilities before 1554 remain child-scaled.
+6. No automatic corporal punishment is canonized.
+7. Claes may feel responsible for family safety but is not causally responsible for the 1554 deaths.
+8. Cornelis is Familist/Huis der Liefde with outward Catholic conformity, not simply “Protestant”.
+9. Pre-fire religious conflict is intermittent, observational and incompletely understood.
+10. The Reimerswaal separation is simultaneously paternal sacrifice and filial experience of rejection.
+11. Later secrecy should retrospectively illuminate childhood dissonance without granting Claes impossible knowledge.
+12. Cornelis' 1569 death ends the possibility of future recognition and reconciliation as well as the relationship itself.
+```
+
+---
+
+# SOURCE FILE: `storybible/NISSEPAT_ARMS_SINT_JORIS_CORNELIS.md`
+
+```markdown
+# Nissepat familiewapen, Sint-Joris en Cornelis
+
+**Status:** CANON — fact-fiction bridge approved 18 August 2026  
+**Governing decisions:** `DEC.CLAES.FAMILY_ARMS.VOETBOOG.2026-08-16`, `DEC.CORNELIS.SCHUTTERIJ.SINT_JORIS.2026-08-18`, `DEC.CLAES.CORNELIS.VOETBOOG_PEDAGOGY.2026-08-18`  
+**Historical substrate:** `SRC-HIST-NISSEPAT-ARMS-MUSCHART-82L-001`, `SRC-HIST-GOES-SCHUTTERIJ-DEGHEYN-001`
+
+This dossier fixes the point where historical family heraldry and historical Goese civic culture meet deliberate fictional biography. The layers must remain distinguishable even when the novel makes them feel continuous.
+
+## 1. Historical family sign
+
+Earlier project research identified CBG/Muschart record `NL-HaCBG_1801_0082_0819`, Nissepat, classification/reference `82L`. The recovered project transcription reads:
+
+> **een voetboog met den langen zwengel links**
+
+The project therefore reads the Nissepat heraldic charge as a **voetboog / crossbow**, not an ordinary handboog.
+
+This is stronger than the later shorthand that treated the lost/damaged heraldic image as leaving two equally open bow types. The project had already reaffirmed the voetboog reading on 18 July 2025.
+
+### Provenance still open
+
+Do not overstate what has been reverified. The following callback details still require direct reinspection of Muschart's source line:
+
+- Jacob Jansz./Janz. Nissepat as exact armiger;
+- approximately 1581 as exact date;
+- a surviving seal on a charter as the exact underlying object/source;
+- the exact mechanism represented by the `lange zwengel`.
+
+The family charge can be used as voetboog while those provenance details remain open.
+
+## 2. Historical Goese guild distinction
+
+Current Goese source synthesis keeps three institutions separate:
+
+- **Sint-Joris / Edele Voetboog** — voetboog/crossbow tradition; devies **`Van Ongenugten Vrij`**;
+- **Sint-Sebastiaan** — handboog tradition;
+- **Sint-Adriaan / Edele Busse** — firearm/kolvenier tradition.
+
+For this project **Sint-Joris is the relevant guild** for Cornelis' fictional crossbow membership.
+
+Do not swap Sint-Joris and Sint-Sebastiaan merely because later/secondary pages are inconsistent. The governing local schutterij dossier and source bundle preserve the current project distinction.
+
+### Guild topography
+
+The Sint-Joris and Sint-Sebastiaan shooting grounds/hoven lay beside one another on the **south-west side of Goes, south of the church and within the walls**. Modern Kreukelmarkt / Van de Spiegelstraat / Wijngaardstraat references are orientation aids only; do not back-project those modern street labels into Claes' speech without separate period-name evidence.
+
+This makes the voetboog world a plausible ordinary part of Claes' lived city rather than a distant military excursion.
+
+## 3. Fiction begins here: Cornelis
+
+The historical facts do not prove that Cornelis Nissepat existed as a documented schutter or that any historical Nissepat belonged to Sint-Joris.
+
+Novel canon deliberately makes fictional Cornelis:
+
+- a member of the Goese **Sint-Jorisgilde / Edele Voetboog**;
+- a practising voetboogschutter within that civic-corporate milieu;
+- a father whose guild/weapon practice is visible to Claes.
+
+The logic is resonance, not proof:
+
+**historical Nissepat family sign → historical Goese voetbooggilde → fictional Cornelis in that guild.**
+
+This is the desired fact-fiction loop.
+
+## 4. The familiewapen must exist in the lived story world
+
+The arms should not remain a YAML-only fact. Claes should know the sign materially before he understands what later meaning the reader may attach to it.
+
+Plausible carriers include:
+
+- a seal matrix;
+- a wax impression on a family or property document;
+- a copied heraldic mark in family papers;
+- another modest civic/family object appropriate to non-noble urban heraldry.
+
+The exact carrier is not yet fixed. Do **not** assume the fictional carrier is identical to the historical object behind Muschart.
+
+Avoid presenting the Nissepat family as pseudo-aristocratic merely because it has arms. The sign functions as family identity and documentary continuity, not as proof of noble rank.
+
+## 5. Sign becomes embodied reality
+
+For young Claes the most effective sequence is:
+
+1. he knows or repeatedly sees the family sign;
+2. he later recognizes the same basic form in Cornelis' actual voetboog;
+3. the visual sign acquires weight, tension, danger, sequence and bodily discipline;
+4. only much later can the reader experience the full family/memory resonance.
+
+Cornelis need not explain this relation in dialogue. A line such as “daarom dragen wij die boog” would make the loop too explicit and deterministic.
+
+## 6. Cornelis' bodily pedagogy
+
+The voetboog becomes one of several places where Cornelis teaches Claes through work rather than praise.
+
+Age-appropriate participation can include:
+
+- observing safe handling and the shooting ground;
+- carrying harmless equipment or messages;
+- counting bolts/targets/turns where plausible;
+- keeping clear of the line of fire;
+- helping inspect obvious material condition under supervision;
+- learning sequence and waiting for permission;
+- later, supervised handling or a carefully earned shot if the scene chronology supports it.
+
+No precise historical loading or spanning procedure should be invented without scene-specific evidence.
+
+### Father-son relation
+
+The key emotional mechanism is already canonical:
+
+**Claes does something well → waits for approval → Cornelis checks it → Cornelis entrusts the next harder task.**
+
+For Cornelis, the next task means:
+
+> I trust you.
+
+For Claes, it may mean:
+
+> It was not yet enough.
+
+The voetboog gives that asymmetry physical form without requiring explanatory dialogue.
+
+## 7. Papegaai, schutterskoning and public recognition
+
+Goese schutters practised competitive **papegaaischieten**: shooting at an artificial bird on a high pole. The successful shooter could be recognized as **schutterskoning**.
+
+This is particularly useful because it turns private skill into **publicly judged competence**.
+
+Possible scene functions:
+
+- Claes experiences the wait before each shot and the social reaction afterward;
+- a miss is public rather than private;
+- a winner receives visible communal recognition;
+- Cornelis can compete or simply participate without being made the winner;
+- Claes can see that the civic world has clear rituals of praise and status even while his father's praise toward him remains sparse.
+
+### Hard boundary
+
+**Cornelis is not canonically schutterskoning.** Making him win a papegaaischieten requires a separate scene/story decision. Exact prizes, chains, silver birds, rules, distances and ceremonial choreography remain unproven for mid-sixteenth-century Goes unless separately sourced.
+
+## 8. `Van Ongenugten Vrij`
+
+The historical devies of the Goese Sint-Joris / Edele Voetboog is **`Van Ongenugten Vrij`**.
+
+It may recur as an ordinary piece of guild identity known to Cornelis and Claes. Its later irony is powerful precisely because the characters do not explain it:
+
+- before 1554 it can belong simply to a prosperous civic brotherhood and a child's association with his father;
+- after fire, separation and Cornelis' death, the words acquire a different resonance for the reader;
+- no character needs to declare that Claes is obviously not “free of sorrows”.
+
+Do not invent a specific stone inscription, banner placement, badge or architectural display of the devies without evidence. The phrase is historically attached to the guild; its physical manifestation in a scene remains open.
+
+## 9. Gift and shadow
+
+Crossbow practice reinforces an existing Claes pattern; it does not create it from nothing.
+
+Useful bodily sequence:
+
+**see → prepare → hold tension → wait → choose → release.**
+
+For a disciplined weapon this is useful. In Claes' later life the danger lies in allowing the middle of the sequence to become permanent:
+
+**see → prepare → wait → keep waiting.**
+
+This therefore resonates with his established gift/shadow:
+
+- gift: prolonged precise embodied perception;
+- shadow: remaining in observation after action is required.
+
+Do not write the crossbow as an overt psychological metaphor. It must first work as a real dangerous object within real civic practice.
+
+## 10. 1554: the sign can outlive the house
+
+The family home and most of the household are destroyed in novel canon on 18 May 1554. The family sign need not disappear with them.
+
+A plausible heraldic carrier can already be:
+
+- with Cornelis;
+- with Claes Jacobsz.;
+- among papers or property records stored elsewhere;
+- otherwise outside the house before the fire.
+
+This is preferable to a miraculous object rescued from the flames.
+
+The result creates an early material form of a later project principle:
+
+> **a carrier can outlive another carrier, and a sign can remain when the household in which Claes first knew it is gone.**
+
+This is a narrative resonance, not evidence that sixteenth-century Nissepat heraldry was understood philosophically in this way.
+
+## 11. Relation to the wider carrier/content architecture
+
+The motif can later resonate with:
+
+- documents and seals surviving owners;
+- Cornelis' testimony surviving Cornelis;
+- the memoriaal carrying unseen text;
+- print multiplying testimony beyond its first carrier;
+- Sol remaining materially present while appearance changes;
+- Claes learning that preserving something is not the same as possessing it forever.
+
+The familiewapen is therefore a useful early seed of continuity-through-carriers, but must never be retroactively described as a deliberate coded prefiguration.
+
+## 12. Hard guardrails
+
+1. Nissepat family arms = voetboog/crossbow in current project canon.
+2. Recovered Muschart wording includes `lange zwengel`, but exact crossbow subtype remains open.
+3. Jacob Jansz./1581/charter-seal provenance remains pending direct source-line verification.
+4. Cornelis' Sint-Joris membership is fiction, not archival fact.
+5. Sint-Joris = voetboog; Sint-Sebastiaan = handboog; Sint-Adriaan/Edele Busse = firearm in current Goes canon.
+6. `Van Ongenugten Vrij` is historically attached to Sint Joris; its exact physical display remains scene-level open.
+7. Papegaaischieten and schutterskoning are historically supported; Cornelis winning is not canon.
+8. The bow-guild hoven belong south of the church / south-western city in the current topographic synthesis; modern street names are orientation only.
+9. No noble-status inference from the existence of family arms.
+10. No claim that every Nissepat is a crossbowman.
+11. No invented Cornelis guild office or command rank.
+12. Claes' childhood weapon participation remains supervised and age-appropriate.
+13. The crossbow reinforces Claes' established gift/shadow; it is not the single cause of his personality.
+14. Symbolism stays author-side; scenes remain material, relational and civic first.
+15. If the Muschart card or its underlying primary source is later recovered directly, update the provenance layer without disturbing the fictional Cornelis decision unless the historical identification itself creates a contradiction.
+```
+
+---
+
+# SOURCE FILE: `narrative/claes_cornelis_relationship_refinement_2026-08-18.yaml`
+
+```yaml
+schema_version: 1.1.0
+kind: RelationshipRefinement
+id: REL.CLAES.CORNELIS.REFINEMENT.2026-08-18
+status: CANON
+participants: [ENT.PERSON.CLAES, ENT.PERSON.CORNELIS]
+governs: REL.CLAES.CORNELIS
+related_decisions:
+- DEC.CLAES.CORNELIS.RECOGNITION.2026-08-18
+- DEC.CLAES.CORNELIS.RESPONSIBILITY.2026-08-18
+- DEC.CLAES.CORNELIS.RELIGIOUS_DISSONANCE.2026-08-18
+- DEC.CLAES.CORNELIS.POSTFIRE_READING.2026-08-18
+- DEC.CORNELIS.SCHUTTERIJ.SINT_JORIS.2026-08-18
+- DEC.CLAES.CORNELIS.VOETBOOG_PEDAGOGY.2026-08-18
+related_motif: MOTIF.NISSEPAT_VOETBOOG
+phases:
+- label: admiration and apprenticeship
+  story_time: {earliest: '1547-01-01', latest_exclusive: '1551-01-01', precision: approximate}
+  value_state: dependence -> admiration
+  claes_need: be seen and approved by Cornelis
+  cornelis_expression: instruction, task, correction, inclusion in practical work
+  tension: Claes can mistake functional trust for absence of affection because explicit praise is scarce.
+  embodied_contexts:
+  - household and trade observation
+  - biersteker work
+  - Sint-Joris / Edele Voetboog environment at child-safe distance
+
+- label: recognition hunger and delegated responsibility
+  story_time: {earliest: '1551-01-01', latest_exclusive: '1554-05-18', precision: approximate}
+  value_state: admiration -> striving for earned recognition
+  mechanism:
+  - Cornelis gives Claes increasingly consequential but age-appropriate tasks.
+  - Claes responds by becoming more exact, useful and dependable.
+  - Successful performance often produces another task, correction or enlarged responsibility rather than explicit praise.
+  paradox: >-
+    Claes may believe he is still not good enough because his father rarely praises him, while Cornelis may be increasing responsibility precisely because he trusts him.
+  household_role:
+  - help Tanneken during Cornelis' absences
+  - watch or fetch Jan when appropriate
+  - carry or remember instructions and messages
+  - count/check simple household or trade items
+  - repair or repeat work after mistakes
+  voetboog_training:
+    story_claim: STC.CLAES.CORNELIS.VOETBOOG_FORMATION.001
+    institution: Goese Sint-Jorisgilde / Edele Voetboog
+    progression:
+    - observe safe handling and shooting-ground discipline
+    - carry or count child-safe equipment/tasks
+    - learn sequence, clear line and permission to act
+    - supervised handling only when age and scene evidence support it
+    - a carefully earned shot may occur if separately placed in scene chronology
+    relational_function: >-
+      Cornelis can communicate trust by granting Claes the next harder responsibility; Claes may experience the same act as another test because explicit praise remains scarce.
+    gift_shadow_resonance: 'see -> prepare -> hold tension -> wait -> choose -> release; danger emerges when waiting survives past the moment of required action'
+  guardrails:
+  - No adult merchant authority and no automatic corporal punishment.
+  - Crossbow practice reinforces rather than singularly causes Claes' observer gift/shadow.
+  - Exact loading/spanning choreography requires period support per scene.
+
+- label: pre-conceptual religious dissonance
+  story_time: {earliest: '1552-01-01', latest_exclusive: '1554-05-18', precision: approximate}
+  value_state: shared visible Catholic world -> first unexplained difference
+  cornelis_state: Familist/Huis der Liefde affiliation with outward Catholic conformity
+  claes_state: ordinary Catholic child-world; no knowledge of the Huis der Liefde
+  scene_language:
+  - differing attention in church
+  - a silence where Claes expects an answer
+  - wording that does not match priest/school language exactly
+  - a book, visitor or journey Cornelis closes off without explanation
+  guardrail: Do not stage an explicit Protestant-versus-Catholic argument.
+
+- label: fire and impossible responsibility
+  story_time: {earliest: '1554-05-18', latest_exclusive: '1554-06-01', precision: bounded}
+  value_state: useful oldest son -> survivor unable to protect the household
+  subjective_wound: >-
+    Because Claes had already begun to experience himself as someone who should help carry and watch over the household, the deaths of Tanneken, Jan and the unborn child can feed an irrational sense that he failed a responsibility.
+  objective_truth: Claes is not responsible for the fire or deaths.
+  heraldic_continuity: >-
+    A plausible Nissepat heraldic carrier may survive outside the destroyed household, allowing family sign and name to remain materially present without a miraculous rescue from the flames.
+
+- label: care misread as rejection
+  story_time: {earliest: '1554-05-18', latest_exclusive: '1561-09-01', precision: bounded}
+  value_state: surviving pair -> loving sacrifice experienced as abandonment
+  cornelis_intention: preserve Claes' education and future while rebuilding in Goes
+  claes_reading: >-
+    The older recognition gap allows Claes to wonder whether being sent away confirms that his father still does not choose him for closeness.
+  guardrail: Preserve Cornelis' care and sacrifice; this is not simple abandonment.
+
+- label: old closed doors acquire meaning
+  story_time: {earliest: '1561-09-01', latest_exclusive: '1569-11-20', precision: bounded}
+  value_state: remembered childhood dissonance -> suspicion and partial understanding
+  function: >-
+    As Claes later sees Cornelis' dangerous routes, books, papers and loyalties, earlier childhood silences and incongruities retrospectively become meaningful. The adult son discovers that the closed doors he sensed as a child were real, even though he had misunderstood their cause.
+
+terminal_resonance:
+  date: '1569-11-19'
+  meaning: >-
+    Cornelis' execution removes not only the father but the remaining possibility of receiving the explicit recognition, explanation and reconciliation Claes had long wanted.
+
+scene_guardrails:
+- Do not explain the recognition dynamic in every scene; let it emerge from task, expectation, response and silence.
+- Cornelis may be demanding without being cruel.
+- Trust may be expressed as responsibility.
+- Claes' precision is both genuine aptitude and, in part, a relational strategy; neither explanation cancels the other.
+- Religious dissonance must remain child-scaled before 1554.
+- The Nissepat voetboog motif must first function as family heraldry and real weapon practice, not an announced symbol.
+```
+
+---
+
+# SOURCE FILE: `narrative/motifs_nissepat_arms_2026-08-18.yaml`
+
+```yaml
+schema_version: 1.1.0
+kind: MotifRegistryExtension
+motifs:
+  - id: MOTIF.NISSEPAT_VOETBOOG
+    label: Nissepat voetboog / familiewapen
+    status: CANON
+    historical_substrate:
+      family_arms: SC.HIST.NISSEPAT.ARMS.VOETBOOG.001
+      goes_guild: SC.HIST.GOES.SCHUTTERIJ.SINT_JORIS_VOETBOOG.001
+      guild_devise: SC.HIST.GOES.SCHUTTERIJ.SINT_JORIS.DEVISE.001
+      papegaai_practice: SC.HIST.GOES.SCHUTTERIJ.PAPEGAAI.001
+      guild_topography: SC.HIST.GOES.SCHUTTERIJ.HOVEN.SOUTHWEST.001
+    story_links:
+      - STC.NISSEPAT.FAMILY_ARMS.VOETBOOG.001
+      - STC.CORNELIS.SCHUTTERIJ.SINT_JORIS.001
+      - STC.CLAES.CORNELIS.VOETBOOG_FORMATION.001
+      - REL.CLAES.CORNELIS
+    progression:
+      - label: sign before explanation
+        period: childhood before 1554
+        function: Claes knows the family charge materially/visually before it carries explicit thematic meaning.
+      - label: weapon in father's hands
+        period: childhood before 1554
+        function: The heraldic shape gains bodily reality through Cornelis' Sint-Joris/voetboog practice.
+      - label: tension and permission
+        period: childhood formation
+        function: Claes learns that seeing a target is not identical to being permitted or ready to act; sequence, control and timing matter.
+      - label: public recognition at the papegaai
+        period: childhood before 1554
+        function: A guild competition can show Claes a civic world in which competence receives visible judgement and a successful shooter may become schutterskoning, sharpening by contrast the sparse verbal recognition he receives from Cornelis.
+      - label: recognition through entrusted action
+        period: early 1550s
+        function: Cornelis' next entrusted task functions as paternal trust while Claes may misread it as another test.
+      - label: Van Ongenugten Vrij
+        period: childhood onward
+        function: The historical Sint-Joris devies begins as ordinary guild identity; later suffering can make its wording resonate differently for the reader without explicit irony in character speech.
+      - label: carrier survives rupture
+        period: after 18 May 1554
+        function: The sign can outlive house and household through a plausible material carrier, preparing the wider carrier/content architecture without mystical explanation.
+      - label: mature resonance
+        period: later life
+        function: Claes' mature problem is not endless aim but choosing and releasing action when responsibility requires it.
+    guardrails:
+      - First be heraldry, weapon practice and family/civic material culture; symbolism must emerge from use.
+      - Do not make the arms proof of nobility, destiny or hereditary martial essence.
+      - Do not explain the motif to the reader in authorial exposition.
+      - Do not make Sint Sebastiaan the voetboog guild in Goes.
+      - Do not canonize Cornelis as schutterskoning without a separate story decision.
+      - Do not invent a physical display location for Van Ongenugten Vrij without evidence.
+      - Do not require the same physical heraldic object to survive every phase.
+      - Do not turn Claes' observer-shadow into a one-cause result of crossbow training.
+```
+
+---
+
 # SOURCE FILE: `narrative/story_projection_round_c.yaml`
 
 ```yaml
@@ -4761,9 +5379,9 @@ A scene can pass continuity and still fail fiction. **Accuracy is a constraint; 
 # SOURCE FILE: `narrative/domain_scene_packs.yaml`
 
 ```yaml
-schema_version: "1.0.0"
+schema_version: "1.1.0"
 kind: DomainScenePackRegistry
-purpose: "Machine-readable retrieval bridge from historical domains to chapter/scene construction. Packs constrain world state; they do not create fictional scenes or participation."
+purpose: "Machine-readable retrieval bridge from historical domains to chapter/scene construction. Packs constrain world state; they do not create fictional scenes or participation unless an explicit Story Claim/Decision is linked."
 packs:
   - id: PACK.BREAD.GOES_YOUTH
     label: "Goes youth — bread/bakery practice"
@@ -4866,13 +5484,31 @@ packs:
     hard_guardrails: ["do not reduce to battlefield date", "do not back-project this state into 1560s"]
 
   - id: PACK.GOES.SCHUTTERIJ
-    label: "Goes — shooting guild/civic defence context"
+    label: "Goes — Sint Joris / shooting guild / civic defence context"
     status: AUTHORING_READY_SCENE_CONTEXT
     world_modules: [WORLD.GOES, WORLD.SCHUTTERIJ_MILITARY]
-    detail_file: storybible/domains/SCHUTTERIJ_MILITARY_PRACTICE_1550_1607.md
-    source_claims: [SC.HIST.GOES.SCHUTTERIJ.FIREARM_GUILD.16C.001]
-    categories_to_keep_separate: [schuttersgilde, civic_watch, garrison_professionals, later_standardized_drill]
-    hard_guardrails: ["1516/1530 firearm-guild date conflict preserved", "no later equipment automatically in 1572"]
+    detail_files:
+      - storybible/domains/SCHUTTERIJ_MILITARY_PRACTICE_1550_1607.md
+      - storybible/NISSEPAT_ARMS_SINT_JORIS_CORNELIS.md
+    source_claims:
+      - SC.HIST.GOES.SCHUTTERIJ.SINT_JORIS_VOETBOOG.001
+      - SC.HIST.GOES.SCHUTTERIJ.FIREARM_GUILD.16C.001
+      - SC.HIST.NISSEPAT.ARMS.VOETBOOG.001
+    story_claims:
+      - STC.CORNELIS.SCHUTTERIJ.SINT_JORIS.001
+      - STC.CLAES.CORNELIS.VOETBOOG_FORMATION.001
+    canonical_cornelis_institution: "Sint-Jorisgilde / Edele Voetboog"
+    motif: MOTIF.NISSEPAT_VOETBOOG
+    youth_action_chain: [observe, clear_line, wait_permission, count_or_carry_child_safe_items, inspect_under_supervision, prepare, hold_tension, choose, release_if_scene_earned]
+    categories_to_keep_separate: [Sint_Joris_voetboog, Sint_Sebastiaan_handboog, Sint_Adriaan_firearm, civic_watch, garrison_professionals, later_standardized_drill]
+    relational_function: "Cornelis expresses trust by enlarging responsibility; Claes may misread the next task as proof that he still has not earned explicit recognition."
+    hard_guardrails:
+      - "Cornelis membership is story canon, not archival fact"
+      - "Sint Sebastiaan is not the voetboog guild"
+      - "no Cornelis guild office without separate decision"
+      - "no exact zwengel/cranequin subtype without scene-specific evidence"
+      - "1516/1530 firearm-guild date conflict preserved"
+      - "no later equipment automatically in 1572"
 
   - id: PACK.MILITARY.DEGHEYN_1607_COMPARATOR
     label: "Late military practice — De Gheyn comparator"
@@ -6533,6 +7169,75 @@ decisions:
 
 ---
 
+# SOURCE FILE: `canon/DECISIONS_CLAES_CORNELIS_RELATION_2026-08-18.yaml`
+
+```yaml
+schema_version: 1.0.0
+kind: CanonDecisionRegistryExtension
+decisions:
+- id: DEC.CLAES.CORNELIS.RECOGNITION.2026-08-18
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    Before the 1554 fire, Claes admires Cornelis and actively longs for his recognition. Cornelis does love and trust his son, but he expresses that love primarily through instruction, work, responsibility, material provision and investment in Claes' education rather than frequent verbal praise. Claes does not automatically experience those functional acts as recognition and therefore increasingly tries to earn approval by being useful, precise and dependable.
+  affects:
+  - REL.CLAES.CORNELIS
+  - ARC.CLAES.CORNELIS
+  - ARC.CLAES.LIFE.P02
+  - storybible/CLAES_CORNELIS_RELATION_1547_1569.md
+  guardrails:
+  - Cornelis is not canonically cold, loveless or contemptuous.
+  - Recognition scarcity is relational asymmetry, not proof that Cornelis does not value Claes.
+  - Do not make this a separate replacement core wound; it is a relational pressure that feeds Claes' existing attention/control vulnerability.
+
+- id: DEC.CLAES.CORNELIS.RESPONSIBILITY.2026-08-18
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    As Claes grows older, especially in the early 1550s, Cornelis increasingly entrusts him with age-appropriate household and small trade responsibilities, including tasks that matter while Cornelis is away on journeys. Claes can experience himself as the oldest son who must help carry the household, watch over Jan, remember or deliver instructions, count or check simple things, and assist Tanneken. Failure has real consequences, but no specific corporal-punishment regime is canonized.
+  affects:
+  - REL.CLAES.CORNELIS
+  - REL.CLAES.BROTHER
+  - storybible/FAMILY_CLAES_1542_1554.md
+  - storybible/CLAES_CORNELIS_RELATION_1547_1569.md
+  guardrails:
+  - Responsibilities must remain plausible for Claes' age and status; do not turn an eleven-year-old into an adult merchant or head of household.
+  - Consequences may include correction, repetition, extra work, loss of trust, practical repair or visible cost; corporal punishment is not implied unless separately decided.
+  - Claes' later guilt about the fire may include the subjective sense that he was supposed to help protect the household, but the story must not make him objectively responsible for the deaths.
+
+- id: DEC.CLAES.CORNELIS.RELIGIOUS_DISSONANCE.2026-08-18
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    From approximately 1552-1553, while Claes still inhabits the ordinary Catholic child-world of Goes, he begins to notice small unexplained differences in Cornelis' attention, silences, wording and reactions within that same outward Catholic environment. Claes does not know that Cornelis has entered the Huis der Liefde. The tension is therefore pre-conceptual religious dissonance, not an explicit Protestant-versus-Catholic father-son argument.
+  affects:
+  - REL.CLAES.CORNELIS
+  - ENT.PERSON.CORNELIS
+  - DEC.CORNELIS.HOUSE_OF_LOVE.PRE_FIRE_AFFILIATION.2026-08-16
+  - DEC.CORNELIS.HOUSE_OF_LOVE.OUTWARD_CONFORMITY.2026-08-16
+  - storybible/CLAES_CORNELIS_RELATION_1547_1569.md
+  guardrails:
+  - Do not call Cornelis simply Protestant in this period; current canon is Familist/Huis der Liefde with outward Catholic conformity.
+  - Claes does not identify the movement, doctrine or network before later evidence gives him reason to do so.
+  - Do not turn every church scene into coded suspicion; the dissonance should remain intermittent and child-scaled.
+
+- id: DEC.CLAES.CORNELIS.POSTFIRE_READING.2026-08-18
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    The established post-fire separation gains an additional relational layer: Cornelis' decision to preserve Claes' education by sending him to Reimerswaal is one of his strongest acts of care, while Claes can also read it through the older recognition gap as evidence that he is still not the son his father wants near him. This interpretation is Claes' wounded reading, not Cornelis' intention.
+  affects:
+  - DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14
+  - REL.CLAES.CORNELIS
+  - ARC.CLAES.CORNELIS
+  - storybible/CLAES_CORNELIS_RELATION_1547_1569.md
+  guardrails:
+  - Preserve both truths: Cornelis sacrifices to protect Claes' future; Claes experiences separation as another loss.
+  - Do not flatten the relationship into abuse or simple abandonment.
+```
+
+---
+
 # SOURCE FILE: `canon/DECISIONS_CONCOCTIONIST_MOTIF_2026-08-16.yaml`
 
 ```yaml
@@ -6783,6 +7488,76 @@ decisions:
   guardrails:
     - This is a narrative/thematic use, not a claim that Claes influenced De Gheyn.
     - Do not invent personal contact between Claes and Jacob de Gheyn II unless separately decided.
+```
+
+---
+
+# SOURCE FILE: `canon/DECISIONS_NISSEPAT_ARMS_SINT_JORIS_2026-08-18.yaml`
+
+```yaml
+schema_version: 1.0.0
+kind: CanonDecisionRegistryExtension
+decisions:
+  - id: DEC.CLAES.FAMILY_ARMS.VOETBOOG.2026-08-16
+    type: CanonDecision
+    status: CANON
+    amended_on: '2026-08-18'
+    decision: >-
+      The Nissepat family arms are read in project canon as showing a voetboog (crossbow), not an ordinary handboog. The 18 August refinement restores the stronger recovered evidence basis: earlier project transcription of CBG/Muschart record NL-HaCBG_1801_0082_0819 / 82L reads "een voetboog met den langen zwengel links". The decision is therefore not framed as an arbitrary choice between two equally unreadable bow types.
+    affects:
+      - ENT.PERSON.CORNELIS
+      - MOTIF.NISSEPAT_VOETBOOG
+      - STC.CORNELIS.SCHUTTERIJ.SINT_JORIS.001
+      - NI.SCENE.SOWER.1554.001
+    evidence_basis:
+      - SC.HIST.NISSEPAT.ARMS.VOETBOOG.001
+      - SC.HIST.NISSEPAT.ARMS.ZWENGEL.001
+    historical_boundary:
+      - The exact original armiger, ca.1581 callback date and underlying seal/charter source remain pending direct reinspection of Muschart's source line.
+      - The family arms do not prove that every Nissepat practised crossbow shooting.
+      - The exact historical spanning mechanism represented by the zwengel remains unresolved.
+    supersedes_open_note: >-
+      Closes the old handboog-versus-voetboog uncertainty at project-canon level. Remaining research concerns provenance, armiger/date and exact crossbow subtype, not the project's heraldic charge reading.
+
+  - id: DEC.CORNELIS.SCHUTTERIJ.SINT_JORIS.2026-08-18
+    type: CanonDecision
+    status: CANON
+    decision: >-
+      In novel canon Cornelis is a member of the Goese Sint-Jorisgilde / Edele Voetboog. This is deliberate fictional biography grounded in a real Goese crossbow-guild institution and made to resonate with the source-supported Nissepat family arms. Sint Sebastiaan remains the separate Goese handbow tradition; Sint Adriaan / Edele Busse remains the separate firearm/kolvenier tradition.
+    affects:
+      - ENT.PERSON.CORNELIS
+      - REL.CLAES.CORNELIS
+      - ARC.CLAES.CORNELIS
+      - MOTIF.NISSEPAT_VOETBOOG
+      - PACK.GOES.SCHUTTERIJ
+      - STC.CORNELIS.SCHUTTERIJ.SINT_JORIS.001
+      - STC.CLAES.CORNELIS.VOETBOOG_FORMATION.001
+    rationale: >-
+      The connection creates a fact-fiction loop without falsifying the historical record: a real Nissepat heraldic voetboog and a real Goese Edele Voetboog/Sint Joris institution become the substrate for fictional Cornelis' personal membership. Through Cornelis, the crossbow also becomes one bodily arena in which Claes learns attention, tension, waiting, precision and the obligation to choose the moment of action.
+    guardrails:
+      - Cornelis' personal membership is novel canon, not archival attestation.
+      - Do not infer his office, deanship or military command from membership.
+      - Do not call his guild Sint Sebastiaan; in current Goes canon Sint Sebastiaan is the handbow guild.
+      - Do not make heraldry a deterministic family destiny or claim all Nissepat men were crossbowmen.
+      - Do not force Claes to become a full guild member or skilled adult crossbowman in childhood.
+
+  - id: DEC.CLAES.CORNELIS.VOETBOOG_PEDAGOGY.2026-08-18
+    type: CanonDecision
+    status: CANON
+    decision: >-
+      Cornelis' voetboog practice becomes one recurring embodied teaching environment in Claes' childhood. Age-appropriate participation may progress from carrying, observing, counting, target-ground discipline and equipment care toward supervised handling, spanning/ranging tasks and eventually a carefully earned shot where scene chronology permits. Cornelis often expresses trust by granting the next responsibility rather than by verbal praise.
+    affects:
+      - REL.CLAES.CORNELIS
+      - ARC.CLAES.CORNELIS
+      - MOTIF.NISSEPAT_VOETBOOG
+      - STC.CLAES.CORNELIS.VOETBOOG_FORMATION.001
+    narrative_function: >-
+      The footbow gives bodily form to Claes' established gift/shadow: perception, controlled tension, waiting and precision are useful until waiting survives past the moment when action is required. It also concretizes the father-son recognition gap: Cornelis' increased trust can feel to Claes like another test because explicit praise remains sparse.
+    guardrails:
+      - Do not turn the crossbow into an explicit allegory explained by characters.
+      - The motif must remain materially credible before it becomes thematic.
+      - Exact loading/spanning procedure requires period-appropriate evidence per scene.
+      - Claes' central gift/shadow predates and exceeds this one training environment; the voetboog reinforces it rather than singularly causing it.
 ```
 
 ---

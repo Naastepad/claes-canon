@@ -4,9 +4,9 @@
 > Treat each SOURCE FILE section as the original source file.
 
 - source branch: `main`
-- source commit at generation: `3b2960e741d81db1b1542bb2a6e2564ef686b615`
-- generated UTC: `2026-08-18T08:11:51+00:00`
-- included files: `16`
+- source commit at generation: `7407d17c0c7ad5cba3df7a706b3cec6ee4322572`
+- generated UTC: `2026-08-18T17:20:23+00:00`
+- included files: `18`
 
 Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pack does not alter authority.
 
@@ -770,6 +770,75 @@ decisions:
 
 ---
 
+# SOURCE FILE: `canon/DECISIONS_CLAES_CORNELIS_RELATION_2026-08-18.yaml`
+
+```yaml
+schema_version: 1.0.0
+kind: CanonDecisionRegistryExtension
+decisions:
+- id: DEC.CLAES.CORNELIS.RECOGNITION.2026-08-18
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    Before the 1554 fire, Claes admires Cornelis and actively longs for his recognition. Cornelis does love and trust his son, but he expresses that love primarily through instruction, work, responsibility, material provision and investment in Claes' education rather than frequent verbal praise. Claes does not automatically experience those functional acts as recognition and therefore increasingly tries to earn approval by being useful, precise and dependable.
+  affects:
+  - REL.CLAES.CORNELIS
+  - ARC.CLAES.CORNELIS
+  - ARC.CLAES.LIFE.P02
+  - storybible/CLAES_CORNELIS_RELATION_1547_1569.md
+  guardrails:
+  - Cornelis is not canonically cold, loveless or contemptuous.
+  - Recognition scarcity is relational asymmetry, not proof that Cornelis does not value Claes.
+  - Do not make this a separate replacement core wound; it is a relational pressure that feeds Claes' existing attention/control vulnerability.
+
+- id: DEC.CLAES.CORNELIS.RESPONSIBILITY.2026-08-18
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    As Claes grows older, especially in the early 1550s, Cornelis increasingly entrusts him with age-appropriate household and small trade responsibilities, including tasks that matter while Cornelis is away on journeys. Claes can experience himself as the oldest son who must help carry the household, watch over Jan, remember or deliver instructions, count or check simple things, and assist Tanneken. Failure has real consequences, but no specific corporal-punishment regime is canonized.
+  affects:
+  - REL.CLAES.CORNELIS
+  - REL.CLAES.BROTHER
+  - storybible/FAMILY_CLAES_1542_1554.md
+  - storybible/CLAES_CORNELIS_RELATION_1547_1569.md
+  guardrails:
+  - Responsibilities must remain plausible for Claes' age and status; do not turn an eleven-year-old into an adult merchant or head of household.
+  - Consequences may include correction, repetition, extra work, loss of trust, practical repair or visible cost; corporal punishment is not implied unless separately decided.
+  - Claes' later guilt about the fire may include the subjective sense that he was supposed to help protect the household, but the story must not make him objectively responsible for the deaths.
+
+- id: DEC.CLAES.CORNELIS.RELIGIOUS_DISSONANCE.2026-08-18
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    From approximately 1552-1553, while Claes still inhabits the ordinary Catholic child-world of Goes, he begins to notice small unexplained differences in Cornelis' attention, silences, wording and reactions within that same outward Catholic environment. Claes does not know that Cornelis has entered the Huis der Liefde. The tension is therefore pre-conceptual religious dissonance, not an explicit Protestant-versus-Catholic father-son argument.
+  affects:
+  - REL.CLAES.CORNELIS
+  - ENT.PERSON.CORNELIS
+  - DEC.CORNELIS.HOUSE_OF_LOVE.PRE_FIRE_AFFILIATION.2026-08-16
+  - DEC.CORNELIS.HOUSE_OF_LOVE.OUTWARD_CONFORMITY.2026-08-16
+  - storybible/CLAES_CORNELIS_RELATION_1547_1569.md
+  guardrails:
+  - Do not call Cornelis simply Protestant in this period; current canon is Familist/Huis der Liefde with outward Catholic conformity.
+  - Claes does not identify the movement, doctrine or network before later evidence gives him reason to do so.
+  - Do not turn every church scene into coded suspicion; the dissonance should remain intermittent and child-scaled.
+
+- id: DEC.CLAES.CORNELIS.POSTFIRE_READING.2026-08-18
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    The established post-fire separation gains an additional relational layer: Cornelis' decision to preserve Claes' education by sending him to Reimerswaal is one of his strongest acts of care, while Claes can also read it through the older recognition gap as evidence that he is still not the son his father wants near him. This interpretation is Claes' wounded reading, not Cornelis' intention.
+  affects:
+  - DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14
+  - REL.CLAES.CORNELIS
+  - ARC.CLAES.CORNELIS
+  - storybible/CLAES_CORNELIS_RELATION_1547_1569.md
+  guardrails:
+  - Preserve both truths: Cornelis sacrifices to protect Claes' future; Claes experiences separation as another loss.
+  - Do not flatten the relationship into abuse or simple abandonment.
+```
+
+---
+
 # SOURCE FILE: `canon/DECISIONS_CONCOCTIONIST_MOTIF_2026-08-16.yaml`
 
 ```yaml
@@ -1020,6 +1089,76 @@ decisions:
   guardrails:
     - This is a narrative/thematic use, not a claim that Claes influenced De Gheyn.
     - Do not invent personal contact between Claes and Jacob de Gheyn II unless separately decided.
+```
+
+---
+
+# SOURCE FILE: `canon/DECISIONS_NISSEPAT_ARMS_SINT_JORIS_2026-08-18.yaml`
+
+```yaml
+schema_version: 1.0.0
+kind: CanonDecisionRegistryExtension
+decisions:
+  - id: DEC.CLAES.FAMILY_ARMS.VOETBOOG.2026-08-16
+    type: CanonDecision
+    status: CANON
+    amended_on: '2026-08-18'
+    decision: >-
+      The Nissepat family arms are read in project canon as showing a voetboog (crossbow), not an ordinary handboog. The 18 August refinement restores the stronger recovered evidence basis: earlier project transcription of CBG/Muschart record NL-HaCBG_1801_0082_0819 / 82L reads "een voetboog met den langen zwengel links". The decision is therefore not framed as an arbitrary choice between two equally unreadable bow types.
+    affects:
+      - ENT.PERSON.CORNELIS
+      - MOTIF.NISSEPAT_VOETBOOG
+      - STC.CORNELIS.SCHUTTERIJ.SINT_JORIS.001
+      - NI.SCENE.SOWER.1554.001
+    evidence_basis:
+      - SC.HIST.NISSEPAT.ARMS.VOETBOOG.001
+      - SC.HIST.NISSEPAT.ARMS.ZWENGEL.001
+    historical_boundary:
+      - The exact original armiger, ca.1581 callback date and underlying seal/charter source remain pending direct reinspection of Muschart's source line.
+      - The family arms do not prove that every Nissepat practised crossbow shooting.
+      - The exact historical spanning mechanism represented by the zwengel remains unresolved.
+    supersedes_open_note: >-
+      Closes the old handboog-versus-voetboog uncertainty at project-canon level. Remaining research concerns provenance, armiger/date and exact crossbow subtype, not the project's heraldic charge reading.
+
+  - id: DEC.CORNELIS.SCHUTTERIJ.SINT_JORIS.2026-08-18
+    type: CanonDecision
+    status: CANON
+    decision: >-
+      In novel canon Cornelis is a member of the Goese Sint-Jorisgilde / Edele Voetboog. This is deliberate fictional biography grounded in a real Goese crossbow-guild institution and made to resonate with the source-supported Nissepat family arms. Sint Sebastiaan remains the separate Goese handbow tradition; Sint Adriaan / Edele Busse remains the separate firearm/kolvenier tradition.
+    affects:
+      - ENT.PERSON.CORNELIS
+      - REL.CLAES.CORNELIS
+      - ARC.CLAES.CORNELIS
+      - MOTIF.NISSEPAT_VOETBOOG
+      - PACK.GOES.SCHUTTERIJ
+      - STC.CORNELIS.SCHUTTERIJ.SINT_JORIS.001
+      - STC.CLAES.CORNELIS.VOETBOOG_FORMATION.001
+    rationale: >-
+      The connection creates a fact-fiction loop without falsifying the historical record: a real Nissepat heraldic voetboog and a real Goese Edele Voetboog/Sint Joris institution become the substrate for fictional Cornelis' personal membership. Through Cornelis, the crossbow also becomes one bodily arena in which Claes learns attention, tension, waiting, precision and the obligation to choose the moment of action.
+    guardrails:
+      - Cornelis' personal membership is novel canon, not archival attestation.
+      - Do not infer his office, deanship or military command from membership.
+      - Do not call his guild Sint Sebastiaan; in current Goes canon Sint Sebastiaan is the handbow guild.
+      - Do not make heraldry a deterministic family destiny or claim all Nissepat men were crossbowmen.
+      - Do not force Claes to become a full guild member or skilled adult crossbowman in childhood.
+
+  - id: DEC.CLAES.CORNELIS.VOETBOOG_PEDAGOGY.2026-08-18
+    type: CanonDecision
+    status: CANON
+    decision: >-
+      Cornelis' voetboog practice becomes one recurring embodied teaching environment in Claes' childhood. Age-appropriate participation may progress from carrying, observing, counting, target-ground discipline and equipment care toward supervised handling, spanning/ranging tasks and eventually a carefully earned shot where scene chronology permits. Cornelis often expresses trust by granting the next responsibility rather than by verbal praise.
+    affects:
+      - REL.CLAES.CORNELIS
+      - ARC.CLAES.CORNELIS
+      - MOTIF.NISSEPAT_VOETBOOG
+      - STC.CLAES.CORNELIS.VOETBOOG_FORMATION.001
+    narrative_function: >-
+      The footbow gives bodily form to Claes' established gift/shadow: perception, controlled tension, waiting and precision are useful until waiting survives past the moment when action is required. It also concretizes the father-son recognition gap: Cornelis' increased trust can feel to Claes like another test because explicit praise remains sparse.
+    guardrails:
+      - Do not turn the crossbow into an explicit allegory explained by characters.
+      - The motif must remain materially credible before it becomes thematic.
+      - Exact loading/spanning procedure requires period-appropriate evidence per scene.
+      - Claes' central gift/shadow predates and exceeds this one training environment; the voetboog reinforces it rather than singularly causing it.
 ```
 
 ---
