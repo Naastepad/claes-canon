@@ -73,7 +73,7 @@ Hard guardrails:
 
 Primary subject: `ENT.PERSON.CLAES`
 Primary arc: `ARC.CLAES.LIFE`
-Primary chronology decision: `DEC.CLAES.BIRTH_EDUCATION.001`
+Primary chronology decisions: `DEC.CLAES.BIRTH_EDUCATION.001`, `DEC.CLAES.PUTTUS.001`
 
 ### Canonical age anchors
 
@@ -103,15 +103,22 @@ The early world is registered through warmth, cold, smell, light, sound, silence
 Historical anchor: `SC.HIST.LASCASAS.BREVISIMA.1542.001`.
 Narrative target: `NI.SCENE.DREMPEL.1547.001`.
 
-### II — ca. 1547–spring 1554: discovering order
+### II — ca. 1547–spring 1554: discovering order and first humanist formation
 
 **Value state:** wonder → confidence in knowable order.
 
 Home, trade, church, ordinary schooling, brewing and merels teach Claes that visible things are governed by relation and process. Cornelis trains attention through waiting, counting, smelling and looking again. The first merels lesson establishes the lifelong distinction between counting pieces and seeing routes.
 
-Before the fire Claes receives **elementary schooling in Goes**. Current canon does not require or assert an uninterrupted full official Goese Latin school in these years. Cornelis sees enough ability to intend a next educational step outside Goes: **Zierikzee** as the planned Latin-school destination.
+From about **1548/49** Claes receives elementary schooling in Goes: reading and spelling, writing, religious literacy and elementary numeracy form the first layer. As his aptitude becomes clear, his education broadens rather than beginning again from zero.
 
-Canonical claims: `STC.CLAES.SCHOOL.GOES.001`, `STC.CLAES.ZIERIKZEE.PLAN.001`.
+In novel canon, **Nicolaes van de Put (Puttus)** becomes Claes' Goese Latin master in the final pre-fire years, approximately **1551–spring 1554**. Puttus builds on Claes' elementary literacy and introduces him to initial Latin and humanist study. The historical anchor is deliberately narrower than the story claim: Puttus is documented as schoolmaster in Goes in **1512**, Barlandus' Aesop material supports Latin/humanist teaching, and Meertens considers him probably rector. Puttus' continued presence in the early 1550s and his personal teaching of Claes are authorial story truth, not documented historical facts.
+
+The August 2026 targeted audit found no death, departure or named successor that excludes Puttus from Claes' school years, but this negative evidence does **not** prove a continuous forty-year rectorship. The Storybible therefore does not claim that one institutionally identical official Goese Latin school operated uninterrupted from 1512 through 1554.
+
+Cornelis sees enough ability to intend a next educational step outside Goes: **Zierikzee** as the planned destination for a more sustained Latin-school formation. Zierikzee is therefore an ambitious continuation, not a remedy for a city in which Claes had never encountered Latin.
+
+Historical anchor: `SC.HIST.PUTTUS.GOES.1512.001`.
+Canonical claims: `STC.CLAES.SCHOOL.GOES.001`, `STC.CLAES.PUTTUS.001`, `STC.CLAES.ZIERIKZEE.PLAN.001`.
 Canonical motif: `MOTIF.MERELS_WAYS`.
 
 ### III — 1554–1561: displacement and Reimerswaal formation
@@ -120,7 +127,7 @@ Canonical motif: `MOTIF.MERELS_WAYS`.
 
 The Goes fire on **18 May 1554**, when Claes is eleven, damages Cornelis' salt/trade capital but not the Nissepad brewery. The fire does not create Cornelis' educational ambition; it changes the route by which that ambition can still be pursued. The intended Zierikzee arrangement becomes financially unrealistic. Later in 1554, while still eleven and approaching twelve, Claes goes instead as a cost pupil to the Latin school of **Reimerswaal**.
 
-This age is not to be treated in the novel as an anomalous late start requiring special explanation. Claes arrives after prior elementary schooling in Goes. The Reimerswaal period lasts until summer 1561, but it must **not** be written as seven years of beginner curriculum. It develops from Latin-school formation into a more advanced older-pupil phase. No exact Reimerswaal class sequence, formal repetitor title, named rector or fixed surviving school building is canon without separate evidence.
+This age is not to be treated in the novel as an anomalous late start requiring special explanation. Claes arrives after elementary schooling and first Latin/humanist formation under Puttus in Goes. Reimerswaal therefore continues and intensifies an existing trajectory. The Reimerswaal period lasts until summer 1561, but it must **not** be written as seven years of beginner curriculum. It develops from sustained Latin-school formation into a more advanced older-pupil phase. No exact Reimerswaal class sequence, formal repetitor title, named rector or fixed surviving school building is canon without separate evidence.
 
 Water threat in 1555 and the decaying environment teach that a place may still exist yet cease to be the same place.
 
@@ -130,7 +137,7 @@ Core wound:
 
 The water-damaged but complete Zovitius schoolbook becomes an object-biographical counterpoint to Cornelis' papers lost by fire: fire destroys text; water deforms but leaves it readable.
 
-Claims: `STC.CLAES.REIMERSWAAL.001`, `STC.CLAES.ZIERIKZEE.PLAN.001`, `STC.CLAES.SCHOOL.GOES.001`.
+Claims: `STC.CLAES.REIMERSWAAL.001`, `STC.CLAES.ZIERIKZEE.PLAN.001`, `STC.CLAES.SCHOOL.GOES.001`, `STC.CLAES.PUTTUS.001`.
 
 ### IV — 1560–1563: older pupil to young man; interpreting roles and intentions
 
@@ -386,11 +393,11 @@ A familiar melody can carry changed words. Contrafact becomes an auditory prepar
 
 ### Goes
 
-Use source-weighted topography. Distinguish historical anchor, reconstruction and fiction. The 1554 fire is fixed on 18 May. The Nissepad reconstruction remains revisable at micro-topographic level when archival evidence improves. Claes' elementary schooling before the fire is canon; an uninterrupted full official Goes Latin school through 1554 is not asserted.
+Use source-weighted topography. Distinguish historical anchor, reconstruction and fiction. The 1554 fire is fixed on 18 May. The Nissepad reconstruction remains revisable at micro-topographic level when archival evidence improves. Claes begins with elementary schooling and receives his first Latin/humanist formation from **Nicolaes van de Put (Puttus)** in the final pre-fire years. Puttus is historically anchored in Goes in 1512; his continued presence in the 1550s and the teacher-pupil relationship are story canon. Do not convert that story decision into a historical claim of continuous rectoral tenure.
 
 ### Reimerswaal
 
-Actual school destination after the 1554 fire and intended replacement for Zierikzee; Claes remains in the Reimerswaal educational environment until August 1561. The city remains functioning during his years. The water threat is experienced, not the later final destruction. His years there progress from Latin formation into advanced/older-pupil work; do not force a seven-year beginner curriculum, a formal repetitor office, a locally unverified class structure, an invented rector or a fixed surviving medieval school building.
+Actual school destination after the 1554 fire and intended replacement for Zierikzee; Claes remains in the Reimerswaal educational environment until August 1561. The city remains functioning during his years. The water threat is experienced, not the later final destruction. He enters after elementary schooling and initial Latin/humanist formation under Puttus; his Reimerswaal years progress into advanced/older-pupil work. Do not force a seven-year beginner curriculum, a formal repetitor office, a locally unverified class structure, an invented rector or a fixed surviving medieval school building.
 
 ### Antwerp
 
@@ -432,7 +439,7 @@ High-priority unresolved matters include:
 - final placement and wording of the last merels scene;
 - chapter calendar audit for the 1564 sequence.
 
-The **birth date and education route are no longer open**: `DEC.CLAES.BIRTH_EDUCATION.001` is ACTIVE/CANON.
+The **birth date, education route and identity of Claes' Goese Latin master are no longer open**: `DEC.CLAES.BIRTH_EDUCATION.001` and `DEC.CLAES.PUTTUS.001` are ACTIVE/CANON. The historical question of Puttus' exact tenure remains unresolved and must stay separate from story truth.
 
 ---
 
