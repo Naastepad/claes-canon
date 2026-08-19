@@ -1,4 +1,4 @@
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: ParkedNarrativeMaterialRegistry
 purpose: >-
   Preserves useful material removed during editorial passes without falsely treating it as active manuscript placement or current scene canon. This registry stores summaries and reuse constraints, not a second prose archive.
@@ -32,6 +32,7 @@ hard_rules:
 - "Do not store large verbatim cut passages here. Store a concise content/function summary plus a pointer to the originating manuscript/editor handoff when available."
 - "Material parked as BACKDROP may be distributed in fragments; it should not be resurrected as an exposition block merely because it was once written as one."
 - "Motif reserve requires changed value on recurrence; repetition of the same symbolic beat is not reuse justification."
+- "REJECTED_STORY_OPTION is not a reserve bin. It exists specifically to stop a cut idea returning by accident."
 
 items:
 - id: PARK.EARLY_GOES.FIRST_STEPS_HOME.001
@@ -57,7 +58,175 @@ items:
   underlying_story_truth: REJECTED
   reuse_guardrail: "Do not restore an explicit destiny/date-link device. The later relation is testimony/transmission/responsibility, not shared-date symbolism."
 
+- id: PARK.PROLOGUE.NEW_LAWS_ADMIN_CONTEXT.001
+  status: PARKED_BACKDROP
+  origin_chapter: CH.PROLOGUE.DE_BLADZIJDE.1542
+  origin_revision: REV.2026-08-19.DE_BLADZIJDE.001
+  disposition_basis: SEMANTIC_RECONSTRUCTION
+  confidence: MEDIUM
+  summary: >-
+    Extended colonial-administrative context around reform, delay, court/governance and the practical difficulty of turning Las Casas' evidence into action was compressed from the prologue.
+  underlying_story_truth: HISTORICAL_CONTEXT_REQUIRES_SOURCE_SUPPORT
+  possible_functions: [Las_Casas_world_context, reform_vs_implementation, testimony_without_effect]
+  reuse_guardrail: >-
+    Prefer later research/backdrop or a concise historical note if needed. Do not restore a prologue exposition block unless the reader truly needs the administrative mechanism for a later causal payoff.
+
+- id: PARK.DREMPEL.ZEVEN_GETIJDEN_BACKDROP.001
+  status: PARKED_BACKDROP
+  origin_chapter: CH.DE_DREMPEL.1547
+  origin_revision: REV.2026-08-19.DE_DREMPEL.001
+  disposition_basis: PAIRED_DRAFTS
+  confidence: HIGH
+  summary: >-
+    The explicit institutional label for the Zeven Getijden was removed from four-year-old Claes' immediate church perception while the secondary chant/sound-world remained.
+  underlying_story_truth: HISTORICAL_WORLD_CONTEXT
+  possible_functions: [later_church_backdrop, liturgical_day_rhythm, Goese_religious_soundscape]
+  reuse_guardrail: "Use where a POV plausibly knows or needs the institutional name; do not make the child's first embodied church experience carry Storybible terminology."
+
+- id: PARK.DREMPEL.EARLY_FAMILIST_SIGNAL.001
+  status: REJECTED_STORY_OPTION
+  origin_chapter: CH.DE_DREMPEL.1547
+  origin_revision: REV.2026-08-19.DE_DREMPEL.001
+  disposition_basis: PAIRED_DRAFTS_PLUS_CANON_BOUNDARY
+  confidence: HIGH
+  summary: >-
+    The older version weighted Cornelis' 1547 church distraction/body posture as a meaningful early religious anomaly. The revised version deliberately neutralizes it because Cornelis' Familist affiliation is canonically ca.1552-1553.
+  underlying_story_truth: REJECTED_AS_EARLY_SIGNAL
+  reuse_guardrail: "Do not back-project a recognizably Familist Cornelis into 1547 without a new author decision. Ordinary distraction/searching temperament may exist without serving as encoded conversion evidence."
+
+- id: PARK.WAPEN.BANNER_BLESSING_RITUAL.001
+  status: REJECTED_STORY_OPTION
+  origin_chapter: CH.HET_WAPEN.1553
+  origin_revision: REV.2026-08-19.HET_WAPEN.001
+  disposition_basis: PAIRED_DRAFTS_PLUS_EVIDENCE_BOUNDARY
+  confidence: HIGH
+  summary: >-
+    A specific Sint-Joris feast sequence with special mass staging, banner at the altar, deken-led blessing and sprinkling with holy water was removed because the exact Goese ritual was not established.
+  underlying_story_truth: REJECTED_UNLESS_RESEARCH_REOPENS
+  reuse_guardrail: "Generic guild church attendance may remain. Do not restore the exact blessing choreography as historical scene detail without new source support and an explicit fiction/reconstruction decision."
+
+- id: PARK.WAPEN.DEVISE_GREETING_CONVENTION.001
+  status: REJECTED_STORY_OPTION
+  origin_chapter: CH.HET_WAPEN.1553
+  origin_revision: REV.2026-08-19.HET_WAPEN.001
+  disposition_basis: PAIRED_DRAFTS_PLUS_EVIDENCE_BOUNDARY
+  confidence: HIGH
+  summary: >-
+    The older version made 'Van Ongenugten Vrij' a routine oral greeting/geuzenwoord among schutters. The revised version keeps the historical devies as guild identity but no longer canonizes that social convention.
+  underlying_story_truth: REJECTED_AS_ROUTINE_USAGE
+  reuse_guardrail: "The devies may appear where materially/socially plausible, but do not treat a specific greeting formula as historical practice without evidence."
+
+- id: PARK.WAPEN.HEREDITARY_SHOOTER_CHAIN.001
+  status: REJECTED_STORY_OPTION
+  origin_chapter: CH.HET_WAPEN.1553
+  origin_revision: REV.2026-08-19.HET_WAPEN.001
+  disposition_basis: PAIRED_DRAFTS_PLUS_CHARACTER_WEB
+  confidence: HIGH
+  summary: >-
+    The older version made grandfather Claes Jacobsz a long-term shooter whose shoulder eventually failed and strengthened the impression of a nearly automatic Nissepat shooter lineage. The revision makes his shooting brief and temperamentally unlike Cornelis'.
+  underlying_story_truth: REJECTED_AS_DETERMINISTIC_FAMILY_PATTERN
+  reuse_guardrail: "Family arms and Cornelis' Sint-Joris practice remain canon; do not infer that every Nissepat man practised the voetboog deeply or inherited the same bodily temperament."
+
+- id: PARK.KRAAI.PUTTUS_ANTI_RITUAL_PROMPT.001
+  status: REJECTED_STORY_OPTION
+  origin_chapter: CH.DE_KRAAI.1553
+  origin_revision: REV.2026-08-19.DE_KRAAI.001
+  disposition_basis: PAIRED_DRAFTS_PLUS_CHARACTER_CANON
+  confidence: HIGH
+  summary: >-
+    Puttus' older speech about a golden vessel and the legitimacy of questioning what it carries functioned as an anti-ritual/proto-Reformation cue that helped Claes read Cornelis' church behaviour too early.
+  underlying_story_truth: REJECTED_FOR_PUTTUS
+  reuse_guardrail: "Puttus may teach textual distinction and interpretive courage. He may not become the convenient doctrinal decoder of Cornelis' hidden faith."
+
+- id: PARK.KRAAN.LIFELONG_SECRET_FORESHADOW.001
+  status: DISCARDED_PROSE
+  origin_chapter: CH.DE_KRAAN.1553
+  origin_revision: REV.2026-08-19.DE_KRAAN.001
+  disposition_basis: PAIRED_DRAFTS
+  confidence: HIGH
+  summary: >-
+    The narrator explicitly forecast that the brothers' small secret prefigured Claes keeping much larger secrets for the rest of his life.
+  underlying_story_truth: CANONICAL_THEME_ELSEWHERE
+  possible_functions: [secrecy_motif]
+  reuse_guardrail: "Do not restore as foreshadowing. Later secrecy should accrue through later decisions and consequences; the underlying motif already exists in canon."
+
+- id: PARK.WINNAAR.ACTION_WITHOUT_CERTAINTY_RESERVE.001
+  status: PARKED_MOTIF_RESERVE
+  origin_chapter: CH.DE_WINNAAR.1554
+  origin_revision: REV.2026-08-19.DE_WINNAAR.001
+  disposition_basis: PAIRED_DRAFTS_PLUS_RECORDED_EDITORIAL_REASON
+  confidence: HIGH
+  summary: >-
+    Cornelis formerly completed the Jan/Claes contrast with an explicit adult maxim: Jan's body can decide before his head, and seeing a road is worthless if one waits too long to take it. The revised version stops before the full thesis.
+  underlying_story_truth: CANON_CHARACTER_ARC
+  possible_functions: [adult_choice_hinge, later_Jan_memory, perceive_to_choose_transition]
+  reuse_guardrail: >-
+    Preserve the underlying tension for a later adult choice, but do not simply transplant Cornelis' old speech into another chapter. A later recurrence must be earned by action/consequence and carry a changed value.
+
+- id: PARK.ZAAD.CORNELIS_FAMILIST_BACKLINE.001
+  status: PARKED_BACKLINE
+  origin_chapter: CH.HET_ZAAD.1554
+  origin_revision: REV.2026-08-19.HET_ZAAD.001
+  disposition_basis: PAIRED_DRAFTS_PLUS_CANON
+  confidence: HIGH
+  summary: >-
+    The older chapter let Cornelis articulate a much more explicit inward theology: the Word can reach a person directly without priest, order or stone wall. That statement was cut from the child-facing scene, while Cornelis' ca.1552-1553 Huis der Liefde affiliation remains canon.
+  underlying_story_truth: CANON_RELIGIOUS_BACKLINE
+  possible_functions: [Cornelis_private_faith, later_1560s_religious_pressure, arrest_examination_context, father_son_reinterpretation]
+  reuse_guardrail: >-
+    Develop through Cornelis' later actions, trusted adult conversation, texts/network or consequences. Do not give eleven-year-old Claes the doctrinal key in 1554, and do not restore the exact old sermon as exposition.
+
+- id: PARK.ZAAD.FAMILY_STEWARDSHIP_BACKLINE.001
+  status: PARKED_BACKLINE
+  origin_chapter: CH.HET_ZAAD.1554
+  origin_revision: REV.2026-08-19.HET_ZAAD.001
+  disposition_basis: SEMANTIC_RECONSTRUCTION
+  confidence: MEDIUM
+  summary: >-
+    The older Cornelis speech explicitly framed the whole enterprise as a multigenerational family trust that must survive him. The cut contains potentially useful economic/familial stewardship pressure, but the exact ownership/management formulation risks overstating Cornelis as brewery proprietor.
+  underlying_story_truth: PARTLY_CANON_PARTLY_BOUNDARY_SENSITIVE
+  possible_functions: [family_economic_obligation, post_fire_rebuilding_pressure, later_Goes_severance, inheritance_expectation]
+  reuse_guardrail: >-
+    Reuse only after checking the current beer/biersteker/family-property canon. Preserve Cornelis' stewardship value without silently converting him into documented owner/master brewer of the Nissepad brewery.
+
+- id: PARK.ZAAD.ROLE_PARABLE_EXPOSITION.001
+  status: DISCARDED_PROSE
+  origin_chapter: CH.HET_ZAAD.1554
+  origin_revision: REV.2026-08-19.HET_ZAAD.001
+  disposition_basis: PAIRED_DRAFTS_PLUS_RECORDED_EDITORIAL_REASON
+  confidence: HIGH
+  summary: >-
+    Cornelis explicitly mapped the sower parable across poorterschap, voetboog, rederijkers, trust, Tanneken and household/economic roles. These identities remain active elsewhere, but the all-in-one interpretive speech was cut as Storybible exposition in dialogue.
+  underlying_story_truth: CANON_FUNCTIONS_ELSEWHERE
+  reuse_guardrail: "Do not reconstruct the omnibus speech in a later chapter. Individual identities may recur only through their own causal scenes."
+
+- id: PARK.WIEG.EXPLICIT_DOOM_FORESHADOW.001
+  status: DISCARDED_PROSE
+  origin_chapter: CH.DE_WIEG.1554
+  origin_revision: REV.2026-08-19.DE_WIEG.001
+  disposition_basis: PAIRED_DRAFTS
+  confidence: HIGH
+  summary: >-
+    The older final sentence explicitly told the reader that the family did not know how little time remained before catastrophe.
+  underlying_story_truth: CANON_FIRE_CHRONOLOGY
+  reuse_guardrail: "Do not restore narrator countdown language. Let 18 May supply the rupture and let current warmth carry dramatic irony without explanation."
+
+- id: PARK.DELFT.ATTENTION_BACKLINE.001
+  status: PARKED_BACKLINE
+  origin_chapter: CH.DE_MARKT_VAN_DELFT.1584
+  origin_revision: REV.2026-08-19.DE_MARKT_VAN_DELFT.001
+  disposition_basis: PAIRED_DRAFTS_PLUS_CHARACTER_CANON
+  confidence: HIGH
+  summary: >-
+    The old ending explicitly theorized that trained attention cannot be switched off and can preserve unbearable evidence even when it no longer serves a purpose. The revised chapter removes the explanatory paragraph but retains the bodily phenomenon.
+  underlying_story_truth: CANON_CHARACTER_SHADOW
+  possible_functions: [post_Delft_symptoms, sinne_recovery, compulsive_witnessing, release_arc]
+  reuse_guardrail: >-
+    Carry the consequence forward as behaviour, sensory trigger, avoidance, relationship cost or changed choice. Do not restore the deleted explanatory thesis as narrator summary unless a later reflective context has earned new meaning.
+
 editor_pass_ingest_queue:
-  status: OPEN_INGEST
+  status: INGESTED_SEMANTIC_RECONSTRUCTION
+  completed_on: '2026-08-19'
+  progression_registry: narrative/manuscript_progression.yaml
   note: >-
-    The 19 August 2026 Claude cold-reader/editor pass produced additional CUT/PARK decisions across the current manuscript. The latest and prior chapter files are available in the conversation, but exact author/editor classifications of each removed beat should be imported from the Claude editor handoff rather than guessed solely from textual diff. For every such item create one PARK.* record and one revision_history entry in narrative/manuscript_progression.yaml.
+    The paired pre-editor/post-editor drafts and recorded editorial reasoning have been ingested. Items whose exact future destination was not explicitly recoverable are labelled with disposition_basis=SEMANTIC_RECONSTRUCTION and confidence rather than being falsely presented as verbatim Claude parking decisions. If a separate Claude Chapter Revision Handoff is later supplied, reconcile it against these records rather than duplicating them.
