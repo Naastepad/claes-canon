@@ -52,6 +52,9 @@ PACKS = {
     ],
     "03_WRITING_EDITORIAL": [
         "WRITING_PROTOCOL.md",
+        "storybible/MANUSCRIPT_PROGRESSION_AND_PARKED_MATERIAL.md",
+        "narrative/manuscript_progression.yaml",
+        "narrative/parked_material.yaml",
         "narrative/domain_scene_packs.yaml",
         "narrative/editorial_gates.yaml",
         "review/READER_EXPERIENCE_PROTOCOL.md",
@@ -151,8 +154,6 @@ def main() -> None:
     sha = git_sha()
     timestamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
 
-    # Deliberate pack order. Dated decisions are generated dynamically and the
-    # character-web pack is task-routed explicitly rather than left to discovery.
     packs = {name: existing(paths) for name, paths in PACKS.items()}
     packs["05_DATED_DECISIONS"] = existing(dated_decisions())
     packs["06_CHARACTER_WEB"] = existing(CHARACTER_WEB_FILES)
@@ -163,7 +164,6 @@ def main() -> None:
             if p not in all_files:
                 all_files.append(p)
 
-    # Retain the full pack for agents that can consume it, but Claude Chat should prefer split packs.
     FULL_OUT.write_text(render_pack("FULL", all_files, sha, timestamp), encoding="utf-8")
 
     index_lines = [
@@ -205,6 +205,12 @@ def main() -> None:
         "- **Repository mutation:** first load `01_CORE_CANON` + `05_DATED_DECISIONS`; then load the task-specific packs above and fresh-fetch only the exact target files before writes.",
         "- **Cold-reader pass:** do NOT load Storybible packs; follow `READER_EXPERIENCE_PROTOCOL.md` with deliberately restricted context. A cold-reader task is the explicit exception to this router.",
         "",
+        "## Mandatory editor output after cold-read/revision",
+        "",
+        "After an editor pass that changes prose, do not return only revised chapters. Produce a **Chapter Revision Handoff** for every changed chapter with: editorial verdict; progression before; progression after; progression delta; retained functions; cut/moved functions; PARK.* classification for reusable material; receiving chapter if moved; canon impact (NONE / PROJECTION_ONLY / CANON_REVIEW_REQUIRED); cluster effect; and any OPEN.* risk. This handoff is the input for `narrative/manuscript_progression.yaml` and `narrative/parked_material.yaml`.",
+        "",
+        "A raw text diff proves that text changed; it does not determine whether deleted material became backstory, backline, backdrop, future-scene reserve or rejected story. Use the explicit editor/author disposition.",
+        "",
         "## Guided-discovery rule",
         "",
         "After the assigned packs are loaded, use `storybible/INDEX.md`, `storybible/MASTER.md` and explicit file references inside the loaded material to fetch any additional dossier. Fetch named files directly. **Do not roam directory listings, keyword-search the repository for inspiration, or infer canon by whichever file happens to be discovered first.**",
@@ -221,6 +227,7 @@ def main() -> None:
         "Before prose, revision or a canon conclusion, internally establish:",
         "- loaded pack set;",
         "- governing `DEC.*` / `STC.*` / dossier(s);",
+        "- current chapter progression and parked-material state where manuscript work is involved;",
         "- relevant character/relationship/object/knowledge state;",
         "- active `OPEN.*` items that must remain open;",
         "- evidence-vs-fiction boundary;",
