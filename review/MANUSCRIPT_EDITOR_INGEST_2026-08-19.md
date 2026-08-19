@@ -129,13 +129,32 @@ The ingest surfaced several issues that remain in the **current prose** and requ
 
 These are repair flags, **not silent canon changes**.
 
+They are now registered in `canon/OPEN_DECISIONS.yaml` as:
+
+- `OPEN.MANUSCRIPT.DE_LEI.TEACHER_IDENTITY.001`
+- `OPEN.MANUSCRIPT.HET_WAPEN.SPANNING_MECHANISM.001`
+- `OPEN.MANUSCRIPT.DE_WIEG.FAMILY_STATE.001`
+- `OPEN.MANUSCRIPT.CORNELIS.BIERSTEKER_WORDING.001`
+- `OPEN.MANUSCRIPT.BEER_LOGISTICS_CONCEALMENT.001`
+
+The OPEN records state the fixed canon that must survive each repair and prevent a later editor from solving a prose problem by silently changing story truth.
+
 ## Synchronized files
 
 - `narrative/manuscript_progression.yaml`
 - `narrative/parked_material.yaml`
 - `storybible/MANUSCRIPT_PROGRESSION_AND_PARKED_MATERIAL.md`
+- `canon/OPEN_DECISIONS.yaml`
 - this review record
 
 ## Next editorial use
 
-A future Claude/editor session must load `03_WRITING_EDITORIAL`, which contains these registries, before writing/revising after the cold-read stage. It must use the current chapter progression as reader-state truth and treat `PARK.*` records as reserves with no right of return.
+A future Claude/editor session must load `03_WRITING_EDITORIAL`, which contains the manuscript projection/parking registers, and `01_CORE_CANON`, which contains the active OPEN registry, before writing/revising after the cold-read stage. It must use the current chapter progression as reader-state truth and treat `PARK.*` records as reserves with no right of return.
+
+## Audit state
+
+- progression ingest: **COMPLETE**
+- parked/rejected classification: **COMPLETE**, with explicit `SEMANTIC_RECONSTRUCTION` provenance where a verbatim historical Claude handoff was unavailable
+- current manuscript repair conflicts: **REGISTERED AS OPEN**
+- canon de-canonization caused by prose deletion: **NONE**
+- merge to `main`: **NOT PERFORMED**
