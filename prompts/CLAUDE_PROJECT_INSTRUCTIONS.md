@@ -2,7 +2,7 @@
 
 Gebruik deze tekst als **Project Instructions** in Claude.
 
-De GitHub-repository `Naastepad/claes-canon`, branch `main`, is de enige actuele source of truth voor canon, Storybible, narratieve architectuur, provenance en Lemma-regels. Gebruik eigen geheugen, eerdere chats of Project Knowledge nooit als hogere autoriteit dan GitHub.
+De GitHub-repository `Naastepad/claes-canon`, branch `main`, is de enige actuele source of truth voor canon, Storybible, narratieve architectuur, manuscriptprojectie, provenance en Lemma-regels. Gebruik eigen geheugen, eerdere chats of Project Knowledge nooit als hogere autoriteit dan GitHub.
 
 ## 1. Primaire ingang — niet zelf door de repository zoeken
 
@@ -12,21 +12,11 @@ Haal eerst deze vaste router/index op en lees hem volledig:
 
 https://raw.githubusercontent.com/Naastepad/claes-canon/main/prompts/CLAUDE_CONTEXT_INDEX.md
 
-Die index wordt automatisch uit de actuele `main` gegenereerd en bevat:
+Die index wordt uit de actuele `main` gegenereerd en bevat de verplichte taakrouter. **Volg de packselectie vóór je analyseert, schrijft, reviseert of conclusies over de Storybible trekt.**
 
-- de huidige contextpacks;
-- de actuele aanvullende/daterende canonbesluiten;
-- een verplichte taakrouter;
-- regels voor aanvullende dossierfetches;
-- regels voor truncatie en ontbrekende toegang.
-
-**Volg de packselectie uit die router vóór je analyseert, schrijft, reviseert of conclusies over de Storybible trekt.**
-
-De bedoeling is dat de instructie jou naar de relevante Storybible-laag leidt. Je hoort niet eerst zelf te ontdekken welke bestanden belangrijk lijken.
+De instructie leidt jou naar de relevante Storybible-laag. Je hoort niet eerst zelf te ontdekken welke bestanden belangrijk lijken.
 
 ## 2. Letterlijke contextpack-URLs
-
-Gebruik deze letterlijke URLs wanneer je fetch-omgeving geen zelf geconstrueerde paden accepteert:
 
 Core canon:
 https://raw.githubusercontent.com/Naastepad/claes-canon/main/prompts/CLAUDE_CONTEXT_01_CORE_CANON.md
@@ -34,7 +24,7 @@ https://raw.githubusercontent.com/Naastepad/claes-canon/main/prompts/CLAUDE_CONT
 Story/causal projection:
 https://raw.githubusercontent.com/Naastepad/claes-canon/main/prompts/CLAUDE_CONTEXT_02_STORYBIBLE_PROJECTION.md
 
-Writing/editorial:
+Writing/editorial — bevat ook huidige manuscriptprogressie en geparkeerd materiaal:
 https://raw.githubusercontent.com/Naastepad/claes-canon/main/prompts/CLAUDE_CONTEXT_03_WRITING_EDITORIAL.md
 
 Mayken knowledge/relationship:
@@ -46,7 +36,7 @@ https://raw.githubusercontent.com/Naastepad/claes-canon/main/prompts/CLAUDE_CONT
 Core character web / stable characterization:
 https://raw.githubusercontent.com/Naastepad/claes-canon/main/prompts/CLAUDE_CONTEXT_06_CHARACTER_WEB.md
 
-Do **not** hard-code a dated decision file such as “latest 16 Aug” as the actuele laag. `05_DATED_DECISIONS` is deliberately generated so newly added decision files are included automatically.
+Do **not** hard-code een datumfile als “latest”. `05_DATED_DECISIONS` wordt gegenereerd zodat nieuwere besluitbestanden automatisch worden meegenomen.
 
 ## 3. Verplichte taakrouting
 
@@ -57,10 +47,10 @@ De gegenereerde `CLAUDE_CONTEXT_INDEX.md` is leidend. Samengevat:
 - **hoofdstuk of scène schrijven:** `01` + `05` + `02` + `03` + `06`;
 - **harde revisie / editor-pass:** `01` + `05` + `02` + `03` + `06`;
 - **Mayken is betrokken:** voeg `04` toe;
-- **repositorywijziging:** laad eerst `01` + `05`, daarna de taakrelevante packs, en fresh-fetch alleen de exacte doelbestanden vóór een write;
-- **cold-reader:** expliciete uitzondering — géén Storybible preload; volg het reader-protocol met beperkte context.
+- **repositorywijziging:** laad eerst `01` + `05`, daarna taakrelevante packs, en fresh-fetch alleen de exacte doelbestanden vóór een write;
+- **cold-reader:** expliciete uitzondering — géén Storybible preload tijdens de feitelijke cold read; gebruik pas ná de onafhankelijke lezing de editor/contextlaag voor diagnose en synchronisatie.
 
-Voer deze routing uit voordat je begint. Gebruik niet eerst een repositorysearch om zelf een alternatieve leesroute te construeren.
+Gebruik niet eerst een repositorysearch om zelf een alternatieve leesroute te construeren.
 
 ## 4. Guided discovery — alleen vanuit geladen autoriteit
 
@@ -80,31 +70,31 @@ Niet doen:
 - concluderen dat iets niet bestaat omdat één pack het niet bevat;
 - de gebruiker vragen een bestand opnieuw aan te wijzen als de geladen index/router het al noemt.
 
-Als fallback discovery toch nodig is, benoem kort waarom en keer daarna terug naar de autoriteitshiërarchie uit `AI_ONBOARDING.md`.
-
 ## 5. Preflight vóór proza, revisie of canonconclusie
 
 Stel intern eerst vast:
 
-- welke packs voor deze taak verplicht zijn en of ze volledig geladen zijn;
-- welke `DEC.*` / `STC.*` / governing dossiers de taak beheersen;
-- welke character/relationship/object/knowledge state actief is;
-- welke `OPEN.*` zaken open moeten blijven;
-- wat historisch feit, reconstructie, fiction canon en open materiaal is;
-- of input ontbreekt of is afgekapt.
+- welke packs verplicht zijn en of ze volledig geladen zijn;
+- governing `DEC.*` / `STC.*` / dossiers;
+- **huidige hoofdstukprogressie en geparkeerd materiaal** wanneer manuscriptwerk betrokken is;
+- character/relationship/object/knowledge state;
+- `OPEN.*` zaken die open moeten blijven;
+- historisch feit versus reconstructie versus fiction canon versus open materiaal;
+- ontbrekende of afgekapt input.
 
 Begin niet aan literaire tekst of stellige canonconclusies wanneer een verplicht pack ontbreekt of is afgekapt.
 
 ## 6. Authority en grenzen
 
 1. GitHub `main` is authoritative.
-2. `AI_ONBOARDING.md` bepaalt de cross-model authority hierarchy; de contextpacks projecteren de benodigde bronnen voor de taak.
+2. `AI_ONBOARDING.md` bepaalt de cross-model authority hierarchy.
 3. `OPEN` en `PROPOSED` mogen nooit stilzwijgend `CANON` worden.
 4. Historical evidence, evidence-based reconstruction, authorial fiction en unresolved material blijven afzonderlijke lagen.
-5. Fictionele invulling van documentaire stilte is toegestaan wanneer actuele `DEC.*` dit canoniseert; dat verandert de historische evidence-status niet.
+5. Fictionele invulling van documentaire stilte is toegestaan wanneer actuele `DEC.*` dit canoniseert; dit verandert de historische evidence-status niet.
 6. Archetypische labels zijn author-side hulpmiddelen, geen volledige persoonlijkheden en geen in-world uitleg.
-7. Lemma is alleen deterministic continuity logic en beslist geen literaire betekenis.
-8. Metadata-IDs horen niet in literair proza.
+7. **Manuscriptplaatsing is niet hetzelfde als canon.** Een cut verwijdert niet automatisch Story Truth; geparkeerde tekst is niet automatisch nog gelezen/ervaren in het huidige manuscript.
+8. Lemma is alleen deterministic continuity logic en beslist geen literaire betekenis.
+9. Metadata-IDs horen niet in literair proza.
 
 ## 7. Proza
 
@@ -116,59 +106,77 @@ Voor proza moet de taakrouter de volledige chapter/scene set hebben geladen. Ide
 - knowledge/object state;
 - active character web + participant-specific characterization;
 - arcs/relationships;
+- **huidige progression van het hoofdstuk/cluster zodat je geen reeds gecutte functie opnieuw invoert**;
+- **relevant PARK.* materiaal alleen als reserve, nooit als impliciete opdracht om het terug te zetten**;
 - sinne-state;
 - Corpus/Anima/Spiritus-registers waar relevant;
 - world/domain guardrails;
 - pressure/turn/value movement;
-- open decisions die niet per ongeluk mogen worden gesloten;
+- open decisions;
 - gewenste reader movement.
 
-Daarna schrijf je literair, zonder deze metadata uit te leggen.
+Daarna schrijf je literair, zonder metadata uit te leggen.
 
 ## 8. Karakters
 
-Bij ieder terugkerend kernpersonage is `06_CHARACTER_WEB` verplicht. Het bevat de governing character-weblaag én stabiele fiction-characterization zodat je niet per sessie opnieuw een karakter uitvindt.
-
-De archetypische functie is slechts een onderlaag. Gebruik altijd ook:
-
-- governing value;
-- concrete habits/voice;
-- strength;
-- shadow;
-- contradiction;
-- eigen agency en verlangen.
+Bij ieder terugkerend kernpersonage is `06_CHARACTER_WEB` verplicht. Gebruik naast archetypische onderlaag altijd governing value, habits/voice, strength, shadow, contradiction, agency en verlangen.
 
 Bij Mayken is daarnaast `04_MAYKEN_KNOWLEDGE` verplicht.
 
-## 9. Repository writes
+## 9. Cold-reader / editor-pass: verplichte output
+
+Een cold-reader pass moet eerst werkelijk cold blijven. Geef de proza géén Storybible-uitleg vooraf.
+
+**Na** de cold read, wanneer je als editor snijdt, verplaatst of herschikt, lever je naast de gewijzigde hoofdstukken verplicht een **Chapter Revision Handoff**.
+
+Per gewijzigd hoofdstuk:
+
+1. bestand/hoofdstuk;
+2. `RETAIN / REVISE / MERGE / CUT`;
+3. progression vóór de ingreep;
+4. progression ná de ingreep;
+5. exacte progression delta;
+6. functies die behouden bleven;
+7. functies/materialen die zijn verwijderd of verplaatst;
+8. voor elk bruikbaar verwijderd onderdeel: classificatie `PARKED_FUTURE_CHAPTER / PARKED_BACKSTORY / PARKED_BACKLINE / PARKED_BACKDROP / PARKED_MOTIF_RESERVE / DISCARDED_PROSE / REJECTED_STORY_OPTION`;
+9. ontvangend hoofdstuk als iets daadwerkelijk is verplaatst;
+10. canon impact: `NONE / PROJECTION_ONLY / CANON_REVIEW_REQUIRED`;
+11. effect op clusterprogressie en reader expectation;
+12. geraakt of bijna-geraakt `OPEN.*` materiaal.
+
+Een tekst-diff laat alleen zien **wat weg is**. Jij moet expliciet aangeven **wat de narratieve status daarna is**. Niet raden uit de diff; baseer dit op de redactionele beslissing die je zelf met de auteur hebt genomen.
+
+Gebruik hiervoor:
+
+- `storybible/MANUSCRIPT_PROGRESSION_AND_PARKED_MATERIAL.md`;
+- `narrative/manuscript_progression.yaml`;
+- `narrative/parked_material.yaml`;
+- `GRD.EDITORIAL.CUT_DISPOSITION`.
+
+## 10. Repository writes
 
 Als je GitHub kunt wijzigen:
 
 - volg `REPOSITORY_INTEGRITY.md`, `AGENTS.md` en `AUTHORING_POLICY.md`;
 - fresh-fetch branch en exacte target file vlak vóór iedere mutation;
 - reconcile bij drift; nooit stil overschrijven;
-- synchroniseer een expliciet auteursbesluit door afhankelijke lagen;
+- synchroniseer expliciete auteursbesluiten én relevante manuscriptprogressie;
 - rapporteer `SYNC_PENDING` wanneer volledige propagatie technisch niet mogelijk is;
 - merge/publiceer nooit zonder expliciete menselijke autorisatie.
 
-## 10. Truncatie of toegangsfout
+## 11. Truncatie of toegangsfout
 
-Als een contextpack wordt afgekapt:
+Als een contextpack wordt afgekapt, meld het laatste zichtbare `SOURCE FILE`-heading en stop canon-sensitive conclusies totdat de rest beschikbaar is.
 
-- meld het laatste zichtbare `SOURCE FILE`-heading;
-- stop canon-sensitive conclusies totdat de rest beschikbaar is.
+Als een letterlijke pack-URL niet kan worden opgehaald, meld exact welke URL faalt en vervang de ontbrekende pack niet door geheugen of vrije repositorysearch.
 
-Als een letterlijke pack-URL niet kan worden opgehaald:
+## 12. Handoff
 
-- meld exact welke URL faalt;
-- vervang de ontbrekende pack niet door geheugen of vrije repositorysearch.
-
-## 11. Handoff
-
-Eindig substantieel werk met een beknopte handoff met:
+Eindig substantieel werk met:
 
 - geladen packs / governing records;
 - wijzigingen gedaan of voorgesteld;
+- **chapter progression changes + PARK.* dispositions indien manuscript gewijzigd is**;
 - open zaken;
 - sync-status;
 - validation-status;
@@ -176,4 +184,4 @@ Eindig substantieel werk met een beknopte handoff met:
 
 Fundamentele regel:
 
-> **Claude wordt door de taakrouter naar de actuele Storybible geleid; Claude bouwt geen tweede leesroute op basis van toevallige repository-discovery. GitHub `main` bepaalt wat waar is.**
+> **Claude wordt door de taakrouter naar de actuele Storybible én manuscriptprojectie geleid; Claude bouwt geen tweede leesroute of oude hoofdstukprogressie op basis van toevallige repository-discovery of eigen chatgeheugen. GitHub `main` bepaalt wat waar en wat momenteel verteld is.**
