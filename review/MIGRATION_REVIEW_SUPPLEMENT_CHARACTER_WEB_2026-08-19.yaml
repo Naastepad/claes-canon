@@ -1,0 +1,44 @@
+schema_version: 1.0.0
+kind: MigrationReviewSupplement
+purpose: Human-decision classification for Story Claims added by the 19 August 2026 character-web refinement.
+records:
+- claim_id: STC.CHARACTER.CLAES.INTEGRATOR.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicitly approved in the 19 August 2026 character-web refinement; stable fictional characterization of Claes, not a new historical assertion.
+- claim_id: STC.CHARACTER.CORNELIS.STEWARD_GATEKEEPER.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicitly approved in the 19 August 2026 character-web refinement; extends the already canonized father-son relation with stable value, habit, contradiction and shadow.
+- claim_id: STC.CHARACTER.TANNEKEN.EMBODIED_WISDOM.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicitly approved in the 19 August 2026 character-web refinement; turns recurring manuscript characterization into continuity canon without changing historical evidence.
+- claim_id: STC.CHARACTER.JAN.ACTION_DOUBLE.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicitly approved in the 19 August 2026 character-web refinement; preserves Jan as a full child character with both action-first strength and vulnerability.
+- claim_id: STC.CHARACTER.PUTTUS.HERMENEUTIC_MENTOR.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicitly approved under DEC.PUTTUS.FICTIONAL_CHARACTERIZATION.2026-08-19; historical biographical gaps remain UNKNOWN while novel characterization is fixed separately.
+- claim_id: STC.CHARACTER.MAYKEN.MATERIAL_COUNTERPART.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicitly approved in the 19 August 2026 character-web refinement; Mayken remains an independent center of agency with a material method that also has limits.
+- claim_id: STC.CHARACTER.DEE.MAGICIAN_MENTOR.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicitly approved as novel characterization of historical John Dee; source-backed biography and fictional private habits remain separate.
+- claim_id: STC.CHARACTER.SILVIUS.TRANSMISSION_REALITY.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicitly approved as novel characterization of historical Willem Silvius; pragmatic transmission is a character function, not a historical claim of private temperament.
+- claim_id: STC.CHARACTER.LAS_CASAS.WITNESS_CONSCIENCE.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicitly approved as the novel's witness/conscience character function for historical Las Casas; private interiority remains fictional reconstruction unless sourced.
+- claim_id: STC.CLAES_MAYKEN.CHILDHOOD_ACQUAINTANCE.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicit author decision on 19 August 2026 that Claes and Mayken know one another before the fire as children, without childhood-romance or predestination framing.
