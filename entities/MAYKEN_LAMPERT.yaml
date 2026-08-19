@@ -1,4 +1,4 @@
-schema_version: 1.1.0
+schema_version: 1.2.0
 kind: EntityDetailRegistry
 entity_details:
 - entity_ref: ENT.PERSON.BELOVED
@@ -16,6 +16,7 @@ entity_details:
   - botanical-counterpart
   - error-checker
   - sensory-recovery-companion
+  characterization_ref: entities/CHARACTERIZATION_2026-08-19.yaml
   father_ref: ENT.PERSON.ADRIAEN_JACOBSZ_LAMPERT
   father_relation_status: CANON_FICTIONAL_KINSHIP
   paternal_grandfather_ref: ENT.PERSON.JACOB_LAMPART_APOTHECARY
@@ -24,6 +25,12 @@ entity_details:
   paternal_grandmother_relation_status: CANON_FICTIONAL_KINSHIP
   grandmother_guardrail: The historical Merricken/Mayken household-name evidence is unresolved; do not identify the 1543 Mayken automatically with Merricken.
   mother_status: OPEN_FICTIONAL
+  childhood_relation_to_claes:
+    status: CANON
+    decision_ref: DEC.CLAES_MAYKEN.CHILDHOOD_ACQUAINTANCE.2026-08-19
+    story_time: before_1554-05-18
+    mode: acquaintance_and_friendship_through_ordinary_child_contact_play_and_plant_material_observation
+    excludes: [childhood_romance, predestination, childhood_sweethearts]
   childhood_fire:
     event_ref: NI.EVENT.GOES_FIRE.1554.001
     age_approx: 8
@@ -39,6 +46,11 @@ entity_details:
   - ordinary_Dodoens_use_where_historically_plausible
   - historical_rose_preparations_where_source_supported
   - error_control
+  epistemic_characterization:
+    governing_value: material_fidelity
+    strengths: [identification, condition_judgement, preparation, repeatability, practical_contradiction]
+    shadow: [impatience_with_unverifiable_pattern, overreliance_on_material_demonstration]
+    guardrail: Mayken's method is a strong counterweight to Claes, not an automatically superior epistemology.
   rose_materia_medica:
     decision_ref: DEC.MAYKEN.ROSE_MATERIA_MEDICA.2026-08-16
     preferred_cultivated_anchor: Rosa gallica/officinalis
@@ -81,7 +93,7 @@ entity_details:
 
 - entity_ref: ENT.PERSON.MERRICKEN_LAMPART_HOUSEHOLD
   label: Merricken, huisvrouw van Jacop/Jacob de apotheker
-  roles: [Goese_apothecary_household, grandmother_of_Mayken_in_novel]
+  roles: [Goese_apothecary-household, grandmother_of_Mayken_in_novel]
   source_claim_refs:
   - SC.HIST.GOES.APOTHECARY.JACOB_LAMPART.1538_1545.001
   ambiguity:
