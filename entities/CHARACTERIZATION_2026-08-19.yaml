@@ -1,0 +1,184 @@
+schema_version: 1.0.0
+kind: CharacterizationRegistry
+purpose: >-
+  Stable novel characterization for recurring people. Historical biography and evidence remain governed by their source/entity records; fields marked FICTION_CANON deliberately fill documentary space for continuity.
+characters:
+- entity_ref: ENT.PERSON.CLAES
+  characterization_status: CANON
+  archetypal_lenses: [seeker, observer, witness, integrator]
+  governing_value: attentive_truth
+  strengths: [embodied_attention, comparison, memory, pattern_synthesis, sustained_observation]
+  shadow: [over_observation, delayed_choice, compulsive_witnessing, control_through_understanding]
+  contradiction: >-
+    Claes can act instantly when no deliberative interval exists; his danger emerges especially when time is available to keep looking.
+  relational_expression:
+    care: [noticing, remembering, helping, carrying, precise_follow_through]
+    fear: [counting, checking, rehearsing, withholding_until_certain]
+  voice_guardrails:
+  - Perception normally precedes abstraction.
+  - Let comparison grow from material detail rather than modern analysis.
+  - Do not let insight make him omniscient.
+  trajectory: perceive -> distinguish -> choose -> carry -> release
+
+- entity_ref: ENT.PERSON.CORNELIS
+  characterization_status: CANON
+  archetypal_lenses: [father, steward, gatekeeper, artisan_mentor]
+  governing_value: responsible_stewardship
+  strengths: [foresight, provision, practical_judgement, reliability, teaching_by_task, protection]
+  shadow: [emotional_withholding, over_duty, secrecy_as_exclusion, protection_becoming_gatekeeping]
+  contradictions:
+  - domestic reserve versus social and rhetorical vitality among trusted rederijkers
+  - outward Catholic conformity versus inward Familist commitment
+  - love expressed through responsibility can be received as another test
+  habitual_expression:
+    speech: short, material, dry, rarely self-explanatory
+    humour: dry and often delayed by half a beat
+    praise: scarce but weighty
+    trust: increased responsibility and practical inclusion
+    anger: more likely terse judgement or closed access than theatrical rage
+  prose_guardrails:
+  - Do not make every utterance a maxim.
+  - Let the rederijker room reveal playfulness and performative range absent at home.
+  - His secrecy must arise from real risk and belief as well as temperament.
+
+- entity_ref: ENT.PERSON.CLAES_MOTHER
+  label: Tanneken Jansdochter
+  characterization_status: CANON
+  archetypal_lenses: [mother, embodied_wise_woman, keeper_of_household_continuity]
+  governing_value: sustaining_life_through_attention
+  strengths: [trained_sensation, timing, care, practical_memory, direct_encouragement, humour]
+  shadow: [fear_converted_into_work, hidden_exhaustion, competence_masking_vulnerability]
+  contradictions:
+  - patient with processes but brisk with avoidable fuss
+  - capable of tenderness without making tenderness ceremonial
+  habitual_expression:
+    teaching: show, let_try, correct_by_material_result
+    praise: direct and proportionate
+    worry: often converted into preparation or routine
+    humour: affectionate, practical, sometimes teasing
+  prose_guardrails:
+  - Never mystical or all-knowing.
+  - Give her fatigue, irritation, desire and limits as well as competence.
+  - Sensory knowledge is learned through repetition, not supernatural intuition.
+
+- entity_ref: ENT.PERSON.CLAES_BROTHER
+  label: Jan Corneliszn. Nissepat
+  characterization_status: CANON
+  archetypal_lenses: [brother_double, trickster_child, action_principle]
+  governing_value: immediate_engagement
+  strengths: [speed, bodily_learning, improvisation, courage, humour, resilience, loyalty]
+  shadow: [recklessness, premature_action, convenient_lying, consequence_after_choice]
+  contradictions:
+  - physically daring yet capable of sudden private fear about death and family
+  - competitive without needing victory to define affection
+  habitual_expression:
+    speech: short, direct, teasing, impatient_with_explanation
+    learning: repetition, body_memory, consequence
+    repair: moves back into play or contact quickly after conflict
+  prose_guardrails:
+  - Do not make him prophetic about Claes' flaw.
+  - Let his wisdom sound like a child's practical answer, not adult thematic language.
+  - Preserve mischief and vulnerability together.
+
+- entity_ref: ENT.PERSON.NICOLAES_PUTTUS
+  characterization_status: CANON
+  historical_person: true
+  historical_characterization_evidence: UNKNOWN
+  fiction_fill_status: FICTION_CANON
+  archetypal_lenses: [teacher, hermeneutic_mentor, keeper_of_word]
+  governing_value: disciplined_distinction
+  strengths: [precision, textual_attention, interpretive_restraint, memory_training, economical_correction]
+  shadow: [silence_as_shame, excessive_severity, correctness_becoming_worth]
+  stable_fictional_details:
+  - Claes cannot readily estimate his age; the impression is deliberately age-indeterminate rather than a fixed numerical age.
+  - His voice seldom becomes louder when displeased; quietness increases pressure.
+  - He handles a small working book collection carefully and economically.
+  - Corrections are often exact and minimal: a finger, a word, a request to try again.
+  - His teaching room is small, sparse and often cold; its exact historical building/location is not claimed.
+  material_style:
+    clothing: dark, serviceable teaching dress; no archival costume claim
+    books: few enough to be handled as valued tools rather than decoration
+  prose_guardrails:
+  - Never present these details as recovered biography.
+  - Do not make silence sadism; it is a pedagogical strength with a real possible cost.
+  - Do not make Puttus an anti-Catholic oracle.
+
+- entity_ref: ENT.PERSON.BELOVED
+  label: Mayken Adriaensdr. Lampert
+  characterization_status: CANON
+  archetypal_lenses: [material_counterpart, craft_wise_woman, later_lover, conjunctio_partner]
+  governing_value: material_fidelity
+  strengths: [identification, condition_judgement, measurement, preparation, trained_sensation, error_control, practical_contradiction]
+  shadow: [impatience_with_unverifiable_pattern, overreliance_on_material_demonstration]
+  contradictions:
+  - patient with matter but not automatically patient with speculation
+  - capable of intimacy without surrendering independent judgement
+  childhood_relation_to_claes:
+    status: CANON
+    earliest: before_1554_fire
+    mode: acquaintance_and_friendship_through_play_and_plant_material_observation
+    excludes: [childhood_romance, predestined_sweethearts]
+  habitual_expression:
+    questions: [what_is_it, what_condition_is_it_in, what_changes_when_tested, what_did_we_actually_observe]
+    humour: practical, can be dry, never saintly
+  prose_guardrails:
+  - She is not Claes' missing half.
+  - Let her be wrong where her own method has limits.
+  - Give her objectives not reducible to Claes.
+
+- entity_ref: ENT.PERSON.JOHN_DEE
+  characterization_status: CANON
+  historical_person: true
+  personal_habits_status: FICTION_CANON_UNLESS_SOURCED
+  archetypal_lenses: [magician, initiatory_mentor, transformative_scholar]
+  governing_value: hidden_order_made_intelligible
+  strengths: [intellectual_daring, close_observation, abstraction, experimental_curiosity, recognition_of_potential]
+  shadow: [overpatterning, suspicion, pride, control_of_access, instrumentalizing_students]
+  contradictions:
+  - expansive in learned debate, often silent while walking or inspecting matter
+  - capable of sharp command and of a near-apology that stops short of emotional confession
+  - wants truth yet can become more interested in hidden intention than ordinary error
+  habitual_expression:
+    speech: learned, exact, sometimes aphoristic; Latin more fluent than Diets in the novel
+    under_threat: conceal_first, interpret_second, admit_fear_last
+  prose_guardrails:
+  - He must be materially wrong sometimes.
+  - Limit perfect thematic aphorisms.
+  - Historical Dee biography outranks invented habit if a conflict emerges.
+
+- entity_ref: ENT.PERSON.WILLEM_SILVIUS
+  characterization_status: CANON
+  historical_person: true
+  personal_habits_status: FICTION_CANON_UNLESS_SOURCED
+  archetypal_lenses: [mediator, pragmatic_gatekeeper, transmission_principle]
+  governing_value: workable_transmission
+  strengths: [production_judgement, negotiation, timing, logistics, social_calibration, practical_humour]
+  shadow: [instrumentalism, expedience, people_as_resources, normalizing_secrecy]
+  contradiction: >-
+    He can enable dangerous intellectual work precisely because he keeps reducing grandeur to paper, labour, price, timing and risk.
+  habitual_expression:
+    speech: calm, practical, capable of puncturing grandiosity without raising volume
+    conflict: bargains, reframes, redirects, prices the alternative
+  prose_guardrails:
+  - Pragmatism is not cowardice.
+  - He is not automatically the moral center merely because he is more realistic than Dee.
+  - Transmission role does not imply translator role.
+
+- entity_ref: ENT.PERSON.BARTOLOME_DE_LAS_CASAS
+  label: Bartolome de las Casas
+  characterization_status: CANON
+  historical_person: true
+  entity_status: NEW_CORE_REFERENCE
+  private_interiority_status: FICTIONAL_RECONSTRUCTION_UNLESS_SOURCED
+  archetypal_lenses: [witness, conscience, herald]
+  governing_value: testimony_that_must_be_carried
+  strengths: [moral_persistence, witness_collection, rhetorical_ordering, self_implication, transmission]
+  shadow: [control_through_rhetoric, fear_of_misuse, belief_that_precision_can_govern_reception]
+  contradictions:
+  - loyal reformer of a world he also indicts
+  - former participant in a system he later condemns
+  - must sharpen testimony while knowing sharper language can escape his intention
+  prose_guardrails:
+  - Keep source-backed biography distinct from imagined private thought.
+  - Do not make him a spotless saint or a direct mentor to Claes.
+  - His strongest mirror to Claes is release of testimony beyond possession.
