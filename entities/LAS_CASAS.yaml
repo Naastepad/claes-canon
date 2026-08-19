@@ -1,0 +1,18 @@
+schema_version: 1.0.0
+kind: EntityRegistryExtension
+entities:
+- id: ENT.PERSON.BARTOLOME_DE_LAS_CASAS
+  type: Person
+  label: Bartolome de las Casas
+  fictionality: historical
+  canon_status: CANON
+  roles: [historical_witness, reformer, author_of_brevisima, conscience_mirror, testimony_source]
+  story_use:
+    primary: prologue_and_distant_moral_mirror
+    direct_relation_to_claes: none
+    character_detail_ref: entities/CHARACTERIZATION_2026-08-19.yaml
+  constraints:
+  - Historical biography, dates, writings and witnessed/reported events require source support.
+  - Private thought, scene choreography and emotional interiority in the prologue are fictional reconstruction unless separately sourced.
+  - Las Casas is not a hidden direct mentor or correspondent of Claes.
+  - His story function culminates in testimony leaving authorial possession; it does not give him control over the fictional 1564/1578 transmission chain.

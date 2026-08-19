@@ -2,7 +2,7 @@
 
 **ID:** `SB.CLAES.MAYKEN_LAMPERT`  
 **Status:** CANONICAL DETAIL MODULE  
-**Decision:** `DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14`  
+**Decisions:** `DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14`, `DEC.CLAES_MAYKEN.CHILDHOOD_ACQUAINTANCE.2026-08-19`  
 **Historical source dossier:** `sources/SRC-HIST-GOES-LAMPERT-APOTHECARY-001.md`
 
 This dossier is the detailed authority for the identity and historical embedding of the character formerly labeled only **geliefde / apothekersdochter**. It is synchronized to the later no-cipher memoriaal decision: Mayken is not a cryptographic solver and no special Dodoens carrier is required.
@@ -16,7 +16,8 @@ She is canonically:
 - daughter of **Adriaen Jacobsz. Lampert** in novel genealogy;
 - granddaughter of the older Goese apothecary **Jacob/Jacop Lampart/Lambert** and the historical household figure **Merricken** in novel genealogy;
 - raised in a material/apothecary environment in Goes;
-- approximately three to four years younger than Claes.
+- approximately three to four years younger than Claes;
+- already known to Claes as a child before the fire of 18 May 1554, without childhood-romance framing.
 
 Mayken's mother remains fictionally **open**. Do not invent a historical wife of Adriaen merely to close the pedigree.
 
@@ -39,6 +40,7 @@ Supported but not literally proved by one act:
 Explicit novel canon, not archival fact:
 - Mayken Adriaensdr. Lampert exists as Adriaen's daughter;
 - Adriaen is her father and Jacob/Merricken her paternal grandparents;
+- Mayken and Claes know one another as children before 18 May 1554;
 - Mayken becomes Claes' beloved;
 - her precise childhood experiences, education and later relationship biography.
 
@@ -50,7 +52,7 @@ A **Mayken**, explicitly `huisvrouw Jacop Lampart`, occurs in the direct histori
 
 Do **not** claim this proves a grandmother-to-granddaughter naming pattern. The archive also uses **Merricken** for the wife of Jacop/Jacob the apothecary. Whether Mayken and Merricken are the same woman, variant forms, successive wives or different households remains unresolved.
 
-## 4. Age and chronology
+## 4. Age, chronology and childhood acquaintance
 
 Working birth: **ca. 1546, Goes**.
 
@@ -61,7 +63,11 @@ Working birth: **ca. 1546, Goes**.
 - 1584: about thirty-seven or thirty-eight;
 - 1602: mid-fifties.
 
-The age gap with Claes is roughly three to four years. They may have known of one another in childhood without being written as childhood sweethearts.
+The age gap with Claes is roughly three to four years.
+
+Under `DEC.CLAES_MAYKEN.CHILDHOOD_ACQUAINTANCE.2026-08-19`, they **do know one another before the fire**. The childhood connection is intentionally small-scale and ordinary: child contact in Goes, play, and early moments in which Mayken's way of recognizing plants/material differences becomes visible to Claes.
+
+This is not a childhood-love story. The adult relation may carry recognition and rediscovery, but not predestination, “first love” mythology or the suggestion that the children already understood their later bond.
 
 ## 5. Shared fire, different loss
 
@@ -77,7 +83,7 @@ Novel function:
 
 This difference is essential. She is not Claes' trauma duplicate. She carries a counter-memory: fire can destroy, yet hands can return to work.
 
-## 6. Apothecary formation
+## 6. Apothecary formation and character method
 
 Mayken grows up around practical materia medica and apothecary work. Her expertise is embodied and operational rather than academic:
 - recognizing plant material by form, smell, texture and condition;
@@ -88,6 +94,10 @@ Mayken grows up around practical materia medica and apothecary work. Her experti
 - knowing that names, materials and preparations can diverge.
 
 Ordinary Dodoens use can belong naturally to this world where historically appropriate. It no longer has any special cipher, nomenclator or key function.
+
+Her governing character value is **material fidelity**. Her habitual questions are closer to “what is it?”, “in what condition?”, “what changed?” and “what would show that we are wrong?” than to Claes' attraction to wider hidden patterns.
+
+That strength also has a shadow: Mayken may become impatient with a hypothesis, symbolic relation or human meaning that cannot yet be materially demonstrated. Her empiricism is a necessary counterweight to Claes, not an automatically superior epistemology.
 
 Guardrail: do not give Mayken an unsupported university education, formal physician status or later seventeenth-century guild office.
 
@@ -116,11 +126,11 @@ This gives her competence without making the relationship mechanically dependent
 
 ## 8. Relationship with Claes
 
-`REL.CLAES.BELOVED` is the relationship **Claes ↔ Mayken**.
+`REL.CLAES.BELOVED` / `REL.CLAES.MAYKEN.CONJUNCTIO` is the relationship **Claes ↔ Mayken**.
 
 Dynamic:
 
-**separate Goese histories → material proximity → collaborative verification → earned trust → love without possession → sensory/spiritual companionship.**
+**childhood acquaintance with separate Goese lives → separation/different fire aftermaths → later recognition and material proximity → collaborative verification → earned trust → love without possession → sensory/spiritual companionship.**
 
 Mayken must never function merely as a reward for Claes' suffering or as a therapist. She has her own competence, history and judgement. She can contradict Claes because she knows things he does not.
 
@@ -129,6 +139,8 @@ Their epistemologies differ:
 - Mayken tests matter directly and trusts trained sensation, repeatability and practical contradiction.
 
 Her presence later on the road toward Enkhuizen helps Claes recover the *sinne* because she draws him back into matter: smell, weather, touch, plants, preparation, food, fatigue, sound and shared physical travel. The recovery remains Claes' own work.
+
+The mature relation must allow the reverse influence as well: Claes can sometimes see a relation or possibility before Mayken believes it materially established. Their strongest scenes should therefore produce reciprocal revision rather than one person permanently correcting the other.
 
 ## 9. Name use
 
@@ -144,7 +156,10 @@ Avoid modernizing her to *Maaike* in the sixteenth-century narrative voice.
 2. Adriaen's apothecary identity is strongly supported but remains reconstruction where historical precision matters.
 3. Jacob → Adriaen → Mayken is novel genealogy built on historical anchors, not discovered genealogy.
 4. `Mayken huisvrouw Jacop Lampart` (1543) supplies an attested name environment, not proof of Mayken's grandmother.
-5. Ordinary Dodoens use is allowed; the retired special Dodoens carrier is not.
-6. Mayken shares the 1554 fire horizon with Claes but not his exact losses.
-7. She contributes to Claes' recovery; she does not perform or complete it for him.
-8. She may assist the direct chemical reveal, but she is not a cryptographic key-holder or decoder.
+5. Claes and Mayken know one another before the 1554 fire, but are **not** childhood sweethearts.
+6. Ordinary Dodoens use is allowed; the retired special Dodoens carrier is not.
+7. Mayken shares the 1554 fire horizon with Claes but not his exact losses.
+8. She contributes to Claes' recovery; she does not perform or complete it for him.
+9. She may assist the direct chemical reveal, but she is not a cryptographic key-holder or decoder.
+10. Material verification is her strength and may also become her limitation; do not write her as an infallible corrective to Claes.
+11. Load `storybible/CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md` for stable character behaviour and shadow.

@@ -1,4 +1,4 @@
-schema_version: 1.5.1
+schema_version: 1.6.0
 kind: NarrativeRelationshipRegistry
 relationships:
 - id: REL.CLAES.CORNELIS
@@ -149,12 +149,25 @@ relationships:
   label: Claes and Mayken
   participants: [ENT.PERSON.CLAES, ENT.PERSON.BELOVED]
   status: CANON
-  decision_id: DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14
+  decision_ids:
+  - DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14
+  - DEC.CLAES_MAYKEN.CHILDHOOD_ACQUAINTANCE.2026-08-19
   phases:
-  - label: separate Goese histories and material proximity
+  - label: childhood acquaintance in Goes
+    story_time: {earliest: '1553-01-01', latest_exclusive: '1554-05-18', precision: approximate}
+    value_state: ordinary child acquaintance -> small shared memory
+    function: Claes and Mayken know one another through ordinary Goese child contact, play and early plant/material observation. This gives later recognition a real past without turning the children into lovers or foreshadowing destiny.
+    guardrails:
+    - No childhood romance, childhood-sweetheart framing or predestination.
+    - Mayken's curiosity and family work-world exist independently of Claes.
+  - label: separate post-fire lives
+    story_time: {earliest: '1554-05-18', latest_exclusive: '1566-08-01', precision: approximate}
+    value_state: shared city catastrophe -> divergent loss histories and development
+    function: Both know the 1554 fire, but Claes' household annihilation and Mayken's family material loss/rebuilding remain distinct. Continuous contact is not required.
+  - label: renewed proximity and separate expertise
     story_time: {earliest: '1566-08-01', latest_exclusive: '1570-01-01', precision: bounded}
-    value_state: separate expertise -> potential complementarity
-    function: Both remember the 1554 fire, but Claes' household annihilation and Mayken's family material loss/rebuilding must remain distinct.
+    value_state: remembered acquaintance + separate expertise -> potential complementarity
+    function: Later proximity can carry recognition and rediscovery. Claes brings pattern, memory and secrecy; Mayken has developed material judgement that does not depend on his noticing her.
   - label: reveal collaboration
     story_time: {earliest: '1570-01-01', latest_exclusive: '1571-01-01', precision: year}
     value_state: solitary interpretation -> collaborative material verification
@@ -173,6 +186,7 @@ relationships:
   guardrails:
   - Mayken is not a cryptographic solver or key-holder.
   - Ordinary Dodoens use may remain part of her apothecary world; the retired special Dodoens carrier does not.
+  - Childhood memory may support recognition but must never function as proof of romantic destiny.
   ko_targets: [KO.RELATIONSHIP, KO.CONFLICT, KO.VALUE, KO.CHARACTER]
 
 - id: REL.CLAES.RADERMACHER

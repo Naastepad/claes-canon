@@ -1,0 +1,110 @@
+schema_version: 1.0.0
+kind: CharacterWeb
+id: ARC.CLAES.CHARACTER_WEB.ARCHETYPAL
+status: CANON_AUTHORIAL_ARCHITECTURE
+decision_ids:
+- DEC.CHARACTER_WEB.ARCHETYPAL_LENS.2026-08-19
+- DEC.CHARACTER_WEB.CORE_CAST.2026-08-19
+purpose: >-
+  Author-side web for differentiating major characters by value, method and shadow. Archetypes are lenses, not in-world identities and not permission for thematic exposition.
+central_problem: >-
+  How can Claes learn to perceive truth without mistaking perception for control, and to turn knowledge into chosen action, relation and release?
+characters:
+- entity: ENT.PERSON.CLAES
+  shorthand: Integration
+  lenses: [seeker, observer, witness, integrator]
+  offers_claes: [attention, synthesis]
+  method: see -> compare -> connect -> understand
+  shadow_method: see -> compare -> keep_looking -> delay
+  mature_method: perceive -> distinguish -> choose -> carry -> release
+
+- entity: ENT.PERSON.CORNELIS
+  shorthand: Law
+  lenses: [father, steward, gatekeeper, artisan_mentor]
+  offers_claes: [responsibility, discipline, routes, practical_action]
+  method: entrust -> test -> correct -> enlarge_responsibility
+  shadow_method: protect -> withhold -> exclude
+  pressure_on_claes: love is present but encoded in a form Claes does not automatically read as recognition
+
+- entity: ENT.PERSON.CLAES_MOTHER
+  shorthand: Body
+  lenses: [mother, embodied_wise_woman]
+  offers_claes: [trained_sensation, care, timing, permission_to_doubt]
+  method: touch -> smell -> compare -> wait -> know_enough
+  shadow_method: fear -> work -> hide_own_need
+  pressure_on_claes: not everything important becomes certain through analysis
+
+- entity: ENT.PERSON.CLAES_BROTHER
+  shorthand: Act
+  lenses: [brother_double, trickster_child, action_principle]
+  offers_claes: [speed, risk, embodied_choice, play]
+  method: see_desire -> move -> learn_from_result
+  shadow_method: move -> rationalize_afterward
+  pressure_on_claes: action can precede complete certainty without being stupidity
+
+- entity: ENT.PERSON.NICOLAES_PUTTUS
+  shorthand: Word
+  lenses: [teacher, hermeneutic_mentor]
+  offers_claes: [language, distinction, textual_discipline]
+  method: read -> compare -> support -> correct
+  shadow_method: correct -> silence -> shame
+  pressure_on_claes: hidden meaning must be earned by evidence, not desired into existence
+
+- entity: ENT.PERSON.BELOVED
+  shorthand: Matter
+  lenses: [material_counterpart, craft_wise_woman, conjunctio_partner]
+  offers_claes: [identity_testing, material_fidelity, contradiction, reciprocal_relation]
+  method: identify -> prepare -> test -> compare -> revise
+  shadow_method: demand_demonstration -> dismiss_what_is_not_yet_testable
+  pressure_on_claes: a pattern that matter contradicts must change; relation is not possession
+
+- entity: ENT.PERSON.JOHN_DEE
+  shorthand: Transformation
+  lenses: [magician, initiatory_mentor]
+  offers_claes: [hidden_relation, intellectual_daring, transformative_process]
+  method: observe -> hypothesize -> expose_relation -> transform
+  shadow_method: suspect_hidden_intention -> gatekeep -> control
+  pressure_on_claes: the master of hidden order can become trapped by hidden order
+
+- entity: ENT.PERSON.WILLEM_SILVIUS
+  shorthand: Transmission
+  lenses: [mediator, pragmatic_gatekeeper]
+  offers_claes: [production, circulation, audience, social_reality]
+  method: make -> price -> route -> deliver
+  shadow_method: instrumentalize -> normalize_risk
+  pressure_on_claes: truth that cannot survive paper, labour, routes and readers has not yet entered the world
+
+- entity: ENT.PERSON.BARTOLOME_DE_LAS_CASAS
+  shorthand: Conscience
+  lenses: [witness, herald, conscience]
+  offers_claes: [moral_testimony, self_implication, release_of_text]
+  method: witness -> order -> write -> send
+  shadow_method: sharpen -> try_to_control_reception
+  pressure_on_claes: testimony ceases to belong to its keeper when it must act beyond him
+
+web_relations:
+- pair: [ENT.PERSON.CLAES, ENT.PERSON.CLAES_BROTHER]
+  axis: deliberation <-> immediacy
+  dramatic_use: brothers expose that neither observation nor action is sufficient alone
+- pair: [ENT.PERSON.CORNELIS, ENT.PERSON.CLAES_MOTHER]
+  axis: responsibility_and_rule <-> embodied_care_and_timing
+  dramatic_use: Claes' intact childhood contains two complementary modes of safety that the fire destroys together
+- pair: [ENT.PERSON.NICOLAES_PUTTUS, ENT.PERSON.JOHN_DEE]
+  axis: disciplined_interpretation <-> transformative_speculation
+  dramatic_use: Puttus teaches that meaning must be supported; Dee teaches that the apparently ordinary may hide another state
+- pair: [ENT.PERSON.JOHN_DEE, ENT.PERSON.BELOVED]
+  axis: hidden_pattern <-> material_verification
+  dramatic_use: Mayken later supplies a counter-pressure to the danger already visible in Dee
+- pair: [ENT.PERSON.WILLEM_SILVIUS, ENT.PERSON.BARTOLOME_DE_LAS_CASAS]
+  axis: transmission_mechanics <-> moral_necessity_of_transmission
+  dramatic_use: together they frame the problem that testimony needs both conscience and a carrier
+- pair: [ENT.PERSON.CORNELIS, ENT.PERSON.WILLEM_SILVIUS]
+  axis: private_carriage_and_trust <-> public_reproduction_and_distribution
+  dramatic_use: Claes moves from carrying what he may not know toward deciding what knowledge must be released
+
+hard_guardrails:
+- Archetypal shorthand must never appear as explanatory labels in literary prose.
+- A character may contradict the shorthand; contradiction is evidence of life, not a continuity error.
+- Use the web to differentiate choices and values, not to manufacture one teaching scene per function.
+- Supporting characters need not receive archetypal assignments unless repeated story pressure justifies them.
+- The web supplements, never replaces, entity biography, historical evidence, arcs, relationships and scene objectives.

@@ -1,4 +1,4 @@
-schema_version: "1.0.0"
+schema_version: "1.0.1"
 kind: SourceClaimRegistryExtension
 claims:
   - id: SC.HIST.ROSE.GALLICA.OFFICINALIS.MEDICINAL_CULTURE.001
@@ -86,7 +86,7 @@ claims:
     subject: "rose species along Zeeland-North-Holland route"
     predicate: "candidate motif species"
     object: "pimpinellifolia, canina, rubiginosa"
-    evidence_status: PROVISIONAL
+    evidence_status: PLAUSIBLE
     source_ids: []
     verification:
       status: route_level_botanical_check_required

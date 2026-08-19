@@ -1,0 +1,169 @@
+schema_version: 1.0.0
+kind: ManuscriptProgressionRegistry
+purpose: >-
+  Tracks the current manuscript projection separately from canon: what each chapter currently dramatizes, what reader/character progression it now carries after revision, and how that differs from earlier manuscript versions. Canon truth is not deleted merely because prose is cut, and cut prose does not remain an active Narrative Instance merely because it once existed.
+
+status_vocabulary:
+  manuscript_state: [PLANNED, DRAFT, CURRENT, REVISE, MERGE_PENDING, CUT_FROM_MANUSCRIPT, SUPERSEDED]
+  placement_state: [ACTIVE_HERE, MOVED_ELSEWHERE, PARKED, OFFPAGE_BACKSTORY, OFFPAGE_BACKLINE, BACKDROP_ONLY, DISCARDED]
+
+revision_contract:
+  required_fields_after_substantial_editor_pass:
+  - chapter_ref
+  - manuscript_file
+  - revision_date
+  - editorial_verdict
+  - progression_before
+  - progression_after
+  - progression_delta
+  - functions_retained
+  - functions_removed_or_moved
+  - parked_material_refs
+  - canon_impact
+  - downstream_reader_expectation
+  rules:
+  - "A chapter's current progression describes only what the current manuscript actually delivers."
+  - "If a beat is cut, remove that beat/function from the chapter progression even when the underlying Story Claim remains canon."
+  - "If material moves to another chapter, the source chapter records MOVED_ELSEWHERE and the receiving chapter must explicitly adopt the function before it is considered active again."
+  - "PARKED material is not active manuscript truth or scene placement. It is a reusable editorial asset governed by narrative/parked_material.yaml."
+  - "Canon impact must be one of NONE, PROJECTION_ONLY, CANON_REVIEW_REQUIRED. Editorial cutting normally has NONE or PROJECTION_ONLY impact."
+  - "Do not infer that an event was removed from story truth merely because its exposition/scene was cut. Check DEC/STC/NI layers separately."
+
+current_manuscript_set:
+- chapter_ref: CH.PROLOGUE.DE_BLADZIJDE.1542
+  manuscript_file: 1542-12-08-de-bladzijde.md
+  story_time: '1542-12-08'
+  title: De Bladzijde
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+  revision_lineage_note: "A shorter post-cold-reader version exists in the 19 August manuscript set; exact progression delta must be recorded from the editor handoff rather than reconstructed from deleted prose alone."
+
+- chapter_ref: CH.DE_DREMPEL.1547
+  manuscript_file: 1547-04-01-de-drempel.md
+  story_time: '1547-04-01'
+  title: De Drempel
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+
+- chapter_ref: CH.DE_LEI.1552
+  manuscript_file: 1552-01-15-de-lei.md
+  story_time: '1552-01-15'
+  title: De Lei
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+
+- chapter_ref: CH.HET_WAPEN.1553
+  manuscript_file: 1553-08-15-het-wapen.md
+  story_time: '1553-08-15'
+  title: Het Wapen
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+
+- chapter_ref: CH.DE_KRAAI.1553
+  manuscript_file: 1553-10-01-de-kraai.md
+  story_time: '1553-10-01'
+  title: De Kraai
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+
+- chapter_ref: CH.DE_KRAAN.1553
+  manuscript_file: 1553-11-05-de-kraan.md
+  story_time: '1553-11-05'
+  title: De Kraan
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+
+- chapter_ref: CH.DE_WEGEN.1553
+  manuscript_file: 1553-12-10-de-wegen.md
+  story_time: '1553-12-10'
+  title: De Wegen
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+
+- chapter_ref: CH.HET_ZAND.1554
+  manuscript_file: 1554-01-05-het-zand.md
+  story_time: '1554-01-05'
+  title: Het Zand
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+
+- chapter_ref: CH.HET_GIST.1554
+  manuscript_file: 1554-01-15-het-gist.md
+  story_time: '1554-01-15'
+  title: Het Gist
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+
+- chapter_ref: CH.DE_WINNAAR.1554
+  manuscript_file: 1554-02-10-de-winnaar.md
+  story_time: '1554-02-10'
+  title: De Winnaar
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+
+- chapter_ref: CH.HET_ZAAD.1554
+  manuscript_file: 1554-03-01-het-zaad-in-de-donkere-aarde.md
+  story_time: '1554-03-01'
+  title: Het Zaad in de Donkere Aarde
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+  revision_lineage_note: "Substantial shortening occurred in the 19 August editor pass; exact removed functions/material belong in the revision handoff and parked-material registry."
+
+- chapter_ref: CH.DE_KAMER.1554
+  manuscript_file: 1554-03-05-de-kamer.md
+  story_time: '1554-03-05'
+  title: De Kamer
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+
+- chapter_ref: CH.DE_WIEG.1554
+  manuscript_file: 1554-04-10-de-wieg.md
+  story_time: '1554-04-10'
+  title: De Wieg
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+
+- chapter_ref: CH.DE_LADINGEN.1564
+  manuscript_file: 1564-04-04-de-ladingen-van-antwerpen.md
+  story_time: '1564-04-04'
+  title: De Ladingen van Antwerpen
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+
+- chapter_ref: CH.DE_VERKEERDE_KIST.1564
+  manuscript_file: 1564-04-14-de-verkeerde-kist.md
+  story_time: '1564-04-14'
+  title: De Verkeerde Kist
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+
+- chapter_ref: CH.DE_KIES_VAN_BOOM.1564
+  manuscript_file: 1564-04-22-de-kies-van-boom.md
+  story_time: '1564-04-22'
+  title: De Kies van Boom
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+
+- chapter_ref: CH.DE_LOOG.1564
+  manuscript_file: 1564-04-29-de-loog-van-antwerpen.md
+  story_time: '1564-04-29'
+  title: De Loog van Antwerpen
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+
+- chapter_ref: CH.DE_DOOD_VAN_SOL.1564
+  manuscript_file: 1564-07-20-de-dood-van-sol.md
+  story_time: '1564-07-20'
+  title: De Dood van Sol
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+
+- chapter_ref: CH.DE_MARKT_VAN_DELFT.1584
+  manuscript_file: 1584-07-14-de-markt-van-delft.md
+  story_time: '1584-07-14'
+  title: De Markt van Delft
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+  revision_lineage_note: "A shorter post-cold-reader version exists in the 19 August manuscript set; exact progression delta should come from the editor handoff."
+
+revision_history: []

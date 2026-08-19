@@ -1,4 +1,4 @@
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: EditorialGateRegistry
 purpose: "Round D authoring quality gates. These records govern drafting and revision; they do not create story canon."
 gates:
@@ -18,6 +18,34 @@ gates:
     MERGE: "Necessary material duplicates another scene or can gain force by sharing one scene-turn with it."
     CUT: "No indispensable function, or all functions are served better elsewhere."
   hard_rule: "Historical richness, research effort, thematic symbolism or a beautiful passage are never sufficient reasons by themselves to retain a scene."
+
+- id: GRD.EDITORIAL.CLUSTER_NECESSITY
+  type: EditorialGate
+  status: ACTIVE_AUTHORING_POLICY
+  question: "Does the chapter/scene still add a distinct progression when the surrounding cluster is read as one experience?"
+  tests:
+  - "Has Claes already learned or enacted substantially the same lesson in the preceding cluster?"
+  - "Is this a new relationship movement, or the same relationship beat in a different setting?"
+  - "Has the same motif recently carried the same dramatic value rather than a transformed value?"
+  - "Does the chapter change forward pressure, or merely deepen a state the reader already understands?"
+  - "Would removing this unit make the cluster causally, emotionally or cognitively poorer rather than only shorter?"
+  rule: "A scene/chapter may pass local necessity and still receive MERGE or CUT because cumulative repetition weakens the book-level progression."
+
+- id: GRD.EDITORIAL.CUT_DISPOSITION
+  type: EditorialGate
+  status: ACTIVE_AUTHORING_POLICY
+  question: "What happens to the material/function after RETAIN/REVISE/MERGE/CUT?"
+  required_after_substantial_edit:
+  - "Update narrative/manuscript_progression.yaml with progression_before, progression_after and progression_delta."
+  - "For every removed function, classify it as deleted, moved, parked future chapter, backstory, backline, backdrop or motif reserve."
+  - "Create/update PARK.* records in narrative/parked_material.yaml for reusable removed material."
+  - "State canon impact separately: NONE, PROJECTION_ONLY or CANON_REVIEW_REQUIRED."
+  - "If material is moved, name both source and receiving chapter/scene; until the receiving unit explicitly adopts it, treat it as PARKED rather than active."
+  guardrails:
+  - "CUT is an editorial verdict, not automatic de-canonization."
+  - "Parked prose is not active manuscript placement."
+  - "Do not restore cut material merely because it is historically rich or beautifully written. Reuse must pass scene and cluster necessity again."
+  - "Do not store long verbatim deleted passages in the Storybible; store summary, function, provenance and reuse constraints."
 
 - id: GRD.EDITORIAL.PROSE_QUALITY
   type: EditorialGate
@@ -95,10 +123,12 @@ gates:
   review_order:
   - verdict
   - scene_necessity
+  - cluster_necessity
   - fatal_or_primary_problem
   - causality_and_character
   - pacing_and_reader_experience
   - prose_quality
   - continuity_or_historical_risk
   - retain_revise_merge_cut
+  - cut_disposition_and_progression_update
   final_rule: "A technically correct scene may still be weak fiction. Historical accuracy and canon consistency are necessary constraints, not proof that the scene works."

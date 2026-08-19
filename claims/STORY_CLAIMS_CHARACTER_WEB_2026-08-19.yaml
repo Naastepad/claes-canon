@@ -1,0 +1,121 @@
+schema_version: 1.0.1
+kind: StoryClaimRegistryExtension
+story_claims:
+- id: STC.CHARACTER.CLAES.INTEGRATOR.001
+  type: StoryClaim
+  status: CANON
+  evidence_status: PLAUSIBLE
+  decision_id: DEC.CHARACTER_WEB.CORE_CAST.2026-08-19
+  claim: >-
+    Claes' characteristic strength is prolonged embodied attention: he notices, compares, remembers and connects patterns across materials, texts, people and events. His recurring danger is to remain in observation after action is required, or to treat attention as if it could make loss preventable and the world controllable. He is nevertheless capable of immediate embodied action when circumstances leave no time for analysis.
+  guardrails:
+  - Do not write Claes as passive by nature; his problem is over-observation under available time, not inability to act.
+  - Do not make pattern recognition omniscience.
+  - Mature integration is perceive -> distinguish -> choose -> carry -> release.
+
+- id: STC.CHARACTER.CORNELIS.STEWARD_GATEKEEPER.001
+  type: StoryClaim
+  status: CANON
+  evidence_status: PLAUSIBLE
+  decision_id: DEC.CHARACTER_WEB.CORE_CAST.2026-08-19
+  claim: >-
+    Cornelis is a practical steward and father-gatekeeper who expresses care through provision, training, responsibility and protection. He is terse at home, uses dry humour, and can be markedly more expansive, social and performative among trusted rederijkers. His strength is stewardship under pressure; his shadow is that protection through secrecy, duty and withholding can become exclusion and make love feel like another obligation to the people he is trying to protect.
+  guardrails:
+  - Do not reduce him to cold patriarch or secretive conspirator.
+  - Preserve the contrast between domestic reserve and social/rhetorical vitality.
+  - Outward Catholic participation and inward Familist commitment coexist before the fire.
+
+- id: STC.CHARACTER.TANNEKEN.EMBODIED_WISDOM.001
+  type: StoryClaim
+  status: CANON
+  evidence_status: PLAUSIBLE
+  decision_id: DEC.CHARACTER_WEB.CORE_CAST.2026-08-19
+  claim: >-
+    Tanneken knows through trained body, repetition, household timing and material condition. She gives care directly, can praise without making praise a bargain, and carries a playful practical humour. Under anxiety she tends to turn fear into work, routine and preparation rather than abstract discussion; that competence can also conceal her own vulnerability from others.
+  guardrails:
+  - Do not mysticize her sensory knowledge.
+  - Do not make domestic competence emotional simplicity or endless self-sacrifice.
+  - Her fears and limits may remain partly unspoken because she works through them, not because she lacks them.
+
+- id: STC.CHARACTER.JAN.ACTION_DOUBLE.001
+  type: StoryClaim
+  status: CANON
+  evidence_status: PLAUSIBLE
+  decision_id: DEC.CHARACTER_WEB.CORE_CAST.2026-08-19
+  claim: >-
+    Jan is Claes' loved rival and brother-double: bodily, fast, mischievous and willing to test before he fully understands. He learns through repetition and consequence and can reach correct action faster than Claes. His shadow is recklessness and premature improvisation. His courage is not fearlessness: private questions about death, family and the unborn child reveal abrupt vulnerability that he does not sustain in long analysis.
+  guardrails:
+  - Do not make Jan merely comic relief, a reckless foil or trauma machinery.
+  - His action-first mode sometimes succeeds where Claes' method fails and sometimes creates danger.
+  - Preserve ordinary rivalry, play, irritation and loyalty.
+
+- id: STC.CHARACTER.PUTTUS.HERMENEUTIC_MENTOR.001
+  type: StoryClaim
+  status: CANON
+  evidence_status: PLAUSIBLE
+  decision_id: DEC.PUTTUS.FICTIONAL_CHARACTERIZATION.2026-08-19
+  claim: >-
+    In novel characterization Puttus teaches through precision, repetition, economical correction and interpretive restraint. He rewards what the text supports and corrects the urge to manufacture hidden meanings. He seldom raises his voice; silence and exact attention are part of his authority. The same restraint can shame a struggling pupil, so his pedagogy carries a real shadow rather than functioning as infallible wisdom.
+  guardrails:
+  - Fiction characterization does not change the historical UNKNOWN status of his age, appearance or 1550s tenure details.
+  - Do not make him a proto-Protestant doctrinal guide.
+  - His teaching should train distinction, not deliver the novel's complete theory of meaning.
+
+- id: STC.CHARACTER.MAYKEN.MATERIAL_COUNTERPART.001
+  type: StoryClaim
+  status: CANON
+  evidence_status: PLAUSIBLE
+  decision_id: DEC.CHARACTER_WEB.CORE_CAST.2026-08-19
+  claim: >-
+    Mayken's characteristic intelligence is material discrimination: identity, condition, contamination, preparation, measurement, repeatability and practical contradiction. She can interrupt Claes' attraction to hidden pattern by asking what the material actually does. Her own shadow is the reverse risk: trained empiricism can become impatience with meanings or possibilities that cannot yet be materially demonstrated. She remains an independent center of judgement rather than Claes' missing half.
+  guardrails:
+  - Do not reduce Mayken to lover, healer, therapist, decoder or corrective device.
+  - Her later conjunctio with Claes requires two centers of agency.
+  - Childhood acquaintance is non-romantic.
+
+- id: STC.CHARACTER.DEE.MAGICIAN_MENTOR.001
+  type: StoryClaim
+  status: CANON
+  evidence_status: PLAUSIBLE
+  decision_id: DEC.CHARACTER_WEB.CORE_CAST.2026-08-19
+  claim: >-
+    In novel characterization John Dee is intellectually daring, intensely observant and capable of showing Claes relations beneath ordinary appearance. He can recognize Claes' way of seeing rather than creating it. His shadow is overpatterning, secrecy, pride and the impulse to control access to knowledge; under pressure his perception of hidden relations can shade into suspicion or paranoia.
+  guardrails:
+  - These personal habits are fiction characterization of a historical person, not biographical claims unless separately sourced.
+  - Dee must be wrong sometimes, especially when material verification contradicts suspicion.
+  - Do not let Dee become the Storybible speaking in aphorisms.
+
+- id: STC.CHARACTER.SILVIUS.TRANSMISSION_REALITY.001
+  type: StoryClaim
+  status: CANON
+  evidence_status: PLAUSIBLE
+  decision_id: DEC.CHARACTER_WEB.CORE_CAST.2026-08-19
+  claim: >-
+    In novel characterization Willem Silvius is the pragmatic mediator who turns ideas into producible, movable and socially survivable things. He thinks in paper, labour, price, timing, routes, audiences and risk, and can puncture learned grandiosity with calm practical leverage. His shadow is instrumentalism: people, texts and secrecy can become resources in a production problem if expedience outruns moral attention.
+  guardrails:
+  - These private habits are fiction characterization unless independently sourced.
+  - Do not make pragmatism equal cowardice or cynicism.
+  - Silvius' transmission role does not make him the translator of the Brevísima.
+
+- id: STC.CHARACTER.LAS_CASAS.WITNESS_CONSCIENCE.001
+  type: StoryClaim
+  status: CANON
+  evidence_status: PLAUSIBLE
+  decision_id: DEC.CHARACTER_WEB.CORE_CAST.2026-08-19
+  claim: >-
+    The novel uses Bartolome de las Casas as witness/conscience and distant moral mirror for Claes: a man who receives, orders and transmits testimony, who knows that he himself once participated in the system he condemns, and who must eventually release a text whose later readers and uses he cannot control. His shadow is the temptation to believe that precision, rhetorical ordering or moral urgency can control reception.
+  guardrails:
+  - Historical acts and published positions require source support; interior thoughts in the prologue are fictional reconstruction.
+  - Do not make him morally spotless; self-implication is part of the function.
+  - His role is not direct mentorship of Claes.
+
+- id: STC.CLAES_MAYKEN.CHILDHOOD_ACQUAINTANCE.001
+  type: StoryClaim
+  status: CANON
+  evidence_status: PLAUSIBLE
+  decision_id: DEC.CLAES_MAYKEN.CHILDHOOD_ACQUAINTANCE.2026-08-19
+  claim: >-
+    Before 18 May 1554 Claes and Mayken know one another as Goese children. Play and early plant/material observation give them a small shared history, but no childhood romantic bond is canonized.
+  guardrails:
+  - Later recognition may carry memory without implying destiny.
+  - Mayken's fire experience remains different from Claes' catastrophic household loss.

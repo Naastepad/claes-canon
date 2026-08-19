@@ -1,4 +1,4 @@
-schema_version: 1.0.0
+schema_version: 1.0.1
 kind: StoryClaimRegistryExtension
 story_claims:
 - id: STC.CLAES.CORNELIS.RECOGNITION.001
@@ -6,7 +6,7 @@ story_claims:
   status: CANON
   claim: >-
     In Claes' pre-fire childhood, Cornelis is the father whose competence and approval matter most to him. Claes receives relatively little explicit praise and increasingly tries to earn recognition by being observant, useful, precise and dependable.
-  evidence_status: STORY_TRUTH
+  evidence_status: PLAUSIBLE
   decision_id: DEC.CLAES.CORNELIS.RECOGNITION.2026-08-18
   guardrails:
   - Cornelis' scarcity of praise does not equal absence of love or trust.
@@ -17,7 +17,7 @@ story_claims:
   status: CANON
   claim: >-
     By the early 1550s Claes carries age-appropriate household and minor trade responsibilities, especially when Cornelis travels. As eldest son he may help Tanneken, keep an eye on Jan, remember messages or instructions, count or check simple deliveries or stores and correct mistakes when required.
-  evidence_status: STORY_TRUTH
+  evidence_status: PLAUSIBLE
   decision_id: DEC.CLAES.CORNELIS.RESPONSIBILITY.2026-08-18
   guardrails:
   - Do not give Claes adult commercial authority.
@@ -28,7 +28,7 @@ story_claims:
   status: CANON
   claim: >-
     From approximately 1552-1553 Claes begins to register small inconsistencies between the Catholic world he inhabits and the way Cornelis sometimes attends, answers or falls silent within that same world. Claes lacks the concepts and knowledge to identify Cornelis' Huis der Liefde affiliation.
-  evidence_status: STORY_TRUTH
+  evidence_status: PLAUSIBLE
   decision_id: DEC.CLAES.CORNELIS.RELIGIOUS_DISSONANCE.2026-08-18
   guardrails:
   - The dissonance is observational and intermittent, not an explicit doctrinal debate.
@@ -39,7 +39,7 @@ story_claims:
   status: CANON
   claim: >-
     After 18 May 1554, Claes can interpret the Reimerswaal separation through the recognition gap already present before the fire: the act by which Cornelis protects his son's educational future can simultaneously feel to Claes like confirmation that his father does not choose to keep him close.
-  evidence_status: STORY_TRUTH
+  evidence_status: PLAUSIBLE
   decision_id: DEC.CLAES.CORNELIS.POSTFIRE_READING.2026-08-18
   guardrails:
   - This is Claes' wounded interpretation, not Cornelis' intention.

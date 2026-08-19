@@ -46,8 +46,29 @@ Reader-evidence classifications are also separate: `ISOLATED`, `REPEATED`, `CONV
 ## Precision rule
 A month, season, year or interval remains that precision until an explicit story decision establishes greater precision.
 
+## Historical evidence gaps are authorial space
+
+Under `DEC.HISTORICAL_GAPS.FICTIONAL_CHARACTERIZATION.2026-08-19`, absence of historical evidence is **not** by itself a prohibition on fictional specification.
+
+For a recurring person, location, object or practice, the author may deliberately fill a documentary gap when the choice has real continuity, character, causal, spatial or reader-experience value, provided that:
+
+1. no known evidence is contradicted;
+2. the fictional choice is historically plausible for the time/place/status involved;
+3. the fiction status is recorded explicitly as story/character/world canon rather than Source Claim;
+4. the historical evidence status remains unchanged (`UNKNOWN` remains `UNKNOWN`);
+5. the chosen detail is synchronized anywhere continuity depends on it;
+6. later contradictory evidence triggers review rather than silent rewriting.
+
+This rule is especially important for recurring historical people whose archival record preserves office or work but not ordinary human particulars. Voice, habits, room use, private reactions or appearance may be fixed as **FICTION CANON** without being misrepresented as recovered biography.
+
+Do not fill every gap automatically. A detail earns canon when future scenes benefit from stability. The archive sets the boundary; the novel may fill the living space inside it.
+
+For the current core-cast implementation, load `storybible/CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md` and `entities/CHARACTERIZATION_2026-08-19.yaml`.
+
 ## Narrative theory boundary
 Universal `KO.*` narrative theory remains in the external Narrative Knowledge Base. This repository stores Claes-specific Narrative Instances and may reference Knowledge Objects as analysis targets.
+
+Archetypal analysis is permitted as an author-side character-web lens, but an archetype is not a complete person and never overrides entity biography, historical evidence, motive, desire, class, confession, work or material circumstance. Do not force every character into an archetype or write archetypal labels into literary exposition.
 
 ## Editorial boundary
 Historical accuracy, continuity and canon consistency are **necessary constraints but not proof of literary success**.

@@ -1,0 +1,63 @@
+schema_version: 1.0.0
+kind: ParkedNarrativeMaterialRegistry
+purpose: >-
+  Preserves useful material removed during editorial passes without falsely treating it as active manuscript placement or current scene canon. This registry stores summaries and reuse constraints, not a second prose archive.
+
+status_vocabulary:
+  - PARKED_FUTURE_CHAPTER
+  - PARKED_BACKSTORY
+  - PARKED_BACKLINE
+  - PARKED_BACKDROP
+  - PARKED_MOTIF_RESERVE
+  - MOVED_CONFIRMED
+  - DISCARDED_PROSE
+  - REJECTED_STORY_OPTION
+
+definitions:
+  PARKED_FUTURE_CHAPTER: "A written or designed beat may become an on-page scene later, but no destination is yet canonized."
+  PARKED_BACKSTORY: "The underlying story event/state remains part of character/history continuity, but need not be dramatized on-page."
+  PARKED_BACKLINE: "An off-page causal line continues during the story and may later create plot pressure or consequences."
+  PARKED_BACKDROP: "World/sensory/social material may enrich later scenes but carries no required causal event."
+  PARKED_MOTIF_RESERVE: "A recurring image/object/phrase/function has been removed here to protect freshness but may recur later if its value has changed."
+  MOVED_CONFIRMED: "The material/function has a named receiving chapter/scene and is no longer merely parked."
+  DISCARDED_PROSE: "The prose is retired; underlying canon must be checked separately."
+  REJECTED_STORY_OPTION: "The proposed event/interpretation itself is rejected and must not return unless reopened by an explicit author decision."
+
+hard_rules:
+- "Parking prose never makes the parked scene/event canon by itself."
+- "Cutting prose never deletes an existing DEC/STC/ENT/REL/ARC fact by itself."
+- "Every parked item must say whether its underlying story truth is CANON, OPEN, PROPOSED or NONE/ATMOSPHERIC."
+- "A parked item cannot be silently restored into prose. Before reuse, check current canon, chronology, character knowledge and whether another chapter now performs the same function."
+- "If restored, record the new receiving chapter/scene and change status to MOVED_CONFIRMED."
+- "Do not store large verbatim cut passages here. Store a concise content/function summary plus a pointer to the originating manuscript/editor handoff when available."
+- "Material parked as BACKDROP may be distributed in fragments; it should not be resurrected as an exposition block merely because it was once written as one."
+- "Motif reserve requires changed value on recurrence; repetition of the same symbolic beat is not reuse justification."
+
+items:
+- id: PARK.EARLY_GOES.FIRST_STEPS_HOME.001
+  status: PARKED_FUTURE_CHAPTER
+  origin_context: early Goes childhood development, pre-current 1547 opening
+  summary: "A first-steps/home scene was previously judged internally strong but left without a current chapter placement."
+  underlying_story_truth: PLAUSIBLE_FICTION_SPACE
+  possible_functions: [embodied_childhood, intact_household, Tanneken_Cornelis_parenting]
+  reuse_guardrail: "Do not add merely to make childhood fuller; reuse only if a later structural gap requires a distinct function not already carried by De Drempel and the 1552–1554 cluster."
+
+- id: PARK.EARLY_GOES.VASTENAVOND_MARKET.001
+  status: PARKED_BACKDROP
+  origin_context: early Goes childhood development
+  summary: "A written Vastenavond/market passage was removed from the active early chapter despite working aesthetically."
+  underlying_story_truth: NONE_ATMOSPHERIC_UNLESS_SEPARATELY_CANONIZED
+  possible_functions: [Goese_urban_life, sensory_city, feast_calendar, crowd_world]
+  reuse_guardrail: "Reuse as distributed city texture or only if a later scene earns the feast as causal pressure; do not restore as a standalone picturesque scene by default."
+
+- id: PARK.PROLOGUE.EXPLICIT_BIRTH_DATE_LINK.001
+  status: REJECTED_STORY_OPTION
+  origin_context: early prologue/childhood development
+  summary: "An explicit symbolic birth-scene/date linkage between Claes and the Las Casas/Brevísima line was rejected as too direct."
+  underlying_story_truth: REJECTED
+  reuse_guardrail: "Do not restore an explicit destiny/date-link device. The later relation is testimony/transmission/responsibility, not shared-date symbolism."
+
+editor_pass_ingest_queue:
+  status: OPEN_INGEST
+  note: >-
+    The 19 August 2026 Claude cold-reader/editor pass produced additional CUT/PARK decisions across the current manuscript. The latest and prior chapter files are available in the conversation, but exact author/editor classifications of each removed beat should be imported from the Claude editor handoff rather than guessed solely from textual diff. For every such item create one PARK.* record and one revision_history entry in narrative/manuscript_progression.yaml.
