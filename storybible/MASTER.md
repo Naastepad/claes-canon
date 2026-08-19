@@ -1,8 +1,8 @@
 # Claes Storybible — MASTER / operating authority
 
 **Logical master ID:** `SB.CLAES.MASTER`  
-**Current synchronization date:** 16 August 2026  
-**Authoring readiness:** Rounds A–D implemented
+**Current synchronization date:** 19 August 2026  
+**Authoring readiness:** Rounds A–D implemented; Character Web refinement active
 
 This repository is the structured operating projection of Revision 11 plus later explicit author decisions. The lossless source edition remains preserved for material not yet atomized, but later decisions override conflicting source or legacy-master wording.
 
@@ -24,17 +24,19 @@ Start with:
 
 1. `storybible/LEMMA_MCKEE_MASTER.md` — **current operating story synthesis**.
 2. `storybible/STORY_PROJECTION_ROUND_C.md` — causal/character projection from settled canon and chapter-ready world knowledge toward final structure.
-3. `WRITING_PROTOCOL.md` — governing drafting, revision, pacing, prose-quality and scene-retention protocol.
-4. `review/READER_EXPERIENCE_PROTOCOL.md` — cold-reader, human pilot-reader and reader-feedback method.
-5. `storybible/INDEX.md` — operational navigation.
-6. `canon/OPEN_DECISIONS.yaml` — active unresolved backlog only.
-7. `review/SYNC_STATUS.md` — synchronization state.
+3. `storybible/CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md` — stable core-cast characterization, character shadows and author-side archetypal contrast; explicitly separates historical evidence from fiction fills.
+4. `WRITING_PROTOCOL.md` — governing drafting, revision, pacing, prose-quality and scene-retention protocol.
+5. `review/READER_EXPERIENCE_PROTOCOL.md` — cold-reader, human pilot-reader and reader-feedback method.
+6. `storybible/INDEX.md` — operational navigation.
+7. `canon/OPEN_DECISIONS.yaml` — active unresolved backlog only.
+8. `review/SYNC_STATUS.md` — synchronization state.
 
 The dated `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` is a **legacy snapshot**, not current authoring authority. It may preserve obsolete 1545/cipher/death-window/open-beloved wording for audit history only.
 
 ## Dedicated governing dossiers
 
 - `STORY_PROJECTION_ROUND_C.md` — causal spine, deeper Great-Work architecture, Mayken independent arc and explicit open 1572–1579 Goes hinge.
+- `CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md` — governing core-character web; archetypes are author-side lenses only, while approved voice/habit/shadow details are fiction canon for continuity.
 - `ALCHEMICAL_OPERATION_PALETTE.md` — non-binding author-side palette for Calcination, Sublimation, Solution, Putrefaction, Distillation, Coagulation and Tincture; diagnostic and compositional only, never a mandatory 3×7/21-chapter scheme.
 - `WRITING_PROTOCOL.md` — scene construction, prose, pacing, reader experience and editorial decision rules.
 - `review/READER_EXPERIENCE_PROTOCOL.md` — reader-testing authority.
@@ -42,8 +44,9 @@ The dated `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` is a **legacy snapshot**
 - `MEMORIAAL_BREVISIMA_PRINT_1564.md` — hidden readable tannin/gum print, Dee handoff, graphite rule, direct green-vitriol reveal.
 - `MEMORIAAL_BREVISIMA_CASTOFF_1564.md` — 17 single-sheet quarto gatherings / 136 latent pages.
 - `FAMILY_CLAES_1542_1554.md` — Tanneken, Jan, grandparents, 1542 house and 1554 family rupture.
+- `GOES_SCHOOLING_PUTTUS_1550_1554.md` — Puttus school bridge plus explicit evidence/fiction characterization boundary.
 - `GOES_CLERGY_MATHIJS_CLEMENS_1541_1564.md` — named historical Goese clergy anchors: Mathijs Jacopsen/Jacobsen in 1541–early 1542, Clemens van den Dale in 1564, with the 1542–1563 succession gap preserved.
-- `MAYKEN_LAMPERT.md` — resolved identity and independent character/material role of Mayken, synchronized to no-cipher canon.
+- `MAYKEN_LAMPERT.md` — resolved identity, pre-fire childhood acquaintance and independent character/material role of Mayken, synchronized to no-cipher canon.
 - `CORNELIS_HOUSE_OF_LOVE_NETWORK_1551_1569.md` — governing route from beer/cask commerce through Ghysbrecht, Dens and Barrefelt into the translocal Huis der Liefde; Plantin is a later node and the evidence/fiction boundary is explicit.
 - `CORNELIS_EXECUTION_1569.md` — detailed 19 November 1569 Cornelis execution model.
 - `EXECUTIONS_REFORMATION_CLAES_2026-08-16.md` — current execution/testimony mechanics.
@@ -67,10 +70,11 @@ Current explicit author decisions live across:
 - `canon/DECISIONS_RESOLUTIONS_2026-08-16.yaml`
 - `canon/DECISIONS_STORY_PROJECTION_2026-08-16.yaml`
 - `canon/DECISIONS_HOUSE_OF_LOVE_NETWORK_2026-08-16.yaml`
+- `canon/DECISIONS_CHARACTER_WEB_2026-08-19.yaml`
 
 Latest explicit decision wins within its domain. A base registry is not allowed to resurrect an older state merely because a later decision lives in a supplement.
 
-`claims/SOURCE_CLAIMS*.yaml` stores evidence/reconstruction claims. `claims/STORY_CLAIMS*.yaml` stores novel truth. Evidence and story truth remain separate.
+`claims/SOURCE_CLAIMS*.yaml` stores evidence/reconstruction claims. `claims/STORY_CLAIMS*.yaml` stores novel truth. Evidence and story truth remain separate. Characterization story truth added on 19 August lives in `claims/STORY_CLAIMS_CHARACTER_WEB_2026-08-19.yaml`.
 
 ### World/practice state
 
@@ -85,6 +89,8 @@ These define what can plausibly happen in a place/time/activity. A world module 
 ### Narrative state and projection
 
 - `entities/*.yaml`
+- `entities/CHARACTERIZATION_2026-08-19.yaml` — stable fiction characterization separated from historical biography.
+- `entities/LAS_CASAS.yaml` — historical Las Casas entity with fiction-interiority boundary.
 - `objects/*.yaml`
 - `narrative/knowledge_states*.yaml`
 - `narrative/relationships.yaml`
@@ -93,6 +99,7 @@ These define what can plausibly happen in a place/time/activity. A world module 
 - `narrative/instances*.yaml`
 - `narrative/alchemical_authorial_architecture.yaml`
 - `narrative/story_projection_round_c.yaml`
+- `narrative/character_web_archetypes.yaml` — author-side value/shadow contrast web; never in-world labels.
 - `narrative/mayken_independent_arc.yaml`
 - `narrative/mayken_relationship_projection.yaml`
 - `narrative/goes_departure_1572_1579.yaml`
@@ -119,6 +126,7 @@ The following are current and must not be reopened by legacy prose:
 - **8 December 1542:** birth of Claes in Goes. The exact Goese priest/office-holder on this date remains historically **UNKNOWN**; Mathijs must not be projected automatically from February to December and is not proven to have baptized Claes.
 - **12 January 1551:** historical anchor — Ghysbrecht, kuiper van Antwerpen, acquires *De Haeswindeken* in Goes; Cornelis' commercial relationship with him is novel canon, not archival fact.
 - **ca. 1552–1553:** Cornelis belongs in novel canon to the translocal Huis der Liefde through the chain Ghysbrecht → Adriaan Dens → Barrefelt. The Ghysbrecht → Dens bridge is explicit novel reconstruction; Plantin is not the converter.
+- **1553–1554:** Claes and Mayken know one another as Goese children in ordinary acquaintance/friendship; no childhood romance is canonized.
 - **18 May 1554:** fictional family home lost; Tanneken, Jan and unborn child die; Claes and Cornelis survive. This catastrophe tests an already existing Familist conviction rather than causing Cornelis' conversion.
 - **1554–1561:** Claes at Reimerswaal; Zierikzee is the abandoned pre-fire plan.
 - **August 1561:** Antwerp Landjuweel; Dee is not placed there; Goes is not currently established as one of the fourteen official competing chambers.
@@ -170,11 +178,35 @@ Retired from the Brevísima mechanism:
 
 Merels, Monas, Castanea and ordinary Dodoens may survive independently where they serve game, education, botany, symbolism or character.
 
+## Character web / historical-fiction characterization current state
+
+`DEC.HISTORICAL_GAPS.FICTIONAL_CHARACTERIZATION.2026-08-19`, `DEC.CHARACTER_WEB.ARCHETYPAL_LENS.2026-08-19` and `DEC.CHARACTER_WEB.CORE_CAST.2026-08-19` govern.
+
+The repository now treats documentary silence as potential **authorial space**, not as an automatic ban on characterization. Historical evidence remains unchanged; fiction fills are separately labelled and become continuity canon only by explicit decision.
+
+Core author-side constellation:
+
+- Claes — Integration / Seeker-Witness;
+- Cornelis — Law / Father-Gatekeeper;
+- Tanneken — Body / embodied household wisdom;
+- Jan — Act / brother-double;
+- Puttus — Word / hermeneutic teacher;
+- Mayken — Matter / independent material counterpart;
+- Dee — Transformation / magician-mentor;
+- Silvius — Transmission / pragmatic mediator;
+- Las Casas — Conscience / witness-herald.
+
+These are lenses, not full personality definitions. Every role is individualized through a governing value, concrete habits, contradiction and a shadow produced by overuse of a real strength. Archetypal shorthand must never be written as in-world explanation.
+
+`storybible/CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md` governs the human-readable layer. Machine detail lives in `entities/CHARACTERIZATION_2026-08-19.yaml` and `narrative/character_web_archetypes.yaml`.
+
 ## Mayken current state
 
 The beloved identity is resolved as **Mayken Adriaensdr. Lampert**, fictional, born ca.1546 in Goes. `ENT.PERSON.BELOVED` is retained only as a legacy stable entity ID; it does not mean her identity is open.
 
 Her historical embedding is the real Lampart/Lambert/Lampert apothecary environment. The project distinguishes verified persons/property records, supported identity/genealogy reconstruction and explicit fictional daughtership.
+
+Claes and Mayken now canonically know one another as children before 18 May 1554 through ordinary Goese contact, play and early material/botanical observation. This is **not childhood romance**; later relation may contain recognition and rediscovery without predestination.
 
 Mayken is independently competent in materia medica, preparation, measurement, botanical/material identification, trained sensation and error control. She may assist direct reveal and reading but is **not** a cryptographic solver or special-Dodoens key-holder.
 
@@ -325,6 +357,8 @@ This distinction is mandatory:
 - **authorial design open** — the novel must choose it;
 - **irreducibly uncertain** — preserve historical uncertainty and choose explicitly fictional reconstruction if needed.
 
+A historical/research gap does not automatically become a factual authorial claim. However, under `DEC.HISTORICAL_GAPS.FICTIONAL_CHARACTERIZATION.2026-08-19`, the novel may deliberately fix a **fiction-canon answer** inside that gap for recurring characterization or continuity while leaving the evidence status UNKNOWN. Evidence and novel truth remain separate axes.
+
 Round-C high-impact authorial opens include:
 
 - `OPEN.GOES.CLAES_DEPARTURE_1572_1579.001`;
@@ -332,7 +366,7 @@ Round-C high-impact authorial opens include:
 
 Neither may be silently closed by prose, reader preference or historical plausibility alone.
 
-The Goese clergy succession gap between the February 1542 Mathijs anchor and the March 1564 Clemens anchor is a **historical/research open**, not an authorial invitation to invent a continuous incumbency.
+The Goese clergy succession gap between the February 1542 Mathijs anchor and the March 1564 Clemens anchor is a **historical/research open**, not permission to fabricate a historical continuous incumbency. A fictional scene-use choice, if ever required, must be separately labelled rather than projected as evidence.
 
 ## Narrative development backlog
 
@@ -341,13 +375,14 @@ The recovery and readiness rounds are now complete:
 - **A** — historical substrate recovered;
 - **B** — six major world/practice domains made chapter-ready, supplemented by the evidence-bounded Goese clergy world state;
 - **C** — world projected into causal character architecture;
-- **D** — editorial, pacing and reader-feedback gates made operational.
+- **D** — editorial, pacing and reader-feedback gates made operational;
+- **Character Web refinement** — core cast differentiated through stable fiction characterization, value contrast and shadow while preserving historical evidence boundaries.
 
 The next major task is **structural realization**:
 
 `Book → Act → Sequence → Chapter → Scene → Beat`.
 
-`narrative/structure.yaml` remains largely unpopulated and `narrative/scenes.yaml` contains only a small number of full scene diagnostics. Future population should use `ARC.CLAES.CAUSAL_SPINE` plus Round-B scene packs and apply Round-D scene-necessity/pacing/reader gates during construction rather than only after a full draft exists.
+`narrative/structure.yaml` remains largely unpopulated and `narrative/scenes.yaml` contains only a small number of full scene diagnostics. Future population should use `ARC.CLAES.CAUSAL_SPINE`, the character web where recurring cast is involved, plus Round-B scene packs and Round-D scene-necessity/pacing/reader gates during construction rather than only after a full draft exists.
 
 ## Precedence
 
@@ -355,7 +390,7 @@ When records conflict:
 
 1. latest explicit current `DEC.*` author decision, including supplements;
 2. active later domain-specific `STC.*` story claim or explicit supersession declared by a later decision;
-3. dedicated current governing dossier, including `STORY_PROJECTION_ROUND_C.md` within its domain;
+3. dedicated current governing dossier, including `STORY_PROJECTION_ROUND_C.md` and `CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md` within their domains;
 4. current `LEMMA_MCKEE_MASTER.md`;
 5. synchronized entities/objects/world modules/arcs/relationships/instances and causal projections;
 6. Revision 11 prose for unsuperseded unatomized meaning;
