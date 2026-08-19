@@ -1,0 +1,53 @@
+schema_version: 1.0.0
+kind: MigrationReviewSupplement
+purpose: >-
+  Human-decision classifications for Story Claims that were already present on main before PR 17 but lacked migration-review entries required by the continuity validator. This file does not change their semantic canon; it records their existing explicit author-decision provenance.
+records:
+- claim_id: STC.CLAES.CORNELIS.POSTFIRE_RECOGNITION_GAP.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Existing 18 August 2026 author decision; records Claes' wounded interpretation of the post-fire separation without changing Cornelis' intent.
+- claim_id: STC.CLAES.CORNELIS.RECOGNITION.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Existing 18 August 2026 author decision; father-son recognition dynamic already merged in PR 16.
+- claim_id: STC.CLAES.CORNELIS.RELIGIOUS_DISSONANCE.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Existing 18 August 2026 author decision; child-observed dissonance around Cornelis' hidden Familist affiliation.
+- claim_id: STC.CLAES.CORNELIS.RESPONSIBILITY.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Existing 18 August 2026 author decision; age-appropriate household/minor trade responsibility.
+- claim_id: STC.CLAES.CORNELIS.VOETBOOG_FORMATION.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Existing 18 August 2026 author decision; father-son voetboog practice as supervised practical formation.
+- claim_id: STC.CLAES.PUTTUS_MASTER.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Existing 18 August 2026 author decision that Puttus teaches Claes in the final pre-fire Goese school years.
+- claim_id: STC.CORNELIS.SCHUTTERIJ.SINT_JORIS.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Existing 18 August 2026 fiction-canon decision placing Cornelis in the historical Goese Sint-Joris / Edele Voetboog guild.
+- claim_id: STC.GOES.CLERGY.CLEMENS_1564.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Existing 16 August 2026 scene-use/canon boundary built on the verified Clemens van den Dale 1564 historical anchor.
+- claim_id: STC.GOES.CLERGY.MATHIJS_EARLY_WORLD.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Existing 16 August 2026 scene-use/canon boundary built on the verified Mathijs early-1540s historical anchor.
+- claim_id: STC.GOES.CLERGY.MATHIJS_MAGDALENA_CONTEXT.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Existing 16 August 2026 supported-context decision; preserves the Maria Magdalena association without overstating exact office continuity.
+- claim_id: STC.NISSEPAT.ARMS.CARRIER_CONTINUITY.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Existing 18 August 2026 fiction-canon decision allowing a plausible material carrier for the family sign without pseudo-nobility or miraculous fire survival.
+- claim_id: STC.NISSEPAT.FAMILY_ARMS.VOETBOOG.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Existing 18 August 2026 author decision using the recovered Muschart voetboog reading while exact armiger/provenance remains historically unresolved.
