@@ -7,15 +7,17 @@ Operational navigation for the current Claes Storybible.
 1. `MASTER.md` — authority, precedence and current fixed state.
 2. `LEMMA_MCKEE_MASTER.md` — **current synchronized human-readable story synthesis** through 16 August 2026.
 3. `STORY_PROJECTION_ROUND_C.md` — current causal/character projection from the settled world into future chapter structure.
-4. `../WRITING_PROTOCOL.md` — current drafting, prose, pacing and scene-retention authority.
-5. `../review/READER_EXPERIENCE_PROTOCOL.md` — cold-reader, pilot-reader and feedback method.
-6. `../canon/OPEN_DECISIONS.yaml` — active unresolved backlog only.
-7. `../review/SYNC_STATUS.md` — synchronization status.
-8. `../review/CANON_CONFLICT_AUDIT_2026-08-16.md` — conflicts found and their resolution.
-9. `../review/HISTORICAL_SUBSTRATE_RECOVERY_2026-08-16.md` — Round-A recovery.
-10. `../review/DOMAIN_REBUILD_ROUND_B_2026-08-16.md` — Round-B chapter-readiness rebuild.
-11. `../review/STORY_PROJECTION_ROUND_C_2026-08-16.md` — Round-C projection audit.
-12. `../review/EDITORIAL_PROTOCOL_ROUND_D_2026-08-16.md` — Round-D editorial/reader recovery audit.
+4. `CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md` — stable core-cast characterization, shadows and author-side archetypal contrast; use for recurring-person continuity.
+5. `../WRITING_PROTOCOL.md` — current drafting, prose, pacing and scene-retention authority.
+6. `../review/READER_EXPERIENCE_PROTOCOL.md` — cold-reader, pilot-reader and feedback method.
+7. `../canon/OPEN_DECISIONS.yaml` — active unresolved backlog only.
+8. `../review/SYNC_STATUS.md` — synchronization status.
+9. `../review/CANON_CONFLICT_AUDIT_2026-08-16.md` — conflicts found and their resolution.
+10. `../review/HISTORICAL_SUBSTRATE_RECOVERY_2026-08-16.md` — Round-A recovery.
+11. `../review/DOMAIN_REBUILD_ROUND_B_2026-08-16.md` — Round-B chapter-readiness rebuild.
+12. `../review/STORY_PROJECTION_ROUND_C_2026-08-16.md` — Round-C projection audit.
+13. `../review/EDITORIAL_PROTOCOL_ROUND_D_2026-08-16.md` — Round-D editorial/reader recovery audit.
+14. `../review/CHARACTER_WEB_REFINEMENT_2026-08-19.md` — character-web/fiction-characterization handoff.
 
 `LEMMA_MCKEE_MASTER_2026-08-13.md` is a dated legacy snapshot. It is retained for development history but is not current authoring authority.
 
@@ -32,6 +34,8 @@ Operational navigation for the current Claes Storybible.
 - `../canon/DECISIONS_RESOLUTIONS_2026-08-16.yaml` — callback-recovered Mayken identity and Cornelis-death precedence.
 - `../canon/DECISIONS_STORY_PROJECTION_2026-08-16.yaml` — Great-Work authorial architecture, Mayken independent arc and Claes-Mayken conjunctio.
 - `../canon/DECISIONS_HOUSE_OF_LOVE_NETWORK_2026-08-16.yaml` — Cornelis' ca.1552–1553 Familist entry route, pre-fire affiliation, outward conformity, later Plantin role and beer-to-paper logistics continuity.
+- `../canon/DECISIONS_PUTTUS_2026-08-18.yaml` — Puttus as Claes' pre-fire Latin/humanist master; evidence/fiction boundary refined 19 August.
+- `../canon/DECISIONS_CHARACTER_WEB_2026-08-19.yaml` — fiction-fill policy, core character web, Puttus characterization and Claes-Mayken childhood acquaintance.
 
 ## Active open decisions
 
@@ -39,7 +43,7 @@ Operational navigation for the current Claes Storybible.
 - `../canon/OPEN_DECISIONS_ALCHEMY_REFINEMENT_2026-08-16.yaml` — Rode-Leeuw carrier composition and exact Enkhuizen assay/choreography.
 - `../canon/OPEN_DECISIONS_ALCHEMY_LIFELINE_2026-08-15.yaml` — legacy redirect/supersession record only.
 
-Resolved/not-applicable records no longer remain mixed into the active open registry. The 1542–1563 Goese clergy succession is a historical/research gap, not an authorial open to be filled by invention.
+Resolved/not-applicable records no longer remain mixed into the active open registry. Historical/research gaps remain evidence gaps even when the novel deliberately fixes a separately labelled fiction-canon detail under `DEC.HISTORICAL_GAPS.FICTIONAL_CHARACTERIZATION.2026-08-19`.
 
 ## Historical / research claims
 
@@ -78,6 +82,8 @@ This layer supplies non-fiction world state and scene conditions. It never creat
 ### Writing-readiness rule
 
 A historical domain is not chapter-ready merely because a source or dossier exists. For the relevant place/year/person/activity the authoring layer should be able to retrieve: provenance/evidence status, time-valid world state, actors/actions, materials, sensory fields, character knowledge/access, local-versus-transfer boundary, explicit guardrails and scene consequences.
+
+For a recurring character, world readiness must now also include the relevant stable fictional characterization where it exists. Historical UNKNOWN does not erase an approved fiction-canon voice/habit choice.
 
 ## Chapter-ready practice domains — Round B
 
@@ -130,11 +136,13 @@ Use these dossiers together with `../narrative/domain_scene_packs.yaml`.
 Round C is the bridge from chapter-ready world knowledge to future Book/Act/Sequence/Chapter/Scene structure.
 
 - `STORY_PROJECTION_ROUND_C.md` — human-readable governing projection.
+- `CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md` — recurring-character continuity and value/shadow differentiation.
 - `ALCHEMICAL_OPERATION_PALETTE.md` — non-binding author-side palette of seven classic operations (Calcination, Sublimation, Solution, Putrefaction, Distillation, Coagulation, Tincture), with narrative, sensory and show-don't-tell applications; never a mandatory 3×7 or 21-chapter template.
 - `../narrative/story_projection_round_c.yaml` — `ARC.CLAES.CAUSAL_SPINE`, fourteen current causal hinges from Status Prima to Status Prima Nova.
 - `../narrative/alchemical_authorial_architecture.yaml` — `ARC.CLAES.GREAT_WORK.AUTHORIAL`: Status Prima; interwoven Corpus/Anima/Spiritus; Transmutatio/Rubedo; Projectio; Status Prima Nova.
+- `../narrative/character_web_archetypes.yaml` — author-side character-web projection; archetypal shorthand never appears as in-world doctrine.
 - `../narrative/mayken_independent_arc.yaml` — `ARC.MAYKEN.LIFE`.
-- `../narrative/mayken_relationship_projection.yaml` — `REL.CLAES.MAYKEN.CONJUNCTIO`.
+- `../narrative/mayken_relationship_projection.yaml` — `REL.CLAES.MAYKEN.CONJUNCTIO`, now including childhood acquaintance and divergent post-fire paths.
 - `../narrative/goes_departure_1572_1579.yaml` — explicit open causal design projection for Claes' final material/economic severance from Goes.
 
 ### Great-Work rule
@@ -144,6 +152,10 @@ Round C is the bridge from chapter-ready world knowledge to future Book/Act/Sequ
 **Status Prima → Corpus / Anima / Spiritus → Transmutatio/Rubedo → Projectio → Status Prima Nova** is an author-side register model. Corpus/Anima/Spiritus spiral through the same chronology and must not become three mechanically identical cycles. No fixed alchemical operation count is mandatory.
 
 The seven-operation palette is therefore a **compositional and diagnostic vocabulary only**. Use an operation when a scene's actual material, relational or inner causality earns it; never reverse-engineer a scene solely to satisfy the palette.
+
+### Character-web rule
+
+Archetypal functions are author-side lenses, not complete personalities. For recurring core cast load `entities/CHARACTERIZATION_2026-08-19.yaml` alongside biography/relationship state. Strength, shadow and contradiction are continuity aids; characters may still surprise the shorthand when scenes earn it.
 
 ### Mayken rule
 
@@ -211,17 +223,22 @@ Standing hard-review mode under `GRD.EDITORIAL.RUTHLESS_EDITOR`:
 - `../claims/STORY_CLAIMS_MAYKEN_LAMPERT.yaml`
 - `../claims/STORY_CLAIMS_ALCHEMY_REFINEMENT_2026-08-16.yaml`
 - `../claims/STORY_CLAIMS_HOUSE_OF_LOVE_NETWORK_2026-08-16.yaml` — Cornelis' commercial trust bridge, Dens/Barrefelt affiliation, pre-fire state, later Plantin node and beer-to-paper logistics continuity.
+- `../claims/STORY_CLAIMS_CHARACTER_WEB_2026-08-19.yaml` — core characterization, shadows and Mayken childhood acquaintance.
 
 ## People and relationships
 
 - `../entities/ENTITIES.yaml`
 - `../entities/FAMILY_1554.yaml`
 - `../entities/GOES_CLERGY_1541_1564.yaml` — historical Mathijs Jacopsen/Jacobsen and Clemens van den Dale entity supplement.
+- `../entities/GOES_PUTTUS_1512_1554.yaml`
 - `../entities/MAYKEN_LAMPERT.yaml`
+- `../entities/CHARACTERIZATION_2026-08-19.yaml` — stable fiction characterization for core cast, separately labelled from historical biography.
+- `../entities/LAS_CASAS.yaml`
 - `../entities/ALCHEMY_REDERIJKER_2026-08-16.yaml`
 - `../entities/HOUSE_OF_LOVE_NETWORK_2026-08-16.yaml` — Ghysbrecht, Dens, Barrefelt, Plantin, translocal network entity and canonical Cornelis relationships.
 - `../narrative/relationships.yaml`
 - `../narrative/arcs.yaml`
+- `../narrative/character_web_archetypes.yaml`
 - `../narrative/sinne_recovery.yaml`
 - `../narrative/beloved_recovery.yaml` — resolved Mayken identity; no longer an open-identity layer.
 - `../narrative/mayken_independent_arc.yaml`
@@ -229,9 +246,17 @@ Standing hard-review mode under `GRD.EDITORIAL.RUTHLESS_EDITOR`:
 
 ## Major Storybible dossiers
 
+### Character web / characterization
+
+- `CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md` — governing core-cast value/strength/shadow/voice dossier.
+- `../entities/CHARACTERIZATION_2026-08-19.yaml`
+- `../narrative/character_web_archetypes.yaml`
+- `../review/CHARACTER_WEB_REFINEMENT_2026-08-19.md`
+
 ### Goes / family / church
 
 - `FAMILY_CLAES_1542_1554.md`
+- `GOES_SCHOOLING_PUTTUS_1550_1554.md` — Puttus evidence boundary plus explicit fiction characterization.
 - `GOES_CLERGY_MATHIJS_CLEMENS_1541_1564.md` — governing named-clergy dossier; Mathijs is safe for 1541/early-1542 scenes, not automatically for 8 December 1542; Clemens is verified in 1564.
 - `../narrative/world_goes_living_city.yaml`
 - `../narrative/world_goes_grote_kerk.yaml`
@@ -287,6 +312,7 @@ Standing hard-review mode under `GRD.EDITORIAL.RUTHLESS_EDITOR`:
 ## Narrative realization
 
 - `../narrative/story_projection_round_c.yaml` — causal pre-structure; load before final chapter architecture.
+- `../narrative/character_web_archetypes.yaml` — author-side recurring-character contrast.
 - `../narrative/instances.yaml`
 - `../narrative/instances_executions_reformation.yaml`
 - `../narrative/instances_alchemy_rederijker_2026-08-16.yaml`
@@ -300,7 +326,7 @@ Standing hard-review mode under `GRD.EDITORIAL.RUTHLESS_EDITOR`:
 - `../narrative/CRAFT_GUARDRAILS.yaml`
 - `../narrative/religious_space_sensory_church.yaml`
 
-Current limitation: `structure.yaml` still needs populated Book/Act/Sequence/Chapter/Beat hierarchy and `scenes.yaml` needs many more scene-level diagnostics. Rounds A–D now supply the evidence, world, causal and editorial infrastructure to populate them without reverting to research-led scene accumulation.
+Current limitation: `structure.yaml` still needs populated Book/Act/Sequence/Chapter/Beat hierarchy and `scenes.yaml` needs many more scene-level diagnostics. Rounds A–D plus the character-web refinement now supply the evidence, world, causal, character and editorial infrastructure to populate them without reverting to research-led scene accumulation or session-by-session reinvention of recurring people.
 
 ## Objects
 
@@ -337,6 +363,7 @@ Key rules:
 - `../review/DOMAIN_REBUILD_ROUND_B_2026-08-16.md`
 - `../review/STORY_PROJECTION_ROUND_C_2026-08-16.md`
 - `../review/EDITORIAL_PROTOCOL_ROUND_D_2026-08-16.md`
+- `../review/CHARACTER_WEB_REFINEMENT_2026-08-19.md`
 - `../review/READER_EXPERIENCE_PROTOCOL.md`
 - `../review/READER_FEEDBACK_TEMPLATE.md`
 - `../review/CHAT_COMMITMENT_AUDIT_2026-08-13.md` and addendum
@@ -349,4 +376,4 @@ Key rules:
 - `../.github/workflows/canon-repository-validate.yml`
 - `../.github/workflows/lemma-validate.yml`
 
-GitHub canon remains authoritative. Later explicit author decisions override stale broad prose; no AI may silently turn plausibility, editorial preference or reader suggestion into canon.
+GitHub canon remains authoritative. Later explicit author decisions override stale broad prose; no AI may silently turn plausibility, editorial preference or reader suggestion into historical evidence. Approved fiction fills remain story continuity, not Source Claims.
