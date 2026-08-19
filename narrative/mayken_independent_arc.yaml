@@ -1,4 +1,4 @@
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: NarrativeArcExtension
 records:
 - id: ARC.MAYKEN.LIFE
@@ -7,6 +7,7 @@ records:
   canon_status: CANON
   protagonist: ENT.PERSON.BELOVED
   decision_id: DEC.MAYKEN.INDEPENDENT_ARC.2026-08-16
+  relationship_decision_id: DEC.CLAES_MAYKEN.CHILDHOOD_ACQUAINTANCE.2026-08-19
   identity_note: "ENT.PERSON.BELOVED is the legacy entity ID for the resolved character Mayken Adriaensdr. Lampert. Identity is not open."
 
   phases:
@@ -16,8 +17,10 @@ records:
     fixed_state:
     - "Mayken grows up in the fictional daughter-line of the historically anchored Lampert apothecary environment."
     - "Her formation is practical: plants, substances, storage, weight, condition, preparation and names that may not match matter perfectly."
+    - "Before the 1554 fire she knows Claes as an ordinary Goese child acquaintance/friend through play and early plant/material observation; this is not childhood romance."
     value_movement: "dependence -> trained attention"
     contrast_with_claes: "Claes is drawn toward hidden order and pattern; Mayken begins with whether the thing in her hand is actually what someone says it is."
+    relationship_guardrail: "The childhood acquaintance may seed later recognition, never predestination or a waiting-for-Claes identity."
 
   - id: ARC.MAYKEN.LIFE.P02
     label: "Brand, verlies en herstel"
@@ -25,9 +28,10 @@ records:
     fixed_state:
     - "The Lampert property De Zwaene belongs to Mayken's fictional childhood fire horizon and is historically documented as burned property after 1554."
     - "Her household is not annihilated like Claes' household."
+    - "Claes and Mayken follow separate post-fire lives; continuous contact is not required."
     value_movement: "material security -> damaged continuity -> rebuilding competence"
     function: "Mayken learns a counter-truth to Claes' wound: destruction is real, but damaged material life can sometimes be sorted, repaired, replaced and worked again."
-    guardrail: "Do not make this a lesser version of Claes' trauma or invent identical bereavements."
+    guardrail: "Do not make this a lesser version of Claes' trauma, invent identical bereavements or turn childhood acquaintance into continuous off-screen romance."
 
   - id: ARC.MAYKEN.LIFE.P03
     label: "Volwassen vakkennis wordt eigen oordeel"
@@ -42,7 +46,7 @@ records:
     - "a kruidenvrouw-like practical role without unsupported formal medical status"
     guardrails:
     - "Do not silently copy Cornelis' prosecution arc onto Adriaen."
-    - "Do not make Mayken's independence begin only when Claes notices her."
+    - "Do not make Mayken's independence begin only when Claes notices or re-encounters her."
 
   - id: ARC.MAYKEN.LIFE.P04
     label: "Materiële tegenspraak en gedeeld risico"
