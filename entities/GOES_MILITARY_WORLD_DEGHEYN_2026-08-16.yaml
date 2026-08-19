@@ -1,11 +1,12 @@
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: EntityRegistryExtension
 entities:
 - id: ENT.PERSON.JACOB_DE_GHEYN_II
   type: Person
   label: Jacob de Gheyn II
   fictionality: historical
-  canon_status: HISTORICAL_REFERENCE
+  canon_status: CANON
+  usage_status: HISTORICAL_REFERENCE
   life:
     born: ca_1565
     birthplace: Antwerp
@@ -32,24 +33,62 @@ entities:
   type: Object
   label: Wapenhandelinghe van Roers, Musquetten ende Spiessen (1607)
   fictionality: historical
-  canon_status: HISTORICAL_REFERENCE
+  canon_status: CANON
+  usage_status: HISTORICAL_REFERENCE
   creator: ENT.PERSON.JACOB_DE_GHEYN_II
   components:
-    roer:
-      figures_commands: 42
-      source_claim: SC.HIST.DEGHEYN.ROER.42.001
-    musquet:
-      figures_commands: 43
-      source_claim: SC.HIST.DEGHEYN.MUSQUET.43.001
-    spies:
-      figures_commands: 32
-      source_claim: SC.HIST.DEGHEYN.SPIES.32.001
+    roer: OBJ.DEGHEYN.WAPENHANDELINGHE.1607.ROER
+    musquet: OBJ.DEGHEYN.WAPENHANDELINGHE.1607.MUSQUET
+    spies: OBJ.DEGHEYN.WAPENHANDELINGHE.1607.SPIES
   system_logic:
     - numbered_figure
     - prose_explanation
     - corresponding_command_wording
   usage: >-
     Reference source for mature circa-1607 States drill and military body technique; not a template to paste unchanged into earlier royalist Goes.
+
+- id: OBJ.DEGHEYN.WAPENHANDELINGHE.1607.ROER
+  type: ObjectComponent
+  label: Wapenhandelinghe — roer/schutten sequence
+  fictionality: historical
+  canon_status: CANON
+  parent: OBJ.DEGHEYN.WAPENHANDELINGHE.1607
+  figures_commands: 42
+  source_claim: SC.HIST.DEGHEYN.ROER.42.001
+
+- id: OBJ.DEGHEYN.WAPENHANDELINGHE.1607.MUSQUET
+  type: ObjectComponent
+  label: Wapenhandelinghe — musquetier sequence
+  fictionality: historical
+  canon_status: CANON
+  parent: OBJ.DEGHEYN.WAPENHANDELINGHE.1607
+  figures_commands: 43
+  source_claim: SC.HIST.DEGHEYN.MUSQUET.43.001
+
+- id: OBJ.DEGHEYN.WAPENHANDELINGHE.1607.SPIES
+  type: ObjectComponent
+  label: Wapenhandelinghe — spiesdrager sequence
+  fictionality: historical
+  canon_status: CANON
+  parent: OBJ.DEGHEYN.WAPENHANDELINGHE.1607
+  figures_commands: 32
+  source_claim: SC.HIST.DEGHEYN.SPIES.32.001
+
+- id: OBJ.DEGHEYN.WAPENHANDELINGHE.1607.ROER.FIGURE8
+  type: ObjectComponent
+  label: Wapenhandelinghe — roer figure 8 / U lont versoect
+  fictionality: historical
+  canon_status: CANON
+  parent: OBJ.DEGHEYN.WAPENHANDELINGHE.1607.ROER
+  source_claim: SC.HIST.DEGHEYN.FIGURE8.MATCH.001
+
+- id: OBJ.DEGHEYN.WAPENHANDELINGHE.1607.FIREARM_KIT
+  type: ObjectComponent
+  label: Wapenhandelinghe — firearm accoutrement / powder containers
+  fictionality: historical
+  canon_status: CANON
+  parent: OBJ.DEGHEYN.WAPENHANDELINGHE.1607
+  source_claim: SC.HIST.DEGHEYN.PRIMING_FLASK.001
 
 - id: ENT.ORG.GOES.CIVIC_SCHUTTERIJ
   type: Organization
@@ -83,7 +122,8 @@ entities:
   type: Location
   label: Goese exercitieplaats(en), ca. 1577–1607
   fictionality: historical_reconstruction_required
-  canon_status: OPEN_RESEARCH
+  canon_status: OPEN
+  research_status: OPEN_RESEARCH
   parent: ENT.LOC.GOES
   usage: >-
     Placeholder for a documented exercise ground or drill space. No exact square, courtyard or wall sector is canon until local evidence identifies it.
