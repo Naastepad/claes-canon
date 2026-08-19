@@ -2,7 +2,7 @@
 
 Status: `SYNC_COMPLETE_ACTIVE_LAYERS`
 
-Release state: `MAIN_CANON_SYNCHRONIZED_2026-08-16`
+Release state: `AUTHORING_BRANCH_CHARACTER_WEB_SYNCHRONIZED_2026-08-19`
 
 Historical recovery addendum: `ROUND_A_HISTORICAL_SUBSTRATE_RECOVERED`
 
@@ -14,7 +14,9 @@ Editorial/reader addendum: `ROUND_D_EDITORIAL_READER_PROTOCOL_IMPLEMENTED`
 
 Goes clergy addendum: `GOES_CLERGY_MATHIJS_CLEMENS_CANONIZED_AND_SYNCHRONIZED_2026-08-16`
 
-The explicit Goes clergy decisions are authoritative in `canon/` and are now synchronized through dedicated source claims, Story Claims, entity records, a world module, a governing Storybible dossier, `storybible/MASTER.md` and `storybible/INDEX.md`.
+Character-web addendum: `CORE_CHARACTER_WEB_AND_FICTION_CHARACTERIZATION_SYNCHRONIZED_2026-08-19`
+
+The 19 August character-web decisions are synchronized through Story Claims, core characterization entities, Puttus and Mayken detail records, the Claes-Mayken relationship projection, authoring policy, a governing Storybible dossier, `storybible/MASTER.md` and `storybible/INDEX.md`. Historical Source Claims were not changed: documentary UNKNOWN remains UNKNOWN where the novel deliberately fixes a separately labelled fiction-canon characterization.
 
 ## Current governing chronology
 
@@ -22,6 +24,7 @@ The explicit Goes clergy decisions are authoritative in `canon/` and are now syn
 - **14 March 1541:** mr. Mathijs Jacopsen explicitly attested as vice-pastoor.
 - **27 February 1542:** mr. Mathijs Jacobsen explicitly attested as `vice-cureyt ter Goes`.
 - **8 December 1542:** exact Goese office-holder at Claes' birth remains historically UNKNOWN; Mathijs must not be projected automatically from February to December.
+- **1553–1554:** Claes and Mayken canonically know one another as Goese children through ordinary acquaintance/friendship; no childhood romance.
 - Family rupture: **18 May 1554**.
 - Reimerswaal: 1554–summer 1561.
 - Antwerp Landjuweel: August 1561; Dee is not placed there.
@@ -61,12 +64,24 @@ The explicit Goes clergy decisions are authoritative in `canon/` and are now syn
 - old matrix/merels/Monas/Castanea/Dodoens/Primus/nomenclator recovery chain is retired from this mechanism;
 - Seton has no Brevísima role.
 
+### Character web / characterization
+
+- `storybible/CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md` is the governing human-readable characterization dossier.
+- `entities/CHARACTERIZATION_2026-08-19.yaml` stores stable fiction characterization separately from historical biography.
+- `narrative/character_web_archetypes.yaml` stores the author-side contrast web; archetypal labels are never in-world doctrine.
+- Historical evidence gaps may be deliberately filled as fiction canon under `DEC.HISTORICAL_GAPS.FICTIONAL_CHARACTERIZATION.2026-08-19`; historical evidence status remains unchanged.
+- Core shorthand: Claes/Integration, Cornelis/Law, Tanneken/Body, Jan/Act, Puttus/Word, Mayken/Matter, Dee/Transformation, Silvius/Transmission, Las Casas/Conscience.
+- Each shorthand is individualized through strength, shadow, contradiction, habits and independent agency.
+- Puttus' historical age/appearance/exact 1550s room remain UNKNOWN, while his quiet authority, exact correction, age-indeterminate child impression and small sparse teaching room are now explicit FICTION CANON.
+- Las Casas now has `ENT.PERSON.BARTOLOME_DE_LAS_CASAS`; private prologue interiority remains fictional reconstruction unless sourced.
+
 ### Cornelis
 
 - Goes poorter;
 - biersteker, not fixed brewery owner;
 - Nardusbloem / older Magdalena-linked rederijker;
 - fictional formative role in the 1560s current that becomes the later Edele Castanienbloem;
+- character web: father/steward/gatekeeper whose protection can become exclusion; domestic reserve contrasts with rederijker vitality;
 - deken status remains open;
 - fictionally executed 19 November 1569 in Antwerp, witnessed by Claes.
 
@@ -74,7 +89,9 @@ The explicit Goes clergy decisions are authoritative in `canon/` and are now syn
 
 - identity resolved as **Mayken Adriaensdr. Lampert**, fictional, ca.1546 Goes;
 - `ENT.PERSON.BELOVED` is a legacy stable entity ID, not an open identity;
+- canonically knows Claes before the 1554 fire as a child acquaintance/friend, not childhood sweetheart;
 - independent materia-medica/material/sensory/error-control expertise;
+- character web: material fidelity is strength; impatience with what cannot yet be materially demonstrated is a possible shadow;
 - independent governing arc `ARC.MAYKEN.LIFE`;
 - exact adult mid-arc work/family/social-pressure design remains `OPEN.MAYKEN.INDEPENDENT_MIDARC.001`;
 - mature relation uses `REL.CLAES.MAYKEN.CONJUNCTIO` with two centers of agency.
@@ -116,7 +133,8 @@ Governing projection: `storybible/STORY_PROJECTION_ROUND_C.md`.
 - This nests with, rather than replaces, `Drager -> Nigredo -> Albedo -> Rubedo -> Projectio`.
 - Corpus/Anima/Spiritus are simultaneous registers, not three mechanically repeated cycles.
 - `ARC.MAYKEN.LIFE` gives Mayken an independent story trajectory.
-- `REL.CLAES.MAYKEN.CONJUNCTIO` requires reciprocal relation with two centers of agency.
+- `REL.CLAES.MAYKEN.CONJUNCTIO` requires reciprocal relation with two centers of agency and now includes pre-fire childhood acquaintance followed by divergent post-fire paths.
+- `ARC.CLAES.CHARACTER_WEB.ARCHETYPAL` differentiates recurring characters by method/value/shadow without turning the shorthand into in-world doctrine.
 - `OPEN.GOES.CLAES_DEPARTURE_1572_1579.001` holds the exact Goes severance chain; do not silently identify the burned 1572 Voorstad brewery with the documented 1577 Nissepad brewery.
 
 ## Round D — editorial and reader-experience protocol
@@ -171,6 +189,29 @@ Standing hard-review mode:
 
 Required order: verdict -> necessity -> primary problem -> causality/character -> pacing/reader experience -> prose -> continuity/history -> RETAIN/REVISE/MERGE/CUT.
 
+## Character-web refinement — 19 August 2026
+
+Synchronized files:
+
+- `canon/DECISIONS_CHARACTER_WEB_2026-08-19.yaml`;
+- `claims/STORY_CLAIMS_CHARACTER_WEB_2026-08-19.yaml`;
+- `entities/CHARACTERIZATION_2026-08-19.yaml`;
+- `entities/LAS_CASAS.yaml`;
+- `entities/GOES_PUTTUS_1512_1554.yaml`;
+- `entities/MAYKEN_LAMPERT.yaml`;
+- `narrative/character_web_archetypes.yaml`;
+- `narrative/mayken_relationship_projection.yaml`;
+- `storybible/CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md`;
+- `storybible/GOES_SCHOOLING_PUTTUS_1550_1554.md`;
+- `storybible/MAYKEN_LAMPERT.md`;
+- `AUTHORING_POLICY.md`;
+- `storybible/MASTER.md`;
+- `storybible/INDEX.md`;
+- `review/CHARACTER_WEB_REFINEMENT_2026-08-19.md`;
+- this sync-status file.
+
+No historical Source Claims were promoted or rewritten by this pass. No personality/archetype Lemma constraints are warranted.
+
 ## Current active high-impact authorial opens
 
 - `OPEN.GOES.CLAES_DEPARTURE_1572_1579.001`;
@@ -182,7 +223,7 @@ Required order: verdict -> necessity -> primary problem -> causality/character -
 - exact Enkhuizen assay choreography;
 - Claes' exact death and final merels realization.
 
-Historical research gaps that must not be mistaken for authorial opens include the exact Goese clergy succession between the February 1542 Mathijs anchor and the March 1564 Clemens anchor.
+Historical research gaps that must not be mistaken for factual certainty include the exact Goese clergy succession between the February 1542 Mathijs anchor and the March 1564 Clemens anchor, Puttus' historical age/appearance/exact 1550s room, and many private habits of historical Dee, Silvius and Las Casas. Approved fiction characterization may fill selected gaps in the novel without changing their evidence status.
 
 See `canon/OPEN_DECISIONS.yaml` and alchemical open supplements for the complete active list.
 
@@ -214,7 +255,7 @@ The repository remains ready for **structural realization**:
 
 1. Round-C causal hinges;
 2. Round-B domain scene packs and active world supplements, including the clergy module where relevant;
-3. character/relationship/object/knowledge state;
+3. character/relationship/object/knowledge state plus `entities/CHARACTERIZATION_2026-08-19.yaml` for recurring core cast;
 4. Round-D scene-necessity, pacing, prose and reader-experience gates.
 
 ## Validation note
