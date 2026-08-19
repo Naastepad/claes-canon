@@ -1,4 +1,4 @@
-schema_version: 1.0.0
+schema_version: 1.0.1
 kind: SourceClaimRegistryExtension
 claims:
 - id: SC.HIST.DEGHEYN.DRILL.NUMBERED_COMMAND_SYSTEM.001
@@ -75,7 +75,8 @@ claims:
   subject: TERM.GEEFT_ACHT
   predicate: not_derived_by_this_source_from
   object: OBJ.DEGHEYN.WAPENHANDELINGHE.1607.ROER.FIGURE8
-  evidence_status: VERIFIED_AS_SOURCE_BOUNDARY
+  evidence_status: VERIFIED
+  evidence_boundary: This is verification of what the cited source does not establish; it is not an independent etymology of the expression.
   source_ids: [SRC-HIST-DEGHEYN-WAPENHANDELINGHE-1607-001]
 
 - id: SC.HIST.DEGHEYN.FIRE_RELOAD_CYCLE.001
@@ -108,5 +109,6 @@ claims:
   subject: OBJ.DEGHEYN.WAPENHANDELINGHE.1607
   predicate: does_not_prove
   object: Goes_as_model_or_depicted_unit
-  evidence_status: VERIFIED_AS_SOURCE_BOUNDARY
+  evidence_status: VERIFIED
+  evidence_boundary: Verified as a limit of the cited source; a broader claim about Goes would require independent local evidence.
   source_ids: [SRC-HIST-DEGHEYN-WAPENHANDELINGHE-1607-001]
