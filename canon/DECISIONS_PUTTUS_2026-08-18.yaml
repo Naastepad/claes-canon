@@ -1,4 +1,4 @@
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: CanonDecisionRegistry
 decisions:
 - id: DEC.CLAES.PUTTUS_MASTER.2026-08-18
@@ -19,9 +19,11 @@ decisions:
   supported_by:
   - SC.HIST.GOES.PUTTUS.SCHOOLMASTER_1512.001
   - SC.HIST.GOES.LATIN_SCHOOL_1569.001
+  characterization_extension: DEC.PUTTUS.FICTIONAL_CHARACTERIZATION.2026-08-19
   guardrails:
   - Puttus teaching Claes is novel truth, not a documented historical teacher-pupil relationship.
   - Do not state as historical fact that Puttus held the Goese rectorship continuously from 1512 to 1554.
-  - Do not invent Puttus' birth date, death date, appearance, exact age or exact tenure without new evidence.
+  - Puttus' historical birth date, death date, appearance, exact age and exact tenure remain UNKNOWN without new evidence.
+  - Approved fiction-canon characterization may deliberately specify how Claes experiences Puttus' appearance, voice, habits and teaching room under DEC.HISTORICAL_GAPS.FICTIONAL_CHARACTERIZATION.2026-08-19; those details must never be back-presented as historical evidence.
   - Do not infer that Claes completed a full formal Goese Latin-school curriculum before Reimerswaal.
   - Zierikzee remains the intended more sustained pre-fire Latin-school continuation; Reimerswaal remains the actual post-fire route.
