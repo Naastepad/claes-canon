@@ -2,11 +2,12 @@
 
 > Generated projection; never edit by hand. GitHub source files remain authoritative.
 > Treat each SOURCE FILE section as the original source file.
+> Do not use this pack as permission for free repository discovery; follow the task router in CLAUDE_CONTEXT_INDEX.md.
 
 - source branch: `main`
-- source commit at generation: `7407d17c0c7ad5cba3df7a706b3cec6ee4322572`
-- generated UTC: `2026-08-18T17:20:23+00:00`
-- included files: `5`
+- source commit at generation: `d05b988e7b24e06cfdef0fc367975d16fb57fb98`
+- generated UTC: `2026-08-19T08:30:50+00:00`
+- included files: `8`
 
 Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pack does not alter authority.
 
@@ -472,6 +473,436 @@ A scene can pass continuity and still fail fiction. **Accuracy is a constraint; 
 
 ---
 
+# SOURCE FILE: `storybible/MANUSCRIPT_PROGRESSION_AND_PARKED_MATERIAL.md`
+
+```markdown
+# Manuscriptprogressie, cuts en geparkeerd materiaal
+
+**Status:** GOVERNING EDITORIAL / MANUSCRIPT-PROJECTION MODULE  
+**Date:** 19 August 2026  
+**Machine registers:** `narrative/manuscript_progression.yaml`, `narrative/parked_material.yaml`  
+**Editorial gates:** `GRD.EDITORIAL.CLUSTER_NECESSITY`, `GRD.EDITORIAL.CUT_DISPOSITION`
+
+## 1. Why this layer exists
+
+The Storybible must distinguish **what is true in the novel** from **where and how the current manuscript tells it**.
+
+A cold-reader/editor pass can correctly remove a passage because it slows the book, repeats a lesson, explains too much or spends a motif too early. That editorial decision does not automatically mean that the underlying fact, relationship history or world condition is no longer canon.
+
+Conversely, a deleted passage must not continue to function as if the reader has seen it merely because an earlier draft contained it.
+
+Therefore this repository now separates:
+
+1. **Canon / story truth** — `DEC.*`, `STC.*`, entities, objects, relationships and historical-fiction decisions.
+2. **Current manuscript projection** — which chapter currently dramatizes which movement, reveal, relationship beat and reader progression.
+3. **Parked narrative material** — useful removed material not currently active on-page.
+4. **Rejected material** — prose or story choices that must not quietly return.
+
+## 2. Chapter progression is versioned
+
+For each substantive editorial pass, `narrative/manuscript_progression.yaml` records the chapter's progression before and after the pass.
+
+A useful progression record answers:
+
+- what state does the reader/POV character enter with?
+- what pressure/choice/revelation actually occurs in the current version?
+- what relationship/knowledge/value changes?
+- what expectation is handed to the next chapter?
+- what function was removed, compressed or moved?
+- did the edit alter canon, or only its placement/delivery?
+
+The essential fields are:
+
+`progression_before -> progression_after -> progression_delta`
+
+This prevents a common failure in iterative writing: an older chapter summary continues to claim that a chapter establishes something which the current prose no longer contains.
+
+## 3. Four different kinds of off-page material
+
+### Backstory
+
+A past event or state that **is part of the character/story reality** and has causal force, even if the novel does not dramatize it as a full scene.
+
+Example form:
+
+> Claes already learned a household practice before the current chapter; the scene proving every step was cut, but the competence remains canonically acquired.
+
+Backstory therefore normally points to existing `STC.*`, `REL.*`, `ENT.*` or `ARC.*` state.
+
+### Backline
+
+An **off-page causal line continuing during the story**. It may later collide with the foreground plot.
+
+Examples in this project can include trade obligations, Cornelis' hidden network activity, political/religious developments or Mayken's independent adult life when Claes is elsewhere.
+
+A backline is not atmosphere. Something is changing while the camera is away.
+
+### Backdrop
+
+Historical, social, material or sensory world information available for later scene texture but **not itself a required causal event**.
+
+Market activity, guild habits, seasonal food, urban sounds or a feast practice may move from a cut picturesque passage into backdrop. The writer can then distribute selected details through later action without resurrecting the original exposition block.
+
+### Parked future scene material
+
+A written or designed beat whose future location is **not yet decided**. It is not active in the manuscript until a receiving chapter passes scene/cluster necessity and explicitly adopts it.
+
+## 4. Cut is not one thing
+
+After a `CUT` or `MERGE`, the editor must classify every meaningful removed function:
+
+- `MOVED_ELSEWHERE` — a receiving chapter is fixed;
+- `PARKED_FUTURE_CHAPTER` — may become a later scene;
+- `PARKED_BACKSTORY` — happened/formed character but need not be shown;
+- `PARKED_BACKLINE` — continues off-page and can create later consequences;
+- `PARKED_BACKDROP` — reusable world texture;
+- `PARKED_MOTIF_RESERVE` — motif removed here to protect freshness and saved for a changed-value recurrence;
+- `DISCARDED_PROSE` — wording/scene gone; underlying truth checked separately;
+- `REJECTED_STORY_OPTION` — the underlying proposed story choice itself is rejected.
+
+This classification belongs in `narrative/parked_material.yaml`.
+
+## 5. Canon impact is a separate field
+
+Every editorial move gets one of three canon-impact labels:
+
+### `NONE`
+
+Only prose changed. No Story Claim, entity state, relationship fact or Narrative Instance truth is affected.
+
+### `PROJECTION_ONLY`
+
+The fact remains story truth, but the place where the reader learns/sees it has changed or become off-page. Update manuscript progression, scene projection and possibly knowledge/reveal timing.
+
+### `CANON_REVIEW_REQUIRED`
+
+The cut means a previously canonized event no longer happens, a relationship history changes, an object is no longer transferred, a character can no longer possess knowledge, or another true continuity dependency changes. This requires an explicit author decision before canon is rewritten.
+
+An editor must never infer `CANON_REVIEW_REQUIRED -> de-canonize` automatically.
+
+## 6. Revision lineage and current manuscript authority
+
+The conversation contains earlier and later versions of multiple chapters from the 19 August pass. The existence of those paired versions establishes **revision lineage**, but file-size or text-diff alone is not enough to infer the author's intended disposition of every removed beat.
+
+Therefore:
+
+- the latest approved chapter file is the current prose implementation;
+- the progression register says what that current prose now does;
+- the editor handoff says what was deliberately cut/moved/parked and why;
+- the parking register preserves reusable function/material;
+- canon remains governed independently.
+
+When an editor handoff and a raw diff disagree about intent, the explicit author/editor disposition wins. A diff shows deletion; it does not by itself tell whether the deleted material became backstory, backdrop, future-scene reserve or rejected story.
+
+## 7. Cluster progression
+
+The childhood sequence exposed why scene-level uniqueness alone is insufficient. Each chapter can individually contain useful material while the cluster as a whole repeats the same learning beat, father-son recognition beat or molenbord function too often.
+
+After individual scene necessity, perform `GRD.EDITORIAL.CLUSTER_NECESSITY`:
+
+- What has Claes already learned?
+- What has the reader already understood about the relationship?
+- Has this motif changed value or merely repeated?
+- Does this chapter create new forward pressure?
+- If removed, is the cluster truly poorer or merely shorter?
+
+The **current progression record must describe the post-edit cluster**, not preserve the ambitions of earlier drafts.
+
+## 8. Claude/editor handoff requirement
+
+After a cold-read/editor pass, Claude must not simply return edited files. It must also output a structured **Chapter Revision Handoff** for Storybible synchronization.
+
+For every changed chapter:
+
+1. chapter/file;
+2. editorial verdict;
+3. progression before;
+4. progression after;
+5. exact progression delta;
+6. functions retained;
+7. functions cut or moved;
+8. parking classification for each reusable removed function;
+9. receiving chapter if moved;
+10. canon impact (`NONE / PROJECTION_ONLY / CANON_REVIEW_REQUIRED`);
+11. changed reader expectation/cluster effect;
+12. any `OPEN.*` accidentally approached or newly exposed.
+
+The handoff should summarize removed material; it need not reproduce entire deleted passages.
+
+## 9. Reuse rule
+
+Parked material has **no right of return**.
+
+Before reuse it must again pass:
+
+- current canon/chronology;
+- character knowledge and object state;
+- scene necessity;
+- cluster necessity;
+- motif freshness;
+- reader-experience need.
+
+A passage is not restored because it was expensive to research, beautifully written or once approved.
+
+## 10. Initial legacy parked material
+
+The registry currently preserves several earlier known examples:
+
+- a first-steps/home scene — potentially useful but unplaced;
+- an aesthetically successful Vastenavond/market scene — better treated as world/backdrop unless later causally earned;
+- an explicit Claes-birth/Brevísima date-link — rejected and not available for resurrection.
+
+The 19 August Claude cold-reader/editor pass must be ingested into the same format from its explicit editorial handoff. The paired manuscript files already prove that revision occurred; the semantic disposition should come from the editor's stated reasons and parking decisions, not be guessed from file deletion alone.
+```
+
+---
+
+# SOURCE FILE: `narrative/manuscript_progression.yaml`
+
+```yaml
+schema_version: 1.0.0
+kind: ManuscriptProgressionRegistry
+purpose: >-
+  Tracks the current manuscript projection separately from canon: what each chapter currently dramatizes, what reader/character progression it now carries after revision, and how that differs from earlier manuscript versions. Canon truth is not deleted merely because prose is cut, and cut prose does not remain an active Narrative Instance merely because it once existed.
+
+status_vocabulary:
+  manuscript_state: [PLANNED, DRAFT, CURRENT, REVISE, MERGE_PENDING, CUT_FROM_MANUSCRIPT, SUPERSEDED]
+  placement_state: [ACTIVE_HERE, MOVED_ELSEWHERE, PARKED, OFFPAGE_BACKSTORY, OFFPAGE_BACKLINE, BACKDROP_ONLY, DISCARDED]
+
+revision_contract:
+  required_fields_after_substantial_editor_pass:
+  - chapter_ref
+  - manuscript_file
+  - revision_date
+  - editorial_verdict
+  - progression_before
+  - progression_after
+  - progression_delta
+  - functions_retained
+  - functions_removed_or_moved
+  - parked_material_refs
+  - canon_impact
+  - downstream_reader_expectation
+  rules:
+  - "A chapter's current progression describes only what the current manuscript actually delivers."
+  - "If a beat is cut, remove that beat/function from the chapter progression even when the underlying Story Claim remains canon."
+  - "If material moves to another chapter, the source chapter records MOVED_ELSEWHERE and the receiving chapter must explicitly adopt the function before it is considered active again."
+  - "PARKED material is not active manuscript truth or scene placement. It is a reusable editorial asset governed by narrative/parked_material.yaml."
+  - "Canon impact must be one of NONE, PROJECTION_ONLY, CANON_REVIEW_REQUIRED. Editorial cutting normally has NONE or PROJECTION_ONLY impact."
+  - "Do not infer that an event was removed from story truth merely because its exposition/scene was cut. Check DEC/STC/NI layers separately."
+
+current_manuscript_set:
+- chapter_ref: CH.PROLOGUE.DE_BLADZIJDE.1542
+  manuscript_file: 1542-12-08-de-bladzijde.md
+  story_time: '1542-12-08'
+  title: De Bladzijde
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+  revision_lineage_note: "A shorter post-cold-reader version exists in the 19 August manuscript set; exact progression delta must be recorded from the editor handoff rather than reconstructed from deleted prose alone."
+
+- chapter_ref: CH.DE_DREMPEL.1547
+  manuscript_file: 1547-04-01-de-drempel.md
+  story_time: '1547-04-01'
+  title: De Drempel
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+
+- chapter_ref: CH.DE_LEI.1552
+  manuscript_file: 1552-01-15-de-lei.md
+  story_time: '1552-01-15'
+  title: De Lei
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+
+- chapter_ref: CH.HET_WAPEN.1553
+  manuscript_file: 1553-08-15-het-wapen.md
+  story_time: '1553-08-15'
+  title: Het Wapen
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+
+- chapter_ref: CH.DE_KRAAI.1553
+  manuscript_file: 1553-10-01-de-kraai.md
+  story_time: '1553-10-01'
+  title: De Kraai
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+
+- chapter_ref: CH.DE_KRAAN.1553
+  manuscript_file: 1553-11-05-de-kraan.md
+  story_time: '1553-11-05'
+  title: De Kraan
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+
+- chapter_ref: CH.DE_WEGEN.1553
+  manuscript_file: 1553-12-10-de-wegen.md
+  story_time: '1553-12-10'
+  title: De Wegen
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+
+- chapter_ref: CH.HET_ZAND.1554
+  manuscript_file: 1554-01-05-het-zand.md
+  story_time: '1554-01-05'
+  title: Het Zand
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+
+- chapter_ref: CH.HET_GIST.1554
+  manuscript_file: 1554-01-15-het-gist.md
+  story_time: '1554-01-15'
+  title: Het Gist
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+
+- chapter_ref: CH.DE_WINNAAR.1554
+  manuscript_file: 1554-02-10-de-winnaar.md
+  story_time: '1554-02-10'
+  title: De Winnaar
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+
+- chapter_ref: CH.HET_ZAAD.1554
+  manuscript_file: 1554-03-01-het-zaad-in-de-donkere-aarde.md
+  story_time: '1554-03-01'
+  title: Het Zaad in de Donkere Aarde
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+  revision_lineage_note: "Substantial shortening occurred in the 19 August editor pass; exact removed functions/material belong in the revision handoff and parked-material registry."
+
+- chapter_ref: CH.DE_KAMER.1554
+  manuscript_file: 1554-03-05-de-kamer.md
+  story_time: '1554-03-05'
+  title: De Kamer
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+
+- chapter_ref: CH.DE_WIEG.1554
+  manuscript_file: 1554-04-10-de-wieg.md
+  story_time: '1554-04-10'
+  title: De Wieg
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+
+- chapter_ref: CH.DE_LADINGEN.1564
+  manuscript_file: 1564-04-04-de-ladingen-van-antwerpen.md
+  story_time: '1564-04-04'
+  title: De Ladingen van Antwerpen
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+
+- chapter_ref: CH.DE_VERKEERDE_KIST.1564
+  manuscript_file: 1564-04-14-de-verkeerde-kist.md
+  story_time: '1564-04-14'
+  title: De Verkeerde Kist
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+
+- chapter_ref: CH.DE_KIES_VAN_BOOM.1564
+  manuscript_file: 1564-04-22-de-kies-van-boom.md
+  story_time: '1564-04-22'
+  title: De Kies van Boom
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+
+- chapter_ref: CH.DE_LOOG.1564
+  manuscript_file: 1564-04-29-de-loog-van-antwerpen.md
+  story_time: '1564-04-29'
+  title: De Loog van Antwerpen
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+
+- chapter_ref: CH.DE_DOOD_VAN_SOL.1564
+  manuscript_file: 1564-07-20-de-dood-van-sol.md
+  story_time: '1564-07-20'
+  title: De Dood van Sol
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+
+- chapter_ref: CH.DE_MARKT_VAN_DELFT.1584
+  manuscript_file: 1584-07-14-de-markt-van-delft.md
+  story_time: '1584-07-14'
+  title: De Markt van Delft
+  manuscript_state: CURRENT
+  latest_known_editor_pass: '2026-08-19'
+  revision_lineage_note: "A shorter post-cold-reader version exists in the 19 August manuscript set; exact progression delta should come from the editor handoff."
+
+revision_history: []
+```
+
+---
+
+# SOURCE FILE: `narrative/parked_material.yaml`
+
+```yaml
+schema_version: 1.0.0
+kind: ParkedNarrativeMaterialRegistry
+purpose: >-
+  Preserves useful material removed during editorial passes without falsely treating it as active manuscript placement or current scene canon. This registry stores summaries and reuse constraints, not a second prose archive.
+
+status_vocabulary:
+  - PARKED_FUTURE_CHAPTER
+  - PARKED_BACKSTORY
+  - PARKED_BACKLINE
+  - PARKED_BACKDROP
+  - PARKED_MOTIF_RESERVE
+  - MOVED_CONFIRMED
+  - DISCARDED_PROSE
+  - REJECTED_STORY_OPTION
+
+definitions:
+  PARKED_FUTURE_CHAPTER: "A written or designed beat may become an on-page scene later, but no destination is yet canonized."
+  PARKED_BACKSTORY: "The underlying story event/state remains part of character/history continuity, but need not be dramatized on-page."
+  PARKED_BACKLINE: "An off-page causal line continues during the story and may later create plot pressure or consequences."
+  PARKED_BACKDROP: "World/sensory/social material may enrich later scenes but carries no required causal event."
+  PARKED_MOTIF_RESERVE: "A recurring image/object/phrase/function has been removed here to protect freshness but may recur later if its value has changed."
+  MOVED_CONFIRMED: "The material/function has a named receiving chapter/scene and is no longer merely parked."
+  DISCARDED_PROSE: "The prose is retired; underlying canon must be checked separately."
+  REJECTED_STORY_OPTION: "The proposed event/interpretation itself is rejected and must not return unless reopened by an explicit author decision."
+
+hard_rules:
+- "Parking prose never makes the parked scene/event canon by itself."
+- "Cutting prose never deletes an existing DEC/STC/ENT/REL/ARC fact by itself."
+- "Every parked item must say whether its underlying story truth is CANON, OPEN, PROPOSED or NONE/ATMOSPHERIC."
+- "A parked item cannot be silently restored into prose. Before reuse, check current canon, chronology, character knowledge and whether another chapter now performs the same function."
+- "If restored, record the new receiving chapter/scene and change status to MOVED_CONFIRMED."
+- "Do not store large verbatim cut passages here. Store a concise content/function summary plus a pointer to the originating manuscript/editor handoff when available."
+- "Material parked as BACKDROP may be distributed in fragments; it should not be resurrected as an exposition block merely because it was once written as one."
+- "Motif reserve requires changed value on recurrence; repetition of the same symbolic beat is not reuse justification."
+
+items:
+- id: PARK.EARLY_GOES.FIRST_STEPS_HOME.001
+  status: PARKED_FUTURE_CHAPTER
+  origin_context: early Goes childhood development, pre-current 1547 opening
+  summary: "A first-steps/home scene was previously judged internally strong but left without a current chapter placement."
+  underlying_story_truth: PLAUSIBLE_FICTION_SPACE
+  possible_functions: [embodied_childhood, intact_household, Tanneken_Cornelis_parenting]
+  reuse_guardrail: "Do not add merely to make childhood fuller; reuse only if a later structural gap requires a distinct function not already carried by De Drempel and the 1552–1554 cluster."
+
+- id: PARK.EARLY_GOES.VASTENAVOND_MARKET.001
+  status: PARKED_BACKDROP
+  origin_context: early Goes childhood development
+  summary: "A written Vastenavond/market passage was removed from the active early chapter despite working aesthetically."
+  underlying_story_truth: NONE_ATMOSPHERIC_UNLESS_SEPARATELY_CANONIZED
+  possible_functions: [Goese_urban_life, sensory_city, feast_calendar, crowd_world]
+  reuse_guardrail: "Reuse as distributed city texture or only if a later scene earns the feast as causal pressure; do not restore as a standalone picturesque scene by default."
+
+- id: PARK.PROLOGUE.EXPLICIT_BIRTH_DATE_LINK.001
+  status: REJECTED_STORY_OPTION
+  origin_context: early prologue/childhood development
+  summary: "An explicit symbolic birth-scene/date linkage between Claes and the Las Casas/Brevísima line was rejected as too direct."
+  underlying_story_truth: REJECTED
+  reuse_guardrail: "Do not restore an explicit destiny/date-link device. The later relation is testimony/transmission/responsibility, not shared-date symbolism."
+
+editor_pass_ingest_queue:
+  status: OPEN_INGEST
+  note: >-
+    The 19 August 2026 Claude cold-reader/editor pass produced additional CUT/PARK decisions across the current manuscript. The latest and prior chapter files are available in the conversation, but exact author/editor classifications of each removed beat should be imported from the Claude editor handoff rather than guessed solely from textual diff. For every such item create one PARK.* record and one revision_history entry in narrative/manuscript_progression.yaml.
+```
+
+---
+
 # SOURCE FILE: `narrative/domain_scene_packs.yaml`
 
 ```yaml
@@ -621,7 +1052,7 @@ packs:
 # SOURCE FILE: `narrative/editorial_gates.yaml`
 
 ```yaml
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: EditorialGateRegistry
 purpose: "Round D authoring quality gates. These records govern drafting and revision; they do not create story canon."
 gates:
@@ -641,6 +1072,34 @@ gates:
     MERGE: "Necessary material duplicates another scene or can gain force by sharing one scene-turn with it."
     CUT: "No indispensable function, or all functions are served better elsewhere."
   hard_rule: "Historical richness, research effort, thematic symbolism or a beautiful passage are never sufficient reasons by themselves to retain a scene."
+
+- id: GRD.EDITORIAL.CLUSTER_NECESSITY
+  type: EditorialGate
+  status: ACTIVE_AUTHORING_POLICY
+  question: "Does the chapter/scene still add a distinct progression when the surrounding cluster is read as one experience?"
+  tests:
+  - "Has Claes already learned or enacted substantially the same lesson in the preceding cluster?"
+  - "Is this a new relationship movement, or the same relationship beat in a different setting?"
+  - "Has the same motif recently carried the same dramatic value rather than a transformed value?"
+  - "Does the chapter change forward pressure, or merely deepen a state the reader already understands?"
+  - "Would removing this unit make the cluster causally, emotionally or cognitively poorer rather than only shorter?"
+  rule: "A scene/chapter may pass local necessity and still receive MERGE or CUT because cumulative repetition weakens the book-level progression."
+
+- id: GRD.EDITORIAL.CUT_DISPOSITION
+  type: EditorialGate
+  status: ACTIVE_AUTHORING_POLICY
+  question: "What happens to the material/function after RETAIN/REVISE/MERGE/CUT?"
+  required_after_substantial_edit:
+  - "Update narrative/manuscript_progression.yaml with progression_before, progression_after and progression_delta."
+  - "For every removed function, classify it as deleted, moved, parked future chapter, backstory, backline, backdrop or motif reserve."
+  - "Create/update PARK.* records in narrative/parked_material.yaml for reusable removed material."
+  - "State canon impact separately: NONE, PROJECTION_ONLY or CANON_REVIEW_REQUIRED."
+  - "If material is moved, name both source and receiving chapter/scene; until the receiving unit explicitly adopts it, treat it as PARKED rather than active."
+  guardrails:
+  - "CUT is an editorial verdict, not automatic de-canonization."
+  - "Parked prose is not active manuscript placement."
+  - "Do not restore cut material merely because it is historically rich or beautifully written. Reuse must pass scene and cluster necessity again."
+  - "Do not store long verbatim deleted passages in the Storybible; store summary, function, provenance and reuse constraints."
 
 - id: GRD.EDITORIAL.PROSE_QUALITY
   type: EditorialGate
@@ -718,12 +1177,14 @@ gates:
   review_order:
   - verdict
   - scene_necessity
+  - cluster_necessity
   - fatal_or_primary_problem
   - causality_and_character
   - pacing_and_reader_experience
   - prose_quality
   - continuity_or_historical_risk
   - retain_revise_merge_cut
+  - cut_disposition_and_progression_update
   final_rule: "A technically correct scene may still be weak fiction. Historical accuracy and canon consistency are necessary constraints, not proof that the scene works."
 ```
 

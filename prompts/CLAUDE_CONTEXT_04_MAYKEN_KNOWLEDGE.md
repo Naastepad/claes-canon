@@ -2,11 +2,12 @@
 
 > Generated projection; never edit by hand. GitHub source files remain authoritative.
 > Treat each SOURCE FILE section as the original source file.
+> Do not use this pack as permission for free repository discovery; follow the task router in CLAUDE_CONTEXT_INDEX.md.
 
 - source branch: `main`
-- source commit at generation: `7407d17c0c7ad5cba3df7a706b3cec6ee4322572`
-- generated UTC: `2026-08-18T17:20:23+00:00`
-- included files: `4`
+- source commit at generation: `d05b988e7b24e06cfdef0fc367975d16fb57fb98`
+- generated UTC: `2026-08-19T08:30:50+00:00`
+- included files: `5`
 
 Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pack does not alter authority.
 
@@ -19,7 +20,7 @@ Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pa
 
 **ID:** `SB.CLAES.MAYKEN_LAMPERT`  
 **Status:** CANONICAL DETAIL MODULE  
-**Decision:** `DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14`  
+**Decisions:** `DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14`, `DEC.CLAES_MAYKEN.CHILDHOOD_ACQUAINTANCE.2026-08-19`  
 **Historical source dossier:** `sources/SRC-HIST-GOES-LAMPERT-APOTHECARY-001.md`
 
 This dossier is the detailed authority for the identity and historical embedding of the character formerly labeled only **geliefde / apothekersdochter**. It is synchronized to the later no-cipher memoriaal decision: Mayken is not a cryptographic solver and no special Dodoens carrier is required.
@@ -33,7 +34,8 @@ She is canonically:
 - daughter of **Adriaen Jacobsz. Lampert** in novel genealogy;
 - granddaughter of the older Goese apothecary **Jacob/Jacop Lampart/Lambert** and the historical household figure **Merricken** in novel genealogy;
 - raised in a material/apothecary environment in Goes;
-- approximately three to four years younger than Claes.
+- approximately three to four years younger than Claes;
+- already known to Claes as a child before the fire of 18 May 1554, without childhood-romance framing.
 
 Mayken's mother remains fictionally **open**. Do not invent a historical wife of Adriaen merely to close the pedigree.
 
@@ -56,6 +58,7 @@ Supported but not literally proved by one act:
 Explicit novel canon, not archival fact:
 - Mayken Adriaensdr. Lampert exists as Adriaen's daughter;
 - Adriaen is her father and Jacob/Merricken her paternal grandparents;
+- Mayken and Claes know one another as children before 18 May 1554;
 - Mayken becomes Claes' beloved;
 - her precise childhood experiences, education and later relationship biography.
 
@@ -67,7 +70,7 @@ A **Mayken**, explicitly `huisvrouw Jacop Lampart`, occurs in the direct histori
 
 Do **not** claim this proves a grandmother-to-granddaughter naming pattern. The archive also uses **Merricken** for the wife of Jacop/Jacob the apothecary. Whether Mayken and Merricken are the same woman, variant forms, successive wives or different households remains unresolved.
 
-## 4. Age and chronology
+## 4. Age, chronology and childhood acquaintance
 
 Working birth: **ca. 1546, Goes**.
 
@@ -78,7 +81,11 @@ Working birth: **ca. 1546, Goes**.
 - 1584: about thirty-seven or thirty-eight;
 - 1602: mid-fifties.
 
-The age gap with Claes is roughly three to four years. They may have known of one another in childhood without being written as childhood sweethearts.
+The age gap with Claes is roughly three to four years.
+
+Under `DEC.CLAES_MAYKEN.CHILDHOOD_ACQUAINTANCE.2026-08-19`, they **do know one another before the fire**. The childhood connection is intentionally small-scale and ordinary: child contact in Goes, play, and early moments in which Mayken's way of recognizing plants/material differences becomes visible to Claes.
+
+This is not a childhood-love story. The adult relation may carry recognition and rediscovery, but not predestination, “first love” mythology or the suggestion that the children already understood their later bond.
 
 ## 5. Shared fire, different loss
 
@@ -94,7 +101,7 @@ Novel function:
 
 This difference is essential. She is not Claes' trauma duplicate. She carries a counter-memory: fire can destroy, yet hands can return to work.
 
-## 6. Apothecary formation
+## 6. Apothecary formation and character method
 
 Mayken grows up around practical materia medica and apothecary work. Her expertise is embodied and operational rather than academic:
 - recognizing plant material by form, smell, texture and condition;
@@ -105,6 +112,10 @@ Mayken grows up around practical materia medica and apothecary work. Her experti
 - knowing that names, materials and preparations can diverge.
 
 Ordinary Dodoens use can belong naturally to this world where historically appropriate. It no longer has any special cipher, nomenclator or key function.
+
+Her governing character value is **material fidelity**. Her habitual questions are closer to “what is it?”, “in what condition?”, “what changed?” and “what would show that we are wrong?” than to Claes' attraction to wider hidden patterns.
+
+That strength also has a shadow: Mayken may become impatient with a hypothesis, symbolic relation or human meaning that cannot yet be materially demonstrated. Her empiricism is a necessary counterweight to Claes, not an automatically superior epistemology.
 
 Guardrail: do not give Mayken an unsupported university education, formal physician status or later seventeenth-century guild office.
 
@@ -133,11 +144,11 @@ This gives her competence without making the relationship mechanically dependent
 
 ## 8. Relationship with Claes
 
-`REL.CLAES.BELOVED` is the relationship **Claes ↔ Mayken**.
+`REL.CLAES.BELOVED` / `REL.CLAES.MAYKEN.CONJUNCTIO` is the relationship **Claes ↔ Mayken**.
 
 Dynamic:
 
-**separate Goese histories → material proximity → collaborative verification → earned trust → love without possession → sensory/spiritual companionship.**
+**childhood acquaintance with separate Goese lives → separation/different fire aftermaths → later recognition and material proximity → collaborative verification → earned trust → love without possession → sensory/spiritual companionship.**
 
 Mayken must never function merely as a reward for Claes' suffering or as a therapist. She has her own competence, history and judgement. She can contradict Claes because she knows things he does not.
 
@@ -146,6 +157,8 @@ Their epistemologies differ:
 - Mayken tests matter directly and trusts trained sensation, repeatability and practical contradiction.
 
 Her presence later on the road toward Enkhuizen helps Claes recover the *sinne* because she draws him back into matter: smell, weather, touch, plants, preparation, food, fatigue, sound and shared physical travel. The recovery remains Claes' own work.
+
+The mature relation must allow the reverse influence as well: Claes can sometimes see a relation or possibility before Mayken believes it materially established. Their strongest scenes should therefore produce reciprocal revision rather than one person permanently correcting the other.
 
 ## 9. Name use
 
@@ -161,10 +174,13 @@ Avoid modernizing her to *Maaike* in the sixteenth-century narrative voice.
 2. Adriaen's apothecary identity is strongly supported but remains reconstruction where historical precision matters.
 3. Jacob → Adriaen → Mayken is novel genealogy built on historical anchors, not discovered genealogy.
 4. `Mayken huisvrouw Jacop Lampart` (1543) supplies an attested name environment, not proof of Mayken's grandmother.
-5. Ordinary Dodoens use is allowed; the retired special Dodoens carrier is not.
-6. Mayken shares the 1554 fire horizon with Claes but not his exact losses.
-7. She contributes to Claes' recovery; she does not perform or complete it for him.
-8. She may assist the direct chemical reveal, but she is not a cryptographic key-holder or decoder.
+5. Claes and Mayken know one another before the 1554 fire, but are **not** childhood sweethearts.
+6. Ordinary Dodoens use is allowed; the retired special Dodoens carrier is not.
+7. Mayken shares the 1554 fire horizon with Claes but not his exact losses.
+8. She contributes to Claes' recovery; she does not perform or complete it for him.
+9. She may assist the direct chemical reveal, but she is not a cryptographic key-holder or decoder.
+10. Material verification is her strength and may also become her limitation; do not write her as an infallible corrective to Claes.
+11. Load `storybible/CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md` for stable character behaviour and shadow.
 ```
 
 ---
@@ -172,7 +188,7 @@ Avoid modernizing her to *Maaike* in the sixteenth-century narrative voice.
 # SOURCE FILE: `narrative/mayken_independent_arc.yaml`
 
 ```yaml
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: NarrativeArcExtension
 records:
 - id: ARC.MAYKEN.LIFE
@@ -181,6 +197,7 @@ records:
   canon_status: CANON
   protagonist: ENT.PERSON.BELOVED
   decision_id: DEC.MAYKEN.INDEPENDENT_ARC.2026-08-16
+  relationship_decision_id: DEC.CLAES_MAYKEN.CHILDHOOD_ACQUAINTANCE.2026-08-19
   identity_note: "ENT.PERSON.BELOVED is the legacy entity ID for the resolved character Mayken Adriaensdr. Lampert. Identity is not open."
 
   phases:
@@ -190,8 +207,10 @@ records:
     fixed_state:
     - "Mayken grows up in the fictional daughter-line of the historically anchored Lampert apothecary environment."
     - "Her formation is practical: plants, substances, storage, weight, condition, preparation and names that may not match matter perfectly."
+    - "Before the 1554 fire she knows Claes as an ordinary Goese child acquaintance/friend through play and early plant/material observation; this is not childhood romance."
     value_movement: "dependence -> trained attention"
     contrast_with_claes: "Claes is drawn toward hidden order and pattern; Mayken begins with whether the thing in her hand is actually what someone says it is."
+    relationship_guardrail: "The childhood acquaintance may seed later recognition, never predestination or a waiting-for-Claes identity."
 
   - id: ARC.MAYKEN.LIFE.P02
     label: "Brand, verlies en herstel"
@@ -199,9 +218,10 @@ records:
     fixed_state:
     - "The Lampert property De Zwaene belongs to Mayken's fictional childhood fire horizon and is historically documented as burned property after 1554."
     - "Her household is not annihilated like Claes' household."
+    - "Claes and Mayken follow separate post-fire lives; continuous contact is not required."
     value_movement: "material security -> damaged continuity -> rebuilding competence"
     function: "Mayken learns a counter-truth to Claes' wound: destruction is real, but damaged material life can sometimes be sorted, repaired, replaced and worked again."
-    guardrail: "Do not make this a lesser version of Claes' trauma or invent identical bereavements."
+    guardrail: "Do not make this a lesser version of Claes' trauma, invent identical bereavements or turn childhood acquaintance into continuous off-screen romance."
 
   - id: ARC.MAYKEN.LIFE.P03
     label: "Volwassen vakkennis wordt eigen oordeel"
@@ -216,7 +236,7 @@ records:
     - "a kruidenvrouw-like practical role without unsupported formal medical status"
     guardrails:
     - "Do not silently copy Cornelis' prosecution arc onto Adriaen."
-    - "Do not make Mayken's independence begin only when Claes notices her."
+    - "Do not make Mayken's independence begin only when Claes notices or re-encounters her."
 
   - id: ARC.MAYKEN.LIFE.P04
     label: "Materiële tegenspraak en gedeeld risico"
@@ -269,7 +289,7 @@ records:
 # SOURCE FILE: `narrative/mayken_relationship_projection.yaml`
 
 ```yaml
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: NarrativeRelationshipExtension
 records:
 - id: REL.CLAES.MAYKEN.CONJUNCTIO
@@ -282,6 +302,7 @@ records:
   - DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14
   - DEC.MAYKEN.INDEPENDENT_ARC.2026-08-16
   - DEC.CLAES_MAYKEN.CONJUNCTIO.2026-08-16
+  - DEC.CLAES_MAYKEN.CHILDHOOD_ACQUAINTANCE.2026-08-19
   identity_note: "ENT.PERSON.BELOVED is Mayken Adriaensdr. Lampert; the legacy entity ID does not indicate an open identity."
   arcs:
   - ARC.CLAES.SINNE_RECOVERY
@@ -289,11 +310,23 @@ records:
   - ARC.CLAES.GREAT_WORK.AUTHORIAL
 
   movement:
+  - phase: "childhood acquaintance"
+    story_time: {earliest: '1553-01-01', latest_exclusive: '1554-05-18', precision: approximate}
+    claes: "older child already inclined toward pattern, game and comparison"
+    mayken: "younger child from an apothecary/material environment already learning to distinguish plant and material differences"
+    relation: "ordinary Goese acquaintance/friendship through play and looking; enough shared memory for later recognition, explicitly not childhood romance"
+    guardrails:
+    - "No predestination or childhood-sweetheart framing."
+    - "Mayken's own curiosity and family work-world must exist independently of Claes."
+  - phase: "separate post-fire lives"
+    story_time: {earliest: '1554-05-18', latest_exclusive: '1566-08-01', precision: approximate}
+    relation: "shared city catastrophe but divergent losses and development; no requirement for continuous contact"
+    guardrail: "Do not turn Mayken into Claes' trauma duplicate or assume an uninterrupted childhood bond."
   - phase: "separate expertise"
     story_time: {earliest: '1566-08-01', latest_exclusive: '1570-01-01', precision: bounded}
     claes: "pattern, memory, hidden order, inherited secrecy"
     mayken: "materia medica, condition, measurement, repeatability, direct contradiction"
-    relation: "proximity without fusion; each can know something the other cannot"
+    relation: "renewed proximity/recognition without fusion; each can know something the other cannot"
   - phase: "collaborative risk"
     story_time: {earliest: '1570-01-01', latest_exclusive: '1571-01-01', precision: year}
     relation: "controlled material reveal becomes a test of trust because error, testimony and consequence are shared without becoming identical responsibilities"
@@ -316,12 +349,59 @@ records:
   - "Does Claes receive relation as correction rather than as confirmation?"
   - "Does the scene preserve two centers of agency?"
   - "If alchemical language is removed from the author's notes, does the human relationship still work causally?"
+  - "If childhood memory is invoked, does it create recognition rather than destiny?"
 
   guardrails:
   - "Conjunctio is an author-side structural function, not mandatory in-world terminology."
   - "Mayken is not a reward, therapist, saint, decoder or missing ingredient."
   - "Claes is not entitled to Mayken because he suffers or completes the Work."
   - "Difference must remain visible after union; sameness would destroy the function of the relationship."
+  - "Childhood acquaintance is canon; childhood romance is not."
+```
+
+---
+
+# SOURCE FILE: `narrative/beloved_recovery.yaml`
+
+```yaml
+schema_version: 1.1.0
+kind: NarrativeRelationshipExtension
+records:
+- id: REL.CLAES.BELOVED.RECOVERY
+  type: RelationshipExtension
+  label: Claes and Mayken — recovery companionship
+  status: CANON_RESOLVED_IDENTITY
+  participants:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.BELOVED
+  identity: "Mayken Adriaensdr. Lampert"
+  identity_status: RESOLVED
+  parent: REL.CLAES.BELOVED
+  decision_ids:
+  - DEC.CLAES.SINNE.2026-08-13
+  - DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14
+  - DEC.MAYKEN.INDEPENDENT_ARC.2026-08-16
+  - DEC.CLAES_MAYKEN.CONJUNCTIO.2026-08-16
+  - DEC.CLAES.ROSE_JOURNEY.2026-08-16
+  - DEC.MAYKEN.ROSE_MATERIA_MEDICA.2026-08-16
+  story_function: "On the road toward Enkhuizen, Claes and Mayken's companionship catalyses Claes' rediscovery of the sinne while Mayken remains an independently motivated adult whose own material judgement, work and limits continue to matter. The author-side Tocht der Rozen may make this recovery sensorially recurrent: trust/faith at departure, hope in the duration of travel, and love becoming caritas through concrete responsibility toward another person."
+  boundaries:
+  - "Mayken accompanies and catalyses; she does not solve or perform Claes' inner transformation for him."
+  - "Her identity is fixed. What remains open is the exact mid-arc family/work trajectory and some relationship chronology, not who she is."
+  - "Love matures toward relation without possession."
+  - "Mayken must retain an objective, judgement or cost of her own in developed scenes."
+  - "The rose symbolism remains author-side and must be dramatized rather than explained."
+  - "Rose-based care must remain historically bounded and may not function as miraculous modern medicine."
+  arc: ARC.CLAES.SINNE_RECOVERY
+  counterpart_arc: ARC.MAYKEN.LIFE
+  relationship_projection: REL.CLAES.MAYKEN.CONJUNCTIO
+  authorial_architecture: ARC.CLAES.GREAT_WORK.AUTHORIAL
+  motif_projection: MOTIF.ROSES.FIDES_SPES_CARITAS
+  location_anchor: ENT.LOC.ENKHUIZEN
+  ko_targets:
+  - KO.RELATIONSHIP
+  - KO.CHARACTER
+  - KO.VALUE
 ```
 
 ---

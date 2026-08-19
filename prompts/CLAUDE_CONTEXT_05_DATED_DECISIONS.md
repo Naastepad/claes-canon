@@ -2,11 +2,12 @@
 
 > Generated projection; never edit by hand. GitHub source files remain authoritative.
 > Treat each SOURCE FILE section as the original source file.
+> Do not use this pack as permission for free repository discovery; follow the task router in CLAUDE_CONTEXT_INDEX.md.
 
 - source branch: `main`
-- source commit at generation: `7407d17c0c7ad5cba3df7a706b3cec6ee4322572`
-- generated UTC: `2026-08-18T17:20:23+00:00`
-- included files: `18`
+- source commit at generation: `d05b988e7b24e06cfdef0fc367975d16fb57fb98`
+- generated UTC: `2026-08-19T08:30:50+00:00`
+- included files: `19`
 
 Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pack does not alter authority.
 
@@ -770,6 +771,92 @@ decisions:
 
 ---
 
+# SOURCE FILE: `canon/DECISIONS_CHARACTER_WEB_2026-08-19.yaml`
+
+```yaml
+schema_version: 1.0.0
+kind: CanonDecisionRegistryExtension
+decisions:
+- id: DEC.HISTORICAL_GAPS.FICTIONAL_CHARACTERIZATION.2026-08-19
+  type: AuthoringDecision
+  status: CANON
+  decision: >-
+    Absence of historical evidence is not a prohibition on fictional specification. When a recurring person, place, object or practice requires stable characterization for the novel, an evidentiary gap may be filled deliberately as fiction canon, provided that no known evidence is contradicted, the choice is historically plausible, its fictional status is explicit, and source-backed fact remains separately labelled.
+  rationale: >-
+    Documentary silence often defines the legitimate imaginative space of historical fiction. Leaving every unknown unspecified produces unstable or faceless recurring characters; silently presenting invention as fact corrupts provenance. The project therefore distinguishes historical uncertainty from authorial freedom and records approved fictional fills for continuity.
+  affects:
+  - AUTHORING_POLICY.md
+  - storybible/CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md
+  guardrails:
+  - Historical UNKNOWN remains UNKNOWN in the evidence layer even when the novel fixes a fictional answer.
+  - Fiction canon may not be cited or phrased as archival fact.
+  - A new historical source that conflicts with a fictional fill triggers review; it does not silently rewrite canon.
+  - Do not fill gaps merely because they exist; the detail should carry continuity, character, causal, spatial or reader-experience value.
+
+- id: DEC.CHARACTER_WEB.ARCHETYPAL_LENS.2026-08-19
+  type: AuthorialArchitectureDecision
+  status: CANON
+  decision: >-
+    The core Claes cast uses archetypal functions as an author-side character-web lens, never as in-world labels or complete character definitions. Each archetypal function must be individualized through concrete habits, values, contradictions, relationships and a shadow tendency that can create pressure or error.
+  affects:
+  - narrative/character_web_archetypes.yaml
+  - entities/CHARACTERIZATION_2026-08-19.yaml
+  - storybible/CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md
+  guardrails:
+  - Do not make characters explain their archetypal function.
+  - Do not force every person into an archetype.
+  - Archetypal function does not replace historical biography, motive, desire, class, confession, work or material circumstance.
+  - The character web exists to generate contrast and pressure, not to turn supporting characters into symbolic furniture.
+
+- id: DEC.CHARACTER_WEB.CORE_CAST.2026-08-19
+  type: CharacterizationDecision
+  status: CANON
+  decision: >-
+    The recurring core cast is differentiated by a stable authorial character web: Claes as seeker/observer/witness moving toward integration; Cornelis as father-law/steward and gatekeeper; Tanneken as embodied household wisdom and care; Jan as brother-double and action principle; Puttus as teacher of word, distinction and interpretation; Mayken as independent material counterpart and later conjunctio-partner; John Dee as magician/transformative mentor whose insight risks overpatterning and control; Willem Silvius as mediator, printer and pragmatic transmission principle; and Bartolome de las Casas as witness/conscience whose testimony must leave his control.
+  affects:
+  - entities/CHARACTERIZATION_2026-08-19.yaml
+  - narrative/character_web_archetypes.yaml
+  - storybible/CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md
+  guardrails:
+  - These functions are authorial lenses, not one-word personality summaries.
+  - Every core character retains desire, agency and contradiction outside Claes' immediate development.
+  - No character exists only to deliver the thematic lesson named by the web.
+
+- id: DEC.PUTTUS.FICTIONAL_CHARACTERIZATION.2026-08-19
+  type: CharacterizationDecision
+  status: CANON
+  decision: >-
+    Because Puttus' historical age, appearance and 1550s teaching-room details are undocumented, the novel may fix a distinct fictional characterization without changing that evidence status. In fiction canon Claes finds Puttus' age hard to estimate; Puttus rarely raises his voice, corrects precisely and economically, often lets silence carry discipline, handles his small book collection with care, and teaches in a sparse, typically cold small room whose exact historical location is deliberately not claimed.
+  affects:
+  - ENT.PERSON.NICOLAES_PUTTUS
+  - entities/GOES_PUTTUS_1512_1554.yaml
+  - storybible/GOES_SCHOOLING_PUTTUS_1550_1554.md
+  - storybible/CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md
+  guardrails:
+  - The characterization is FICTION_CANON, not recovered biography.
+  - Do not infer or publish a historical birth year, age, death year or exact Goese school building from the characterization.
+  - Puttus' quiet discipline may wound or shame as well as teach; he is not an infallible humanist sage.
+  - Puttus remains pedagogical/humanist rather than a convenient proto-Protestant oracle.
+
+- id: DEC.CLAES_MAYKEN.CHILDHOOD_ACQUAINTANCE.2026-08-19
+  type: RelationshipDecision
+  status: CANON
+  decision: >-
+    Claes and Mayken Adriaensdr. Lampert know one another in Goes before the fire of 18 May 1554. Their childhood relationship is an acquaintance/friendship formed through ordinary child contact, play and Mayken's early material/botanical way of looking; it is not childhood romance. Their later adult relationship can therefore contain recognition and rediscovery rather than a wholly first encounter.
+  affects:
+  - ENT.PERSON.BELOVED
+  - REL.CLAES.MAYKEN.CONJUNCTIO
+  - entities/MAYKEN_LAMPERT.yaml
+  - storybible/MAYKEN_LAMPERT.md
+  - storybible/CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md
+  guardrails:
+  - No predestination, childhood-sweetheart framing or retroactive romantic destiny.
+  - Mayken's childhood scenes must preserve her own curiosity, work-world and judgement.
+  - Shared exposure to the 1554 fire does not give Claes and Mayken identical loss biographies.
+```
+
+---
+
 # SOURCE FILE: `canon/DECISIONS_CLAES_CORNELIS_RELATION_2026-08-18.yaml`
 
 ```yaml
@@ -1166,7 +1253,7 @@ decisions:
 # SOURCE FILE: `canon/DECISIONS_PUTTUS_2026-08-18.yaml`
 
 ```yaml
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: CanonDecisionRegistry
 decisions:
 - id: DEC.CLAES.PUTTUS_MASTER.2026-08-18
@@ -1187,10 +1274,12 @@ decisions:
   supported_by:
   - SC.HIST.GOES.PUTTUS.SCHOOLMASTER_1512.001
   - SC.HIST.GOES.LATIN_SCHOOL_1569.001
+  characterization_extension: DEC.PUTTUS.FICTIONAL_CHARACTERIZATION.2026-08-19
   guardrails:
   - Puttus teaching Claes is novel truth, not a documented historical teacher-pupil relationship.
   - Do not state as historical fact that Puttus held the Goese rectorship continuously from 1512 to 1554.
-  - Do not invent Puttus' birth date, death date, appearance, exact age or exact tenure without new evidence.
+  - Puttus' historical birth date, death date, appearance, exact age and exact tenure remain UNKNOWN without new evidence.
+  - Approved fiction-canon characterization may deliberately specify how Claes experiences Puttus' appearance, voice, habits and teaching room under DEC.HISTORICAL_GAPS.FICTIONAL_CHARACTERIZATION.2026-08-19; those details must never be back-presented as historical evidence.
   - Do not infer that Claes completed a full formal Goese Latin-school curriculum before Reimerswaal.
   - Zierikzee remains the intended more sustained pre-fire Latin-school continuation; Reimerswaal remains the actual post-fire route.
 ```

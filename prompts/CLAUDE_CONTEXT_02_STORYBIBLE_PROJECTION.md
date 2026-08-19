@@ -2,10 +2,11 @@
 
 > Generated projection; never edit by hand. GitHub source files remain authoritative.
 > Treat each SOURCE FILE section as the original source file.
+> Do not use this pack as permission for free repository discovery; follow the task router in CLAUDE_CONTEXT_INDEX.md.
 
 - source branch: `main`
-- source commit at generation: `7407d17c0c7ad5cba3df7a706b3cec6ee4322572`
-- generated UTC: `2026-08-18T17:20:23+00:00`
+- source commit at generation: `d05b988e7b24e06cfdef0fc367975d16fb57fb98`
+- generated UTC: `2026-08-19T08:30:50+00:00`
 - included files: `15`
 
 Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pack does not alter authority.
@@ -711,9 +712,9 @@ These are now correctly open. They no longer hide as missing story structure.
 ```markdown
 # Goes 1550–1554 — Claes' eerste scholing en Nicolaes van de Put (Puttus)
 
-**Status:** CANON — approved 18 August 2026  
-**Decision:** `DEC.CLAES.PUTTUS_MASTER.2026-08-18`  
-**Story Claim:** `STC.CLAES.PUTTUS_MASTER.001`  
+**Status:** CANON — approved 18 August 2026; characterization refined 19 August 2026  
+**Decisions:** `DEC.CLAES.PUTTUS_MASTER.2026-08-18`, `DEC.PUTTUS.FICTIONAL_CHARACTERIZATION.2026-08-19`  
+**Story Claims:** `STC.CLAES.PUTTUS_MASTER.001`, `STC.CHARACTER.PUTTUS.HERMENEUTIC_MENTOR.001`  
 **World module:** `WORLD.GOES.SCHOOLING_1550_1554`
 
 This dossier governs Claes' education in Goes before his departure to Reimerswaal. It replaces the thinner interpretation in which Goes provided only unspecified elementary schooling and Reimerswaal effectively began his Latin formation from zero.
@@ -725,7 +726,7 @@ P.J. Meertens identifies **Nicolaes van de Put (Puttus)** as schoolmaster in Goe
 
 That establishes a real named Goese humanist schoolmaster one generation before Claes.
 
-What it does **not** establish is Puttus' continuous tenure from 1512 into the 1550s. His birth date, death date, departure date and exact period in office remain unknown.
+What it does **not** establish is Puttus' continuous tenure from 1512 into the 1550s. His birth date, death date, departure date, physical appearance and exact period in office remain unknown.
 
 ### Later Goese anchor
 The episcopal school inspection of **1569** explicitly found seven schools in Goes, including a Latin school. This supports the existence of an older Goese Latin-school tradition but does not fill the documentary gap for every year between 1512 and 1569.
@@ -782,7 +783,24 @@ As Claes' ability becomes evident, Puttus introduces a first learned/humanist la
 
 The story need not claim that Claes has completed an entire formal Latin-school curriculum in Goes. Puttus gives him **a beginning and a direction**.
 
-## 4. Why Zierikzee still matters
+## 4. Fiction characterization inside the evidence gap
+
+Under `DEC.HISTORICAL_GAPS.FICTIONAL_CHARACTERIZATION.2026-08-19`, the absence of a documented 1550s portrait, voice or classroom is treated as legitimate authorial space rather than a command to keep Puttus faceless.
+
+The following details are therefore **FICTION CANON**, not recovered biography:
+
+- Claes cannot readily estimate Puttus' age; this is a child's impression, not a concealed exact age;
+- Puttus rarely raises his voice when displeased; quietness and waiting are part of his authority;
+- his corrections are exact and economical — a finger on a letter, a repeated word, a request to try again;
+- he handles a small working collection of books carefully and economically;
+- the recurring teaching room may be written as small, sparse and often cold;
+- the room is deliberately **not** tied to a claimed archival building or parcel.
+
+This characterization has a shadow. Puttus' silence can sharpen attention, but it can also shame a struggling pupil. Precision can become too closely associated with worth. He is therefore not a frictionless wise mentor.
+
+The governing detailed characterization is `storybible/CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md` and `entities/CHARACTERIZATION_2026-08-19.yaml`.
+
+## 5. Why Zierikzee still matters
 
 Zierikzee is not chosen because Goes supposedly has no Latin teaching. That older explanation is rejected.
 
@@ -792,7 +810,7 @@ Cornelis' pre-fire plan is better understood as progression:
 
 Thus Cornelis' choice reveals ambition for Claes rather than educational necessity.
 
-## 5. What the 1554 fire changes
+## 6. What the 1554 fire changes
 
 The fire does not create the idea that Claes should learn further. That decision already exists.
 
@@ -804,26 +822,30 @@ The educational causal chain is therefore:
 
 Reimerswaal continues an existing educational trajectory. It is not Claes' first literacy and no longer needs to be written as his first encounter with Latin.
 
-## 6. Narrative function
+## 7. Narrative function
 
 Puttus gives Claes an early encounter with the humanist idea that a text is something worked on: read, repeated, corrected, compared and transmitted. That should remain pedagogical before it becomes symbolic.
 
+His deeper narrative function is **disciplined interpretation**. He can teach Claes that a second layer must be supported by what is actually present in the words. That later forms a necessary counterweight to Dee's attraction to hidden relation.
+
 This creates a historically plausible intellectual prehistory for Claes without making him a child prodigy. Antwerp, Silvius and Dee still represent major expansions of his world; Puttus simply ensures that those later encounters grow from an existing learned foundation rather than appearing ex nihilo.
 
-## 7. Hard guardrails
+## 8. Hard guardrails
 
 1. Puttus teaching Claes is **CANON**.
 2. Puttus' continuous historical tenure from 1512 to 1554 is **UNKNOWN**.
-3. Do not invent Puttus' age, birth/death dates, appearance or exact title in 1550–1554 without further evidence.
-4. Do not identify an exact Goese school building for Claes without evidence.
-5. Do not back-project the later Kruisbroeders/Beestenmarkt school location as proven for Claes' years.
-6. Do not claim that Goes lacked Latin teaching before 1554.
-7. Do not claim that Claes completed a full formal Latin curriculum before Reimerswaal.
-8. Zierikzee remains the intended stronger continuation before the fire.
-9. Reimerswaal remains the actual post-fire continuation and must not be written as educational zero.
-10. New archival evidence identifying a successor or proving Puttus absent/dead before Claes' school years would require a new explicit author decision; it does not silently rewrite this canon.
+3. Puttus' historical birth/death dates, exact age, appearance and exact 1550s room remain **UNKNOWN as evidence**.
+4. Approved fictional characterization may specify how Puttus appears and behaves in the novel, but must never be presented as archival fact.
+5. Do not identify the fictional small teaching room with an exact historical Goese school building unless new evidence and a separate decision support it.
+6. Do not back-project the later Kruisbroeders/Beestenmarkt school location as proven for Claes' years.
+7. Do not claim that Goes lacked Latin teaching before 1554.
+8. Do not claim that Claes completed a full formal Latin curriculum before Reimerswaal.
+9. Zierikzee remains the intended stronger continuation before the fire.
+10. Reimerswaal remains the actual post-fire continuation and must not be written as educational zero.
+11. Puttus may train interpretation but must not become a convenient proto-Protestant or anti-ritual mouthpiece.
+12. New archival evidence identifying a successor or proving Puttus absent/dead before Claes' school years would require a new explicit author decision; it does not silently rewrite this canon.
 
-## 8. Provenance
+## 9. Provenance
 
 See:
 
@@ -831,7 +853,10 @@ See:
 - `claims/SOURCE_CLAIMS_PUTTUS_2026-08-18.yaml`;
 - `canon/DECISIONS_PUTTUS_2026-08-18.yaml`;
 - `claims/STORY_CLAIMS_PUTTUS_2026-08-18.yaml`;
+- `canon/DECISIONS_CHARACTER_WEB_2026-08-19.yaml`;
+- `claims/STORY_CLAIMS_CHARACTER_WEB_2026-08-19.yaml`;
 - `entities/GOES_PUTTUS_1512_1554.yaml`;
+- `entities/CHARACTERIZATION_2026-08-19.yaml`;
 - `narrative/world_goes_schooling_1550_1554.yaml`.
 ```
 
@@ -2431,7 +2456,7 @@ arcs:
 # SOURCE FILE: `narrative/relationships.yaml`
 
 ```yaml
-schema_version: 1.5.1
+schema_version: 1.6.0
 kind: NarrativeRelationshipRegistry
 relationships:
 - id: REL.CLAES.CORNELIS
@@ -2582,12 +2607,25 @@ relationships:
   label: Claes and Mayken
   participants: [ENT.PERSON.CLAES, ENT.PERSON.BELOVED]
   status: CANON
-  decision_id: DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14
+  decision_ids:
+  - DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14
+  - DEC.CLAES_MAYKEN.CHILDHOOD_ACQUAINTANCE.2026-08-19
   phases:
-  - label: separate Goese histories and material proximity
+  - label: childhood acquaintance in Goes
+    story_time: {earliest: '1553-01-01', latest_exclusive: '1554-05-18', precision: approximate}
+    value_state: ordinary child acquaintance -> small shared memory
+    function: Claes and Mayken know one another through ordinary Goese child contact, play and early plant/material observation. This gives later recognition a real past without turning the children into lovers or foreshadowing destiny.
+    guardrails:
+    - No childhood romance, childhood-sweetheart framing or predestination.
+    - Mayken's curiosity and family work-world exist independently of Claes.
+  - label: separate post-fire lives
+    story_time: {earliest: '1554-05-18', latest_exclusive: '1566-08-01', precision: approximate}
+    value_state: shared city catastrophe -> divergent loss histories and development
+    function: Both know the 1554 fire, but Claes' household annihilation and Mayken's family material loss/rebuilding remain distinct. Continuous contact is not required.
+  - label: renewed proximity and separate expertise
     story_time: {earliest: '1566-08-01', latest_exclusive: '1570-01-01', precision: bounded}
-    value_state: separate expertise -> potential complementarity
-    function: Both remember the 1554 fire, but Claes' household annihilation and Mayken's family material loss/rebuilding must remain distinct.
+    value_state: remembered acquaintance + separate expertise -> potential complementarity
+    function: Later proximity can carry recognition and rediscovery. Claes brings pattern, memory and secrecy; Mayken has developed material judgement that does not depend on his noticing her.
   - label: reveal collaboration
     story_time: {earliest: '1570-01-01', latest_exclusive: '1571-01-01', precision: year}
     value_state: solitary interpretation -> collaborative material verification
@@ -2606,6 +2644,7 @@ relationships:
   guardrails:
   - Mayken is not a cryptographic solver or key-holder.
   - Ordinary Dodoens use may remain part of her apothecary world; the retired special Dodoens carrier does not.
+  - Childhood memory may support recognition but must never function as proof of romantic destiny.
   ko_targets: [KO.RELATIONSHIP, KO.CONFLICT, KO.VALUE, KO.CHARACTER]
 
 - id: REL.CLAES.RADERMACHER
