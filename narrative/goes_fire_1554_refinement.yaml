@@ -51,7 +51,7 @@ modules:
     - "The specific Nissepat parcel loss is novel canon, not a proven archival parcel identification."
     - "The named family deaths are fictional story casualties, not names recovered from a historical victim list."
   cornelis_salt_interest:
-    canon_status: FICTION_CANON
+    fiction_status: FICTION_CANON
     decision: DEC.CORNELIS.SALTKEET_INTEREST.1554.2026-08-21
     economic_role: "financial/economic ownership interest in one Goese salt-refining keet"
     operational_role: "not daily zoutzieder; specialist lead/workers conduct daily process"
