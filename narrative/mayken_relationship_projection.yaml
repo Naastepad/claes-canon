@@ -1,4 +1,4 @@
-schema_version: 1.1.0
+schema_version: 1.2.0
 kind: NarrativeRelationshipExtension
 records:
 - id: REL.CLAES.MAYKEN.CONJUNCTIO
@@ -12,6 +12,7 @@ records:
   - DEC.MAYKEN.INDEPENDENT_ARC.2026-08-16
   - DEC.CLAES_MAYKEN.CONJUNCTIO.2026-08-16
   - DEC.CLAES_MAYKEN.CHILDHOOD_ACQUAINTANCE.2026-08-19
+  - DEC.MAYKEN.GOES_COUNTER_MEMORY.2026-08-21
   identity_note: "ENT.PERSON.BELOVED is Mayken Adriaensdr. Lampert; the legacy entity ID does not indicate an open identity."
   arcs:
   - ARC.CLAES.SINNE_RECOVERY
@@ -29,13 +30,19 @@ records:
     - "Mayken's own curiosity and family work-world must exist independently of Claes."
   - phase: "separate post-fire lives"
     story_time: {earliest: '1554-05-18', latest_exclusive: '1566-08-01', precision: approximate}
+    claes: "leaves Goes through the Reimerswaal schooling route and carries fragmentary knowledge of the catastrophe and his father's choices"
+    mayken: "remains connected to a different Goese household/rebuilding memory after Lampert property loss"
     relation: "shared city catastrophe but divergent losses and development; no requirement for continuous contact"
-    guardrail: "Do not turn Mayken into Claes' trauma duplicate or assume an uninterrupted childhood bond."
-  - phase: "separate expertise"
+    latent_counter_memory: "Mayken's own/family/local memory can later preserve things about Cornelis' rebuilding and the Nissepat rumour that Claes did not witness"
+    guardrails:
+    - "Do not turn Mayken into Claes' trauma duplicate or assume an uninterrupted childhood bond."
+    - "Mayken's later knowledge must have a credible observation/family/local-memory chain."
+  - phase: "separate expertise and renewed recognition"
     story_time: {earliest: '1566-08-01', latest_exclusive: '1570-01-01', precision: bounded}
-    claes: "pattern, memory, hidden order, inherited secrecy"
-    mayken: "materia medica, condition, measurement, repeatability, direct contradiction"
+    claes: "pattern, memory, hidden order, inherited secrecy and unresolved post-fire father reading"
+    mayken: "materia medica, condition, measurement, repeatability, direct contradiction and a different Goese memory"
     relation: "renewed proximity/recognition without fusion; each can know something the other cannot"
+    posthumous_father_function: "after Cornelis' 1569 death, Mayken may supply partial evidence that changes Claes' reading of why he was sent away without solving the fire or absolving Cornelis"
   - phase: "collaborative risk"
     story_time: {earliest: '1570-01-01', latest_exclusive: '1571-01-01', precision: year}
     relation: "controlled material reveal becomes a test of trust because error, testimony and consequence are shared without becoming identical responsibilities"
@@ -59,6 +66,7 @@ records:
   - "Does the scene preserve two centers of agency?"
   - "If alchemical language is removed from the author's notes, does the human relationship still work causally?"
   - "If childhood memory is invoked, does it create recognition rather than destiny?"
+  - "If Mayken supplies post-fire information, can the text show how she plausibly knows it rather than using her as an exposition oracle?"
 
   guardrails:
   - "Conjunctio is an author-side structural function, not mandatory in-world terminology."
@@ -66,3 +74,4 @@ records:
   - "Claes is not entitled to Mayken because he suffers or completes the Work."
   - "Difference must remain visible after union; sameness would destroy the function of the relationship."
   - "Childhood acquaintance is canon; childhood romance is not."
+  - "Goese counter-memory can revise Claes' interpretation of Cornelis but cannot prove the exact 1554 ignition cause or private motive."
