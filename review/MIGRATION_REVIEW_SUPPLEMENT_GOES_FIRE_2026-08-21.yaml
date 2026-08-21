@@ -1,0 +1,20 @@
+schema_version: 1.0.0
+kind: MigrationReviewSupplement
+purpose: Human-decision classification for Story Claims added by the 21 August 2026 Goes-fire causal refinement.
+records:
+- claim_id: STC.CORNELIS.SALTKEET.INTEREST.1554.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicit author decision on 21 August 2026 that Cornelis has a fictional economic interest in a Goese salt-refining keet while daily technical operation remains delegated; this is not archival proof of Nissepat ownership of the historical ignition keet.
+- claim_id: STC.GOES.FIRE_1554.NISSEPAT_ATTRIBUTION.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicit author decision on 21 August 2026 to preserve causal ambiguity while allowing fictional public rumour to compress the implicated property into the social shorthand Nissepats keet; technical ignition, legal liability and moral guilt remain unresolved.
+- claim_id: STC.CLAES.FIRE_EPISTEMIC_WOUND.1554.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicit author decision on 21 August 2026 that the fire helps bind Claes' established attentional gift to an irrational preventability/control wound without making him causally responsible or inherently passive.
+- claim_id: STC.MAYKEN.GOES_COUNTER_MEMORY.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicit author decision on 21 August 2026 that Mayken can later provide partial Goese counter-memory about rumour, rebuilding and Cornelis' post-fire actions, enabling posthumous rereading without omniscience, acquittal or proof of the fire's technical cause.
