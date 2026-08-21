@@ -1,7 +1,7 @@
 # Character web — archetypische functies en levende karakterisering
 
-**Status:** CANONICAL CHARACTERIZATION MODULE — approved 19 August 2026  
-**Decisions:** `DEC.HISTORICAL_GAPS.FICTIONAL_CHARACTERIZATION.2026-08-19`, `DEC.CHARACTER_WEB.ARCHETYPAL_LENS.2026-08-19`, `DEC.CHARACTER_WEB.CORE_CAST.2026-08-19`  
+**Status:** CANONICAL CHARACTERIZATION MODULE — approved 19 August 2026; refined 21 August 2026  
+**Decisions:** `DEC.HISTORICAL_GAPS.FICTIONAL_CHARACTERIZATION.2026-08-19`, `DEC.CHARACTER_WEB.ARCHETYPAL_LENS.2026-08-19`, `DEC.CHARACTER_WEB.CORE_CAST.2026-08-19`, `DEC.CORNELIS.ECONOMIC_INTERMEDIARY.2026-08-21`, `DEC.TANNEKEN.BODY_CONTINUITY.2026-08-21`  
 **Machine projections:** `entities/CHARACTERIZATION_2026-08-19.yaml`, `narrative/character_web_archetypes.yaml`
 
 ## 1. Governing principle: the archive sets boundaries; the novel fills the living space
@@ -35,8 +35,8 @@ A useful archetype always needs individual contradiction. The question is theref
 The compact authorial constellation is:
 
 - **Claes — Integration / the Seeker-Witness**
-- **Cornelis — Law / the Father-Gatekeeper**
-- **Tanneken — Body / embodied household wisdom**
+- **Cornelis — Law / Circulation / the Father-Steward and Gatekeeper**
+- **Tanneken — Body / Continuity / embodied household and operational knowledge**
 - **Jan — Act / brother-double and action principle**
 - **Puttus — Word / hermeneutic teacher**
 - **Mayken — Matter / independent material counterpart**
@@ -73,7 +73,7 @@ His gift becomes dangerous when attention turns into control:
 - if I understand every path, perhaps I need not choose too soon;
 - if I keep watching, perhaps I have fulfilled my responsibility.
 
-Delft makes the shadow explicit: witnessing can become compulsion. He can want not to look and still look.
+The 1554 fire becomes the first catastrophic pressure on this method: events and information outrun his normal ability to compare and understand, helping form the irrational possibility that seeing earlier or better might have prevented loss. Delft later makes the shadow explicit as compulsive witnessing.
 
 ### Essential contradiction
 Claes is **not inherently passive**. When Jan slips at the crane and no interval exists for analysis, Claes acts before thought. The weakness therefore appears especially when time exists to continue observing.
@@ -83,34 +83,56 @@ Do not make him a modern analyst. Let the abstraction arrive after material perc
 
 ---
 
-# 4. Cornelis — Father, Steward, Gatekeeper, Artisan Mentor
+# 4. Cornelis — Father, Steward, Gatekeeper, Intermediary
 
 ### Core
-Cornelis' governing value is **responsible stewardship**. He believes love is something one does: provide, train, arrange, repair, finance, warn, carry, protect.
+Cornelis' governing value is **responsible stewardship**. He believes love is something one does: provide, train, arrange, finance, warn, carry, protect.
+
+His economic method is now equally stable: **he is primarily a steward of circulation rather than a primary maker**. He knows how property, credit, routes, storage, people, vessels and obligations connect. Beer, salt and later textual circulation are different domains in which the same talent appears.
 
 ### Strength
 - practical foresight;
-- reliability under work pressure;
 - judgement of people, goods, routes and obligations;
+- credit and storage sense;
+- delegation of specialist work;
+- connecting producers, carriers, buyers and trusted people;
 - teaching through graduated responsibility;
 - willingness to bear material cost for another person's future.
 
+His active competence must not be mistaken for hands-off passivity. He checks, judges, negotiates, corrects and arranges. But he does not need to perform every specialist process personally.
+
+### Economic grammar
+
+- **beer:** Cornelis remains biersteker/trader; do not make him automatically the master brewer or owner of the documented Nissepad brewery;
+- **salt:** in fiction canon he holds an economic/ownership interest in a Goese salt-refining keet while daily technical work belongs to an operational lead and workers;
+- **books/texts:** he later routes material through trust and trade networks without needing to author or print it himself.
+
 ### Shadow
-The same method can make intimacy difficult:
+The same strengths create two different forms of distance.
+
+Relationally:
 
 - protection becomes withholding;
 - secrecy becomes exclusion;
 - responsibility becomes the language in which every affection is translated;
 - trust feels to Claes like a harder test rather than recognition.
 
-Cornelis does not fail to love. Father and son fail, repeatedly, to read love in the same grammar.
+Economically:
+
+- delegation creates dependence;
+- ownership and credit create responsibility without complete operational control;
+- a system can fail at a point Cornelis did not personally touch;
+- public blame can attach to his name because the property or enterprise is his even when the direct act was another person's.
+
+Cornelis does not fail to love, and he need not be personally negligent for the 1554 tragedy to strike at the deepest vulnerability of his method.
 
 ### Essential contradictions
 - **home:** terse, functional, sparse praise;
 - **rederijker room:** socially alive, humorous, performative, able to laugh broadly and respond to words for their own sake;
 - **public religion:** outwardly Catholic and civically embedded;
 - **inner commitment:** Familist/Huis der Liefde after ca.1552–1553;
-- **protector:** tries to keep danger away from Claes while simultaneously teaching him to carry dangerous responsibilities.
+- **protector:** tries to keep danger away from Claes while simultaneously teaching him to carry dangerous responsibilities;
+- **network man:** gains reach by trusting other people's competence and therefore cannot wholly control the systems attached to his name.
 
 ### Voice and habits — fiction canon
 - short, material sentences;
@@ -120,24 +142,38 @@ Cornelis does not fail to love. Father and son fail, repeatedly, to read love in
 - anger need not become shouting: terse judgement, practical consequence or closed access can carry more weight.
 
 ### Guardrail
-Do not make Cornelis a factory for maxims. His practical speech should arise from the thing being handled now. His livelier rederijker self is necessary because Claes must discover that his father is a person whose full life does not exist only in relation to his son.
+Do not make Cornelis a factory for maxims. His practical speech should arise from the thing being handled now. His livelier rederijker self is necessary because Claes must discover that his father is a person whose full life does not exist only in relation to his son. Do not turn his salt/beer competence into universal craft mastery: the distinction between **economic responsibility** and **operational control** is now central.
 
 ---
 
-# 5. Tanneken — Mother, Body, Keeper of Household Continuity
+# 5. Tanneken — Mother, Body / Continuity, Keeper of Lived Condition
 
 ### Core
 Tanneken's intelligence is **trained sensation in time**. She knows because she has touched, smelled, prepared, stored, watched and repeated.
 
+Her role now extends from embodied household knowledge into **operational continuity**. She knows the state in which a working household and its connected economy actually exist: what is present, missing, damp, spoiled, late, overused, reliable or failing.
+
+The durable complement is:
+
+> **Cornelis knows circulation; Tanneken knows condition.**
+
 ### Strength
 - material and bodily judgement;
 - household timing;
+- stock, use and shortage awareness;
 - practical memory;
+- awareness of people and work rhythms;
+- recognising the bodily/material consequence of an abstract trade decision;
 - care without ceremony;
 - direct, proportionate praise;
 - warmth and teasing humour.
 
 She gives Claes an early experience of knowledge that does not begin in abstraction. Her “goed gevonden” is important precisely because it is not made into a bargain.
+
+### Economic/operational boundary
+Tanneken may know workers from Cornelis' wider business world, recognise condition problems, notice a discrepancy before it appears urgent in an account, or give practical judgement Cornelis trusts. This does **not** automatically make her a zoutzieder, keetmeesteres, professional bookkeeper, apothecary or formal business manager.
+
+Her knowledge is lived rather than titled.
 
 ### Shadow
 Tanneken often turns anxiety into action. That is useful, but it can also hide her from others:
@@ -147,7 +183,7 @@ Tanneken often turns anxiety into action. That is useful, but it can also hide h
 The household may therefore experience her as calm at moments when she is actually containing fatigue, uncertainty or fear through work.
 
 ### Essential contradiction
-She is patient with fermentation, weather, cloth and bodies because processes take the time they take; she need not be equally patient with avoidable fuss, mess or self-dramatization.
+She is patient with fermentation, weather, cloth and bodies because processes take the time they take; she need not be equally patient with avoidable fuss, mess or self-dramatization. Her competence is real without being infallible.
 
 ### Voice and habits — fiction canon
 - shows before she explains;
@@ -156,8 +192,16 @@ She is patient with fermentation, weather, cloth and bodies because processes ta
 - can tease affectionately;
 - tenderness is physical and ordinary rather than staged as a lesson.
 
+### Relation to Mayken
+Tanneken's domain and Mayken's later expertise are related but not identical:
+
+- **Tanneken:** lived operational/material condition through household continuity;
+- **Mayken:** specialized material identification, preparation, testing and contradiction.
+
+Mayken is therefore not “Tanneken 2”. Claes later encounters a more specialized mode of material fidelity whose basic trustworthiness his childhood has already taught him to recognise.
+
 ### Guardrail
-Do not turn her into a mystical earth-mother. Her knowledge is laboriously learned, fallible and bodily. Give her irritation, fatigue and personal preference as well as care.
+Do not turn Tanneken into a mystical earth-mother or a retrospective all-purpose expert. Her knowledge is laboriously learned, fallible and bodily. Give her irritation, fatigue and personal preference as well as care.
 
 ---
 
@@ -368,9 +412,14 @@ The web should generate conflict through **different valid methods**, not simple
 Neither is the complete answer. Jan can act too early; Claes can act too late.
 
 ### Cornelis ↔ Tanneken
-`rule/responsibility <-> body/timing/care`
+`circulation/stewardship <-> condition/continuity`
 
-The intact household gives Claes both. The 1554 fire destroys not only people but the equilibrium between these knowledge forms.
+Cornelis knows routes, credit, delegation and movement; Tanneken knows the actual state of people, stock and matter. The intact household gives Claes both. The 1554 fire destroys not only people but the functioning complement between these knowledge forms.
+
+### Tanneken ↔ Mayken
+`lived operational condition <-> specialized material verification`
+
+Their methods resonate without making Mayken a replacement mother. Claes can later trust material contradiction partly because childhood taught him that trained sensation can be real knowledge.
 
 ### Puttus ↔ Dee
 `interpretive restraint <-> transformative speculation`
@@ -406,3 +455,5 @@ Claes grows from a son who carries what he is told not to know into a man who mu
 8. **A character may surprise the web.** If a well-earned scene reveals a new contradiction, update the characterization rather than forcing prose back into the old shorthand.
 9. **Mayken remains two-centered with Claes.** No “missing half” logic.
 10. **Dee may be wrong; Puttus may wound; Tanneken may tire; Cornelis may misjudge; Jan may fear; Silvius may instrumentalize; Las Casas may lose control.** Their value lies in being partial human beings, not perfect embodiments.
+11. **Tanneken's continuity role is lived, not automatically titled.** Do not infer an unsupported salt-work office from her competence.
+12. **Cornelis' intermediary role distinguishes economic responsibility from operational control.** Do not flatten that distinction in beer, salt or text scenes.

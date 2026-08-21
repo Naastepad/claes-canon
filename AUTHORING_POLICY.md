@@ -65,6 +65,28 @@ Do not fill every gap automatically. A detail earns canon when future scenes ben
 
 For the current core-cast implementation, load `storybible/CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md` and `entities/CHARACTERIZATION_2026-08-19.yaml`.
 
+## Author personal-context boundary
+
+Personal material supplied by the author in conversations, model exports, project dumps, autobiographical notes or life-story discussions is **AUTHOR CONTEXT**, not Claes evidence and not Storybible canon.
+
+Never convert a concrete fact, event, relationship, location, diagnosis, conflict, chronology or other personal biographical detail about the author into `SC.*`, `STC.*`, `DEC.*`, `ENT.*`, `NI.*`, character biography or other story truth merely because it appeared in coauthoring context.
+
+Personal experience may inspire the novel only through an explicit abstraction-and-approval boundary:
+
+`AUTHOR CONTEXT -> abstract dramatic/psychological pattern or thematic question -> explicit fictional proposal -> human author approval -> Claes FICTION CANON`
+
+The approved fictional derivative must stand on its own as a claim about the novel. It must not carry the author's private source biography into the repository unless the author explicitly asks for a separate, clearly labelled author-context record.
+
+Examples of permissible transformation include turning a broad concern such as recognition versus practical care, attention versus control, or loss versus reconstruction into a fictional character dynamic after explicit approval. The repository should record the resulting Claes/Cornelis/Mayken story truth, not the author's autobiographical event that may have inspired it.
+
+Guardrails:
+
+1. similarity between the author's life and a character is never evidence that the character shares the author's biography;
+2. model inference from autobiographical material may be used to suggest a **proposal**, never to declare canon;
+3. sensitive or identifying author information is excluded from Storybible canon unless the author explicitly requests otherwise for a separate non-story purpose;
+4. when provenance matters, cite the human fiction decision, not the autobiographical source material;
+5. if a prior model dump mixed author biography with story development, recover only separately approved fictional consequences; do not normalize the personal biography into the story layer by default.
+
 ## Narrative theory boundary
 Universal `KO.*` narrative theory remains in the external Narrative Knowledge Base. This repository stores Claes-specific Narrative Instances and may reference Knowledge Objects as analysis targets.
 

@@ -1,4 +1,4 @@
-schema_version: "1.0.0"
+schema_version: "1.1.0"
 kind: StoryClaimRegistryExtension
 claims:
   - id: STC.NISSEPAT.FAMILY_ARMS.VOETBOOG.001
@@ -41,12 +41,14 @@ claims:
 
   - id: STC.NISSEPAT.ARMS.CARRIER_CONTINUITY.001
     type: StoryClaim
-    status: CANON_CONTEXT
+    status: CANON
     statement: >-
-      The Nissepat arms may survive household rupture through a seal matrix, document, impression or other plausible family carrier that is already outside the destroyed 1554 household at the time of the fire. This permits the sign to outlive the house without requiring a miraculous rescue from the flames.
-    decision_id: DEC.CLAES.FAMILY_ARMS.VOETBOOG.2026-08-16
+      Before 18 May 1554 Claes knows a small metal carrier of the Nissepat voetboog sign within the fictional family/Sint-Joris material world. The object is present in the family/grandfather-household world and survives the 1554 fire damaged — blackened, discoloured and/or slightly deformed but still recognizable — rather than surviving pristine or because it was conveniently stored elsewhere.
+    decision_id: DEC.NISSEPAT.VOETBOOG_TEKEN.FIRE_SURVIVAL.2026-08-21
     motif_link: MOTIF.NISSEPAT_VOETBOOG
+    object_link: OBJ.NISSEPAT.VOETBOOG_TEKEN
     guardrails:
-      - Exact carrier object remains scene-design choice unless separately fixed.
-      - Do not claim the historical Muschart source object is the same fictional carrier Claes possesses.
-      - Continuity must be materially plausible, not providentially convenient.
+      - Exact object class remains open: do not call it ring, official guild badge, schutterskoning prize, chain, pendant or seal matrix until separately decided.
+      - Do not claim the historical Muschart source object is the same fictional carrier.
+      - Fire survival must be materially plausible and visibly damaging, not providentially pristine.
+      - Use the object sparingly; its first post-fire function is material trace rather than explained symbolism.

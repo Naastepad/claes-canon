@@ -1,0 +1,122 @@
+schema_version: 1.0.0
+kind: CanonDecisionRegistryExtension
+decisions:
+- id: DEC.CORNELIS.ECONOMIC_INTERMEDIARY.2026-08-21
+  type: CharacterizationDecision
+  status: CANON
+  decision: >-
+    Cornelis' economic identity is that of an intermediary, organizer and steward of circulation rather than a primary maker. Across beer, salt and later book/text logistics he works through property interests, credit, storage, quality judgement, routes, delegation, trusted people and the movement of goods or information. His strength is making systems and exchanges function without doing every operation himself; the corresponding shadow is that he can carry economic and moral responsibility for processes he does not fully control operationally.
+  affects:
+  - ENT.PERSON.CORNELIS
+  - entities/CHARACTERIZATION_2026-08-19.yaml
+  - narrative/character_web_archetypes.yaml
+  - storybible/CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md
+  - storybible/FAMILY_CLAES_1542_1554.md
+  guardrails:
+  - Cornelis remains a biersteker/beer trader, not automatically master brewer or owner of the documented Nissepad brewery.
+  - Intermediary does not mean passive: judgement, negotiation, checking, financing, correction and route knowledge are active competences.
+  - Do not reduce every domain to one smuggling mechanism or one allegory.
+
+- id: DEC.CORNELIS.SALTKEET_INTEREST.1554.2026-08-21
+  type: StoryWorldDecision
+  status: CANON
+  decision: >-
+    In novel canon Cornelis has a financial/economic ownership interest in one Goese salt-refining keet within the historically established salt-work world associated with the 1554 fire. He is not the daily zoutzieder and does not personally conduct every firing or pan operation; an experienced operational lead and workers run the keet's daily process.
+  affects:
+  - ENT.PERSON.CORNELIS
+  - WORLD.GOES.FIRE_1554.REFINEMENT
+  - storybible/GOES_FIRE_1554_CAUSAL_ARCHITECTURE.md
+  - claims/STORY_CLAIMS_FAMILY_1554.yaml
+  guardrails:
+  - Exact legal ownership form, parcel/keet identity and operating hierarchy remain open unless separately sourced or decided.
+  - Do not convert Cornelis into a professional zoutzieder.
+  - The fictional interest must remain distinct from historical proof of any Nissepat ownership of the actual ignition keet.
+
+- id: DEC.GOES.FIRE_1554.CAUSAL_AMBIGUITY.2026-08-21
+  type: PlotCausalityDecision
+  status: CANON
+  decision: >-
+    The novel deliberately separates historical origin, technical ignition, operational responsibility, Cornelis' economic involvement, public attribution and moral guilt. The fire begins historically in the Goese salt-work origin zone; the implicated keet is fictionally tied economically to Cornelis. The exact technical cause and direct operational fault remain unresolved. In the social aftermath the simpler formulation that it was 'Nissepats keet' can attach to Cornelis and become consequential even without proof that he personally caused the fire.
+  affects:
+  - WORLD.GOES.FIRE_1554.REFINEMENT
+  - storybible/GOES_FIRE_1554_CAUSAL_ARCHITECTURE.md
+  - claims/STORY_CLAIMS_FAMILY_1554.yaml
+  guardrails:
+  - Never collapse economic ownership into proof of technical causation.
+  - Do not solve the catastrophe as providential punishment for Cornelis.
+  - Legal liability and moral guilt remain open unless the author separately fixes them.
+
+- id: DEC.TANNEKEN.BODY_CONTINUITY.2026-08-21
+  type: CharacterizationDecision
+  status: CANON
+  decision: >-
+    Tanneken's established embodied household intelligence is widened into Body / Continuity. Through repeated practical work she knows not only heat, smell, texture, food, cloth, illness and timing but also the actual condition of the household economy: stock, quality, use, shortage, people, reliability and material consequences. Cornelis is stronger at circulation, routes, credit and delegation; Tanneken is stronger at knowing the state in which people and things actually are. Their household and economic functioning is therefore complementary.
+  affects:
+  - ENT.PERSON.CLAES_MOTHER
+  - entities/CHARACTERIZATION_2026-08-19.yaml
+  - narrative/character_web_archetypes.yaml
+  - storybible/CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md
+  - storybible/FAMILY_CLAES_1542_1554.md
+  guardrails:
+  - Tanneken is not automatically a zoutzieder, keetmeesteres, bookkeeper, apothecary or formal business manager.
+  - Her competence remains learned, fallible and rooted in repeated material observation.
+  - Do not retrospectively make her infallible because she dies young.
+
+- id: DEC.CLAES.FIRE_EPISTEMIC_WOUND.1554.2026-08-21
+  type: CharacterArcDecision
+  status: CANON
+  decision: >-
+    The 18 May 1554 fire becomes a formative failure of Claes' normal attentional method. The catastrophe changes faster than he can observe, compare and understand it, and he receives its cause and losses only in fragments. This helps form the irrational possibility that earlier or better seeing might have prevented loss. The result is not factual guilt but a durable tendency to confuse attention and reconstruction with potential control.
+  affects:
+  - ENT.PERSON.CLAES
+  - WORLD.GOES.FIRE_1554.REFINEMENT
+  - ARC.CLAES.CORNELIS
+  - storybible/CLAES_CORNELIS_RELATION_1547_1569.md
+  guardrails:
+  - Claes is not objectively responsible for Tanneken, Jan or the unborn child's deaths.
+  - The fire does not make Claes incapable of immediate action; De Kraan remains evidence that he can act reflexively when no deliberative interval exists.
+  - Do not explain this wound as a mature psychological theory in child POV.
+
+- id: DEC.CLAES.CORNELIS.POSTFIRE_PROTECTION_RUMOR.2026-08-21
+  type: RelationshipDecision
+  status: CANON
+  decision: >-
+    After the fire Cornelis remains in Goes to recover shelter, livelihood, credit and business while preserving Claes' education. The post-fire decision to send Claes to Reimerswaal is also partly protective: it removes him from the immediate Goese environment in which rumor increasingly links Cornelis' keet and name to the catastrophe. Cornelis expresses care through provision and removal from danger; Claes experiences the same separation as another rejection after losing the rest of the household.
+  affects:
+  - REL.CLAES.CORNELIS
+  - storybible/CLAES_CORNELIS_RELATION_1547_1569.md
+  - claims/STORY_CLAIMS_FAMILY_1554.yaml
+  guardrails:
+  - Do not make every Goese trader boycott Cornelis instantly; reputational and credit damage should erode rather than collapse magically in one moment.
+  - Zierikzee -> Reimerswaal remains a financial/practical post-fire consequence; exact comparative schooling cost is still a research question.
+  - Cornelis' Familist affiliation predates the fire; economic damage does not cause his conversion.
+
+- id: DEC.MAYKEN.GOES_COUNTER_MEMORY.2026-08-21
+  type: RelationshipAndMemoryDecision
+  status: CANON
+  decision: >-
+    Because Mayken shares pre-fire Goes with Claes but remains connected to a different local household and rebuilding memory after he leaves, she can later become one partial carrier of what Claes did not witness about Cornelis' post-fire life. After their later reunion she may correct or complicate Claes' interpretation of his father's choices through what she herself, her family or the local Goese memory retained. This later knowledge contributes to a posthumous rereading of Cornelis rather than a complete solution of the fire.
+  affects:
+  - ENT.PERSON.BELOVED
+  - REL.CLAES.MAYKEN.CONJUNCTIO
+  - storybible/MAYKEN_LAMPERT.md
+  - narrative/mayken_relationship_projection.yaml
+  guardrails:
+  - Mayken is not an exposition oracle and does not know every hidden motive or transaction.
+  - She cannot prove the exact ignition cause merely because she remained connected to Goes.
+  - Prefer partial testimony and changed interpretation over a neat retrospective acquittal of Cornelis.
+
+- id: DEC.NISSEPAT.VOETBOOG_TEKEN.FIRE_SURVIVAL.2026-08-21
+  type: ObjectAndMotifDecision
+  status: CANON
+  decision: >-
+    Before the 1554 fire the Nissepat family world contains a small metal carrier of the voetboog family sign, linked fictionally to family/Sint-Joris material culture and known to Claes. It is present in the family/grandfather-household world and survives the fire damaged rather than pristine: blackened, discoloured and/or slightly deformed but still recognizable. The exact historical form and institutional meaning of the object remain open.
+  affects:
+  - OBJ.NISSEPAT.VOETBOOG_TEKEN
+  - MOTIF.NISSEPAT_VOETBOOG
+  - storybible/NISSEPAT_ARMS_SINT_JORIS_CORNELIS.md
+  - claims/STORY_CLAIMS_NISSEPAT_ARMS_2026-08-18.yaml
+  guardrails:
+  - Do not call it a schutterskoning prize, ring, badge, chain or official guild insignia until the form is separately researched/decided.
+  - The object must not survive miraculously untouched.
+  - Use it sparingly; its primary early function is material continuity and trace, not explained symbolism.
