@@ -1,4 +1,4 @@
-schema_version: 1.1.0
+schema_version: 1.2.0
 kind: StoryClaimRegistry
 claims:
 - id: STC.CLAES.BELOVED.MAYKEN_LAMPERT.001
@@ -30,6 +30,21 @@ claims:
   source_refs: [SC.HIST.GOES.LAMPERT.ZWAENE_BURNED.1554.001]
   guardrail: Mayken's personal presence, reaction and childhood biography are fictional; only the Lampert property loss is historically anchored.
 
+- id: STC.MAYKEN.GOES_COUNTER_MEMORY.001
+  type: StoryClaim
+  statement: >-
+    Because Claes leaves Goes after the 1554 catastrophe while Mayken remains connected to a different Goese household and rebuilding memory, later reunion can give Mayken partial local/family knowledge about the rumour around Cornelis, his post-fire rebuilding and actions taken to preserve Claes' future. This information can change Claes' reading of his father after Cornelis' death without solving the fire or producing retrospective absolution.
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids: [DEC.MAYKEN.GOES_COUNTER_MEMORY.2026-08-21]
+  subjects: [ENT.PERSON.BELOVED, ENT.PERSON.CLAES, ENT.PERSON.CORNELIS]
+  relation: REL.CLAES.MAYKEN.CONJUNCTIO
+  guardrails:
+  - Mayken knows only what she, her household/family and plausible local social memory can retain.
+  - She cannot prove the technical cause of the 1554 fire.
+  - She is not an exposition oracle and does not know Cornelis' private motives directly.
+  - Prefer partial posthumous rereading over a neat acquittal of Cornelis.
+
 - id: STC.MAYKEN.APOTHECARY_EXPERTISE.001
   type: StoryClaim
   statement: Mayken grows up with practical access to materia medica, preparation, smell, texture, drying, measuring, botanical identification and apothecary book culture, making her a credible material and sensory counterpart to Claes.
@@ -55,9 +70,9 @@ claims:
 
 - id: STC.CLAES.MAYKEN.RELATIONSHIP.001
   type: StoryClaim
-  statement: Claes and Mayken develop from separate expertise and shared Goese memory toward collaborative material verification, earned trust, love without possession and later sensory/spiritual companionship; Mayken catalyses but does not perform Claes' recovery of the sinne.
+  statement: Claes and Mayken develop from separate expertise and shared Goese memory toward later recognition, partial counter-memory, collaborative material verification, earned trust, love without possession and later sensory/spiritual companionship; Mayken catalyses but does not perform Claes' recovery of the sinne.
   canon_status: CANON
   evidence_status: SUPPORTED
-  decision_ids: [DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14, DEC.CLAES.SINNE.2026-08-13]
+  decision_ids: [DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14, DEC.CLAES.SINNE.2026-08-13, DEC.MAYKEN.GOES_COUNTER_MEMORY.2026-08-21]
   subjects: [ENT.PERSON.CLAES, ENT.PERSON.BELOVED]
   relation: REL.CLAES.BELOVED

@@ -1,8 +1,9 @@
 # Claes Nissepat — familie 1542–1554
 
-**Status:** CANON — approved 14 August 2026  
-**Decision:** `DEC.CLAES.EXTENDED_FAMILY.2026-08-14`  
-**Story Claim:** `STC.CLAES.EXTENDED_FAMILY.001`
+**Status:** CANON — approved 14 August 2026; refined 21 August 2026  
+**Decisions:** `DEC.CLAES.EXTENDED_FAMILY.2026-08-14`, `DEC.CORNELIS.ECONOMIC_INTERMEDIARY.2026-08-21`, `DEC.CORNELIS.SALTKEET_INTEREST.1554.2026-08-21`, `DEC.TANNEKEN.BODY_CONTINUITY.2026-08-21`, `DEC.CLAES.CORNELIS.POSTFIRE_PROTECTION_RUMOR.2026-08-21`  
+**Story Claim:** `STC.CLAES.EXTENDED_FAMILY.001`  
+**Fire authority:** `storybible/GOES_FIRE_1554_CAUSAL_ARCHITECTURE.md`
 
 This module is the authoritative family dossier for Claes' childhood household and grandparents. It distinguishes archival persons and property evidence from deliberate novel genealogy.
 
@@ -32,11 +33,23 @@ The tree is novel canon. Only source-backed historical persons/acts are archival
 
 ## 2. Cornelis Claesz. Nissepat
 
-Cornelis is the fictional son of the historical Claes Jacobsz. Nissepat and father of Claes and Jan. He is a Goese poorter, beer trader/biersteker and organizer of a family business rather than necessarily a master brewer himself. He links property, credit, transport, storage, barrels, harbour trade, books and networks.
+Cornelis is the fictional son of the historical Claes Jacobsz. Nissepat and father of Claes and Jan. He is a Goese poorter, beer trader/biersteker and organizer of a family business rather than necessarily a master brewer himself.
+
+### Economic identity: intermediary rather than maker
+
+Cornelis' work is now governed by one stable fictional characterization: he is primarily an **intermediary, organizer and steward of circulation**. He links property, credit, transport, storage, barrels, harbour trade, trusted people, books and networks. His competence is active — judging goods and people, arranging credit, checking condition, timing routes, delegating specialist work and moving things between producers, carriers and buyers — but he does not need to manufacture every product himself.
+
+That same grammar applies across domains:
+
+- **beer:** biersteker/trader, storage/cask/route competence; not automatically the master brewer or owner of the documented Nissepad brewery;
+- **salt:** in fiction canon he has a financial/economic interest in one Goese salt-refining keet but is not its daily zoutzieder;
+- **texts/books:** later clandestine circulation grows from route, trust and carrier knowledge; he need not author or print the material he moves.
+
+His strength therefore carries a corresponding vulnerability: he can remain economically and morally responsible for systems whose daily operation is delegated to others. This becomes crucial in 1554.
 
 His marriage to Tanneken connects the Nissepat property/trade line to a craft milieu modeled through a Goese cooper. That makes his practical knowledge of barrels and beer containers socially plausible without turning him into a cooper or brewer.
 
-After the fire of 1554 Cornelis remains in Goes to rebuild shelter, livelihood, credit and business and to keep financing Claes' education. This labour is an act of love but produces physical separation: Claes goes to Reimerswaal while Cornelis stays in Goes.
+After the fire of 1554 Cornelis remains in Goes to rebuild shelter, livelihood, credit and business and to keep financing Claes' education. He also tries to remove Claes from the immediate Goese world in which rumour increasingly attaches the Nissepat name to the fire. This labour and separation are acts of love/protection but produce the opposite emotional reading in Claes: he goes to Reimerswaal while Cornelis stays in Goes and can experience the same decision as abandonment.
 
 ## 3. Tanneken Jansdochter — ca. 1520–18 May 1554
 
@@ -44,11 +57,30 @@ Tanneken Jansdochter is fictional and canonical. She is born approximately 1519�
 
 Tanneken is not written as a passive domestic figure or as a mystical wise woman. Her intelligence is practical, bodily and sensory. She knows through repeated daily work: heat, smell, texture, fermentation, illness, drying cloth, food, wood, weather and household timing. She is one of the primary sources from which Claes learns that the body can know before an abstract explanation is available.
 
-This is an important foundation of the *sinne* line. Long before Dee gives Claes intellectual methods, Tanneken teaches him — mostly without formal teaching — that reliable perception is embodied.
+### Body / Continuity
+
+Her established embodied knowledge now extends into the **operational continuity of the household and its attached economy**. This does not give her an unsupported formal profession. It means that repeated daily attention gives her reliable knowledge of:
+
+- what is actually in stock rather than merely ordered or promised;
+- condition, quality, dampness, spoilage and shortage;
+- use and waste;
+- work rhythms and ordinary bodily cost;
+- who is reliable, absent, ill, exhausted or in need;
+- the practical consequences of commercial decisions once they reach people, fuel, food, time and material.
+
+The durable marital complement is:
+
+> **Cornelis knows circulation; Tanneken knows condition.**
+
+Tanneken may therefore know workers from Cornelis' wider business world, notice discrepancies and give practical judgement that Cornelis trusts without being a zoutzieder, keetmeesteres, professional bookkeeper, apothecary or formal business manager. Her knowledge remains local, learned, fallible and grounded in repetition.
+
+This is an important foundation of the *sinne* line. Long before Dee gives Claes intellectual methods, Tanneken teaches him — mostly without formal teaching — that reliable perception is embodied and that condition must be tested against the material world.
 
 In May 1554 she is about six months pregnant. Claes may already have felt the unborn child move beneath her skin. That gives him an early benign experience of something that is real without being visible. The pregnancy must not be used mechanically as the reason she dies in the fire.
 
 Tanneken dies in the Goese city fire of 18 May 1554 together with Jan and the unborn child. These deaths are novel canon, not historical victim identifications.
+
+Her death removes from Cornelis not only spouse and co-parent but also part of the practical memory and continuity that helped the household/economic system function. Post-fire business difficulty must not be attributed solely to this loss, but the absence matters.
 
 ## 4. Jan Corneliszn. Nissepat — ca. June 1544–18 May 1554
 
@@ -69,11 +101,11 @@ Jan's death therefore removes from Claes not only a loved brother but also a hum
 
 ## 5. The unborn child
 
-The third child remains unnamed and its sex remains unknown. On 18 May 1554 Tanneken is approximately six months pregnant.
+The third child remains unnamed and its sex remains unknown in current reader-facing canon. On 18 May 1554 Tanneken is approximately six months pregnant.
 
 Narratively the child represents a future that has already become real to the family but has not yet become visible. Claes can know the child through touch and movement. The death of mother and unborn child turns that early sensory knowledge into one of the deepest wounds in the *sinne* architecture.
 
-Do not assign a retrospective name or sex unless separately decided later.
+Do not assign a retrospective name or reader-facing sex unless separately decided later.
 
 # Paternal grandparents
 
@@ -92,6 +124,8 @@ His historical occupation is not known. Do not label him archival 'brouwer', 'ko
 In novel canon he makes the 1542 house available to Cornelis and Tanneken as their family home. He remains story-owner through the 1554 fire and loses the asset when the house becomes uninhabitable/destroyed. Despite this loss he can still help Cornelis preserve Claes' educational future through money, credit, contacts or practical support.
 
 His relation to Claes carries a different knowledge tradition from Tanneken's: ownership, provenance, accounts, obligation, debt, transfer and the question of what belongs to whom.
+
+The family/grandfather-household world also contains the fictional metal carrier of the Nissepat voetboog sign before the fire. Its exact form is governed separately and remains historically open; it survives the 1554 rupture damaged rather than pristine.
 
 ## 7. Lijsbet Pietersdochter — fictional paternal grandmother
 
@@ -140,12 +174,19 @@ The family should not be designed as a retrospective set of symbols, yet it orga
 - **Lijsbet:** inherited material memory and absence;
 - **Jan Jansen kuiper model:** craft, containment, vessel and material reliability;
 - **Mayken:** care, body, household memory and ritual;
-- **Cornelis:** trade, networks, writing, responsibility, secrecy and movement;
-- **Tanneken:** embodied sensory knowledge;
+- **Cornelis:** circulation, trade, networks, writing, responsibility, secrecy and movement;
+- **Tanneken:** embodied condition, operational continuity and sensory knowledge;
 - **Jan:** action, risk, rivalry and immediacy;
 - **Claes:** observation, comparison, pattern and eventually synthesis.
 
 Thus later concepts such as carrier/content, embodied *sinne*, material transformation and transmission do not arrive from nowhere when Claes meets learned adults. Dee and others give intellectual articulation to structures Claes has already lived inside.
+
+The parental inheritance is deliberately complementary rather than hierarchical:
+
+> **from Cornelis:** route, relation, carrier, transfer, network  
+> **from Tanneken:** condition, body, material, difference, continuity
+
+Claes' later strength lies partly in learning to hold both without confusing either with total control.
 
 # 11. The 18 May 1554 rupture
 
@@ -155,20 +196,34 @@ In novel canon the older-Nieuwstraat home becomes uninhabitable/is destroyed. Co
 
 Historically, burned houses are documented in the older Nieuwstraat/Armenhoek environment after the fire, while other houses in Nieuwstraat also survive. The specific destruction of the 1542 Nissepat house and the deaths of these family members are therefore plausible novel reconstruction, **not archival fact**.
 
-The result is not simply that Claes becomes motherless. A family of five is reduced to a father and son, and those two survivors are subsequently geographically separated because Cornelis must remain in Goes while Claes' education is salvaged through Reimerswaal.
+The fire's broader fictional causality is governed by `storybible/GOES_FIRE_1554_CAUSAL_ARCHITECTURE.md`. In summary:
 
-This gives 1554 its correct dramatic function: loss of people, home, sibling equilibrium, bodily safety and daily paternal presence in one historical catastrophe.
+- Cornelis has an economic interest in a Goese salt-refining keet but is not its daily operator;
+- the exact technical cause/direct fault remains unresolved;
+- the fire is socially associated with `Nissepats keet`, making economic involvement easier for the city to read as personal blame;
+- fire damage, recovery costs, reputational pressure, weakened credit/trust and Tanneken's loss together make Cornelis' recovery harder;
+- the intended Zierikzee school route becomes unattainable and Claes is sent to Reimerswaal;
+- Cornelis also intends distance as protection from the immediate rumour environment;
+- Claes can experience that protective separation as rejection.
+
+The result is not simply that Claes becomes motherless. A family of five is reduced to a father and son, and those two survivors are subsequently geographically separated.
+
+This gives 1554 its correct dramatic function: loss of people, home, sibling equilibrium, bodily safety, household continuity, economic confidence and daily paternal presence in one historical catastrophe and its aftermath.
 
 # 12. Hard guardrails
 
 - Tanneken Jansdochter and Jan Corneliszn. Nissepat are canonical names.
 - Jan is approximately eighteen months younger than Claes; do not turn him into a much younger child.
 - Tanneken is approximately six months pregnant on 18 May 1554.
-- The unborn child's sex and name remain unknown.
+- The unborn child's reader-facing sex and name remain unknown.
 - Tanneken, Jan, Lijsbet and Mayken are fictional.
 - Claes Jacobsz. Nissepat is historical; his kinship to Cornelis/Claes is fictional.
 - The maternal-grandfather figure is a fictional kinship/model built from historical Jan Jansen-kuiper evidence; do not claim a proven archival genealogy or exact death date.
 - Claes Jacobsz.' historical profession remains unknown.
-- Mayken is not an apothecary substitute.
+- Mayken Pietersdochter is not an apothecary substitute.
+- Tanneken is not automatically a professional zoutzieder, keetmeesteres, bookkeeper or business manager.
+- Cornelis remains biersteker/intermediary, not automatically master brewer or fixed owner of the documented Nissepad brewery.
 - Jan must have a lived relationship with Claes before his death; do not write him merely as trauma machinery.
 - The 1554 household deaths and destruction of the specific house remain novel canon within a historically supported fire environment.
+- Cornelis' salt-keet interest is explicit fiction canon; do not present it as archival Nissepat ownership evidence.
+- Technical cause, direct operational fault and legal/moral guilt for the fire remain unresolved under the dedicated fire module.

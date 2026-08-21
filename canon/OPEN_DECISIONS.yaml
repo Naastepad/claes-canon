@@ -1,4 +1,4 @@
-schema_version: 2.1.0
+schema_version: 2.2.0
 kind: OpenDecisionRegistry
 policy:
   active_only: true
@@ -201,3 +201,78 @@ decisions:
   - Do not grant Mayken unsupported university, physician or guild status.
   - Do not turn a possible kruidenvrouw line into a stereotype or a secret cipher role.
   - Preserve her distinct 1554 experience: destruction plus rebuilding, not Claes' household annihilation.
+
+- id: OPEN.MANUSCRIPT.DE_LEI.TEACHER_IDENTITY.001
+  domain: manuscript_continuity
+  priority: medium
+  question: "Which fictional elementary writing/reckoning master teaches Claes in De Lei: Adriaen, Jacob, or a deliberately unnamed master?"
+  status: OPEN
+  exposed_by: REV.2026-08-19.DE_LEI.001
+  current_prose_problem: "The current chapter names both Meester Adriaen and Meester Jacob in what reads as one classroom/teacher role."
+  fixed:
+  - "Nicolaes van de Put/Puttus remains Claes' separate Latin/humanist master."
+  guardrails:
+  - "Do not silently merge the elementary master into Puttus."
+  - "Treat this as a prose/cast-continuity repair unless a named teacher is promoted into reusable character canon."
+
+- id: OPEN.MANUSCRIPT.HET_WAPEN.SPANNING_MECHANISM.001
+  domain: manuscript_historical_reconstruction
+  priority: medium
+  question: "Should Het Wapen retain its exact wind/touw/haak spanning apparatus as an explicit fiction reconstruction, or should the prose be generalized until the historical mechanism is better established?"
+  status: OPEN
+  exposed_by: REV.2026-08-19.HET_WAPEN.001
+  fixed:
+  - "The Nissepat sign is a voetboog/crossbow."
+  - "Cornelis belongs fictionally to the Goese Sint-Jorisgilde / Edele Voetboog."
+  - "Mechanical spanning is plausible and the recovered Muschart wording includes a lange zwengel."
+  guardrails:
+  - "The exact mechanism remains open; do not present windlass/cranequin/belt-hook subtype as historical fact without support."
+
+- id: OPEN.MANUSCRIPT.DE_WIEG.FAMILY_STATE.001
+  domain: manuscript_continuity
+  priority: high
+  question: "How should De Wieg be repaired so its household count and pregnancy history match the fixed pre-fire family canon?"
+  status: OPEN
+  exposed_by: REV.2026-08-19.DE_WIEG.001
+  current_prose_problems:
+  - "Cornelis says there will be 'three younger mouths instead of two', which does not match Jan plus the unborn child under the current family state."
+  - "The chapter introduces an earlier child that 'did not come', which is not part of the current fixed pre-fire family canon."
+  fixed:
+  - "Claes is the eldest child."
+  - "Jan is the younger living brother."
+  - "Tanneken is pregnant with the unnamed child who dies with her in the 18 May 1554 fire."
+  guardrails:
+  - "Do not create an additional lost sibling merely to rescue an old sentence."
+  - "Prefer prose repair unless the author explicitly chooses to reopen family canon."
+
+- id: OPEN.MANUSCRIPT.CORNELIS.BIERSTEKER_WORDING.001
+  domain: manuscript_canon_alignment
+  priority: high
+  question: "Which 1554/1564 manuscript formulations must be rewritten so Cornelis' trade competence remains vivid without turning him into the documented Nissepad brewery's fixed master brewer or owner?"
+  status: OPEN
+  exposed_in:
+  - CH.HET_ZAAD.1554
+  - CH.DE_LADINGEN.1564
+  fixed:
+  - "Cornelis is a Goese poorter and biersteker."
+  - "He participates in beer/cask logistics, storage, accounts, credit and routes."
+  - "The documented Nissepad brewery is family-world context but is not fixed as Cornelis' owned/master-brewed enterprise."
+  guardrails:
+  - "Do not use 'eigen bier', 'het brouwen' or process-command language as shorthand if it changes the reader's factual inference about ownership/profession."
+  - "Lieven or another actual brewer may own process expertise where the scene needs it."
+
+- id: OPEN.MANUSCRIPT.BEER_LOGISTICS_CONCEALMENT.001
+  domain: manuscript_plot_mechanism
+  priority: high
+  question: "How should the 1564 chapters preserve the thematic relation between beer logistics and secrecy without implying a routine books-hidden-in-beer-barrels transport system?"
+  status: OPEN
+  exposed_in:
+  - CH.DE_LOOG.1564
+  - CH.DE_DOOD_VAN_SOL.1564
+  fixed:
+  - "Cornelis' beer/cask trade gives him routes, contacts, timing knowledge and plausible movement through Antwerp/Zeeland networks."
+  - "The current Brevísima/memoriaal mechanism does not require a standardized beer-barrel concealment channel."
+  guardrails:
+  - "Analogy between vessels/contents and secrecy is allowed."
+  - "Do not convert analogy into a repeated operational device without a separate canon decision."
+  - "Keep the current book-in-book/invisible-print chain independent from routine beer-barrel smuggling."

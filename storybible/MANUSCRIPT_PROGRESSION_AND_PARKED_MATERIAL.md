@@ -13,7 +13,7 @@ A cold-reader/editor pass can correctly remove a passage because it slows the bo
 
 Conversely, a deleted passage must not continue to function as if the reader has seen it merely because an earlier draft contained it.
 
-Therefore this repository now separates:
+Therefore this repository separates:
 
 1. **Canon / story truth** — `DEC.*`, `STC.*`, entities, objects, relationships and historical-fiction decisions.
 2. **Current manuscript projection** — which chapter currently dramatizes which movement, reveal, relationship beat and reader progression.
@@ -37,33 +37,21 @@ The essential fields are:
 
 `progression_before -> progression_after -> progression_delta`
 
-This prevents a common failure in iterative writing: an older chapter summary continues to claim that a chapter establishes something which the current prose no longer contains.
+This prevents an older chapter summary from continuing to claim that a chapter establishes something which the current prose no longer contains.
 
 ## 3. Four different kinds of off-page material
 
 ### Backstory
 
-A past event or state that **is part of the character/story reality** and has causal force, even if the novel does not dramatize it as a full scene.
-
-Example form:
-
-> Claes already learned a household practice before the current chapter; the scene proving every step was cut, but the competence remains canonically acquired.
-
-Backstory therefore normally points to existing `STC.*`, `REL.*`, `ENT.*` or `ARC.*` state.
+A past event or state that **is part of the character/story reality** and has causal force, even if the novel does not dramatize it as a full scene. Backstory normally points to existing `STC.*`, `REL.*`, `ENT.*` or `ARC.*` state.
 
 ### Backline
 
-An **off-page causal line continuing during the story**. It may later collide with the foreground plot.
-
-Examples in this project can include trade obligations, Cornelis' hidden network activity, political/religious developments or Mayken's independent adult life when Claes is elsewhere.
-
-A backline is not atmosphere. Something is changing while the camera is away.
+An **off-page causal line continuing during the story**. It may later collide with the foreground plot. Trade obligations, Cornelis' hidden network, political/religious developments or Mayken's independent adult life can operate this way.
 
 ### Backdrop
 
-Historical, social, material or sensory world information available for later scene texture but **not itself a required causal event**.
-
-Market activity, guild habits, seasonal food, urban sounds or a feast practice may move from a cut picturesque passage into backdrop. The writer can then distribute selected details through later action without resurrecting the original exposition block.
+Historical, social, material or sensory world information available for later scene texture but **not itself a required causal event**. Backdrop should normally be distributed through later action rather than resurrected as an exposition block.
 
 ### Parked future scene material
 
@@ -71,7 +59,7 @@ A written or designed beat whose future location is **not yet decided**. It is n
 
 ## 4. Cut is not one thing
 
-After a `CUT` or `MERGE`, the editor must classify every meaningful removed function:
+After a `CUT` or `MERGE`, the editor classifies every meaningful removed function:
 
 - `MOVED_ELSEWHERE` — a receiving chapter is fixed;
 - `PARKED_FUTURE_CHAPTER` — may become a later scene;
@@ -82,43 +70,36 @@ After a `CUT` or `MERGE`, the editor must classify every meaningful removed func
 - `DISCARDED_PROSE` — wording/scene gone; underlying truth checked separately;
 - `REJECTED_STORY_OPTION` — the underlying proposed story choice itself is rejected.
 
-This classification belongs in `narrative/parked_material.yaml`.
+The classification belongs in `narrative/parked_material.yaml`.
 
 ## 5. Canon impact is a separate field
 
 Every editorial move gets one of three canon-impact labels:
 
 ### `NONE`
-
 Only prose changed. No Story Claim, entity state, relationship fact or Narrative Instance truth is affected.
 
 ### `PROJECTION_ONLY`
-
 The fact remains story truth, but the place where the reader learns/sees it has changed or become off-page. Update manuscript progression, scene projection and possibly knowledge/reveal timing.
 
 ### `CANON_REVIEW_REQUIRED`
-
-The cut means a previously canonized event no longer happens, a relationship history changes, an object is no longer transferred, a character can no longer possess knowledge, or another true continuity dependency changes. This requires an explicit author decision before canon is rewritten.
+The cut means a previously canonized event may no longer happen, a relationship history changes, an object is no longer transferred, a character can no longer possess knowledge, or another true continuity dependency changes. This requires an explicit author decision before canon is rewritten.
 
 An editor must never infer `CANON_REVIEW_REQUIRED -> de-canonize` automatically.
 
-## 6. Revision lineage and current manuscript authority
-
-The conversation contains earlier and later versions of multiple chapters from the 19 August pass. The existence of those paired versions establishes **revision lineage**, but file-size or text-diff alone is not enough to infer the author's intended disposition of every removed beat.
-
-Therefore:
+## 6. Revision lineage and manuscript authority
 
 - the latest approved chapter file is the current prose implementation;
-- the progression register says what that current prose now does;
-- the editor handoff says what was deliberately cut/moved/parked and why;
-- the parking register preserves reusable function/material;
+- `narrative/manuscript_progression.yaml` says what that current prose now does;
+- the editor handoff/revision record says what was deliberately cut, compressed, repaired or moved;
+- `narrative/parked_material.yaml` preserves reusable function/material;
 - canon remains governed independently.
 
-When an editor handoff and a raw diff disagree about intent, the explicit author/editor disposition wins. A diff shows deletion; it does not by itself tell whether the deleted material became backstory, backdrop, future-scene reserve or rejected story.
+A raw diff shows deletion but cannot by itself prove whether a deleted element became backstory, backline, backdrop, future reserve or rejected story.
 
 ## 7. Cluster progression
 
-The childhood sequence exposed why scene-level uniqueness alone is insufficient. Each chapter can individually contain useful material while the cluster as a whole repeats the same learning beat, father-son recognition beat or molenbord function too often.
+Scene-level uniqueness is insufficient when a group of individually useful scenes repeats the same lesson, recognition beat or motif value.
 
 After individual scene necessity, perform `GRD.EDITORIAL.CLUSTER_NECESSITY`:
 
@@ -128,7 +109,11 @@ After individual scene necessity, perform `GRD.EDITORIAL.CLUSTER_NECESSITY`:
 - Does this chapter create new forward pressure?
 - If removed, is the cluster truly poorer or merely shorter?
 
-The **current progression record must describe the post-edit cluster**, not preserve the ambitions of earlier drafts.
+The current progression registry now includes governing projections for:
+
+- `CLUSTER.CHILDHOOD_GOES.PREFIRE.1547_1554`;
+- `CLUSTER.ANTWERP_MATERIAL_INITIATION.1564`;
+- `CLUSTER.DELFT_MORAL_BOTTOM.1584`.
 
 ## 8. Claude/editor handoff requirement
 
@@ -149,7 +134,7 @@ For every changed chapter:
 11. changed reader expectation/cluster effect;
 12. any `OPEN.*` accidentally approached or newly exposed.
 
-The handoff should summarize removed material; it need not reproduce entire deleted passages.
+The handoff summarizes removed material; it does not need to preserve deleted prose verbatim.
 
 ## 9. Reuse rule
 
@@ -166,12 +151,55 @@ Before reuse it must again pass:
 
 A passage is not restored because it was expensive to research, beautifully written or once approved.
 
-## 10. Initial legacy parked material
+## 10. 19 August cold-reader/editor ingest — completed
 
-The registry currently preserves several earlier known examples:
+The pre-editor and post-editor versions of the current chapter set have now been semantically compared and ingested into `narrative/manuscript_progression.yaml` and `narrative/parked_material.yaml`.
 
-- a first-steps/home scene — potentially useful but unplaced;
-- an aesthetically successful Vastenavond/market scene — better treated as world/backdrop unless later causally earned;
-- an explicit Claes-birth/Brevísima date-link — rejected and not available for resurrection.
+Because the handoff protocol did not yet exist when that Claude pass was performed, this recovery distinguishes two provenance levels:
 
-The 19 August Claude cold-reader/editor pass must be ingested into the same format from its explicit editorial handoff. The paired manuscript files already prove that revision occurred; the semantic disposition should come from the editor's stated reasons and parking decisions, not be guessed from file deletion alone.
+- **HIGH confidence:** paired drafts plus an explicit recorded editorial/canon reason identify the intended change;
+- **MEDIUM confidence / `SEMANTIC_RECONSTRUCTION`:** the paired drafts establish what changed and the surrounding editorial reasoning supports a safe disposition, but a verbatim machine-readable Claude parking instruction was not available.
+
+Do not silently upgrade MEDIUM reconstructed parking to an explicit historical Claude instruction. If the original handoff is later supplied, reconcile it with these records.
+
+The ingest records substantive revision histories for:
+
+- *De Bladzijde*;
+- *De Drempel*;
+- *De Lei*;
+- *Het Wapen*;
+- *De Kraai*;
+- *De Kraan*;
+- *De Wegen*;
+- *Het Zand*;
+- *Het Gist*;
+- *De Winnaar*;
+- *Het Zaad in de Donkere Aarde*;
+- *De Wieg*;
+- *De Markt van Delft*.
+
+*De Kamer* and the five 1564 material-initiation chapters were unchanged in that file pass and therefore receive current progressions but no artificial revision delta.
+
+## 11. High-value parked/backline results from this pass
+
+The most important reusable items are not the longest deleted passages but the ones that still carry future causal value:
+
+- `PARK.ZAAD.CORNELIS_FAMILIST_BACKLINE.001` — Cornelis' private inward faith remains canon but was correctly removed from an over-explicit child-facing sermon; deepen later through network, adult conversation, text or consequence.
+- `PARK.ZAAD.FAMILY_STEWARDSHIP_BACKLINE.001` — family/economic stewardship pressure may matter later, especially post-fire or during Goes severance, but reuse must respect Cornelis' biersteker/ownership boundary.
+- `PARK.WINNAAR.ACTION_WITHOUT_CERTAINTY_RESERVE.001` — Jan's action principle is saved as a changed-value motif/choice reserve, not as a speech to transplant.
+- `PARK.DELFT.ATTENTION_BACKLINE.001` — the deleted explanation that trained attention cannot stop is now a post-Delft behavioural backline; later prose should show the consequence rather than repeat the thesis.
+- `PARK.DREMPEL.ZEVEN_GETIJDEN_BACKDROP.001` and `PARK.PROLOGUE.NEW_LAWS_ADMIN_CONTEXT.001` — useful world/history texture that no longer belongs in the current foreground delivery.
+
+Several other cuts are explicitly `REJECTED_STORY_OPTION`, especially a 1547 proto-Familist Cornelis signal, an unsupported exact Sint-Joris banner-blessing ritual, devies-as-routine-greeting, hereditary Nissepat shooter determinism and Puttus as anti-ritual religious oracle. Those are **not** parked ideas waiting to return.
+
+## 12. Current manuscript-to-canon repair flags exposed by the ingest
+
+The revision ingest also reveals current prose issues that are not solved merely by parking deleted text:
+
+- *De Lei*: the elementary master appears under both Adriaen and Jacob; one fiction-canon identity must be chosen or the prose neutralized.
+- *Het Wapen*: the prose specifies a wind/touw/haak spanning arrangement while the exact mechanism remains historically/open-authorially unresolved; either canonize the fiction fill or generalize the prose.
+- *De Wieg*: `drie jongere monden in plaats van twee` appears inconsistent with the current family state, and an earlier lost child is introduced without current family canon.
+- *De Ladingen van Antwerpen*: formulations around Cornelis' `eigen bier` and Claes knowing `het brouwen` require alignment with Cornelis as biersteker rather than fixed master brewer/owner.
+- *De Loog van Antwerpen* and *De Dood van Sol*: concealment analogies must not silently become a routine books-hidden-in-beer-barrels mechanism contrary to the current logistics guardrail.
+
+These are **repair flags**, not automatic canon changes. They should be resolved deliberately during the next manuscript-continuity pass.

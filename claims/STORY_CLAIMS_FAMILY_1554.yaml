@@ -1,6 +1,6 @@
-schema_version: 1.1.0
+schema_version: 1.2.0
 kind: StoryClaimRegistry
-claim_count: 5
+claim_count: 8
 claims:
 - id: STC.CLAES.HOUSEHOLD_PRE_FIRE.1554.001
   type: StoryClaim
@@ -21,6 +21,7 @@ claims:
     latest_exclusive: '1554-05-18'
     precision: approximate
   tags: [family, goes, childhood, pre-fire, tanneken, jan, author-decision]
+
 - id: STC.CLAES.FAMILY_FIRE.1554.001
   type: StoryClaim
   statement: "In novel canon, the 18 May 1554 Goes fire makes the older-Nieuwstraat family home uninhabitable/destroys it. Claes and Cornelis survive away from the house; Tanneken Jansdochter, Jan Corneliszn. Nissepat and the unborn child die in the fire."
@@ -44,6 +45,67 @@ claims:
   - SC.HIST.GOES.NIEUWSTRAAT.BURNED_HOUSES_1556.001
   - SC.HIST.GOES.FIRE_1554.NIEUWSTRAAT_PARTIAL_DAMAGE.001
   tags: [family, fire, trauma, nigredo, goes, tanneken, jan, author-decision]
+
+- id: STC.CORNELIS.SALTKEET.INTEREST.1554.001
+  type: StoryClaim
+  statement: "In fiction canon Cornelis has a financial/economic ownership interest in one Goese salt-refining keet in the historical salt-work world associated with the 1554 fire, while daily technical operation belongs to an operational lead and workers rather than to Cornelis as zoutzieder."
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids:
+  - DEC.CORNELIS.SALTKEET_INTEREST.1554.2026-08-21
+  - DEC.CORNELIS.ECONOMIC_INTERMEDIARY.2026-08-21
+  subjects:
+  - ENT.PERSON.CORNELIS
+  objects:
+  - ENT.LOC.GOES.OOSTZELKE
+  source_refs:
+  - SC.HIST.GOES.SALT.NORTH_HARBOUR_1554.001
+  guardrails:
+  - "The economic interest is fiction canon, not archival proof of Nissepat ownership of the historical ignition keet."
+  - "Exact legal ownership form, parcel and operating hierarchy remain open."
+  - "Do not turn Cornelis into a daily zoutzieder."
+  tags: [cornelis, salt, zoutkeet, goes, ownership, delegation, fiction-canon]
+
+- id: STC.GOES.FIRE_1554.NISSEPAT_ATTRIBUTION.001
+  type: StoryClaim
+  statement: "The novel deliberately leaves the exact technical ignition and direct operational fault unresolved, while public memory and rumour increasingly attach the catastrophic origin to a keet economically associated with Cornelis and compress that complexity into the social shorthand of 'Nissepats keet'."
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids:
+  - DEC.GOES.FIRE_1554.CAUSAL_AMBIGUITY.2026-08-21
+  subjects:
+  - ENT.PERSON.CORNELIS
+  - ENT.LOC.GOES
+  story_time:
+    earliest: '1554-05-18'
+    latest_exclusive: '1555-06-01'
+    precision: approximate
+  source_refs:
+  - SC.HIST.GOES.FIRE_1554.SPREAD.001
+  guardrails:
+  - "Public attribution is fiction canon; it is not evidence that the historical city accused a Nissepat."
+  - "Economic ownership is not proof of technical causation."
+  - "Legal liability and moral guilt remain unresolved."
+  tags: [fire, rumor, blame, cornelis, uncertainty, goes]
+
+- id: STC.CLAES.FIRE_EPISTEMIC_WOUND.1554.001
+  type: StoryClaim
+  statement: "Because the 1554 fire outruns Claes' normal observe-compare-understand method and reaches him through fragments, it helps form the irrational survivor possibility that seeing earlier or better might have prevented loss; this is a durable source of his later tendency to confuse attention and reconstruction with potential control."
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids:
+  - DEC.CLAES.FIRE_EPISTEMIC_WOUND.1554.2026-08-21
+  subjects:
+  - ENT.PERSON.CLAES
+  story_time:
+    earliest: '1554-05-18'
+    latest_exclusive: '1602-03-14'
+    precision: developmental
+  guardrails:
+  - "Claes is not objectively responsible for the deaths."
+  - "De Kraan remains counter-evidence that he is inherently passive; he can act instantly when no deliberative interval exists."
+  tags: [claes, attention, trauma, epistemic-wound, control, reconstruction]
+
 - id: STC.CLAES.GRANDFATHER.NISSEPAT.001
   type: StoryClaim
   statement: "For novel genealogy, historical Claes Jacobsz. Nissepat is the fictional father of Cornelis and paternal grandfather of Claes. He remains story-owner of the 1542 Nieuwstraat house through the fire, loses that property in 1554, and helps Cornelis continue paying for Claes' education afterward."
@@ -60,13 +122,15 @@ claims:
   source_refs:
   - SC.HIST.GOES.NISSEPAT.NIEUWSTRAAT_1542.001
   tags: [genealogy, nissepat, grandfather, property, fiction-link, author-decision]
+
 - id: STC.CLAES.CORNELIS.POSTFIRE_SEPARATION.001
   type: StoryClaim
-  statement: "After the 1554 fire Cornelis remains in Goes to rebuild livelihood, business and shelter and to finance Claes' education as far as possible, partly supported by his father Claes Jacobsz. Claes goes to Reimerswaal because the intended Zierikzee route has become financially unattainable. Their geographical separation is a second loss layered onto the destruction of the household: Cornelis acts from care and duty, while Claes can experience the same act as abandonment."
+  statement: "After the 1554 fire Cornelis remains in Goes to rebuild shelter, livelihood, credit and business and to finance Claes' education as far as possible, partly supported by his father Claes Jacobsz. Fire losses and subsequent reputational/credit erosion make the intended Zierikzee route financially or practically unattainable. Claes goes to Reimerswaal; Cornelis also intends the distance to protect him from the immediate Goese rumour environment. Their separation is a second loss layered onto the household destruction: Cornelis acts from care and duty, while Claes can experience the same act as abandonment."
   canon_status: CANON
   evidence_status: PLAUSIBLE
   decision_ids:
   - DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14
+  - DEC.CLAES.CORNELIS.POSTFIRE_PROTECTION_RUMOR.2026-08-21
   subjects:
   - ENT.PERSON.CLAES
   - ENT.PERSON.CORNELIS
@@ -78,7 +142,12 @@ claims:
     earliest: '1554-05-18'
     latest_exclusive: '1561-09-01'
     precision: bounded
-  tags: [father-son, separation, reimerswaal, education, rebuilding, grief, author-decision]
+  tags: [father-son, separation, reimerswaal, education, rebuilding, grief, rumor, protection, author-decision]
+  guardrails:
+  - "Economic decline is cumulative erosion, not an instantaneous universal boycott."
+  - "Exact Zierikzee-versus-Reimerswaal schooling cost remains research-open."
+  - "Cornelis' Familist affiliation predates the fire; economic damage does not cause conversion."
+
 - id: STC.CLAES.EXTENDED_FAMILY.001
   type: StoryClaim
   statement: "Claes' extended novel family consists on the paternal side of historical Claes Jacobsz. Nissepat and fictional Lijsbet Pietersdochter, and on the maternal side of Tanneken's father modeled on a historical Goese Jan Jansen kuiper and fictional Mayken Pietersdochter. Jan Corneliszn. is named for his maternal grandfather in novel canon. Lijsbet has died by Claes' early childhood; the maternal-grandfather model dies around 1543 in the story; Mayken survives the 1554 fire and preserves care and family memory, while Claes Jacobsz. chiefly helps secure economic and educational continuity."

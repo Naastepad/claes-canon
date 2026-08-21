@@ -145,6 +145,22 @@ Always distinguish:
 
 Network proximity does not prove a meeting. A historical print does not prove Claes' fictional provenance. A plausible route does not establish exact topography. A later manual does not automatically establish earlier practice.
 
+## 8A. Author personal-context boundary
+
+Personal material about the human author that appears in chats, Claude/ChatGPT exports, project dumps, autobiographical notes or life-story discussions is **AUTHOR CONTEXT**, not historical evidence and not Claes canon.
+
+Do not copy concrete author biography into `SC.*`, `STC.*`, `DEC.*`, `ENT.*`, `NI.*`, character backstory or other Storybible truth by default. Do not infer that a fictional character shares a personal event merely because a psychological or thematic resemblance exists.
+
+The only permitted route from personal material to canon is:
+
+`AUTHOR CONTEXT -> abstract pattern/question -> explicit fictional proposal -> human author approval -> FICTION CANON`
+
+Once approved, store the fictional result as a self-contained claim about the novel. Do not preserve the author's private biographical source detail in the story layer. If the author has not separately approved the fictional derivative, keep it outside canon or present it as a proposal.
+
+This applies especially when ingesting large coauthor/model dumps that mix manuscript discussion, story development and autobiography. Recover only the independently supported/approved story consequences; never treat the dump's personal passages as Storybible authority.
+
+See `AUTHORING_POLICY.md` for the full guardrails.
+
 ## 9. Narrative interpretation
 
 When interpreting a scene/chapter/sequence, consider POV and knowledge state, objective, psychological/moral need, opening and closing value, conflict/pressure, turning point, claim/relationship/object/knowledge changes, arc movement, motif transformation **and reader-state change**.

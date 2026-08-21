@@ -1,4 +1,4 @@
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: CharacterizationRegistry
 purpose: >-
   Stable novel characterization for recurring people. Historical biography and evidence remain governed by their source/entity records; fields marked FICTION_CANON deliberately fill documentary space for continuity.
@@ -19,17 +19,30 @@ characters:
   - Let comparison grow from material detail rather than modern analysis.
   - Do not let insight make him omniscient.
   trajectory: perceive -> distinguish -> choose -> carry -> release
+  fire_1554_refinement:
+    decision_id: DEC.CLAES.FIRE_EPISTEMIC_WOUND.1554.2026-08-21
+    pressure: >-
+      The fire outruns Claes' normal see-compare-understand sequence and reaches him through fragments, helping form the false possibility that seeing earlier or better might have prevented loss.
+    guardrail: subjective survivor reasoning never becomes factual responsibility for the household deaths
 
 - entity_ref: ENT.PERSON.CORNELIS
   characterization_status: CANON
-  archetypal_lenses: [father, steward, gatekeeper, artisan_mentor]
+  archetypal_lenses: [father, steward, gatekeeper, intermediary, network_mentor]
   governing_value: responsible_stewardship
-  strengths: [foresight, provision, practical_judgement, reliability, teaching_by_task, protection]
-  shadow: [emotional_withholding, over_duty, secrecy_as_exclusion, protection_becoming_gatekeeping]
+  strengths: [foresight, provision, practical_judgement, network_judgement, delegation, credit_and_route_sense, circulation, teaching_by_task, protection]
+  shadow: [emotional_withholding, over_duty, secrecy_as_exclusion, protection_becoming_gatekeeping, responsibility_without_operational_control, distance_through_delegation]
   contradictions:
   - domestic reserve versus social and rhetorical vitality among trusted rederijkers
   - outward Catholic conformity versus inward Familist commitment
   - love expressed through responsibility can be received as another test
+  - economic reach through other people's specialist work versus incomplete control of what those systems actually do
+  economic_identity:
+    decision_id: DEC.CORNELIS.ECONOMIC_INTERMEDIARY.2026-08-21
+    core: intermediary_and_steward_of_circulation
+    modes: [property_interest, credit, storage, quality_judgement, routes, delegation, trusted_people, goods_and_text_transmission]
+    beer: biersteker_and_trader_not_automatic_master_brewer
+    salt: economic_interest_without_daily_zoutzieder_role
+    texts: routes_and_transmits_but_does_not_need_to_author_or_print
   habitual_expression:
     speech: short, material, dry, rarely self-explanatory
     humour: dry and often delayed by half a beat
@@ -40,17 +53,26 @@ characters:
   - Do not make every utterance a maxim.
   - Let the rederijker room reveal playfulness and performative range absent at home.
   - His secrecy must arise from real risk and belief as well as temperament.
+  - Do not make intermediary mean passive; his work is active judgement, negotiation, correction and organization.
+  - Do not turn salt-keet ownership or beer competence into proof that he personally performs the specialist production process.
 
 - entity_ref: ENT.PERSON.CLAES_MOTHER
   label: Tanneken Jansdochter
   characterization_status: CANON
-  archetypal_lenses: [mother, embodied_wise_woman, keeper_of_household_continuity]
+  archetypal_lenses: [mother, embodied_wise_woman, keeper_of_household_continuity, operational_continuity]
+  shorthand_refinement: Body / Continuity
   governing_value: sustaining_life_through_attention
-  strengths: [trained_sensation, timing, care, practical_memory, direct_encouragement, humour]
+  strengths: [trained_sensation, timing, condition_judgement, care, practical_memory, stock_and_use_awareness, people_awareness, direct_encouragement, humour]
   shadow: [fear_converted_into_work, hidden_exhaustion, competence_masking_vulnerability]
   contradictions:
   - patient with processes but brisk with avoidable fuss
   - capable of tenderness without making tenderness ceremonial
+  - knows practical economic consequences without needing formal office or abstract commercial language
+  operational_knowledge:
+    decision_id: DEC.TANNEKEN.BODY_CONTINUITY.2026-08-21
+    scope: [household_stock, material_condition, quality, use_and_shortage, work_rhythm, reliability, bodily_cost, daily_consequence]
+    complement_to_cornelis: Cornelis knows circulation; Tanneken knows condition.
+    formal_role: NOT_FIXED
   habitual_expression:
     teaching: show, let_try, correct_by_material_result
     praise: direct and proportionate
@@ -60,6 +82,8 @@ characters:
   - Never mystical or all-knowing.
   - Give her fatigue, irritation, desire and limits as well as competence.
   - Sensory knowledge is learned through repetition, not supernatural intuition.
+  - Do not automatically make her zoutzieder, keetmeesteres, bookkeeper, apothecary or formal business manager.
+  - She may know workers and operational realities without holding an unsupported professional title.
 
 - entity_ref: ENT.PERSON.CLAES_BROTHER
   label: Jan Corneliszn. Nissepat
