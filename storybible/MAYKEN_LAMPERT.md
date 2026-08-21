@@ -2,7 +2,7 @@
 
 **ID:** `SB.CLAES.MAYKEN_LAMPERT`  
 **Status:** CANONICAL DETAIL MODULE  
-**Decisions:** `DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14`, `DEC.CLAES_MAYKEN.CHILDHOOD_ACQUAINTANCE.2026-08-19`  
+**Decisions:** `DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14`, `DEC.CLAES_MAYKEN.CHILDHOOD_ACQUAINTANCE.2026-08-19`, `DEC.MAYKEN.GOES_COUNTER_MEMORY.2026-08-21`  
 **Historical source dossier:** `sources/SRC-HIST-GOES-LAMPERT-APOTHECARY-001.md`
 
 This dossier is the detailed authority for the identity and historical embedding of the character formerly labeled only **geliefde / apothekersdochter**. It is synchronized to the later no-cipher memoriaal decision: Mayken is not a cryptographic solver and no special Dodoens carrier is required.
@@ -17,7 +17,8 @@ She is canonically:
 - granddaughter of the older Goese apothecary **Jacob/Jacop Lampart/Lambert** and the historical household figure **Merricken** in novel genealogy;
 - raised in a material/apothecary environment in Goes;
 - approximately three to four years younger than Claes;
-- already known to Claes as a child before the fire of 18 May 1554, without childhood-romance framing.
+- already known to Claes as a child before the fire of 18 May 1554, without childhood-romance framing;
+- later one partial carrier of a different Goese memory of the fire aftermath and Cornelis' post-fire life.
 
 Mayken's mother remains fictionally **open**. Do not invent a historical wife of Adriaen merely to close the pedigree.
 
@@ -42,7 +43,8 @@ Explicit novel canon, not archival fact:
 - Adriaen is her father and Jacob/Merricken her paternal grandparents;
 - Mayken and Claes know one another as children before 18 May 1554;
 - Mayken becomes Claes' beloved;
-- her precise childhood experiences, education and later relationship biography.
+- her precise childhood experiences, education and later relationship biography;
+- her later access to partial local/family memory about Cornelis' post-fire actions.
 
 No currently searchable transport act identifies a historical daughter of Adriaen. This is absence of evidence in a property corpus, not evidence of absence.
 
@@ -101,7 +103,36 @@ That strength also has a shadow: Mayken may become impatient with a hypothesis, 
 
 Guardrail: do not give Mayken an unsupported university education, formal physician status or later seventeenth-century guild office.
 
-## 7. Memoriaal reveal and material competence
+## 7. Goese counter-memory and the posthumous reading of Cornelis
+
+After the fire Claes leaves Goes for Reimerswaal and later Antwerp. Mayken remains connected to a different Goese household, family network and rebuilding history. That asymmetry gives her access to **a different memory of the same years**.
+
+Under `DEC.MAYKEN.GOES_COUNTER_MEMORY.2026-08-21`, later reunion may allow Mayken to contribute fragments about things Claes could not directly witness:
+
+- how the rumour around `Nissepats keet` circulated or changed;
+- what her family or neighbours saw of Cornelis after Claes left;
+- practical efforts Cornelis made to rebuild livelihood and credit;
+- payments, arrangements, messages or sacrifices connected to Claes' schooling where Mayken has a credible chain of knowledge;
+- local reasons to understand Claes' removal from Goes partly as protection from the rumour environment.
+
+This is **not** permission for Mayken to explain the whole backstory. She knows only what she, her family and local social memory could plausibly retain. She cannot prove the exact technical ignition cause, read Cornelis' private mind or retrospectively acquit him of every possible responsibility.
+
+The strongest dramatic function occurs after Cornelis' death. Claes can no longer confront or reconcile with his father directly. Mayken's fragments can therefore force a **posthumous rereading**:
+
+> what Claes carried as rejection may also have been an imperfect form of protection.
+
+The discovery changes Claes' relation to the past; it does not change the past or make Cornelis secretly perfect.
+
+## 8. Relation to Tanneken's material knowledge
+
+Mayken's method should resonate with, but never duplicate, Claes' mother.
+
+- **Tanneken:** lived operational/material condition through household continuity — stock, use, bodies, timing, reliability and everyday consequence;
+- **Mayken:** increasingly specialized material verification — identity, preparation, measurement, contamination, testing and repeatable contradiction.
+
+Claes can therefore recognize in Mayken a discipline whose basic material trustworthiness his childhood made familiar without reducing Mayken to a substitute mother.
+
+## 9. Memoriaal reveal and material competence
 
 The Brevísima mechanism is direct chemical steganography under `DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15`.
 
@@ -124,13 +155,13 @@ She is **not**:
 
 This gives her competence without making the relationship mechanically dependent on the retired recovery architecture.
 
-## 8. Relationship with Claes
+## 10. Relationship with Claes
 
 `REL.CLAES.BELOVED` / `REL.CLAES.MAYKEN.CONJUNCTIO` is the relationship **Claes ↔ Mayken**.
 
 Dynamic:
 
-**childhood acquaintance with separate Goese lives → separation/different fire aftermaths → later recognition and material proximity → collaborative verification → earned trust → love without possession → sensory/spiritual companionship.**
+**childhood acquaintance with separate Goese lives → separation/different fire aftermaths → later recognition and partial counter-memory → material proximity and collaborative verification → earned trust → love without possession → sensory/spiritual companionship.**
 
 Mayken must never function merely as a reward for Claes' suffering or as a therapist. She has her own competence, history and judgement. She can contradict Claes because she knows things he does not.
 
@@ -142,7 +173,7 @@ Her presence later on the road toward Enkhuizen helps Claes recover the *sinne* 
 
 The mature relation must allow the reverse influence as well: Claes can sometimes see a relation or possibility before Mayken believes it materially established. Their strongest scenes should therefore produce reciprocal revision rather than one person permanently correcting the other.
 
-## 9. Name use
+## 11. Name use
 
 Preferred prose name: **Mayken**.  
 Project/canonical full form: **Mayken Adriaensdr. Lampert**.  
@@ -150,7 +181,7 @@ Possible period forms: **Mayken Adriaens**, **Mayken Adriaensdochter**.
 
 Avoid modernizing her to *Maaike* in the sixteenth-century narrative voice.
 
-## 10. Guardrails
+## 12. Guardrails
 
 1. Mayken is fictional; no historical daughter has been identified.
 2. Adriaen's apothecary identity is strongly supported but remains reconstruction where historical precision matters.
@@ -159,7 +190,10 @@ Avoid modernizing her to *Maaike* in the sixteenth-century narrative voice.
 5. Claes and Mayken know one another before the 1554 fire, but are **not** childhood sweethearts.
 6. Ordinary Dodoens use is allowed; the retired special Dodoens carrier is not.
 7. Mayken shares the 1554 fire horizon with Claes but not his exact losses.
-8. She contributes to Claes' recovery; she does not perform or complete it for him.
-9. She may assist the direct chemical reveal, but she is not a cryptographic key-holder or decoder.
-10. Material verification is her strength and may also become her limitation; do not write her as an infallible corrective to Claes.
-11. Load `storybible/CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md` for stable character behaviour and shadow.
+8. She may later carry partial Goese memory about Cornelis' aftermath, but she is not an omniscient exposition source and cannot prove the fire's ignition cause.
+9. The later Cornelis rereading is partial and preferably posthumous; do not convert it into a neat acquittal or impossible direct reconciliation.
+10. Tanneken and Mayken share respect for material condition but remain distinct: lived continuity versus specialized verification.
+11. She contributes to Claes' recovery; she does not perform or complete it for him.
+12. She may assist the direct chemical reveal, but she is not a cryptographic key-holder or decoder.
+13. Material verification is her strength and may also become her limitation; do not write her as an infallible corrective to Claes.
+14. Load `storybible/CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md` for stable character behaviour and shadow.
