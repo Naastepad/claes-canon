@@ -109,8 +109,9 @@ decisions:
 - id: DEC.NISSEPAT.VOETBOOG_TEKEN.FIRE_SURVIVAL.2026-08-21
   type: ObjectAndMotifDecision
   status: CANON
+  refined_by: DEC.NISSEPAT.VOETBOOG_PENNING.FORM.2026-08-21
   decision: >-
-    Before the 1554 fire the Nissepat family world contains a small metal carrier of the voetboog family sign, linked fictionally to family/Sint-Joris material culture and known to Claes. It is present in the family/grandfather-household world and survives the fire damaged rather than pristine: blackened, discoloured and/or slightly deformed but still recognizable. The exact historical form and institutional meaning of the object remain open.
+    Before the 1554 fire the Nissepat family world contains a small metal carrier of the voetboog family sign, linked fictionally to family/Sint-Joris material culture and known to Claes. It is present in the family/grandfather-household world and survives the fire damaged rather than pristine: blackened, discoloured and/or slightly deformed but still recognizable. The fictional carrier form is fixed separately as a penning/hanger; its exact historical analogue and institutional meaning remain open.
   affects:
   - OBJ.NISSEPAT.VOETBOOG_TEKEN
   - MOTIF.NISSEPAT_VOETBOOG

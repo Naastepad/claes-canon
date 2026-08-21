@@ -1,7 +1,7 @@
 # Goes 18 May 1554 — causal architecture, salt world and post-fire rupture
 
 **Status:** CANONICAL STORY ARCHITECTURE — approved 21 August 2026  
-**Decisions:** `DEC.CORNELIS.ECONOMIC_INTERMEDIARY.2026-08-21`, `DEC.CORNELIS.SALTKEET_INTEREST.1554.2026-08-21`, `DEC.GOES.FIRE_1554.CAUSAL_AMBIGUITY.2026-08-21`, `DEC.TANNEKEN.BODY_CONTINUITY.2026-08-21`, `DEC.CLAES.FIRE_EPISTEMIC_WOUND.1554.2026-08-21`, `DEC.CLAES.CORNELIS.POSTFIRE_PROTECTION_RUMOR.2026-08-21`, `DEC.MAYKEN.GOES_COUNTER_MEMORY.2026-08-21`, `DEC.NISSEPAT.VOETBOOG_TEKEN.FIRE_SURVIVAL.2026-08-21`  
+**Decisions:** `DEC.CORNELIS.ECONOMIC_INTERMEDIARY.2026-08-21`, `DEC.CORNELIS.SALTKEET_INTEREST.1554.2026-08-21`, `DEC.GOES.FIRE_1554.CAUSAL_AMBIGUITY.2026-08-21`, `DEC.TANNEKEN.BODY_CONTINUITY.2026-08-21`, `DEC.CLAES.FIRE_EPISTEMIC_WOUND.1554.2026-08-21`, `DEC.CLAES.CORNELIS.POSTFIRE_PROTECTION_RUMOR.2026-08-21`, `DEC.MAYKEN.GOES_COUNTER_MEMORY.2026-08-21`, `DEC.NISSEPAT.VOETBOOG_TEKEN.FIRE_SURVIVAL.2026-08-21`, `DEC.GOES.FIRE_1554.CLAES_PRESENT_CORNELIS_ABSENT.2026-08-21`, `DEC.NISSEPAT.VOETBOOG_PENNING.FORM.2026-08-21`, `DEC.CLAES.REIMERSWAAL.ARRIVAL_AGE_11.2026-08-21`
 **Existing historical projection:** `WORLD.GOES.FIRE_1554.REFINEMENT`, `SRC-HIST-GOES-FIRE-1554-REFINEMENT-001`  
 **Existing family authority:** `storybible/FAMILY_CLAES_1542_1554.md`
 
@@ -180,6 +180,8 @@ Before the fire Claes' intelligence often succeeds through:
 
 On 18 May the world changes faster than that sequence can complete. He cannot see every fire front, conversation, movement or death. He receives the event as fragments: smoke, alarm, conflicting reports, blocked routes, waiting, absence and later confirmation.
 
+Claes is not safely elsewhere. He is eleven and remains inside the Goese fire event, experiencing alarm, escape, separation, waiting and searching directly, while surviving away from the family house. Cornelis is absent from the immediate fire zone during the decisive household-loss interval. Their later grief therefore begins from unequal knowledge: neither witnessed what the other did, and neither can supply the other's missing experience.
+
 This creates a formative false possibility:
 
 > **If I had seen earlier or better, perhaps loss could have been prevented.**
@@ -279,11 +281,15 @@ Before the fire the intended continuation of Claes' schooling is **Zierikzee**.
 
 After the fire, the combination of household loss, damaged capital, recovery needs and worsening economic/reputational pressure makes that plan financially or practically unattainable. Claes therefore continues his education in **Reimerswaal**, while Cornelis remains in Goes.
 
+Claes is **eleven** when he arrives later in 1554 and turns twelve on 8 December. Any eight- or nine-year arrival note belongs to the superseded 1545-birth chronology.
+
 The exact comparative price of schooling/boarding in Zierikzee versus Reimerswaal remains a historical research question. The **causal story function** is fixed even if the precise cost mechanism is later refined.
 
 This produces the durable chain:
 
 **Goes/Puttus -> intended Zierikzee -> fire and post-fire damage -> Reimerswaal.**
+
+The manuscript has already planted Reimerswaal as the destination one would not want to inhabit, let alone attend school in. When the route changes, *De Kade* must return briefly and specifically to that remembered judgement. Generic cold/water unease is insufficient because it does not cash the earlier reader promise.
 
 ---
 
@@ -305,6 +311,8 @@ For Claes:
 Cornelis expresses love primarily through provision, arrangement, responsibility and protection. Claes longs for proximity, words and visible choosing. The same act is therefore both paternal sacrifice and filial experience of abandonment.
 
 Claes should receive evidence of continuing care — money, materials, messages, arrangements or visits where plausible — without that evidence automatically healing the emotional reading.
+
+Grandfather Claes Jacobsz. belongs visibly to this aftermath. He has lost the house he owned, is present by the burial/early formal arrangements and helps Cornelis preserve Claes' education. Temporary lodging with grandfather's sister may remain, but it needs a practical explanation and cannot function as an accidental erasure of grandfather.
 
 ---
 
@@ -332,16 +340,7 @@ The strongest function comes **after Cornelis' death**: Claes cannot reconcile w
 
 ## 12. The metal Nissepat voetboog sign
 
-Before the fire Claes knows a small metal carrier of the Nissepat voetboog family sign within the family/Sint-Joris material world.
-
-The exact object class remains OPEN:
-
-- ring;
-- badge/insigne;
-- pendant;
-- seal-related object;
-- prize or trophy-related object;
-- another modest metal family/guild carrier.
+Before the fire Claes knows a small metal **penning/hanger on a thin copper chain** bearing the Nissepat voetboog family sign within the fictional family/Sint-Joris material world. Grandfather Claes Jacobsz. had a small set made, and Jan receives this example after asking for one. It is not an ancient heirloom, official guild badge, schutterskoning prize or the object behind the historical Muschart record.
 
 Do not use any of those labels as established historical fact until the form is decided and supported.
 
@@ -411,6 +410,6 @@ The fire is therefore not merely backstory trauma. It is the hinge that turns Cl
 10. Economic decline is cumulative erosion, not an instantaneous total boycott.
 11. Zierikzee -> Reimerswaal is fixed causal story architecture; exact cost comparison remains research-open.
 12. Mayken contributes partial later Goese memory, not omniscient explanation or proof of ignition.
-13. The damaged metal voetboog sign survives as fiction canon; its exact object class remains open.
+13. The damaged metal voetboog penning/hanger survives as fiction canon; its historical analogue and institutional status remain open.
 14. Do not import later salt-work regulations, job titles, clothing or techniques into 1554 without period/place control.
 15. Scene-level morning weather, window detail, Catholic ritual and technical keet choreography remain subordinate to evidence and the separate writing brief.

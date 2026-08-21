@@ -105,11 +105,13 @@ Cornelis' own Antwerp network also begins in this pre-fire world. A historical *
 
 ### III — 18 May 1554–1561: first blackening and Reimerswaal
 
-The Goes fire destroys or makes the family house uninhabitable in novel canon. Claes and Cornelis survive because they are away; Tanneken, Jan and the unborn child die. Historical evidence supports a partially damaged old-Nieuwstraat/Armenhoek environment but does not document these fictional casualties.
+The Goes fire destroys or makes the family house uninhabitable in novel canon. Claes directly experiences alarm, escape, waiting, searching and fragmentary confirmation but survives away from the house when it becomes fatal. Cornelis is absent from the immediate fire zone and returns into the aftermath. Tanneken, Jan and the unborn child die. Historical evidence supports a partially damaged old-Nieuwstraat/Armenhoek environment but does not document these fictional casualties.
 
 For Cornelis the fire therefore **tests an already existing Familist conviction; it does not create it**. The same catastrophe also leaves Ghysbrecht's Goese property represented as burned in the 1554 archival record, allowing the trade relation to remain materially connected to the memory of burned Goes without making the two men's losses equivalent.
 
-Cornelis remains in Goes to rebuild livelihood and finance Claes' education. Zierikzee becomes unaffordable; Claes goes to Reimerswaal. The separation is care experienced as another loss.
+The catastrophe, confirmation, burial/early aftermath, father-son misattunement and departure unfold across multiple chapters. Grandfather Claes Jacobsz. remains present by the burial and helps with practical arrangements despite losing his own property asset.
+
+Cornelis remains in Goes to rebuild livelihood and finance Claes' education. Zierikzee becomes unaffordable; eleven-year-old Claes goes to Reimerswaal and turns twelve on 8 December 1554. In *De Kade*, the changed destination briefly reactivates the specific dread planted in *De Kraai*: the city where one would not want to live, let alone attend school. The separation is care experienced as another loss.
 
 Reimerswaal remains a functioning city while recurrent water damage, repairs and later fire teach another form of impermanence. School gives Claes rule, memory and language; the threatened city turns attention increasingly into vigilance. The exact 1554 curriculum, teacher and school building remain reconstruction rather than archival fact.
 

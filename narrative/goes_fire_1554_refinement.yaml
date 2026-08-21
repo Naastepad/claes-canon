@@ -10,6 +10,11 @@ modules:
   - DEC.GOES.FIRE_1554.CAUSAL_AMBIGUITY.2026-08-21
   - DEC.CLAES.FIRE_EPISTEMIC_WOUND.1554.2026-08-21
   - DEC.CLAES.CORNELIS.POSTFIRE_PROTECTION_RUMOR.2026-08-21
+  - DEC.GOES.FIRE_1554.CLAES_PRESENT_CORNELIS_ABSENT.2026-08-21
+  - DEC.MANUSCRIPT.POSTFIRE.GRANDFATHER_CONTINUITY.2026-08-21
+  - DEC.MANUSCRIPT.REIMERSWAAL_DREAD_CALLBACK.2026-08-21
+  - DEC.CLAES.REIMERSWAAL.ARRIVAL_AGE_11.2026-08-21
+  - DEC.MANUSCRIPT.FIRE_SEQUENCE.MULTICHAPTER.2026-08-21
   story_time: {earliest: '1554-05-18', latest_exclusive: '1554-05-19', precision: day}
   location: ENT.LOC.GOES
   claims_active:
@@ -45,11 +50,12 @@ modules:
   household_intersection:
     home: ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
     historical_parcel_damage: UNKNOWN
-    novel_canon: "The house is destroyed/uninhabitable; Tanneken, Jan and the unborn child die; Claes and Cornelis survive away from the house."
+    novel_canon: "The house is destroyed/uninhabitable; Tanneken, Jan and the unborn child die. Claes directly experiences the fire but survives away from the house; Cornelis is absent from the immediate fire zone."
     decision: DEC.CLAES.FAMILY_FIRE.1554.2026-08-14
     guardrails:
     - "The specific Nissepat parcel loss is novel canon, not a proven archival parcel identification."
     - "The named family deaths are fictional story casualties, not names recovered from a historical victim list."
+    - "Do not collapse Claes' direct catastrophe experience and Cornelis' absence into one shared survivor position."
   cornelis_salt_interest:
     fiction_status: FICTION_CANON
     decision: DEC.CORNELIS.SALTKEET_INTEREST.1554.2026-08-21
@@ -80,6 +86,7 @@ modules:
     possible_scene_categories: [prayer, mass, burial, charity, penance, providence, judgement, mercy, communal_obligation]
     social_mechanism: "general religious disaster language can be interpreted by townspeople through the existing salt-keet rumour without a priest naming Cornelis"
     cornelis_religious_guardrail: "Cornelis is already Familist/Huis der Liefde by ca.1552-1553 while outwardly Catholic; the fire tests rather than causes that affiliation"
+    grandfather_continuity: "Claes Jacobsz. knows of the deaths and is present by the burial/early formal aftermath; his practical help remains visible even if Claes temporarily lodges with the great-aunt."
   economic_aftermath:
     mode: cumulative_erosion
     pressures: [household_loss, damaged_capital, salt_interest_disruption, repair_costs, claims_and_debt, reputational_damage, credit_caution, lost_operational_continuity]
@@ -88,13 +95,20 @@ modules:
   schooling_transition:
     prefire_plan: ENT.LOC.ZIERIKZEE
     postfire_route: ENT.LOC.REIMERSWAAL
+    claes_age_on_arrival: 11
     fixed_causality: "post-fire loss/recovery/reputational pressure makes the intended Zierikzee continuation financially or practically unattainable"
+    manuscript_callback: "De Kade briefly reactivates the specific De Kraai judgement that one would not want to live in Reimerswaal, let alone attend school there."
     exact_cost_comparison: OPEN
   father_son_separation:
     decision: DEC.CLAES.CORNELIS.POSTFIRE_PROTECTION_RUMOR.2026-08-21
     cornelis_intent: [preserve_education, protect_from_immediate_ruin, protect_from_local_rumour, remain_in_goes_to_rebuild]
     claes_reading: "everyone else is gone and father sends me away too"
     double_truth: "paternal protection and filial experience of rejection coexist"
+  manuscript_structure:
+    decision: DEC.MANUSCRIPT.FIRE_SEQUENCE.MULTICHAPTER.2026-08-21
+    fixed: "catastrophe, confirmation, ritual/practical aftermath, father-son misattunement and departure are distributed across multiple chapters"
+    exact_chapter_count: OPEN
+    intentional_non_repair: "Mayken need not appear in the immediate aftermath."
   narrative_function:
   - "micro-Nigredo and destruction of Claes' household world"
   - "first catastrophic failure of Claes' observe-compare-understand method"

@@ -24,12 +24,13 @@ claims:
 
 - id: STC.CLAES.FAMILY_FIRE.1554.001
   type: StoryClaim
-  statement: "In novel canon, the 18 May 1554 Goes fire makes the older-Nieuwstraat family home uninhabitable/destroys it. Claes and Cornelis survive away from the house; Tanneken Jansdochter, Jan Corneliszn. Nissepat and the unborn child die in the fire."
+  statement: "In novel canon, the 18 May 1554 Goes fire makes the older-Nieuwstraat family home uninhabitable/destroys it. Eleven-year-old Claes directly experiences the Goese fire but survives away from the house; Cornelis is absent from the immediate fire zone during the decisive household-loss interval. Tanneken Jansdochter, Jan Corneliszn. Nissepat and the unborn child die in the fire."
   canon_status: CANON
   evidence_status: PLAUSIBLE
   decision_ids:
   - DEC.CLAES.FAMILY_FIRE.1554.2026-08-14
   - DEC.CLAES.EXTENDED_FAMILY.2026-08-14
+  - DEC.GOES.FIRE_1554.CLAES_PRESENT_CORNELIS_ABSENT.2026-08-21
   subjects:
   - ENT.PERSON.CLAES
   - ENT.PERSON.CORNELIS
@@ -108,11 +109,12 @@ claims:
 
 - id: STC.CLAES.GRANDFATHER.NISSEPAT.001
   type: StoryClaim
-  statement: "For novel genealogy, historical Claes Jacobsz. Nissepat is the fictional father of Cornelis and paternal grandfather of Claes. He remains story-owner of the 1542 Nieuwstraat house through the fire, loses that property in 1554, and helps Cornelis continue paying for Claes' education afterward."
+  statement: "For novel genealogy, historical Claes Jacobsz. Nissepat is the fictional father of Cornelis and paternal grandfather of Claes. He remains story-owner of the 1542 Nieuwstraat house through the fire, loses that property in 1554, is present by the burial/early formal aftermath, and helps Cornelis continue paying for Claes' education afterward."
   canon_status: CANON
   evidence_status: PLAUSIBLE
   decision_ids:
   - DEC.CLAES.GRANDFATHER_LINK.2026-08-14
+  - DEC.MANUSCRIPT.POSTFIRE.GRANDFATHER_CONTINUITY.2026-08-21
   subjects:
   - ENT.PERSON.CLAES_JACOBSZ_NISSEPAT
   - ENT.PERSON.CORNELIS
@@ -125,12 +127,13 @@ claims:
 
 - id: STC.CLAES.CORNELIS.POSTFIRE_SEPARATION.001
   type: StoryClaim
-  statement: "After the 1554 fire Cornelis remains in Goes to rebuild shelter, livelihood, credit and business and to finance Claes' education as far as possible, partly supported by his father Claes Jacobsz. Fire losses and subsequent reputational/credit erosion make the intended Zierikzee route financially or practically unattainable. Claes goes to Reimerswaal; Cornelis also intends the distance to protect him from the immediate Goese rumour environment. Their separation is a second loss layered onto the household destruction: Cornelis acts from care and duty, while Claes can experience the same act as abandonment."
+  statement: "After the 1554 fire Cornelis remains in Goes to rebuild shelter, livelihood, credit and business and to finance Claes' education as far as possible, partly supported by his father Claes Jacobsz. Fire losses and subsequent reputational/credit erosion make the intended Zierikzee route financially or practically unattainable. Eleven-year-old Claes goes to Reimerswaal later in 1554; Cornelis also intends the distance to protect him from the immediate Goese rumour environment. Their separation is a second loss layered onto the household destruction: Cornelis acts from care and duty, while Claes can experience the same act as abandonment."
   canon_status: CANON
   evidence_status: PLAUSIBLE
   decision_ids:
   - DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14
   - DEC.CLAES.CORNELIS.POSTFIRE_PROTECTION_RUMOR.2026-08-21
+  - DEC.CLAES.REIMERSWAAL.ARRIVAL_AGE_11.2026-08-21
   subjects:
   - ENT.PERSON.CLAES
   - ENT.PERSON.CORNELIS

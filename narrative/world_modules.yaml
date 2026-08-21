@@ -42,8 +42,9 @@ modules:
     record_role: FRAMEWORK_PLUS_ACTIVE_DOMAIN
     historical_method: SOURCE_WEIGHTED_RECONSTRUCTION
     claes_presence: {earliest: 1554-05-19, latest_exclusive: 1561-09-01, precision: bounded}
+    arrival_age: 11
     narrative_functions: ["displacement", "Latin formation", "advanced older-pupil formation", "water/earth half of elemental symmetry", "adaptation to strange households", "water-marked Zovitius object biography"]
-    educational_route: "After the Goes fire, Reimerswaal replaces the intended Zierikzee destination. Claes enters after elementary schooling in Goes; the 1554–1561 span progresses into advanced/older-pupil formation and is not seven years of beginner curriculum."
+    educational_route: "After the Goes fire, Reimerswaal replaces the intended Zierikzee destination. Eleven-year-old Claes enters after elementary schooling in Goes; the 1554–1561 span progresses into advanced/older-pupil formation and is not seven years of beginner curriculum."
     evidence_boundary: "Reimerswaal's durable school tradition is historically supported; the exact 1554 Latin curriculum, school building, teacher and Claes attendance are story reconstruction."
     linked_world_modules: [WORLD.HISTORICAL_SUBSTRATE_1540_1605, WORLD.RELIGIOUS_SPACE.SENSORY_CHURCH]
     detail_files: [storybible/domains/REIMERSWAAL_SCHOOL_1554_1561.md, sources/SRC-HIST-REIMERSWAAL-SCHOOL-CITY-001.md]
@@ -54,6 +55,7 @@ modules:
       - "No invented named rector or fixed surviving medieval school building."
       - "Do not impose a modern fixed-age cohort or locally unverified class structure on the Reimerswaal school."
       - "Exact 1554 Latin curriculum is source-weighted fictional reconstruction, not direct archival proof."
+      - "Do not use the superseded eight/nine arrival age; Claes is eleven and turns twelve on 8 December 1554."
 
   - id: WORLD.ANTWERP
     label: "Antwerp — time-sliced trade, rhetoric, printing and conflict"

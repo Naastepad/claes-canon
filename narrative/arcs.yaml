@@ -117,10 +117,15 @@ arcs:
   participants: [ENT.PERSON.CLAES, ENT.PERSON.CORNELIS]
   movement: dependence/admiration within an intact family -> shared catastrophic loss -> loving but painful Goes/Reimerswaal separation -> interpretive distance/secrecy -> 1567 warning and repeated exposure -> witnessed execution 19 November 1569 -> inherited responsibility -> adult moral differentiation
   1554_hinge:
-    decision_id: DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14
+    decision_ids:
+    - DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14
+    - DEC.GOES.FIRE_1554.CLAES_PRESENT_CORNELIS_ABSENT.2026-08-21
+    - DEC.MANUSCRIPT.POSTFIRE.GRANDFATHER_CONTINUITY.2026-08-21
+    - DEC.CLAES.REIMERSWAAL.ARRIVAL_AGE_11.2026-08-21
     father: stays in Goes to rebuild livelihood, business and shelter and keep paying for Claes' schooling
-    son: goes to Reimerswaal and can experience the father's sacrifice as another abandonment
-    shared_truth: Both survive the same collapse of family but must grieve it apart.
+    son: directly experiences the fire, then goes to Reimerswaal at eleven and can experience the father's sacrifice as another abandonment
+    grandfather: present by the burial/early aftermath and helps despite his own property loss
+    shared_truth: Both lose the same household, but Claes experiences the fire directly while Cornelis is absent from the immediate zone; they must grieve from unequal knowledge and apart.
   1569_hinge:
     decision_id: DEC.CORNELIS.DEATH.1569.2026-08-15.REVISED
     date: '1569-11-19'

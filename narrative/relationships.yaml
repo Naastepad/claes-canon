@@ -14,9 +14,13 @@ relationships:
   - label: shared catastrophe and physical separation
     story_time: {earliest: '1554-05-18', latest_exclusive: '1561-09-01', precision: bounded}
     value_state: shared family -> surviving father and son who also lose daily access to each other
-    function: Both lose Tanneken, Jan, the unborn child and home. Cornelis remains in Goes to rebuild livelihood, business and shelter and finance Claes' education; Claes is sent to Reimerswaal. Cornelis' act of care is therefore also experienced by Claes as distance and possible abandonment.
-    support: Claes Jacobsz. Nissepat, fictionally Cornelis' father, helps where possible despite losing the 1542 house; maternal grandmother Mayken Pietersdochter preserves a different continuity through care and family memory.
-    decision_id: DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14
+    function: Both lose Tanneken, Jan, the unborn child and home, but not from the same position. Claes directly experiences the wider fire while Cornelis is absent from the immediate zone. Cornelis remains in Goes to rebuild livelihood, business and shelter and finance Claes' education; eleven-year-old Claes is sent to Reimerswaal. Cornelis' act of care is therefore also experienced by Claes as distance and possible abandonment.
+    support: Claes Jacobsz. Nissepat, fictionally Cornelis' father, is present by the burial/early aftermath and helps where possible despite losing the 1542 house; maternal grandmother Mayken Pietersdochter preserves a different continuity through care and family memory.
+    decision_ids:
+    - DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14
+    - DEC.GOES.FIRE_1554.CLAES_PRESENT_CORNELIS_ABSENT.2026-08-21
+    - DEC.MANUSCRIPT.POSTFIRE.GRANDFATHER_CONTINUITY.2026-08-21
+    - DEC.CLAES.REIMERSWAAL.ARRIVAL_AGE_11.2026-08-21
   - label: distance through secrecy and network risk
     story_time: {earliest: '1561-09-01', latest_exclusive: '1567-09-01', precision: interval}
     value_state: admiration -> suspicion/exclusion

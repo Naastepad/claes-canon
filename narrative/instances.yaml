@@ -65,6 +65,10 @@ instances:
   label: Stadsbrand Goes — verlies van huis en gezin
   canon_status: CANON
   details_status: MIXED_HISTORICAL_AND_NOVEL_CANON
+  decision_ids:
+  - DEC.CLAES.FAMILY_FIRE.1554.2026-08-14
+  - DEC.GOES.FIRE_1554.CLAES_PRESENT_CORNELIS_ABSENT.2026-08-21
+  - DEC.MANUSCRIPT.FIRE_SEQUENCE.MULTICHAPTER.2026-08-21
   story_time:
     date: '1554-05-18'
     precision: day
@@ -101,11 +105,17 @@ instances:
   narrative_state_change:
     before: "intact household: parents, Claes, younger brother, expected child, shared home"
     after: "Cornelis and Claes survive; mother, brother and unborn child are dead; home is lost; grandfather loses the property asset"
+  participant_positions: "Claes directly experiences the wider fire but survives away from the house; Cornelis is absent from the immediate fire zone during the decisive household-loss interval."
+  manuscript_structure: "The event, confirmation and immediate consequences are distributed across multiple chapters rather than closed in one set piece."
   historical_guardrail: "Historical evidence supports a northern-harbour origin, broad north/west damage and mixed damage in the old Nieuwstraat/Armenhoek environment, but not the loss of this specific house or these named family casualties; the current fire-specific casualty count remains UNKNOWN."
 - id: NI.SEQUENCE.POSTFIRE_FAMILY.1554.001
   type: SequenceInstance
   label: Nasleep — vader en zoon verliezen ook elkaar
   canon_status: CANON
+  decision_ids:
+  - DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14
+  - DEC.MANUSCRIPT.POSTFIRE.GRANDFATHER_CONTINUITY.2026-08-21
+  - DEC.MANUSCRIPT.FIRE_SEQUENCE.MULTICHAPTER.2026-08-21
   story_time:
     earliest: '1554-05-18'
     latest_exclusive: '1554-12-08'
@@ -119,16 +129,20 @@ instances:
   - ENT.PERSON.CLAES_JACOBSZ_NISSEPAT
   story_claims:
   - STC.CLAES.CORNELIS.POSTFIRE_SEPARATION.001
-  function: "Cornelis remains amid the Goese recovery to rebuild livelihood/business/shelter and fund Claes' schooling; grandfather helps despite his own property loss; Claes is sent away to Reimerswaal, turning care into physical separation."
+  function: "Cornelis remains amid the Goese recovery to rebuild livelihood/business/shelter and fund Claes' schooling; grandfather is present by the burial/early formal aftermath and helps despite his own property loss; Claes is sent away to Reimerswaal, turning care into physical separation."
   value_shift: "surviving together -> grieving apart"
 - id: NI.EVENT.REIMERSWAAL_MOVE.1554.001
   type: EventInstance
   label: Vertrek als kostjongen naar Reimerswaal
   canon_status: CANON
+  decision_ids:
+  - DEC.CLAES.REIMERSWAAL.ARRIVAL_AGE_11.2026-08-21
+  - DEC.MANUSCRIPT.REIMERSWAAL_DREAD_CALLBACK.2026-08-21
   story_time:
     earliest: '1554-05-19'
     latest_exclusive: '1554-12-08'
     precision: bounded
+  claes_age: 11
   locations:
   - ENT.LOC.REIMERSWAAL
   entities:
@@ -140,6 +154,7 @@ instances:
   - STC.CLAES.ZIERIKZEE.PLAN.001
   - STC.CLAES.CORNELIS.POSTFIRE_SEPARATION.001
   cause: "Post-fire household/economic collapse makes the original Zierikzee plan unaffordable; Reimerswaal preserves Claes' educational route at lower cost while Cornelis remains in Goes."
+  manuscript_projection: "De Kade briefly recalls the De Kraai judgement that one would not want to live in Reimerswaal, let alone attend school there; generic cold/water unease does not complete the planted dread."
 - id: NI.EVENT.LANDJUWEEL.1561.001
   type: EventInstance
   label: Landjuweel Antwerpen

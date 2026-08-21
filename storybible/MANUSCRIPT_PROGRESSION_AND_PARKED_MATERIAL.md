@@ -192,14 +192,22 @@ The most important reusable items are not the longest deleted passages but the o
 
 Several other cuts are explicitly `REJECTED_STORY_OPTION`, especially a 1547 proto-Familist Cornelis signal, an unsupported exact Sint-Joris banner-blessing ritual, devies-as-routine-greeting, hereditary Nissepat shooter determinism and Puttus as anti-ritual religious oracle. Those are **not** parked ideas waiting to return.
 
-## 12. Current manuscript-to-canon repair flags exposed by the ingest
+## 12. Manuscript-to-canon repairs resolved on 21 August 2026
 
-The revision ingest also reveals current prose issues that are not solved merely by parking deleted text:
+`canon/DECISIONS_MANUSCRIPT_SYNC_2026-08-21.yaml` closes the five ingest flags without promoting them into five equal creative questions:
 
-- *De Lei*: the elementary master appears under both Adriaen and Jacob; one fiction-canon identity must be chosen or the prose neutralized.
-- *Het Wapen*: the prose specifies a wind/touw/haak spanning arrangement while the exact mechanism remains historically/open-authorially unresolved; either canonize the fiction fill or generalize the prose.
-- *De Wieg*: `drie jongere monden in plaats van twee` appears inconsistent with the current family state, and an earlier lost child is introduced without current family canon.
-- *De Ladingen van Antwerpen*: formulations around Cornelis' `eigen bier` and Claes knowing `het brouwen` require alignment with Cornelis as biersteker rather than fixed master brewer/owner.
-- *De Loog van Antwerpen* and *De Dood van Sol*: concealment analogies must not silently become a routine books-hidden-in-beer-barrels mechanism contrary to the current logistics guardrail.
+- *De Lei*: use Meester Jacob; Puttus remains the separate Latin/humanist master.
+- *Het Wapen*: preserve the bodily spanning sequence but generalize the exact apparatus subtype.
+- *De Wieg*: preserve the fixed family of Claes, Jan and the unborn child; remove the extra-mouth arithmetic and the unestablished earlier lost child.
+- *Het Zaad* and *De Ladingen van Antwerpen*: present Cornelis as biersteker/intermediary, not fixed brewery owner or master brewer.
+- *De Loog van Antwerpen* and *De Dood van Sol*: preserve logistics resonance but remove routine books-hidden-in-beer-casks implications.
 
-These are **repair flags**, not automatic canon changes. They should be resolved deliberately during the next manuscript-continuity pass.
+The same sync fixes the manuscript projection around the 1554 sequence:
+
+- Claes directly experiences the fire; Cornelis is absent from its immediate zone.
+- Claes Jacobsz. is present by the burial/early aftermath and helps with practical arrangements; temporary lodging with his sister does not erase him.
+- *De Kade* must pay off the specific Reimerswaal dread planted in *De Kraai*.
+- Claes reaches Reimerswaal at eleven and turns twelve on 8 December 1554.
+- the fire, confirmation, aftermath and departure form a multi-chapter sequence.
+
+Mayken's absence from the immediate aftermath is intentional continuity, not a repair target. The later manuscript files for the fire sequence and *De Kade* are outside this repository; this file records the binding projection and does not falsely certify sentence-level application in those external files.

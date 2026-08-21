@@ -24,17 +24,19 @@ projections:
     story_time: {date: '1554-05-18', precision: day}
     label: "Goes fire — first catastrophic solve"
     cause: "The historically grounded city fire intersects the fictional Nissepat household."
-    effect: "House, mother, brother and unborn sibling are lost; Claes' belief in attention as protection is wounded rather than disproved in his own mind."
+    effect: "House, mother, brother and unborn sibling are lost; Claes' belief in attention as protection is wounded rather than disproved in his own mind. Claes directly experiences the fire while Cornelis is absent from the immediate zone; grandfather remains present by burial/early aftermath."
     instances: [NI.EVENT.GOES_FIRE.1554.001]
     arcs_advanced: [ARC.CLAES.LIFE, ARC.CLAES.CORNELIS, ARC.CLAES.SINNE_RECOVERY]
+    manuscript_structure: "multi-chapter catastrophe -> confirmation -> aftermath -> departure"
 
   - id: H03
     story_time: {earliest: '1554-05-19', latest_exclusive: '1561-09-01', precision: bounded}
     label: "Reimerswaal — learning under slow erosion"
-    cause: "Post-fire economics replace the intended Zierikzee path with Reimerswaal and separate father and son."
+    cause: "Post-fire economics replace the intended Zierikzee path with Reimerswaal, send eleven-year-old Claes toward a destination already planted as fearful, and separate father and son."
     effect: "Claes gains language/rule competence while repeated water/fire pressure turns attention into vigilance."
     instances: [NI.EVENT.REIMERSWAAL_MOVE.1554.001]
     authoring_inputs: [WORLD.REIMERSWAAL]
+    manuscript_callbacks: ["De Kraai Reimerswaal dread -> De Kade specific recollection"]
 
   - id: H04
     story_time: {earliest: '1561-08-01', latest_exclusive: '1561-09-01', precision: month}

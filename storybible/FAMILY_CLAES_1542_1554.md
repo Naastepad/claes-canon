@@ -1,7 +1,7 @@
 # Claes Nissepat — familie 1542–1554
 
 **Status:** CANON — approved 14 August 2026; refined 21 August 2026  
-**Decisions:** `DEC.CLAES.EXTENDED_FAMILY.2026-08-14`, `DEC.CORNELIS.ECONOMIC_INTERMEDIARY.2026-08-21`, `DEC.CORNELIS.SALTKEET_INTEREST.1554.2026-08-21`, `DEC.TANNEKEN.BODY_CONTINUITY.2026-08-21`, `DEC.CLAES.CORNELIS.POSTFIRE_PROTECTION_RUMOR.2026-08-21`  
+**Decisions:** `DEC.CLAES.EXTENDED_FAMILY.2026-08-14`, `DEC.CORNELIS.ECONOMIC_INTERMEDIARY.2026-08-21`, `DEC.CORNELIS.SALTKEET_INTEREST.1554.2026-08-21`, `DEC.TANNEKEN.BODY_CONTINUITY.2026-08-21`, `DEC.CLAES.CORNELIS.POSTFIRE_PROTECTION_RUMOR.2026-08-21`, `DEC.GOES.FIRE_1554.CLAES_PRESENT_CORNELIS_ABSENT.2026-08-21`, `DEC.CLAES.REIMERSWAAL.ARRIVAL_AGE_11.2026-08-21`, `DEC.MANUSCRIPT.POSTFIRE.GRANDFATHER_CONTINUITY.2026-08-21`
 **Story Claim:** `STC.CLAES.EXTENDED_FAMILY.001`  
 **Fire authority:** `storybible/GOES_FIRE_1554_CAUSAL_ARCHITECTURE.md`
 
@@ -123,6 +123,8 @@ His historical occupation is not known. Do not label him archival 'brouwer', 'ko
 
 In novel canon he makes the 1542 house available to Cornelis and Tanneken as their family home. He remains story-owner through the 1554 fire and loses the asset when the house becomes uninhabitable/destroyed. Despite this loss he can still help Cornelis preserve Claes' educational future through money, credit, contacts or practical support.
 
+He does not disappear after the pre-fire chapters. He learns of the deaths and is present by the burial/early formal aftermath. His manner remains verbally spare and materially practical. Claes may stay temporarily with his great-aunt because that is the workable lodging arrangement, but the prose must not imply that grandfather has vanished or is unaware of the catastrophe.
+
 His relation to Claes carries a different knowledge tradition from Tanneken's: ownership, provenance, accounts, obligation, debt, transfer and the question of what belongs to whom.
 
 The family/grandfather-household world also contains the fictional metal carrier of the Nissepat voetboog sign before the fire. Its exact form is governed separately and remains historically open; it survives the 1554 rupture damaged rather than pristine.
@@ -192,7 +194,7 @@ Claes' later strength lies partly in learning to hold both without confusing eit
 
 Immediately before the fire the household consists of five lives if the unborn child is counted: Cornelis, Tanneken, Claes, Jan and the unborn child.
 
-In novel canon the older-Nieuwstraat home becomes uninhabitable/is destroyed. Cornelis and Claes survive because they are away from the house. Tanneken, Jan and the unborn child die.
+In novel canon the older-Nieuwstraat home becomes uninhabitable/is destroyed. Eleven-year-old Claes directly experiences the Goese fire event but survives because he is away from the house when it becomes fatal. Cornelis is absent from the immediate fire zone during the decisive household-loss interval. Tanneken, Jan and the unborn child die.
 
 Historically, burned houses are documented in the older Nieuwstraat/Armenhoek environment after the fire, while other houses in Nieuwstraat also survive. The specific destruction of the 1542 Nissepat house and the deaths of these family members are therefore plausible novel reconstruction, **not archival fact**.
 
@@ -203,6 +205,7 @@ The fire's broader fictional causality is governed by `storybible/GOES_FIRE_1554
 - the fire is socially associated with `Nissepats keet`, making economic involvement easier for the city to read as personal blame;
 - fire damage, recovery costs, reputational pressure, weakened credit/trust and Tanneken's loss together make Cornelis' recovery harder;
 - the intended Zierikzee school route becomes unattainable and Claes is sent to Reimerswaal;
+- Claes is eleven when he arrives there later in 1554 and turns twelve on 8 December;
 - Cornelis also intends distance as protection from the immediate rumour environment;
 - Claes can experience that protective separation as rejection.
 

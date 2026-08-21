@@ -34,9 +34,11 @@ claims:
   - education
 - id: STC.CLAES.REIMERSWAAL.001
   type: StoryClaim
-  statement: After the Goes fire Claes is sent as a cost pupil to the Latin school of Reimerswaal and remains there until summer 1561.
+  statement: After the Goes fire eleven-year-old Claes is sent as a cost pupil to the Latin school of Reimerswaal later in 1554, turns twelve on 8 December 1554, and remains there until summer 1561.
   canon_status: CANON
   evidence_status: SUPPORTED
+  decision_ids:
+  - DEC.CLAES.REIMERSWAAL.ARRIVAL_AGE_11.2026-08-21
   subjects:
   - ENT.PERSON.CLAES
   objects:
@@ -48,6 +50,7 @@ claims:
   tags:
   - education
   - location
+  - chronology
 - id: STC.CLAES.ZIERIKZEE.PLAN.001
   type: StoryClaim
   statement: Zierikzee was Cornelis’ intended school destination for Claes before the 1554 fire, but it is not the actual destination.

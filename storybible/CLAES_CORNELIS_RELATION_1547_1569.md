@@ -1,7 +1,7 @@
 # Claes en Cornelis — vader-zoonrelatie 1547–1569
 
 **Status:** CANON — approved 18 August 2026; refined 21 August 2026  
-**Governing decisions:** `DEC.CLAES.CORNELIS.RECOGNITION.2026-08-18`, `DEC.CLAES.CORNELIS.RESPONSIBILITY.2026-08-18`, `DEC.CLAES.CORNELIS.RELIGIOUS_DISSONANCE.2026-08-18`, `DEC.CLAES.CORNELIS.POSTFIRE_READING.2026-08-18`, `DEC.CORNELIS.ECONOMIC_INTERMEDIARY.2026-08-21`, `DEC.CLAES.FIRE_EPISTEMIC_WOUND.1554.2026-08-21`, `DEC.CLAES.CORNELIS.POSTFIRE_PROTECTION_RUMOR.2026-08-21`, `DEC.MAYKEN.GOES_COUNTER_MEMORY.2026-08-21`  
+**Governing decisions:** `DEC.CLAES.CORNELIS.RECOGNITION.2026-08-18`, `DEC.CLAES.CORNELIS.RESPONSIBILITY.2026-08-18`, `DEC.CLAES.CORNELIS.RELIGIOUS_DISSONANCE.2026-08-18`, `DEC.CLAES.CORNELIS.POSTFIRE_READING.2026-08-18`, `DEC.CORNELIS.ECONOMIC_INTERMEDIARY.2026-08-21`, `DEC.CLAES.FIRE_EPISTEMIC_WOUND.1554.2026-08-21`, `DEC.CLAES.CORNELIS.POSTFIRE_PROTECTION_RUMOR.2026-08-21`, `DEC.GOES.FIRE_1554.CLAES_PRESENT_CORNELIS_ABSENT.2026-08-21`, `DEC.MANUSCRIPT.POSTFIRE.GRANDFATHER_CONTINUITY.2026-08-21`, `DEC.CLAES.REIMERSWAAL.ARRIVAL_AGE_11.2026-08-21`, `DEC.MANUSCRIPT.REIMERSWAAL_DREAD_CALLBACK.2026-08-21`, `DEC.MAYKEN.GOES_COUNTER_MEMORY.2026-08-21`
 **Extends:** `REL.CLAES.CORNELIS`, `ARC.CLAES.CORNELIS`, `DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14`  
 **Fire authority:** `storybible/GOES_FIRE_1554_CAUSAL_ARCHITECTURE.md`
 
@@ -164,6 +164,8 @@ The useful structure is that church, school and father do not always produce ide
 
 Before 18 May 1554, Claes can still imagine recognition as something he may earn tomorrow.
 
+The two survivors do not pass through the same event. Claes directly experiences the wider fire, escape, uncertainty and delayed confirmation, while Cornelis is absent from the immediate fire zone during the decisive household-loss interval. Their later failure to meet in shared grief begins with unequal knowledge, not merely unequal temperament.
+
 After the fire, Cornelis makes one of the strongest acts of paternal care in the entire relationship: he stays in Goes to rebuild livelihood, credit and shelter while preserving enough means to continue Claes' education elsewhere.
 
 The new fire architecture adds a second protective motive. As public rumour increasingly compresses the catastrophe into a story about `Nissepats keet`, Cornelis also has reason to remove Claes from the immediate social environment in which his father's name is repeatedly attached to the deaths.
@@ -178,6 +180,8 @@ The established double truth remains binding:
 - **Claes:** I am the surviving son, and still father does not choose to keep me beside him.
 
 The second statement is Claes' wounded interpretation, not Cornelis' intention.
+
+Grandfather Claes Jacobsz. remains materially present by the burial/early aftermath and helps with arrangements; his continued presence cannot replace the father-son conversation that fails. Claes is eleven when Reimerswaal becomes the actual route. *De Kade* must briefly recall the specific *De Kraai* dread so the substitution from Zierikzee lands as feared loss rather than generic water atmosphere.
 
 ### Rumour and money
 

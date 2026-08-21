@@ -2,7 +2,9 @@
 
 Status: `SYNC_COMPLETE_ACTIVE_LAYERS`
 
-Release state: `AUTHORING_BRANCH_CHARACTER_WEB_SYNCHRONIZED_2026-08-19`
+Release state: `MANUSCRIPT_CANON_AND_GOES_FIRE_CONTINUITY_SYNCHRONIZED_2026-08-21`
+
+Manuscript/canon addendum: `MANUSCRIPT_EDITOR_OPENS_CLOSED_AND_FIRE_SEQUENCE_SYNCHRONIZED_2026-08-21`
 
 Historical recovery addendum: `ROUND_A_HISTORICAL_SUBSTRATE_RECOVERED`
 
@@ -16,6 +18,10 @@ Goes clergy addendum: `GOES_CLERGY_MATHIJS_CLEMENS_CANONIZED_AND_SYNCHRONIZED_20
 
 Character-web addendum: `CORE_CHARACTER_WEB_AND_FICTION_CHARACTERIZATION_SYNCHRONIZED_2026-08-19`
 
+The 21 August follow-up closes the five editor-ingest OPEN records with explicit decisions, fixes the Nissepat footbow carrier as a fictional penning/hanger, distinguishes Claes' direct fire experience from Cornelis' absence, restores grandfather to the burial/early aftermath, fixes Claes' Reimerswaal arrival age at eleven, and requires the specific *De Kraai* dread callback in *De Kade*. The fire and aftermath are a multi-chapter sequence. Mayken's immediate-aftermath absence is intentional.
+
+The later fire manuscript and *De Kade* are not stored in this repository. Their exact prose remains an external manuscript implementation boundary; repository synchronization is complete for the canon and projection layers and does not certify unavailable chapter text.
+
 The 19 August character-web decisions are synchronized through Story Claims, core characterization entities, Puttus and Mayken detail records, the Claes-Mayken relationship projection, authoring policy, a governing Storybible dossier, `storybible/MASTER.md` and `storybible/INDEX.md`. Historical Source Claims were not changed: documentary UNKNOWN remains UNKNOWN where the novel deliberately fixes a separately labelled fiction-canon characterization.
 
 ## Current governing chronology
@@ -26,7 +32,7 @@ The 19 August character-web decisions are synchronized through Story Claims, cor
 - **8 December 1542:** exact Goese office-holder at Claes' birth remains historically UNKNOWN; Mathijs must not be projected automatically from February to December.
 - **1553–1554:** Claes and Mayken canonically know one another as Goese children through ordinary acquaintance/friendship; no childhood romance.
 - Family rupture: **18 May 1554**.
-- Reimerswaal: 1554–summer 1561.
+- Reimerswaal: arrival later in 1554 at age **eleven**; turns twelve on 8 December 1554; remains through summer 1561.
 - Antwerp Landjuweel: August 1561; Dee is not placed there.
 - Dee/Silvius formation: 1563–early 1564.
 - **20 March 1564:** Clemens van den Dale explicitly attested as `licentiaat pastoor Goes`.

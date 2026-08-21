@@ -13,10 +13,12 @@ That distinction is central to the book: Goes teaches sudden fire; Reimerswaal t
 ## Historical timeline inside Claes' stay
 
 ### 1554 — arrival after Goes
+- Claes is **eleven** on arrival and turns twelve on 8 December 1554; eight/nine belongs to superseded chronology.
 - Claes has elementary schooling **and an initial Latin/humanist foundation under Nicolaes van de Put (Puttus) in Goes** already; Puttus' personal teaching of Claes is novel canon under `DEC.CLAES.PUTTUS_MASTER.2026-08-18`.
 - Reimerswaal is the cheaper/possible alternative to the pre-fire Zierikzee plan in novel canon.
 - Reimerswaal therefore continues an existing learned trajectory; it is not Claes' first literacy or first contact with Latin.
 - First scenes should emphasize unfamiliar household/routines and a functioning town, not immediately stage catastrophe.
+- *De Kade* must briefly reactivate the specific dread planted in *De Kraai* — the earlier judgement that one would not want to live in Reimerswaal, let alone attend school there — so the changed destination lands as loss rather than generic cold/water atmosphere.
 
 ### 1555 — first major water impression
 - flood/storm pressure can become Claes' first lived proof that streets/walls and boundaries are negotiable with water.
@@ -109,3 +111,5 @@ The specific damage remains story truth, not archival evidence.
 6. Disaster chronology should alter daily life, not replace it.
 7. Never describe the 1574 naval battle as street fighting in Claes' school years.
 8. The city's later abandonment must not leak backward into 1554–61 narration as foreknown doom.
+9. Claes arrives at age eleven; do not import the superseded eight/nine chronology.
+10. Pay off the *De Kraai* dread once and concisely in *De Kade*; do not repeatedly announce Reimerswaal's future.

@@ -101,9 +101,9 @@ modules:
     residence_decision: DEC.CORNELIS.RESIDENCE.GOES.2026-08-14
     business_separation: "Nissepad, harbour, brewery, salt and storage locations remain separate relations unless separately linked."
     fire_outcome_1554: DEC.CLAES.FAMILY_FIRE.1554.2026-08-14
-    fire_outcome_note: "In novel canon the house is destroyed/uninhabitable; Tanneken, Jan and the unborn child die; Claes and Cornelis survive away from the house. This is fiction grounded in a historically supported partially damaged street environment."
+    fire_outcome_note: "In novel canon the house is destroyed/uninhabitable; Tanneken, Jan and the unborn child die. Claes directly experiences the wider fire event but survives away from the house; Cornelis is absent from the immediate fire zone and returns into the aftermath. This is fiction grounded in a historically supported partially damaged street environment."
     post_fire_father_son: DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14
-    post_fire_note: "Cornelis stays in Goes to rebuild livelihood/business/shelter and pay for Claes' education; Claes goes to Reimerswaal, so surviving father and son grieve apart."
+    post_fire_note: "Cornelis stays in Goes to rebuild livelihood/business/shelter and pay for Claes' education; grandfather is present by the burial/early aftermath and helps with arrangements; eleven-year-old Claes goes to Reimerswaal, so surviving father and son grieve apart."
     rhetorician_meeting_environment: ENT.LOC.GOES.ZUSTERHUIS
     rhetorician_decision: DEC.GOES.REDERIJKERS.MEETINGPLACE.2026-08-14
     chamber_identity: ENT.ORG.GOES.NARDUSBLOEM
@@ -180,7 +180,7 @@ modules:
       wind: "north-east toward west/south-west"
       spread: "source-weighted multi-front harbour-to-city corridor; exact minute-by-minute sequence unknown"
       historical_casualty_count: UNKNOWN
-      household_story: "house destroyed/uninhabitable; Tanneken, Jan and unborn child die; Claes and Cornelis survive away"
+      household_story: "house destroyed/uninhabitable; Tanneken, Jan and unborn child die; Claes directly experiences the wider fire but survives away from the house; Cornelis is absent from the immediate fire zone"
     '1554_post_fire':
       destroyed_or_confirmed_damage: [ENT.LOC.GOES.TURFKADE, ENT.LOC.GOES.KRUISBROEDERS]
       origin_zone: ENT.LOC.GOES.OOSTZELKE

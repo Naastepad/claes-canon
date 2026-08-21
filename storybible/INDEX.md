@@ -218,6 +218,8 @@ Standing hard-review mode under `GRD.EDITORIAL.RUTHLESS_EDITOR`:
 - `../claims/STORY_CLAIMS.yaml`
 - `../claims/STORY_CLAIMS_EXECUTIONS_REFORMATION.yaml`
 - `../claims/STORY_CLAIMS_FAMILY_1554.yaml`
+- `../canon/DECISIONS_MANUSCRIPT_SYNC_2026-08-21.yaml` — resolved editor-pass repairs, fire survivor positions, penning/hanger form, grandfather continuity, Reimerswaal callback and age eleven.
+- `../review/MANUSCRIPT_CANON_SYNC_2026-08-21.md` — audit trail for the follow-up synchronization and manuscript boundary.
 - `../claims/STORY_CLAIMS_2026-08-14.yaml`
 - `../claims/STORY_CLAIMS_GOES_CLERGY_2026-08-16.yaml` — canonical scene-use boundaries for Mathijs and Clemens.
 - `../claims/STORY_CLAIMS_MAYKEN_LAMPERT.yaml`
