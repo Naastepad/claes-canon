@@ -5,8 +5,8 @@
 > Do not use this pack as permission for free repository discovery; follow the task router in CLAUDE_CONTEXT_INDEX.md.
 
 - source branch: `main`
-- source commit at generation: `bec79474a0169e668f7af84b78c1bf6ee10e4398`
-- generated UTC: `2026-08-21T15:16:58+00:00`
+- source commit at generation: `88637ab63031f073eb8023becb15bdef794fc72f`
+- generated UTC: `2026-08-21T21:06:16+00:00`
 - included files: `9`
 
 Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pack does not alter authority.
@@ -1042,7 +1042,7 @@ story_claims:
 # Claes Nissepat — familie 1542–1554
 
 **Status:** CANON — approved 14 August 2026; refined 21 August 2026  
-**Decisions:** `DEC.CLAES.EXTENDED_FAMILY.2026-08-14`, `DEC.CORNELIS.ECONOMIC_INTERMEDIARY.2026-08-21`, `DEC.CORNELIS.SALTKEET_INTEREST.1554.2026-08-21`, `DEC.TANNEKEN.BODY_CONTINUITY.2026-08-21`, `DEC.CLAES.CORNELIS.POSTFIRE_PROTECTION_RUMOR.2026-08-21`  
+**Decisions:** `DEC.CLAES.EXTENDED_FAMILY.2026-08-14`, `DEC.CORNELIS.ECONOMIC_INTERMEDIARY.2026-08-21`, `DEC.CORNELIS.SALTKEET_INTEREST.1554.2026-08-21`, `DEC.TANNEKEN.BODY_CONTINUITY.2026-08-21`, `DEC.CLAES.CORNELIS.POSTFIRE_PROTECTION_RUMOR.2026-08-21`, `DEC.GOES.FIRE_1554.CLAES_PRESENT_CORNELIS_ABSENT.2026-08-21`, `DEC.CLAES.REIMERSWAAL.ARRIVAL_AGE_11.2026-08-21`, `DEC.MANUSCRIPT.POSTFIRE.GRANDFATHER_CONTINUITY.2026-08-21`
 **Story Claim:** `STC.CLAES.EXTENDED_FAMILY.001`  
 **Fire authority:** `storybible/GOES_FIRE_1554_CAUSAL_ARCHITECTURE.md`
 
@@ -1164,6 +1164,8 @@ His historical occupation is not known. Do not label him archival 'brouwer', 'ko
 
 In novel canon he makes the 1542 house available to Cornelis and Tanneken as their family home. He remains story-owner through the 1554 fire and loses the asset when the house becomes uninhabitable/destroyed. Despite this loss he can still help Cornelis preserve Claes' educational future through money, credit, contacts or practical support.
 
+He does not disappear after the pre-fire chapters. He learns of the deaths and is present by the burial/early formal aftermath. His manner remains verbally spare and materially practical. Claes may stay temporarily with his great-aunt because that is the workable lodging arrangement, but the prose must not imply that grandfather has vanished or is unaware of the catastrophe.
+
 His relation to Claes carries a different knowledge tradition from Tanneken's: ownership, provenance, accounts, obligation, debt, transfer and the question of what belongs to whom.
 
 The family/grandfather-household world also contains the fictional metal carrier of the Nissepat voetboog sign before the fire. Its exact form is governed separately and remains historically open; it survives the 1554 rupture damaged rather than pristine.
@@ -1233,7 +1235,7 @@ Claes' later strength lies partly in learning to hold both without confusing eit
 
 Immediately before the fire the household consists of five lives if the unborn child is counted: Cornelis, Tanneken, Claes, Jan and the unborn child.
 
-In novel canon the older-Nieuwstraat home becomes uninhabitable/is destroyed. Cornelis and Claes survive because they are away from the house. Tanneken, Jan and the unborn child die.
+In novel canon the older-Nieuwstraat home becomes uninhabitable/is destroyed. Eleven-year-old Claes directly experiences the Goese fire event but survives because he is away from the house when it becomes fatal. Cornelis is absent from the immediate fire zone during the decisive household-loss interval. Tanneken, Jan and the unborn child die.
 
 Historically, burned houses are documented in the older Nieuwstraat/Armenhoek environment after the fire, while other houses in Nieuwstraat also survive. The specific destruction of the 1542 Nissepat house and the deaths of these family members are therefore plausible novel reconstruction, **not archival fact**.
 
@@ -1244,6 +1246,7 @@ The fire's broader fictional causality is governed by `storybible/GOES_FIRE_1554
 - the fire is socially associated with `Nissepats keet`, making economic involvement easier for the city to read as personal blame;
 - fire damage, recovery costs, reputational pressure, weakened credit/trust and Tanneken's loss together make Cornelis' recovery harder;
 - the intended Zierikzee school route becomes unattainable and Claes is sent to Reimerswaal;
+- Claes is eleven when he arrives there later in 1554 and turns twelve on 8 December;
 - Cornelis also intends distance as protection from the immediate rumour environment;
 - Claes can experience that protective separation as rejection.
 
@@ -1278,7 +1281,7 @@ This gives 1554 its correct dramatic function: loss of people, home, sibling equ
 # Claes en Cornelis — vader-zoonrelatie 1547–1569
 
 **Status:** CANON — approved 18 August 2026; refined 21 August 2026  
-**Governing decisions:** `DEC.CLAES.CORNELIS.RECOGNITION.2026-08-18`, `DEC.CLAES.CORNELIS.RESPONSIBILITY.2026-08-18`, `DEC.CLAES.CORNELIS.RELIGIOUS_DISSONANCE.2026-08-18`, `DEC.CLAES.CORNELIS.POSTFIRE_READING.2026-08-18`, `DEC.CORNELIS.ECONOMIC_INTERMEDIARY.2026-08-21`, `DEC.CLAES.FIRE_EPISTEMIC_WOUND.1554.2026-08-21`, `DEC.CLAES.CORNELIS.POSTFIRE_PROTECTION_RUMOR.2026-08-21`, `DEC.MAYKEN.GOES_COUNTER_MEMORY.2026-08-21`  
+**Governing decisions:** `DEC.CLAES.CORNELIS.RECOGNITION.2026-08-18`, `DEC.CLAES.CORNELIS.RESPONSIBILITY.2026-08-18`, `DEC.CLAES.CORNELIS.RELIGIOUS_DISSONANCE.2026-08-18`, `DEC.CLAES.CORNELIS.POSTFIRE_READING.2026-08-18`, `DEC.CORNELIS.ECONOMIC_INTERMEDIARY.2026-08-21`, `DEC.CLAES.FIRE_EPISTEMIC_WOUND.1554.2026-08-21`, `DEC.CLAES.CORNELIS.POSTFIRE_PROTECTION_RUMOR.2026-08-21`, `DEC.GOES.FIRE_1554.CLAES_PRESENT_CORNELIS_ABSENT.2026-08-21`, `DEC.MANUSCRIPT.POSTFIRE.GRANDFATHER_CONTINUITY.2026-08-21`, `DEC.CLAES.REIMERSWAAL.ARRIVAL_AGE_11.2026-08-21`, `DEC.MANUSCRIPT.REIMERSWAAL_DREAD_CALLBACK.2026-08-21`, `DEC.MAYKEN.GOES_COUNTER_MEMORY.2026-08-21`
 **Extends:** `REL.CLAES.CORNELIS`, `ARC.CLAES.CORNELIS`, `DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14`  
 **Fire authority:** `storybible/GOES_FIRE_1554_CAUSAL_ARCHITECTURE.md`
 
@@ -1441,6 +1444,8 @@ The useful structure is that church, school and father do not always produce ide
 
 Before 18 May 1554, Claes can still imagine recognition as something he may earn tomorrow.
 
+The two survivors do not pass through the same event. Claes directly experiences the wider fire, escape, uncertainty and delayed confirmation, while Cornelis is absent from the immediate fire zone during the decisive household-loss interval. Their later failure to meet in shared grief begins with unequal knowledge, not merely unequal temperament.
+
 After the fire, Cornelis makes one of the strongest acts of paternal care in the entire relationship: he stays in Goes to rebuild livelihood, credit and shelter while preserving enough means to continue Claes' education elsewhere.
 
 The new fire architecture adds a second protective motive. As public rumour increasingly compresses the catastrophe into a story about `Nissepats keet`, Cornelis also has reason to remove Claes from the immediate social environment in which his father's name is repeatedly attached to the deaths.
@@ -1455,6 +1460,8 @@ The established double truth remains binding:
 - **Claes:** I am the surviving son, and still father does not choose to keep me beside him.
 
 The second statement is Claes' wounded interpretation, not Cornelis' intention.
+
+Grandfather Claes Jacobsz. remains materially present by the burial/early aftermath and helps with arrangements; his continued presence cannot replace the father-son conversation that fails. Claes is eleven when Reimerswaal becomes the actual route. *De Kade* must briefly recall the specific *De Kraai* dread so the substitution from Zierikzee lands as feared loss rather than generic water atmosphere.
 
 ### Rumour and money
 

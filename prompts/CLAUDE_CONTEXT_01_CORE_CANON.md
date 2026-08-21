@@ -5,8 +5,8 @@
 > Do not use this pack as permission for free repository discovery; follow the task router in CLAUDE_CONTEXT_INDEX.md.
 
 - source branch: `main`
-- source commit at generation: `bec79474a0169e668f7af84b78c1bf6ee10e4398`
-- generated UTC: `2026-08-21T15:16:58+00:00`
+- source commit at generation: `88637ab63031f073eb8023becb15bdef794fc72f`
+- generated UTC: `2026-08-21T21:06:16+00:00`
 - included files: `11`
 
 Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pack does not alter authority.
@@ -924,7 +924,7 @@ decisions:
 - id: DEC.CLAES.FAMILY_FIRE.1554.2026-08-14
   type: CanonDecision
   status: CANON
-  decision: On 18 May 1554 the fictional Cornelis household loses its home in the older Nieuwstraat; Claes and Cornelis survive because they are away from the house, while Claes' mother, his younger brother born about eighteen months after Claes, and the mother's unborn child die in the fire. The mother is about six months pregnant.
+  decision: On 18 May 1554 the fictional Cornelis household loses its home in the older Nieuwstraat. Claes directly experiences the Goese fire event but survives because he is away from the house when it becomes fatal; Cornelis is absent from the immediate fire zone during the decisive interval. Claes' mother, his younger brother born about eighteen months after Claes, and the mother's unborn child die in the fire. The mother is about six months pregnant.
   affects:
   - STC.CLAES.HOUSEHOLD_PRE_FIRE.1554.001
   - STC.CLAES.FAMILY_FIRE.1554.001
@@ -939,7 +939,7 @@ decisions:
 - id: DEC.CLAES.GRANDFATHER_LINK.2026-08-14
   type: CanonDecision
   status: CANON
-  decision: Historical Claes Jacobsz. Nissepat is used in novel canon as the fictional father of Cornelis and paternal grandfather of Claes. He remains the story owner of the 1542 Nieuwstraat house through the 1554 fire, loses that asset in the fire, and subsequently helps Cornelis support Claes' education.
+  decision: Historical Claes Jacobsz. Nissepat is used in novel canon as the fictional father of Cornelis and paternal grandfather of Claes. He remains the story owner of the 1542 Nieuwstraat house through the 1554 fire, loses that asset in the fire, is present by the burial/early formal aftermath, and subsequently helps Cornelis support Claes' education.
   affects:
   - STC.CLAES.GRANDFATHER.NISSEPAT.001
   - ENT.PERSON.CLAES_JACOBSZ_NISSEPAT
@@ -949,7 +949,7 @@ decisions:
 - id: DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14
   type: CanonDecision
   status: CANON
-  decision: After the 1554 fire Cornelis stays in Goes to rebuild livelihood, business and shelter and to finance Claes' schooling as far as he can, with partial support from his father Claes Jacobsz. Claes is sent to Reimerswaal because the original Zierikzee plan has become financially unattainable. Father and son therefore lose not only their household but also daily life with each other; the separation is an act of care that Claes can experience as abandonment.
+  decision: After the 1554 fire Cornelis stays in Goes to rebuild livelihood, business and shelter and to finance Claes' schooling as far as he can, with partial support from his father Claes Jacobsz. Eleven-year-old Claes is sent to Reimerswaal because the original Zierikzee plan has become financially unattainable. Father and son therefore lose not only their household but also daily life with each other; the separation is an act of care that Claes can experience as abandonment.
   affects:
   - STC.CLAES.CORNELIS.POSTFIRE_SEPARATION.001
   - STC.CLAES.REIMERSWAAL.001
@@ -1242,81 +1242,6 @@ decisions:
   - Do not grant Mayken unsupported university, physician or guild status.
   - Do not turn a possible kruidenvrouw line into a stereotype or a secret cipher role.
   - Preserve her distinct 1554 experience: destruction plus rebuilding, not Claes' household annihilation.
-
-- id: OPEN.MANUSCRIPT.DE_LEI.TEACHER_IDENTITY.001
-  domain: manuscript_continuity
-  priority: medium
-  question: "Which fictional elementary writing/reckoning master teaches Claes in De Lei: Adriaen, Jacob, or a deliberately unnamed master?"
-  status: OPEN
-  exposed_by: REV.2026-08-19.DE_LEI.001
-  current_prose_problem: "The current chapter names both Meester Adriaen and Meester Jacob in what reads as one classroom/teacher role."
-  fixed:
-  - "Nicolaes van de Put/Puttus remains Claes' separate Latin/humanist master."
-  guardrails:
-  - "Do not silently merge the elementary master into Puttus."
-  - "Treat this as a prose/cast-continuity repair unless a named teacher is promoted into reusable character canon."
-
-- id: OPEN.MANUSCRIPT.HET_WAPEN.SPANNING_MECHANISM.001
-  domain: manuscript_historical_reconstruction
-  priority: medium
-  question: "Should Het Wapen retain its exact wind/touw/haak spanning apparatus as an explicit fiction reconstruction, or should the prose be generalized until the historical mechanism is better established?"
-  status: OPEN
-  exposed_by: REV.2026-08-19.HET_WAPEN.001
-  fixed:
-  - "The Nissepat sign is a voetboog/crossbow."
-  - "Cornelis belongs fictionally to the Goese Sint-Jorisgilde / Edele Voetboog."
-  - "Mechanical spanning is plausible and the recovered Muschart wording includes a lange zwengel."
-  guardrails:
-  - "The exact mechanism remains open; do not present windlass/cranequin/belt-hook subtype as historical fact without support."
-
-- id: OPEN.MANUSCRIPT.DE_WIEG.FAMILY_STATE.001
-  domain: manuscript_continuity
-  priority: high
-  question: "How should De Wieg be repaired so its household count and pregnancy history match the fixed pre-fire family canon?"
-  status: OPEN
-  exposed_by: REV.2026-08-19.DE_WIEG.001
-  current_prose_problems:
-  - "Cornelis says there will be 'three younger mouths instead of two', which does not match Jan plus the unborn child under the current family state."
-  - "The chapter introduces an earlier child that 'did not come', which is not part of the current fixed pre-fire family canon."
-  fixed:
-  - "Claes is the eldest child."
-  - "Jan is the younger living brother."
-  - "Tanneken is pregnant with the unnamed child who dies with her in the 18 May 1554 fire."
-  guardrails:
-  - "Do not create an additional lost sibling merely to rescue an old sentence."
-  - "Prefer prose repair unless the author explicitly chooses to reopen family canon."
-
-- id: OPEN.MANUSCRIPT.CORNELIS.BIERSTEKER_WORDING.001
-  domain: manuscript_canon_alignment
-  priority: high
-  question: "Which 1554/1564 manuscript formulations must be rewritten so Cornelis' trade competence remains vivid without turning him into the documented Nissepad brewery's fixed master brewer or owner?"
-  status: OPEN
-  exposed_in:
-  - CH.HET_ZAAD.1554
-  - CH.DE_LADINGEN.1564
-  fixed:
-  - "Cornelis is a Goese poorter and biersteker."
-  - "He participates in beer/cask logistics, storage, accounts, credit and routes."
-  - "The documented Nissepad brewery is family-world context but is not fixed as Cornelis' owned/master-brewed enterprise."
-  guardrails:
-  - "Do not use 'eigen bier', 'het brouwen' or process-command language as shorthand if it changes the reader's factual inference about ownership/profession."
-  - "Lieven or another actual brewer may own process expertise where the scene needs it."
-
-- id: OPEN.MANUSCRIPT.BEER_LOGISTICS_CONCEALMENT.001
-  domain: manuscript_plot_mechanism
-  priority: high
-  question: "How should the 1564 chapters preserve the thematic relation between beer logistics and secrecy without implying a routine books-hidden-in-beer-barrels transport system?"
-  status: OPEN
-  exposed_in:
-  - CH.DE_LOOG.1564
-  - CH.DE_DOOD_VAN_SOL.1564
-  fixed:
-  - "Cornelis' beer/cask trade gives him routes, contacts, timing knowledge and plausible movement through Antwerp/Zeeland networks."
-  - "The current Brevísima/memoriaal mechanism does not require a standardized beer-barrel concealment channel."
-  guardrails:
-  - "Analogy between vessels/contents and secrecy is allowed."
-  - "Do not convert analogy into a repeated operational device without a separate canon decision."
-  - "Keep the current book-in-book/invisible-print chain independent from routine beer-barrel smuggling."
 ```
 
 ---
@@ -1328,7 +1253,9 @@ decisions:
 
 Status: `SYNC_COMPLETE_ACTIVE_LAYERS`
 
-Release state: `AUTHORING_BRANCH_CHARACTER_WEB_SYNCHRONIZED_2026-08-19`
+Release state: `MANUSCRIPT_CANON_AND_GOES_FIRE_CONTINUITY_SYNCHRONIZED_2026-08-21`
+
+Manuscript/canon addendum: `MANUSCRIPT_EDITOR_OPENS_CLOSED_AND_FIRE_SEQUENCE_SYNCHRONIZED_2026-08-21`
 
 Historical recovery addendum: `ROUND_A_HISTORICAL_SUBSTRATE_RECOVERED`
 
@@ -1342,6 +1269,10 @@ Goes clergy addendum: `GOES_CLERGY_MATHIJS_CLEMENS_CANONIZED_AND_SYNCHRONIZED_20
 
 Character-web addendum: `CORE_CHARACTER_WEB_AND_FICTION_CHARACTERIZATION_SYNCHRONIZED_2026-08-19`
 
+The 21 August follow-up closes the five editor-ingest OPEN records with explicit decisions, fixes the Nissepat footbow carrier as a fictional penning/hanger, distinguishes Claes' direct fire experience from Cornelis' absence, restores grandfather to the burial/early aftermath, fixes Claes' Reimerswaal arrival age at eleven, and requires the specific *De Kraai* dread callback in *De Kade*. The fire and aftermath are a multi-chapter sequence. Mayken's immediate-aftermath absence is intentional.
+
+The later fire manuscript and *De Kade* are not stored in this repository. Their exact prose remains an external manuscript implementation boundary; repository synchronization is complete for the canon and projection layers and does not certify unavailable chapter text.
+
 The 19 August character-web decisions are synchronized through Story Claims, core characterization entities, Puttus and Mayken detail records, the Claes-Mayken relationship projection, authoring policy, a governing Storybible dossier, `storybible/MASTER.md` and `storybible/INDEX.md`. Historical Source Claims were not changed: documentary UNKNOWN remains UNKNOWN where the novel deliberately fixes a separately labelled fiction-canon characterization.
 
 ## Current governing chronology
@@ -1352,7 +1283,7 @@ The 19 August character-web decisions are synchronized through Story Claims, cor
 - **8 December 1542:** exact Goese office-holder at Claes' birth remains historically UNKNOWN; Mathijs must not be projected automatically from February to December.
 - **1553–1554:** Claes and Mayken canonically know one another as Goese children through ordinary acquaintance/friendship; no childhood romance.
 - Family rupture: **18 May 1554**.
-- Reimerswaal: 1554–summer 1561.
+- Reimerswaal: arrival later in 1554 at age **eleven**; turns twelve on 8 December 1554; remains through summer 1561.
 - Antwerp Landjuweel: August 1561; Dee is not placed there.
 - Dee/Silvius formation: 1563–early 1564.
 - **20 March 1564:** Clemens van den Dale explicitly attested as `licentiaat pastoor Goes`.
@@ -1597,8 +1528,8 @@ Repository CI must be evaluated on the actual integration commit. This status do
 # Claes Storybible — MASTER / operating authority
 
 **Logical master ID:** `SB.CLAES.MASTER`  
-**Current synchronization date:** 19 August 2026  
-**Authoring readiness:** Rounds A–D implemented; Character Web refinement active
+**Current synchronization date:** 21 August 2026
+**Authoring readiness:** Rounds A–D implemented; manuscript/fire continuity sync active
 
 This repository is the structured operating projection of Revision 11 plus later explicit author decisions. The lossless source edition remains preserved for material not yet atomized, but later decisions override conflicting source or legacy-master wording.
 
@@ -1637,9 +1568,11 @@ The dated `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` is a **legacy snapshot**
 - `WRITING_PROTOCOL.md` — scene construction, prose, pacing, reader experience and editorial decision rules.
 - `review/READER_EXPERIENCE_PROTOCOL.md` — reader-testing authority.
 - `review/READER_FEEDBACK_TEMPLATE.md` — consistent reader-evidence logging.
+- `review/MANUSCRIPT_CANON_SYNC_2026-08-21.md` — closure audit for the editor-ingest repairs and 1554 manuscript projection.
 - `MEMORIAAL_BREVISIMA_PRINT_1564.md` — hidden readable tannin/gum print, Dee handoff, graphite rule, direct green-vitriol reveal.
 - `MEMORIAAL_BREVISIMA_CASTOFF_1564.md` — 17 single-sheet quarto gatherings / 136 latent pages.
 - `FAMILY_CLAES_1542_1554.md` — Tanneken, Jan, grandparents, 1542 house and 1554 family rupture.
+- `GOES_FIRE_1554_CAUSAL_ARCHITECTURE.md` — fire origin/ambiguity, unequal survivor positions, multi-chapter aftermath, grandfather continuity and Reimerswaal departure.
 - `GOES_SCHOOLING_PUTTUS_1550_1554.md` — Puttus school bridge plus explicit evidence/fiction characterization boundary.
 - `GOES_CLERGY_MATHIJS_CLEMENS_1541_1564.md` — named historical Goese clergy anchors: Mathijs Jacopsen/Jacobsen in 1541–early 1542, Clemens van den Dale in 1564, with the 1542–1563 succession gap preserved.
 - `MAYKEN_LAMPERT.md` — resolved identity, pre-fire childhood acquaintance and independent character/material role of Mayken, synchronized to no-cipher canon.
@@ -1667,6 +1600,7 @@ Current explicit author decisions live across:
 - `canon/DECISIONS_STORY_PROJECTION_2026-08-16.yaml`
 - `canon/DECISIONS_HOUSE_OF_LOVE_NETWORK_2026-08-16.yaml`
 - `canon/DECISIONS_CHARACTER_WEB_2026-08-19.yaml`
+- `canon/DECISIONS_MANUSCRIPT_SYNC_2026-08-21.yaml`
 
 Latest explicit decision wins within its domain. A base registry is not allowed to resurrect an older state merely because a later decision lives in a supplement.
 
@@ -2222,6 +2156,8 @@ Standing hard-review mode under `GRD.EDITORIAL.RUTHLESS_EDITOR`:
 - `../claims/STORY_CLAIMS.yaml`
 - `../claims/STORY_CLAIMS_EXECUTIONS_REFORMATION.yaml`
 - `../claims/STORY_CLAIMS_FAMILY_1554.yaml`
+- `../canon/DECISIONS_MANUSCRIPT_SYNC_2026-08-21.yaml` — resolved editor-pass repairs, fire survivor positions, penning/hanger form, grandfather continuity, Reimerswaal callback and age eleven.
+- `../review/MANUSCRIPT_CANON_SYNC_2026-08-21.md` — audit trail for the follow-up synchronization and manuscript boundary.
 - `../claims/STORY_CLAIMS_2026-08-14.yaml`
 - `../claims/STORY_CLAIMS_GOES_CLERGY_2026-08-16.yaml` — canonical scene-use boundaries for Mathijs and Clemens.
 - `../claims/STORY_CLAIMS_MAYKEN_LAMPERT.yaml`
