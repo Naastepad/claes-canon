@@ -45,7 +45,7 @@ decisions:
 - id: OPEN.GOES.FIRE_1554.CATHOLIC_AFTERMATH.001
   domain: historical_research_and_scene_design
   priority: high
-  question: What exact Catholic civic/liturgical responses to a major urban fire are defensible for mid-sixteenth-century Goes/Zeeland: Masses, prayers, burial, processions, penance, charity, providential preaching and communal relief?
+  question: "What exact Catholic civic/liturgical responses to a major urban fire are defensible for mid-sixteenth-century Goes/Zeeland: Masses, prayers, burial, processions, penance, charity, providential preaching and communal relief?"
   status: OPEN
   fixed:
   - Goes is publicly Catholic in 1554.
