@@ -7,6 +7,7 @@ motifs:
     decision_ids:
       - DEC.CLAES.FAMILY_ARMS.VOETBOOG.2026-08-16
       - DEC.NISSEPAT.VOETBOOG_TEKEN.FIRE_SURVIVAL.2026-08-21
+      - DEC.NISSEPAT.VOETBOOG_PENNING.FORM.2026-08-21
     historical_substrate:
       family_arms: SC.HIST.NISSEPAT.ARMS.VOETBOOG.001
       goes_guild: SC.HIST.GOES.SCHUTTERIJ.SINT_JORIS_VOETBOOG.001
@@ -26,7 +27,7 @@ motifs:
         function: Claes knows the family charge materially/visually before it carries explicit thematic meaning.
       - label: metal carrier in ordinary family life
         period: childhood before 1554
-        function: A small metal carrier of the voetboog sign is an ordinary handled/seen family-Sint-Joris object; exact object class remains open.
+        function: A small metal penning/hanger from a set commissioned by grandfather and given to Jan is an ordinary handled/seen fictional family-Sint-Joris object; exact historical analogue and institutional status remain open.
       - label: weapon in father's hands
         period: childhood before 1554
         function: The heraldic shape gains bodily reality through Cornelis' Sint-Joris/voetboog practice.
@@ -59,6 +60,6 @@ motifs:
       - Do not canonize Cornelis as schutterskoning without a separate story decision.
       - Do not invent a physical display location for Van Ongenugten Vrij without evidence.
       - The fire-surviving metal carrier must show damage; no pristine providential relic.
-      - Exact object form/institutional status remains open until separately researched and decided.
+      - Fictional form is fixed as a penning/hanger; its historical analogue and institutional status remain open.
       - The same physical carrier need not be used in every later phase simply because it survives 1554.
       - Do not turn Claes' observer-shadow into a one-cause result of crossbow training.

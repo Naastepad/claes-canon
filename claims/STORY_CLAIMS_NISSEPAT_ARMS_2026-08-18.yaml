@@ -43,12 +43,14 @@ claims:
     type: StoryClaim
     status: CANON
     statement: >-
-      Before 18 May 1554 Claes knows a small metal carrier of the Nissepat voetboog sign within the fictional family/Sint-Joris material world. The object is present in the family/grandfather-household world and survives the 1554 fire damaged — blackened, discoloured and/or slightly deformed but still recognizable — rather than surviving pristine or because it was conveniently stored elsewhere.
-    decision_id: DEC.NISSEPAT.VOETBOOG_TEKEN.FIRE_SURVIVAL.2026-08-21
+      Before 18 May 1554 Claes knows a small metal penning/hanger bearing the Nissepat voetboog sign within the fictional family/Sint-Joris material world. It is one of a small set commissioned by grandfather Claes Jacobsz.; Jan receives this example after asking for one. The object survives the 1554 fire damaged — blackened, discoloured and/or slightly deformed but still recognizable — rather than surviving pristine or because it was conveniently stored elsewhere.
+    decision_ids:
+      - DEC.NISSEPAT.VOETBOOG_TEKEN.FIRE_SURVIVAL.2026-08-21
+      - DEC.NISSEPAT.VOETBOOG_PENNING.FORM.2026-08-21
     motif_link: MOTIF.NISSEPAT_VOETBOOG
     object_link: OBJ.NISSEPAT.VOETBOOG_TEKEN
     guardrails:
-      - Exact object class remains open: do not call it ring, official guild badge, schutterskoning prize, chain, pendant or seal matrix until separately decided.
+      - The fictional form is fixed as a penning/hanger; do not call it an ancient heirloom, official guild badge, schutterskoning prize, ring or seal matrix.
       - Do not claim the historical Muschart source object is the same fictional carrier.
       - Fire survival must be materially plausible and visibly damaging, not providentially pristine.
       - Use the object sparingly; its first post-fire function is material trace rather than explained symbolism.

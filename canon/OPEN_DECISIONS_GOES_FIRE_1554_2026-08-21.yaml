@@ -55,20 +55,6 @@ decisions:
   - Do not invent an exact Goese procession, sermon text or rite without support.
   - Do not frame the contrast as Catholic superstition versus Protestant rationality.
 
-- id: OPEN.NISSEPAT.VOETBOOG_TEKEN.FORM.001
-  domain: object_and_guild_reconstruction
-  priority: high
-  question: What exact metal object carries the Nissepat voetboog sign before 1554, and what historically defensible relation if any does it have to Sint-Joris membership, competition or family heraldry?
-  status: OPEN
-  fixed:
-  - A small metal carrier exists before the fire and survives it visibly damaged.
-  - Claes knows the object before the fire.
-  - Cornelis is not canonically schutterskoning.
-  candidate_forms: [ring, badge_or_insigne, pendant, seal_related_object, prize_or_trophy_related_object, other_modest_metal_carrier]
-  guardrails:
-  - No candidate form becomes prose fact merely because it is visually attractive.
-  - Do not identify it with the historical Muschart source object without evidence.
-
 - id: OPEN.GOES.NIEUWSTRAAT.HOUSE_WINDOW_1554.001
   domain: material_world_reconstruction
   priority: medium

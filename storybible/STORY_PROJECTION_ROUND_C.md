@@ -65,9 +65,13 @@ His early useful belief becomes his later trap: **if attention makes the world l
 
 Matter proves irreversible. The family catastrophe does not simply teach Claes that control is impossible; it gives him the opposite compulsion: perhaps he failed to see soon enough.
 
+Claes is eleven and directly experiences the Goese fire event while surviving away from the family house. Cornelis is absent from the immediate fire zone during the decisive loss. The catastrophe and aftermath are distributed across multiple chapters so factual confirmation does not prematurely complete the relational rupture.
+
+Grandfather Claes Jacobsz. remains present by the burial/early formal aftermath and helps with practical arrangements despite losing his own property asset. Temporary lodging with his sister cannot erase him from the sequence.
+
 ### Reimerswaal 1554–1561
 
-Schooling gives rule and language while the city gives recurrent water, repair and instability. Attention becomes vigilance. Competence increases while openness contracts.
+Eleven-year-old Claes reaches Reimerswaal after the intended Zierikzee route collapses. *De Kade* must briefly recall the specific dread planted in *De Kraai* rather than substitute generic cold/water unease. Schooling gives rule and language while the city gives recurrent water, repair and instability. Attention becomes vigilance. Competence increases while openness contracts.
 
 ### Landjuweel 1561
 

@@ -38,6 +38,27 @@ editor_ingest_2026_08_19:
     No separate machine-readable Claude Chapter Revision Handoff existed before the new handoff protocol was introduced. Where a deleted passage's intended future destination was not explicitly recoverable, this ingest classifies only what can be supported by the paired drafts and recorded editorial reasoning. Those records carry disposition_basis=SEMANTIC_RECONSTRUCTION and may be refined if a verbatim Claude handoff is later supplied.
   rule: "A textual deletion is never treated as proof of de-canonization or of a specific future destination."
 
+manuscript_sync_2026_08_21:
+  status: CANON_DIRECTIVES_RESOLVED
+  decision_registry: canon/DECISIONS_MANUSCRIPT_SYNC_2026-08-21.yaml
+  prose_boundary: >-
+    The repository stores the governing decisions and projection state. The later manuscript files for the fire sequence and De Kade are not present in this repository, so exact sentence-level verification remains an external manuscript operation rather than a claim made by this registry.
+  resolved_repairs:
+  - {chapter_ref: CH.DE_LEI.1552, decision: DEC.MANUSCRIPT.DE_LEI.TEACHER_JACOB.2026-08-21, directive: "Use Meester Jacob; keep Puttus separate."}
+  - {chapter_ref: CH.HET_WAPEN.1553, decision: DEC.MANUSCRIPT.HET_WAPEN.SPANNING_GENERALIZED.2026-08-21, directive: "Generalize the exact spanning subtype while preserving bodily action."}
+  - {chapter_ref: CH.DE_WIEG.1554, decision: DEC.MANUSCRIPT.DE_WIEG.FAMILY_STATE_REPAIR.2026-08-21, directive: "Two younger children after the birth; no earlier lost child."}
+  - {chapter_ref: CH.HET_ZAAD.1554, decision: DEC.MANUSCRIPT.CORNELIS.BIERSTEKER_WORDING.2026-08-21, directive: "Cornelis organizes beer circulation; Lieven owns specialist brewing action."}
+  - {chapter_ref: CH.DE_LADINGEN.1564, decision: DEC.MANUSCRIPT.CORNELIS.BIERSTEKER_WORDING.2026-08-21, directive: "Remove fixed brewer/owner implications."}
+  - {chapter_ref: CH.DE_LOOG.1564, decision: DEC.MANUSCRIPT.BEER_LOGISTICS.NO_ROUTINE_CONCEALMENT.2026-08-21, directive: "No routine books-in-beer-casks mechanism."}
+  - {chapter_ref: CH.DE_DOOD_VAN_SOL.1564, decision: DEC.MANUSCRIPT.BEER_LOGISTICS.NO_ROUTINE_CONCEALMENT.2026-08-21, directive: "Keep carrier/content resonance without operational barrel concealment."}
+  fire_sequence_directives:
+  - {decision: DEC.GOES.FIRE_1554.CLAES_PRESENT_CORNELIS_ABSENT.2026-08-21, directive: "Claes directly experiences the fire sequence; Cornelis is absent from the immediate fire zone."}
+  - {decision: DEC.MANUSCRIPT.POSTFIRE.GRANDFATHER_CONTINUITY.2026-08-21, directive: "Grandfather is present by burial/early aftermath and helps with practical arrangements."}
+  - {decision: DEC.MANUSCRIPT.REIMERSWAAL_DREAD_CALLBACK.2026-08-21, directive: "De Kade briefly recalls the specific De Kraai dread before the Reimerswaal departure."}
+  - {decision: DEC.CLAES.REIMERSWAAL.ARRIVAL_AGE_11.2026-08-21, directive: "Claes arrives at eleven and turns twelve on 8 December 1554."}
+  - {decision: DEC.MANUSCRIPT.FIRE_SEQUENCE.MULTICHAPTER.2026-08-21, directive: "Distribute catastrophe, confirmation, aftermath and departure across multiple chapters."}
+  intentional_non_repair: "Mayken need not appear in the immediate aftermath; her and Claes' Goese histories remain separated until their later reunion."
+
 current_manuscript_set:
 - chapter_ref: CH.PROLOGUE.DE_BLADZIJDE.1542
   manuscript_file: 1542-12-08-de-bladzijde.md
@@ -87,8 +108,8 @@ current_manuscript_set:
     - "Cornelis later recognizes that Claes' method resembles his own, but his sparse praise still leaves Claes uncertain whether he is enough."
     exit: "Competence, trust, error and paternal recognition become psychologically fused for Claes."
   cluster_contribution: "Establishes gift + responsibility + recognition hunger; later vigilance grows from a real strength rather than abstract cleverness."
-  continuity_risks:
-  - "Current prose still alternates Meester Adriaen and Meester Jacob for what appears to be the same elementary master; authorial identity must be fixed before final prose."
+  continuity_risks: []
+  continuity_resolution: DEC.MANUSCRIPT.DE_LEI.TEACHER_JACOB.2026-08-21
 
 - chapter_ref: CH.HET_WAPEN.1553
   manuscript_file: 1553-08-15-het-wapen.md
@@ -106,8 +127,8 @@ current_manuscript_set:
     - "Claes' first shot hits the target but not the center; Cornelis defines that as sufficient for a first step and immediately implies a next step."
     exit: "The heraldic sign has become embodied experience, discipline and family continuity without becoming destiny."
   cluster_contribution: "Turns sign into body and gives Claes a practical see/prepare/hold/wait/release sequence."
-  continuity_risks:
-  - "Current prose still specifies wind/touw/haak as the spanning apparatus while the exact historical mechanism remains OPEN; either canonize that fiction fill explicitly or neutralize the mechanism in prose."
+  continuity_risks: []
+  continuity_resolution: DEC.MANUSCRIPT.HET_WAPEN.SPANNING_GENERALIZED.2026-08-21
 
 - chapter_ref: CH.DE_KRAAI.1553
   manuscript_file: 1553-10-01-de-kraai.md
@@ -233,8 +254,8 @@ current_manuscript_set:
     - "On the return road Cornelis explicitly asks Claes not to carry the grey man's identity; protection becomes gatekeeping."
     exit: "Claes carries a seed and a prohibition: hidden meaning exists, but his father controls access to it."
   cluster_contribution: "Bridges embodied family/church imagery to Cornelis' secret network while preserving the child's incomplete knowledge."
-  continuity_risks:
-  - "Current brewery scene still gives Cornelis some process-direction language; keep aligned with biersteker/family-economic role and Lieven as actual brewer."
+  continuity_risks: []
+  continuity_resolution: DEC.MANUSCRIPT.CORNELIS.BIERSTEKER_WORDING.2026-08-21
 
 - chapter_ref: CH.DE_KAMER.1554
   manuscript_file: 1554-03-05-de-kamer.md
@@ -269,9 +290,8 @@ current_manuscript_set:
     - "Jan promises to care for the unborn sibling."
     exit: "The family is warm and expectant; the revised final sentence no longer explicitly tells the reader how little time remains."
   cluster_contribution: "Makes the future that will be destroyed materially and relationally specific rather than abstract tragedy."
-  continuity_risks:
-  - "Current prose says there will be 'three younger mouths instead of two'; with Jan plus the unborn child this appears numerically inconsistent unless another dependent is explicitly canonized."
-  - "Current prose mentions an earlier child that 'did not come'; this is not established in the current family canon and requires removal or an explicit author decision before it can remain."
+  continuity_risks: []
+  continuity_resolution: DEC.MANUSCRIPT.DE_WIEG.FAMILY_STATE_REPAIR.2026-08-21
 
 - chapter_ref: CH.DE_LADINGEN.1564
   manuscript_file: 1564-04-04-de-ladingen-van-antwerpen.md
@@ -288,8 +308,8 @@ current_manuscript_set:
     - "Silvius bargains Claes' existing competence into two hours of work with Dee."
     exit: "A formative apprenticeship with Dee begins, but Claes' agency is still partly entangled with older men's decisions about his usefulness."
   cluster_contribution: "Moves childhood competencies into adult circulation: accounting, silence and transmission become entrance tickets to Dee."
-  continuity_risks:
-  - "Current prose calls beer 'the own beer of Claes' father' and Claes names brewing as his knowledge; keep this aligned with Cornelis as biersteker rather than fixed master brewer/owner."
+  continuity_risks: []
+  continuity_resolution: DEC.MANUSCRIPT.CORNELIS.BIERSTEKER_WORDING.2026-08-21
 
 - chapter_ref: CH.DE_VERKEERDE_KIST.1564
   manuscript_file: 1564-04-14-de-verkeerde-kist.md
@@ -341,8 +361,8 @@ current_manuscript_set:
     - "After doing the work, Claes earns the right to name what he has seen emerge."
     exit: "The Green Lion is no longer an emblem only; Claes has materially produced and recognized an operational substance."
   cluster_contribution: "Moves transformation from insight to labour, waiting, repeatability and earned naming."
-  continuity_risks:
-  - "Current language about Cornelis' vaten carrying hidden freight should not become a routine books-hidden-in-beer-barrels mechanism contrary to the logistics guardrail."
+  continuity_risks: []
+  continuity_resolution: DEC.MANUSCRIPT.BEER_LOGISTICS.NO_ROUTINE_CONCEALMENT.2026-08-21
 
 - chapter_ref: CH.DE_DOOD_VAN_SOL.1564
   manuscript_file: 1564-07-20-de-dood-van-sol.md
@@ -359,8 +379,8 @@ current_manuscript_set:
     - "The hidden-book/Trithemius line and the Green Lion emblem intensify the relation between concealment, legibility and danger without completing the Brevísima mechanism here."
     exit: "Claes has witnessed visible death without material loss and cannot yet decide whether concealment is protection, knowledge or danger."
   cluster_contribution: "Establishes conserved Sol and the crucial distinction between destruction and transformation."
-  continuity_risks:
-  - "Current closing analogies can imply routine concealed freight in beer; preserve the canon distinction between logistics continuity and a standard books-in-barrels device."
+  continuity_risks: []
+  continuity_resolution: DEC.MANUSCRIPT.BEER_LOGISTICS.NO_ROUTINE_CONCEALMENT.2026-08-21
 
 - chapter_ref: CH.DE_MARKT_VAN_DELFT.1584
   manuscript_file: 1584-07-14-de-markt-van-delft.md

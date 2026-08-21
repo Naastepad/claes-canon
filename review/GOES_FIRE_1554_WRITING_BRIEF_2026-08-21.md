@@ -136,7 +136,7 @@ Use brief actions that show:
 
 ### Beer guardrail
 
-Repair prose that makes Cornelis the fixed owner/master brewer of the documented Nissepad brewery. `OPEN.MANUSCRIPT.CORNELIS.BIERSTEKER_WORDING.001` remains active until the specific sentences are repaired.
+Repair prose that makes Cornelis the fixed owner/master brewer of the documented Nissepad brewery under `DEC.MANUSCRIPT.CORNELIS.BIERSTEKER_WORDING.2026-08-21`.
 
 ### Salt planting
 
@@ -181,13 +181,14 @@ Do not turn these into speeches about gender, management or economics.
 ### `De Lei`
 - preserve recognition wound through expectation/response;
 - Cornelis' increased responsibility can mean trust while Claes reads another test;
+- use Meester Jacob for the elementary master; Puttus remains separate;
 - avoid restating the emotional equation after showing it.
 
 ### `Het Wapen`
 - strongest existing place to establish the Nissepat voetboog sign as a material object before the fire;
-- introduce the metal carrier ordinarily, without future-fire emphasis;
-- exact object class remains OPEN;
-- preserve existing historical uncertainty about exact spanning mechanism.
+- introduce the small penning/hanger on its thin copper chain ordinarily, without future-fire emphasis;
+- Claes Jacobsz. had a small set made and Jan receives this example after asking for one; it is not an ancient heirloom or official badge;
+- preserve bodily spanning action while generalizing the exact apparatus subtype.
 
 ### `De Kraai`
 - Puttus gives interpretive discipline, not anti-Catholic doctrine;
@@ -225,14 +226,14 @@ Do not turn these into speeches about gender, management or economics.
 
 ### `De Wieg`
 - preserve warmth and intact family expectation;
-- repair existing family-count/pregnancy continuity under `OPEN.MANUSCRIPT.DE_WIEG.FAMILY_STATE.001`;
+- preserve the fixed household: Jan plus the unborn child are Claes' two younger children; remove any earlier lost child;
 - add no extra doom foreshadowing.
 
 ---
 
 ## 9. Fire-day dramatic movement
 
-Exact chapter count remains open, but the **physical catastrophe** should have a clear internal progression:
+The catastrophe and immediate consequences form a **multi-chapter sequence** under `DEC.MANUSCRIPT.FIRE_SEQUENCE.MULTICHAPTER.2026-08-21`. The **physical catastrophe** should have a clear internal progression:
 
 1. **ordinary morning** — Claes, Jan, intact home/city;
 2. **routine** — family/work/city moving normally;
@@ -240,7 +241,7 @@ Exact chapter count remains open, but the **physical catastrophe** should have a
 4. **orientation attempt** — Claes tries to establish where/how;
 5. **acceleration** — information and fire fronts outrun his understanding;
 6. **action** — movement, blocked choices, people helping, trying to reach or save;
-7. **separation / non-access** — Claes and Cornelis cannot simply return to Tanneken and Jan;
+7. **separation / non-access** — Claes is within the catastrophe but away from the house when it becomes fatal; Cornelis is absent from the immediate fire zone;
 8. **waiting/searching** — incomplete reports and hope;
 9. **confirmation** — Tanneken, Jan and unborn child are lost.
 
@@ -280,7 +281,7 @@ Treat at least conceptually as distinct movements:
 ### C. Departure
 **Zierikzee no longer feasible -> Reimerswaal -> Cornelis remains -> Claes experiences protection as rejection**
 
-These may become two chapters, three chapters or another arrangement; **function is fixed, chapter count is not**.
+These functions must be distributed across multiple chapters; the exact count and boundaries remain an authoring choice.
 
 ---
 
@@ -339,6 +340,10 @@ Cornelis' likely motives can include:
 
 Claes should be able to possess evidence of care while still feeling rejected.
 
+In *De Kade*, briefly reactivate the specific dread planted in *De Kraai*: Claes remembers the earlier judgement that one would not want to live in Reimerswaal, let alone go to school there. Use one recognition beat, not a repeated exposition scene. Claes is eleven and turns twelve on 8 December 1554.
+
+Claes Jacobsz. must remain present in the practical and ritual aftermath. He knows of the deaths, is present by the burial/early formal aftermath and helps Cornelis preserve Claes' schooling despite losing his own property asset. If Claes lodges with grandfather's sister, make the practical reason legible; do not let that choice erase grandfather.
+
 This is stronger than either:
 
 - `Cornelis abandoned him`, or
@@ -395,7 +400,7 @@ Primary early function:
 
 > **material trace: the destroyed world existed.**
 
-Do not call it a king's prize, guild badge or ring until the exact form is separately decided.
+It is the already fixed penning/hanger, not a king's prize, official guild badge or ring.
 
 ---
 
@@ -411,7 +416,7 @@ High-value unresolved items:
 6. plausible house/window construction for the older-Nieuwstraat Nissepat home;
 7. whether any usable weather evidence exists for 18 May 1554; absent that, use climatological plausibility only;
 8. exact school/boarding economics that make Reimerswaal preferable to Zierikzee;
-9. exact historical form of the metal footbow/family carrier and whether any guild-prize connection is defensible.
+9. exact historical analogue for the fictional penning/hanger; the fictional form itself is fixed and does not prove a guild-prize connection.
 
 Do not delay all drafting until every item is solved. Draft around uncertainty rather than filling it with invented precision.
 
@@ -419,4 +424,4 @@ Do not delay all drafting until every item is solved. Draft around uncertainty r
 
 ## 17. One-paragraph fire instruction
 
-> **Write 18 May 1554 entirely through Claes' limited, embodied perception. Begin with an ordinary May morning in which Jan, Tanneken, Cornelis, the unborn child, the house and Goes still function as daily life. Let material and routine carry the calm without ominous explanation. When the fire begins, let events outrun Claes' usual ability to compare and understand. Preserve the distinction between salt-keet origin, Cornelis' economic involvement, direct operational fault and public blame. Let the physical catastrophe be followed by a Catholic/social/economic aftermath in which rumour simplifies complexity into `Nissepats keet`. Cornelis' decision to preserve Claes' education and remove him from the rumour must be genuine protection that Claes can still experience as abandonment. Do not explain the symbolism: let smoke, blocked sight, damaged material, silence, money, public ritual, changed faces and the scarred voetboog sign carry it.**
+> **Write the 18 May 1554 catastrophe and aftermath as a multi-chapter sequence through Claes' limited, embodied perception. Begin with an ordinary May morning in which Jan, Tanneken, Cornelis, the unborn child, the house and Goes still function as daily life. Let material and routine carry the calm without ominous explanation. When the fire begins, let events outrun Claes' usual ability to compare and understand. Claes directly experiences alarm, escape, waiting and fragmentary confirmation while Cornelis is absent from the immediate fire zone. Preserve the distinction between salt-keet origin, Cornelis' economic involvement, direct operational fault and public blame. Let the physical catastrophe be followed by a Catholic/social/economic aftermath in which rumour simplifies complexity into `Nissepats keet`; keep grandfather present by burial and practical arrangements. Cornelis' decision to preserve Claes' education and remove him from the rumour must be genuine protection that Claes can still experience as abandonment. In *De Kade*, pay off the specific Reimerswaal dread from *De Kraai* once; Claes is eleven. Do not explain the symbolism: let smoke, blocked sight, damaged material, silence, money, public ritual, changed faces and the scarred penning/hanger carry it.**

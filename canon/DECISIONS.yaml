@@ -77,7 +77,7 @@ decisions:
 - id: DEC.CLAES.FAMILY_FIRE.1554.2026-08-14
   type: CanonDecision
   status: CANON
-  decision: On 18 May 1554 the fictional Cornelis household loses its home in the older Nieuwstraat; Claes and Cornelis survive because they are away from the house, while Claes' mother, his younger brother born about eighteen months after Claes, and the mother's unborn child die in the fire. The mother is about six months pregnant.
+  decision: On 18 May 1554 the fictional Cornelis household loses its home in the older Nieuwstraat. Claes directly experiences the Goese fire event but survives because he is away from the house when it becomes fatal; Cornelis is absent from the immediate fire zone during the decisive interval. Claes' mother, his younger brother born about eighteen months after Claes, and the mother's unborn child die in the fire. The mother is about six months pregnant.
   affects:
   - STC.CLAES.HOUSEHOLD_PRE_FIRE.1554.001
   - STC.CLAES.FAMILY_FIRE.1554.001
@@ -92,7 +92,7 @@ decisions:
 - id: DEC.CLAES.GRANDFATHER_LINK.2026-08-14
   type: CanonDecision
   status: CANON
-  decision: Historical Claes Jacobsz. Nissepat is used in novel canon as the fictional father of Cornelis and paternal grandfather of Claes. He remains the story owner of the 1542 Nieuwstraat house through the 1554 fire, loses that asset in the fire, and subsequently helps Cornelis support Claes' education.
+  decision: Historical Claes Jacobsz. Nissepat is used in novel canon as the fictional father of Cornelis and paternal grandfather of Claes. He remains the story owner of the 1542 Nieuwstraat house through the 1554 fire, loses that asset in the fire, is present by the burial/early formal aftermath, and subsequently helps Cornelis support Claes' education.
   affects:
   - STC.CLAES.GRANDFATHER.NISSEPAT.001
   - ENT.PERSON.CLAES_JACOBSZ_NISSEPAT
@@ -102,7 +102,7 @@ decisions:
 - id: DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14
   type: CanonDecision
   status: CANON
-  decision: After the 1554 fire Cornelis stays in Goes to rebuild livelihood, business and shelter and to finance Claes' schooling as far as he can, with partial support from his father Claes Jacobsz. Claes is sent to Reimerswaal because the original Zierikzee plan has become financially unattainable. Father and son therefore lose not only their household but also daily life with each other; the separation is an act of care that Claes can experience as abandonment.
+  decision: After the 1554 fire Cornelis stays in Goes to rebuild livelihood, business and shelter and to finance Claes' schooling as far as he can, with partial support from his father Claes Jacobsz. Eleven-year-old Claes is sent to Reimerswaal because the original Zierikzee plan has become financially unattainable. Father and son therefore lose not only their household but also daily life with each other; the separation is an act of care that Claes can experience as abandonment.
   affects:
   - STC.CLAES.CORNELIS.POSTFIRE_SEPARATION.001
   - STC.CLAES.REIMERSWAAL.001

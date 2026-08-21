@@ -1,8 +1,8 @@
 # Claes Storybible — MASTER / operating authority
 
 **Logical master ID:** `SB.CLAES.MASTER`  
-**Current synchronization date:** 19 August 2026  
-**Authoring readiness:** Rounds A–D implemented; Character Web refinement active
+**Current synchronization date:** 21 August 2026
+**Authoring readiness:** Rounds A–D implemented; manuscript/fire continuity sync active
 
 This repository is the structured operating projection of Revision 11 plus later explicit author decisions. The lossless source edition remains preserved for material not yet atomized, but later decisions override conflicting source or legacy-master wording.
 
@@ -41,9 +41,11 @@ The dated `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` is a **legacy snapshot**
 - `WRITING_PROTOCOL.md` — scene construction, prose, pacing, reader experience and editorial decision rules.
 - `review/READER_EXPERIENCE_PROTOCOL.md` — reader-testing authority.
 - `review/READER_FEEDBACK_TEMPLATE.md` — consistent reader-evidence logging.
+- `review/MANUSCRIPT_CANON_SYNC_2026-08-21.md` — closure audit for the editor-ingest repairs and 1554 manuscript projection.
 - `MEMORIAAL_BREVISIMA_PRINT_1564.md` — hidden readable tannin/gum print, Dee handoff, graphite rule, direct green-vitriol reveal.
 - `MEMORIAAL_BREVISIMA_CASTOFF_1564.md` — 17 single-sheet quarto gatherings / 136 latent pages.
 - `FAMILY_CLAES_1542_1554.md` — Tanneken, Jan, grandparents, 1542 house and 1554 family rupture.
+- `GOES_FIRE_1554_CAUSAL_ARCHITECTURE.md` — fire origin/ambiguity, unequal survivor positions, multi-chapter aftermath, grandfather continuity and Reimerswaal departure.
 - `GOES_SCHOOLING_PUTTUS_1550_1554.md` — Puttus school bridge plus explicit evidence/fiction characterization boundary.
 - `GOES_CLERGY_MATHIJS_CLEMENS_1541_1564.md` — named historical Goese clergy anchors: Mathijs Jacopsen/Jacobsen in 1541–early 1542, Clemens van den Dale in 1564, with the 1542–1563 succession gap preserved.
 - `MAYKEN_LAMPERT.md` — resolved identity, pre-fire childhood acquaintance and independent character/material role of Mayken, synchronized to no-cipher canon.
@@ -71,6 +73,7 @@ Current explicit author decisions live across:
 - `canon/DECISIONS_STORY_PROJECTION_2026-08-16.yaml`
 - `canon/DECISIONS_HOUSE_OF_LOVE_NETWORK_2026-08-16.yaml`
 - `canon/DECISIONS_CHARACTER_WEB_2026-08-19.yaml`
+- `canon/DECISIONS_MANUSCRIPT_SYNC_2026-08-21.yaml`
 
 Latest explicit decision wins within its domain. A base registry is not allowed to resurrect an older state merely because a later decision lives in a supplement.
 

@@ -1,7 +1,7 @@
 # Nissepat familiewapen, Sint-Joris en Cornelis
 
 **Status:** CANON — fact-fiction bridge approved 18 August 2026; carrier refined 21 August 2026  
-**Governing decisions:** `DEC.CLAES.FAMILY_ARMS.VOETBOOG.2026-08-16`, `DEC.CORNELIS.SCHUTTERIJ.SINT_JORIS.2026-08-18`, `DEC.CLAES.CORNELIS.VOETBOOG_PEDAGOGY.2026-08-18`, `DEC.NISSEPAT.VOETBOOG_TEKEN.FIRE_SURVIVAL.2026-08-21`  
+**Governing decisions:** `DEC.CLAES.FAMILY_ARMS.VOETBOOG.2026-08-16`, `DEC.CORNELIS.SCHUTTERIJ.SINT_JORIS.2026-08-18`, `DEC.CLAES.CORNELIS.VOETBOOG_PEDAGOGY.2026-08-18`, `DEC.NISSEPAT.VOETBOOG_TEKEN.FIRE_SURVIVAL.2026-08-21`, `DEC.NISSEPAT.VOETBOOG_PENNING.FORM.2026-08-21`
 **Historical substrate:** `SRC-HIST-NISSEPAT-ARMS-MUSCHART-82L-001`, `SRC-HIST-GOES-SCHUTTERIJ-DEGHEYN-001`  
 **Object projection:** `OBJ.NISSEPAT.VOETBOOG_TEKEN`
 
@@ -66,17 +66,11 @@ This is the desired fact-fiction loop.
 
 The arms should not remain a YAML-only fact. Claes should know the sign materially before he understands what later meaning the reader may attach to it.
 
-The project now fixes one **small metal fictional carrier** of the voetboog sign in the family/Sint-Joris material world before the 1554 fire. It is projected as `OBJ.NISSEPAT.VOETBOOG_TEKEN`.
+The project fixes one **small metal penning/hanger on a thin copper chain** bearing the voetboog sign in the family/Sint-Joris material world before the 1554 fire. It is projected as `OBJ.NISSEPAT.VOETBOOG_TEKEN`.
 
-Its exact object class is deliberately not yet fixed. Historically plausible candidates to research include:
+In fiction, Claes Jacobsz. had a small set made. The example that matters in the manuscript goes to Jan after he asks for one. It is therefore a recent family-made object, not an ancient heirloom. Its fictional form is fixed; its exact historical analogue and any institutional status remain open.
 
-- a ring;
-- badge/insigne or pendant;
-- a seal-related metal object;
-- a prize/trophy-related object;
-- another modest civic/family metal carrier appropriate to non-noble urban heraldry.
-
-These are candidates, not synonyms. **Do not call the object an official guild insigne, a schutterskoning prize or a ring until that form has been separately decided.**
+**Do not call the penning an official guild insigne, a schutterskoning prize, ring or seal matrix.**
 
 The fictional carrier is not assumed to be identical to the historical object behind Muschart.
 
@@ -86,7 +80,7 @@ Avoid presenting the Nissepat family as pseudo-aristocratic merely because it ha
 
 For young Claes the most effective sequence is:
 
-1. he knows or repeatedly sees the family sign and its metal carrier;
+1. he knows or repeatedly sees the family sign and the penning/hanger given to Jan;
 2. he later recognizes the same basic form in Cornelis' actual voetboog;
 3. the visual sign acquires weight, tension, danger, sequence and bodily discipline;
 4. the 1554 fire changes the carrier physically without erasing the sign;
@@ -181,7 +175,7 @@ Do not write the crossbow as an overt psychological metaphor. It must first work
 
 The family home and most of the household are destroyed in novel canon on 18 May 1554.
 
-Under `DEC.NISSEPAT.VOETBOOG_TEKEN.FIRE_SURVIVAL.2026-08-21`, the small metal carrier is **not protected from the catastrophe by convenient off-site storage**. It belongs to the family/grandfather-household material world touched by the fire and survives in a damaged state:
+Under `DEC.NISSEPAT.VOETBOOG_TEKEN.FIRE_SURVIVAL.2026-08-21` and `DEC.NISSEPAT.VOETBOOG_PENNING.FORM.2026-08-21`, Jan's small penning/hanger is **not protected from the catastrophe by convenient off-site storage**. It belongs to the family/grandfather-household material world touched by the fire and survives in a damaged state:
 
 - blackened or sooted;
 - heat-discoloured;
@@ -229,7 +223,7 @@ The damaged metal sign sharpens that principle: **a carrier can survive while it
 12. Claes' childhood weapon participation remains supervised and age-appropriate.
 13. The crossbow reinforces Claes' established gift/shadow; it is not the single cause of his personality.
 14. Symbolism stays author-side; scenes remain material, relational and civic first.
-15. A small metal family/Sint-Joris carrier exists before 1554 and survives the fire damaged in fiction canon; exact object class remains OPEN.
-16. Do not label that object an official guild badge, ring, chain or schutterskoning trophy until separately decided.
+15. A small metal voetboog penning/hanger commissioned as part of a small set by grandfather Claes Jacobsz. exists before 1554, goes to Jan and survives the fire damaged in fiction canon.
+16. Do not label that object an ancient heirloom, official guild badge, ring, seal matrix or schutterskoning trophy.
 17. Do not equate the fictional metal carrier with the historical Muschart source object.
 18. If the Muschart card or its underlying primary source is later recovered directly, update the provenance layer without disturbing the fictional Cornelis/carrier decision unless the historical identification itself creates a contradiction.

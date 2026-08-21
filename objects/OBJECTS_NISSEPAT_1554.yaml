@@ -2,17 +2,19 @@ schema_version: 1.0.0
 kind: ObjectRegistryExtension
 objects:
 - id: OBJ.NISSEPAT.VOETBOOG_TEKEN
-  label: Metalen Nissepat voetboog-/familieteken
+  label: Nissepat voetboogpenning/-hanger
   type: FamilyGuildSignObject
   canon_status: CANON
-  historical_status: FICTIONAL_CARRIER_HISTORICAL_FORM_OPEN
+  historical_status: FICTIONAL_PENNING_HANGER_HISTORICAL_ANALOGUE_OPEN
   decision_ids:
   - DEC.NISSEPAT.VOETBOOG_TEKEN.FIRE_SURVIVAL.2026-08-21
+  - DEC.NISSEPAT.VOETBOOG_PENNING.FORM.2026-08-21
   motif_ref: MOTIF.NISSEPAT_VOETBOOG
   historical_substrate:
     family_charge: SC.HIST.NISSEPAT.ARMS.VOETBOOG.001
     guild_context: SC.HIST.GOES.SCHUTTERIJ.SINT_JORIS_VOETBOOG.001
-    exact_object_form: OPEN
+    fictional_object_form: small_metal_penning_hanger_on_thin_copper_chain
+    exact_historical_analogue: OPEN
   phases:
   - phase: pre-fire-family-world
     window: {earliest: '1553-01-01', latest_exclusive: '1554-05-18', precision: approximate}
@@ -20,7 +22,9 @@ objects:
     location: family_or_grandfather_household_world
     knowledge:
       claes: recognizes the metal sign and its voetboog form before understanding any later thematic significance
-    function: ordinary family/Sint-Joris material culture and continuity
+      jan: receives this example after asking for one
+    provenance: one_of_a_small_set_commissioned_by_grandfather_claes_jacobsz
+    function: ordinary fictional family/Sint-Joris material culture and continuity
   - phase: fire-survivor
     date: '1554-05-18'
     condition: blackened_discoloured_and_or_slightly_deformed_but_recognizable
@@ -28,19 +32,11 @@ objects:
   - phase: later-recurrence
     earliest: '1554-05-19'
     function: may recur sparingly when changed context gives the surviving carrier a different value
-  open_form_candidates:
-  - ring
-  - badge_or_insigne
-  - pendant
-  - seal_related_metal_object
-  - prize_or_trophy_related_object
-  - other_modest_family_or_guild_carrier
   constraints:
-  - Do not select an exact object class without a separate historical/story decision.
-  - Do not call it a schutterskoning prize, official guild badge, chain or ring merely because those are candidates.
+  - The penning/hanger is not an ancient heirloom, official guild badge, schutterskoning prize or ring.
   - Cornelis is not canonically schutterskoning.
   - Do not claim this object is the historical carrier behind the Muschart record.
   - Fire survival is visibly damaging; no pristine providential relic.
   - The object need not appear repeatedly simply because it survives.
   - Its early post-fire meaning is material evidence/continuity, not explained symbolism.
-  deterministic_domains: [existence_before_fire, survival_through_fire, damaged_condition]
+  deterministic_domains: [fictional_form, existence_before_fire, survival_through_fire, damaged_condition]

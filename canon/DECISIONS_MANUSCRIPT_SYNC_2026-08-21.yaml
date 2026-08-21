@@ -1,0 +1,159 @@
+schema_version: 1.0.0
+kind: CanonDecisionRegistryExtension
+decisions:
+- id: DEC.MANUSCRIPT.DE_LEI.TEACHER_JACOB.2026-08-21
+  type: ManuscriptContinuityDecision
+  status: CANON
+  decision: >-
+    The elementary writing and reckoning master in De Lei is Meester Jacob. The isolated Meester Adriaen reference in that classroom is continuity drift and must be changed to Meester Jacob. Nicolaes van de Put/Puttus remains Claes' separate Latin and humanist master.
+  closes:
+  - OPEN.MANUSCRIPT.DE_LEI.TEACHER_IDENTITY.001
+  affects:
+  - CH.DE_LEI.1552
+  - CH.DE_KRAAI.1553
+  guardrails:
+  - Do not merge Meester Jacob with Puttus.
+  - This name choice does not require a larger biography or independent character arc.
+
+- id: DEC.MANUSCRIPT.HET_WAPEN.SPANNING_GENERALIZED.2026-08-21
+  type: ManuscriptHistoricalBoundaryDecision
+  status: CANON
+  decision: >-
+    Het Wapen keeps the bodily sequence and effort of mechanically spanning the voetboog but generalizes wind/touw/haak subtype language until the exact historically appropriate apparatus is better established. The prose may name spanning gear and its weight, resistance and action without declaring a windlass, cranequin, belt hook or other exact subtype as historical fact.
+  closes:
+  - OPEN.MANUSCRIPT.HET_WAPEN.SPANNING_MECHANISM.001
+  affects:
+  - CH.HET_WAPEN.1553
+  guardrails:
+  - The Muschart lange-zwengel wording remains evidence for the family sign, not automatic proof of the exact practice weapon or spanning kit in the scene.
+  - Preserve the father-son embodied learning sequence.
+
+- id: DEC.MANUSCRIPT.DE_WIEG.FAMILY_STATE_REPAIR.2026-08-21
+  type: ManuscriptContinuityDecision
+  status: CANON
+  decision: >-
+    De Wieg conforms to the fixed household of Cornelis, Tanneken, Claes, Jan and the unborn child. Claes is the eldest; Jan is the one younger living child before the pregnancy; the unborn child will make two younger children. No earlier child who did not come exists in current novel canon. Any arithmetic or pregnancy-history wording implying otherwise is prose drift and must be removed or corrected.
+  closes:
+  - OPEN.MANUSCRIPT.DE_WIEG.FAMILY_STATE.001
+  affects:
+  - CH.DE_WIEG.1554
+  - STC.CLAES.HOUSEHOLD_PRE_FIRE.1554.001
+  guardrails:
+  - Do not create an additional lost sibling to preserve an old sentence.
+  - Prefer natural household language over conspicuous arithmetic.
+
+- id: DEC.MANUSCRIPT.CORNELIS.BIERSTEKER_WORDING.2026-08-21
+  type: ManuscriptCanonAlignmentDecision
+  status: CANON
+  decision: >-
+    Manuscript language presents Cornelis as biersteker, intermediary and organizer of beer circulation: he judges and buys beer, manages casks, storage, accounts, credit, routes, carriers and trusted contacts. References to his own beer, his brewing or command of the brewing process must not imply that he is the fixed owner or master brewer of the documented Nissepad brewery.
+  closes:
+  - OPEN.MANUSCRIPT.CORNELIS.BIERSTEKER_WORDING.001
+  affects:
+  - CH.HET_ZAAD.1554
+  - CH.DE_LADINGEN.1564
+  - CH.DE_VERKEERDE_KIST.1564
+  - ENT.PERSON.CORNELIS
+  guardrails:
+  - Process expertise may belong to an actual brewer such as Lieven where a scene requires it.
+  - Active trade competence must remain visible; biersteker does not mean passive reseller.
+
+- id: DEC.MANUSCRIPT.BEER_LOGISTICS.NO_ROUTINE_CONCEALMENT.2026-08-21
+  type: ManuscriptPlotMechanismDecision
+  status: CANON
+  decision: >-
+    Cornelis' beer and cask trade supplies routes, timing, contacts and a material analogy between carrier and content, but the novel has no routine books-hidden-in-beer-barrels transport system. The Brevísima/memoriaal chain remains book-in-book invisible printing. Prose that turns the analogy into repeated operational concealed freight in beer casks must be removed.
+  closes:
+  - OPEN.MANUSCRIPT.BEER_LOGISTICS_CONCEALMENT.001
+  affects:
+  - CH.DE_LOOG.1564
+  - CH.DE_DOOD_VAN_SOL.1564
+  - OBJ.MEMORIAAL
+  guardrails:
+  - A one-off future concealment event would require a separate explicit decision.
+  - Do not remove ordinary commercial discretion or the thematic carrier/content resonance.
+
+- id: DEC.GOES.FIRE_1554.CLAES_PRESENT_CORNELIS_ABSENT.2026-08-21
+  type: EventPositionDecision
+  status: CANON
+  decision: >-
+    Claes is present within the Goese fire event on 18 May 1554: he experiences alarm, escape, separation, waiting, searching and fragmentary confirmation directly. He survives because he is away from the family house when it becomes fatal. Cornelis is absent from the immediate fire zone during the decisive household-loss interval and returns into the aftermath. The two survivors therefore do not share the same fire experience.
+  affects:
+  - STC.CLAES.FAMILY_FIRE.1554.001
+  - NI.EVENT.GOES_FIRE.1554.001
+  - NI.SEQUENCE.POSTFIRE_FAMILY.1554.001
+  - REL.CLAES.CORNELIS
+  guardrails:
+  - Do not rewrite Claes as safely absent from the catastrophe.
+  - Do not invent Cornelis' exact distant location until separately established in prose or canon.
+
+- id: DEC.NISSEPAT.VOETBOOG_PENNING.FORM.2026-08-21
+  type: ObjectFormDecision
+  status: CANON
+  decision: >-
+    The fictional metal carrier of the Nissepat voetboog sign is a small penning worn or carried as a hanger on a thin copper chain. It is not an ancient heirloom, official guild badge, schutterskoning prize or the historical object behind Muschart. Claes Jacobsz. had a small set made; Jan receives this example after asking for one, and it later survives the fire visibly damaged.
+  closes:
+  - OPEN.NISSEPAT.VOETBOOG_TEKEN.FORM.001
+  refines:
+  - DEC.NISSEPAT.VOETBOOG_TEKEN.FIRE_SURVIVAL.2026-08-21
+  affects:
+  - OBJ.NISSEPAT.VOETBOOG_TEKEN
+  - MOTIF.NISSEPAT_VOETBOOG
+  - STC.NISSEPAT.ARMS.CARRIER_CONTINUITY.001
+  guardrails:
+  - The family use and fictional manufacture do not prove any historical Nissepat or Sint-Joris object practice.
+  - The recovered penning is blackened, discoloured and/or slightly deformed, never pristine.
+
+- id: DEC.CLAES.REIMERSWAAL.ARRIVAL_AGE_11.2026-08-21
+  type: ChronologyDecision
+  status: CANON
+  decision: >-
+    Claes is eleven years old during the 18 May 1554 fire and when he arrives in Reimerswaal later in 1554. He turns twelve on 8 December 1554. Any note that places his Reimerswaal arrival at eight or nine years old belongs to superseded 1545-birth chronology and is invalid.
+  affects:
+  - STC.CLAES.REIMERSWAAL.001
+  - ENT.PERSON.CLAES
+  - NI.EVENT.REIMERSWAAL_MOVE.1554.001
+  - WORLD.REIMERSWAAL
+  guardrails:
+  - Preserve the fixed birth date 8 December 1542.
+  - Do not modernize school cohort assumptions from his age alone.
+
+- id: DEC.MANUSCRIPT.POSTFIRE.GRANDFATHER_CONTINUITY.2026-08-21
+  type: ManuscriptRelationshipContinuityDecision
+  status: CANON
+  decision: >-
+    Claes Jacobsz. does not disappear after Het Wapen. He learns of the household deaths, is present by the burial/early formal aftermath, shares the loss of his Nieuwstraat property and participates in the practical arrangements that help Cornelis preserve Claes' education. Claes may stay temporarily with his great-aunt, but the manuscript must explain that practical lodging choice rather than imply that grandfather ceased to exist.
+  affects:
+  - STC.CLAES.GRANDFATHER.NISSEPAT.001
+  - NI.SEQUENCE.POSTFIRE_FAMILY.1554.001
+  - REL.CORNELIS.CLAES_JACOBSZ_NISSEPAT
+  guardrails:
+  - Keep grandfather verbally spare and materially active; do not turn him into a grief interpreter.
+  - His help does not erase his own property loss or make him able to restore the Zierikzee plan.
+
+- id: DEC.MANUSCRIPT.REIMERSWAAL_DREAD_CALLBACK.2026-08-21
+  type: ManuscriptProjectionDecision
+  status: CANON
+  decision: >-
+    The Reimerswaal dread planted in De Kraai receives a specific callback in De Kade when Reimerswaal becomes Claes' actual destination. The memory must recover the earlier judgement that one would not want to live there, let alone attend school there, so the Zierikzee-to-Reimerswaal substitution lands as a loss and a feared destination rather than a generic move toward cold and water.
+  affects:
+  - CH.DE_KRAAI.1553
+  - CH.DE_KADE.1554
+  - NI.EVENT.REIMERSWAAL_MOVE.1554.001
+  guardrails:
+  - Use one concise recognition beat; do not repeat the full earlier exchange as exposition.
+  - The callback intensifies Claes' experience and does not claim Reimerswaal is already a drowned ruin.
+
+- id: DEC.MANUSCRIPT.FIRE_SEQUENCE.MULTICHAPTER.2026-08-21
+  type: ManuscriptStructureDecision
+  status: CANON
+  decision: >-
+    The 18 May 1554 catastrophe and its immediate consequences are distributed across multiple chapters rather than resolved in one fire set piece. The sequence separates direct alarm/escape, waiting and uncertainty, identification/confirmation, practical and ritual aftermath, father-son misattunement and the Reimerswaal departure. Each part closes one factual question while carrying relational and emotional incompletion forward.
+  affects:
+  - NI.EVENT.GOES_FIRE.1554.001
+  - NI.SEQUENCE.POSTFIRE_FAMILY.1554.001
+  - ARC.CLAES.CAUSAL_SPINE
+  - REL.CLAES.CORNELIS
+  guardrails:
+  - Do not explain Zeigarnik theory, ritual associations or motif architecture in the novel.
+  - Mayken's absence from the immediate aftermath is not a continuity error; their Goese histories remain separate until later reunion.

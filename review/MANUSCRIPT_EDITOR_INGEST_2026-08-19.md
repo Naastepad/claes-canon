@@ -117,7 +117,7 @@ Rejected material now explicitly includes:
 
 This distinction prevents the common failure where every deleted good idea is treated as a future obligation.
 
-## Current manuscript-to-canon repair flags
+## Current manuscript-to-canon repair flags at ingest time
 
 The ingest surfaced several issues that remain in the **current prose** and require a later deliberate continuity repair:
 
@@ -139,6 +139,20 @@ They are now registered in `canon/OPEN_DECISIONS.yaml` as:
 
 The OPEN records state the fixed canon that must survive each repair and prevent a later editor from solving a prose problem by silently changing story truth.
 
+## 21 August 2026 closure addendum
+
+The five records above were deliberately resolved in `canon/DECISIONS_MANUSCRIPT_SYNC_2026-08-21.yaml` and removed from the active OPEN registry:
+
+- Jacob is the elementary master in *De Lei*;
+- *Het Wapen* generalizes the exact spanning subtype;
+- *De Wieg* conforms to the fixed household and has no earlier lost child;
+- Cornelis remains a biersteker/intermediary rather than fixed brewer/owner;
+- beer logistics do not become a routine concealed-book mechanism.
+
+This closure also records the later fire-sequence corrections: Claes is present within the catastrophe while Cornelis is absent from the immediate zone, grandfather is present by the burial/early aftermath, Claes reaches Reimerswaal at eleven, *De Kade* must reactivate the specific *De Kraai* dread, and the catastrophe is distributed across multiple chapters. Mayken's absence from the immediate aftermath remains intentional.
+
+The original ingest record is retained as historical evidence of what the editor pass exposed. Its OPEN list is therefore a snapshot, not the current registry.
+
 ## Synchronized files
 
 - `narrative/manuscript_progression.yaml`
@@ -155,6 +169,6 @@ A future Claude/editor session must load `03_WRITING_EDITORIAL`, which contains 
 
 - progression ingest: **COMPLETE**
 - parked/rejected classification: **COMPLETE**, with explicit `SEMANTIC_RECONSTRUCTION` provenance where a verbatim historical Claude handoff was unavailable
-- current manuscript repair conflicts: **REGISTERED AS OPEN**
+- manuscript repair conflicts at ingest time: **REGISTERED AS OPEN**; **CLOSED 21 AUGUST 2026** by `canon/DECISIONS_MANUSCRIPT_SYNC_2026-08-21.yaml`
 - canon de-canonization caused by prose deletion: **NONE**
-- merge to `main`: **NOT PERFORMED**
+- merge to `main` at ingest time: **NOT PERFORMED**; PR #18 was later merged on 21 August 2026

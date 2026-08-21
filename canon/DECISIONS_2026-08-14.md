@@ -41,7 +41,8 @@ This decision establishes Cornelis' scene location by following the best-documen
 
 On **18 May 1554**:
 - the fictional family house in the older Nieuwstraat is destroyed or rendered uninhabitable;
-- Claes and Cornelis survive because they are away from the house when the fire reaches the street;
+- Claes directly experiences the Goese fire event but survives because he is away from the house when it becomes fatal;
+- Cornelis is absent from the immediate fire zone during the decisive household-loss interval;
 - Claes' mother dies;
 - the younger brother dies;
 - the unborn child dies with the mother.
@@ -65,6 +66,7 @@ Novel canon:
 - he is Claes' grandfather;
 - he remains story-owner of the 1542 house through the 1554 fire;
 - he loses that property asset when the house burns/is rendered unusable;
+- he is present by the burial/early formal aftermath rather than disappearing from the family line;
 - despite his own loss, he helps Cornelis sustain Claes' education after the fire.
 
 This genealogy must never be presented as archival proof. It is a deliberate fictional attachment to a historical person.
@@ -81,7 +83,7 @@ Cornelis remains in Goes because he must rebuild:
 
 His father Claes Jacobsz. assists where possible, although he too has lost the 1542 property.
 
-The pre-fire plan to send Claes to **Zierikzee** becomes financially unattainable. **Reimerswaal** becomes the viable route that preserves Claes' education at lower cost. Claes therefore leaves Goes while Cornelis stays.
+The pre-fire plan to send Claes to **Zierikzee** becomes financially unattainable. **Reimerswaal** becomes the viable route that preserves Claes' education at lower cost. Claes therefore leaves Goes at age **eleven** while Cornelis stays.
 
 This gives the same act two simultaneous meanings:
 - for Cornelis: *I send him away because I refuse to let the fire take his future as well*;
