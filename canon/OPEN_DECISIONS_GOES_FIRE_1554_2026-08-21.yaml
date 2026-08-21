@@ -1,0 +1,105 @@
+schema_version: 1.0.0
+kind: OpenDecisionSupplement
+policy:
+  scope: Goes 1554 fire, salt-work reconstruction, fire-day material world and surviving family-sign object
+  note: Fixed causal architecture lives in storybible/GOES_FIRE_1554_CAUSAL_ARCHITECTURE.md; this file contains only unresolved details that must not be silently promoted into fact.
+decisions:
+- id: OPEN.GOES.SALTKEET.CORNELIS.FORM.001
+  domain: historical_reconstruction_and_fiction_property
+  priority: high
+  question: What exact historically plausible financial/legal form gives Cornelis an economic interest in the implicated Goese salt-refining keet, and how specifically can that keet be placed within the source-weighted Oostzelke origin zone?
+  status: OPEN
+  fixed:
+  - Cornelis has a financial/economic ownership interest in one Goese salt-refining keet in fiction canon.
+  - He is not the daily zoutzieder.
+  - The historical source-weighted fire origin remains Oostzelke/northern harbour under the existing fire refinement.
+  guardrails:
+  - Do not invent a historical Nissepat deed merely to prove the fiction choice.
+  - Sole ownership, partnership, share, lease interest and other forms remain candidates until researched/designed.
+
+- id: OPEN.GOES.FIRE_1554.IGNITION_RESPONSIBILITY.001
+  domain: plot_and_historical_reconstruction
+  priority: high
+  question: What technical ignition possibilities are historically defensible for a Goese salt-keet in 1554, and how much should the novel ever resolve about direct operational responsibility?
+  status: OPEN
+  fixed:
+  - The novel separates historical origin, Cornelis' economic involvement, technical ignition, operational fault, public attribution and moral guilt.
+  - Cornelis is not canonically the person who ignites or personally mishandles the fire.
+  - Public attribution may simplify the event to Nissepats keet.
+  guardrails:
+  - Do not select a later-documented turf/as/oven safety rule and back-project it into 1554 without evidence.
+  - Uncertainty is a designed story function, not a placeholder that must automatically be solved.
+
+- id: OPEN.GOES.SALT_LABOUR.WOMEN_1554.001
+  domain: historical_research
+  priority: high
+  question: What can be established specifically for Goes/Zeeland before circa 1600 about women and girls as salt workers, operators, owners/investors or legally independent participants, including period titles and task divisions?
+  status: OPEN
+  fixed:
+  - The fictional salt-work world should not default to an all-male workforce merely from modern assumption.
+  - Tanneken's Body / Continuity role does not depend on a formal salt-work title.
+  guardrails:
+  - Do not canonize keetmeesteres, kopvrouw, exact female task lists, entry ages or work clothing for Goes 1554 from later/comparative material alone.
+  - Distinguish ownership/legal capacity from physical labour inside the keet.
+
+- id: OPEN.GOES.FIRE_1554.CATHOLIC_AFTERMATH.001
+  domain: historical_research_and_scene_design
+  priority: high
+  question: What exact Catholic civic/liturgical responses to a major urban fire are defensible for mid-sixteenth-century Goes/Zeeland: Masses, prayers, burial, processions, penance, charity, providential preaching and communal relief?
+  status: OPEN
+  fixed:
+  - Goes is publicly Catholic in 1554.
+  - Cornelis is already Familist/Huis der Liefde while outwardly Catholic; the fire does not cause his conversion.
+  - The preferred dramatic architecture lets general religious language be socially applied to existing rumour rather than requiring a priest to accuse Cornelis by name.
+  guardrails:
+  - Do not invent an exact Goese procession, sermon text or rite without support.
+  - Do not frame the contrast as Catholic superstition versus Protestant rationality.
+
+- id: OPEN.NISSEPAT.VOETBOOG_TEKEN.FORM.001
+  domain: object_and_guild_reconstruction
+  priority: high
+  question: What exact metal object carries the Nissepat voetboog sign before 1554, and what historically defensible relation if any does it have to Sint-Joris membership, competition or family heraldry?
+  status: OPEN
+  fixed:
+  - A small metal carrier exists before the fire and survives it visibly damaged.
+  - Claes knows the object before the fire.
+  - Cornelis is not canonically schutterskoning.
+  candidate_forms: [ring, badge_or_insigne, pendant, seal_related_object, prize_or_trophy_related_object, other_modest_metal_carrier]
+  guardrails:
+  - No candidate form becomes prose fact merely because it is visually attractive.
+  - Do not identify it with the historical Muschart source object without evidence.
+
+- id: OPEN.GOES.NIEUWSTRAAT.HOUSE_WINDOW_1554.001
+  domain: material_world_reconstruction
+  priority: medium
+  question: What exact construction, glazing and shutter arrangement is defensible for the fictional older-Nieuwstraat Nissepat household immediately before the fire?
+  status: OPEN
+  fixed:
+  - A modest glazed opening / small leaded glazing is currently acceptable as a plausible fiction reconstruction, not a claim that the whole house had large modern windows.
+  - The scene-seed may use ordinary moisture/condensation only if final material/weather reconstruction supports it.
+  guardrails:
+  - No winter cold on 18 May.
+  - Do not invent a later brick/stone house type or large fashionable glazing without support.
+
+- id: OPEN.GOES.FIRE_1554.WEATHER_MORNING.001
+  domain: historical_research
+  priority: low
+  question: Is there any defensible direct or near-contemporary evidence for weather on 18 May 1554 beyond the already source-weighted strong north-easterly wind during fire spread, and if not what May-morning atmosphere is climatologically plausible without false precision?
+  status: OPEN
+  fixed:
+  - The source-weighted strong north-easterly wind belongs to the fire-spread reconstruction.
+  guardrails:
+  - Do not fabricate exact temperature, dawn fog or rainfall.
+  - Scene atmosphere may remain deliberately non-specific if evidence is absent.
+
+- id: OPEN.GOES.ZIERIKZEE_REIMERSWAAL.COST.1554.001
+  domain: historical_research_and_plot_causality
+  priority: medium
+  question: Can the relative cost/boarding/schooling conditions of Zierikzee and Reimerswaal around 1554 be reconstructed closely enough to specify why Reimerswaal is the financially viable post-fire alternative?
+  status: OPEN
+  fixed:
+  - Intended pre-fire continuation is Zierikzee.
+  - Post-fire continuation is Reimerswaal.
+  - Fire losses and post-fire economic/reputational pressure are the causal reason the original route becomes unattainable.
+  guardrails:
+  - If exact comparative prices remain unavailable, write the family-level financial constraint without inventing numerical tuition/boarding costs.
