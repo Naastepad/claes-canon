@@ -1,9 +1,12 @@
-schema_version: 1.1.0
+schema_version: 1.2.0
 kind: MotifRegistryExtension
 motifs:
   - id: MOTIF.NISSEPAT_VOETBOOG
     label: Nissepat voetboog / familiewapen
     status: CANON
+    decision_ids:
+      - DEC.CLAES.FAMILY_ARMS.VOETBOOG.2026-08-16
+      - DEC.NISSEPAT.VOETBOOG_TEKEN.FIRE_SURVIVAL.2026-08-21
     historical_substrate:
       family_arms: SC.HIST.NISSEPAT.ARMS.VOETBOOG.001
       goes_guild: SC.HIST.GOES.SCHUTTERIJ.SINT_JORIS_VOETBOOG.001
@@ -14,11 +17,16 @@ motifs:
       - STC.NISSEPAT.FAMILY_ARMS.VOETBOOG.001
       - STC.CORNELIS.SCHUTTERIJ.SINT_JORIS.001
       - STC.CLAES.CORNELIS.VOETBOOG_FORMATION.001
+      - STC.NISSEPAT.ARMS.CARRIER_CONTINUITY.001
       - REL.CLAES.CORNELIS
+    object_ref: OBJ.NISSEPAT.VOETBOOG_TEKEN
     progression:
       - label: sign before explanation
         period: childhood before 1554
         function: Claes knows the family charge materially/visually before it carries explicit thematic meaning.
+      - label: metal carrier in ordinary family life
+        period: childhood before 1554
+        function: A small metal carrier of the voetboog sign is an ordinary handled/seen family-Sint-Joris object; exact object class remains open.
       - label: weapon in father's hands
         period: childhood before 1554
         function: The heraldic shape gains bodily reality through Cornelis' Sint-Joris/voetboog practice.
@@ -34,12 +42,15 @@ motifs:
       - label: Van Ongenugten Vrij
         period: childhood onward
         function: The historical Sint-Joris devies begins as ordinary guild identity; later suffering can make its wording resonate differently for the reader without explicit irony in character speech.
-      - label: carrier survives rupture
+      - label: damaged carrier survives rupture
         period: after 18 May 1554
-        function: The sign can outlive house and household through a plausible material carrier, preparing the wider carrier/content architecture without mystical explanation.
+        function: The same metal sign survives the burned family/grandfather-household world visibly damaged; its first function is material trace — the destroyed world existed — rather than miracle or explanation.
+      - label: sparse later recurrence
+        period: later life
+        function: The object may disappear from the page for long stretches and return only when changed context gives its material continuity a new value.
       - label: mature resonance
         period: later life
-        function: Claes' mature problem is not endless aim but choosing and releasing action when responsibility requires it.
+        function: Claes' mature problem is not endless aim but choosing and releasing action when responsibility requires it; material carriers can persist without giving him possession or control of what they mean.
     guardrails:
       - First be heraldry, weapon practice and family/civic material culture; symbolism must emerge from use.
       - Do not make the arms proof of nobility, destiny or hereditary martial essence.
@@ -47,5 +58,7 @@ motifs:
       - Do not make Sint Sebastiaan the voetboog guild in Goes.
       - Do not canonize Cornelis as schutterskoning without a separate story decision.
       - Do not invent a physical display location for Van Ongenugten Vrij without evidence.
-      - Do not require the same physical heraldic object to survive every phase.
+      - The fire-surviving metal carrier must show damage; no pristine providential relic.
+      - Exact object form/institutional status remains open until separately researched and decided.
+      - The same physical carrier need not be used in every later phase simply because it survives 1554.
       - Do not turn Claes' observer-shadow into a one-cause result of crossbow training.
