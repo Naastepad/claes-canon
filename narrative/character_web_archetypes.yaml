@@ -1,10 +1,12 @@
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: CharacterWeb
 id: ARC.CLAES.CHARACTER_WEB.ARCHETYPAL
 status: CANON_AUTHORIAL_ARCHITECTURE
 decision_ids:
 - DEC.CHARACTER_WEB.ARCHETYPAL_LENS.2026-08-19
 - DEC.CHARACTER_WEB.CORE_CAST.2026-08-19
+- DEC.CORNELIS.ECONOMIC_INTERMEDIARY.2026-08-21
+- DEC.TANNEKEN.BODY_CONTINUITY.2026-08-21
 purpose: >-
   Author-side web for differentiating major characters by value, method and shadow. Archetypes are lenses, not in-world identities and not permission for thematic exposition.
 central_problem: >-
@@ -17,22 +19,26 @@ characters:
   method: see -> compare -> connect -> understand
   shadow_method: see -> compare -> keep_looking -> delay
   mature_method: perceive -> distinguish -> choose -> carry -> release
+  fire_1554_pressure: catastrophe outruns the normal method and helps fuse observation with the false hope of preventability
 
 - entity: ENT.PERSON.CORNELIS
-  shorthand: Law
-  lenses: [father, steward, gatekeeper, artisan_mentor]
-  offers_claes: [responsibility, discipline, routes, practical_action]
-  method: entrust -> test -> correct -> enlarge_responsibility
-  shadow_method: protect -> withhold -> exclude
-  pressure_on_claes: love is present but encoded in a form Claes does not automatically read as recognition
+  shorthand: Law / Circulation
+  lenses: [father, steward, gatekeeper, intermediary, network_mentor]
+  offers_claes: [responsibility, discipline, routes, practical_action, transmission]
+  method: judge -> connect -> entrust -> check -> route
+  pedagogical_method: entrust -> test -> correct -> enlarge_responsibility
+  shadow_method: delegate -> depend -> remain_responsible_without_full_control
+  relational_shadow: protect -> withhold -> exclude
+  pressure_on_claes: love is present but encoded in provision, entrusted work and protection that Claes does not automatically read as recognition
 
 - entity: ENT.PERSON.CLAES_MOTHER
-  shorthand: Body
-  lenses: [mother, embodied_wise_woman]
-  offers_claes: [trained_sensation, care, timing, permission_to_doubt]
-  method: touch -> smell -> compare -> wait -> know_enough
+  shorthand: Body / Continuity
+  lenses: [mother, embodied_wise_woman, keeper_of_household_continuity, operational_continuity]
+  offers_claes: [trained_sensation, care, timing, condition_judgement, permission_to_doubt]
+  method: touch -> smell -> compare -> track_condition -> know_enough
+  economic_method: notice_stock -> notice_people -> notice_change -> preserve_continuity
   shadow_method: fear -> work -> hide_own_need
-  pressure_on_claes: not everything important becomes certain through analysis
+  pressure_on_claes: abstract routes and promises become real only in the condition of bodies, materials, time and daily work
 
 - entity: ENT.PERSON.CLAES_BROTHER
   shorthand: Act
@@ -87,8 +93,8 @@ web_relations:
   axis: deliberation <-> immediacy
   dramatic_use: brothers expose that neither observation nor action is sufficient alone
 - pair: [ENT.PERSON.CORNELIS, ENT.PERSON.CLAES_MOTHER]
-  axis: responsibility_and_rule <-> embodied_care_and_timing
-  dramatic_use: Claes' intact childhood contains two complementary modes of safety that the fire destroys together
+  axis: circulation_and_stewardship <-> condition_and_continuity
+  dramatic_use: Cornelis knows routes, credit, delegation and movement while Tanneken knows the actual state of people, stock and material; the household works through both and the fire destroys their complementarity
 - pair: [ENT.PERSON.NICOLAES_PUTTUS, ENT.PERSON.JOHN_DEE]
   axis: disciplined_interpretation <-> transformative_speculation
   dramatic_use: Puttus teaches that meaning must be supported; Dee teaches that the apparently ordinary may hide another state
@@ -101,6 +107,9 @@ web_relations:
 - pair: [ENT.PERSON.CORNELIS, ENT.PERSON.WILLEM_SILVIUS]
   axis: private_carriage_and_trust <-> public_reproduction_and_distribution
   dramatic_use: Claes moves from carrying what he may not know toward deciding what knowledge must be released
+- pair: [ENT.PERSON.CLAES_MOTHER, ENT.PERSON.BELOVED]
+  axis: lived_operational_condition <-> specialized_material_verification
+  dramatic_use: Mayken is not Tanneken repeated; Claes later recognizes a disciplined respect for material condition that childhood first made trustworthy without collapsing the women into one function
 
 hard_guardrails:
 - Archetypal shorthand must never appear as explanatory labels in literary prose.
@@ -108,3 +117,5 @@ hard_guardrails:
 - Use the web to differentiate choices and values, not to manufacture one teaching scene per function.
 - Supporting characters need not receive archetypal assignments unless repeated story pressure justifies them.
 - The web supplements, never replaces, entity biography, historical evidence, arcs, relationships and scene objectives.
+- Tanneken's operational continuity does not imply an unsupported formal salt-work or guild office.
+- Cornelis' circulation competence does not make him the hands-on producer in every enterprise he touches.
