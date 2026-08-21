@@ -1,8 +1,9 @@
 # Nissepat familiewapen, Sint-Joris en Cornelis
 
-**Status:** CANON — fact-fiction bridge approved 18 August 2026  
-**Governing decisions:** `DEC.CLAES.FAMILY_ARMS.VOETBOOG.2026-08-16`, `DEC.CORNELIS.SCHUTTERIJ.SINT_JORIS.2026-08-18`, `DEC.CLAES.CORNELIS.VOETBOOG_PEDAGOGY.2026-08-18`  
-**Historical substrate:** `SRC-HIST-NISSEPAT-ARMS-MUSCHART-82L-001`, `SRC-HIST-GOES-SCHUTTERIJ-DEGHEYN-001`
+**Status:** CANON — fact-fiction bridge approved 18 August 2026; carrier refined 21 August 2026  
+**Governing decisions:** `DEC.CLAES.FAMILY_ARMS.VOETBOOG.2026-08-16`, `DEC.CORNELIS.SCHUTTERIJ.SINT_JORIS.2026-08-18`, `DEC.CLAES.CORNELIS.VOETBOOG_PEDAGOGY.2026-08-18`, `DEC.NISSEPAT.VOETBOOG_TEKEN.FIRE_SURVIVAL.2026-08-21`  
+**Historical substrate:** `SRC-HIST-NISSEPAT-ARMS-MUSCHART-82L-001`, `SRC-HIST-GOES-SCHUTTERIJ-DEGHEYN-001`  
+**Object projection:** `OBJ.NISSEPAT.VOETBOOG_TEKEN`
 
 This dossier fixes the point where historical family heraldry and historical Goese civic culture meet deliberate fictional biography. The layers must remain distinguishable even when the novel makes them feel continuous.
 
@@ -65,25 +66,31 @@ This is the desired fact-fiction loop.
 
 The arms should not remain a YAML-only fact. Claes should know the sign materially before he understands what later meaning the reader may attach to it.
 
-Plausible carriers include:
+The project now fixes one **small metal fictional carrier** of the voetboog sign in the family/Sint-Joris material world before the 1554 fire. It is projected as `OBJ.NISSEPAT.VOETBOOG_TEKEN`.
 
-- a seal matrix;
-- a wax impression on a family or property document;
-- a copied heraldic mark in family papers;
-- another modest civic/family object appropriate to non-noble urban heraldry.
+Its exact object class is deliberately not yet fixed. Historically plausible candidates to research include:
 
-The exact carrier is not yet fixed. Do **not** assume the fictional carrier is identical to the historical object behind Muschart.
+- a ring;
+- badge/insigne or pendant;
+- a seal-related metal object;
+- a prize/trophy-related object;
+- another modest civic/family metal carrier appropriate to non-noble urban heraldry.
 
-Avoid presenting the Nissepat family as pseudo-aristocratic merely because it has arms. The sign functions as family identity and documentary continuity, not as proof of noble rank.
+These are candidates, not synonyms. **Do not call the object an official guild insigne, a schutterskoning prize or a ring until that form has been separately decided.**
+
+The fictional carrier is not assumed to be identical to the historical object behind Muschart.
+
+Avoid presenting the Nissepat family as pseudo-aristocratic merely because it has arms. The sign functions as family identity and documentary/material continuity, not as proof of noble rank.
 
 ## 5. Sign becomes embodied reality
 
 For young Claes the most effective sequence is:
 
-1. he knows or repeatedly sees the family sign;
+1. he knows or repeatedly sees the family sign and its metal carrier;
 2. he later recognizes the same basic form in Cornelis' actual voetboog;
 3. the visual sign acquires weight, tension, danger, sequence and bodily discipline;
-4. only much later can the reader experience the full family/memory resonance.
+4. the 1554 fire changes the carrier physically without erasing the sign;
+5. only much later can the reader experience the fuller family/memory resonance.
 
 Cornelis need not explain this relation in dialogue. A line such as “daarom dragen wij die boog” would make the loop too explicit and deterministic.
 
@@ -137,6 +144,8 @@ Possible scene functions:
 
 **Cornelis is not canonically schutterskoning.** Making him win a papegaaischieten requires a separate scene/story decision. Exact prizes, chains, silver birds, rules, distances and ceremonial choreography remain unproven for mid-sixteenth-century Goes unless separately sourced.
 
+This boundary is especially important now that the metal family sign survives the fire: its existence **must not be used backward to prove Cornelis won a particular trophy**.
+
 ## 8. `Van Ongenugten Vrij`
 
 The historical devies of the Goese Sint-Joris / Edele Voetboog is **`Van Ongenugten Vrij`**.
@@ -168,24 +177,26 @@ This therefore resonates with his established gift/shadow:
 
 Do not write the crossbow as an overt psychological metaphor. It must first work as a real dangerous object within real civic practice.
 
-## 10. 1554: the sign can outlive the house
+## 10. 1554: the metal sign survives the house damaged
 
-The family home and most of the household are destroyed in novel canon on 18 May 1554. The family sign need not disappear with them.
+The family home and most of the household are destroyed in novel canon on 18 May 1554.
 
-A plausible heraldic carrier can already be:
+Under `DEC.NISSEPAT.VOETBOOG_TEKEN.FIRE_SURVIVAL.2026-08-21`, the small metal carrier is **not protected from the catastrophe by convenient off-site storage**. It belongs to the family/grandfather-household material world touched by the fire and survives in a damaged state:
 
-- with Cornelis;
-- with Claes Jacobsz.;
-- among papers or property records stored elsewhere;
-- otherwise outside the house before the fire.
+- blackened or sooted;
+- heat-discoloured;
+- possibly slightly warped/scarred;
+- still recognizable through the voetboog form.
 
-This is preferable to a miraculous object rescued from the flames.
+This replaces the earlier development preference that the carrier should preferably survive because it happened to be elsewhere.
 
-The result creates an early material form of a later project principle:
+The object must not emerge magically untouched. Its material damage is the point: continuity is real, but continuity is not preservation without change.
 
-> **a carrier can outlive another carrier, and a sign can remain when the household in which Claes first knew it is gone.**
+For Claes its first post-fire function should remain concrete rather than philosophical:
 
-This is a narrative resonance, not evidence that sixteenth-century Nissepat heraldry was understood philosophically in this way.
+> **this was here; this existed.**
+
+It may disappear from the page for years. Survival does not require constant recurrence.
 
 ## 11. Relation to the wider carrier/content architecture
 
@@ -199,6 +210,8 @@ The motif can later resonate with:
 - Claes learning that preserving something is not the same as possessing it forever.
 
 The familiewapen is therefore a useful early seed of continuity-through-carriers, but must never be retroactively described as a deliberate coded prefiguration.
+
+The damaged metal sign sharpens that principle: **a carrier can survive while its condition changes**. It does not guarantee an unchanged meaning, household or owner.
 
 ## 12. Hard guardrails
 
@@ -216,4 +229,7 @@ The familiewapen is therefore a useful early seed of continuity-through-carriers
 12. Claes' childhood weapon participation remains supervised and age-appropriate.
 13. The crossbow reinforces Claes' established gift/shadow; it is not the single cause of his personality.
 14. Symbolism stays author-side; scenes remain material, relational and civic first.
-15. If the Muschart card or its underlying primary source is later recovered directly, update the provenance layer without disturbing the fictional Cornelis decision unless the historical identification itself creates a contradiction.
+15. A small metal family/Sint-Joris carrier exists before 1554 and survives the fire damaged in fiction canon; exact object class remains OPEN.
+16. Do not label that object an official guild badge, ring, chain or schutterskoning trophy until separately decided.
+17. Do not equate the fictional metal carrier with the historical Muschart source object.
+18. If the Muschart card or its underlying primary source is later recovered directly, update the provenance layer without disturbing the fictional Cornelis/carrier decision unless the historical identification itself creates a contradiction.
