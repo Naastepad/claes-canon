@@ -5,9 +5,9 @@
 > Do not use this pack as permission for free repository discovery; follow the task router in CLAUDE_CONTEXT_INDEX.md.
 
 - source branch: `main`
-- source commit at generation: `d05b988e7b24e06cfdef0fc367975d16fb57fb98`
-- generated UTC: `2026-08-19T08:30:50+00:00`
-- included files: `63`
+- source commit at generation: `bec79474a0169e668f7af84b78c1bf6ee10e4398`
+- generated UTC: `2026-08-21T15:16:58+00:00`
+- included files: `64`
 
 Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pack does not alter authority.
 
@@ -246,6 +246,22 @@ Always distinguish:
 - unresolved/open material.
 
 Network proximity does not prove a meeting. A historical print does not prove Claes' fictional provenance. A plausible route does not establish exact topography. A later manual does not automatically establish earlier practice.
+
+## 8A. Author personal-context boundary
+
+Personal material about the human author that appears in chats, Claude/ChatGPT exports, project dumps, autobiographical notes or life-story discussions is **AUTHOR CONTEXT**, not historical evidence and not Claes canon.
+
+Do not copy concrete author biography into `SC.*`, `STC.*`, `DEC.*`, `ENT.*`, `NI.*`, character backstory or other Storybible truth by default. Do not infer that a fictional character shares a personal event merely because a psychological or thematic resemblance exists.
+
+The only permitted route from personal material to canon is:
+
+`AUTHOR CONTEXT -> abstract pattern/question -> explicit fictional proposal -> human author approval -> FICTION CANON`
+
+Once approved, store the fictional result as a self-contained claim about the novel. Do not preserve the author's private biographical source detail in the story layer. If the author has not separately approved the fictional derivative, keep it outside canon or present it as a proposal.
+
+This applies especially when ingesting large coauthor/model dumps that mix manuscript discussion, story development and autobiography. Recover only the independently supported/approved story consequences; never treat the dump's personal passages as Storybible authority.
+
+See `AUTHORING_POLICY.md` for the full guardrails.
 
 ## 9. Narrative interpretation
 
@@ -569,6 +585,28 @@ This rule is especially important for recurring historical people whose archival
 Do not fill every gap automatically. A detail earns canon when future scenes benefit from stability. The archive sets the boundary; the novel may fill the living space inside it.
 
 For the current core-cast implementation, load `storybible/CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md` and `entities/CHARACTERIZATION_2026-08-19.yaml`.
+
+## Author personal-context boundary
+
+Personal material supplied by the author in conversations, model exports, project dumps, autobiographical notes or life-story discussions is **AUTHOR CONTEXT**, not Claes evidence and not Storybible canon.
+
+Never convert a concrete fact, event, relationship, location, diagnosis, conflict, chronology or other personal biographical detail about the author into `SC.*`, `STC.*`, `DEC.*`, `ENT.*`, `NI.*`, character biography or other story truth merely because it appeared in coauthoring context.
+
+Personal experience may inspire the novel only through an explicit abstraction-and-approval boundary:
+
+`AUTHOR CONTEXT -> abstract dramatic/psychological pattern or thematic question -> explicit fictional proposal -> human author approval -> Claes FICTION CANON`
+
+The approved fictional derivative must stand on its own as a claim about the novel. It must not carry the author's private source biography into the repository unless the author explicitly asks for a separate, clearly labelled author-context record.
+
+Examples of permissible transformation include turning a broad concern such as recognition versus practical care, attention versus control, or loss versus reconstruction into a fictional character dynamic after explicit approval. The repository should record the resulting Claes/Cornelis/Mayken story truth, not the author's autobiographical event that may have inspired it.
+
+Guardrails:
+
+1. similarity between the author's life and a character is never evidence that the character shares the author's biography;
+2. model inference from autobiographical material may be used to suggest a **proposal**, never to declare canon;
+3. sensitive or identifying author information is excluded from Storybible canon unless the author explicitly requests otherwise for a separate non-story purpose;
+4. when provenance matters, cite the human fiction decision, not the autobiographical source material;
+5. if a prior model dump mixed author biography with story development, recover only separately approved fictional consequences; do not normalize the personal biography into the story layer by default.
 
 ## Narrative theory boundary
 Universal `KO.*` narrative theory remains in the external Narrative Knowledge Base. This repository stores Claes-specific Narrative Instances and may reference Knowledge Objects as analysis targets.
@@ -1001,7 +1039,7 @@ decisions:
 # SOURCE FILE: `canon/OPEN_DECISIONS.yaml`
 
 ```yaml
-schema_version: 2.1.0
+schema_version: 2.2.0
 kind: OpenDecisionRegistry
 policy:
   active_only: true
@@ -1204,6 +1242,81 @@ decisions:
   - Do not grant Mayken unsupported university, physician or guild status.
   - Do not turn a possible kruidenvrouw line into a stereotype or a secret cipher role.
   - Preserve her distinct 1554 experience: destruction plus rebuilding, not Claes' household annihilation.
+
+- id: OPEN.MANUSCRIPT.DE_LEI.TEACHER_IDENTITY.001
+  domain: manuscript_continuity
+  priority: medium
+  question: "Which fictional elementary writing/reckoning master teaches Claes in De Lei: Adriaen, Jacob, or a deliberately unnamed master?"
+  status: OPEN
+  exposed_by: REV.2026-08-19.DE_LEI.001
+  current_prose_problem: "The current chapter names both Meester Adriaen and Meester Jacob in what reads as one classroom/teacher role."
+  fixed:
+  - "Nicolaes van de Put/Puttus remains Claes' separate Latin/humanist master."
+  guardrails:
+  - "Do not silently merge the elementary master into Puttus."
+  - "Treat this as a prose/cast-continuity repair unless a named teacher is promoted into reusable character canon."
+
+- id: OPEN.MANUSCRIPT.HET_WAPEN.SPANNING_MECHANISM.001
+  domain: manuscript_historical_reconstruction
+  priority: medium
+  question: "Should Het Wapen retain its exact wind/touw/haak spanning apparatus as an explicit fiction reconstruction, or should the prose be generalized until the historical mechanism is better established?"
+  status: OPEN
+  exposed_by: REV.2026-08-19.HET_WAPEN.001
+  fixed:
+  - "The Nissepat sign is a voetboog/crossbow."
+  - "Cornelis belongs fictionally to the Goese Sint-Jorisgilde / Edele Voetboog."
+  - "Mechanical spanning is plausible and the recovered Muschart wording includes a lange zwengel."
+  guardrails:
+  - "The exact mechanism remains open; do not present windlass/cranequin/belt-hook subtype as historical fact without support."
+
+- id: OPEN.MANUSCRIPT.DE_WIEG.FAMILY_STATE.001
+  domain: manuscript_continuity
+  priority: high
+  question: "How should De Wieg be repaired so its household count and pregnancy history match the fixed pre-fire family canon?"
+  status: OPEN
+  exposed_by: REV.2026-08-19.DE_WIEG.001
+  current_prose_problems:
+  - "Cornelis says there will be 'three younger mouths instead of two', which does not match Jan plus the unborn child under the current family state."
+  - "The chapter introduces an earlier child that 'did not come', which is not part of the current fixed pre-fire family canon."
+  fixed:
+  - "Claes is the eldest child."
+  - "Jan is the younger living brother."
+  - "Tanneken is pregnant with the unnamed child who dies with her in the 18 May 1554 fire."
+  guardrails:
+  - "Do not create an additional lost sibling merely to rescue an old sentence."
+  - "Prefer prose repair unless the author explicitly chooses to reopen family canon."
+
+- id: OPEN.MANUSCRIPT.CORNELIS.BIERSTEKER_WORDING.001
+  domain: manuscript_canon_alignment
+  priority: high
+  question: "Which 1554/1564 manuscript formulations must be rewritten so Cornelis' trade competence remains vivid without turning him into the documented Nissepad brewery's fixed master brewer or owner?"
+  status: OPEN
+  exposed_in:
+  - CH.HET_ZAAD.1554
+  - CH.DE_LADINGEN.1564
+  fixed:
+  - "Cornelis is a Goese poorter and biersteker."
+  - "He participates in beer/cask logistics, storage, accounts, credit and routes."
+  - "The documented Nissepad brewery is family-world context but is not fixed as Cornelis' owned/master-brewed enterprise."
+  guardrails:
+  - "Do not use 'eigen bier', 'het brouwen' or process-command language as shorthand if it changes the reader's factual inference about ownership/profession."
+  - "Lieven or another actual brewer may own process expertise where the scene needs it."
+
+- id: OPEN.MANUSCRIPT.BEER_LOGISTICS_CONCEALMENT.001
+  domain: manuscript_plot_mechanism
+  priority: high
+  question: "How should the 1564 chapters preserve the thematic relation between beer logistics and secrecy without implying a routine books-hidden-in-beer-barrels transport system?"
+  status: OPEN
+  exposed_in:
+  - CH.DE_LOOG.1564
+  - CH.DE_DOOD_VAN_SOL.1564
+  fixed:
+  - "Cornelis' beer/cask trade gives him routes, contacts, timing knowledge and plausible movement through Antwerp/Zeeland networks."
+  - "The current Brevísima/memoriaal mechanism does not require a standardized beer-barrel concealment channel."
+  guardrails:
+  - "Analogy between vessels/contents and secrecy is allowed."
+  - "Do not convert analogy into a repeated operational device without a separate canon decision."
+  - "Keep the current book-in-book/invisible-print chain independent from routine beer-barrel smuggling."
 ```
 
 ---
@@ -3244,9 +3357,10 @@ The specific damage remains story truth, not archival evidence.
 ```markdown
 # Claes en Cornelis — vader-zoonrelatie 1547–1569
 
-**Status:** CANON — approved 18 August 2026  
-**Governing decisions:** `DEC.CLAES.CORNELIS.RECOGNITION.2026-08-18`, `DEC.CLAES.CORNELIS.RESPONSIBILITY.2026-08-18`, `DEC.CLAES.CORNELIS.RELIGIOUS_DISSONANCE.2026-08-18`, `DEC.CLAES.CORNELIS.POSTFIRE_READING.2026-08-18`  
-**Extends:** `REL.CLAES.CORNELIS`, `ARC.CLAES.CORNELIS`, `DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14`
+**Status:** CANON — approved 18 August 2026; refined 21 August 2026  
+**Governing decisions:** `DEC.CLAES.CORNELIS.RECOGNITION.2026-08-18`, `DEC.CLAES.CORNELIS.RESPONSIBILITY.2026-08-18`, `DEC.CLAES.CORNELIS.RELIGIOUS_DISSONANCE.2026-08-18`, `DEC.CLAES.CORNELIS.POSTFIRE_READING.2026-08-18`, `DEC.CORNELIS.ECONOMIC_INTERMEDIARY.2026-08-21`, `DEC.CLAES.FIRE_EPISTEMIC_WOUND.1554.2026-08-21`, `DEC.CLAES.CORNELIS.POSTFIRE_PROTECTION_RUMOR.2026-08-21`, `DEC.MAYKEN.GOES_COUNTER_MEMORY.2026-08-21`  
+**Extends:** `REL.CLAES.CORNELIS`, `ARC.CLAES.CORNELIS`, `DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14`  
+**Fire authority:** `storybible/GOES_FIRE_1554_CAUSAL_ARCHITECTURE.md`
 
 This dossier deepens the emotional and developmental logic of the existing father-son arc. It does not replace the established canon that Cornelis loves Claes, teaches him, sacrifices materially for his education and later becomes increasingly secretive through his dangerous networks.
 
@@ -3294,7 +3408,19 @@ Prefer:
 
 Avoid repeated internal narration that tells the reader “Claes wanted his father's approval.” The dynamic should be visible in expectation, response and silence.
 
-## 3. Responsibility while Cornelis travels
+## 3. Cornelis' work-world: stewardship through other people's competence
+
+Cornelis' economic characterization now clarifies the model Claes sees in his father before the fire.
+
+Cornelis is a **biersteker, intermediary and network steward**, not primarily a maker. He knows how goods, people, credit, vessels, routes and obligations connect. He judges, checks, delegates and arranges.
+
+This means Claes sees a father who can exert real influence without personally performing every specialist process. In beer, salt and later textual circulation, Cornelis' strength is to make separate people and things form a working chain.
+
+That same strength contains a vulnerability that becomes catastrophic in 1554: Cornelis can remain responsible for an enterprise whose direct daily operations are conducted by other people. The salt-keet line must preserve the distinction between **economic responsibility** and **operational control**.
+
+This is not meant to teach Claes a maxim. It becomes lived contradiction when a system attached to Cornelis' name fails and the city has little interest in preserving all the distinctions Claes later wants to reconstruct.
+
+## 4. Responsibility while Cornelis travels
 
 Cornelis' trade and network life take him away from the immediate household at times. As Claes grows older, especially in the early 1550s, he is entrusted with age-appropriate duties that matter during those absences.
 
@@ -3311,7 +3437,7 @@ Claes may therefore begin to experience himself as **the oldest son who must hel
 
 This is not adult authority. At eleven he is still a child within a working household. Do not make him a substitute merchant, bookkeeper with independent legal power, or de facto paterfamilias.
 
-## 4. Consequences of failure
+## 5. Consequences of failure
 
 A mistake can matter.
 
@@ -3329,7 +3455,7 @@ For Claes, a short functional judgement from Cornelis can carry disproportionate
 
 Do not turn Cornelis into an anachronistic therapeutic father, but do not turn ordinary sixteenth-century paternal authority into gratuitous cruelty either.
 
-## 5. Responsibility for Tanneken, Jan and the unborn child
+## 6. Responsibility for Tanneken, Jan and the unborn child
 
 As the oldest child, Claes can feel increasing responsibility toward the intact household:
 
@@ -3349,9 +3475,15 @@ However, because he had begun to think of himself as someone who should notice, 
 
 > I was supposed to help carry them. What did I fail to see?
 
-That subjective guilt feeds the already established wound — *if I had seen early enough, could I have prevented what happened?* — without creating a factual causal responsibility.
+Under `DEC.CLAES.FIRE_EPISTEMIC_WOUND.1554.2026-08-21`, the fire sharpens this further because Claes' normal observe/compare/understand method cannot keep pace with the event. He receives cause, spread and loss through fragments. That helps form the false possibility:
 
-## 6. Religious dissonance before the fire
+> If I had seen earlier or better, perhaps it could have been prevented.
+
+This subjective guilt feeds the established wound without creating factual causal responsibility.
+
+`De Kraan` remains essential counter-evidence: Claes can act immediately when there is no interval for prolonged deliberation.
+
+## 7. Religious dissonance before the fire
 
 Cornelis is not simply “becoming Protestant” in current canon.
 
@@ -3373,7 +3505,7 @@ Claes does **not** know the words *Huis der Liefde*, *Familist* or the network b
 
 Do not stage explicit Protestant-versus-Catholic debate in the pre-1554 childhood chapters. The dramatic state is **unexplained difference**, not doctrinal comprehension.
 
-## 7. Puttus, school and religious ambiguity
+## 8. Puttus, school and religious ambiguity
 
 Puttus may deepen Claes' capacity to notice distinctions between words, surface meaning and interpretation, but no specific anti-image, anti-ritual or anti-clerical doctrine is assigned to Puttus without separate historical support.
 
@@ -3385,11 +3517,13 @@ Therefore:
 
 The useful structure is that church, school and father do not always produce identical meanings for Claes, even when none of them openly declares a confessional break.
 
-## 8. The fire changes the meaning of the recognition gap
+## 9. The fire changes the meaning of the recognition gap
 
 Before 18 May 1554, Claes can still imagine recognition as something he may earn tomorrow.
 
 After the fire, Cornelis makes one of the strongest acts of paternal care in the entire relationship: he stays in Goes to rebuild livelihood, credit and shelter while preserving enough means to continue Claes' education elsewhere.
+
+The new fire architecture adds a second protective motive. As public rumour increasingly compresses the catastrophe into a story about `Nissepats keet`, Cornelis also has reason to remove Claes from the immediate social environment in which his father's name is repeatedly attached to the deaths.
 
 Yet the act is structurally tragic because Claes can read it through the older gap:
 
@@ -3397,12 +3531,20 @@ Yet the act is structurally tragic because Claes can read it through the older g
 
 The established double truth remains binding:
 
-- **Cornelis:** I send him away because I refuse to let the fire take his future.
+- **Cornelis:** I send him away because I refuse to let the fire, ruin and rumour take his future.
 - **Claes:** I am the surviving son, and still father does not choose to keep me beside him.
 
 The second statement is Claes' wounded interpretation, not Cornelis' intention.
 
-## 9. Reimerswaal and distance
+### Rumour and money
+
+Do not make Cornelis' whole business world disappear in one day. The intended movement is cumulative:
+
+**loss/damage → suspicion → greater caution by others → harder credit/fewer options → increasing recovery pressure.**
+
+The father-son relationship should register this through what Claes can witness rather than through Cornelis-only scenes.
+
+## 10. Reimerswaal and distance
 
 During the 1554–1561 separation, Cornelis' care can remain materially visible through:
 
@@ -3417,7 +3559,9 @@ Those acts do not automatically satisfy Claes' need for recognition or closeness
 
 This makes the separation richer than simple abandonment: Claes can possess evidence that his father cares and still feel abandoned.
 
-## 10. Later secrecy gives childhood memories new meaning
+The planned pre-fire route remains **Zierikzee**. Post-fire loss, rebuilding and worsening economic/reputational pressure make that route financially or practically unattainable, producing the **Reimerswaal** continuation. Exact comparative schooling cost remains research-open.
+
+## 11. Later secrecy gives childhood memories new meaning
 
 From 1561 onward, and especially as dangerous books, papers, routes and loyalties become visible, Claes begins to understand that the closed doors he sensed in childhood were real.
 
@@ -3427,7 +3571,13 @@ The causal movement is:
 
 Claes should not retrospectively become omniscient. He can recognize patterns without suddenly knowing every earlier conversation, visitor or motive.
 
-## 11. 1569 — what is finally lost
+The 1554 fire adds a parallel movement:
+
+**childhood fragmentary catastrophe → years of suspicion/blame/reconstruction → later partial rereading.**
+
+Neither line should end in total certainty.
+
+## 12. 1569 — what is finally lost
 
 Cornelis' execution on 19 November 1569 removes more than a living parent.
 
@@ -3436,14 +3586,22 @@ It closes the remaining possibility of:
 - explicit paternal recognition;
 - explanation of the old silences;
 - clarification of what Cornelis believed and why;
-- reconciliation over the post-fire separation;
+- direct reconciliation over the post-fire separation;
 - asking whether Cornelis saw Claes in the way Claes had always watched him.
 
 This strengthens the existing canonical resonance that Cornelis' death is also the loss of time father and son may have believed they could still recover.
 
 The final inheritance remains moral, not cryptographic.
 
-## 12. Writing guardrails
+### Posthumous rereading remains possible
+
+Cornelis' death closes **direct** reconciliation; it does not freeze Claes' interpretation forever.
+
+Under `DEC.MAYKEN.GOES_COUNTER_MEMORY.2026-08-21`, Mayken can later contribute partial Goese/family memory about Cornelis' post-fire rebuilding, the rumour environment and efforts made for Claes' education. This can force Claes to recognise that an act he carried as rejection may also have been an imperfect form of protection.
+
+Mayken does not supply Cornelis' private thoughts or solve the fire. The result is not acquittal but a changed relation to evidence and memory.
+
+## 13. Writing guardrails
 
 1. Cornelis loves Claes; do not rewrite him into a loveless father.
 2. Cornelis' trust is often expressed as increased responsibility.
@@ -3453,10 +3611,14 @@ The final inheritance remains moral, not cryptographic.
 6. No automatic corporal punishment is canonized.
 7. Claes may feel responsible for family safety but is not causally responsible for the 1554 deaths.
 8. Cornelis is Familist/Huis der Liefde with outward Catholic conformity, not simply “Protestant”.
-9. Pre-fire religious conflict is intermittent, observational and incompletely understood.
-10. The Reimerswaal separation is simultaneously paternal sacrifice and filial experience of rejection.
-11. Later secrecy should retrospectively illuminate childhood dissonance without granting Claes impossible knowledge.
-12. Cornelis' 1569 death ends the possibility of future recognition and reconciliation as well as the relationship itself.
+9. The fire tests an existing inward affiliation; it does not cause Cornelis' conversion.
+10. Pre-fire religious conflict is intermittent, observational and incompletely understood.
+11. Cornelis' economic identity is intermediary/steward of circulation; distinguish ownership/responsibility from daily specialist operation.
+12. The Reimerswaal separation is simultaneously paternal sacrifice/protection and filial experience of rejection.
+13. Post-fire rumour can increase the protective motive for distance but should erode trust/credit gradually rather than create an instant total boycott.
+14. Later secrecy should retrospectively illuminate childhood dissonance without granting Claes impossible knowledge.
+15. Cornelis' 1569 death ends direct future recognition and reconciliation, but later partial testimony may still change Claes' interpretation.
+16. Mayken can contribute a different Goese memory; she is not an omniscient explanation device or proof of the fire's technical cause.
 ```
 
 ---
@@ -3466,9 +3628,10 @@ The final inheritance remains moral, not cryptographic.
 ```markdown
 # Nissepat familiewapen, Sint-Joris en Cornelis
 
-**Status:** CANON — fact-fiction bridge approved 18 August 2026  
-**Governing decisions:** `DEC.CLAES.FAMILY_ARMS.VOETBOOG.2026-08-16`, `DEC.CORNELIS.SCHUTTERIJ.SINT_JORIS.2026-08-18`, `DEC.CLAES.CORNELIS.VOETBOOG_PEDAGOGY.2026-08-18`  
-**Historical substrate:** `SRC-HIST-NISSEPAT-ARMS-MUSCHART-82L-001`, `SRC-HIST-GOES-SCHUTTERIJ-DEGHEYN-001`
+**Status:** CANON — fact-fiction bridge approved 18 August 2026; carrier refined 21 August 2026  
+**Governing decisions:** `DEC.CLAES.FAMILY_ARMS.VOETBOOG.2026-08-16`, `DEC.CORNELIS.SCHUTTERIJ.SINT_JORIS.2026-08-18`, `DEC.CLAES.CORNELIS.VOETBOOG_PEDAGOGY.2026-08-18`, `DEC.NISSEPAT.VOETBOOG_TEKEN.FIRE_SURVIVAL.2026-08-21`  
+**Historical substrate:** `SRC-HIST-NISSEPAT-ARMS-MUSCHART-82L-001`, `SRC-HIST-GOES-SCHUTTERIJ-DEGHEYN-001`  
+**Object projection:** `OBJ.NISSEPAT.VOETBOOG_TEKEN`
 
 This dossier fixes the point where historical family heraldry and historical Goese civic culture meet deliberate fictional biography. The layers must remain distinguishable even when the novel makes them feel continuous.
 
@@ -3531,25 +3694,31 @@ This is the desired fact-fiction loop.
 
 The arms should not remain a YAML-only fact. Claes should know the sign materially before he understands what later meaning the reader may attach to it.
 
-Plausible carriers include:
+The project now fixes one **small metal fictional carrier** of the voetboog sign in the family/Sint-Joris material world before the 1554 fire. It is projected as `OBJ.NISSEPAT.VOETBOOG_TEKEN`.
 
-- a seal matrix;
-- a wax impression on a family or property document;
-- a copied heraldic mark in family papers;
-- another modest civic/family object appropriate to non-noble urban heraldry.
+Its exact object class is deliberately not yet fixed. Historically plausible candidates to research include:
 
-The exact carrier is not yet fixed. Do **not** assume the fictional carrier is identical to the historical object behind Muschart.
+- a ring;
+- badge/insigne or pendant;
+- a seal-related metal object;
+- a prize/trophy-related object;
+- another modest civic/family metal carrier appropriate to non-noble urban heraldry.
 
-Avoid presenting the Nissepat family as pseudo-aristocratic merely because it has arms. The sign functions as family identity and documentary continuity, not as proof of noble rank.
+These are candidates, not synonyms. **Do not call the object an official guild insigne, a schutterskoning prize or a ring until that form has been separately decided.**
+
+The fictional carrier is not assumed to be identical to the historical object behind Muschart.
+
+Avoid presenting the Nissepat family as pseudo-aristocratic merely because it has arms. The sign functions as family identity and documentary/material continuity, not as proof of noble rank.
 
 ## 5. Sign becomes embodied reality
 
 For young Claes the most effective sequence is:
 
-1. he knows or repeatedly sees the family sign;
+1. he knows or repeatedly sees the family sign and its metal carrier;
 2. he later recognizes the same basic form in Cornelis' actual voetboog;
 3. the visual sign acquires weight, tension, danger, sequence and bodily discipline;
-4. only much later can the reader experience the full family/memory resonance.
+4. the 1554 fire changes the carrier physically without erasing the sign;
+5. only much later can the reader experience the fuller family/memory resonance.
 
 Cornelis need not explain this relation in dialogue. A line such as “daarom dragen wij die boog” would make the loop too explicit and deterministic.
 
@@ -3603,6 +3772,8 @@ Possible scene functions:
 
 **Cornelis is not canonically schutterskoning.** Making him win a papegaaischieten requires a separate scene/story decision. Exact prizes, chains, silver birds, rules, distances and ceremonial choreography remain unproven for mid-sixteenth-century Goes unless separately sourced.
 
+This boundary is especially important now that the metal family sign survives the fire: its existence **must not be used backward to prove Cornelis won a particular trophy**.
+
 ## 8. `Van Ongenugten Vrij`
 
 The historical devies of the Goese Sint-Joris / Edele Voetboog is **`Van Ongenugten Vrij`**.
@@ -3634,24 +3805,26 @@ This therefore resonates with his established gift/shadow:
 
 Do not write the crossbow as an overt psychological metaphor. It must first work as a real dangerous object within real civic practice.
 
-## 10. 1554: the sign can outlive the house
+## 10. 1554: the metal sign survives the house damaged
 
-The family home and most of the household are destroyed in novel canon on 18 May 1554. The family sign need not disappear with them.
+The family home and most of the household are destroyed in novel canon on 18 May 1554.
 
-A plausible heraldic carrier can already be:
+Under `DEC.NISSEPAT.VOETBOOG_TEKEN.FIRE_SURVIVAL.2026-08-21`, the small metal carrier is **not protected from the catastrophe by convenient off-site storage**. It belongs to the family/grandfather-household material world touched by the fire and survives in a damaged state:
 
-- with Cornelis;
-- with Claes Jacobsz.;
-- among papers or property records stored elsewhere;
-- otherwise outside the house before the fire.
+- blackened or sooted;
+- heat-discoloured;
+- possibly slightly warped/scarred;
+- still recognizable through the voetboog form.
 
-This is preferable to a miraculous object rescued from the flames.
+This replaces the earlier development preference that the carrier should preferably survive because it happened to be elsewhere.
 
-The result creates an early material form of a later project principle:
+The object must not emerge magically untouched. Its material damage is the point: continuity is real, but continuity is not preservation without change.
 
-> **a carrier can outlive another carrier, and a sign can remain when the household in which Claes first knew it is gone.**
+For Claes its first post-fire function should remain concrete rather than philosophical:
 
-This is a narrative resonance, not evidence that sixteenth-century Nissepat heraldry was understood philosophically in this way.
+> **this was here; this existed.**
+
+It may disappear from the page for years. Survival does not require constant recurrence.
 
 ## 11. Relation to the wider carrier/content architecture
 
@@ -3665,6 +3838,8 @@ The motif can later resonate with:
 - Claes learning that preserving something is not the same as possessing it forever.
 
 The familiewapen is therefore a useful early seed of continuity-through-carriers, but must never be retroactively described as a deliberate coded prefiguration.
+
+The damaged metal sign sharpens that principle: **a carrier can survive while its condition changes**. It does not guarantee an unchanged meaning, household or owner.
 
 ## 12. Hard guardrails
 
@@ -3682,7 +3857,10 @@ The familiewapen is therefore a useful early seed of continuity-through-carriers
 12. Claes' childhood weapon participation remains supervised and age-appropriate.
 13. The crossbow reinforces Claes' established gift/shadow; it is not the single cause of his personality.
 14. Symbolism stays author-side; scenes remain material, relational and civic first.
-15. If the Muschart card or its underlying primary source is later recovered directly, update the provenance layer without disturbing the fictional Cornelis decision unless the historical identification itself creates a contradiction.
+15. A small metal family/Sint-Joris carrier exists before 1554 and survives the fire damaged in fiction canon; exact object class remains OPEN.
+16. Do not label that object an official guild badge, ring, chain or schutterskoning trophy until separately decided.
+17. Do not equate the fictional metal carrier with the historical Muschart source object.
+18. If the Muschart card or its underlying primary source is later recovered directly, update the provenance layer without disturbing the fictional Cornelis/carrier decision unless the historical identification itself creates a contradiction.
 ```
 
 ---
@@ -3802,12 +3980,15 @@ scene_guardrails:
 # SOURCE FILE: `narrative/motifs_nissepat_arms_2026-08-18.yaml`
 
 ```yaml
-schema_version: 1.1.0
+schema_version: 1.2.0
 kind: MotifRegistryExtension
 motifs:
   - id: MOTIF.NISSEPAT_VOETBOOG
     label: Nissepat voetboog / familiewapen
     status: CANON
+    decision_ids:
+      - DEC.CLAES.FAMILY_ARMS.VOETBOOG.2026-08-16
+      - DEC.NISSEPAT.VOETBOOG_TEKEN.FIRE_SURVIVAL.2026-08-21
     historical_substrate:
       family_arms: SC.HIST.NISSEPAT.ARMS.VOETBOOG.001
       goes_guild: SC.HIST.GOES.SCHUTTERIJ.SINT_JORIS_VOETBOOG.001
@@ -3818,11 +3999,16 @@ motifs:
       - STC.NISSEPAT.FAMILY_ARMS.VOETBOOG.001
       - STC.CORNELIS.SCHUTTERIJ.SINT_JORIS.001
       - STC.CLAES.CORNELIS.VOETBOOG_FORMATION.001
+      - STC.NISSEPAT.ARMS.CARRIER_CONTINUITY.001
       - REL.CLAES.CORNELIS
+    object_ref: OBJ.NISSEPAT.VOETBOOG_TEKEN
     progression:
       - label: sign before explanation
         period: childhood before 1554
         function: Claes knows the family charge materially/visually before it carries explicit thematic meaning.
+      - label: metal carrier in ordinary family life
+        period: childhood before 1554
+        function: A small metal carrier of the voetboog sign is an ordinary handled/seen family-Sint-Joris object; exact object class remains open.
       - label: weapon in father's hands
         period: childhood before 1554
         function: The heraldic shape gains bodily reality through Cornelis' Sint-Joris/voetboog practice.
@@ -3838,12 +4024,15 @@ motifs:
       - label: Van Ongenugten Vrij
         period: childhood onward
         function: The historical Sint-Joris devies begins as ordinary guild identity; later suffering can make its wording resonate differently for the reader without explicit irony in character speech.
-      - label: carrier survives rupture
+      - label: damaged carrier survives rupture
         period: after 18 May 1554
-        function: The sign can outlive house and household through a plausible material carrier, preparing the wider carrier/content architecture without mystical explanation.
+        function: The same metal sign survives the burned family/grandfather-household world visibly damaged; its first function is material trace — the destroyed world existed — rather than miracle or explanation.
+      - label: sparse later recurrence
+        period: later life
+        function: The object may disappear from the page for long stretches and return only when changed context gives its material continuity a new value.
       - label: mature resonance
         period: later life
-        function: Claes' mature problem is not endless aim but choosing and releasing action when responsibility requires it.
+        function: Claes' mature problem is not endless aim but choosing and releasing action when responsibility requires it; material carriers can persist without giving him possession or control of what they mean.
     guardrails:
       - First be heraldry, weapon practice and family/civic material culture; symbolism must emerge from use.
       - Do not make the arms proof of nobility, destiny or hereditary martial essence.
@@ -3851,7 +4040,9 @@ motifs:
       - Do not make Sint Sebastiaan the voetboog guild in Goes.
       - Do not canonize Cornelis as schutterskoning without a separate story decision.
       - Do not invent a physical display location for Van Ongenugten Vrij without evidence.
-      - Do not require the same physical heraldic object to survive every phase.
+      - The fire-surviving metal carrier must show damage; no pristine providential relic.
+      - Exact object form/institutional status remains open until separately researched and decided.
+      - The same physical carrier need not be used in every later phase simply because it survives 1554.
       - Do not turn Claes' observer-shadow into a one-cause result of crossbow training.
 ```
 
@@ -5589,7 +5780,7 @@ A cold-reader/editor pass can correctly remove a passage because it slows the bo
 
 Conversely, a deleted passage must not continue to function as if the reader has seen it merely because an earlier draft contained it.
 
-Therefore this repository now separates:
+Therefore this repository separates:
 
 1. **Canon / story truth** — `DEC.*`, `STC.*`, entities, objects, relationships and historical-fiction decisions.
 2. **Current manuscript projection** — which chapter currently dramatizes which movement, reveal, relationship beat and reader progression.
@@ -5613,33 +5804,21 @@ The essential fields are:
 
 `progression_before -> progression_after -> progression_delta`
 
-This prevents a common failure in iterative writing: an older chapter summary continues to claim that a chapter establishes something which the current prose no longer contains.
+This prevents an older chapter summary from continuing to claim that a chapter establishes something which the current prose no longer contains.
 
 ## 3. Four different kinds of off-page material
 
 ### Backstory
 
-A past event or state that **is part of the character/story reality** and has causal force, even if the novel does not dramatize it as a full scene.
-
-Example form:
-
-> Claes already learned a household practice before the current chapter; the scene proving every step was cut, but the competence remains canonically acquired.
-
-Backstory therefore normally points to existing `STC.*`, `REL.*`, `ENT.*` or `ARC.*` state.
+A past event or state that **is part of the character/story reality** and has causal force, even if the novel does not dramatize it as a full scene. Backstory normally points to existing `STC.*`, `REL.*`, `ENT.*` or `ARC.*` state.
 
 ### Backline
 
-An **off-page causal line continuing during the story**. It may later collide with the foreground plot.
-
-Examples in this project can include trade obligations, Cornelis' hidden network activity, political/religious developments or Mayken's independent adult life when Claes is elsewhere.
-
-A backline is not atmosphere. Something is changing while the camera is away.
+An **off-page causal line continuing during the story**. It may later collide with the foreground plot. Trade obligations, Cornelis' hidden network, political/religious developments or Mayken's independent adult life can operate this way.
 
 ### Backdrop
 
-Historical, social, material or sensory world information available for later scene texture but **not itself a required causal event**.
-
-Market activity, guild habits, seasonal food, urban sounds or a feast practice may move from a cut picturesque passage into backdrop. The writer can then distribute selected details through later action without resurrecting the original exposition block.
+Historical, social, material or sensory world information available for later scene texture but **not itself a required causal event**. Backdrop should normally be distributed through later action rather than resurrected as an exposition block.
 
 ### Parked future scene material
 
@@ -5647,7 +5826,7 @@ A written or designed beat whose future location is **not yet decided**. It is n
 
 ## 4. Cut is not one thing
 
-After a `CUT` or `MERGE`, the editor must classify every meaningful removed function:
+After a `CUT` or `MERGE`, the editor classifies every meaningful removed function:
 
 - `MOVED_ELSEWHERE` — a receiving chapter is fixed;
 - `PARKED_FUTURE_CHAPTER` — may become a later scene;
@@ -5658,43 +5837,36 @@ After a `CUT` or `MERGE`, the editor must classify every meaningful removed func
 - `DISCARDED_PROSE` — wording/scene gone; underlying truth checked separately;
 - `REJECTED_STORY_OPTION` — the underlying proposed story choice itself is rejected.
 
-This classification belongs in `narrative/parked_material.yaml`.
+The classification belongs in `narrative/parked_material.yaml`.
 
 ## 5. Canon impact is a separate field
 
 Every editorial move gets one of three canon-impact labels:
 
 ### `NONE`
-
 Only prose changed. No Story Claim, entity state, relationship fact or Narrative Instance truth is affected.
 
 ### `PROJECTION_ONLY`
-
 The fact remains story truth, but the place where the reader learns/sees it has changed or become off-page. Update manuscript progression, scene projection and possibly knowledge/reveal timing.
 
 ### `CANON_REVIEW_REQUIRED`
-
-The cut means a previously canonized event no longer happens, a relationship history changes, an object is no longer transferred, a character can no longer possess knowledge, or another true continuity dependency changes. This requires an explicit author decision before canon is rewritten.
+The cut means a previously canonized event may no longer happen, a relationship history changes, an object is no longer transferred, a character can no longer possess knowledge, or another true continuity dependency changes. This requires an explicit author decision before canon is rewritten.
 
 An editor must never infer `CANON_REVIEW_REQUIRED -> de-canonize` automatically.
 
-## 6. Revision lineage and current manuscript authority
-
-The conversation contains earlier and later versions of multiple chapters from the 19 August pass. The existence of those paired versions establishes **revision lineage**, but file-size or text-diff alone is not enough to infer the author's intended disposition of every removed beat.
-
-Therefore:
+## 6. Revision lineage and manuscript authority
 
 - the latest approved chapter file is the current prose implementation;
-- the progression register says what that current prose now does;
-- the editor handoff says what was deliberately cut/moved/parked and why;
-- the parking register preserves reusable function/material;
+- `narrative/manuscript_progression.yaml` says what that current prose now does;
+- the editor handoff/revision record says what was deliberately cut, compressed, repaired or moved;
+- `narrative/parked_material.yaml` preserves reusable function/material;
 - canon remains governed independently.
 
-When an editor handoff and a raw diff disagree about intent, the explicit author/editor disposition wins. A diff shows deletion; it does not by itself tell whether the deleted material became backstory, backdrop, future-scene reserve or rejected story.
+A raw diff shows deletion but cannot by itself prove whether a deleted element became backstory, backline, backdrop, future reserve or rejected story.
 
 ## 7. Cluster progression
 
-The childhood sequence exposed why scene-level uniqueness alone is insufficient. Each chapter can individually contain useful material while the cluster as a whole repeats the same learning beat, father-son recognition beat or molenbord function too often.
+Scene-level uniqueness is insufficient when a group of individually useful scenes repeats the same lesson, recognition beat or motif value.
 
 After individual scene necessity, perform `GRD.EDITORIAL.CLUSTER_NECESSITY`:
 
@@ -5704,7 +5876,11 @@ After individual scene necessity, perform `GRD.EDITORIAL.CLUSTER_NECESSITY`:
 - Does this chapter create new forward pressure?
 - If removed, is the cluster truly poorer or merely shorter?
 
-The **current progression record must describe the post-edit cluster**, not preserve the ambitions of earlier drafts.
+The current progression registry now includes governing projections for:
+
+- `CLUSTER.CHILDHOOD_GOES.PREFIRE.1547_1554`;
+- `CLUSTER.ANTWERP_MATERIAL_INITIATION.1564`;
+- `CLUSTER.DELFT_MORAL_BOTTOM.1584`.
 
 ## 8. Claude/editor handoff requirement
 
@@ -5725,7 +5901,7 @@ For every changed chapter:
 11. changed reader expectation/cluster effect;
 12. any `OPEN.*` accidentally approached or newly exposed.
 
-The handoff should summarize removed material; it need not reproduce entire deleted passages.
+The handoff summarizes removed material; it does not need to preserve deleted prose verbatim.
 
 ## 9. Reuse rule
 
@@ -5742,15 +5918,58 @@ Before reuse it must again pass:
 
 A passage is not restored because it was expensive to research, beautifully written or once approved.
 
-## 10. Initial legacy parked material
+## 10. 19 August cold-reader/editor ingest — completed
 
-The registry currently preserves several earlier known examples:
+The pre-editor and post-editor versions of the current chapter set have now been semantically compared and ingested into `narrative/manuscript_progression.yaml` and `narrative/parked_material.yaml`.
 
-- a first-steps/home scene — potentially useful but unplaced;
-- an aesthetically successful Vastenavond/market scene — better treated as world/backdrop unless later causally earned;
-- an explicit Claes-birth/Brevísima date-link — rejected and not available for resurrection.
+Because the handoff protocol did not yet exist when that Claude pass was performed, this recovery distinguishes two provenance levels:
 
-The 19 August Claude cold-reader/editor pass must be ingested into the same format from its explicit editorial handoff. The paired manuscript files already prove that revision occurred; the semantic disposition should come from the editor's stated reasons and parking decisions, not be guessed from file deletion alone.
+- **HIGH confidence:** paired drafts plus an explicit recorded editorial/canon reason identify the intended change;
+- **MEDIUM confidence / `SEMANTIC_RECONSTRUCTION`:** the paired drafts establish what changed and the surrounding editorial reasoning supports a safe disposition, but a verbatim machine-readable Claude parking instruction was not available.
+
+Do not silently upgrade MEDIUM reconstructed parking to an explicit historical Claude instruction. If the original handoff is later supplied, reconcile it with these records.
+
+The ingest records substantive revision histories for:
+
+- *De Bladzijde*;
+- *De Drempel*;
+- *De Lei*;
+- *Het Wapen*;
+- *De Kraai*;
+- *De Kraan*;
+- *De Wegen*;
+- *Het Zand*;
+- *Het Gist*;
+- *De Winnaar*;
+- *Het Zaad in de Donkere Aarde*;
+- *De Wieg*;
+- *De Markt van Delft*.
+
+*De Kamer* and the five 1564 material-initiation chapters were unchanged in that file pass and therefore receive current progressions but no artificial revision delta.
+
+## 11. High-value parked/backline results from this pass
+
+The most important reusable items are not the longest deleted passages but the ones that still carry future causal value:
+
+- `PARK.ZAAD.CORNELIS_FAMILIST_BACKLINE.001` — Cornelis' private inward faith remains canon but was correctly removed from an over-explicit child-facing sermon; deepen later through network, adult conversation, text or consequence.
+- `PARK.ZAAD.FAMILY_STEWARDSHIP_BACKLINE.001` — family/economic stewardship pressure may matter later, especially post-fire or during Goes severance, but reuse must respect Cornelis' biersteker/ownership boundary.
+- `PARK.WINNAAR.ACTION_WITHOUT_CERTAINTY_RESERVE.001` — Jan's action principle is saved as a changed-value motif/choice reserve, not as a speech to transplant.
+- `PARK.DELFT.ATTENTION_BACKLINE.001` — the deleted explanation that trained attention cannot stop is now a post-Delft behavioural backline; later prose should show the consequence rather than repeat the thesis.
+- `PARK.DREMPEL.ZEVEN_GETIJDEN_BACKDROP.001` and `PARK.PROLOGUE.NEW_LAWS_ADMIN_CONTEXT.001` — useful world/history texture that no longer belongs in the current foreground delivery.
+
+Several other cuts are explicitly `REJECTED_STORY_OPTION`, especially a 1547 proto-Familist Cornelis signal, an unsupported exact Sint-Joris banner-blessing ritual, devies-as-routine-greeting, hereditary Nissepat shooter determinism and Puttus as anti-ritual religious oracle. Those are **not** parked ideas waiting to return.
+
+## 12. Current manuscript-to-canon repair flags exposed by the ingest
+
+The revision ingest also reveals current prose issues that are not solved merely by parking deleted text:
+
+- *De Lei*: the elementary master appears under both Adriaen and Jacob; one fiction-canon identity must be chosen or the prose neutralized.
+- *Het Wapen*: the prose specifies a wind/touw/haak spanning arrangement while the exact mechanism remains historically/open-authorially unresolved; either canonize the fiction fill or generalize the prose.
+- *De Wieg*: `drie jongere monden in plaats van twee` appears inconsistent with the current family state, and an earlier lost child is introduced without current family canon.
+- *De Ladingen van Antwerpen*: formulations around Cornelis' `eigen bier` and Claes knowing `het brouwen` require alignment with Cornelis as biersteker rather than fixed master brewer/owner.
+- *De Loog van Antwerpen* and *De Dood van Sol*: concealment analogies must not silently become a routine books-hidden-in-beer-barrels mechanism contrary to the current logistics guardrail.
+
+These are **repair flags**, not automatic canon changes. They should be resolved deliberately during the next manuscript-continuity pass.
 ```
 
 ---
@@ -5758,7 +5977,7 @@ The 19 August Claude cold-reader/editor pass must be ingested into the same form
 # SOURCE FILE: `narrative/manuscript_progression.yaml`
 
 ```yaml
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: ManuscriptProgressionRegistry
 purpose: >-
   Tracks the current manuscript projection separately from canon: what each chapter currently dramatizes, what reader/character progression it now carries after revision, and how that differs from earlier manuscript versions. Canon truth is not deleted merely because prose is cut, and cut prose does not remain an active Narrative Instance merely because it once existed.
@@ -5789,6 +6008,15 @@ revision_contract:
   - "Canon impact must be one of NONE, PROJECTION_ONLY, CANON_REVIEW_REQUIRED. Editorial cutting normally has NONE or PROJECTION_ONLY impact."
   - "Do not infer that an event was removed from story truth merely because its exposition/scene was cut. Check DEC/STC/NI layers separately."
 
+editor_ingest_2026_08_19:
+  status: INGESTED_SEMANTIC_RECONSTRUCTION
+  basis:
+  - paired pre-editor and post-editor manuscript files from the conversation
+  - recorded cold-reader/editor diagnoses and author decisions in the conversation
+  limitation: >-
+    No separate machine-readable Claude Chapter Revision Handoff existed before the new handoff protocol was introduced. Where a deleted passage's intended future destination was not explicitly recoverable, this ingest classifies only what can be supported by the paired drafts and recorded editorial reasoning. Those records carry disposition_basis=SEMANTIC_RECONSTRUCTION and may be refined if a verbatim Claude handoff is later supplied.
+  rule: "A textual deletion is never treated as proof of de-canonization or of a specific future destination."
+
 current_manuscript_set:
 - chapter_ref: CH.PROLOGUE.DE_BLADZIJDE.1542
   manuscript_file: 1542-12-08-de-bladzijde.md
@@ -5796,7 +6024,15 @@ current_manuscript_set:
   title: De Bladzijde
   manuscript_state: CURRENT
   latest_known_editor_pass: '2026-08-19'
-  revision_lineage_note: "A shorter post-cold-reader version exists in the 19 August manuscript set; exact progression delta must be recorded from the editor handoff rather than reconstructed from deleted prose alone."
+  current_progression:
+    entry: "Las Casas faces the problem of making overwhelming testimony usable and transmissible."
+    movement:
+    - "He selects, orders and compresses atrocity testimony into a form a prince might actually read."
+    - "The work exposes his own implication in the colonial system he condemns."
+    - "Precision becomes moral action but cannot guarantee how later readers will use the text."
+    exit: "The testimony must leave the witness's control and enter a transmission chain."
+  cluster_contribution: "Establishes testimony/release as the distant moral mirror of Claes' later carrier problem."
+  continuity_risks: []
 
 - chapter_ref: CH.DE_DREMPEL.1547
   manuscript_file: 1547-04-01-de-drempel.md
@@ -5804,6 +6040,15 @@ current_manuscript_set:
   title: De Drempel
   manuscript_state: CURRENT
   latest_known_editor_pass: '2026-08-19'
+  current_progression:
+    entry: "Four-year-old Claes enters the Catholic church-world through body, smell, sound, light and guided ritual."
+    movement:
+    - "Tanneken physically teaches the gestures before Claes understands doctrine."
+    - "Church, market and household form one ordinary Goese world rather than separate symbolic zones."
+    - "Repeated ritual becomes embodied anticipation: his body begins to know the bell before his intellect can name what happens."
+    exit: "Claes wants to return to an opening in the ordinary world that he can feel before he can explain it."
+  cluster_contribution: "Roots the sinne in pre-conceptual Catholic embodiment without prematurely decoding Cornelis' later religious dissonance."
+  continuity_risks: []
 
 - chapter_ref: CH.DE_LEI.1552
   manuscript_file: 1552-01-15-de-lei.md
@@ -5811,6 +6056,18 @@ current_manuscript_set:
   title: De Lei
   manuscript_state: CURRENT
   latest_known_editor_pass: '2026-08-19'
+  current_progression:
+    entry: "Claes' practical pattern/counting intelligence is visible at school but not yet a self-concept."
+    movement:
+    - "A grouping method earns external recognition because he solves a counting problem differently rather than merely faster."
+    - "Cornelis converts the same competence into real delegated responsibility during his absence."
+    - "Claes counts correctly but fails to verify the identity/authority behind an unexpected delivery; precision without verification proves insufficient."
+    - "Cornelis' disappointment wounds because the task itself had been an expression of trust."
+    - "Cornelis later recognizes that Claes' method resembles his own, but his sparse praise still leaves Claes uncertain whether he is enough."
+    exit: "Competence, trust, error and paternal recognition become psychologically fused for Claes."
+  cluster_contribution: "Establishes gift + responsibility + recognition hunger; later vigilance grows from a real strength rather than abstract cleverness."
+  continuity_risks:
+  - "Current prose still alternates Meester Adriaen and Meester Jacob for what appears to be the same elementary master; authorial identity must be fixed before final prose."
 
 - chapter_ref: CH.HET_WAPEN.1553
   manuscript_file: 1553-08-15-het-wapen.md
@@ -5818,6 +6075,18 @@ current_manuscript_set:
   title: Het Wapen
   manuscript_state: CURRENT
   latest_known_editor_pass: '2026-08-19'
+  current_progression:
+    entry: "The Nissepat family sign exists for Claes first as an unexplained material mark on old papers."
+    movement:
+    - "He recognizes the sign as a real voetboog in Cornelis' hands."
+    - "Cornelis teaches through graduated access: carry, sort, count, wait, span, then shoot."
+    - "Sparse praise makes bodily competence another route through which Claes seeks paternal recognition."
+    - "The guild world gives the family sign civic/public weight without making every Nissepat the same kind of shooter."
+    - "Claes' first shot hits the target but not the center; Cornelis defines that as sufficient for a first step and immediately implies a next step."
+    exit: "The heraldic sign has become embodied experience, discipline and family continuity without becoming destiny."
+  cluster_contribution: "Turns sign into body and gives Claes a practical see/prepare/hold/wait/release sequence."
+  continuity_risks:
+  - "Current prose still specifies wind/touw/haak as the spanning apparatus while the exact historical mechanism remains OPEN; either canonize that fiction fill explicitly or neutralize the mechanism in prose."
 
 - chapter_ref: CH.DE_KRAAI.1553
   manuscript_file: 1553-10-01-de-kraai.md
@@ -5825,6 +6094,17 @@ current_manuscript_set:
   title: De Kraai
   manuscript_state: CURRENT
   latest_known_editor_pass: '2026-08-19'
+  current_progression:
+    entry: "Claes already has more than a year of Puttus' Latin/humanist formation and encounters the social cost of exacting pedagogy through Loys."
+    movement:
+    - "Aesopic translation gives Claes a textual problem rather than a ready-made lesson."
+    - "Adriaen's failed over-reading lets Puttus distinguish supported interpretation from manufacturing hidden meaning."
+    - "Claes notices that the fox's lie precedes the crow's vanity; Puttus recognizes the reading while keeping it tied to the text."
+    - "Puttus warns that seeing more than others can have social consequences without turning the lesson into anti-ritual religious instruction."
+    - "Loys reveals that equal classroom demands rest on unequal household conditions."
+    exit: "Latin, interpretation and social difference become things Claes must keep earning rather than proof of innate superiority."
+  cluster_contribution: "Gives Claes disciplined hermeneutics: second layers must be earned by evidence."
+  continuity_risks: []
 
 - chapter_ref: CH.DE_KRAAN.1553
   manuscript_file: 1553-11-05-de-kraan.md
@@ -5832,6 +6112,16 @@ current_manuscript_set:
   title: De Kraan
   manuscript_state: CURRENT
   latest_known_editor_pass: '2026-08-19'
+  current_progression:
+    entry: "Jan and Claes inhabit an ordinary brotherly rivalry: Jan faster and more bodily, Claes slower and more deliberative."
+    movement:
+    - "Jan turns waiting by the harbour into risk and dares Claes to climb."
+    - "Claes hesitates, then chooses proximity to Jan over safety below."
+    - "When Jan slips, Claes' hand acts before analysis and saves him."
+    - "The brothers form a small secret and Jan publicly names Claes' action as something to be proud of."
+    exit: "On the cart home Jan sleeps against Claes while Cornelis hums: action, love and intact family coexist without explanation."
+  cluster_contribution: "Proves Claes can act immediately when no deliberative interval exists; makes Jan a loved brother rather than a future trauma device."
+  continuity_risks: []
 
 - chapter_ref: CH.DE_WEGEN.1553
   manuscript_file: 1553-12-10-de-wegen.md
@@ -5839,6 +6129,17 @@ current_manuscript_set:
   title: De Wegen
   manuscript_state: CURRENT
   latest_known_editor_pass: '2026-08-19'
+  current_progression:
+    entry: "Cornelis introduces the family merels board as a winter father-son practice."
+    movement:
+    - "Claes initially counts visible stones and repeatedly loses because he does not see future routes."
+    - "Near-recognition produces Cornelis' hard distinction between almost-seen and seen, while Tanneken supplies unconditional encouragement from the edge of the scene."
+    - "Cornelis reveals that his own father's silent pedagogy shaped him."
+    - "Claes finally creates a valid double threat by seeing empty intersections rather than only occupied points."
+    - "Cornelis gives rare explicit recognition and brief physical praise even though Claes still loses the game."
+    exit: "Claes experiences future possibility as something perceptible and his father's trust as briefly readable."
+  cluster_contribution: "Makes 'ways' a cognitive capability while exposing the emotional cost of inherited silent praise."
+  continuity_risks: []
 
 - chapter_ref: CH.HET_ZAND.1554
   manuscript_file: 1554-01-05-het-zand.md
@@ -5846,6 +6147,17 @@ current_manuscript_set:
   title: Het Zand
   manuscript_state: CURRENT
   latest_known_editor_pass: '2026-08-19'
+  current_progression:
+    entry: "Claes takes the private family game into a public child-world by redrawing it in sand."
+    movement:
+    - "Different children expose different learning styles and Claes begins receiving visible peer recognition."
+    - "Mayken enters as a younger but independent observer whose apothecary/material training produces a different kind of attention."
+    - "Her knowledge of sickness gives the school-world a mortality edge without making her a healer-symbol."
+    - "She shifts the shared activity from board patterns to plant identification and teaches Claes a difference he will thereafter always see."
+    - "Jan observes the board late in the month, preparing the next chapter's brotherly reversal."
+    exit: "Claes has public confidence in his own pattern skill, a small pre-fire history with Mayken, and an unrecognized vulnerability to someone who learns differently."
+  cluster_contribution: "Introduces Mayken's material method and gives Claes a small experience of public mastery before Jan destabilizes it."
+  continuity_risks: []
 
 - chapter_ref: CH.HET_GIST.1554
   manuscript_file: 1554-01-15-het-gist.md
@@ -5853,6 +6165,17 @@ current_manuscript_set:
   title: Het Gist
   manuscript_state: CURRENT
   latest_known_editor_pass: '2026-08-19'
+  current_progression:
+    entry: "Tanneken takes Claes through ordinary winter household inspection as learned bodily practice."
+    movement:
+    - "Smell, touch, condition and timing show that material knowledge can precede explicit explanation."
+    - "Tanneken gives direct proportionate praise and treats uncertainty as part of learning."
+    - "Knowledge is framed as intergenerational practice carried in hands, not mystical intuition."
+    - "A childhood anecdote lets Tanneken remember a version of Claes he cannot remember himself."
+    - "Her weather judgement saves the household vaten; the family evening then becomes warm, comic and ordinary."
+    exit: "Claes falls asleep to his parents' voices in a house in which nothing seems missing."
+  cluster_contribution: "Makes Tanneken an independent epistemic and emotional source; maximizes the ordinary intact household before loss."
+  continuity_risks: []
 
 - chapter_ref: CH.DE_WINNAAR.1554
   manuscript_file: 1554-02-10-de-winnaar.md
@@ -5860,6 +6183,16 @@ current_manuscript_set:
   title: De Winnaar
   manuscript_state: CURRENT
   latest_known_editor_pass: '2026-08-19'
+  current_progression:
+    entry: "Claes assumes the game he has mastered will establish hierarchy when he teaches Jan."
+    movement:
+    - "Jan wins the third game through speed, aggression and bodily trial rather than Claes' route-finding method."
+    - "Repeated play shows two legitimate but fallible modes: Claes' deliberation and Jan's action-first instinct."
+    - "Cornelis notices the difference but the revised ending no longer turns it into a complete adult life-maxim."
+    - "Jan abruptly asks whether the unborn baby will live; Claes provides certainty he does not possess."
+    exit: "Brotherhood is more important than mastery, and Claes' certainty has now been emotionally pledged where certainty is impossible."
+  cluster_contribution: "Turns Jan from foil into genuine alternative competence and seeds the unbearable pre-fire promise about the unborn child."
+  continuity_risks: []
 
 - chapter_ref: CH.HET_ZAAD.1554
   manuscript_file: 1554-03-01-het-zaad-in-de-donkere-aarde.md
@@ -5867,7 +6200,20 @@ current_manuscript_set:
   title: Het Zaad in de Donkere Aarde
   manuscript_state: CURRENT
   latest_known_editor_pass: '2026-08-19'
-  revision_lineage_note: "Substantial shortening occurred in the 19 August editor pass; exact removed functions/material belong in the revision handoff and parked-material registry."
+  current_progression:
+    entry: "Household bread and the moving unborn child place growth, waiting and hidden life in Claes' hands before church language names seed/word."
+    movement:
+    - "The parable of the sower is received first as image and bodily imagination rather than doctrine."
+    - "The market shows Goes as a patterned civic system in which Cornelis moves fluently."
+    - "A grey-mantled contact and Cornelis' closed answer give Claes a first concrete adult secrecy he cannot yet interpret."
+    - "At the Nissepad workplace Cornelis distinguishes his biersteker/steward skill from Lieven's brewing skill."
+    - "Cornelis connects seed/attention primarily to civic stewardship and practical care rather than explaining every one of his identities."
+    - "Tanneken's material judgement interrupts any fantasy that Cornelis alone owns practical truth."
+    - "On the return road Cornelis explicitly asks Claes not to carry the grey man's identity; protection becomes gatekeeping."
+    exit: "Claes carries a seed and a prohibition: hidden meaning exists, but his father controls access to it."
+  cluster_contribution: "Bridges embodied family/church imagery to Cornelis' secret network while preserving the child's incomplete knowledge."
+  continuity_risks:
+  - "Current brewery scene still gives Cornelis some process-direction language; keep aligned with biersteker/family-economic role and Lieven as actual brewer."
 
 - chapter_ref: CH.DE_KAMER.1554
   manuscript_file: 1554-03-05-de-kamer.md
@@ -5875,6 +6221,16 @@ current_manuscript_set:
   title: De Kamer
   manuscript_state: CURRENT
   latest_known_editor_pass: '2026-08-19'
+  current_progression:
+    entry: "Claes enters the rederijker environment as a child who thinks he knows who his father is."
+    movement:
+    - "He sees Cornelis become more humorous, verbal, social and performative among trusted men."
+    - "The chamber reveals a paternal life that does not exist only for Claes or the household."
+    - "Words and performance become a civic/social practice rather than merely school material."
+    - "Cornelis invites Claes toward making rather than only observing, but does not prescribe what he must make."
+    exit: "Claes leaves with a larger, less possessable father and a possible route into words of his own."
+  cluster_contribution: "Expands Cornelis from father-function into independent social person just before the household rupture."
+  continuity_risks: []
 
 - chapter_ref: CH.DE_WIEG.1554
   manuscript_file: 1554-04-10-de-wieg.md
@@ -5882,6 +6238,19 @@ current_manuscript_set:
   title: De Wieg
   manuscript_state: CURRENT
   latest_known_editor_pass: '2026-08-19'
+  current_progression:
+    entry: "The household prepares concretely for a new child: inherited cradle, cloth, names, bodily knowledge and work."
+    movement:
+    - "Grandmother Mayken and Tanneken embody an intergenerational female practice around birth and care."
+    - "Tanneken's desire is stripped to the essential: she wants the baby to breathe."
+    - "Cornelis treats Claes' future help as already trusted rather than something he must prove."
+    - "Tanneken states that a child cannot be known in advance however carefully one looks."
+    - "Jan promises to care for the unborn sibling."
+    exit: "The family is warm and expectant; the revised final sentence no longer explicitly tells the reader how little time remains."
+  cluster_contribution: "Makes the future that will be destroyed materially and relationally specific rather than abstract tragedy."
+  continuity_risks:
+  - "Current prose says there will be 'three younger mouths instead of two'; with Jan plus the unborn child this appears numerically inconsistent unless another dependent is explicitly canonized."
+  - "Current prose mentions an earlier child that 'did not come'; this is not established in the current family canon and requires removal or an explicit author decision before it can remain."
 
 - chapter_ref: CH.DE_LADINGEN.1564
   manuscript_file: 1564-04-04-de-ladingen-van-antwerpen.md
@@ -5889,6 +6258,17 @@ current_manuscript_set:
   title: De Ladingen van Antwerpen
   manuscript_state: CURRENT
   latest_known_editor_pass: '2026-08-19'
+  current_progression:
+    entry: "Adult Claes already has useful work competence under Silvius and travels inside Cornelis' trade/logistics world."
+    movement:
+    - "A false account around missing beer capacity shows Claes that carrying goods can require carrying a lie."
+    - "At Silvius' house the print world, Cornelis' trust network and Dee's learned world intersect."
+    - "Claes asks about a dangerous book and meets the familiar limit: he may carry around knowledge without full access to it."
+    - "Silvius bargains Claes' existing competence into two hours of work with Dee."
+    exit: "A formative apprenticeship with Dee begins, but Claes' agency is still partly entangled with older men's decisions about his usefulness."
+  cluster_contribution: "Moves childhood competencies into adult circulation: accounting, silence and transmission become entrance tickets to Dee."
+  continuity_risks:
+  - "Current prose calls beer 'the own beer of Claes' father' and Claes names brewing as his knowledge; keep this aligned with Cornelis as biersteker rather than fixed master brewer/owner."
 
 - chapter_ref: CH.DE_VERKEERDE_KIST.1564
   manuscript_file: 1564-04-14-de-verkeerde-kist.md
@@ -5896,6 +6276,16 @@ current_manuscript_set:
   title: De Verkeerde Kist
   manuscript_state: CURRENT
   latest_known_editor_pass: '2026-08-19'
+  current_progression:
+    entry: "Dee expects a book and instead receives hop; the error immediately becomes a test of how each man explains uncertainty."
+    movement:
+    - "Silvius proposes ordinary human error while Dee suspects hidden intent and surveillance."
+    - "Cornelis brings route/trade knowledge that makes an accidental swap materially plausible."
+    - "Claes contributes smell and remembered handling details rather than abstract conspiracy."
+    - "Dee's suspicion is forced back toward verifiable logistics."
+    exit: "Claes learns that a master of hidden order can over-read; material verification can defeat a beautiful suspicion."
+  cluster_contribution: "Makes Dee fallible and triangulates Dee-pattern / Silvius-pragmatism / Claes-material memory."
+  continuity_risks: []
 
 - chapter_ref: CH.DE_KIES_VAN_BOOM.1564
   manuscript_file: 1564-04-22-de-kies-van-boom.md
@@ -5903,6 +6293,16 @@ current_manuscript_set:
   title: De Kies van Boom
   manuscript_state: CURRENT
   latest_known_editor_pass: '2026-08-19'
+  current_progression:
+    entry: "Claes follows Dee into the Boom/Rupel material world as an uncertain apprentice."
+    movement:
+    - "Rejected pyritic matter becomes an object that rewards exact embodied looking."
+    - "Claes notices form/order before he possesses the learned vocabulary for it."
+    - "Dee recognizes and names a capacity that Goes, Tanneken, Cornelis and Puttus have already formed."
+    - "Worthless-looking matter becomes the material entry to transformation rather than a promise of magical value."
+    exit: "Claes has been recognized by Dee and given a process whose result must be earned through time and material work."
+  cluster_contribution: "Formalizes hidden-order perception without making Dee the creator of Claes' gift; begins the adult material Nigredo."
+  continuity_risks: []
 
 - chapter_ref: CH.DE_LOOG.1564
   manuscript_file: 1564-04-29-de-loog-van-antwerpen.md
@@ -5910,6 +6310,18 @@ current_manuscript_set:
   title: De Loog van Antwerpen
   manuscript_state: CURRENT
   latest_known_editor_pass: '2026-08-19'
+  current_progression:
+    entry: "Claes tends crushed pyritic material through repetitive wetting/weathering while print work proceeds under the same roof."
+    movement:
+    - "Boredom and maintenance make transformation a practice of duration rather than spectacle."
+    - "Silvius' type-setting rhythm and the dripping mineral bed create parallel material processes of making something legible."
+    - "Dee's private news/secrecy introduces pressure beyond the experiment."
+    - "Extraction, concentration and crystallization turn rejected matter into visible green vitriol."
+    - "After doing the work, Claes earns the right to name what he has seen emerge."
+    exit: "The Green Lion is no longer an emblem only; Claes has materially produced and recognized an operational substance."
+  cluster_contribution: "Moves transformation from insight to labour, waiting, repeatability and earned naming."
+  continuity_risks:
+  - "Current language about Cornelis' vaten carrying hidden freight should not become a routine books-hidden-in-beer-barrels mechanism contrary to the logistics guardrail."
 
 - chapter_ref: CH.DE_DOOD_VAN_SOL.1564
   manuscript_file: 1564-07-20-de-dood-van-sol.md
@@ -5917,6 +6329,17 @@ current_manuscript_set:
   title: De Dood van Sol
   manuscript_state: CURRENT
   latest_known_editor_pass: '2026-08-19'
+  current_progression:
+    entry: "Claes has learned an opening process and now faces Sol/gold as matter that resists ordinary force."
+    movement:
+    - "Strong force fails to open Sol, separating violence from right relation."
+    - "A compound relation makes visible gold disappear without annihilating it: material continuity survives loss of visible form."
+    - "A security interruption shows Dee's own gatekeeping and fear in bodily action."
+    - "The hidden-book/Trithemius line and the Green Lion emblem intensify the relation between concealment, legibility and danger without completing the Brevísima mechanism here."
+    exit: "Claes has witnessed visible death without material loss and cannot yet decide whether concealment is protection, knowledge or danger."
+  cluster_contribution: "Establishes conserved Sol and the crucial distinction between destruction and transformation."
+  continuity_risks:
+  - "Current closing analogies can imply routine concealed freight in beer; preserve the canon distinction between logistics continuity and a standard books-in-barrels device."
 
 - chapter_ref: CH.DE_MARKT_VAN_DELFT.1584
   manuscript_file: 1584-07-14-de-markt-van-delft.md
@@ -5924,9 +6347,315 @@ current_manuscript_set:
   title: De Markt van Delft
   manuscript_state: CURRENT
   latest_known_editor_pass: '2026-08-19'
-  revision_lineage_note: "A shorter post-cold-reader version exists in the 19 August manuscript set; exact progression delta should come from the editor handoff."
+  current_progression:
+    entry: "Claes enters Delft for ordinary commercial reasons but is trapped in the public execution economy surrounding Gerards."
+    movement:
+    - "The sentence's language of seals/prints corrupts a craft Claes knows as proof/transmission: an imprint can authorize truth or enable a lie."
+    - "The ordered execution awakens bodily recognition of Cornelis' 1569 death."
+    - "Claes cannot choose not to witness; trained attention becomes compulsion."
+    - "The revised torture passage compresses repeated bodily detail while preserving counting/ritual and the political equivalence Claes perceives in organized violence."
+    - "After the execution, ordinary water droplets trigger a somatic blood-memory that cognition cannot correct."
+    - "At the bridge Claes recognizes that signs/prints do not contain their own morality; moral agency lies in the hand and use."
+    exit: "He walks on outwardly intact while the death remains active inside him; the revised ending trusts the embodied aftermath instead of explaining the complete theory of attention."
+  cluster_contribution: "Moral/psychological bottom: witnessing, interpretation and craft can no longer be treated as neutral capacities."
+  continuity_risks: []
 
-revision_history: []
+cluster_progressions:
+- id: CLUSTER.CHILDHOOD_GOES.PREFIRE.1547_1554
+  status: CURRENT_MANUSCRIPT_PROJECTION
+  chapters:
+  - CH.DE_DREMPEL.1547
+  - CH.DE_LEI.1552
+  - CH.HET_WAPEN.1553
+  - CH.DE_KRAAI.1553
+  - CH.DE_KRAAN.1553
+  - CH.DE_WEGEN.1553
+  - CH.HET_ZAND.1554
+  - CH.HET_GIST.1554
+  - CH.DE_WINNAAR.1554
+  - CH.HET_ZAAD.1554
+  - CH.DE_KAMER.1554
+  - CH.DE_WIEG.1554
+  progression:
+  - "Body encounters a meaningful world before intellect can name it."
+  - "Observation becomes competence, then responsibility, then vulnerability to paternal judgement."
+  - "Competence enters the body through the footbow and remains tied to trust/waiting/release."
+  - "Language teaches that interpretation requires evidence and restraint."
+  - "Jan proves that Claes can act before analysis and that brotherly love is not earned by correctness."
+  - "Cornelis teaches future paths; Tanneken and Jan expose the limits of one exclusive cognitive method."
+  - "Public mastery and Mayken's different material intelligence widen Claes' social/epistemic field."
+  - "Tanneken anchors bodily knowledge, direct praise and intact household continuity."
+  - "Jan defeats mastery with action and asks for impossible certainty about the unborn child."
+  - "Cornelis' secret adult world becomes perceptible but remains inaccessible to Claes."
+  - "Claes discovers Cornelis as a man with a social/creative life outside fatherhood."
+  - "The unborn future becomes fully material and relational immediately before the 18 May rupture."
+  next_required_hinge: "18 May 1554 fire -> immediate household loss -> Cornelis/Claes aftermath -> Reimerswaal decision/departure."
+  expansion_gate: "No new pre-fire chapter unless the fire/aftermath draft exposes an indispensable missing causal or relational condition."
+
+- id: CLUSTER.ANTWERP_MATERIAL_INITIATION.1564
+  status: CURRENT_MANUSCRIPT_PROJECTION
+  chapters:
+  - CH.DE_LADINGEN.1564
+  - CH.DE_VERKEERDE_KIST.1564
+  - CH.DE_KIES_VAN_BOOM.1564
+  - CH.DE_LOOG.1564
+  - CH.DE_DOOD_VAN_SOL.1564
+  progression:
+  - "Existing competence and silence place Claes inside Silvius/Dee's working world."
+  - "The wrong-kist problem makes Dee fallible and establishes material/logistical verification as a counterweight to hidden-intention thinking."
+  - "Boom gives Claes transformative vocabulary for an already-formed mode of seeing."
+  - "Loog converts insight into labour, duration and earned material naming."
+  - "Sol demonstrates that visible disappearance can preserve matter and that force is not the same as right relation."
+  downstream_pressure: "The same capacities can now be applied to testimony/secrecy, but the 4 October security break must supply the adult macro-Nigredo rather than this cluster resolving it early."
+
+- id: CLUSTER.DELFT_MORAL_BOTTOM.1584
+  status: CURRENT_MANUSCRIPT_PROJECTION
+  chapters: [CH.DE_MARKT_VAN_DELFT.1584]
+  progression:
+  - "Witnessing returns as compulsion."
+  - "Public justice and private memory collapse into one ritual technology of violence."
+  - "The morality of signs/prints is displaced from object to human use."
+  - "Claes leaves with unresolved embodied recurrence rather than intellectual closure."
+  downstream_pressure: "Requires later recovery/integration to include release, not merely better interpretation."
+
+revision_history:
+- revision_id: REV.2026-08-19.DE_BLADZIJDE.001
+  chapter_ref: CH.PROLOGUE.DE_BLADZIJDE.1542
+  manuscript_file: 1542-12-08-de-bladzijde.md
+  revision_date: '2026-08-19'
+  editorial_verdict: REVISE
+  disposition_basis: SEMANTIC_RECONSTRUCTION
+  confidence: MEDIUM
+  progression_before: "Witness testimony + extended colonial/political explanation + detailed rhetorical construction + self-implication + release."
+  progression_after: "Witness testimony + tighter rhetorical construction + self-implication + release; political/explanatory load reduced."
+  progression_delta:
+    compressed: [colonial_administrative_context, explanatory_rhetorical_reasoning, repeated_atrocity_commentary]
+    strengthened: [writing_as_moral_action, self_implication, release_beyond_author_control]
+  functions_retained: [testimony, conscience, self_implication, carrier_release]
+  functions_removed_or_moved: [extended_New_Laws_and_administrative_context]
+  parked_material_refs: [PARK.PROLOGUE.NEW_LAWS_ADMIN_CONTEXT.001]
+  canon_impact: PROJECTION_ONLY
+  downstream_reader_expectation: "Reader enters Claes' story with testimony/release, not a mini-history lecture."
+
+- revision_id: REV.2026-08-19.DE_DREMPEL.001
+  chapter_ref: CH.DE_DREMPEL.1547
+  manuscript_file: 1547-04-01-de-drempel.md
+  revision_date: '2026-08-19'
+  editorial_verdict: REVISE
+  disposition_basis: PAIRED_DRAFTS_PLUS_RECORDED_EDITORIAL_REASON
+  confidence: HIGH
+  progression_before: "Embodied Catholic child-world plus a more marked 1547 Cornelis religious anomaly and explicit Zeven-Getijden label."
+  progression_after: "Embodied Catholic child-world; Cornelis' glance remains ordinary/ambiguous and institutional label is withheld from child POV."
+  progression_delta:
+    removed: [explicit_Zeven_Getijden_naming_in_child_experience, pre_Familist_interpretive_weight_on_Cornelis_glance]
+    strengthened: [child_POV, ordinary_Catholic_belonging, later_1552_1553_religious_dissonance_boundary]
+  functions_retained: [sinne_origin, Catholic_embodiment, family_church_world, church_market_continuity]
+  functions_removed_or_moved: [Zeven_Getijden_institutional_exposition, early_religious_signal]
+  parked_material_refs: [PARK.DREMPEL.ZEVEN_GETIJDEN_BACKDROP.001, PARK.DREMPEL.EARLY_FAMILIST_SIGNAL.001]
+  canon_impact: PROJECTION_ONLY
+  downstream_reader_expectation: "Cornelis' real religious dissonance should begin later, after the canonical ca.1552-1553 Familist affiliation."
+
+- revision_id: REV.2026-08-19.DE_LEI.001
+  chapter_ref: CH.DE_LEI.1552
+  manuscript_file: 1552-01-15-de-lei.md
+  revision_date: '2026-08-19'
+  editorial_verdict: REVISE
+  disposition_basis: PAIRED_DRAFTS
+  confidence: HIGH
+  progression_before: "Same core school->responsibility->failure->recognition arc with arithmetic/logic/period-wording errors."
+  progression_after: "Same core arc with corrected button arithmetic, pastoor terminology and coherent unwanted-vat consequence."
+  progression_delta:
+    repaired: [button_arithmetic, dominee_to_pastoor, delivery_consequence_logic]
+    narrative_function_change: NONE
+  functions_retained: [external_recognition, delegated_responsibility, verification_failure, father_son_recognition_gap]
+  functions_removed_or_moved: []
+  parked_material_refs: []
+  canon_impact: NONE
+  downstream_reader_expectation: "No new story beat; cleaner causal trust wound."
+
+- revision_id: REV.2026-08-19.HET_WAPEN.001
+  chapter_ref: CH.HET_WAPEN.1553
+  manuscript_file: 1553-08-15-het-wapen.md
+  revision_date: '2026-08-19'
+  editorial_verdict: REVISE
+  disposition_basis: PAIRED_DRAFTS_PLUS_CANON_GUARDRAILS
+  confidence: HIGH
+  progression_before: "Family sign->Cornelis practice->guild ritual->first shot->strong multigenerational shooter continuity."
+  progression_after: "Family sign->Cornelis practice->guild identity without invented blessing ritual->first shot->family continuity without universal hereditary shooter identity."
+  progression_delta:
+    removed_or_softened: [devise_as_routine_greeting, specific_banner_blessing_ritual, grandfather_as_longterm_injured_shooter, deterministic_family_shooter_chain]
+    strengthened: [fact_fiction_boundary, Cornelis_specific_footbow_pedagogy, sign_without_destiny]
+  functions_retained: [family_sign, Sint_Joris_world, father_son_training, sparse_praise, first_shot]
+  functions_removed_or_moved: [specific_unsourced_ritual, universalized_family_practice]
+  parked_material_refs: [PARK.WAPEN.BANNER_BLESSING_RITUAL.001, PARK.WAPEN.DEVISE_GREETING_CONVENTION.001, PARK.WAPEN.HEREDITARY_SHOOTER_CHAIN.001]
+  canon_impact: PROJECTION_ONLY
+  downstream_reader_expectation: "Reader may associate the sign with lived family/civic practice without reading it as bloodline destiny."
+
+- revision_id: REV.2026-08-19.DE_KRAAI.001
+  chapter_ref: CH.DE_KRAAI.1553
+  manuscript_file: 1553-10-01-de-kraai.md
+  revision_date: '2026-08-19'
+  editorial_verdict: REVISE
+  disposition_basis: PAIRED_DRAFTS_PLUS_RECORDED_EDITORIAL_REASON
+  confidence: HIGH
+  progression_before: "Puttus disciplined interpretation but also an over-explicit anti-ritual/golden-scale bridge toward Cornelis' religious secret."
+  progression_after: "Puttus disciplined interpretation, social caution and Loys class contrast; religious decoding of Cornelis removed."
+  progression_delta:
+    changed: [Puttus_duration_few_weeks_to_more_than_a_year]
+    removed: [golden_scale_anti_ritual_prompt, proto_reformator_reading_of_Cornelis]
+    strengthened: [Puttus_as_hermeneutic_not_doctrinal_mentor]
+  functions_retained: [Latin_formation, supported_second_layer, overreading_correction, Puttus_recognition, Loys_social_difference]
+  functions_removed_or_moved: [religious_oracle_function]
+  parked_material_refs: [PARK.KRAAI.PUTTUS_ANTI_RITUAL_PROMPT.001]
+  canon_impact: PROJECTION_ONLY
+  downstream_reader_expectation: "Claes learns how to read; he is not yet given the religious answer to his father."
+
+- revision_id: REV.2026-08-19.DE_KRAAN.001
+  chapter_ref: CH.DE_KRAAN.1553
+  manuscript_file: 1553-11-05-de-kraan.md
+  revision_date: '2026-08-19'
+  editorial_verdict: REVISE
+  disposition_basis: PAIRED_DRAFTS
+  confidence: HIGH
+  progression_before: "Brother-risk/action scene plus explicit narrator forecast that Claes will spend life keeping larger secrets."
+  progression_after: "Brother-risk/action scene ends the secret beat without forecasting its lifelong symbolic meaning."
+  progression_delta:
+    removed: [explicit_lifelong_secret_foreshadow]
+    strengthened: [subtext, present_brotherhood, reader_inference]
+  functions_retained: [Jan_action, Claes_reflex_action, brother_secret, public_pride, intact_family_return]
+  functions_removed_or_moved: [explained_future_secret_motif]
+  parked_material_refs: [PARK.KRAAN.LIFELONG_SECRET_FORESHADOW.001]
+  canon_impact: NONE
+  downstream_reader_expectation: "Later secrecy should acquire meaning through later events, not authorial forecast here."
+
+- revision_id: REV.2026-08-19.DE_WEGEN.001
+  chapter_ref: CH.DE_WEGEN.1553
+  manuscript_file: 1553-12-10-de-wegen.md
+  revision_date: '2026-08-19'
+  editorial_verdict: REVISE
+  disposition_basis: PAIRED_DRAFTS
+  confidence: HIGH
+  progression_before: "Same father-son ways arc with invalid stone count, impossible mill geometry and false claim that Claes never knew grandfather."
+  progression_after: "Same arc with nine stones, valid double-threat geometry and grandfather continuity repaired."
+  progression_delta:
+    repaired: [stone_count, game_geometry, grandfather_continuity]
+    narrative_function_change: NONE
+  functions_retained: [future_paths, almost_vs_seen, inherited_silent_praise, rare_recognition]
+  functions_removed_or_moved: []
+  parked_material_refs: []
+  canon_impact: NONE
+  downstream_reader_expectation: "No progression change; technical plausibility no longer distracts from father-son movement."
+
+- revision_id: REV.2026-08-19.HET_ZAND.001
+  chapter_ref: CH.HET_ZAND.1554
+  manuscript_file: 1554-01-05-het-zand.md
+  revision_date: '2026-08-19'
+  editorial_verdict: REVISE
+  disposition_basis: PAIRED_DRAFTS
+  confidence: HIGH
+  progression_before: "Mayken/material introduction plus an unsupported suggestion that Claes already read botany under Puttus and a confused illness chronology."
+  progression_after: "Same chapter progression; Mayken's apothecary/material world is allowed to be genuinely new to Claes and Cornelis Woutersz chronology is repaired."
+  progression_delta:
+    repaired: [Cornelis_Woutersz_timing]
+    removed: [Puttus_as_prior_botany_source]
+    narrative_function_change: MINOR_STRENGTHENING_OF_MAYKEN_DISTINCTIVENESS
+  functions_retained: [public_merels_skill, peer_recognition, Mayken_entry, material_discrimination, plant_learning, Jan_setup]
+  functions_removed_or_moved: [unsupported_Puttus_botany_overlap]
+  parked_material_refs: []
+  canon_impact: NONE
+  downstream_reader_expectation: "Mayken now more clearly supplies a genuinely different knowledge-world."
+
+- revision_id: REV.2026-08-19.HET_GIST.001
+  chapter_ref: CH.HET_GIST.1554
+  manuscript_file: 1554-01-15-het-gist.md
+  revision_date: '2026-08-19'
+  editorial_verdict: REVISE
+  disposition_basis: PAIRED_DRAFTS
+  confidence: HIGH
+  progression_before: "Same Tanneken/body/household arc with an unnecessarily confusing naming/baptism aside about grandmother Mayken."
+  progression_after: "Same arc with the genealogy line simplified to 'uw grootmoeder Mayken'."
+  progression_delta:
+    removed: [confusing_baptism_name_aside]
+    narrative_function_change: NONE
+  functions_retained: [embodied_knowledge, direct_praise, doubt_as_skill, intergenerational_hands, intact_household]
+  functions_removed_or_moved: []
+  parked_material_refs: []
+  canon_impact: NONE
+  downstream_reader_expectation: "Reader keeps the maternal-line continuity without an unnecessary naming puzzle."
+
+- revision_id: REV.2026-08-19.DE_WINNAAR.001
+  chapter_ref: CH.DE_WINNAAR.1554
+  manuscript_file: 1554-02-10-de-winnaar.md
+  revision_date: '2026-08-19'
+  editorial_verdict: REVISE
+  disposition_basis: PAIRED_DRAFTS_PLUS_RECORDED_EDITORIAL_REASON
+  confidence: HIGH
+  progression_before: "Jan action-principle is demonstrated and then fully explained by Cornelis as a life lesson."
+  progression_after: "Jan action-principle remains demonstrated; Cornelis recognizes difference but stops before explaining the complete adult meaning. Pregnancy stage is corrected."
+  progression_delta:
+    repaired: [February_pregnancy_visibility]
+    removed_or_softened: [Cornelis_general_life_warning_about_action, explicit_path_worthless_if_wait_too_long_maxim]
+    strengthened: [Jan_as_lived_character, subtext, unborn_child_question]
+  functions_retained: [Jan_wins_fast, alternative_learning_mode, brother_intimacy, baby_survival_question, false_certainty]
+  functions_removed_or_moved: [fully_explained_adult_action_lesson]
+  parked_material_refs: [PARK.WINNAAR.ACTION_WITHOUT_CERTAINTY_RESERVE.001]
+  canon_impact: PROJECTION_ONLY
+  downstream_reader_expectation: "The reader should carry Jan's action-method forward and discover its adult value/cost through later plot rather than a fatherly thesis statement."
+
+- revision_id: REV.2026-08-19.HET_ZAAD.001
+  chapter_ref: CH.HET_ZAAD.1554
+  manuscript_file: 1554-03-01-het-zaad-in-de-donkere-aarde.md
+  revision_date: '2026-08-19'
+  editorial_verdict: REVISE
+  disposition_basis: PAIRED_DRAFTS_PLUS_RECORDED_EDITORIAL_REASON
+  confidence: HIGH
+  progression_before: "Parable/market/secrecy/brewery sequence plus Cornelis explicitly maps poorterschap, footbow, rederijker identity, trust, Tanneken, family enterprise and direct inner Word onto the sower parable."
+  progression_after: "Parable/market/secrecy/brewery sequence remains, but Cornelis' explanation is narrowed to civic/practical stewardship, Lieven's brewing role, Tanneken's material judgement and the grey-man prohibition."
+  progression_delta:
+    removed: [footbow_as_parable_exposition, rederijker_as_parable_exposition, long_trust_analogy, explicit_family_enterprise_sermon, direct_Word_without_priest_order_wall_statement]
+    strengthened: [Cornelis_as_character_not_storybible_voice, child_knowledge_limit, biersteker_vs_brewer_boundary, secrecy_as_gatekeeping]
+  functions_retained: [unborn_life, sower_image, living_Goes_market, grey_man_secret, Nissepad_work, Cornelis_stewardship, Tanneken_material_counterpoint]
+  functions_removed_or_moved: [explicit_Familist_interiority, over-complete_self_explanation_of_Cornelis_roles]
+  parked_material_refs: [PARK.ZAAD.CORNELIS_FAMILIST_BACKLINE.001, PARK.ZAAD.FAMILY_STEWARDSHIP_BACKLINE.001, PARK.ZAAD.ROLE_PARABLE_EXPOSITION.001]
+  canon_impact: PROJECTION_ONLY
+  downstream_reader_expectation: "Cornelis' hidden religious network should deepen later through consequence/action; his current child-facing speech no longer gives the answer away."
+
+- revision_id: REV.2026-08-19.DE_WIEG.001
+  chapter_ref: CH.DE_WIEG.1554
+  manuscript_file: 1554-04-10-de-wieg.md
+  revision_date: '2026-08-19'
+  editorial_verdict: REVISE
+  disposition_basis: PAIRED_DRAFTS
+  confidence: HIGH
+  progression_before: "Family expectation ends with explicit narrator warning about how little time remains."
+  progression_after: "Family expectation ends simply with an ordinary warm house full of what is still to come."
+  progression_delta:
+    removed: [explicit_countdown_to_catastrophe]
+    strengthened: [dramatic_irony, intactness, reader_trust]
+  functions_retained: [cradle, birth_knowledge, Cornelis_trust, unknowable_child, Jan_vow, household_expectation]
+  functions_removed_or_moved: [explicit_doom_foreshadow]
+  parked_material_refs: [PARK.WIEG.EXPLICIT_DOOM_FORESHADOW.001]
+  canon_impact: NONE
+  downstream_reader_expectation: "The coming fire must create the rupture; the narrator no longer announces it at the chapter exit."
+
+- revision_id: REV.2026-08-19.DE_MARKT_VAN_DELFT.001
+  chapter_ref: CH.DE_MARKT_VAN_DELFT.1584
+  manuscript_file: 1584-07-14-de-markt-van-delft.md
+  revision_date: '2026-08-19'
+  editorial_verdict: REVISE
+  disposition_basis: PAIRED_DRAFTS_PLUS_RECORDED_EDITORIAL_REASON
+  confidence: HIGH
+  progression_before: "Execution/trauma mirror includes six individually narrated tong beats and closes with an explicit theory that trained attention cannot stop holding painful evidence."
+  progression_after: "Middle tong sequence is compressed after the second beat; the bodily/ritual effect remains. The final explanatory theory of attention is removed, leaving somatic recurrence and the print-hand moral insight to carry the chapter."
+  progression_delta:
+    compressed: [torture_beats_three_through_six]
+    removed: [explicit_final_explanation_of_attention_as_involuntary_archive]
+    strengthened: [pace, somatic_trauma, reader_inference, print_as_morally_neutral_carrier]
+  functions_retained: [Gerards_execution, Cornelis_flashback, witnessing_compulsion, political_ritual_equivalence, water_trigger, imprint_moral_problem]
+  functions_removed_or_moved: [repeated_body_detail, fully_explained_attention_thesis]
+  parked_material_refs: [PARK.DELFT.ATTENTION_BACKLINE.001]
+  canon_impact: PROJECTION_ONLY
+  downstream_reader_expectation: "Post-Delft chapters must demonstrate whether compulsive attention persists or changes; this chapter no longer resolves that by explanation."
 ```
 
 ---
@@ -5934,7 +6663,7 @@ revision_history: []
 # SOURCE FILE: `narrative/parked_material.yaml`
 
 ```yaml
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: ParkedNarrativeMaterialRegistry
 purpose: >-
   Preserves useful material removed during editorial passes without falsely treating it as active manuscript placement or current scene canon. This registry stores summaries and reuse constraints, not a second prose archive.
@@ -5968,6 +6697,7 @@ hard_rules:
 - "Do not store large verbatim cut passages here. Store a concise content/function summary plus a pointer to the originating manuscript/editor handoff when available."
 - "Material parked as BACKDROP may be distributed in fragments; it should not be resurrected as an exposition block merely because it was once written as one."
 - "Motif reserve requires changed value on recurrence; repetition of the same symbolic beat is not reuse justification."
+- "REJECTED_STORY_OPTION is not a reserve bin. It exists specifically to stop a cut idea returning by accident."
 
 items:
 - id: PARK.EARLY_GOES.FIRST_STEPS_HOME.001
@@ -5993,10 +6723,178 @@ items:
   underlying_story_truth: REJECTED
   reuse_guardrail: "Do not restore an explicit destiny/date-link device. The later relation is testimony/transmission/responsibility, not shared-date symbolism."
 
+- id: PARK.PROLOGUE.NEW_LAWS_ADMIN_CONTEXT.001
+  status: PARKED_BACKDROP
+  origin_chapter: CH.PROLOGUE.DE_BLADZIJDE.1542
+  origin_revision: REV.2026-08-19.DE_BLADZIJDE.001
+  disposition_basis: SEMANTIC_RECONSTRUCTION
+  confidence: MEDIUM
+  summary: >-
+    Extended colonial-administrative context around reform, delay, court/governance and the practical difficulty of turning Las Casas' evidence into action was compressed from the prologue.
+  underlying_story_truth: HISTORICAL_CONTEXT_REQUIRES_SOURCE_SUPPORT
+  possible_functions: [Las_Casas_world_context, reform_vs_implementation, testimony_without_effect]
+  reuse_guardrail: >-
+    Prefer later research/backdrop or a concise historical note if needed. Do not restore a prologue exposition block unless the reader truly needs the administrative mechanism for a later causal payoff.
+
+- id: PARK.DREMPEL.ZEVEN_GETIJDEN_BACKDROP.001
+  status: PARKED_BACKDROP
+  origin_chapter: CH.DE_DREMPEL.1547
+  origin_revision: REV.2026-08-19.DE_DREMPEL.001
+  disposition_basis: PAIRED_DRAFTS
+  confidence: HIGH
+  summary: >-
+    The explicit institutional label for the Zeven Getijden was removed from four-year-old Claes' immediate church perception while the secondary chant/sound-world remained.
+  underlying_story_truth: HISTORICAL_WORLD_CONTEXT
+  possible_functions: [later_church_backdrop, liturgical_day_rhythm, Goese_religious_soundscape]
+  reuse_guardrail: "Use where a POV plausibly knows or needs the institutional name; do not make the child's first embodied church experience carry Storybible terminology."
+
+- id: PARK.DREMPEL.EARLY_FAMILIST_SIGNAL.001
+  status: REJECTED_STORY_OPTION
+  origin_chapter: CH.DE_DREMPEL.1547
+  origin_revision: REV.2026-08-19.DE_DREMPEL.001
+  disposition_basis: PAIRED_DRAFTS_PLUS_CANON_BOUNDARY
+  confidence: HIGH
+  summary: >-
+    The older version weighted Cornelis' 1547 church distraction/body posture as a meaningful early religious anomaly. The revised version deliberately neutralizes it because Cornelis' Familist affiliation is canonically ca.1552-1553.
+  underlying_story_truth: REJECTED_AS_EARLY_SIGNAL
+  reuse_guardrail: "Do not back-project a recognizably Familist Cornelis into 1547 without a new author decision. Ordinary distraction/searching temperament may exist without serving as encoded conversion evidence."
+
+- id: PARK.WAPEN.BANNER_BLESSING_RITUAL.001
+  status: REJECTED_STORY_OPTION
+  origin_chapter: CH.HET_WAPEN.1553
+  origin_revision: REV.2026-08-19.HET_WAPEN.001
+  disposition_basis: PAIRED_DRAFTS_PLUS_EVIDENCE_BOUNDARY
+  confidence: HIGH
+  summary: >-
+    A specific Sint-Joris feast sequence with special mass staging, banner at the altar, deken-led blessing and sprinkling with holy water was removed because the exact Goese ritual was not established.
+  underlying_story_truth: REJECTED_UNLESS_RESEARCH_REOPENS
+  reuse_guardrail: "Generic guild church attendance may remain. Do not restore the exact blessing choreography as historical scene detail without new source support and an explicit fiction/reconstruction decision."
+
+- id: PARK.WAPEN.DEVISE_GREETING_CONVENTION.001
+  status: REJECTED_STORY_OPTION
+  origin_chapter: CH.HET_WAPEN.1553
+  origin_revision: REV.2026-08-19.HET_WAPEN.001
+  disposition_basis: PAIRED_DRAFTS_PLUS_EVIDENCE_BOUNDARY
+  confidence: HIGH
+  summary: >-
+    The older version made 'Van Ongenugten Vrij' a routine oral greeting/geuzenwoord among schutters. The revised version keeps the historical devies as guild identity but no longer canonizes that social convention.
+  underlying_story_truth: REJECTED_AS_ROUTINE_USAGE
+  reuse_guardrail: "The devies may appear where materially/socially plausible, but do not treat a specific greeting formula as historical practice without evidence."
+
+- id: PARK.WAPEN.HEREDITARY_SHOOTER_CHAIN.001
+  status: REJECTED_STORY_OPTION
+  origin_chapter: CH.HET_WAPEN.1553
+  origin_revision: REV.2026-08-19.HET_WAPEN.001
+  disposition_basis: PAIRED_DRAFTS_PLUS_CHARACTER_WEB
+  confidence: HIGH
+  summary: >-
+    The older version made grandfather Claes Jacobsz a long-term shooter whose shoulder eventually failed and strengthened the impression of a nearly automatic Nissepat shooter lineage. The revision makes his shooting brief and temperamentally unlike Cornelis'.
+  underlying_story_truth: REJECTED_AS_DETERMINISTIC_FAMILY_PATTERN
+  reuse_guardrail: "Family arms and Cornelis' Sint-Joris practice remain canon; do not infer that every Nissepat man practised the voetboog deeply or inherited the same bodily temperament."
+
+- id: PARK.KRAAI.PUTTUS_ANTI_RITUAL_PROMPT.001
+  status: REJECTED_STORY_OPTION
+  origin_chapter: CH.DE_KRAAI.1553
+  origin_revision: REV.2026-08-19.DE_KRAAI.001
+  disposition_basis: PAIRED_DRAFTS_PLUS_CHARACTER_CANON
+  confidence: HIGH
+  summary: >-
+    Puttus' older speech about a golden vessel and the legitimacy of questioning what it carries functioned as an anti-ritual/proto-Reformation cue that helped Claes read Cornelis' church behaviour too early.
+  underlying_story_truth: REJECTED_FOR_PUTTUS
+  reuse_guardrail: "Puttus may teach textual distinction and interpretive courage. He may not become the convenient doctrinal decoder of Cornelis' hidden faith."
+
+- id: PARK.KRAAN.LIFELONG_SECRET_FORESHADOW.001
+  status: DISCARDED_PROSE
+  origin_chapter: CH.DE_KRAAN.1553
+  origin_revision: REV.2026-08-19.DE_KRAAN.001
+  disposition_basis: PAIRED_DRAFTS
+  confidence: HIGH
+  summary: >-
+    The narrator explicitly forecast that the brothers' small secret prefigured Claes keeping much larger secrets for the rest of his life.
+  underlying_story_truth: CANONICAL_THEME_ELSEWHERE
+  possible_functions: [secrecy_motif]
+  reuse_guardrail: "Do not restore as foreshadowing. Later secrecy should accrue through later decisions and consequences; the underlying motif already exists in canon."
+
+- id: PARK.WINNAAR.ACTION_WITHOUT_CERTAINTY_RESERVE.001
+  status: PARKED_MOTIF_RESERVE
+  origin_chapter: CH.DE_WINNAAR.1554
+  origin_revision: REV.2026-08-19.DE_WINNAAR.001
+  disposition_basis: PAIRED_DRAFTS_PLUS_RECORDED_EDITORIAL_REASON
+  confidence: HIGH
+  summary: >-
+    Cornelis formerly completed the Jan/Claes contrast with an explicit adult maxim: Jan's body can decide before his head, and seeing a road is worthless if one waits too long to take it. The revised version stops before the full thesis.
+  underlying_story_truth: CANON_CHARACTER_ARC
+  possible_functions: [adult_choice_hinge, later_Jan_memory, perceive_to_choose_transition]
+  reuse_guardrail: >-
+    Preserve the underlying tension for a later adult choice, but do not simply transplant Cornelis' old speech into another chapter. A later recurrence must be earned by action/consequence and carry a changed value.
+
+- id: PARK.ZAAD.CORNELIS_FAMILIST_BACKLINE.001
+  status: PARKED_BACKLINE
+  origin_chapter: CH.HET_ZAAD.1554
+  origin_revision: REV.2026-08-19.HET_ZAAD.001
+  disposition_basis: PAIRED_DRAFTS_PLUS_CANON
+  confidence: HIGH
+  summary: >-
+    The older chapter let Cornelis articulate a much more explicit inward theology: the Word can reach a person directly without priest, order or stone wall. That statement was cut from the child-facing scene, while Cornelis' ca.1552-1553 Huis der Liefde affiliation remains canon.
+  underlying_story_truth: CANON_RELIGIOUS_BACKLINE
+  possible_functions: [Cornelis_private_faith, later_1560s_religious_pressure, arrest_examination_context, father_son_reinterpretation]
+  reuse_guardrail: >-
+    Develop through Cornelis' later actions, trusted adult conversation, texts/network or consequences. Do not give eleven-year-old Claes the doctrinal key in 1554, and do not restore the exact old sermon as exposition.
+
+- id: PARK.ZAAD.FAMILY_STEWARDSHIP_BACKLINE.001
+  status: PARKED_BACKLINE
+  origin_chapter: CH.HET_ZAAD.1554
+  origin_revision: REV.2026-08-19.HET_ZAAD.001
+  disposition_basis: SEMANTIC_RECONSTRUCTION
+  confidence: MEDIUM
+  summary: >-
+    The older Cornelis speech explicitly framed the whole enterprise as a multigenerational family trust that must survive him. The cut contains potentially useful economic/familial stewardship pressure, but the exact ownership/management formulation risks overstating Cornelis as brewery proprietor.
+  underlying_story_truth: PARTLY_CANON_PARTLY_BOUNDARY_SENSITIVE
+  possible_functions: [family_economic_obligation, post_fire_rebuilding_pressure, later_Goes_severance, inheritance_expectation]
+  reuse_guardrail: >-
+    Reuse only after checking the current beer/biersteker/family-property canon. Preserve Cornelis' stewardship value without silently converting him into documented owner/master brewer of the Nissepad brewery.
+
+- id: PARK.ZAAD.ROLE_PARABLE_EXPOSITION.001
+  status: DISCARDED_PROSE
+  origin_chapter: CH.HET_ZAAD.1554
+  origin_revision: REV.2026-08-19.HET_ZAAD.001
+  disposition_basis: PAIRED_DRAFTS_PLUS_RECORDED_EDITORIAL_REASON
+  confidence: HIGH
+  summary: >-
+    Cornelis explicitly mapped the sower parable across poorterschap, voetboog, rederijkers, trust, Tanneken and household/economic roles. These identities remain active elsewhere, but the all-in-one interpretive speech was cut as Storybible exposition in dialogue.
+  underlying_story_truth: CANON_FUNCTIONS_ELSEWHERE
+  reuse_guardrail: "Do not reconstruct the omnibus speech in a later chapter. Individual identities may recur only through their own causal scenes."
+
+- id: PARK.WIEG.EXPLICIT_DOOM_FORESHADOW.001
+  status: DISCARDED_PROSE
+  origin_chapter: CH.DE_WIEG.1554
+  origin_revision: REV.2026-08-19.DE_WIEG.001
+  disposition_basis: PAIRED_DRAFTS
+  confidence: HIGH
+  summary: >-
+    The older final sentence explicitly told the reader that the family did not know how little time remained before catastrophe.
+  underlying_story_truth: CANON_FIRE_CHRONOLOGY
+  reuse_guardrail: "Do not restore narrator countdown language. Let 18 May supply the rupture and let current warmth carry dramatic irony without explanation."
+
+- id: PARK.DELFT.ATTENTION_BACKLINE.001
+  status: PARKED_BACKLINE
+  origin_chapter: CH.DE_MARKT_VAN_DELFT.1584
+  origin_revision: REV.2026-08-19.DE_MARKT_VAN_DELFT.001
+  disposition_basis: PAIRED_DRAFTS_PLUS_CHARACTER_CANON
+  confidence: HIGH
+  summary: >-
+    The old ending explicitly theorized that trained attention cannot be switched off and can preserve unbearable evidence even when it no longer serves a purpose. The revised chapter removes the explanatory paragraph but retains the bodily phenomenon.
+  underlying_story_truth: CANON_CHARACTER_SHADOW
+  possible_functions: [post_Delft_symptoms, sinne_recovery, compulsive_witnessing, release_arc]
+  reuse_guardrail: >-
+    Carry the consequence forward as behaviour, sensory trigger, avoidance, relationship cost or changed choice. Do not restore the deleted explanatory thesis as narrator summary unless a later reflective context has earned new meaning.
+
 editor_pass_ingest_queue:
-  status: OPEN_INGEST
+  status: INGESTED_SEMANTIC_RECONSTRUCTION
+  completed_on: '2026-08-19'
+  progression_registry: narrative/manuscript_progression.yaml
   note: >-
-    The 19 August 2026 Claude cold-reader/editor pass produced additional CUT/PARK decisions across the current manuscript. The latest and prior chapter files are available in the conversation, but exact author/editor classifications of each removed beat should be imported from the Claude editor handoff rather than guessed solely from textual diff. For every such item create one PARK.* record and one revision_history entry in narrative/manuscript_progression.yaml.
+    The paired pre-editor/post-editor drafts and recorded editorial reasoning have been ingested. Items whose exact future destination was not explicitly recoverable are labelled with disposition_basis=SEMANTIC_RECONSTRUCTION and confidence rather than being falsely presented as verbatim Claude parking decisions. If a separate Claude Chapter Revision Handoff is later supplied, reconcile it against these records rather than duplicating them.
 ```
 
 ---
@@ -6594,7 +7492,7 @@ For each observation, keep **experience/problem** separate from **reader-propose
 
 **ID:** `SB.CLAES.MAYKEN_LAMPERT`  
 **Status:** CANONICAL DETAIL MODULE  
-**Decisions:** `DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14`, `DEC.CLAES_MAYKEN.CHILDHOOD_ACQUAINTANCE.2026-08-19`  
+**Decisions:** `DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14`, `DEC.CLAES_MAYKEN.CHILDHOOD_ACQUAINTANCE.2026-08-19`, `DEC.MAYKEN.GOES_COUNTER_MEMORY.2026-08-21`  
 **Historical source dossier:** `sources/SRC-HIST-GOES-LAMPERT-APOTHECARY-001.md`
 
 This dossier is the detailed authority for the identity and historical embedding of the character formerly labeled only **geliefde / apothekersdochter**. It is synchronized to the later no-cipher memoriaal decision: Mayken is not a cryptographic solver and no special Dodoens carrier is required.
@@ -6609,7 +7507,8 @@ She is canonically:
 - granddaughter of the older Goese apothecary **Jacob/Jacop Lampart/Lambert** and the historical household figure **Merricken** in novel genealogy;
 - raised in a material/apothecary environment in Goes;
 - approximately three to four years younger than Claes;
-- already known to Claes as a child before the fire of 18 May 1554, without childhood-romance framing.
+- already known to Claes as a child before the fire of 18 May 1554, without childhood-romance framing;
+- later one partial carrier of a different Goese memory of the fire aftermath and Cornelis' post-fire life.
 
 Mayken's mother remains fictionally **open**. Do not invent a historical wife of Adriaen merely to close the pedigree.
 
@@ -6634,7 +7533,8 @@ Explicit novel canon, not archival fact:
 - Adriaen is her father and Jacob/Merricken her paternal grandparents;
 - Mayken and Claes know one another as children before 18 May 1554;
 - Mayken becomes Claes' beloved;
-- her precise childhood experiences, education and later relationship biography.
+- her precise childhood experiences, education and later relationship biography;
+- her later access to partial local/family memory about Cornelis' post-fire actions.
 
 No currently searchable transport act identifies a historical daughter of Adriaen. This is absence of evidence in a property corpus, not evidence of absence.
 
@@ -6693,7 +7593,36 @@ That strength also has a shadow: Mayken may become impatient with a hypothesis, 
 
 Guardrail: do not give Mayken an unsupported university education, formal physician status or later seventeenth-century guild office.
 
-## 7. Memoriaal reveal and material competence
+## 7. Goese counter-memory and the posthumous reading of Cornelis
+
+After the fire Claes leaves Goes for Reimerswaal and later Antwerp. Mayken remains connected to a different Goese household, family network and rebuilding history. That asymmetry gives her access to **a different memory of the same years**.
+
+Under `DEC.MAYKEN.GOES_COUNTER_MEMORY.2026-08-21`, later reunion may allow Mayken to contribute fragments about things Claes could not directly witness:
+
+- how the rumour around `Nissepats keet` circulated or changed;
+- what her family or neighbours saw of Cornelis after Claes left;
+- practical efforts Cornelis made to rebuild livelihood and credit;
+- payments, arrangements, messages or sacrifices connected to Claes' schooling where Mayken has a credible chain of knowledge;
+- local reasons to understand Claes' removal from Goes partly as protection from the rumour environment.
+
+This is **not** permission for Mayken to explain the whole backstory. She knows only what she, her family and local social memory could plausibly retain. She cannot prove the exact technical ignition cause, read Cornelis' private mind or retrospectively acquit him of every possible responsibility.
+
+The strongest dramatic function occurs after Cornelis' death. Claes can no longer confront or reconcile with his father directly. Mayken's fragments can therefore force a **posthumous rereading**:
+
+> what Claes carried as rejection may also have been an imperfect form of protection.
+
+The discovery changes Claes' relation to the past; it does not change the past or make Cornelis secretly perfect.
+
+## 8. Relation to Tanneken's material knowledge
+
+Mayken's method should resonate with, but never duplicate, Claes' mother.
+
+- **Tanneken:** lived operational/material condition through household continuity — stock, use, bodies, timing, reliability and everyday consequence;
+- **Mayken:** increasingly specialized material verification — identity, preparation, measurement, contamination, testing and repeatable contradiction.
+
+Claes can therefore recognize in Mayken a discipline whose basic material trustworthiness his childhood made familiar without reducing Mayken to a substitute mother.
+
+## 9. Memoriaal reveal and material competence
 
 The Brevísima mechanism is direct chemical steganography under `DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15`.
 
@@ -6716,13 +7645,13 @@ She is **not**:
 
 This gives her competence without making the relationship mechanically dependent on the retired recovery architecture.
 
-## 8. Relationship with Claes
+## 10. Relationship with Claes
 
 `REL.CLAES.BELOVED` / `REL.CLAES.MAYKEN.CONJUNCTIO` is the relationship **Claes ↔ Mayken**.
 
 Dynamic:
 
-**childhood acquaintance with separate Goese lives → separation/different fire aftermaths → later recognition and material proximity → collaborative verification → earned trust → love without possession → sensory/spiritual companionship.**
+**childhood acquaintance with separate Goese lives → separation/different fire aftermaths → later recognition and partial counter-memory → material proximity and collaborative verification → earned trust → love without possession → sensory/spiritual companionship.**
 
 Mayken must never function merely as a reward for Claes' suffering or as a therapist. She has her own competence, history and judgement. She can contradict Claes because she knows things he does not.
 
@@ -6734,7 +7663,7 @@ Her presence later on the road toward Enkhuizen helps Claes recover the *sinne* 
 
 The mature relation must allow the reverse influence as well: Claes can sometimes see a relation or possibility before Mayken believes it materially established. Their strongest scenes should therefore produce reciprocal revision rather than one person permanently correcting the other.
 
-## 9. Name use
+## 11. Name use
 
 Preferred prose name: **Mayken**.  
 Project/canonical full form: **Mayken Adriaensdr. Lampert**.  
@@ -6742,7 +7671,7 @@ Possible period forms: **Mayken Adriaens**, **Mayken Adriaensdochter**.
 
 Avoid modernizing her to *Maaike* in the sixteenth-century narrative voice.
 
-## 10. Guardrails
+## 12. Guardrails
 
 1. Mayken is fictional; no historical daughter has been identified.
 2. Adriaen's apothecary identity is strongly supported but remains reconstruction where historical precision matters.
@@ -6751,10 +7680,13 @@ Avoid modernizing her to *Maaike* in the sixteenth-century narrative voice.
 5. Claes and Mayken know one another before the 1554 fire, but are **not** childhood sweethearts.
 6. Ordinary Dodoens use is allowed; the retired special Dodoens carrier is not.
 7. Mayken shares the 1554 fire horizon with Claes but not his exact losses.
-8. She contributes to Claes' recovery; she does not perform or complete it for him.
-9. She may assist the direct chemical reveal, but she is not a cryptographic key-holder or decoder.
-10. Material verification is her strength and may also become her limitation; do not write her as an infallible corrective to Claes.
-11. Load `storybible/CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md` for stable character behaviour and shadow.
+8. She may later carry partial Goese memory about Cornelis' aftermath, but she is not an omniscient exposition source and cannot prove the fire's ignition cause.
+9. The later Cornelis rereading is partial and preferably posthumous; do not convert it into a neat acquittal or impossible direct reconciliation.
+10. Tanneken and Mayken share respect for material condition but remain distinct: lived continuity versus specialized verification.
+11. She contributes to Claes' recovery; she does not perform or complete it for him.
+12. She may assist the direct chemical reveal, but she is not a cryptographic key-holder or decoder.
+13. Material verification is her strength and may also become her limitation; do not write her as an infallible corrective to Claes.
+14. Load `storybible/CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md` for stable character behaviour and shadow.
 ```
 
 ---
@@ -6863,7 +7795,7 @@ records:
 # SOURCE FILE: `narrative/mayken_relationship_projection.yaml`
 
 ```yaml
-schema_version: 1.1.0
+schema_version: 1.2.0
 kind: NarrativeRelationshipExtension
 records:
 - id: REL.CLAES.MAYKEN.CONJUNCTIO
@@ -6877,6 +7809,7 @@ records:
   - DEC.MAYKEN.INDEPENDENT_ARC.2026-08-16
   - DEC.CLAES_MAYKEN.CONJUNCTIO.2026-08-16
   - DEC.CLAES_MAYKEN.CHILDHOOD_ACQUAINTANCE.2026-08-19
+  - DEC.MAYKEN.GOES_COUNTER_MEMORY.2026-08-21
   identity_note: "ENT.PERSON.BELOVED is Mayken Adriaensdr. Lampert; the legacy entity ID does not indicate an open identity."
   arcs:
   - ARC.CLAES.SINNE_RECOVERY
@@ -6894,13 +7827,19 @@ records:
     - "Mayken's own curiosity and family work-world must exist independently of Claes."
   - phase: "separate post-fire lives"
     story_time: {earliest: '1554-05-18', latest_exclusive: '1566-08-01', precision: approximate}
+    claes: "leaves Goes through the Reimerswaal schooling route and carries fragmentary knowledge of the catastrophe and his father's choices"
+    mayken: "remains connected to a different Goese household/rebuilding memory after Lampert property loss"
     relation: "shared city catastrophe but divergent losses and development; no requirement for continuous contact"
-    guardrail: "Do not turn Mayken into Claes' trauma duplicate or assume an uninterrupted childhood bond."
-  - phase: "separate expertise"
+    latent_counter_memory: "Mayken's own/family/local memory can later preserve things about Cornelis' rebuilding and the Nissepat rumour that Claes did not witness"
+    guardrails:
+    - "Do not turn Mayken into Claes' trauma duplicate or assume an uninterrupted childhood bond."
+    - "Mayken's later knowledge must have a credible observation/family/local-memory chain."
+  - phase: "separate expertise and renewed recognition"
     story_time: {earliest: '1566-08-01', latest_exclusive: '1570-01-01', precision: bounded}
-    claes: "pattern, memory, hidden order, inherited secrecy"
-    mayken: "materia medica, condition, measurement, repeatability, direct contradiction"
+    claes: "pattern, memory, hidden order, inherited secrecy and unresolved post-fire father reading"
+    mayken: "materia medica, condition, measurement, repeatability, direct contradiction and a different Goese memory"
     relation: "renewed proximity/recognition without fusion; each can know something the other cannot"
+    posthumous_father_function: "after Cornelis' 1569 death, Mayken may supply partial evidence that changes Claes' reading of why he was sent away without solving the fire or absolving Cornelis"
   - phase: "collaborative risk"
     story_time: {earliest: '1570-01-01', latest_exclusive: '1571-01-01', precision: year}
     relation: "controlled material reveal becomes a test of trust because error, testimony and consequence are shared without becoming identical responsibilities"
@@ -6924,6 +7863,7 @@ records:
   - "Does the scene preserve two centers of agency?"
   - "If alchemical language is removed from the author's notes, does the human relationship still work causally?"
   - "If childhood memory is invoked, does it create recognition rather than destiny?"
+  - "If Mayken supplies post-fire information, can the text show how she plausibly knows it rather than using her as an exposition oracle?"
 
   guardrails:
   - "Conjunctio is an author-side structural function, not mandatory in-world terminology."
@@ -6931,6 +7871,7 @@ records:
   - "Claes is not entitled to Mayken because he suffers or completes the Work."
   - "Difference must remain visible after union; sameness would destroy the function of the relationship."
   - "Childhood acquaintance is canon; childhood romance is not."
+  - "Goese counter-memory can revise Claes' interpretation of Cornelis but cannot prove the exact 1554 ignition cause or private motive."
 ```
 
 ---
@@ -8135,6 +9076,135 @@ decisions:
 
 ---
 
+# SOURCE FILE: `canon/DECISIONS_GOES_FIRE_1554_2026-08-21.yaml`
+
+```yaml
+schema_version: 1.0.0
+kind: CanonDecisionRegistryExtension
+decisions:
+- id: DEC.CORNELIS.ECONOMIC_INTERMEDIARY.2026-08-21
+  type: CharacterizationDecision
+  status: CANON
+  decision: >-
+    Cornelis' economic identity is that of an intermediary, organizer and steward of circulation rather than a primary maker. Across beer, salt and later book/text logistics he works through property interests, credit, storage, quality judgement, routes, delegation, trusted people and the movement of goods or information. His strength is making systems and exchanges function without doing every operation himself; the corresponding shadow is that he can carry economic and moral responsibility for processes he does not fully control operationally.
+  affects:
+  - ENT.PERSON.CORNELIS
+  - entities/CHARACTERIZATION_2026-08-19.yaml
+  - narrative/character_web_archetypes.yaml
+  - storybible/CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md
+  - storybible/FAMILY_CLAES_1542_1554.md
+  guardrails:
+  - Cornelis remains a biersteker/beer trader, not automatically master brewer or owner of the documented Nissepad brewery.
+  - Intermediary does not mean passive: judgement, negotiation, checking, financing, correction and route knowledge are active competences.
+  - Do not reduce every domain to one smuggling mechanism or one allegory.
+
+- id: DEC.CORNELIS.SALTKEET_INTEREST.1554.2026-08-21
+  type: StoryWorldDecision
+  status: CANON
+  decision: >-
+    In novel canon Cornelis has a financial/economic ownership interest in one Goese salt-refining keet within the historically established salt-work world associated with the 1554 fire. He is not the daily zoutzieder and does not personally conduct every firing or pan operation; an experienced operational lead and workers run the keet's daily process.
+  affects:
+  - ENT.PERSON.CORNELIS
+  - WORLD.GOES.FIRE_1554.REFINEMENT
+  - storybible/GOES_FIRE_1554_CAUSAL_ARCHITECTURE.md
+  - claims/STORY_CLAIMS_FAMILY_1554.yaml
+  guardrails:
+  - Exact legal ownership form, parcel/keet identity and operating hierarchy remain open unless separately sourced or decided.
+  - Do not convert Cornelis into a professional zoutzieder.
+  - The fictional interest must remain distinct from historical proof of any Nissepat ownership of the actual ignition keet.
+
+- id: DEC.GOES.FIRE_1554.CAUSAL_AMBIGUITY.2026-08-21
+  type: PlotCausalityDecision
+  status: CANON
+  decision: >-
+    The novel deliberately separates historical origin, technical ignition, operational responsibility, Cornelis' economic involvement, public attribution and moral guilt. The fire begins historically in the Goese salt-work origin zone; the implicated keet is fictionally tied economically to Cornelis. The exact technical cause and direct operational fault remain unresolved. In the social aftermath the simpler formulation that it was 'Nissepats keet' can attach to Cornelis and become consequential even without proof that he personally caused the fire.
+  affects:
+  - WORLD.GOES.FIRE_1554.REFINEMENT
+  - storybible/GOES_FIRE_1554_CAUSAL_ARCHITECTURE.md
+  - claims/STORY_CLAIMS_FAMILY_1554.yaml
+  guardrails:
+  - Never collapse economic ownership into proof of technical causation.
+  - Do not solve the catastrophe as providential punishment for Cornelis.
+  - Legal liability and moral guilt remain open unless the author separately fixes them.
+
+- id: DEC.TANNEKEN.BODY_CONTINUITY.2026-08-21
+  type: CharacterizationDecision
+  status: CANON
+  decision: >-
+    Tanneken's established embodied household intelligence is widened into Body / Continuity. Through repeated practical work she knows not only heat, smell, texture, food, cloth, illness and timing but also the actual condition of the household economy: stock, quality, use, shortage, people, reliability and material consequences. Cornelis is stronger at circulation, routes, credit and delegation; Tanneken is stronger at knowing the state in which people and things actually are. Their household and economic functioning is therefore complementary.
+  affects:
+  - ENT.PERSON.CLAES_MOTHER
+  - entities/CHARACTERIZATION_2026-08-19.yaml
+  - narrative/character_web_archetypes.yaml
+  - storybible/CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md
+  - storybible/FAMILY_CLAES_1542_1554.md
+  guardrails:
+  - Tanneken is not automatically a zoutzieder, keetmeesteres, bookkeeper, apothecary or formal business manager.
+  - Her competence remains learned, fallible and rooted in repeated material observation.
+  - Do not retrospectively make her infallible because she dies young.
+
+- id: DEC.CLAES.FIRE_EPISTEMIC_WOUND.1554.2026-08-21
+  type: CharacterArcDecision
+  status: CANON
+  decision: >-
+    The 18 May 1554 fire becomes a formative failure of Claes' normal attentional method. The catastrophe changes faster than he can observe, compare and understand it, and he receives its cause and losses only in fragments. This helps form the irrational possibility that earlier or better seeing might have prevented loss. The result is not factual guilt but a durable tendency to confuse attention and reconstruction with potential control.
+  affects:
+  - ENT.PERSON.CLAES
+  - WORLD.GOES.FIRE_1554.REFINEMENT
+  - ARC.CLAES.CORNELIS
+  - storybible/CLAES_CORNELIS_RELATION_1547_1569.md
+  guardrails:
+  - Claes is not objectively responsible for Tanneken, Jan or the unborn child's deaths.
+  - The fire does not make Claes incapable of immediate action; De Kraan remains evidence that he can act reflexively when no deliberative interval exists.
+  - Do not explain this wound as a mature psychological theory in child POV.
+
+- id: DEC.CLAES.CORNELIS.POSTFIRE_PROTECTION_RUMOR.2026-08-21
+  type: RelationshipDecision
+  status: CANON
+  decision: >-
+    After the fire Cornelis remains in Goes to recover shelter, livelihood, credit and business while preserving Claes' education. The post-fire decision to send Claes to Reimerswaal is also partly protective: it removes him from the immediate Goese environment in which rumor increasingly links Cornelis' keet and name to the catastrophe. Cornelis expresses care through provision and removal from danger; Claes experiences the same separation as another rejection after losing the rest of the household.
+  affects:
+  - REL.CLAES.CORNELIS
+  - storybible/CLAES_CORNELIS_RELATION_1547_1569.md
+  - claims/STORY_CLAIMS_FAMILY_1554.yaml
+  guardrails:
+  - Do not make every Goese trader boycott Cornelis instantly; reputational and credit damage should erode rather than collapse magically in one moment.
+  - Zierikzee -> Reimerswaal remains a financial/practical post-fire consequence; exact comparative schooling cost is still a research question.
+  - Cornelis' Familist affiliation predates the fire; economic damage does not cause his conversion.
+
+- id: DEC.MAYKEN.GOES_COUNTER_MEMORY.2026-08-21
+  type: RelationshipAndMemoryDecision
+  status: CANON
+  decision: >-
+    Because Mayken shares pre-fire Goes with Claes but remains connected to a different local household and rebuilding memory after he leaves, she can later become one partial carrier of what Claes did not witness about Cornelis' post-fire life. After their later reunion she may correct or complicate Claes' interpretation of his father's choices through what she herself, her family or the local Goese memory retained. This later knowledge contributes to a posthumous rereading of Cornelis rather than a complete solution of the fire.
+  affects:
+  - ENT.PERSON.BELOVED
+  - REL.CLAES.MAYKEN.CONJUNCTIO
+  - storybible/MAYKEN_LAMPERT.md
+  - narrative/mayken_relationship_projection.yaml
+  guardrails:
+  - Mayken is not an exposition oracle and does not know every hidden motive or transaction.
+  - She cannot prove the exact ignition cause merely because she remained connected to Goes.
+  - Prefer partial testimony and changed interpretation over a neat retrospective acquittal of Cornelis.
+
+- id: DEC.NISSEPAT.VOETBOOG_TEKEN.FIRE_SURVIVAL.2026-08-21
+  type: ObjectAndMotifDecision
+  status: CANON
+  decision: >-
+    Before the 1554 fire the Nissepat family world contains a small metal carrier of the voetboog family sign, linked fictionally to family/Sint-Joris material culture and known to Claes. It is present in the family/grandfather-household world and survives the fire damaged rather than pristine: blackened, discoloured and/or slightly deformed but still recognizable. The exact historical form and institutional meaning of the object remain open.
+  affects:
+  - OBJ.NISSEPAT.VOETBOOG_TEKEN
+  - MOTIF.NISSEPAT_VOETBOOG
+  - storybible/NISSEPAT_ARMS_SINT_JORIS_CORNELIS.md
+  - claims/STORY_CLAIMS_NISSEPAT_ARMS_2026-08-18.yaml
+  guardrails:
+  - Do not call it a schutterskoning prize, ring, badge, chain or official guild insignia until the form is separately researched/decided.
+  - The object must not survive miraculously untouched.
+  - Use it sparingly; its primary early function is material continuity and trace, not explained symbolism.
+```
+
+---
+
 # SOURCE FILE: `canon/DECISIONS_HOUSE_OF_LOVE_NETWORK_2026-08-16.yaml`
 
 ```yaml
@@ -8609,8 +9679,8 @@ decisions:
 ```markdown
 # Character web — archetypische functies en levende karakterisering
 
-**Status:** CANONICAL CHARACTERIZATION MODULE — approved 19 August 2026  
-**Decisions:** `DEC.HISTORICAL_GAPS.FICTIONAL_CHARACTERIZATION.2026-08-19`, `DEC.CHARACTER_WEB.ARCHETYPAL_LENS.2026-08-19`, `DEC.CHARACTER_WEB.CORE_CAST.2026-08-19`  
+**Status:** CANONICAL CHARACTERIZATION MODULE — approved 19 August 2026; refined 21 August 2026  
+**Decisions:** `DEC.HISTORICAL_GAPS.FICTIONAL_CHARACTERIZATION.2026-08-19`, `DEC.CHARACTER_WEB.ARCHETYPAL_LENS.2026-08-19`, `DEC.CHARACTER_WEB.CORE_CAST.2026-08-19`, `DEC.CORNELIS.ECONOMIC_INTERMEDIARY.2026-08-21`, `DEC.TANNEKEN.BODY_CONTINUITY.2026-08-21`  
 **Machine projections:** `entities/CHARACTERIZATION_2026-08-19.yaml`, `narrative/character_web_archetypes.yaml`
 
 ## 1. Governing principle: the archive sets boundaries; the novel fills the living space
@@ -8644,8 +9714,8 @@ A useful archetype always needs individual contradiction. The question is theref
 The compact authorial constellation is:
 
 - **Claes — Integration / the Seeker-Witness**
-- **Cornelis — Law / the Father-Gatekeeper**
-- **Tanneken — Body / embodied household wisdom**
+- **Cornelis — Law / Circulation / the Father-Steward and Gatekeeper**
+- **Tanneken — Body / Continuity / embodied household and operational knowledge**
 - **Jan — Act / brother-double and action principle**
 - **Puttus — Word / hermeneutic teacher**
 - **Mayken — Matter / independent material counterpart**
@@ -8682,7 +9752,7 @@ His gift becomes dangerous when attention turns into control:
 - if I understand every path, perhaps I need not choose too soon;
 - if I keep watching, perhaps I have fulfilled my responsibility.
 
-Delft makes the shadow explicit: witnessing can become compulsion. He can want not to look and still look.
+The 1554 fire becomes the first catastrophic pressure on this method: events and information outrun his normal ability to compare and understand, helping form the irrational possibility that seeing earlier or better might have prevented loss. Delft later makes the shadow explicit as compulsive witnessing.
 
 ### Essential contradiction
 Claes is **not inherently passive**. When Jan slips at the crane and no interval exists for analysis, Claes acts before thought. The weakness therefore appears especially when time exists to continue observing.
@@ -8692,34 +9762,56 @@ Do not make him a modern analyst. Let the abstraction arrive after material perc
 
 ---
 
-# 4. Cornelis — Father, Steward, Gatekeeper, Artisan Mentor
+# 4. Cornelis — Father, Steward, Gatekeeper, Intermediary
 
 ### Core
-Cornelis' governing value is **responsible stewardship**. He believes love is something one does: provide, train, arrange, repair, finance, warn, carry, protect.
+Cornelis' governing value is **responsible stewardship**. He believes love is something one does: provide, train, arrange, finance, warn, carry, protect.
+
+His economic method is now equally stable: **he is primarily a steward of circulation rather than a primary maker**. He knows how property, credit, routes, storage, people, vessels and obligations connect. Beer, salt and later textual circulation are different domains in which the same talent appears.
 
 ### Strength
 - practical foresight;
-- reliability under work pressure;
 - judgement of people, goods, routes and obligations;
+- credit and storage sense;
+- delegation of specialist work;
+- connecting producers, carriers, buyers and trusted people;
 - teaching through graduated responsibility;
 - willingness to bear material cost for another person's future.
 
+His active competence must not be mistaken for hands-off passivity. He checks, judges, negotiates, corrects and arranges. But he does not need to perform every specialist process personally.
+
+### Economic grammar
+
+- **beer:** Cornelis remains biersteker/trader; do not make him automatically the master brewer or owner of the documented Nissepad brewery;
+- **salt:** in fiction canon he holds an economic/ownership interest in a Goese salt-refining keet while daily technical work belongs to an operational lead and workers;
+- **books/texts:** he later routes material through trust and trade networks without needing to author or print it himself.
+
 ### Shadow
-The same method can make intimacy difficult:
+The same strengths create two different forms of distance.
+
+Relationally:
 
 - protection becomes withholding;
 - secrecy becomes exclusion;
 - responsibility becomes the language in which every affection is translated;
 - trust feels to Claes like a harder test rather than recognition.
 
-Cornelis does not fail to love. Father and son fail, repeatedly, to read love in the same grammar.
+Economically:
+
+- delegation creates dependence;
+- ownership and credit create responsibility without complete operational control;
+- a system can fail at a point Cornelis did not personally touch;
+- public blame can attach to his name because the property or enterprise is his even when the direct act was another person's.
+
+Cornelis does not fail to love, and he need not be personally negligent for the 1554 tragedy to strike at the deepest vulnerability of his method.
 
 ### Essential contradictions
 - **home:** terse, functional, sparse praise;
 - **rederijker room:** socially alive, humorous, performative, able to laugh broadly and respond to words for their own sake;
 - **public religion:** outwardly Catholic and civically embedded;
 - **inner commitment:** Familist/Huis der Liefde after ca.1552–1553;
-- **protector:** tries to keep danger away from Claes while simultaneously teaching him to carry dangerous responsibilities.
+- **protector:** tries to keep danger away from Claes while simultaneously teaching him to carry dangerous responsibilities;
+- **network man:** gains reach by trusting other people's competence and therefore cannot wholly control the systems attached to his name.
 
 ### Voice and habits — fiction canon
 - short, material sentences;
@@ -8729,24 +9821,38 @@ Cornelis does not fail to love. Father and son fail, repeatedly, to read love in
 - anger need not become shouting: terse judgement, practical consequence or closed access can carry more weight.
 
 ### Guardrail
-Do not make Cornelis a factory for maxims. His practical speech should arise from the thing being handled now. His livelier rederijker self is necessary because Claes must discover that his father is a person whose full life does not exist only in relation to his son.
+Do not make Cornelis a factory for maxims. His practical speech should arise from the thing being handled now. His livelier rederijker self is necessary because Claes must discover that his father is a person whose full life does not exist only in relation to his son. Do not turn his salt/beer competence into universal craft mastery: the distinction between **economic responsibility** and **operational control** is now central.
 
 ---
 
-# 5. Tanneken — Mother, Body, Keeper of Household Continuity
+# 5. Tanneken — Mother, Body / Continuity, Keeper of Lived Condition
 
 ### Core
 Tanneken's intelligence is **trained sensation in time**. She knows because she has touched, smelled, prepared, stored, watched and repeated.
 
+Her role now extends from embodied household knowledge into **operational continuity**. She knows the state in which a working household and its connected economy actually exist: what is present, missing, damp, spoiled, late, overused, reliable or failing.
+
+The durable complement is:
+
+> **Cornelis knows circulation; Tanneken knows condition.**
+
 ### Strength
 - material and bodily judgement;
 - household timing;
+- stock, use and shortage awareness;
 - practical memory;
+- awareness of people and work rhythms;
+- recognising the bodily/material consequence of an abstract trade decision;
 - care without ceremony;
 - direct, proportionate praise;
 - warmth and teasing humour.
 
 She gives Claes an early experience of knowledge that does not begin in abstraction. Her “goed gevonden” is important precisely because it is not made into a bargain.
+
+### Economic/operational boundary
+Tanneken may know workers from Cornelis' wider business world, recognise condition problems, notice a discrepancy before it appears urgent in an account, or give practical judgement Cornelis trusts. This does **not** automatically make her a zoutzieder, keetmeesteres, professional bookkeeper, apothecary or formal business manager.
+
+Her knowledge is lived rather than titled.
 
 ### Shadow
 Tanneken often turns anxiety into action. That is useful, but it can also hide her from others:
@@ -8756,7 +9862,7 @@ Tanneken often turns anxiety into action. That is useful, but it can also hide h
 The household may therefore experience her as calm at moments when she is actually containing fatigue, uncertainty or fear through work.
 
 ### Essential contradiction
-She is patient with fermentation, weather, cloth and bodies because processes take the time they take; she need not be equally patient with avoidable fuss, mess or self-dramatization.
+She is patient with fermentation, weather, cloth and bodies because processes take the time they take; she need not be equally patient with avoidable fuss, mess or self-dramatization. Her competence is real without being infallible.
 
 ### Voice and habits — fiction canon
 - shows before she explains;
@@ -8765,8 +9871,16 @@ She is patient with fermentation, weather, cloth and bodies because processes ta
 - can tease affectionately;
 - tenderness is physical and ordinary rather than staged as a lesson.
 
+### Relation to Mayken
+Tanneken's domain and Mayken's later expertise are related but not identical:
+
+- **Tanneken:** lived operational/material condition through household continuity;
+- **Mayken:** specialized material identification, preparation, testing and contradiction.
+
+Mayken is therefore not “Tanneken 2”. Claes later encounters a more specialized mode of material fidelity whose basic trustworthiness his childhood has already taught him to recognise.
+
 ### Guardrail
-Do not turn her into a mystical earth-mother. Her knowledge is laboriously learned, fallible and bodily. Give her irritation, fatigue and personal preference as well as care.
+Do not turn Tanneken into a mystical earth-mother or a retrospective all-purpose expert. Her knowledge is laboriously learned, fallible and bodily. Give her irritation, fatigue and personal preference as well as care.
 
 ---
 
@@ -8977,9 +10091,14 @@ The web should generate conflict through **different valid methods**, not simple
 Neither is the complete answer. Jan can act too early; Claes can act too late.
 
 ### Cornelis ↔ Tanneken
-`rule/responsibility <-> body/timing/care`
+`circulation/stewardship <-> condition/continuity`
 
-The intact household gives Claes both. The 1554 fire destroys not only people but the equilibrium between these knowledge forms.
+Cornelis knows routes, credit, delegation and movement; Tanneken knows the actual state of people, stock and matter. The intact household gives Claes both. The 1554 fire destroys not only people but the functioning complement between these knowledge forms.
+
+### Tanneken ↔ Mayken
+`lived operational condition <-> specialized material verification`
+
+Their methods resonate without making Mayken a replacement mother. Claes can later trust material contradiction partly because childhood taught him that trained sensation can be real knowledge.
 
 ### Puttus ↔ Dee
 `interpretive restraint <-> transformative speculation`
@@ -9015,6 +10134,8 @@ Claes grows from a son who carries what he is told not to know into a man who mu
 8. **A character may surprise the web.** If a well-earned scene reveals a new contradiction, update the characterization rather than forcing prose back into the old shorthand.
 9. **Mayken remains two-centered with Claes.** No “missing half” logic.
 10. **Dee may be wrong; Puttus may wound; Tanneken may tire; Cornelis may misjudge; Jan may fear; Silvius may instrumentalize; Las Casas may lose control.** Their value lies in being partial human beings, not perfect embodiments.
+11. **Tanneken's continuity role is lived, not automatically titled.** Do not infer an unsupported salt-work office from her competence.
+12. **Cornelis' intermediary role distinguishes economic responsibility from operational control.** Do not flatten that distinction in beer, salt or text scenes.
 ```
 
 ---
@@ -9022,7 +10143,7 @@ Claes grows from a son who carries what he is told not to know into a man who mu
 # SOURCE FILE: `entities/CHARACTERIZATION_2026-08-19.yaml`
 
 ```yaml
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: CharacterizationRegistry
 purpose: >-
   Stable novel characterization for recurring people. Historical biography and evidence remain governed by their source/entity records; fields marked FICTION_CANON deliberately fill documentary space for continuity.
@@ -9043,17 +10164,30 @@ characters:
   - Let comparison grow from material detail rather than modern analysis.
   - Do not let insight make him omniscient.
   trajectory: perceive -> distinguish -> choose -> carry -> release
+  fire_1554_refinement:
+    decision_id: DEC.CLAES.FIRE_EPISTEMIC_WOUND.1554.2026-08-21
+    pressure: >-
+      The fire outruns Claes' normal see-compare-understand sequence and reaches him through fragments, helping form the false possibility that seeing earlier or better might have prevented loss.
+    guardrail: subjective survivor reasoning never becomes factual responsibility for the household deaths
 
 - entity_ref: ENT.PERSON.CORNELIS
   characterization_status: CANON
-  archetypal_lenses: [father, steward, gatekeeper, artisan_mentor]
+  archetypal_lenses: [father, steward, gatekeeper, intermediary, network_mentor]
   governing_value: responsible_stewardship
-  strengths: [foresight, provision, practical_judgement, reliability, teaching_by_task, protection]
-  shadow: [emotional_withholding, over_duty, secrecy_as_exclusion, protection_becoming_gatekeeping]
+  strengths: [foresight, provision, practical_judgement, network_judgement, delegation, credit_and_route_sense, circulation, teaching_by_task, protection]
+  shadow: [emotional_withholding, over_duty, secrecy_as_exclusion, protection_becoming_gatekeeping, responsibility_without_operational_control, distance_through_delegation]
   contradictions:
   - domestic reserve versus social and rhetorical vitality among trusted rederijkers
   - outward Catholic conformity versus inward Familist commitment
   - love expressed through responsibility can be received as another test
+  - economic reach through other people's specialist work versus incomplete control of what those systems actually do
+  economic_identity:
+    decision_id: DEC.CORNELIS.ECONOMIC_INTERMEDIARY.2026-08-21
+    core: intermediary_and_steward_of_circulation
+    modes: [property_interest, credit, storage, quality_judgement, routes, delegation, trusted_people, goods_and_text_transmission]
+    beer: biersteker_and_trader_not_automatic_master_brewer
+    salt: economic_interest_without_daily_zoutzieder_role
+    texts: routes_and_transmits_but_does_not_need_to_author_or_print
   habitual_expression:
     speech: short, material, dry, rarely self-explanatory
     humour: dry and often delayed by half a beat
@@ -9064,17 +10198,26 @@ characters:
   - Do not make every utterance a maxim.
   - Let the rederijker room reveal playfulness and performative range absent at home.
   - His secrecy must arise from real risk and belief as well as temperament.
+  - Do not make intermediary mean passive; his work is active judgement, negotiation, correction and organization.
+  - Do not turn salt-keet ownership or beer competence into proof that he personally performs the specialist production process.
 
 - entity_ref: ENT.PERSON.CLAES_MOTHER
   label: Tanneken Jansdochter
   characterization_status: CANON
-  archetypal_lenses: [mother, embodied_wise_woman, keeper_of_household_continuity]
+  archetypal_lenses: [mother, embodied_wise_woman, keeper_of_household_continuity, operational_continuity]
+  shorthand_refinement: Body / Continuity
   governing_value: sustaining_life_through_attention
-  strengths: [trained_sensation, timing, care, practical_memory, direct_encouragement, humour]
+  strengths: [trained_sensation, timing, condition_judgement, care, practical_memory, stock_and_use_awareness, people_awareness, direct_encouragement, humour]
   shadow: [fear_converted_into_work, hidden_exhaustion, competence_masking_vulnerability]
   contradictions:
   - patient with processes but brisk with avoidable fuss
   - capable of tenderness without making tenderness ceremonial
+  - knows practical economic consequences without needing formal office or abstract commercial language
+  operational_knowledge:
+    decision_id: DEC.TANNEKEN.BODY_CONTINUITY.2026-08-21
+    scope: [household_stock, material_condition, quality, use_and_shortage, work_rhythm, reliability, bodily_cost, daily_consequence]
+    complement_to_cornelis: Cornelis knows circulation; Tanneken knows condition.
+    formal_role: NOT_FIXED
   habitual_expression:
     teaching: show, let_try, correct_by_material_result
     praise: direct and proportionate
@@ -9084,6 +10227,8 @@ characters:
   - Never mystical or all-knowing.
   - Give her fatigue, irritation, desire and limits as well as competence.
   - Sensory knowledge is learned through repetition, not supernatural intuition.
+  - Do not automatically make her zoutzieder, keetmeesteres, bookkeeper, apothecary or formal business manager.
+  - She may know workers and operational realities without holding an unsupported professional title.
 
 - entity_ref: ENT.PERSON.CLAES_BROTHER
   label: Jan Corneliszn. Nissepat
@@ -9213,13 +10358,15 @@ characters:
 # SOURCE FILE: `narrative/character_web_archetypes.yaml`
 
 ```yaml
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: CharacterWeb
 id: ARC.CLAES.CHARACTER_WEB.ARCHETYPAL
 status: CANON_AUTHORIAL_ARCHITECTURE
 decision_ids:
 - DEC.CHARACTER_WEB.ARCHETYPAL_LENS.2026-08-19
 - DEC.CHARACTER_WEB.CORE_CAST.2026-08-19
+- DEC.CORNELIS.ECONOMIC_INTERMEDIARY.2026-08-21
+- DEC.TANNEKEN.BODY_CONTINUITY.2026-08-21
 purpose: >-
   Author-side web for differentiating major characters by value, method and shadow. Archetypes are lenses, not in-world identities and not permission for thematic exposition.
 central_problem: >-
@@ -9232,22 +10379,26 @@ characters:
   method: see -> compare -> connect -> understand
   shadow_method: see -> compare -> keep_looking -> delay
   mature_method: perceive -> distinguish -> choose -> carry -> release
+  fire_1554_pressure: catastrophe outruns the normal method and helps fuse observation with the false hope of preventability
 
 - entity: ENT.PERSON.CORNELIS
-  shorthand: Law
-  lenses: [father, steward, gatekeeper, artisan_mentor]
-  offers_claes: [responsibility, discipline, routes, practical_action]
-  method: entrust -> test -> correct -> enlarge_responsibility
-  shadow_method: protect -> withhold -> exclude
-  pressure_on_claes: love is present but encoded in a form Claes does not automatically read as recognition
+  shorthand: Law / Circulation
+  lenses: [father, steward, gatekeeper, intermediary, network_mentor]
+  offers_claes: [responsibility, discipline, routes, practical_action, transmission]
+  method: judge -> connect -> entrust -> check -> route
+  pedagogical_method: entrust -> test -> correct -> enlarge_responsibility
+  shadow_method: delegate -> depend -> remain_responsible_without_full_control
+  relational_shadow: protect -> withhold -> exclude
+  pressure_on_claes: love is present but encoded in provision, entrusted work and protection that Claes does not automatically read as recognition
 
 - entity: ENT.PERSON.CLAES_MOTHER
-  shorthand: Body
-  lenses: [mother, embodied_wise_woman]
-  offers_claes: [trained_sensation, care, timing, permission_to_doubt]
-  method: touch -> smell -> compare -> wait -> know_enough
+  shorthand: Body / Continuity
+  lenses: [mother, embodied_wise_woman, keeper_of_household_continuity, operational_continuity]
+  offers_claes: [trained_sensation, care, timing, condition_judgement, permission_to_doubt]
+  method: touch -> smell -> compare -> track_condition -> know_enough
+  economic_method: notice_stock -> notice_people -> notice_change -> preserve_continuity
   shadow_method: fear -> work -> hide_own_need
-  pressure_on_claes: not everything important becomes certain through analysis
+  pressure_on_claes: abstract routes and promises become real only in the condition of bodies, materials, time and daily work
 
 - entity: ENT.PERSON.CLAES_BROTHER
   shorthand: Act
@@ -9302,8 +10453,8 @@ web_relations:
   axis: deliberation <-> immediacy
   dramatic_use: brothers expose that neither observation nor action is sufficient alone
 - pair: [ENT.PERSON.CORNELIS, ENT.PERSON.CLAES_MOTHER]
-  axis: responsibility_and_rule <-> embodied_care_and_timing
-  dramatic_use: Claes' intact childhood contains two complementary modes of safety that the fire destroys together
+  axis: circulation_and_stewardship <-> condition_and_continuity
+  dramatic_use: Cornelis knows routes, credit, delegation and movement while Tanneken knows the actual state of people, stock and material; the household works through both and the fire destroys their complementarity
 - pair: [ENT.PERSON.NICOLAES_PUTTUS, ENT.PERSON.JOHN_DEE]
   axis: disciplined_interpretation <-> transformative_speculation
   dramatic_use: Puttus teaches that meaning must be supported; Dee teaches that the apparently ordinary may hide another state
@@ -9316,6 +10467,9 @@ web_relations:
 - pair: [ENT.PERSON.CORNELIS, ENT.PERSON.WILLEM_SILVIUS]
   axis: private_carriage_and_trust <-> public_reproduction_and_distribution
   dramatic_use: Claes moves from carrying what he may not know toward deciding what knowledge must be released
+- pair: [ENT.PERSON.CLAES_MOTHER, ENT.PERSON.BELOVED]
+  axis: lived_operational_condition <-> specialized_material_verification
+  dramatic_use: Mayken is not Tanneken repeated; Claes later recognizes a disciplined respect for material condition that childhood first made trustworthy without collapsing the women into one function
 
 hard_guardrails:
 - Archetypal shorthand must never appear as explanatory labels in literary prose.
@@ -9323,6 +10477,8 @@ hard_guardrails:
 - Use the web to differentiate choices and values, not to manufacture one teaching scene per function.
 - Supporting characters need not receive archetypal assignments unless repeated story pressure justifies them.
 - The web supplements, never replaces, entity biography, historical evidence, arcs, relationships and scene objectives.
+- Tanneken's operational continuity does not imply an unsupported formal salt-work or guild office.
+- Cornelis' circulation competence does not make him the hands-on producer in every enterprise he touches.
 ```
 
 ---
@@ -9460,9 +10616,10 @@ story_claims:
 ```markdown
 # Claes Nissepat — familie 1542–1554
 
-**Status:** CANON — approved 14 August 2026  
-**Decision:** `DEC.CLAES.EXTENDED_FAMILY.2026-08-14`  
-**Story Claim:** `STC.CLAES.EXTENDED_FAMILY.001`
+**Status:** CANON — approved 14 August 2026; refined 21 August 2026  
+**Decisions:** `DEC.CLAES.EXTENDED_FAMILY.2026-08-14`, `DEC.CORNELIS.ECONOMIC_INTERMEDIARY.2026-08-21`, `DEC.CORNELIS.SALTKEET_INTEREST.1554.2026-08-21`, `DEC.TANNEKEN.BODY_CONTINUITY.2026-08-21`, `DEC.CLAES.CORNELIS.POSTFIRE_PROTECTION_RUMOR.2026-08-21`  
+**Story Claim:** `STC.CLAES.EXTENDED_FAMILY.001`  
+**Fire authority:** `storybible/GOES_FIRE_1554_CAUSAL_ARCHITECTURE.md`
 
 This module is the authoritative family dossier for Claes' childhood household and grandparents. It distinguishes archival persons and property evidence from deliberate novel genealogy.
 
@@ -9492,11 +10649,23 @@ The tree is novel canon. Only source-backed historical persons/acts are archival
 
 ## 2. Cornelis Claesz. Nissepat
 
-Cornelis is the fictional son of the historical Claes Jacobsz. Nissepat and father of Claes and Jan. He is a Goese poorter, beer trader/biersteker and organizer of a family business rather than necessarily a master brewer himself. He links property, credit, transport, storage, barrels, harbour trade, books and networks.
+Cornelis is the fictional son of the historical Claes Jacobsz. Nissepat and father of Claes and Jan. He is a Goese poorter, beer trader/biersteker and organizer of a family business rather than necessarily a master brewer himself.
+
+### Economic identity: intermediary rather than maker
+
+Cornelis' work is now governed by one stable fictional characterization: he is primarily an **intermediary, organizer and steward of circulation**. He links property, credit, transport, storage, barrels, harbour trade, trusted people, books and networks. His competence is active — judging goods and people, arranging credit, checking condition, timing routes, delegating specialist work and moving things between producers, carriers and buyers — but he does not need to manufacture every product himself.
+
+That same grammar applies across domains:
+
+- **beer:** biersteker/trader, storage/cask/route competence; not automatically the master brewer or owner of the documented Nissepad brewery;
+- **salt:** in fiction canon he has a financial/economic interest in one Goese salt-refining keet but is not its daily zoutzieder;
+- **texts/books:** later clandestine circulation grows from route, trust and carrier knowledge; he need not author or print the material he moves.
+
+His strength therefore carries a corresponding vulnerability: he can remain economically and morally responsible for systems whose daily operation is delegated to others. This becomes crucial in 1554.
 
 His marriage to Tanneken connects the Nissepat property/trade line to a craft milieu modeled through a Goese cooper. That makes his practical knowledge of barrels and beer containers socially plausible without turning him into a cooper or brewer.
 
-After the fire of 1554 Cornelis remains in Goes to rebuild shelter, livelihood, credit and business and to keep financing Claes' education. This labour is an act of love but produces physical separation: Claes goes to Reimerswaal while Cornelis stays in Goes.
+After the fire of 1554 Cornelis remains in Goes to rebuild shelter, livelihood, credit and business and to keep financing Claes' education. He also tries to remove Claes from the immediate Goese world in which rumour increasingly attaches the Nissepat name to the fire. This labour and separation are acts of love/protection but produce the opposite emotional reading in Claes: he goes to Reimerswaal while Cornelis stays in Goes and can experience the same decision as abandonment.
 
 ## 3. Tanneken Jansdochter — ca. 1520–18 May 1554
 
@@ -9504,11 +10673,30 @@ Tanneken Jansdochter is fictional and canonical. She is born approximately 1519�
 
 Tanneken is not written as a passive domestic figure or as a mystical wise woman. Her intelligence is practical, bodily and sensory. She knows through repeated daily work: heat, smell, texture, fermentation, illness, drying cloth, food, wood, weather and household timing. She is one of the primary sources from which Claes learns that the body can know before an abstract explanation is available.
 
-This is an important foundation of the *sinne* line. Long before Dee gives Claes intellectual methods, Tanneken teaches him — mostly without formal teaching — that reliable perception is embodied.
+### Body / Continuity
+
+Her established embodied knowledge now extends into the **operational continuity of the household and its attached economy**. This does not give her an unsupported formal profession. It means that repeated daily attention gives her reliable knowledge of:
+
+- what is actually in stock rather than merely ordered or promised;
+- condition, quality, dampness, spoilage and shortage;
+- use and waste;
+- work rhythms and ordinary bodily cost;
+- who is reliable, absent, ill, exhausted or in need;
+- the practical consequences of commercial decisions once they reach people, fuel, food, time and material.
+
+The durable marital complement is:
+
+> **Cornelis knows circulation; Tanneken knows condition.**
+
+Tanneken may therefore know workers from Cornelis' wider business world, notice discrepancies and give practical judgement that Cornelis trusts without being a zoutzieder, keetmeesteres, professional bookkeeper, apothecary or formal business manager. Her knowledge remains local, learned, fallible and grounded in repetition.
+
+This is an important foundation of the *sinne* line. Long before Dee gives Claes intellectual methods, Tanneken teaches him — mostly without formal teaching — that reliable perception is embodied and that condition must be tested against the material world.
 
 In May 1554 she is about six months pregnant. Claes may already have felt the unborn child move beneath her skin. That gives him an early benign experience of something that is real without being visible. The pregnancy must not be used mechanically as the reason she dies in the fire.
 
 Tanneken dies in the Goese city fire of 18 May 1554 together with Jan and the unborn child. These deaths are novel canon, not historical victim identifications.
+
+Her death removes from Cornelis not only spouse and co-parent but also part of the practical memory and continuity that helped the household/economic system function. Post-fire business difficulty must not be attributed solely to this loss, but the absence matters.
 
 ## 4. Jan Corneliszn. Nissepat — ca. June 1544–18 May 1554
 
@@ -9529,11 +10717,11 @@ Jan's death therefore removes from Claes not only a loved brother but also a hum
 
 ## 5. The unborn child
 
-The third child remains unnamed and its sex remains unknown. On 18 May 1554 Tanneken is approximately six months pregnant.
+The third child remains unnamed and its sex remains unknown in current reader-facing canon. On 18 May 1554 Tanneken is approximately six months pregnant.
 
 Narratively the child represents a future that has already become real to the family but has not yet become visible. Claes can know the child through touch and movement. The death of mother and unborn child turns that early sensory knowledge into one of the deepest wounds in the *sinne* architecture.
 
-Do not assign a retrospective name or sex unless separately decided later.
+Do not assign a retrospective name or reader-facing sex unless separately decided later.
 
 # Paternal grandparents
 
@@ -9552,6 +10740,8 @@ His historical occupation is not known. Do not label him archival 'brouwer', 'ko
 In novel canon he makes the 1542 house available to Cornelis and Tanneken as their family home. He remains story-owner through the 1554 fire and loses the asset when the house becomes uninhabitable/destroyed. Despite this loss he can still help Cornelis preserve Claes' educational future through money, credit, contacts or practical support.
 
 His relation to Claes carries a different knowledge tradition from Tanneken's: ownership, provenance, accounts, obligation, debt, transfer and the question of what belongs to whom.
+
+The family/grandfather-household world also contains the fictional metal carrier of the Nissepat voetboog sign before the fire. Its exact form is governed separately and remains historically open; it survives the 1554 rupture damaged rather than pristine.
 
 ## 7. Lijsbet Pietersdochter — fictional paternal grandmother
 
@@ -9600,12 +10790,19 @@ The family should not be designed as a retrospective set of symbols, yet it orga
 - **Lijsbet:** inherited material memory and absence;
 - **Jan Jansen kuiper model:** craft, containment, vessel and material reliability;
 - **Mayken:** care, body, household memory and ritual;
-- **Cornelis:** trade, networks, writing, responsibility, secrecy and movement;
-- **Tanneken:** embodied sensory knowledge;
+- **Cornelis:** circulation, trade, networks, writing, responsibility, secrecy and movement;
+- **Tanneken:** embodied condition, operational continuity and sensory knowledge;
 - **Jan:** action, risk, rivalry and immediacy;
 - **Claes:** observation, comparison, pattern and eventually synthesis.
 
 Thus later concepts such as carrier/content, embodied *sinne*, material transformation and transmission do not arrive from nowhere when Claes meets learned adults. Dee and others give intellectual articulation to structures Claes has already lived inside.
+
+The parental inheritance is deliberately complementary rather than hierarchical:
+
+> **from Cornelis:** route, relation, carrier, transfer, network  
+> **from Tanneken:** condition, body, material, difference, continuity
+
+Claes' later strength lies partly in learning to hold both without confusing either with total control.
 
 # 11. The 18 May 1554 rupture
 
@@ -9615,23 +10812,37 @@ In novel canon the older-Nieuwstraat home becomes uninhabitable/is destroyed. Co
 
 Historically, burned houses are documented in the older Nieuwstraat/Armenhoek environment after the fire, while other houses in Nieuwstraat also survive. The specific destruction of the 1542 Nissepat house and the deaths of these family members are therefore plausible novel reconstruction, **not archival fact**.
 
-The result is not simply that Claes becomes motherless. A family of five is reduced to a father and son, and those two survivors are subsequently geographically separated because Cornelis must remain in Goes while Claes' education is salvaged through Reimerswaal.
+The fire's broader fictional causality is governed by `storybible/GOES_FIRE_1554_CAUSAL_ARCHITECTURE.md`. In summary:
 
-This gives 1554 its correct dramatic function: loss of people, home, sibling equilibrium, bodily safety and daily paternal presence in one historical catastrophe.
+- Cornelis has an economic interest in a Goese salt-refining keet but is not its daily operator;
+- the exact technical cause/direct fault remains unresolved;
+- the fire is socially associated with `Nissepats keet`, making economic involvement easier for the city to read as personal blame;
+- fire damage, recovery costs, reputational pressure, weakened credit/trust and Tanneken's loss together make Cornelis' recovery harder;
+- the intended Zierikzee school route becomes unattainable and Claes is sent to Reimerswaal;
+- Cornelis also intends distance as protection from the immediate rumour environment;
+- Claes can experience that protective separation as rejection.
+
+The result is not simply that Claes becomes motherless. A family of five is reduced to a father and son, and those two survivors are subsequently geographically separated.
+
+This gives 1554 its correct dramatic function: loss of people, home, sibling equilibrium, bodily safety, household continuity, economic confidence and daily paternal presence in one historical catastrophe and its aftermath.
 
 # 12. Hard guardrails
 
 - Tanneken Jansdochter and Jan Corneliszn. Nissepat are canonical names.
 - Jan is approximately eighteen months younger than Claes; do not turn him into a much younger child.
 - Tanneken is approximately six months pregnant on 18 May 1554.
-- The unborn child's sex and name remain unknown.
+- The unborn child's reader-facing sex and name remain unknown.
 - Tanneken, Jan, Lijsbet and Mayken are fictional.
 - Claes Jacobsz. Nissepat is historical; his kinship to Cornelis/Claes is fictional.
 - The maternal-grandfather figure is a fictional kinship/model built from historical Jan Jansen-kuiper evidence; do not claim a proven archival genealogy or exact death date.
 - Claes Jacobsz.' historical profession remains unknown.
-- Mayken is not an apothecary substitute.
+- Mayken Pietersdochter is not an apothecary substitute.
+- Tanneken is not automatically a professional zoutzieder, keetmeesteres, bookkeeper or business manager.
+- Cornelis remains biersteker/intermediary, not automatically master brewer or fixed owner of the documented Nissepad brewery.
 - Jan must have a lived relationship with Claes before his death; do not write him merely as trauma machinery.
 - The 1554 household deaths and destruction of the specific house remain novel canon within a historically supported fire environment.
+- Cornelis' salt-keet interest is explicit fiction canon; do not present it as archival Nissepat ownership evidence.
+- Technical cause, direct operational fault and legal/moral guilt for the fire remain unresolved under the dedicated fire module.
 ```
 
 ---

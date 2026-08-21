@@ -5,8 +5,8 @@
 > Do not use this pack as permission for free repository discovery; follow the task router in CLAUDE_CONTEXT_INDEX.md.
 
 - source branch: `main`
-- source commit at generation: `d05b988e7b24e06cfdef0fc367975d16fb57fb98`
-- generated UTC: `2026-08-19T08:30:50+00:00`
+- source commit at generation: `bec79474a0169e668f7af84b78c1bf6ee10e4398`
+- generated UTC: `2026-08-21T15:16:58+00:00`
 - included files: `11`
 
 Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pack does not alter authority.
@@ -246,6 +246,22 @@ Always distinguish:
 - unresolved/open material.
 
 Network proximity does not prove a meeting. A historical print does not prove Claes' fictional provenance. A plausible route does not establish exact topography. A later manual does not automatically establish earlier practice.
+
+## 8A. Author personal-context boundary
+
+Personal material about the human author that appears in chats, Claude/ChatGPT exports, project dumps, autobiographical notes or life-story discussions is **AUTHOR CONTEXT**, not historical evidence and not Claes canon.
+
+Do not copy concrete author biography into `SC.*`, `STC.*`, `DEC.*`, `ENT.*`, `NI.*`, character backstory or other Storybible truth by default. Do not infer that a fictional character shares a personal event merely because a psychological or thematic resemblance exists.
+
+The only permitted route from personal material to canon is:
+
+`AUTHOR CONTEXT -> abstract pattern/question -> explicit fictional proposal -> human author approval -> FICTION CANON`
+
+Once approved, store the fictional result as a self-contained claim about the novel. Do not preserve the author's private biographical source detail in the story layer. If the author has not separately approved the fictional derivative, keep it outside canon or present it as a proposal.
+
+This applies especially when ingesting large coauthor/model dumps that mix manuscript discussion, story development and autobiography. Recover only the independently supported/approved story consequences; never treat the dump's personal passages as Storybible authority.
+
+See `AUTHORING_POLICY.md` for the full guardrails.
 
 ## 9. Narrative interpretation
 
@@ -569,6 +585,28 @@ This rule is especially important for recurring historical people whose archival
 Do not fill every gap automatically. A detail earns canon when future scenes benefit from stability. The archive sets the boundary; the novel may fill the living space inside it.
 
 For the current core-cast implementation, load `storybible/CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md` and `entities/CHARACTERIZATION_2026-08-19.yaml`.
+
+## Author personal-context boundary
+
+Personal material supplied by the author in conversations, model exports, project dumps, autobiographical notes or life-story discussions is **AUTHOR CONTEXT**, not Claes evidence and not Storybible canon.
+
+Never convert a concrete fact, event, relationship, location, diagnosis, conflict, chronology or other personal biographical detail about the author into `SC.*`, `STC.*`, `DEC.*`, `ENT.*`, `NI.*`, character biography or other story truth merely because it appeared in coauthoring context.
+
+Personal experience may inspire the novel only through an explicit abstraction-and-approval boundary:
+
+`AUTHOR CONTEXT -> abstract dramatic/psychological pattern or thematic question -> explicit fictional proposal -> human author approval -> Claes FICTION CANON`
+
+The approved fictional derivative must stand on its own as a claim about the novel. It must not carry the author's private source biography into the repository unless the author explicitly asks for a separate, clearly labelled author-context record.
+
+Examples of permissible transformation include turning a broad concern such as recognition versus practical care, attention versus control, or loss versus reconstruction into a fictional character dynamic after explicit approval. The repository should record the resulting Claes/Cornelis/Mayken story truth, not the author's autobiographical event that may have inspired it.
+
+Guardrails:
+
+1. similarity between the author's life and a character is never evidence that the character shares the author's biography;
+2. model inference from autobiographical material may be used to suggest a **proposal**, never to declare canon;
+3. sensitive or identifying author information is excluded from Storybible canon unless the author explicitly requests otherwise for a separate non-story purpose;
+4. when provenance matters, cite the human fiction decision, not the autobiographical source material;
+5. if a prior model dump mixed author biography with story development, recover only separately approved fictional consequences; do not normalize the personal biography into the story layer by default.
 
 ## Narrative theory boundary
 Universal `KO.*` narrative theory remains in the external Narrative Knowledge Base. This repository stores Claes-specific Narrative Instances and may reference Knowledge Objects as analysis targets.
@@ -1001,7 +1039,7 @@ decisions:
 # SOURCE FILE: `canon/OPEN_DECISIONS.yaml`
 
 ```yaml
-schema_version: 2.1.0
+schema_version: 2.2.0
 kind: OpenDecisionRegistry
 policy:
   active_only: true
@@ -1204,6 +1242,81 @@ decisions:
   - Do not grant Mayken unsupported university, physician or guild status.
   - Do not turn a possible kruidenvrouw line into a stereotype or a secret cipher role.
   - Preserve her distinct 1554 experience: destruction plus rebuilding, not Claes' household annihilation.
+
+- id: OPEN.MANUSCRIPT.DE_LEI.TEACHER_IDENTITY.001
+  domain: manuscript_continuity
+  priority: medium
+  question: "Which fictional elementary writing/reckoning master teaches Claes in De Lei: Adriaen, Jacob, or a deliberately unnamed master?"
+  status: OPEN
+  exposed_by: REV.2026-08-19.DE_LEI.001
+  current_prose_problem: "The current chapter names both Meester Adriaen and Meester Jacob in what reads as one classroom/teacher role."
+  fixed:
+  - "Nicolaes van de Put/Puttus remains Claes' separate Latin/humanist master."
+  guardrails:
+  - "Do not silently merge the elementary master into Puttus."
+  - "Treat this as a prose/cast-continuity repair unless a named teacher is promoted into reusable character canon."
+
+- id: OPEN.MANUSCRIPT.HET_WAPEN.SPANNING_MECHANISM.001
+  domain: manuscript_historical_reconstruction
+  priority: medium
+  question: "Should Het Wapen retain its exact wind/touw/haak spanning apparatus as an explicit fiction reconstruction, or should the prose be generalized until the historical mechanism is better established?"
+  status: OPEN
+  exposed_by: REV.2026-08-19.HET_WAPEN.001
+  fixed:
+  - "The Nissepat sign is a voetboog/crossbow."
+  - "Cornelis belongs fictionally to the Goese Sint-Jorisgilde / Edele Voetboog."
+  - "Mechanical spanning is plausible and the recovered Muschart wording includes a lange zwengel."
+  guardrails:
+  - "The exact mechanism remains open; do not present windlass/cranequin/belt-hook subtype as historical fact without support."
+
+- id: OPEN.MANUSCRIPT.DE_WIEG.FAMILY_STATE.001
+  domain: manuscript_continuity
+  priority: high
+  question: "How should De Wieg be repaired so its household count and pregnancy history match the fixed pre-fire family canon?"
+  status: OPEN
+  exposed_by: REV.2026-08-19.DE_WIEG.001
+  current_prose_problems:
+  - "Cornelis says there will be 'three younger mouths instead of two', which does not match Jan plus the unborn child under the current family state."
+  - "The chapter introduces an earlier child that 'did not come', which is not part of the current fixed pre-fire family canon."
+  fixed:
+  - "Claes is the eldest child."
+  - "Jan is the younger living brother."
+  - "Tanneken is pregnant with the unnamed child who dies with her in the 18 May 1554 fire."
+  guardrails:
+  - "Do not create an additional lost sibling merely to rescue an old sentence."
+  - "Prefer prose repair unless the author explicitly chooses to reopen family canon."
+
+- id: OPEN.MANUSCRIPT.CORNELIS.BIERSTEKER_WORDING.001
+  domain: manuscript_canon_alignment
+  priority: high
+  question: "Which 1554/1564 manuscript formulations must be rewritten so Cornelis' trade competence remains vivid without turning him into the documented Nissepad brewery's fixed master brewer or owner?"
+  status: OPEN
+  exposed_in:
+  - CH.HET_ZAAD.1554
+  - CH.DE_LADINGEN.1564
+  fixed:
+  - "Cornelis is a Goese poorter and biersteker."
+  - "He participates in beer/cask logistics, storage, accounts, credit and routes."
+  - "The documented Nissepad brewery is family-world context but is not fixed as Cornelis' owned/master-brewed enterprise."
+  guardrails:
+  - "Do not use 'eigen bier', 'het brouwen' or process-command language as shorthand if it changes the reader's factual inference about ownership/profession."
+  - "Lieven or another actual brewer may own process expertise where the scene needs it."
+
+- id: OPEN.MANUSCRIPT.BEER_LOGISTICS_CONCEALMENT.001
+  domain: manuscript_plot_mechanism
+  priority: high
+  question: "How should the 1564 chapters preserve the thematic relation between beer logistics and secrecy without implying a routine books-hidden-in-beer-barrels transport system?"
+  status: OPEN
+  exposed_in:
+  - CH.DE_LOOG.1564
+  - CH.DE_DOOD_VAN_SOL.1564
+  fixed:
+  - "Cornelis' beer/cask trade gives him routes, contacts, timing knowledge and plausible movement through Antwerp/Zeeland networks."
+  - "The current Brevísima/memoriaal mechanism does not require a standardized beer-barrel concealment channel."
+  guardrails:
+  - "Analogy between vessels/contents and secrecy is allowed."
+  - "Do not convert analogy into a repeated operational device without a separate canon decision."
+  - "Keep the current book-in-book/invisible-print chain independent from routine beer-barrel smuggling."
 ```
 
 ---

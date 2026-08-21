@@ -5,8 +5,8 @@
 > Do not use this pack as permission for free repository discovery; follow the task router in CLAUDE_CONTEXT_INDEX.md.
 
 - source branch: `main`
-- source commit at generation: `d05b988e7b24e06cfdef0fc367975d16fb57fb98`
-- generated UTC: `2026-08-19T08:30:50+00:00`
+- source commit at generation: `bec79474a0169e668f7af84b78c1bf6ee10e4398`
+- generated UTC: `2026-08-21T15:16:58+00:00`
 - included files: `9`
 
 Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pack does not alter authority.
@@ -18,8 +18,8 @@ Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pa
 ```markdown
 # Character web — archetypische functies en levende karakterisering
 
-**Status:** CANONICAL CHARACTERIZATION MODULE — approved 19 August 2026  
-**Decisions:** `DEC.HISTORICAL_GAPS.FICTIONAL_CHARACTERIZATION.2026-08-19`, `DEC.CHARACTER_WEB.ARCHETYPAL_LENS.2026-08-19`, `DEC.CHARACTER_WEB.CORE_CAST.2026-08-19`  
+**Status:** CANONICAL CHARACTERIZATION MODULE — approved 19 August 2026; refined 21 August 2026  
+**Decisions:** `DEC.HISTORICAL_GAPS.FICTIONAL_CHARACTERIZATION.2026-08-19`, `DEC.CHARACTER_WEB.ARCHETYPAL_LENS.2026-08-19`, `DEC.CHARACTER_WEB.CORE_CAST.2026-08-19`, `DEC.CORNELIS.ECONOMIC_INTERMEDIARY.2026-08-21`, `DEC.TANNEKEN.BODY_CONTINUITY.2026-08-21`  
 **Machine projections:** `entities/CHARACTERIZATION_2026-08-19.yaml`, `narrative/character_web_archetypes.yaml`
 
 ## 1. Governing principle: the archive sets boundaries; the novel fills the living space
@@ -53,8 +53,8 @@ A useful archetype always needs individual contradiction. The question is theref
 The compact authorial constellation is:
 
 - **Claes — Integration / the Seeker-Witness**
-- **Cornelis — Law / the Father-Gatekeeper**
-- **Tanneken — Body / embodied household wisdom**
+- **Cornelis — Law / Circulation / the Father-Steward and Gatekeeper**
+- **Tanneken — Body / Continuity / embodied household and operational knowledge**
 - **Jan — Act / brother-double and action principle**
 - **Puttus — Word / hermeneutic teacher**
 - **Mayken — Matter / independent material counterpart**
@@ -91,7 +91,7 @@ His gift becomes dangerous when attention turns into control:
 - if I understand every path, perhaps I need not choose too soon;
 - if I keep watching, perhaps I have fulfilled my responsibility.
 
-Delft makes the shadow explicit: witnessing can become compulsion. He can want not to look and still look.
+The 1554 fire becomes the first catastrophic pressure on this method: events and information outrun his normal ability to compare and understand, helping form the irrational possibility that seeing earlier or better might have prevented loss. Delft later makes the shadow explicit as compulsive witnessing.
 
 ### Essential contradiction
 Claes is **not inherently passive**. When Jan slips at the crane and no interval exists for analysis, Claes acts before thought. The weakness therefore appears especially when time exists to continue observing.
@@ -101,34 +101,56 @@ Do not make him a modern analyst. Let the abstraction arrive after material perc
 
 ---
 
-# 4. Cornelis — Father, Steward, Gatekeeper, Artisan Mentor
+# 4. Cornelis — Father, Steward, Gatekeeper, Intermediary
 
 ### Core
-Cornelis' governing value is **responsible stewardship**. He believes love is something one does: provide, train, arrange, repair, finance, warn, carry, protect.
+Cornelis' governing value is **responsible stewardship**. He believes love is something one does: provide, train, arrange, finance, warn, carry, protect.
+
+His economic method is now equally stable: **he is primarily a steward of circulation rather than a primary maker**. He knows how property, credit, routes, storage, people, vessels and obligations connect. Beer, salt and later textual circulation are different domains in which the same talent appears.
 
 ### Strength
 - practical foresight;
-- reliability under work pressure;
 - judgement of people, goods, routes and obligations;
+- credit and storage sense;
+- delegation of specialist work;
+- connecting producers, carriers, buyers and trusted people;
 - teaching through graduated responsibility;
 - willingness to bear material cost for another person's future.
 
+His active competence must not be mistaken for hands-off passivity. He checks, judges, negotiates, corrects and arranges. But he does not need to perform every specialist process personally.
+
+### Economic grammar
+
+- **beer:** Cornelis remains biersteker/trader; do not make him automatically the master brewer or owner of the documented Nissepad brewery;
+- **salt:** in fiction canon he holds an economic/ownership interest in a Goese salt-refining keet while daily technical work belongs to an operational lead and workers;
+- **books/texts:** he later routes material through trust and trade networks without needing to author or print it himself.
+
 ### Shadow
-The same method can make intimacy difficult:
+The same strengths create two different forms of distance.
+
+Relationally:
 
 - protection becomes withholding;
 - secrecy becomes exclusion;
 - responsibility becomes the language in which every affection is translated;
 - trust feels to Claes like a harder test rather than recognition.
 
-Cornelis does not fail to love. Father and son fail, repeatedly, to read love in the same grammar.
+Economically:
+
+- delegation creates dependence;
+- ownership and credit create responsibility without complete operational control;
+- a system can fail at a point Cornelis did not personally touch;
+- public blame can attach to his name because the property or enterprise is his even when the direct act was another person's.
+
+Cornelis does not fail to love, and he need not be personally negligent for the 1554 tragedy to strike at the deepest vulnerability of his method.
 
 ### Essential contradictions
 - **home:** terse, functional, sparse praise;
 - **rederijker room:** socially alive, humorous, performative, able to laugh broadly and respond to words for their own sake;
 - **public religion:** outwardly Catholic and civically embedded;
 - **inner commitment:** Familist/Huis der Liefde after ca.1552–1553;
-- **protector:** tries to keep danger away from Claes while simultaneously teaching him to carry dangerous responsibilities.
+- **protector:** tries to keep danger away from Claes while simultaneously teaching him to carry dangerous responsibilities;
+- **network man:** gains reach by trusting other people's competence and therefore cannot wholly control the systems attached to his name.
 
 ### Voice and habits — fiction canon
 - short, material sentences;
@@ -138,24 +160,38 @@ Cornelis does not fail to love. Father and son fail, repeatedly, to read love in
 - anger need not become shouting: terse judgement, practical consequence or closed access can carry more weight.
 
 ### Guardrail
-Do not make Cornelis a factory for maxims. His practical speech should arise from the thing being handled now. His livelier rederijker self is necessary because Claes must discover that his father is a person whose full life does not exist only in relation to his son.
+Do not make Cornelis a factory for maxims. His practical speech should arise from the thing being handled now. His livelier rederijker self is necessary because Claes must discover that his father is a person whose full life does not exist only in relation to his son. Do not turn his salt/beer competence into universal craft mastery: the distinction between **economic responsibility** and **operational control** is now central.
 
 ---
 
-# 5. Tanneken — Mother, Body, Keeper of Household Continuity
+# 5. Tanneken — Mother, Body / Continuity, Keeper of Lived Condition
 
 ### Core
 Tanneken's intelligence is **trained sensation in time**. She knows because she has touched, smelled, prepared, stored, watched and repeated.
 
+Her role now extends from embodied household knowledge into **operational continuity**. She knows the state in which a working household and its connected economy actually exist: what is present, missing, damp, spoiled, late, overused, reliable or failing.
+
+The durable complement is:
+
+> **Cornelis knows circulation; Tanneken knows condition.**
+
 ### Strength
 - material and bodily judgement;
 - household timing;
+- stock, use and shortage awareness;
 - practical memory;
+- awareness of people and work rhythms;
+- recognising the bodily/material consequence of an abstract trade decision;
 - care without ceremony;
 - direct, proportionate praise;
 - warmth and teasing humour.
 
 She gives Claes an early experience of knowledge that does not begin in abstraction. Her “goed gevonden” is important precisely because it is not made into a bargain.
+
+### Economic/operational boundary
+Tanneken may know workers from Cornelis' wider business world, recognise condition problems, notice a discrepancy before it appears urgent in an account, or give practical judgement Cornelis trusts. This does **not** automatically make her a zoutzieder, keetmeesteres, professional bookkeeper, apothecary or formal business manager.
+
+Her knowledge is lived rather than titled.
 
 ### Shadow
 Tanneken often turns anxiety into action. That is useful, but it can also hide her from others:
@@ -165,7 +201,7 @@ Tanneken often turns anxiety into action. That is useful, but it can also hide h
 The household may therefore experience her as calm at moments when she is actually containing fatigue, uncertainty or fear through work.
 
 ### Essential contradiction
-She is patient with fermentation, weather, cloth and bodies because processes take the time they take; she need not be equally patient with avoidable fuss, mess or self-dramatization.
+She is patient with fermentation, weather, cloth and bodies because processes take the time they take; she need not be equally patient with avoidable fuss, mess or self-dramatization. Her competence is real without being infallible.
 
 ### Voice and habits — fiction canon
 - shows before she explains;
@@ -174,8 +210,16 @@ She is patient with fermentation, weather, cloth and bodies because processes ta
 - can tease affectionately;
 - tenderness is physical and ordinary rather than staged as a lesson.
 
+### Relation to Mayken
+Tanneken's domain and Mayken's later expertise are related but not identical:
+
+- **Tanneken:** lived operational/material condition through household continuity;
+- **Mayken:** specialized material identification, preparation, testing and contradiction.
+
+Mayken is therefore not “Tanneken 2”. Claes later encounters a more specialized mode of material fidelity whose basic trustworthiness his childhood has already taught him to recognise.
+
 ### Guardrail
-Do not turn her into a mystical earth-mother. Her knowledge is laboriously learned, fallible and bodily. Give her irritation, fatigue and personal preference as well as care.
+Do not turn Tanneken into a mystical earth-mother or a retrospective all-purpose expert. Her knowledge is laboriously learned, fallible and bodily. Give her irritation, fatigue and personal preference as well as care.
 
 ---
 
@@ -386,9 +430,14 @@ The web should generate conflict through **different valid methods**, not simple
 Neither is the complete answer. Jan can act too early; Claes can act too late.
 
 ### Cornelis ↔ Tanneken
-`rule/responsibility <-> body/timing/care`
+`circulation/stewardship <-> condition/continuity`
 
-The intact household gives Claes both. The 1554 fire destroys not only people but the equilibrium between these knowledge forms.
+Cornelis knows routes, credit, delegation and movement; Tanneken knows the actual state of people, stock and matter. The intact household gives Claes both. The 1554 fire destroys not only people but the functioning complement between these knowledge forms.
+
+### Tanneken ↔ Mayken
+`lived operational condition <-> specialized material verification`
+
+Their methods resonate without making Mayken a replacement mother. Claes can later trust material contradiction partly because childhood taught him that trained sensation can be real knowledge.
 
 ### Puttus ↔ Dee
 `interpretive restraint <-> transformative speculation`
@@ -424,6 +473,8 @@ Claes grows from a son who carries what he is told not to know into a man who mu
 8. **A character may surprise the web.** If a well-earned scene reveals a new contradiction, update the characterization rather than forcing prose back into the old shorthand.
 9. **Mayken remains two-centered with Claes.** No “missing half” logic.
 10. **Dee may be wrong; Puttus may wound; Tanneken may tire; Cornelis may misjudge; Jan may fear; Silvius may instrumentalize; Las Casas may lose control.** Their value lies in being partial human beings, not perfect embodiments.
+11. **Tanneken's continuity role is lived, not automatically titled.** Do not infer an unsupported salt-work office from her competence.
+12. **Cornelis' intermediary role distinguishes economic responsibility from operational control.** Do not flatten that distinction in beer, salt or text scenes.
 ```
 
 ---
@@ -431,7 +482,7 @@ Claes grows from a son who carries what he is told not to know into a man who mu
 # SOURCE FILE: `entities/CHARACTERIZATION_2026-08-19.yaml`
 
 ```yaml
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: CharacterizationRegistry
 purpose: >-
   Stable novel characterization for recurring people. Historical biography and evidence remain governed by their source/entity records; fields marked FICTION_CANON deliberately fill documentary space for continuity.
@@ -452,17 +503,30 @@ characters:
   - Let comparison grow from material detail rather than modern analysis.
   - Do not let insight make him omniscient.
   trajectory: perceive -> distinguish -> choose -> carry -> release
+  fire_1554_refinement:
+    decision_id: DEC.CLAES.FIRE_EPISTEMIC_WOUND.1554.2026-08-21
+    pressure: >-
+      The fire outruns Claes' normal see-compare-understand sequence and reaches him through fragments, helping form the false possibility that seeing earlier or better might have prevented loss.
+    guardrail: subjective survivor reasoning never becomes factual responsibility for the household deaths
 
 - entity_ref: ENT.PERSON.CORNELIS
   characterization_status: CANON
-  archetypal_lenses: [father, steward, gatekeeper, artisan_mentor]
+  archetypal_lenses: [father, steward, gatekeeper, intermediary, network_mentor]
   governing_value: responsible_stewardship
-  strengths: [foresight, provision, practical_judgement, reliability, teaching_by_task, protection]
-  shadow: [emotional_withholding, over_duty, secrecy_as_exclusion, protection_becoming_gatekeeping]
+  strengths: [foresight, provision, practical_judgement, network_judgement, delegation, credit_and_route_sense, circulation, teaching_by_task, protection]
+  shadow: [emotional_withholding, over_duty, secrecy_as_exclusion, protection_becoming_gatekeeping, responsibility_without_operational_control, distance_through_delegation]
   contradictions:
   - domestic reserve versus social and rhetorical vitality among trusted rederijkers
   - outward Catholic conformity versus inward Familist commitment
   - love expressed through responsibility can be received as another test
+  - economic reach through other people's specialist work versus incomplete control of what those systems actually do
+  economic_identity:
+    decision_id: DEC.CORNELIS.ECONOMIC_INTERMEDIARY.2026-08-21
+    core: intermediary_and_steward_of_circulation
+    modes: [property_interest, credit, storage, quality_judgement, routes, delegation, trusted_people, goods_and_text_transmission]
+    beer: biersteker_and_trader_not_automatic_master_brewer
+    salt: economic_interest_without_daily_zoutzieder_role
+    texts: routes_and_transmits_but_does_not_need_to_author_or_print
   habitual_expression:
     speech: short, material, dry, rarely self-explanatory
     humour: dry and often delayed by half a beat
@@ -473,17 +537,26 @@ characters:
   - Do not make every utterance a maxim.
   - Let the rederijker room reveal playfulness and performative range absent at home.
   - His secrecy must arise from real risk and belief as well as temperament.
+  - Do not make intermediary mean passive; his work is active judgement, negotiation, correction and organization.
+  - Do not turn salt-keet ownership or beer competence into proof that he personally performs the specialist production process.
 
 - entity_ref: ENT.PERSON.CLAES_MOTHER
   label: Tanneken Jansdochter
   characterization_status: CANON
-  archetypal_lenses: [mother, embodied_wise_woman, keeper_of_household_continuity]
+  archetypal_lenses: [mother, embodied_wise_woman, keeper_of_household_continuity, operational_continuity]
+  shorthand_refinement: Body / Continuity
   governing_value: sustaining_life_through_attention
-  strengths: [trained_sensation, timing, care, practical_memory, direct_encouragement, humour]
+  strengths: [trained_sensation, timing, condition_judgement, care, practical_memory, stock_and_use_awareness, people_awareness, direct_encouragement, humour]
   shadow: [fear_converted_into_work, hidden_exhaustion, competence_masking_vulnerability]
   contradictions:
   - patient with processes but brisk with avoidable fuss
   - capable of tenderness without making tenderness ceremonial
+  - knows practical economic consequences without needing formal office or abstract commercial language
+  operational_knowledge:
+    decision_id: DEC.TANNEKEN.BODY_CONTINUITY.2026-08-21
+    scope: [household_stock, material_condition, quality, use_and_shortage, work_rhythm, reliability, bodily_cost, daily_consequence]
+    complement_to_cornelis: Cornelis knows circulation; Tanneken knows condition.
+    formal_role: NOT_FIXED
   habitual_expression:
     teaching: show, let_try, correct_by_material_result
     praise: direct and proportionate
@@ -493,6 +566,8 @@ characters:
   - Never mystical or all-knowing.
   - Give her fatigue, irritation, desire and limits as well as competence.
   - Sensory knowledge is learned through repetition, not supernatural intuition.
+  - Do not automatically make her zoutzieder, keetmeesteres, bookkeeper, apothecary or formal business manager.
+  - She may know workers and operational realities without holding an unsupported professional title.
 
 - entity_ref: ENT.PERSON.CLAES_BROTHER
   label: Jan Corneliszn. Nissepat
@@ -622,13 +697,15 @@ characters:
 # SOURCE FILE: `narrative/character_web_archetypes.yaml`
 
 ```yaml
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: CharacterWeb
 id: ARC.CLAES.CHARACTER_WEB.ARCHETYPAL
 status: CANON_AUTHORIAL_ARCHITECTURE
 decision_ids:
 - DEC.CHARACTER_WEB.ARCHETYPAL_LENS.2026-08-19
 - DEC.CHARACTER_WEB.CORE_CAST.2026-08-19
+- DEC.CORNELIS.ECONOMIC_INTERMEDIARY.2026-08-21
+- DEC.TANNEKEN.BODY_CONTINUITY.2026-08-21
 purpose: >-
   Author-side web for differentiating major characters by value, method and shadow. Archetypes are lenses, not in-world identities and not permission for thematic exposition.
 central_problem: >-
@@ -641,22 +718,26 @@ characters:
   method: see -> compare -> connect -> understand
   shadow_method: see -> compare -> keep_looking -> delay
   mature_method: perceive -> distinguish -> choose -> carry -> release
+  fire_1554_pressure: catastrophe outruns the normal method and helps fuse observation with the false hope of preventability
 
 - entity: ENT.PERSON.CORNELIS
-  shorthand: Law
-  lenses: [father, steward, gatekeeper, artisan_mentor]
-  offers_claes: [responsibility, discipline, routes, practical_action]
-  method: entrust -> test -> correct -> enlarge_responsibility
-  shadow_method: protect -> withhold -> exclude
-  pressure_on_claes: love is present but encoded in a form Claes does not automatically read as recognition
+  shorthand: Law / Circulation
+  lenses: [father, steward, gatekeeper, intermediary, network_mentor]
+  offers_claes: [responsibility, discipline, routes, practical_action, transmission]
+  method: judge -> connect -> entrust -> check -> route
+  pedagogical_method: entrust -> test -> correct -> enlarge_responsibility
+  shadow_method: delegate -> depend -> remain_responsible_without_full_control
+  relational_shadow: protect -> withhold -> exclude
+  pressure_on_claes: love is present but encoded in provision, entrusted work and protection that Claes does not automatically read as recognition
 
 - entity: ENT.PERSON.CLAES_MOTHER
-  shorthand: Body
-  lenses: [mother, embodied_wise_woman]
-  offers_claes: [trained_sensation, care, timing, permission_to_doubt]
-  method: touch -> smell -> compare -> wait -> know_enough
+  shorthand: Body / Continuity
+  lenses: [mother, embodied_wise_woman, keeper_of_household_continuity, operational_continuity]
+  offers_claes: [trained_sensation, care, timing, condition_judgement, permission_to_doubt]
+  method: touch -> smell -> compare -> track_condition -> know_enough
+  economic_method: notice_stock -> notice_people -> notice_change -> preserve_continuity
   shadow_method: fear -> work -> hide_own_need
-  pressure_on_claes: not everything important becomes certain through analysis
+  pressure_on_claes: abstract routes and promises become real only in the condition of bodies, materials, time and daily work
 
 - entity: ENT.PERSON.CLAES_BROTHER
   shorthand: Act
@@ -711,8 +792,8 @@ web_relations:
   axis: deliberation <-> immediacy
   dramatic_use: brothers expose that neither observation nor action is sufficient alone
 - pair: [ENT.PERSON.CORNELIS, ENT.PERSON.CLAES_MOTHER]
-  axis: responsibility_and_rule <-> embodied_care_and_timing
-  dramatic_use: Claes' intact childhood contains two complementary modes of safety that the fire destroys together
+  axis: circulation_and_stewardship <-> condition_and_continuity
+  dramatic_use: Cornelis knows routes, credit, delegation and movement while Tanneken knows the actual state of people, stock and material; the household works through both and the fire destroys their complementarity
 - pair: [ENT.PERSON.NICOLAES_PUTTUS, ENT.PERSON.JOHN_DEE]
   axis: disciplined_interpretation <-> transformative_speculation
   dramatic_use: Puttus teaches that meaning must be supported; Dee teaches that the apparently ordinary may hide another state
@@ -725,6 +806,9 @@ web_relations:
 - pair: [ENT.PERSON.CORNELIS, ENT.PERSON.WILLEM_SILVIUS]
   axis: private_carriage_and_trust <-> public_reproduction_and_distribution
   dramatic_use: Claes moves from carrying what he may not know toward deciding what knowledge must be released
+- pair: [ENT.PERSON.CLAES_MOTHER, ENT.PERSON.BELOVED]
+  axis: lived_operational_condition <-> specialized_material_verification
+  dramatic_use: Mayken is not Tanneken repeated; Claes later recognizes a disciplined respect for material condition that childhood first made trustworthy without collapsing the women into one function
 
 hard_guardrails:
 - Archetypal shorthand must never appear as explanatory labels in literary prose.
@@ -732,6 +816,8 @@ hard_guardrails:
 - Use the web to differentiate choices and values, not to manufacture one teaching scene per function.
 - Supporting characters need not receive archetypal assignments unless repeated story pressure justifies them.
 - The web supplements, never replaces, entity biography, historical evidence, arcs, relationships and scene objectives.
+- Tanneken's operational continuity does not imply an unsupported formal salt-work or guild office.
+- Cornelis' circulation competence does not make him the hands-on producer in every enterprise he touches.
 ```
 
 ---
@@ -955,9 +1041,10 @@ story_claims:
 ```markdown
 # Claes Nissepat — familie 1542–1554
 
-**Status:** CANON — approved 14 August 2026  
-**Decision:** `DEC.CLAES.EXTENDED_FAMILY.2026-08-14`  
-**Story Claim:** `STC.CLAES.EXTENDED_FAMILY.001`
+**Status:** CANON — approved 14 August 2026; refined 21 August 2026  
+**Decisions:** `DEC.CLAES.EXTENDED_FAMILY.2026-08-14`, `DEC.CORNELIS.ECONOMIC_INTERMEDIARY.2026-08-21`, `DEC.CORNELIS.SALTKEET_INTEREST.1554.2026-08-21`, `DEC.TANNEKEN.BODY_CONTINUITY.2026-08-21`, `DEC.CLAES.CORNELIS.POSTFIRE_PROTECTION_RUMOR.2026-08-21`  
+**Story Claim:** `STC.CLAES.EXTENDED_FAMILY.001`  
+**Fire authority:** `storybible/GOES_FIRE_1554_CAUSAL_ARCHITECTURE.md`
 
 This module is the authoritative family dossier for Claes' childhood household and grandparents. It distinguishes archival persons and property evidence from deliberate novel genealogy.
 
@@ -987,11 +1074,23 @@ The tree is novel canon. Only source-backed historical persons/acts are archival
 
 ## 2. Cornelis Claesz. Nissepat
 
-Cornelis is the fictional son of the historical Claes Jacobsz. Nissepat and father of Claes and Jan. He is a Goese poorter, beer trader/biersteker and organizer of a family business rather than necessarily a master brewer himself. He links property, credit, transport, storage, barrels, harbour trade, books and networks.
+Cornelis is the fictional son of the historical Claes Jacobsz. Nissepat and father of Claes and Jan. He is a Goese poorter, beer trader/biersteker and organizer of a family business rather than necessarily a master brewer himself.
+
+### Economic identity: intermediary rather than maker
+
+Cornelis' work is now governed by one stable fictional characterization: he is primarily an **intermediary, organizer and steward of circulation**. He links property, credit, transport, storage, barrels, harbour trade, trusted people, books and networks. His competence is active — judging goods and people, arranging credit, checking condition, timing routes, delegating specialist work and moving things between producers, carriers and buyers — but he does not need to manufacture every product himself.
+
+That same grammar applies across domains:
+
+- **beer:** biersteker/trader, storage/cask/route competence; not automatically the master brewer or owner of the documented Nissepad brewery;
+- **salt:** in fiction canon he has a financial/economic interest in one Goese salt-refining keet but is not its daily zoutzieder;
+- **texts/books:** later clandestine circulation grows from route, trust and carrier knowledge; he need not author or print the material he moves.
+
+His strength therefore carries a corresponding vulnerability: he can remain economically and morally responsible for systems whose daily operation is delegated to others. This becomes crucial in 1554.
 
 His marriage to Tanneken connects the Nissepat property/trade line to a craft milieu modeled through a Goese cooper. That makes his practical knowledge of barrels and beer containers socially plausible without turning him into a cooper or brewer.
 
-After the fire of 1554 Cornelis remains in Goes to rebuild shelter, livelihood, credit and business and to keep financing Claes' education. This labour is an act of love but produces physical separation: Claes goes to Reimerswaal while Cornelis stays in Goes.
+After the fire of 1554 Cornelis remains in Goes to rebuild shelter, livelihood, credit and business and to keep financing Claes' education. He also tries to remove Claes from the immediate Goese world in which rumour increasingly attaches the Nissepat name to the fire. This labour and separation are acts of love/protection but produce the opposite emotional reading in Claes: he goes to Reimerswaal while Cornelis stays in Goes and can experience the same decision as abandonment.
 
 ## 3. Tanneken Jansdochter — ca. 1520–18 May 1554
 
@@ -999,11 +1098,30 @@ Tanneken Jansdochter is fictional and canonical. She is born approximately 1519�
 
 Tanneken is not written as a passive domestic figure or as a mystical wise woman. Her intelligence is practical, bodily and sensory. She knows through repeated daily work: heat, smell, texture, fermentation, illness, drying cloth, food, wood, weather and household timing. She is one of the primary sources from which Claes learns that the body can know before an abstract explanation is available.
 
-This is an important foundation of the *sinne* line. Long before Dee gives Claes intellectual methods, Tanneken teaches him — mostly without formal teaching — that reliable perception is embodied.
+### Body / Continuity
+
+Her established embodied knowledge now extends into the **operational continuity of the household and its attached economy**. This does not give her an unsupported formal profession. It means that repeated daily attention gives her reliable knowledge of:
+
+- what is actually in stock rather than merely ordered or promised;
+- condition, quality, dampness, spoilage and shortage;
+- use and waste;
+- work rhythms and ordinary bodily cost;
+- who is reliable, absent, ill, exhausted or in need;
+- the practical consequences of commercial decisions once they reach people, fuel, food, time and material.
+
+The durable marital complement is:
+
+> **Cornelis knows circulation; Tanneken knows condition.**
+
+Tanneken may therefore know workers from Cornelis' wider business world, notice discrepancies and give practical judgement that Cornelis trusts without being a zoutzieder, keetmeesteres, professional bookkeeper, apothecary or formal business manager. Her knowledge remains local, learned, fallible and grounded in repetition.
+
+This is an important foundation of the *sinne* line. Long before Dee gives Claes intellectual methods, Tanneken teaches him — mostly without formal teaching — that reliable perception is embodied and that condition must be tested against the material world.
 
 In May 1554 she is about six months pregnant. Claes may already have felt the unborn child move beneath her skin. That gives him an early benign experience of something that is real without being visible. The pregnancy must not be used mechanically as the reason she dies in the fire.
 
 Tanneken dies in the Goese city fire of 18 May 1554 together with Jan and the unborn child. These deaths are novel canon, not historical victim identifications.
+
+Her death removes from Cornelis not only spouse and co-parent but also part of the practical memory and continuity that helped the household/economic system function. Post-fire business difficulty must not be attributed solely to this loss, but the absence matters.
 
 ## 4. Jan Corneliszn. Nissepat — ca. June 1544–18 May 1554
 
@@ -1024,11 +1142,11 @@ Jan's death therefore removes from Claes not only a loved brother but also a hum
 
 ## 5. The unborn child
 
-The third child remains unnamed and its sex remains unknown. On 18 May 1554 Tanneken is approximately six months pregnant.
+The third child remains unnamed and its sex remains unknown in current reader-facing canon. On 18 May 1554 Tanneken is approximately six months pregnant.
 
 Narratively the child represents a future that has already become real to the family but has not yet become visible. Claes can know the child through touch and movement. The death of mother and unborn child turns that early sensory knowledge into one of the deepest wounds in the *sinne* architecture.
 
-Do not assign a retrospective name or sex unless separately decided later.
+Do not assign a retrospective name or reader-facing sex unless separately decided later.
 
 # Paternal grandparents
 
@@ -1047,6 +1165,8 @@ His historical occupation is not known. Do not label him archival 'brouwer', 'ko
 In novel canon he makes the 1542 house available to Cornelis and Tanneken as their family home. He remains story-owner through the 1554 fire and loses the asset when the house becomes uninhabitable/destroyed. Despite this loss he can still help Cornelis preserve Claes' educational future through money, credit, contacts or practical support.
 
 His relation to Claes carries a different knowledge tradition from Tanneken's: ownership, provenance, accounts, obligation, debt, transfer and the question of what belongs to whom.
+
+The family/grandfather-household world also contains the fictional metal carrier of the Nissepat voetboog sign before the fire. Its exact form is governed separately and remains historically open; it survives the 1554 rupture damaged rather than pristine.
 
 ## 7. Lijsbet Pietersdochter — fictional paternal grandmother
 
@@ -1095,12 +1215,19 @@ The family should not be designed as a retrospective set of symbols, yet it orga
 - **Lijsbet:** inherited material memory and absence;
 - **Jan Jansen kuiper model:** craft, containment, vessel and material reliability;
 - **Mayken:** care, body, household memory and ritual;
-- **Cornelis:** trade, networks, writing, responsibility, secrecy and movement;
-- **Tanneken:** embodied sensory knowledge;
+- **Cornelis:** circulation, trade, networks, writing, responsibility, secrecy and movement;
+- **Tanneken:** embodied condition, operational continuity and sensory knowledge;
 - **Jan:** action, risk, rivalry and immediacy;
 - **Claes:** observation, comparison, pattern and eventually synthesis.
 
 Thus later concepts such as carrier/content, embodied *sinne*, material transformation and transmission do not arrive from nowhere when Claes meets learned adults. Dee and others give intellectual articulation to structures Claes has already lived inside.
+
+The parental inheritance is deliberately complementary rather than hierarchical:
+
+> **from Cornelis:** route, relation, carrier, transfer, network  
+> **from Tanneken:** condition, body, material, difference, continuity
+
+Claes' later strength lies partly in learning to hold both without confusing either with total control.
 
 # 11. The 18 May 1554 rupture
 
@@ -1110,23 +1237,37 @@ In novel canon the older-Nieuwstraat home becomes uninhabitable/is destroyed. Co
 
 Historically, burned houses are documented in the older Nieuwstraat/Armenhoek environment after the fire, while other houses in Nieuwstraat also survive. The specific destruction of the 1542 Nissepat house and the deaths of these family members are therefore plausible novel reconstruction, **not archival fact**.
 
-The result is not simply that Claes becomes motherless. A family of five is reduced to a father and son, and those two survivors are subsequently geographically separated because Cornelis must remain in Goes while Claes' education is salvaged through Reimerswaal.
+The fire's broader fictional causality is governed by `storybible/GOES_FIRE_1554_CAUSAL_ARCHITECTURE.md`. In summary:
 
-This gives 1554 its correct dramatic function: loss of people, home, sibling equilibrium, bodily safety and daily paternal presence in one historical catastrophe.
+- Cornelis has an economic interest in a Goese salt-refining keet but is not its daily operator;
+- the exact technical cause/direct fault remains unresolved;
+- the fire is socially associated with `Nissepats keet`, making economic involvement easier for the city to read as personal blame;
+- fire damage, recovery costs, reputational pressure, weakened credit/trust and Tanneken's loss together make Cornelis' recovery harder;
+- the intended Zierikzee school route becomes unattainable and Claes is sent to Reimerswaal;
+- Cornelis also intends distance as protection from the immediate rumour environment;
+- Claes can experience that protective separation as rejection.
+
+The result is not simply that Claes becomes motherless. A family of five is reduced to a father and son, and those two survivors are subsequently geographically separated.
+
+This gives 1554 its correct dramatic function: loss of people, home, sibling equilibrium, bodily safety, household continuity, economic confidence and daily paternal presence in one historical catastrophe and its aftermath.
 
 # 12. Hard guardrails
 
 - Tanneken Jansdochter and Jan Corneliszn. Nissepat are canonical names.
 - Jan is approximately eighteen months younger than Claes; do not turn him into a much younger child.
 - Tanneken is approximately six months pregnant on 18 May 1554.
-- The unborn child's sex and name remain unknown.
+- The unborn child's reader-facing sex and name remain unknown.
 - Tanneken, Jan, Lijsbet and Mayken are fictional.
 - Claes Jacobsz. Nissepat is historical; his kinship to Cornelis/Claes is fictional.
 - The maternal-grandfather figure is a fictional kinship/model built from historical Jan Jansen-kuiper evidence; do not claim a proven archival genealogy or exact death date.
 - Claes Jacobsz.' historical profession remains unknown.
-- Mayken is not an apothecary substitute.
+- Mayken Pietersdochter is not an apothecary substitute.
+- Tanneken is not automatically a professional zoutzieder, keetmeesteres, bookkeeper or business manager.
+- Cornelis remains biersteker/intermediary, not automatically master brewer or fixed owner of the documented Nissepad brewery.
 - Jan must have a lived relationship with Claes before his death; do not write him merely as trauma machinery.
 - The 1554 household deaths and destruction of the specific house remain novel canon within a historically supported fire environment.
+- Cornelis' salt-keet interest is explicit fiction canon; do not present it as archival Nissepat ownership evidence.
+- Technical cause, direct operational fault and legal/moral guilt for the fire remain unresolved under the dedicated fire module.
 ```
 
 ---
@@ -1136,9 +1277,10 @@ This gives 1554 its correct dramatic function: loss of people, home, sibling equ
 ```markdown
 # Claes en Cornelis — vader-zoonrelatie 1547–1569
 
-**Status:** CANON — approved 18 August 2026  
-**Governing decisions:** `DEC.CLAES.CORNELIS.RECOGNITION.2026-08-18`, `DEC.CLAES.CORNELIS.RESPONSIBILITY.2026-08-18`, `DEC.CLAES.CORNELIS.RELIGIOUS_DISSONANCE.2026-08-18`, `DEC.CLAES.CORNELIS.POSTFIRE_READING.2026-08-18`  
-**Extends:** `REL.CLAES.CORNELIS`, `ARC.CLAES.CORNELIS`, `DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14`
+**Status:** CANON — approved 18 August 2026; refined 21 August 2026  
+**Governing decisions:** `DEC.CLAES.CORNELIS.RECOGNITION.2026-08-18`, `DEC.CLAES.CORNELIS.RESPONSIBILITY.2026-08-18`, `DEC.CLAES.CORNELIS.RELIGIOUS_DISSONANCE.2026-08-18`, `DEC.CLAES.CORNELIS.POSTFIRE_READING.2026-08-18`, `DEC.CORNELIS.ECONOMIC_INTERMEDIARY.2026-08-21`, `DEC.CLAES.FIRE_EPISTEMIC_WOUND.1554.2026-08-21`, `DEC.CLAES.CORNELIS.POSTFIRE_PROTECTION_RUMOR.2026-08-21`, `DEC.MAYKEN.GOES_COUNTER_MEMORY.2026-08-21`  
+**Extends:** `REL.CLAES.CORNELIS`, `ARC.CLAES.CORNELIS`, `DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14`  
+**Fire authority:** `storybible/GOES_FIRE_1554_CAUSAL_ARCHITECTURE.md`
 
 This dossier deepens the emotional and developmental logic of the existing father-son arc. It does not replace the established canon that Cornelis loves Claes, teaches him, sacrifices materially for his education and later becomes increasingly secretive through his dangerous networks.
 
@@ -1186,7 +1328,19 @@ Prefer:
 
 Avoid repeated internal narration that tells the reader “Claes wanted his father's approval.” The dynamic should be visible in expectation, response and silence.
 
-## 3. Responsibility while Cornelis travels
+## 3. Cornelis' work-world: stewardship through other people's competence
+
+Cornelis' economic characterization now clarifies the model Claes sees in his father before the fire.
+
+Cornelis is a **biersteker, intermediary and network steward**, not primarily a maker. He knows how goods, people, credit, vessels, routes and obligations connect. He judges, checks, delegates and arranges.
+
+This means Claes sees a father who can exert real influence without personally performing every specialist process. In beer, salt and later textual circulation, Cornelis' strength is to make separate people and things form a working chain.
+
+That same strength contains a vulnerability that becomes catastrophic in 1554: Cornelis can remain responsible for an enterprise whose direct daily operations are conducted by other people. The salt-keet line must preserve the distinction between **economic responsibility** and **operational control**.
+
+This is not meant to teach Claes a maxim. It becomes lived contradiction when a system attached to Cornelis' name fails and the city has little interest in preserving all the distinctions Claes later wants to reconstruct.
+
+## 4. Responsibility while Cornelis travels
 
 Cornelis' trade and network life take him away from the immediate household at times. As Claes grows older, especially in the early 1550s, he is entrusted with age-appropriate duties that matter during those absences.
 
@@ -1203,7 +1357,7 @@ Claes may therefore begin to experience himself as **the oldest son who must hel
 
 This is not adult authority. At eleven he is still a child within a working household. Do not make him a substitute merchant, bookkeeper with independent legal power, or de facto paterfamilias.
 
-## 4. Consequences of failure
+## 5. Consequences of failure
 
 A mistake can matter.
 
@@ -1221,7 +1375,7 @@ For Claes, a short functional judgement from Cornelis can carry disproportionate
 
 Do not turn Cornelis into an anachronistic therapeutic father, but do not turn ordinary sixteenth-century paternal authority into gratuitous cruelty either.
 
-## 5. Responsibility for Tanneken, Jan and the unborn child
+## 6. Responsibility for Tanneken, Jan and the unborn child
 
 As the oldest child, Claes can feel increasing responsibility toward the intact household:
 
@@ -1241,9 +1395,15 @@ However, because he had begun to think of himself as someone who should notice, 
 
 > I was supposed to help carry them. What did I fail to see?
 
-That subjective guilt feeds the already established wound — *if I had seen early enough, could I have prevented what happened?* — without creating a factual causal responsibility.
+Under `DEC.CLAES.FIRE_EPISTEMIC_WOUND.1554.2026-08-21`, the fire sharpens this further because Claes' normal observe/compare/understand method cannot keep pace with the event. He receives cause, spread and loss through fragments. That helps form the false possibility:
 
-## 6. Religious dissonance before the fire
+> If I had seen earlier or better, perhaps it could have been prevented.
+
+This subjective guilt feeds the established wound without creating factual causal responsibility.
+
+`De Kraan` remains essential counter-evidence: Claes can act immediately when there is no interval for prolonged deliberation.
+
+## 7. Religious dissonance before the fire
 
 Cornelis is not simply “becoming Protestant” in current canon.
 
@@ -1265,7 +1425,7 @@ Claes does **not** know the words *Huis der Liefde*, *Familist* or the network b
 
 Do not stage explicit Protestant-versus-Catholic debate in the pre-1554 childhood chapters. The dramatic state is **unexplained difference**, not doctrinal comprehension.
 
-## 7. Puttus, school and religious ambiguity
+## 8. Puttus, school and religious ambiguity
 
 Puttus may deepen Claes' capacity to notice distinctions between words, surface meaning and interpretation, but no specific anti-image, anti-ritual or anti-clerical doctrine is assigned to Puttus without separate historical support.
 
@@ -1277,11 +1437,13 @@ Therefore:
 
 The useful structure is that church, school and father do not always produce identical meanings for Claes, even when none of them openly declares a confessional break.
 
-## 8. The fire changes the meaning of the recognition gap
+## 9. The fire changes the meaning of the recognition gap
 
 Before 18 May 1554, Claes can still imagine recognition as something he may earn tomorrow.
 
 After the fire, Cornelis makes one of the strongest acts of paternal care in the entire relationship: he stays in Goes to rebuild livelihood, credit and shelter while preserving enough means to continue Claes' education elsewhere.
+
+The new fire architecture adds a second protective motive. As public rumour increasingly compresses the catastrophe into a story about `Nissepats keet`, Cornelis also has reason to remove Claes from the immediate social environment in which his father's name is repeatedly attached to the deaths.
 
 Yet the act is structurally tragic because Claes can read it through the older gap:
 
@@ -1289,12 +1451,20 @@ Yet the act is structurally tragic because Claes can read it through the older g
 
 The established double truth remains binding:
 
-- **Cornelis:** I send him away because I refuse to let the fire take his future.
+- **Cornelis:** I send him away because I refuse to let the fire, ruin and rumour take his future.
 - **Claes:** I am the surviving son, and still father does not choose to keep me beside him.
 
 The second statement is Claes' wounded interpretation, not Cornelis' intention.
 
-## 9. Reimerswaal and distance
+### Rumour and money
+
+Do not make Cornelis' whole business world disappear in one day. The intended movement is cumulative:
+
+**loss/damage → suspicion → greater caution by others → harder credit/fewer options → increasing recovery pressure.**
+
+The father-son relationship should register this through what Claes can witness rather than through Cornelis-only scenes.
+
+## 10. Reimerswaal and distance
 
 During the 1554–1561 separation, Cornelis' care can remain materially visible through:
 
@@ -1309,7 +1479,9 @@ Those acts do not automatically satisfy Claes' need for recognition or closeness
 
 This makes the separation richer than simple abandonment: Claes can possess evidence that his father cares and still feel abandoned.
 
-## 10. Later secrecy gives childhood memories new meaning
+The planned pre-fire route remains **Zierikzee**. Post-fire loss, rebuilding and worsening economic/reputational pressure make that route financially or practically unattainable, producing the **Reimerswaal** continuation. Exact comparative schooling cost remains research-open.
+
+## 11. Later secrecy gives childhood memories new meaning
 
 From 1561 onward, and especially as dangerous books, papers, routes and loyalties become visible, Claes begins to understand that the closed doors he sensed in childhood were real.
 
@@ -1319,7 +1491,13 @@ The causal movement is:
 
 Claes should not retrospectively become omniscient. He can recognize patterns without suddenly knowing every earlier conversation, visitor or motive.
 
-## 11. 1569 — what is finally lost
+The 1554 fire adds a parallel movement:
+
+**childhood fragmentary catastrophe → years of suspicion/blame/reconstruction → later partial rereading.**
+
+Neither line should end in total certainty.
+
+## 12. 1569 — what is finally lost
 
 Cornelis' execution on 19 November 1569 removes more than a living parent.
 
@@ -1328,14 +1506,22 @@ It closes the remaining possibility of:
 - explicit paternal recognition;
 - explanation of the old silences;
 - clarification of what Cornelis believed and why;
-- reconciliation over the post-fire separation;
+- direct reconciliation over the post-fire separation;
 - asking whether Cornelis saw Claes in the way Claes had always watched him.
 
 This strengthens the existing canonical resonance that Cornelis' death is also the loss of time father and son may have believed they could still recover.
 
 The final inheritance remains moral, not cryptographic.
 
-## 12. Writing guardrails
+### Posthumous rereading remains possible
+
+Cornelis' death closes **direct** reconciliation; it does not freeze Claes' interpretation forever.
+
+Under `DEC.MAYKEN.GOES_COUNTER_MEMORY.2026-08-21`, Mayken can later contribute partial Goese/family memory about Cornelis' post-fire rebuilding, the rumour environment and efforts made for Claes' education. This can force Claes to recognise that an act he carried as rejection may also have been an imperfect form of protection.
+
+Mayken does not supply Cornelis' private thoughts or solve the fire. The result is not acquittal but a changed relation to evidence and memory.
+
+## 13. Writing guardrails
 
 1. Cornelis loves Claes; do not rewrite him into a loveless father.
 2. Cornelis' trust is often expressed as increased responsibility.
@@ -1345,10 +1531,14 @@ The final inheritance remains moral, not cryptographic.
 6. No automatic corporal punishment is canonized.
 7. Claes may feel responsible for family safety but is not causally responsible for the 1554 deaths.
 8. Cornelis is Familist/Huis der Liefde with outward Catholic conformity, not simply “Protestant”.
-9. Pre-fire religious conflict is intermittent, observational and incompletely understood.
-10. The Reimerswaal separation is simultaneously paternal sacrifice and filial experience of rejection.
-11. Later secrecy should retrospectively illuminate childhood dissonance without granting Claes impossible knowledge.
-12. Cornelis' 1569 death ends the possibility of future recognition and reconciliation as well as the relationship itself.
+9. The fire tests an existing inward affiliation; it does not cause Cornelis' conversion.
+10. Pre-fire religious conflict is intermittent, observational and incompletely understood.
+11. Cornelis' economic identity is intermediary/steward of circulation; distinguish ownership/responsibility from daily specialist operation.
+12. The Reimerswaal separation is simultaneously paternal sacrifice/protection and filial experience of rejection.
+13. Post-fire rumour can increase the protective motive for distance but should erode trust/credit gradually rather than create an instant total boycott.
+14. Later secrecy should retrospectively illuminate childhood dissonance without granting Claes impossible knowledge.
+15. Cornelis' 1569 death ends direct future recognition and reconciliation, but later partial testimony may still change Claes' interpretation.
+16. Mayken can contribute a different Goese memory; she is not an omniscient explanation device or proof of the fire's technical cause.
 ```
 
 ---
@@ -1515,7 +1705,7 @@ See:
 
 **ID:** `SB.CLAES.MAYKEN_LAMPERT`  
 **Status:** CANONICAL DETAIL MODULE  
-**Decisions:** `DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14`, `DEC.CLAES_MAYKEN.CHILDHOOD_ACQUAINTANCE.2026-08-19`  
+**Decisions:** `DEC.CLAES.BELOVED.MAYKEN_LAMPERT.2026-08-14`, `DEC.CLAES_MAYKEN.CHILDHOOD_ACQUAINTANCE.2026-08-19`, `DEC.MAYKEN.GOES_COUNTER_MEMORY.2026-08-21`  
 **Historical source dossier:** `sources/SRC-HIST-GOES-LAMPERT-APOTHECARY-001.md`
 
 This dossier is the detailed authority for the identity and historical embedding of the character formerly labeled only **geliefde / apothekersdochter**. It is synchronized to the later no-cipher memoriaal decision: Mayken is not a cryptographic solver and no special Dodoens carrier is required.
@@ -1530,7 +1720,8 @@ She is canonically:
 - granddaughter of the older Goese apothecary **Jacob/Jacop Lampart/Lambert** and the historical household figure **Merricken** in novel genealogy;
 - raised in a material/apothecary environment in Goes;
 - approximately three to four years younger than Claes;
-- already known to Claes as a child before the fire of 18 May 1554, without childhood-romance framing.
+- already known to Claes as a child before the fire of 18 May 1554, without childhood-romance framing;
+- later one partial carrier of a different Goese memory of the fire aftermath and Cornelis' post-fire life.
 
 Mayken's mother remains fictionally **open**. Do not invent a historical wife of Adriaen merely to close the pedigree.
 
@@ -1555,7 +1746,8 @@ Explicit novel canon, not archival fact:
 - Adriaen is her father and Jacob/Merricken her paternal grandparents;
 - Mayken and Claes know one another as children before 18 May 1554;
 - Mayken becomes Claes' beloved;
-- her precise childhood experiences, education and later relationship biography.
+- her precise childhood experiences, education and later relationship biography;
+- her later access to partial local/family memory about Cornelis' post-fire actions.
 
 No currently searchable transport act identifies a historical daughter of Adriaen. This is absence of evidence in a property corpus, not evidence of absence.
 
@@ -1614,7 +1806,36 @@ That strength also has a shadow: Mayken may become impatient with a hypothesis, 
 
 Guardrail: do not give Mayken an unsupported university education, formal physician status or later seventeenth-century guild office.
 
-## 7. Memoriaal reveal and material competence
+## 7. Goese counter-memory and the posthumous reading of Cornelis
+
+After the fire Claes leaves Goes for Reimerswaal and later Antwerp. Mayken remains connected to a different Goese household, family network and rebuilding history. That asymmetry gives her access to **a different memory of the same years**.
+
+Under `DEC.MAYKEN.GOES_COUNTER_MEMORY.2026-08-21`, later reunion may allow Mayken to contribute fragments about things Claes could not directly witness:
+
+- how the rumour around `Nissepats keet` circulated or changed;
+- what her family or neighbours saw of Cornelis after Claes left;
+- practical efforts Cornelis made to rebuild livelihood and credit;
+- payments, arrangements, messages or sacrifices connected to Claes' schooling where Mayken has a credible chain of knowledge;
+- local reasons to understand Claes' removal from Goes partly as protection from the rumour environment.
+
+This is **not** permission for Mayken to explain the whole backstory. She knows only what she, her family and local social memory could plausibly retain. She cannot prove the exact technical ignition cause, read Cornelis' private mind or retrospectively acquit him of every possible responsibility.
+
+The strongest dramatic function occurs after Cornelis' death. Claes can no longer confront or reconcile with his father directly. Mayken's fragments can therefore force a **posthumous rereading**:
+
+> what Claes carried as rejection may also have been an imperfect form of protection.
+
+The discovery changes Claes' relation to the past; it does not change the past or make Cornelis secretly perfect.
+
+## 8. Relation to Tanneken's material knowledge
+
+Mayken's method should resonate with, but never duplicate, Claes' mother.
+
+- **Tanneken:** lived operational/material condition through household continuity — stock, use, bodies, timing, reliability and everyday consequence;
+- **Mayken:** increasingly specialized material verification — identity, preparation, measurement, contamination, testing and repeatable contradiction.
+
+Claes can therefore recognize in Mayken a discipline whose basic material trustworthiness his childhood made familiar without reducing Mayken to a substitute mother.
+
+## 9. Memoriaal reveal and material competence
 
 The Brevísima mechanism is direct chemical steganography under `DEC.MEMORIAAL.DIRECT_TEXT_NO_CIPHER.2026-08-15`.
 
@@ -1637,13 +1858,13 @@ She is **not**:
 
 This gives her competence without making the relationship mechanically dependent on the retired recovery architecture.
 
-## 8. Relationship with Claes
+## 10. Relationship with Claes
 
 `REL.CLAES.BELOVED` / `REL.CLAES.MAYKEN.CONJUNCTIO` is the relationship **Claes ↔ Mayken**.
 
 Dynamic:
 
-**childhood acquaintance with separate Goese lives → separation/different fire aftermaths → later recognition and material proximity → collaborative verification → earned trust → love without possession → sensory/spiritual companionship.**
+**childhood acquaintance with separate Goese lives → separation/different fire aftermaths → later recognition and partial counter-memory → material proximity and collaborative verification → earned trust → love without possession → sensory/spiritual companionship.**
 
 Mayken must never function merely as a reward for Claes' suffering or as a therapist. She has her own competence, history and judgement. She can contradict Claes because she knows things he does not.
 
@@ -1655,7 +1876,7 @@ Her presence later on the road toward Enkhuizen helps Claes recover the *sinne* 
 
 The mature relation must allow the reverse influence as well: Claes can sometimes see a relation or possibility before Mayken believes it materially established. Their strongest scenes should therefore produce reciprocal revision rather than one person permanently correcting the other.
 
-## 9. Name use
+## 11. Name use
 
 Preferred prose name: **Mayken**.  
 Project/canonical full form: **Mayken Adriaensdr. Lampert**.  
@@ -1663,7 +1884,7 @@ Possible period forms: **Mayken Adriaens**, **Mayken Adriaensdochter**.
 
 Avoid modernizing her to *Maaike* in the sixteenth-century narrative voice.
 
-## 10. Guardrails
+## 12. Guardrails
 
 1. Mayken is fictional; no historical daughter has been identified.
 2. Adriaen's apothecary identity is strongly supported but remains reconstruction where historical precision matters.
@@ -1672,10 +1893,13 @@ Avoid modernizing her to *Maaike* in the sixteenth-century narrative voice.
 5. Claes and Mayken know one another before the 1554 fire, but are **not** childhood sweethearts.
 6. Ordinary Dodoens use is allowed; the retired special Dodoens carrier is not.
 7. Mayken shares the 1554 fire horizon with Claes but not his exact losses.
-8. She contributes to Claes' recovery; she does not perform or complete it for him.
-9. She may assist the direct chemical reveal, but she is not a cryptographic key-holder or decoder.
-10. Material verification is her strength and may also become her limitation; do not write her as an infallible corrective to Claes.
-11. Load `storybible/CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md` for stable character behaviour and shadow.
+8. She may later carry partial Goese memory about Cornelis' aftermath, but she is not an omniscient exposition source and cannot prove the fire's ignition cause.
+9. The later Cornelis rereading is partial and preferably posthumous; do not convert it into a neat acquittal or impossible direct reconciliation.
+10. Tanneken and Mayken share respect for material condition but remain distinct: lived continuity versus specialized verification.
+11. She contributes to Claes' recovery; she does not perform or complete it for him.
+12. She may assist the direct chemical reveal, but she is not a cryptographic key-holder or decoder.
+13. Material verification is her strength and may also become her limitation; do not write her as an infallible corrective to Claes.
+14. Load `storybible/CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md` for stable character behaviour and shadow.
 ```
 
 ---

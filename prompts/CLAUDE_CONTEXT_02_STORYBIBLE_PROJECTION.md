@@ -5,8 +5,8 @@
 > Do not use this pack as permission for free repository discovery; follow the task router in CLAUDE_CONTEXT_INDEX.md.
 
 - source branch: `main`
-- source commit at generation: `d05b988e7b24e06cfdef0fc367975d16fb57fb98`
-- generated UTC: `2026-08-19T08:30:50+00:00`
+- source commit at generation: `bec79474a0169e668f7af84b78c1bf6ee10e4398`
+- generated UTC: `2026-08-21T15:16:58+00:00`
 - included files: `15`
 
 Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pack does not alter authority.
@@ -985,9 +985,10 @@ The specific damage remains story truth, not archival evidence.
 ```markdown
 # Claes en Cornelis — vader-zoonrelatie 1547–1569
 
-**Status:** CANON — approved 18 August 2026  
-**Governing decisions:** `DEC.CLAES.CORNELIS.RECOGNITION.2026-08-18`, `DEC.CLAES.CORNELIS.RESPONSIBILITY.2026-08-18`, `DEC.CLAES.CORNELIS.RELIGIOUS_DISSONANCE.2026-08-18`, `DEC.CLAES.CORNELIS.POSTFIRE_READING.2026-08-18`  
-**Extends:** `REL.CLAES.CORNELIS`, `ARC.CLAES.CORNELIS`, `DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14`
+**Status:** CANON — approved 18 August 2026; refined 21 August 2026  
+**Governing decisions:** `DEC.CLAES.CORNELIS.RECOGNITION.2026-08-18`, `DEC.CLAES.CORNELIS.RESPONSIBILITY.2026-08-18`, `DEC.CLAES.CORNELIS.RELIGIOUS_DISSONANCE.2026-08-18`, `DEC.CLAES.CORNELIS.POSTFIRE_READING.2026-08-18`, `DEC.CORNELIS.ECONOMIC_INTERMEDIARY.2026-08-21`, `DEC.CLAES.FIRE_EPISTEMIC_WOUND.1554.2026-08-21`, `DEC.CLAES.CORNELIS.POSTFIRE_PROTECTION_RUMOR.2026-08-21`, `DEC.MAYKEN.GOES_COUNTER_MEMORY.2026-08-21`  
+**Extends:** `REL.CLAES.CORNELIS`, `ARC.CLAES.CORNELIS`, `DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14`  
+**Fire authority:** `storybible/GOES_FIRE_1554_CAUSAL_ARCHITECTURE.md`
 
 This dossier deepens the emotional and developmental logic of the existing father-son arc. It does not replace the established canon that Cornelis loves Claes, teaches him, sacrifices materially for his education and later becomes increasingly secretive through his dangerous networks.
 
@@ -1035,7 +1036,19 @@ Prefer:
 
 Avoid repeated internal narration that tells the reader “Claes wanted his father's approval.” The dynamic should be visible in expectation, response and silence.
 
-## 3. Responsibility while Cornelis travels
+## 3. Cornelis' work-world: stewardship through other people's competence
+
+Cornelis' economic characterization now clarifies the model Claes sees in his father before the fire.
+
+Cornelis is a **biersteker, intermediary and network steward**, not primarily a maker. He knows how goods, people, credit, vessels, routes and obligations connect. He judges, checks, delegates and arranges.
+
+This means Claes sees a father who can exert real influence without personally performing every specialist process. In beer, salt and later textual circulation, Cornelis' strength is to make separate people and things form a working chain.
+
+That same strength contains a vulnerability that becomes catastrophic in 1554: Cornelis can remain responsible for an enterprise whose direct daily operations are conducted by other people. The salt-keet line must preserve the distinction between **economic responsibility** and **operational control**.
+
+This is not meant to teach Claes a maxim. It becomes lived contradiction when a system attached to Cornelis' name fails and the city has little interest in preserving all the distinctions Claes later wants to reconstruct.
+
+## 4. Responsibility while Cornelis travels
 
 Cornelis' trade and network life take him away from the immediate household at times. As Claes grows older, especially in the early 1550s, he is entrusted with age-appropriate duties that matter during those absences.
 
@@ -1052,7 +1065,7 @@ Claes may therefore begin to experience himself as **the oldest son who must hel
 
 This is not adult authority. At eleven he is still a child within a working household. Do not make him a substitute merchant, bookkeeper with independent legal power, or de facto paterfamilias.
 
-## 4. Consequences of failure
+## 5. Consequences of failure
 
 A mistake can matter.
 
@@ -1070,7 +1083,7 @@ For Claes, a short functional judgement from Cornelis can carry disproportionate
 
 Do not turn Cornelis into an anachronistic therapeutic father, but do not turn ordinary sixteenth-century paternal authority into gratuitous cruelty either.
 
-## 5. Responsibility for Tanneken, Jan and the unborn child
+## 6. Responsibility for Tanneken, Jan and the unborn child
 
 As the oldest child, Claes can feel increasing responsibility toward the intact household:
 
@@ -1090,9 +1103,15 @@ However, because he had begun to think of himself as someone who should notice, 
 
 > I was supposed to help carry them. What did I fail to see?
 
-That subjective guilt feeds the already established wound — *if I had seen early enough, could I have prevented what happened?* — without creating a factual causal responsibility.
+Under `DEC.CLAES.FIRE_EPISTEMIC_WOUND.1554.2026-08-21`, the fire sharpens this further because Claes' normal observe/compare/understand method cannot keep pace with the event. He receives cause, spread and loss through fragments. That helps form the false possibility:
 
-## 6. Religious dissonance before the fire
+> If I had seen earlier or better, perhaps it could have been prevented.
+
+This subjective guilt feeds the established wound without creating factual causal responsibility.
+
+`De Kraan` remains essential counter-evidence: Claes can act immediately when there is no interval for prolonged deliberation.
+
+## 7. Religious dissonance before the fire
 
 Cornelis is not simply “becoming Protestant” in current canon.
 
@@ -1114,7 +1133,7 @@ Claes does **not** know the words *Huis der Liefde*, *Familist* or the network b
 
 Do not stage explicit Protestant-versus-Catholic debate in the pre-1554 childhood chapters. The dramatic state is **unexplained difference**, not doctrinal comprehension.
 
-## 7. Puttus, school and religious ambiguity
+## 8. Puttus, school and religious ambiguity
 
 Puttus may deepen Claes' capacity to notice distinctions between words, surface meaning and interpretation, but no specific anti-image, anti-ritual or anti-clerical doctrine is assigned to Puttus without separate historical support.
 
@@ -1126,11 +1145,13 @@ Therefore:
 
 The useful structure is that church, school and father do not always produce identical meanings for Claes, even when none of them openly declares a confessional break.
 
-## 8. The fire changes the meaning of the recognition gap
+## 9. The fire changes the meaning of the recognition gap
 
 Before 18 May 1554, Claes can still imagine recognition as something he may earn tomorrow.
 
 After the fire, Cornelis makes one of the strongest acts of paternal care in the entire relationship: he stays in Goes to rebuild livelihood, credit and shelter while preserving enough means to continue Claes' education elsewhere.
+
+The new fire architecture adds a second protective motive. As public rumour increasingly compresses the catastrophe into a story about `Nissepats keet`, Cornelis also has reason to remove Claes from the immediate social environment in which his father's name is repeatedly attached to the deaths.
 
 Yet the act is structurally tragic because Claes can read it through the older gap:
 
@@ -1138,12 +1159,20 @@ Yet the act is structurally tragic because Claes can read it through the older g
 
 The established double truth remains binding:
 
-- **Cornelis:** I send him away because I refuse to let the fire take his future.
+- **Cornelis:** I send him away because I refuse to let the fire, ruin and rumour take his future.
 - **Claes:** I am the surviving son, and still father does not choose to keep me beside him.
 
 The second statement is Claes' wounded interpretation, not Cornelis' intention.
 
-## 9. Reimerswaal and distance
+### Rumour and money
+
+Do not make Cornelis' whole business world disappear in one day. The intended movement is cumulative:
+
+**loss/damage → suspicion → greater caution by others → harder credit/fewer options → increasing recovery pressure.**
+
+The father-son relationship should register this through what Claes can witness rather than through Cornelis-only scenes.
+
+## 10. Reimerswaal and distance
 
 During the 1554–1561 separation, Cornelis' care can remain materially visible through:
 
@@ -1158,7 +1187,9 @@ Those acts do not automatically satisfy Claes' need for recognition or closeness
 
 This makes the separation richer than simple abandonment: Claes can possess evidence that his father cares and still feel abandoned.
 
-## 10. Later secrecy gives childhood memories new meaning
+The planned pre-fire route remains **Zierikzee**. Post-fire loss, rebuilding and worsening economic/reputational pressure make that route financially or practically unattainable, producing the **Reimerswaal** continuation. Exact comparative schooling cost remains research-open.
+
+## 11. Later secrecy gives childhood memories new meaning
 
 From 1561 onward, and especially as dangerous books, papers, routes and loyalties become visible, Claes begins to understand that the closed doors he sensed in childhood were real.
 
@@ -1168,7 +1199,13 @@ The causal movement is:
 
 Claes should not retrospectively become omniscient. He can recognize patterns without suddenly knowing every earlier conversation, visitor or motive.
 
-## 11. 1569 — what is finally lost
+The 1554 fire adds a parallel movement:
+
+**childhood fragmentary catastrophe → years of suspicion/blame/reconstruction → later partial rereading.**
+
+Neither line should end in total certainty.
+
+## 12. 1569 — what is finally lost
 
 Cornelis' execution on 19 November 1569 removes more than a living parent.
 
@@ -1177,14 +1214,22 @@ It closes the remaining possibility of:
 - explicit paternal recognition;
 - explanation of the old silences;
 - clarification of what Cornelis believed and why;
-- reconciliation over the post-fire separation;
+- direct reconciliation over the post-fire separation;
 - asking whether Cornelis saw Claes in the way Claes had always watched him.
 
 This strengthens the existing canonical resonance that Cornelis' death is also the loss of time father and son may have believed they could still recover.
 
 The final inheritance remains moral, not cryptographic.
 
-## 12. Writing guardrails
+### Posthumous rereading remains possible
+
+Cornelis' death closes **direct** reconciliation; it does not freeze Claes' interpretation forever.
+
+Under `DEC.MAYKEN.GOES_COUNTER_MEMORY.2026-08-21`, Mayken can later contribute partial Goese/family memory about Cornelis' post-fire rebuilding, the rumour environment and efforts made for Claes' education. This can force Claes to recognise that an act he carried as rejection may also have been an imperfect form of protection.
+
+Mayken does not supply Cornelis' private thoughts or solve the fire. The result is not acquittal but a changed relation to evidence and memory.
+
+## 13. Writing guardrails
 
 1. Cornelis loves Claes; do not rewrite him into a loveless father.
 2. Cornelis' trust is often expressed as increased responsibility.
@@ -1194,10 +1239,14 @@ The final inheritance remains moral, not cryptographic.
 6. No automatic corporal punishment is canonized.
 7. Claes may feel responsible for family safety but is not causally responsible for the 1554 deaths.
 8. Cornelis is Familist/Huis der Liefde with outward Catholic conformity, not simply “Protestant”.
-9. Pre-fire religious conflict is intermittent, observational and incompletely understood.
-10. The Reimerswaal separation is simultaneously paternal sacrifice and filial experience of rejection.
-11. Later secrecy should retrospectively illuminate childhood dissonance without granting Claes impossible knowledge.
-12. Cornelis' 1569 death ends the possibility of future recognition and reconciliation as well as the relationship itself.
+9. The fire tests an existing inward affiliation; it does not cause Cornelis' conversion.
+10. Pre-fire religious conflict is intermittent, observational and incompletely understood.
+11. Cornelis' economic identity is intermediary/steward of circulation; distinguish ownership/responsibility from daily specialist operation.
+12. The Reimerswaal separation is simultaneously paternal sacrifice/protection and filial experience of rejection.
+13. Post-fire rumour can increase the protective motive for distance but should erode trust/credit gradually rather than create an instant total boycott.
+14. Later secrecy should retrospectively illuminate childhood dissonance without granting Claes impossible knowledge.
+15. Cornelis' 1569 death ends direct future recognition and reconciliation, but later partial testimony may still change Claes' interpretation.
+16. Mayken can contribute a different Goese memory; she is not an omniscient explanation device or proof of the fire's technical cause.
 ```
 
 ---
@@ -1207,9 +1256,10 @@ The final inheritance remains moral, not cryptographic.
 ```markdown
 # Nissepat familiewapen, Sint-Joris en Cornelis
 
-**Status:** CANON — fact-fiction bridge approved 18 August 2026  
-**Governing decisions:** `DEC.CLAES.FAMILY_ARMS.VOETBOOG.2026-08-16`, `DEC.CORNELIS.SCHUTTERIJ.SINT_JORIS.2026-08-18`, `DEC.CLAES.CORNELIS.VOETBOOG_PEDAGOGY.2026-08-18`  
-**Historical substrate:** `SRC-HIST-NISSEPAT-ARMS-MUSCHART-82L-001`, `SRC-HIST-GOES-SCHUTTERIJ-DEGHEYN-001`
+**Status:** CANON — fact-fiction bridge approved 18 August 2026; carrier refined 21 August 2026  
+**Governing decisions:** `DEC.CLAES.FAMILY_ARMS.VOETBOOG.2026-08-16`, `DEC.CORNELIS.SCHUTTERIJ.SINT_JORIS.2026-08-18`, `DEC.CLAES.CORNELIS.VOETBOOG_PEDAGOGY.2026-08-18`, `DEC.NISSEPAT.VOETBOOG_TEKEN.FIRE_SURVIVAL.2026-08-21`  
+**Historical substrate:** `SRC-HIST-NISSEPAT-ARMS-MUSCHART-82L-001`, `SRC-HIST-GOES-SCHUTTERIJ-DEGHEYN-001`  
+**Object projection:** `OBJ.NISSEPAT.VOETBOOG_TEKEN`
 
 This dossier fixes the point where historical family heraldry and historical Goese civic culture meet deliberate fictional biography. The layers must remain distinguishable even when the novel makes them feel continuous.
 
@@ -1272,25 +1322,31 @@ This is the desired fact-fiction loop.
 
 The arms should not remain a YAML-only fact. Claes should know the sign materially before he understands what later meaning the reader may attach to it.
 
-Plausible carriers include:
+The project now fixes one **small metal fictional carrier** of the voetboog sign in the family/Sint-Joris material world before the 1554 fire. It is projected as `OBJ.NISSEPAT.VOETBOOG_TEKEN`.
 
-- a seal matrix;
-- a wax impression on a family or property document;
-- a copied heraldic mark in family papers;
-- another modest civic/family object appropriate to non-noble urban heraldry.
+Its exact object class is deliberately not yet fixed. Historically plausible candidates to research include:
 
-The exact carrier is not yet fixed. Do **not** assume the fictional carrier is identical to the historical object behind Muschart.
+- a ring;
+- badge/insigne or pendant;
+- a seal-related metal object;
+- a prize/trophy-related object;
+- another modest civic/family metal carrier appropriate to non-noble urban heraldry.
 
-Avoid presenting the Nissepat family as pseudo-aristocratic merely because it has arms. The sign functions as family identity and documentary continuity, not as proof of noble rank.
+These are candidates, not synonyms. **Do not call the object an official guild insigne, a schutterskoning prize or a ring until that form has been separately decided.**
+
+The fictional carrier is not assumed to be identical to the historical object behind Muschart.
+
+Avoid presenting the Nissepat family as pseudo-aristocratic merely because it has arms. The sign functions as family identity and documentary/material continuity, not as proof of noble rank.
 
 ## 5. Sign becomes embodied reality
 
 For young Claes the most effective sequence is:
 
-1. he knows or repeatedly sees the family sign;
+1. he knows or repeatedly sees the family sign and its metal carrier;
 2. he later recognizes the same basic form in Cornelis' actual voetboog;
 3. the visual sign acquires weight, tension, danger, sequence and bodily discipline;
-4. only much later can the reader experience the full family/memory resonance.
+4. the 1554 fire changes the carrier physically without erasing the sign;
+5. only much later can the reader experience the fuller family/memory resonance.
 
 Cornelis need not explain this relation in dialogue. A line such as “daarom dragen wij die boog” would make the loop too explicit and deterministic.
 
@@ -1344,6 +1400,8 @@ Possible scene functions:
 
 **Cornelis is not canonically schutterskoning.** Making him win a papegaaischieten requires a separate scene/story decision. Exact prizes, chains, silver birds, rules, distances and ceremonial choreography remain unproven for mid-sixteenth-century Goes unless separately sourced.
 
+This boundary is especially important now that the metal family sign survives the fire: its existence **must not be used backward to prove Cornelis won a particular trophy**.
+
 ## 8. `Van Ongenugten Vrij`
 
 The historical devies of the Goese Sint-Joris / Edele Voetboog is **`Van Ongenugten Vrij`**.
@@ -1375,24 +1433,26 @@ This therefore resonates with his established gift/shadow:
 
 Do not write the crossbow as an overt psychological metaphor. It must first work as a real dangerous object within real civic practice.
 
-## 10. 1554: the sign can outlive the house
+## 10. 1554: the metal sign survives the house damaged
 
-The family home and most of the household are destroyed in novel canon on 18 May 1554. The family sign need not disappear with them.
+The family home and most of the household are destroyed in novel canon on 18 May 1554.
 
-A plausible heraldic carrier can already be:
+Under `DEC.NISSEPAT.VOETBOOG_TEKEN.FIRE_SURVIVAL.2026-08-21`, the small metal carrier is **not protected from the catastrophe by convenient off-site storage**. It belongs to the family/grandfather-household material world touched by the fire and survives in a damaged state:
 
-- with Cornelis;
-- with Claes Jacobsz.;
-- among papers or property records stored elsewhere;
-- otherwise outside the house before the fire.
+- blackened or sooted;
+- heat-discoloured;
+- possibly slightly warped/scarred;
+- still recognizable through the voetboog form.
 
-This is preferable to a miraculous object rescued from the flames.
+This replaces the earlier development preference that the carrier should preferably survive because it happened to be elsewhere.
 
-The result creates an early material form of a later project principle:
+The object must not emerge magically untouched. Its material damage is the point: continuity is real, but continuity is not preservation without change.
 
-> **a carrier can outlive another carrier, and a sign can remain when the household in which Claes first knew it is gone.**
+For Claes its first post-fire function should remain concrete rather than philosophical:
 
-This is a narrative resonance, not evidence that sixteenth-century Nissepat heraldry was understood philosophically in this way.
+> **this was here; this existed.**
+
+It may disappear from the page for years. Survival does not require constant recurrence.
 
 ## 11. Relation to the wider carrier/content architecture
 
@@ -1406,6 +1466,8 @@ The motif can later resonate with:
 - Claes learning that preserving something is not the same as possessing it forever.
 
 The familiewapen is therefore a useful early seed of continuity-through-carriers, but must never be retroactively described as a deliberate coded prefiguration.
+
+The damaged metal sign sharpens that principle: **a carrier can survive while its condition changes**. It does not guarantee an unchanged meaning, household or owner.
 
 ## 12. Hard guardrails
 
@@ -1423,7 +1485,10 @@ The familiewapen is therefore a useful early seed of continuity-through-carriers
 12. Claes' childhood weapon participation remains supervised and age-appropriate.
 13. The crossbow reinforces Claes' established gift/shadow; it is not the single cause of his personality.
 14. Symbolism stays author-side; scenes remain material, relational and civic first.
-15. If the Muschart card or its underlying primary source is later recovered directly, update the provenance layer without disturbing the fictional Cornelis decision unless the historical identification itself creates a contradiction.
+15. A small metal family/Sint-Joris carrier exists before 1554 and survives the fire damaged in fiction canon; exact object class remains OPEN.
+16. Do not label that object an official guild badge, ring, chain or schutterskoning trophy until separately decided.
+17. Do not equate the fictional metal carrier with the historical Muschart source object.
+18. If the Muschart card or its underlying primary source is later recovered directly, update the provenance layer without disturbing the fictional Cornelis/carrier decision unless the historical identification itself creates a contradiction.
 ```
 
 ---
@@ -1543,12 +1608,15 @@ scene_guardrails:
 # SOURCE FILE: `narrative/motifs_nissepat_arms_2026-08-18.yaml`
 
 ```yaml
-schema_version: 1.1.0
+schema_version: 1.2.0
 kind: MotifRegistryExtension
 motifs:
   - id: MOTIF.NISSEPAT_VOETBOOG
     label: Nissepat voetboog / familiewapen
     status: CANON
+    decision_ids:
+      - DEC.CLAES.FAMILY_ARMS.VOETBOOG.2026-08-16
+      - DEC.NISSEPAT.VOETBOOG_TEKEN.FIRE_SURVIVAL.2026-08-21
     historical_substrate:
       family_arms: SC.HIST.NISSEPAT.ARMS.VOETBOOG.001
       goes_guild: SC.HIST.GOES.SCHUTTERIJ.SINT_JORIS_VOETBOOG.001
@@ -1559,11 +1627,16 @@ motifs:
       - STC.NISSEPAT.FAMILY_ARMS.VOETBOOG.001
       - STC.CORNELIS.SCHUTTERIJ.SINT_JORIS.001
       - STC.CLAES.CORNELIS.VOETBOOG_FORMATION.001
+      - STC.NISSEPAT.ARMS.CARRIER_CONTINUITY.001
       - REL.CLAES.CORNELIS
+    object_ref: OBJ.NISSEPAT.VOETBOOG_TEKEN
     progression:
       - label: sign before explanation
         period: childhood before 1554
         function: Claes knows the family charge materially/visually before it carries explicit thematic meaning.
+      - label: metal carrier in ordinary family life
+        period: childhood before 1554
+        function: A small metal carrier of the voetboog sign is an ordinary handled/seen family-Sint-Joris object; exact object class remains open.
       - label: weapon in father's hands
         period: childhood before 1554
         function: The heraldic shape gains bodily reality through Cornelis' Sint-Joris/voetboog practice.
@@ -1579,12 +1652,15 @@ motifs:
       - label: Van Ongenugten Vrij
         period: childhood onward
         function: The historical Sint-Joris devies begins as ordinary guild identity; later suffering can make its wording resonate differently for the reader without explicit irony in character speech.
-      - label: carrier survives rupture
+      - label: damaged carrier survives rupture
         period: after 18 May 1554
-        function: The sign can outlive house and household through a plausible material carrier, preparing the wider carrier/content architecture without mystical explanation.
+        function: The same metal sign survives the burned family/grandfather-household world visibly damaged; its first function is material trace — the destroyed world existed — rather than miracle or explanation.
+      - label: sparse later recurrence
+        period: later life
+        function: The object may disappear from the page for long stretches and return only when changed context gives its material continuity a new value.
       - label: mature resonance
         period: later life
-        function: Claes' mature problem is not endless aim but choosing and releasing action when responsibility requires it.
+        function: Claes' mature problem is not endless aim but choosing and releasing action when responsibility requires it; material carriers can persist without giving him possession or control of what they mean.
     guardrails:
       - First be heraldry, weapon practice and family/civic material culture; symbolism must emerge from use.
       - Do not make the arms proof of nobility, destiny or hereditary martial essence.
@@ -1592,7 +1668,9 @@ motifs:
       - Do not make Sint Sebastiaan the voetboog guild in Goes.
       - Do not canonize Cornelis as schutterskoning without a separate story decision.
       - Do not invent a physical display location for Van Ongenugten Vrij without evidence.
-      - Do not require the same physical heraldic object to survive every phase.
+      - The fire-surviving metal carrier must show damage; no pristine providential relic.
+      - Exact object form/institutional status remains open until separately researched and decided.
+      - The same physical carrier need not be used in every later phase simply because it survives 1554.
       - Do not turn Claes' observer-shadow into a one-cause result of crossbow training.
 ```
 
