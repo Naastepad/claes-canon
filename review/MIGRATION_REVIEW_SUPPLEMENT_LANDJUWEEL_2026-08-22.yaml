@@ -1,0 +1,36 @@
+schema_version: 1.0.0
+kind: MigrationReviewSupplement
+purpose: Human-decision classification for Story Claims added by the 22 August 2026 Landjuweel manuscript-continuity synchronization.
+records:
+- claim_id: STC.CLAES.LANDJUWEEL.AGE.1561.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicit author continuity decision that Claes is eighteen in August 1561 because his canonical birth date is 8 December 1542; the manuscript itself does not state a conflicting age.
+- claim_id: STC.CLAES.LANDJUWEEL.JOURNEY_ACCESS.1561.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicit author decision that the Antwerp journey is primarily commercial through Cornelis' beer-trade/credit network, with the Landjuweel as cultural opportunity and partial access through a business/rederijker relation; no official Goese competition status is created.
+- claim_id: STC.CLAES.LANDJUWEEL.ENTRY_AUTONOMY.1561.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicit author decision that Claes is separated from Cornelis during the 3 August night entry and experiences the final Brussels chamber without paternal interpretation; historical date/order/timing and fictional Claes action remain separated.
+- claim_id: STC.CLAES.LANDJUWEEL.VAN_GHISTELE.1561.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicit author decision that historical Cornelis van Ghistele is the chapter's single substantive rederijker interlocutor and fictionally asks Claes the central question, eliciting the answer 'misschien datgene wat een mens mist.'
+- claim_id: STC.CLAES.LANDJUWEEL.VAN_HAECHT_CENSORSHIP.1561.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicit author decision to dramatize historically grounded censorship pressure through a fictional scene in which historical Willem van Haecht removes a risky textual line; the exact deletion is not presented as documented biography.
+- claim_id: STC.CLAES.LANDJUWEEL.DEFERRED_SYMBOLISM.1561.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicit author decision that the Landjuweel supplies later-use images and tensions but no alchemical teaching, secret initiation or Freemasonic membership; symbolic ordering belongs to Claes' later interpretation.
+- claim_id: STC.CLAES.CORNELIS.LANDJUWEEL_RAPPROCHEMENT.1561.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicit author decision that Cornelis' final-evening acknowledgment creates a sincere but incomplete first rapprochement after seven years of distance and does not erase the later secrecy conflict.
+- claim_id: STC.CLAES.SILVIUS.NO_1561_MEETING.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicit author decision that Willem Silvius does not directly meet Claes in the 1561 Landjuweel chapter; direct Silvius/Dee formation remains anchored in 1563–early 1564, while the historical 1562 print afterlife is a separate optional scene.
