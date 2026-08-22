@@ -1,0 +1,105 @@
+schema_version: 1.0.0
+kind: NarrativeRefinementRegistry
+modules:
+- id: NI.REFINEMENT.LANDJUWEEL_1561.CONTINUITY
+  type: NarrativeInstance.Refinement
+  label: "Het Landjuweel 1561 — manuscript-continuity refinement"
+  canon_status: CANON
+  parent_instance: NI.EVENT.LANDJUWEEL.1561.001
+  story_time: {earliest: '1561-08-01', latest_exclusive: '1561-09-01', precision: month}
+  location: ENT.LOC.ANTWERP
+  decision_ids:
+  - DEC.CLAES.LANDJUWEEL.AGE_18.2026-08-22
+  - DEC.CLAES.LANDJUWEEL.JOURNEY_ACCESS.2026-08-22
+  - DEC.CLAES.LANDJUWEEL.ENTRY_AUTONOMY.2026-08-22
+  - DEC.CLAES.LANDJUWEEL.VAN_GHISTELE.2026-08-22
+  - DEC.CLAES.LANDJUWEEL.VAN_HAECHT_CENSORSHIP.2026-08-22
+  - DEC.CLAES.LANDJUWEEL.DEFERRED_SYMBOLISM.2026-08-22
+  - DEC.CLAES.CORNELIS.LANDJUWEEL_RAPPROCHEMENT.2026-08-22
+  - DEC.CLAES.SILVIUS.NO_1561_MEETING.2026-08-22
+  claes_age: 18
+  journey:
+    origin: ENT.LOC.REIMERSWAAL
+    via: [ENT.LOC.GOES]
+    destination: ENT.LOC.ANTWERP
+    primary_reason: "Cornelis' beer-trade/credit/business network"
+    secondary_reason: "Landjuweel and rederijker culture"
+    access: "partial, through a business/rederijker relation; no official Goese competitor status"
+    relationship_context: "first joint journey since Claes' departure after the 1554 fire"
+  scenes:
+  - id: NI.SCENE.LANDJUWEEL.ENTRY.1561.001
+    type: SceneInstance
+    label: "3 August — intocht and separation"
+    canon_status: CANON
+    story_time: {date: '1561-08-03', precision: day}
+    entities: [ENT.PERSON.CLAES, ENT.PERSON.CORNELIS]
+    story_claims: [STC.CLAES.LANDJUWEEL.ENTRY_AUTONOMY.1561.001]
+    historical_anchors:
+    - SC.HIST.LANDJUWEEL.ENTRY_14_CHAMBERS.1561.001
+    - SC.HIST.LANDJUWEEL.BRUSSELS_LAST_AFTER_2AM.1561.001
+    action: "Claes and Cornelis watch the entry; Claes is separated from his father and sees the final Brussels chamber without paternal interpretation."
+    value_shift: "world mediated by father -> world directly encountered"
+    current_manuscript_route: [Keizerspoort, Huidevettersstraat, Meirbrug, Onze-Lieve-Vrouwekerk, Melkmarkt, Grote Markt]
+    evidence_route_checked: [Keizerspoort, Huidevetterstraat, Eiermarkt, Melkmarkt, Grote Markt]
+    route_status: OPEN_RECONCILIATION
+    open_decision: OPEN.LANDJUWEEL.ENTRY_ROUTE.1561.001
+    guardrail: "Do not silently promote the Meirbrug/Onze-Lieve-Vrouwe segment to historical fact; the cathedral is separately attested for the 5 August kerkgang."
+
+  - id: NI.SCENE.LANDJUWEEL.VAN_GHISTELE.1561.001
+    type: SceneInstance
+    label: "Cornelis van Ghistele — the unanswered question"
+    canon_status: CANON
+    story_time: {earliest: '1561-08-08', latest_exclusive: '1561-08-24', precision: bounded}
+    entities: [ENT.PERSON.CLAES, ENT.PERSON.CORNELIS, ENT.PERSON.CORNELIS_VAN_GHISTELE]
+    story_claims: [STC.CLAES.LANDJUWEEL.VAN_GHISTELE.1561.001]
+    historical_anchors:
+    - SC.HIST.LANDJUWEEL.QUESTION.1561.001
+    - SC.HIST.VAN_GHISTELE.GOUDBLOEM_LANDJUWEEL.1561.001
+    action: "Van Ghistele asks Claes for his own answer after Claes has heard the competing solutions."
+    claes_answer: "misschien datgene wat een mens mist."
+    value_shift: "receiving authorities' answers -> risking a personal answer"
+    guardrail: "The direct meeting and wording are fiction canon."
+
+  - id: NI.SCENE.LANDJUWEEL.VAN_HAECHT_CENSORSHIP.1561.001
+    type: SceneInstance
+    label: "Van Haecht — one line too dangerous"
+    canon_status: CANON
+    story_time: {earliest: '1561-08-03', latest_exclusive: '1561-08-24', precision: bounded}
+    entities: [ENT.PERSON.CLAES, ENT.PERSON.WILLEM_VAN_HAECHT]
+    story_claims: [STC.CLAES.LANDJUWEEL.VAN_HAECHT_CENSORSHIP.1561.001]
+    historical_anchors:
+    - SC.HIST.VAN_HAECHT.VIOLIEREN_LANDJUWEEL.1561.001
+    - SC.HIST.LANDJUWEEL.CENSORSHIP_CONDITIONS.1561.001
+    action: "At another lodging Claes sees Van Haecht remove a risky line from a text."
+    value_shift: "words as performance -> words as exposure and danger"
+    function: "First direct material experience of censorship; prepares later fascination with risky print without introducing Silvius here."
+    guardrail: "The exact deletion incident is fictional; do not cite it as Van Haecht biography."
+
+  - id: NI.SCENE.LANDJUWEEL.FATHER_RAPPROCHEMENT.1561.001
+    type: SceneInstance
+    label: "Last evening — incomplete rapprochement"
+    canon_status: CANON
+    story_time: {earliest: '1561-08-03', latest_exclusive: '1561-09-01', precision: bounded}
+    entities: [ENT.PERSON.CLAES, ENT.PERSON.CORNELIS]
+    story_claims: [STC.CLAES.CORNELIS.LANDJUWEEL_RAPPROCHEMENT.1561.001]
+    action: "Cornelis acknowledges that he should have shown Claes this world earlier."
+    value_shift: "distance held as necessity -> distance acknowledged as loss"
+    relationship_effect: "sincere opening, not repair; later secrecy can hurt more because contact briefly becomes possible"
+
+  developmental_function:
+  - "Public art becomes a problem of multiple answers rather than a single correct solution."
+  - "Claes' observation becomes partly autonomous from Cornelis."
+  - "Censorship makes the material risk of language visible before the later print network."
+  - "The chapter gives Claes images of spirit/matter, freedom/rule and gift/labour without alchemical instruction."
+  - "Father-son distance is briefly named, making later secrecy relationally sharper."
+  silvius_boundary:
+    direct_1561_contact: false
+    first_direct_formation: "1563–early 1564"
+    historical_print_afterlife: "Silvius 1562 Landjuweel edition"
+    optional_scene: OPEN.CLAES.SILVIUS.LANDJUWEEL_PRINT_1562.001
+  guardrails:
+  - "No Castanienbloem name or deanship in 1561."
+  - "Cornelis receives no formal Brabant/Antwerp chamber office."
+  - "Nardusbloem/Goes is not made an official competitor."
+  - "No alchemical lesson, secret initiation or Freemasonic meeting at the Landjuweel."
+  - "Do not put Silvius into the 1561 chapter."

@@ -1,0 +1,44 @@
+schema_version: 1.0.0
+kind: EntitySupplement
+entities:
+- id: ENT.PERSON.CORNELIS_VAN_GHISTELE
+  type: Person
+  label: "Cornelis van Ghistele"
+  historical_status: HISTORICAL
+  aliases:
+  - Cornelis de Mol
+  - Talpa
+  roles:
+  - role: rederijker_goudbloem
+    evidence_status: VERIFIED
+  - role: factor_goudbloem
+    evidence_status: SUPPORTED
+    approximate_from: '1550-01-01'
+    approximate_to: '1571-01-01'
+  linked_event: NI.EVENT.LANDJUWEEL.1561.001
+  source_claims:
+  - SC.HIST.VAN_GHISTELE.GOUDBLOEM_LANDJUWEEL.1561.001
+  fictional_story_use:
+    decision_id: DEC.CLAES.LANDJUWEEL.VAN_GHISTELE.2026-08-22
+    use: "Direct conversation with Claes during the 1561 Landjuweel; asks Claes what most moves a human being to art."
+  guardrail: "Historical role/presence does not prove a personal meeting with Claes; that encounter and its dialogue are fiction canon."
+
+- id: ENT.PERSON.WILLEM_VAN_HAECHT
+  type: Person
+  label: "Willem van Haecht"
+  historical_status: HISTORICAL
+  roles:
+  - role: factor_violieren
+    evidence_status: VERIFIED
+    attested_by: '1558-01-01'
+  - role: landjuweel_literary_organizer
+    evidence_status: VERIFIED
+    attested_date: '1561-08-01'
+  linked_event: NI.EVENT.LANDJUWEEL.1561.001
+  source_claims:
+  - SC.HIST.VAN_HAECHT.VIOLIEREN_LANDJUWEEL.1561.001
+  - SC.HIST.LANDJUWEEL.CENSORSHIP_CONDITIONS.1561.001
+  fictional_story_use:
+    decision_id: DEC.CLAES.LANDJUWEEL.VAN_HAECHT_CENSORSHIP.2026-08-22
+    use: "Claes sees Van Haecht remove a risky textual line at a lodging."
+  guardrail: "The exact deletion episode is not a recovered historical incident; it is fiction canon dramatizing historically documented textual/political constraints."

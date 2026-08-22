@@ -1,0 +1,24 @@
+schema_version: 1.0.0
+kind: OpenDecisionSupplement
+decisions:
+- id: OPEN.LANDJUWEEL.ENTRY_ROUTE.1561.001
+  domain: historical_reconciliation
+  priority: medium
+  question: "Should the current manuscript route for the 3 August 1561 entry be retained as a Claes-specific movement/detour, or revised to match the presently verified procession route?"
+  status: OPEN
+  current_manuscript: "Keizerspoort -> Huidevettersstraat -> Meirbrug -> Onze-Lieve-Vrouwekerk -> Melkmarkt -> Grote Markt"
+  current_external_evidence: "Accessible historical descriptions give Keizerspoort -> Huidevetterstraat -> Eiermarkt -> Melkmarkt -> Grote Markt for the 3 August entry; the cathedral of Onze-Lieve-Vrouwe is separately attested for the ceremonial kerkgang on 5 August."
+  fixed_until_resolved:
+  - "Claes witnesses the 3 August entry and is separated from Cornelis during the night crowd."
+  - "The Brussels Maria-kransken is last and its late arrival extends beyond two in the morning in the cited witness tradition."
+  guardrail: "Do not present the Meirbrug/Onze-Lieve-Vrouwe segment as historically verified until the dossier source and the accessible route evidence are reconciled."
+
+- id: OPEN.CLAES.SILVIUS.LANDJUWEEL_PRINT_1562.001
+  domain: scene
+  priority: low
+  question: "Use a short 1562 transition in which Claes encounters Silvius' printed Landjuweel texts and sees the noisy event become fixed and orderly on paper?"
+  status: OPEN
+  fixed:
+  - "Silvius historically publishes the Landjuweel texts in 1562."
+  - "No direct Claes-Silvius meeting is created in August 1561."
+  guardrail: "If used, this scene may bridge performance to print culture but must not pre-empt the direct Silvius/Dee formation anchored in 1563–early 1564."
