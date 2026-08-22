@@ -2,8 +2,8 @@
 ## From chapter-ready world to causal character architecture
 
 **Status:** CURRENT AUTHORING AUTHORITY FOR STORY PROJECTION  
-**Date:** 16 August 2026  
-**Machine layers:** `narrative/alchemical_authorial_architecture.yaml`, `narrative/mayken_independent_arc.yaml`, `narrative/mayken_relationship_projection.yaml`, `narrative/goes_departure_1572_1579.yaml`, `narrative/story_projection_round_c.yaml`
+**Date:** synchronized through 22 August 2026  
+**Machine layers:** `narrative/alchemical_authorial_architecture.yaml`, `narrative/mayken_independent_arc.yaml`, `narrative/mayken_relationship_projection.yaml`, `narrative/goes_departure_1572_1579.yaml`, `narrative/story_projection_round_c.yaml`, `narrative/landjuweel_1561_refinement.yaml`
 
 Round A restored lost historical/worldbuilding substrate. Round B made six major domains chapter-ready. Round C answers the next question: **what changes in the people because those worlds exist?**
 
@@ -75,11 +75,29 @@ Eleven-year-old Claes reaches Reimerswaal after the intended Zierikzee route col
 
 ### Landjuweel 1561
 
-Performance teaches that the same sign is not the same thing to performer, audience, judge, church, magistrate and printer. Observation becomes interpretation.
+Claes is **eighteen**, not nineteen: his canonical birth on 8 December 1542 makes that deterministic for August 1561.
+
+He travels with Cornelis from Reimerswaal via Goes to Antwerp, their first joint journey since the 1554 separation. Business/credit and Cornelis' network are the primary reason; the Landjuweel is the cultural opportunity. Cornelis is an interested rederijker-observer, never an invented official Goese competitor.
+
+On 3 August, public rhetoric materializes signs before competing audiences. When Claes becomes separated from Cornelis in the night crowd and experiences the final Brussels chamber after two in the morning without paternal interpretation, observation becomes partly autonomous. The episode is not merely spectacle: **the father's mediation temporarily falls away.**
+
+In the following days the competition's question — what most moves a human being to art? — refuses a single answer. Historical Cornelis van Ghistele is the chapter's one substantive rederijker encounter; the meeting itself is fiction canon. Asked for his own answer, Claes says: **“misschien datgene wat een mens mist.”**
+
+A separate fictional scene lets Claes see historical Willem van Haecht remove a risky line from a text. Van Haecht's role and the event's censorship conditions are historically grounded; the exact deletion is not. Its causal function is to make language dangerous in material practice before Silvius and the later print network.
+
+On the final evening Cornelis admits that he should have shown Claes this world earlier. The result is not reconciliation but a **brief opening after seven years of distance**. Because mutual recognition becomes possible for a moment, later secrecy and exclusion can wound more deeply.
+
+The Landjuweel gives Claes a store of images and tensions — spirit/matter, freedom/rule, gift/labour, expression/censorship — but **no alchemical teaching and no initiatory or Freemasonic membership**. Any such ordering belongs to his later interpretation.
+
+Silvius does **not** meet Claes here. The direct Silvius/Dee line begins in 1563. Silvius' historical 1562 print edition remains an optional later performance-to-print bridge, currently open rather than executed canon.
+
+One topographic detail remains deliberately unresolved: the manuscript's Meirbrug/Onze-Lieve-Vrouwe segment does not match the presently checked historical procession route, while the cathedral is separately attested for the 5 August kerkgang. Preserve `OPEN.LANDJUWEEL.ENTRY_ROUTE.1561.001` until the dossier source is reconciled.
+
+Governing detail: `storybible/domains/REDERIJKERS_LANDJUWEEL_1561.md` and `narrative/landjuweel_1561_refinement.yaml`.
 
 ### Dee/Silvius/Boom 1563–1564
 
-Material work teaches that apparent absence can conceal presence and that correct relation can reveal what force cannot. This is genuine knowledge — and the seed of Claes' adult error that complete understanding may grant control.
+Material work teaches that apparent absence can conceal presence and that correct relation can reveal what force cannot. This is genuine knowledge — and the seed of Claes' adult error that complete understanding may grant control. Direct Claes–Silvius formation begins here, not at the 1561 Landjuweel.
 
 ### Cornelis 1567–1569
 
@@ -196,9 +214,11 @@ Mayken's presence automatically invokes both the relationship and `ARC.MAYKEN.LI
 
 ## 7. Remaining Round-C design openings
 
-Two newly explicit high-priority authorial questions remain:
+Current explicit design openings include:
 
+- `OPEN.LANDJUWEEL.ENTRY_ROUTE.1561.001` — reconcile the current manuscript/dossier route with the presently checked historical procession route before calling the Meirbrug/Onze-Lieve-Vrouwe segment documented;
+- `OPEN.CLAES.SILVIUS.LANDJUWEEL_PRINT_1562.001` — optional performance-to-print transition, without retroactive 1561 contact;
 - `OPEN.GOES.CLAES_DEPARTURE_1572_1579.001` — the exact economic/material causal chain that finally severs Claes from Goes;
 - `OPEN.MAYKEN.INDEPENDENT_MIDARC.001` — the concrete work/family/social pressure through which Mayken's adult independence becomes dramatically visible.
 
-These are now correctly open. They no longer hide as missing story structure.
+These are correctly open. They must not hide as missing story structure or be silently resolved by later prose.
