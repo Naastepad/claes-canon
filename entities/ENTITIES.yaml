@@ -1,4 +1,4 @@
-schema_version: 1.2.0
+schema_version: 1.3.0
 kind: EntityRegistry
 entities:
 - id: ENT.PERSON.CLAES
@@ -48,6 +48,7 @@ entities:
   - scholar
   - mentor
   - code-architect
+  - natural-philosophy-catalyst
 - id: ENT.PERSON.WILLEM_SILVIUS
   type: Person
   label: Willem Silvius
@@ -147,15 +148,63 @@ entities:
   usage: historical context; direct story use remains conditional
 - id: ENT.PERSON.BELOVED
   type: Person
-  label: Geliefde / apothekersdochter
+  label: Mayken
   fictionality: fictional
   canon_status: CANON
   roles:
+  - beloved
+  - apothecary-daughter
   - partner
   - material-expert
+  - botanical-expert
   - error-checker
   - recovery-catalyst
-  identity_status: OPEN
+  identity_status: CANON
+  decision_id: DEC.CLAES.MAYKEN.2026-08-23
+  guardrails:
+  - autonomous competence and goals; not a device for Claes' healing
+  - no rape as route-start mechanism
+  - no dissociative-identity construction
+  - no required formal Goese witch trial
+- id: ENT.PERSON.SETON
+  type: Person
+  label: Alexander Seton / Cosmopolite tradition
+  fictionality: historical
+  canon_status: CANON
+  roles:
+  - alchemist
+  - late-mirror
+  usage: historical person/tradition; exact Enkhuizen episode details remain source-weighted
+- id: ENT.PERSON.HAUSSEN
+  type: Person
+  label: Jacob Haussen
+  fictionality: historical
+  canon_status: CANON
+  roles:
+  - seaman
+  - Seton-network-bridge
+  usage: exact biographical and episode details require source confidence labels
+- id: ENT.PERSON.VANDERLINDEN
+  type: Person
+  label: Van der Linden / Vanderlinden
+  fictionality: historical
+  canon_status: CANON
+  roles:
+  - physician
+  - Enkhuizen-medical-network
+  - possible Claes-Mayken bridge
+  usage: exact identity/spelling and testimony chain require source verification
+- id: ENT.PERSON.HOGHELANDE
+  type: Person
+  label: Theobald van Hoghelande
+  fictionality: historical
+  canon_status: CANON
+  roles:
+  - younger-alchemical-peer
+  - possible-correspondent
+  - later-transmutation-recorder
+  constraints:
+  - not Claes' older formative teacher
 - id: ENT.LOC.GOES
   type: Location
   label: Goes
@@ -176,11 +225,35 @@ entities:
   label: Boom
   fictionality: historical
   canon_status: CANON
+- id: ENT.LOC.GOUDA
+  type: Location
+  label: Gouda
+  fictionality: historical
+  canon_status: CANON
+  usage: first intended refuge after second Goes period; exact residence details open
 - id: ENT.LOC.DELFT
   type: Location
   label: Delft
   fictionality: historical
   canon_status: CANON
+- id: ENT.LOC.EGMOND
+  type: Location
+  label: Egmond
+  fictionality: historical
+  canon_status: CANON
+  usage: post-Delft war-memory/ruin landscape; exact residence details open
+- id: ENT.LOC.ALKMAAR
+  type: Location
+  label: Alkmaar
+  fictionality: historical
+  canon_status: CANON
+  usage: post-1584 northern route; exact residence details open
+- id: ENT.LOC.HOORN
+  type: Location
+  label: Hoorn
+  fictionality: historical
+  canon_status: CANON
+  usage: maritime Republic and pre-Enkhuizen route; exact residence details open
 - id: ENT.LOC.MIDDELBURG
   type: Location
   label: Middelburg
@@ -192,7 +265,7 @@ entities:
   label: Enkhuizen
   fictionality: historical
   canon_status: CANON
-  usage: contextual; destination associated with late sensory/spiritual recovery line
+  usage: late sensory/spiritual recovery, Seton and Projectio destination
 - id: ENT.LOC.SILVIUS_GULDEN_ENGEL
   type: Location
   label: Silvius’ Gulden Engel
