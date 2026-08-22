@@ -3,7 +3,7 @@
 **Status:** ACTIVE AUTHORING DOMAIN — manuscript continuity synchronized 22 August 2026  
 **Scope:** Goes chamber life, Cornelis/Claes formation and Antwerp 1561  
 **Primary provenance:** `SRC-HIST-GOES-REDERIJKERS-001`, `SRC-HIST-REDERIJKERS-LANDJUWEEL-1561-001`, `SRC-VAN-BRUAENE-OM-BETERS-WILLE-2008`  
-**Current manuscript refinement:** `NARRATIVE.LANDJUWEEL_1561.CONTINUITY`
+**Current manuscript refinement:** `NI.REFINEMENT.LANDJUWEEL_1561.CONTINUITY`
 
 ## Goes — ordinary chamber world
 
