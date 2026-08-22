@@ -1,7 +1,7 @@
 schema_version: 1.0.0
 kind: NarrativeRefinementRegistry
 modules:
-- id: NARRATIVE.LANDJUWEEL_1561.CONTINUITY
+- id: NI.REFINEMENT.LANDJUWEEL_1561.CONTINUITY
   type: NarrativeInstance.Refinement
   label: "Het Landjuweel 1561 — manuscript-continuity refinement"
   canon_status: CANON
