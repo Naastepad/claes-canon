@@ -1,4 +1,4 @@
-schema_version: 1.6.0
+schema_version: 1.7.0
 kind: NarrativeRelationshipRegistry
 relationships:
 - id: REL.CLAES.CORNELIS
@@ -12,7 +12,7 @@ relationships:
     value_state: dependence -> admiration
     function: Cornelis teaches attention, craft, patience and the difference between pieces and routes while Claes grows up with Tanneken, younger brother Jan and an expected unborn sibling.
   - label: shared catastrophe and physical separation
-    story_time: {earliest: '1554-05-18', latest_exclusive: '1561-09-01', precision: bounded}
+    story_time: {earliest: '1554-05-18', latest_exclusive: '1561-08-01', precision: bounded}
     value_state: shared family -> surviving father and son who also lose daily access to each other
     function: Both lose Tanneken, Jan, the unborn child and home, but not from the same position. Claes directly experiences the wider fire while Cornelis is absent from the immediate zone. Cornelis remains in Goes to rebuild livelihood, business and shelter and finance Claes' education; eleven-year-old Claes is sent to Reimerswaal. Cornelis' act of care is therefore also experienced by Claes as distance and possible abandonment.
     support: Claes Jacobsz. Nissepat, fictionally Cornelis' father, is present by the burial/early aftermath and helps where possible despite losing the 1542 house; maternal grandmother Mayken Pietersdochter preserves a different continuity through care and family memory.
@@ -21,10 +21,18 @@ relationships:
     - DEC.GOES.FIRE_1554.CLAES_PRESENT_CORNELIS_ABSENT.2026-08-21
     - DEC.MANUSCRIPT.POSTFIRE.GRANDFATHER_CONTINUITY.2026-08-21
     - DEC.CLAES.REIMERSWAAL.ARRIVAL_AGE_11.2026-08-21
+  - label: Landjuweel rapprochement
+    story_time: {earliest: '1561-08-01', latest_exclusive: '1561-09-01', precision: month}
+    value_state: seven years of physical distance -> tentative mutual recognition
+    function: Their first joint journey since Claes' post-fire departure lets Claes see Cornelis' rederijker/business world directly. On the final evening Cornelis admits he should have shown Claes this world earlier. The opening is sincere but incomplete and does not erase what the separation has done.
+    narrative_instances: [NI.EVENT.LANDJUWEEL.1561.001, NI.SCENE.LANDJUWEEL.FATHER_RAPPROCHEMENT.1561.001]
+    decision_ids:
+    - DEC.CLAES.LANDJUWEEL.JOURNEY_ACCESS.2026-08-22
+    - DEC.CLAES.CORNELIS.LANDJUWEEL_RAPPROCHEMENT.2026-08-22
   - label: distance through secrecy and network risk
     story_time: {earliest: '1561-09-01', latest_exclusive: '1567-09-01', precision: interval}
-    value_state: admiration -> suspicion/exclusion
-    function: The earlier physical separation gives way to interpretive separation as Claes sees that Cornelis hides routes, papers, books and dangerous loyalties. The relationship does not depend on a cipher or fallback key.
+    value_state: tentative recognition -> suspicion/exclusion
+    function: The brief Landjuweel opening makes the next interpretive separation sharper as Claes sees that Cornelis hides routes, papers, books and dangerous loyalties. The relationship does not depend on a cipher or fallback key.
   - label: warning, recidive and final loss
     story_time: {earliest: '1567-09-01', latest_exclusive: '1569-11-20', precision: bounded}
     value_state: compromised living father -> condemned protective silence -> absent moral inheritance
@@ -133,10 +141,14 @@ relationships:
   label: Claes and Willem Silvius
   participants: [ENT.PERSON.CLAES, ENT.PERSON.WILLEM_SILVIUS]
   status: CANON
+  decision_ids:
+  - DEC.CLAES.SILVIUS.NO_1561_MEETING.2026-08-22
+  pre_contact_guardrail: "Silvius' historical 1562 Landjuweel publication may later become a print-afterlife scene, but it does not create a direct 1561 relationship or retroactively place Silvius in the Landjuweel chapter."
   phases:
   - label: editorial recognition
-    story_time: {earliest: '1561-08-01', latest_exclusive: '1564-01-01', precision: bounded}
+    story_time: {earliest: '1563-02-01', latest_exclusive: '1564-01-01', precision: bounded}
     value_state: young learner -> useful observer/editorial source
+    narrative_instances: [NI.SCENE.DEE_FIRST_ENCOUNTER.1563.001]
     object: OBJ.ZOVITIUS_SCHOOLBOOK
   - label: practical trust
     story_time: {earliest: '1564-01-01', latest_exclusive: '1564-10-04', precision: bounded}
