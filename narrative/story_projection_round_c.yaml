@@ -1,4 +1,4 @@
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: StoryProjectionRegistry
 projections:
 - id: ARC.CLAES.CAUSAL_SPINE
@@ -40,19 +40,31 @@ projections:
 
   - id: H04
     story_time: {earliest: '1561-08-01', latest_exclusive: '1561-09-01', precision: month}
-    label: "Landjuweel — meaning becomes multiple"
-    cause: "Public rhetoric materializes signs before competing audiences."
-    effect: "Claes moves from noticing patterns toward judging interpretation, role and consequence."
-    instances: [NI.EVENT.LANDJUWEEL.1561.001]
+    label: "Landjuweel — meaning becomes multiple and judgement becomes partly his own"
+    cause: "Eighteen-year-old Claes makes his first joint journey with Cornelis since 1554. Public rhetoric puts competing answers before him; separation in the 3 August night crowd briefly removes paternal mediation; Van Ghistele asks for Claes' own answer; Van Haecht's fictional deletion gesture makes textual risk visible."
+    effect: "Claes moves from noticing patterns toward autonomous judgement of interpretation, role and consequence. He gives a provisional answer—'misschien datgene wat een mens mist'—without closing the question. Cornelis' final-evening acknowledgement creates a sincere but incomplete rapprochement, while the Landjuweel leaves images that acquire alchemical/initiatory ordering only much later."
+    instances:
+    - NI.EVENT.LANDJUWEEL.1561.001
+    - NI.SCENE.LANDJUWEEL.ENTRY.1561.001
+    - NI.SCENE.LANDJUWEEL.VAN_GHISTELE.1561.001
+    - NI.SCENE.LANDJUWEEL.VAN_HAECHT_CENSORSHIP.1561.001
+    - NI.SCENE.LANDJUWEEL.FATHER_RAPPROCHEMENT.1561.001
+    relationship_movement: REL.CLAES.CORNELIS
     authoring_inputs: [WORLD.ANTWERP]
+    refinement: NARRATIVE.LANDJUWEEL_1561.CONTINUITY
+    guardrails:
+    - "No Silvius direct meeting in the 1561 chapter; direct Silvius/Dee formation begins in 1563."
+    - "No alchemical teaching, secret initiation or Freemasonic gathering is created by the Landjuweel."
+    - "The current Meirbrug/Onze-Lieve-Vrouwe procession segment remains under OPEN.LANDJUWEEL.ENTRY_ROUTE.1561.001 rather than being promoted to verified history."
 
   - id: H05
     story_time: {earliest: '1563-02-01', latest_exclusive: '1564-10-04', precision: bounded}
     label: "Dee/Silvius/Boom — process becomes power"
-    cause: "Claes learns through print, materials, graphite, pyritic matter, vitriol and the death/opening problem of Sol."
+    cause: "Beginning in 1563, Claes learns through print, materials, graphite, pyritic matter, vitriol and the death/opening problem of Sol."
     effect: "He becomes a causal actor and begins to overvalue complete understanding as a route to control."
     instances: [NI.SCENE.DEE_FIRST_ENCOUNTER.1563.001, NI.SCENE.MEMORIAAL_GIFT.1564.001, NI.EVENT.SECURITY_BREAK.1564.001]
     arcs_advanced: [ARC.CLAES.DEE, ARC.CLAES.MACRO_TRANSMUTATION]
+    guardrail: "Do not back-project direct Silvius formation into the 1561 Landjuweel visit."
 
   - id: H06
     story_time: {earliest: '1566-08-01', latest_exclusive: '1570-01-01', precision: bounded}
