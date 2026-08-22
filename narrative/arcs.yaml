@@ -1,4 +1,4 @@
-schema_version: 1.1.1
+schema_version: 1.2.0
 kind: NarrativeArcRegistry
 arcs:
 - id: ARC.CLAES.LIFE
@@ -130,11 +130,17 @@ arcs:
   - label: formation
     story_time:
       earliest: '1564-01-01'
-      latest_exclusive: '1564-04-01'
+      latest_exclusive: '1564-10-04'
       precision: interval
-  - label: independent judgement
+  - label: lifelong-question-seeded
     story_time:
       earliest: '1564-01-01'
+      latest_exclusive: '1565-01-01'
+      precision: year
+    value_shift: from receiving answers to carrying an unresolved question
+  - label: critical-independence-and-internalised-legacy
+    story_time:
+      earliest: '1564-10-04'
       precision: developmental
   knowledge_object_targets:
   - KO.CONFLICT
@@ -148,3 +154,70 @@ arcs:
   - ENT.PERSON.CLAES
   - ENT.PERSON.CORNELIS
   movement: admiration/need for recognition → interpretive distance → inherited responsibility → adult moral separation
+- id: ARC.CLAES.LIFELONG_INQUIRY
+  type: PlotCharacterArc
+  label: Dee-vraag → historische route → Seton/Projectio
+  status: CANON
+  protagonist: ENT.PERSON.CLAES
+  decision_id: DEC.CLAES.SPINE.2026-08-23
+  guardrails:
+  - 1564 is the seed; the lived/geographical spine starts with Claes leaving Antwerp in 1566
+  - no second cipher quest or treasure-map route
+  - no anachronistic discovery or naming of oxygen/modern gases
+  - history determines movement; the inquiry determines attention
+  - Las Casas is the first dangerous-knowledge transmission, not the whole lifelong assignment
+  phases:
+  - id: ARC.CLAES.LIFELONG_INQUIRY.P00
+    label: Seed in Antwerp
+    story_time:
+      earliest: '1564-01-01'
+      latest_exclusive: '1565-01-01'
+      precision: year
+    dominant_movement: unresolved question is received
+    value_shift: answer-seeking → disciplined observation without a name
+  - id: ARC.CLAES.LIFELONG_INQUIRY.P01
+    label: Departure Antwerp and second Goes period
+    story_time:
+      earliest: '1566-08-01'
+      latest_exclusive: '1578-01-01'
+      precision: bounded
+    dominant_movement: matter, war, home and dangerous knowledge converge
+    value_shift: observing processes → bearing consequences
+  - id: ARC.CLAES.LIFELONG_INQUIRY.P02
+    label: Las Casas release and flight north
+    story_time:
+      earliest: '1578-01-01'
+      latest_exclusive: '1585-01-01'
+      precision: bounded
+    dominant_movement: transmit, lose control, flee, confront political use of knowledge
+    value_shift: protection/control → action before certainty
+  - id: ARC.CLAES.LIFELONG_INQUIRY.P03
+    label: Northern Albedo
+    story_time:
+      earliest: '1584-07-15'
+      latest_exclusive: '1599-01-01'
+      precision: approximate
+    dominant_movement: distinguish rather than dominate
+    value_shift: knowledge-as-control → uncertainty borne responsibly
+  - id: ARC.CLAES.LIFELONG_INQUIRY.P04
+    label: Rubedo and own ambiguous transmutation
+    story_time:
+      earliest: '1590-01-01'
+      latest_exclusive: '1602-01-01'
+      precision: open-window
+    dominant_movement: reconnect matter, relationship and responsibility
+    value_shift: private mastery → relational judgement
+  - id: ARC.CLAES.LIFELONG_INQUIRY.P05
+    label: Enkhuizen / Seton / Projectio test
+    story_time:
+      earliest: '1602-01-01'
+      latest_exclusive: '1603-01-01'
+      precision: year
+    dominant_movement: powerful knowledge is mirrored and tested
+    value_shift: how does it work? → should it be passed on?
+  knowledge_object_targets:
+  - KO.STORY
+  - KO.STRUCTURE
+  - KO.CONFLICT
+  - KO.VALUE
+  - KO.EVENT
