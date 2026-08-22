@@ -1,4 +1,4 @@
-schema_version: 1.2.0
+schema_version: 1.3.0
 kind: OpenDecisionRegistry
 decisions:
 - id: OPEN.CLAES.DEATH.001
@@ -29,12 +29,6 @@ decisions:
   - Moretus unavailable for 1564
   - Cordero no longer in Antwerp
   - Miggrode in Veere
-- id: OPEN.CLAES.BELOVED.IDENTITY.001
-  domain: character
-  priority: high
-  question: Exact identity/name/background details of beloved/apothecary daughter
-  status: OPEN
-  fixed_function: material/Dodoens/error-check counterpart; Claes remains personal merels key-holder
 - id: OPEN.CHAPTER.NUMBERING.YOUTH.001
   domain: structure
   priority: low
@@ -91,11 +85,6 @@ decisions:
   priority: high
   question: Exact edition/copy status, owner, date and legal/social mechanism by which the special Dodoens reaches the Goes apothecary environment
   status: OPEN
-- id: OPEN.MOTHER.ADULT_FUNCTION.001
-  domain: character
-  priority: medium
-  question: Adult plot function of Claes' mother after Cornelis' arrest
-  status: OPEN
 - id: OPEN.GILLIS.ROLE.001
   domain: character
   priority: medium
@@ -129,13 +118,77 @@ decisions:
 - id: OPEN.PUBLICATION.TRANSMISSION.1570_1578.001
   domain: plot
   priority: high
-  question: Exact production/transmission route of the reconstructed clear text between 1570 and the fictionally linked anonymous 1578 publication
+  question: Exact production/transmission route of the reconstructed clear text from Goes to Silvius' Antwerp printing world in 1578, including the return journey and physical form of the copy
   status: OPEN
+  fixed: Las Casas is the first small Projectio; Claes returns it to Silvius' print world and loses control after publication
 - id: OPEN.CHAPTER.CALENDAR.1564.001
   domain: chronology
   priority: high
-  question: Calendar audit of 1564_1 through 1564_5 against wrong chest → code production → decisive transfer journey → 4 October security break
+  question: Calendar audit of 1564_1 through 1564_5 against wrong chest → code production → decisive transfer journey → 4 October security break and the placement of Dee's lifelong question
   status: OPEN
+- id: OPEN.DEE.LIFELONG_QUESTION.WORDING.1564.001
+  domain: scene
+  priority: high
+  question: Exact period-appropriate wording and immediate scene circumstances in which Dee leaves Claes the lifelong air/fire/breath/growth question
+  status: OPEN
+  fixed:
+  - no second cipher or hidden manuscript
+  - no modern chemical vocabulary
+  - 1564 is the seed; 1566 departure from Antwerp is the spine start
+- id: OPEN.MAYKEN.REPUTATION_TRIGGER.1578.001
+  domain: plot
+  priority: high
+  question: Exact patient/event/person that turns Mayken's gradual 1578 reputation decline into immediate flight danger
+  status: OPEN
+  fixed:
+  - slow escalation over months
+  - every observed fact may be true while the collective conclusion is false
+  - no rape as plot mechanism
+  - no dissociative-identity construction
+  - no required formal witch trial
+- id: OPEN.CLAES.GOES_GOUDA.DATE.1578.001
+  domain: chronology
+  priority: high
+  question: Exact date and immediate route of Claes and Mayken's flight from Goes to Gouda
+  status: OPEN
+  fixed: Gouda is the first intended refuge after the second Goese period
+- id: OPEN.CLAES.NORTH_RESIDENCES.001
+  domain: structure
+  priority: high
+  question: Exact dates, durations, occupations, lodging and intermediate stops for Gouda → Delft → Egmond/Alkmaar → Hoorn → Enkhuizen
+  status: OPEN
+  fixed: macro-route and order are canon
+- id: OPEN.CLAES.OWN_TRANSMUTATION.001
+  domain: plot
+  priority: high
+  question: Exact year, place, material process, witnesses, surviving sample and Mayken's role in Claes' own ambiguous pre-Seton transmutation
+  status: OPEN
+  fixed:
+  - after Delft 1584
+  - before Seton 1602
+  - narratively ambiguous; no authorial certification of real gold
+  - moral/alchemical development precedes Seton
+- id: OPEN.SETON.BRIDGE.1602.001
+  domain: plot
+  priority: high
+  question: Exact historically plausible mechanism by which Haussen's Seton contact reaches Vanderlinden, Mayken and Claes in Enkhuizen
+  status: OPEN
+  fixed:
+  - no secret brotherhood required
+  - Seton independent from Las Casas
+  - projection functions as mirror/test, not moral solution
+- id: OPEN.HOGHELANDE.CONTACT.001
+  domain: character
+  priority: medium
+  question: Whether and how the younger Theobald van Hoghelande directly corresponds or meets with Claes in the 1580s–1600s
+  status: OPEN
+  guardrail: he is not Claes' older formative teacher
+- id: OPEN.HISTORICAL.SOURCE_SYNC.2026_08_23.001
+  domain: historical_research
+  priority: high
+  question: Source-layer verification and SC registration of the exact 1578 Goes church event/date, Seton–Haussen–Vanderlinden report chain, Hoghelande chronology/Seton writing, and 1602 VOC timing before exact documentary assertions are used in prose
+  status: OPEN
+  fixed: story functions are canon; historical evidence status remains separate
 - id: OPEN.FINAL_MERELS.001
   domain: ending
   priority: medium
