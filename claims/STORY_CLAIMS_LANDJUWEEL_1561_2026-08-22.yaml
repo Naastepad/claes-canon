@@ -1,0 +1,77 @@
+schema_version: 1.0.0
+kind: StoryClaimSupplement
+claims:
+- id: STC.CLAES.LANDJUWEEL.AGE.1561.001
+  type: StoryClaim
+  statement: "Claes is eighteen during the August 1561 Antwerp Landjuweel visit."
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  decision_ids: [DEC.CLAES.LANDJUWEEL.AGE_18.2026-08-22]
+  subjects: [ENT.PERSON.CLAES]
+  story_time: {earliest: '1561-08-01', latest_exclusive: '1561-09-01', precision: month}
+
+- id: STC.CLAES.LANDJUWEEL.JOURNEY_ACCESS.1561.001
+  type: StoryClaim
+  statement: "Claes travels with Cornelis from Reimerswaal via Goes to Antwerp for a primarily commercial journey that also gives them partial access to the Landjuweel through Cornelis' business/rederijker network; neither represents Goes as an official competitor."
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids: [DEC.CLAES.LANDJUWEEL.JOURNEY_ACCESS.2026-08-22]
+  subjects: [ENT.PERSON.CLAES, ENT.PERSON.CORNELIS]
+  story_time: {earliest: '1561-08-01', latest_exclusive: '1561-09-01', precision: month}
+
+- id: STC.CLAES.LANDJUWEEL.ENTRY_AUTONOMY.1561.001
+  type: StoryClaim
+  statement: "On 3 August 1561 Claes witnesses the Landjuweel entry, is temporarily separated from Cornelis and experiences the final Brussels chamber after two in the morning without his father's mediation."
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids: [DEC.CLAES.LANDJUWEEL.ENTRY_AUTONOMY.2026-08-22]
+  subjects: [ENT.PERSON.CLAES, ENT.PERSON.CORNELIS]
+  story_time: {date: '1561-08-03', precision: day}
+  historical_boundary: "The entry date, final Brussels chamber and after-two timing are historically supported; Claes' presence, separation and subjective autonomy are fiction canon."
+
+- id: STC.CLAES.LANDJUWEEL.VAN_GHISTELE.1561.001
+  type: StoryClaim
+  statement: "Claes fictionally meets Cornelis van Ghistele during the Landjuweel; when asked what most moves a person to art, he answers: 'misschien datgene wat een mens mist.'"
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids: [DEC.CLAES.LANDJUWEEL.VAN_GHISTELE.2026-08-22]
+  subjects: [ENT.PERSON.CLAES, ENT.PERSON.CORNELIS_VAN_GHISTELE]
+  story_time: {earliest: '1561-08-03', latest_exclusive: '1561-08-24', precision: bounded}
+  historical_boundary: "Van Ghistele's Goudbloem/Landjuweel role is historical; the meeting and dialogue are fictional."
+
+- id: STC.CLAES.LANDJUWEEL.VAN_HAECHT_CENSORSHIP.1561.001
+  type: StoryClaim
+  statement: "Claes fictionally observes Willem van Haecht remove a risky line from a text, giving him his first direct view of censorship as a material editorial act."
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids: [DEC.CLAES.LANDJUWEEL.VAN_HAECHT_CENSORSHIP.2026-08-22]
+  subjects: [ENT.PERSON.CLAES, ENT.PERSON.WILLEM_VAN_HAECHT]
+  story_time: {earliest: '1561-08-03', latest_exclusive: '1561-08-24', precision: bounded}
+  historical_boundary: "Van Haecht's factor role and event censorship restrictions are historical; the exact deletion incident is fictional."
+
+- id: STC.CLAES.LANDJUWEEL.DEFERRED_SYMBOLISM.1561.001
+  type: StoryClaim
+  statement: "The Landjuweel gives Claes a stock of images and oppositions that he may order alchemically or initiatorically only later; the 1561 event itself gives him no alchemical teaching and is not a Masonic or initiatory gathering."
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  decision_ids: [DEC.CLAES.LANDJUWEEL.DEFERRED_SYMBOLISM.2026-08-22]
+  subjects: [ENT.PERSON.CLAES]
+  tags: [theme, guardrail, deferred-meaning]
+
+- id: STC.CLAES.CORNELIS.LANDJUWEEL_RAPPROCHEMENT.1561.001
+  type: StoryClaim
+  statement: "On the final evening of the Landjuweel visit Cornelis acknowledges that he should have shown Claes this world earlier, creating a sincere but incomplete rapprochement after seven years of separation."
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids: [DEC.CLAES.CORNELIS.LANDJUWEEL_RAPPROCHEMENT.2026-08-22]
+  subjects: [ENT.PERSON.CLAES, ENT.PERSON.CORNELIS]
+  story_time: {earliest: '1561-08-03', latest_exclusive: '1561-09-01', precision: bounded}
+
+- id: STC.CLAES.SILVIUS.NO_1561_MEETING.001
+  type: StoryClaim
+  statement: "Claes does not directly meet Willem Silvius in the 1561 Landjuweel chapter; the direct Silvius/Dee formation remains 1563–early 1564."
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  decision_ids: [DEC.CLAES.SILVIUS.NO_1561_MEETING.2026-08-22]
+  subjects: [ENT.PERSON.CLAES, ENT.PERSON.WILLEM_SILVIUS]
+  story_time: {earliest: '1561-08-01', latest_exclusive: '1561-09-01', precision: month}
