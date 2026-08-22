@@ -1,4 +1,4 @@
-schema_version: 1.1.0
+schema_version: 1.2.0
 kind: NarrativeInstanceRegistry
 instances:
 - id: NI.PROLOGUE.1542.001
@@ -186,6 +186,26 @@ instances:
   entities:
   - ENT.PERSON.CLAES
   story_file: 1564_5_de_dood_van_sol.md
+- id: NI.SEQUENCE.DEE_LIFELONG_QUESTION.1564.001
+  type: SequenceInstance
+  label: Dee zaait de levenslange vraag
+  canon_status: CANON
+  details_status: OPEN
+  story_time:
+    earliest: '1564-01-01'
+    latest_exclusive: '1565-01-01'
+    precision: year
+  locations:
+  - ENT.LOC.ANTWERP
+  entities:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.JOHN_DEE
+  story_claims:
+  - STC.CLAES.DEE_LIFELONG_QUESTION.1564.001
+  arcs_advanced:
+  - ARC.CLAES.DEE
+  - ARC.CLAES.LIFELONG_INQUIRY
+  notes: Seed of the later spine; not itself the geographical spine start and not a second cipher quest.
 - id: NI.EVENT.SECURITY_BREAK.1564.001
   type: EventInstance
   label: Veiligheidsbreuk na stenenoproer
@@ -219,18 +239,26 @@ instances:
   story_file: 1564_6_de_honderd_gulden.md
 - id: NI.EVENT.CLAES_RETURN_GOES.1566.001
   type: EventInstance
-  label: Terugkeer Claes naar Goes
+  label: Vertrek uit Antwerpen en terugkeer Claes naar Goes
   canon_status: CANON
   story_time:
     earliest: '1566-08-01'
     latest_exclusive: '1567-01-01'
     precision: bounded
   locations:
+  - ENT.LOC.ANTWERP
   - ENT.LOC.GOES
   entities:
   - ENT.PERSON.CLAES
+  - ENT.PERSON.CORNELIS
+  - ENT.PERSON.BELOVED
   story_claims:
   - STC.CLAES.RETURN_GOES.1566.001
+  - STC.CLAES.SPINE.START.1566.001
+  - STC.CLAES.RETURN_GOES.MOTIVE.1566.001
+  arcs_advanced:
+  - ARC.CLAES.LIFELONG_INQUIRY
+  notes: This departure from Antwerp is the operational/geographical start of the 1566–1602 spine; Dee's 1564 question is its seed.
 - id: NI.EVENT.CORNELIS_FALL.1568.001
   type: EventInstance
   label: Arrestatie en dood Cornelis
@@ -260,25 +288,76 @@ instances:
   story_claims:
   - STC.CODE.RECOVERY_SEQUENCE.001
   - STC.CODE.DURATION.001
+  - STC.LASCASAS.SCALE.001
   arcs_advanced:
   - ARC.CLAES.LIFE
   - ARC.CLAES.MACRO_TRANSMUTATION
+  - ARC.CLAES.LIFELONG_INQUIRY
   motifs:
   - MOTIF.BLACKENING_REVEAL
   - MOTIF.MERELS_WAYS
   - MOTIF.CASTANEA
 - id: NI.EVENT.PUBLICATION.1578.001
   type: EventInstance
-  label: Anonieme verspreiding/druk Las Casas
+  label: Las Casas terug naar Silvius en anonieme druk/verspreiding
   canon_status: CANON
   story_time:
     earliest: '1578-01-01'
     latest_exclusive: '1579-01-01'
     precision: year
+  locations:
+  - ENT.LOC.ANTWERP
   entities:
   - ENT.PERSON.CLAES
+  - ENT.PERSON.WILLEM_SILVIUS
   story_claims:
   - STC.LASCASAS.PUBLICATION.1578.001
+  - STC.LASCASAS.SILVIUS.1578.001
+  arcs_advanced:
+  - ARC.CLAES.LIFELONG_INQUIRY
+  notes: First small Projectio; exact production/transmission mechanics remain governed by OPEN.PUBLICATION.TRANSMISSION.1570_1578.001.
+- id: NI.SEQUENCE.MAYKEN_REPUTATION.1578.001
+  type: SequenceInstance
+  label: Langzame reputatieval Mayken in Goes
+  canon_status: CANON
+  details_status: OPEN
+  story_time:
+    earliest: '1578-01-01'
+    latest_exclusive: '1579-01-01'
+    precision: year
+  locations:
+  - ENT.LOC.GOES
+  entities:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.BELOVED
+  story_claims:
+  - STC.MAYKEN.REPUTATION_FALL.1578.001
+  arcs_advanced:
+  - ARC.CLAES.LIFELONG_INQUIRY
+  motifs:
+  - MOTIF.CARRIER_MEANING
+  notes: No rape/DID plot device and no required formal witch trial; exact trigger/patient remains open.
+- id: NI.EVENT.FLIGHT_GOUDA.1578.001
+  type: EventInstance
+  label: Vlucht uit Goes naar Gouda
+  canon_status: CANON
+  details_status: OPEN
+  story_time:
+    earliest: '1578-01-01'
+    latest_exclusive: '1579-01-01'
+    precision: year
+  locations:
+  - ENT.LOC.GOES
+  - ENT.LOC.GOUDA
+  entities:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.BELOVED
+  story_claims:
+  - STC.CLAES.FLIGHT.GOUDA.1578.001
+  - STC.CLAES.NORTH_ROUTE.001
+  arcs_advanced:
+  - ARC.CLAES.LIFELONG_INQUIRY
+  notes: Claes chooses flight before certainty; exact date and immediate trigger remain open.
 - id: NI.CHAPTER.1584.01
   type: ChapterInstance
   label: De markt van Delft
@@ -297,6 +376,49 @@ instances:
   arcs_advanced:
   - ARC.CLAES.LIFE
   - ARC.CLAES.MACRO_TRANSMUTATION
+  - ARC.CLAES.LIFELONG_INQUIRY
+- id: NI.SEQUENCE.NORTH_ROUTE.1584_1602.001
+  type: SequenceInstance
+  label: Noordelijke route Delft → Egmond/Alkmaar → Hoorn → Enkhuizen
+  canon_status: CANON
+  details_status: OPEN
+  story_time:
+    earliest: '1584-07-15'
+    latest_exclusive: '1603-01-01'
+    precision: broad-window
+  locations:
+  - ENT.LOC.DELFT
+  - ENT.LOC.EGMOND
+  - ENT.LOC.ALKMAAR
+  - ENT.LOC.HOORN
+  - ENT.LOC.ENKHUIZEN
+  entities:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.BELOVED
+  story_claims:
+  - STC.CLAES.NORTH_ROUTE.001
+  - STC.CLAES.HISTORICAL_WITNESS.001
+  arcs_advanced:
+  - ARC.CLAES.LIFELONG_INQUIRY
+  notes: Exact residences, occupations and intermediate stops remain open; use direct event, consequence and aftermath/news at varied distances.
+- id: NI.SEQUENCE.CLAES_TRANSMUTATION.PRESETON.001
+  type: SequenceInstance
+  label: Claes' eigen ambigue transmutatie vóór Seton
+  canon_status: CANON
+  details_status: OPEN
+  story_time:
+    earliest: '1584-07-15'
+    latest_exclusive: '1602-01-01'
+    precision: open-interval
+  entities:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.BELOVED
+  story_claims:
+  - STC.CLAES.OWN_TRANSMUTATION.PRESETON.001
+  arcs_advanced:
+  - ARC.CLAES.MACRO_TRANSMUTATION
+  - ARC.CLAES.LIFELONG_INQUIRY
+  notes: Function fixed; exact place/year/process/witnesses and Mayken's role remain open. The narrative never certifies real gold.
 - id: NI.SEQUENCE.LATE_RUBEDO.1599.001
   type: SequenceInstance
   label: Late Rubedo / mogelijke Middelburg-spiegel
@@ -312,6 +434,31 @@ instances:
   - ENT.PERSON.RADERMACHER
   arcs_advanced:
   - ARC.CLAES.MACRO_TRANSMUTATION
+- id: NI.SEQUENCE.SETON_ENKHUIZEN.1602.001
+  type: SequenceInstance
+  label: Haussen–Vanderlinden–Seton in Enkhuizen
+  canon_status: CANON
+  details_status: OPEN
+  story_time:
+    earliest: '1602-01-01'
+    latest_exclusive: '1603-01-01'
+    precision: year
+  locations:
+  - ENT.LOC.ENKHUIZEN
+  entities:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.BELOVED
+  - ENT.PERSON.SETON
+  - ENT.PERSON.HAUSSEN
+  - ENT.PERSON.VANDERLINDEN
+  story_claims:
+  - STC.SETON.ENKHUIZEN.FUNCTION.1602.001
+  - STC.CLAES.VOC_RESONANCE.1602.001
+  - STC.CLAES.THREE_LEVELS.001
+  arcs_advanced:
+  - ARC.CLAES.MACRO_TRANSMUTATION
+  - ARC.CLAES.LIFELONG_INQUIRY
+  notes: Exact historical-report details require source-layer status; projectio is mirror/test, not the source of Claes' moral completion.
 - id: NI.SCENE.FINAL_MERELS.1602.001
   type: SceneInstance
   label: Laatste molenspel
