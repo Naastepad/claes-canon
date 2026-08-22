@@ -10,10 +10,12 @@
 
 1. Read this manifest.
 2. Read `AI_ONBOARDING.md`.
-3. Read the active operating master: `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md`.
-4. Read the task-relevant modules listed below.
-5. If drafting or revising literary prose, also read `WRITING_PROTOCOL.md`.
-6. If changing canon, schemas, repository structure or deterministic Lemma, also read `AUTHORING_POLICY.md`, `AGENTS.md` and `REPOSITORY_INTEGRITY.md`.
+3. Read explicit current author decisions in `canon/`, including `canon/DECISIONS_2026-08-23.md` for adult-spine work.
+4. Read the operating master: `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md`.
+5. For any work from Dee/Antwerp 1564 through Enkhuizen 1602, **also read** `storybible/modules/CLAES_RUGGENGRAAT_1564_1602.md`; in its domain the 23-Aug decisions and synchronized `STC.*` records outrank conflicting older master wording.
+6. Read the task-relevant historical/world modules listed below.
+7. If drafting or revising literary prose, also read `WRITING_PROTOCOL.md`.
+8. If changing canon, schemas, repository structure or deterministic Lemma, also read `AUTHORING_POLICY.md`, `AGENTS.md` and `REPOSITORY_INTEGRITY.md`.
 
 **Never infer a repository path from a neighbouring filename. Use the exact raw URLs in this manifest.**
 
@@ -22,7 +24,7 @@
 1. explicit current author decisions in `canon/` / `DEC.*`;
 2. active synchronized `STC.*` Story Claims;
 3. synchronized entity/object/narrative registers;
-4. active operating Storybible master;
+4. active operating Storybible master and active modules;
 5. historical/source claims and provenance;
 6. proposals/open questions;
 7. chat memory — never authoritative.
@@ -36,6 +38,13 @@ Path: `AI_ONBOARDING.md`
 Role: cross-model operating instructions  
 Use when: always, before canon-sensitive work  
 RAW: https://raw.githubusercontent.com/Naastepad/claes-canon/authoring/v1/AI_ONBOARDING.md
+
+## Current adult-spine decisions
+Path: `canon/DECISIONS_2026-08-23.md`  
+Role: explicit author decisions for the 1564 seed / 1566 spine start, Mayken, Las Casas rescaling, northern route, pre-Seton transmutation, Seton, Hoghelande and VOC resonance  
+Authority: HUMAN CANON DECISIONS  
+Use when: any story work from 1564 onward or any task touching Dee's lifelong question, Mayken, the northern route or Seton  
+RAW: https://raw.githubusercontent.com/Naastepad/claes-canon/authoring/v1/canon/DECISIONS_2026-08-23.md
 
 ## Claude-specific entrypoint
 Path: `CLAUDE.md`  
@@ -71,12 +80,21 @@ RAW: https://raw.githubusercontent.com/Naastepad/claes-canon/authoring/v1/AGENTS
 
 # Storybible entrypoints
 
-## ACTIVE operating master
+## Operating master
 Path: `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md`  
-Role: current human-readable operating master  
-Authority: ACTIVE AUTHORING MASTER  
+Role: previous synchronized human-readable operating master  
+Authority: ACTIVE AUTHORING MASTER, subject to later explicit decisions  
 Use when: any canon-sensitive story, character, theme, chronology or worldbuilding task  
+Guardrail: adult-spine material approved on 23 August 2026 is governed by `canon/DECISIONS_2026-08-23.md`, synchronized `STC.*`, and the adult-spine module below until a consolidated later master is produced.  
 RAW: https://raw.githubusercontent.com/Naastepad/claes-canon/authoring/v1/storybible/LEMMA_MCKEE_MASTER_2026-08-13.md
+
+## Adult narrative spine 1564–1602
+Path: `storybible/modules/CLAES_RUGGENGRAAT_1564_1602.md`  
+Role: active human-readable adult narrative spine: Dee's 1564 seed; **Claes' departure from Antwerp in 1566 as the lived/geographical start**; second Goes period; Las Casas 1570/1578; Mayken; Gouda/Delft/Egmond-Alkmaar/Hoorn/Enkhuizen; Claes' own ambiguous transmutation; Seton and Projectio  
+Authority: ACTIVE STORYBIBLE MODULE derived from `DECISIONS_2026-08-23.md`  
+Use when: drafting, revising or planning any chapter from 1564 through the ending  
+Guardrails: history moves Claes; the inquiry changes what he notices; no second cipher quest; no anachronistic discovery of oxygen; Seton does not complete Claes' moral development.  
+RAW: https://raw.githubusercontent.com/Naastepad/claes-canon/authoring/v1/storybible/modules/CLAES_RUGGENGRAAT_1564_1602.md
 
 ## Storybible index
 Path: `storybible/INDEX.md`  
@@ -123,6 +141,7 @@ RAW: https://raw.githubusercontent.com/Naastepad/claes-canon/authoring/v1/narrat
 Path: `storybible/modules/GOES_RELIGIOUS_TRANSITION_1577_1578.md`  
 Role: local confessional/political transition  
 Use when: Goes scenes in 1577–1578 or later memory of that transition  
+Guardrail: exact 30 September 1578 detail proposed in the 23-Aug spine still requires source-layer synchronization before documentary precision is used in prose.  
 RAW: https://raw.githubusercontent.com/Naastepad/claes-canon/authoring/v1/storybible/modules/GOES_RELIGIOUS_TRANSITION_1577_1578.md
 
 ---
@@ -132,7 +151,7 @@ RAW: https://raw.githubusercontent.com/Naastepad/claes-canon/authoring/v1/storyb
 ## Public opinion, rumour and identity
 Path: `storybible/modules/PUBLIC_OPINION_IDENTITY_REVOLT.md`  
 Role: oral-news ecology, rumour verification, confession versus allegiance, rederijkers as public-language infrastructure, layered identity  
-Use when: political/religious information, rumours, propaganda, allegiance or identity matter  
+Use when: political/religious information, rumours, propaganda, allegiance or identity matter; mandatory support for Mayken's 1578 reputation line  
 RAW: https://raw.githubusercontent.com/Naastepad/claes-canon/authoring/v1/storybible/modules/PUBLIC_OPINION_IDENTITY_REVOLT.md
 
 ---
@@ -165,9 +184,14 @@ RAW: https://raw.githubusercontent.com/Naastepad/claes-canon/authoring/v1/histor
 
 ## Central Source Claims registry
 Path: `claims/SOURCE_CLAIMS.yaml`  
-Role: historical/source claims and confidence/provenance links  
+Role: historical/research claims and confidence/provenance links  
 Use when: asserting historical fact in canon/worldbuilding  
 RAW: https://raw.githubusercontent.com/Naastepad/claes-canon/authoring/v1/claims/SOURCE_CLAIMS.yaml
+
+## Story Claims registry
+Path: `claims/STORY_CLAIMS.yaml`  
+Role: atomic novel truths; includes the synchronized 23-Aug adult-spine claims  
+RAW: https://raw.githubusercontent.com/Naastepad/claes-canon/authoring/v1/claims/STORY_CLAIMS.yaml
 
 ## Themes
 Path: `narrative/themes.yaml`  
@@ -185,7 +209,7 @@ Use when: senses, church interior, altars, guilds, bells, movement, smell, ritua
 RAW: https://raw.githubusercontent.com/Naastepad/claes-canon/authoring/v1/sources/SRC-WAUTERS-RELIGIOUS-SPACE-2021.md
 
 ## Van Bruaene — rederijkers
-Path: `sources/SRC-VAN-BRUAENE-OM-BETERS-WILLE-2008.md`  
+Path: `sources/SRC-VAN-BRUaENE-OM-BETERS-WILLE-2008.md`  
 Use when: chambers, Landjuweel, civic religion, performance, craft/trade networks  
 RAW: https://raw.githubusercontent.com/Naastepad/claes-canon/authoring/v1/sources/SRC-VAN-BRUAENE-OM-BETERS-WILLE-2008.md
 
@@ -218,7 +242,7 @@ RAW: https://raw.githubusercontent.com/Naastepad/claes-canon/authoring/v1/source
 
 ---
 
-# Claude scene-use recipes
+# Scene-use recipes
 
 ## If writing a Goes church scene ca. 1542–1554
 Read in this exact order:
@@ -238,14 +262,33 @@ Hard reminders:
 
 ## If writing a Revolt-era Goes/Zeeland scene
 Read:
-1. active master;
-2. `HISTORICAL_SUBSTRATE_1540_1605.md`;
-3. `ZEELAND_REVOLT_TIMELINE.yaml`;
-4. `PUBLIC_OPINION_IDENTITY_REVOLT.md`;
-5. local Goes transition module if 1577–1578;
-6. `WRITING_PROTOCOL.md`.
+1. `canon/DECISIONS_2026-08-23.md` when the scene concerns Claes' adult route;
+2. active master plus `storybible/modules/CLAES_RUGGENGRAAT_1564_1602.md`;
+3. `storybible/modules/HISTORICAL_SUBSTRATE_1540_1605.md`;
+4. `history/ZEELAND_REVOLT_TIMELINE.yaml`;
+5. `storybible/modules/PUBLIC_OPINION_IDENTITY_REVOLT.md`;
+6. local Goes transition module if 1577–1578;
+7. `WRITING_PROTOCOL.md`.
 
 Always distinguish historical fact from what the viewpoint character actually knows.
+
+## If writing any adult-spine chapter 1564–1602
+Read:
+1. `canon/DECISIONS_2026-08-23.md`;
+2. `storybible/modules/CLAES_RUGGENGRAAT_1564_1602.md`;
+3. relevant `STC.*`, `NI.*`, `ARC.*`, entity and relationship records;
+4. the relevant history/source modules for the exact place and year;
+5. `WRITING_PROTOCOL.md`.
+
+Hard reminders:
+- 1564 Dee question = seed; **1566 departure from Antwerp = ruggengraat start**;
+- no historical sightseeing chapter without Claes' objective, choice and cost;
+- no second cipher quest;
+- Mayken has independent agency and expertise;
+- Las Casas is first small Projectio, not the whole life-work;
+- Claes' own ambiguous transmutation precedes Seton;
+- Seton mirrors/tests an already developed moral change;
+- exact documentary claims remain source-weighted.
 
 ---
 
