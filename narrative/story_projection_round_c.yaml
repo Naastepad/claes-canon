@@ -51,7 +51,7 @@ projections:
     - NI.SCENE.LANDJUWEEL.FATHER_RAPPROCHEMENT.1561.001
     relationship_movement: REL.CLAES.CORNELIS
     authoring_inputs: [WORLD.ANTWERP]
-    refinement: NARRATIVE.LANDJUWEEL_1561.CONTINUITY
+    refinement: NI.REFINEMENT.LANDJUWEEL_1561.CONTINUITY
     guardrails:
     - "No Silvius direct meeting in the 1561 chapter; direct Silvius/Dee formation begins in 1563."
     - "No alchemical teaching, secret initiation or Freemasonic gathering is created by the Landjuweel."
