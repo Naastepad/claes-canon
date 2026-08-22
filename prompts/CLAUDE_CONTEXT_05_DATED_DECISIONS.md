@@ -5,9 +5,9 @@
 > Do not use this pack as permission for free repository discovery; follow the task router in CLAUDE_CONTEXT_INDEX.md.
 
 - source branch: `main`
-- source commit at generation: `88637ab63031f073eb8023becb15bdef794fc72f`
-- generated UTC: `2026-08-21T21:06:16+00:00`
-- included files: `21`
+- source commit at generation: `7aa4a1608346974e59f1cd32527803637bd6897d`
+- generated UTC: `2026-08-22T13:47:13+00:00`
+- included files: `22`
 
 Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pack does not alter authority.
 
@@ -1217,6 +1217,92 @@ decisions:
   - Do not infer that forbidden books were literally hidden inside beer casks unless a separate scene decision establishes it.
   - Similar logistics does not mean identical cargo, route or carrier on every journey.
   - Preserve OPEN.SECURITY.LOW_LINK.1564.001 unless separately resolved.
+```
+
+---
+
+# SOURCE FILE: `canon/DECISIONS_LANDJUWEEL_1561_2026-08-22.yaml`
+
+```yaml
+schema_version: 1.0.0
+kind: CanonDecisionSupplement
+decisions:
+- id: DEC.CLAES.LANDJUWEEL.AGE_18.2026-08-22
+  type: CanonDecision
+  status: CANON
+  decision: "Claes is eighteen throughout the August 1561 Landjuweel visit; born 8 December 1542, he does not turn nineteen until 8 December 1561."
+  affects:
+  - STC.CLAES.LANDJUWEEL.AGE.1561.001
+  - NI.EVENT.LANDJUWEEL.1561.001
+  rationale: "Deterministic consequence of the canonical birth date; the manuscript does not state a contradictory age."
+
+- id: DEC.CLAES.LANDJUWEEL.JOURNEY_ACCESS.2026-08-22
+  type: CanonDecision
+  status: CANON
+  decision: "In August 1561 Claes travels with Cornelis from Reimerswaal via Goes to Antwerp, their first joint journey since Claes' 1554 departure. Cornelis' business network and beer-trade/credit interests are the primary reason; the Landjuweel is a cultural opportunity accessed through a business/rederijker relation. Cornelis is a rhetorician and observer, not an official Goese competitor."
+  affects:
+  - STC.CLAES.LANDJUWEEL.JOURNEY_ACCESS.1561.001
+  - NI.EVENT.LANDJUWEEL.1561.001
+  - REL.CLAES.CORNELIS
+  rationale: "Synchronizes the current chapter with the existing hard boundary that Goes/Nardusbloem is not one of the documented fourteen official Brabant competitors."
+
+- id: DEC.CLAES.LANDJUWEEL.ENTRY_AUTONOMY.2026-08-22
+  type: CanonDecision
+  status: CANON
+  decision: "On 3 August 1561 Claes witnesses the Antwerp entry, becomes temporarily separated from Cornelis in the night crowd and experiences the last Brussels chamber after two in the morning without his father's interpretation."
+  affects:
+  - STC.CLAES.LANDJUWEEL.ENTRY_AUTONOMY.1561.001
+  - NI.SCENE.LANDJUWEEL.ENTRY.1561.001
+  rationale: "The separation is the chapter's first strong autonomous-observer beat after the Reimerswaal years."
+
+- id: DEC.CLAES.LANDJUWEEL.VAN_GHISTELE.2026-08-22
+  type: CanonDecision
+  status: CANON
+  decision: "Through a business/rederijker relation of Cornelis, Claes fictionally meets historical Cornelis van Ghistele, associated with the Antwerp Goudbloem, during the Landjuweel. Van Ghistele asks what most moves a human being to art; Claes answers: 'misschien datgene wat een mens mist.'"
+  affects:
+  - STC.CLAES.LANDJUWEEL.VAN_GHISTELE.1561.001
+  - ENT.PERSON.CORNELIS_VAN_GHISTELE
+  - NI.SCENE.LANDJUWEEL.VAN_GHISTELE.1561.001
+  rationale: "Van Ghistele is the sole substantive historical rhetorician encounter in this chapter. His historical presence/network role supports plausibility; the direct meeting and dialogue are fiction canon."
+
+- id: DEC.CLAES.LANDJUWEEL.VAN_HAECHT_CENSORSHIP.2026-08-22
+  type: CanonDecision
+  status: CANON
+  decision: "Claes fictionally sees Willem van Haecht, factor of the Violieren, remove a risky line from a text at a lodging. This is Claes' first direct experience of textual censorship and of the danger carried by a single phrase."
+  affects:
+  - STC.CLAES.LANDJUWEEL.VAN_HAECHT_CENSORSHIP.1561.001
+  - ENT.PERSON.WILLEM_VAN_HAECHT
+  - NI.SCENE.LANDJUWEEL.VAN_HAECHT_CENSORSHIP.1561.001
+  rationale: "Historical evidence supports Van Haecht's factor/organizing role and explicit content restrictions around the event, but not this exact deletion incident. The incident remains clearly labelled fiction canon."
+
+- id: DEC.CLAES.LANDJUWEEL.DEFERRED_SYMBOLISM.2026-08-22
+  type: CanonDecision
+  status: CANON
+  decision: "The Landjuweel gives eighteen-year-old Claes images and tensions—spirit/matter, freedom/rule, gift/labour, multiple answers—but no alchemical teaching and no initiatory or Masonic membership. Any alchemical or initiatory ordering of the experience belongs to Claes' later interpretation."
+  affects:
+  - STC.CLAES.LANDJUWEEL.DEFERRED_SYMBOLISM.1561.001
+  - ARC.CLAES.CAUSAL_SPINE
+  rationale: "Preserves the rule that historical rederijker culture may prepare later symbolic understanding without being rewritten as an alchemical or Freemasonic gathering."
+
+- id: DEC.CLAES.CORNELIS.LANDJUWEEL_RAPPROCHEMENT.2026-08-22
+  type: CanonDecision
+  status: CANON
+  decision: "On the final evening of the 1561 visit Cornelis acknowledges that he should have shown Claes this world earlier. The exchange is a sincere but incomplete first rapprochement after seven years of physical distance and does not erase the later secrecy/exclusion conflict."
+  affects:
+  - STC.CLAES.CORNELIS.LANDJUWEEL_RAPPROCHEMENT.1561.001
+  - REL.CLAES.CORNELIS
+  - NI.SCENE.LANDJUWEEL.FATHER_RAPPROCHEMENT.1561.001
+  rationale: "Adds a necessary intermediate relationship beat between post-fire separation and the renewed secrecy pressure of the Antwerp years."
+
+- id: DEC.CLAES.SILVIUS.NO_1561_MEETING.2026-08-22
+  type: CanonDecision
+  status: CANON
+  decision: "Willem Silvius does not meet Claes in the 1561 Landjuweel chapter. Claes' direct Silvius/Dee formation remains anchored in 1563 and early 1564. Silvius' historical 1562 publication of the Landjuweel texts may later support a separate transition scene but cannot retroactively create a 1561 relationship."
+  affects:
+  - STC.CLAES.SILVIUS.NO_1561_MEETING.001
+  - REL.CLAES.SILVIUS
+  - NI.SCENE.DEE_FIRST_ENCOUNTER.1563.001
+  rationale: "Closes drift left by the older relationship phase that began in August 1561 and aligns the relationship registry with the current manuscript."
 ```
 
 ---

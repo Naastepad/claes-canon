@@ -5,9 +5,9 @@
 > Do not use this pack as permission for free repository discovery; follow the task router in CLAUDE_CONTEXT_INDEX.md.
 
 - source branch: `main`
-- source commit at generation: `88637ab63031f073eb8023becb15bdef794fc72f`
-- generated UTC: `2026-08-21T21:06:16+00:00`
-- included files: `65`
+- source commit at generation: `7aa4a1608346974e59f1cd32527803637bd6897d`
+- generated UTC: `2026-08-22T13:47:13+00:00`
+- included files: `66`
 
 Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pack does not alter authority.
 
@@ -2817,8 +2817,8 @@ Lemma can reject an impossible combination but never invent story truth.
 ## From chapter-ready world to causal character architecture
 
 **Status:** CURRENT AUTHORING AUTHORITY FOR STORY PROJECTION  
-**Date:** 16 August 2026  
-**Machine layers:** `narrative/alchemical_authorial_architecture.yaml`, `narrative/mayken_independent_arc.yaml`, `narrative/mayken_relationship_projection.yaml`, `narrative/goes_departure_1572_1579.yaml`, `narrative/story_projection_round_c.yaml`
+**Date:** synchronized through 22 August 2026  
+**Machine layers:** `narrative/alchemical_authorial_architecture.yaml`, `narrative/mayken_independent_arc.yaml`, `narrative/mayken_relationship_projection.yaml`, `narrative/goes_departure_1572_1579.yaml`, `narrative/story_projection_round_c.yaml`, `narrative/landjuweel_1561_refinement.yaml`
 
 Round A restored lost historical/worldbuilding substrate. Round B made six major domains chapter-ready. Round C answers the next question: **what changes in the people because those worlds exist?**
 
@@ -2890,11 +2890,29 @@ Eleven-year-old Claes reaches Reimerswaal after the intended Zierikzee route col
 
 ### Landjuweel 1561
 
-Performance teaches that the same sign is not the same thing to performer, audience, judge, church, magistrate and printer. Observation becomes interpretation.
+Claes is **eighteen**, not nineteen: his canonical birth on 8 December 1542 makes that deterministic for August 1561.
+
+He travels with Cornelis from Reimerswaal via Goes to Antwerp, their first joint journey since the 1554 separation. Business/credit and Cornelis' network are the primary reason; the Landjuweel is the cultural opportunity. Cornelis is an interested rederijker-observer, never an invented official Goese competitor.
+
+On 3 August, public rhetoric materializes signs before competing audiences. When Claes becomes separated from Cornelis in the night crowd and experiences the final Brussels chamber after two in the morning without paternal interpretation, observation becomes partly autonomous. The episode is not merely spectacle: **the father's mediation temporarily falls away.**
+
+In the following days the competition's question — what most moves a human being to art? — refuses a single answer. Historical Cornelis van Ghistele is the chapter's one substantive rederijker encounter; the meeting itself is fiction canon. Asked for his own answer, Claes says: **“misschien datgene wat een mens mist.”**
+
+A separate fictional scene lets Claes see historical Willem van Haecht remove a risky line from a text. Van Haecht's role and the event's censorship conditions are historically grounded; the exact deletion is not. Its causal function is to make language dangerous in material practice before Silvius and the later print network.
+
+On the final evening Cornelis admits that he should have shown Claes this world earlier. The result is not reconciliation but a **brief opening after seven years of distance**. Because mutual recognition becomes possible for a moment, later secrecy and exclusion can wound more deeply.
+
+The Landjuweel gives Claes a store of images and tensions — spirit/matter, freedom/rule, gift/labour, expression/censorship — but **no alchemical teaching and no initiatory or Freemasonic membership**. Any such ordering belongs to his later interpretation.
+
+Silvius does **not** meet Claes here. The direct Silvius/Dee line begins in 1563. Silvius' historical 1562 print edition remains an optional later performance-to-print bridge, currently open rather than executed canon.
+
+One topographic detail remains deliberately unresolved: the manuscript's Meirbrug/Onze-Lieve-Vrouwe segment does not match the presently checked historical procession route, while the cathedral is separately attested for the 5 August kerkgang. Preserve `OPEN.LANDJUWEEL.ENTRY_ROUTE.1561.001` until the dossier source is reconciled.
+
+Governing detail: `storybible/domains/REDERIJKERS_LANDJUWEEL_1561.md` and `narrative/landjuweel_1561_refinement.yaml`.
 
 ### Dee/Silvius/Boom 1563–1564
 
-Material work teaches that apparent absence can conceal presence and that correct relation can reveal what force cannot. This is genuine knowledge — and the seed of Claes' adult error that complete understanding may grant control.
+Material work teaches that apparent absence can conceal presence and that correct relation can reveal what force cannot. This is genuine knowledge — and the seed of Claes' adult error that complete understanding may grant control. Direct Claes–Silvius formation begins here, not at the 1561 Landjuweel.
 
 ### Cornelis 1567–1569
 
@@ -3011,12 +3029,14 @@ Mayken's presence automatically invokes both the relationship and `ARC.MAYKEN.LI
 
 ## 7. Remaining Round-C design openings
 
-Two newly explicit high-priority authorial questions remain:
+Current explicit design openings include:
 
+- `OPEN.LANDJUWEEL.ENTRY_ROUTE.1561.001` — reconcile the current manuscript/dossier route with the presently checked historical procession route before calling the Meirbrug/Onze-Lieve-Vrouwe segment documented;
+- `OPEN.CLAES.SILVIUS.LANDJUWEEL_PRINT_1562.001` — optional performance-to-print transition, without retroactive 1561 contact;
 - `OPEN.GOES.CLAES_DEPARTURE_1572_1579.001` — the exact economic/material causal chain that finally severs Claes from Goes;
 - `OPEN.MAYKEN.INDEPENDENT_MIDARC.001` — the concrete work/family/social pressure through which Mayken's adult independence becomes dramatically visible.
 
-These are now correctly open. They no longer hide as missing story structure.
+These are correctly open. They must not hide as missing story structure or be silently resolved by later prose.
 ```
 
 ---
@@ -3996,7 +4016,7 @@ motifs:
 # SOURCE FILE: `narrative/story_projection_round_c.yaml`
 
 ```yaml
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: StoryProjectionRegistry
 projections:
 - id: ARC.CLAES.CAUSAL_SPINE
@@ -4038,19 +4058,31 @@ projections:
 
   - id: H04
     story_time: {earliest: '1561-08-01', latest_exclusive: '1561-09-01', precision: month}
-    label: "Landjuweel — meaning becomes multiple"
-    cause: "Public rhetoric materializes signs before competing audiences."
-    effect: "Claes moves from noticing patterns toward judging interpretation, role and consequence."
-    instances: [NI.EVENT.LANDJUWEEL.1561.001]
+    label: "Landjuweel — meaning becomes multiple and judgement becomes partly his own"
+    cause: "Eighteen-year-old Claes makes his first joint journey with Cornelis since 1554. Public rhetoric puts competing answers before him; separation in the 3 August night crowd briefly removes paternal mediation; Van Ghistele asks for Claes' own answer; Van Haecht's fictional deletion gesture makes textual risk visible."
+    effect: "Claes moves from noticing patterns toward autonomous judgement of interpretation, role and consequence. He gives a provisional answer—'misschien datgene wat een mens mist'—without closing the question. Cornelis' final-evening acknowledgement creates a sincere but incomplete rapprochement, while the Landjuweel leaves images that acquire alchemical/initiatory ordering only much later."
+    instances:
+    - NI.EVENT.LANDJUWEEL.1561.001
+    - NI.SCENE.LANDJUWEEL.ENTRY.1561.001
+    - NI.SCENE.LANDJUWEEL.VAN_GHISTELE.1561.001
+    - NI.SCENE.LANDJUWEEL.VAN_HAECHT_CENSORSHIP.1561.001
+    - NI.SCENE.LANDJUWEEL.FATHER_RAPPROCHEMENT.1561.001
+    relationship_movement: REL.CLAES.CORNELIS
     authoring_inputs: [WORLD.ANTWERP]
+    refinement: NI.REFINEMENT.LANDJUWEEL_1561.CONTINUITY
+    guardrails:
+    - "No Silvius direct meeting in the 1561 chapter; direct Silvius/Dee formation begins in 1563."
+    - "No alchemical teaching, secret initiation or Freemasonic gathering is created by the Landjuweel."
+    - "The current Meirbrug/Onze-Lieve-Vrouwe procession segment remains under OPEN.LANDJUWEEL.ENTRY_ROUTE.1561.001 rather than being promoted to verified history."
 
   - id: H05
     story_time: {earliest: '1563-02-01', latest_exclusive: '1564-10-04', precision: bounded}
     label: "Dee/Silvius/Boom — process becomes power"
-    cause: "Claes learns through print, materials, graphite, pyritic matter, vitriol and the death/opening problem of Sol."
+    cause: "Beginning in 1563, Claes learns through print, materials, graphite, pyritic matter, vitriol and the death/opening problem of Sol."
     effect: "He becomes a causal actor and begins to overvalue complete understanding as a route to control."
     instances: [NI.SCENE.DEE_FIRST_ENCOUNTER.1563.001, NI.SCENE.MEMORIAAL_GIFT.1564.001, NI.EVENT.SECURITY_BREAK.1564.001]
     arcs_advanced: [ARC.CLAES.DEE, ARC.CLAES.MACRO_TRANSMUTATION]
+    guardrail: "Do not back-project direct Silvius formation into the 1561 Landjuweel visit."
 
   - id: H06
     story_time: {earliest: '1566-08-01', latest_exclusive: '1570-01-01', precision: bounded}
@@ -4873,7 +4905,7 @@ arcs:
 # SOURCE FILE: `narrative/relationships.yaml`
 
 ```yaml
-schema_version: 1.6.0
+schema_version: 1.7.0
 kind: NarrativeRelationshipRegistry
 relationships:
 - id: REL.CLAES.CORNELIS
@@ -4887,7 +4919,7 @@ relationships:
     value_state: dependence -> admiration
     function: Cornelis teaches attention, craft, patience and the difference between pieces and routes while Claes grows up with Tanneken, younger brother Jan and an expected unborn sibling.
   - label: shared catastrophe and physical separation
-    story_time: {earliest: '1554-05-18', latest_exclusive: '1561-09-01', precision: bounded}
+    story_time: {earliest: '1554-05-18', latest_exclusive: '1561-08-01', precision: bounded}
     value_state: shared family -> surviving father and son who also lose daily access to each other
     function: Both lose Tanneken, Jan, the unborn child and home, but not from the same position. Claes directly experiences the wider fire while Cornelis is absent from the immediate zone. Cornelis remains in Goes to rebuild livelihood, business and shelter and finance Claes' education; eleven-year-old Claes is sent to Reimerswaal. Cornelis' act of care is therefore also experienced by Claes as distance and possible abandonment.
     support: Claes Jacobsz. Nissepat, fictionally Cornelis' father, is present by the burial/early aftermath and helps where possible despite losing the 1542 house; maternal grandmother Mayken Pietersdochter preserves a different continuity through care and family memory.
@@ -4896,10 +4928,18 @@ relationships:
     - DEC.GOES.FIRE_1554.CLAES_PRESENT_CORNELIS_ABSENT.2026-08-21
     - DEC.MANUSCRIPT.POSTFIRE.GRANDFATHER_CONTINUITY.2026-08-21
     - DEC.CLAES.REIMERSWAAL.ARRIVAL_AGE_11.2026-08-21
+  - label: Landjuweel rapprochement
+    story_time: {earliest: '1561-08-01', latest_exclusive: '1561-09-01', precision: month}
+    value_state: seven years of physical distance -> tentative mutual recognition
+    function: Their first joint journey since Claes' post-fire departure lets Claes see Cornelis' rederijker/business world directly. On the final evening Cornelis admits he should have shown Claes this world earlier. The opening is sincere but incomplete and does not erase what the separation has done.
+    narrative_instances: [NI.EVENT.LANDJUWEEL.1561.001, NI.SCENE.LANDJUWEEL.FATHER_RAPPROCHEMENT.1561.001]
+    decision_ids:
+    - DEC.CLAES.LANDJUWEEL.JOURNEY_ACCESS.2026-08-22
+    - DEC.CLAES.CORNELIS.LANDJUWEEL_RAPPROCHEMENT.2026-08-22
   - label: distance through secrecy and network risk
     story_time: {earliest: '1561-09-01', latest_exclusive: '1567-09-01', precision: interval}
-    value_state: admiration -> suspicion/exclusion
-    function: The earlier physical separation gives way to interpretive separation as Claes sees that Cornelis hides routes, papers, books and dangerous loyalties. The relationship does not depend on a cipher or fallback key.
+    value_state: tentative recognition -> suspicion/exclusion
+    function: The brief Landjuweel opening makes the next interpretive separation sharper as Claes sees that Cornelis hides routes, papers, books and dangerous loyalties. The relationship does not depend on a cipher or fallback key.
   - label: warning, recidive and final loss
     story_time: {earliest: '1567-09-01', latest_exclusive: '1569-11-20', precision: bounded}
     value_state: compromised living father -> condemned protective silence -> absent moral inheritance
@@ -5008,10 +5048,14 @@ relationships:
   label: Claes and Willem Silvius
   participants: [ENT.PERSON.CLAES, ENT.PERSON.WILLEM_SILVIUS]
   status: CANON
+  decision_ids:
+  - DEC.CLAES.SILVIUS.NO_1561_MEETING.2026-08-22
+  pre_contact_guardrail: "Silvius' historical 1562 Landjuweel publication may later become a print-afterlife scene, but it does not create a direct 1561 relationship or retroactively place Silvius in the Landjuweel chapter."
   phases:
   - label: editorial recognition
-    story_time: {earliest: '1561-08-01', latest_exclusive: '1564-01-01', precision: bounded}
+    story_time: {earliest: '1563-02-01', latest_exclusive: '1564-01-01', precision: bounded}
     value_state: young learner -> useful observer/editorial source
+    narrative_instances: [NI.SCENE.DEE_FIRST_ENCOUNTER.1563.001]
     object: OBJ.ZOVITIUS_SCHOOLBOOK
   - label: practical trust
     story_time: {earliest: '1564-01-01', latest_exclusive: '1564-10-04', precision: bounded}
@@ -9289,6 +9333,92 @@ decisions:
   - Do not infer that forbidden books were literally hidden inside beer casks unless a separate scene decision establishes it.
   - Similar logistics does not mean identical cargo, route or carrier on every journey.
   - Preserve OPEN.SECURITY.LOW_LINK.1564.001 unless separately resolved.
+```
+
+---
+
+# SOURCE FILE: `canon/DECISIONS_LANDJUWEEL_1561_2026-08-22.yaml`
+
+```yaml
+schema_version: 1.0.0
+kind: CanonDecisionSupplement
+decisions:
+- id: DEC.CLAES.LANDJUWEEL.AGE_18.2026-08-22
+  type: CanonDecision
+  status: CANON
+  decision: "Claes is eighteen throughout the August 1561 Landjuweel visit; born 8 December 1542, he does not turn nineteen until 8 December 1561."
+  affects:
+  - STC.CLAES.LANDJUWEEL.AGE.1561.001
+  - NI.EVENT.LANDJUWEEL.1561.001
+  rationale: "Deterministic consequence of the canonical birth date; the manuscript does not state a contradictory age."
+
+- id: DEC.CLAES.LANDJUWEEL.JOURNEY_ACCESS.2026-08-22
+  type: CanonDecision
+  status: CANON
+  decision: "In August 1561 Claes travels with Cornelis from Reimerswaal via Goes to Antwerp, their first joint journey since Claes' 1554 departure. Cornelis' business network and beer-trade/credit interests are the primary reason; the Landjuweel is a cultural opportunity accessed through a business/rederijker relation. Cornelis is a rhetorician and observer, not an official Goese competitor."
+  affects:
+  - STC.CLAES.LANDJUWEEL.JOURNEY_ACCESS.1561.001
+  - NI.EVENT.LANDJUWEEL.1561.001
+  - REL.CLAES.CORNELIS
+  rationale: "Synchronizes the current chapter with the existing hard boundary that Goes/Nardusbloem is not one of the documented fourteen official Brabant competitors."
+
+- id: DEC.CLAES.LANDJUWEEL.ENTRY_AUTONOMY.2026-08-22
+  type: CanonDecision
+  status: CANON
+  decision: "On 3 August 1561 Claes witnesses the Antwerp entry, becomes temporarily separated from Cornelis in the night crowd and experiences the last Brussels chamber after two in the morning without his father's interpretation."
+  affects:
+  - STC.CLAES.LANDJUWEEL.ENTRY_AUTONOMY.1561.001
+  - NI.SCENE.LANDJUWEEL.ENTRY.1561.001
+  rationale: "The separation is the chapter's first strong autonomous-observer beat after the Reimerswaal years."
+
+- id: DEC.CLAES.LANDJUWEEL.VAN_GHISTELE.2026-08-22
+  type: CanonDecision
+  status: CANON
+  decision: "Through a business/rederijker relation of Cornelis, Claes fictionally meets historical Cornelis van Ghistele, associated with the Antwerp Goudbloem, during the Landjuweel. Van Ghistele asks what most moves a human being to art; Claes answers: 'misschien datgene wat een mens mist.'"
+  affects:
+  - STC.CLAES.LANDJUWEEL.VAN_GHISTELE.1561.001
+  - ENT.PERSON.CORNELIS_VAN_GHISTELE
+  - NI.SCENE.LANDJUWEEL.VAN_GHISTELE.1561.001
+  rationale: "Van Ghistele is the sole substantive historical rhetorician encounter in this chapter. His historical presence/network role supports plausibility; the direct meeting and dialogue are fiction canon."
+
+- id: DEC.CLAES.LANDJUWEEL.VAN_HAECHT_CENSORSHIP.2026-08-22
+  type: CanonDecision
+  status: CANON
+  decision: "Claes fictionally sees Willem van Haecht, factor of the Violieren, remove a risky line from a text at a lodging. This is Claes' first direct experience of textual censorship and of the danger carried by a single phrase."
+  affects:
+  - STC.CLAES.LANDJUWEEL.VAN_HAECHT_CENSORSHIP.1561.001
+  - ENT.PERSON.WILLEM_VAN_HAECHT
+  - NI.SCENE.LANDJUWEEL.VAN_HAECHT_CENSORSHIP.1561.001
+  rationale: "Historical evidence supports Van Haecht's factor/organizing role and explicit content restrictions around the event, but not this exact deletion incident. The incident remains clearly labelled fiction canon."
+
+- id: DEC.CLAES.LANDJUWEEL.DEFERRED_SYMBOLISM.2026-08-22
+  type: CanonDecision
+  status: CANON
+  decision: "The Landjuweel gives eighteen-year-old Claes images and tensions—spirit/matter, freedom/rule, gift/labour, multiple answers—but no alchemical teaching and no initiatory or Masonic membership. Any alchemical or initiatory ordering of the experience belongs to Claes' later interpretation."
+  affects:
+  - STC.CLAES.LANDJUWEEL.DEFERRED_SYMBOLISM.1561.001
+  - ARC.CLAES.CAUSAL_SPINE
+  rationale: "Preserves the rule that historical rederijker culture may prepare later symbolic understanding without being rewritten as an alchemical or Freemasonic gathering."
+
+- id: DEC.CLAES.CORNELIS.LANDJUWEEL_RAPPROCHEMENT.2026-08-22
+  type: CanonDecision
+  status: CANON
+  decision: "On the final evening of the 1561 visit Cornelis acknowledges that he should have shown Claes this world earlier. The exchange is a sincere but incomplete first rapprochement after seven years of physical distance and does not erase the later secrecy/exclusion conflict."
+  affects:
+  - STC.CLAES.CORNELIS.LANDJUWEEL_RAPPROCHEMENT.1561.001
+  - REL.CLAES.CORNELIS
+  - NI.SCENE.LANDJUWEEL.FATHER_RAPPROCHEMENT.1561.001
+  rationale: "Adds a necessary intermediate relationship beat between post-fire separation and the renewed secrecy pressure of the Antwerp years."
+
+- id: DEC.CLAES.SILVIUS.NO_1561_MEETING.2026-08-22
+  type: CanonDecision
+  status: CANON
+  decision: "Willem Silvius does not meet Claes in the 1561 Landjuweel chapter. Claes' direct Silvius/Dee formation remains anchored in 1563 and early 1564. Silvius' historical 1562 publication of the Landjuweel texts may later support a separate transition scene but cannot retroactively create a 1561 relationship."
+  affects:
+  - STC.CLAES.SILVIUS.NO_1561_MEETING.001
+  - REL.CLAES.SILVIUS
+  - NI.SCENE.DEE_FIRST_ENCOUNTER.1563.001
+  rationale: "Closes drift left by the older relationship phase that began in August 1561 and aligns the relationship registry with the current manuscript."
 ```
 
 ---
