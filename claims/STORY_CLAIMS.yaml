@@ -1,6 +1,6 @@
-schema_version: 1.3.0
+schema_version: 1.4.0
 kind: StoryClaimRegistry
-claim_count: 34
+claim_count: 49
 claims:
 - id: STC.CLAES.BIRTH.001
   type: StoryClaim
@@ -423,3 +423,259 @@ claims:
   - ENT.LOC.NISSEPAD
   tags:
   - world
+- id: STC.CLAES.SPINE.START.1566.001
+  type: StoryClaim
+  statement: Dee's 1564 natural-philosophical question seeds Claes' lifelong inquiry, but the operational and geographical adult spine begins when Claes leaves Antwerp after the 1566 Beeldenstorm and returns to Goes.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  decision_ids:
+  - DEC.CLAES.SPINE.2026-08-23
+  subjects:
+  - ENT.PERSON.CLAES
+  objects:
+  - ENT.LOC.ANTWERP
+  - ENT.LOC.GOES
+  story_time:
+    earliest: '1566-08-01'
+    latest_exclusive: '1567-01-01'
+    precision: bounded
+  tags:
+  - structure
+  - route
+- id: STC.CLAES.DEE_LIFELONG_QUESTION.1564.001
+  type: StoryClaim
+  statement: In 1564 Dee leaves Claes with an unresolved inquiry into an unseen principle associated with air that appears to sustain fire, breath/life and growth; Claes gathers observations but never names or anachronistically discovers a modern substance.
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids:
+  - DEC.CLAES.DEE_LIFELONG_QUESTION.2026-08-23
+  subjects:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.JOHN_DEE
+  story_time:
+    earliest: '1564-01-01'
+    latest_exclusive: '1565-01-01'
+    precision: year
+  tags:
+  - alchemy
+  - natural-philosophy
+  - lifelong-inquiry
+- id: STC.CLAES.RETURN_GOES.MOTIVE.1566.001
+  type: StoryClaim
+  statement: Claes returns to Goes for both personal reasons — Cornelis, Mayken and home — and material/intellectual reasons, because brewing, salt, plants, tides, apothecary practice and craft provide a lived field for Dee's open question.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  decision_ids:
+  - DEC.CLAES.RETURN_GOES.2026-08-23
+  subjects:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.CORNELIS
+  - ENT.PERSON.BELOVED
+  objects:
+  - ENT.LOC.GOES
+  tags:
+  - motivation
+  - route
+- id: STC.CLAES.BELOVED.MAYKEN.001
+  type: StoryClaim
+  statement: The previously open beloved/apothecary-daughter function is Mayken, already present in Claes' early life and manuscript.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  decision_ids:
+  - DEC.CLAES.MAYKEN.2026-08-23
+  subjects:
+  - ENT.PERSON.BELOVED
+  tags:
+  - relationship
+  - identity
+- id: STC.MAYKEN.REPUTATION_FALL.1578.001
+  type: StoryClaim
+  statement: In 1578 Mayken's danger in Goes develops over months through social reinterpretation of true material facts into a false collective accusation; no rape, dissociative-identity construction or required formal witch trial drives the plot.
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids:
+  - DEC.MAYKEN.REPUTATION_FALL.1578.2026-08-23
+  subjects:
+  - ENT.PERSON.BELOVED
+  - ENT.PERSON.CLAES
+  objects:
+  - ENT.LOC.GOES
+  story_time:
+    earliest: '1578-01-01'
+    latest_exclusive: '1579-01-01'
+    precision: year
+  tags:
+  - rumour
+  - reputation
+  - religion
+  - agency
+- id: STC.LASCASAS.SCALE.001
+  type: StoryClaim
+  statement: Las Casas is Claes' first successful reconstruction and transmission of dangerous knowledge, not his sole or central lifelong assignment.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  decision_ids:
+  - DEC.LASCASAS.SCALE.2026-08-23
+  subjects:
+  - ENT.PERSON.CLAES
+  objects:
+  - OBJ.LASCASAS_PLAINTEXT
+  tags:
+  - structure
+  - projectio
+- id: STC.LASCASAS.SILVIUS.1578.001
+  type: StoryClaim
+  statement: In 1578 Claes brings the recovered Las Casas text back into Silvius' Antwerp printing world for anonymous publication/distribution; once printed it is no longer under Claes' control.
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids:
+  - DEC.LASCASAS.SCALE.2026-08-23
+  subjects:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.WILLEM_SILVIUS
+  objects:
+  - ENT.LOC.ANTWERP
+  - OBJ.LASCASAS_PLAINTEXT
+  story_time:
+    earliest: '1578-01-01'
+    latest_exclusive: '1579-01-01'
+    precision: year
+  tags:
+  - publication
+  - transmission
+- id: STC.CLAES.FLIGHT.GOUDA.1578.001
+  type: StoryClaim
+  statement: During the 1578 Goese confessional and reputational crisis, Claes chooses to leave before certainty or formal conviction makes action impossible; Gouda is the first intended refuge.
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids:
+  - DEC.CLAES.FLIGHT_NORTH.1578.2026-08-23
+  subjects:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.BELOVED
+  objects:
+  - ENT.LOC.GOES
+  - ENT.LOC.GOUDA
+  story_time:
+    earliest: '1578-01-01'
+    latest_exclusive: '1579-01-01'
+    precision: year
+  tags:
+  - flight
+  - agency
+  - route
+- id: STC.CLAES.NORTH_ROUTE.001
+  type: StoryClaim
+  statement: After the second Goese period the intended macro-route is Goes → Gouda → Delft → Egmond/Alkmaar → Hoorn → Enkhuizen; exact dates, residence durations and intermediate stops remain open unless separately fixed.
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids:
+  - DEC.CLAES.FLIGHT_NORTH.1578.2026-08-23
+  subjects:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.BELOVED
+  objects:
+  - ENT.LOC.GOES
+  - ENT.LOC.GOUDA
+  - ENT.LOC.DELFT
+  - ENT.LOC.EGMOND
+  - ENT.LOC.ALKMAAR
+  - ENT.LOC.HOORN
+  - ENT.LOC.ENKHUIZEN
+  tags:
+  - route
+  - structure
+- id: STC.CLAES.OWN_TRANSMUTATION.PRESETON.001
+  type: StoryClaim
+  statement: During the post-Delft Albedo period and before Seton's 1602 appearance, Claes undergoes a materially concrete but narratively ambiguous transmutation experience; the text never certifies that he truly made gold.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  decision_ids:
+  - DEC.CLAES.OWN_TRANSMUTATION.2026-08-23
+  subjects:
+  - ENT.PERSON.CLAES
+  story_time:
+    earliest: '1584-07-15'
+    latest_exclusive: '1602-01-01'
+    precision: open-interval
+  tags:
+  - albedo
+  - alchemy
+  - ambiguity
+- id: STC.SETON.ENKHUIZEN.FUNCTION.1602.001
+  type: StoryClaim
+  statement: Seton's Enkhuizen appearance is independent of Las Casas and functions as a late mirror and test of Claes' already developed moral/alchemical transformation; the reported projection does not supply Claes' moral answer.
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids:
+  - DEC.SETON.ENKHUIZEN.1602.2026-08-23
+  subjects:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.SETON
+  objects:
+  - ENT.LOC.ENKHUIZEN
+  story_time:
+    earliest: '1602-01-01'
+    latest_exclusive: '1603-01-01'
+    precision: year
+  tags:
+  - seton
+  - projectio
+  - alchemy
+- id: STC.HOGHELANDE.ROLE.001
+  type: StoryClaim
+  statement: Theobald van Hoghelande is not Claes' elder teacher; his available fictional role is a younger correspondent or later network peer, with exact contact still open.
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids:
+  - DEC.HOGHELANDE.ROLE.2026-08-23
+  subjects:
+  - ENT.PERSON.CLAES
+  - ENT.PERSON.HOGHELANDE
+  tags:
+  - continuity-correction
+  - alchemical-network
+- id: STC.CLAES.VOC_RESONANCE.1602.001
+  type: StoryClaim
+  statement: The proximity of the reported Seton episode and the 1602 VOC charter context may function as literary resonance linking knowledge, commerce, war and overseas power, but no historical causal connection is asserted.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  decision_ids:
+  - DEC.CLAES.VOC_RESONANCE.1602.2026-08-23
+  subjects:
+  - ENT.PERSON.CLAES
+  objects:
+  - ENT.LOC.ENKHUIZEN
+  story_time:
+    earliest: '1602-01-01'
+    latest_exclusive: '1603-01-01'
+    precision: year
+  tags:
+  - resonance
+  - empire
+  - carrier-meaning
+- id: STC.CLAES.THREE_LEVELS.001
+  type: StoryClaim
+  statement: Claes' lifelong inquiry operates on material, political and moral levels; by the final movement the moral question of whether effective knowledge deserves transmission outranks solving the material question.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  decision_ids:
+  - DEC.CLAES.THREE_LEVELS.2026-08-23
+  subjects:
+  - ENT.PERSON.CLAES
+  tags:
+  - theme
+  - knowledge
+  - responsibility
+- id: STC.CLAES.HISTORICAL_WITNESS.001
+  type: StoryClaim
+  statement: Claes encounters major history at varied distances — direct presence, direct consequence, or aftermath/news/memory — and is not placed at famous events solely to display them.
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  decision_ids:
+  - DEC.CLAES.HISTORICAL_WITNESS.2026-08-23
+  subjects:
+  - ENT.PERSON.CLAES
+  tags:
+  - historical-fiction
+  - guardrail
