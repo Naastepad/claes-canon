@@ -1,0 +1,98 @@
+schema_version: 1.0.0
+kind: StoryClaimRegistryExtension
+claims:
+- id: STC.WORLD.EGMOND_ABBEY.STATUS_1550.001
+  type: StoryClaim
+  statement: >-
+    In the Claes story world, the Abdij van Egmond around 1550 is available as an old, prestigious Holland sacral institution rather than a ruin: a place of Adelbert memory, relic prestige, pilgrimage economy, landed/archive culture and regional symbolic power.
+  subject: ENT.LOC.EGMOND.ABBEY
+  predicate: story_world_state
+  object: prestigious_sacral_institution_around_1550
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  source_claims:
+  - SC.HIST.EGMOND_ABBEY.STATUS_1550.001
+  decisions:
+  - DEC.EGMOND_ABBEY.STORY_USE.1550_1573.2026-08-16
+  story_time:
+    earliest: 1540-01-01
+    latest_exclusive: 1560-01-01
+    precision: approximate_interval
+  narrative_use:
+    direct_location_for_claes: false
+    scene_role: indirect_context
+    thematic_role: old_sacred_holland_before_war_reuse
+  retrieval:
+    tags: [egmond, abdij, 1550, sacral-centre, holland, claes-context]
+
+- id: STC.WORLD.EGMOND_ABBEY.1573.SLOOP_NOT_SIMPLE_FIRE.001
+  type: StoryClaim
+  statement: >-
+    Claes canon treats the fall of the Abdij van Egmond in 1573 as a contested public memory: the simple 7 June fire formula is not narrator-safe as fact; the story-safe reconstruction is organised dismantling, paid labour, removal and reuse of material in the Alkmaar war context.
+  subject: ENT.LOC.EGMOND.ABBEY
+  predicate: story_world_1573_destruction_model
+  object: systematic_dismantling_not_simple_fire
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  source_claims:
+  - SC.HIST.EGMOND_ABBEY.SLOOP_1573.001
+  - SC.HIST.EGMOND_ABBEY.FIRE_TRADITION_1573.001
+  decisions:
+  - DEC.EGMOND_ABBEY.NO_SIMPLE_FIRE.2026-08-16
+  story_time:
+    earliest: 1573-05-24
+    latest_exclusive: 1573-08-01
+    precision: bounded_reconstruction
+  guardrails:
+  - Do not write omniscient narrator prose saying that the abbey simply burned on 7 June 1573.
+  - The 7 June fire line may appear as rumor, simplification, false memory, polemical framing or later tradition.
+  - Use accounts, workmen, schuiten, beams, lead, stone and reused material as the stronger archival image.
+  retrieval:
+    tags: [egmond, 1573, sloop, ontmanteling, no-simple-fire, alkmaar]
+
+- id: STC.WORLD.EGMOND_ABBEY.1573.SACRAL_MATERIAL_TO_WAR_MATERIAL.001
+  type: StoryClaim
+  statement: >-
+    Egmond 1573 is available as a thematic world-example of sacral material becoming war material: abbey stone, lead, timber or other fabric can become part of defensive economy rather than remain protected sacred fabric.
+  subject: ENT.LOC.EGMOND.ABBEY
+  predicate: thematic_material_transformation
+  object: sacred_fabric_to_war_resource
+  canon_status: CANON
+  evidence_status: SUPPORTED
+  source_claims:
+  - SC.HIST.EGMOND_ABBEY.ALKMAAR_MATERIAL_REUSE.001
+  decisions:
+  - DEC.EGMOND_ABBEY.STORY_USE.1550_1573.2026-08-16
+  story_time:
+    earliest: 1573-05-24
+    latest_exclusive: 1573-10-09
+    precision: campaign_season
+  narrative_use:
+    motif_links: [sacred_space, reuse, war_accounting, rumor_vs_archive]
+    scene_role: indirect_context_or_counterpoint
+  retrieval:
+    tags: [sacred-material, war-material, alkmaar, egmond, reuse]
+
+- id: STC.CLAES.EGMOND_ABBEY_1573.HEARS_AS_NEWS_OR_RUMOR.001
+  type: StoryClaim
+  statement: >-
+    Claes may plausibly encounter reports about Egmond's destruction as news, rumor or retrospective argument moving through Low Countries networks; this is scene-available context only and does not establish him as an eyewitness or participant.
+  subject: ENT.PERSON.CLAES_NISSEPAT
+  predicate: may_hear_as_indirect_news
+  object: ENT.LOC.EGMOND.ABBEY_1573_DESTRUCTION
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  source_claims:
+  - SC.HIST.EGMOND_ABBEY.NEWS_REACHES_ZEELAND.001
+  decisions:
+  - DEC.EGMOND_ABBEY.CLAES_RELEVANCE.2026-08-16
+  story_time:
+    earliest: 1573-06-01
+    latest_exclusive: 1574-01-01
+    precision: plausible_interval
+  guardrails:
+  - Do not place Claes in Egmond without a later explicit decision.
+  - Do not make Claes know the archival reconstruction at once; he may first hear a simplified or false fire report.
+  - A later reflective Claes may contrast rumor with accounts/administration if the story has given him a knowledge route.
+  retrieval:
+    tags: [claes, egmond, news, rumor, 1573, not-eyewitness]
