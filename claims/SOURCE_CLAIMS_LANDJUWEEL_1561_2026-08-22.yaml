@@ -1,0 +1,58 @@
+schema_version: 1.0.0
+kind: SourceClaimSupplement
+claims:
+- id: SC.HIST.LANDJUWEEL.ENTRY_14_CHAMBERS.1561.001
+  type: HistoricalClaim
+  statement: "On 3 August 1561 fourteen Brabant chambers were received at Antwerp's Keizerspoort for the Landjuweel entry."
+  evidence_status: VERIFIED
+  source_ids: [SRC-HIST-REDERIJKERS-LANDJUWEEL-1561-001]
+
+- id: SC.HIST.LANDJUWEEL.ENTRY_ROUTE.1561.001
+  type: HistoricalClaim
+  statement: "The presently checked historical description gives the 3 August entry route as Keizerspoort -> Huidevetterstraat -> Eiermarkt -> Melkmarkt -> Grote Markt."
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-REDERIJKERS-LANDJUWEEL-1561-001]
+  guardrail: "This does not presently verify the manuscript's Meirbrug/Onze-Lieve-Vrouwe segment."
+
+- id: SC.HIST.LANDJUWEEL.BRUSSELS_LAST_AFTER_2AM.1561.001
+  type: HistoricalClaim
+  statement: "The Maria-kransken of Brussels entered last; the witness tradition reproduced in later historical publication reports that it was after two in the morning before this final entry had come in."
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-REDERIJKERS-LANDJUWEEL-1561-001]
+
+- id: SC.HIST.LANDJUWEEL.OLV_KERKGANG.1561.001
+  type: HistoricalClaim
+  statement: "On 5 August 1561 the chambers made a ceremonial and figurative churchgoing in Antwerp's cathedral of Our Lady."
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-REDERIJKERS-LANDJUWEEL-1561-001]
+  guardrail: "Do not merge the 5 August cathedral kerkgang into the documented 3 August procession route without separate evidence."
+
+- id: SC.HIST.LANDJUWEEL.QUESTION.1561.001
+  type: HistoricalClaim
+  statement: "The central spel-van-sinne question was 'd'welck den mensch aldermeest tot conste verwect' / what most moves the human being to art."
+  evidence_status: VERIFIED
+  source_ids: [SRC-HIST-REDERIJKERS-LANDJUWEEL-1561-001]
+
+- id: SC.HIST.LANDJUWEEL.CENSORSHIP_CONDITIONS.1561.001
+  type: HistoricalClaim
+  statement: "Authorization for the Landjuweel explicitly prohibited words in the plays, esbattements or poems against religion, clergy or government, under threat of loss of prize, punishment and privileges."
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-REDERIJKERS-LANDJUWEEL-1561-001]
+
+- id: SC.HIST.VAN_GHISTELE.GOUDBLOEM_LANDJUWEEL.1561.001
+  type: HistoricalClaim
+  statement: "Cornelis van Ghistele was associated with Antwerp's Goudbloem, probably as factor from about 1550 into the 1570s, and is credited with the pieces used by the Goudbloem at the 1561 Landjuweel."
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-REDERIJKERS-LANDJUWEEL-1561-001]
+
+- id: SC.HIST.VAN_HAECHT.VIOLIEREN_LANDJUWEEL.1561.001
+  type: HistoricalClaim
+  statement: "Willem van Haecht was factor of Antwerp's Violieren and held a central literary/organizing role in the 1561 Landjuweel."
+  evidence_status: VERIFIED
+  source_ids: [SRC-HIST-REDERIJKERS-LANDJUWEEL-1561-001]
+
+- id: SC.HIST.SILVIUS.LANDJUWEEL_PRINT.1562.001
+  type: HistoricalClaim
+  statement: "Willem Silvius published the Landjuweel plays and related texts at Antwerp in 1562."
+  evidence_status: VERIFIED
+  source_ids: [SRC-HIST-REDERIJKERS-LANDJUWEEL-1561-001]
