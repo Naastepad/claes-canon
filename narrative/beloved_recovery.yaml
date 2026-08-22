@@ -1,23 +1,33 @@
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: NarrativeRelationshipExtension
 records:
 - id: REL.CLAES.BELOVED.RECOVERY
   type: RelationshipExtension
-  label: Claes and beloved — recovery companionship
-  status: CANON_FUNCTION_OPEN_IDENTITY
+  label: Claes and Mayken — recovery companionship
+  status: CANON
   participants:
   - ENT.PERSON.CLAES
   - ENT.PERSON.BELOVED
   parent: REL.CLAES.BELOVED
   decision_ids:
   - DEC.CLAES.SINNE.2026-08-13
-  story_function: on the road toward Enkhuizen their companionship catalyses Claes' rediscovery of the sinne and its inward resonance
+  - DEC.CLAES.MAYKEN.2026-08-23
+  - DEC.MAYKEN.REPUTATION_FALL.1578.2026-08-23
+  story_function: Mayken's independent material/botanical competence and later companionship catalyse Claes' rediscovery of the sinne without solving his transformation for him; their relationship matures toward trust, contradiction and love without possession.
   boundaries:
-  - beloved accompanies and catalyses; she does not solve or perform Claes' inner transformation for him
-  - her identity and detailed apothecary-family biography remain open
-  - love matures toward relation without possession
+  - Mayken accompanies and catalyses; she does not solve or perform Claes' inner transformation for him.
+  - Mayken has autonomous knowledge, motives, risks and decisions outside Claes' needs.
+  - No rape is used as the plot mechanism that starts the northern route.
+  - No dissociative-identity / multiple-personalities construction is used as a retrospective diagnosis.
+  - No formal Goese witch trial is required; the fixed 1578 danger is slow reputational reinterpretation and escalating social risk.
+  - Love matures toward relation without possession.
+  - Mayken may contribute to Claes' pre-Seton transmutation line, but exact presence/knowledge remains open.
   arc: ARC.CLAES.SINNE_RECOVERY
   location_anchor: ENT.LOC.ENKHUIZEN
+  linked_claims:
+  - STC.CLAES.BELOVED.MAYKEN.001
+  - STC.MAYKEN.REPUTATION_FALL.1578.001
+  - STC.CLAES.NORTH_ROUTE.001
   ko_targets:
   - KO.RELATIONSHIP
   - KO.CHARACTER
