@@ -1,4 +1,4 @@
-schema_version: 1.0.0
+schema_version: 1.1.0
 kind: CanonDecisionRegistry
 decisions:
 - id: DEC.CLAES.BIRTH.2026-08-13
@@ -12,7 +12,7 @@ decisions:
 - id: DEC.CLAES.SINNE.2026-08-13
   type: CanonDecision
   status: CANON
-  decision: Claes discovers the world through embodied sinne; trauma constricts this openness and it is later rediscovered on the road toward Enkhuizen with the beloved beside him, becoming a catalyst for recovery, wisdom and sovereignty.
+  decision: Claes discovers the world through embodied sinne; trauma constricts this openness and it is later rediscovered on the road toward Enkhuizen with Mayken beside him, becoming a catalyst for recovery, wisdom and sovereignty.
   affects:
   - STC.CLAES.SINNE.001
   - ARC.CLAES.SINNE_RECOVERY
@@ -41,3 +41,108 @@ decisions:
   - STC.CLAES.MORAL_QUESTION.001
   - THEME.CLAES.SPIRITUAL_JOURNEY
   - ARC.CLAES.MACRO_TRANSMUTATION
+- id: DEC.CLAES.SPINE.2026-08-23
+  type: CanonDecision
+  status: CANON
+  decision: Las Casas is not Claes' whole lifelong assignment; Dee seeds a larger natural-philosophical and moral inquiry in 1564, while Claes' departure from Antwerp after the 1566 Beeldenstorm is the operational and geographical start of the adult ruggengraat.
+  affects:
+  - STC.CLAES.SPINE.START.1566.001
+  - STC.LASCASAS.SCALE.001
+  - ARC.CLAES.LIFELONG_INQUIRY
+  - NI.EVENT.CLAES_RETURN_GOES.1566.001
+- id: DEC.CLAES.DEE_LIFELONG_QUESTION.2026-08-23
+  type: CanonDecision
+  status: CANON
+  decision: Dee leaves Claes in 1564 with an unresolved period-appropriate inquiry into an unseen principle associated with air that appears to sustain fire, breath/life and growth; Claes gathers observations but never names or anachronistically discovers a modern substance.
+  affects:
+  - STC.CLAES.DEE_LIFELONG_QUESTION.1564.001
+  - ARC.CLAES.DEE
+  - ARC.CLAES.LIFELONG_INQUIRY
+  - NI.SEQUENCE.DEE_LIFELONG_QUESTION.1564.001
+- id: DEC.CLAES.RETURN_GOES.2026-08-23
+  type: CanonDecision
+  status: CANON
+  decision: Claes returns from Antwerp to Goes after the 1566 Beeldenstorm for personal reasons — Cornelis, Mayken and home — and material/intellectual reasons because Goes offers brewing, salt, plants, tides, apothecary practice and craft as a lived field for Dee's open question.
+  affects:
+  - STC.CLAES.RETURN_GOES.MOTIVE.1566.001
+  - NI.EVENT.CLAES_RETURN_GOES.1566.001
+- id: DEC.CLAES.MAYKEN.2026-08-23
+  type: CanonDecision
+  status: CANON
+  decision: The beloved/apothecary-daughter function is Mayken. She remains an autonomous material, botanical and medicinal expert rather than a device for Claes' healing or plot.
+  affects:
+  - STC.CLAES.BELOVED.MAYKEN.001
+  - ENT.PERSON.BELOVED
+  - REL.CLAES.BELOVED
+  - REL.CLAES.BELOVED.RECOVERY
+- id: DEC.MAYKEN.REPUTATION_FALL.1578.2026-08-23
+  type: CanonDecision
+  status: CANON
+  decision: Mayken's 1578 danger in Goes develops over months as true observations of her medicines, herbs, tools and associations are socially reread into a false hostile story. No rape, dissociative-identity construction or required formal witch trial drives the route.
+  affects:
+  - STC.MAYKEN.REPUTATION_FALL.1578.001
+  - NI.SEQUENCE.MAYKEN_REPUTATION.1578.001
+  - REL.CLAES.BELOVED.RECOVERY
+- id: DEC.CLAES.FLIGHT_NORTH.1578.2026-08-23
+  type: CanonDecision
+  status: CANON
+  decision: Claes leaves Goes with Mayken before certainty or formal conviction closes their options; Gouda is the first intended refuge and the macro-route is Goes → Gouda → Delft → Egmond/Alkmaar → Hoorn → Enkhuizen.
+  affects:
+  - STC.CLAES.FLIGHT.GOUDA.1578.001
+  - STC.CLAES.NORTH_ROUTE.001
+  - NI.EVENT.FLIGHT_GOUDA.1578.001
+  - NI.SEQUENCE.NORTH_ROUTE.1584_1602.001
+- id: DEC.CLAES.HISTORICAL_WITNESS.2026-08-23
+  type: CanonDecision
+  status: CANON
+  decision: Claes encounters major history at varied distances — direct presence, direct consequence, or aftermath/news/memory — and is never placed at famous events solely to display them.
+  affects:
+  - STC.CLAES.HISTORICAL_WITNESS.001
+  - ARC.CLAES.LIFELONG_INQUIRY
+- id: DEC.LASCASAS.SCALE.2026-08-23
+  type: CanonDecision
+  status: CANON
+  decision: The 1570 recovery is Claes' first successful reconstruction of dangerous knowledge and the 1578 return to Silvius' Antwerp print world is his first small Projectio; Las Casas is not the whole lifelong task.
+  affects:
+  - STC.LASCASAS.SCALE.001
+  - STC.LASCASAS.SILVIUS.1578.001
+  - NI.SEQUENCE.RECOVERY.1570.001
+  - NI.EVENT.PUBLICATION.1578.001
+- id: DEC.CLAES.OWN_TRANSMUTATION.2026-08-23
+  type: CanonDecision
+  status: CANON_FUNCTION_OPEN_DETAILS
+  decision: After Delft and before Seton, Claes undergoes his own materially concrete but narratively ambiguous transmutation experience; the novel never certifies that he truly made gold.
+  affects:
+  - STC.CLAES.OWN_TRANSMUTATION.PRESETON.001
+  - NI.SEQUENCE.CLAES_TRANSMUTATION.PRESETON.001
+  - OPEN.CLAES.OWN_TRANSMUTATION.001
+- id: DEC.SETON.ENKHUIZEN.1602.2026-08-23
+  type: CanonDecision
+  status: CANON_FUNCTION
+  decision: Seton is independent of Las Casas and appears in Enkhuizen as a late mirror/test of Claes' already developed moral and alchemical transformation; the reported projection does not provide Claes' moral answer.
+  affects:
+  - STC.SETON.ENKHUIZEN.FUNCTION.1602.001
+  - NI.SEQUENCE.SETON_ENKHUIZEN.1602.001
+- id: DEC.HOGHELANDE.ROLE.2026-08-23
+  type: CanonDecision
+  status: CANON
+  decision: Theobald van Hoghelande is not Claes' elder formative teacher; his available later function is as younger correspondent or network peer, with exact contact still open.
+  affects:
+  - STC.HOGHELANDE.ROLE.001
+  - ENT.PERSON.HOGHELANDE
+  - OPEN.HOGHELANDE.CONTACT.001
+- id: DEC.CLAES.VOC_RESONANCE.1602.2026-08-23
+  type: CanonDecision
+  status: CANON_FUNCTION
+  decision: The proximity of the reported Seton episode and the 1602 VOC charter context is literary resonance only, not invented historical causality; it callbacks the Las Casas frame through changing carriers of commerce, war, knowledge and overseas power.
+  affects:
+  - STC.CLAES.VOC_RESONANCE.1602.001
+  - NI.SEQUENCE.SETON_ENKHUIZEN.1602.001
+- id: DEC.CLAES.THREE_LEVELS.2026-08-23
+  type: CanonDecision
+  status: CANON
+  decision: Claes' lifelong assignment operates on material, political and moral levels; in the final movement the moral question of whether effective knowledge deserves transmission outranks solving the material question.
+  affects:
+  - STC.CLAES.THREE_LEVELS.001
+  - ARC.CLAES.LIFELONG_INQUIRY
+  - THEME.CLAES.DANGEROUS_KNOWLEDGE
