@@ -1,11 +1,11 @@
-schema_version: 1.1.0
+schema_version: 1.2.0
 kind: ThemeRegistry
 themes:
   - id: THEME.CLAES.CONTROLLING_IDEA
     type: ControllingIdea
     statement: "A man who seeks hidden order becomes whole only when knowledge ceases to be a means of control and becomes responsibility toward other people."
     canon_status: CANON
-    applies_to: [ARC.CLAES.LIFE, ARC.CLAES.MACRO_TRANSMUTATION]
+    applies_to: [ARC.CLAES.LIFE, ARC.CLAES.MACRO_TRANSMUTATION, ARC.CLAES.LIFELONG_INQUIRY]
     ko_targets: [KO.STORY, KO.VALUE, KO.CHARACTER]
 
   - id: THEME.CLAES.DRAMATIC_QUESTION
@@ -42,6 +42,26 @@ themes:
     subject: ENT.PERSON.CLAES
     material_vessel: [senses, bodies, craft, books, plants, fire, water, alchemical_operations]
     culmination: "knowledge-as-control → wisdom-in-relation → transmission-and-release"
+
+  - id: THEME.CLAES.DANGEROUS_KNOWLEDGE
+    type: ThematicProgression
+    statement: "Claes' lifelong inquiry moves from a material question about the unseen conditions of fire, breath and growth, through the political power created when knowledge joins money, ships and war, toward the moral question whether true or effective knowledge always deserves transmission."
+    canon_status: CANON
+    subject: ENT.PERSON.CLAES
+    decision_id: DEC.CLAES.THREE_LEVELS.2026-08-23
+    story_claims: [STC.CLAES.THREE_LEVELS.001, STC.LASCASAS.SCALE.001, STC.SETON.ENKHUIZEN.FUNCTION.1602.001]
+    levels:
+      - material
+      - political
+      - moral
+    priority_rule: "In the final movement the moral level outranks solving the material level."
+
+  - id: THEME.CLAES.HISTORY_AS_PRESSURE
+    type: HistoricalFictionGuardrail
+    statement: "The Eighty Years' War changes where Claes can live and what his knowledge costs; Claes does not attend famous events merely so the reader can see them."
+    canon_status: CANON
+    story_claims: [STC.CLAES.HISTORICAL_WITNESS.001, STC.CLAES.SPINE.START.1566.001]
+    distances: [direct-presence, direct-consequence, aftermath-news-memory]
 
   - id: THEME.CLAES.LIE.CHILD
     type: CharacterLie
@@ -84,6 +104,9 @@ value_axes:
     spectrum: [sensory-openness, vigilance, blunting, recovery, resonance, embodied-discernment]
     warning: "Trauma may constrict perception; recovery is not a return to innocence but a deeper embodied sovereignty."
     world_modules: [WORLD.RELIGIOUS_SPACE.SENSORY_CHURCH]
+  - id: VALUE.CLAES.KNOWLEDGE_RESPONSIBILITY
+    spectrum: [curiosity, reconstruction, possession, controlled-transmission, uncertain-release]
+    warning: "The truth of knowledge and the rightness of transmitting it are separate questions."
 
 scene_diagnostic_contract:
   required_fields_when_scene_is_developed:
