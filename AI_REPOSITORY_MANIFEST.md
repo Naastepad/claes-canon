@@ -209,7 +209,7 @@ Use when: senses, church interior, altars, guilds, bells, movement, smell, ritua
 RAW: https://raw.githubusercontent.com/Naastepad/claes-canon/authoring/v1/sources/SRC-WAUTERS-RELIGIOUS-SPACE-2021.md
 
 ## Van Bruaene — rederijkers
-Path: `sources/SRC-VAN-BRUaENE-OM-BETERS-WILLE-2008.md`  
+Path: `sources/SRC-VAN-BRUAENE-OM-BETERS-WILLE-2008.md`  
 Use when: chambers, Landjuweel, civic religion, performance, craft/trade networks  
 RAW: https://raw.githubusercontent.com/Naastepad/claes-canon/authoring/v1/sources/SRC-VAN-BRUAENE-OM-BETERS-WILLE-2008.md
 
