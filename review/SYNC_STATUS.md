@@ -1,20 +1,25 @@
 # Synchronization status
 
-Status: `SYNC_PENDING` — the approved 23-Aug-2026 adult-spine decisions are synchronized through the main story-claim, entity and narrative registers, but the operating master, manifest/index entrypoints, exact historical source claims and validator/CI pass still require follow-up. The earlier 13-Aug-2026 content work remains in place.
+Status: `SYNC_PENDING` — the approved 23-Aug-2026 adult-spine decisions are synchronized through the main decision, story-claim, entity, relationship, theme and narrative registers and through the repository entrypoints. Remaining work is consolidation of the older operating master, exact historical source claims, and validator/CI/release work.
 
 ## 23-Aug-2026 adult spine — completed in this pass
 - `canon/DECISIONS_2026-08-23.md` — explicit author decisions for the 1564 seed / 1566 spine start, Las Casas rescaling, Mayken, northern route, pre-Seton transmutation, Seton function, Hoghelande correction and VOC resonance.
+- `canon/DECISIONS.yaml` — machine-readable decision registry synchronized with the 23-Aug author decisions.
 - `storybible/modules/CLAES_RUGGENGRAAT_1564_1602.md` — active human-readable adult-spine module. It explicitly states that Dee's 1564 question is the seed, while **Claes' departure from Antwerp after the 1566 Beeldenstorm is the operational/geographical start of the ruggengraat**.
-- `claims/STORY_CLAIMS.yaml` — new accepted Story Claims for the adult spine, Dee's lifelong question, dual return motive, Mayken identity/reputation line, Las Casas scale/publication, Gouda flight, northern route, ambiguous pre-Seton transmutation, Seton, Hoghelande, VOC resonance and historical-witness guardrail.
+- `claims/STORY_CLAIMS.yaml` — accepted Story Claims for the adult spine, Dee's lifelong question, dual return motive, Mayken identity/reputation line, Las Casas scale/publication, Gouda flight, northern route, ambiguous pre-Seton transmutation, Seton, Hoghelande, VOC resonance and historical-witness guardrail.
 - `entities/ENTITIES.yaml` — beloved identity fixed as Mayken; Gouda, Egmond, Alkmaar and Hoorn added; Seton, Haussen, Vanderlinden and Hoghelande added with source-weighted usage guardrails.
 - `narrative/arcs.yaml` — `ARC.CLAES.LIFELONG_INQUIRY` added; Dee arc extended to the lifelong-question seed and internalised legacy.
 - `narrative/instances.yaml` — 1564 seed, 1566 Antwerp-departure/Goes-return spine start, 1578 Mayken reputation/flight, northern route, Claes' own ambiguous transmutation and Seton sequence registered.
+- `narrative/relationships.yaml` — Mayken identity propagated into the base relationship registry; 1578 danger/northern companionship added; Silvius relation extended to the 1578 dangerous-transmission phase; Dee relation extended with the unresolved-question phase.
 - `narrative/beloved_recovery.yaml` — Mayken fixed as the beloved/recovery companion, with agency and explicit exclusion of rape/DID as route mechanisms and no required formal Goese witch trial.
+- `narrative/themes.yaml` — lifelong dangerous-knowledge progression and historical-pressure guardrail added; controlling idea now explicitly applies to `ARC.CLAES.LIFELONG_INQUIRY`.
 - `canon/OPEN_DECISIONS.yaml` — beloved identity and stale mother-adult-function items removed; exact 1578 trigger, Gouda flight date, northern residences, pre-Seton transmutation, Seton bridge, Hoghelande contact and source-sync questions added.
+- `storybible/INDEX.md` — adult-spine module and 23-Aug decision layer indexed with a dedicated writing package.
+- `AI_REPOSITORY_MANIFEST.md` — adult-spine decisions/module registered in mandatory bootstrap and scene-use guidance; the ruggengraat-start distinction is explicit.
 
 ## 23-Aug-2026 adult spine — still pending
 - `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` has **not yet been textually folded forward**. Until that happens, `canon/DECISIONS_2026-08-23.md`, synchronized `STC.*` records and `storybible/modules/CLAES_RUGGENGRAAT_1564_1602.md` outrank conflicting older master wording under the repository authority hierarchy.
-- `AI_REPOSITORY_MANIFEST.md` and `storybible/INDEX.md` still need an explicit entry for the new adult-spine module.
+- `AI_ONBOARDING.md` still names the 13-Aug master as the sole current operating master. The manifest now routes adult-spine users correctly, but onboarding should eventually be folded forward or point explicitly to the 23-Aug decision/module overlay.
 - Exact historical assertions discussed on 23 August require source-layer work before documentary precision is used in prose: especially the exact 30 September 1578 Goes church event/date, the Seton–Haussen–Vanderlinden report chain, Hoghelande chronology and later Seton account, and the exact 1602 VOC/Seton timing relationship. Story functions are approved; evidence status remains separate.
 - The existing `storybible/modules/GOES_RELIGIOUS_TRANSITION_1577_1578.md` still contains the guardrail not to assert an exact 1578 date without local evidence. That guardrail remains authoritative until the new local source claim is registered.
 - Historical route details for Gouda, Delft, Egmond/Alkmaar, Hoorn and Enkhuizen still require scene-specific source work; the macro route is story canon, exact local implementation is not yet documentary fact.
