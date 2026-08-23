@@ -1,4 +1,4 @@
-schema_version: 1.1.0
+schema_version: 1.2.0
 kind: NarrativeRelationshipRegistry
 relationships:
   - id: REL.CLAES.CORNELIS
@@ -40,14 +40,18 @@ relationships:
         narrative_instances: [NI.SCENE.DEE_FIRST_ENCOUNTER.1563.001]
         value_state: "distant intellectual possibility -> personally encountered figure"
       - label: "formation"
-        story_time: {earliest: 1564-01-01, latest_exclusive: 1564-04-01, precision: interval}
+        story_time: {earliest: 1564-01-01, latest_exclusive: 1564-10-04, precision: interval}
         value_state: "recognition -> formative master relationship"
+      - label: "unresolved question"
+        story_time: {earliest: 1564-01-01, latest_exclusive: 1565-01-01, precision: year}
+        value_state: "master supplies lessons -> master leaves a question Claes must carry without an answer"
+        narrative_instances: [NI.SEQUENCE.DEE_LIFELONG_QUESTION.1564.001]
       - label: "critical independence"
         story_time: {earliest: 1564-01-01, precision: lower-bound}
         value_state: "admiration -> recognition of Dee's fallibility"
       - label: "internalised legacy"
         story_time: {earliest: 1564-10-04, precision: lower-bound}
-        value_state: "direct teacher -> methods and memories embedded in Claes' later reasoning"
+        value_state: "direct teacher -> methods, questions and memories embedded in Claes' later reasoning"
     knowledge_object_targets: [KO.VALUE, KO.CONFLICT, KO.EVENT, KO.RELATIONSHIP]
 
   - id: REL.CLAES.SILVIUS
@@ -63,32 +67,57 @@ relationships:
       - label: "practical trust"
         story_time: {earliest: 1564-01-01, latest_exclusive: 1564-10-04, precision: bounded}
         value_state: "recognition -> operational trust"
-      - label: "mediated transmission"
+      - label: "external activation"
         story_time: {earliest: 1570-01-01, latest_exclusive: 1571-01-01, precision: year}
-        value_state: "direct access absent -> special publication becomes external activation channel"
+        value_state: "direct teacher/editor absent -> his print network remains part of the recovery architecture"
         object: OBJ.ZOVITIUS_1570_TRIGGER
+      - label: "dangerous transmission"
+        story_time: {earliest: 1578-01-01, latest_exclusive: 1579-01-01, precision: year}
+        value_state: "former editorial trust -> Claes deliberately returns dangerous truth to Silvius' print world and surrenders control over reception"
+        narrative_instances: [NI.EVENT.PUBLICATION.1578.001]
+        story_claims: [STC.LASCASAS.SILVIUS.1578.001]
     ko_targets: [KO.RELATIONSHIP, KO.EVENT, KO.VALUE]
 
   - id: REL.CLAES.BELOVED
     type: Relationship
-    label: "Claes and beloved/apothecary daughter"
+    label: "Claes and Mayken"
     participants: [ENT.PERSON.CLAES, ENT.PERSON.BELOVED]
-    status: CANON_FUNCTION_OPEN_IDENTITY
+    status: CANON
+    decision_ids: [DEC.CLAES.MAYKEN.2026-08-23, DEC.MAYKEN.REPUTATION_FALL.1578.2026-08-23]
     phases:
+      - label: "early recognition"
+        story_time: {earliest: 1554-01-01, latest_exclusive: 1566-08-01, precision: broad-window}
+        value_state: "childhood acquaintance/material curiosity -> remembered independent person"
+        function: "Early manuscript contact establishes Mayken before she becomes the adult counterpart; do not retroactively turn every childhood moment into romance."
       - label: "material proximity"
         story_time: {earliest: 1566-08-01, latest_exclusive: 1570-01-01, precision: bounded}
-        value_state: "separate expertise -> potential complementarity"
+        value_state: "separate expertise -> practical complementarity and growing trust"
         object: OBJ.DODOENS_CARRIER
       - label: "recovery collaboration"
         story_time: {earliest: 1570-01-01, latest_exclusive: 1571-01-01, precision: year}
         value_state: "solitary pattern-seeking -> collaborative verification"
         narrative_instances: [NI.SEQUENCE.RECOVERY.1570.001]
-      - label: "relational maturation"
-        story_time: {earliest: 1570-01-01, precision: lower-bound}
-        value_state: "secrecy as isolation -> trust without surrender of responsibility"
+      - label: "danger and public rereading"
+        story_time: {earliest: 1578-01-01, latest_exclusive: 1579-01-01, precision: year}
+        value_state: "private/professional trust -> joint action under social danger"
+        narrative_instances: [NI.SEQUENCE.MAYKEN_REPUTATION.1578.001, NI.EVENT.FLIGHT_GOUDA.1578.001]
+        function: "Claes must choose before certainty; Mayken remains a co-actor rather than cargo to be rescued."
+      - label: "northern companionship"
+        story_time: {earliest: 1578-01-01, latest_exclusive: 1603-01-01, precision: broad-window}
+        value_state: "shared flight -> trust, contradiction, love without possession and sensory/spiritual companionship"
+        narrative_instances: [NI.SEQUENCE.NORTH_ROUTE.1584_1602.001]
+      - label: "late material witness"
+        story_time: {earliest: 1584-07-15, latest_exclusive: 1602-01-01, precision: open-window}
+        value_state: "collaborative expertise -> possible witness/knower of Claes' own ambiguous transmutation"
+        function: "Exact presence or knowledge remains open; Mayken does not certify the event for the reader."
     role_split:
-      claes: ["merels", "Dee-memory", "Monas", "Castanea-memory", "clear-text decisions"]
-      beloved: ["materials", "botany", "Dodoens loci", "lists", "error control", "contradiction"]
+      claes: ["merels", "Dee-memory", "Monas", "Castanea-memory", "clear-text decisions", "final responsibility"]
+      mayken: ["materials", "botany", "materia medica", "Dodoens loci", "lists", "error control", "contradiction", "independent care decisions"]
+    guardrails:
+      - "No rape as the mechanism that starts the northern route."
+      - "No dissociative-identity / multiple-personalities construction."
+      - "No required formal Goese witch trial."
+      - "Mayken's expertise and agency cannot collapse into serving Claes' arc."
     ko_targets: [KO.RELATIONSHIP, KO.CONFLICT, KO.VALUE, KO.CHARACTER]
 
   - id: REL.CLAES.RADERMACHER
