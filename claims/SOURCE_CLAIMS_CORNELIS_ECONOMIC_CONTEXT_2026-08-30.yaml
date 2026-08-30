@@ -4,17 +4,17 @@ claims:
 - id: SC.HIST.GOES.BIERSTEKER.SHIPPER_CONTRACT.1589.001
   type: SourceClaim
   statement: >-
-    A Goese notarial compilation records that in 1589 Michiel Michielsz Horen, a Goese biersteker, made a contract with Aernouldt de Hont, a schipper of Delft, concerning the transport of beer.
+    A Goese notarial compilation records that on 2 May 1589 Michiel Michielsz Horen, poorter of Goes, and Aernouldt de Hont, schipper van Delft, agreed that Horen would be biersteker for such beers as De Hont would bring to Goes, subject to conditions not reproduced in the consulted extract.
   claim_type: historical_local_trade_relationship
-  subject: Goese_biersteker
-  predicate: contracts_with_external_shipper_for_beer_transport
-  object: Michiel_Horen_and_Aernouldt_de_Hont_1589
+  subject: Michiel_Horen_and_Aernouldt_de_Hont
+  predicate: biersteker_for_beer_brought_to_Goes_by_shipper
+  object: beer_distribution_agreement_1589
   evidence_status: SUPPORTED
   source_ids: [SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001]
   verification:
     status: secondary_transcription_with_primary_locator
     note: >-
-      Primary locator in the compilation: RAZE 2040 fol. 86, 2 May 1589. This is a later analogue for mechanism only; it does not identify Cornelis' fictional preferred schipper or prove identical contractual rules in 1550.
+      Legacy claim ID retained for reference stability. Correct primary locator: RAZE 2039 fol. 86, 2 May 1589. The extract does not prove that Horen owned the beer or hired De Hont as freight carrier, and does not reproduce ownership, freight, commission, exclusivity or cargo-risk conditions. This is a later analogue for the Cornelis authoring model only.
 
 - id: SC.HIST.GOES.SALTWORK.PROFITABLE_ASSET_AND_SHIPPER_SALE.1594.001
   type: SourceClaim
