@@ -1,9 +1,9 @@
 schema_version: "1.0.0"
-kind: WorldModuleRegistryExtension
+kind: WorldModuleRegistry
 modules:
   - id: WORLD.GOES_ECONOMY_1542_1572
     label: "Goes economic baseline — money, measures, beer, salt and local transactions"
-    canon_status: CANON_CONTEXT
+    canon_status: CANON
     record_role: ACTIVE_AUTHORING_DOMAIN
     historical_method: LOCAL_GOES_EVIDENCE_WITH_EXPLICIT_PROXY_BOUNDARIES
     detail_files:
@@ -27,7 +27,7 @@ modules:
 
   - id: WORLD.WAR_ECONOMY_1567_1602
     label: "War economy — jurisdiction, taxation, coin interventions, supply and military finance"
-    canon_status: CANON_CONTEXT
+    canon_status: CANON
     record_role: ACTIVE_AUTHORING_MODIFIER
     historical_method: POLITICAL_CONTROL_FIRST_SOURCE_WEIGHTING
     detail_files:
