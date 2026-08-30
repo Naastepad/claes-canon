@@ -40,15 +40,28 @@ claims:
       status: explicit_project_gap_after_archive_coverage_check
       note: "The next target is a dated pre-1602 Goese account series or another direct local wage source, not interpolation from De Vries' later Goese material."
 
+  - id: SC.HIST.GOES.LABOUR.MUNICIPAL_ADMIN_ROUTE.PRE1602.001
+    type: SourceClaim
+    statement: "The official Stad Goes archive description states that city finances were administered by annually elected rentmeesters from 1438 and that public property/works were supervised by stadsdirecteuren with a stadsfabriek for daily management."
+    claim_type: archival_institutional_provenance
+    subject: "Goese municipal labour-payment administration"
+    predicate: "institutional source route"
+    object: "rentmeester finance and public-works/stadsfabriek administration"
+    evidence_status: VERIFIED
+    source_ids: [SRC-ARCHIVE-GOES-STAD-001]
+    verification:
+      status: official_archive_description
+      note: "This establishes where public expenditure was administered, not a continuous surviving wage series or a numeric wage."
+
   - id: SC.HIST.GOES.LABOUR.TIMMERGUILD_ACCOUNTS.1547_1798.001
     type: SourceClaim
-    statement: "A nineteenth-century inventory of the surviving Goese guild archives reports account books of the timmerliedengilde spanning 1547-1798 and resolutions spanning 1586-1798; the guild ordinance book covered timmerlieden, kuipers, stoeldraaiers, wannemakers, mandenmakers, wagenmakers and metselaars."
+    statement: "A historical inventory of the surviving Goese guild archives reports account books of the timmerliedengilde spanning 1547-1798 and resolutions spanning 1586-1798; the guild ordinance book covered timmerlieden, kuipers, stoeldraaiers, wannemakers, mandenmakers, wagenmakers and metselaars."
     claim_type: archival_source_survival
     subject: "Goese timmerliedengilde records"
     predicate: "surviving account/resolution coverage"
     object: "account books 1547-1798; resolutions 1586-1798"
     evidence_status: VERIFIED
-    source_ids: [SRC-RESEARCH-GOES-LABOUR-ARCHIVE-PRE1602-2026-08-30]
+    source_ids: [SRC-PUBLIC-GOES-GUILD-ARCHIVE-INVENTORY-1829-001]
     verification:
       status: public_historical_inventory_transcription
       note: "This proves a pre-1602 extraction route, not that the account books contain day-wage entries."
