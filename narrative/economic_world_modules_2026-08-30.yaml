@@ -36,6 +36,31 @@ modules:
       - "The 1593 South-Beveland beer-impost evidence is not automatically a city-Goes tariff."
       - "Do not turn account gulden automatically into physical Carolus pieces."
 
+  - id: WORLD.GOES_MARKET_HOUSEHOLD_1585_1602
+    label: "Late Goes — household value, market quality, payment forms and transaction classification"
+    canon_status: CANON
+    record_role: ACTIVE_AUTHORING_REFERENCE
+    historical_method: LOCAL_TRANSACTION_TYPE_FIRST
+    detail_files:
+      - storybible/domains/GOES_MARKET_HOUSEHOLD_1585_1602.md
+      - claims/SOURCE_CLAIMS_GOES_MARKET_HOUSEHOLD_2026-08-30.yaml
+      - claims/SOURCE_CLAIMS_ECONOMY_2026-08-30.yaml
+      - sources/SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001.md
+    resolver: narrative/economic_state_resolver.yaml
+    narrative_functions:
+      - "distinguish transaction price from estate valuation, debt and in-kind settlement"
+      - "make market inspection, spoilage and rescission usable scene mechanisms"
+      - "use household inventories as material-life evidence without turning every valuation into a retail price"
+      - "model tax point and sale place separately"
+      - "preserve named historical Nissepadt references without premature identity merging"
+    hard_guardrails:
+      - "The 1602 butter value is an estate takeover valuation, not automatically a retail price."
+      - "The 1597 Spanish-leather shoes are an in-kind settlement/object valuation, not a general shoe-price series."
+      - "The 1598 meat-impost evidence supplies no rate."
+      - "The 1598 fish-inspection record supplies quality/rejection evidence, not a fish price."
+      - "Similar Nissepat/Nissepadt names are not automatically the same person."
+      - "South-Beveland dike-provisioning debt is regional context, not a Goese unit-price series."
+
   - id: WORLD.WAR_ECONOMY_1567_1602
     label: "War economy — jurisdiction, taxation, coin interventions, supply and military finance"
     canon_status: CANON
