@@ -27,6 +27,19 @@ claims:
       status: secondary_source_internal_comparison
       note: "Use 1 viertel/sack = 2 achtendelen; preserve source/date when converting."
 
+  - id: SC.HIST.GOES.GRAIN_TRANSPORT.SCHUITVLOTTEN.1544.001
+    type: SourceClaim
+    statement: "At the 1544 letting of the schuitvlotten in Goes, the transport charge described as loon for carrying one zeve of grain was fixed at 18 mijten; in Zeeland Bewesten Schelde a zeve was four sacks of grain or flour."
+    claim_type: historical_local_transport_tariff
+    subject: "Goese grain transport"
+    predicate: "freight / handling tariff"
+    object: "18 mijten per zeve in 1544"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-SECONDARY-BOONMAN-METROLOGY-2015-001]
+    verification:
+      status: secondary_transcription_with_local_archival_basis
+      note: "Classify as freight/transport tariff, not a day wage. Preserve 18 mijten per zeve unless a source-specific currency conversion is explicitly required."
+
   - id: SC.HIST.GOES.BEER.MEASUREMENT_ANTECEDENT.001
     type: SourceClaim
     statement: "Goese rules before Claes' lifetime document that beer stored in the city was measured when carried from the quay and could not be sold by poorters before measurement by the sworn biermeter; meetgeld also applied to poorters."
@@ -39,6 +52,32 @@ claims:
     verification:
       status: local_antecedent_not_exact_claes_period_ordinance
       note: "Supports institutional continuity as a scene condition; exact 1540s-1560s wording/tariff remains to verify."
+
+  - id: SC.HIST.GOES.LABOUR.CARRIER_GUILDS.CLAES_PERIOD.001
+    type: SourceClaim
+    statement: "The official Goese craft-guild archive description lists bierdragers and zakkedragers as long-running Goese guilds whose stated date ranges span Claes' lifetime."
+    claim_type: historical_local_labour_institution
+    subject: "Goese carrier guilds"
+    predicate: "institutional continuity"
+    object: "bierdragers and zakkedragers present across the sixteenth century"
+    evidence_status: VERIFIED
+    source_ids: [SRC-ARCHIVE-GOES-AMBACHTSGILDEN-520-001]
+    verification:
+      status: official_archive_description
+      note: "Guild existence does not establish an exact tariff, day wage, exclusivity rule or headcount."
+
+  - id: SC.HIST.GOES.BEER.BIERDRAGERS.1591.001
+    type: SourceClaim
+    statement: "A Goese notarial record of 7 May 1591 names Cornelis Jacobsen Schipper as bierdrager en poorter and Adriaen Cornelis Faes as schipper en bierdrager en poorter of Goes."
+    claim_type: historical_local_occupation
+    subject: "Goese beer carrying"
+    predicate: "named occupational evidence"
+    object: "two Goese bierdragers in 1591"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001, SRC-ARCHIVE-GOES-AMBACHTSGILDEN-520-001]
+    verification:
+      status: secondary_transcription_with_primary_locator
+      note: "Primary locator: RAZE 2039 fol. 219, 7-5-1591. This proves occupation, not rate or day wage."
 
   - id: SC.HIST.GOES.SALT.LABOUR_PIECE_RATE.1546.001
     type: SourceClaim
@@ -55,16 +94,55 @@ claims:
 
   - id: SC.HIST.GOES.RYE_PRICE.1595.001
     type: SourceClaim
-    statement: "A Goese rye purchase of 31 October 1595 is reported at 14 schellingen 2 groten Vlaams (170 groten) per Goese sack, with 37.5 sacks to the last in that transaction."
-    claim_type: historical_local_price
+    statement: "Goese grain buyers attested in late October/early November 1595 that rye had traded in Goes at £26 Vlaams per last in April, £26 11 schellingen 3 groten per last in May (14 schellingen 2 groten per sack), and £19 Vlaams per last around 17-18 August."
+    claim_type: historical_local_price_sequence
     subject: "rye in Goes"
-    predicate: "transaction price"
-    object: "1595-10-31, 170 groten Vlaams per sack"
+    predicate: "intra-year transaction prices"
+    object: "April/May/August 1595"
     evidence_status: SUPPORTED
-    source_ids: [SRC-SECONDARY-BOONMAN-METROLOGY-2015-001]
+    source_ids: [SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001, SRC-SECONDARY-BOONMAN-METROLOGY-2015-001]
     verification:
-      status: secondary_transcription_with_primary_locator
-      note: "Primary locator given by Boonman: RAZE 2040 fol. 110. Derived 85-stuiver conversion must be labelled as calculation."
+      status: local_notarial_transcription_cross_checked_with_metrology_source
+      note: "Direct transcription locator: RAZE 2040 fol. 109. The 14s2g figure is the May transaction recalled in the later attestation, not a 31 October spot price. Boonman's fol.110/31-Oct presentation is retained as a source discrepancy."
+
+  - id: SC.HIST.GOES.CREDIT.HOSPITALITY_DEBT.1585.001
+    type: SourceClaim
+    statement: "On 14 June 1585 a Goese notarial record has Jan Pauwelsz Cuijper acknowledge 17 pond groten Vlaams owed to Franchois Hertsinck for accumulated verteringen in Hertsinck's inn, with his person and goods bound as security."
+    claim_type: historical_local_credit
+    subject: "Goese hospitality debt"
+    predicate: "formal debt acknowledgement and security"
+    object: "17 pond groten Vlaams, 1585"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001]
+    verification:
+      status: secondary_transcription_of_local_notarial_record
+      note: "The amount is accumulated debt, not the retail price of one meal, drink or night's lodging."
+
+  - id: SC.HIST.SOUTH_BEVELAND.BEER.IMPOST_BIERSTEKER.1593.001
+    type: SourceClaim
+    statement: "A March 1593 South-Beveland attestation identifies a beer-impost official for the quarter of 's-Heer Hendrikskinderen, Wissenkerke and 's-Heer Arendskerke and separately names Michiel Horen as biersteker in a five-ton double-beer wedding supply."
+    claim_type: historical_local_trade_tax_mechanism
+    subject: "South-Beveland beer distribution"
+    predicate: "biersteker and beer-impost administration coexist"
+    object: "1593 quarter-level evidence"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001]
+    verification:
+      status: secondary_transcription_of_local_attestation
+      note: "Close regional evidence, not a city-Goes impost rate. The record does not establish a generic rate or legal taxpayer for every biersteker transaction."
+
+  - id: SC.HIST.ZEELAND.BEER.BIERSTEKER_DISTRIBUTION.1574.001
+    type: SourceClaim
+    statement: "In the 1574 Zeeland beer-impost dispute, freight, loss of casks and the remuneration of stekers are identified as additional costs of beer sold into Zeeland; Dirksen interprets the biersteker as a Zeeland wholesale/distribution intermediary receiving remuneration from the brewer."
+    claim_type: historical_trade_distribution_mechanism
+    subject: "Zeeland beer distribution"
+    predicate: "freight/cask/steker cost chain"
+    object: "1574"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-SECONDARY-DIRKSEN-GEZAG-GELD-ZEELAND-2012-001]
+    verification:
+      status: secondary_interpretation_anchored_in_quoted_1574_source_wording
+      note: "Dirksen's subsequent 10-stuiver-per-ton example begins 'Stel dat' and is hypothetical; never promote 10 stuivers to a historical freight or steker tariff."
 
   - id: SC.HIST.COIN.CAROLUS.ACCOUNTING.1521_1543.001
     type: SourceClaim
