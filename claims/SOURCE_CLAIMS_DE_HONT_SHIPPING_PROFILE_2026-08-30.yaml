@@ -1,0 +1,142 @@
+schema_version: 1.0.0
+kind: SourceClaimRegistryExtension
+claims:
+- id: SC.HIST.GOES.HEUDE.WATER_FREIGHT_CONTRACT.1595.001
+  type: SourceClaim
+  statement: >-
+    On 8 May 1595 a Goese contract bound Wouther the brewer and Quirijn Pieters, waterman and poorter of Arnemuiden, for Quirijn's heudeschip Den Draeck to bring fresh sweet water suitable for brewing to Goes for two years, normally one voyage each week when weather, wind and open water permitted, for 2 pounds groten Vlaams per voyage plus half a vat of pharo and limited fuel for the vessel.
+  claim_type: historical_local_freight_contract
+  subject: Goese_heudeschip_freight
+  predicate: recurring_contract_with_weather_clause_and_mixed_payment
+  object: RAZE_2040_fol_63_1595_05_08
+  evidence_status: SUPPORTED
+  source_ids: [SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001]
+  verification:
+    status: secondary_transcription_with_primary_locator
+    note: "Primary locator RAZE 2040 fol. 63, 8 May 1595. This is a water-supply contract, not De Hont's contract and not a beer-freight tariff."
+
+- id: SC.HIST.GOES.HEUDE.COOWNERSHIP.1585.001
+  type: SourceClaim
+  statement: >-
+    A 1585 Goese notarial dispute records a gemeen heudeschip jointly held by two men; one party set his half interest at 60 pounds Vlaams, with separate settlement items for freight and turf.
+  claim_type: historical_vessel_ownership_mechanism
+  subject: Goese_heudeschip
+  predicate: could_be_jointly_owned
+  object: documented_1585
+  evidence_status: SUPPORTED
+  source_ids: [SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001]
+  verification:
+    status: secondary_transcription_with_primary_locator
+    note: "Useful for ownership structure only. Do not turn the 60-pound half-interest settlement into an exact market value for De Hont's vessel."
+
+- id: SC.HIST.ZEELAND.HEUDE.REGIONAL_FREIGHT_TYPE.16C.001
+  type: SourceClaim
+  statement: >-
+    Historical ship-type evidence places the heude as a freight vessel on the South-Holland and Zeeland waters in the sixteenth century, alongside larger, more heavily built 40-50-last sea-going heuden recorded at Dordrecht in 1514.
+  claim_type: historical_ship_type_context
+  subject: heude
+  predicate: regional_freight_vessel_in_sixteenth_century
+  object: South_Holland_Zeeland_Flanders_routes
+  evidence_status: SUPPORTED
+  source_ids: [SRC-SECONDARY-SSRP-HEUDE-HISTORICAL-001]
+  verification:
+    status: specialist_secondary_synthesis
+    note: "Supports vessel family, not De Hont-specific identification."
+
+- id: SC.NEAR.HEUDE.CAPACITY.20_LAST.1627.001
+  type: SourceClaim
+  statement: >-
+    A 1627 Rijksmuseum print labels an ordinary heude as approximately 20 last, providing a near-contemporary visual and capacity comparator for a regional heude.
+  claim_type: near_contemporary_ship_capacity_comparator
+  subject: heude
+  predicate: represented_as_about_20_last
+  object: Rijksmuseum_1627_print
+  evidence_status: SUPPORTED
+  source_ids: [SRC-MUSEUM-RIJKSMUSEUM-HEUDE-1627-001]
+  verification:
+    status: museum_object_title
+    note: "Near-contemporary comparator only; not De Hont's documented capacity."
+
+- id: SC.HIST.FREIGHT.BEER_LAST.18_BEER_CASKS.16C.001
+  type: SourceClaim
+  statement: >-
+    Boonman's metrological synthesis states that one ship last could be reckoned as 18 beer tons / Antwerp beer amens in the historical freight arithmetic discussed for the period.
+  claim_type: historical_freight_equivalence
+  subject: ship_last
+  predicate: beer_cargo_equivalent
+  object: 18_biertonnen_or_Antwerp_amen
+  evidence_status: SUPPORTED
+  source_ids: [SRC-SECONDARY-BOONMAN-METROLOGY-2015-001]
+  verification:
+    status: secondary_metrological_synthesis
+    note: "Use as a capacity equivalence, not as proof that all local beer casks had one universal litre volume."
+
+- id: SC.HIST.ZEELAND.SALT_SHIPLOAD.1570.001
+  type: SourceClaim
+  statement: >-
+    Boonman's synthesis states that around 1570 a salt shipload was commonly 10-20 hundred and sometimes up to 40 hundred, with one hundred approximately 100 sacks or about 7 last; the very large sea-going salt carriers could be much larger.
+  claim_type: historical_salt_cargo_scale
+  subject: salt_shipping
+  predicate: typical_large_shipload_scale
+  object: 10_to_20_hundred_common_1570
+  evidence_status: SUPPORTED
+  source_ids: [SRC-SECONDARY-BOONMAN-METROLOGY-2015-001]
+  verification:
+    status: secondary_metrological_synthesis
+    note: "This describes salt-shipping scale generally and should not be converted into a De Hont load. It instead shows that Cornelis' regional heude consignments should be treated as parcels, not giant sea-salt cargoes."
+
+- id: SC.HIST.GOES.ANTWERP.BEURT_CONNECTION.16C.001
+  type: SourceClaim
+  statement: >-
+    Sixteenth-century South-Beveland transport reconstruction based on period maps and archival evidence states that Goes had a beurtveer on Antwerp, while Biezelinge also maintained Antwerp connections and profited from the growing Honte/Westerschelde route.
+  claim_type: historical_route_connection
+  subject: Goes
+  predicate: regular_shipping_connection_to
+  object: Antwerp
+  evidence_status: SUPPORTED
+  source_ids: [SRC-PUBLIC-KZGW-GOES_ANTWERP_BEURTVAART-001]
+  verification:
+    status: institutional_historical_synthesis
+    note: "Establishes route normality, not De Hont's use, tariff or exact transit time."
+
+- id: SC.HIST.LEVENDALE.GOES_ANTWERP.WARTIME_TRAVEL.1589.001
+  type: SourceClaim
+  statement: >-
+    Levendale's 1589 travel note records departure from Goes by wagon to Waarde on 9 October, boarding a war rowing boat late that evening, reaching Fort Lillo the next day, and continuing on 11 October past royal forts to Antwerp; the return via Oosterweel, Ordam, Valkenisse and Waarde ended with arrival back in Goes on 16 October.
+  claim_type: historical_route_timing_comparator
+  subject: Goes_Antwerp_route
+  predicate: wartime_journey_recorded
+  object: October_1589
+  evidence_status: SUPPORTED
+  source_ids: [SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001]
+  verification:
+    status: transcription_of_notarial_personal_note
+    note: "Wartime mixed-mode trip; useful for route and delay structure, not a peacetime freight duration."
+
+- id: SC.HIST.LEVENDALE.GOES_DELFT.TRAVEL.1590.001
+  type: SourceClaim
+  statement: >-
+    In 1590 Levendale recorded boarding ship at the end of August, reaching Vlaardingen the next day and proceeding to Delft; on the return he boarded at Delfshaven on 7 September, passed through the Spui on 8 September and reached Goes on 9 September.
+  claim_type: historical_route_timing_comparator
+  subject: Goes_Delft_route
+  predicate: near_contemporary_travel_timing
+  object: 1590
+  evidence_status: SUPPORTED
+  source_ids: [SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001]
+  verification:
+    status: transcription_of_notarial_personal_note
+    note: "Passenger/mixed travel comparator, not a De Hont freight timetable."
+
+- id: SC.HIST.SOUTHERN_LOW_COUNTRIES.FREIGHT_RISK_ALLOCATION.16C.001
+  type: SourceClaim
+  statement: >-
+    In the sixteenth-century Southern Low Countries freight was distinguished from common operational voyage costs; general average could distribute extraordinary sacrifices or costs made for common safety, while the regulatory trend moved toward stricter shipmaster liability for preventable damage.
+  claim_type: historical_maritime_risk_framework
+  subject: Southern_Low_Countries_maritime_trade
+  predicate: distinguishes_freight_operational_costs_common_peril_and_master_fault
+  object: sixteenth_century
+  evidence_status: SUPPORTED
+  source_ids: [SRC-ACADEMIC-DREIJER-MARITIME_RISK_SOUTHERN_LOW_COUNTRIES-001]
+  verification:
+    status: academic_legal_historical_synthesis
+    note: "Framework for authoring, not a recovered local clause from Cornelis or De Hont."
