@@ -23,7 +23,7 @@ decisions:
   historical_boundary:
   - De Hont is historically documented only as `schipper van Delft` in the consulted 1589 agreement.
   - No historical source yet identifies his ship type, size, name, ownership share or crew.
-  - `Heudeschip` is the preferred novel vessel choice, not an archival identification.
+  - "Heudeschip is the preferred novel vessel choice, not an archival identification."
   guardrails:
   - Do not write that the 1589 act calls De Hont a heudeschipper.
   - Do not turn vessel last into a single universal metric-ton value.
