@@ -4,16 +4,30 @@ claims:
 - id: SC.HIST.GOES.HOREN_DE_HONT.BEER_CONTRACT.1589.001
   type: SourceClaim
   statement: >-
-    On 2 May 1589 the Goese notarial compilation records Michiel Michielsz Horen, poorter of Goes and biersteker, contracting with Aernouldt de Hont, schipper of Delft, concerning beers that De Hont would bring to Goes.
-  claim_type: historical_local_trade_relationship
+    On 2 May 1589 the Goese notarial compilation records Michiel Michielsz Horen, poorter of Goes, and Aernouldt de Hont, schipper van Delft, agreeing that Horen would be biersteker for such beers as De Hont would bring to Goes, subject to conditions not reproduced in the consulted extract.
+  claim_type: historical_local_beer_distribution_relationship
   subject: Michiel_Horen_and_Aernouldt_de_Hont
-  predicate: biersteker_shipper_contract
+  predicate: local_biersteker_for_beer_brought_by_shipper
   object: beer_brought_to_Goes_1589
   evidence_status: SUPPORTED
   source_ids: [SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001]
   verification:
     status: secondary_transcription_with_primary_locator
-    note: "Primary locator: RAZE 2040 fol. 86, 2 May 1589. The source says 'schipper van Delft'; Delft is not De Hont's surname."
+    note: "Primary locator: RAZE 2039 fol. 86, 2 May 1589. The extract does not establish beer ownership, freight payer, commission, risk allocation or exclusivity. The source says 'schipper van Delft'; Delft is not De Hont's surname."
+
+- id: SC.HIST.GOES.BEER_FREIGHT.52_TONNES.1589.001
+  type: SourceClaim
+  statement: >-
+    In testimony dated 11 April 1589, Goese schipper Jan de Wulf stated that about a month earlier he had taken 52 tons of English beer as freight from the vessel of a Veere skipper at the head of Goes in order to carry them to Zierikzee, where the beer was sold.
+  claim_type: historical_local_cargo_scale
+  subject: Jan_de_Wulf
+  predicate: carries_beer_freight_from_Goes_to_Zierikzee
+  object: fifty_two_tons_English_beer
+  evidence_status: SUPPORTED
+  source_ids: [SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001]
+  verification:
+    status: secondary_transcription_with_primary_locator
+    note: "Primary locator: RAZE 2039 fol. 80, 11 April 1589. Use as regional shipment-scale evidence, not as Aernouldt de Hont's vessel capacity."
 
 - id: SC.HIST.GOES.MICHIEL_HOREN.AARDENBURG_TO_GOES.1588.001
   type: SourceClaim
@@ -32,13 +46,159 @@ claims:
 - id: SC.HIST.DE_HONT.PRE1569.CAREER_BOUNDARY.001
   type: SourceClaim
   statement: >-
-    In the sources checked for this research pass, Aernouldt de Hont's age, career start, pre-1589 presence in Goes, and documented voyages to Antwerp have not been established. His use as Cornelis' pre-1569 preferred schipper is therefore an explicit novel backprojection from the securely documented 1589 occupation and contract.
+    In the sources checked for this research pass, Aernouldt de Hont's age, career start, pre-1589 presence in Goes, documented voyages to Antwerp and exact vessel type have not been established. His use as Cornelis' pre-1569 preferred schipper is therefore an explicit novel backprojection from the securely documented 1589 occupation and beer-distribution agreement.
   claim_type: historical_evidence_boundary
   subject: Aernouldt_de_Hont
-  predicate: current_research_does_not_establish_pre1569_career
+  predicate: current_research_does_not_establish_pre1569_career_or_vessel
   object: fictional_backprojection_required
   evidence_status: SUPPORTED
   source_ids: [SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001]
   verification:
     status: research_boundary_based_on_checked_source_corpus
     note: "This is a boundary on current evidence, not a claim that De Hont could not have been active earlier."
+
+- id: SC.HIST.ZEELAND.CRABSCHUIT.SCHELDT_CARGO_RISK.1586.001
+  type: SourceClaim
+  statement: >-
+    A March 1586 Goese notarial extract records Cornelis Pauwelsz, schipper of Gorinchem, sailing on the Scheldt near Catshoeck in a ship described as a crabschuijte loaded with willow planting material; a squall overturned the vessel and scattered vessel parts and cargo before salvage was organized.
+  claim_type: historical_regional_vessel_and_weather_risk
+  subject: Cornelis_Pauwelsz_schipper
+  predicate: sails_crabschuijte_on_Scheldt_and_capsizes_in_squall
+  object: cargo_vessel_weather_exposure_1586
+  evidence_status: SUPPORTED
+  source_ids: [SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001]
+  verification:
+    status: secondary_transcription_with_primary_locator
+    note: "Primary locator: RAZE 2038 fol. 386, 6 March 1586. This proves a crabschuijte in the local Scheldt cargo world, not De Hont's vessel type."
+
+- id: SC.HIST.HOLLAND.KROMSTEVEN.3_LAST.1582.001
+  type: SourceClaim
+  statement: >-
+    On 14 July 1582 a Schiedam giftbook entry records an Overschie ship carpenter selling a newly launched kromstevenschuit described as three last in size, with cash plus instalment payment and the vessel bound under waterrecht.
+  claim_type: historical_regional_vessel_type_capacity
+  subject: kromstevenschuit
+  predicate: documented_as_three_last_vessel
+  object: Schiedam_Overschie_1582
+  evidence_status: VERIFIED
+  source_ids: [SRC-HIST-SCHIEDAM-KROMSTEVEN-1578-1595-001]
+  verification:
+    status: municipal_archival_regest
+    note: "Nadere toegang 70, entry 623, fol. 221v. Vessel 'last' must not be converted to beer barrels without a source-specific bridge."
+
+- id: SC.HIST.REIMERSWAAL.KROMSTEVEN.CONNECTION.1594.001
+  type: SourceClaim
+  statement: >-
+    On 1 February 1594 a Schiedam giftbook entry records Joost Engelsz Mol, son of the bailiff of Remmerswaal, owing the final instalment on a newly built kromstevenschuit, with security constituted before the burgomasters and schepenen of Remmerswaal; a paired entry concerns ironwork for the vessel.
+  claim_type: historical_regional_vessel_type_connection
+  subject: kromstevenschuit
+  predicate: documented_with_Remmerswaal_buyer_surety_context
+  object: Remmerswaal_1594
+  evidence_status: VERIFIED
+  source_ids: [SRC-HIST-SCHIEDAM-KROMSTEVEN-1578-1595-001]
+
+- id: SC.NEAR.GOES.DELFSHAVEN.KROMSTEVEN_SALE.1608.001
+  type: SourceClaim
+  statement: >-
+    In August 1608 Jan Daemen, schipper of Delfshaven, sold a kromsteven schuytte with its equipment to Jan Cornelisz Palinckman, citizen and schipper of Goes.
+  claim_type: near_contemporary_corridor_vessel_type
+  subject: Delfshaven_and_Goes_shipping
+  predicate: documented_kromsteven_transaction
+  object: 1608
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-GOES-WISSE-BEER-SHIPPING-1608-1611-001]
+  verification:
+    status: secondary_transcription_with_primary_locator
+    note: "Outside the 1602 story endpoint; mechanism comparator only."
+
+- id: SC.NEAR.GOES.DELFSHAVEN.CRABBSCHUIT.1609.001
+  type: SourceClaim
+  statement: >-
+    In August 1609 Maerten Jansz, schipper at Delfshaven and then present in Goes, acknowledged debt for purchase and delivery of a crabbeschuyt with its equipment from a Goese schipper.
+  claim_type: near_contemporary_corridor_vessel_type
+  subject: Delfshaven_and_Goes_shipping
+  predicate: documented_crabbeschuyt_transaction
+  object: 1609
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-GOES-WISSE-BEER-SHIPPING-1608-1611-001]
+  verification:
+    status: secondary_transcription_with_primary_locator
+    note: "RAZE 2043 fol. 152, 27 August 1609. Outside the 1602 story endpoint; mechanism comparator only."
+
+- id: SC.NEAR.GOES.DELFT_BEER.BIERSTEKER_CREDIT.1609.001
+  type: SourceClaim
+  statement: >-
+    Goese notarial extracts from April 1609 document Delft beer supplied through a named biersteker into the South-Beveland market, debt secured by obligations, and a Delft-beer lot offered at 18 schellingen per ton with the buyer free to take one, two, more or fewer tons.
+  claim_type: near_contemporary_beer_distribution_mechanism
+  subject: Delft_beer_Goes_South_Beveland
+  predicate: distributed_via_biersteker_credit_and_ton_sales
+  object: 1609
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-GOES-WISSE-BEER-SHIPPING-1608-1611-001]
+  verification:
+    status: secondary_transcription_with_primary_locators
+    note: "RAZE 2043 fols. 87–88, April 1609. Do not back-project the 18-schelling price to 1589."
+
+- id: SC.NEAR.GOES.DELFT_BREWER.SHIPPER_DEBT_NETWORK.1609.001
+  type: SourceClaim
+  statement: >-
+    A November 1609 Goese notarial extract records Goese schippers acting under a procuration linked to a Delft brewer to collect debts in the land of Goes and elsewhere.
+  claim_type: near_contemporary_brewery_shipping_credit_network
+  subject: Delft_brewer_and_Goese_shippers
+  predicate: uses_local_agents_for_debt_collection
+  object: 1608_1609
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-GOES-WISSE-BEER-SHIPPING-1608-1611-001]
+  verification:
+    status: secondary_transcription_with_primary_locator
+    note: "RAZE 2043 fol. 207, 8 November 1609, following a 28 October 1608 procuration."
+
+- id: SC.HIST.DELFT.BEER_TO_ZEELAND.GUICCIARDINI.1612.001
+  type: SourceClaim
+  statement: >-
+    The 1612 Dutch edition of Guicciardini's description of Delft states that much Delft beer was carried particularly to Zeeland; an explicitly marked addition describes Delft beer distribution across several regions, including Zeeland, with regional bierstekers.
+  claim_type: early_modern_distribution_context
+  subject: Delft_beer_trade
+  predicate: exports_to_Zeeland_with_biersteker_layer
+  object: early_modern_distribution_system
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-GUICCIARDINI-DELFT-BEER-ZEELAND-1612-001]
+  verification:
+    status: early_modern_1612_edition
+    note: "The original Italian work dates to 1567, but the consulted Dutch edition was expanded; do not silently date the marked Byv. biersteker passage to 1567."
+
+- id: SC.HIST.HOLLAND.BEER_TON.1590.154L.001
+  type: SourceClaim
+  statement: >-
+    Alberts reports from the 1590 merchant handbook Tresoir that a Holland beer ton corresponded to about 154 litres.
+  claim_type: historical_metrology_proxy
+  subject: Holland_bierton
+  predicate: approximate_volume
+  object: 154_litres_1590
+  evidence_status: SUPPORTED
+  source_ids: [SRC-SECONDARY-ALBERTS-BIER-METROLOGY-2010-001]
+  qualifications:
+  - "This is a Holland-scale proxy, not a universal Delft or Goes barrel volume."
+
+- id: SC.HIST.DELFT.BEER_TON.SMALLER_THAN_AMSTERDAM.1578.001
+  type: SourceClaim
+  statement: >-
+    Alberts reports that in 1578 the Delft beer ton was smaller than the Amsterdam beer ton, demonstrating continued local variation within Holland.
+  claim_type: historical_metrology_variation
+  subject: Delft_bierton
+  predicate: smaller_than
+  object: Amsterdam_bierton_1578
+  evidence_status: SUPPORTED
+  source_ids: [SRC-SECONDARY-ALBERTS-BIER-METROLOGY-2010-001]
+
+- id: SC.HIST.DELFT.BEER_SMALL_SCHUIT_ROUTE.1541.001
+  type: SourceClaim
+  statement: >-
+    Archival-description material for Heenvliet around 1540–1541 states that small one-sail fishing schuiten were also used for inland navigation and that the Heenvliet–Delft route was frequently sailed because most Heenvliet beer came from Delft breweries; a 1541 incident also shows waiting for flood tide to enter harbour.
+  claim_type: historical_regional_transport_mechanism
+  subject: small_schuiten_Delft_beer_distribution
+  predicate: frequently_move_Delft_beer_on_tide_sensitive_route
+  object: Heenvliet_Delft_1540s
+  evidence_status: SUPPORTED
+  source_ids: [SRC-ARCHIVE-HEENVLIET-DELFT-BEER-1541-001]
+  qualifications:
+  - "Regional mechanism comparator only; not evidence for a Heenvliet–Goes route or De Hont's travel time."
