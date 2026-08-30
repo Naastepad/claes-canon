@@ -10,7 +10,7 @@ claims:
   predicate: survive_in_Goes_archive_with_public_transcription_layer
   object: RAZE_2038_2042
   evidence_status: VERIFIED
-  source_ids: [SRC-OFFICIAL-ERFGOED-GOES-LEVENDALe-PROTOCOLS-1576-1606-001]
+  source_ids: [SRC-OFFICIAL-ERFGOED-GOES-LEVENDALE-PROTOCOLS-1576-1606-001]
   qualifications:
   - "Preservation of the protocol family does not reveal the omitted folio 86 conditions; ownership, freight, commission, exclusivity and risk allocation remain OPEN until the folio is inspected."
 
