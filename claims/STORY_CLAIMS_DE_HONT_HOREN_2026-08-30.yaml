@@ -17,7 +17,7 @@ claims:
     latest_exclusive: '1570-01-01'
     precision: bounded
   historical_boundary: >-
-    De Hont is historically documented as schipper van Delft in a 1589 Goese beer-transport contract; his earlier relationship with Cornelis and Antwerp carriage are deliberate fiction canon.
+    De Hont is historically documented as schipper van Delft in a 1589 Goese agreement under which Michiel Horen would be biersteker for beers De Hont brought to Goes. His earlier relationship with Cornelis, Antwerp carriage, exact vessel and exact role in beer ownership/freight are not documented and are deliberate fiction canon or remain OPEN.
 
 - id: STC.CORNELIS.TRADE.FRAGMENTS_AFTER_DEATH.1569_1588.001
   type: StoryClaim
@@ -40,7 +40,7 @@ claims:
 - id: STC.HOREN.CORNELIS.TRADE_CONTINUITY.1588_1589.001
   type: StoryClaim
   statement: >-
-    By the late 1580s Michiel Michielsz Horen has fictionally absorbed or continued part of the Goese beer-distribution function once associated with Cornelis. The historically documented 1589 Horen-De Hont contract becomes the visible endpoint of that fictional continuity rather than proof of a direct Nissepat succession.
+    By the late 1580s Michiel Michielsz Horen has fictionally absorbed or continued part of the Goese beer-distribution function once associated with Cornelis. The historically documented 1589 agreement, in which Horen is to be biersteker for beers De Hont brings to Goes, becomes the visible endpoint of that fictional continuity rather than proof of a direct Nissepat succession.
   canon_status: CANON
   evidence_status: PLAUSIBLE
   decision_ids:
@@ -54,4 +54,4 @@ claims:
     latest_exclusive: '1590-01-01'
     precision: bounded
   historical_boundary: >-
-    Horen is historically documented as formerly of Aardenburg and a Goese poorter in 1588, and as biersteker contracting with De Hont in 1589. A direct purchase, inheritance or immediate succession from Cornelis is not documented and must not be stated as fact.
+    Horen is historically documented as formerly of Aardenburg and a Goese poorter in 1588, and in 1589 as biersteker for beers De Hont would bring to Goes. A direct purchase, inheritance or immediate succession from Cornelis is not documented; nor does the 1589 extract establish that Horen owned the incoming beer or hired De Hont as carrier.
