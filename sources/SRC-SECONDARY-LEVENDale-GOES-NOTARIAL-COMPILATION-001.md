@@ -5,7 +5,7 @@
 - **Work:** *Pieter van Levendale, notaris in troebele tijden* / compiled transcriptions and commentary on Goese notarial material
 - **Consulted representation:** user's research-library PDF `Levendale.pdf`; parallel public Levendale/RAZE PDF route at chielsmallegange.nl confirms the compilation family
 - **Verification date:** 2026-08-30
-- **Use in this layer:** target-person and transaction discovery; local price/distribution/credit evidence where a primary locator is supplied; not a substitute for the underlying primary account when a numeric wage is claimed
+- **Use in this layer:** target-person and transaction discovery; local price/distribution/credit/market-regulation evidence where a primary locator is supplied; not a substitute for the underlying primary account when a numeric wage is claimed
 
 ## Stadtimmerman target
 
@@ -58,6 +58,73 @@ This is strong local evidence that ordinary commerce and hospitality operated th
 
 **Boundary:** the 17-pound sum is accumulated debt, not the price of one meal, one night or one tavern visit.
 
+## Payment in kind — Spanish-leather shoes, 1597
+
+A Goese record of 10 February 1597 concerns the notary's fee being settled not in cash but with **one pair of new shoes made of Spanish leather**, reckoned `jeghens 6 sch. gr. naer zijn heijsch`.
+
+This is evidence for a locally documented **IN_KIND_PAYMENT / OBJECT_VALUATION** mechanism: professional services could be settled with a valued good instead of immediate coin.
+
+### Boundary
+
+The six-schelling figure is **not** a general Goese retail shoe-price series. The record concerns one specified pair, material and negotiated/claimed value in a particular settlement.
+
+## Fish quality control, spoilage and a Nissepadt office-holder — 1598
+
+`RAZE 2041, fol. 107, 12-12-1598` identifies **Jan Jansz Nissepadt** as `gesworen keurmeester van de vis in Goes`.
+
+The case concerns four barrels of imported `Aberdaens` fish brought to the Goese auction by Adriaen Pierss Cock, a boatman from Zierikzee. Jan called on two experienced female fish sellers, **Nele Mercx** and **Nelle Jacobs**, to assist with the inspection. The fish proved insufficiently salted and partly mouldy, rotten and foul-smelling. The notarial record was intended to support rejection/cancellation against the seller.
+
+This gives a dense local market mechanism:
+
+`imported preserved food -> auction/market -> sworn inspection -> specialist sensory expertise -> spoilage finding -> documentary evidence -> attempted rescission/recovery`.
+
+### Identity boundary
+
+The source proves a historical **Jan Jansz Nissepadt** in this office in 1598. It does **not**, by name alone, establish identity with any other Jan Nissepat/Nissepadt in the project. Do not merge persons merely on surname/patronymic similarity.
+
+## Meat market and impost tax point — 1598
+
+A notarial attestation of 22 December 1598 concerns where meat impost was legally due. Cornelis Kervingh, butcher from Biezelinge, asked whether tax attached to the place of slaughter or the place of sale.
+
+Herman Pietersz Beenhouwer of Heinkenszand testified that he had for years slaughtered sheep, cows, oxen and cattle there, brought the meat into Goes and sold it openly by the `vleeschhuijs` **by the pound, piece and cuts/limbs**. He stated that the Goese impost farmers had not charged him again because the impost had already been paid at the place `daert bloedt gestort was`, Heinkenszand.
+
+This supports two useful local facts:
+
+- meat was brought from nearby villages and retailed in Goes in several sale units;
+- at least in this attested practice, the **tax point was associated with slaughter rather than the later Goese sale**.
+
+### Boundary
+
+The record supplies **no impost rate** and is testimony about established practice, not a universal abstract tax code for every meat transaction or every year.
+
+## Household/estate valuation — butter and material inventory, 1602
+
+The inventory of the estate of **Adriaen Gilliss Waeijtack**, `RAZE 2040, fol. 458, 20 November 1602`, was drawn up in Goes. It lists clothing, bedding, furniture, tools, vessels and other domestic objects. It also records:
+
+- **78 pond butter**, taken over by the woman of the house at **4 stuivers per pond**.
+
+The record names **Henri/Henric Adriaens Nissepadt** as executor of the deceased's testament.
+
+This is a useful local late-life price anchor only if classified correctly:
+
+`78 pond butter @ 4 stuivers/pound = ESTATE_TAKEOVER_VALUATION`
+
+It is not automatically the same as a shop, market-stall or wholesale butter price on that date.
+
+### Nissepadt identity boundary
+
+The executor's name closely resembles other Nissepat/Nissepadt references in the wider project, but this record alone does not prove that he is identical with a particular canonically tracked Hendrick/Henric. Identity must be resolved from genealogy/office/property evidence before entities are merged.
+
+## Nearby South-Beveland labour provisioning — 1599
+
+A 1599 account/dispute concerning work on the breached Poppendijk near Yerseke records labour provisioning on credit. Bread was supplied to workers, and another supplier delivered **cheese, butter, bacon and herring**; the records preserve aggregate debt totals and later collection problems.
+
+This is valuable **close-regional context** for how labour could be fed and provisioned through local shop credit during emergency public works.
+
+### Boundary
+
+The aggregate sums are not unit prices for bread, cheese, butter, bacon or herring and are not city-Goes observations. Use as `CLOSE_REGIONAL_PROVISIONING_CONTEXT`, not as a Goese household price list.
+
 ## Additional local construction evidence
 
 The same Levendale compilation contains multiple late-sixteenth-century Goese construction transactions, including:
@@ -78,3 +145,8 @@ These demonstrate active local craft/contract practice but are **contract/valuat
 6. Keep the 1593 quarter-level South-Beveland beer-impost evidence distinct from a city-Goes tax rule.
 7. Treat the 1595 rye evidence as an April/May/August price sequence attested later in the year; never relabel the May 14s2g price as an October spot price.
 8. A debt acknowledgement is not a retail price list.
+9. A six-schelling Spanish-leather shoe settlement is an in-kind payment/object valuation, not a generic shoe price.
+10. A 4-stuiver-per-pound butter figure in a sterfhuis inventory is an estate takeover valuation, not automatically a retail market price.
+11. The 1598 meat-impost record identifies an attested tax point, not a rate.
+12. A same-name Nissepadt reference must not be entity-merged without independent identity evidence.
+13. South-Beveland dike-provisioning aggregate debts do not yield unit food prices and are not Goes observations.
