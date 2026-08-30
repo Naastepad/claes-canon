@@ -2,27 +2,38 @@ schema_version: "1.0.0"
 kind: WorldModuleRegistry
 modules:
   - id: WORLD.GOES_ECONOMY_1542_1572
-    label: "Goes economic baseline — money, measures, beer, salt and local transactions"
+    label: "Goes economic baseline — money, measures, beer, salt, transport, credit and local transactions"
     canon_status: CANON
     record_role: ACTIVE_AUTHORING_DOMAIN
     historical_method: LOCAL_GOES_EVIDENCE_WITH_EXPLICIT_PROXY_BOUNDARIES
     detail_files:
       - storybible/domains/GOES_ECONOMIC_BASELINE_1542_1572.md
       - claims/SOURCE_CLAIMS_ECONOMY_2026-08-30.yaml
+      - claims/SOURCE_CLAIMS_GOES_WAGES_2026-08-30.yaml
       - sources/SRC-SECONDARY-BOONMAN-METROLOGY-2015-001.md
+      - sources/SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001.md
+      - sources/SRC-SECONDARY-DIRKSEN-GEZAG-GELD-ZEELAND-2012-001.md
+      - sources/SRC-ARCHIVE-GOES-AMBACHTSGILDEN-520-001.md
       - sources/SRC-HIST-BEER-LOWCOUNTRIES-GOES-001.md
     resolver: narrative/economic_state_resolver.yaml
     narrative_functions:
       - "calibrate material value without modern euro conversion"
       - "keep accounting money distinct from physical coin"
       - "keep local measures source/date sensitive"
+      - "separate freight and handling tariffs from day wages"
       - "give Cornelis a historically correct biersteker/distribution economy"
-      - "make price, quantity, credit and measurement usable scene pressure"
+      - "model beer distribution as freight, cask loss/recovery, steker remuneration, measurement, carrying and credit rather than brewing"
+      - "make price, quantity, credit, surety and measurement usable scene pressure"
+      - "allow intra-year commodity-price movement instead of freezing one annual price"
     hard_guardrails:
       - "Cornelis is biersteker/distributor, not brewer."
       - "No regional wage proxy may be relabelled as a Goese day wage."
       - "Do not convert 1546 salt piecework into daily pay."
-      - "Do not back-project the 1595 rye price into Claes' youth."
+      - "The 1544 18-mijten-per-zeve grain charge is a transport tariff, not a day wage or a beer tariff."
+      - "A bierdrager occupational identification does not establish a tariff, day wage, monopoly or headcount."
+      - "The May 1595 14-schellingen-2-groten rye price is not an October spot price and must not be back-projected into Claes' youth."
+      - "Dirksen's 10-stuiver-per-ton distribution-cost example is hypothetical, not a historical tariff."
+      - "The 1593 South-Beveland beer-impost evidence is not automatically a city-Goes tariff."
       - "Do not turn account gulden automatically into physical Carolus pieces."
 
   - id: WORLD.WAR_ECONOMY_1567_1602
