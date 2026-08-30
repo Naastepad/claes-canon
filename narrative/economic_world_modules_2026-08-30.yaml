@@ -1,0 +1,54 @@
+schema_version: "1.0.0"
+kind: WorldModuleRegistryExtension
+modules:
+  - id: WORLD.GOES_ECONOMY_1542_1572
+    label: "Goes economic baseline — money, measures, beer, salt and local transactions"
+    canon_status: CANON_CONTEXT
+    record_role: ACTIVE_AUTHORING_DOMAIN
+    historical_method: LOCAL_GOES_EVIDENCE_WITH_EXPLICIT_PROXY_BOUNDARIES
+    detail_files:
+      - storybible/domains/GOES_ECONOMIC_BASELINE_1542_1572.md
+      - claims/SOURCE_CLAIMS_ECONOMY_2026-08-30.yaml
+      - sources/SRC-SECONDARY-BOONMAN-METROLOGY-2015-001.md
+      - sources/SRC-HIST-BEER-LOWCOUNTRIES-GOES-001.md
+    resolver: narrative/economic_state_resolver.yaml
+    narrative_functions:
+      - "calibrate material value without modern euro conversion"
+      - "keep accounting money distinct from physical coin"
+      - "keep local measures source/date sensitive"
+      - "give Cornelis a historically correct biersteker/distribution economy"
+      - "make price, quantity, credit and measurement usable scene pressure"
+    hard_guardrails:
+      - "Cornelis is biersteker/distributor, not brewer."
+      - "No regional wage proxy may be relabelled as a Goese day wage."
+      - "Do not convert 1546 salt piecework into daily pay."
+      - "Do not back-project the 1595 rye price into Claes' youth."
+      - "Do not turn account gulden automatically into physical Carolus pieces."
+
+  - id: WORLD.WAR_ECONOMY_1567_1602
+    label: "War economy — jurisdiction, taxation, coin interventions, supply and military finance"
+    canon_status: CANON_CONTEXT
+    record_role: ACTIVE_AUTHORING_MODIFIER
+    historical_method: POLITICAL_CONTROL_FIRST_SOURCE_WEIGHTING
+    detail_files:
+      - storybible/domains/WAR_ECONOMY_1567_1602.md
+      - claims/SOURCE_CLAIMS_ECONOMY_2026-08-30.yaml
+      - sources/SRC-SECONDARY-DIRKSEN-GEZAG-GELD-ZEELAND-2012-001.md
+      - sources/SRC-HIST-ALVA-TAXATION-1569-1572-001.md
+      - sources/SRC-HIST-REVOLT-COINAGE-EMERGENCY-MONEY-1573-1576-001.md
+      - sources/SRC-HIST-MILITARY-PAY-LOWCOUNTRIES-1567-1700-001.md
+      - sources/SRC-IISG-HISTORICAL-PRICES-WAGES-2023-001.md
+    resolver: narrative/economic_state_resolver.yaml
+    narrative_functions:
+      - "resolve political control before fiscal/coin rules"
+      - "separate tax proposal from local implementation and payment"
+      - "make blockade, licent, convoy and route legality transaction-specific"
+      - "keep countermarks and emergency money city/political-zone specific"
+      - "separate nominal military pay from received pay/provisioning"
+      - "supply 1577-1579 mechanism palette without closing the Goes-departure open"
+    hard_guardrails:
+      - "Rebel Zeeland rules never apply automatically to royalist Goes."
+      - "Tiende Penning proposal is not proof of a paid 10% transaction."
+      - "Confiscation risk is not a specific Nissepat confiscation."
+      - "Emergency money requires a supported named city issue."
+      - "Do not close OPEN.GOES.CLAES_DEPARTURE_1572_1579.001."
