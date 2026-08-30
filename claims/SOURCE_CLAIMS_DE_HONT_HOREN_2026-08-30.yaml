@@ -1,0 +1,41 @@
+schema_version: 1.0.0
+kind: SourceClaimRegistryExtension
+claims:
+- id: SC.HIST.GOES.HOREN_DE_HONT.BEER_CONTRACT.1589.001
+  type: SourceClaim
+  statement: >-
+    On 2 May 1589 the Goese notarial compilation records Michiel Michielsz Horen, poorter of Goes and biersteker, contracting with Aernouldt de Hont, schipper of Delft, concerning beers that De Hont would bring to Goes.
+  claim_type: historical_local_trade_relationship
+  subject: Michiel_Horen_and_Aernouldt_de_Hont
+  predicate: biersteker_shipper_contract
+  object: beer_brought_to_Goes_1589
+  evidence_status: SUPPORTED
+  source_ids: [SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001]
+  verification:
+    status: secondary_transcription_with_primary_locator
+    note: "Primary locator: RAZE 2040 fol. 86, 2 May 1589. The source says 'schipper van Delft'; Delft is not De Hont's surname."
+
+- id: SC.HIST.GOES.MICHIEL_HOREN.AARDENBURG_TO_GOES.1588.001
+  type: SourceClaim
+  statement: >-
+    Michiel Michielsz Horen is described in a 30 November 1588 Goese testament as formerly resident in Aardenburg and then a poorter of Goes.
+  claim_type: historical_person_mobility
+  subject: Michiel_Michielsz_Horen
+  predicate: formerly_Aardenburg_then_Goes_poorter
+  object: documented_1588
+  evidence_status: SUPPORTED
+  source_ids: [SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001]
+  verification:
+    status: secondary_transcription_with_primary_locator
+    note: "Primary locator: RAZE 2040 fol. 56, 30 November 1588. This does not establish when Horen moved to Goes and does not place him there in 1569."
+
+- id: SC.HIST.DE_HONT.PRE1569.CAREER_BOUNDARY.001
+  type: SourceClaim
+  statement: >-
+    Current research has not established Aernouldt de Hont's age, career start, pre-1589 presence in Goes, or documented voyages to Antwerp. His use as Cornelis' pre-1569 preferred schipper is therefore a novel backprojection from the securely documented 1589 occupation and contract.
+  claim_type: historical_evidence_boundary
+  subject: Aernouldt_de_Hont
+  predicate: pre1569_evidence_not_established
+  object: fictional_backprojection_required
+  evidence_status: OPEN
+  source_ids: [SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001]
