@@ -1,5 +1,5 @@
 schema_version: "1.0.0"
-kind: DomainScenePackRegistryExtension
+kind: DomainScenePackRegistry
 purpose: >-
   Economic authoring packs layered over existing scene/world packs. They provide bounded
   transaction, price, measure, fiscal and money context; they never create a scene or fictional event.
