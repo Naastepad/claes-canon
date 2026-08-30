@@ -1,0 +1,110 @@
+schema_version: 1.0.0
+kind: CanonDecisionRegistryExtension
+decisions:
+- id: DEC.DE_HONT.SHIP_AUTHORING_DEFAULT.2026-08-30
+  type: CanonDecision
+  status: CANON
+  refines: DEC.CORNELIS.PREFERRED_SHIPPER.2026-08-30
+  decision: >-
+    Aernouldt de Hont's historical vessel remains unknown. For novel authoring, however, the preferred vessel family is now an ordinary regional **heudeschip / heude**, not merely an unspecified cargo schuit. The default physical scale is a medium regional heude in an authoring band of roughly 15-25 last, centred on the near-contemporary circa-20-last comparator. This is a fictional vessel choice constrained by period/regional evidence, not a recovered fact about De Hont.
+  rationale: >-
+    Heuden are directly attested as sixteenth-century freight vessels on the South-Holland and Zeeland waters; a Goese 1595 freight contract itself names a heudeschip, and a 1627 museum object labels an ordinary heude at about 20 last. The larger 40-50-last sea-going heuden are not the default model for Cornelis' regional network.
+  authoring_calibration:
+    vessel_family: heudeschip
+    nominal_burden_last:
+      low: 15
+      default: 20
+      high: 25
+      status: FICTIONAL_AUTHORING_RANGE_NOT_DE_HONT_FACT
+    vessel_role: regional_shallow_water_and_coastal_freight
+    ownership: OPEN
+    crew_size: OPEN
+    vessel_name: OPEN
+  historical_boundary:
+  - De Hont is historically documented only as `schipper van Delft` in the consulted 1589 agreement.
+  - No historical source yet identifies his ship type, size, name, ownership share or crew.
+  - `Heudeschip` is the preferred novel vessel choice, not an archival identification.
+  guardrails:
+  - Do not write that the 1589 act calls De Hont a heudeschipper.
+  - Do not turn vessel last into a single universal metric-ton value.
+  - Do not use the 40-50-last England-going heuden as his routine ship without a separate plot decision.
+
+- id: DEC.DE_HONT.CARGO_SCALE_AUTHORING.2026-08-30
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    Cornelis normally uses only a fraction of De Hont's ship for his own goods rather than treating every voyage as a dedicated Nissepat charter. For beer, a routine Cornelis lot may be authored at roughly 30-80 casks/tonnen, with 80-150 as a deliberately large consignment. For refined salt, use roughly half to one-and-a-half `honderd` as a normal mixed-freight authoring parcel and about two `honderd` as a near-dedicated upper scene scale unless a separate reason justifies more. These are logistics calibrations, not recovered shipment records.
+  rationale: >-
+    Historical freight arithmetic can reckon one ship last at 18 beer tons/amens, while a salt `honderd` is approximately seven last in the relevant synthesis. A 15-25-last heude therefore has ample total burden for Cornelis' annual beer business but does not resemble the much larger sea-going salt ships whose cargoes could run to 10-20 hundred or more. Mixed cargo and multiple merchants are the more conservative default.
+  authoring_calibration:
+    beer_casks_per_routine_lot:
+      low: 30
+      high: 80
+      status: INFERRED_SCENE_SCALE
+    beer_casks_large_lot:
+      low: 80
+      high: 150
+      status: INFERRED_SCENE_SCALE
+    theoretical_all_beer_equivalent_for_15_25_last:
+      low_casks: 270
+      high_casks: 450
+      derivation: 18_biertonnen_per_ship_last
+      status: CAPACITY_SANITY_CHECK_NOT_EXPECTED_LOAD
+    salt_mixed_parcel_hundred:
+      low: 0.5
+      high: 1.5
+      status: INFERRED_SCENE_SCALE
+    salt_near_dedicated_upper_hundred: 2
+  guardrails:
+  - Do not rewrite Cornelis' 200-350 cask annual beer-throughput calibration upward merely because one heude can physically carry more.
+  - Do not assume the same `ton` litre value across Goes, Delft and Antwerp.
+  - Do not fill the ship to theoretical capacity in ordinary scenes; other merchants' goods, ballast, casks and operational needs occupy capacity.
+  - Salt parcel ranges are model values derived from capacity, not documented Nissepat cargoes.
+
+- id: DEC.DE_HONT.ROUTE_TIMING_AUTHORING.2026-08-30
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    Cornelis' network treats Goes-Antwerp and Goes-Delft as ordinary multi-day water connections rather than exceptional expeditions. For scene chronology, Goes-Antwerp may arrive after roughly one to two travel days in favourable non-war conditions, while Goes-Delft should normally be planned across roughly two calendar days and may readily take longer. Waiting for tide, wind, navigable water, loading, inspection or political control may add a tide, a day or more. These are authoring timing bands, not historical timetables.
+  rationale: >-
+    A sixteenth-century historical synthesis documents a Goes-Antwerp beurt connection. Levendale's wartime 1589 Goes/Waarde-Lillo-Antwerp journey took staged travel across 9-11 October, while his 1590 Holland journey reached Vlaardingen/Delft the day after boarding and required roughly two days by ship from Delfshaven back to Goes. A Goese 1595 freight contract explicitly conditions weekly voyages on weather, wind and open water.
+  authoring_calibration:
+    Goes_Antwerp:
+      favourable_travel_days: 1_to_2
+      operational_planning: allow_2_to_3_when_scene_needs_waiting_or_handling
+      status: INFERRED_FROM_ROUTE_AND_COMPARATOR_EVIDENCE
+    Goes_Delft:
+      normal_planning_days: about_2
+      practical_range: 1_to_3_plus
+      status: INFERRED_FROM_1590_TRAVEL_COMPARATOR_NOT_FREIGHT_TIMETABLE
+  guardrails:
+  - Do not state a clock-hour transit as historical fact.
+  - Do not use the 1589 wartime military-boat journey as a normal commercial schedule.
+  - Do not use modern canals or the later Kanaal door Zuid-Beveland.
+  - Write departures and delays in tides, wind and days.
+
+- id: DEC.DE_HONT.CORNELIS_FREIGHT_CONTRACT_MODEL.2026-08-30
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    Cornelis and De Hont have a recurring preferred-carrier relationship governed by standing commercial expectations, with individual cargoes still capable of separate terms. The scene-default agreement distinguishes freight payment, loading/unloading and local handling, ordinary voyage costs, cask-return/account obligations, cargo condition at handover, payment timing and responsibility for loss. De Hont is responsible for vessel, crew, navigation and avoidable damage attributable to his handling; Cornelis normally bears market/credit risk and inherent cargo-quality risk not caused by the carrier. Extraordinary common peril may produce shared loss or a later contribution rather than being assigned automatically to either man.
+  rationale: >-
+    The Goese 1595 heude contract demonstrates multi-year recurring carriage with a voyage rate, weather clause and mixed cash/in-kind remuneration. Southern-Low-Countries maritime law and practice distinguish fixed freight, common operational costs, individual loss and shared extraordinary loss, while shipmaster liability became stricter for preventable damage. This gives a historically structured authoring model without pretending to recover De Hont's missing 1589 conditions.
+  historical_boundary:
+  - No Cornelis-De Hont freight contract survives because both the relationship and its terms are novel canon.
+  - The Horen-De Hont 1589 extract does not reproduce its conditions and does not establish who owned the beer before arrival.
+  - Exact local liability for leakage, souring, cask breakage, pilotage, dues or wartime seizure remains contract- and scene-specific.
+  authoring_defaults:
+    freight: usually_fixed_per_voyage_or_consignment_by_story_need
+    loading_unloading: separate_from_navigation_and_may_involve_local_carriers
+    ordinary_delay_due_to_weather_or_tide: not_automatic_carrier_fault
+    negligent_handling_or_unseaworthiness: carrier_side_risk_default
+    market_price_and_customer_default: Cornelis_side_risk_default
+    inherent_spoilage_without_carrier_fault: Cornelis_side_risk_default
+    extraordinary_common_safety_sacrifice: shared_loss_framework_possible
+    routine_marine_insurance: not_assumed
+  guardrails:
+  - Never present these defaults as verbatim clauses from RAZE 2039 fol. 86.
+  - Do not make De Hont an insurer or guarantor of Cornelis' commercial margin.
+  - Do not make Cornelis automatically liable for damage caused by proven bad navigation or handling.
+  - In contested cases, write the dispute first and let notarial/account evidence resolve liability rather than invoking modern carrier law.
