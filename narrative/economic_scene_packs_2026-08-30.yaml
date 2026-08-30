@@ -1,0 +1,61 @@
+schema_version: "1.0.0"
+kind: DomainScenePackRegistryExtension
+purpose: >-
+  Economic authoring packs layered over existing scene/world packs. They provide bounded
+  transaction, price, measure, fiscal and money context; they never create a scene or fictional event.
+packs:
+  - id: PACK.ECON.GOES_YOUTH_1547_1554
+    label: "Goes youth — ordinary economic texture"
+    status: AUTHORING_READY_SCENE_CONTEXT
+    world_modules: [WORLD.GOES, WORLD.GOES_ECONOMY_1542_1572]
+    resolver: narrative/economic_state_resolver.yaml
+    chapters: [CH.DE_DREMPEL.1547, CH.DE_LEI.1552, CH.HET_WAPEN.1553, CH.DE_KRAAI.1553, CH.DE_KRAAN.1553, CH.DE_WEGEN.1553, CH.HET_ZAND.1554, CH.HET_GIST.1554, CH.DE_WINNAAR.1554, CH.HET_ZAAD.1554, CH.DE_KAMER.1554, CH.DE_WIEG.1554]
+    safe_texture: [measured_goods, account_money, mixed_coins_if_sourced, casks, credit, stock, carriers, salt_labour, market_dues]
+    hard_guardrails: ["no euro equivalents", "no invented exact Goese day wage", "no 1595 rye price back-projection", "economic detail serves scene function"]
+
+  - id: PACK.ECON.CORNELIS_BIERSTEKER
+    label: "Cornelis — beer distribution economy"
+    status: AUTHORING_READY_SCENE_CONTEXT
+    world_modules: [WORLD.GOES_ECONOMY_1542_1572, WORLD.BEER_BREWING_DISTRIBUTION]
+    resolver: narrative/economic_state_resolver.yaml
+    actor_filter: FILTER.CORNELIS.BIERSTEKER
+    action_chain: [order_negotiate, receive_casks, official_measure_if_supported, inspect_condition_quantity, record, store, arrange_transport, deliver_sell, settle_credit]
+    source_claims: [SC.HIST.BIERSTEKER.DISTRIBUTION.001, SC.HIST.GOES.BEER.MEASUREMENT_ANTECEDENT.001]
+    hard_guardrails: ["Cornelis is not brewer", "no automatic Nissepad brewery ownership", "no brewing-production tax assigned to him by role alone"]
+
+  - id: PACK.ECON.ALVA_TAX_CRISIS_1569_1572
+    label: "Alva fiscal crisis — proposal, negotiation and local implementation"
+    status: AUTHORING_READY_CONTEXT_WITH_LOCAL_PAYMENT_GATE
+    world_modules: [WORLD.WAR_ECONOMY_1567_1602, WORLD.HISTORICAL_SUBSTRATE_1540_1605]
+    war_state: ECON.WAR.W2.ALVA_TAX_CRISIS_1569_1572
+    source_claims: [SC.HIST.ALVA.TAX_PROJECT.1569.001, SC.HIST.ALVA.TAX_IMPLEMENTATION_BOUNDARY.1569_1572.001]
+    safe_texture: [plakkaat, calculation, collector_appointment, afkoop_negotiation, merchant_anxiety, resistance]
+    payment_gate: "A specific paid Tiende/Twintigste Penning requires local/date/transaction evidence."
+
+  - id: PACK.ECON.DIVIDED_ZEELAND_1572_1576
+    label: "Zeeland 1572–1576 — jurisdiction first"
+    status: AUTHORING_READY_SCENE_CONTEXT
+    world_modules: [WORLD.WAR_ECONOMY_1567_1602, WORLD.HISTORICAL_SUBSTRATE_1540_1605]
+    war_state: ECON.WAR.W3.DIVIDED_ZEELAND_1572_1576
+    source_claims: [SC.HIST.ZEELAND.POLITICAL_CONTROL.DIVIDED_1572_1576.001, SC.HIST.ZEELAND.REBEL.LICENT_CONVOY.1573_1576.001, SC.HIST.ZEELAND.REBEL.BEER_AMMUNITION_LEVY.1574.001]
+    first_question: "Who controls the location/route on this date?"
+    rebel_only_tools: [licentrecht_from_1573, convoygeld_from_1576, rebel_coin_countermark_where_locally_supported, four_stuiver_beer_levy_from_1574_05_01]
+    hard_guardrails: ["Goes/Zuid-Beveland remain landsheerlijk in this state", "province name does not apply rebel rules", "emergency money requires named city issue"]
+
+  - id: PACK.ECON.GOES_SETTLEMENT_1577_1579
+    label: "Goes postwar legal/economic afterlife"
+    status: AUTHORING_DESIGN_CONTEXT_OPEN_HINGE
+    world_modules: [WORLD.GOES, WORLD.WAR_ECONOMY_1567_1602]
+    war_state: ECON.WAR.W4.SETTLEMENT_1577_1579
+    open_decision: OPEN.GOES.CLAES_DEPARTURE_1572_1579.001
+    mechanism_palette: [debt_arrears, supplier_customer_claims, inheritance, damaged_property, rebuilding_cost, delayed_payment, sale_transfer, family_network_recomposition]
+    hard_guardrails: ["mechanisms are not chosen plot facts", "no automatic confiscation", "no identity between 1572 burned Voorstad brewery and documented 1577 Nissepad brewery", "no automatic Cornelis ownership"]
+
+  - id: PACK.ECON.LATE_1594_1602
+    label: "Late Claes — auditable annual price-series window"
+    status: AUTHORING_CONTEXT_DATA_AUDIT_REQUIRED
+    world_modules: [WORLD.WAR_ECONOMY_1567_1602]
+    war_state: ECON.WAR.W7.LATE_PRICE_WINDOW_1594_1602
+    source_claims: [SC.HIST.IISG.NL_PRICE_SERIES.1594_1602.001, SC.HIST.GOES.RYE_PRICE.1595.001]
+    required_before_numeric_use: [place_scope, commodity, historical_unit, currency, provenance, transformation_status]
+    hard_guardrails: ["IISG archive is heterogeneous", "do not treat Netherlands series as exact Goes without spatial support", "no euro-equivalent shortcut"]
