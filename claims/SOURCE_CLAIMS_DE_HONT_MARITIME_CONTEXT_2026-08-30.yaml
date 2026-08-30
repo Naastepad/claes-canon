@@ -1,0 +1,77 @@
+schema_version: 1.0.0
+kind: SourceClaimRegistryExtension
+claims:
+- id: SC.HIST.DELFT.BEER_EXPORT.ZEELAND.16C.001
+  type: SourceClaim
+  statement: >-
+    Sixteenth-century Delft was a major beer-export centre and contemporary/near-contemporary descriptions explicitly state that Delft beer was transported in substantial quantities to Zeeland and other regions.
+  claim_type: historical_trade_context
+  subject: Delft_beer_trade
+  predicate: exports_beer_to
+  object: Zeeland
+  evidence_status: SUPPORTED
+  source_ids:
+  - SRC-PUBLIC-GUICCIARDINI-DELFT-BEER-EXPORT-001
+  verification:
+    status: public_historical_text
+    note: "Useful for trade structure; not evidence for a specific Cornelis shipment."
+
+- id: SC.HIST.SCHELDT.ROUTE_SHIFT.MID16C.001
+  type: SourceClaim
+  statement: >-
+    By the middle of the sixteenth century the Honte/Westerschelde had become the principal deep-water shipping route to Antwerp, while the older eastern Scheldt/Kreekrak passage remained increasingly shallow and tide-dependent but was not simply nonexistent.
+  claim_type: historical_navigation_context
+  subject: Scheldt_navigation
+  predicate: route_structure
+  object: mid_sixteenth_century
+  evidence_status: SUPPORTED
+  source_ids:
+  - SRC-PUBLIC-SCHELDT-NAVIGATION-MID16C-001
+  verification:
+    status: synthesized_from_regional_historical_research
+    note: "Does not prove which route Aernouldt de Hont personally used."
+
+- id: SC.HIST.MARITIME.DAMME.NEGLIGENT_STOWAGE_LIABILITY.001
+  type: SourceClaim
+  statement: >-
+    The early-modern maritime legal tradition represented by the Damme/Wisby waterrecht places responsibility on the master/crew for cargo damage caused by negligent loading, securing, tackle or imprudent handling, while distinguishing such fault from unavoidable peril.
+  claim_type: historical_legal_mechanism
+  subject: maritime_freight_risk
+  predicate: distinguishes_negligence_from_common_peril
+  object: master_and_cargo_interests
+  evidence_status: SUPPORTED
+  source_ids:
+  - SRC-SECONDARY-DAMME-WATERRECHT-MARITIME-RISK-001
+  verification:
+    status: legal_tradition_mechanism
+    note: "Use for mechanism, not a verbatim local Goes contract clause."
+
+- id: SC.HIST.MARITIME.DAMME.GENERAL_AVERAGE.001
+  type: SourceClaim
+  statement: >-
+    The same maritime tradition recognises shared-loss treatment when cargo or ship equipment is deliberately sacrificed to save ship and remaining cargo, providing an early general-average type mechanism.
+  claim_type: historical_legal_mechanism
+  subject: maritime_common_peril
+  predicate: shared_loss_for_extraordinary_sacrifice
+  object: ship_and_cargo_interests
+  evidence_status: SUPPORTED
+  source_ids:
+  - SRC-SECONDARY-DAMME-WATERRECHT-MARITIME-RISK-001
+  verification:
+    status: legal_tradition_mechanism
+    note: "Do not infer an exact contribution percentage without a local case."
+
+- id: SC.HIST.DE_HONT.SHIP_TYPE_BOUNDARY.1589.001
+  type: SourceClaim
+  statement: >-
+    The 2 May 1589 Goese record identifies Aernouldt de Hont only as 'schipper van Delft' and does not name his vessel type, ship name, dimensions, tonnage or ownership share.
+  claim_type: historical_evidence_boundary
+  subject: Aernouldt_de_Hont
+  predicate: vessel_details_not_recorded_in_consulted_extract
+  object: 1589_Horen_De_Hont_contract
+  evidence_status: SUPPORTED
+  source_ids:
+  - SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001
+  verification:
+    status: direct_secondary_transcription_boundary
+    note: "Therefore pleit/smalschip or capacity figures remain authoring calibration, not historical biography."
