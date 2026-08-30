@@ -68,20 +68,24 @@ decisions:
   type: CanonDecision
   status: CANON
   decision: >-
-    Cornelis' recurring trusted/preferred schipper is Aernouldt de Hont, the historical schipper of Delft later documented in a 1589 beer-transport contract with Goese biersteker Michiel Michielsz Horen. In novel canon De Hont becomes part of Cornelis' network by the late 1550s or early 1560s and remains a recurring carrier/contact through Cornelis' death in 1569. He can handle or coordinate selected beer, salt and mixed commercial movements between Goes/Zeeland, Delft/Holland and Antwerp. Cornelis need not own a ship.
+    Cornelis' recurring trusted/preferred schipper is Aernouldt de Hont. Historically De Hont is documented on 2 May 1589 as a schipper van Delft in a Goese agreement under which Michiel Michielsz Horen would be biersteker for such beers as De Hont would bring to Goes. In novel canon De Hont is back-projected into Cornelis' network by the late 1550s or early 1560s and remains a recurring carrier/contact through Cornelis' death in 1569. He can handle or coordinate selected beer, salt and mixed commercial movements between Goes/Zeeland, Delft/Holland and Antwerp. Cornelis need not own a ship.
   affects:
   - ENT.PERSON.CORNELIS
   - WORLD.BEER_BREWING_DISTRIBUTION
   - WORLD.GOES_ECONOMY_1542_1572
   rationale: >-
-    A stable named shipper relationship is historically compatible with the documented later Goese biersteker-schipper contract and is more useful than assigning Cornelis an unsupported private vessel. Starting the relationship in the late 1550s/early 1560s is sufficient for the Antwerp-phase story and avoids unnecessarily extending De Hont's fictional career back into the 1540s.
+    A stable named shipper relationship is historically compatible with the documented later Goese schipper-biersteker arrangement and is more useful than assigning Cornelis an unsupported private vessel. Starting the fictional relationship in the late 1550s/early 1560s is sufficient for the Antwerp-phase story and avoids unnecessarily extending De Hont's fictional career back into the 1540s.
   historical_boundary:
-  - Historical fact: De Hont is documented in 1589 as schipper van Delft bringing beer to Goes for a contract with Michiel Horen.
-  - His relationship with Cornelis before 1569 is explicit novel canon, not archival fact.
-  - His age, vessel, ownership, exact route frequency and documented Antwerp voyages remain unknown.
-  open_questions:
-  - Determine whether De Hont normally handles both salt and beer for Cornelis or whether he is primarily a trusted carrier/freight coordinator within a wider shipper network.
-  - Research a plausible vessel type and route practice without inventing a fixed scheduled line.
+  - Historical fact: De Hont is documented in 1589 as schipper van Delft in an agreement making Horen biersteker for beers De Hont brings to Goes.
+  - The 1589 extract does not establish that Horen owned the incoming beer or hired De Hont, and its contractual conditions are not reproduced.
+  - De Hont's relationship with Cornelis before 1569 is explicit novel canon, not archival fact.
+  - De Hont's age, exact vessel, vessel ownership, route frequency, freight rates, cargo-risk terms and documented Antwerp voyages remain unknown.
+  authoring_state:
+  - De Hont's identity as Cornelis' preferred schipper is RESOLVED in canon.
+  - Exact vessel class remains OPEN; use a generic small/medium shallow-water cargo schuit as default authoring image.
+  - Kromstevenschuit and krabschuit are supported regional analogues, not documented De Hont vessels.
+  - Exact Delft-Goes and Goes-Antwerp travel times remain OPEN; write in tides, weather windows and days rather than a fixed timetable.
+  - A separate Goese 1589 freight act proves that 52 beer tons could move as one regional consignment, but this is not De Hont's recovered capacity.
   - Do not back-project later beurtvaart monopolies without relevant local evidence.
 
 - id: DEC.CORNELIS.CAPITAL_CALIBRATION.1554.2026-08-30
