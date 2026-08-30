@@ -128,33 +128,54 @@ Cornelis does not travel to Antwerp merely because the plot needs a secret netwo
 
 ---
 
-## 4. The preferred schipper
+## 4. The preferred schipper — Aernouldt de Hont
 
-Cornelis has a recurring, trusted/preferred relationship with a **schipper** who can carry goods between the Goese/Zeeland network and outside destinations, especially Antwerp.
+Cornelis' recurring trusted/preferred schipper is now fixed in novel canon as **Aernouldt de Hont**.
 
-Do **not** yet fix:
+Historically, De Hont is documented on **2 May 1589** as `schipper van Delft` in a Goese agreement with **Michiel Michielsz Horen**. The correct direction of that agreement is:
 
-- the person's name;
-- whether the person is historical or wholly fictional;
-- vessel type;
-- ownership/co-ownership;
-- fixed sailing schedule;
-- whether one schipper handles both salt and beer;
-- a later beurtvaart monopoly.
+`De Hont brings beer to Goes -> Horen is biersteker for that beer`
 
-These remain research questions.
+The consulted extract does **not** prove that Horen owned the beer or hired De Hont as freight carrier, and it does not reproduce the conditions governing freight, commission, exclusivity, ownership or cargo risk.
 
-The relationship is more important than ship ownership.
+Primary locator: `RAZE 2039, fol. 86, 2-5-1589`.
 
-Cornelis' competence lies in being able to say, in effect:
+The novel deliberately back-projects this historical schipper into Cornelis' network from the **late 1550s / early 1560s through 1569**. That earlier relationship is fiction canon, not recovered biography.
 
-> I know who can move this, when, at what risk, and who will receive it at the other end.
+De Hont may carry or coordinate selected:
 
-That same legitimate infrastructure can later become a vulnerability when letters, books or people move through it.
+- beer and cask traffic involving Delft/Holland and Goes;
+- salt and mixed commercial consignments;
+- Antwerp-bound traffic where the story requires it;
+- ordinary letters, accounts and payment messages travelling with legitimate trade.
 
-### Historical analogue
+Cornelis does **not** need to own a ship. His commercial competence lies partly in knowing who can move goods, when movement is possible, who receives them, and how obligations are settled.
 
-A late-sixteenth-century Goese case is directly useful as mechanism: the Goese biersteker **Michiel Horen** made a contract with Delft schipper **Aernouldt de Hont** concerning beer transport in 1589. This is later than Cornelis but demonstrates that `Goese biersteker <-> named external schipper <-> beer transport contract` is a real local economic pattern.
+### Vessel evidence boundary
+
+No De Hont-specific vessel name, type, rig, capacity or ownership has been recovered.
+
+For scene authoring, use a **generic small/medium shallow-water cargo schuit** as the default mental model. Two researched regional analogues are especially useful:
+
+- **kromstevenschuit** — documented in Holland in 1582 and connected to Remmerswaal in a 1594 ship transaction;
+- **krabschuit / crabschuijte** — documented as an ordinary cargo vessel on the Scheldt near Goes in 1586.
+
+Neither may be written as De Hont's documented vessel.
+
+A separate Goese act from **11 April 1589** records Goese schipper Jan de Wulf taking **52 tons of English beer** as freight for onward carriage to Zierikzee. That proves that beer consignments in the tens of casks belong to the real regional freight world, but it does **not** establish De Hont's capacity or standard load.
+
+### Route-time boundary
+
+No trustworthy fixed Delft–Goes or Goes–Antwerp travel duration for De Hont has been recovered. Write movement in **tides, wind, weather windows and days**, not in pseudo-precise clock-hours.
+
+### Risk boundary
+
+Weather, transshipment, leakage, breakage, delay, bad debt and cask loss are historically credible commercial pressures. The precise contractual allocation of those risks in the 1589 Horen–De Hont agreement remains **OPEN** because the conditions are missing from the consulted extract.
+
+For the full shipping evidence ladder and guardrails, use:
+
+- `storybible/domains/CORNELIS_DE_HONT_HOREN_TRADE_CONTINUITY_1550_1589.md`
+- `review/DE_HONT_SHIPPING_PROVENANCE_2026-08-30.md`
 
 ---
 
@@ -369,7 +390,7 @@ Why?
 Because access depends partly on:
 
 - established commercial contacts;
-- a trusted shipper/carrier relationship;
+- his trusted De Hont/carrier relationship and wider shipper network;
 - previous salt trade;
 - knowledge of merchants and delivery nodes;
 - family and credit reputation;
@@ -390,7 +411,7 @@ This is critical for later book traffic: forbidden literature does not give Corn
 | 1542–17 May 1554 | owner-merchant + saltwork owner + biersteker | substantial / locally consequential | stocks, credit, freight, choice, investment |
 | 18 May 1554 | catastrophe | productive-capital destruction + household annihilation | obligations survive while assets disappear |
 | 1554–1561 | recovery | lower wealth, reputation partly intact | family credit, commission, careful cash, network dependence |
-| 1561–1568 | mature network merchant | not restored to old wealth; still connected | routes, factors, trusted carriers, information, clandestine vulnerability |
+| 1561–1568 | mature network merchant | not restored to old wealth; still connected | routes, factors, De Hont/wider carriers, information, clandestine vulnerability |
 
 ---
 
@@ -401,7 +422,11 @@ This is critical for later book traffic: forbidden literature does not give Corn
 - the 2,300-guilder default as a historical inventory;
 - Antwerp as the destination of every beer or salt shipment;
 - Cornelis as owner of a private ship unless separately decided;
-- the preferred schipper's identity before research/author decision fixes it;
+- De Hont's pre-1569 relationship with Cornelis as archival fact;
+- a kromsteven or krabschuit as De Hont's documented vessel;
+- the 52-ton 1589 cargo comparator as De Hont's ship capacity;
+- Horen as proven owner of the beer or employer of De Hont in the 1589 agreement;
+- fixed Delft–Goes or Goes–Antwerp travel hours from the current evidence;
 - the fire as destroying the Nissepad family brewery;
 - grandfather's Nieuwstraat house as Cornelis' personal capital asset;
 - `the fire made him poor` without the more precise distinction between wealth, liquidity, status and network capital;
@@ -411,9 +436,11 @@ This is critical for later book traffic: forbidden literature does not give Corn
 
 ## 15. Open research targets
 
-1. **Preferred schipper:** identify a usable historical Goes/Zeeland/Antwerp carrier analogue ca. 1545–1568.
-2. **Salt route:** find direct sixteenth-century Goes/Zeeland -> Antwerp salt shipment, freight or merchant evidence.
-3. **Saltwork value:** find local sale, lease, tax or probate valuations for saltworks/pans close to 1540–1560.
-4. **Beer turnover:** find Goese/Zeeland biersteker account, duty or contract quantities to tighten the 200–350-ton working band.
-5. **Credit terms:** find period-near brewery-to-biersteker settlement arrangements rather than relying on later mechanism evidence.
-6. **Fire loss mechanics:** identify local post-1554 claims, debt failures or commercial reconstruction evidence without inventing losses for Cornelis.
+1. **De Hont vessel:** recover a De Hont-specific vessel name/type/capacity if it exists; until then generic schuit-family authoring only.
+2. **1589 conditions:** recover the underlying fol. 86 conditions to determine whether ownership, freight, commission, exclusivity, cask obligations or cargo-risk terms can be established.
+3. **Route time:** find period route-specific Delft–Goes and/or Goes–Antwerp voyage evidence without manufacturing a timetable.
+4. **Salt route:** find direct sixteenth-century Goes/Zeeland -> Antwerp salt shipment, freight or merchant evidence.
+5. **Saltwork value:** find local sale, lease, tax or probate valuations for saltworks/pans close to 1540–1560.
+6. **Beer turnover:** find Goese/Zeeland biersteker account, duty or contract quantities to tighten the 200–350-ton working band.
+7. **Credit terms:** find period-near brewery-to-biersteker settlement arrangements rather than relying on later mechanism evidence.
+8. **Fire loss mechanics:** identify local post-1554 claims, debt failures or commercial reconstruction evidence without inventing losses for Cornelis.
