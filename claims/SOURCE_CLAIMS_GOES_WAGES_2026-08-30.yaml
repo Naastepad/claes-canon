@@ -27,6 +27,19 @@ claims:
       status: explicit_project_gap_after_source_recovery
       note: "Do not fill this gap with a western-Netherlands proxy."
 
+  - id: SC.HIST.WESTERN_NL.WAGES.MID16_COMPARATOR.001
+    type: SourceClaim
+    statement: "De Vries' Table 1 gives direct 1550-1554 construction/manual-labour comparators for several nearby or connected cities: skilled labour 5.5-6 stuivers/day and unskilled labour 3-4 in Bergen op Zoom; skilled 9 and unskilled 4 in Antwerp. These are regional comparators, not Goese wage observations."
+    claim_type: regional_wage_context
+    subject: "mid-sixteenth-century regional construction wages"
+    predicate: "direct comparator observations"
+    object: "Bergen op Zoom and Antwerp, 1550-1554"
+    evidence_status: VERIFIED
+    source_ids: [SRC-SECONDARY-DEVRIES-LABOUR-MARKET-GOES-WAGES-001]
+    verification:
+      status: direct_table_transcription
+      note: "Use only as C_REGIONAL_PROXY / plausibility bounds; never relabel as Goes."
+
   - id: SC.HIST.WESTERN_NL.WAGES.POST1570_COMPARATOR.001
     type: SourceClaim
     statement: "De Vries documents strong post-1570 nominal-wage increases in western-Netherlands labour markets and gives detailed Spaarndam/Halfweg wage steps, but these are regional/comparative evidence rather than exact Goese wage observations."
