@@ -10,7 +10,7 @@ Concretise Aernouldt de Hont's working world without converting analogy into bio
 
 Erfgoed van Goes confirms that five Levendale protocols survive for 1576–1606 under `RAZE 2038–2042`. The public Harthoorn/Smallegange layer is a transcription/index publication. Therefore the abbreviated wording `volgen voorwaarden` in the public extract of `RAZE 2039, fol. 86, 2-5-1589` does not justify inventing those terms, but it also should not be described as if the underlying protocol were known to be lost.
 
-**Research target:** inspect/reproduce `RAZE 2039, fol. 86` itself.
+**Research target:** inspect/reproduce the underlying 1589 folio itself and resolve the existing `RAZE 2039` versus `RAZE 2040` secondary-locator discrepancy from the primary image.
 
 Until then keep OPEN:
 - beer ownership before arrival;
@@ -47,14 +47,15 @@ It does **not** prove De Hont's dimensions, capacity, rig, crew or vessel type.
 
 - Generic term in prose by default: `schuit`, `vrachtschuit`, or simply `schip` when the precise type is not narratively needed.
 - Visual family: small/medium shallow-water regional cargo craft.
-- Researched type analogues remain `kromstevenschuit` and `krabschuit`, but neither is promoted to De Hont-specific fact.
+- For an Antwerp scene, `kagheschuyte` remains the strongest researched-fiction type candidate from the separate route-specific refinement; it is not promoted to De Hont-specific historical fact.
+- `kromstevenschuit` and `krabschuit` remain additional researched regional analogues, not De Hont's recovered vessel.
 - Cargo scale may credibly be in dozens of beer tons/casks because a separate Goes 1589 act documents a 52-ton beer movement; never translate that into De Hont's vessel capacity.
 - Use tides, wind, waiting, transshipment and delay as operational texture; fixed clock-hour travel times remain unsupported.
 - Cornelis' fictional arrangement with De Hont may define a specific commercial risk split if plot requires it, but it must remain explicit novel canon rather than masquerading as the recovered 1589 Horen contract.
 
 ## Remaining high-value research questions
 
-1. Obtain the full text/image of `RAZE 2039, fol. 86`.
+1. Obtain the full text/image of the underlying 2 May 1589 Horen–De Hont act and resolve the 2039/2040 locator discrepancy.
 2. Search Delft / Delfshaven records for another Aernout/Aernouldt de Hont entry that might reveal vessel ownership, age, home address, family or route.
 3. Search a route-specific sixteenth-century Delft–Zeeland voyage or freight account before assigning a travel-duration range.
 4. If a scene requires exact cask loading, find a vessel-and-beer metrology bridge rather than dividing vessel `last` by a modern litre estimate.
