@@ -28,7 +28,8 @@ Every numerical statement should carry, internally, at least:
 - commodity/service;
 - historical unit;
 - evidence grade;
-- whether the value is direct, derived, interpolated or proxy.
+- whether the value is direct, derived, interpolated or proxy;
+- payment type where relevant: `DAY_WAGE`, `PIECE_RATE`, `FREIGHT_TARIFF`, `CONTRACT_TOTAL`, `RETAINER`, `CREDIT/DEBT`, `TAX/IMPOST`, `PRICE`.
 
 ### Source priority
 
@@ -92,24 +93,73 @@ Claims: `SC.HIST.GOES.GRAIN_MEASURE.ACHTENDEEL.1572.001`, `SC.HIST.GOES.GRAIN_ME
 
 ---
 
-## 4. A hard later Goese grain-price anchor
+## 4. A direct Goese transport micro-tariff — 1544
 
-A Goese rye transaction dated **31 October 1595** is reported at:
+At the **1544 letting of the Goese schuitvlotten**, the transport charge described as `loon` for moving **one zeve grain** was fixed at **18 mijten**.
 
-- **14 schellingen 2 groten Vlaams = 170 groten per Goese sack**;
-- 37½ Goese sacks to the last in that transaction.
+For Goes / Zeeland Bewesten Schelde the `zeve` is reconstructed as:
 
-Derived, not source wording:
+- **4 sacks of grain or flour**.
 
-- 170 groten = **85 stuivers = 4 gulden 5 stuivers**.
+This is one of the strongest local Claes-period logistics anchors currently in the repository because date, place, commodity, unit and tariff type are all identifiable.
 
-This is useful as a late local check and for the 1594–1602 economic layer. It must **not** be back-projected as the rye price of 1554 or 1561.
+### Classification
+
+`18 mijten per zeve = FREIGHT / TRANSPORT TARIFF`
+
+It is **not**:
+
+- a day wage;
+- a porter day rate;
+- proof that one man performed the movement;
+- proof of how long the movement took;
+- proof that the same rate applied to beer, salt or other goods.
+
+The word `loon` in the source context therefore must not be normalized automatically to `dagloon`.
+
+Claim: `SC.HIST.GOES.GRAIN_TRANSPORT.SCHUITVLOTTEN.1544.001`.
+
+---
+
+## 5. Later Goese rye prices show intra-year movement — 1595
+
+The earlier shorthand in this dossier — one `1595 Goese rye price` — was too static. A direct cross-check of the local notarial transcription shows an **April/May/August sequence** that was attested later in 1595.
+
+Lowijs Serwouters Jacobsz, grain buyer in Goes, checked his book and recalled:
+
+- **April 1595:** one last `oosterschen rogghe` at **£26 Vlaams per last**;
+- **May 1595:** rye at **14 schellingen 2 groten per sack**, equivalent in the attestation to **£26 11 schellingen 3 groten per last**;
+- **around 17–18 August 1595:** one last rye at **£19 Vlaams per last**.
+
+Pieter Jansz van Oosten, poorter, schepen and grain buyer of Goes, corroborated the April/May prices.
+
+Primary route in the transcription: `RAZE 2040, fol. 109`, late October / early November 1595.
+
+### Important correction
+
+Boonman's metrological synthesis presents the 14s2g figure with a `31 October / fol. 110` locator. The fuller Levendale transcription shows that **14s2g is the May transaction remembered in the later attestation**, not a 31 October spot purchase.
+
+The repository therefore preserves the source discrepancy but uses the direct transaction chronology for authoring.
+
+### Narrative consequence
+
+Do not treat a commodity price as a fixed annual constant. Even inside one year, the Goese rye evidence shows substantial movement.
+
+Use this late-life evidence for:
+
+- market volatility;
+- timing of purchase;
+- stockholding decisions;
+- merchant memory/bookkeeping;
+- the difference between `what rye costs` and `what this rye cost when bought`.
+
+Never back-project any of these 1595 prices to 1554 or 1561.
 
 Claim: `SC.HIST.GOES.RYE_PRICE.1595.001`.
 
 ---
 
-## 5. Cornelis' professional economy — biersteker, not brewer
+## 6. Cornelis' professional economy — biersteker, not brewer
 
 **Canon rule:** Cornelis is a **biersteker / beer merchant-distributor**. He is not canonically a brewer, recipe-maker or owner of the documented Nissepad brewery.
 
@@ -120,22 +170,45 @@ Load together with:
 - `WORLD.BEER_BREWING_DISTRIBUTION`;
 - `PACK.BEER.GOES_BIERSTEKER`.
 
-### Safe Cornelis action chain
+### Safe professional chain
 
-`order/negotiate -> receive casks -> official/local measurement where applicable -> inspect condition/quantity -> record -> store -> arrange movement -> deliver/sell -> settle credit/account`
+A more complete author-side model is now:
 
-His material expertise is therefore strongest around:
+`outside/local brewer -> freight -> cask loss/recovery -> steker remuneration/margin -> receipt at quay/store -> official measurement where applicable -> carrier/handling -> buyer/tapper -> credit/account settlement`
+
+Not every transaction must contain every step, and the source does not prove that Cornelis personally performed all of them.
+
+His material expertise is strongest around:
 
 - cask count and condition;
-- leakage/loss;
+- empty-cask return and loss;
+- leakage;
+- freight and route;
 - storage;
-- route and carrier;
 - quantity and measure;
 - accounts and obligations;
 - buyer/supplier credit;
 - whether delivery matches paperwork or expectation.
 
 Do **not** move him into mash tun, hop recipe, fermentation control or brewhouse ownership unless a separate Story Decision explicitly does so.
+
+### Distribution-cost evidence from Zeeland, 1574
+
+In the 1574 Zeeuwse beer-impost dispute, source wording identifies three added cost classes for beer sold into Zeeland:
+
+- loss of casks;
+- freight (`vrachten`);
+- remuneration of the stekers (`het traictement van heure stekers`).
+
+Dirksen interprets the biersteker as a **Zeeuwse wholesale/distribution intermediary** who arranged distribution and received remuneration from the brewer.
+
+This is strong support for the **professional mechanism** behind Cornelis' established role.
+
+However, Dirksen then gives a worked example beginning `Stel dat`, using **10 stuivers per ton** for combined added costs. That number is hypothetical. It is **not** a historical steker fee or freight tariff and may never be used as one.
+
+Also: this 1574 evidence postdates Cornelis and belongs to a wartime fiscal context. Use it to understand the occupational mechanism, not to create a 1574 Cornelis transaction.
+
+Claim: `SC.HIST.ZEELAND.BEER.BIERSTEKER_DISTRIBUTION.1574.001`.
 
 ### Goese biermeter antecedent
 
@@ -150,7 +223,88 @@ Claim: `SC.HIST.GOES.BEER.MEASUREMENT_ANTECEDENT.001`.
 
 ---
 
-## 6. Salt economy around Claes' childhood
+## 7. Carrying was an institutional urban economy
+
+The official Goese craft-guild archive does not merely contain generic craft guilds. Its description identifies long-running occupational guilds for:
+
+- **bierdragers**;
+- **zakkedragers**.
+
+Their stated archival date ranges span Claes' lifetime.
+
+A Goese notarial record of **7 May 1591** additionally names two actual poorters:
+
+- Cornelis Jacobsen Schipper — `bierdrager en poorter`;
+- Adriaen Cornelis Faes — `schipper en bierdrager en poorter`.
+
+That means `bierdrager` is safe as a real Goese occupational identity, not an invented generic dock labourer.
+
+### Evidence boundary
+
+We still do **not** have a Claes-period carrier tariff from the guild archive.
+
+Do not infer from the occupational title:
+
+- a day wage;
+- a per-ton handling tariff;
+- guild monopoly/exclusivity;
+- number of carriers;
+- whether every beer movement had to use a guild bierdrager;
+- that `schipper` and `bierdrager` were mutually exclusive occupations.
+
+Claims: `SC.HIST.GOES.LABOUR.CARRIER_GUILDS.CLAES_PERIOD.001`, `SC.HIST.GOES.BEER.BIERDRAGERS.1591.001`.
+
+---
+
+## 8. Credit, debt and surety belong to ordinary economic life
+
+Cash payment at the instant of purchase should not dominate every scene.
+
+A Goese notarial record of **14 June 1585** has Jan Pauwelsz Cuijper formally acknowledge **17 pond groten Vlaams** owed to Franchois Hertsinck for accumulated `verteringen` in Hertsinck's inn. His person and goods were bound as security.
+
+Related material immediately afterwards concerns much larger fiscal debt, seizure and surety around an imposten-pachter from Nisse.
+
+This supports an ordinary transaction world of:
+
+`running account -> accumulated debt -> acknowledgement -> security/surety -> collection/enforcement`
+
+For authoring, that permits historically grounded situations such as:
+
+- a familiar customer being carried on account;
+- a merchant waiting for settlement;
+- a debt becoming formal only after it grows;
+- goods/person/property becoming security;
+- social trust turning into legal obligation.
+
+### Boundary
+
+The **17 pond** is accumulated debt. It is not the cost of one meal, one drinking session or one night in an inn.
+
+Claim: `SC.HIST.GOES.CREDIT.HOSPITALITY_DEBT.1585.001`.
+
+---
+
+## 9. Beer impost and biersteker must remain separate roles
+
+A March **1593** South-Beveland attestation gives a useful nearby mechanism:
+
+- Jan Jacobsz Bom appears as `impostmeester van de bieren` for the quarter of 's-Heer Hendrikskinderen, Wissenkerke and 's-Heer Arendskerke;
+- a separate transaction identifies Michiel Horen as `biersteker`, supplying five tons of `dobbelbier` for a wedding.
+
+This demonstrates that beer distribution and beer-impost administration could coexist as **different functions** in the same regional economy.
+
+It does **not** prove:
+
+- a city-Goes impost rate;
+- that the biersteker was always the statutory taxpayer;
+- that the five-ton wedding supply incurred a specific unquoted charge;
+- that 1593 rules can be moved back unchanged to Cornelis' 1540s–1560s trade.
+
+Claim: `SC.HIST.SOUTH_BEVELAND.BEER.IMPOST_BIERSTEKER.1593.001`.
+
+---
+
+## 10. Salt economy around Claes' childhood
 
 Salt is not decorative background in Goes. It is a major material and labour system.
 
@@ -174,7 +328,7 @@ For the Nissepat family, keep the separate story/fire canon intact: the 1554 fam
 
 ---
 
-## 7. Ordinary fiscal life existed before Alva
+## 11. Ordinary fiscal life existed before Alva
 
 Do not write the 1569 Tiende-Penning crisis as if early-modern Goese commerce had previously been tax-free.
 
@@ -194,9 +348,11 @@ The authoring question is therefore not `tax or no tax`, but:
 
 Exact pre-1572 Goese tariffs remain local-source questions and should not be imported from the 1734–1739 Goese economy page.
 
+The 1593 South-Beveland beer-impost evidence reinforces the institutional logic, but is not itself a 1550s Goese tariff.
+
 ---
 
-## 8. Historical measures are part of trust and conflict
+## 12. Historical measures are part of trust and conflict
 
 Measurement is civic authority, not merely arithmetic.
 
@@ -220,17 +376,30 @@ Do not turn that author-side resonance into a repeated explanatory slogan in pro
 
 ---
 
-## 9. The unresolved Goese wage series
+## 13. The unresolved Goese wage and carrier-tariff series
 
-The major numerical gap remains:
+The major numerical labour gap remains:
 
 > **the annual/periodic Goese civilian wage series ca. 1540–1602.**
 
-Published wage research cites Goese municipal accounts (`Rekeningen van de stad`, inventory range 783–959, plus municipal works/fabric accounts), but the individual Goese observations have not yet been extracted into this repository.
+The carrier research also leaves a narrower gap:
 
-Until they are:
+> **exact Claes-period bierdrager/zakkedrager handling tariffs and remuneration rules.**
+
+We now know that:
+
+- the carrier guilds existed in Goes;
+- named bierdragers occur in 1591;
+- a Goese grain-transport tariff exists in 1544;
+
+but those three facts are not interchangeable.
+
+Until direct account/ordinance entries are extracted:
 
 - do not state an Amsterdam, Haarlem, Antwerp or Bergen-op-Zoom wage as the Goese wage;
+- do not turn `18 mijten per zeve` into a porter day wage;
+- do not invent a beer-carrier tariff from the grain tariff;
+- do not infer a bierdrager tariff from a bierdrager occupational title;
 - regional figures may be used only as explicitly marked comparison ranges;
 - the 1546 salt piece rate remains piecework, not a substitute day wage;
 - military soldij is not a civilian wage.
@@ -239,38 +408,50 @@ Until they are:
 
 ---
 
-## 10. Scene-use matrix
+## 14. Scene-use matrix
 
 | Situation | Safe economic texture | Avoid |
 |---|---|---|
-| Household 1547–1554 | cask/food stock, small purchases, measured goods, credit, work rhythm | invented exact shopping basket |
-| Cornelis trade | receipt, quantity, leakage, storage, carrier, debt/account, official measure | brewing him personally |
-| Market/haven | mixed physical coins, account money, measures, fees, porters/carriers | one universal `gulden coin` |
+| Household 1547–1554 | cask/food stock, small purchases, measured goods, running credit, work rhythm | invented exact shopping basket |
+| Cornelis trade | receipt, freight, quantity, leakage, cask return/loss, storage, carrier, debt/account, official measure | brewing him personally; invented steker tariff |
+| Market/haven | bierdragers/zakkedragers as real occupations, mixed coins, measures, transport charges | converting occupation into unverified wage/rate |
+| Grain movement 1544 | `zeve`, sacks, schuitvlotten, 18-mijten transport tariff | calling 18 mijten a day wage or applying it to beer |
 | Salt world | piecework, pans/keten, heavy movement, heat, measures, risk | converting piece rate to day wage |
 | 1554 fire aftermath | destroyed stock/claims/tools/papers/income streams where canon supports | declaring all Nissepat economic capacity destroyed |
 | Reimerswaal transition | changed place measures/routes and cost of maintaining a pupil | assuming Goes prices transfer unchanged |
+| Late Goes 1585–1595 | running debt, formal acknowledgement/surety, volatile rye prices, merchant books | treating one debt as a retail price or one price as annual constant |
 
 ---
 
-## 11. Hard guardrails
+## 15. Hard guardrails
 
 1. Cornelis = biersteker/distributor, **not brewer**.
 2. The documented Nissepad brewery is not automatically Cornelis' property.
 3. Account unit ≠ physical coin.
 4. Coin name ≠ timeless stuiver value.
-5. `Viertel`, `achtendeel`, `hoed`, `last`, `ton`, `pond` etc. are place/time dependent.
+5. `Viertel`, `achtendeel`, `zeve`, `hoed`, `last`, `ton`, `pond` etc. are place/time dependent.
 6. Never convert the 1546 salt piece rate into a daily wage.
-7. Never use the 1595 rye price as a 1554 price.
-8. Never back-project 1730s Goese taxes/office practice as exact 1550s rules.
-9. No modern-euro equivalence as primary authoring logic.
-10. Missing Goese wages remain missing until extracted; do not hide the gap with a proxy.
+7. `18 mijten per zeve` in 1544 is a Goese grain-transport tariff, not a day wage and not a beer tariff.
+8. A `bierdrager` occupational identification proves no rate, day wage, monopoly or headcount.
+9. The May 1595 `14 schellingen 2 groten per sack` rye price is not an October spot price.
+10. Never use any 1595 rye price as a 1554 or 1561 price.
+11. Dirksen's `10 stuivers per ton` distribution-cost example begins `Stel dat`; it is **hypothetical**, never a historical tariff.
+12. The 1593 South-Beveland beer-impost evidence is not automatically a city-Goes tariff or a Claes-period rule.
+13. An accumulated tavern debt is not the unit price of a meal, drink or lodging.
+14. Never back-project 1730s Goese taxes/office practice as exact 1550s rules.
+15. No modern-euro equivalence as primary authoring logic.
+16. Missing Goese wages/carrier tariffs remain missing until extracted; do not hide the gap with a proxy.
 
 ---
 
-## 12. Linked evidence
+## 16. Linked evidence
 
 - `claims/SOURCE_CLAIMS_ECONOMY_2026-08-30.yaml`
+- `claims/SOURCE_CLAIMS_GOES_WAGES_2026-08-30.yaml`
 - `sources/SRC-SECONDARY-BOONMAN-METROLOGY-2015-001.md`
+- `sources/SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001.md`
+- `sources/SRC-SECONDARY-DIRKSEN-GEZAG-GELD-ZEELAND-2012-001.md`
+- `sources/SRC-ARCHIVE-GOES-AMBACHTSGILDEN-520-001.md`
 - `sources/SRC-HIST-BEER-LOWCOUNTRIES-GOES-001.md`
 - `sources/SRC-RESEARCH-GOES-SALTWORK-FIRE-1554-2026-08-21.md`
 - `storybible/domains/BEER_BREWING_BEERSTEKER_1540_1580.md`
