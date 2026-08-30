@@ -1,0 +1,41 @@
+schema_version: 1.0.0
+kind: SourceClaimRegistryExtension
+claims:
+- id: SC.HIST.LEVENDALE.PROTOCOLS.PRESERVED.1576_1606.001
+  type: SourceClaim
+  statement: >-
+    Erfgoed van Goes states that five protocols of notary Petrus Levendale survive for 1576–1606 under RAZE 2038–2042, while the public Harthoorn/Smallegange internet publication is a transcription/index layer; therefore the omitted conditions of the 2 May 1589 Horen–De Hont agreement remain a primary-folio retrieval target rather than being shown lost by the public extract.
+  claim_type: archival_provenance_and_retrieval_boundary
+  subject: Levendale_protocols
+  predicate: survive_in_Goes_archive_with_public_transcription_layer
+  object: RAZE_2038_2042
+  evidence_status: VERIFIED
+  source_ids: [SRC-OFFICIAL-ERFGOED-GOES-LEVENDALe-PROTOCOLS-1576-1606-001]
+  qualifications:
+  - "Preservation of the protocol family does not reveal the omitted folio 86 conditions; ownership, freight, commission, exclusivity and risk allocation remain OPEN until the folio is inspected."
+
+- id: SC.HIST.DELFT.SCHIE.DELFSHAVEN_DIRECT_WATER_LINK.001
+  type: SourceClaim
+  statement: >-
+    Delft had a direct water connection through the Delftse/Delfshavense Schie to its seaport at Delfshaven long before the late sixteenth century, providing a historically secure northern route segment for Delft-based cargo shipping.
+  claim_type: historical_transport_infrastructure
+  subject: Delft_water_transport
+  predicate: connected_by_Schie_to_Delfshaven_and_Maas_system
+  object: pre_1589_infrastructure
+  evidence_status: VERIFIED
+  source_ids: [SRC-OFFICIAL-ZH-SCHIE-DELFT-DELFSHAVEN-001]
+  qualifications:
+  - "This does not establish Aernouldt de Hont's personal itinerary, the exact estuary route onward to Goes, or a travel duration."
+
+- id: SC.HIST.SMALL_CARGO_SHIP.PHYSICAL_SCALE.1525_1600.001
+  type: SourceClaim
+  statement: >-
+    RCE-sponsored investigation of Hoornse Hop wreck 30426 identifies a small cargo vessel approximately 13 metres long and 4.5 metres wide whose construction falls in the period 1525–1600; remains of a forward cooking area were also found.
+  claim_type: historical_period_physical_vessel_analogue
+  subject: small_Dutch_cargo_vessel
+  predicate: period_physical_dimensions_and_onboard_working_space
+  object: 13m_by_4_5m_1525_1600
+  evidence_status: VERIFIED
+  source_ids: [SRC-RCE-HOORNSE-HOP-CARGO-SHIP-1525-1600-001]
+  qualifications:
+  - "C_PERIOD_PHYSICAL_ANALOGUE only: not Delft/Zeeland-specific and not evidence for De Hont's vessel type, dimensions, capacity, rig or crew."
