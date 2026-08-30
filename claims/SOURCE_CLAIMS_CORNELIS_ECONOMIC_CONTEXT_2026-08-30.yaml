@@ -1,0 +1,77 @@
+schema_version: 1.0.0
+kind: SourceClaimRegistryExtension
+claims:
+- id: SC.HIST.GOES.BIERSTEKER.SHIPPER_CONTRACT.1589.001
+  type: SourceClaim
+  statement: >-
+    A Goese notarial compilation records that in 1589 Michiel Michielsz Horen, a Goese biersteker, made a contract with Aernouldt de Hont, a schipper of Delft, concerning the transport of beer.
+  claim_type: historical_local_trade_relationship
+  subject: Goese_biersteker
+  predicate: contracts_with_external_shipper_for_beer_transport
+  object: Michiel_Horen_and_Aernouldt_de_Hont_1589
+  evidence_status: SUPPORTED
+  source_ids: [SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001]
+  verification:
+    status: secondary_transcription_with_primary_locator
+    note: >-
+      Primary locator in the compilation: RAZE 2040 fol. 86, 2 May 1589. This is a later analogue for mechanism only; it does not identify Cornelis' fictional preferred schipper or prove identical contractual rules in 1550.
+
+- id: SC.HIST.GOES.SALTWORK.PROFITABLE_ASSET_AND_SHIPPER_SALE.1594.001
+  type: SourceClaim
+  statement: >-
+    A Goese 1594 notarial episode describes salt production as a profitable and desirable business asset and records the sale of salt already present in a saltwork together with salt still to be produced to Dionijs Janss, a schipper from Dordrecht.
+  claim_type: historical_local_salt_economy
+  subject: Goese_saltwork
+  predicate: productive_asset_stock_and_future_output_enter_commercial_sale
+  object: salt_and_future_production_sold_to_schipper_1594
+  evidence_status: SUPPORTED
+  source_ids: [SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001]
+  verification:
+    status: secondary_transcription_with_primary_locator
+    note: >-
+      Primary locator in the compilation: RAZE 2039 fol. 466, 10 October 1594. This supports the economic mechanism of saltwork + inventory + future output + shipping buyer; it does not prove a 1554 Antwerp route for fictional Cornelis.
+
+- id: SC.HIST.GOES.BREWERY.CAPITAL_SCALE.1582.001
+  type: SourceClaim
+  statement: >-
+    In January 1582 Goese masons and carpenters attested that a brewery with what belonged to it was worth no more than 4,500 guilders; associated testimony refers to casks, bands, marks and leased brewery equipment.
+  claim_type: historical_local_capital_scale
+  subject: Goese_brewery
+  predicate: appraised_capital_scale
+  object: maximum_4500_guilders_1582
+  evidence_status: SUPPORTED
+  source_ids: [SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001]
+  verification:
+    status: secondary_transcription_with_primary_locators
+    note: >-
+      Primary locators in the compilation: RAZE 2038 fol. 101, 9 January 1582 and fol. 104, 14 January 1582. This is later context and not a direct 1554 valuation benchmark.
+
+- id: SC.HIST.ZEELAND.BIERSTEKER.COST_AND_CREDIT_MECHANISM.1574.001
+  type: SourceClaim
+  statement: >-
+    In the 1574 Zeeland beer-impost discussion, freight, cask loss and the remuneration of stekers are separate added costs in beer sold into Zeeland; the reconstruction treats the biersteker as a Zeeland wholesale/distribution intermediary compensated by the brewer.
+  claim_type: historical_trade_distribution_mechanism
+  subject: Zeeland_biersteker
+  predicate: operates_with_freight_cask_and_steker_costs
+  object: 1574_distribution_chain
+  evidence_status: SUPPORTED
+  source_ids: [SRC-SECONDARY-DIRKSEN-GEZAG-GELD-ZEELAND-2012-001]
+  verification:
+    status: quoted_source_wording_plus_secondary_interpretation
+    note: >-
+      Dirksen's subsequent 10-stuiver-per-ton calculation is explicitly hypothetical and is not a historical fee. This claim supports mechanism, not Cornelis' exact margins.
+
+- id: SC.HIST.GOES.BEER.MEASUREMENT_AND_CASK_MARKET.ANTECEDENT.001
+  type: SourceClaim
+  statement: >-
+    Goese regulations before Claes' lifetime required beer stored in the city to be measured when carried from the quay and barred poorters from selling before measurement by the sworn biermeter; beer was traded in whole and half tons and meetgeld applied to poorters.
+  claim_type: historical_local_trade_institution
+  subject: Goese_beer_market
+  predicate: official_measurement_and_cask_control
+  object: late_fifteenth_to_early_sixteenth_century_antecedent
+  evidence_status: SUPPORTED
+  source_ids: [SRC-SECONDARY-BOONMAN-METROLOGY-2015-001]
+  verification:
+    status: local_antecedent
+    note: >-
+      Supports the institutional setting for Cornelis' trade; exact 1542-1569 tariff and ordinance wording remain open.
