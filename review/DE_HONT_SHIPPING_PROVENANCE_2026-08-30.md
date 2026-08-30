@@ -77,7 +77,7 @@ This proves that a single regional beer movement in the **dozens of tons/casks**
 
 It does not prove De Hont's capacity.
 
-For research visualization only, Alberts reports a Holland beer ton around 1590 of about 154 L. Mechanical multiplication would place 52 Holland-scale tons around 8,008 L. But the same study says the Delft beer ton was smaller than the Amsterdam beer ton in 1578, so the litre result is not an exact conversion for Delft/Goese cargo.
+For research visualization only, Alberts reports a Holland beer ton around 1590 of about 154 L. Mechanical multiplication would place 52 Holland-scale tons around 8,008 L. But the same study says the Delft beer ton was smaller than the Amsterdam ton in 1578, so the litre result is not an exact conversion for Delft/Goese cargo.
 
 Authoring rule: retain `tonnen bier` in prose/research claims; use litre estimates only to help visualize mass and space.
 
@@ -136,4 +136,4 @@ This gives De Hont material reality without false precision.
 
 ## Validation
 
-After the semantic harmonization pass, the Claes canon repository validation completed successfully in **workflow run 415**. The PR remains draft and unmerged for author review.
+After the semantic harmonization pass, the Claes canon repository validation completed successfully. PR #22 remains draft and unmerged for author review.
