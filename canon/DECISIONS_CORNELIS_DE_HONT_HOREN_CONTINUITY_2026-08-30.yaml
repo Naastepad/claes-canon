@@ -1,0 +1,52 @@
+schema_version: 1.0.0
+kind: CanonDecisionRegistryExtension
+decisions:
+- id: DEC.CORNELIS.PREFERRED_SHIPPER.AERNOULDT_DE_HONT.2026-08-30
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    Aernouldt de Hont, historically documented in 1589 as a schipper of Delft who brought beer to Goes under contract with the Goese biersteker Michiel Michielsz Horen, is used in novel canon as Cornelis' recurring trusted/preferred schipper before Cornelis' death in 1569. He can carry or coordinate ordinary commercial traffic linking Delft, Goes/Zeeland and, where the story requires, Antwerp. Cornelis does not need to own a ship.
+  affects:
+  - ENT.PERSON.CORNELIS
+  - WORLD.BEER_BREWING_DISTRIBUTION
+  - WORLD.GOES_ECONOMY_1542_1572
+  rationale: >-
+    The historical 1589 contract provides a concrete named schipper-biersteker mechanism in Goes. Reusing De Hont earlier gives continuity to Cornelis' legitimate trade infrastructure and creates a historically anchored route that can survive Cornelis himself.
+  historical_boundary:
+  - Historical fact: on 2 May 1589 Aernouldt de Hont is called schipper van Delft and contracts with Goese biersteker Michiel Michielsz Horen concerning beers De Hont will bring to Goes.
+  - Historical fact does not currently establish De Hont's age, career start, presence in Goes before 1589, Antwerp voyages, or a relationship with any Nissepat.
+  - His pre-1569 service to fictional Cornelis is therefore an explicit novel backprojection, not archival fact.
+  authoring_rule: >-
+    De Hont is primarily the continuity carrier: the man who knows the routes, freight practice, recipients and commercial habits before and after Cornelis. Do not invent a precise birth year, vessel name, fixed sailing timetable or ownership structure until separately researched.
+
+- id: DEC.CORNELIS.TRADE_SUCCESSION.MICHIEL_HOREN.2026-08-30
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    Cornelis' death in 1569 does not make his beer-distribution network disappear. In novel canon, part of the surviving commercial line is eventually absorbed or continued by Michiel Michielsz Horen, who later becomes a Goese biersteker. The continuity is carried especially through Aernouldt de Hont and the established shipping/distribution corridor. By 1589 the historically documented Horen-De Hont biersteker-schipper contract functions as the visible archival endpoint of this fictional business succession.
+  affects:
+  - ENT.PERSON.CORNELIS
+  - WORLD.BEER_BREWING_DISTRIBUTION
+  - WORLD.GOES_ECONOMY_1542_1572
+  rationale: >-
+    This turns the real 1589 contract into a meaningful afterlife of Cornelis' trade rather than an unrelated late-century analogue. It also allows economic continuity across Cornelis' death, war disruption and changing merchants without inventing a surviving Cornelis enterprise under his own name.
+  historical_boundary:
+  - Michiel Horen is historically documented as having lived formerly in Aardenburg and as a Goese poorter by 1588; in 1589 he is documented as a biersteker contracting with Aernouldt de Hont.
+  - Current evidence does not place Horen in Goes in 1569 and does not prove that he purchased, inherited or directly succeeded a Nissepat business.
+  - Therefore the succession is gradual/fictional and must not be written as a documented immediate transfer at Cornelis' death.
+  authoring_rule: >-
+    Prefer a discontinuous succession: after 1569 accounts, customers, cask relations and route knowledge can fragment through family, creditors and wartime disruption; Horen later consolidates or takes over part of that surviving trade. De Hont supplies the human continuity between the two eras.
+
+- id: DEC.CORNELIS.DE_HONT.ROUTE_SCOPE.2026-08-30
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    For story purposes De Hont may serve both the beer-distribution side and selected salt/export movements, including Antwerp, but the exact routing is transaction-specific. Delft-Goes beer carriage is historically attested only in 1589; Antwerp carriage and pre-1569 Nissepat traffic are fictional extensions constrained by normal maritime commerce.
+  affects:
+  - ENT.PERSON.CORNELIS
+  - WORLD.BEER_BREWING_DISTRIBUTION
+  - WORLD.GOES_ECONOMY_1542_1572
+  guardrails:
+  - Do not describe Delft-Goes-Antwerp as a fixed scheduled line without evidence.
+  - Do not imply every beer load or every salt consignment used De Hont.
+  - Do not turn De Hont into a clandestine bookseller by occupation; sensitive cargo through his route requires separate plot authorization.
