@@ -4,129 +4,131 @@
 **PR:** #22 — `Add Goes economic baseline and war-economy resolver`  
 **Resolver gap:** `GAP.ECON.GOES.WAGES.1540_1602`
 
-## Result of this pass
+## Result
 
-The search for a genuinely **Goese** wage anchor has progressed, but it also produced an important correction.
+The search for a genuinely **Goese** wage anchor has produced a reliable local extraction route, but still no defensible exact Goese civil day wage for 1540–1602. The gap therefore remains open rather than being filled with a regional estimate.
 
-Jan de Vries' labour-market chapter explicitly includes **Goes** among the western-Netherlands locations underlying its wage tables and gives the Goese source base as:
+## 1. De Vries — useful provenance, wrong to treat as Claes-period coverage without dating
+
+Jan de Vries explicitly includes **Goes** among the western-Netherlands wage locations and cites:
 
 > `G.A. Goes, Rekeningen van de stad, no. 783-959; rekeningen stadsfabriek, no. 1813-14, 1793-97.`
 
-However, a separate Zeeland repertory cites **GA Goes, Stad Goes, inv.nr. 784, fol. 25r** for an event in **1627**. Therefore the De Vries range cannot be assumed to be a Claes-period (1540-1602) account series. The earlier project wording that these inventory ranges were already a direct route to Claes-period numerical wages was too strong and has been corrected.
+An independent source, however, cites `Stad Goes, inv.nr. 784` for **1627**. Inventory number is therefore not a proxy for Claes-period chronology. De Vries proves Goese wage material existed in his compilation; his cited range may not be described as a 1540–1602 series until its dates are mapped.
 
-This evidence state is recorded in:
-
+Recorded in:
 - `sources/SRC-SECONDARY-DEVRIES-LABOUR-MARKET-GOES-WAGES-001.md`;
 - `claims/SOURCE_CLAIMS_GOES_WAGES_2026-08-30.yaml`.
 
-## What is verified
+## 2. Official current guild archive access
 
-- Goes is not merely inferred from a Holland or Zeeland average; De Vries explicitly uses Goese municipal material in his western wage compilation.
-- The archive references he used are known.
-- At least one inventory number at the start of the cited range, inv.nr. 784, is independently tied to 1627.
-- Therefore the **chronological coverage of De Vries' Goese series must be established before it can be used for Claes**.
+GOES Publiek now supplies the current official access:
 
-## New pre-1602 local route
+- **archive:** `520 Ambachtsgilden Goes en schuttersgilden "De Edele Busse" en "De Edele Voetboog"`;
+- **access:** `NL-GsGA-16.1-520`;
+- **date range:** 1429–1798;
+- **accessibility:** fully public.
 
-The source search has now located archive families that demonstrably begin **inside Claes' lifetime**.
+The official description identifies the timmerliedengilde among the principal Goese guilds and lists its craft scope: timmerlieden, scheepstimmerlieden, stoeldraaiers, wagenmakers, schrijnwerkers, kuipers, metselaars, mandenmakers, strodekkers and schaliedekkers. It also notes separate craft representatives such as a metselaarsdeken and that guild officers inspected work, workshops and knecht numbers.
 
-A nineteenth-century inventory of Goese guild papers reports for the **timmerliedengilde**:
+Source:
+- `sources/SRC-ARCHIVE-GOES-AMBACHTSGILDEN-520-001.md`.
 
-- account books **1547-1798**;
-- resolutions **1586-1798**;
-- an ordinance book covering timmerlieden and related crafts including kuipers, stoeldraaiers, wannemakers, mandenmakers, wagenmakers and metselaars.
+## 3. The pre-1602 account-book route is real
 
-This is now the best dated local account-book route for the 1540s onward. Its existence does **not** prove that it contains day wages; gilde accounts can instead contain fees, fines, meals, property expenses, loans, ceremonial expenditure and other transactions.
+A historical inventory of the Goese guild archive reports for the **timmerliedengilde**:
 
-The official Stad Goes archive description independently confirms the institutional route on the municipal side: finances were administered by annually elected rentmeesters from 1438, while public property/works were supervised through stadsdirecteuren and a stadsfabriek. Exact surviving pre-1602 payment volumes still need identification.
+- account books **1547–1798**;
+- resolutions **1586–1798**;
+- an ordinance book covering timmerlieden and related crafts including metselaars and kuipers.
 
-These routes are documented in:
+The official access 520 confirms that this guild archive is extant and public. The historical inventory supplies the explicit 1547 account-book start date.
 
-- `sources/SRC-RESEARCH-GOES-LABOUR-ARCHIVE-PRE1602-2026-08-30.md`;
-- `claims/SOURCE_CLAIMS_GOES_WAGES_2026-08-30.yaml`.
+What is still missing is the **current placement-list item/inventory number for the earliest 1547 volume**. The searchable official archive description does not expose that item number. It is therefore left OPEN rather than guessed.
 
-## Named extraction target: Anthonis Claesz
+Sources:
+- `sources/SRC-PUBLIC-GOES-GUILD-ARCHIVE-INVENTORY-1829-001.md`;
+- `sources/SRC-ARCHIVE-GOES-AMBACHTSGILDEN-520-001.md`;
+- `sources/SRC-RESEARCH-GOES-LABOUR-ARCHIVE-PRE1602-2026-08-30.md`.
 
-The user's local archival compilation `Levendale.pdf` identifies **Anthonis Claesz / Anthonis Claiszoon** as Goese **stadtimmerman**, with weeskamer-related references in 1567, 1580 and 1590. That makes him a particularly useful name target when pre-1602 city accounts, public-works records or acquittances are located.
+## 4. Municipal public-works route
 
-The evidence does **not** tell us how he was remunerated. `stadtimmerman` might involve day work, an annual retainer, project payment, materials plus labour, or a mixed arrangement. No number may be inferred from the title.
+The official Stad Goes archive description states that finances were administered by annually elected rentmeesters from 1438, while public property and works were supervised by stadsdirecteuren with a stadsfabriek for daily management.
 
-Source record:
+This establishes the right institutional source family for public labour payments, but not a surviving continuous pre-1602 wage series.
 
+Source:
+- `sources/SRC-ARCHIVE-GOES-STAD-001.md`.
+
+## 5. Named extraction target — Anthonis Claesz
+
+The local archival compilation `Levendale.pdf` identifies **Anthonis Claesz / Anthonis Claiszoon** as Goese **stadtimmerman**, with weeskamer-related references in **1567, 1580 and 1590**.
+
+He is therefore a high-value name target when the pre-1602 municipal payment records are reached.
+
+This evidence does **not** establish how he was paid. `stadtimmerman` can denote an office/role without telling us whether payment was a retainer, day rate, project sum, materials-plus-labour arrangement or combination.
+
+Source:
 - `sources/SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001.md`.
 
-## What is still NOT verified
+## 6. What is not a day wage
 
-The project still does **not** possess a defensible statement such as:
+The consulted Goese notarial material contains useful construction economics — named timmerlieden and metselaars, building contracts, arbitrations and valuations — but these payment types remain separate:
 
-> `a Goese skilled labourer earned X stuivers per day in year Y between 1540 and 1602`.
+- `DAY_WAGE`
+- `PIECE_RATE`
+- `CONTRACT_TOTAL`
+- `RETAINER`
+- `MATERIALS_PLUS_LABOUR`
+- `VALUATION`
+- `UNKNOWN`
 
-No exact Goese value may be generated from regional averaging, interpolation or narrative convenience.
+A lump-sum contract may never be divided by guessed working days to manufacture a historical day wage.
 
-`GAP.ECON.GOES.WAGES.1540_1602` therefore remains **OPEN / HIGH PRIORITY**.
+## 7. Regional comparators — calibration only
 
-## Mid-sixteenth-century regional comparators
+De Vries gives direct 1550–1554 construction/manual-labour comparators:
 
-De Vries' Table 1 gives direct 1550-1554 construction-wage observations in other cities. Two useful comparators are:
-
-| Place | Skilled construction labour | Unskilled labour | Use |
+| Place | Skilled | Unskilled | Status |
 | --- | ---: | ---: | --- |
-| Bergen op Zoom | 5.5-6 stuivers/day | 3-4 stuivers/day | `C_REGIONAL_PROXY` |
-| Antwerp | 9 stuivers/day | 4 stuivers/day | `C_REGIONAL_PROXY` |
+| Bergen op Zoom | 5.5–6 st./day | 3–4 st./day | `C_REGIONAL_PROXY` |
+| Antwerp | 9 st./day | 4 st./day | `C_REGIONAL_PROXY` |
 
-These data are useful because they bracket plausible orders of magnitude in Claes' youth and demonstrate substantial city-to-city variation. They are **not** a reconstructed Goes range.
+A separate cultural-history study gives around 1550 a Holland summer wage for a timmerman/metselaar of roughly 7–8 stuivers/day and Haarlem 9–10; again this is contextual comparison, not Goes.
 
-## Post-1570 regional comparator boundary
+These figures may be used to reject implausible reconstructions. They may not be averaged into a synthetic `Goes = X`.
 
-De Vries gives detailed nominal-wage steps for the Rijnland drainage works at Spaarndam/Halfweg. Craftsmen rise from 7 stuivers through 1565 to 9 in 1565, 12 (sometimes 15) in 1578, 14 in 1589, 16 in 1590 and 18 in 1593. Unskilled labour rises from 5 to 6 in 1565, to 9 by 1583 and eventually 14 by 1606.
+## 8. Extraction protocol
 
-These figures document the scale and chronology of western-Netherlands wage acceleration. They remain **regional comparator evidence**, never substituted Goese values.
+Next direct archival pass:
 
-## Construction-payment boundary
+1. identify the current placement-list item for the timmerliedengilde account book beginning 1547 inside `NL-GsGA-16.1-520`;
+2. identify dated pre-1602 rentmeester/public-works payment volumes inside `NL-GsGA-1.1-001`;
+3. search `Anthonis Claesz`, `Anthonis Claiszoon`, `stadtimmerman`, `timmerman`, `metselaer`, `knecht`, `arbeider`, `loon`, `daggeld`, `dachgelt`, `sdaechs`, `betaelt`, `dagen` and task vocabulary;
+4. transcribe the raw entry before normalization;
+5. record exact date/account year, access, inventory/item, folio, occupation, task, number of days, amount/unit and in-kind components;
+6. classify payment form;
+7. only promote a value to `A_DIRECT` when the source actually supports the daily rate.
 
-Late-sixteenth-century Goese notarial material already gives us useful construction economics — named timmerlieden and metselaars, valuations, building disputes and lump-sum contracts. These are useful for contract scale and craft practice, but a total contract sum is **not** a day wage unless the source supplies labour time/rate.
+## 9. Current state of the gap
 
-No project calculation may divide a lump sum by guessed working days and call the result a historical wage.
+`GAP.ECON.GOES.WAGES.1540_1602 = OPEN / HIGH`
 
-## Historical interpretation guardrails
+This is now a **source-access gap**, not a methodological gap. We know where the local evidence should be sought; the remaining work is item-level archival extraction.
 
-1. Daily wage is not annual household income.
-2. Nominal wage is not real wage or purchasing power.
-3. A quoted day rate does not establish how many paid days a worker obtained.
-4. Skilled, unskilled, seasonal, public-works and specialist rates must remain distinct.
-5. In-kind food, drink, lodging or other allowances must not be silently converted into cash or ignored when a source specifies them.
-6. The strong post-1570 regional wage movement cannot be projected backwards into Claes' 1540s-1550s youth.
-7. A cited archive inventory range is not a date range; inventory-number chronology must be verified independently.
-8. Account-book survival is not the same thing as a wage series.
-9. `stadtimmerman` is an occupational/office identification, not a wage formula.
-10. Lump-sum contract, piece rate, valuation and day wage remain separate evidence types.
+## 10. Validation
 
-## Next extraction target — corrected
+The original PR CI failure was only a YAML list/mapping syntax error and was repaired in commit `d066a842e84ef67b5e24ad0f84859726376de477`.
 
-Preferred order now is:
-
-1. locate the **1547 onward timmerliedengilde account volume(s)** and obtain their current GAG inventory identifiers/scans;
-2. identify dated pre-1602 rentmeester/stadswerken/stadsfabriek payment records in `NL-GsGA-1.1-001`;
-3. search specifically for **Anthonis Claesz / Claiszoon**, `stadtimmerman`, and variants alongside `loon`, `daggeld`, `dachgelt`, `betaelt`, `dagen` and public-work terminology;
-4. extract occupation/task, number of days, amount, money unit and any in-kind component exactly as written;
-5. retain raw transcription before normalization;
-6. classify payment form (`DAY_WAGE`, `PIECE_RATE`, `CONTRACT_TOTAL`, `RETAINER`, `MATERIALS_PLUS_LABOUR`, `UNKNOWN`);
-7. only then construct direct Goese skilled/unskilled anchors or a series.
-
-Recovering the original numeric De Vries Table 2 remains useful for later Goese wage history, but it is no longer treated as sufficient for the Claes-period gap until its local chronology is proven.
-
-## HPW / `brenv.xls` parallel lead
-
-The old IISH Historical Prices and Wages file `brenv.xls` is repeatedly cited in academic literature as Jan Luiten van Zanden's dataset *Prices and Wages and the Cost of Living in the Western Part of the Netherlands, 1450-1800*. The modern IISH HPW archive preserves legacy website files and a separate provenance CSV copied from the old HPW site.
-
-The old `brenv.xls` mapping has not yet been recovered from the provenance CSV in this pass. Until the actual file, variables and place provenance are identified, values attributed to that workbook remain a research lead rather than a Goese fact layer.
-
-## Validation
-
-The initial PR validator failure was a YAML list/mapping syntax error in `narrative/economic_state_resolver.yaml`, not a historical/canon conflict. It was repaired in commit `d066a842e84ef67b5e24ad0f84859726376de477`.
-
-Validation passed repeatedly after the correction; workflow run **357** passed on the branch after addition of the dedicated pre-1602 archive-route dossier. The Source Claim / named-target additions made after that run must receive their own final CI pass before merge review.
+The branch has subsequently passed repository validation repeatedly. Workflow run **363** passed after grounding the pre-1602 labour-source claims in direct public source records. A final CI check is still required after any later commit before merge review.
 
 ## Merge boundary
 
-This handoff does not resolve `OPEN.GOES.CLAES_DEPARTURE_1572_1579.001`, does not assign an exact Goese day wage, does not claim that De Vries' cited Goese accounts cover Claes' years, and does not convert regional wage series, guild accounts or contract totals into local day-wage observations.
+This handoff:
+
+- does not assign an exact Goese day wage;
+- does not treat account-book survival as a wage observation;
+- does not treat De Vries' inventory range as Claes-period without dated mapping;
+- does not convert regional comparators to Goes;
+- does not resolve `OPEN.GOES.CLAES_DEPARTURE_1572_1579.001`;
+- does not infer any Nissepat property loss, confiscation or transaction.
