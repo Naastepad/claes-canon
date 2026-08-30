@@ -28,7 +28,16 @@ The currently accessible text transcription preserves the **source list** for Ta
 
 It does **not yet establish an exact Goese daily wage for a specific year** in the Claes period. Those values must be recovered from the original table image/data file or re-extracted from the cited Goese accounts.
 
-## Regional comparator — not a Goes value
+## Mid-sixteenth-century regional comparator — not a Goes value
+
+De Vries' Table 1 provides direct day-wage observations for 1550–1554 in a number of other cities. Two particularly relevant comparators are:
+
+- **Bergen op Zoom:** skilled construction labour 5.5–6 stuivers/day; unskilled labour 3–4 stuivers/day;
+- **Antwerp:** skilled construction labour 9 stuivers/day; unskilled labour 4 stuivers/day.
+
+These figures are valuable as bounded regional/commercial comparators during Claes' youth. They show why a single generic `Netherlands wage` is unsafe: even within the same period the skilled rate differs substantially by city. They must remain **C_REGIONAL_PROXY**, not reconstructed Goese observations.
+
+## Post-1570 regional comparator — not a Goes value
 
 De Vries gives detailed wage steps for the Rijnland drainage works at Spaarndam/Halfweg: craftsmen move from 7 stuivers before 1565 to 9 in 1565, 12 (occasionally 15) in 1578, 14 in 1589, 16 in 1590 and 18 in 1593; unskilled wages move from 5 to 6 in 1565, to 9 by 1583 and eventually 14 by 1606. These observations demonstrate the broader western-Netherlands wage acceleration but must remain **regional comparator evidence**, never a substituted Goese series.
 
@@ -41,8 +50,9 @@ The chapter also cautions that before the Revolt nominal wages were sticky and t
 
 ## Writing / resolver guardrails
 
-1. Do not label Spaarndam/Halfweg, Holland-wide or western-Netherlands numbers as `Goes`.
+1. Do not label Bergen op Zoom, Antwerp, Spaarndam/Halfweg, Holland-wide or western-Netherlands numbers as `Goes`.
 2. Do not derive a precise Goese wage merely from De Vries' statement that western urban/rural wage levels were broadly integrated.
 3. Treat the listed G.A. Goes inventory ranges as **provenance for targeted extraction**, not as already extracted numeric observations.
 4. Daily wage is not annual earnings; working days, seasonality, employment continuity and in-kind elements matter.
-5. Until the numerical Goese observations are recovered, keep `GAP.ECON.GOES.WAGES.1540_1602` open.
+5. Use the 1550–1554 comparator values only as a plausibility range/check after preserving their city and skill class.
+6. Until the numerical Goese observations are recovered, keep `GAP.ECON.GOES.WAGES.1540_1602` open.
