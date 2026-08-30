@@ -85,7 +85,7 @@ source_priority:
   - rank: 4
     grade: D_CONTEXT_ONLY
     definition: "broader Low Countries/Holland/Brabant context; order-of-magnitude or mechanism only"
-  rule: "Never silently promote C or D to a local factual value."
+  - rule: "Never silently promote C or D to a local factual value."
 
 baseline_states:
   - id: ECON.BASE.GOES.1542_1572
