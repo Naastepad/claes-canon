@@ -53,6 +53,19 @@ claims:
       status: official_archive_description
       note: "This establishes where public expenditure was administered, not a continuous surviving wage series or a numeric wage."
 
+  - id: SC.HIST.GOES.LABOUR.GUILD_ARCHIVE_ACCESS_520.001
+    type: SourceClaim
+    statement: "GOES Publiek identifies the public archive access NL-GsGA-16.1-520 for the Goese ambachtsgilden and schuttersgilden, dated 1429-1798, and lists the timmerliedengilde as a principal guild containing timmerlieden, scheepstimmerlieden, stoeldraaiers, wagenmakers, schrijnwerkers, kuipers, metselaars, mandenmakers, strodekkers and schaliedekkers."
+    claim_type: official_archive_access
+    subject: "Goese timmerliedengilde archive"
+    predicate: "current archival access and craft scope"
+    object: "NL-GsGA-16.1-520; 1429-1798; fully public"
+    evidence_status: VERIFIED
+    source_ids: [SRC-ARCHIVE-GOES-AMBACHTSGILDEN-520-001]
+    verification:
+      status: official_archive_description
+      note: "The online description verifies the access and guild composition; the current placement-list item number of the earliest 1547 account book remains unidentified."
+
   - id: SC.HIST.GOES.LABOUR.TIMMERGUILD_ACCOUNTS.1547_1798.001
     type: SourceClaim
     statement: "A historical inventory of the surviving Goese guild archives reports account books of the timmerliedengilde spanning 1547-1798 and resolutions spanning 1586-1798; the guild ordinance book covered timmerlieden, kuipers, stoeldraaiers, wannemakers, mandenmakers, wagenmakers and metselaars."
@@ -61,10 +74,10 @@ claims:
     predicate: "surviving account/resolution coverage"
     object: "account books 1547-1798; resolutions 1586-1798"
     evidence_status: VERIFIED
-    source_ids: [SRC-PUBLIC-GOES-GUILD-ARCHIVE-INVENTORY-1829-001]
+    source_ids: [SRC-PUBLIC-GOES-GUILD-ARCHIVE-INVENTORY-1829-001, SRC-ARCHIVE-GOES-AMBACHTSGILDEN-520-001]
     verification:
-      status: public_historical_inventory_transcription
-      note: "This proves a pre-1602 extraction route, not that the account books contain day-wage entries."
+      status: historical_inventory_plus_current_official_access
+      note: "The 1829 inventory provides the 1547 account-book start date; access 520 verifies the current public archive context. This still does not establish that the books contain day-wage entries."
 
   - id: SC.HIST.GOES.LABOUR.STADTIMMERMAN.ANTHONIS_CLAESZ.1567_1590.001
     type: SourceClaim
