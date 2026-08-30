@@ -26,6 +26,49 @@ The compilation transcribes `RAZE 2039, fol. 219, 7-5-1591`, naming two Goese po
 
 This is direct local evidence that beer carrying was an identifiable occupation in Goes in 1591. It does **not** establish the carrier tariff, a daily wage, monopoly/exclusivity, headcount or the precise guild rules then in force.
 
+## Goese beer freight — 52 tons in one consignment, 1589
+
+`RAZE 2039, fol. 80, 11-4-1589` records the testimony of **Jan de Wulf, schipper and poorter of Goes**, about a freight movement approximately one month earlier. At the head of Goes he took over **52 tons of English beer** from the vessel of Garnaerdt, a skipper of Veere, in order to carry them to Zierikzee. The beer was subsequently sold there.
+
+This is unusually useful direct local scale evidence:
+
+`incoming ship -> transshipment at Goes -> 52 beer tons -> Goese skipper -> Zierikzee -> sale`
+
+### Capacity boundary
+
+The 52-ton consignment proves that a beer shipment in the **tens of barrels** was operationally real in this exact regional world in 1589. It does **not** prove:
+
+- that Jan de Wulf's ship could carry no more or no less than 52 tons;
+- that Aernouldt de Hont used the same vessel type or capacity;
+- that a `ton` here can be assigned an exact litre value without metrological qualification;
+- that every beer movement involved a cargo of this size.
+
+Use 52 tons as a **regional cargo-scale comparator**, never as De Hont's recovered capacity.
+
+## Horen–De Hont biersteker agreement — corrected reading, 1589
+
+`RAZE 2039, fol. 86, 2-5-1589` records a `contract ende accoord van een biersteecker` between **Michiel Michielsz Horen, poorter of Goes**, and **Aernouldt de Hont, schipper van Delft**.
+
+The crucial commercial direction is that the parties agreed that **Michiel would be the biersteker for such beers as Aernouldt would bring to Goes**, subject to conditions not reproduced in the extract.
+
+This is more precise than describing the act as Horen hiring De Hont to transport Horen's beer. The extract establishes:
+
+`Aernouldt brings beer to Goes -> Michiel serves as biersteker for that beer`
+
+It does **not** establish from the surviving extract:
+
+- who owned the beer before arrival;
+- which Delft brewer or supplier stood behind it;
+- whether Horen bought the beer outright, sold on commission, or worked under another arrangement;
+- who paid freight;
+- who bore leakage, spoilage, weather or cask-loss risk;
+- exclusivity or minimum quantities;
+- a freight rate or biersteker commission.
+
+The omitted `voorwaarden` make these questions a target for the underlying folio rather than a license to reconstruct modern contract terms.
+
+The act was made in the Goes inn `die Meerminne`. Two witnesses are described as born in Reimerswaal and then resident in Goes, adding a useful local social-network detail without changing the commercial interpretation.
+
 ## South-Beveland beer impost and biersteker — 1593
 
 A March 1593 attestation concerns Jan Jacobsz Bom as **impostmeester van de bieren** for the quarter of 's-Heer Hendrikskinderen, Wissenkerke and 's-Heer Arendskerke for the half-year ending at the end of March 1593. The same evidence names Michiel Horen as **biersteker** and states that Cornelis Dignusz obtained five tons of `dobbelbier` for a wedding through him.
@@ -76,7 +119,7 @@ The case concerns four barrels of imported `Aberdaens` fish brought to the Goese
 
 This gives a dense local market mechanism:
 
-`imported preserved food -> auction/market -> sworn inspection -> specialist sensory expertise -> spoilage finding -> documentary evidence -> attempted rescission/recovery`.
+`imported preserved food -> auction/market -> sworn inspection -> specialist sensory expertise -> spoilage finding -> documentary evidence -> attempted rescission/recovery`
 
 ### Identity boundary
 
@@ -142,11 +185,14 @@ These demonstrate active local craft/contract practice but are **contract/valuat
 3. Do not convert a lump-sum contract or valuation into a daily wage.
 4. Keep `stadtimmerman` remuneration form OPEN until the payment record says otherwise.
 5. `Bierdrager` proves an occupation, not a known tariff or day wage.
-6. Keep the 1593 quarter-level South-Beveland beer-impost evidence distinct from a city-Goes tax rule.
-7. Treat the 1595 rye evidence as an April/May/August price sequence attested later in the year; never relabel the May 14s2g price as an October spot price.
-8. A debt acknowledgement is not a retail price list.
-9. A six-schelling Spanish-leather shoe settlement is an in-kind payment/object valuation, not a generic shoe price.
-10. A 4-stuiver-per-pound butter figure in a sterfhuis inventory is an estate takeover valuation, not automatically a retail market price.
-11. The 1598 meat-impost record identifies an attested tax point, not a rate.
-12. A same-name Nissepadt reference must not be entity-merged without independent identity evidence.
-13. South-Beveland dike-provisioning aggregate debts do not yield unit food prices and are not Goes observations.
+6. The 1589 Horen–De Hont act makes Horen biersteker of beers De Hont brings to Goes; do not reverse this into a proven Horen-as-cargo-owner / De-Hont-as-hired-carrier relationship.
+7. The omitted 1589 `voorwaarden` leave ownership, commission, freight rate and risk allocation OPEN.
+8. Treat the 52-ton 1589 English-beer movement as a regional cargo-scale comparator, not as De Hont's vessel capacity.
+9. Keep the 1593 quarter-level South-Beveland beer-impost evidence distinct from a city-Goes tax rule.
+10. Treat the 1595 rye evidence as an April/May/August price sequence attested later in the year; never relabel the May 14s2g price as an October spot price.
+11. A debt acknowledgement is not a retail price list.
+12. A six-schelling Spanish-leather shoe settlement is an in-kind payment/object valuation, not a generic shoe price.
+13. A 4-stuiver-per-pound butter figure in a sterfhuis inventory is an estate takeover valuation, not automatically a retail market price.
+14. The 1598 meat-impost record identifies an attested tax point, not a rate.
+15. A same-name Nissepadt reference must not be entity-merged without independent identity evidence.
+16. South-Beveland dike-provisioning aggregate debts do not yield unit food prices and are not Goes observations.
