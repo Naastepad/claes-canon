@@ -10,7 +10,11 @@ purpose: >-
 
 authority_boundary:
   evidence_registry: claims/SOURCE_CLAIMS_ECONOMY_2026-08-30.yaml
+  supplemental_evidence_registries:
+    - claims/SOURCE_CLAIMS_GOES_WAGES_2026-08-30.yaml
+    - claims/SOURCE_CLAIMS_GOES_MARKET_HOUSEHOLD_2026-08-30.yaml
   local_baseline: storybible/domains/GOES_ECONOMIC_BASELINE_1542_1572.md
+  late_goes_reference: storybible/domains/GOES_MARKET_HOUSEHOLD_1585_1602.md
   war_modifier: storybible/domains/WAR_ECONOMY_1567_1602.md
   open_story_hinge: OPEN.GOES.CLAES_DEPARTURE_1572_1579.001
   rules:
@@ -18,6 +22,7 @@ authority_boundary:
     - "Historical evidence does not create fictional participation."
     - "An OPEN authorial decision remains open unless explicitly resolved in canon/."
     - "Resolve political control before applying any war-tax or rebel-money rule."
+    - "Classify the transaction type before treating an amount as a market price or wage."
 
 input_contract:
   required:
@@ -47,6 +52,7 @@ output_contract:
     - local_measures
     - price_anchors
     - wage_anchors
+    - transaction_class
     - taxes_and_dues
     - trade_permissions
     - supply_disruption
@@ -62,14 +68,17 @@ resolution_order:
     action: resolve_political_control
     hard_gate: true
   - step: 3
-    action: apply_local_baseline
+    action: classify_transaction_type
+    hard_gate: true
   - step: 4
-    action: apply_war_modifier
+    action: apply_local_baseline
   - step: 5
-    action: apply_actor_transaction_filter
+    action: apply_war_modifier
   - step: 6
-    action: apply_coin_measure_date_filter
+    action: apply_actor_transaction_filter
   - step: 7
+    action: apply_coin_measure_date_filter
+  - step: 8
     action: attach_evidence_grade_and_open_gaps
 
 source_priority:
@@ -86,6 +95,23 @@ source_priority:
     grade: D_CONTEXT_ONLY
     definition: "broader Low Countries/Holland/Brabant context; order-of-magnitude or mechanism only"
   - rule: "Never silently promote C or D to a local factual value."
+
+transaction_classes:
+  - MARKET_TRANSACTION_PRICE
+  - TRANSACTION_PRICE_SEQUENCE
+  - DAY_WAGE
+  - PIECE_RATE
+  - FREIGHT_TARIFF
+  - CONTRACT_TOTAL
+  - RETAINER
+  - MATERIALS_PLUS_LABOUR
+  - CREDIT_DEBT
+  - IN_KIND_PAYMENT
+  - OBJECT_VALUATION
+  - ESTATE_TAKEOVER_VALUATION
+  - TAX_IMPOST
+  - QUALITY_INSPECTION_RESCISSION
+  - UNKNOWN
 
 baseline_states:
   - id: ECON.BASE.GOES.1542_1572
@@ -108,6 +134,13 @@ baseline_states:
         piecework_1546: "4 groten per man for defined hundred-grof-zout handling task by seven men"
         classification: PIECE_RATE_NOT_DAY_WAGE
         evidence: [SC.HIST.GOES.SALT.LABOUR_PIECE_RATE.1546.001]
+    local_transaction_anchors:
+      grain_transport_1544:
+        historical_value: "18 mijten per zeve"
+        measure_relation: "1 zeve = 4 sacks of grain or flour in Zeeland Bewesten Schelde / Goes context"
+        classification: FREIGHT_TARIFF
+        evidence: SC.HIST.GOES.GRAIN_TRANSPORT.SCHUITVLOTTEN.1544.001
+        guardrail: "Not a day wage and not a beer tariff."
     coin_rules:
       - {from: "1543-01-01", item: "silver Carolusgulden", rate: "20 stuivers", evidence: SC.HIST.COIN.CAROLUS.ACCOUNTING.1521_1543.001}
       - {from: "1557-01-01", item: "Philipsdaalder", rate: "30 stuivers at introduction", evidence: SC.HIST.COIN.PHILIPSDAALDER.RATES.1557_1580.001}
@@ -115,20 +148,56 @@ baseline_states:
     unresolved_data:
       - "Goese civilian day-wage series ca. 1540-1602 not yet extracted from municipal accounts."
       - "Exact 1540s-1560s Goese beer-measure tariff/ordinance wording."
+      - "Exact Claes-period bierdrager/zakkedrager handling tariffs and remuneration rules."
     forbidden_inferences:
       - "accounted gulden -> physical Carolus coin"
       - "1546 salt piece rate -> daily wage"
+      - "1544 grain freight tariff -> porter day wage"
+      - "1544 grain freight tariff -> beer handling tariff"
       - "1595 rye price -> youth-period rye price"
       - "Cornelis biersteker -> brewer"
 
   - id: ECON.BASE.GOES.LATE_REFERENCE.1594_1602
+    world_module: WORLD.GOES_MARKET_HOUSEHOLD_1585_1602
     location_match: [Goes, Zuid-Beveland]
     date_window: {earliest: "1594-01-01", latest_exclusive: "1603-01-01"}
-    direct_anchor:
+    direct_anchors:
       rye_1595:
-        historical_value: "170 groten Vlaams per Goese sack"
-        derived_value: "85 stuivers = 4 gulden 5 stuivers"
+        classification: TRANSACTION_PRICE_SEQUENCE
+        observations:
+          - {period: "April 1595", historical_value: "£26 Vlaams per last"}
+          - {period: "May 1595", historical_value: "14 schellingen 2 groten per Goese sack; £26 11 schellingen 3 groten per last"}
+          - {period: "ca. 17-18 August 1595", historical_value: "£19 Vlaams per last"}
         evidence: SC.HIST.GOES.RYE_PRICE.1595.001
+        guardrail: "The 14s2g value is the May transaction recalled in a later attestation, not a 31 October spot price."
+      shoes_1597:
+        date: "1597-02-10"
+        historical_value: "one pair new Spanish-leather shoes reckoned at 6 schellingen groten"
+        classification: IN_KIND_PAYMENT
+        evidence: SC.HIST.GOES.FOOTWEAR.INKIND_PAYMENT.1597.001
+        guardrail: "Not a generic Goese shoe retail price."
+      fish_1598:
+        date: "1598-12-12"
+        classification: QUALITY_INSPECTION_RESCISSION
+        evidence: SC.HIST.GOES.FISH.QUALITY_INSPECTION.NISSEPADT.1598.001
+        guardrail: "Provides spoilage/inspection/rejection evidence, not a fish price."
+      meat_1598:
+        date: "1598-12-22"
+        classification: TAX_IMPOST
+        sale_units: [pound, piece, cuts_or_limbs]
+        attested_tax_point: "place of slaughter in the testified practice"
+        evidence: SC.HIST.GOES.MEAT.IMPOST_TAXPOINT.1598.001
+        guardrail: "No impost rate supplied; do not universalise beyond the attested practice."
+      butter_1602:
+        date: "1602-11-20"
+        historical_value: "78 pond butter at 4 stuivers per pond"
+        classification: ESTATE_TAKEOVER_VALUATION
+        evidence: SC.HIST.GOES.HOUSEHOLD.BUTTER_VALUATION.1602.001
+        guardrail: "Estate takeover valuation, not automatically a retail market price."
+    named_person_identity_boundary:
+      nissepadt:
+        evidence: [SC.HIST.GOES.FISH.QUALITY_INSPECTION.NISSEPADT.1598.001, SC.HIST.GOES.NISSEPADT.HENRIC_EXECUTOR.1602.001]
+        rule: "Do not merge same/similar Nissepat/Nissepadt names into one historical entity without independent identity evidence."
     broader_price_series:
       status: AVAILABLE_BUT_REQUIRES_UNIT_PROVENANCE_AUDIT
       evidence: SC.HIST.IISG.NL_PRICE_SERIES.1594_1602.001
@@ -238,6 +307,19 @@ actor_transaction_filters:
       prohibited_auto_actions: [brew, formulate_recipe, own_Nissepad_brewery, personally_liable_as_brewer_for_production_tax]
     canon_basis: [DEC.NISSEPAT.BREWERY.FAMILY_NETWORK.2026-08-16, DEC.CORNELIS.BEER.DISTRIBUTION_CHAIN.2026-08-16]
 
+  - id: FILTER.TRANSACTION.CLASSIFY_AMOUNT
+    when_input: amount
+    apply:
+      required_resolution: [transaction_type, date, place, unit, commodity_or_service, evidence]
+      allowed_classes: [MARKET_TRANSACTION_PRICE, TRANSACTION_PRICE_SEQUENCE, DAY_WAGE, PIECE_RATE, FREIGHT_TARIFF, CONTRACT_TOTAL, RETAINER, MATERIALS_PLUS_LABOUR, CREDIT_DEBT, IN_KIND_PAYMENT, OBJECT_VALUATION, ESTATE_TAKEOVER_VALUATION, TAX_IMPOST, UNKNOWN]
+    forbidden_inference: "documented amount -> market price"
+
+  - id: FILTER.NAMED_PERSON.NISSEPADT
+    actor_role_match: [Nissepat, Nissepadt]
+    apply:
+      required_resolution: [full_name_or_patronymic, date, office_or_role, independent_identity_bridge]
+    forbidden_inference: "same/similar Nissepat surname -> same historical person"
+
   - id: FILTER.COIN.NAMED
     when_input: named_coin
     apply:
@@ -313,6 +395,10 @@ known_numeric_gaps:
   - id: GAP.ECON.GOES.BEER_TARIFFS.1542_1569
     priority: MEDIUM
     need: "Verify exact Claes-period biermeter/meetgeld ordinances and tariff continuity."
+  - id: GAP.ECON.GOES.CARRIER_TARIFFS.1542_1602
+    priority: MEDIUM
+    need: "Extract exact bierdrager/zakkedrager handling tariffs and remuneration rules from Goese guild/ordinance material."
+    rule_until_resolved: "Occupation/guild existence does not supply a tariff."
   - id: GAP.ECON.LOCAL_BASELINES.POST1572
     priority: MEDIUM
     need: "Add Delft/Holland, late Zeeland and Enkhuizen local price/coin layers before exact scene calculations."
