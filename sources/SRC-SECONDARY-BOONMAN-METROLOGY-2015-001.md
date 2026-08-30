@@ -29,14 +29,27 @@ These passages support the existing medicinal-weight claims and period-compatibl
 
 **Use rule:** do not freeze a timeless decimal conversion. For sixteenth-century authoring, retain the source/date-sensitive range and original measure name. `1 viertel/Goese sack = 2 achtendelen` is the useful relation; a working volume range is roughly **73–80 litres per sack/viertel** depending on source/date.
 
-### Goese rye transaction, 1595
+### Goese grain transport micro-tariff — 1544
 
-- p. 252: purchase of rye in Goes in 1595.
-- one last had to weigh 4,000 Amsterdam pounds.
-- price: **14 schellingen 2 groten Vlaams (170 groten) per sack**.
-- price per last: **£26:11:3 Vlaams (6,375 groten)**.
-- this corresponds to **37½ Goese sacks per last**.
-- primary locator supplied by Boonman: `RAZE 2040, fol. 110, 31 October 1595`.
+In the discussion of the `zeve`, Boonman reports that at the **1544 letting of the schuitvlotten in Goes** the `loon` for transporting **one zeve grain** was fixed at **18 mijten**. In Zeeland Bewesten Schelde, including Goes, the `zeve` is reconstructed as **four sacks of grain or flour**.
+
+This is unusually valuable because it is a dated, local, Claes-period logistics price anchor.
+
+**Classification:** `FREIGHT / TRANSPORT TARIFF`, not a worker day wage. Preserve `18 mijten per zeve` as the historical expression; do not silently turn it into stuivers or a daily income without a source-specific monetary conversion and work-time statement.
+
+### Goese rye evidence, 1595 — source discrepancy resolved conservatively
+
+Boonman discusses the 1595 Goese rye evidence and gives:
+
+- **14 schellingen 2 groten Vlaams (170 groten) per sack**;
+- **£26:11:3 Vlaams (6,375 groten) per last**;
+- **37½ Goese sacks per last**.
+
+Boonman presents this as `RAZE 2040, fol. 110, 31 October 1595`.
+
+A direct cross-check against the Levendale transcription of the underlying Goese notarial material instead places the relevant attestation at **RAZE 2040, fol. 109** and shows that 14s2g per sack is the **May 1595** transaction recalled in a late-October/early-November attestation. That transcription also supplies April and August prices.
+
+**Project rule:** preserve Boonman's reported locator as part of his source record, but use `SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001` for the transaction chronology. Do not describe 14s2g as a 31 October spot price.
 
 Derived conversion, not source wording: because 40 groten Vlaams = 20 stuivers, 170 groten = 85 stuivers = 4 gulden 5 stuivers.
 
@@ -82,6 +95,8 @@ and therefore:
 
 Boonman is a modern secondary synthesis drawing heavily on archival metrology. It is unusually valuable for Goes because it gives local measures and archival locators, but conversions into litres are reconstructions and sometimes expose disagreements among historical comparison tables. Preserve the original historical unit and source date whenever exact physical quantity matters.
 
+Where Boonman's secondary locator/date conflicts with a fuller transcription of the underlying Goese notarial entry, the disagreement is recorded rather than silently harmonised.
+
 The same discipline applies to coins: a coin name, accounting unit and physical circulating piece are not automatically identical concepts.
 
 ## Linked / planned Source Claims
@@ -93,6 +108,7 @@ Existing:
 Economic layer:
 - `SC.HIST.GOES.GRAIN_MEASURE.ACHTENDEEL.1572.001`
 - `SC.HIST.GOES.GRAIN_MEASURE.SOURCE_VARIATION.1590.001`
+- `SC.HIST.GOES.GRAIN_TRANSPORT.SCHUITVLOTTEN.1544.001`
 - `SC.HIST.GOES.BEER.MEASUREMENT_ANTECEDENT.001`
 - `SC.HIST.GOES.SALT.LABOUR_PIECE_RATE.1546.001`
 - `SC.HIST.GOES.RYE_PRICE.1595.001`
