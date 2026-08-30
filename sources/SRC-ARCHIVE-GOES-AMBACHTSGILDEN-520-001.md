@@ -12,7 +12,11 @@
 
 ## Relevant official description
 
-GOES Publiek identifies the craft-guild archive as access `NL-GsGA-16.1-520` and dates the archive 1429–1798. The official description lists the Goese timmerlieden among the principal guilds and specifies that the timmerliedengilde included multiple building and wood-working crafts, including:
+GOES Publiek identifies the craft-guild archive as access `NL-GsGA-16.1-520` and dates the archive 1429–1798.
+
+### Timmerliedengilde
+
+The official description lists the Goese timmerlieden among the principal guilds and specifies that the timmerliedengilde included multiple building and wood-working crafts, including:
 
 - timmerlieden;
 - scheepstimmerlieden;
@@ -27,27 +31,39 @@ GOES Publiek identifies the craft-guild archive as access `NL-GsGA-16.1-520` and
 
 The description also states that mixed guilds could have separate craft representatives; for the timmerliedengilde it names a wagenmakersdeken, metselaarsdeken and stoeldraaiersdeken. Guild officers inspected work, workshops and the number of knechts.
 
-## Why this matters for `GAP.ECON.GOES.WAGES.1540_1602`
+### Carrier guilds relevant to the economic baseline
 
-This is the **official current archive access** corresponding to the historical guild material. It confirms that the relevant Goese craft-guild archive is extant, public and directly researchable rather than known only through later secondary descriptions.
+The same official description lists older Goese occupational guilds that span Claes' lifetime, including:
+
+- **bierdragers** — described as a guild existing from the fourteenth century to 1798;
+- **zakkedragers** — described as a guild existing from the fifteenth century to 1798;
+- additionally, the archive description places other labour guilds such as leeggangers and pannelieden within the surviving craft-guild landscape.
+
+This makes professional carrying/handling a documented **institutional layer** of the Goese market and harbour economy rather than an invented generic porter role.
+
+## Why this matters for the economic layer
+
+This is the **official current archive access** corresponding to the surviving Goese craft-guild material. It establishes two separate extraction routes:
+
+1. construction/craft labour through the timmerliedengilde and related crafts;
+2. commodity handling/distribution through carrier guilds such as bierdragers and zakkedragers.
 
 It should be used together with the 1829 inventory report that explicitly dates timmerliedengilde account books to 1547–1798.
 
 ## Evidence boundary
 
-The online archive description currently consulted does **not expose the placement-list item number of the earliest 1547 account book** in its searchable page text. Therefore:
+Archive/guild survival does not establish a historical payment amount. Specifically:
 
-- access `520` is verified;
-- the timmerliedengilde and its craft composition are verified;
-- public accessibility is verified;
-- the 1547 start date for account books remains supported by the separate historical inventory source;
-- the exact current inventory/item number for the 1547 volume remains OPEN;
+- the existence of the bierdragers- and zakkedragersgilden does **not** establish their Claes-period tariff, day wage, monopoly/exclusivity, headcount or exact work rules;
+- the online archive description currently consulted does **not expose the placement-list item number of the earliest 1547 timmerliedengilde account book** in its searchable page text;
+- no carrier tariff may be inferred merely from guild existence;
 - no wage value follows merely from archive survival.
 
-## Extraction target
+## Extraction targets
 
-Next target inside access 520:
+Inside access 520:
 
-`earliest timmerliedengilde account volume -> current placement-list item/inventory number -> inspect 1547 onward entries -> classify any worker/payment entry by payment form`
+- `earliest timmerliedengilde account volume -> current placement-list item/inventory number -> inspect 1547 onward entries -> classify worker/payment entries by payment form`;
+- `bierdragers / zakkedragers records -> dated Claes-period ordinance/account items -> identify exact handling tariffs, fees, duties or payment rules if preserved`.
 
-Until the item is identified, do not cite an invented `GAG gilden inv.nr. X` for the early account book.
+Until the relevant items are identified, do not cite invented `GAG gilden inv.nr. X` numbers or reconstructed carrier rates.
