@@ -1,0 +1,41 @@
+schema_version: "1.0.0"
+kind: SourceClaimRegistryExtension
+claims:
+  - id: SC.HIST.GOES.WAGES.PROVENANCE.DEVRIES.001
+    type: SourceClaim
+    statement: "Jan de Vries' labour-market chapter includes Goes among the western-Netherlands wage locations used for Tables 2a/2b and cites G.A. Goes, Rekeningen van de stad nos. 783-959 plus rekeningen stadsfabriek nos. 1813-14 and 1793-97 as the Goese archival basis."
+    claim_type: historical_wage_series_provenance
+    subject: "Goese civil/construction wage series"
+    predicate: "archival provenance cited"
+    object: "G.A. Goes city accounts 783-959; stadsfabriek accounts 1813-14 and 1793-97"
+    evidence_status: VERIFIED
+    source_ids: [SRC-SECONDARY-DEVRIES-LABOUR-MARKET-GOES-WAGES-001]
+    verification:
+      status: explicit_source_apparatus_in_consulted_full_text
+      note: "This verifies the provenance pointer, not yet the individual Goese wage observations."
+
+  - id: SC.HIST.GOES.WAGES.NUMERIC_GAP.001
+    type: SourceClaim
+    statement: "The currently accessible text transcription preserves De Vries' Goese source apparatus but not the readable numeric Goese Table 2 row; exact Goese daily-wage observations for Claes' period therefore remain unverified in the project."
+    claim_type: evidence_boundary
+    subject: "Goese daily wages"
+    predicate: "numeric extraction status"
+    object: "not yet recovered from Table 2 or underlying accounts"
+    evidence_status: UNKNOWN
+    source_ids: [SRC-SECONDARY-DEVRIES-LABOUR-MARKET-GOES-WAGES-001]
+    verification:
+      status: explicit_project_gap_after_source_recovery
+      note: "Do not fill this gap with a western-Netherlands proxy."
+
+  - id: SC.HIST.WESTERN_NL.WAGES.POST1570_COMPARATOR.001
+    type: SourceClaim
+    statement: "De Vries documents strong post-1570 nominal-wage increases in western-Netherlands labour markets and gives detailed Spaarndam/Halfweg wage steps, but these are regional/comparative evidence rather than exact Goese wage observations."
+    claim_type: regional_wage_context
+    subject: "western Netherlands wage development"
+    predicate: "post-1570 acceleration"
+    object: "regional comparator only"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-SECONDARY-DEVRIES-LABOUR-MARKET-GOES-WAGES-001]
+    verification:
+      status: direct_text_for_regional_pattern
+      note: "Never relabel the Spaarndam/Halfweg wage levels as Goes."
