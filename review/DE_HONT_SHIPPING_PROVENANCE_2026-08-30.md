@@ -29,10 +29,16 @@ Because the extract does not reproduce the conditions, beer ownership, freight p
 This correction has been propagated into:
 
 - source claim `SC.HIST.GOES.HOREN_DE_HONT.BEER_CONTRACT.1589.001`;
+- the legacy-reference claim `SC.HIST.GOES.BIERSTEKER.SHIPPER_CONTRACT.1589.001`, whose ID is retained for reference stability but whose semantics are corrected;
 - `entities/DE_HONT_HOREN_TRADE_CONTINUITY_2026-08-30.yaml`;
 - `claims/STORY_CLAIMS_DE_HONT_HOREN_2026-08-30.yaml`;
 - `canon/DECISIONS_CORNELIS_DE_HONT_HOREN_CONTINUITY_2026-08-30.yaml`;
-- `storybible/domains/CORNELIS_DE_HONT_HOREN_TRADE_CONTINUITY_1550_1589.md`.
+- `canon/DECISIONS_CORNELIS_ECONOMIC_POSITION_2026-08-30.yaml`;
+- `storybible/domains/CORNELIS_DE_HONT_HOREN_TRADE_CONTINUITY_1550_1589.md`;
+- `storybible/domains/CORNELIS_ECONOMIC_POSITION_1542_1568.md`;
+- `review/MIGRATION_REVIEW_SUPPLEMENT_DE_HONT_HOREN_2026-08-30.yaml`.
+
+A final semantic diff audit was run specifically because the continuity validator cannot detect a historically reversed business relation expressed in otherwise valid YAML. Four stale residues from the earlier interpretation were harmonized.
 
 ## 2. Vessel type evidence ladder
 
