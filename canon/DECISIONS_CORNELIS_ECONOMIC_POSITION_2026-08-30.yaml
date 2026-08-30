@@ -1,0 +1,156 @@
+schema_version: 1.0.0
+kind: CanonDecisionRegistryExtension
+decisions:
+- id: DEC.CORNELIS.ECONOMIC_POSITION.PREFIRE_1554.2026-08-30
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    Before the fire of 18 May 1554, Cornelis is a well-to-do to very well-to-do Goese poorter: an owner-merchant with a diversified livelihood rather than a wage-dependent artisan. His core commercial identity is biersteker / merchant-distributor, combined in novel canon with ownership of a saltwork and participation in the wider Nissepat family beer economy. He is socially consequential within Goes but is not written as a member of the city's very richest governing elite.
+  affects:
+  - ENT.PERSON.CORNELIS
+  - WORLD.GOES_ECONOMY_1542_1572
+  - WORLD.BEER_BREWING_DISTRIBUTION
+  - WORLD.NISSEPAT_BEER_NETWORK
+  rationale: >-
+    The combination of poorterschap, salt-production capital, beer distribution, credit, shipping contacts and family supply relations gives Cornelis meaningful local status and external reach without turning him into an Antwerp-scale merchant or a Goese magnate.
+  evidence_boundary:
+  - Cornelis is fictional; no archival balance sheet exists for him.
+  - Social rank is a novel reconstruction constrained by local trade/property evidence.
+  - Do not call him regent, burgomaster, patrician magnate or one of the richest men of Goes without a separate decision.
+
+- id: DEC.CORNELIS.BEER.FAMILY_TERMS_AND_SCALE.2026-08-30
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    Cornelis obtains beer from the Nissepat family brewery environment on preferential family terms. The advantage is not reduced to a fixed discount: it may consist of a better purchase price, supplier credit, longer settlement time, priority access to suitable batches, and more flexible cask-return or loss arrangements. For authoring, his pre-1554 beer throughput is calibrated at roughly 200-350 tons per year, primarily for Goes, South Beveland and nearby Zeeland markets, with selected onward or external transactions including Antwerp where commercially plausible.
+  affects:
+  - ENT.PERSON.CORNELIS
+  - WORLD.NISSEPAT_BEER_NETWORK
+  - WORLD.BEER_BREWING_DISTRIBUTION
+  - REL.CORNELIS.NISSEPAT_BREWERY
+  rationale: >-
+    Preferential family terms explain how a biersteker can control substantial turnover without having to pre-finance every cask in cash. The throughput band gives scenes a consistent sense of scale while preserving the distinction between production and distribution.
+  authoring_calibration:
+    annual_beer_throughput_tons:
+      low: 200
+      high: 350
+      status: WORKING_RANGE_NOT_ARCHIVAL_FACT
+    market_profile:
+      primary: Goes_South_Beveland_and_nearby_Zeeland
+      secondary: selected_external_and_onward_trade_including_Antwerp
+  guardrails:
+  - Do not turn 200-350 tons into an asserted historical statistic about a real Nissepat.
+  - Do not make Antwerp the necessary destination of every beer shipment.
+  - Do not invent a fixed family discount percentage unless separately decided.
+  - Cornelis remains biersteker/distributor, not brewer.
+
+- id: DEC.CORNELIS.SALTWORK.ANTWERP_TRADE.2026-08-30
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    Cornelis owns a working saltwork before 18 May 1554. Salt is a major capital and trade component of his business, and Antwerp is one important external destination among several possible markets. For physical authoring scale, the saltwork may be imagined as a medium enterprise of roughly two to three pans, but that pan count is a working reconstruction rather than a historical claim.
+  affects:
+  - ENT.PERSON.CORNELIS
+  - WORLD.GOES_ECONOMY_1542_1572
+  - REL.CORNELIS.ANTWERP_TRADE
+  rationale: >-
+    Salt gives Cornelis a stronger reason for regular long-distance commercial contact with Antwerp than ordinary Goese beer alone. It also makes the 1554 fire an economically transformative event because the lost asset is productive infrastructure, stock and future earning capacity rather than merely a shed.
+  authoring_calibration:
+    saltwork_pan_count:
+      low: 2
+      high: 3
+      status: WORKING_PHYSICAL_SCALE_NOT_ARCHIVAL_FACT
+    destination_rule: Antwerp_is_important_not_exclusive
+  evidence_boundary:
+  - Cornelis' saltwork ownership and Antwerp sales are novel canon.
+  - Exact site, legal title, pan count, production volume, customers and freight contracts remain open unless separately fixed.
+
+- id: DEC.CORNELIS.PREFERRED_SHIPPER.2026-08-30
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    Cornelis has a recurring trusted/preferred relationship with a schipper who can handle commercial movement between the Goese/Zeeland network and external destinations, especially Antwerp. Cornelis need not own a ship. The historical or fictional identity of this schipper, vessel ownership, route frequency, contractual form and whether one person serves both beer and salt flows remain OPEN RESEARCH / OPEN AUTHOR DECISION.
+  affects:
+  - ENT.PERSON.CORNELIS
+  - WORLD.BEER_BREWING_DISTRIBUTION
+  - WORLD.GOES_ECONOMY_1542_1572
+  - REL.CORNELIS.PREFERRED_SHIPPER
+  rationale: >-
+    A stable shipper relationship is historically compatible with the documented later Goese biersteker-schipper contract model and is more useful than assigning Cornelis an unsupported private vessel. It also supplies a credible existing route that can later carry letters, books or other sensitive traffic if separately authorized by plot canon.
+  open_questions:
+  - Identify a historically usable Goes/Zeeland/Antwerp schipper or route analogue for ca. 1545-1568.
+  - Determine whether the same relationship plausibly handles both salt and beer or whether separate carriers are stronger.
+  - Do not back-project later beurtvaart monopolies without relevant local evidence.
+
+- id: DEC.CORNELIS.CAPITAL_CALIBRATION.1554.2026-08-30
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    Use a pre-fire net-capital authoring band of approximately 1,800-2,800 carolus guilders for Cornelis, with about 2,300 guilders as the default internal calibration. This is distributed across productive capital, stocks, casks/beer-related working assets, receivables, cash and commercial obligations rather than held as coin. A corresponding gross controlled-asset band of roughly 2,500-3,500 guilders and liabilities/supplier credit of roughly 500-900 guilders may be used to test scene plausibility.
+  affects:
+  - ENT.PERSON.CORNELIS
+  - WORLD.GOES_ECONOMY_1542_1572
+  rationale: >-
+    The calibration positions Cornelis well above ordinary wage dependence while keeping him below the scale of major international merchants. It also makes the loss of the salt business financially serious enough to change Claes' schooling and household choices without making the family destitute.
+  authoring_calibration:
+    prefire_net_capital_guilders:
+      low: 1800
+      default: 2300
+      high: 2800
+    prefire_gross_controlled_assets_guilders:
+      low: 2500
+      high: 3500
+    liabilities_and_supplier_credit_guilders:
+      low: 500
+      high: 900
+    status: FICTIONAL_ECONOMIC_MODEL_NOT_ARCHIVAL_VALUATION
+  guardrails:
+  - Never present these numbers as a discovered Nissepat inventory or tax assessment.
+  - Scene prose usually expresses this scale through assets, credit, obligations and choices rather than stating a net-worth figure.
+
+- id: DEC.CORNELIS.FIRE1554.ECONOMIC_RUPTURE.2026-08-30
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    The fire of 18 May 1554 destroys Cornelis' saltwork and causes a severe business-capital and liquidity shock while the Nissepat family brewery environment remains physically available as a surviving economic lifeline. The family residence lost in the fire remains the property asset of grandfather Claes Jacobsz in canon and is therefore not silently counted as Cornelis' personal real-estate loss. Cornelis also loses his wife Tanneken, his younger son Jan and the unborn child, making the event simultaneously a household catastrophe and an economic rupture.
+  affects:
+  - ENT.PERSON.CORNELIS
+  - ENT.PERSON.CLAES_MOTHER
+  - ENT.PERSON.CLAES_BROTHER
+  - ENT.PERSON.CLAES_UNBORN_SIBLING
+  - ENT.PROP.GOES.NISSEPAT.NIEUWSTRAAT_1542
+  - WORLD.GOES_ECONOMY_1542_1572
+  - ARC.CLAES.CORNELIS
+  rationale: >-
+    The decisive economic mechanism is not one burned building but the loss of productive infrastructure, stock/future income, damaged receivables and a sudden mismatch between assets and obligations. Surviving family beer supply prevents destitution but cannot restore the former capital position immediately.
+  authoring_calibration:
+    immediate_total_business_loss_guilders:
+      low: 1200
+      high: 1700
+    postfire_net_position_guilders:
+      low: 600
+      high: 1000
+    postfire_liquid_resources_guilders:
+      low: 200
+      high: 400
+    approximate_net_position_decline: 60_to_70_percent
+    status: FICTIONAL_ECONOMIC_MODEL_NOT_ARCHIVAL_FACT
+  guardrails:
+  - Do not assign an automatic monetary value to Tanneken, Jan or the unborn child.
+  - Do not add an unsourced warehouse destruction, exact lost stock list or burned debt ledger as fact unless separately fixed.
+  - Do not count grandfather's Nieuwstraat house as Cornelis' own balance-sheet asset.
+
+- id: DEC.CORNELIS.POSTFIRE.STATUS_AND_RECOVERY.2026-08-30
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    After 1554 Cornelis remains a recognized Goese poorter with family name, trade knowledge, credit history and external contacts, but his economic base shifts from owner-merchant with productive capital toward network-dependent biersteker, commission trade, credit brokerage and distribution using more of other people's capital and stock. His social standing declines more slowly than his wealth. This status inertia helps explain continued access to merchants and Antwerp while the household can no longer afford the original Zierikzee schooling plan for Claes.
+  affects:
+  - ENT.PERSON.CORNELIS
+  - DEC.CLAES.POSTFIRE_FATHER_SON.2026-08-14
+  - REL.CLAES.CORNELIS
+  - WORLD.GOES_ECONOMY_1542_1572
+  rationale: >-
+    Early-modern commercial reputation and network access can survive a large capital loss. Cornelis is therefore neither still rich as before nor reduced to an ordinary labourer. The surviving beer network becomes the bridge between his former position and his later use as a logistics node.
+  authoring_rule: >-
+    Before 1554 he mostly owns and finances; after 1554 he increasingly arranges, intermediates, borrows, extends credit selectively and earns through knowledge of routes, people and settlement.
