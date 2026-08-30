@@ -52,7 +52,6 @@ decisions:
   affects:
   - ENT.PERSON.CORNELIS
   - WORLD.GOES_ECONOMY_1542_1572
-  - REL.CORNELIS.ANTWERP_TRADE
   rationale: >-
     Salt gives Cornelis a stronger reason for regular long-distance commercial contact with Antwerp than ordinary Goese beer alone. It also makes the 1554 fire an economically transformative event because the lost asset is productive infrastructure, stock and future earning capacity rather than merely a shed.
   authoring_calibration:
@@ -74,7 +73,6 @@ decisions:
   - ENT.PERSON.CORNELIS
   - WORLD.BEER_BREWING_DISTRIBUTION
   - WORLD.GOES_ECONOMY_1542_1572
-  - REL.CORNELIS.PREFERRED_SHIPPER
   rationale: >-
     A stable shipper relationship is historically compatible with the documented later Goese biersteker-schipper contract model and is more useful than assigning Cornelis an unsupported private vessel. It also supplies a credible existing route that can later carry letters, books or other sensitive traffic if separately authorized by plot canon.
   open_questions:
