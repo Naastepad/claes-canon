@@ -32,10 +32,13 @@ claims:
 - id: SC.HIST.DE_HONT.PRE1569.CAREER_BOUNDARY.001
   type: SourceClaim
   statement: >-
-    Current research has not established Aernouldt de Hont's age, career start, pre-1589 presence in Goes, or documented voyages to Antwerp. His use as Cornelis' pre-1569 preferred schipper is therefore a novel backprojection from the securely documented 1589 occupation and contract.
+    In the sources checked for this research pass, Aernouldt de Hont's age, career start, pre-1589 presence in Goes, and documented voyages to Antwerp have not been established. His use as Cornelis' pre-1569 preferred schipper is therefore an explicit novel backprojection from the securely documented 1589 occupation and contract.
   claim_type: historical_evidence_boundary
   subject: Aernouldt_de_Hont
-  predicate: pre1569_evidence_not_established
+  predicate: current_research_does_not_establish_pre1569_career
   object: fictional_backprojection_required
-  evidence_status: OPEN
+  evidence_status: SUPPORTED
   source_ids: [SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001]
+  verification:
+    status: research_boundary_based_on_checked_source_corpus
+    note: "This is a boundary on current evidence, not a claim that De Hont could not have been active earlier."
