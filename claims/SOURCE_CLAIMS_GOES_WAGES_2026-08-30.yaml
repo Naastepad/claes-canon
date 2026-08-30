@@ -40,6 +40,45 @@ claims:
       status: explicit_project_gap_after_archive_coverage_check
       note: "The next target is a dated pre-1602 Goese account series or another direct local wage source, not interpolation from De Vries' later Goese material."
 
+  - id: SC.HIST.GOES.LABOUR.TIMMERGUILD_ACCOUNTS.1547_1798.001
+    type: SourceClaim
+    statement: "A nineteenth-century inventory of the surviving Goese guild archives reports account books of the timmerliedengilde spanning 1547-1798 and resolutions spanning 1586-1798; the guild ordinance book covered timmerlieden, kuipers, stoeldraaiers, wannemakers, mandenmakers, wagenmakers and metselaars."
+    claim_type: archival_source_survival
+    subject: "Goese timmerliedengilde records"
+    predicate: "surviving account/resolution coverage"
+    object: "account books 1547-1798; resolutions 1586-1798"
+    evidence_status: VERIFIED
+    source_ids: [SRC-RESEARCH-GOES-LABOUR-ARCHIVE-PRE1602-2026-08-30]
+    verification:
+      status: public_historical_inventory_transcription
+      note: "This proves a pre-1602 extraction route, not that the account books contain day-wage entries."
+
+  - id: SC.HIST.GOES.LABOUR.STADTIMMERMAN.ANTHONIS_CLAESZ.1567_1590.001
+    type: SourceClaim
+    statement: "A local archival compilation identifies Anthonis Claesz / Anthonis Claiszoon as the Goese stadtimmerman in weeskamer-related material, with references in 1567, 1580 and 1590."
+    claim_type: local_labour_person_target
+    subject: "Anthonis Claesz / Claiszoon"
+    predicate: "documented occupational role"
+    object: "stadtimmerman of Goes; research target in 1567, 1580 and 1590 material"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001]
+    verification:
+      status: secondary_local_compilation_with_primary_record_route
+      note: "Use his name to target municipal payment records; no wage amount or remuneration form is established by this claim."
+
+  - id: SC.HIST.GOES.LABOUR.CONTRACT_NOT_WAGE_BOUNDARY.1580S_1590S.001
+    type: SourceClaim
+    statement: "Late-sixteenth-century Goese notarial material documents building craftsmen through lump-sum contracts, valuations and disputes; these amounts are not daily wages unless the record also states labour time and a rate."
+    claim_type: labour_payment_evidence_boundary
+    subject: "Goese construction payments"
+    predicate: "contract-versus-wage classification"
+    object: "lump-sum/valuation evidence must remain distinct from day wage"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001]
+    verification:
+      status: direct_classification_of_consulted_transaction_types
+      note: "Do not divide a contract total by guessed days to manufacture a wage."
+
   - id: SC.HIST.WESTERN_NL.WAGES.MID16_COMPARATOR.001
     type: SourceClaim
     statement: "De Vries' Table 1 gives direct 1550-1554 construction/manual-labour comparators for several nearby or connected cities: skilled labour 5.5-6 stuivers/day and unskilled labour 3-4 in Bergen op Zoom; skilled 9 and unskilled 4 in Antwerp. These are regional comparators, not Goese wage observations."
