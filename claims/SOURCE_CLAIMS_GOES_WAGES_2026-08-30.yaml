@@ -12,20 +12,33 @@ claims:
     source_ids: [SRC-SECONDARY-DEVRIES-LABOUR-MARKET-GOES-WAGES-001]
     verification:
       status: explicit_source_apparatus_in_consulted_full_text
-      note: "This verifies the provenance pointer, not yet the individual Goese wage observations."
+      note: "This verifies De Vries' Goese provenance pointer only; it does not establish that these inventory ranges cover 1540-1602."
+
+  - id: SC.HIST.GOES.WAGES.DEVRIES_COVERAGE_BOUNDARY.001
+    type: SourceClaim
+    statement: "De Vries' cited Goese inventory range cannot be assumed to be a Claes-period source series: an independent Zeeland education repertory cites GA Goes, Stad Goes, inv.nr. 784 for an event in 1627."
+    claim_type: archival_coverage_boundary
+    subject: "De Vries Goese wage-source inventory range"
+    predicate: "Claes-period coverage"
+    object: "not established; at least inv.nr. 784 is used for 1627 evidence"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-SECONDARY-DEVRIES-LABOUR-MARKET-GOES-WAGES-001]
+    verification:
+      status: independent_inventory_number_date_crosscheck
+      note: "Do not describe nos. 783-959 as a 1540-1602 wage series without a dated archive inventory mapping."
 
   - id: SC.HIST.GOES.WAGES.NUMERIC_GAP.001
     type: SourceClaim
-    statement: "The currently accessible text transcription preserves De Vries' Goese source apparatus but not the readable numeric Goese Table 2 row; exact Goese daily-wage observations for Claes' period therefore remain unverified in the project."
+    statement: "Exact Goese daily-wage observations for 1540-1602 remain unverified in the project. The accessible De Vries transcription does not expose a readable local Table 2 row, and the cited Goese inventory range is not yet shown to cover the Claes period."
     claim_type: evidence_boundary
-    subject: "Goese daily wages"
+    subject: "Goese daily wages 1540-1602"
     predicate: "numeric extraction status"
-    object: "not yet recovered from Table 2 or underlying accounts"
+    object: "not yet recovered from a dated pre-1602 local source"
     evidence_status: UNKNOWN
     source_ids: [SRC-SECONDARY-DEVRIES-LABOUR-MARKET-GOES-WAGES-001]
     verification:
-      status: explicit_project_gap_after_source_recovery
-      note: "Do not fill this gap with a western-Netherlands proxy."
+      status: explicit_project_gap_after_archive_coverage_check
+      note: "The next target is a dated pre-1602 Goese account series or another direct local wage source, not interpolation from De Vries' later Goese material."
 
   - id: SC.HIST.WESTERN_NL.WAGES.MID16_COMPARATOR.001
     type: SourceClaim
