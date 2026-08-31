@@ -1,0 +1,61 @@
+schema_version: 1.0.0
+kind: SourceClaimRegistryExtension
+claims:
+- id: SC.HIST.GOES.HOREN_DE_HONT.CONTRACT_SETTING.1589.001
+  type: SourceClaim
+  statement: >-
+    The 2 May 1589 Horen-De Hont biersteker agreement was made in the Goes inn die Meerminne. The witnesses were Schobbelandt Pieters, innkeeper there, and Marinus Anthonisz Vocxen, a panneboeter; both are described as born in Reimerswaal and then resident in Goes.
+  claim_type: historical_contract_social_setting
+  subject: Horen_De_Hont_agreement
+  predicate: executed_in_inn_with_Reimerswaal_born_witnesses
+  object: die_Meerminne_Goes_1589
+  evidence_status: SUPPORTED
+  source_ids: [SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001]
+  verification:
+    status: secondary_transcription_with_primary_locator
+    note: "Primary locator: RAZE 2039 fol. 86, 2 May 1589. This is scene-setting evidence only and adds no missing commercial conditions."
+
+- id: SC.HIST.GOES.ANTWERP.TRAVEL_STAGE.1589.001
+  type: SourceClaim
+  statement: >-
+    Pieter Cornelisz van Levendale's note for 9-11 October 1589 records a staged journey from Goes by wagon to Waarde, embarkation late that evening in a Geuzen war rowing craft, arrival at Fort Lillo on the next day, and onward movement on 11 October past fortified positions to Antwerp.
+  claim_type: historical_route_time_comparator
+  subject: Goes_to_Antwerp_corridor
+  predicate: traversed_in_staged_multi_day_sequence
+  object: Waarde_Lillo_Antwerp_9_11_October_1589
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-LEVENDALE-GOES-ANTWERP-1589-001]
+  qualifications:
+  - "This is a wartime traveller itinerary using wagon plus a war rowing craft, not a merchant-freight run."
+  - "It supports route scale, stages and delay logic, not a universal two-day transit rule."
+  - "It is not evidence of Aernouldt de Hont's itinerary or speed."
+
+- id: SC.HIST.DELFT.GOES.SHIPPING_CORRIDOR.1572.001
+  type: SourceClaim
+  statement: >-
+    Delft municipal wartime accounts for 1572 record multiple vessels before Delft and at Delfshaven being requisitioned to carry Barthel Entes and troops from Holland toward Goes; twenty-one vessels subsequently received an allowance recorded in the accounts.
+  claim_type: historical_shipping_corridor
+  subject: Delft_Delfshaven_shipping
+  predicate: operationally_connects_Holland_with_Goes_theatre
+  object: troop_transport_1572
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-DELFT-GOES-SHIPPING-1572-001]
+  qualifications:
+  - "Military requisition proves corridor functionality, not civilian freight frequency or duration."
+  - "Aernouldt de Hont is not named."
+  - "No vessel type or capacity for the twenty-one vessels may be inferred."
+
+- id: SC.HIST.SOUTHERN_LOW_COUNTRIES.FREIGHT_RISK_ALLOCATION.1551_1563.001
+  type: SourceClaim
+  statement: >-
+    Sixteenth-century Southern-Low-Countries maritime practice and regulation distinguished fixed freight from ordinary voyage costs, individual loss from extraordinary common-safety loss, and increasingly imposed liability on shipmasters for preventable damage while preserving operational discretion in genuine danger; the Habsburg maritime ordinances of 1551 and 1563 are important points in that development.
+  claim_type: historical_maritime_contract_framework
+  subject: Southern_Low_Countries_maritime_trade
+  predicate: distinguishes_freight_ordinary_costs_fault_and_common_peril
+  object: sixteenth_century_risk_allocation
+  evidence_status: SUPPORTED
+  source_ids: [SRC-ACADEMIC-DREIJER-MARITIME_RISK_SOUTHERN_LOW_COUNTRIES-001]
+  qualifications:
+  - "This is a Southern-Low-Countries/Antwerp legal-commercial framework, not a recovered Horen-De Hont or Cornelis-De Hont contract."
+  - "Do not assume every regional voyage used a formal general-average declaration."
+  - "Marine insurance is not a default assumption for Cornelis' routine regional consignments."
