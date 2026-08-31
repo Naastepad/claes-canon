@@ -1,0 +1,132 @@
+schema_version: 1.0.0
+kind: SourceClaimRegistryExtension
+claims:
+- id: SC.HIST.EGMOND_ABBEY.STATUS_1550.001
+  type: SourceClaim
+  statement: >-
+    Around 1550 the Abdij van Egmond may be represented as an old and regionally significant religious, economic and symbolic centre in Holland, with Adelbert relics, pilgrimage memory, institutional property, buildings and archival/book culture rather than as a marginal ruin.
+  claim_type: historical_world_state
+  subject: ENT.LOC.EGMOND.ABBEY
+  predicate: sixteenth_century_status
+  object: major_religious_economic_symbolic_centre
+  story_time:
+    earliest: 1540-01-01
+    latest_exclusive: 1560-01-01
+    precision: approximate_interval
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-EGMOND-ABBEY-1573-001]
+  supports_story_claims:
+  - STC.WORLD.EGMOND_ABBEY.STATUS_1550.001
+  contradicts: []
+  qualifies:
+  - The exact physical condition of every building in 1550 is not fixed by this claim.
+  - This claim does not make Egmond a direct Claes location.
+  verification:
+    status: source_synthesis_needs_direct_inventory_detail
+    note: Based on user-supplied transcript, public archive/catalogue context and secondary reconstruction; direct building-state inventory for 1550 should be added if later found.
+  retrieval:
+    tags: [egmond, abdij, 1550, adelbert, pilgrimage, holland, religious-centre]
+
+- id: SC.HIST.EGMOND_ABBEY.FIRE_TRADITION_1573.001
+  type: SourceClaim
+  statement: >-
+    A conventional tradition states that the Abdij van Egmond was destroyed or set on fire on or around 7 June 1573, often framed as a military measure to prevent Spanish use of the complex.
+  claim_type: historiographical_tradition
+  subject: ENT.LOC.EGMOND.ABBEY
+  predicate: later_tradition_claims
+  object: fire_or_burning_on_or_around_1573-06-07
+  story_time:
+    earliest: 1573-06-07
+    latest_exclusive: 1573-06-08
+    precision: day_tradition
+  evidence_status: DISPUTED
+  source_ids: [SRC-HIST-EGMOND-ABBEY-1573-001]
+  supports_story_claims: []
+  contradicts:
+  - SC.HIST.EGMOND_ABBEY.SLOOP_1573.001
+  qualifies:
+  - The existence of the tradition is supported; the tradition is not accepted here as the factual main mechanism.
+  - In prose this may appear as rumor, later simplification or public framing, not as unqualified narrator fact.
+  verification:
+    status: tradition_attested_but_mechanism_disputed
+    note: Public heritage accounts preserve the burning formula; Buitenhuis and the user-supplied material argue for paid dismantling as the stronger reconstruction.
+  retrieval:
+    tags: [egmond, 1573, 7-june, fire-tradition, disputed, historiography]
+
+- id: SC.HIST.EGMOND_ABBEY.SLOOP_1573.001
+  type: SourceClaim
+  statement: >-
+    The better current reconstruction for story use is that the Abdij van Egmond was deliberately and progressively dismantled from late May 1573 onward, with paid workers and removed materials, rather than disappearing in one simple fire event on 7 June.
+  claim_type: historical_reconstruction
+  subject: ENT.LOC.EGMOND.ABBEY
+  predicate: destroyed_by
+  object: systematic_dismantling_and_material_removal
+  story_time:
+    earliest: 1573-05-24
+    latest_exclusive: 1573-08-01
+    precision: bounded_reconstruction
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-EGMOND-ABBEY-1573-001]
+  supports_story_claims:
+  - STC.WORLD.EGMOND_ABBEY.1573.SLOOP_NOT_SIMPLE_FIRE.001
+  contradicts:
+  - SC.HIST.EGMOND_ABBEY.FIRE_TRADITION_1573.001
+  qualifies:
+  - Exact weekly payments, named workmen and account folios still require direct archival locator checks.
+  - Fire, smoke or burned remains may appear as rumor or secondary damage only if not treated as the sole mechanism.
+  verification:
+    status: secondary_archival_reconstruction_supported
+    note: Record as SUPPORTED pending direct inspection of the Alkmaar accounts/afrekeningboek mentioned in the prompt and secondary literature.
+  retrieval:
+    tags: [egmond, abdij, sloop, ontmanteling, paid-workers, 1573, alkmaar]
+
+- id: SC.HIST.EGMOND_ABBEY.ALKMAAR_MATERIAL_REUSE.001
+  type: SourceClaim
+  statement: >-
+    The dismantling of the Abdij van Egmond is scene-relevant because abbey materials can be framed as resources for the defence and fortification economy of Alkmaar during the 1573 military crisis.
+  claim_type: historical_military_material_flow
+  subject: ENT.LOC.EGMOND.ABBEY
+  predicate: supplied_reused_materials_to
+  object: ENT.LOC.ALKMAAR.DEFENCE_WORKS
+  story_time:
+    earliest: 1573-05-24
+    latest_exclusive: 1573-10-09
+    precision: campaign_season
+  evidence_status: SUPPORTED
+  source_ids: [SRC-HIST-EGMOND-ABBEY-1573-001]
+  supports_story_claims:
+  - STC.WORLD.EGMOND_ABBEY.1573.SACRAL_MATERIAL_TO_WAR_MATERIAL.001
+  contradicts: []
+  qualifies:
+  - This claim concerns material-flow logic; it does not prove exact quantities or precise destination for every stone, beam, bell, lead sheet or object.
+  verification:
+    status: supported_as_scene_model
+    note: Useful for theme and world logic; exact accounts should be cited before quantifying.
+  retrieval:
+    tags: [egmond, alkmaar, fortification, material-reuse, sacred-space, war-economy]
+
+- id: SC.HIST.EGMOND_ABBEY.NEWS_REACHES_ZEELAND.001
+  type: SourceClaim
+  statement: >-
+    It is plausible, but not directly proven, that news or rumor about Egmond's fall and Alkmaar's military preparations could reach Zeeland through war, trade, shipping, print, refugee, clerical or rederijker networks.
+  claim_type: information_ecology
+  subject: WORLD.LOW_COUNTRIES_INFORMATION_ECOLOGY
+  predicate: could_carry_news_of
+  object: ENT.LOC.EGMOND.ABBEY_1573_DESTRUCTION
+  story_time:
+    earliest: 1573-06-01
+    latest_exclusive: 1574-01-01
+    precision: plausible_interval
+  evidence_status: PLAUSIBLE
+  source_ids: [SRC-HIST-EGMOND-ABBEY-1573-001]
+  supports_story_claims:
+  - STC.CLAES.EGMOND_ABBEY_1573.HEARS_AS_NEWS_OR_RUMOR.001
+  contradicts: []
+  qualifies:
+  - This does not prove that Claes certainly heard the report at a specific date or from a named informant.
+  - Direct Claes participation, travel to Egmond or eyewitness status remains unsupported.
+  verification:
+    status: plausible_network_inference
+    note: Use only as scene-available background unless a later decision fixes a specific knowledge route.
+  retrieval:
+    tags: [egmond, zeeland, news, rumor, information-ecology, claes, 1573]
