@@ -1,0 +1,57 @@
+schema_version: 1.0.0
+kind: StoryClaimSupplement
+claims:
+- id: STC.CORNELIS.DE_HONT.PREFERRED_SHIPPER.1558_1569.001
+  type: StoryClaim
+  statement: >-
+    In novel canon Aernouldt de Hont becomes Cornelis' recurring trusted/preferred schipper by the late 1550s or early 1560s and remains part of Cornelis' commercial network through 1569, handling or coordinating selected beer, salt and mixed commercial traffic toward Delft/Holland and Antwerp.
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids:
+  - DEC.CORNELIS.PREFERRED_SHIPPER.AERNOULDT_DE_HONT.2026-08-30
+  subjects:
+  - ENT.PERSON.CORNELIS
+  - ENT.PERSON.AERNOULDT_DE_HONT
+  story_time:
+    earliest: '1558-01-01'
+    latest_exclusive: '1570-01-01'
+    precision: bounded
+  historical_boundary: >-
+    De Hont is historically documented as schipper van Delft in a 1589 Goese agreement under which Michiel Horen would be biersteker for beers De Hont brought to Goes. His earlier relationship with Cornelis, Antwerp carriage, exact vessel and exact role in beer ownership/freight are not documented and are deliberate fiction canon or remain OPEN.
+
+- id: STC.CORNELIS.TRADE.FRAGMENTS_AFTER_DEATH.1569_1588.001
+  type: StoryClaim
+  statement: >-
+    Cornelis' death in 1569 does not transfer one intact company to a single successor. His customer knowledge, outstanding accounts, cask obligations, family supply contacts and shipping relationships fragment across family, creditors and wartime disruption, while parts of the commercial route survive through people such as De Hont.
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids:
+  - DEC.CORNELIS.TRADE_SUCCESSION.MICHIEL_HOREN.2026-08-30
+  subjects:
+  - ENT.PERSON.CORNELIS
+  - ENT.PERSON.AERNOULDT_DE_HONT
+  story_time:
+    earliest: '1569-11-20'
+    latest_exclusive: '1588-01-01'
+    precision: bounded
+  historical_boundary: >-
+    The fragmentation model is novel canon based on historically compatible early-modern credit/logistics mechanisms; no complete Cornelis business estate or transfer document exists.
+
+- id: STC.HOREN.CORNELIS.TRADE_CONTINUITY.1588_1589.001
+  type: StoryClaim
+  statement: >-
+    By the late 1580s Michiel Michielsz Horen has fictionally absorbed or continued part of the Goese beer-distribution function once associated with Cornelis. The historically documented 1589 agreement, in which Horen is to be biersteker for beers De Hont brings to Goes, becomes the visible endpoint of that fictional continuity rather than proof of a direct Nissepat succession.
+  canon_status: CANON
+  evidence_status: PLAUSIBLE
+  decision_ids:
+  - DEC.CORNELIS.TRADE_SUCCESSION.MICHIEL_HOREN.2026-08-30
+  subjects:
+  - ENT.PERSON.MICHIEL_MICHIELSZ_HOREN
+  - ENT.PERSON.AERNOULDT_DE_HONT
+  - ENT.PERSON.CORNELIS
+  story_time:
+    earliest: '1588-01-01'
+    latest_exclusive: '1590-01-01'
+    precision: bounded
+  historical_boundary: >-
+    Horen is historically documented as formerly of Aardenburg and a Goese poorter in 1588, and in 1589 as biersteker for beers De Hont would bring to Goes. A direct purchase, inheritance or immediate succession from Cornelis is not documented; nor does the 1589 extract establish that Horen owned the incoming beer or hired De Hont as carrier.

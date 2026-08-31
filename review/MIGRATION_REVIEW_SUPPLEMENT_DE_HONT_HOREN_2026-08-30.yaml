@@ -1,0 +1,19 @@
+schema_version: 1.0.0
+kind: MigrationReviewSupplement
+purpose: Human-decision classification for Story Claims adding the Cornelis-De Hont-Horen commercial continuity on 30 August 2026.
+records:
+- claim_id: STC.CORNELIS.DE_HONT.PREFERRED_SHIPPER.1558_1569.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: >-
+    Explicit author decision to back-project historical Aernouldt de Hont, documented as schipper van Delft in a 1589 Goese agreement under which Michiel Horen would be biersteker for beers De Hont brought to Goes, into Cornelis' commercial network from the late 1550s or early 1560s through 1569. The pre-1569 relationship and Antwerp carriage remain clearly marked fiction canon rather than historical biography; the 1589 extract does not prove Horen employed De Hont or owned the incoming beer.
+- claim_id: STC.CORNELIS.TRADE.FRAGMENTS_AFTER_DEATH.1569_1588.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: >-
+    Explicit author decision that Cornelis' death does not produce one clean documented business transfer. Accounts, cask obligations, supplier/customer knowledge and transport relations fragment through family, creditors and wartime disruption while some route knowledge survives, especially through De Hont.
+- claim_id: STC.HOREN.CORNELIS.TRADE_CONTINUITY.1588_1589.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: >-
+    Explicit author decision that Michiel Michielsz Horen eventually absorbs or continues part of the Goese biersteker/distribution function formerly associated with Cornelis. The historical 1589 Horen-De Hont agreement, in which Horen is biersteker for beer De Hont brings to Goes, is used as the archival endpoint of this fictional continuity, not as evidence of a direct 1569 purchase, inheritance, immediate succession or Horen-owned cargo.

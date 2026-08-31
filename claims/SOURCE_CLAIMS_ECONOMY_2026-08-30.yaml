@@ -1,0 +1,301 @@
+schema_version: "1.0.0"
+kind: SourceClaimRegistryExtension
+claims:
+  - id: SC.HIST.GOES.GRAIN_MEASURE.ACHTENDEEL.1572.001
+    type: SourceClaim
+    statement: "In the 1572 Brussels comparison, one Goese achtendeel was measured at 70 Middelburg pints / 212 59/128 Brussels uperken; Boonman's reconstruction gives approximately 36.6 litres."
+    claim_type: historical_local_metrology
+    subject: "Goese achtendeel"
+    predicate: "measured volume"
+    object: "1572 comparison, ca. 36.6 litres reconstructed"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-SECONDARY-BOONMAN-METROLOGY-2015-001]
+    verification:
+      status: secondary_transcription_of_1572_measurement
+      note: "Keep the historical measure primary; litre conversion is modern reconstruction."
+
+  - id: SC.HIST.GOES.GRAIN_MEASURE.SOURCE_VARIATION.1590.001
+    type: SourceClaim
+    statement: "Sixteenth-century Goese grain-measure comparisons do not support one timeless decimal litre value: the 1572 measurement and 1590/other comparison tables yield an achtendeel roughly in the 36.6-40.1 litre range."
+    claim_type: metrological_evidence_boundary
+    subject: "Goese grain measure"
+    predicate: "source variation"
+    object: "date/table-sensitive volume"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-SECONDARY-BOONMAN-METROLOGY-2015-001]
+    verification:
+      status: secondary_source_internal_comparison
+      note: "Use 1 viertel/sack = 2 achtendelen; preserve source/date when converting."
+
+  - id: SC.HIST.GOES.GRAIN_TRANSPORT.SCHUITVLOTTEN.1544.001
+    type: SourceClaim
+    statement: "At the 1544 letting of the schuitvlotten in Goes, the transport charge described as loon for carrying one zeve of grain was fixed at 18 mijten; in Zeeland Bewesten Schelde a zeve was four sacks of grain or flour."
+    claim_type: historical_local_transport_tariff
+    subject: "Goese grain transport"
+    predicate: "freight / handling tariff"
+    object: "18 mijten per zeve in 1544"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-SECONDARY-BOONMAN-METROLOGY-2015-001]
+    verification:
+      status: secondary_transcription_with_local_archival_basis
+      note: "Classify as freight/transport tariff, not a day wage. Preserve 18 mijten per zeve unless a source-specific currency conversion is explicitly required."
+
+  - id: SC.HIST.GOES.BEER.MEASUREMENT_ANTECEDENT.001
+    type: SourceClaim
+    statement: "Goese rules before Claes' lifetime document that beer stored in the city was measured when carried from the quay and could not be sold by poorters before measurement by the sworn biermeter; meetgeld also applied to poorters."
+    claim_type: historical_local_trade_regulation
+    subject: "Goese beer distribution"
+    predicate: "official measurement before sale"
+    object: "documented late 15th century / 1494 / 1515 antecedent"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-SECONDARY-BOONMAN-METROLOGY-2015-001]
+    verification:
+      status: local_antecedent_not_exact_claes_period_ordinance
+      note: "Supports institutional continuity as a scene condition; exact 1540s-1560s wording/tariff remains to verify."
+
+  - id: SC.HIST.GOES.LABOUR.CARRIER_GUILDS.CLAES_PERIOD.001
+    type: SourceClaim
+    statement: "The official Goese craft-guild archive description lists bierdragers and zakkedragers as long-running Goese guilds whose stated date ranges span Claes' lifetime."
+    claim_type: historical_local_labour_institution
+    subject: "Goese carrier guilds"
+    predicate: "institutional continuity"
+    object: "bierdragers and zakkedragers present across the sixteenth century"
+    evidence_status: VERIFIED
+    source_ids: [SRC-ARCHIVE-GOES-AMBACHTSGILDEN-520-001]
+    verification:
+      status: official_archive_description
+      note: "Guild existence does not establish an exact tariff, day wage, exclusivity rule or headcount."
+
+  - id: SC.HIST.GOES.BEER.BIERDRAGERS.1591.001
+    type: SourceClaim
+    statement: "A Goese notarial record of 7 May 1591 names Cornelis Jacobsen Schipper as bierdrager en poorter and Adriaen Cornelis Faes as schipper en bierdrager en poorter of Goes."
+    claim_type: historical_local_occupation
+    subject: "Goese beer carrying"
+    predicate: "named occupational evidence"
+    object: "two Goese bierdragers in 1591"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001, SRC-ARCHIVE-GOES-AMBACHTSGILDEN-520-001]
+    verification:
+      status: secondary_transcription_with_primary_locator
+      note: "Primary locator: RAZE 2039 fol. 219, 7-5-1591. This proves occupation, not rate or day wage."
+
+  - id: SC.HIST.GOES.SALT.LABOUR_PIECE_RATE.1546.001
+    type: SourceClaim
+    statement: "The Goese salt-workers' ordinance of 14 September 1546 is reported to pay each of seven men 4 groten for carrying, filling and lifting one hundred of coarse salt."
+    claim_type: historical_local_labour_payment
+    subject: "Goese salt labour"
+    predicate: "piece rate"
+    object: "4 groten per man per hundred coarse salt"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-SECONDARY-BOONMAN-METROLOGY-2015-001]
+    verification:
+      status: secondary_transcription_with_primary_locator
+      note: "Primary locator: ASG 678 fol. 44 ff., 50 ff., 53 ff. This is piecework, not a day wage."
+
+  - id: SC.HIST.GOES.RYE_PRICE.1595.001
+    type: SourceClaim
+    statement: "Goese grain buyers attested in late October/early November 1595 that rye had traded in Goes at £26 Vlaams per last in April, £26 11 schellingen 3 groten per last in May (14 schellingen 2 groten per sack), and £19 Vlaams per last around 17-18 August."
+    claim_type: historical_local_price_sequence
+    subject: "rye in Goes"
+    predicate: "intra-year transaction prices"
+    object: "April/May/August 1595"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001, SRC-SECONDARY-BOONMAN-METROLOGY-2015-001]
+    verification:
+      status: local_notarial_transcription_cross_checked_with_metrology_source
+      note: "Direct transcription locator: RAZE 2040 fol. 109. The 14s2g figure is the May transaction recalled in the later attestation, not a 31 October spot price. Boonman's fol.110/31-Oct presentation is retained as a source discrepancy."
+
+  - id: SC.HIST.GOES.CREDIT.HOSPITALITY_DEBT.1585.001
+    type: SourceClaim
+    statement: "On 14 June 1585 a Goese notarial record has Jan Pauwelsz Cuijper acknowledge 17 pond groten Vlaams owed to Franchois Hertsinck for accumulated verteringen in Hertsinck's inn, with his person and goods bound as security."
+    claim_type: historical_local_credit
+    subject: "Goese hospitality debt"
+    predicate: "formal debt acknowledgement and security"
+    object: "17 pond groten Vlaams, 1585"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001]
+    verification:
+      status: secondary_transcription_of_local_notarial_record
+      note: "The amount is accumulated debt, not the retail price of one meal, drink or night's lodging."
+
+  - id: SC.HIST.SOUTH_BEVELAND.BEER.IMPOST_BIERSTEKER.1593.001
+    type: SourceClaim
+    statement: "A March 1593 South-Beveland attestation identifies a beer-impost official for the quarter of 's-Heer Hendrikskinderen, Wissenkerke and 's-Heer Arendskerke and separately names Michiel Horen as biersteker in a five-ton double-beer wedding supply."
+    claim_type: historical_local_trade_tax_mechanism
+    subject: "South-Beveland beer distribution"
+    predicate: "biersteker and beer-impost administration coexist"
+    object: "1593 quarter-level evidence"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001]
+    verification:
+      status: secondary_transcription_of_local_attestation
+      note: "Close regional evidence, not a city-Goes impost rate. The record does not establish a generic rate or legal taxpayer for every biersteker transaction."
+
+  - id: SC.HIST.ZEELAND.BEER.BIERSTEKER_DISTRIBUTION.1574.001
+    type: SourceClaim
+    statement: "In the 1574 Zeeland beer-impost dispute, freight, loss of casks and the remuneration of stekers are identified as additional costs of beer sold into Zeeland; Dirksen interprets the biersteker as a Zeeland wholesale/distribution intermediary receiving remuneration from the brewer."
+    claim_type: historical_trade_distribution_mechanism
+    subject: "Zeeland beer distribution"
+    predicate: "freight/cask/steker cost chain"
+    object: "1574"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-SECONDARY-DIRKSEN-GEZAG-GELD-ZEELAND-2012-001]
+    verification:
+      status: secondary_interpretation_anchored_in_quoted_1574_source_wording
+      note: "Dirksen's subsequent 10-stuiver-per-ton example begins 'Stel dat' and is hypothetical; never promote 10 stuivers to a historical freight or steker tariff."
+
+  - id: SC.HIST.COIN.CAROLUS.ACCOUNTING.1521_1543.001
+    type: SourceClaim
+    statement: "The gold Carolusgulden was introduced in 1521 at 20 stuivers; a silver Carolusgulden followed in 1543 at 20 stuivers / 40 groten Vlaams, and the Carolusgulden continued as an accounting reference after minting ceased."
+    claim_type: historical_coinage_accounting
+    subject: "Carolusgulden"
+    predicate: "coin and accounting relation"
+    object: "20 stuivers / 40 groten Vlaams"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-SECONDARY-BOONMAN-METROLOGY-2015-001]
+    verification:
+      status: secondary_numismatic_metrology
+      note: "Do not equate an amount in gulden automatically with physical Carolus pieces."
+
+  - id: SC.HIST.COIN.PHILIPSDAALDER.RATES.1557_1580.001
+    type: SourceClaim
+    statement: "Boonman records the Philipsdaalder at 30 stuivers on introduction in 1557, 35 stuivers in 1559 and 45 stuivers in 1579/1580."
+    claim_type: historical_coin_rate
+    subject: "Philipsdaalder"
+    predicate: "changing rated value"
+    object: "30 -> 35 -> 45 stuivers"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-SECONDARY-BOONMAN-METROLOGY-2015-001]
+    verification:
+      status: secondary_numismatic_metrology
+      note: "Coin name alone is insufficient; resolve year and political/monetary zone."
+
+  - id: SC.HIST.ALVA.TAX_PROJECT.1569.001
+    type: SourceClaim
+    statement: "Alva's March 1569 fiscal project comprised a one-time 1% Honderdste Penning on possessions, a 5% Twintigste Penning on sales of immovables and a 10% Tiende Penning on sales of movables, with an additional proposed 10% on exports; the latter two were intended as permanent taxes."
+    claim_type: historical_fiscal_policy
+    subject: "Alva fiscal project"
+    predicate: "proposed structure"
+    object: "100th/20th/10th penny"
+    evidence_status: VERIFIED
+    source_ids: [SRC-HIST-ALVA-TAXATION-1569-1572-001]
+    verification:
+      status: academic_synthesis_cross_checked_with_primary_correspondence
+      note: "Proposal/rate is not the same as proven local collection."
+
+  - id: SC.HIST.ALVA.TAX_IMPLEMENTATION_BOUNDARY.1569_1572.001
+    type: SourceClaim
+    statement: "The Tiende/Twintigste Penning cannot be modelled as automatically collected everywhere from 1569: Alva reported in October 1569 that the demand had been converted for six years into an annual lump-sum negotiation, while Zeeland still contested renewed plakkaten in early 1572."
+    claim_type: historical_fiscal_evidence_boundary
+    subject: "Tiende/Twintigste Penning"
+    predicate: "implementation varied and remained contested"
+    object: "1569-1572"
+    evidence_status: VERIFIED
+    source_ids: [SRC-HIST-ALVA-TAXATION-1569-1572-001, SRC-SECONDARY-DIRKSEN-GEZAG-GELD-ZEELAND-2012-001]
+    verification:
+      status: primary_correspondence_plus_secondary_local_context
+      note: "For a paid tax in a scene, require local/date/transaction evidence."
+
+  - id: SC.HIST.ZEELAND.POLITICAL_CONTROL.DIVIDED_1572_1576.001
+    type: SourceClaim
+    statement: "During 1572-1576 Zeeland was politically divided; Zuid-Beveland and Tholen remained under landsheerlijk authority while rebel Zeeland developed separate governing and fiscal structures."
+    claim_type: historical_jurisdiction
+    subject: "Zeeland"
+    predicate: "politically and fiscally divided"
+    object: "1572-1576"
+    evidence_status: VERIFIED
+    source_ids: [SRC-SECONDARY-DIRKSEN-GEZAG-GELD-ZEELAND-2012-001]
+    verification:
+      status: explicit_secondary_statement_with_archival_basis
+      note: "Resolve political control before applying a Zeeland tax or coin rule; Goes belongs to Zuid-Beveland."
+
+  - id: SC.HIST.ZEELAND.REBEL.LICENT_CONVOY.1573_1576.001
+    type: SourceClaim
+    statement: "In rebel Zeeland licentrecht was introduced in 1573; Dirksen states that convoygeld was introduced in Zeeland only in 1576."
+    claim_type: historical_war_trade_taxation
+    subject: "rebel Zeeland trade"
+    predicate: "licent and convoy chronology"
+    object: "licent 1573; convoy 1576"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-SECONDARY-DIRKSEN-GEZAG-GELD-ZEELAND-2012-001]
+    verification:
+      status: secondary_archival_synthesis
+      note: "Exact route, passport, exemption and tariff remain transaction-specific."
+
+  - id: SC.HIST.ZEELAND.REBEL.BEER_AMMUNITION_LEVY.1574.001
+    type: SourceClaim
+    statement: "A four-stuiver-per-ton beer levy is documented in rebel Zeeland from 1 May 1574 for ammunition finance; it was borne by domestic brewers on production and by beer imported from outside Holland and Zeeland."
+    claim_type: historical_war_taxation
+    subject: "beer in rebel Zeeland"
+    predicate: "ammunition levy"
+    object: "4 stuivers per ton from 1574-05-01"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-SECONDARY-DIRKSEN-GEZAG-GELD-ZEELAND-2012-001]
+    verification:
+      status: secondary_synthesis_with_Middelburg_account_locator
+      note: "Not a generic biersteker retail tax and not automatically applicable to royalist Goes."
+
+  - id: SC.HIST.COIN.KLOP.HOLLAND.1573.001
+    type: SourceClaim
+    statement: "A 7 February 1573 Holland countermark regime required qualifying coins to be stamped and accepted at higher official rates, with the difference paid as an interest-free war loan; a cited rijksdaalder example moves from 32 to 36 stuivers after a four-stuiver contribution."
+    claim_type: historical_war_coinage
+    subject: "Holland coin countermark"
+    predicate: "war-finance rate intervention"
+    object: "1573 klop"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-HIST-REVOLT-COINAGE-EMERGENCY-MONEY-1573-1576-001]
+    verification:
+      status: specialist_numismatic_source_bundle
+      note: "Do not apply outside the supported political zone."
+
+  - id: SC.HIST.COIN.KLOP.ZEELAND_REBEL.1573_1574.001
+    type: SourceClaim
+    statement: "A related countermark regime is supported in rebel Zeeland in 1573-1574, but exact local chronology and implementation are less securely uniform than the Holland plakkaat sequence."
+    claim_type: historical_war_coinage
+    subject: "rebel Zeeland coin countermark"
+    predicate: "supported with local chronology limits"
+    object: "1573-1574"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-HIST-REVOLT-COINAGE-EMERGENCY-MONEY-1573-1576-001]
+    verification:
+      status: numismatic_synthesis_with_precision_limit
+      note: "Never infer that royalist Goes used the rebel klop merely from province name."
+
+  - id: SC.HIST.NOODMONEY.SIEGE_SPECIFIC.1570S.001
+    type: SourceClaim
+    statement: "During prolonged 1570s sieges, cash shortage could lead individual cities to issue temporary emergency money; surviving Leiden 1574 issues include metal and paper examples used in the context of paying soldiers."
+    claim_type: historical_siege_money
+    subject: "emergency money"
+    predicate: "city-specific siege response"
+    object: "1570s"
+    evidence_status: VERIFIED
+    source_ids: [SRC-HIST-REVOLT-COINAGE-EMERGENCY-MONEY-1573-1576-001]
+    verification:
+      status: museum_object_evidence
+      note: "Emergency money is a city-specific override, never a generic war-money rule."
+
+  - id: SC.HIST.MILITARY.ROYAL_INFANTRY_PAY.1567_1600.001
+    type: SourceClaim
+    statement: "For the royal army in the Spanish Netherlands the ordinary infantryman's nominal soldij is given at approximately 4-5 stuivers per day, alongside obligations concerning food, lodging, fire and light; actual payment could be irregular."
+    claim_type: historical_military_economy
+    subject: "royal infantry"
+    predicate: "nominal pay baseline"
+    object: "4-5 stuivers/day"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-HIST-MILITARY-PAY-LOWCOUNTRIES-1567-1700-001]
+    verification:
+      status: academic_military_synthesis
+      note: "Not a civilian wage and not proof of timely cash receipt."
+
+  - id: SC.HIST.IISG.NL_PRICE_SERIES.1594_1602.001
+    type: SourceClaim
+    statement: "The IISG Historical Prices and Wages archive contains Netherlands bread and rye/wheat tabular series beginning in 1594 and therefore overlapping Claes' 1594-1602 late-life window."
+    claim_type: historical_data_availability
+    subject: "Netherlands price series"
+    predicate: "available"
+    object: "1594 onward"
+    evidence_status: VERIFIED
+    source_ids: [SRC-IISG-HISTORICAL-PRICES-WAGES-2023-001]
+    verification:
+      status: repository_metadata_verified
+      note: "Values are not authoring-ready until unit, spatial scope and provenance are audited per series."
