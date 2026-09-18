@@ -1,0 +1,152 @@
+schema_version: "1.0.0"
+kind: HistoricalContextProcess
+id: HIST.INFORMATION_WAR.LOW_COUNTRIES.1564_1584
+title: "Information war, clandestine communication and political interpretation in Claes' adult world"
+scope:
+  start: 1564-01-01
+  end: 1584-12-31
+purpose:
+  - "Preserve historical context that affects routes, trust, security, printing, confessional politics and interpretation even when Claes is not a direct participant."
+  - "Separate contextual pressure from fictional contact."
+source_claim_registry: claims/SOURCE_CLAIMS_INFORMATION_WAR_ZEELAND_1571_1584.yaml
+
+principles:
+  - "There is no need to invent a single modern-style secret service. The historical environment is a distributed ecology of court agents, urban contacts, merchants, clerks, couriers, printers, soldiers, diplomats, paid informants and opportunists."
+  - "Information can be hidden by code names, cipher, compartmentation, cover stories, seals, ordinary commerce and social trust."
+  - "Information can be exposed through interception, captured papers, financial traces, handwriting, interrogation, human sources and print."
+  - "Exposure does not guarantee truth: genuine intercepts, selective framing, rumour and deliberate forgery can coexist."
+  - "Retrospective network reconstruction must not be confused with predictive certainty."
+
+anchors:
+  - id: HIST.INFO.DEE_SILVIUS.BRIDGE.1563_1564
+    status: CONTEXT_LINK
+    summary: "Claes' existing Dee/Silvius formation places him inside a print/material world that historically overlaps with steganographic interests and later political information publication."
+    story_effect: "Hidden communication can become thinkable as ordinary human craft rather than occult exception."
+    guardrail: "Do not restore a Brevísima cipher mechanism."
+
+  - id: HIST.INFO.SECURITY_BREAK.1564
+    status: STORY_CONTEXT
+    summary: "The existing 4 October 1564 security hinge teaches compartmentation: who knows a route, name, object or recipient becomes a danger variable."
+    story_effect: "Claes can later understand that not knowing may protect a carrier."
+
+  - id: HIST.INFO.CORNELIS.CARRIER_SILENCE.1567_1569
+    status: STORY_CONTEXT
+    summary: "Cornelis' paper/book network and protective silence make him an information carrier without turning him into a professional spy."
+    story_effect: "For Claes, silence becomes both protection and moral burden."
+
+  - id: HIST.INFO.ORANGE.AGENT_NETWORK.1571_1572
+    status: HISTORICAL_CONTEXT
+    source_claims: [SC.HIST.ORANGE.INFORMATION_NETWORK.1571_1572.001]
+    summary: "Orange's environment contains coded names and inconspicuous mobile intermediaries who move people, money and messages."
+    possible_unconscious_pressure_on_claes:
+      - "ordinary merchants/travellers become plausible carriers"
+      - "route knowledge acquires political value"
+      - "a person need not know the whole chain to matter"
+
+  - id: HIST.INFO.GOES_SIEGE.1572
+    status: HISTORICAL_ANCHOR_PLUS_CANON_PRESENCE
+    source_claims: [SC.HIST.GOES.SIEGE_RELIEF.1572.002]
+    story_claims: [STC.CLAES.GOES.SIEGE_PRESENCE.1572.001]
+    summary: "Claes is physically in the 1572 Goes siege environment while royalist control, rebel pressure, sea routes and Mondragon's relief make the city a contested node."
+    story_effect:
+      - "war is no longer abstract political print; it physically reorganizes Claes' home landscape"
+      - "ships, tides, routes, burning and information about relief become immediate survival variables"
+
+  - id: HIST.INFO.REIMERSWAAL_BURNING.1573
+    status: HISTORICAL_ANCHOR_PLUS_CANON_WITNESS
+    source_claims: [SC.HIST.REIMERSWAAL.BURNING.1573.001]
+    story_claims: [STC.CLAES.REIMERSWAAL.BURNING_WITNESS.1573.001]
+    summary: "From a boat Claes sees the city of his schooling burn at the hands of Zeeuwse/Geuzen forces."
+    story_effect:
+      - "the rebel cause is not morally abstract or clean for Claes"
+      - "the side opposing the regime that killed Cornelis can also destroy a city Claes loves"
+      - "water becomes not only danger but vantage: he is close enough to see and too far away to intervene"
+    guardrail: "Do not merge with the January 1574 naval battle near Reimerswaal."
+
+  - id: HIST.INFO.BALFOUR_COUNTERINTELLIGENCE.1573_1574
+    status: BACKLINE_CONTEXT
+    source_claims: [SC.HIST.ORANGE.COUNTERINTELLIGENCE.BALFOUR.1573_1574.001]
+    summary: "Double agents and assassination security already shape Orange's environment."
+    story_effect: "By the time Claes approaches later Orange-linked networks, suspicion is structurally rational rather than personal paranoia."
+
+  - id: HIST.INFO.SATISFACTIE_GOES.1577
+    status: HISTORICAL_ANCHOR_PLUS_CANON_KNOWLEDGE
+    source_claims: [SC.HIST.GOES.SATISFACTIE.DATE_TERMS.1577.001]
+    story_claims: [STC.CLAES.GOES.SATISFACTIE_KNOWLEDGE.1577.001]
+    summary: "Goes enters Orange's stadholder order on negotiated conditions that preserve Catholic religious practice."
+    story_effect:
+      - "Claes sees that political transfer can be staged through conditional continuity rather than immediate confessional rupture"
+      - "the agreement can become a moral/strategic test of whether toleration is principle, compromise, instrument or temporary mask"
+    unresolved_story_role: OPEN.CLAES.SATISFACTIE.ROLE_STRATEGY.1577.001
+
+  - id: HIST.INFO.DON_JUAN_INTERCEPT_PRINT.1577
+    status: HISTORICAL_CONTEXT_HIGH_VALUE
+    source_claims: [SC.HIST.DONJUAN.INTERCEPT_PRINT_CHAIN.1577.001]
+    summary: "Intercepted correspondence is converted into political print through Marnix, Silvius, Van den Rade, Plantin and Vulcanius."
+    story_effect:
+      - "provides a historical model for turning private dangerous text into public political force"
+      - "shows Claes that publication is not neutral duplication but framing, selection, translation, production and distribution"
+    guardrail: "Do not make Claes a participant unless separately decided."
+
+  - id: HIST.INFO.GHENT_FORGERY.1577
+    status: HISTORICAL_CONTEXT
+    source_claims: [SC.HIST.ORANGE.FORGED_CORRESPONDENCE.GHENT.1577.001]
+    summary: "The same broad political environment contains forged correspondence used to shape action."
+    story_effect: "Visible documentary evidence is not self-authenticating."
+
+  - id: HIST.INFO.RELIGIOUS_TRANSITION.1577_1578
+    status: HISTORICAL_PROCESS
+    source_claims: [SC.HIST.GOES.SATISFACTIE.DATE_TERMS.1577.001, SC.HIST.ORANGE.RELIGIOUS_PEACE.1578.001]
+    summary: "Catholic continuity under the Satisfactie is followed by confessional pressure and Reformed expansion in 1578, while Orange argues a religious-peace line."
+    story_effect: "Claes can confront the difference between principled toleration, political compromise and manipulative transitional toleration."
+    guardrail: "No source currently proves that the Satisfactie was intentionally designed as a trap to eliminate Catholicism."
+
+  - id: HIST.INFO.JAUREGUY.1582
+    status: HISTORICAL_CONTEXT_POTENTIAL_TOUCHPOINT
+    source_claims: [SC.HIST.JAUREGUY.EVIDENCE_CHAIN.1582.001]
+    summary: "After an assassination attempt, papers, objects, finance, handwriting and testimony make a hidden network legible."
+    story_effect:
+      - "teaches the difference between post-event reconstruction and pre-event prediction"
+      - "provides a concrete model of evidence becoming public narrative"
+    direct_claes_presence: OPEN
+
+  - id: HIST.INFO.GERARDS.1584
+    status: HISTORICAL_CONTEXT_AT_FIXED_DELFT_THRESHOLD
+    source_claims: [SC.HIST.GERARDS.COVER_ACCESS.1584.001, SC.HIST.GERARDS.INNOCENT_INTERMEDIARY.MOERWIT.1584.001]
+    summary: "Gerards demonstrates the inverse problem: a plausible person can compose a false identity out of ordinary and partly true elements, gain trust and act before the pattern is legible."
+    story_effect:
+      - "Delft can break Claes' belief that sufficiently exact observation prevents loss"
+      - "an innocent intermediary can become causally decisive without knowledge"
+    proposed_authorial_sentence: "Hij had hem gezien. Dat was niet hetzelfde als hem gekend hebben."
+    canon_status_of_sentence: PROPOSED_NOT_PROSE_CANON
+
+context_only_people:
+  - name: Joannis de Castilia
+    function: "human access to Spanish cipher keys; prevents romanticized Marnix-as-magical-codebreaker framing"
+    claes_meeting: NOT_REQUIRED
+  - name: Alonso del Canto
+    function: "royal/Spanish intelligence ecosystem in the 1560s"
+    claes_meeting: NOT_REQUIRED
+  - name: Lorenzo de Villavicencio
+    function: "royal/Spanish intelligence ecosystem in the 1560s"
+    claes_meeting: NOT_REQUIRED
+  - name: Thomas Churchyard
+    function: "writer/soldier/traveller used for intelligence gathering in Antwerp"
+    claes_meeting: NOT_REQUIRED
+  - name: Henry Balfour
+    function: "double-agent/counterintelligence environment around Orange"
+    claes_meeting: NOT_REQUIRED
+
+authorial_epistemic_sequence:
+  - "1564: hidden presence can be made visible by the right material relation."
+  - "1569: silence can protect people, while documents can endanger them."
+  - "1570: visible text creates obligation; reveal is not yet judgement."
+  - "1572: political abstractions become siege, routes and material loss."
+  - "1573: the 'other side' can destroy what Claes loves; cause and morality no longer align cleanly."
+  - "1577: secret information can be processed into public power; documents can also be forged."
+  - "1577–1578: toleration, compromise and confessional transformation become politically separable concepts."
+  - "1582: a network can be reconstructed after violence."
+  - "1584: retrospective legibility does not imply prospective certainty."
+
+authoring_guardrail:
+  - "This context layer may steer scene pressure, suspicion, route choice, political options and Claes' later interpretations without being explained to the reader as a lecture."
