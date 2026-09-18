@@ -67,19 +67,6 @@ PACKS = {
         "narrative/beloved_recovery.yaml",
         "narrative/knowledge_states.yaml",
     ],
-    "07_ZEELAND_INFORMATION_WAR": [
-        "storybible/INFORMATION_WAR_ZEELAND_AND_CLAES_1564_1584.md",
-        "storybible/modules/GOES_RELIGIOUS_TRANSITION_1577_1578.md",
-        "history/INFORMATION_WAR_LOW_COUNTRIES_1564_1584.yaml",
-        "history/GOES_MILITARY_TRANSITION_1550_1607.yaml",
-        "narrative/claes_information_war_1564_1584.yaml",
-        "narrative/goes_departure_1572_1579.yaml",
-        "claims/SOURCE_CLAIMS_INFORMATION_WAR_ZEELAND_1571_1584.yaml",
-        "claims/STORY_CLAIMS_CLAES_ZEELAND_INFORMATION_1572_1584.yaml",
-        "canon/DECISIONS_INFORMATION_WAR_ZEELAND_2026-09-18.yaml",
-        "review/MIGRATION_REVIEW_SUPPLEMENT_INFORMATION_WAR_ZEELAND_2026-09-18.yaml",
-        "sources/SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18.md",
-    ],
 }
 
 CHARACTER_WEB_FILES = [
@@ -92,6 +79,20 @@ CHARACTER_WEB_FILES = [
     "storybible/CLAES_CORNELIS_RELATION_1547_1569.md",
     "storybible/GOES_SCHOOLING_PUTTUS_1550_1554.md",
     "storybible/MAYKEN_LAMPERT.md",
+]
+
+ZEELAND_INFORMATION_WAR_FILES = [
+    "storybible/INFORMATION_WAR_ZEELAND_AND_CLAES_1564_1584.md",
+    "storybible/modules/GOES_RELIGIOUS_TRANSITION_1577_1578.md",
+    "history/INFORMATION_WAR_LOW_COUNTRIES_1564_1584.yaml",
+    "history/GOES_MILITARY_TRANSITION_1550_1607.yaml",
+    "narrative/claes_information_war_1564_1584.yaml",
+    "narrative/goes_departure_1572_1579.yaml",
+    "claims/SOURCE_CLAIMS_INFORMATION_WAR_ZEELAND_1571_1584.yaml",
+    "claims/STORY_CLAIMS_CLAES_ZEELAND_INFORMATION_1572_1584.yaml",
+    "canon/DECISIONS_INFORMATION_WAR_ZEELAND_2026-09-18.yaml",
+    "review/MIGRATION_REVIEW_SUPPLEMENT_INFORMATION_WAR_ZEELAND_2026-09-18.yaml",
+    "sources/SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18.md",
 ]
 
 
@@ -170,6 +171,7 @@ def main() -> None:
     packs = {name: existing(paths) for name, paths in PACKS.items()}
     packs["05_DATED_DECISIONS"] = existing(dated_decisions())
     packs["06_CHARACTER_WEB"] = existing(CHARACTER_WEB_FILES)
+    packs["07_ZEELAND_INFORMATION_WAR"] = existing(ZEELAND_INFORMATION_WAR_FILES)
 
     all_files: list[str] = []
     for files in packs.values():
