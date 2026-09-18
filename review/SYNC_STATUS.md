@@ -279,6 +279,7 @@ Synchronized governing paths:
 - `claims/STORY_CLAIMS_CLAES_ZEELAND_INFORMATION_1572_1584.yaml`;
 - `canon/DECISIONS_INFORMATION_WAR_ZEELAND_2026-09-18.yaml`;
 - `canon/OPEN_DECISIONS.yaml`;
+- `review/MIGRATION_REVIEW_SUPPLEMENT_INFORMATION_WAR_ZEELAND_2026-09-18.yaml`;
 - `history/INFORMATION_WAR_LOW_COUNTRIES_1564_1584.yaml`;
 - `history/GOES_MILITARY_TRANSITION_1550_1607.yaml`;
 - `narrative/claes_information_war_1564_1584.yaml`;
@@ -292,6 +293,17 @@ Synchronized governing paths:
 - this sync-status file.
 
 The GitHub workflow `Build Claude context pack` has successfully produced regenerated context-pack commits after the integration writes, so the downstream Claude context projection has been refreshed as part of the repository flow.
+
+
+### Downstream agent context
+
+The generated Claude task router now contains a dedicated pack:
+
+`07_ZEELAND_INFORMATION_WAR`
+
+It includes the governing Storybible dossier, Goes religious-transition module, historical context process, Goes military transition, Claes information/epistemology projection, Goes-departure projection, Source Claims, Story Claims, dated decisions, migration-review supplement and composite research source.
+
+The router explicitly requires this pack for tasks concerning Goes 1572, Reimerswaal 1573, the Satisfactie 1577, Zeeland–Antwerp routes, the information war, Marnix, Silvius, Plantin, Vulcanius, Jaureguy, Gerards or the Delft epistemic arc.
 
 ## Next major work
 
@@ -308,4 +320,4 @@ The repository remains ready for **structural realization**:
 
 ## Validation note
 
-The repository's Claude-context generation workflow completed and committed regenerated context packs after the 18 September integration writes. No separate YAML-schema validation workflow is currently asserted by this note.
+The 18 September repository validation is green: both `scripts/validate_canon.py` (Compile continuity model) and `scripts/validate_active_projection.py` completed successfully in the `Validate Claes canon repository` workflow after the new migration-review classifications were added. The Claude-context generation workflow also completed successfully after creation and ordering of the dedicated `07_ZEELAND_INFORMATION_WAR` pack.
