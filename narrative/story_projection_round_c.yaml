@@ -92,29 +92,58 @@ projections:
 
   - id: H09
     story_time: {earliest: '1572-01-01', latest_exclusive: '1580-01-01', precision: design-window}
-    label: "Goes second severance — material/economic causality still to be chosen"
-    status: OPEN_AUTHORIAL_HINGE
-    cause: "1572 siege destruction and 1577–1579 postwar property/legal afterlife create historically grounded pressure."
-    effect_if_resolved: "Goes ceases to be a recoverable economic/home base through a concrete chain of loss, debt, claims or network collapse."
+    label: "Zeeland second severance — siege, Reimerswaal, Satisfactie and economic/confessional afterlife"
+    status: PARTLY_FIXED_PARTLY_OPEN
+    cause: "War and settlement repeatedly transform Claes' two formative Zeeland cities and the routes between them."
+    fixed_subanchors:
+    - "1572: Claes physically goes to / is present in the Goes siege environment; exact side and role remain OPEN.CLAES.GOES.SIEGE_ROLE.1572.001."
+    - "1573: from a boat Claes witnesses Zeeuwse/Geuzen forces burning Reimerswaal; exact vessel/route context remains OPEN.CLAES.REIMERSWAAL.BOAT_CONTEXT.1573.001."
+    - "22 March 1577: Claes knows the Satisfactie of Goes and understands its relevant religious-political terms; presence/influence remains OPEN.CLAES.SATISFACTIE.ROLE_STRATEGY.1577.001."
+    - "1577–1579: property/debt/legal afterlife remains an active part of the severance."
+    effect: "Home, school-city, allegiance, confession and property cease to align into one recoverable identity. Claes must confront that both royalist and rebel systems can destroy, and that political transition can occur through negotiated continuity rather than immediate conquest."
     open_projection: ARC.CLAES.GOES_DEPARTURE_1572_1579
+    context_projection: ARC.CLAES.ZEELAND_ROUTE.1572_1578
     decision_id: OPEN.GOES.CLAES_DEPARTURE_1572_1579.001
-    guardrail: "Do not fill this gap by destroying the documented Nissepad brewery or by labeling ordinary transfers confiscations."
+    guardrails:
+    - "Do not fill the economic gap by destroying the documented Nissepad brewery or by labeling ordinary transfers confiscations."
+    - "Do not collapse Reimerswaal's 1573 burning with the January 1574 naval battle."
+    - "Do not turn the historical Satisfactie into a documented anti-Catholic trap."
+
+  - id: H09A
+    story_time: {earliest: '1577-09-01', latest_exclusive: '1578-01-01', precision: bounded}
+    label: "Information becomes public power — Don Juan intercept/print context"
+    status: CONTEXT_WITH_OPEN_TOUCHPOINT
+    cause: "Intercepted Spanish correspondence is interpreted, framed and printed through the Marnix/Silvius/Van den Rade/Plantin/Vulcanius production chain."
+    effect: "Claes' world contains a concrete model of private dangerous information becoming reproducible political action; direct Claes contact remains open."
+    context_projection: ARC.CLAES.INFORMATION_EPISTEMOLOGY.1564_1584
+    decision_id: OPEN.CLAES.DONJUAN_PRINT_TOUCHPOINT.1577.001
 
   - id: H10
     story_time: {earliest: '1578-01-01', latest_exclusive: '1579-01-01', precision: year}
     label: "Projectio of the Word"
-    cause: "Claes chooses to move testimony out of private possession into print."
+    cause: "Claes chooses to move testimony out of private possession into print after years in which he has learned that publication multiplies framing and consequence as well as words."
     effect: "The textual mission is completed by release; public interpretation can no longer be controlled by Claes."
     instances: [NI.EVENT.PUBLICATION.1578.001]
-    arcs_advanced: [ARC.CLAES.MACRO_TRANSMUTATION]
+    arcs_advanced: [ARC.CLAES.MACRO_TRANSMUTATION, ARC.CLAES.INFORMATION_EPISTEMOLOGY.1564_1584]
+
+  - id: H10A
+    story_time: {earliest: '1582-03-01', latest_exclusive: '1582-05-01', precision: bounded}
+    label: "Jaureguy — retrospective legibility"
+    status: CONTEXT_WITH_OPEN_TOUCHPOINT
+    cause: "After the assassination attempt, objects, papers, finance, handwriting and testimony are assembled into a network explanation."
+    effect: "Claes can learn that a pattern reconstructed after violence is not proof that the violence was predictable beforehand."
+    context_projection: ARC.CLAES.INFORMATION_EPISTEMOLOGY.1564_1584
+    decision_id: OPEN.CLAES.JAUREGUY_TOUCHPOINT.1582.001
 
   - id: H11
     story_time: {earliest: '1584-01-01', latest_exclusive: '1585-01-01', precision: year}
-    label: "Delft — moral Nigredo / Albedo threshold"
-    cause: "Political violence and mortal consequence expose the limits of rightness, foreknowledge and control."
-    effect: "Claes must learn to distinguish truth from certainty and right action from guaranteed outcome."
+    label: "Delft — moral Nigredo / Albedo threshold: seeing is not knowing"
+    cause: "Gerards' plausible cover and the assassination expose the limits of rightness, foreknowledge, close observation and control."
+    effect: "Claes must distinguish truth from certainty and right action from guaranteed outcome. If the prior-sighting option is chosen, he remembers Gerards accurately without having been able to know what the observations meant."
     instances: [NI.CHAPTER.1584.01]
-    arcs_advanced: [ARC.CLAES.LIFE, ARC.CLAES.MACRO_TRANSMUTATION]
+    arcs_advanced: [ARC.CLAES.LIFE, ARC.CLAES.MACRO_TRANSMUTATION, ARC.CLAES.INFORMATION_EPISTEMOLOGY.1564_1584]
+    decision_id: OPEN.CLAES.GERARDS_PRIOR_SIGHTING.1584.001
+    guardrail: "Claes must not become the fictional detective who almost prevents the historical assassination."
 
   - id: H12
     story_time: {earliest: '1584-01-01', latest_exclusive: '1602-03-14', precision: developmental}
@@ -143,4 +172,5 @@ projections:
   - "A chapter may activate multiple Corpus/Anima/Spiritus registers but must still have ordinary human causality."
   - "World detail from Round B is selected because it creates pressure, choice, contrast or consequence — not because research exists."
   - "Mayken's presence invokes ARC.MAYKEN.LIFE as well as the Claes relationship; she never exists only inside Claes' arc."
-  - "Open hinge H09 must remain visibly open until the author chooses the 1572–1579 causal model."
+  - "H09 is now partly fixed: siege presence, Reimerswaal witness and Satisfactie knowledge are canon; the exact economic/departure chain and Claes' Satisfactie role remain visibly open."
+  - "Information-war context may alter pressure, suspicion and interpretation without granting Claes direct meetings or omniscient knowledge."
