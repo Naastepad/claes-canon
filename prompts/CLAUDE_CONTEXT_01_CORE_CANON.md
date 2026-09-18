@@ -5,8 +5,8 @@
 > Do not use this pack as permission for free repository discovery; follow the task router in CLAUDE_CONTEXT_INDEX.md.
 
 - source branch: `main`
-- source commit at generation: `fc0e8cfd01af2c06b8e429cc29075983a6553ca3`
-- generated UTC: `2026-09-18T08:08:33+00:00`
+- source commit at generation: `7a4aff75ebd202d107dd99ebce4f97e2dd68328d`
+- generated UTC: `2026-09-18T08:12:39+00:00`
 - included files: `11`
 
 Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pack does not alter authority.
