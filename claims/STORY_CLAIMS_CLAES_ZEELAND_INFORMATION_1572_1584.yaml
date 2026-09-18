@@ -1,0 +1,35 @@
+schema_version: "1.0.0"
+kind: StoryClaimRegistryExtension
+claims:
+  - id: STC.CLAES.GOES.SIEGE_PRESENCE.1572.001
+    type: StoryClaim
+    status: CANON
+    statement: "Claes physically goes to / is present in the Goes siege environment in 1572."
+    qualifies:
+      - "His exact side, operational role, route into/out of the siege zone, and whether he is inside the city or moves between water/land positions remain open."
+      - "Presence does not by itself make Claes a soldier, official envoy or agent of Orange."
+
+  - id: STC.CLAES.REIMERSWAAL.BURNING_WITNESS.1573.001
+    type: StoryClaim
+    status: CANON
+    statement: "In 1573 Claes witnesses the Geuzen/Zeeuwse forces burning Reimerswaal from a boat."
+    qualifies:
+      - "The exact vessel, waterway position, purpose of the voyage, companions and distance/visibility remain open."
+      - "This is the 1573 burning of the city, not the January 1574 naval battle near Reimerswaal."
+
+  - id: STC.CLAES.GOES.SATISFACTIE_KNOWLEDGE.1577.001
+    type: StoryClaim
+    status: CANON
+    statement: "Claes knows of the Satisfactie of Goes and understands its religious-political terms sufficiently for it to influence his later thinking."
+    qualifies:
+      - "Physical presence at negotiation/signing is not fixed."
+      - "Authorship, drafting, prompting or strategic influence by Claes is not fixed."
+
+  - id: STC.CLAES.CONTEXT.INFORMATION_WAR_INFLUENCE.1564_1584.001
+    type: StoryClaim
+    status: CANON_AUTHORIAL_CONTEXT
+    statement: "Claes develops inside a wider information-war environment of carriers, coded names, intercepted papers, forged documents, human sources, printers, political framing and assassination security. Much of this context may influence him indirectly or unconsciously without becoming exposition or direct participation."
+    guardrails:
+      - "Context does not create meetings automatically."
+      - "Claes is not canonically a formal secret agent."
+      - "The Brevísima remains direct hidden readable print, not a cipher."
