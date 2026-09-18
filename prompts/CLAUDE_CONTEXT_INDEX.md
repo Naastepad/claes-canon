@@ -5,8 +5,8 @@
 > `01_CORE_CANON` is not the complete decision registry. Current dated/supplemental decisions live in `05_DATED_DECISIONS` and may override or extend `canon/DECISIONS.yaml`.
 > The task router below assigns the packs to load. Load them completely before analysis, prose or repository conclusions.
 
-- source commit: `d83cd9763aad1e715b76089a3a0ef703e3f402b8`
-- generated UTC: `2026-09-18T08:06:21+00:00`
+- source commit: `9d1a33ec627e71876e333549e72b501b749d07a6`
+- generated UTC: `2026-09-18T08:07:00+00:00`
 
 ## Pack URLs
 

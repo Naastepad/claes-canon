@@ -5,8 +5,8 @@
 > Do not use this pack as permission for free repository discovery; follow the task router in CLAUDE_CONTEXT_INDEX.md.
 
 - source branch: `main`
-- source commit at generation: `d83cd9763aad1e715b76089a3a0ef703e3f402b8`
-- generated UTC: `2026-09-18T08:06:21+00:00`
+- source commit at generation: `9d1a33ec627e71876e333549e72b501b749d07a6`
+- generated UTC: `2026-09-18T08:07:00+00:00`
 - included files: `67`
 
 Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pack does not alter authority.
@@ -2940,7 +2940,7 @@ Lemma can reject an impossible combination but never invent story truth.
 ## From chapter-ready world to causal character architecture
 
 **Status:** CURRENT AUTHORING AUTHORITY FOR STORY PROJECTION  
-**Date:** synchronized through 22 August 2026  
+**Date:** synchronized through 18 September 2026  
 **Machine layers:** `narrative/alchemical_authorial_architecture.yaml`, `narrative/mayken_independent_arc.yaml`, `narrative/mayken_relationship_projection.yaml`, `narrative/goes_departure_1572_1579.yaml`, `narrative/story_projection_round_c.yaml`, `narrative/landjuweel_1561_refinement.yaml`
 
 Round A restored lost historical/worldbuilding substrate. Round B made six major domains chapter-ready. Round C answers the next question: **what changes in the people because those worlds exist?**
@@ -3045,27 +3045,78 @@ Claes cannot solve the father. Cornelis' body can be destroyed, papers can burn,
 
 The hidden words are already there. The question changes from **“what is the solution?”** to **“what does this readable truth require?”** Mayken matters precisely because material contradiction prevents Claes from making interpretation sovereign.
 
-### Goes 1572–1579 — deliberately open causal hinge
+### Zeeland 1572–1579 — fixed route inside an open severance
 
-This is now a visible, high-priority design problem rather than a hole.
+The old economic hinge is now only one part of a larger Zeeland sequence.
 
-Historically fixed:
+**Fixed Claes route:**
+
+- **1572 — Goes siege:** Claes physically goes to / is present in the siege environment. Exact side, function and scene geometry remain open.
+- **1573 — Reimerswaal:** from a boat Claes witnesses Zeeuwse/Geuzen forces burn the city of his schooling. Exact vessel, route and companions remain open.
+- **22 March 1577 — Satisfactie of Goes:** Claes knows the negotiated settlement and its protection of Catholic practice under Orange's stadholder authority. Presence or influence remains open.
+- **1578 — Antwerp:** the Brevísima print endpoint remains fixed.
+
+These anchors change the design problem. Goes ceases to be recoverable not only through assets or debt, but potentially through a cumulative **material + political + confessional + moral** severance.
+
+Historically fixed economic context remains:
 - outside salt works and a brewery in the Voorstad are damaged/burned during the 1572 siege;
 - a Nissepad brewery exists with equipment in 1577 and is not proven the same brewery;
 - a Nissepat-linked burned Westzelke salt-pan site is sold in 1577, but the destructive event is unknown;
 - later transports do not automatically mean confiscation or execution.
 
-The unresolved novel question is: **which actual economic/material chain makes Goes cease to be Claes' recoverable home base?**
+The unresolved novel question remains: **which exact causal chain finally makes Goes cease to be Claes' recoverable home base?**
 
-The preferred design space is not “destroy a convenient brewery”. It is more likely a combination of genuine 1572 material damage plus debts, claims, postwar settlement and network collapse. That remains OPEN until explicitly chosen.
+Do not solve it by destroying a convenient documented brewery.
+
+### Satisfactie 1577 — new moral/political open
+
+`OPEN.CLAES.SATISFACTIE.ROLE_STRATEGY.1577.001` governs.
+
+Claes may:
+- know the settlement only as observer/reader;
+- give a limited hint based on his knowledge of Goes;
+- deliberately argue for a staged transition in which Catholic practice is first protected and later displaced;
+- or encounter such instrumental reasoning and reject it.
+
+The third model is intentionally dangerous. It would make toleration an instrument rather than a principle and may carry revenge against the institutions associated with Cornelis' death. No such revenge motive is canon yet.
+
+Historical guardrail: the actual Satisfactie is not documented as a hidden anti-Catholic trap, and Orange's 1578 religious-peace line points toward coexistence/toleration. A manipulative Claes would therefore not simply be voicing Orange's historical policy.
+
+### 1577 — information becomes public power
+
+The historical Don Juan correspondence chain is now an authorial context hinge:
+
+**intercept -> interpretation -> framing -> print -> international distribution -> political effect.**
+
+Marnix, Silvius, Gillis van den Rade, Plantin and Vulcanius belong to that documented print chain. Claes' direct contact remains open, but the model is highly relevant because Silvius already belongs to Claes' formative world.
+
+The same information environment also contains forged correspondence and selective political framing. Therefore the post-1570 epistemic rule becomes:
+
+> **visible is not automatically true; authentic is not automatically complete; complete is not automatically neutral.**
 
 ### 1578 — Projectio of the Word
 
-The testimony leaves Claes' possession through print. That is already a form of mastery: he cannot dictate every future reading.
+The testimony leaves Claes' possession through print. That is already a form of mastery because he cannot dictate every future reading.
 
-### 1584 — moral Nigredo / Albedo threshold
+The 1577 context deepens this: printing changes not only quantity but **audience, framing, translation, authority and consequence**.
 
-The problem is no longer whether Claes can know enough. It is whether he can distinguish truth from certainty and right action from guaranteed success.
+### 1582 — retrospective legibility
+
+The Jaureguy aftermath supplies a historical model in which objects, papers, financial traces, handwriting and witnesses make a hidden network legible **after** violence.
+
+Whether Claes experiences the case directly, through report/print or only retrospectively remains open. Its function is more important than his physical proximity.
+
+### 1584 — moral Nigredo / Albedo threshold: seeing is not knowing
+
+Gerards creates the inverse problem. A plausible cover identity can be composed from ordinary and partly true elements.
+
+The high-value open option is that Claes briefly saw François Guyon/Gerards before the murder and later remembers him accurately. If used, the scene must not turn Claes into the detective who almost prevents history.
+
+The deeper discovery is:
+
+> **accurate perception does not guarantee knowledge of another person's intention.**
+
+The problem is no longer whether Claes can know enough. It is whether he can distinguish truth from certainty and choose without guaranteed outcome.
 
 ### Late line with Mayken
 
@@ -3156,7 +3207,13 @@ Current explicit design openings include:
 
 - `OPEN.LANDJUWEEL.ENTRY_ROUTE.1561.001` — reconcile the current manuscript/dossier route with the presently checked historical procession route before calling the Meirbrug/Onze-Lieve-Vrouwe segment documented;
 - `OPEN.CLAES.SILVIUS.LANDJUWEEL_PRINT_1562.001` — optional performance-to-print transition, without retroactive 1561 contact;
-- `OPEN.GOES.CLAES_DEPARTURE_1572_1579.001` — the exact economic/material causal chain that finally severs Claes from Goes;
+- `OPEN.GOES.CLAES_DEPARTURE_1572_1579.001` — the exact cumulative chain that finally severs Claes from Goes;
+- `OPEN.CLAES.GOES.SIEGE_ROLE.1572.001` — Claes' exact role/location during the siege;
+- `OPEN.CLAES.REIMERSWAAL.BOAT_CONTEXT.1573.001` — exact boat/route context of the burning witness;
+- `OPEN.CLAES.SATISFACTIE.ROLE_STRATEGY.1577.001` — observer, hint-giver, strategist or moral opponent;
+- `OPEN.CLAES.DONJUAN_PRINT_TOUCHPOINT.1577.001` — directness of his contact with the intercepted-letter print world;
+- `OPEN.CLAES.JAUREGUY_TOUCHPOINT.1582.001` — direct/indirect/retrospective use;
+- `OPEN.CLAES.GERARDS_PRIOR_SIGHTING.1584.001` — whether seeing Guyon before the murder becomes the Delft epistemic wound;
 - `OPEN.MAYKEN.INDEPENDENT_MIDARC.001` — the concrete work/family/social pressure through which Mayken's adult independence becomes dramatically visible.
 
 These are correctly open. They must not hide as missing story structure or be silently resolved by later prose.
