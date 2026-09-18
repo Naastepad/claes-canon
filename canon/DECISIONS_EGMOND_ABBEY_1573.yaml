@@ -1,0 +1,60 @@
+schema_version: 1.0.0
+kind: CanonDecisionRegistryExtension
+decisions:
+- id: DEC.EGMOND_ABBEY.NO_SIMPLE_FIRE.2026-08-16
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    The Claes storybible must not state as narrator fact that the Abdij van Egmond was simply plundered and burned on 7 June 1573. The 7 June fire formula is retained only as a disputed tradition, public rumor, later simplification or polemical frame. The preferred story-world reconstruction is deliberate, organized dismantling/ontmanteling from late May 1573 onward, with paid labour and removal/reuse of materials in the Alkmaar war context.
+  affects:
+  - ENT.LOC.EGMOND.ABBEY
+  - WORLD.LOW_COUNTRIES_INFORMATION_ECOLOGY
+  - WORLD.RELIGIOUS_SPACE
+  - STC.WORLD.EGMOND_ABBEY.1573.SLOOP_NOT_SIMPLE_FIRE.001
+  - SC.HIST.EGMOND_ABBEY.FIRE_TRADITION_1573.001
+  - SC.HIST.EGMOND_ABBEY.SLOOP_1573.001
+  rationale: >-
+    The user supplied new source context and archival-reconstruction argumentation. The resulting story rule preserves the conventional fire tradition as historically important discourse while preventing the storybible from using that tradition as the unqualified mechanism of destruction.
+  evidence_boundary:
+  - Existing public tradition and some heritage summaries preserve the 7 June burning version.
+  - The stronger reconstruction for this project emphasizes systematic sloop/ontmanteling, labour accounts and material reuse.
+  - Exact account folios, names and weekly payment data still require direct archival locator verification before being written with granular specificity.
+  guardrails:
+  - Do not write: "De Abdij van Egmond werd op 7 juni 1573 in brand gestoken" as settled narrator fact.
+  - Acceptable prose: "Men zei dat de abdij brandde" or "de rekeningen vertelden iets anders: mannen, schuiten, balken, steen en lood, week na week".
+  - If fire imagery appears, preserve ambiguity unless a later source record supports a specific local fire.
+
+- id: DEC.EGMOND_ABBEY.STORY_USE.1550_1573.2026-08-16
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    Egmond is added as indirect Low Countries context for Claes: around 1550 it represents old sacral/institutional Holland; in 1573 it becomes a thematic counter-image for the conversion of sacred fabric into war material. It is not a direct Claes plot location unless a later explicit decision changes that.
+  affects:
+  - STC.WORLD.EGMOND_ABBEY.STATUS_1550.001
+  - STC.WORLD.EGMOND_ABBEY.1573.SACRAL_MATERIAL_TO_WAR_MATERIAL.001
+  - WORLD.LOW_COUNTRIES_TRANSFORMATION_1540_1605
+  - ARC.CLAES.MACRO_TRANSMUTATION
+  - THEME.RUMOR_VS_ARCHIVE
+  - THEME.SACRED_TO_WAR_MATERIAL
+  rationale: >-
+    The material is highly relevant to the novel's recurring concerns: sacred space, archival truth versus public telling, fire versus administrative destruction, and the wartime reuse of matter. Its distance from Zeeland/Claes keeps it at the level of information ecology and thematic resonance rather than direct biography.
+  guardrails:
+  - Use Egmond as counterpoint to Goes 1554: Goes may remain a real family fire trauma; Egmond 1573 is a contested fire story masking organized dismantling.
+  - Do not make Egmond more central than the Zeeland/Goes causal spine.
+  - Do not imply that Claes personally inspected the abbey, the accounts or the materials without future canon.
+
+- id: DEC.EGMOND_ABBEY.CLAES_RELEVANCE.2026-08-16
+  type: CanonDecision
+  status: CANON
+  decision: >-
+    Claes may plausibly hear of Egmond 1573 through news, rumor or later account-based correction moving across Holland-Zeeland networks, but this remains indirect context. His knowledge route, date of acquisition and degree of understanding are not fixed.
+  affects:
+  - ENT.PERSON.CLAES_NISSEPAT
+  - STC.CLAES.EGMOND_ABBEY_1573.HEARS_AS_NEWS_OR_RUMOR.001
+  - WORLD.LOW_COUNTRIES_INFORMATION_ECOLOGY
+  rationale: >-
+    The fact is narratively useful, but it should not silently create a new travel episode or eyewitness scene. Claes' story can use the event as a heard report, later comparison or interpretive lesson.
+  open_edges:
+  - Whether Claes hears the first simplified fire rumor in 1573 remains open at scene level.
+  - Whether a later character shows him account-based evidence remains open.
+  - Exact narrative placement remains open until chapter/scene projection.
