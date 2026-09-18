@@ -67,6 +67,19 @@ PACKS = {
         "narrative/beloved_recovery.yaml",
         "narrative/knowledge_states.yaml",
     ],
+    "07_ZEELAND_INFORMATION_WAR": [
+        "storybible/INFORMATION_WAR_ZEELAND_AND_CLAES_1564_1584.md",
+        "storybible/modules/GOES_RELIGIOUS_TRANSITION_1577_1578.md",
+        "history/INFORMATION_WAR_LOW_COUNTRIES_1564_1584.yaml",
+        "history/GOES_MILITARY_TRANSITION_1550_1607.yaml",
+        "narrative/claes_information_war_1564_1584.yaml",
+        "narrative/goes_departure_1572_1579.yaml",
+        "claims/SOURCE_CLAIMS_INFORMATION_WAR_ZEELAND_1571_1584.yaml",
+        "claims/STORY_CLAIMS_CLAES_ZEELAND_INFORMATION_1572_1584.yaml",
+        "canon/DECISIONS_INFORMATION_WAR_ZEELAND_2026-09-18.yaml",
+        "review/MIGRATION_REVIEW_SUPPLEMENT_INFORMATION_WAR_ZEELAND_2026-09-18.yaml",
+        "sources/SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18.md",
+    ],
 }
 
 CHARACTER_WEB_FILES = [
@@ -202,6 +215,7 @@ def main() -> None:
         "- **Chapter or scene construction:** `01_CORE_CANON` + `05_DATED_DECISIONS` + `02_STORYBIBLE_PROJECTION` + `03_WRITING_EDITORIAL` + `06_CHARACTER_WEB`.",
         "- **Hard critique / revision / editor pass:** `01_CORE_CANON` + `05_DATED_DECISIONS` + `02_STORYBIBLE_PROJECTION` + `03_WRITING_EDITORIAL` + `06_CHARACTER_WEB`.",
         "- **Any task in which Mayken appears or her arc/relationship matters:** add `04_MAYKEN_KNOWLEDGE` to the applicable set above.",
+        "- **Goes 1572 / Reimerswaal 1573 / Satisfactie 1577 / Zeeland–Antwerp routes / information war / Marnix / Silvius / Plantin / Vulcanius / Jaureguy / Gerards / Delft epistemic arc:** add `07_ZEELAND_INFORMATION_WAR` to the applicable set above.",
         "- **Repository mutation:** first load `01_CORE_CANON` + `05_DATED_DECISIONS`; then load the task-specific packs above and fresh-fetch only the exact target files before writes.",
         "- **Cold-reader pass:** do NOT load Storybible packs; follow `READER_EXPERIENCE_PROTOCOL.md` with deliberately restricted context. A cold-reader task is the explicit exception to this router.",
         "",
