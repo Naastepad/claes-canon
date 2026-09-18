@@ -180,6 +180,19 @@ Moreover, Orange's 1578 religious-peace policy points toward coexistence/tolerat
 
 That tension may be dramatically valuable.
 
+## 3A. 1576 — Middelburg and Antwerp become one operational water-world
+
+The context now records two hard anchors:
+
+- Marnix is directly attested in **Middelburg on 20 July 1576** through his album entry for Emanuel van Meteren.
+- In that same year Middelburg commissioned **three ships** to sail between Middelburg and Antwerp to collect refugees.
+
+This matters because Claes' geography must not be read as modern isolated city dots. Zeeland and Antwerp are connected by active maritime movement of people, news, paper, money and danger.
+
+No Claes–Marnix meeting is created by this context.
+
+It does, however, strengthen the plausibility that consequences generated in Antwerp can reach Claes in Zeeland before he knows their source.
+
 ## 4. 1577 — the information cycle becomes visible in print
 
 The Don Juan intercept/publication chain provides a near-perfect historical model:
@@ -211,6 +224,43 @@ Once printed:
 
 This is the **Projectio of the Word** problem before Claes completes his own in 1578.
 
+### The relay before print
+
+The Don Juan material also demonstrates that interception is not one event.
+
+One documented route runs:
+
+**La Noue → Henry of Navarre → Du Plessis-Mornay → Orange → Marnix**
+
+The packet is rerouted through trusted international contacts before being politically used. Marnix is then needed not merely to "read a code" but to explain/authenticate what has arrived.
+
+This adds two operations to Claes' information grammar:
+
+**safe transport** and **authentication**.
+
+### Vulcanius gives the process a workshop body
+
+In autumn 1577 **Bonaventura Vulcanius** is living with Silvius at **De Gulden Engel in the Sleutelstraat**. His long Spanish experience makes him useful for correction and translation of the intercepted material.
+
+That creates an unusually tight historical continuity for the novel:
+
+**Silvius as Claes' 1563–1564 text/material mediator**  
+→ **Silvius + Vulcanius as 1577 processors of captured Spanish political text**
+
+The continuity is human and professional, not the same Antwerp building.
+
+### Silvius and the forged-letter tradition
+
+Older historiography attributes to Silvius an October 1577 operation in which he imitated Don Juan's handwriting/signature on a false message, allegedly helping bring Breda over while Silvius was with Orange at Geertruidenberg.
+
+This is retained only as **historiographical tradition** because later secondary formulations are inconsistent and the primary chain has not yet been rechecked.
+
+Its present storybible use is therefore contextual only:
+
+> a man known for printing, calligraphy and state service could also be imagined as capable of making a document materially persuasive enough to alter action.
+
+Do not turn this anecdote into a Claes scene yet.
+
 ## 5. Genuine evidence and false evidence occupy the same world
 
 The information environment must not be idealized.
@@ -233,6 +283,25 @@ Therefore the epistemological progression after 1570 becomes:
 > **volledig ≠ neutraal geïnterpreteerd**
 
 This is a major extension of the Green-Lion/reveal motif without changing its chemistry.
+
+## 5A. Secret communication is broader than espionage
+
+The context layer must not equate secrecy with state intelligence.
+
+Van Stipriaan notes that **Plantin and Arias Montano** continued after Montano's return to Spain to exchange messages in an **own secret language**, in a spiritualist network context touching Barrefelt.
+
+This is highly relevant to the Claes world because Cornelis already belongs fictionally to the translocal Huis der Liefde milieu.
+
+The distinction is important:
+
+- state cipher can protect military/diplomatic information;
+- coded names can protect agents and routes;
+- spiritual/religious secret language can protect inner affiliation or trusted exchange;
+- hidden print can protect testimony.
+
+These forms may resemble one another materially without sharing the same purpose.
+
+A second comparator comes from **Leiden 1574**, where contemporary reporting shows secret human messengers, a prearranged cannon-shot acknowledgement and a pigeon carrying written instructions. This broadens the historically available communication repertoire, but it is not a Claes event.
 
 ## 6. 1582 — Jaureguy: a network becomes legible after violence
 
