@@ -5,8 +5,8 @@
 > Do not use this pack as permission for free repository discovery; follow the task router in CLAUDE_CONTEXT_INDEX.md.
 
 - source branch: `main`
-- source commit at generation: `c505ff7bf8618ff04660c4ef289933f342d42c43`
-- generated UTC: `2026-09-18T08:07:33+00:00`
+- source commit at generation: `632436dab1c197dc02c1cd731bf2e0e904415564`
+- generated UTC: `2026-09-18T08:08:09+00:00`
 - included files: `11`
 
 Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pack does not alter authority.
@@ -2048,19 +2048,20 @@ Operational navigation for the current Claes Storybible.
 ## Start here
 
 1. `MASTER.md` — authority, precedence and current fixed state.
-2. `LEMMA_MCKEE_MASTER.md` — **current synchronized human-readable story synthesis** through 16 August 2026.
-3. `STORY_PROJECTION_ROUND_C.md` — current causal/character projection from the settled world into future chapter structure.
-4. `CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md` — stable core-cast characterization, shadows and author-side archetypal contrast; use for recurring-person continuity.
-5. `../WRITING_PROTOCOL.md` — current drafting, prose, pacing and scene-retention authority.
-6. `../review/READER_EXPERIENCE_PROTOCOL.md` — cold-reader, pilot-reader and feedback method.
-7. `../canon/OPEN_DECISIONS.yaml` — active unresolved backlog only.
-8. `../review/SYNC_STATUS.md` — synchronization status.
-9. `../review/CANON_CONFLICT_AUDIT_2026-08-16.md` — conflicts found and their resolution.
-10. `../review/HISTORICAL_SUBSTRATE_RECOVERY_2026-08-16.md` — Round-A recovery.
-11. `../review/DOMAIN_REBUILD_ROUND_B_2026-08-16.md` — Round-B chapter-readiness rebuild.
-12. `../review/STORY_PROJECTION_ROUND_C_2026-08-16.md` — Round-C projection audit.
-13. `../review/EDITORIAL_PROTOCOL_ROUND_D_2026-08-16.md` — Round-D editorial/reader recovery audit.
-14. `../review/CHARACTER_WEB_REFINEMENT_2026-08-19.md` — character-web/fiction-characterization handoff.
+2. `LEMMA_MCKEE_MASTER.md` — **current synchronized human-readable story synthesis** through 18 September 2026.
+3. `STORY_PROJECTION_ROUND_C.md` — current causal/character projection from the settled world into future chapter structure, including the 1572–1584 Zeeland/information sequence.
+4. `INFORMATION_WAR_ZEELAND_AND_CLAES_1564_1584.md` — governing context/backline dossier for covert communication, Goes/Reimerswaal/Satisfactie and the 1582/1584 epistemic arc.
+5. `CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md` — stable core-cast characterization, shadows and author-side archetypal contrast; use for recurring-person continuity.
+6. `../WRITING_PROTOCOL.md` — current drafting, prose, pacing and scene-retention authority.
+7. `../review/READER_EXPERIENCE_PROTOCOL.md` — cold-reader, pilot-reader and feedback method.
+8. `../canon/OPEN_DECISIONS.yaml` — active unresolved backlog only.
+9. `../review/SYNC_STATUS.md` — synchronization status.
+10. `../review/CANON_CONFLICT_AUDIT_2026-08-16.md` — conflicts found and their resolution.
+11. `../review/HISTORICAL_SUBSTRATE_RECOVERY_2026-08-16.md` — Round-A recovery.
+12. `../review/DOMAIN_REBUILD_ROUND_B_2026-08-16.md` — Round-B chapter-readiness rebuild.
+13. `../review/STORY_PROJECTION_ROUND_C_2026-08-16.md` — Round-C projection audit.
+14. `../review/EDITORIAL_PROTOCOL_ROUND_D_2026-08-16.md` — Round-D editorial/reader recovery audit.
+15. `../review/CHARACTER_WEB_REFINEMENT_2026-08-19.md` — character-web/fiction-characterization handoff.
 
 `LEMMA_MCKEE_MASTER_2026-08-13.md` is a dated legacy snapshot. It is retained for development history but is not current authoring authority.
 
@@ -2079,6 +2080,7 @@ Operational navigation for the current Claes Storybible.
 - `../canon/DECISIONS_HOUSE_OF_LOVE_NETWORK_2026-08-16.yaml` — Cornelis' ca.1552–1553 Familist entry route, pre-fire affiliation, outward conformity, later Plantin role and beer-to-paper logistics continuity.
 - `../canon/DECISIONS_PUTTUS_2026-08-18.yaml` — Puttus as Claes' pre-fire Latin/humanist master; evidence/fiction boundary refined 19 August.
 - `../canon/DECISIONS_CHARACTER_WEB_2026-08-19.yaml` — fiction-fill policy, core character web, Puttus characterization and Claes-Mayken childhood acquaintance.
+- `../canon/DECISIONS_INFORMATION_WAR_ZEELAND_2026-09-18.yaml` — Claes at the 1572 Goes siege, witnessing Reimerswaal burn from a boat in 1573, knowledge of the 1577 Satisfactie, and the governing context/backline rule.
 
 ## Active open decisions
 
@@ -2100,6 +2102,9 @@ Resolved/not-applicable records no longer remain mixed into the active open regi
 - `../claims/SOURCE_CLAIMS_LAMPERT_APOTHECARY.yaml`
 - `../claims/SOURCE_CLAIMS_ALCHEMY_2026-08-16.yaml`
 - `../claims/SOURCE_CLAIMS_GOES_RELIGION_1577_1578.yaml`
+- `../claims/SOURCE_CLAIMS_INFORMATION_WAR_ZEELAND_1571_1584.yaml` — agent networks, double agents, Reimerswaal 1573, Satisfactie 1577, Don Juan intercept/print chain, Jaureguy and Gerards.
+- `../claims/STORY_CLAIMS_CLAES_ZEELAND_INFORMATION_1572_1584.yaml` — fixed fictional route/knowledge claims separated from historical evidence.
+- `../sources/SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18.md` — composite research provenance and correction ledger.
 - `../claims/SOURCE_CLAIMS_HISTORICAL_SUBSTRATE_RECOVERY_2026-08-16.yaml`
 - `../claims/SOURCE_CLAIMS_DOMAIN_REBUILD_2026-08-16.yaml`
 - `../claims/SOURCE_CLAIMS_HOUSE_OF_LOVE_NETWORK_2026-08-16.yaml` — Ghysbrecht/Gijsbrecht archival anchors, Dens/Barrefelt network roles, outward-conformity boundary and Plantin historiographical caution.
@@ -2121,6 +2126,7 @@ This layer supplies non-fiction world state and scene conditions. It never creat
 - `modules/WORLD_GOES_CHURCH_LITURGICAL_GUARDRAILS.md`
 - `modules/HISTORICAL_SUBSTRATE_GOES_CHURCH_LINK.md`
 - `modules/GOES_RELIGIOUS_TRANSITION_1577_1578.md`
+- `../history/INFORMATION_WAR_LOW_COUNTRIES_1564_1584.yaml` — background causal pressure that can alter routes, trust, suspicion, print and interpretation without creating a Claes meeting.
 
 ### Writing-readiness rule
 
@@ -2186,7 +2192,8 @@ Round C is the bridge from chapter-ready world knowledge to future Book/Act/Sequ
 - `../narrative/character_web_archetypes.yaml` — author-side character-web projection; archetypal shorthand never appears as in-world doctrine.
 - `../narrative/mayken_independent_arc.yaml` — `ARC.MAYKEN.LIFE`.
 - `../narrative/mayken_relationship_projection.yaml` — `REL.CLAES.MAYKEN.CONJUNCTIO`, now including childhood acquaintance and divergent post-fire paths.
-- `../narrative/goes_departure_1572_1579.yaml` — explicit open causal design projection for Claes' final material/economic severance from Goes.
+- `../narrative/goes_departure_1572_1579.yaml` — explicit open cumulative design projection for Claes' final severance from Goes.
+- `../narrative/claes_information_war_1564_1584.yaml` — information/epistemology backline plus the fixed 1572–1578 Zeeland route anchors.
 
 ### Great-Work rule
 
@@ -2208,7 +2215,13 @@ Any developed Mayken scene must load `ARC.MAYKEN.LIFE` as well as the Claes–Ma
 
 ### Current high-priority Round-C open hinges
 
+- `OPEN.CLAES.GOES.SIEGE_ROLE.1572.001`
+- `OPEN.CLAES.REIMERSWAAL.BOAT_CONTEXT.1573.001`
+- `OPEN.CLAES.SATISFACTIE.ROLE_STRATEGY.1577.001`
+- `OPEN.CLAES.DONJUAN_PRINT_TOUCHPOINT.1577.001`
 - `OPEN.GOES.CLAES_DEPARTURE_1572_1579.001`
+- `OPEN.CLAES.JAUREGUY_TOUCHPOINT.1582.001`
+- `OPEN.CLAES.GERARDS_PRIOR_SIGHTING.1584.001`
 - `OPEN.MAYKEN.INDEPENDENT_MIDARC.001`
 
 ## Writing / editorial / reader-experience layer — Round D
