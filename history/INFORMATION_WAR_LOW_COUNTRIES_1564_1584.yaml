@@ -79,6 +79,39 @@ anchors:
       - "the agreement can become a moral/strategic test of whether toleration is principle, compromise, instrument or temporary mask"
     unresolved_story_role: OPEN.CLAES.SATISFACTIE.ROLE_STRATEGY.1577.001
 
+  - id: HIST.INFO.MIDDELBURG_ANTWERP_ROUTE.1576
+    status: HISTORICAL_CONTEXT
+    source_claims:
+      - SC.HIST.MARNIX.MIDDELBURG.1576_07_20.001
+      - SC.HIST.MIDDELBURG_ANTWERP.REFUGEE_SHIPS.1576.001
+    summary: "Marnix is physically attested in Middelburg in July 1576, while Middelburg commissions ships to move refugees from Antwerp during the same crisis year."
+    story_effect:
+      - "Makes Zeeland–Antwerp movement a lived maritime system rather than a map abstraction."
+      - "Supports plausible circulation of people, letters, rumours and materials without creating a Claes meeting."
+
+  - id: HIST.INFO.INTERCEPT_REROUTE_AUTHENTICATE.1577
+    status: HISTORICAL_CONTEXT
+    source_claims: [SC.HIST.INTERCEPT_ROUTE.LANOUE_NAVARRE_MORNAY_ORANGE.1577.001]
+    summary: "Intercepted Spanish correspondence can pass through an international relay before reaching Orange and then require authentication/explanation by Marnix."
+    story_effect:
+      - "Separates interception from safe transport, authentication and political use."
+      - "Deepens the chain: intercept -> reroute -> authenticate -> interpret -> publish/use."
+
+  - id: HIST.INFO.VULCANIUS_GULDEN_ENGEL.1577
+    status: HISTORICAL_CONTEXT_HIGH_VALUE
+    source_claims: [SC.HIST.VULCANIUS.SILVIUS_GULDEN_ENGEL.1577.001]
+    summary: "Vulcanius lives with Silvius at De Gulden Engel in the Sleutelstraat and applies Spanish expertise to correction/translation around the Don Juan publication."
+    story_effect:
+      - "Gives the 1577 information-print system a concrete multilingual workshop body."
+      - "Strengthens continuity with Claes' existing Silvius formation without requiring a direct meeting."
+
+  - id: HIST.INFO.SILVIUS_FORGERY_TRADITION.1577
+    status: CONTEXT_TRADITION_NOT_SCENE_FACT
+    source_claims: [SC.HIST.SILVIUS.FORGED_DONJUAN_LETTER_TRADITION.1577.001]
+    summary: "Older historiography attributes to Silvius a forged Don Juan message produced through calligraphic imitation."
+    story_effect: "Makes document fabrication part of the plausible cultural imagination around Silvius' technical skill."
+    guardrail: "Do not use the anecdote as settled event causality until primary-source recheck resolves secondary inconsistencies."
+
   - id: HIST.INFO.DON_JUAN_INTERCEPT_PRINT.1577
     status: HISTORICAL_CONTEXT_HIGH_VALUE
     source_claims: [SC.HIST.DONJUAN.INTERCEPT_PRINT_CHAIN.1577.001]
@@ -100,6 +133,19 @@ anchors:
     summary: "Catholic continuity under the Satisfactie is followed by confessional pressure and Reformed expansion in 1578, while Orange argues a religious-peace line."
     story_effect: "Claes can confront the difference between principled toleration, political compromise and manipulative transitional toleration."
     guardrail: "No source currently proves that the Satisfactie was intentionally designed as a trap to eliminate Catholicism."
+
+  - id: HIST.INFO.PLANTIN_MONTANO_SECRET_LANGUAGE.POST1575
+    status: HISTORICAL_CONTEXT
+    source_claims: [SC.HIST.PLANTIN_MONTANO.SECRET_LANGUAGE.POST1575.001]
+    summary: "Plantin and Montano exchange messages in a private secret language after Montano's return to Spain."
+    story_effect: "Secret language belongs not only to state intelligence but also to religious/intellectual trust networks."
+    guardrail: "Do not equate Familist/spiritualist secrecy automatically with espionage."
+
+  - id: HIST.INFO.LEIDEN_COMMUNICATION_PRACTICE.1574
+    status: WORLD_PRACTICE_COMPARATOR
+    source_claims: [SC.HIST.LEIDEN.SIEGE_COMMUNICATION.1574.001]
+    summary: "Leiden siege communication combines secret messengers, cannon-shot acknowledgement and a pigeon carrying written instructions."
+    story_effect: "Broadens the historically available communication repertoire without creating Claes participation."
 
   - id: HIST.INFO.JAUREGUY.1582
     status: HISTORICAL_CONTEXT_POTENTIAL_TOUCHPOINT
