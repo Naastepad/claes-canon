@@ -5,8 +5,8 @@
 > `01_CORE_CANON` is not the complete decision registry. Current dated/supplemental decisions live in `05_DATED_DECISIONS` and may override or extend `canon/DECISIONS.yaml`.
 > The task router below assigns the packs to load. Load them completely before analysis, prose or repository conclusions.
 
-- source commit: `a536d5904fb512bd112ed2eba9276fbc68cdd271`
-- generated UTC: `2026-09-18T08:18:43+00:00`
+- source commit: `23af18014fce45da4e445e204a515271f323d0f5`
+- generated UTC: `2026-09-18T08:34:55+00:00`
 
 ## Pack URLs
 
@@ -22,10 +22,13 @@
 4. `04_MAYKEN_KNOWLEDGE` — 5 files
    https://raw.githubusercontent.com/Naastepad/claes-canon/main/prompts/CLAUDE_CONTEXT_04_MAYKEN_KNOWLEDGE.md
 
-5. `05_DATED_DECISIONS` — 23 files
+5. `07_ZEELAND_INFORMATION_WAR` — 11 files
+   https://raw.githubusercontent.com/Naastepad/claes-canon/main/prompts/CLAUDE_CONTEXT_07_ZEELAND_INFORMATION_WAR.md
+
+6. `05_DATED_DECISIONS` — 23 files
    https://raw.githubusercontent.com/Naastepad/claes-canon/main/prompts/CLAUDE_CONTEXT_05_DATED_DECISIONS.md
 
-6. `06_CHARACTER_WEB` — 9 files
+7. `06_CHARACTER_WEB` — 9 files
    https://raw.githubusercontent.com/Naastepad/claes-canon/main/prompts/CLAUDE_CONTEXT_06_CHARACTER_WEB.md
 
 ## Mandatory task router
@@ -37,6 +40,7 @@ Classify the user's task first, then load the exact pack set below. Do not repla
 - **Chapter or scene construction:** `01_CORE_CANON` + `05_DATED_DECISIONS` + `02_STORYBIBLE_PROJECTION` + `03_WRITING_EDITORIAL` + `06_CHARACTER_WEB`.
 - **Hard critique / revision / editor pass:** `01_CORE_CANON` + `05_DATED_DECISIONS` + `02_STORYBIBLE_PROJECTION` + `03_WRITING_EDITORIAL` + `06_CHARACTER_WEB`.
 - **Any task in which Mayken appears or her arc/relationship matters:** add `04_MAYKEN_KNOWLEDGE` to the applicable set above.
+- **Goes 1572 / Reimerswaal 1573 / Satisfactie 1577 / Zeeland–Antwerp routes / information war / Marnix / Silvius / Plantin / Vulcanius / Jaureguy / Gerards / Delft epistemic arc:** add `07_ZEELAND_INFORMATION_WAR` to the applicable set above.
 - **Repository mutation:** first load `01_CORE_CANON` + `05_DATED_DECISIONS`; then load the task-specific packs above and fresh-fetch only the exact target files before writes.
 - **Cold-reader pass:** do NOT load Storybible packs; follow `READER_EXPERIENCE_PROTOCOL.md` with deliberately restricted context. A cold-reader task is the explicit exception to this router.
 
