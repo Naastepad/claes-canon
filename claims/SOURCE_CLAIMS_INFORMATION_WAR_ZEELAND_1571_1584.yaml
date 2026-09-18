@@ -17,7 +17,8 @@ claims:
   - id: SC.HIST.MARNIX.CASTILIA.CIPHER_KEYS.1570S.001
     type: SourceClaim
     statement: "Secondary scholarship reports that Joannis de Castilia supplied Spanish cipher keys to Orange's side for years, so Marnix's successful reading of intercepted correspondence must not be represented as pure unaided cryptanalysis."
-    evidence_status: SUPPORTED_SECONDARY_WITH_ADMINISTRATIVE_DETAIL_VARIANCE
+    evidence_status: SUPPORTED
+    evidence_note: "Secondary support; administrative detail varies across retellings."
     source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
     qualifies:
       - "Secondary retellings differ over the precise office/secretarial chain around Castilia."
@@ -32,7 +33,7 @@ claims:
   - id: SC.HIST.CHURCHYARD.ANTWERP_INTELLIGENCE.1567.001
     type: SourceClaim
     statement: "Thomas Churchyard undertook an Antwerp mission for William Cecil in 1567 to gather intelligence about unrest and opposition to Habsburg rule."
-    evidence_status: SUPPORTED_ACADEMIC
+    evidence_status: SUPPORTED
     source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
 
   - id: SC.HIST.GOES.SIEGE_RELIEF.1572.002
@@ -45,7 +46,7 @@ claims:
   - id: SC.HIST.REIMERSWAAL.BURNING.1573.001
     type: SourceClaim
     statement: "In 1573 Zeeuwse troops entered Reimerswaal to expel the Spanish occupation and set the city on fire."
-    evidence_status: SUPPORTED_REGIONAL_HERITAGE
+    evidence_status: SUPPORTED
     source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
     story_time: {earliest: 1573-01-01, latest_exclusive: 1574-01-01, precision: year}
     guardrail: "Do not collapse the 1573 burning with the January 1574 naval battle near Reimerswaal."
@@ -66,79 +67,80 @@ claims:
   - id: SC.HIST.DONJUAN.INTERCEPT_PRINT_CHAIN.1577.001
     type: SourceClaim
     statement: "Intercepted Don Juan correspondence was politically processed through Marnix and ordered into print by the States-General in September 1577; Silvius held the printing commission, Gillis van den Rade printed Marnix's framing text, Plantin printed the intercepted letters, and Vulcanius was involved."
-    evidence_status: VERIFIED_SECONDARY_BIBLIOGRAPHICAL
+    evidence_status: SUPPORTED
     source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
     story_time: {earliest: 1577-09-01, latest_exclusive: 1578-01-01, precision: bounded}
 
   - id: SC.HIST.ORANGE.FORGED_CORRESPONDENCE.GHENT.1577.001
     type: SourceClaim
     statement: "Van Stipriaan reports that forged correspondence was used in Ghent in 1577 with Orange's knowledge to present arrested opponents as conspirators."
-    evidence_status: SUPPORTED_SECONDARY
+    evidence_status: SUPPORTED
     source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
     significance: "Genuine interception and deliberate falsification coexist in the same information environment."
 
   - id: SC.HIST.JAUREGUY.EVIDENCE_CHAIN.1582.001
     type: SourceClaim
     statement: "After Jaureguy's attack in Antwerp in March 1582, physical objects, Spanish papers, financial instruments, handwriting recognition and witness interrogation were combined to reconstruct a wider network; Marnix handled part of the documentary evidence."
-    evidence_status: SUPPORTED_CONTEMPORARY_SOURCE_COMPILATION
+    evidence_status: SUPPORTED
     source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
     story_time: {earliest: 1582-03-18, latest_exclusive: 1582-04-01, precision: bounded}
 
   - id: SC.HIST.GERARDS.COVER_ACCESS.1584.001
     type: SourceClaim
     statement: "Balthasar Gerards, operating as François Guyon, used a plausible identity, religious behaviour, letters, social contact and ordinary requests to gain trust and access in Orange's environment before the assassination."
-    evidence_status: SUPPORTED_CONTEMPORARY_SOURCE_COMPILATION
+    evidence_status: SUPPORTED
     source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
     story_time: {earliest: 1584-03-01, latest_exclusive: 1584-07-11, precision: bounded}
 
   - id: SC.HIST.GERARDS.INNOCENT_INTERMEDIARY.MOERWIT.1584.001
     type: SourceClaim
     statement: "A member of Orange's guard helped Gerards obtain a pistol without knowing its intended use; his later remorse illustrates how an innocent intermediary can become causally important without prior knowledge."
-    evidence_status: SUPPORTED_CONTEMPORARY_SOURCE_COMPILATION
+    evidence_status: SUPPORTED
     source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
 
   - id: SC.HIST.PRINT.TRUTH_CRISIS.1568_1580S.001
     type: SourceClaim
     statement: "The revolt-era print environment could rapidly circulate reporting, selective framing, rumours, falsehoods and falsified documents, making source criticism and competing interpretation part of political life."
-    evidence_status: SUPPORTED_SECONDARY
+    evidence_status: SUPPORTED
     source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
 
   - id: SC.HIST.MARNIX.MIDDELBURG.1576_07_20.001
     type: SourceClaim
     statement: "Marnix is directly attested in Middelburg on 20 July 1576 by his own entry in Emanuel van Meteren's album amicorum."
-    evidence_status: SUPPORTED_PRIMARY_ALBUM_TRANSCRIPTION
+    evidence_status: VERIFIED
     source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
     story_time: {date: 1576-07-20, precision: day}
 
   - id: SC.HIST.MIDDELBURG_ANTWERP.REFUGEE_SHIPS.1576.001
     type: SourceClaim
     statement: "In 1576 Middelburg commissioned three ships to sail back and forth to Antwerp to collect refugees, demonstrating an active civic maritime connection between the two nodes."
-    evidence_status: SUPPORTED_ARCHIVAL_GUIDE
+    evidence_status: SUPPORTED
     source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
 
   - id: SC.HIST.INTERCEPT_ROUTE.LANOUE_NAVARRE_MORNAY_ORANGE.1577.001
     type: SourceClaim
     statement: "A packet of intercepted Spanish correspondence was routed through François de La Noue, Henry of Navarre and Philippe du Plessis-Mornay to William of Orange; Marnix was then called to explain the material and its authenticity."
-    evidence_status: SUPPORTED_SECONDARY_WITH_CORRESPONDENCE_TRADITION
+    evidence_status: SUPPORTED
     source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
 
   - id: SC.HIST.VULCANIUS.SILVIUS_GULDEN_ENGEL.1577.001
     type: SourceClaim
     statement: "In autumn 1577 Bonaventura Vulcanius lodged with Willem Silvius at De Gulden Engel in the Sleutelstraat, Antwerp, and used his Spanish expertise in correction/translation work around the intercepted Don Juan correspondence."
-    evidence_status: SUPPORTED_SCHOLARLY_ARCHIVAL
+    evidence_status: SUPPORTED
     source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
 
   - id: SC.HIST.PLANTIN_MONTANO.SECRET_LANGUAGE.POST1575.001
     type: SourceClaim
     statement: "Van Stipriaan reports that Plantin and Benito Arias Montano exchanged messages in their own secret language after Montano had returned to Spain, in a spiritualist network context."
-    evidence_status: SUPPORTED_SECONDARY
+    evidence_status: SUPPORTED
     source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
     guardrail: "Treat as private/religious-network secrecy, not automatically state espionage."
 
   - id: SC.HIST.SILVIUS.FORGED_DONJUAN_LETTER_TRADITION.1577.001
     type: SourceClaim
     statement: "An older historiographical tradition reports that Silvius imitated Don Juan's handwriting/signature on a false message in October 1577, allegedly contributing to Breda's transfer while Silvius was with Orange at Geertruidenberg."
-    evidence_status: HISTORIOGRAPHICAL_TRADITION_REQUIRES_PRIMARY_RECHECK
+    evidence_status: DISPUTED
+    evidence_note: "Retained as historiographical tradition; primary-source recheck required before scene canon."
     source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
     qualifies:
       - "Later secondary wording is inconsistent about Breda versus Geertruidenberg."
@@ -147,6 +149,6 @@ claims:
   - id: SC.HIST.LEIDEN.SIEGE_COMMUNICATION.1574.001
     type: SourceClaim
     statement: "Contemporary siege reporting from Leiden describes secret human messengers, a prearranged cannon-shot confirmation signal and a pigeon carrying a written message/instruction."
-    evidence_status: SUPPORTED_CONTEMPORARY_SOURCE_COMPILATION
+    evidence_status: SUPPORTED
     source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
     significance: "World-practice comparator only; no Claes participation is implied."
