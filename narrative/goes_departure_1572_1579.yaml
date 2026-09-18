@@ -16,17 +16,22 @@ records:
   - "Cornelis is already dead before the 1572 siege; his execution occurs 19 November 1569."
   - "Claes has returned to Goes by 1566 and the direct memoriaal reveal occurs there in 1570."
   - "The 1572 siege historically damages outside salt works and a brewery in the Voorstad."
+  - "Claes is canonically physically present in / goes to the Goes siege environment in 1572; his exact side and role remain open."
+  - "In 1573 Claes canonically witnesses Zeeuwse/Geuzen forces burning Reimerswaal from a boat; exact vessel, route and companions remain open."
+  - "By 1577 Claes canonically knows the Satisfactie of Goes and understands its relevant religious-political terms; his presence or influence on the agreement remains open."
   - "A Nissepad brewery is documented with equipment in 1577 and is not proven identical to the brewery burned in the Voorstad in 1572."
   - "A Nissepat-linked burned salt-pan site at Westzelke is sold in 1577, but the act does not identify whether its destruction came from 1554, 1572 or another event."
   - "The Antwerp 1578 print event remains fixed as Projectio of the Word."
 
-  dramatic_question: "What concrete material, financial and relational consequence of 1572–1579 finally makes Goes cease to function as Claes' recoverable home or economic anchor?"
+  dramatic_question: "What concrete combination of siege experience, Reimerswaal loss, material/financial afterlife, confessional-political transition and Claes' own choices makes Goes cease to function as his recoverable home or economic anchor?"
 
   desired_function_if_resolved:
   - "Create a second material severance from Goes that is distinct from the 1554 family fire and the 1569 death of Cornelis."
   - "Convert siege and postwar property history into personal causality rather than historical wallpaper."
   - "Make Claes' departure arise from accumulated obligations, losses and choices, not from an unsupported single-property melodrama."
   - "Allow the 1577–1579 legal/property aftermath to echo the theme that destruction continues as accounts, claims and transfers after visible violence ends."
+  - "Integrate the political/confessional severance: royalist siege city -> Satisfactie town -> 1578 religious pressure, without assuming that political transfer equals immediate conversion."
+  - "Let Reimerswaal's 1573 burning prevent a simple moral geography in which the rebel side is automatically clean because the royal regime killed Cornelis."
 
   candidate_models:
   - id: A
@@ -41,6 +46,9 @@ records:
   - id: D
     status: PROPOSED
     model: "Combination: one genuine material loss in 1572 creates pressure, while 1577–1579 debt/claim settlement prevents meaningful recovery."
+  - id: E
+    status: PROPOSED
+    model: "Cumulative severance across four registers: siege/material damage, Reimerswaal's destruction, legal/economic winding-down, and the 1577–1578 political-confessional transformation of Goes."
 
   unresolved_elements:
   - "Claes' exact legal/economic relation to any property or lease damaged in 1572."
@@ -48,6 +56,9 @@ records:
   - "Destination and sequence of moves between Goes, Antwerp/Middelburg/Delft and the later northern line."
   - "Whether Mayken shares, resists or separately responds to the same Goese economic rupture."
   - "What portion, if any, of settlement proceeds reaches Claes as cash, claim, debt relief or nothing."
+  - "Claes' exact role during the 1572 siege."
+  - "The exact boat/route circumstances from which he witnesses Reimerswaal burn in 1573."
+  - "Whether Claes is physically present at, hints toward, helps shape, strategically interprets, or rejects manipulation around the 1577 Satisfactie."
 
   hard_guardrails:
   - "Do not identify the 1572 burned Voorstad brewery with the documented Nissepad brewery without new evidence or an explicit reconstruction that respects the 1577 survival evidence."
@@ -55,3 +66,8 @@ records:
   - "Do not make Jan Jansen Nissepat or Jan Pauwelsen Nissepat automatic members of Claes' nuclear family; those genealogical links are not fixed."
   - "Do not assign the 1577 burned Westzelke salt-pan destruction specifically to 1554 or 1572 without evidence."
   - "Do not let the departure decision erase Claes' fixed 1578 Antwerp publication endpoint."
+
+  linked_context:
+  - "storybible/INFORMATION_WAR_ZEELAND_AND_CLAES_1564_1584.md"
+  - "history/INFORMATION_WAR_LOW_COUNTRIES_1564_1584.yaml"
+  - "narrative/claes_information_war_1564_1584.yaml"
