@@ -2,7 +2,7 @@
 
 **ID:** `SB.CLAES.LEMMA_MCKEE`  
 **Status:** CURRENT OPERATING SYNTHESIS  
-**Synchronized:** 16 August 2026 — through Round C story projection and Cornelis/Huis der Liefde network decision  
+**Synchronized:** 18 September 2026 — through Zeeland/information-war expansion, Goes/Reimerswaal/Satisfactie route decisions and Round-C causal update  
 **Source authority:** `SB.CLAES.MASTER`
 
 This is the current human-readable operating synthesis of the Claes canon. The dated `LEMMA_MCKEE_MASTER_2026-08-13.md` is a historical snapshot only. Where older prose describes a 1545 birth, post-4-October loading of the memoriaal, a 24×24/cipher recovery chain, Cornelis' death as still open, Cornelis as a straightforward member of the Edele Castanienbloem, Plantin as Cornelis' converter into the Huis der Liefde, or Mayken's identity as still open, that wording is superseded.
