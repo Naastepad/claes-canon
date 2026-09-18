@@ -1,0 +1,80 @@
+schema_version: "1.0.0"
+kind: SourceClaimRegistryExtension
+claims:
+  - id: SC.HIST.GOES.FOOTWEAR.INKIND_PAYMENT.1597.001
+    type: SourceClaim
+    statement: "A Goese record of 10 February 1597 shows a notarial fee settled with one pair of new Spanish-leather shoes valued at 6 schellingen groten rather than with cash."
+    claim_type: historical_local_payment_mechanism
+    subject: "Goese professional-service settlement"
+    predicate: "payment in kind"
+    object: "one pair new Spanish-leather shoes at 6 schellingen groten"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001]
+    verification:
+      status: secondary_transcription_of_local_notarial_record
+      note: "Classify as IN_KIND_PAYMENT / OBJECT_VALUATION. It is not a generic Goese retail shoe-price series."
+
+  - id: SC.HIST.GOES.FISH.QUALITY_INSPECTION.NISSEPADT.1598.001
+    type: SourceClaim
+    statement: "On 12 December 1598 Jan Jansz Nissepadt is identified as sworn fish inspector of Goes; with two experienced female fish sellers he inspected four barrels of imported Aberdeen fish and found part insufficiently salted, mouldy, rotten and foul-smelling, supporting rejection of the purchase."
+    claim_type: historical_local_market_regulation
+    subject: "Goese fish market"
+    predicate: "sworn quality inspection and rejection mechanism"
+    object: "RAZE 2041 fol. 107, 12-12-1598"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001]
+    verification:
+      status: secondary_transcription_with_primary_locator
+      note: "The source proves this historical Jan Jansz Nissepadt and office. Do not merge him with another Nissepat/Nissepadt entity by name alone."
+
+  - id: SC.HIST.GOES.MEAT.IMPOST_TAXPOINT.1598.001
+    type: SourceClaim
+    statement: "A 22 December 1598 attestation describes meat slaughtered in Heinkenszand, brought to Goes and sold at the meat hall by the pound, piece and cuts; the witness states that impost had been paid where the blood was shed and was not charged again in Goes."
+    claim_type: historical_local_trade_tax_mechanism
+    subject: "meat sold in Goes"
+    predicate: "attested sale units and impost tax point"
+    object: "slaughter-place payment in the testified practice"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001]
+    verification:
+      status: secondary_transcription_of_local_attestation
+      note: "The record supplies no impost rate and should not be universalised to every year or meat transaction."
+
+  - id: SC.HIST.GOES.HOUSEHOLD.BUTTER_VALUATION.1602.001
+    type: SourceClaim
+    statement: "A Goese estate inventory of 20 November 1602 records 78 pond of butter taken over by the woman of the house at 4 stuivers per pond."
+    claim_type: historical_local_household_valuation
+    subject: "butter in a Goese estate inventory"
+    predicate: "estate takeover valuation"
+    object: "78 pond at 4 stuivers per pond"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001]
+    verification:
+      status: secondary_transcription_with_primary_locator
+      note: "Primary locator: RAZE 2040 fol. 458, 20-11-1602. Classify as ESTATE_TAKEOVER_VALUATION, not automatically a retail market price."
+
+  - id: SC.HIST.GOES.NISSEPADT.HENRIC_EXECUTOR.1602.001
+    type: SourceClaim
+    statement: "The 20 November 1602 Goese estate inventory names Henri/Henric Adriaens Nissepadt as executor of the deceased Adriaen Gilliss Waeijtack's testament."
+    claim_type: historical_person_reference
+    subject: "Henri/Henric Adriaens Nissepadt"
+    predicate: "named as testamentary executor"
+    object: "Goese estate inventory, 1602"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001]
+    verification:
+      status: secondary_transcription_with_primary_locator
+      note: "Do not automatically identify this person with another Hendrick/Henric Adriaensz Nissepat record without independent genealogical or office/property evidence."
+
+  - id: SC.HIST.SOUTH_BEVELAND.DIKE_PROVISIONING.FOOD_CREDIT.1599.001
+    type: SourceClaim
+    statement: "A 1599 South-Beveland dispute over work at the breached Poppendijk records bread and a bundle of cheese, butter, bacon and herring supplied to workers on credit, followed by difficulties collecting the aggregate debts."
+    claim_type: regional_labour_provisioning_context
+    subject: "South-Beveland dike labour"
+    predicate: "food provisioning through shop credit"
+    object: "1599"
+    evidence_status: SUPPORTED
+    source_ids: [SRC-SECONDARY-LEVENDale-GOES-NOTARIAL-COMPILATION-001]
+    verification:
+      status: secondary_transcription_of_regional_records
+      note: "CLOSE_REGIONAL_PROVISIONING_CONTEXT only. Aggregate totals do not yield unit food prices and are not city-Goes observations."

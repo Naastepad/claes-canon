@@ -1,0 +1,94 @@
+schema_version: 1.0.0
+kind: SourceClaimRegistryExtension
+claims:
+- id: SC.HIST.DELFT_DELFSHAVEN.GOES.VESSEL_CORRIDOR.1572.001
+  type: SourceClaim
+  statement: >-
+    A Delft municipal account for 1572 records various vessels lying before Delft and at Delfshaven being requisitioned to carry Barthel Entes and troops from Holland to Goes; twenty-one of the vessels were subsequently compensated by the States after also being held before Goes.
+  claim_type: historical_direct_shipping_corridor
+  subject: Delft_and_Delfshaven_vessel_pool
+  predicate: vessels_physically_operate_to
+  object: Goes_1572
+  evidence_status: VERIFIED
+  source_ids: [SRC-HIST-DELFT-ACCOUNTS-GOES-SHIPPING-1572-001]
+  verification:
+    status: published_primary_account_transcription
+    note: "Primary account locator in the edition: fol. 179v. The 42-guilder allowance was tied to military requisition and must not be used as a normal commercial freight rate."
+  qualifications:
+  - "Does not identify vessel types, capacities, exact routes or Aernouldt de Hont."
+  - "Proves corridor use in the Claes period, not direct brewery-to-Goes carriage on one unchanged hull."
+
+- id: SC.HIST.DELFT.BEERSCHUIT.SCHIE_MAAS.1548.001
+  type: SourceClaim
+  statement: >-
+    A modern historical synthesis reports a 1548 Delft process memorandum by city pensionary Willem Criep stating that beer schuiten had long been pulled along the Schie toward the Maas, reflecting Delft's beer-transport connection to the Maas and Delfshaven.
+  claim_type: historical_transport_infrastructure
+  subject: Delft_beer_schuiten
+  predicate: move_via_Schie_toward
+  object: Maas_Delfshaven_corridor
+  evidence_status: SUPPORTED
+  source_ids: [SRC-SECONDARY-VERHOEVEN-DELFT-BEER-SCHUIT-1551-001]
+  qualifications:
+  - "Does not establish De Hont's vessel or direct onward sea carriage by the same craft."
+
+- id: SC.HIST.DELFT.HEAVY_BEER_SCHUIT.HORSE_TOWING.1551.001
+  type: SourceClaim
+  statement: >-
+    In 1551 Hague beer carriers obtained permission for horse towing between Delft and The Hague because they no longer wished to pull their heavy schuiten carrying Delft beer by human force in all weather.
+  claim_type: historical_beer_transport_mechanism
+  subject: Delft_beer_transport
+  predicate: uses_heavy_schuiten_and_towing
+  object: Delft_The_Hague_1551
+  evidence_status: SUPPORTED
+  source_ids: [SRC-SECONDARY-VERHOEVEN-DELFT-BEER-SCHUIT-1551-001]
+  qualifications:
+  - "The Hague corridor is a mechanism comparator, not the route to Goes."
+  - "`Heavy schuit` is a functional description, not a measured vessel class or capacity."
+
+- id: SC.HIST.DELFT.ANTWERP.KAGHESCHUYTE.1585.001
+  type: SourceClaim
+  statement: >-
+    A contemporary merchant letter cited in a scholarly article records that on 19 February 1585 a kagheschuyte from Delft, loaded with butter and cheese, reached Antwerp through Parma's blockade without damage.
+  claim_type: historical_vessel_type_and_corridor
+  subject: Delft_kagheschuyte
+  predicate: reaches_Antwerp_with_cargo
+  object: Antwerp_1585
+  evidence_status: SUPPORTED
+  source_ids: [SRC-SECONDARY-JONGBLOET-DELFT-ANTWERP-KAGHESCHUYTE-1585-001]
+  verification:
+    status: scholarly_citation_to_contemporary_letter
+    note: "Primary locator cited by the article: Andries van der Meulen, Antwerp, 20 February 1585, Collectie Daniel van der Meulen nr. 593a."
+  qualifications:
+  - "The vessel and skipper are not identified as Aernouldt de Hont."
+  - "Cargo was butter and cheese, not beer or salt."
+  - "Blockade-running is exceptional and does not supply a normal transit duration."
+
+- id: SC.HIST.HOLLAND.ANTWERP.SHIPPING_WEIGHT.1555_1558.001
+  type: SourceClaim
+  statement: >-
+    Asaert reports research for Antwerp in 1555-1558 in which Hollanders formed the largest share of non-Antwerp oversea shipping; the reported traffic breakdown assigns 40 percent to Holland, and a separate grain-delivery sample contained 469 northern Netherlandish vessels among 494 recorded ships.
+  claim_type: historical_corridor_context
+  subject: Holland_shipping
+  predicate: substantial_presence_in
+  object: Antwerp_1555_1558
+  evidence_status: SUPPORTED
+  source_ids: [SRC-SECONDARY-ASAERT-HOLLAND-ANTWERP-SHIPPING-1985-001]
+  qualifications:
+  - "Broad Holland-Antwerp evidence only; the underlying sample is not a complete port statistic and does not identify De Hont."
+
+- id: SC.HIST.ANTWERP.BEER_DISTRIBUTION.CASK_RETURN_CREDIT.1446.001
+  type: SourceClaim
+  statement: >-
+    A 1446 Antwerp agreement summarized by Asaert between a Gouda skipper and an Antwerp beer distributor included payment per vat sold, collection and return of empty casks, working capital advanced to the distributor, termination repayment terms and compensation for missing casks.
+  claim_type: historical_beer_distribution_contract_mechanism
+  subject: Holland_to_Antwerp_beer_distribution
+  predicate: can_structure_contract_around_commission_credit_and_returnable_casks
+  object: Antwerp_1446
+  evidence_status: SUPPORTED
+  source_ids: [SRC-SECONDARY-ASAERT-HOLLAND-ANTWERP-SHIPPING-1985-001]
+  verification:
+    status: scholarly_summary_with_primary_locator
+    note: "Primary locator: Stadsarchief Antwerpen, Schepenregister 37, fol. 57r."
+  qualifications:
+  - "Mechanism comparator only: more than a century earlier than Horen-De Hont 1589."
+  - "Do not copy its rates, capital sum, repayment periods or liability terms into Cornelis' or Horen's agreements."
