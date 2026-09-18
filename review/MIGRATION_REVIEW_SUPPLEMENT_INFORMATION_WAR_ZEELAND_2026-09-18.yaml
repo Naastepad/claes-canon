@@ -1,0 +1,20 @@
+schema_version: 1.0.0
+kind: MigrationReviewSupplement
+purpose: Human-decision classification for Story Claims added by the 18 September 2026 Zeeland and information-war integration.
+records:
+- claim_id: STC.CLAES.GOES.SIEGE_PRESENCE.1572.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicit author decision on 18 September 2026 that Claes physically goes to / is present in the 1572 siege environment of Goes. His exact side, route, function and scene position remain open and are not implied by this claim.
+- claim_id: STC.CLAES.REIMERSWAAL.BURNING_WITNESS.1573.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicit author decision on 18 September 2026 that Claes witnesses Zeeuwse/Geuzen forces burning Reimerswaal in 1573 from a boat. Exact vessel, water position, purpose and companions remain open; this event remains separate from the January 1574 naval battle near Reimerswaal.
+- claim_id: STC.CLAES.GOES.SATISFACTIE_KNOWLEDGE.1577.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicit author decision on 18 September 2026 that Claes knows the Satisfactie of Goes and understands its relevant political and religious terms. Physical presence, drafting, influence, hinting, revenge motive or strategic use remain open.
+- claim_id: STC.CLAES.CONTEXT.INFORMATION_WAR_INFLUENCE.1564_1584.001
+  origin: NEW
+  review_state: HUMAN_DECISION
+  resolution: Explicit author decision on 18 September 2026 that the storybible maintains a separate historical information-war/context layer able to shape Claes' routes, suspicions, access, choices and later interpretation without granting him direct participation or knowledge he could not possess.
