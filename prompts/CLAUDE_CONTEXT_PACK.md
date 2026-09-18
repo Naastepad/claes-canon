@@ -5,8 +5,8 @@
 > Do not use this pack as permission for free repository discovery; follow the task router in CLAUDE_CONTEXT_INDEX.md.
 
 - source branch: `main`
-- source commit at generation: `c93d77fb22e8670897fabe5f962489c7555a9a05`
-- generated UTC: `2026-09-18T08:05:34+00:00`
+- source commit at generation: `d83cd9763aad1e715b76089a3a0ef703e3f402b8`
+- generated UTC: `2026-09-18T08:06:21+00:00`
 - included files: `67`
 
 Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pack does not alter authority.
@@ -2592,11 +2592,21 @@ The revealed words shift the dramatic problem from **what is hidden?** to **what
 
 The exact human/production route from reveal to publication remains open, but the endpoint is fixed: **Antwerp, 1578, printed publication**. This is the **projectio of the Word**: dangerous testimony is multiplied and released beyond Claes' control.
 
-### VIII — 1572–1579: Goes second severance — explicit open hinge
+### VIII — 1572–1579: Zeeland second severance — partly fixed, partly open
 
-The source-grounded pressure is fixed but the personal causal chain is not.
+This interval is no longer only an economic/property gap. Three Claes route anchors are now fixed.
 
-Historically supported:
+**1572 — Goes siege.** Claes physically goes to / is present in the siege environment of Goes. His exact side, military/political role, route and location remain `OPEN.CLAES.GOES.SIEGE_ROLE.1572.001`. Presence does not make him a soldier, formal agent or envoy by default.
+
+**1573 — Reimerswaal burning.** Claes witnesses Zeeuwse/Geuzen forces burn Reimerswaal **from a boat**. This is the 1573 burning, not the January 1574 naval battle near Reimerswaal. Exact vessel, purpose, water position and companions remain `OPEN.CLAES.REIMERSWAAL.BOAT_CONTEXT.1573.001`.
+
+This gives the severance a moral register as well as a material one: the royal order associated with Cornelis' destruction is not the only side capable of destroying a city Claes loves. Reimerswaal breaks any simple equation between political cause and moral innocence.
+
+**22 March 1577 — Satisfactie of Goes.** Claes canonically knows the agreement and understands its relevant political/religious terms: negotiated acceptance of Orange's stadholder authority while Catholic religious practice is protected. Claes' physical presence, influence, hinting, drafting or strategic use of the settlement remains `OPEN.CLAES.SATISFACTIE.ROLE_STRATEGY.1577.001`.
+
+The Satisfactie creates a new authorial question: Claes may simply observe negotiated transition; he may offer a limited insight; he may reject instrumental toleration; or, in the morally darkest option, he may argue that Catholic practice should first be protected in order to reduce resistance and only later be displaced from everyday public life. That final strategy is **fiction open**, not historical explanation. It must never be attributed to Orange merely because later confessional change occurs. Orange's documented 1578 religious-peace line points toward coexistence/toleration and can function as a counterforce to a more manipulative Claes.
+
+Historically supported economic/property pressure remains:
 
 - the 1572 siege damages/burns outside salt works and a brewery in the Voorstad;
 - a Nissepad brewery with equipment is documented in 1577;
@@ -2604,15 +2614,35 @@ Historically supported:
 - Jan Jansen Nissepat sells a burned Westzelke salt-pan site in 1577, but the destructive event is not identified;
 - 1577–1579 property transfers do not automatically prove confiscation, execution sale or forced liquidation.
 
-The open novel question is `OPEN.GOES.CLAES_DEPARTURE_1572_1579.001`: **which chain of actual damage, fictional residual interest, debts/claims, legal settlement and network collapse finally makes Goes cease to function as Claes' recoverable home/economic base, and when does he leave?**
+The open novel question `OPEN.GOES.CLAES_DEPARTURE_1572_1579.001` is now broader: **which combination of siege experience, Reimerswaal loss, material damage, debts/claims, political transfer, confessional transformation and Claes' own choices finally makes Goes cease to function as his recoverable home/economic base?**
 
-Do not solve this by silently destroying the documented Nissepad brewery. A cumulative model or a combination of one real material loss plus postwar financial/legal afterlife is currently the safer design space, but it remains authorial design rather than canon.
+Do not solve this by silently destroying the documented Nissepad brewery.
 
-### IX — 1578–1584: knowledge fails as protection
+### IX — 1577–1584: information, print and the failure of predictive knowledge
 
-Claes' wound changes from *I did not see early enough* to *I saw, and still did not do enough*.
+The revolt around Claes is now explicitly modelled as an **information environment**, not as a new spy plot.
 
-Delft 1584 remains the moral bottom and threshold toward Albedo. The problem is no longer finding hidden truth but acting when truth does not guarantee a safe or clean outcome.
+Historical context includes coded names, mobile intermediaries, double agents, intercepted letters, leaked cipher keys, forged correspondence, political framing and printers who turn private documents into public action. Context figures such as Joannis de Castilia, Alonso del Canto, Lorenzo de Villavicencio, Thomas Churchyard and Henry Balfour establish the depth of this world; Claes does not need to meet them.
+
+**1577 — Don Juan intercept/print context.** Intercepted correspondence is transformed through Marnix, Silvius, Gillis van den Rade, Plantin and Vulcanius into political print. Direct Claes contact remains `OPEN.CLAES.DONJUAN_PRINT_TOUCHPOINT.1577.001`. Its high-value story function is to show that publication multiplies not only words but **framing, translation, audience and consequence**.
+
+This deepens the 1578 **Projectio of the Word**: once Claes releases the Brevísima into print, he cannot own every interpretation or use made of it.
+
+**1582 — Jaureguy context.** After the attack on Orange, objects, papers, financial instruments, handwriting and testimony are assembled into a network explanation. Whether Claes experiences this directly, through print/report or retrospectively remains `OPEN.CLAES.JAUREGUY_TOUCHPOINT.1582.001`. The lesson is that a network can become legible **after** violence without having been predictively legible beforehand.
+
+**1584 — Gerards / Delft.** Gerards creates the inverse problem: a plausible cover identity can be made from ordinary and partly true elements. Delft therefore becomes not merely *I saw and did too little*, but a deeper failure of Claes' adult lie: **accurate observation is not guaranteed knowledge of another person's intention**.
+
+A high-value open option is `OPEN.CLAES.GERARDS_PRIOR_SIGHTING.1584.001`: Claes may have briefly seen François Guyon/Gerards before the murder without any adequate basis for identifying him as a threat. If used, he must not become the fictional detective who almost solves the assassination. Hindsight should make remembered details feel falsely inevitable.
+
+Authorial diagnostic line, not fixed prose:
+
+> **Hij had hem gezien. Dat was niet hetzelfde als hem gekend hebben.**
+
+Claes' wound therefore evolves from *I did not see early enough* through *I saw, and still did not do enough* toward:
+
+> **I can see correctly and still not possess certainty.**
+
+Delft 1584 remains the moral bottom and threshold toward Albedo. The mature task is to act without converting uncertainty into either paralysis or domination.
 
 ### X — 1584–1602: Albedo, Rubedo, Mayken and conjunctio
 
@@ -2833,7 +2863,11 @@ High-value remaining questions include:
 - exact Zovitius delivery route;
 - exact 1570→1578 publication/transmission chain;
 - 1564 chapter calendar audit;
-- exact **1572–1579 Goes material/economic/legal severance and departure causality**;
+- exact **1572–1579 Goes material/economic/legal severance and departure causality**, now including the fixed siege/Reimerswaal/Satisfactie route anchors;
+- exact **Claes role in the 1577 Satisfactie** and whether any strategic/revenge logic is present;
+- exact **1577 Don Juan intercepted-letter print touchpoint** for Claes, if any;
+- exact **1582 Jaureguy touchpoint** for Claes, if any;
+- whether Claes **saw François Guyon/Gerards before the 1584 murder**;
 - exact **Mayken independent adult mid-arc work/family/social-pressure line**;
 - final merels opponent/stakes/action;
 - whether Cornelis ever serves as deken;
@@ -2862,12 +2896,17 @@ Use `ARC.CLAES.CAUSAL_SPINE` as the governing bridge. Current hinge targets are:
 6. return to altered Goes / Mayken proximity;
 7. 1567–1569 Cornelis warning, secrecy and execution, now grounded in the longer Ghysbrecht–Dens–Barrefelt trust history;
 8. 1570 direct memoriaal reveal with Mayken;
-9. **OPEN:** 1572–1579 Goes second material/economic severance;
-10. 1578 print/release of the Word;
-11. Delft 1584 moral bottom;
-12. later *sinne* recovery / reciprocal Mayken line;
-13. Enkhuizen 13 March 1602 / Matter;
-14. post-1602 Projectio of Self / Status Prima Nova.
+9. 1572 Goes siege — Claes present; exact role OPEN;
+10. 1573 Reimerswaal burning — Claes witnesses from a boat; exact boat/route context OPEN;
+11. 1577 Satisfactie of Goes — Claes knows terms; exact role/strategy OPEN;
+12. 1577 intercepted-letter/print context — direct Claes touchpoint OPEN;
+13. **OPEN:** cumulative 1572–1579 Goes severance and departure;
+14. 1578 print/release of the Word;
+15. 1582 Jaureguy retrospective-legibility context — touchpoint OPEN;
+16. Delft 1584 moral bottom / seeing-is-not-knowing threshold;
+17. later *sinne* recovery / reciprocal Mayken line;
+18. Enkhuizen 13 March 1602 / Matter;
+19. post-1602 Projectio of Self / Status Prima Nova.
 
 Each developed scene should expose objective, pressure, opening value, turning point, closing value, knowledge change, object change and arc movement. If Mayken appears, her own objective/judgement/cost must also be legible.
 
