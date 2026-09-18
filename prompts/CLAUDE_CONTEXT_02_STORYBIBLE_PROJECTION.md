@@ -5,8 +5,8 @@
 > Do not use this pack as permission for free repository discovery; follow the task router in CLAUDE_CONTEXT_INDEX.md.
 
 - source branch: `main`
-- source commit at generation: `0103ad63d39f35468c511f66f14990f3ae634112`
-- generated UTC: `2026-09-18T08:08:25+00:00`
+- source commit at generation: `fc0e8cfd01af2c06b8e429cc29075983a6553ca3`
+- generated UTC: `2026-09-18T08:08:33+00:00`
 - included files: `15`
 
 Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pack does not alter authority.
@@ -20,7 +20,7 @@ Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pa
 
 **ID:** `SB.CLAES.LEMMA_MCKEE`  
 **Status:** CURRENT OPERATING SYNTHESIS  
-**Synchronized:** 16 August 2026 — through Round C story projection and Cornelis/Huis der Liefde network decision  
+**Synchronized:** 18 September 2026 — through Zeeland/information-war expansion, Goes/Reimerswaal/Satisfactie route decisions and Round-C causal update  
 **Source authority:** `SB.CLAES.MASTER`
 
 This is the current human-readable operating synthesis of the Claes canon. The dated `LEMMA_MCKEE_MASTER_2026-08-13.md` is a historical snapshot only. Where older prose describes a 1545 birth, post-4-October loading of the memoriaal, a 24×24/cipher recovery chain, Cornelis' death as still open, Cornelis as a straightforward member of the Edele Castanienbloem, Plantin as Cornelis' converter into the Huis der Liefde, or Mayken's identity as still open, that wording is superseded.
