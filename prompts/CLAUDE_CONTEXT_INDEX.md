@@ -5,8 +5,8 @@
 > `01_CORE_CANON` is not the complete decision registry. Current dated/supplemental decisions live in `05_DATED_DECISIONS` and may override or extend `canon/DECISIONS.yaml`.
 > The task router below assigns the packs to load. Load them completely before analysis, prose or repository conclusions.
 
-- source commit: `23af18014fce45da4e445e204a515271f323d0f5`
-- generated UTC: `2026-09-18T08:34:55+00:00`
+- source commit: `9b78960e627b15c6953f45b491e3a68e563d040c`
+- generated UTC: `2026-09-18T08:36:34+00:00`
 
 ## Pack URLs
 
@@ -22,14 +22,14 @@
 4. `04_MAYKEN_KNOWLEDGE` — 5 files
    https://raw.githubusercontent.com/Naastepad/claes-canon/main/prompts/CLAUDE_CONTEXT_04_MAYKEN_KNOWLEDGE.md
 
-5. `07_ZEELAND_INFORMATION_WAR` — 11 files
-   https://raw.githubusercontent.com/Naastepad/claes-canon/main/prompts/CLAUDE_CONTEXT_07_ZEELAND_INFORMATION_WAR.md
-
-6. `05_DATED_DECISIONS` — 23 files
+5. `05_DATED_DECISIONS` — 23 files
    https://raw.githubusercontent.com/Naastepad/claes-canon/main/prompts/CLAUDE_CONTEXT_05_DATED_DECISIONS.md
 
-7. `06_CHARACTER_WEB` — 9 files
+6. `06_CHARACTER_WEB` — 9 files
    https://raw.githubusercontent.com/Naastepad/claes-canon/main/prompts/CLAUDE_CONTEXT_06_CHARACTER_WEB.md
+
+7. `07_ZEELAND_INFORMATION_WAR` — 11 files
+   https://raw.githubusercontent.com/Naastepad/claes-canon/main/prompts/CLAUDE_CONTEXT_07_ZEELAND_INFORMATION_WAR.md
 
 ## Mandatory task router
 
