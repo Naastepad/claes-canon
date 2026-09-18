@@ -190,3 +190,104 @@ These are authorial syntheses, not quotations from the sources.
 - Do not make Claes personally meet every historically interesting agent. Del Canto, Villavicencio, Churchyard, Castilia and Balfour primarily establish the iceberg beneath the visible story.
 - Do not revive the retired Brevísima cipher/nomenclator mechanism merely because historical actors used ciphers.
 - Information-war research may deepen the theme and plot, but the memoriaal remains direct hidden readable print revealed materially by green vitriol.
+
+
+## L. Additional chat-derived context now verified and retained
+
+### Middelburg as an active information/political node in 1576
+
+Marnix is directly attested in **Middelburg on 20 July 1576** through his own entry in Emanuel van Meteren's album amicorum, ending with `Middelburgij`. This does not by itself prove a Claes–Marnix encounter, but it anchors Marnix physically in the Zeeland node during a period in which Orange was also operating from Middelburg.
+
+Sources:
+- J.A. de Waard, discussion of Van Meteren's album, DBNL / *Oud Holland* witness:
+  https://upload.wikimedia.org/wikipedia/commons/3/33/Oud_Holland_%28IA_gri_33125006107953%29.pdf
+- René van Stipriaan's wider Orange/Zeeland narrative remains contextual support in the supplied *De Zwijger*.
+
+### Middelburg–Antwerp water connection, 1576
+
+The Zeeuws Archief states that in **1576 three ships sailed back and forth on commission from Middelburg to Antwerp to collect refugees**. This is a strong scene-world anchor for the fact that Antwerp–Middelburg movement was not an abstract map connection but an active civic maritime route during the crisis.
+
+Source:
+- Zeeuws Archief, "Zuid-Nederlanders in de 16e eeuw":
+  https://www.zeeuwsarchief.nl/zoekgids/zuid-nederlanders-in-de-16e-eeuw/
+
+Story use:
+- supports plausible movement of people, letters, rumours and material between Antwerp and Zeeland;
+- does not make those particular refugee ships a Claes route without a separate decision.
+
+### The intercepted-letter route through La Noue, Navarre and Mornay
+
+P.A.M. Geurts describes a packet of Spanish correspondence intercepted in southern France and passed through:
+**François de La Noue → Henry of Navarre → Philippe du Plessis-Mornay → William of Orange**.
+Mornay's position in/through England helped avoid the compromised land route. Orange then called Marnix to explain the letters and their authenticity to an English diplomatic audience.
+
+Sources:
+- P.A.M. Geurts, *De Nederlandse Opstand in de pamfletten 1566-1584*, DBNL:
+  https://www.dbnl.org/tekst/geur004nede01_01/geur004nede01_01_0005.php
+- Groen van Prinsterer, Orange-Nassau correspondence context:
+  https://www.dbnl.org/tekst/groe009arch06_01/groe009arch06_01_0138.php
+
+Story use:
+- proves that "interception" is only the first step; safe rerouting, authentication and diplomatic presentation are separate stages;
+- reinforces the authorial chain `intercept → transport → authenticate → interpret → publish/use`.
+
+### Bonaventura Vulcanius inside De Gulden Engel, 1577
+
+Robert Fruin documents Vulcanius returning to the Netherlands in autumn 1577 and residing with Willem Silvius **"In den Gulden Ingel, in de Sleutelstraet, Anvers"**. Vulcanius had long Spanish experience and helped with correction and translation work around the intercepted Don Juan correspondence. Fruin notes surviving handwritten translation copies among Vulcanius' papers.
+
+Source:
+- Robert Fruin, "Over anecdota van Marnix van Sint Aldegonde", DBNL:
+  https://www.dbnl.org/tekst/frui001vers09_01/frui001vers09_01_0040.php
+
+Storybible consequence:
+- this supplies a concrete human bridge between Silvius' printing house and Spanish-language political intelligence;
+- it strengthens, without collapsing, the continuity between the earlier Dee/Silvius world and the later information-war Silvius world.
+
+### Plantin and Montano: private secret language
+
+In the supplied *De Zwijger*, Van Stipriaan states that Benito Arias Montano and Plantin continued to exchange messages after Montano returned to Spain using an **own secret language**, in a spiritualist/Familist-adjacent context involving Barrefelt. This is separate from state cipher systems.
+
+Supporting contextual source:
+- Maurice Sabbe on Arias Montanus, Barrefelt and Plantin notes Plantin's use of coded/secret language in correspondence around the Family of Love:
+  https://www.dbnl.org/tekst/_gul005192601_01/_gul005192601_01_0005.php
+
+Story use:
+- strengthens the principle that "secret language" in this milieu could serve religious/social trust as well as state intelligence;
+- does not turn every Familist exchange into espionage.
+
+### Silvius and the forged Don Juan letter — retained as a source tradition, not hard fact
+
+Older biographical/historiographical sources report that in October 1577 Silvius, while with Orange at **Geertruidenberg**, imitated Don Juan's handwriting/signature on a false message said to have helped bring **Breda** over to Orange. The tradition ultimately cites Pieter Bor. Some later secondary wording confuses the target city with Geertruidenberg itself.
+
+Sources:
+- *Nieuw Nederlandsch biografisch woordenboek*, Willem Silvius:
+  https://www.dbnl.org/tekst/molh003nieu07_01/molh003nieu07_01_1908.php
+- B.A. Vermaseren, *De Gulden Passer* 36:
+  https://www.dbnl.org/tekst/_gul005195801_01/_gul005195801_01_0009.php
+- *Het Boek* 26 contains a conflicting shorthand formulation:
+  https://www.dbnl.org/tekst/_boe031194001_01/_boe031194001_01_0018.php
+
+Evidence status:
+- **HISTORIOGRAPHICAL TRADITION / REQUIRES PRIMARY RECHECK BEFORE SCENE CANON**.
+- Do not use the anecdote as settled causal fact.
+- It is nevertheless useful context for why Silvius' calligraphic/material expertise could be imagined by contemporaries/later historians as politically operational.
+
+### Leiden 1574 as communication-practice comparator
+
+The supplied *Ooggetuigen van de Tachtigjarige Oorlog* contains concrete siege communication practices:
+- secret human messengers from Leiden;
+- a prearranged **cannon-shot signal** from Delft to confirm safe arrival;
+- a **pigeon carrying a written message/instruction** from Orange's relief force to Leiden.
+
+This is not a Claes event. It is a world-practice comparator showing that wartime communication could mix human couriers, acoustic signals and animal-carried written messages.
+
+Source:
+- supplied PDF, Leiden 1574 sections (parsed pp. 110 and 112–113).
+
+### Local municipal spies / Zutphen — retained only as research lead
+
+The initial AI-mode result referred to Zutphen municipal archival evidence for paid/anonymized spies reporting troop movements. That specific web article was not cleanly recovered in the present verification pass.
+
+Status:
+- **RESEARCH LEAD, NOT CURRENT SOURCE CLAIM**.
+- Do not use the quoted phrase or exact archival formulation as settled evidence until the original Erfgoedcentrum Zutphen item is retrieved.
