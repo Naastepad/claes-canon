@@ -33,7 +33,9 @@ anchors:
   evidence_status: SUPPORTED
   source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008]
   summary: >-
-    Royalist Goes is besieged and relieved by Mondragón. This is the clearest military anchor for Claes' adult experience of a city still defended within the royalist war system.
+    Royalist Goes is besieged and relieved by Mondragón. Claes is now canonically physically present in / goes to the siege environment; his exact side, route and function remain open.
+  story_claim_ids: [STC.CLAES.GOES.SIEGE_PRESENCE.1572.001]
+  open_role_decision: OPEN.CLAES.GOES.SIEGE_ROLE.1572.001
   continuity_note: >-
     The event demonstrates royalist control and active warfare, not a complete reconstruction of Goese drill, unit composition or command vocabulary.
 
@@ -43,7 +45,9 @@ anchors:
   evidence_status: VERIFIED
   source_ids: [SRC-GROENVELD-ETAL-TACHTIGJARIGE-OORLOG-2008]
   summary: >-
-    The satisfactie transfers Goes into Orange/States political alignment under negotiated conditions. It marks the beginning of a military-institutional transition, not an instantaneous adoption of the later Mauritian drill.
+    The satisfactie, concluded 22 March 1577, transfers Goes into Orange/States political alignment under negotiated conditions. Claes canonically knows its relevant political/religious terms; his presence or influence remains open. It marks the beginning of a military-institutional transition, not an instantaneous adoption of later drill or confessional uniformity.
+  story_claim_ids: [STC.CLAES.GOES.SATISFACTIE_KNOWLEDGE.1577.001]
+  open_role_decision: OPEN.CLAES.SATISFACTIE.ROLE_STRATEGY.1577.001
   do_not_infer:
     - immediate full professionalisation
     - immediate uniform command vocabulary
