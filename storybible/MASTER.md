@@ -1,7 +1,7 @@
 # Claes Storybible — MASTER / operating authority
 
 **Logical master ID:** `SB.CLAES.MASTER`  
-**Current synchronization date:** 21 August 2026
+**Current synchronization date:** 18 September 2026
 **Authoring readiness:** Rounds A–D implemented; manuscript/fire continuity sync active
 
 This repository is the structured operating projection of Revision 11 plus later explicit author decisions. The lossless source edition remains preserved for material not yet atomized, but later decisions override conflicting source or legacy-master wording.
@@ -23,7 +23,7 @@ Every top-level source section remains accounted for in `mapping/CONVERSION_LEDG
 Start with:
 
 1. `storybible/LEMMA_MCKEE_MASTER.md` — **current operating story synthesis**.
-2. `storybible/STORY_PROJECTION_ROUND_C.md` — causal/character projection from settled canon and chapter-ready world knowledge toward final structure.
+2. `storybible/STORY_PROJECTION_ROUND_C.md` — causal/character projection from settled canon and chapter-ready world knowledge toward final structure, now extended through the 1572–1584 Zeeland/information-war hinges.
 3. `storybible/CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md` — stable core-cast characterization, character shadows and author-side archetypal contrast; explicitly separates historical evidence from fiction fills.
 4. `WRITING_PROTOCOL.md` — governing drafting, revision, pacing, prose-quality and scene-retention protocol.
 5. `review/READER_EXPERIENCE_PROTOCOL.md` — cold-reader, human pilot-reader and reader-feedback method.
@@ -35,7 +35,8 @@ The dated `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` is a **legacy snapshot**
 
 ## Dedicated governing dossiers
 
-- `STORY_PROJECTION_ROUND_C.md` — causal spine, deeper Great-Work architecture, Mayken independent arc and explicit open 1572–1579 Goes hinge.
+- `STORY_PROJECTION_ROUND_C.md` — causal spine, deeper Great-Work architecture, Mayken independent arc and the partly fixed/partly open 1572–1584 Zeeland-information sequence.
+- `INFORMATION_WAR_ZEELAND_AND_CLAES_1564_1584.md` — governing context/backline dossier for covert communication, print as political force, Goes 1572, Reimerswaal 1573, Satisfactie 1577, Jaureguy 1582 and Gerards/Delft 1584.
 - `CHARACTER_WEB_ARCHETYPES_AND_CHARACTERIZATION.md` — governing core-character web; archetypes are author-side lenses only, while approved voice/habit/shadow details are fiction canon for continuity.
 - `ALCHEMICAL_OPERATION_PALETTE.md` — non-binding author-side palette for Calcination, Sublimation, Solution, Putrefaction, Distillation, Coagulation and Tincture; diagnostic and compositional only, never a mandatory 3×7/21-chapter scheme.
 - `WRITING_PROTOCOL.md` — scene construction, prose, pacing, reader experience and editorial decision rules.
@@ -74,6 +75,7 @@ Current explicit author decisions live across:
 - `canon/DECISIONS_HOUSE_OF_LOVE_NETWORK_2026-08-16.yaml`
 - `canon/DECISIONS_CHARACTER_WEB_2026-08-19.yaml`
 - `canon/DECISIONS_MANUSCRIPT_SYNC_2026-08-21.yaml`
+- `canon/DECISIONS_INFORMATION_WAR_ZEELAND_2026-09-18.yaml`
 
 Latest explicit decision wins within its domain. A base registry is not allowed to resurrect an older state merely because a later decision lives in a supplement.
 
@@ -106,6 +108,8 @@ These define what can plausibly happen in a place/time/activity. A world module 
 - `narrative/mayken_independent_arc.yaml`
 - `narrative/mayken_relationship_projection.yaml`
 - `narrative/goes_departure_1572_1579.yaml`
+- `narrative/claes_information_war_1564_1584.yaml`
+- `history/INFORMATION_WAR_LOW_COUNTRIES_1564_1584.yaml` — context/backline pressure that may steer Claes without creating direct contact.
 
 ### Editorial / reader layer
 
@@ -140,11 +144,28 @@ The following are current and must not be reopened by legacy prose:
 - **autumn 1567:** first Cornelis arrest/examination in Antwerp and release on borg/conditions.
 - **19 November 1569:** Cornelis fictionally executed in Antwerp, witnessed by Claes.
 - **1570:** direct green-vitriol reveal/read of hidden readable Brevísima; no cryptographic recovery chain.
-- **1572–1579:** exact material/economic/legal chain by which Goes finally becomes nonrecoverable for Claes remains **authorial-design OPEN** under `OPEN.GOES.CLAES_DEPARTURE_1572_1579.001`.
+- **1572:** Claes canonically goes to / is physically present in the siege environment of Goes. Exact side, role and scene position remain OPEN under `OPEN.CLAES.GOES.SIEGE_ROLE.1572.001`.
+- **1573:** Claes canonically witnesses Zeeuwse/Geuzen forces burning Reimerswaal **from a boat**. Exact vessel, route and companions remain OPEN under `OPEN.CLAES.REIMERSWAAL.BOAT_CONTEXT.1573.001`. Do not conflate this with the January 1574 naval battle near Reimerswaal.
+- **22 March 1577:** Claes canonically knows the Satisfactie of Goes and understands its relevant political/religious terms. Physical presence, influence, drafting, hinting or strategic use remain OPEN under `OPEN.CLAES.SATISFACTIE.ROLE_STRATEGY.1577.001`.
+- **1572–1579:** exact cumulative chain by which Goes finally becomes nonrecoverable for Claes remains **authorial-design OPEN** under `OPEN.GOES.CLAES_DEPARTURE_1572_1579.001`; it now includes material/economic, political, confessional and moral severance.
+- **1577 information context:** the Don Juan intercepted-letter print chain provides a historical model for private information becoming public political force. Claes' direct touchpoint remains OPEN.
 - **1578, Antwerp:** printed publication completes the textual mission — projectio of the Word.
-- **1584:** Delft moral bottom / Albedo threshold.
+- **1582 information context:** the Jaureguy case provides a historical model of post-event reconstruction from documents, objects, handwriting, finance and testimony; Claes' direct touchpoint remains OPEN.
+- **1584:** Delft moral bottom / Albedo threshold is sharpened to **seeing is not knowing**; the option that Claes briefly saw François Guyon/Gerards before the murder remains OPEN and must not turn him into a near-detective.
 - **13 March 1602, ca.16:00, Enkhuizen:** Morhof-framed Seton projectio at the house of Jacob Hausfsen — projectio of Matter.
 - **after 1602:** projectio of the Self / Status Prima Nova; exact death remains open.
+
+## Zeeland / information-war current state
+
+`DEC.CLAES.INFORMATION_WAR_CONTEXT_LAYER.2026-09-18` governs the context/backline principle.
+
+- Claes is **not** canonically a professional spy or secret-service officer.
+- The historical context nevertheless includes coded names, mobile intermediaries, double agents, intercepted papers, human access to cipher keys, forged correspondence, political framing and printers who turn private documents into public political action.
+- Context figures such as Joannis de Castilia, Alonso del Canto, Lorenzo de Villavicencio, Thomas Churchyard and Henry Balfour primarily establish historical depth; no Claes meeting is created automatically.
+- The Brevísima remains direct hidden readable print. Historical ciphers do **not** restore a nomenclator or decryption chain.
+- The current epistemic progression is: **hidden can be revealed -> revealed is not automatically true -> networks can become legible after violence -> retrospective legibility is not predictive certainty**.
+- `storybible/INFORMATION_WAR_ZEELAND_AND_CLAES_1564_1584.md` is the governing human-readable dossier.
+- `OPEN.CLAES.SATISFACTIE.ROLE_STRATEGY.1577.001` preserves the unresolved question whether Claes is observer, limited adviser, instrumental strategist or moral opponent around the Satisfactie. A staged "first protect Catholic practice, later displace it from public daily life" strategy is a **fictional option**, not a historical explanation of the agreement and not a documented policy of Orange.
 
 ## Goese clergy / Maria Magdalena current state
 
