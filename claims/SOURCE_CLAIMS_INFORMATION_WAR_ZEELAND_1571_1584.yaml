@@ -102,3 +102,51 @@ claims:
     statement: "The revolt-era print environment could rapidly circulate reporting, selective framing, rumours, falsehoods and falsified documents, making source criticism and competing interpretation part of political life."
     evidence_status: SUPPORTED_SECONDARY
     source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
+
+  - id: SC.HIST.MARNIX.MIDDELBURG.1576_07_20.001
+    type: SourceClaim
+    statement: "Marnix is directly attested in Middelburg on 20 July 1576 by his own entry in Emanuel van Meteren's album amicorum."
+    evidence_status: SUPPORTED_PRIMARY_ALBUM_TRANSCRIPTION
+    source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
+    story_time: {date: 1576-07-20, precision: day}
+
+  - id: SC.HIST.MIDDELBURG_ANTWERP.REFUGEE_SHIPS.1576.001
+    type: SourceClaim
+    statement: "In 1576 Middelburg commissioned three ships to sail back and forth to Antwerp to collect refugees, demonstrating an active civic maritime connection between the two nodes."
+    evidence_status: SUPPORTED_ARCHIVAL_GUIDE
+    source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
+
+  - id: SC.HIST.INTERCEPT_ROUTE.LANOUE_NAVARRE_MORNAY_ORANGE.1577.001
+    type: SourceClaim
+    statement: "A packet of intercepted Spanish correspondence was routed through François de La Noue, Henry of Navarre and Philippe du Plessis-Mornay to William of Orange; Marnix was then called to explain the material and its authenticity."
+    evidence_status: SUPPORTED_SECONDARY_WITH_CORRESPONDENCE_TRADITION
+    source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
+
+  - id: SC.HIST.VULCANIUS.SILVIUS_GULDEN_ENGEL.1577.001
+    type: SourceClaim
+    statement: "In autumn 1577 Bonaventura Vulcanius lodged with Willem Silvius at De Gulden Engel in the Sleutelstraat, Antwerp, and used his Spanish expertise in correction/translation work around the intercepted Don Juan correspondence."
+    evidence_status: SUPPORTED_SCHOLARLY_ARCHIVAL
+    source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
+
+  - id: SC.HIST.PLANTIN_MONTANO.SECRET_LANGUAGE.POST1575.001
+    type: SourceClaim
+    statement: "Van Stipriaan reports that Plantin and Benito Arias Montano exchanged messages in their own secret language after Montano had returned to Spain, in a spiritualist network context."
+    evidence_status: SUPPORTED_SECONDARY
+    source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
+    guardrail: "Treat as private/religious-network secrecy, not automatically state espionage."
+
+  - id: SC.HIST.SILVIUS.FORGED_DONJUAN_LETTER_TRADITION.1577.001
+    type: SourceClaim
+    statement: "An older historiographical tradition reports that Silvius imitated Don Juan's handwriting/signature on a false message in October 1577, allegedly contributing to Breda's transfer while Silvius was with Orange at Geertruidenberg."
+    evidence_status: HISTORIOGRAPHICAL_TRADITION_REQUIRES_PRIMARY_RECHECK
+    source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
+    qualifies:
+      - "Later secondary wording is inconsistent about Breda versus Geertruidenberg."
+      - "Do not promote causal details to scene canon without primary-source recheck."
+
+  - id: SC.HIST.LEIDEN.SIEGE_COMMUNICATION.1574.001
+    type: SourceClaim
+    statement: "Contemporary siege reporting from Leiden describes secret human messengers, a prearranged cannon-shot confirmation signal and a pigeon carrying a written message/instruction."
+    evidence_status: SUPPORTED_CONTEMPORARY_SOURCE_COMPILATION
+    source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
+    significance: "World-practice comparator only; no Claes participation is implied."
