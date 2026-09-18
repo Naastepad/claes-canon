@@ -5,8 +5,8 @@
 > Do not use this pack as permission for free repository discovery; follow the task router in CLAUDE_CONTEXT_INDEX.md.
 
 - source branch: `main`
-- source commit at generation: `6dfdc6b65b4f49e0771f869b9779843cb13e111f`
-- generated UTC: `2026-09-18T08:15:26+00:00`
+- source commit at generation: `4df8d392788582ec165faa30af09eeea5eb43015`
+- generated UTC: `2026-09-18T08:15:54+00:00`
 - included files: `67`
 
 Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pack does not alter authority.
@@ -1211,11 +1211,14 @@ decisions:
 - id: OPEN.GOES.CLAES_DEPARTURE_1572_1579.001
   domain: plot_and_economic_causality
   priority: high
-  question: "Which historically disciplined chain of siege damage, residual family/business interest, debt/claims and 1577–1579 legal settlement makes Goes cease to function as Claes' recoverable home/economic anchor, and when does he actually leave?"
+  question: "Which historically disciplined cumulative chain of 1572 siege experience/damage, the 1573 Reimerswaal loss, residual family/business interest, debt/claims, the 1577 Satisfactie, 1577–1579 legal settlement and confessional-political change makes Goes cease to function as Claes' recoverable home/economic anchor, and when does he actually leave?"
   status: OPEN
   fixed:
   - "Cornelis is already dead before the 1572 siege."
   - "The 1572 siege damages outside salt works and a brewery in the Voorstad."
+  - "Claes physically goes to / is present in the 1572 Goes siege environment; exact role remains OPEN.CLAES.GOES.SIEGE_ROLE.1572.001."
+  - "Claes sees Reimerswaal burn from a boat in 1573; exact boat/route context remains OPEN.CLAES.REIMERSWAAL.BOAT_CONTEXT.1573.001."
+  - "Claes knows the 22 March 1577 Satisfactie of Goes; exact presence/influence/strategy remains OPEN.CLAES.SATISFACTIE.ROLE_STRATEGY.1577.001."
   - "The Nissepad brewery documented in 1577 is not proven identical to the brewery burned in the Voorstad in 1572 and is not proven Cornelis property."
   - "The burned Westzelke salt-pan site sold by Jan Jansen Nissepat in 1577 has an unknown destruction event."
   - "The 1578 Antwerp publication endpoint remains fixed."
@@ -1224,6 +1227,7 @@ decisions:
   - Do not label 1577–1579 transport acts executions, confiscations or forced sales without evidence.
   - Do not make documented Nissepat names one proven nuclear family without a genealogical decision.
   - Any fictional property/lease connection used to motivate Claes must be explicitly marked novel reconstruction.
+  - Do not reduce the final severance to economics if the chosen structure also depends on political, confessional and moral displacement.
 
 - id: OPEN.MAYKEN.INDEPENDENT_MIDARC.001
   domain: character
