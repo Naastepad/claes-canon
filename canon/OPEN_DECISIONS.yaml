@@ -201,3 +201,87 @@ decisions:
   - Do not grant Mayken unsupported university, physician or guild status.
   - Do not turn a possible kruidenvrouw line into a stereotype or a secret cipher role.
   - Preserve her distinct 1554 experience: destruction plus rebuilding, not Claes' household annihilation.
+
+
+- id: OPEN.CLAES.GOES.SIEGE_ROLE.1572.001
+  domain: plot_scene_role
+  priority: high
+  question: "What exactly is Claes doing in the 1572 siege environment of Goes, from which side/location does he experience the siege, and what choice or cost makes the episode his rather than a battle tableau?"
+  status: OPEN
+  fixed:
+  - "Claes physically goes to / is present in the siege environment."
+  - "Goes is still in the royal/Habsburg sphere during the siege."
+  - "Mondragon's relief and Geuzen withdrawal belong to the historical event."
+  guardrails:
+  - "Presence does not automatically make Claes a soldier, spy, official envoy or partisan combatant."
+  - "Do not use military spectacle without a Claes-specific objective, pressure and consequence."
+
+- id: OPEN.CLAES.REIMERSWAAL.BOAT_CONTEXT.1573.001
+  domain: scene_route
+  priority: high
+  question: "On what boat, for what purpose, with whom, on which water position and at what plausible distance does Claes witness Zeeuwse/Geuzen forces burning Reimerswaal in 1573?"
+  status: OPEN
+  fixed:
+  - "Claes sees the 1573 burning from a boat."
+  - "The event is not the January 1574 naval battle near Reimerswaal."
+  desired_function:
+  - "Turn Reimerswaal from remembered school-city into witnessed irreversible loss."
+  - "Use water as vantage without agency: Claes can see but cannot simply intervene."
+  guardrail: "Geography/visibility and vessel route must be checked before scene lock."
+
+- id: OPEN.CLAES.SATISFACTIE.ROLE_STRATEGY.1577.001
+  domain: plot_moral_political
+  priority: high
+  question: "What is Claes' actual relation to the Satisfactie of Goes: informed observer, peripheral adviser/hint-giver, intentional strategist, critical opponent, or another bounded role?"
+  status: OPEN
+  fixed:
+  - "Claes knows the Satisfactie and understands its relevant religious-political terms."
+  - "The agreement is concluded 22 March 1577."
+  - "Historical terms protect Catholic religious practice under negotiated acceptance of Orange's stadholder authority."
+  candidate_models:
+  - id: A
+    model: "Observer/reader: Claes is absent from the negotiations and later understands the mechanism."
+  - id: B
+    model: "Peripheral hint: Claes contributes a limited observation about staged political change without authoring the settlement."
+  - id: C
+    model: "Intentional and morally dark strategy: Claes argues that Catholic practice should first be protected to secure political transfer, after which Reformed influence can gradually displace Catholicism from daily public life."
+  - id: D
+    model: "Claes encounters such instrumental reasoning and rejects or resists it."
+  open_motivation_if_model_C:
+  - "revenge connected to Cornelis"
+  - "resentment toward royalist/confessional institutions"
+  - "desire to avoid direct violent purge that mutates into manipulation"
+  - "mixed or other motive to be explicitly chosen"
+  guardrails:
+  - "Do not state that the historical Satisfactie was designed as a hidden anti-Catholic trap."
+  - "Do not attribute Model C to William of Orange; his documented 1578 religious-peace line points toward coexistence/toleration."
+  - "If Claes acts strategically, preserve moral cost and contradiction; do not present instrumental toleration as neutral cleverness."
+
+- id: OPEN.CLAES.DONJUAN_PRINT_TOUCHPOINT.1577.001
+  domain: plot_information_war
+  priority: medium
+  question: "How directly, if at all, does Claes encounter the 1577 Marnix/Silvius/Plantin publication chain built from intercepted Don Juan correspondence?"
+  status: OPEN
+  fixed_context:
+  - "The historical print chain is available as context and as a model for information -> framing -> print -> political effect."
+  - "Silvius already belongs to Claes' established life."
+  guardrail: "Do not make Claes a participant merely to place him beside famous people."
+
+- id: OPEN.CLAES.JAUREGUY_TOUCHPOINT.1582.001
+  domain: plot_information_war
+  priority: medium
+  question: "Does Claes experience the 1582 Jaureguy case directly in Antwerp, through print/report, or only retrospectively before Delft?"
+  status: OPEN
+  fixed_function: "The case may teach that a hidden network can become legible after violence without proving it was predictable before the act."
+  guardrail: "Information function outranks physical proximity."
+
+- id: OPEN.CLAES.GERARDS_PRIOR_SIGHTING.1584.001
+  domain: delft_moral_bottom
+  priority: high
+  question: "Before the murder, has Claes briefly seen François Guyon/Balthasar Gerards without adequate reason to identify him as a threat?"
+  status: OPEN
+  candidate_payoff: "After the murder Claes can remember the man accurately and discover that accurate observation was not the same as knowledge."
+  proposed_authorial_line: "Hij had hem gezien. Dat was niet hetzelfde als hem gekend hebben."
+  guardrails:
+  - "Claes must not become the almost-detective who nearly solves the historical assassination."
+  - "If used, hindsight should expose the limit of prediction, not prove Claes missed an obvious clue."
