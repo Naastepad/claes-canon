@@ -5,8 +5,8 @@
 > Do not use this pack as permission for free repository discovery; follow the task router in CLAUDE_CONTEXT_INDEX.md.
 
 - source branch: `main`
-- source commit at generation: `dfe5e91ccf58b5972b71494bbee062ca2036b0c2`
-- generated UTC: `2026-09-18T08:13:57+00:00`
+- source commit at generation: `6dfdc6b65b4f49e0771f869b9779843cb13e111f`
+- generated UTC: `2026-09-18T08:15:26+00:00`
 - included files: `11`
 
 Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pack does not alter authority.
@@ -1337,7 +1337,7 @@ decisions:
 
 Status: `SYNC_COMPLETE_ACTIVE_LAYERS`
 
-Release state: `MANUSCRIPT_CANON_AND_GOES_FIRE_CONTINUITY_SYNCHRONIZED_2026-08-21`
+Release state: `ZEELAND_INFORMATION_WAR_CONTEXT_AND_ROUTE_SYNCHRONIZED_2026-09-18`
 
 Manuscript/canon addendum: `MANUSCRIPT_EDITOR_OPENS_CLOSED_AND_FIRE_SEQUENCE_SYNCHRONIZED_2026-08-21`
 
@@ -1352,6 +1352,10 @@ Editorial/reader addendum: `ROUND_D_EDITORIAL_READER_PROTOCOL_IMPLEMENTED`
 Goes clergy addendum: `GOES_CLERGY_MATHIJS_CLEMENS_CANONIZED_AND_SYNCHRONIZED_2026-08-16`
 
 Character-web addendum: `CORE_CHARACTER_WEB_AND_FICTION_CHARACTERIZATION_SYNCHRONIZED_2026-08-19`
+
+Zeeland/information-war addendum: `GOES_REIMERSWAAL_SATISFACTIE_AND_INFORMATION_BACKLINE_SYNCHRONIZED_2026-09-18`
+
+The 18 September expansion adds a governing historical-context/backline layer for the information war and synchronizes it with Claes' route. Fixed story truth now includes Claes' presence in the 1572 Goes siege environment, his 1573 witness of Reimerswaal burning from a boat, and his knowledge of the 22 March 1577 Satisfactie of Goes. Direct roles, Satisfactie influence, 1577 Don Juan-print contact, 1582 Jaureguy contact and a possible prior sighting of Gerards remain explicitly OPEN. The context layer includes Marnix/Orange information networks, Castilia/cipher-key context, Del Canto/Villavicencio, Churchyard, Balfour, Marnix in Middelburg, Middelburg–Antwerp refugee shipping, the La Noue–Navarre–Mornay relay, Vulcanius at Silvius' De Gulden Engel, Plantin/Montano secret-language context, the Don Juan intercept/print chain, the Silvius forgery tradition with downgraded evidence status, Leiden siege communication practice, Jaureguy and Gerards. The Brevísima remains direct hidden readable print; historical cipher practice does not reopen the retired nomenclator mechanism.
 
 The 21 August follow-up closes the five editor-ingest OPEN records with explicit decisions, fixes the Nissepat footbow carrier as a fictional penning/hanger, distinguishes Claes' direct fire experience from Cornelis' absence, restores grandfather to the burial/early aftermath, fixes Claes' Reimerswaal arrival age at eleven, and requires the specific *De Kraai* dread callback in *De Kade*. The fire and aftermath are a multi-chapter sequence. Mayken's immediate-aftermath absence is intentional.
 
@@ -1376,9 +1380,14 @@ The 19 August character-web decisions are synchronized through Story Claims, cor
 - Cornelis first arrest/examination: autumn 1567, Antwerp; release on borg/conditions.
 - Cornelis execution: **19 November 1569**, Antwerp; Claes witnesses.
 - Direct memoriaal reveal: 1570 line.
-- Goes 1572–1579 final material/economic severance: **authorial causal design OPEN**.
+- **1572:** Claes physically goes to / is present in the siege environment of Goes; exact role remains OPEN.
+- **1573:** Claes sees Zeeuwse/Geuzen forces burn Reimerswaal from a boat; exact boat/route context remains OPEN.
+- **22 March 1577:** Claes knows the Satisfactie of Goes and its relevant political/religious terms; presence/influence remains OPEN.
+- Goes 1572–1579 cumulative severance: **authorial causal design OPEN**, now across material/economic, political, confessional and moral registers.
+- **1577:** Don Juan intercept/print context active; direct Claes touchpoint OPEN.
 - Brevísima print culmination: **Antwerp 1578**.
-- Delft moral bottom: 1584.
+- **1582:** Jaureguy retrospective-evidence context active; direct Claes touchpoint OPEN.
+- **1584:** Delft moral bottom / Albedo threshold sharpened to **seeing is not knowing**; prior Gerards sighting remains OPEN.
 - Enkhuizen Seton frame: **13 March 1602, ca.16:00**, house of Jacob Hausfsen.
 - post-1602: Projectio of Self / Status Prima Nova; exact Claes death remains open.
 
@@ -1476,7 +1485,9 @@ Governing projection: `storybible/STORY_PROJECTION_ROUND_C.md`.
 - `ARC.MAYKEN.LIFE` gives Mayken an independent story trajectory.
 - `REL.CLAES.MAYKEN.CONJUNCTIO` requires reciprocal relation with two centers of agency and now includes pre-fire childhood acquaintance followed by divergent post-fire paths.
 - `ARC.CLAES.CHARACTER_WEB.ARCHETYPAL` differentiates recurring characters by method/value/shadow without turning the shorthand into in-world doctrine.
-- `OPEN.GOES.CLAES_DEPARTURE_1572_1579.001` holds the exact Goes severance chain; do not silently identify the burned 1572 Voorstad brewery with the documented 1577 Nissepad brewery.
+- `OPEN.GOES.CLAES_DEPARTURE_1572_1579.001` holds the exact cumulative Goes severance chain; do not silently identify the burned 1572 Voorstad brewery with the documented 1577 Nissepad brewery.
+- `ARC.CLAES.INFORMATION_EPISTEMOLOGY.1564_1584` and `HIST.INFORMATION_WAR.LOW_COUNTRIES.1564_1584` maintain a separate backline/context layer that may shape route, trust, suspicion, interpretation and available choices without granting Claes direct participation.
+- `OPEN.CLAES.SATISFACTIE.ROLE_STRATEGY.1577.001` keeps observer, peripheral-hint, instrumental-strategy and moral-opponent models distinct. A staged toleration-then-exclusion idea is fiction OPEN, not the documented historical purpose of the Satisfactie or Orange's religious-peace policy.
 
 ## Round D — editorial and reader-experience protocol
 
@@ -1555,7 +1566,13 @@ No historical Source Claims were promoted or rewritten by this pass. No personal
 
 ## Current active high-impact authorial opens
 
+- `OPEN.CLAES.GOES.SIEGE_ROLE.1572.001`;
+- `OPEN.CLAES.REIMERSWAAL.BOAT_CONTEXT.1573.001`;
+- `OPEN.CLAES.SATISFACTIE.ROLE_STRATEGY.1577.001`;
+- `OPEN.CLAES.DONJUAN_PRINT_TOUCHPOINT.1577.001`;
 - `OPEN.GOES.CLAES_DEPARTURE_1572_1579.001`;
+- `OPEN.CLAES.JAUREGUY_TOUCHPOINT.1582.001`;
+- `OPEN.CLAES.GERARDS_PRIOR_SIGHTING.1584.001`;
 - `OPEN.MAYKEN.INDEPENDENT_MIDARC.001`;
 - exact 1570→1578 publication/transmission chain;
 - exact 1564 translator/source route;
@@ -1586,6 +1603,31 @@ Synchronized:
 
 No known clergy-specific downstream synchronization remains pending.
 
+
+## Zeeland / information-war synchronization — 18 September 2026
+
+Synchronized governing paths:
+
+- `storybible/INFORMATION_WAR_ZEELAND_AND_CLAES_1564_1584.md`;
+- `sources/SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18.md`;
+- `claims/SOURCE_CLAIMS_INFORMATION_WAR_ZEELAND_1571_1584.yaml`;
+- `claims/STORY_CLAIMS_CLAES_ZEELAND_INFORMATION_1572_1584.yaml`;
+- `canon/DECISIONS_INFORMATION_WAR_ZEELAND_2026-09-18.yaml`;
+- `canon/OPEN_DECISIONS.yaml`;
+- `history/INFORMATION_WAR_LOW_COUNTRIES_1564_1584.yaml`;
+- `history/GOES_MILITARY_TRANSITION_1550_1607.yaml`;
+- `narrative/claes_information_war_1564_1584.yaml`;
+- `narrative/goes_departure_1572_1579.yaml`;
+- `narrative/story_projection_round_c.yaml`;
+- `storybible/modules/GOES_RELIGIOUS_TRANSITION_1577_1578.md`;
+- `storybible/LEMMA_MCKEE_MASTER.md`;
+- `storybible/STORY_PROJECTION_ROUND_C.md`;
+- `storybible/MASTER.md`;
+- `storybible/INDEX.md`;
+- this sync-status file.
+
+The GitHub workflow `Build Claude context pack` has successfully produced regenerated context-pack commits after the integration writes, so the downstream Claude context projection has been refreshed as part of the repository flow.
+
 ## Next major work
 
 The repository remains ready for **structural realization**:
@@ -1601,7 +1643,7 @@ The repository remains ready for **structural realization**:
 
 ## Validation note
 
-Repository CI must be evaluated on the actual integration commit. This status does not pre-claim a workflow result that has not yet run.
+The repository's Claude-context generation workflow completed and committed regenerated context packs after the 18 September integration writes. No separate YAML-schema validation workflow is currently asserted by this note.
 ```
 
 ---
