@@ -1,0 +1,104 @@
+schema_version: "1.0.0"
+kind: SourceClaimRegistryExtension
+claims:
+  - id: SC.HIST.ORANGE.INFORMATION_NETWORK.1571_1572.001
+    type: SourceClaim
+    statement: "By late 1571/early 1572 Orange operated through a fine-meshed contact network in which agents used coded names for persons and places; Dirck Gerritsz. van Kessel is documented as a mobile intermediary for people, money and messages."
+    evidence_status: SUPPORTED
+    source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
+    story_time: {earliest: 1571-01-01, latest_exclusive: 1573-01-01, precision: bounded}
+
+  - id: SC.HIST.ORANGE.COUNTERINTELLIGENCE.BALFOUR.1573_1574.001
+    type: SourceClaim
+    statement: "Henry Balfour presented himself to the royal side as willing to assassinate Orange but informed Orange instead; the episode and Requesens' complaint about double agents support an active counterintelligence/security environment."
+    evidence_status: SUPPORTED
+    source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
+
+  - id: SC.HIST.MARNIX.CASTILIA.CIPHER_KEYS.1570S.001
+    type: SourceClaim
+    statement: "Secondary scholarship reports that Joannis de Castilia supplied Spanish cipher keys to Orange's side for years, so Marnix's successful reading of intercepted correspondence must not be represented as pure unaided cryptanalysis."
+    evidence_status: SUPPORTED_SECONDARY_WITH_ADMINISTRATIVE_DETAIL_VARIANCE
+    source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
+    qualifies:
+      - "Secondary retellings differ over the precise office/secretarial chain around Castilia."
+      - "The main claim is access to cipher keys, not one exact bureaucratic title."
+
+  - id: SC.HIST.SPANISH.INTELLIGENCE.DELCANTO_VILLAVICENCIO.1560S.001
+    type: SourceClaim
+    statement: "Alonso del Canto and Lorenzo de Villavicencio participated in Spanish intelligence/informant activity in and around the Netherlands during the 1560s."
+    evidence_status: SUPPORTED
+    source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
+
+  - id: SC.HIST.CHURCHYARD.ANTWERP_INTELLIGENCE.1567.001
+    type: SourceClaim
+    statement: "Thomas Churchyard undertook an Antwerp mission for William Cecil in 1567 to gather intelligence about unrest and opposition to Habsburg rule."
+    evidence_status: SUPPORTED_ACADEMIC
+    source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
+
+  - id: SC.HIST.GOES.SIEGE_RELIEF.1572.002
+    type: SourceClaim
+    statement: "Goes was besieged by rebel/Geuzen forces in 1572 and relieved by Mondragon's force in October; contemporary and later witnesses describe the withdrawal of the besiegers toward their ships and destruction in the surrounding area."
+    evidence_status: SUPPORTED
+    source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
+    story_time: {earliest: 1572-09-01, latest_exclusive: 1572-11-01, precision: bounded}
+
+  - id: SC.HIST.REIMERSWAAL.BURNING.1573.001
+    type: SourceClaim
+    statement: "In 1573 Zeeuwse troops entered Reimerswaal to expel the Spanish occupation and set the city on fire."
+    evidence_status: SUPPORTED_REGIONAL_HERITAGE
+    source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
+    story_time: {earliest: 1573-01-01, latest_exclusive: 1574-01-01, precision: year}
+    guardrail: "Do not collapse the 1573 burning with the January 1574 naval battle near Reimerswaal."
+
+  - id: SC.HIST.GOES.SATISFACTIE.DATE_TERMS.1577.001
+    type: SourceClaim
+    statement: "The Satisfactie of Goes was concluded on 22 March 1577; Goes/Zuid-Beveland accepted Orange's stadholder authority under negotiated conditions protecting Roman Catholic religious practice and limiting unilateral imposition of troops/governance."
+    evidence_status: SUPPORTED
+    source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
+    story_time: {date: 1577-03-22, precision: day}
+
+  - id: SC.HIST.ORANGE.RELIGIOUS_PEACE.1578.001
+    type: SourceClaim
+    statement: "Orange's 1578 religious-peace policy was argued in terms of coexistence/toleration across confessional difference; it is not evidence that the 1577 Satisfactie was designed as a temporary step toward suppressing Catholicism."
+    evidence_status: SUPPORTED
+    source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
+
+  - id: SC.HIST.DONJUAN.INTERCEPT_PRINT_CHAIN.1577.001
+    type: SourceClaim
+    statement: "Intercepted Don Juan correspondence was politically processed through Marnix and ordered into print by the States-General in September 1577; Silvius held the printing commission, Gillis van den Rade printed Marnix's framing text, Plantin printed the intercepted letters, and Vulcanius was involved."
+    evidence_status: VERIFIED_SECONDARY_BIBLIOGRAPHICAL
+    source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
+    story_time: {earliest: 1577-09-01, latest_exclusive: 1578-01-01, precision: bounded}
+
+  - id: SC.HIST.ORANGE.FORGED_CORRESPONDENCE.GHENT.1577.001
+    type: SourceClaim
+    statement: "Van Stipriaan reports that forged correspondence was used in Ghent in 1577 with Orange's knowledge to present arrested opponents as conspirators."
+    evidence_status: SUPPORTED_SECONDARY
+    source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
+    significance: "Genuine interception and deliberate falsification coexist in the same information environment."
+
+  - id: SC.HIST.JAUREGUY.EVIDENCE_CHAIN.1582.001
+    type: SourceClaim
+    statement: "After Jaureguy's attack in Antwerp in March 1582, physical objects, Spanish papers, financial instruments, handwriting recognition and witness interrogation were combined to reconstruct a wider network; Marnix handled part of the documentary evidence."
+    evidence_status: SUPPORTED_CONTEMPORARY_SOURCE_COMPILATION
+    source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
+    story_time: {earliest: 1582-03-18, latest_exclusive: 1582-04-01, precision: bounded}
+
+  - id: SC.HIST.GERARDS.COVER_ACCESS.1584.001
+    type: SourceClaim
+    statement: "Balthasar Gerards, operating as François Guyon, used a plausible identity, religious behaviour, letters, social contact and ordinary requests to gain trust and access in Orange's environment before the assassination."
+    evidence_status: SUPPORTED_CONTEMPORARY_SOURCE_COMPILATION
+    source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
+    story_time: {earliest: 1584-03-01, latest_exclusive: 1584-07-11, precision: bounded}
+
+  - id: SC.HIST.GERARDS.INNOCENT_INTERMEDIARY.MOERWIT.1584.001
+    type: SourceClaim
+    statement: "A member of Orange's guard helped Gerards obtain a pistol without knowing its intended use; his later remorse illustrates how an innocent intermediary can become causally important without prior knowledge."
+    evidence_status: SUPPORTED_CONTEMPORARY_SOURCE_COMPILATION
+    source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
+
+  - id: SC.HIST.PRINT.TRUTH_CRISIS.1568_1580S.001
+    type: SourceClaim
+    statement: "The revolt-era print environment could rapidly circulate reporting, selective framing, rumours, falsehoods and falsified documents, making source criticism and competing interpretation part of political life."
+    evidence_status: SUPPORTED_SECONDARY
+    source_ids: [SRC-RESEARCH-INFORMATION-WAR-ZEELAND-1564-1584-2026-09-18]
