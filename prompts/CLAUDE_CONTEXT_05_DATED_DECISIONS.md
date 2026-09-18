@@ -5,9 +5,9 @@
 > Do not use this pack as permission for free repository discovery; follow the task router in CLAUDE_CONTEXT_INDEX.md.
 
 - source branch: `main`
-- source commit at generation: `44767581845f27e862eecbfd1e6c41c18a954e1a`
-- generated UTC: `2026-08-30T08:15:36+00:00`
-- included files: `22`
+- source commit at generation: `c832baa68a6d9d2356263fa2c8c1594c205c3448`
+- generated UTC: `2026-09-18T07:59:58+00:00`
+- included files: `23`
 
 Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pack does not alter authority.
 
@@ -1217,6 +1217,47 @@ decisions:
   - Do not infer that forbidden books were literally hidden inside beer casks unless a separate scene decision establishes it.
   - Similar logistics does not mean identical cargo, route or carrier on every journey.
   - Preserve OPEN.SECURITY.LOW_LINK.1564.001 unless separately resolved.
+```
+
+---
+
+# SOURCE FILE: `canon/DECISIONS_INFORMATION_WAR_ZEELAND_2026-09-18.yaml`
+
+```yaml
+schema_version: "1.0.0"
+kind: CanonDecisionRegistryExtension
+decisions:
+  - id: DEC.CLAES.GOES.SIEGE_PRESENCE.2026-09-18
+    type: CanonDecision
+    status: CANON
+    decision: "Claes goes to / is physically present in the 1572 siege environment of Goes."
+    affects: [STC.CLAES.GOES.SIEGE_PRESENCE.1572.001, ARC.CLAES.CAUSAL_SPINE]
+    note: "Exact military/political role remains an OPEN scene/plot decision."
+
+  - id: DEC.CLAES.REIMERSWAAL_BURNING_WITNESS.2026-09-18
+    type: CanonDecision
+    status: CANON
+    decision: "Claes sees the Geuzen/Zeeuwse forces burn Reimerswaal in 1573 from a boat."
+    affects: [STC.CLAES.REIMERSWAAL.BURNING_WITNESS.1573.001, ARC.CLAES.CAUSAL_SPINE]
+    note: "Exact vessel, route, companions and purpose remain OPEN."
+
+  - id: DEC.CLAES.SATISFACTIE_KNOWLEDGE.2026-09-18
+    type: CanonDecision
+    status: CANON
+    decision: "Claes has meaningful knowledge of the Satisfactie of Goes of 22 March 1577 and its protection of Catholic practice under negotiated submission to Orange."
+    affects: [STC.CLAES.GOES.SATISFACTIE_KNOWLEDGE.1577.001]
+    exclusions:
+      - "This does not decide that Claes is physically present at the negotiations/signing."
+      - "This does not decide that Claes drafts, inspires or manipulates the agreement."
+
+  - id: DEC.CLAES.INFORMATION_WAR_CONTEXT_LAYER.2026-09-18
+    type: CanonDecision
+    status: CANON_AUTHORIAL_CONTEXT
+    decision: "The storybible must maintain a separate historical-context/backline layer for the information war and political-confessional environment that can steer Claes consciously or unconsciously without granting him direct participation."
+    affects:
+      - STC.CLAES.CONTEXT.INFORMATION_WAR_INFLUENCE.1564_1584.001
+      - ARC.CLAES.INFORMATION_EPISTEMOLOGY.1564_1584
+    principle: "Historical pressure may shape route, suspicion, choices, access, available explanations and later interpretation even when Claes never meets the historical actor causing that pressure."
 ```
 
 ---

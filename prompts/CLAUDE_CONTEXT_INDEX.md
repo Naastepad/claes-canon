@@ -5,8 +5,8 @@
 > `01_CORE_CANON` is not the complete decision registry. Current dated/supplemental decisions live in `05_DATED_DECISIONS` and may override or extend `canon/DECISIONS.yaml`.
 > The task router below assigns the packs to load. Load them completely before analysis, prose or repository conclusions.
 
-- source commit: `44767581845f27e862eecbfd1e6c41c18a954e1a`
-- generated UTC: `2026-08-30T08:15:36+00:00`
+- source commit: `c832baa68a6d9d2356263fa2c8c1594c205c3448`
+- generated UTC: `2026-09-18T07:59:58+00:00`
 
 ## Pack URLs
 
@@ -22,7 +22,7 @@
 4. `04_MAYKEN_KNOWLEDGE` — 5 files
    https://raw.githubusercontent.com/Naastepad/claes-canon/main/prompts/CLAUDE_CONTEXT_04_MAYKEN_KNOWLEDGE.md
 
-5. `05_DATED_DECISIONS` — 22 files
+5. `05_DATED_DECISIONS` — 23 files
    https://raw.githubusercontent.com/Naastepad/claes-canon/main/prompts/CLAUDE_CONTEXT_05_DATED_DECISIONS.md
 
 6. `06_CHARACTER_WEB` — 9 files
