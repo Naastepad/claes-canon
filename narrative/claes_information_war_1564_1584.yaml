@@ -1,0 +1,117 @@
+schema_version: "1.0.0"
+kind: NarrativeDesignProjection
+records:
+  - id: ARC.CLAES.INFORMATION_EPISTEMOLOGY.1564_1584
+    type: CausalBacklineProjection
+    status: ACTIVE_WITH_OPEN_TOUCHPOINTS
+    label: "Claes — from hidden meaning to uncertain human evidence"
+    protagonist: ENT.PERSON.CLAES
+    purpose: "Integrate the information-war context into Claes' existing route without turning him into a professional spy or making history revolve around him."
+    governing_context: HIST.INFORMATION_WAR.LOW_COUNTRIES.1564_1584
+
+    fixed_route_touchpoints:
+      - year: 1564
+        state: CANON
+        event: "Dee/Silvius formation plus security break"
+        movement: "hidden presence -> compartmentation"
+      - year: 1569
+        state: CANON
+        event: "Cornelis executed after network exposure and protective silence"
+        movement: "carrier -> cost; silence -> protection"
+      - year: 1570
+        state: CANON
+        event: "Brevísima revealed as directly readable hidden print"
+        movement: "visibility -> obligation"
+      - year: 1572
+        state: CANON
+        event: "Claes goes to/is physically present in the Goes siege environment"
+        movement: "politics -> bodily/material war"
+      - year: 1573
+        state: CANON
+        event: "Claes witnesses the burning of Reimerswaal from a boat"
+        movement: "side/allegiance -> moral fracture"
+      - year: 1577
+        state: CANON_KNOWLEDGE
+        event: "Claes knows the Satisfactie of Goes and its terms"
+        movement: "victory/conversion -> negotiated continuity"
+      - year: 1578
+        state: CANON_ENDPOINT
+        event: "Brevísima print / Projectio of the Word"
+        movement: "private truth -> released public interpretation"
+      - year: 1584
+        state: CANON_THRESHOLD
+        event: "Delft moral bottom / Albedo threshold"
+        movement: "seeing -> not necessarily knowing; knowledge -> action under uncertainty"
+
+    contextual_touchpoints_not_yet_direct_claes_events:
+      - year: 1571-1572
+        context: "Orange agent network / coded names / inconspicuous intermediaries"
+        influence_mode: "normalizes route-knowledge, carriers and compartmentation"
+      - year: 1573-1574
+        context: "Balfour / double-agent security environment"
+        influence_mode: "raises baseline suspicion around Orange-linked networks"
+      - year: 1577
+        context: "Don Juan intercepted letters -> Marnix/Silvius/Plantin print operation"
+        influence_mode: "possible model for Claes' understanding of publication as political transformation"
+        direct_contact: OPEN
+      - year: 1577
+        context: "forged correspondence in Ghent"
+        influence_mode: "documentary visibility no longer equals authenticity"
+      - year: 1582
+        context: "Jaureguy evidence-chain and network reconstruction"
+        influence_mode: "post-event pattern recognition"
+        direct_contact: OPEN
+      - year: 1584
+        context: "Gerards cover identity and infiltration"
+        influence_mode: "pre-event ambiguity / false legibility"
+        direct_prior_sighting_by_claes: OPEN
+
+    epistemic_transformations:
+      - id: E1
+        from: "If something is hidden, the right method can reveal it."
+        to: "Revelation only begins the problem of truth."
+      - id: E2
+        from: "A coherent pattern explains causality."
+        to: "A coherent pattern reconstructed after the act may have been unavailable before it."
+      - id: E3
+        from: "Close observation can protect against loss."
+        to: "Observation can be exact and still insufficient for certainty."
+      - id: E4
+        from: "Documents carry truth."
+        to: "Documents carry claims, intentions, selections, authentic traces and sometimes deliberate falsehood."
+      - id: E5
+        from: "A side can be judged by its cause."
+        to: "A cause can contain acts Claes cannot morally reconcile with it."
+
+    relationship_to_sinne:
+      early: "sensation -> recognition -> comparison -> pattern -> understanding"
+      crisis: "pattern -> overconfidence in explanation/control"
+      post_delft_target: "perceive -> distinguish -> choose under uncertainty -> carry -> release"
+
+    guardrails:
+      - "Do not give Claes omniscient access to the information-war context."
+      - "Do not turn contextual people into cameo checklist."
+      - "Do not make Claes the hidden author of the Satisfactie, 1577 Don Juan publication or Orange's security policy unless an OPEN decision is explicitly closed."
+      - "Do not use historical ciphers to revive the retired Brevísima nomenclator."
+      - "Do not write modern intelligence jargon into diegetic prose."
+
+  - id: ARC.CLAES.ZEELAND_ROUTE.1572_1578
+    type: RouteAndPressureProjection
+    status: PARTLY_FIXED_PARTLY_OPEN
+    label: "Claes — Goes/Reimerswaal/Satisfactie/Antwerp route under war pressure"
+    fixed:
+      - "1572: Claes goes to/is present in the Goes siege environment."
+      - "1573: Claes sees Reimerswaal burn from a boat."
+      - "1577: Claes knows the Satisfactie of Goes."
+      - "1578: Claes' textual mission reaches Antwerp print."
+    still_open:
+      - OPEN.CLAES.GOES.SIEGE_ROLE.1572.001
+      - OPEN.CLAES.REIMERSWAAL.BOAT_CONTEXT.1573.001
+      - OPEN.CLAES.SATISFACTIE.ROLE_STRATEGY.1577.001
+      - OPEN.GOES.CLAES_DEPARTURE_1572_1579.001
+      - OPEN.PUBLICATION.TRANSMISSION.1570_1578.001
+    causal_pressure:
+      - "Goes is simultaneously home, contested royalist city and later negotiated Satisfactie town."
+      - "Reimerswaal is school-city, slow-loss landscape and then a city physically burned by the rebel side."
+      - "The 1577 settlement shows Claes that confessional change may proceed by negotiated sequence rather than immediate conquest."
+      - "The 1578 publication asks whether Claes can release a text without controlling the uses made of it."
