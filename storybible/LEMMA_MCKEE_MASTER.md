@@ -2,7 +2,7 @@
 
 **ID:** `SB.CLAES.LEMMA_MCKEE`  
 **Status:** CURRENT OPERATING SYNTHESIS  
-**Synchronized:** 18 September 2026 — through Zeeland/information-war expansion, Goes/Reimerswaal/Satisfactie route decisions and Round-C causal update  
+**Synchronized:** 4 November 2026 — including weather/material-memory dossier; preceding Zeeland/information-war and Round-C canon retained  
 **Source authority:** `SB.CLAES.MASTER`
 
 This is the current human-readable operating synthesis of the Claes canon. The dated `LEMMA_MCKEE_MASTER_2026-08-13.md` is a historical snapshot only. Where older prose describes a 1545 birth, post-4-October loading of the memoriaal, a 24×24/cipher recovery chain, Cornelis' death as still open, Cornelis as a straightforward member of the Edele Castanienbloem, Plantin as Cornelis' converter into the Huis der Liefde, or Mayken's identity as still open, that wording is superseded.
@@ -41,6 +41,22 @@ What does truth ask of Claes toward the other when certainty, safety and control
 Canonical anchors include `DEC.CLAES.SINNE.2026-08-13`, `DEC.CLAES.PARADOX.2026-08-13`, `DEC.CLAES.NEED.2026-08-13`, `DEC.CLAES.SPIRITUAL_JOURNEY.2026-08-13` and the Round-C authorial architecture decision.
 
 ---
+
+## Weather as material history and inherited story — 4 November 2026 addendum
+
+**Author-fixed motif:** young Claes hears stories of the extraordinary **Brussels snow figures of 1511**; weather is also a tangible destructive force. This author decision (`DEC.CLAES.WEATHER.MEMORY_AND_FORCE.2026-11-04`) is registered independently from historical evidence. The person who tells Claes, the moment of telling and any enacted childhood snow scene remain undecided.
+
+The complete chronological and material authoring context is `CLAES_WEER_EN_NATUURKRACHT_1511_1602.md` with source and timeline references. For continuity:
+
+- **Before Claes:** Brussels 1511 snow figures (Pleij); remembered East Zuid-Beveland storm surges **1530/1532**; extraordinary drought **1540**. The child may hear about these: he did not see them.
+- **Goese childhood:** ordinary seasons, getij, family work, routes and heat. **18 May 1554:** a strong north-easterly wind accelerates destructive spread of the already fixed Oostzelke fire; this does **not** decide ignition or Cornelis' culpability. Tanneken, Jan and the unborn child die in the **fiction**, not historical victim records.
+- **Reimerswaal school 1554–summer 1561:** the city remains functional amid **1555, 1557, 1558 fire, 1561** recurring damage. Damage accumulates in daily routines, budgets, routes, work and preservation of books; school destruction and precise Zovitius wetting remain OPEN.
+- **Antwerp 1561 onward:** fixed August journey with Cornelis is not weather-driven. Velius' winter under 1564 must be kept distinct from **1564–65** Scheldt ice until dating is resolved. The childhood snow story may echo as a *possible* reader/character resonance, not a mandatory new scene.
+- **1570–73:** Allerheiligenvloed and harsh winters illustrate separated sea/ice/military causes. Claes **witnesses the 1573 wartime burning of Reimerswaal from a boat** (canon), not a 1573 weather destruction. No proof of 1570 flood level within Reimerswaal.
+- **1593, 1594–95:** Texel storm and bitter winter followed by thaw, **river floods** and spring snow demonstrate risk to shipping and supplies; specific Claes presence, commercial loss and diary text are unfixed.
+- **1607–08 onward:** Velius' frozen Zuiderzee, 1609/1610 surges and later floods are comparative context only pending the open end of Claes' lifespan after 1602.
+
+**Writing gate:** put local weather into physical restriction, changed work, movement and choice **before** symbol. Keep what was heard, witnessed and later inferred separate in the memoriaal. No deterministic 4-element schedule, no every-storm disaster chapter, and no modern instrumentation. This is a world-condition layer for `ARC.CLAES.CAUSAL_SPINE` and `MOTIF.WEATHER.MEMORY_MATERIAL`, not an alternative plot architecture.
 
 ## 2. Macrostructure — two nested alchemical layers
 
