@@ -1,0 +1,180 @@
+schema_version: "1.0.0"
+kind: HistoricalWeatherTimeline
+id: HIST.TIMELINE.WEATHER_LOW_COUNTRIES.1507_1643
+title: "Weather, storm surges, river floods and landscape effects in Claes's historical world"
+scope:
+  core: "1507–1602 (antecedents before Claes's birth; his life dates 1542–after 1602)"
+  comparative_afterlife: "1606–1643; do not assign automatically to Claes"
+source_ids: [SRC-HIST-WEER-CLAES-BUISMAN-VELIUS-PLEIJ-2026-11-04]
+principles:
+  - "Historical event does not prove Claes's personal presence, hearing or direct material loss."
+  - "Flood footprint is not permanent coastline; ice-on-water does not imply safe crossing at a particular place."
+  - "Store original Julian/Easter-style dating separately from modern chronology if sourced."
+  - "Distinct causes: coastal storm surge, river flood after thaw, wind-driven fire, drought and freeze."
+  - "Life story canon and source history may be linked but are not interchangeable."
+events:
+  - id: HIST.WEATHER.STORM_SURGES.1507_1514
+    date_range: "1507–1514"
+    geography: [ZEELAND, HOLLAND, ZUIDERZEE, LOW_COUNTRIES]
+    type: storm_surge_sequence
+    evidence_status: SUPPORTED
+    summary: "Buisman maps regional but different inundation footprints for 1507, 1508, 1509 and 1514."
+    memory_afterlife: "Pre-birth family-generation context; exact local storytelling unknown."
+  - id: HIST.WEATHER.BRUSSELS.SNOW_SCULPTURES.1511
+    date_range: "1511-01–1511-02"
+    geography: [BRUSSELS]
+    type: winter_urban_culture
+    evidence_status: VERIFIED
+    source_claims: [SC.HIST.WEATHER.BRUSSELS.SNOW_SCULPTURES.1511.001]
+    summary: "About 110 figures in 50 groups express public winter creativity and satire."
+    claes_relevance: "Author-approved childhood hearsay, not his direct experience."
+  - id: HIST.WEATHER.REIMERSWAAL.SURGES.1530_1532
+    date_range: "1530-11-05–1532-11-02"
+    geography: [REIMERSWAAL, EAST_ZUID_BEVELAND, NOORD_BEVELAND]
+    type: storm_surge_landscape_transform
+    evidence_status: SUPPORTED
+    source_claims: [SC.HIST.WEATHER.ZEELAND.FLOODS.1530_1532.001]
+    summary: "Huge loss of farm/polder hinterland; Reimerswaal remains a functioning city."
+    long_term_world_state: "Tidal marsh, channels, broken dikes, dwindling land connections and costly repairs; reconstruct different time slices."
+  - id: HIST.WEATHER.HOORN.DIKES.1532
+    date: "1532-11-02"
+    geography: [HOORN, WEST_FRIESLAND]
+    type: storm_surge_dike
+    evidence_status: VERIFIED
+    summary: "Velius reports water across the Roode Steen and frozen, unrepaired breaches after the flood."
+    not_local_to: [GOES, REIMERSWAAL]
+  - id: HIST.WEATHER.DROUGHT.1540
+    date: "1540"
+    geography: [LOW_COUNTRIES, EUROPE]
+    type: drought_heat
+    evidence_status: SUPPORTED
+    source_claims: [SC.HIST.WEATHER.HEAT_DROUGHT.1540.001]
+    summary: "Extreme heat and dryness; low rivers and animal hardship."
+    claes_relevance: "Before birth; possible family-generation memory, no fixed Goese incident."
+  - id: HIST.WEATHER.REIMERSWAAL.STORM.1552
+    date_range: "1552-01-12–1552-01-13"
+    geography: [REIMERSWAAL]
+    type: storm_surge_urban_damage
+    evidence_status: SUPPORTED
+    source_claims: [SC.HIST.WEATHER.REIMERSWAAL.STORM.1552.001]
+    summary: "Storm, thunder, hall-tower collapse and urban flood as narrated by Buisman."
+    claes_relevance: "Claes nine, in Goes: direct sight not established."
+  - id: HIST.WEATHER.GOES.FIRE_WIND.1554
+    date: "1554-05-18"
+    geography: [GOES]
+    type: wind_driven_urban_fire
+    evidence_status: SUPPORTED
+    source_claims: [SC.HIST.WEATHER.GOES.FIRE_WIND.1554.001]
+    summary: "North-easterly wind aided west/south-west spread of fire from saltworks origin zone."
+    fiction_boundary: "Direct Claes presence and family deaths are existing novel canon; technical ignition and guilt unresolved."
+  - id: HIST.WEATHER.REIMERSWAAL.SURGE.1555
+    date_range: "1555-11-02–1555-11-03"
+    geography: [REIMERSWAAL]
+    type: storm_surge_inundation
+    evidence_status: SUPPORTED
+    summary: "New flood undoes part of polder repair while Claes is fictionally at school in the city."
+  - id: HIST.WEATHER.REIMERSWAAL.SURGE.1557
+    date_range: "1557-01-12–1557-01-13"
+    geography: [REIMERSWAAL]
+    type: storm_surge_urban_damage
+    evidence_status: SUPPORTED
+    summary: "Renewed flood and structural damage to defenses and buildings."
+  - id: HIST.WEATHER.NETHERLANDS.WIND_STORM.1558
+    date_range: "1558-01-10–1558-01-11"
+    geography: [ZEELAND, FLANDERS, BRABANT, GELDERLAND]
+    type: wind_storm
+    evidence_status: SUPPORTED
+    summary: "Buisman describes damaged church towers and windmills, including Vlissingen and Hoedekenskerke."
+  - id: HIST.REIMERSWAAL.FIRE.1558.WEATHER_CONTEXT
+    date: "1558-08-31"
+    geography: [REIMERSWAAL]
+    type: urban_fire_nonmeteorological
+    evidence_status: SUPPORTED
+    summary: "Major fire in salt work zone; weather as ignition cause is NOT demonstrated."
+  - id: HIST.WEATHER.REIMERSWAAL.SURGE.1561
+    date: "1561-02-15"
+    geography: [REIMERSWAAL]
+    type: storm_surge_inundation
+    evidence_status: SUPPORTED
+    summary: "Flood damage in Claes's final year as cost pupil; August travel to Antwerp governed separately by canon."
+  - id: HIST.WEATHER.REIMERSWAAL.SURGE.1563
+    date: "1563-09-30"
+    geography: [REIMERSWAAL]
+    type: storm_surge
+    evidence_status: SUPPORTED
+    summary: "Further flood pressure after Claes's summer-1561 departure; Claes's location and awareness on this date not fixed."
+  - id: HIST.WEATHER.WINTER_VELIUS.1564
+    date_range: "1563-12–1564-03?"
+    geography: [ZUIDERZEE, HOLLAND, RHINE_MEUSE]
+    type: severe_winter_unresolved_periodization
+    evidence_status: SUPPORTED
+    source_claims: [SC.HIST.WEATHER.WINTER_VELIUS.1564.001]
+    summary: "Velius describes ice roads and damaged vegetation under 1564."
+    open: "Compare Velius's dating with Buisman's separate 1564–65 winter; do not merge."
+  - id: HIST.WEATHER.WINTER.1564_1565
+    date_range: "1564-12–1565-03"
+    geography: [ANTWERP, SCHELDT, LOW_COUNTRIES]
+    type: severe_winter
+    evidence_status: SUPPORTED
+    source_claims: [SC.HIST.WEATHER.WINTER.1564_1565.001]
+    summary: "Severe winter and frozen Scheldt in adult Claes's Antwerp era."
+  - id: HIST.WEATHER.HEAVY_RAIN.1566
+    date: "1566-summer"
+    geography: [LOW_COUNTRIES]
+    type: rainy_summer
+    evidence_status: SUPPORTED
+    summary: "Rain and wet travel are context for open-air preaching, not primary explanation of iconoclasm."
+  - id: HIST.WEATHER.ALL_SAINTS_FLOOD.1570
+    date: "1570-11-01"
+    geography: [ZEELAND, HOLLAND, WEST_FRIESLAND, ZUIDERZEE, FRIESLAND]
+    type: storm_surge
+    evidence_status: SUPPORTED
+    source_claims: [SC.HIST.WEATHER.FLOOD.1570.001]
+    summary: "Extensive flood; Velius specifically records Hoorn; direct Reimerswaal flooding is not proven."
+  - id: HIST.WEATHER.WINTER.1572_1573
+    date_range: "1572-11–1573-03"
+    geography: [HOLLAND, ANTWERP, LOW_COUNTRIES]
+    type: severe_winter_military_mobility
+    evidence_status: SUPPORTED
+    source_claims: [SC.HIST.WEATHER.WINTER.1572_1573.001]
+    summary: "Frozen waters affect Haarlem relief/supply; Claes's separate 1573 boat witness of Reimerswaal remains canon."
+  - id: HIST.WEATHER.COLD_PERIOD.1586_1587
+    date_range: "1586–1587"
+    geography: [LOW_COUNTRIES, EUROPE]
+    type: extended_cold_period
+    evidence_status: SUPPORTED
+    summary: "Severe cold; local Claes effects require local and itinerary evidence."
+  - id: HIST.WEATHER.TEXEL.STORM.1593
+    date_range: "1593-12"
+    geography: [TEXEL, HOORN, NORTH_SEA]
+    type: maritime_storm
+    evidence_status: VERIFIED
+    source_claims: [SC.HIST.WEATHER.TEXEL.STORM.1593.001]
+    summary: "Velius's report of heavily damaged/floundering grain vessels at the roads of Texel."
+  - id: HIST.WEATHER.WINTER_RIVER_FLOODS.1594_1595
+    date_range: "1594-11–1595-04"
+    geography: [LOW_COUNTRIES, RHINE_MEUSE, BETUWE, AMERSFOORT]
+    type: winter_thaw_river_flood
+    evidence_status: SUPPORTED
+    source_claims: [SC.HIST.WEATHER.WINTER_RIVER_FLOODS.1594_1595.001]
+    summary: "Freeze, snow, unstable thaws, river ice and March 1595 freshwater flooding; late snow into April."
+    caution: "Not a Zeeland storm surge and not an established Claes itinerary."
+  - id: HIST.WEATHER.ZUIDERZEE.FREEZE.1607_1608
+    date_range: "1607-12–1608-03"
+    geography: [ZUIDERZEE, WEST_FRIESLAND, SCHELDT]
+    type: severe_winter_comparative
+    evidence_status: VERIFIED
+    source_claims: [SC.HIST.WEATHER.ZUIDERZEE.FREEZE.1607_1608.001]
+    summary: "Velius describes ice travel and frost devastation; no automatic Claes survival assertion."
+  - id: HIST.WEATHER.SURGES_RIVERS.1609_1625
+    date_range: "1609–1625"
+    geography: [LOW_COUNTRIES]
+    type: comparative_flood_maps
+    evidence_status: SUPPORTED
+    summary: "Buisman maps 1609 and 1610 storm surges, 1624 river flood and 1625 flooding; compare footprints and causes only."
+  - id: HIST.WEATHER.MEUSE.FLOOD.1643
+    date_range: "1642-12–1643-01"
+    geography: [MEUSE, LIEGE, MAASTRICHT]
+    type: comparative_river_flood
+    evidence_status: SUPPORTED
+    summary: "Major river flooding described in Buisman; outside Claes's current personal timescope."
