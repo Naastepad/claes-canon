@@ -1,0 +1,87 @@
+schema_version: 1.0.0
+kind: EntityRegistryExtension
+entities:
+- id: ENT.PERSON.AERNOULDT_DE_HONT
+  type: Person
+  label: "Aernouldt de Hont"
+  historical_status: HISTORICAL
+  roles:
+  - role: schipper_van_delft
+    evidence_status: SUPPORTED
+    attested_date: '1589-05-02'
+  source_claims:
+  - SC.HIST.GOES.HOREN_DE_HONT.BEER_CONTRACT.1589.001
+  - SC.HIST.DE_HONT.PRE1569.CAREER_BOUNDARY.001
+  fictional_story_use:
+    decision_id: DEC.CORNELIS.PREFERRED_SHIPPER.AERNOULDT_DE_HONT.2026-08-30
+    use: >-
+      Back-projected in novel canon as Cornelis' recurring trusted/preferred schipper from the late 1550s or early 1560s through 1569, with selected Goes/Zeeland-Delft/Holland-Antwerp commercial movements.
+  guardrail: >-
+    Historically, the current source set establishes De Hont as schipper van Delft in 1589 and party to an agreement under which Michiel Horen would be biersteker for beers De Hont brought to Goes. It does not establish that Horen hired De Hont as carrier, nor De Hont's age, pre-1569 career, Antwerp traffic, vessel type, vessel ownership or fixed schedule. Those earlier uses are fiction canon or OPEN.
+
+- id: ENT.PERSON.MICHIEL_MICHIELSZ_HOREN
+  type: Person
+  label: "Michiel Michielsz Horen"
+  historical_status: HISTORICAL
+  roles:
+  - role: formerly_resident_aardenburg
+    evidence_status: SUPPORTED
+    attested_date: '1588-11-30'
+  - role: poorter_goes
+    evidence_status: SUPPORTED
+    attested_date: '1588-11-30'
+  - role: biersteker_goes
+    evidence_status: SUPPORTED
+    attested_date: '1589-05-02'
+  source_claims:
+  - SC.HIST.GOES.MICHIEL_HOREN.AARDENBURG_TO_GOES.1588.001
+  - SC.HIST.GOES.HOREN_DE_HONT.BEER_CONTRACT.1589.001
+  fictional_story_use:
+    decision_id: DEC.CORNELIS.TRADE_SUCCESSION.MICHIEL_HOREN.2026-08-30
+    use: >-
+      By the late 1580s Horen has fictionally absorbed or continued part of the Goese beer-distribution function once associated with Cornelis, without a claimed direct 1569 purchase or inheritance.
+  guardrail: >-
+    Current evidence does not place Horen in Goes in 1569 and does not document a direct Nissepat business succession. The 1589 agreement establishes him as biersteker for beers De Hont would bring, not as proven owner of those beers or employer of De Hont.
+
+relations:
+- id: REL.CORNELIS.DE_HONT.PREFERRED_SHIPPER
+  type: CommercialTransportRelation
+  subject: ENT.PERSON.CORNELIS
+  predicate: uses_as_recurring_trusted_shipper
+  object: ENT.PERSON.AERNOULDT_DE_HONT
+  canon_status: CANON
+  fictionality: novel_canon_backprojection
+  decision_id: DEC.CORNELIS.PREFERRED_SHIPPER.AERNOULDT_DE_HONT.2026-08-30
+  temporal_model:
+    earliest: '1558-01-01'
+    latest_exclusive: '1570-01-01'
+    precision: bounded_authoring_window
+  guardrail: >-
+    The start is an authoring window, not a historical date. De Hont need not carry every shipment and need not own the vessel he uses. Exact vessel class remains OPEN; use a period schuit-family cargo craft as an authoring analogue rather than naming an archival De Hont vessel.
+
+- id: REL.HOREN.DE_HONT.BEER_DISTRIBUTION_1589
+  type: HistoricalCommercialRelation
+  subject: ENT.PERSON.MICHIEL_MICHIELSZ_HOREN
+  predicate: serves_as_biersteker_for_beer_brought_by
+  object: ENT.PERSON.AERNOULDT_DE_HONT
+  canon_status: CANON
+  fictionality: historical_anchor
+  evidence_status: SUPPORTED
+  source_claims:
+  - SC.HIST.GOES.HOREN_DE_HONT.BEER_CONTRACT.1589.001
+  temporal_model:
+    date: '1589-05-02'
+    precision: day
+  guardrail: >-
+    The consulted extract leaves the contractual conditions unstated. Do not infer beer ownership, freight payer, commission, exclusivity, leakage/spoilage allocation or other risk terms.
+
+- id: REL.HOREN.CORNELIS.TRADE_AFTERLIFE
+  type: CommercialContinuityRelation
+  subject: ENT.PERSON.MICHIEL_MICHIELSZ_HOREN
+  predicate: eventually_continues_part_of_commercial_function_once_associated_with
+  object: ENT.PERSON.CORNELIS
+  canon_status: CANON
+  fictionality: novel_canon
+  decision_id: DEC.CORNELIS.TRADE_SUCCESSION.MICHIEL_HOREN.2026-08-30
+  guardrail: >-
+    This is not a documented sale, inheritance or immediate succession in 1569. The preferred model is fragmentation after Cornelis' death followed by later consolidation into Horen's Goese biersteker activity.
