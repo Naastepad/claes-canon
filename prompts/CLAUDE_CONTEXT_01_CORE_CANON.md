@@ -5,8 +5,8 @@
 > Do not use this pack as permission for free repository discovery; follow the task router in CLAUDE_CONTEXT_INDEX.md.
 
 - source branch: `main`
-- source commit at generation: `9d85c59eaae821f93a0e8f0a092841c1c31482a0`
-- generated UTC: `2026-11-04T15:56:45+00:00`
+- source commit at generation: `5c7a9918c83fa9812eb8c05f7e354d21d185f3f6`
+- generated UTC: `2026-11-04T16:10:44+00:00`
 - included files: `11`
 
 Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pack does not alter authority.
@@ -20,14 +20,14 @@ Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pa
 
 Lemma-based, McKee/NOS-inspired operating Storybible and canon-control system for the Claes project.
 
-**`main` is the canonical source of truth and canonical storage.** PR #1 has been merged; `authoring/v1` and the former draft PR are historical development state, not active canon.
+**`main` is the sole accepted canon source of truth and canonical storage.** Branches and PRs are proposed/work-in-progress material, including branches containing local `status: CANON` tags; they cannot override `main` without reconciliation, explicit author authority, validation and merge. **PR #23 (Claes/weather) is merged.** Remaining divergent branches and open PRs are recorded in [the branch-convergence audit](review/BRANCH_CONVERGENCE_AUDIT_2026-11-04.md). Historical evidence, fiction canon and unresolved questions remain separate truth layers.
 
 ## AI / agent start here
 Before canon-sensitive work, read:
 1. `REPOSITORY_INTEGRITY.md`
 2. `AI_ONBOARDING.md`
 3. `canon/` current human decisions
-4. `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md`
+4. `storybible/LEMMA_MCKEE_MASTER.md` (current human-readable operating master)
 5. `review/SYNC_STATUS.md`
 6. `MIGRATION_REVIEW.md`
 7. `WRITING_PROTOCOL.md` before prose work
@@ -37,12 +37,12 @@ Before canon-sensitive work, read:
 Direct public URLs for restricted chat environments:
 - Onboarding: https://raw.githubusercontent.com/Naastepad/claes-canon/main/AI_ONBOARDING.md
 - Writing protocol: https://raw.githubusercontent.com/Naastepad/claes-canon/main/WRITING_PROTOCOL.md
-- Operating Storybible: https://raw.githubusercontent.com/Naastepad/claes-canon/main/storybible/LEMMA_MCKEE_MASTER_2026-08-13.md
+- Operating Storybible: https://raw.githubusercontent.com/Naastepad/claes-canon/main/storybible/LEMMA_MCKEE_MASTER.md
 - Repository integrity: https://raw.githubusercontent.com/Naastepad/claes-canon/main/REPOSITORY_INTEGRITY.md
 - Sync status: https://raw.githubusercontent.com/Naastepad/claes-canon/main/review/SYNC_STATUS.md
 - Migration review: https://raw.githubusercontent.com/Naastepad/claes-canon/main/MIGRATION_REVIEW.md
 
-`storybible/LEMMA_MCKEE_MASTER.md` is retained only as an earlier transformed work edition/audit artifact. The dated synchronized master is active.
+**Operating authority:** `storybible/LEMMA_MCKEE_MASTER.md` is the current synchronized master. The dated `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` is legacy/audit only. See `AI_ONBOARDING.md` for the binding cross-model read order.
 
 ## Four responsibility layers
 1. **Evidence** — historical/research support (`SRC-*`, `SC.*`).
@@ -139,6 +139,14 @@ For drafting, revision and reader evaluation, read:
 - `narrative/editorial_gates.yaml`;
 - `review/READER_EXPERIENCE_PROTOCOL.md`;
 - `review/READER_FEEDBACK_TEMPLATE.md` when logging a real or simulated reader pass.
+
+## 2A. Git-branch authority and cross-model single source of truth
+
+Only **merged files on `main`** constitute the currently accepted canonical repository state. An unmerged branch, draft PR, declined PR, Claude context pack, prior chat or alternative Storybible is **not** a second source of canon. Do not use a local branch's `CANON` flag to override later active `main` decisions. Where a historic branch contains an apparent explicit human decision not on `main`, flag it as a **reconciliation gap** instead of silently promoting or discarding it.
+
+As of 4 November 2026 PR **#23** (weather) is merged. The dated branch inventory, unresolved PRs and possible 23 August `authoring/v1` authority mismatch are recorded in `review/BRANCH_CONVERGENCE_AUDIT_2026-11-04.md`. Before a cross-model task, load `main`, `canon/` and the current master; read diverged branches only when explicitly auditing them.
+
+This is a **single-authority rule**, not a claim that every historical statement is certain or every previously proposed author decision has been accepted. `OPEN`, uncertain evidence and contested provenance must remain visibly open.
 
 ## 3. Authority hierarchy
 
@@ -1339,15 +1347,25 @@ decisions:
 ```markdown
 # Synchronization status
 
+## Current main release and cross-branch authority — 4 November 2026
+
+**Weather PR #23: MERGED / WRITE_VERIFIED / CI_VERIFIED at PR head.** Merge commit `9d85c59eaae821f93a0e8f0a092841c1c31482a0`; the weather dossier was positively read from `main` after merge. The next `main` commit `2a4a2cb0f7997fc5d252b8f2555c064ab0b7ff3a` updates derived Claude context-pack files.
+
+**Cross-branch synchronization: PENDING.** See `review/BRANCH_CONVERGENCE_AUDIT_2026-11-04.md` for the audited 24 non-main branches (14 ancestry-behind, 10 divergent), including open PRs #12 (PROPOSED news ecology), #13 (CI-failed Egmond), #22 (draft economic decisions and research) and orphan `authoring/v1` with the non-integrated explicit 23 August decision text. No diverged branch's `CANON` flag grants it main authority. This does **not** reopen any already accepted `main` decision; it does expose unresolved cross-branch decision history.
+
+**Operating human-readable master:** `storybible/LEMMA_MCKEE_MASTER.md`. The dated 13 August version is historical/legacy. README and AI onboarding are aligned with this.
+
+
+
 ## Weather and material-environment addendum — 4 November 2026
 
-**Change-set state:** `WEATHER_MEMORIES_AND_MATERIAL_WORLD_2026-11-04` / authoring branch **for review** (not a claim of merger to `main`). The explicit author direction that Claes hears the 1511 Brussels snow-sculpture story and that weather is destructive/materially consequential is in `canon/DECISIONS_WEATHER_2026-11-04.yaml`, synchronized with `claims/STORY_CLAIMS_WEATHER_2026-11-04.yaml` and `MOTIF.WEATHER.MEMORY_MATERIAL`. Weather evidence remains independent: Buisman photographs + user-provided Velius 1648 PDF + Pleij/Hollestelle/Zeeuwse Ankers, with event claims, separate `history/` chronology and page/uncertainty locators.
+**Historical preparation record:** `WEATHER_MEMORIES_AND_MATERIAL_WORLD_2026-11-04` was first authored on a branch for review; **it is now merged via PR #23**, as stated in the current release block above. The explicit author direction that Claes hears the 1511 Brussels snow-sculpture story and that weather is destructive/materially consequential is in `canon/DECISIONS_WEATHER_2026-11-04.yaml`, synchronized with `claims/STORY_CLAIMS_WEATHER_2026-11-04.yaml` and `MOTIF.WEATHER.MEMORY_MATERIAL`. Weather evidence remains independent: Buisman photographs + user-provided Velius 1648 PDF + Pleij/Hollestelle/Zeeuwse Ankers, with event claims, separate `history/` chronology and page/uncertainty locators.
 
 The full reader/authoring dossier is `storybible/CLAES_WEER_EN_NATUURKRACHT_1511_1602.md`; cross-linked in `storybible/INDEX.md`, `storybible/MASTER.md`, `storybible/LEMMA_MCKEE_MASTER.md`, `storybible/STORY_PROJECTION_ROUND_C.md` and `history/README.md`. No original canon decision about Claes birth, 1554 fire, Cornelis's role, 1554–61 education, August 1561 journey, 1573 boat witness, Mayken or 1602 ending was changed.
 
 **Purposeful OPEN / no silent promotion:** exact childhood snow-story narrator/date; exact Reimerswaal 1552 local times and source numbering; flood level inside 1555/1557 school/logies zone; relation Velius 1564 to Buisman 1564–65; Reimerswaal 1570 inundation; Claes's exact weather/position in the 1573 boat scene; Claes's location/experience in 1594–95; his life after 1602. Later 1607–43 material is comparative only. No new independently fixed weather scenes were inserted into chapters.
 
-**Validation:** requires repository validator and CI inspection for this PR; persistence/CI status should be reported independently.
+**Validation update:** the PR-head GitHub validator ran successfully. The merged `main` weather dossier was subsequently re-read; branch audit and new synchronization changes have their own CI status.
 
 
 
