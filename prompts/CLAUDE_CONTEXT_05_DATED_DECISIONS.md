@@ -5,9 +5,9 @@
 > Do not use this pack as permission for free repository discovery; follow the task router in CLAUDE_CONTEXT_INDEX.md.
 
 - source branch: `main`
-- source commit at generation: `f930c546b01be2700ae1ba68b708c8bdf41a8809`
-- generated UTC: `2026-09-18T08:37:29+00:00`
-- included files: `23`
+- source commit at generation: `9d85c59eaae821f93a0e8f0a092841c1c31482a0`
+- generated UTC: `2026-11-04T15:56:45+00:00`
+- included files: `24`
 
 Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pack does not alter authority.
 
@@ -1893,6 +1893,38 @@ decisions:
   - Mayken does not complete Claes' Great Work for him.
   - Claes does not become whole by possessing Mayken.
   - The relationship may contain disagreement, separate work and asymmetry of knowledge; harmony is not the same as sameness.
+```
+
+---
+
+# SOURCE FILE: `canon/DECISIONS_WEATHER_2026-11-04.yaml`
+
+```yaml
+schema_version: "1.0.0"
+kind: CanonDecisionRegistryExtension
+decisions:
+  - id: DEC.CLAES.WEATHER.MEMORY_AND_FORCE.2026-11-04
+    type: AuthorialWorldAndMotifDecision
+    status: CANON
+    decision: >-
+      Weather belongs throughout Claes's life both as childhood oral storytelling
+      (in particular the Brussels snow sculptures of 1511, which he hears about
+      growing up) and as real physical/destructive force. Wind, fire, water,
+      cold, drought and ordinary seasonal conditions materially affect
+      environment, movement, livelihood and perception; the authorial task
+      is to make consequences legible without making every weather event
+      a forced allegory or inventing Claes's personal presence at historical events.
+    affects:
+      - MOTIF.WEATHER.MEMORY_MATERIAL
+      - STC.CLAES.CHILDHOOD.HEARS_BRUSSELS_SNOWMEN.001
+      - storybible/CLAES_WEER_EN_NATUURKRACHT_1511_1602.md
+      - storybible/LEMMA_MCKEE_MASTER.md
+      - storybible/STORY_PROJECTION_ROUND_C.md
+    guardrails:
+      - "The historical Brussels event is Pleij's evidence; its transmission to fictional Claes is an author choice."
+      - "No narrator, precise childhood scene/date, personal weather observation or additional Claes meeting is fixed by this decision."
+      - "Existing fire, Cornelis, school, Antwerp 1561 and 1573 boat-witness canon outranks speculative weather scene placement."
+      - "Storm does not imply divine guilt or technical causation, and Reimerswaal is not instantly abandoned."
 ```
 
 ---

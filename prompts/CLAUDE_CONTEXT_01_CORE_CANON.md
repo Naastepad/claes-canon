@@ -5,8 +5,8 @@
 > Do not use this pack as permission for free repository discovery; follow the task router in CLAUDE_CONTEXT_INDEX.md.
 
 - source branch: `main`
-- source commit at generation: `f930c546b01be2700ae1ba68b708c8bdf41a8809`
-- generated UTC: `2026-09-18T08:37:29+00:00`
+- source commit at generation: `9d85c59eaae821f93a0e8f0a092841c1c31482a0`
+- generated UTC: `2026-11-04T15:56:45+00:00`
 - included files: `11`
 
 Apply the authority hierarchy from `AI_ONBOARDING.md`. Physical order in this pack does not alter authority.
@@ -1339,6 +1339,18 @@ decisions:
 ```markdown
 # Synchronization status
 
+## Weather and material-environment addendum — 4 November 2026
+
+**Change-set state:** `WEATHER_MEMORIES_AND_MATERIAL_WORLD_2026-11-04` / authoring branch **for review** (not a claim of merger to `main`). The explicit author direction that Claes hears the 1511 Brussels snow-sculpture story and that weather is destructive/materially consequential is in `canon/DECISIONS_WEATHER_2026-11-04.yaml`, synchronized with `claims/STORY_CLAIMS_WEATHER_2026-11-04.yaml` and `MOTIF.WEATHER.MEMORY_MATERIAL`. Weather evidence remains independent: Buisman photographs + user-provided Velius 1648 PDF + Pleij/Hollestelle/Zeeuwse Ankers, with event claims, separate `history/` chronology and page/uncertainty locators.
+
+The full reader/authoring dossier is `storybible/CLAES_WEER_EN_NATUURKRACHT_1511_1602.md`; cross-linked in `storybible/INDEX.md`, `storybible/MASTER.md`, `storybible/LEMMA_MCKEE_MASTER.md`, `storybible/STORY_PROJECTION_ROUND_C.md` and `history/README.md`. No original canon decision about Claes birth, 1554 fire, Cornelis's role, 1554–61 education, August 1561 journey, 1573 boat witness, Mayken or 1602 ending was changed.
+
+**Purposeful OPEN / no silent promotion:** exact childhood snow-story narrator/date; exact Reimerswaal 1552 local times and source numbering; flood level inside 1555/1557 school/logies zone; relation Velius 1564 to Buisman 1564–65; Reimerswaal 1570 inundation; Claes's exact weather/position in the 1573 boat scene; Claes's location/experience in 1594–95; his life after 1602. Later 1607–43 material is comparative only. No new independently fixed weather scenes were inserted into chapters.
+
+**Validation:** requires repository validator and CI inspection for this PR; persistence/CI status should be reported independently.
+
+
+
 Status: `SYNC_COMPLETE_ACTIVE_LAYERS`
 
 Release state: `ZEELAND_INFORMATION_WAR_CONTEXT_AND_ROUTE_SYNCHRONIZED_2026-09-18`
@@ -1701,6 +1713,14 @@ Start with:
 8. `review/SYNC_STATUS.md` — synchronization state.
 
 The dated `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` is a **legacy snapshot**, not current authoring authority. It may preserve obsolete 1545/cipher/death-window/open-beloved wording for audit history only.
+
+## Climate, weather and material-environment addendum (4 November 2026)
+
+The author has fixed one additional **recurring world/motif direction**: young Claes hears stories of the *1511 Brussels snow sculptures*, and weather also acts as a real destructive/material force throughout his life. See `canon/DECISIONS_WEATHER_2026-11-04.yaml`, `claims/STORY_CLAIMS_WEATHER_2026-11-04.yaml` and `narrative/motifs.yaml` (`MOTIF.WEATHER.MEMORY_MATERIAL`). This fixes the motif and childhood hearsay **without** inventing a named storyteller, scene, day, direct Claes presence or meteorological cause of other events.
+
+The **governing weather dossier** is `storybible/CLAES_WEER_EN_NATUURKRACHT_1511_1602.md`: chronological weather from ancestral stories and early Zeeland flood history through Goes 1554, Reimerswaal 1555–61, Antwerp ice, 1570/1572–73, the late sixteenth-century cold and winter 1594–95. Historical events are separately registered in `history/WEATHER_LOW_COUNTRIES_1507_1643.yaml`, evidence in `claims/SOURCE_CLAIMS_WEATHER_2026-11-04.yaml` and provenance in `sources/SRC-HIST-WEER-CLAES-BUISMAN-VELIUS-PLEIJ-2026-11-04.md`. Weather after 1602 is contextual only while Claes' death remains OPEN.
+
+**Precedence:** this module cannot override existing Cornelis-as-intermediary, Goes fire ignition ambiguity/first Nigredo, Reimerswaal functioning school city, the August-1561 Antwerp route or 1573 boat witness. No new scene becomes CANON by virtue of being historically plausible. Geographic flooding maps do not map permanent coastlines.
 
 ## Dedicated governing dossiers
 
@@ -2122,6 +2142,14 @@ Operational navigation for the current Claes Storybible.
 15. `../review/CHARACTER_WEB_REFINEMENT_2026-08-19.md` — character-web/fiction-characterization handoff.
 
 `LEMMA_MCKEE_MASTER_2026-08-13.md` is a dated legacy snapshot. It is retained for development history but is not current authoring authority.
+
+## Weather and the material environment — integrated 4 November 2026
+
+- [`CLAES_WEER_EN_NATUURKRACHT_1511_1602.md`](CLAES_WEER_EN_NATUURKRACHT_1511_1602.md) — governing Claes-specific dossier: Brussels 1511 childhood snow stories, remembered drowned land, 1540 drought, Goes 1554 wind/fire, Reimerswaal 1555–61 floods, Antwerp winter ice, 1570 storm surge, weather in war, 1594–95 cold and river flooding; material scene consequences, memoir voice and OPEN gaps.
+- `../canon/DECISIONS_WEATHER_2026-11-04.yaml` and `../claims/STORY_CLAIMS_WEATHER_2026-11-04.yaml` — author's fixed weather-memory motif and child's hearing of 1511 snow figures; specific speaker/dialogue not decided.
+- `../narrative/motifs.yaml` → `MOTIF.WEATHER.MEMORY_MATERIAL` — weather from embodied sensation and social recollection to human action; not automatic allegory.
+- `../history/WEATHER_LOW_COUNTRIES_1507_1643.yaml` — region/time-specific historical event layer; post-1602 events are comparisons, not Claes experiences.
+- `../claims/SOURCE_CLAIMS_WEATHER_2026-11-04.yaml` and `../sources/SRC-HIST-WEER-CLAES-BUISMAN-VELIUS-PLEIJ-2026-11-04.md` — Buisman/Velius/Pleij provenance, page references and explicit uncertainty.
 
 ## Explicit decisions
 
