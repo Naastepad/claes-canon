@@ -1,14 +1,24 @@
 # Synchronization status
 
+## Current main release and cross-branch authority — 4 November 2026
+
+**Weather PR #23: MERGED / WRITE_VERIFIED / CI_VERIFIED at PR head.** Merge commit `9d85c59eaae821f93a0e8f0a092841c1c31482a0`; the weather dossier was positively read from `main` after merge. The next `main` commit `2a4a2cb0f7997fc5d252b8f2555c064ab0b7ff3a` updates derived Claude context-pack files.
+
+**Cross-branch synchronization: PENDING.** See `review/BRANCH_CONVERGENCE_AUDIT_2026-11-04.md` for the audited 24 non-main branches (14 ancestry-behind, 10 divergent), including open PRs #12 (PROPOSED news ecology), #13 (CI-failed Egmond), #22 (draft economic decisions and research) and orphan `authoring/v1` with the non-integrated explicit 23 August decision text. No diverged branch's `CANON` flag grants it main authority. This does **not** reopen any already accepted `main` decision; it does expose unresolved cross-branch decision history.
+
+**Operating human-readable master:** `storybible/LEMMA_MCKEE_MASTER.md`. The dated 13 August version is historical/legacy. README and AI onboarding are aligned with this.
+
+
+
 ## Weather and material-environment addendum — 4 November 2026
 
-**Change-set state:** `WEATHER_MEMORIES_AND_MATERIAL_WORLD_2026-11-04` / authoring branch **for review** (not a claim of merger to `main`). The explicit author direction that Claes hears the 1511 Brussels snow-sculpture story and that weather is destructive/materially consequential is in `canon/DECISIONS_WEATHER_2026-11-04.yaml`, synchronized with `claims/STORY_CLAIMS_WEATHER_2026-11-04.yaml` and `MOTIF.WEATHER.MEMORY_MATERIAL`. Weather evidence remains independent: Buisman photographs + user-provided Velius 1648 PDF + Pleij/Hollestelle/Zeeuwse Ankers, with event claims, separate `history/` chronology and page/uncertainty locators.
+**Historical preparation record:** `WEATHER_MEMORIES_AND_MATERIAL_WORLD_2026-11-04` was first authored on a branch for review; **it is now merged via PR #23**, as stated in the current release block above. The explicit author direction that Claes hears the 1511 Brussels snow-sculpture story and that weather is destructive/materially consequential is in `canon/DECISIONS_WEATHER_2026-11-04.yaml`, synchronized with `claims/STORY_CLAIMS_WEATHER_2026-11-04.yaml` and `MOTIF.WEATHER.MEMORY_MATERIAL`. Weather evidence remains independent: Buisman photographs + user-provided Velius 1648 PDF + Pleij/Hollestelle/Zeeuwse Ankers, with event claims, separate `history/` chronology and page/uncertainty locators.
 
 The full reader/authoring dossier is `storybible/CLAES_WEER_EN_NATUURKRACHT_1511_1602.md`; cross-linked in `storybible/INDEX.md`, `storybible/MASTER.md`, `storybible/LEMMA_MCKEE_MASTER.md`, `storybible/STORY_PROJECTION_ROUND_C.md` and `history/README.md`. No original canon decision about Claes birth, 1554 fire, Cornelis's role, 1554–61 education, August 1561 journey, 1573 boat witness, Mayken or 1602 ending was changed.
 
 **Purposeful OPEN / no silent promotion:** exact childhood snow-story narrator/date; exact Reimerswaal 1552 local times and source numbering; flood level inside 1555/1557 school/logies zone; relation Velius 1564 to Buisman 1564–65; Reimerswaal 1570 inundation; Claes's exact weather/position in the 1573 boat scene; Claes's location/experience in 1594–95; his life after 1602. Later 1607–43 material is comparative only. No new independently fixed weather scenes were inserted into chapters.
 
-**Validation:** requires repository validator and CI inspection for this PR; persistence/CI status should be reported independently.
+**Validation update:** the PR-head GitHub validator ran successfully. The merged `main` weather dossier was subsequently re-read; branch audit and new synchronization changes have their own CI status.
 
 
 

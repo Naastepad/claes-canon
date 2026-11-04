@@ -392,6 +392,26 @@ sync_path = ROOT / "review" / "SYNC_STATUS.md"
 if sync_path.exists() and "SYNC_COMPLETE_ACTIVE_LAYERS" not in sync_path.read_text(encoding="utf-8"):
     errors.append("review/SYNC_STATUS.md must state SYNC_COMPLETE_ACTIVE_LAYERS")
 
+# Canon gateway is part of continuity: tools must not be directed to a legacy
+# master or unmerged branch as if it were the only accepted authority.
+readme = ROOT / "README.md"
+if readme.exists():
+    gateway = readme.read_text(encoding="utf-8")
+    if "storybible/LEMMA_MCKEE_MASTER.md" not in gateway:
+        errors.append("README must point to current undated operating master")
+    if "storybible/LEMMA_MCKEE_MASTER_2026-08-13.md is active" in gateway:
+        errors.append("README must not reactivate legacy dated operating master")
+    if "The dated synchronized master is active" in gateway:
+        errors.append("README contains superseded master authority claim")
+    if "sole accepted canon source of truth" not in gateway:
+        errors.append("README must identify main as the only accepted canon authority")
+
+onboarding_path = ROOT / "AI_ONBOARDING.md"
+if onboarding_path.exists():
+    onboarding = onboarding_path.read_text(encoding="utf-8")
+    if "Only **merged files on `main`**" not in onboarding:
+        errors.append("AI_ONBOARDING must forbid competing branch-local canon authority")
+
 if errors:
     print("CLAES CANON VALIDATION: FAILED")
     for error in errors:

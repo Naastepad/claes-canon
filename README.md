@@ -2,14 +2,14 @@
 
 Lemma-based, McKee/NOS-inspired operating Storybible and canon-control system for the Claes project.
 
-**`main` is the canonical source of truth and canonical storage.** PR #1 has been merged; `authoring/v1` and the former draft PR are historical development state, not active canon.
+**`main` is the sole accepted canon source of truth and canonical storage.** Branches and PRs are proposed/work-in-progress material, including branches containing local `status: CANON` tags; they cannot override `main` without reconciliation, explicit author authority, validation and merge. **PR #23 (Claes/weather) is merged.** Remaining divergent branches and open PRs are recorded in [the branch-convergence audit](review/BRANCH_CONVERGENCE_AUDIT_2026-11-04.md). Historical evidence, fiction canon and unresolved questions remain separate truth layers.
 
 ## AI / agent start here
 Before canon-sensitive work, read:
 1. `REPOSITORY_INTEGRITY.md`
 2. `AI_ONBOARDING.md`
 3. `canon/` current human decisions
-4. `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md`
+4. `storybible/LEMMA_MCKEE_MASTER.md` (current human-readable operating master)
 5. `review/SYNC_STATUS.md`
 6. `MIGRATION_REVIEW.md`
 7. `WRITING_PROTOCOL.md` before prose work
@@ -19,12 +19,12 @@ Before canon-sensitive work, read:
 Direct public URLs for restricted chat environments:
 - Onboarding: https://raw.githubusercontent.com/Naastepad/claes-canon/main/AI_ONBOARDING.md
 - Writing protocol: https://raw.githubusercontent.com/Naastepad/claes-canon/main/WRITING_PROTOCOL.md
-- Operating Storybible: https://raw.githubusercontent.com/Naastepad/claes-canon/main/storybible/LEMMA_MCKEE_MASTER_2026-08-13.md
+- Operating Storybible: https://raw.githubusercontent.com/Naastepad/claes-canon/main/storybible/LEMMA_MCKEE_MASTER.md
 - Repository integrity: https://raw.githubusercontent.com/Naastepad/claes-canon/main/REPOSITORY_INTEGRITY.md
 - Sync status: https://raw.githubusercontent.com/Naastepad/claes-canon/main/review/SYNC_STATUS.md
 - Migration review: https://raw.githubusercontent.com/Naastepad/claes-canon/main/MIGRATION_REVIEW.md
 
-`storybible/LEMMA_MCKEE_MASTER.md` is retained only as an earlier transformed work edition/audit artifact. The dated synchronized master is active.
+**Operating authority:** `storybible/LEMMA_MCKEE_MASTER.md` is the current synchronized master. The dated `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` is legacy/audit only. See `AI_ONBOARDING.md` for the binding cross-model read order.
 
 ## Four responsibility layers
 1. **Evidence** — historical/research support (`SRC-*`, `SC.*`).

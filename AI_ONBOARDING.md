@@ -38,6 +38,14 @@ For drafting, revision and reader evaluation, read:
 - `review/READER_EXPERIENCE_PROTOCOL.md`;
 - `review/READER_FEEDBACK_TEMPLATE.md` when logging a real or simulated reader pass.
 
+## 2A. Git-branch authority and cross-model single source of truth
+
+Only **merged files on `main`** constitute the currently accepted canonical repository state. An unmerged branch, draft PR, declined PR, Claude context pack, prior chat or alternative Storybible is **not** a second source of canon. Do not use a local branch's `CANON` flag to override later active `main` decisions. Where a historic branch contains an apparent explicit human decision not on `main`, flag it as a **reconciliation gap** instead of silently promoting or discarding it.
+
+As of 4 November 2026 PR **#23** (weather) is merged. The dated branch inventory, unresolved PRs and possible 23 August `authoring/v1` authority mismatch are recorded in `review/BRANCH_CONVERGENCE_AUDIT_2026-11-04.md`. Before a cross-model task, load `main`, `canon/` and the current master; read diverged branches only when explicitly auditing them.
+
+This is a **single-authority rule**, not a claim that every historical statement is certain or every previously proposed author decision has been accepted. `OPEN`, uncertain evidence and contested provenance must remain visibly open.
+
 ## 3. Authority hierarchy
 
 When records appear to conflict, use this order:
