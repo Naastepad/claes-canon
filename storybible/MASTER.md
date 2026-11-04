@@ -33,6 +33,14 @@ Start with:
 
 The dated `storybible/LEMMA_MCKEE_MASTER_2026-08-13.md` is a **legacy snapshot**, not current authoring authority. It may preserve obsolete 1545/cipher/death-window/open-beloved wording for audit history only.
 
+## Climate, weather and material-environment addendum (4 November 2026)
+
+The author has fixed one additional **recurring world/motif direction**: young Claes hears stories of the *1511 Brussels snow sculptures*, and weather also acts as a real destructive/material force throughout his life. See `canon/DECISIONS_WEATHER_2026-11-04.yaml`, `claims/STORY_CLAIMS_WEATHER_2026-11-04.yaml` and `narrative/motifs.yaml` (`MOTIF.WEATHER.MEMORY_MATERIAL`). This fixes the motif and childhood hearsay **without** inventing a named storyteller, scene, day, direct Claes presence or meteorological cause of other events.
+
+The **governing weather dossier** is `storybible/CLAES_WEER_EN_NATUURKRACHT_1511_1602.md`: chronological weather from ancestral stories and early Zeeland flood history through Goes 1554, Reimerswaal 1555–61, Antwerp ice, 1570/1572–73, the late sixteenth-century cold and winter 1594–95. Historical events are separately registered in `history/WEATHER_LOW_COUNTRIES_1507_1643.yaml`, evidence in `claims/SOURCE_CLAIMS_WEATHER_2026-11-04.yaml` and provenance in `sources/SRC-HIST-WEER-CLAES-BUISMAN-VELIUS-PLEIJ-2026-11-04.md`. Weather after 1602 is contextual only while Claes' death remains OPEN.
+
+**Precedence:** this module cannot override existing Cornelis-as-intermediary, Goes fire ignition ambiguity/first Nigredo, Reimerswaal functioning school city, the August-1561 Antwerp route or 1573 boat witness. No new scene becomes CANON by virtue of being historically plausible. Geographic flooding maps do not map permanent coastlines.
+
 ## Dedicated governing dossiers
 
 - `STORY_PROJECTION_ROUND_C.md` — causal spine, deeper Great-Work architecture, Mayken independent arc and the partly fixed/partly open 1572–1584 Zeeland-information sequence.

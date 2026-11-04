@@ -1,0 +1,101 @@
+schema_version: 1.0.0
+kind: SourceClaimRegistryExtension
+source_bundle: SRC-HIST-WEER-CLAES-BUISMAN-VELIUS-PLEIJ-2026-11-04
+claims:
+  - id: SC.HIST.WEATHER.BRUSSELS.SNOW_SCULPTURES.1511.001
+    type: SourceClaim
+    statement: "In January 1511 Brussels residents erected approximately 110 snow figures in around 50 groups, mixing biblical, mythological, satirical and everyday subjects."
+    evidence_status: VERIFIED
+    source_ids: [SRC-HIST-WEER-CLAES-BUISMAN-VELIUS-PLEIJ-2026-11-04]
+    story_time: {earliest: '1511-01-01', latest_exclusive: '1511-03-01', precision: bounded}
+    qualifies: ["Pleij documents the Brussels event, not a transmission of the story to Claes's family in Goes."]
+  - id: SC.HIST.WEATHER.ZEELAND.FLOODS.1530_1532.001
+    type: SourceClaim
+    statement: "The 1530 and 1532 storm surges destroyed much of the east Zuid-Beveland polder hinterland, transforming Reimerswaal's economic geography while its urban community continued to function."
+    evidence_status: SUPPORTED
+    source_ids: [SRC-HIST-WEER-CLAES-BUISMAN-VELIUS-PLEIJ-2026-11-04, SRC-HIST-REIMERSWAAL-SCHOOL-CITY-001]
+    story_time: {earliest: '1530-11-05', latest_exclusive: '1533-01-01', precision: bounded}
+    qualifies: ["Inundation is not a permanent coastline; Reimerswaal was not already abandoned in 1532."]
+  - id: SC.HIST.WEATHER.HEAT_DROUGHT.1540.001
+    type: SourceClaim
+    statement: "1540 was an exceptionally hot and dry year in the Low Countries; Velius describes low river levels and water/forage hardship for cattle."
+    evidence_status: SUPPORTED
+    source_ids: [SRC-HIST-WEER-CLAES-BUISMAN-VELIUS-PLEIJ-2026-11-04]
+    story_time: {earliest: '1540-01-01', latest_exclusive: '1541-01-01', precision: year}
+    qualifies: ["A specific shortage or business impact in Cornelis's fictional Goese operation is not historically documented."]
+  - id: SC.HIST.WEATHER.REIMERSWAAL.STORM.1552.001
+    type: SourceClaim
+    statement: "Buisman reproduces a storm narrative for Reimerswaal on 12–13 January 1552 involving thunder, high wind, the collapse of the halle tower and subsequent urban flooding."
+    evidence_status: SUPPORTED
+    source_ids: [SRC-HIST-WEER-CLAES-BUISMAN-VELIUS-PLEIJ-2026-11-04]
+    story_time: {earliest: '1552-01-12', latest_exclusive: '1552-01-14', precision: bounded}
+    qualifies: ["Reports of clock time and twelve-foot church flooding require original-source comparison before quantitative use."]
+  - id: SC.HIST.WEATHER.REIMERSWAAL.REPEATED_PRESSURE.1555_1563.001
+    type: SourceClaim
+    statement: "Reimerswaal suffered repeated flooding and storm damage in 1555, 1557, 1561 and 1563, and a substantial fire in 1558."
+    evidence_status: SUPPORTED
+    source_ids: [SRC-HIST-WEER-CLAES-BUISMAN-VELIUS-PLEIJ-2026-11-04, SRC-HIST-REIMERSWAAL-SCHOOL-CITY-001]
+    story_time: {earliest: '1555-01-01', latest_exclusive: '1564-01-01', precision: bounded}
+    qualifies: ["Not every event directly flooded every street or the school. The 1558 fire has no demonstrated weather cause."]
+  - id: SC.HIST.WEATHER.GOES.FIRE_WIND.1554.001
+    type: SourceClaim
+    statement: "The source-weighted model of the 18 May 1554 Goes fire includes a strong north-easterly wind accelerating spread from the salt-work/harbour origin zone."
+    evidence_status: SUPPORTED
+    source_ids: [SRC-HIST-GOES-FIRE-1554-REFINEMENT-001]
+    story_time: {earliest: '1554-05-18', latest_exclusive: '1554-05-19', precision: day}
+    qualifies: ["This supports spread mechanics, not the disputed ignition mechanism or Cornelis's moral guilt."]
+  - id: SC.HIST.WEATHER.WINTER_VELIUS.1564.001
+    type: SourceClaim
+    statement: "Velius places a severe winter under the year 1564, reporting a frozen Zuiderzee, Rhine and Meuse and persistent vegetation damage after thaw."
+    evidence_status: VERIFIED
+    source_ids: [SRC-HIST-WEER-CLAES-BUISMAN-VELIUS-PLEIJ-2026-11-04]
+    story_time: {earliest: '1563-11-01', latest_exclusive: '1564-04-01', precision: approximate}
+    qualifies: ["The 1563–1564 interval is an interpretation of Velius's wording, not an independently resolved meteorological dating; keep apart from Buisman's 1564–1565 account."]
+  - id: SC.HIST.WEATHER.WINTER.1564_1565.001
+    type: SourceClaim
+    statement: "The winter of 1564–1565 brought severe cold and ice conditions to the Low Countries; Antwerp's Scheldt froze and ice travel was reported."
+    evidence_status: SUPPORTED
+    source_ids: [SRC-HIST-WEER-CLAES-BUISMAN-VELIUS-PLEIJ-2026-11-04]
+    story_time: {earliest: '1564-12-01', latest_exclusive: '1565-04-01', precision: seasonal}
+    qualifies: ["Bruegel winter images are period artistic references, not timestamped local weather records."]
+  - id: SC.HIST.WEATHER.FLOOD.1570.001
+    type: SourceClaim
+    statement: "The All Saints flood of 1 November 1570 affected much of the Dutch coast and Zuiderzee; Velius describes severe inundation around Hoorn and a flood crest around four in the morning."
+    evidence_status: VERIFIED
+    source_ids: [SRC-HIST-WEER-CLAES-BUISMAN-VELIUS-PLEIJ-2026-11-04]
+    story_time: {earliest: '1570-11-01', latest_exclusive: '1570-11-03', precision: bounded}
+    qualifies: ["Hoorn's observations do not prove flood depth at Goes or Reimerswaal; Reimerswaal inundation in 1570 remains unproven in Hollestelle."]
+  - id: SC.HIST.WEATHER.WINTER.1572_1573.001
+    type: SourceClaim
+    statement: "Early ice and snow in November 1572 and sustained winter cold in 1572–1573 influenced transport and the supply of besieged Haarlem."
+    evidence_status: SUPPORTED
+    source_ids: [SRC-HIST-WEER-CLAES-BUISMAN-VELIUS-PLEIJ-2026-11-04]
+    story_time: {earliest: '1572-11-01', latest_exclusive: '1573-04-01', precision: seasonal}
+    qualifies: ["Do not imply Claes was in Haarlem or personally crossed the ice."]
+  - id: SC.HIST.WEATHER.TEXEL.STORM.1593.001
+    type: SourceClaim
+    statement: "Velius reports a destructive storm late in December 1593 that wrecked many grain-laden ships near Texel, including several from Hoorn."
+    evidence_status: VERIFIED
+    source_ids: [SRC-HIST-WEER-CLAES-BUISMAN-VELIUS-PLEIJ-2026-11-04]
+    story_time: {earliest: '1593-12-01', latest_exclusive: '1594-01-01', precision: month}
+    qualifies: ["Exact storm day and casualty figures not fixed by this extract."]
+  - id: SC.HIST.WEATHER.WINTER_RIVER_FLOODS.1594_1595.001
+    type: SourceClaim
+    statement: "The severe 1594–1595 winter, late snow and thaw/rain led to catastrophic river flooding in March 1595; Buisman compiles diary evidence from several regions."
+    evidence_status: SUPPORTED
+    source_ids: [SRC-HIST-WEER-CLAES-BUISMAN-VELIUS-PLEIJ-2026-11-04]
+    story_time: {earliest: '1594-11-01', latest_exclusive: '1595-05-01', precision: seasonal}
+    qualifies: ["River floods from ice/thaw differ from a Zeeland storm surge. Exact Claes location and experience are not fixed."]
+  - id: SC.HIST.WEATHER.ZUIDERZEE.FREEZE.1607_1608.001
+    type: SourceClaim
+    statement: "Velius chronicles an extreme 1607–1608 winter with widespread frozen waterways and ice travel, crop and tree damage; he expressly reports personally seeing an old ash tree split from frost."
+    evidence_status: VERIFIED
+    source_ids: [SRC-HIST-WEER-CLAES-BUISMAN-VELIUS-PLEIJ-2026-11-04]
+    story_time: {earliest: '1607-12-01', latest_exclusive: '1608-04-01', precision: seasonal}
+    qualifies: ["Comparative context only: Claes's death and whereabouts after 1602 remain open."]
+  - id: SC.HIST.WEATHER.HOORN.SURGES.1532_1610.001
+    type: SourceClaim
+    statement: "Velius records post-surge dike breaches and prolonged frozen repair difficulties at Hoorn after 2 November 1532, and emergency reinforcement with sails, branches, spars, anchors and ropes in January 1610."
+    evidence_status: VERIFIED
+    source_ids: [SRC-HIST-WEER-CLAES-BUISMAN-VELIUS-PLEIJ-2026-11-04]
+    qualifies: ["Specific West-Frisian dike practices may inform comparison but are not direct evidence for Zeeland 1550s."]

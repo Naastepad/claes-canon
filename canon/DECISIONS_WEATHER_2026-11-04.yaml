@@ -1,0 +1,25 @@
+schema_version: "1.0.0"
+kind: CanonDecisionRegistryExtension
+decisions:
+  - id: DEC.CLAES.WEATHER.MEMORY_AND_FORCE.2026-11-04
+    type: AuthorialWorldAndMotifDecision
+    status: CANON
+    decision: >-
+      Weather belongs throughout Claes's life both as childhood oral storytelling
+      (in particular the Brussels snow sculptures of 1511, which he hears about
+      growing up) and as real physical/destructive force. Wind, fire, water,
+      cold, drought and ordinary seasonal conditions materially affect
+      environment, movement, livelihood and perception; the authorial task
+      is to make consequences legible without making every weather event
+      a forced allegory or inventing Claes's personal presence at historical events.
+    affects:
+      - MOTIF.WEATHER.MEMORY_MATERIAL
+      - STC.CLAES.CHILDHOOD.HEARS_BRUSSELS_SNOWMEN.001
+      - storybible/CLAES_WEER_EN_NATUURKRACHT_1511_1602.md
+      - storybible/LEMMA_MCKEE_MASTER.md
+      - storybible/STORY_PROJECTION_ROUND_C.md
+    guardrails:
+      - "The historical Brussels event is Pleij's evidence; its transmission to fictional Claes is an author choice."
+      - "No narrator, precise childhood scene/date, personal weather observation or additional Claes meeting is fixed by this decision."
+      - "Existing fire, Cornelis, school, Antwerp 1561 and 1573 boat-witness canon outranks speculative weather scene placement."
+      - "Storm does not imply divine guilt or technical causation, and Reimerswaal is not instantly abandoned."

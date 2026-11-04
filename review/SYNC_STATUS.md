@@ -1,5 +1,17 @@
 # Synchronization status
 
+## Weather and material-environment addendum — 4 November 2026
+
+**Change-set state:** `WEATHER_MEMORIES_AND_MATERIAL_WORLD_2026-11-04` / authoring branch **for review** (not a claim of merger to `main`). The explicit author direction that Claes hears the 1511 Brussels snow-sculpture story and that weather is destructive/materially consequential is in `canon/DECISIONS_WEATHER_2026-11-04.yaml`, synchronized with `claims/STORY_CLAIMS_WEATHER_2026-11-04.yaml` and `MOTIF.WEATHER.MEMORY_MATERIAL`. Weather evidence remains independent: Buisman photographs + user-provided Velius 1648 PDF + Pleij/Hollestelle/Zeeuwse Ankers, with event claims, separate `history/` chronology and page/uncertainty locators.
+
+The full reader/authoring dossier is `storybible/CLAES_WEER_EN_NATUURKRACHT_1511_1602.md`; cross-linked in `storybible/INDEX.md`, `storybible/MASTER.md`, `storybible/LEMMA_MCKEE_MASTER.md`, `storybible/STORY_PROJECTION_ROUND_C.md` and `history/README.md`. No original canon decision about Claes birth, 1554 fire, Cornelis's role, 1554–61 education, August 1561 journey, 1573 boat witness, Mayken or 1602 ending was changed.
+
+**Purposeful OPEN / no silent promotion:** exact childhood snow-story narrator/date; exact Reimerswaal 1552 local times and source numbering; flood level inside 1555/1557 school/logies zone; relation Velius 1564 to Buisman 1564–65; Reimerswaal 1570 inundation; Claes's exact weather/position in the 1573 boat scene; Claes's location/experience in 1594–95; his life after 1602. Later 1607–43 material is comparative only. No new independently fixed weather scenes were inserted into chapters.
+
+**Validation:** requires repository validator and CI inspection for this PR; persistence/CI status should be reported independently.
+
+
+
 Status: `SYNC_COMPLETE_ACTIVE_LAYERS`
 
 Release state: `ZEELAND_INFORMATION_WAR_CONTEXT_AND_ROUTE_SYNCHRONIZED_2026-09-18`

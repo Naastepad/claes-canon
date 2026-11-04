@@ -1,0 +1,20 @@
+schema_version: 1.0.0
+kind: MigrationReviewSupplement
+purpose: Classify two new Story Claims arising from the author's 4 November 2026 weather-memory direction.
+records:
+  - claim_id: STC.CLAES.CHILDHOOD.HEARS_BRUSSELS_SNOWMEN.001
+    origin: NEW
+    review_state: HUMAN_DECISION
+    resolution: >-
+      The author explicitly wants the childhood stories that Claes hears,
+      including the 1511 Brussels snow sculptures, in the storybible.
+      The historical sculptures are source-backed; childhood transmission
+      is fiction canon. Teller, date and text of a scene remain undecided.
+  - claim_id: STC.CLAES.WEATHER.PRESSURE_ON_ACTION.001
+    origin: NEW
+    review_state: HUMAN_DECISION
+    resolution: >-
+      The author explicitly fixes weather's double function as remembered
+      marvel and destructive/material force in Claes's life. This is a
+      narrative/world choice, not evidence that Claes attended every
+      historical flood, frost, drought or storm.

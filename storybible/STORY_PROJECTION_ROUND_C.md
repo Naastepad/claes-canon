@@ -279,3 +279,19 @@ Current explicit design openings include:
 - `OPEN.MAYKEN.INDEPENDENT_MIDARC.001` — the concrete work/family/social pressure through which Mayken's adult independence becomes dramatically visible.
 
 These are correctly open. They must not hide as missing story structure or be silently resolved by later prose.
+
+## Weather world-pressure projection — addendum 4 November 2026
+
+The weather dossier `CLAES_WEER_EN_NATUURKRACHT_1511_1602.md` changes the available **world pressure**, not the approved causal hinges or final chapter order. The author fixed two recurring poles: **hearsay about Brussels' snow figures of 1511** and **weather as destructive/material force** (`DEC.CLAES.WEATHER.MEMORY_AND_FORCE.2026-11-04`; `MOTIF.WEATHER.MEMORY_MATERIAL`).
+
+For scene projection:
+- **Goese Status Prima** can carry an *inherited* 1511 snow anecdote alongside season, family work, trade and the pre-birth floods of 1530/32. A storyteller/specific dialogue is NOT selected.
+- **18 May 1554** uses north-easterly wind as a physical multiplier within the existing fire architecture; **do not** assign providential or technical guilt through the weather.
+- **Reimerswaal 1554–61** gains cumulative, mostly ordinary work around flood repair, trade, school and wet materials. The place remains a living city. The exact Zovitius-book wetting event is NOT selected.
+- **Antwerp 1564–65** gains winter/ice conditions as possible constraints and a potential non-literal counterpoint to the childhood snow tale; no invented Claes ice-walk or imposed revelation.
+- **1570–73** differentiates sea surge, winter ice and wartime burning. The accepted 1573 boat-witness remains a human political/moral hinge, not weather damage.
+- **1594–95** offers late-life cold/thaw/river flood pressure. Where Claes was and which choice it forced is not fixed.
+- **Post-1602** comparison remains external world research until the death chronology is resolved.
+
+For each candidate weather beat apply the same Round-C/round-D necessity test: **what does weather make possible/impossible, which character must choose, which relationship/value changes and what can the reader see without a meteorological lecture?** A historical curiosity may remain in the dossier rather than receive a chapter. Mayken retains her own knowledge, choices and life arc; she is not a passive sensory instrument for Claes.
+

@@ -18,6 +18,8 @@ Never invert this chain to manufacture history from fiction.
 - `LOW_COUNTRIES_TRANSFORMATION_1540_1605.md` — human-readable chronological synthesis and usage rules.
 - `ZEELAND_REVOLT_TIMELINE.yaml` — regional layer for Zeeland, Goes, Reimerswaal, Middelburg, Vlissingen, Veere and the Delta waterways.
 
+- `WEATHER_LOW_COUNTRIES_1507_1643.yaml` — weather and water-hazard event spine: regional storm surges, Reimerswaal floods, 1540 drought, severe winters, coastal versus river inundations and comparative post-1602 examples. Historical events **do not** assert Claes's attendance; see the dedicated source claims and `storybible/CLAES_WEER_EN_NATUURKRACHT_1511_1602.md` for story application.
+
 ## Evidence statuses
 
 - `VERIFIED` — source has been consulted and directly supports the event as represented.

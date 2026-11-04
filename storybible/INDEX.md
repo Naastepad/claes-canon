@@ -22,6 +22,14 @@ Operational navigation for the current Claes Storybible.
 
 `LEMMA_MCKEE_MASTER_2026-08-13.md` is a dated legacy snapshot. It is retained for development history but is not current authoring authority.
 
+## Weather and the material environment — integrated 4 November 2026
+
+- [`CLAES_WEER_EN_NATUURKRACHT_1511_1602.md`](CLAES_WEER_EN_NATUURKRACHT_1511_1602.md) — governing Claes-specific dossier: Brussels 1511 childhood snow stories, remembered drowned land, 1540 drought, Goes 1554 wind/fire, Reimerswaal 1555–61 floods, Antwerp winter ice, 1570 storm surge, weather in war, 1594–95 cold and river flooding; material scene consequences, memoir voice and OPEN gaps.
+- `../canon/DECISIONS_WEATHER_2026-11-04.yaml` and `../claims/STORY_CLAIMS_WEATHER_2026-11-04.yaml` — author's fixed weather-memory motif and child's hearing of 1511 snow figures; specific speaker/dialogue not decided.
+- `../narrative/motifs.yaml` → `MOTIF.WEATHER.MEMORY_MATERIAL` — weather from embodied sensation and social recollection to human action; not automatic allegory.
+- `../history/WEATHER_LOW_COUNTRIES_1507_1643.yaml` — region/time-specific historical event layer; post-1602 events are comparisons, not Claes experiences.
+- `../claims/SOURCE_CLAIMS_WEATHER_2026-11-04.yaml` and `../sources/SRC-HIST-WEER-CLAES-BUISMAN-VELIUS-PLEIJ-2026-11-04.md` — Buisman/Velius/Pleij provenance, page references and explicit uncertainty.
+
 ## Explicit decisions
 
 - `../canon/DECISIONS.yaml` — core decision registry.
