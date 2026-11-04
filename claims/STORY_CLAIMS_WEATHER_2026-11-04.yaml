@@ -1,0 +1,36 @@
+schema_version: "1.0.0"
+kind: StoryClaimRegistryExtension
+claims:
+  - id: STC.CLAES.CHILDHOOD.HEARS_BRUSSELS_SNOWMEN.001
+    type: StoryClaim
+    statement: >-
+      In his Goese childhood Claes hears stories about the extraordinary
+      snow figures erected in Brussels in the winter of 1510–1511.
+      Who tells him, the year of telling and the exact words remain unfixed.
+    canon_status: CANON
+    evidence_status: PLAUSIBLE
+    decision_ids: [DEC.CLAES.WEATHER.MEMORY_AND_FORCE.2026-11-04]
+    subjects: [ENT.PERSON.CLAES]
+    story_time: {earliest: '1542-12-08', latest_exclusive: '1554-05-19', precision: bounded}
+    source_refs: [SC.HIST.WEATHER.BRUSSELS.SNOW_SCULPTURES.1511.001]
+    tags: [weather, snow, oral_memory, childhood, goes]
+    guardrails:
+      - "He did not witness Brussels in 1511: he was born in 1542."
+      - "The older speaker, the scene and direct dialogue are not yet canon."
+  - id: STC.CLAES.WEATHER.PRESSURE_ON_ACTION.001
+    type: StoryClaim
+    statement: >-
+      Weather is a recurring material pressure and sensory field throughout
+      Claes's life; it can enable common labour, art and travel or destroy
+      home, infrastructure and livelihoods. Its story use must respect
+      the already canonized fire of Goes 1554 and Claes's Reimerswaal
+      education and later witness rather than creating unrelated disaster set pieces.
+    canon_status: CANON
+    evidence_status: PLAUSIBLE
+    decision_ids: [DEC.CLAES.WEATHER.MEMORY_AND_FORCE.2026-11-04]
+    subjects: [ENT.PERSON.CLAES]
+    source_refs: [SC.HIST.WEATHER.GOES.FIRE_WIND.1554.001, SC.HIST.WEATHER.REIMERSWAAL.REPEATED_PRESSURE.1555_1563.001]
+    tags: [weather, wind, water, fire, landscape, sense, agency]
+    guardrails:
+      - "Historical events do not fix new first-hand participation by Claes."
+      - "Weather is no automatic moral sign or deterministic alchemical symbol."
