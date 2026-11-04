@@ -75,3 +75,32 @@ motifs:
   - "Dee's joke is intentionally not an accurate lexical translation of biersteker."
   - 'Do not turn Cornelis into an apothecary, physician or alchemist because of the joke.'
   - 'Do not reduce Mayken to an ingredient, assistant or symbolic completion of Claes; her practical knowledge and agency remain independent.'
+- id: MOTIF.WEATHER.MEMORY_MATERIAL
+  label: "sneeuwverhalen / wind / water / seizoenen"
+  status: CANON
+  function: >-
+    Historical weather as experienced material limit and generational memory:
+    the Brussels 1511 snow figures reach young Claes by hearsay while wind-driven
+    fire in Goes and repeated Reimerswaal floods directly pressure his body,
+    livelihood, education and capacity for action. No automatic moral or
+    providential weather symbolism.
+  decision_ids: [DEC.CLAES.WEATHER.MEMORY_AND_FORCE.2026-11-04]
+  source_claims:
+    - SC.HIST.WEATHER.BRUSSELS.SNOW_SCULPTURES.1511.001
+    - SC.HIST.WEATHER.GOES.FIRE_WIND.1554.001
+    - SC.HIST.WEATHER.REIMERSWAAL.REPEATED_PRESSURE.1555_1563.001
+  phases:
+    - "1511: inherited snow story, before Claes was born"
+    - "1530/1532 and 1540: older-generation memories of flood and heat"
+    - "1542–1554: ordinary household/harbour weather, 1554 wind-driven catastrophe"
+    - "1554–1561: Reimerswaal's repeated damage and cumulative repair"
+    - "1564–1565: Antwerp ice as possible contrast to childhood story"
+    - "1570–1573: storm surge / wartime destruction, distinct causes"
+    - "1594–1595: prolonged cold, thaw, river flooding and late snow"
+  guardrails:
+    - "A historical event does not automatically put Claes on location."
+    - "Oral transmission in fiction is not historical proof of a named teller."
+    - "Do not turn every weather description into disaster or alchemical cue."
+    - "Reimerswaal 1563 is after Claes's summer-1561 departure."
+    - "The post-1602 winter 1607–1608 is comparison until Claes's end chronology is decided."
+
